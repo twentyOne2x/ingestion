@@ -1,27 +1,18 @@
 import csv
 import time
 import logging
-import os
 import inspect
-# import fitz
 from datetime import datetime
 from functools import wraps
-import shutil
 from pathlib import Path
 
-from google.oauth2.credentials import Credentials
-from google.oauth2.service_account import Credentials as ServiceAccountCredentials
-
-import subprocess
-
-from langchain.embeddings import OpenAIEmbeddings
 from llama_index.legacy import OpenAIEmbedding
 from llama_index.legacy.embeddings import HuggingFaceEmbedding
 
 from llama_index.legacy.core.llms.types import ChatMessage, MessageRole
+import pandas as pd
 
 
-import os
 import subprocess
 
 from llama_index.vector_stores.pinecone import PineconeVectorStore
@@ -169,17 +160,6 @@ def timeit(func):
 
     return wrapper
 
-
-def authenticate_service_account(service_account_file: str) -> Credentials:
-    """Authenticates using service account and returns the session."""
-
-    credentials = ServiceAccountCredentials.from_service_account_file(
-        service_account_file,
-        scopes=["https://www.googleapis.com/auth/youtube.readonly"]
-    )
-    return credentials
-
-
 def get_last_index_embedding_params():
     index_dir = f"{root_directory()}/.storage/research_pdf/"
     index = sorted(os.listdir(index_dir))[-1].split('_')
@@ -191,11 +171,8 @@ def get_last_index_embedding_params():
     return embedding_model_name, embedding_model_chunk_size, chunk_overlap, vector_space_distance_metric
 
 
-import os
-import fnmatch
 import re
 
-import pandas as pd
 
 
 def find_closest_match(video_title, df_titles):
@@ -277,36 +254,6 @@ def del_wrong_subdirs(root_dir):
             print(f"Removed directory and its content: {subdir}")
             shutil.rmtree(subdir)
 
-
-def merge_csv_files_remove_duplicates_and_save(csv_directory=f"{root_directory()}/../mev.fyi//data/links/articles", output_csv_path=f"{root_directory()}/../mev.fyi/data/links/merged_articles.csv"):
-    """
-    Concatenates all CSV files in the given directory, removes duplicates based on the 'Link' column,
-    and saves the resulting DataFrame to the specified output path.
-
-    Args:
-        csv_directory (str): Directory containing CSV files to merge.
-        output_csv_path (str): Path to save the merged and deduplicated CSV file.
-    """
-    # List all CSV files in the directory
-    csv_files = [os.path.join(csv_directory, f) for f in os.listdir(csv_directory) if f.endswith('.csv')]
-    df_list = []
-
-    # Load and concatenate all CSV files
-    for csv_file in csv_files:
-        df = pd.read_csv(csv_file)
-        df_list.append(df)
-
-    if df_list:
-        merged_df = pd.concat(df_list, ignore_index=True)
-
-        # Remove duplicates based on 'Link' column
-        deduplicated_df = merged_df.drop_duplicates(subset=['Link'])
-
-        # Save the resulting DataFrame to CSV
-        deduplicated_df.to_csv(output_csv_path, index=False)
-        logging.info(f"Merged and deduplicated CSV saved to: {output_csv_path}")
-    else:
-        logging.warning("No CSV files found in the provided directory.")
 
 
 def clean_and_save_config(source_file_path, destination_file_path):
@@ -435,8 +382,8 @@ def copy_and_verify_files():
         "docs_details.csv",
     ]
 
-    clean_and_save_config(source_file_path=f"{csv_source_dir}../src/populate_csv_files/get_article_content/ethglobal_hackathon/site_configs.py",
-                                 destination_file_path=f"{csv_destination_dir}site_configs.py")
+    # clean_and_save_config(source_file_path=f"{csv_source_dir}../src/populate_csv_files/get_article_content/ethglobal_hackathon/site_configs.py",
+    #                              destination_file_path=f"{csv_destination_dir}site_configs.py")
 
     csv_files_to_copy_from_rag_to_mevfyi = [
         # "docs_details.csv",
@@ -640,7 +587,7 @@ def compute_new_entries(latest_df: pd.DataFrame, current_df: pd.DataFrame, left_
     return new_entries_df
 
 
-def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=False, index_name=os.environ.get("PINECONE_INDEX_NAME", "mevfyi-cosine")):
+def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=False, index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi")):
     pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )
@@ -663,7 +610,7 @@ def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=F
     return vector_store
 
 
-def load_vector_store_from_pinecone_database_legacy(index_name=os.environ.get("PINECONE_INDEX_NAME", "mevfyi-cosine")):
+def load_vector_store_from_pinecone_database_legacy(index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi")):
     pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )
