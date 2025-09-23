@@ -195,43 +195,6 @@ import os
 import fnmatch
 import re
 
-def find_matching_files(directory: str):
-    mp3_files = []
-    json_txt_files = []
-
-    # 1. Recursively walk through the directory and collect paths to all .mp3, .json, and .txt files
-    for dirpath, _, filenames in os.walk(directory):
-        for filename in fnmatch.filter(filenames, "*.mp3"):
-            mp3_files.append(os.path.join(dirpath, filename))
-        for filename in fnmatch.filter(filenames, "*.json"):
-            json_txt_files.append(os.path.join(dirpath, filename))
-        for filename in fnmatch.filter(filenames, "*.txt"):
-            json_txt_files.append(os.path.join(dirpath, filename))
-
-    matched_tuples = []
-
-    for mp3_file in mp3_files:
-        mp3_basename = os.path.basename(mp3_file).rsplit('.', 1)[0]
-        for jt_file in json_txt_files:
-            jt_basename = os.path.basename(jt_file).rsplit('.', 1)[0]
-
-            # Remove prefix date if it exists
-            jt_basename = re.sub(r'^\d{4}-\d{2}-\d{2}_', '', jt_basename)
-
-            # Remove various suffixes
-            jt_basename = re.sub(r'(_diarized_content(_processed_diarized)?)$', '', jt_basename)
-
-            if mp3_basename == jt_basename:
-                matched_tuples.append((mp3_file, jt_file))
-
-    # 3. For each match, print the tuple and then later delete the .mp3 file
-    for mp3_file, jt_file in matched_tuples:
-        print((mp3_file, jt_file))
-        if os.path.exists(mp3_file):
-            os.remove(mp3_file)
-            print(f"Deleting {mp3_file}")
-
-
 import pandas as pd
 
 
@@ -247,354 +210,7 @@ def find_closest_match(video_title, df_titles):
             best_match = title_str
     return best_match
 
-def move_remaining_mp3_to_their_subdirs():
-    # Load the DataFrame
-    videos_path = f"{root_directory()}/datasets/evaluation_data/youtube_videos.csv"
-    youtube_videos_df = pd.read_csv(videos_path)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace(' +', ' ', regex=True)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace('"', '', regex=True)
 
-    # Get a list of all mp3 files in the directory and subdirectories
-    mp3_files = []
-    for subdir, dirs, files in os.walk(f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"):
-        for file in files:
-            if file.endswith(".mp3"):
-                mp3_files.append(os.path.join(subdir, file))
-
-    df_titles = youtube_videos_df['title'].tolist()
-    # Process each mp3 file
-    for mp3_file in mp3_files:
-        # Extract the segment after the last "/"
-        video_title = mp3_file.split('/')[-1].rsplit('.', 1)[0]
-        # Replace double spaces with a single space
-        video_title = video_title.replace('  ', ' ').strip()
-
-        # Check if mp3 file is already in a directory matching its name
-        containing_dir = os.path.basename(os.path.dirname(mp3_file))
-        if video_title == containing_dir:
-            continue
-
-        best_match = find_closest_match(video_title, df_titles)
-        video_row = youtube_videos_df[youtube_videos_df['title'] == best_match]
-
-        if not video_row.empty:
-            published_date = video_row.iloc[0]['published_date']
-            new_dir_name = f"{published_date}_{video_title}"
-            new_dir_path = os.path.join(os.path.dirname(mp3_file), new_dir_name)
-            os.makedirs(new_dir_path, exist_ok=True)
-            new_file_name = f"{published_date}_{video_title}.mp3"
-            new_file_path = os.path.join(new_dir_path, new_file_name)
-            print(f"Moved video {best_match} to {new_file_path}!")
-            shutil.move(mp3_file, new_file_path)
-        else:
-            print(f"No matching video title found in DataFrame for: {video_title}")
-
-
-def move_remaining_txt_to_their_subdirs():
-    # Load the DataFrame
-    videos_path = f"{root_directory()}/datasets/evaluation_data/youtube_videos.csv"
-    youtube_videos_df = pd.read_csv(videos_path)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace(' +', ' ', regex=True)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace('"', '', regex=True)
-
-    # Get a list of all txt files in the directory and subdirectories
-    txt_files = []
-    for subdir, dirs, files in os.walk(f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"):
-        for file in files:
-            if file.endswith("_diarized_content_processed_diarized.txt"):
-                txt_files.append(os.path.join(subdir, file))
-
-    df_titles = youtube_videos_df['title'].tolist()
-    # Process each txt file
-    for txt_file in txt_files:
-        # Extract the segment after the last "/"
-        extension = "_diarized_content_processed_diarized.txt"
-        video_title = txt_file.replace(extension, '').split('/')[-1].rsplit('.', 1)[0]
-        # Replace double spaces with a single space
-        video_title = video_title.replace('  ', ' ').strip()
-
-        # video_row = youtube_videos_df[youtube_videos_df['title'].str.contains(video_title, case=False, na=False, regex=False)]
-        best_match = find_closest_match(video_title, df_titles)
-        video_row = youtube_videos_df[youtube_videos_df['title'] == best_match]
-
-        if not video_row.empty:
-            published_date = video_row.iloc[0]['published_date']
-            new_dir_name = f"{published_date}_{video_title}"
-
-            # Check if txt file is already in a directory matching its name
-            containing_dir = os.path.basename(os.path.dirname(txt_file))
-            if new_dir_name == containing_dir:
-                continue
-
-            new_dir_path = os.path.join(os.path.dirname(txt_file), new_dir_name)
-            os.makedirs(new_dir_path, exist_ok=True)
-            new_file_name = f"{published_date}_{video_title}{extension}"
-            new_file_path = os.path.join(new_dir_path, new_file_name)
-            if os.path.exists(new_file_path):
-                print(f"Deleted {txt_file} because {new_file_path} already exists")
-                os.remove(txt_file)
-            else:
-                print(f"Moved video {txt_file} to {new_file_path}!")
-                shutil.move(txt_file, new_file_path)
-        else:
-            print(f"No matching video title found in DataFrame for: {video_title}")
-
-
-def move_remaining_json_to_their_subdirs():
-    # Load the DataFrame
-    videos_path = f"{root_directory()}/datasets/evaluation_data/youtube_videos.csv"
-    youtube_videos_df = pd.read_csv(videos_path)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace(' +', ' ', regex=True)
-    youtube_videos_df['title'] = youtube_videos_df['title'].str.replace('"', '', regex=True)
-
-    # Get a list of all json files in the directory and subdirectories
-    json_files = []
-    for subdir, dirs, files in os.walk(f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"):
-        for file in files:
-            if file.endswith("_diarized_content.json"):
-                json_files.append(os.path.join(subdir, file))
-
-    df_titles = youtube_videos_df['title'].tolist()
-    # Process each json file
-    for json_file in json_files:
-        # Extract the segment after the last "/"
-        extension = "_diarized_content.json"
-        video_title = json_file.replace(extension, '').split('/')[-1].rsplit('.', 1)[0]
-        # Replace double spaces with a single space
-        video_title = video_title.replace('  ', ' ').strip()
-
-        # video_row = youtube_videos_df[youtube_videos_df['title'].str.contains(video_title, case=False, na=False, regex=False)]
-        best_match = find_closest_match(video_title, df_titles)
-        video_row = youtube_videos_df[youtube_videos_df['title'] == best_match]
-
-        if not video_row.empty:
-            published_date = video_row.iloc[0]['published_date']
-            new_dir_name = f"{published_date}_{video_title}"
-
-            # Check if json file is already in a directory matching its name
-            containing_dir = os.path.basename(os.path.dirname(json_file))
-            if new_dir_name == containing_dir:
-                continue
-
-            new_dir_path = os.path.join(os.path.dirname(json_file), new_dir_name)
-            os.makedirs(new_dir_path, exist_ok=True)
-            new_file_name = f"{published_date}_{video_title}{extension}"
-            new_file_path = os.path.join(new_dir_path, new_file_name)
-            if os.path.exists(new_file_path):
-                print(f"Deleted {json_file} because {new_file_path} already exists")
-                os.remove(json_file)
-            else:
-                print(f"Moved video {json_file} to {new_file_path}!")
-                shutil.move(json_file, new_file_path)
-        else:
-            print(f"No matching video title found in DataFrame for: {video_title}")
-
-def merge_directories(base_path):
-    '''
-    This function walks through all subdirectories and merges the contents of directories that have
-    names differing only by the pipe character used, from fullwidth to ASCII. Files from the fullwidth
-    pipe directory are moved to the ASCII pipe directory, and if a file with the same name exists, the
-    file from the fullwidth pipe directory is deleted. After the merge, the fullwidth pipe directory is
-    deleted if empty.
-
-    Args:
-        base_path: The base directory path to start searching from.
-
-    Returns: None
-    '''
-
-    # Helper function to rename the pipe character
-    def standardize_name(dir_or_file_name):
-        return dir_or_file_name.replace('：', ':')
-
-    # Track directories to be removed after processing
-    dirs_to_remove = []
-
-    # Walk through the directory structure
-    for root, dirs, _ in os.walk(base_path):
-        # Map of standard directory names to their full paths
-        standard_dirs = {}
-
-        # First pass to fill in the mapping
-        for dir_name in dirs:
-            standard_dirs[standardize_name(dir_name)] = os.path.join(root, dir_name)
-
-        # Second pass to perform the merging
-        for dir_name in dirs:
-            standard_name = standardize_name(dir_name)
-            src = os.path.join(root, dir_name)
-            dst = standard_dirs[standard_name]
-
-            # Only proceed if the directory names actually differ (by the pipe character)
-            if src != dst:
-                if not os.path.exists(dst):
-                    # If the destination doesn't exist, simply rename the directory
-                    os.rename(src, dst)
-                    print(f"Renamed {src} to {dst}")
-                else:
-                    # Merge contents
-                    for item in os.listdir(src):
-                        src_item = os.path.join(src, item)
-                        dst_item = os.path.join(dst, standardize_name(item))
-                        if os.path.exists(dst_item):
-                            # If there is a conflict, delete the source item
-                            os.remove(src_item)
-                            print(f"Deleted due to conflict: {src_item}")
-                        else:
-                            shutil.move(src_item, dst_item)
-                            print(f"Moved {src_item} to {dst_item}")
-
-                    # Add to list of directories to remove if they are empty
-                    dirs_to_remove.append(src)
-
-    # Remove the source directories if they are empty
-    for dir_to_remove in dirs_to_remove:
-        if not os.listdir(dir_to_remove):
-            os.rmdir(dir_to_remove)
-            print(f"Removed empty directory: {dir_to_remove}")
-        else:
-            print(f"Directory {dir_to_remove} is not empty after merge. Please check contents.")
-
-
-def replace_fullwidth_colon_and_clean():
-    base_path = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
-
-    for root, dirs, files in os.walk(base_path):
-        json_files = set()
-
-        # First, collect all .json filenames without extension
-        for file in files:
-            if file.endswith('.json'):
-                json_files.add(file[:-5])  # Removes the '.json' part
-
-        # Next, iterate over files and process them
-        for file in files:
-            original_file_path = os.path.join(root, file)
-            if '：' in file:
-                # Replace the fullwidth colon with a standard colon
-                new_file_name = file.replace('｜', '|')   # return dir_or_file_name.replace('｜', '|')
-                new_file_path = os.path.join(root, new_file_name)
-
-                if os.path.exists(new_file_path):
-                    # If the ASCII version exists, delete the fullwidth version
-                    print(f"Deleted {original_file_path}")
-                    os.remove(original_file_path)
-                else:
-                    # Otherwise, rename the file
-                    print(f"Renamed {original_file_path} to {new_file_path}")
-                    os.rename(original_file_path, new_file_path)
-
-            # If a corresponding .json file exists, delete the .mp3 file
-            if file[:-4] in json_files and file.endswith('.mp3'):
-                os.remove(original_file_path)
-                print(f"Deleted .mp3 file {original_file_path} because a corresponding .json exists")
-
-
-def fullwidth_to_ascii(char):
-    """Converts a full-width character to its ASCII equivalent."""
-    # Full-width range: 0xFF01-0xFF5E
-    # Corresponding ASCII range: 0x21-0x7E
-    fullwidth_offset = 0xFF01 - 0x21
-    return chr(ord(char) - fullwidth_offset) if 0xFF01 <= ord(char) <= 0xFF5E else char
-
-
-def clean_fullwidth_characters(base_path):
-    for root, dirs, files in os.walk(base_path, topdown=False):  # topdown=False to start from the innermost directories
-        # First handle the files in the directories
-        for file in files:
-            new_file_name = ''.join(fullwidth_to_ascii(char) for char in file)
-            original_file_path = os.path.join(root, file)
-            new_file_path = os.path.join(root, new_file_name)
-
-            if new_file_name != file:
-                if os.path.exists(new_file_path):
-                    # If the ASCII version exists, delete the full-width version
-                    os.remove(original_file_path)
-                    print(f"Deleted {original_file_path}")
-                else:
-                    # Otherwise, rename the file
-                    os.rename(original_file_path, new_file_path)
-                    print(f"Renamed {original_file_path} to {new_file_path}")
-
-        # Then handle directories
-        for dir in dirs:
-            new_dir_name = ''.join(fullwidth_to_ascii(char) for char in dir)
-            original_dir_path = os.path.join(root, dir)
-            new_dir_path = os.path.join(root, new_dir_name)
-
-            if new_dir_name != dir:
-                if os.path.exists(new_dir_path):
-                    # If the ASCII version exists, delete the full-width version and its contents
-                    shutil.rmtree(original_dir_path)
-                    print(f"Deleted directory and all contents: {original_dir_path}")
-                else:
-                    # Otherwise, rename the directory
-                    os.rename(original_dir_path, new_dir_path)
-                    print(f"Renamed {original_dir_path} to {new_dir_path}")
-
-
-def delete_mp3_if_text_or_json_exists(base_path):
-    for root, dirs, _ in os.walk(base_path):
-        for dir in dirs:
-            subdir_path = os.path.join(root, dir)
-            # Get a list of files in the current subdirectory
-            files = os.listdir(subdir_path)
-            # Filter out .mp3, .txt and .json files
-            mp3_files = [file for file in files if file.endswith('.mp3')]
-            txt_json_files = [file for file in files if file.endswith('.txt') or file.endswith('.json')]
-
-            if mp3_files:
-                # If there are both .mp3 and (.txt or .json) files, delete the .mp3 files
-                if txt_json_files:
-                    for mp3_file in mp3_files:
-                        mp3_file_path = os.path.join(subdir_path, mp3_file)
-                        print(f"Deleted .mp3 file: {mp3_file_path}")
-                        os.remove(mp3_file_path)
-                else:
-                    # If there are only .mp3 files, print their names and containing directory
-                    for mp3_file in mp3_files:
-                        pass
-                        # print(f".mp3 file without .txt or .json: {mp3_file} in directory {subdir_path}")
-
-
-def print_frontend_content():
-    import os
-
-    # Define the list of relative paths of the files you want to print
-    file_paths = [
-        # f"{root_directory()}/../rag_app_vercel/app/app/api/auth/[...nextauth]/route.ts",
-        f"{root_directory()}/../rag_app_vercel/app/app/actions.ts",
-        f"{root_directory()}/../rag_app_vercel/app/app/api/chat/route.ts",
-        # f"{root_directory()}/../rag_app_vercel/app/chat/[id]/server-logic.ts",
-        f"{root_directory()}/../rag_app_vercel/app/app/api/chat/[id]/page.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/pages/chat.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/pages/index.tsx",
-        f"{root_directory()}/../rag_app_vercel/app/auth.ts",
-        # f"{root_directory()}/../rag_app_vercel/app/components/chat.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/components/chat-list.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/components/chat-message.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/components/chat-panel.tsx",
-        # f"{root_directory()}/../rag_app_vercel/app/lib/hooks/use-chat-service.tsx",
-    ]
-
-    # file_path = 'app.py'
-    # print("Here is the content of the app.py backend:")
-    # with open(file_path, 'r') as file:
-    #     content = file.read()
-    #     print(f"{file_path}\n```\n{content}```\n")
-
-    print("\n\nHere is the content of the frontend files:")
-    # Iterate through the list, printing the content of each file
-    for file_path in file_paths:
-        if os.path.isfile(file_path):
-            with open(file_path, 'r') as file:
-                content = file.read()
-                print(f"`{file_path.replace('/home/user/PycharmProjects/rag/../rag_app_vercel/','')}`\n```\n{content}\n```\n\n")
-        else:
-            print(f"{file_path}\n```File not found```")
-
-
-import os
 import zipfile
 
 def save_data_into_zip ():
@@ -618,24 +234,6 @@ def save_data_into_zip ():
     print(f"Files zipped into {zip_filename}")
 
 
-def copy_txt_files_to_transcripts(rootdir=root_directory()):
-    source_dir = os.path.join(rootdir, 'datasets', 'evaluation_data', 'diarized_youtube_content_2023-10-06')
-    target_dir = os.path.join(rootdir, 'datasets', 'evaluation_data', 'transcripts')
-
-    # Create the target directory if it doesn't exist
-    if not os.path.exists(target_dir):
-        os.makedirs(target_dir)
-
-    # Copy all .txt files from nested subdirectories
-    for root, dirs, files in os.walk(source_dir):
-        for file in files:
-            if file.endswith('.txt'):
-                source_file = os.path.join(root, file)
-                shutil.copy(source_file, target_dir)
-
-    print(f"All .txt files copied to {target_dir}")
-
-
 def process_messages(data):
     try:
         messages = data["chat_history"]
@@ -655,40 +253,6 @@ def process_messages(data):
 
     return chat_messages
 
-
-def delete_redundant_directories(root_path):
-    # Create a list to collect directories to be deleted
-    directories_to_delete = []
-
-    # Walk through the directory
-    for subdir, dirs, files in os.walk(root_path, topdown=False):  # Note the 'topdown=False' parameter
-        for dir in dirs:
-            # Construct the path to the current directory
-            current_dir_path = os.path.join(subdir, dir)
-            # Check if directory name ends with the specified suffixes
-            if dir.endswith('_diarized_content') or dir.endswith('_diarized_content_processed_diarized'):
-                # Construct the file names that should exist in the parent directory
-                json_file = dir.split('_', 1)[-1] + '_diarized_content.json'
-                txt_file = dir.split('_', 1)[-1] + '_diarized_content_processed_diarized.txt'
-                # Construct the paths to the files that should exist
-                json_file_path = os.path.join(subdir, json_file)
-                txt_file_path = os.path.join(subdir, txt_file)
-                # Check if both files exist
-                if os.path.exists(json_file_path) and os.path.exists(txt_file_path):
-                    # If both files exist, add the redundant directory to the list
-                    print(f"{current_dir_path} is to be deleted")
-                    directories_to_delete.append(current_dir_path)
-
-    # Delete the collected directories
-    for dir_path in directories_to_delete:
-        shutil.rmtree(dir_path)
-        print(f"Deleted redundant directory: {dir_path}")
-
-def clean_mp3_dirs(directory):
-    clean_fullwidth_characters(directory)
-    move_remaining_mp3_to_their_subdirs()
-    merge_directories(directory)
-    delete_mp3_if_text_or_json_exists(directory)
 
 
 import os
@@ -1089,9 +653,9 @@ def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=F
         from pinecone import ServerlessSpec
         pc.create_index(
             name=index_name,
-            dimension=1536,
+            dimension=3072,
             metric="cosine",
-            spec=ServerlessSpec(cloud="aws", region="us-west-2"),
+            spec=ServerlessSpec(cloud="aws", region="us-east-1"),
         )
 
     pinecone_index = pc.Index(index_name)
@@ -1150,17 +714,13 @@ if __name__ == '__main__':
 
     # directory = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
     # clean_fullwidth_characters(directory)
-    # move_remaining_mp3_to_their_subdirs()
     # merge_directories(directory)
-    # delete_mp3_if_text_or_json_exists(directory)
 
     # directory = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
     # pdf_dir = f"{root_directory()}/datasets/evaluation_data/baseline_evaluation_research_papers_2023-10-05"
-    # # clean_mp3_dirs(directory=directory)
     # del_wrong_subdirs(directory)
     # move_remaining_txt_to_their_subdirs()
     # move_remaining_json_to_their_subdirs()
     # print_frontend_content()
-    # delete_mp3_if_text_or_json_exists(directory)
     # save_data_into_zip()
     # copy_txt_files_to_transcripts()
