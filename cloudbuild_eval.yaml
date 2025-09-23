@@ -1,0 +1,34 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/mev-fyi/llama-eval-app:$SHORT_SHA'
+      - '-f'  # Specify the Dockerfile path
+      - './Dockerfile_eval'  # Use the path to your Dockerfile
+      - .
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/mev-fyi/llama-eval-app:$SHORT_SHA']
+
+  # Deploy to Compute Engine
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args:
+      - 'compute'
+      - 'instances'
+      - 'create-with-container'
+      - 'my-eval-instance'  # Name of the Compute Engine instance
+      - '--container-image'
+      - 'gcr.io/mev-fyi/llama-eval-app:$SHORT_SHA'
+      - '--machine-type'
+      - 'n1-standard-4'  # Specify the machine type as needed
+      - '--zone'
+      - 'us-central1-a'  # Specify the zone
+      - '--scopes'
+      - 'cloud-platform'  # This grants the container full access to Google Cloud services.
+      - '--tags'
+      - 'http-server,https-server'  # Add tags if needed
+
+images:
+  - 'gcr.io/mev-fyi/llama-eval-app:$SHORT_SHA'
