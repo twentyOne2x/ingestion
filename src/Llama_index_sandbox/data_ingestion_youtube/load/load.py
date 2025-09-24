@@ -4,11 +4,9 @@ import os
 from functools import partial
 from pathlib import Path
 from typing import Union
-
-import numpy as np
 import pandas as pd
-from llama_index.legacy import SimpleDirectoryReader
 import re
+from llama_index.core.schema import Document
 
 from src.Llama_index_sandbox import root_dir, YOUTUBE_VIDEO_DIRECTORY
 from src.Llama_index_sandbox.constants import *
@@ -45,10 +43,6 @@ def load_single_video_transcript(youtube_videos_df, file_path):
         # Safely access the first row if it exists
         video_data = video_row.iloc[0]
 
-        reader = SimpleDirectoryReader(
-            input_files=[file_path]
-        )
-
         from src.Llama_index_sandbox.custom_pymupdfreader.base import PyMuPDFReader
         loader = PyMuPDFReader()
         documents = loader.load(file_path=file_path)
@@ -66,9 +60,19 @@ def load_single_video_transcript(youtube_videos_df, file_path):
             if 'file_path' in document.metadata.keys():
                 del document.metadata['file_path']
 
-            if '<|endoftext|>' in document.text:
+            # FIX: Check and clean the text content properly
+            current_text = document.get_content()  # Get the current text content
+            if '<|endoftext|>' in current_text:
                 logging.error(f"Found <|endoftext|> in video ID {video_id} with {file_path}")
-            document.text = document.text.replace('<|endoftext|>', '')
+                # Create a new document with cleaned text
+                cleaned_text = current_text.replace('<|endoftext|>', '')
+                # Since we can't modify text directly, we need to recreate the document
+                document = Document(
+                    text=cleaned_text,
+                    metadata=document.metadata,
+                    id_=document.id_,
+                    embedding=document.embedding
+                )
 
             # Update metadata
             document.metadata.update({
@@ -76,14 +80,14 @@ def load_single_video_transcript(youtube_videos_df, file_path):
                 'video_id': video_id,  # Add video ID to metadata
                 'title': video_data['title'],
                 'channel_name': video_data['channel_name'],
-                'video_link': video_data['url'],
-                'release_date': video_data['published_date']
+                'published_date': video_data['published_date'],
+                'url': video_data['url']
             })
 
         save_successful_load_to_csv(
             documents[0],
             csv_filename='youtube_videos.csv',
-            fieldnames=['video_id', 'title', 'channel_name', 'video_link', 'release_date']
+            fieldnames=['video_id', 'title', 'channel_name', 'published_date', 'url']
         )
 
         documents_details = {
@@ -119,13 +123,13 @@ def load_video_transcripts(directory_path: Union[str, Path], add_new_transcripts
     videos_path = f"{root_dir}/datasets/evaluation_data/youtube_videos.csv"
 
     latest_df = pd.read_csv(videos_path)
-    headers = ['video_id', 'title', 'channel_name', 'video_link', 'release_date']
+    headers = ['video_id', 'title', 'channel_name', 'published_date', 'url']
 
     if not os.path.exists(f"{root_dir}/pipeline_storage/youtube_videos.csv"):
         logging.info("No existing youtube_videos.csv found. Creating a new one.")
         pd.DataFrame(columns=headers).to_csv(f"{root_dir}/pipeline_storage/youtube_videos.csv", index=False)
     current_df = pd.read_csv(f"{root_dir}/pipeline_storage/youtube_videos.csv")
-    youtube_videos_df = compute_new_entries(latest_df=latest_df, current_df=current_df, left_key='url', right_key='video_link', overwrite=overwrite)
+    youtube_videos_df = compute_new_entries(latest_df=latest_df, current_df=current_df, left_key='url', right_key='url', overwrite=overwrite)
 
     assert youtube_videos_df.shape[0] > 0, "Could not load YouTube videos CSV."
     partial_load_single_transcript = partial(load_single_video_transcript, youtube_videos_df=youtube_videos_df)

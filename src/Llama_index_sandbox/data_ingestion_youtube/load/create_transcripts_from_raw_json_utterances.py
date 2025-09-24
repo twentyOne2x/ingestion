@@ -5,6 +5,7 @@ import time
 import random
 from functools import partial
 
+from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 from src.Llama_index_sandbox.utils.utils import root_directory, timeit
 
 
@@ -100,20 +101,55 @@ def process_transcript(file_path, log, sentence_count=7):  # TODO 2023-10-05: th
 
 @timeit
 def run(log=True):
-    data_directory = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06/"
+    data_directory = YOUTUBE_VIDEO_DIRECTORY
 
-    files_to_process = []
+    # First, map all directories and their files
+    dir_files_map = {}
     for root, _, files in os.walk(data_directory):
-        for file in files:
-            if file.endswith("_diarized_content.json"):
-                files_to_process.append(os.path.join(root, file))
+        if files:  # Only process directories with files
+            json_files = [f for f in files if f.endswith("_diarized_content.json")]
+            txt_files = [f for f in files if f.endswith("_diarized_content_processed_diarized.txt")]
 
-    # Create a partial function that includes the log flag
-    process_with_log = partial(process_transcript, log=log)
+            if json_files:  # Only store if there are JSON files
+                dir_files_map[root] = {
+                    'json': json_files,
+                    'txt': txt_files
+                }
 
-    # Process the files in parallel
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(process_with_log, files_to_process)
+    # Now filter for files that need processing
+    files_to_process = []
+    for directory, file_info in dir_files_map.items():
+        # Create a set of base names from txt files for faster lookup
+        processed_bases = {
+            txt_file.replace("_diarized_content_processed_diarized.txt", "")
+            for txt_file in file_info['txt']
+        }
+
+        # Check each JSON file to see if it needs processing
+        for json_file in file_info['json']:
+            base_name = json_file.replace("_diarized_content.json", "")
+
+            # Only process if the corresponding txt file doesn't exist
+            if base_name not in processed_bases:
+                files_to_process.append(os.path.join(directory, json_file))
+                if log:
+                    print(f"Will process: {os.path.join(directory, json_file)}")
+            elif log:
+                print(f"Skipping (already processed): {os.path.join(directory, json_file)}")
+
+    if log:
+        print(f"\nTotal files to process: {len(files_to_process)}")
+
+    if files_to_process:
+        # Create a partial function that includes the log flag
+        process_with_log = partial(process_transcript, log=log)
+
+        # Process the files in parallel
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            executor.map(process_with_log, files_to_process)
+    else:
+        if log:
+            print("No files need processing.")
 
 
 if __name__ == "__main__":

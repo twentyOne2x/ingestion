@@ -3,7 +3,6 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 from src.Llama_index_sandbox.custom_pymupdfreader.readers.base import BaseReader
-# from llama_index.legacy.readers.schema.base import Document
 from llama_index.core.schema import Document
 
 
@@ -39,11 +38,23 @@ class PyMuPDFReader(BaseReader):
         Returns:
             List[Document]: list of documents.
         """
-        import fitz
+        try:
+            import pymupdf as fitz
+        except ImportError:
+            try:
+                import fitz
+            except ImportError:
+                raise ImportError(
+                    "PyMuPDF is not installed. Please install it with: pip install pymupdf"
+                )
 
         # check if file_path is a string or Path
         if not isinstance(file_path, str) and not isinstance(file_path, Path):
             raise TypeError("file_path must be a string or Path.")
+
+        # Convert Path to string if necessary
+        if isinstance(file_path, Path):
+            file_path = str(file_path)
 
         # open PDF file
         doc = fitz.open(file_path)
@@ -53,6 +64,8 @@ class PyMuPDFReader(BaseReader):
             if not isinstance(extra_info, dict):
                 raise TypeError("extra_info must be a dictionary.")
 
+        documents = []
+
         # if metadata is True, add metadata to each document
         if metadata:
             if not extra_info:
@@ -60,24 +73,37 @@ class PyMuPDFReader(BaseReader):
             extra_info["total_pages"] = len(doc)
             extra_info["file_path"] = file_path
 
-            # return list of documents
-            return [
-                Document(
-                    text=page.get_text().encode("utf-8"),
-                    extra_info=dict(
-                        extra_info,
-                        **{
-                            "source": f"{page.number+1}",
-                        },
-                    ),
-                )
-                for page in doc
-            ]
+            # Create documents with text as string (not bytes)
+            for page_num, page in enumerate(doc):
+                page_text = page.get_text()  # Don't encode to bytes
 
-        else:
-            return [
-                Document(
-                    text=page.get_text().encode("utf-8"), extra_info=extra_info or {}
+                # Create metadata for this page
+                page_metadata = dict(
+                    extra_info,
+                    **{
+                        "source": f"{page_num + 1}",
+                        "page_number": page_num + 1,
+                    }
                 )
-                for page in doc
-            ]
+
+                # Create Document with text as positional argument or named parameter
+                documents.append(
+                    Document(
+                        text=page_text,  # Pass as string, not bytes
+                        metadata=page_metadata  # Use 'metadata' instead of 'extra_info' if that's what Document expects
+                    )
+                )
+        else:
+            for page in doc:
+                page_text = page.get_text()  # Don't encode to bytes
+                documents.append(
+                    Document(
+                        text=page_text,
+                        metadata=extra_info or {}  # Use 'metadata' instead of 'extra_info'
+                    )
+                )
+
+        # Close the document
+        doc.close()
+
+        return documents

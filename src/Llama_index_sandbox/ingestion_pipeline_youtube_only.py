@@ -17,7 +17,7 @@ from llama_index.core.node_parser import SentenceSplitter
 from src.Llama_index_sandbox.utils.utils import timeit, root_directory, copy_and_verify_files, load_vector_store_from_pinecone_database
 
 
-def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_index=False, index_name="mevfyi-cosine"):
+def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_index=False, index_name="icmfyi"):
     if add_to_vector_store:
         vector_store = load_vector_store_from_pinecone_database(delete_old_index=delete_old_index, new_index=new_index, index_name=index_name)
     else:
@@ -89,8 +89,8 @@ def calculate_batch_size(total_docs):
 
 @timeit
 def create_index(add_new_transcripts=True, num_files=None):
-    copy_and_verify_files()
-    copy_docstore()
+    # copy_and_verify_files()
+    # copy_docstore()
     logging.info("Starting Index Load Process")
 
     overwrite = False  # whether we overwrite DB namely we load all documents instead of only loading the increment since last database update
