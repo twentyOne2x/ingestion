@@ -16,6 +16,12 @@ from llama_index.core.ingestion import (
 from llama_index.core.node_parser import SentenceSplitter
 from src.Llama_index_sandbox.utils.utils import timeit, root_directory, copy_and_verify_files, load_vector_store_from_pinecone_database
 
+import warnings
+warnings.filterwarnings("ignore", message="pkg_resources is deprecated")
+warnings.filterwarnings("ignore", message="Removing unpickleable")
+
+num_workers = min(18, os.cpu_count())
+
 
 def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_index=False, index_name="icmfyi"):
     if add_to_vector_store:
@@ -124,7 +130,7 @@ def create_index(add_new_transcripts=True, num_files=None):
         success = False
         while not success and retries < 5:  # Retry up to 5 times
             try:
-                nodes = pipeline.run(documents=batch_documents, num_workers=18, show_progress=True)
+                nodes = pipeline.run(documents=batch_documents, num_workers=num_workers, show_progress=True)
                 all_nodes.extend(nodes)
                 if len(nodes) > 0:
                     pipeline.persist(persist_dir=f"{root_directory()}/pipeline_storage")

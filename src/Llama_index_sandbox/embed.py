@@ -2,6 +2,7 @@ import concurrent.futures
 import logging
 import random
 import time
+import warnings
 
 import math
 import multiprocessing
@@ -9,7 +10,8 @@ from concurrent.futures import ProcessPoolExecutor
 from functools import partial
 from typing import List, Union
 
-from langchain.embeddings import OpenAIEmbeddings
+# FIXED: Updated import to use langchain_community
+from langchain_community.embeddings import OpenAIEmbeddings
 from llama_index.legacy.embeddings import OpenAIEmbedding, HuggingFaceEmbedding
 from llama_index.legacy.schema import TextNode
 from tiktoken.model import MODEL_TO_ENCODING
@@ -17,6 +19,9 @@ from tiktoken.model import MODEL_TO_ENCODING
 from src.Llama_index_sandbox.utils.utils import timeit
 from src.Llama_index_sandbox.utils.token_counter import TokenCounter
 import tiktoken
+
+# Suppress deprecation warnings
+warnings.filterwarnings("ignore", message="pkg_resources is deprecated")
 
 token_counter = TokenCounter(4900000)
 
@@ -91,7 +96,7 @@ def construct_single_node(text_chunk, src_doc_metadata):
 @timeit
 def construct_node(text_chunks, documents, doc_idxs) -> List[TextNode]:
     """ 3. Manually Construct Nodes from Text Chunks """
-    available_workers = int(1 / 2 * multiprocessing.cpu_count())  # Calculate 3/4 of the available CPU count
+    available_workers = int(1 / 2 * multiprocessing.cpu_count())  # Calculate 1/2 of the available CPU count
 
     with ProcessPoolExecutor(max_workers=available_workers) as executor:
         future_to_idx = {
