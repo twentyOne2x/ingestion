@@ -23,7 +23,12 @@ def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_in
     else:
         vector_store = None
 
-    embedding_model = OpenAIEmbedding()
+    # Check what embedding model produces 3072 dimensions
+    # OpenAI's text-embedding-3-large produces 3072 dimensions
+    embedding_model = OpenAIEmbedding(
+        model="text-embedding-3-large",  # This model produces 3072-dimensional vectors
+        dimensions=3072  # Explicitly set dimensions
+    )
 
     if new_index:
         docstore_strategy = DocstoreStrategy.UPSERTS
@@ -46,7 +51,6 @@ def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_in
             logging.error(f"Failed to load pipeline from storage with error [{e}], continuing with new pipeline.")
 
     return pipeline
-
 
 def copy_docstore():
     import shutil
