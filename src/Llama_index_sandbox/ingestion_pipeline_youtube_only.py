@@ -4,6 +4,9 @@ from pathlib import Path
 import time
 
 from llama_index.embeddings.openai import OpenAIEmbedding
+# The following helped fixing the import error of `from llama_index.embeddings.openai import OpenAIEmbedding`. Took forever to run though.
+# pip uninstall llama-index llama-index-core llama-index-embeddings-openai llama-index-legacy llama-index-vector-stores-pinecone -y
+# pip install llama-index-legacy llama-index-vector-stores-pinecone llama-index-embeddings-openai llama-index-embeddings-huggingface llama-index-core
 
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 from src.Llama_index_sandbox import config_instance
