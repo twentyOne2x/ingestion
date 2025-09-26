@@ -17,7 +17,7 @@ from llama_index.core.ingestion import (
     IngestionPipeline,
 )
 from llama_index.core.node_parser import SentenceSplitter
-from src.Llama_index_sandbox.utils.utils import timeit, root_directory, copy_and_verify_files, load_vector_store_from_pinecone_database
+from src.Llama_index_sandbox.utils.utils import timeit, root_directory, load_vector_store_from_pinecone_database
 
 import warnings
 warnings.filterwarnings("ignore", message="pkg_resources is deprecated")
