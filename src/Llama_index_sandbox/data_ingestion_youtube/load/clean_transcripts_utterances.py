@@ -2,16 +2,6 @@
 """
 TODO we need to clean the generated transcripts. we can either do it at transcript generation time or afterwards.
 # TODO 2023-10-29: upgrading transcripts to identify who are the speakers would have tremendous value. Likely that can be done by passing each transcript to an LLM
-
-items to clean:
-"L Two": "L2",
-"L Two s": "L2s",
-"L Three": "L3s",
-"Arbitram": "Arbitrum",
-"web three": "web3",
-"SWAV": "SUAVE",
-"One Inc": "1inch",
-"Pepsi": "PEPC",
 """
 
 import os
@@ -31,20 +21,7 @@ def correct_typos_in_files(log=True):
 
     # Dictionary of typos and their corrections
     typo_dict = {
-        "L Two": "L2",
-        "L Two s": "L2s",
-        "L Three": "L3s",
-        "Arbitram": "Arbitrum",
-        "web three": "web3",
-        "SWAV": "SUAVE",
-        "One Inc": "1inch",
-        "Pepsi": "PEPC",
-        "MVV": "MEV",
-        "layer two": "L2",
-        "east global": "ETH Global",
-        "eastglobal": "ETH Global",
-        "east classic": "ETH Classic",
-        "L one": "L1",
+
     }
 
     # Walk through root_dir

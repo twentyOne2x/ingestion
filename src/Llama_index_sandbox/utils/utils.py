@@ -1,10 +1,14 @@
 import csv
+import shutil
 import time
 import logging
 import inspect
 from datetime import datetime
 from functools import wraps
 from pathlib import Path
+from datetime import datetime
+from functools import wraps, lru_cache
+from typing import Iterable, Optional
 
 from llama_index.legacy import OpenAIEmbedding
 from llama_index.legacy.embeddings import HuggingFaceEmbedding
@@ -19,58 +23,75 @@ from llama_index.vector_stores.pinecone import PineconeVectorStore
 from pinecone import Pinecone
 
 
-def root_directory() -> str:
-    """
-    Determine the root directory of the project. It checks if it's running in a Docker container and adjusts accordingly.
+ROOT_MARKERS: tuple[str, ...] = (
+    ".git",
+    "pyproject.toml",
+    "setup.cfg",
+    "src",
+)
 
-    Returns:
-    - str: The path to the root directory of the project.
-    """
+def _in_docker() -> bool:
+    if os.environ.get("IN_DOCKER", "").lower() in {"1", "true", "yes"}:
+        return True
+    return Path("/.dockerenv").exists()
 
-    # Check if running in a Docker container
-    if os.path.exists('/.dockerenv'):
-        # If inside a Docker container, use '/app' as the root directory
-        return '/app'
+def _scan_upward_for_root(start: Path, markers: Iterable[str], max_levels: int = 12) -> Optional[Path]:
+    cur = start.resolve()
+    root = cur.anchor
+    for _ in range(max_levels):
+        if any((cur / m).exists() for m in markers):
+            return cur
+        if str(cur) == root:
+            break
+        cur = cur.parent
+    return None
 
-    # If not in a Docker container, try to use the git command to find the root directory
+def _git_root(start: Path) -> Optional[Path]:
+    if not shutil.which("git"):
+        return None
     try:
-        git_root = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], stderr=subprocess.STDOUT)
-        return git_root.strip().decode('utf-8')
-    except subprocess.CalledProcessError:
-        # Git command failed, which might mean we're not in a Git repository
-        # Fall back to manual traversal
-        pass
-    except Exception as e:
-        # Some other error occurred while trying to execute git command
-        print(f"An error occurred while trying to find the Git repository root: {e}")
+        out = subprocess.check_output(
+            ["git", "rev-parse", "--show-toplevel"],
+            cwd=str(start),
+            stderr=subprocess.DEVNULL,
+            timeout=1.5,
+        )
+        return Path(out.decode("utf-8", "replace").strip())
+    except Exception:
+        return None
 
-    # Manual traversal if git command fails
-    current_dir = os.getcwd()
-    root = os.path.abspath(os.sep)
-    traversal_count = 0  # Track the number of levels traversed
 
-    while current_dir != root:
-        try:
-            if 'src' in os.listdir(current_dir):
-                print(f"Found root directory: {current_dir}")
-                return current_dir
-            current_dir = os.path.dirname(current_dir)
-            traversal_count += 1
-            print(f"Traversal count # {traversal_count}")
-            if traversal_count > 10:
-                raise Exception("Exceeded maximum traversal depth (more than 10 levels).")
-        except PermissionError as e:
-            # Could not access a directory due to permission issues
-            raise Exception(f"Permission denied when accessing directory: {current_dir}") from e
-        except FileNotFoundError as e:
-            # The directory was not found, which should not happen unless the filesystem is changing
-            raise Exception(f"The directory was not found: {current_dir}") from e
-        except OSError as e:
-            # Handle any other OS-related errors
-            raise Exception("An OS error occurred while searching for the Git repository root.") from e
+@lru_cache(maxsize=1)
+def root_directory(start_from: Optional[Path | str] = None) -> str:
+    env_root = os.environ.get("PROJECT_ROOT")
+    if env_root:
+        p = Path(env_root).expanduser().resolve()
+        if p.exists():
+            return str(p)
 
-    # If we've reached this point, it means we've hit the root of the file system without finding a .git directory
-    raise Exception("Could not find the root directory of the project. Please make sure you are running this script from within a Git repository.")
+    if _in_docker():
+        p = Path("/app")
+        if p.exists():
+            return str(p)
+
+    start = Path(start_from) if start_from else Path.cwd()
+
+    git_root = _git_root(start)
+    if git_root and git_root.exists():
+        return str(git_root)
+
+    scanned = _scan_upward_for_root(start, ROOT_MARKERS, max_levels=16)
+    if scanned:
+        return str(scanned)
+
+    here = Path(__file__).resolve().parent
+    scanned_from_here = _scan_upward_for_root(here, ROOT_MARKERS, max_levels=16)
+    if scanned_from_here:
+        return str(scanned_from_here)
+
+    raise RuntimeError(
+        "Could not determine project root. Set PROJECT_ROOT environment variable to override."
+    )
 
 
 def start_logging(log_prefix):
@@ -171,348 +192,8 @@ def get_last_index_embedding_params():
     return embedding_model_name, embedding_model_chunk_size, chunk_overlap, vector_space_distance_metric
 
 
-import re
-
-
-
-def find_closest_match(video_title, df_titles):
-    max_overlap = 0
-    best_match = None
-    for title in df_titles:
-        # Ensure title is a string before iterating
-        title_str = str(title)
-        overlap = sum(1 for a, b in zip(video_title, title_str) if a == b)
-        if overlap > max_overlap:
-            max_overlap = overlap
-            best_match = title_str
-    return best_match
-
-
-import zipfile
-
-def save_data_into_zip ():
-    def zip_files(directory, file_extension, zip_file):
-        for root, dirs, files in os.walk(directory):
-            for file in files:
-                if file.endswith(file_extension):
-                    zip_file.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), directory))
-
-
-    zip_filename = "collected_documents.zip"
-
-    # Create a zip file
-    with zipfile.ZipFile(zip_filename, 'w') as zipf:
-        # Add all .pdf files from baseline_evaluation_research_papers_2023-10-05
-        zip_files(f'{root_directory()}/datasets/evaluation_data/baseline_evaluation_research_papers_2023-10-05', '.pdf', zipf)
-
-        # Add all .txt files from nested directories in diarized_youtube_content_2023-10-06
-        zip_files(f'{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06', '.txt', zipf)
-
-    print(f"Files zipped into {zip_filename}")
-
-
-def process_messages(data):
-    try:
-        messages = data["chat_history"]
-    except KeyError:
-        # Handle the absence of chat_history key more gracefully
-        return None
-    chat_messages = []
-
-    for message in messages:
-        # Create a ChatMessage object for each message
-        chat_message = ChatMessage(
-            role=MessageRole(message.get("role", "user").lower()),  # Convert the role to Enum
-            content=message.get("content", ""),
-            additional_kwargs=message.get("additional_kwargs", {})  # Assuming additional_kwargs is part of your message structure
-        )
-        chat_messages.append(chat_message)
-
-    return chat_messages
-
-
 
 import os
-import shutil
-
-
-def del_wrong_subdirs(root_dir):
-    # Define the expected maximum directory depth
-    expected_max_depth = 10  # Based on home/user/PycharmProjects/rag/datasets/evaluation_data/diarized_youtube_content_2023-10-06/<channel_name>/<release_date>_<video_title>/
-
-    for subdir, dirs, files in os.walk(root_dir, topdown=False):
-        # Split the path to evaluate its depth
-        path_parts = subdir.split(os.sep)
-
-        # Check if the directory name contains '_diarized_content' or '_diarized_content_processed_diarized'
-        if '_diarized_content' in subdir or '_diarized_content_processed_diarized' in subdir:
-            # Delete the directory and its content
-            # print(f"Removed directory and its content: {subdir}")
-            shutil.rmtree(subdir)
-        elif len(path_parts) > expected_max_depth:
-            # Delete the directory and its content if it exceeds the maximum depth
-            print(f"Removed directory and its content: {subdir}")
-            shutil.rmtree(subdir)
-
-
-
-def clean_and_save_config(source_file_path, destination_file_path):
-    # Regular expressions to match imports and function definitions
-    import_re = re.compile(r'^\s*(from|import)\s+')
-    skip_line_re = re.compile(r'^(.*def |.*@|\s*with\s+|\s*for\s+|\s*if\s+|\s*try:|\s*except\s+|\s*lambda|\s*=\s*|\s*return)')
-    # Matches lines containing specific function keys in the dictionary
-    function_key_re = re.compile(r'.*:\s*(partial|lambda).*|\s*\'(html_parser|crawl_func|fetch_sidebar_func)\':\s*')
-
-    cleaned_lines = []
-    dict_nesting_level = 0
-
-    with open(source_file_path, 'r') as file:
-        in_site_configs = False
-        for line in file:
-            # Check if the line is the start of the site_configs dictionary
-            if 'site_configs = {' in line:
-                in_site_configs = True
-                dict_nesting_level = 1  # Starting the dictionary increases the nesting level
-                cleaned_lines.append(line)
-                continue
-
-            if in_site_configs:
-                # Increase or decrease dict_nesting_level based on the braces
-                dict_nesting_level += line.count('{') - line.count('}')
-
-                # If dict_nesting_level drops to 0, we've reached the end of the dictionary
-                if dict_nesting_level == 0:
-                    cleaned_lines.append(line)  # Include the line with the closing brace
-                    break  # Exit the loop as we've copied the entire dictionary
-
-                # Skip lines based on patterns (import, def, function calls, and specific keys)
-                if not (import_re.match(line) or skip_line_re.match(line) or function_key_re.match(line)):
-                    cleaned_lines.append(line)
-
-    # Write the cleaned content to the destination file
-    with open(destination_file_path, 'w') as file:
-        file.writelines(cleaned_lines)
-
-
-def copy_files_with_tree(source_dir, destination_dir, file_extension='.pdf'):
-    import shutil
-    for root, dirs, files in os.walk(source_dir):
-        # Constructing destination directory path based on the current root path
-        relative_path = os.path.relpath(root, source_dir)
-        current_destination_dir = os.path.join(destination_dir, relative_path)
-
-        # Ensure the destination directory exists
-        os.makedirs(current_destination_dir, exist_ok=True)
-
-        # Iterate through files in the current directory
-        for file_name in files:
-            if file_name.lower().endswith(file_extension):
-                source_file_path = os.path.join(root, file_name)
-                destination_file_path = os.path.join(current_destination_dir, file_name)
-
-                try:
-                    shutil.copy(source_file_path, destination_file_path)
-                    # print(f"Copied: {source_file_path} to {destination_file_path}")
-                except IOError as e:
-                    print(f"Unable to copy file. {e}")
-                except Exception as e:
-                    print(f"Unexpected error: {e}")
-
-
-def process_and_copy_csv(csv_source_dir, destination_dir):
-    import os
-    import shutil
-    import csv
-    import json
-
-    csv_file_path = os.path.join(csv_source_dir, "docs_details.csv")
-    json_output_path = os.path.join(destination_dir, "docs_mapping.json")
-
-    # Copy the CSV file to the destination directory
-    shutil.copy(csv_file_path, destination_dir)
-
-    url_to_docname_mapping = {}
-
-    with open(csv_file_path, mode='r', encoding='utf-8') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        for row in csv_reader:
-            pdf_link = row['pdf_link'].strip()  # Ensure no trailing whitespace
-            document_name = row['document_name'].strip().replace('.pdf', '.png')  # Replace .pdf with .png
-            url_to_docname_mapping[pdf_link] = document_name
-
-    # Log the mapping for verification
-    print("URL to Document Name Mapping:", url_to_docname_mapping)
-
-    with open(json_output_path, mode='w', encoding='utf-8') as json_file:
-        json.dump(url_to_docname_mapping, json_file, indent=4)  # Pretty print for easier manual verification
-
-    print(f"CSV copied and mapping saved to {json_output_path}")
-
-
-
-def copy_and_verify_files():
-    # Define the root directory for PycharmProjects
-    pycharm_projects_dir = f"{root_directory()}/../"
-
-    # Define the source directories
-    csv_source_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/")
-    articles_pdf_source_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/articles_pdf_download/")
-    articles_pdf_discourse_dir = os.path.join(articles_pdf_source_dir, "all_discourse_topics/")
-    articles_thumbnails_source_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/article_thumbnails/")
-    research_paper_thumbnails_source_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/research_papers_pdf_thumbnails/")
-    papers_pdf_source_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/papers_pdf_downloads/")
-    ethglobal_docs_dir = os.path.join(pycharm_projects_dir, "mev.fyi/data/ethglobal_hackathon/")
-
-    # Define the destination directories
-    csv_destination_dir = os.path.join(pycharm_projects_dir, "rag/datasets/evaluation_data/")
-    articles_pdf_destination_dir = os.path.join(pycharm_projects_dir, "rag/datasets/evaluation_data/articles_2023-12-05/")
-    articles_discourse_destination_dir = os.path.join(pycharm_projects_dir, "rag/datasets/evaluation_data/articles_discourse_2024_03_01/")
-    articles_thumbnails_destination_dir = os.path.join(pycharm_projects_dir, "rag_app_vercel/app/public/research_paper_thumbnails/")
-    papers_pdf_thumbnails_destination_dir = os.path.join(pycharm_projects_dir, "rag_app_vercel/app/public/research_paper_thumbnails/")
-    papers_pdf_destination_dir = os.path.join(pycharm_projects_dir, "rag/datasets/evaluation_data/baseline_evaluation_research_papers_2023-11-21/")
-    ethglobal_docs_destination_dir = os.path.join(pycharm_projects_dir, "rag/datasets/evaluation_data/ethglobal_docs_2024-03-16/")
-
-    # List of CSV files to copy
-    csv_files_to_copy_from_mevfyi_to_rag = [
-        "paper_details.csv",
-        "links/articles_updated.csv",
-        "links/merged_articles.csv",
-        "links/youtube/youtube_videos.csv",
-        "links/youtube/youtube_channel_handles.txt",
-        "docs_details.csv",
-    ]
-
-    # clean_and_save_config(source_file_path=f"{csv_source_dir}../src/populate_csv_files/get_article_content/ethglobal_hackathon/site_configs.py",
-    #                              destination_file_path=f"{csv_destination_dir}site_configs.py")
-
-    csv_files_to_copy_from_rag_to_mevfyi = [
-        # "docs_details.csv",
-    ]
-
-    # Create the destination directories if they do not exist
-    os.makedirs(csv_destination_dir, exist_ok=True)
-    os.makedirs(articles_pdf_destination_dir, exist_ok=True)
-    os.makedirs(papers_pdf_destination_dir, exist_ok=True)
-    os.makedirs(articles_thumbnails_destination_dir, exist_ok=True)
-    os.makedirs(articles_discourse_destination_dir, exist_ok=True)  # Ensure the discourse articles destination directory exists
-
-    # Copy and verify CSV files
-    for file_name in csv_files_to_copy_from_mevfyi_to_rag:  # from mev.fyi data repo to rag repo
-        source_file = os.path.join(csv_source_dir, file_name)
-        destination_file = os.path.join(csv_destination_dir, file_name.split('/')[-1])  # Get the last part if there's a path included
-        copy_and_verify(source_file, destination_file)
-
-    for file_name in csv_files_to_copy_from_rag_to_mevfyi:  # from RAG repo to mevfyi data repo, quite hacky
-        source_file = os.path.join(csv_destination_dir, file_name)
-        destination_file = os.path.join(csv_source_dir, file_name.split('/')[-1])  # Get the last part if there's a path included
-        copy_and_verify(source_file, destination_file)
-
-    # Copy PDF files without size verification
-    copy_all_files(articles_pdf_source_dir, articles_pdf_destination_dir)
-    copy_all_files(papers_pdf_source_dir, papers_pdf_destination_dir)
-    process_and_copy_csv(csv_source_dir, f"{root_directory()}/../rag_app_vercel/app/public/")
-    copy_files_with_tree(articles_thumbnails_source_dir, articles_thumbnails_destination_dir, file_extension='.png')
-    copy_files_with_tree(research_paper_thumbnails_source_dir, papers_pdf_thumbnails_destination_dir, file_extension='.png')
-
-    # New: Copy and rename articles from discourse subdirectories
-    for subdir, dirs, files in os.walk(articles_pdf_discourse_dir):
-        for file_name in files:
-            if file_name.lower().endswith('.pdf'):
-                source_file = os.path.join(subdir, file_name)
-                destination_file = os.path.join(articles_discourse_destination_dir, file_name)
-                try:
-                    shutil.copy(source_file, destination_file)
-                    print(f"Copied: {source_file} to {destination_file}")
-                except Exception as e:
-                    print(f"Error copying {file_name} from discourse topics: {e}")
-
-    # Copy ethglobal docs in rag
-    if os.path.exists(ethglobal_docs_destination_dir):
-        shutil.rmtree(ethglobal_docs_destination_dir)  # Removes the entire directory tree
-
-    # Now use copytree to copy everything from the source to the destination directory.
-    shutil.copytree(ethglobal_docs_dir, ethglobal_docs_destination_dir)
-
-    copy_and_rename_website_docs_pdfs()
-    print("File copying completed.")
-
-
-def copy_and_verify(source_file, destination_file):
-    try:
-        # Verify file size before copying
-        if os.path.exists(destination_file):
-            source_size = os.path.getsize(source_file)
-            destination_size = os.path.getsize(destination_file)
-
-            if destination_size > source_size:
-                # raise ValueError(f"File {os.path.basename(source_file)} in destination is larger than the source. Copy aborted.")
-                print(f"/!\File {os.path.basename(source_file)} in destination is larger than the source. Copy aborted.")
-                return
-
-        shutil.copy(source_file, destination_file)
-        # print(f"Copied: {source_file} to {destination_file}")
-    except IOError as e:
-        print(f"Unable to copy file. {e}")
-    except ValueError as e:
-        print(e)
-        # Stop the process if size condition is not met
-    except Exception as e:
-        print(f"Unexpected error: {e}")
-
-
-def copy_all_files(source_dir, destination_dir, file_extension='.pdf'):
-    for file_name in os.listdir(source_dir):
-        if file_name.lower().endswith(file_extension):  # Ensuring it is a PDF file
-            source_file = os.path.join(source_dir, file_name)
-            destination_file = os.path.join(destination_dir, file_name)
-            try:
-                shutil.copy(source_file, destination_file)
-                # print(f"Copied: {source_file} to {destination_file}")
-            except IOError as e:
-                print(f"Unable to copy file. {e}")
-            except Exception as e:
-                print(f"Unexpected error: {e}")
-
-
-def copy_and_rename_website_docs_pdfs():
-    root_dir = root_directory()
-    source_directories = {
-        f'{root_dir}/../mev.fyi/data/flashbots_docs_pdf': f'{root_dir}/datasets/evaluation_data/flashbots_docs_2024_01_07',
-        f'{root_dir}/../mev.fyi/data/suave_docs_pdf': f'{root_dir}/datasets/evaluation_data/suave_docs_2024_03_13',
-        f'{root_dir}/../mev.fyi/data/ethereum_org_website_content': f'{root_dir}/datasets/evaluation_data/ethereum_org_content_2024_01_07'
-    }
-
-    for source_root, target_root in source_directories.items():
-        # Ensure the target directory exists
-        os.makedirs(target_root, exist_ok=True)
-
-        # Walk through the source directory
-        for root, dirs, files in os.walk(source_root):
-            for file in files:
-                if file.endswith(('.pdf', '.pdfx')):
-                    # Construct the relative path
-                    relative_path = os.path.relpath(root, source_root)
-                    # Replace directory separators with '-' and remove leading directory name if present
-                    leading_dir_name = os.path.basename(source_root) + '-'
-                    relative_path = relative_path.replace(os.path.sep, '-')
-                    if relative_path == '.':
-                        new_filename = file
-                    elif relative_path.startswith(leading_dir_name):
-                        new_filename = relative_path[len(leading_dir_name):] + '-' + file
-                    else:
-                        new_filename = relative_path + '-' + file
-
-                    # Change the file extension from .pdfx to .pdf if necessary
-                    if new_filename.endswith('.pdfx'):
-                        new_filename = new_filename[:-1]
-
-                    # Construct the full source and target paths
-                    source_file = os.path.join(root, file)
-                    target_file = os.path.join(target_root, new_filename)
-
-                    # Copy the file
-                    shutil.copy2(source_file, target_file)
-                    print(f"Copied and renamed {source_file.split('/')[-1]} to {target_file.split('/')[-1]}")
 
 
 def save_successful_load_to_csv(documents_details, csv_filename='docs.csv', fieldnames=['title', 'authors', 'pdf_link', 'release_date', 'document_name']):
@@ -655,19 +336,3 @@ def save_metadata_to_pipeline_dir(all_metadata, root_dir, dir='pipeline_storage/
 
 if __name__ == '__main__':
     pass
-    copy_and_verify_files()
-
-    # copy_and_rename_website_docs_pdfs()
-
-    # directory = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
-    # clean_fullwidth_characters(directory)
-    # merge_directories(directory)
-
-    # directory = f"{root_directory()}/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
-    # pdf_dir = f"{root_directory()}/datasets/evaluation_data/baseline_evaluation_research_papers_2023-10-05"
-    # del_wrong_subdirs(directory)
-    # move_remaining_txt_to_their_subdirs()
-    # move_remaining_json_to_their_subdirs()
-    # print_frontend_content()
-    # save_data_into_zip()
-    # copy_txt_files_to_transcripts()

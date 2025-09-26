@@ -69,7 +69,6 @@ def initialise_chatbot(engine, query_engine_as_tool, index, service_context, par
 
 
 def run(config: Config):
-    set_secrets_from_cloud()
     chat_history = []
     for index_comb in config.get_full_combinations():
         text_splitter_chunk_size, text_splitter_chunk_overlap_percentage, embedding_model_name, embedding_model, llm_model_name, vector_space_distance_metric = index_comb
