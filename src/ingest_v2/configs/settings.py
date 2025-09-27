@@ -21,5 +21,10 @@ class SettingsV2:
     RIGHTS_DEFAULT: str = os.getenv("RIGHTS_DEFAULT", "public_reference_only")
 
     BACKFILL_DAYS: int = int(os.getenv("BACKFILL_DAYS", 60))
+    SEGMENT_TOLERANCE_S: float = float(os.getenv("SEGMENT_TOLERANCE_S", 0.75))
+    SEGMENT_OVERLAP_S: float = float(os.getenv("SEGMENT_OVERLAP_S", 3.0))
+    PINECONE_REGION: str = os.getenv("PINECONE_REGION", "us-east-1")
+
+
 
 settings_v2 = SettingsV2()
