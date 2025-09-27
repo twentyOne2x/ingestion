@@ -1,29 +1,39 @@
 # src/ingest_v2/pipelines/run_all.py
 
 import argparse
+import asyncio
 import json
 import logging
 import os
 import re
 from pathlib import Path
-from typing import Dict, Any, Iterable, Tuple, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 from src.ingest_v2.configs.settings import settings_v2
-from src.ingest_v2.pipelines.build_parents import run_build_parents
 from src.ingest_v2.pipelines.build_children import build_children_from_raw
+from src.ingest_v2.pipelines.build_parents import run_build_parents
 from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
-from src.ingest_v2.utils.logging import setup_logger
+from src.ingest_v2.router.cache import load as router_cache_load
+from src.ingest_v2.router.cache import save as router_cache_save
+from src.ingest_v2.router.enrich_parent import (
+    enrich_parent_router_fields,
+    enrich_parent_router_fields_async,
+)
 from src.ingest_v2.transcripts.normalize import normalize_to_sentences
-from src.ingest_v2.router.enrich_parent import enrich_parent_router_fields
-from src.ingest_v2.router.cache import load as router_cache_load, save as router_cache_save
+from src.ingest_v2.utils.logging import setup_logger
 
 # Reuse your existing constant so we don't duplicate paths.
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 
 
 # ────────────────────────────────────────────────────────────────────────────────
-# Helpers: type/number safety
+# Small helpers
 # ────────────────────────────────────────────────────────────────────────────────
+
+def _snip(s: str, n: int) -> str:
+    s = (s or "").strip()
+    return s if len(s) <= n else (s[: max(0, n - 1)] + "…")
+
 
 def _safe_float(x: Any) -> Optional[float]:
     try:
@@ -32,6 +42,7 @@ def _safe_float(x: Any) -> Optional[float]:
         return float(x)
     except Exception:
         return None
+
 
 def _ms_to_s(x: Any) -> Optional[float]:
     val = _safe_float(x)
@@ -53,6 +64,7 @@ def _is_trivial_raw_segment(seg: Dict[str, Any]) -> bool:
     start_none = seg.get("start") is None
     end_none = seg.get("end") is None
     return no_text and no_words and start_none and end_none
+
 
 def _looks_like_single_empty_file(obj: Any) -> bool:
     """Detect the exact 'single empty row' file you showed."""
@@ -100,12 +112,16 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
         words_in = seg.get("words")
         out_words = None
         if isinstance(words_in, list) and words_in:
-            out_words = [{
-                "text": (w.get("text") or "").strip(),
-                "start": _ms_to_s(w.get("start")),
-                "end": _ms_to_s(w.get("end")),
-                "speaker": w.get("speaker") or seg.get("speaker") or "S1",
-            } for w in words_in if (w.get("text") or "").strip()]
+            out_words = [
+                {
+                    "text": (w.get("text") or "").strip(),
+                    "start": _ms_to_s(w.get("start")),
+                    "end": _ms_to_s(w.get("end")),
+                    "speaker": w.get("speaker") or seg.get("speaker") or "S1",
+                }
+                for w in words_in
+                if (w.get("text") or "").strip()
+            ]
 
         start_s = _ms_to_s(seg.get("start"))
         end_s = _ms_to_s(seg.get("end"))
@@ -115,13 +131,15 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
         if start_s is None and end_s is None and not text and not out_words:
             continue
 
-        out_segments.append({
-            "start": start_s,
-            "end": end_s,
-            "speaker": seg.get("speaker") or seg.get("speaker_label") or "S1",
-            "text": text,
-            **({"words": out_words} if out_words is not None else {}),
-        })
+        out_segments.append(
+            {
+                "start": start_s,
+                "end": end_s,
+                "speaker": seg.get("speaker") or seg.get("speaker_label") or "S1",
+                "text": text,
+                **({"words": out_words} if out_words is not None else {}),
+            }
+        )
 
     return {"segments": out_segments}
 
@@ -134,29 +152,32 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
 
 _YTID_RE = re.compile(r"(?<![A-Za-z0-9_-])([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])")
 
+
 def _extract_video_id_from_path(path: Path) -> Optional[str]:
     """
     Best-effort extraction of YouTube video_id (11 chars) from filename or directory.
     """
-    candidates = []
+    candidates: List[str] = []
     parts = [path.stem, path.name, path.parent.name]
     for p in parts:
         for m in _YTID_RE.finditer(p):
             candidates.append(m.group(1))
     return candidates[0] if candidates else None
 
+
 def _extract_title_from_dir(path: Path) -> str:
     """Use the leaf directory name as title if available, else filename without suffix."""
-    # e.g. "2025-08-04_-pjDPU6q2es_Packy McCormick: ... - ACC 1.2"
     leaf = path.parent.name.strip()
     if leaf and "_diarized_content" not in leaf:
         return leaf
     return path.stem.replace("_diarized_content", "")
 
+
 def _extract_channel_from_path(path: Path) -> Optional[str]:
     # parent-of-parent is usually "@Channel"
     maybe = path.parent.parent.name
     return maybe if maybe.startswith("@") else None
+
 
 def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
     # e.g. "2025-08-04_-pjDPU6q2es_Title" → "2025-08-04"
@@ -168,7 +189,9 @@ def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
 # Iterator over assets in YOUTUBE_VIDEO_DIRECTORY
 # ────────────────────────────────────────────────────────────────────────────────
 
-def _iter_youtube_assets_from_fs(root_dir: Path, prune_empty: bool = False) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any]]]:
+def _iter_youtube_assets_from_fs(
+    root_dir: Path, prune_empty: bool = False
+) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any]]]:
     """
     Walk for *_diarized_content.json, normalize, and yield (meta, raw_for_segmenter).
     If prune_empty=True, delete files that are clearly empty/ill-formed.
@@ -219,10 +242,10 @@ def _iter_youtube_assets_from_fs(root_dir: Path, prune_empty: bool = False) -> I
         meta = {
             "video_id": video_id,
             "title": title,
-            "description": "",              # will be enriched by router step
+            "description": "",  # will be enriched by router step
             "channel_name": channel_name,
             "speaker_primary": None,
-            "published_at": published_at,   # yyyy-mm-dd or None
+            "published_at": published_at,  # yyyy-mm-dd or None
             "duration_s": duration_s,
             "url": f"https://www.youtube.com/watch?v={video_id}" if video_id else None,
             "thumbnail_url": None,
@@ -235,9 +258,9 @@ def _iter_youtube_assets_from_fs(root_dir: Path, prune_empty: bool = False) -> I
 
         # shape expected by build_children_from_raw()
         raw_for_segmenter = {
-            "segments": segs,      # sentence normalization uses words if present
-            "caption_lines": [],   # optional
-            "diarization": [],     # optional
+            "segments": segs,  # sentence normalization uses words if present
+            "caption_lines": [],  # optional
+            "diarization": [],  # optional
         }
 
         yield meta, raw_for_segmenter
@@ -254,6 +277,12 @@ def main():
     ap.add_argument("--backfill-days", type=int, default=settings_v2.BACKFILL_DAYS)
     ap.add_argument("--root", default=YOUTUBE_VIDEO_DIRECTORY, help="Root dir with diarized JSONs")
     ap.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
+    ap.add_argument(
+        "--concurrency",
+        type=int,
+        default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")),
+        help="Max concurrent OpenAI enrich calls for cache misses",
+    )
     args = ap.parse_args()
 
     if args.doc_type != "youtube_video":
@@ -274,9 +303,10 @@ def main():
     cached_hits = 0
     failed_enrich = 0
 
+    # Split into cache hits and misses
+    to_enrich: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []  # (meta, raw)
     for (meta, raw) in metas_raw:
         pid = meta["video_id"]
-        # 1) Try cache
         enrich = None
         try:
             enrich = router_cache_load(pid)
@@ -285,24 +315,66 @@ def main():
 
         if enrich is not None:
             cached_hits += 1
+
+            # Preview logging for cache hits
+            n = int(os.getenv("ROUTER_LOG_DESC_CHARS", "240"))
+            logging.info(
+                "[router/cache] vid=%s boost=%s tags=%s desc_preview=%r topic_preview=%r",
+                pid,
+                enrich.get("router_boost"),
+                (enrich.get("router_tags") or [])[:6],
+                _snip(enrich.get("description") or "", n),
+                _snip(enrich.get("topic_summary") or "", max(80, n // 2)),
+            )
+
+            merged = dict(meta)
+            merged.update(
+                {
+                    "description": enrich.get("description", merged.get("description", "")),
+                    "topic_summary": enrich.get("topic_summary"),
+                    "router_tags": enrich.get("router_tags"),
+                    "aliases": enrich.get("aliases"),
+                    "canonical_entities": enrich.get("canonical_entities"),
+                    "is_explainer": enrich.get("is_explainer"),
+                    "router_boost": enrich.get("router_boost"),
+                }
+            )
+            enriched_metas.append(merged)
         else:
-            # 2) Build a compact preview and call OpenAI
-            try:
-                sentences = normalize_to_sentences(raw)
-            except Exception:
-                sentences = []
-            try:
-                enrich = enrich_parent_router_fields(meta, sentences)
-                # Persist to cache
+            to_enrich.append((meta, raw))
+
+    # Concurrently enrich cache misses
+    if to_enrich:
+        async def _batch_enrich(pairs: List[Tuple[Dict[str, Any], Dict[str, Any]]], concurrency: int):
+            sem = asyncio.Semaphore(concurrency)
+
+            async def _one(meta: Dict[str, Any], raw: Dict[str, Any]):
+                pid = meta["video_id"]
                 try:
-                    router_cache_save(pid, enrich)
+                    try:
+                        sentences = normalize_to_sentences(raw)
+                    except Exception:
+                        sentences = []
+                    async with sem:
+                        enrich = await enrich_parent_router_fields_async(meta, sentences)
+                    try:
+                        router_cache_save(pid, enrich)
+                    except Exception as e:
+                        logging.warning(f"[v2/router/cache] save failed for {pid}: {e}")
+                    return meta, enrich, None
                 except Exception as e:
-                    logging.warning(f"[v2/router/cache] save failed for {pid}: {e}")
-                enriched += 1
-            except Exception as e:
-                logging.warning(f"[v2/router] enrichment failed for {pid}: {e}")
+                    return meta, None, e
+
+            tasks = [asyncio.create_task(_one(meta, raw)) for (meta, raw) in pairs]
+            return await asyncio.gather(*tasks)
+
+        results = asyncio.run(_batch_enrich(to_enrich, args.concurrency))
+
+        for meta, enrich, err in results:
+            pid = meta["video_id"]
+            if err or enrich is None:
+                logging.warning(f"[v2/router] enrichment failed for {pid}: {err}")
                 failed_enrich += 1
-                # Reasonable fallback so pipeline continues
                 enrich = {
                     "description": meta.get("description") or "",
                     "topic_summary": "",
@@ -312,19 +384,22 @@ def main():
                     "is_explainer": False,
                     "router_boost": 1.0,
                 }
+            else:
+                enriched += 1
 
-        # 3) Merge enrichment into the meta we’ll pass to ParentNode
-        merged = dict(meta)
-        merged.update({
-            "description": enrich.get("description", merged.get("description", "")),
-            "topic_summary": enrich.get("topic_summary"),
-            "router_tags": enrich.get("router_tags"),
-            "aliases": enrich.get("aliases"),
-            "canonical_entities": enrich.get("canonical_entities"),
-            "is_explainer": enrich.get("is_explainer"),
-            "router_boost": enrich.get("router_boost"),
-        })
-        enriched_metas.append(merged)
+            merged = dict(meta)
+            merged.update(
+                {
+                    "description": enrich.get("description", merged.get("description", "")),
+                    "topic_summary": enrich.get("topic_summary"),
+                    "router_tags": enrich.get("router_tags"),
+                    "aliases": enrich.get("aliases"),
+                    "canonical_entities": enrich.get("canonical_entities"),
+                    "is_explainer": enrich.get("is_explainer"),
+                    "router_boost": enrich.get("router_boost"),
+                }
+            )
+            enriched_metas.append(merged)
 
     logging.info(
         f"[v2/router] total={len(enriched_metas)} cached_hits={cached_hits} "
@@ -332,29 +407,34 @@ def main():
     )
 
     # Build parents (one per asset) with enriched metadata
-    parents = run_build_parents(metas=[{
-        "video_id": m["video_id"],
-        "title": m.get("title", ""),
-        "description": m.get("description", ""),
-        "channel_name": m.get("channel_name"),
-        "speaker_primary": m.get("speaker_primary"),
-        "published_at": m.get("published_at"),
-        "duration_s": m.get("duration_s", 0.0),
-        "url": m.get("url"),
-        "thumbnail_url": m.get("thumbnail_url"),
-        "language": m.get("language", "en"),
-        "entities": m.get("entities", []),
-        "chapters": m.get("chapters"),
-        "document_type": "youtube_video",
-        "source": "youtube",
-        # Router fields (ParentNode schema has them)
-        "router_tags": m.get("router_tags"),
-        "aliases": m.get("aliases"),
-        "canonical_entities": m.get("canonical_entities"),
-        "is_explainer": m.get("is_explainer"),
-        "router_boost": m.get("router_boost"),
-        "topic_summary": m.get("topic_summary"),
-    } for m in enriched_metas])
+    parents = run_build_parents(
+        metas=[
+            {
+                "video_id": m["video_id"],
+                "title": m.get("title", ""),
+                "description": m.get("description", ""),
+                "channel_name": m.get("channel_name"),
+                "speaker_primary": m.get("speaker_primary"),
+                "published_at": m.get("published_at"),
+                "duration_s": m.get("duration_s", 0.0),
+                "url": m.get("url"),
+                "thumbnail_url": m.get("thumbnail_url"),
+                "language": m.get("language", "en"),
+                "entities": m.get("entities", []),
+                "chapters": m.get("chapters"),
+                "document_type": "youtube_video",
+                "source": "youtube",
+                # Router fields (ParentNode schema has them)
+                "router_tags": m.get("router_tags"),
+                "aliases": m.get("aliases"),
+                "canonical_entities": m.get("canonical_entities"),
+                "is_explainer": m.get("is_explainer"),
+                "router_boost": m.get("router_boost"),
+                "topic_summary": m.get("topic_summary"),
+            }
+            for m in enriched_metas
+        ]
+    )
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
