@@ -1,8 +1,8 @@
 import re
 from typing import List
 
-TICKER_RE = re.compile(r"\\B\\$[A-Z]{2,6}\\b")
-HANDLE_RE = re.compile(r"@[\\w\\d_]{2,30}")
+TICKER_RE = re.compile(r"\B\$[A-Z]{2,6}\b")
+HANDLE_RE = re.compile(r"@[\w\d_]{2,30}")
 
 def extract_entities(text: str) -> List[str]:
     ents = set()

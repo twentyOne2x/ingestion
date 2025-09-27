@@ -13,6 +13,9 @@ from src.ingest_v2.pipelines.build_parents import run_build_parents
 from src.ingest_v2.pipelines.build_children import build_children_from_raw
 from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
 from src.ingest_v2.utils.logging import setup_logger
+from src.ingest_v2.transcripts.normalize import normalize_to_sentences
+from src.ingest_v2.router.enrich_parent import enrich_parent_router_fields
+from src.ingest_v2.router.cache import load as router_cache_load, save as router_cache_save
 
 # Reuse your existing constant so we don't duplicate paths.
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
@@ -216,7 +219,7 @@ def _iter_youtube_assets_from_fs(root_dir: Path, prune_empty: bool = False) -> I
         meta = {
             "video_id": video_id,
             "title": title,
-            "description": "",              # can be enriched later if you have sidecar metadata
+            "description": "",              # will be enriched by router step
             "channel_name": channel_name,
             "speaker_primary": None,
             "published_at": published_at,   # yyyy-mm-dd or None
@@ -265,9 +268,70 @@ def main():
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
-    metas = [m for m, _ in metas_raw]
+    # ── Enrich parents with router fields using sidecar cache
+    enriched_metas: List[Dict[str, Any]] = []
+    enriched = 0
+    cached_hits = 0
+    failed_enrich = 0
 
-    # Build parents (one per asset)
+    for (meta, raw) in metas_raw:
+        pid = meta["video_id"]
+        # 1) Try cache
+        enrich = None
+        try:
+            enrich = router_cache_load(pid)
+        except Exception as e:
+            logging.warning(f"[v2/router/cache] read failed for {pid}: {e}")
+
+        if enrich is not None:
+            cached_hits += 1
+        else:
+            # 2) Build a compact preview and call OpenAI
+            try:
+                sentences = normalize_to_sentences(raw)
+            except Exception:
+                sentences = []
+            try:
+                enrich = enrich_parent_router_fields(meta, sentences)
+                # Persist to cache
+                try:
+                    router_cache_save(pid, enrich)
+                except Exception as e:
+                    logging.warning(f"[v2/router/cache] save failed for {pid}: {e}")
+                enriched += 1
+            except Exception as e:
+                logging.warning(f"[v2/router] enrichment failed for {pid}: {e}")
+                failed_enrich += 1
+                # Reasonable fallback so pipeline continues
+                enrich = {
+                    "description": meta.get("description") or "",
+                    "topic_summary": "",
+                    "router_tags": [],
+                    "aliases": [],
+                    "canonical_entities": [],
+                    "is_explainer": False,
+                    "router_boost": 1.0,
+                }
+
+        # 3) Merge enrichment into the meta we’ll pass to ParentNode
+        merged = dict(meta)
+        merged.update({
+            "description": enrich.get("description", merged.get("description", "")),
+            "topic_summary": enrich.get("topic_summary"),
+            "router_tags": enrich.get("router_tags"),
+            "aliases": enrich.get("aliases"),
+            "canonical_entities": enrich.get("canonical_entities"),
+            "is_explainer": enrich.get("is_explainer"),
+            "router_boost": enrich.get("router_boost"),
+        })
+        enriched_metas.append(merged)
+
+    logging.info(
+        f"[v2/router] total={len(enriched_metas)} cached_hits={cached_hits} "
+        f"fresh_enriched={enriched} failed={failed_enrich}"
+    )
+
+    # Build parents (one per asset) with enriched metadata
     parents = run_build_parents(metas=[{
         "video_id": m["video_id"],
         "title": m.get("title", ""),
@@ -283,7 +347,14 @@ def main():
         "chapters": m.get("chapters"),
         "document_type": "youtube_video",
         "source": "youtube",
-    } for m in metas])
+        # Router fields (ParentNode schema has them)
+        "router_tags": m.get("router_tags"),
+        "aliases": m.get("aliases"),
+        "canonical_entities": m.get("canonical_entities"),
+        "is_explainer": m.get("is_explainer"),
+        "router_boost": m.get("router_boost"),
+        "topic_summary": m.get("topic_summary"),
+    } for m in enriched_metas])
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
@@ -311,7 +382,9 @@ def main():
 
     logging.info(
         f"[ingest_v2] finished upserting {total_children} child segments "
-        f"from {len(parents)} parents (missing_parents={missing_parents}, skipped_empty={skipped_empty})."
+        f"from {len(parents)} parents "
+        f"(missing_parents={missing_parents}, skipped_empty={skipped_empty}, "
+        f"router_cached={cached_hits}, router_enriched={enriched}, router_failed={failed_enrich})."
     )
 
 

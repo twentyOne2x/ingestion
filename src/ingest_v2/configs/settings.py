@@ -25,6 +25,12 @@ class SettingsV2:
     SEGMENT_OVERLAP_S: float = float(os.getenv("SEGMENT_OVERLAP_S", 3.0))
     PINECONE_REGION: str = os.getenv("PINECONE_REGION", "us-east-1")
 
+    # Router enrichment
+    ROUTER_GEN_MODEL: str = os.getenv("ROUTER_GEN_MODEL", "gpt-4o-mini")
+    ROUTER_GEN_MAX_SENTENCES: int = int(os.getenv("ROUTER_GEN_MAX_SENTENCES", "60"))
+    ROUTER_GEN_RETRIES: int = int(os.getenv("ROUTER_GEN_RETRIES", "3"))
 
+    # Where to store enrichment sidecars (kept outside Parent docs)
+    ROUTER_CACHE_DIR: str = os.getenv("ROUTER_CACHE_DIR", "pipeline_storage_v2/router_cache")
 
 settings_v2 = SettingsV2()

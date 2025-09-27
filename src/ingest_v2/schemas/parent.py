@@ -28,6 +28,13 @@ class ParentNode(BaseModel):
     ingest_version: int = 2
     source: Literal["youtube", "pumpfun"] = "youtube"
     source_hash: str
+    # add under other fields in ParentNode
+    router_tags: Optional[List[str]] = None
+    aliases: Optional[List[str]] = None
+    canonical_entities: Optional[List[str]] = None
+    is_explainer: Optional[bool] = None
+    router_boost: Optional[float] = None
+    topic_summary: Optional[str] = None
 
     class Config:
         extra = "ignore"

@@ -10,7 +10,7 @@ def normalize_to_sentences(raw: Dict[str, Any], default_speaker: str = "S1") -> 
         start = float(seg.get("start", 0))
         end = float(seg.get("end", 0))
         text = seg.get("text", "").strip()
-        parts = re.split(r"(?<=[\.\\?\\!])\\s+", text)
+        parts = re.split(r"(?<=[\.?!])\s+", text)
         if not parts:
             continue
 

@@ -35,6 +35,12 @@ def build_parent_from_metadata(meta: Dict[str, Any]) -> ParentNode:
         ingest_version=2,
         source="youtube",
         source_hash=source_hash,
+        router_tags=meta.get("router_tags"),
+        aliases=meta.get("aliases"),
+        canonical_entities=meta.get("canonical_entities"),
+        is_explainer=meta.get("is_explainer"),
+        router_boost=meta.get("router_boost"),
+        topic_summary=meta.get("topic_summary"),
     )
     return parent
 
