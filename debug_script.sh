@@ -19,6 +19,7 @@ FILES=(
 "src/ingest_v2/router/__init__.py"
 "src/ingest_v2/router/cache.py"
 "src/ingest_v2/router/enrich_parent.py"
+"src/ingest_v2/speakers/resolve.py"
 "src/ingest_v2/schemas/__init__.py"
 "src/ingest_v2/schemas/init.py"
 "src/ingest_v2/schemas/child.py"

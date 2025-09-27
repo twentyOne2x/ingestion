@@ -1,5 +1,3 @@
-# File: src/ingest_v2/pipelines/run_all.py
-
 import argparse
 import asyncio
 import json
@@ -16,15 +14,13 @@ from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
 from src.ingest_v2.router.cache import load as router_cache_load
 from src.ingest_v2.router.cache import save as router_cache_save
 from src.ingest_v2.router.enrich_parent import (
-    enrich_parent_router_fields,
     enrich_parent_router_fields_async,
 )
+from src.ingest_v2.speakers.resolve import resolve_speakers
 from src.ingest_v2.transcripts.normalize import normalize_to_sentences
 from src.ingest_v2.utils.logging import setup_logger
 
-# Reuse your existing constant so we don't duplicate paths.
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
-
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Small helpers
@@ -34,15 +30,12 @@ def _snip(s: str, n: int) -> str:
     s = (s or "").strip()
     return s if len(s) <= n else (s[: max(0, n - 1)] + "…")
 
-
 def _ascii(s: str, max_len: int = 400) -> str:
-    """Make log strings ASCII-safe to avoid latin-1/terminal codec issues."""
     s = _snip(s or "", max_len)
     try:
         return s.encode("ascii", "ignore").decode("ascii")
     except Exception:
-        return s  # last resort
-
+        return s
 
 def _safe_float(x: Any) -> Optional[float]:
     try:
@@ -52,14 +45,12 @@ def _safe_float(x: Any) -> Optional[float]:
     except Exception:
         return None
 
-
 def _ms_to_s(x: Any) -> Optional[float]:
     val = _safe_float(x)
     return None if val is None else (val / 1000.0)
 
-
 # ────────────────────────────────────────────────────────────────────────────────
-# Helpers: detect trivial/empty AssemblyAI rows
+# Detect trivial/empty rows
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _is_trivial_raw_segment(seg: Dict[str, Any]) -> bool:
@@ -68,7 +59,6 @@ def _is_trivial_raw_segment(seg: Dict[str, Any]) -> bool:
     start_none = seg.get("start") is None
     end_none = seg.get("end") is None
     return no_text and no_words and start_none and end_none
-
 
 def _looks_like_single_empty_file(obj: Any) -> bool:
     try:
@@ -85,7 +75,6 @@ def _looks_like_single_empty_file(obj: Any) -> bool:
         )
     except Exception:
         return False
-
 
 # ────────────────────────────────────────────────────────────────────────────────
 # AssemblyAI → v2 raw normalizer
@@ -137,65 +126,38 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
 
     return {"segments": out_segments}
 
-
 # ────────────────────────────────────────────────────────────────────────────────
 # Robust YouTube ID extraction
 # ────────────────────────────────────────────────────────────────────────────────
-# The dataset naming is `<YYYY-MM-DD>_<VIDEOID>_<TITLE>`; the 11-char ID may be
-# surrounded by underscores (e.g., "..._iNXO_1p6Sp4_..."). Our old boundary-
-# based regex missed those because "_" is part of the allowed ID charset.
-#
-# Strategy:
-#  1) Prefer the `<date>_<id>_` pattern anywhere in each path component.
-#  2) Fallback: capture `__<id>_` (double underscore cases).
-#  3) Fallback: in each component, capture between underscores `_(id)_`.
-#  4) Last resort: grab the first 11-char token of `[A-Za-z0-9_-]{11}`.
-#
-# This keeps us faithful to the dataset convention and far more tolerant.
+# We expect <YYYY-MM-DD>_<VIDEOID>_<TITLE>, and IDs can contain underscores/hyphens.
+# We handle: single/double/triple underscores, anywhere in the component; if all else
+# fails, we pick the first 11-char token.
 _DATE_ID_RE = re.compile(r"(?P<date>\d{4}-\d{2}-\d{2})_(?P<id>[A-Za-z0-9_-]{11})_")
-_DBL_UNDERSCORE_ID_RE = re.compile(r"__([A-Za-z0-9_-]{11})_")
-_UNDERSCORE_BRACKETED_ID_RE = re.compile(r"_(?P<id>[A-Za-z0-9_-]{11})(?:_|$)")
-_LOOSE_ID_RE = re.compile(r"[A-Za-z0-9_-]{11}")  # permissive last resort
-
+_MULTI_US_RE = re.compile(r"_{1,3}([A-Za-z0-9_-]{11})_")
+_TOKEN_11_RE = re.compile(r"[A-Za-z0-9_-]{11}")
 
 def _extract_video_id_from_path(path: Path) -> Optional[str]:
-    """
-    Robust extraction of YouTube video_id (11 chars) from anywhere in the path.
-    Prefer <date>_<id>_ pattern, then common underscore-delimited forms.
-    """
-    # check a handful of relevant components plus full path
     pieces = [
         path.name, path.stem, path.as_posix(),
-        path.parent.name, path.parent.stem if hasattr(path.parent, "stem") else path.parent.name
+        path.parent.name, getattr(path.parent, "stem", path.parent.name),
+        path.parent.parent.name if path.parent and path.parent.parent else "",
     ]
-
-    # 1) date+id pattern
+    # 1) <date>_<id>_
     for s in pieces:
         m = _DATE_ID_RE.search(s)
         if m:
             return m.group("id")
-
-    # 2) double-underscore then id
+    # 2) _{1..3}<id>_
     for s in pieces:
-        m = _DBL_UNDERSCORE_ID_RE.search(s)
+        m = _MULTI_US_RE.search(s)
         if m:
             return m.group(1)
-
-    # 3) underscore-delimited id
+    # 3) first 11-char token
     for s in pieces:
-        for m in _UNDERSCORE_BRACKETED_ID_RE.finditer(s):
-            cand = m.group("id")
-            if cand:
-                return cand
-
-    # 4) loose fallback
-    for s in pieces:
-        m = _LOOSE_ID_RE.search(s)
+        m = _TOKEN_11_RE.search(s)
         if m:
             return m.group(0)
-
     return None
-
 
 def _extract_title_from_dir(path: Path) -> str:
     leaf = path.parent.name.strip()
@@ -203,24 +165,24 @@ def _extract_title_from_dir(path: Path) -> str:
         return leaf
     return path.stem.replace("_diarized_content", "")
 
-
 def _extract_channel_from_path(path: Path) -> Optional[str]:
     maybe = path.parent.parent.name
     return maybe if maybe.startswith("@") else None
-
 
 def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
     m = re.match(r"^(\d{4}-\d{2}-\d{2})\b", title_or_dir)
     return m.group(1) if m else None
 
-
 # ────────────────────────────────────────────────────────────────────────────────
-# Iterator over assets in YOUTUBE_VIDEO_DIRECTORY
+# Iterator
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _iter_youtube_assets_from_fs(
     root_dir: Path, prune_empty: bool = False
-) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any]]]:
+) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any], Path]]:
+    """
+    Yield (meta, raw_for_segmenter, json_path).
+    """
     for p in root_dir.rglob("*_diarized_content.json"):
         try:
             raw_text = p.read_text(encoding="utf-8")
@@ -287,12 +249,18 @@ def _iter_youtube_assets_from_fs(
             "diarization": [],
         }
 
-        yield meta, raw_for_segmenter
-
+        yield meta, raw_for_segmenter, p
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Main
 # ────────────────────────────────────────────────────────────────────────────────
+
+async def _enrich_async(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[str, Any]:
+    try:
+        sentences = normalize_to_sentences(raw)
+    except Exception:
+        sentences = []
+    return await enrich_parent_router_fields_async(meta, sentences)
 
 def main():
     setup_logger("ingest_v2")
@@ -301,12 +269,7 @@ def main():
     ap.add_argument("--backfill-days", type=int, default=settings_v2.BACKFILL_DAYS)
     ap.add_argument("--root", default=YOUTUBE_VIDEO_DIRECTORY, help="Root dir with diarized JSONs")
     ap.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
-    ap.add_argument(
-        "--concurrency",
-        type=int,
-        default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")),
-        help="Max concurrent OpenAI enrich calls for cache misses",
-    )
+    ap.add_argument("--concurrency", type=int, default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")))
     args = ap.parse_args()
 
     if args.doc_type != "youtube_video":
@@ -316,18 +279,31 @@ def main():
     root = Path(args.root).expanduser().resolve()
     logging.info(f"[v2] scanning for AssemblyAI JSON under: {root} (prune_empty={args.prune_empty})")
 
-    metas_raw = list(_iter_youtube_assets_from_fs(root, prune_empty=args.prune_empty))
-    if not metas_raw:
+    metas_raw_paths = list(_iter_youtube_assets_from_fs(root, prune_empty=args.prune_empty))
+    if not metas_raw_paths:
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
+    # Resolve speakers Tier1+Tier2 in-process (fast)
+    metas_raw_paths2 = []
+    for (meta, raw, json_path) in metas_raw_paths:
+        # Optional audio search next to JSON (same stem .mp3/.wav)
+        audio_path = _guess_audio_path(json_path)
+        spk = resolve_speakers(meta, raw, audio_hint_path=audio_path)
+        if spk.get("speaker_map"):
+            meta["speaker_map"] = spk["speaker_map"]
+        if spk.get("speaker_primary"):
+            meta["speaker_primary"] = spk["speaker_primary"]
+        metas_raw_paths2.append((meta, raw, json_path))
+
+    # Enrich via OpenAI with cache (async batching)
     enriched_metas: List[Dict[str, Any]] = []
     enriched = 0
     cached_hits = 0
     failed_enrich = 0
 
     to_enrich: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []
-    for (meta, raw) in metas_raw:
+    for (meta, raw, _p) in metas_raw_paths2:
         pid = meta["video_id"]
         enrich = None
         try:
@@ -347,17 +323,15 @@ def main():
                 _ascii(_snip(enrich.get("topic_summary") or "", max(80, n // 2))),
             )
             merged = dict(meta)
-            merged.update(
-                {
-                    "description": enrich.get("description", merged.get("description", "")),
-                    "topic_summary": enrich.get("topic_summary"),
-                    "router_tags": enrich.get("router_tags"),
-                    "aliases": enrich.get("aliases"),
-                    "canonical_entities": enrich.get("canonical_entities"),
-                    "is_explainer": enrich.get("is_explainer"),
-                    "router_boost": enrich.get("router_boost"),
-                }
-            )
+            merged.update({
+                "description": enrich.get("description", merged.get("description", "")),
+                "topic_summary": enrich.get("topic_summary"),
+                "router_tags": enrich.get("router_tags"),
+                "aliases": enrich.get("aliases"),
+                "canonical_entities": enrich.get("canonical_entities"),
+                "is_explainer": enrich.get("is_explainer"),
+                "router_boost": enrich.get("router_boost"),
+            })
             enriched_metas.append(merged)
         else:
             to_enrich.append((meta, raw))
@@ -365,16 +339,11 @@ def main():
     if to_enrich:
         async def _batch_enrich(pairs: List[Tuple[Dict[str, Any], Dict[str, Any]]], concurrency: int):
             sem = asyncio.Semaphore(concurrency)
-
             async def _one(meta: Dict[str, Any], raw: Dict[str, Any]):
                 pid = meta["video_id"]
                 try:
-                    try:
-                        sentences = normalize_to_sentences(raw)
-                    except Exception:
-                        sentences = []
                     async with sem:
-                        enrich = await enrich_parent_router_fields_async(meta, sentences)
+                        enrich = await _enrich_async(meta, raw)
                     try:
                         router_cache_save(pid, enrich)
                     except Exception as e:
@@ -382,12 +351,10 @@ def main():
                     return meta, enrich, None
                 except Exception as e:
                     return meta, None, e
-
-            tasks = [asyncio.create_task(_one(meta, raw)) for (meta, raw) in pairs]
+            tasks = [asyncio.create_task(_one(m,r)) for (m,r) in pairs]
             return await asyncio.gather(*tasks)
 
         results = asyncio.run(_batch_enrich(to_enrich, args.concurrency))
-
         for meta, enrich, err in results:
             pid = meta["video_id"]
             if err or enrich is None:
@@ -406,17 +373,15 @@ def main():
                 enriched += 1
 
             merged = dict(meta)
-            merged.update(
-                {
-                    "description": enrich.get("description", merged.get("description", "")),
-                    "topic_summary": enrich.get("topic_summary"),
-                    "router_tags": enrich.get("router_tags"),
-                    "aliases": enrich.get("aliases"),
-                    "canonical_entities": enrich.get("canonical_entities"),
-                    "is_explainer": enrich.get("is_explainer"),
-                    "router_boost": enrich.get("router_boost"),
-                }
-            )
+            merged.update({
+                "description": enrich.get("description", merged.get("description", "")),
+                "topic_summary": enrich.get("topic_summary"),
+                "router_tags": enrich.get("router_tags"),
+                "aliases": enrich.get("aliases"),
+                "canonical_entities": enrich.get("canonical_entities"),
+                "is_explainer": enrich.get("is_explainer"),
+                "router_boost": enrich.get("router_boost"),
+            })
             enriched_metas.append(merged)
 
     logging.info(
@@ -424,33 +389,31 @@ def main():
         f"fresh_enriched={enriched} failed={failed_enrich}"
     )
 
-    parents = run_build_parents(
-        metas=[
-            {
-                "video_id": m["video_id"],
-                "title": m.get("title", ""),
-                "description": m.get("description", ""),
-                "channel_name": m.get("channel_name"),
-                "speaker_primary": m.get("speaker_primary"),
-                "published_at": m.get("published_at"),
-                "duration_s": m.get("duration_s", 0.0),
-                "url": m.get("url"),
-                "thumbnail_url": m.get("thumbnail_url"),
-                "language": m.get("language", "en"),
-                "entities": m.get("entities", []),
-                "chapters": m.get("chapters"),
-                "document_type": "youtube_video",
-                "source": "youtube",
-                "router_tags": m.get("router_tags"),
-                "aliases": m.get("aliases"),
-                "canonical_entities": m.get("canonical_entities"),
-                "is_explainer": m.get("is_explainer"),
-                "router_boost": m.get("router_boost"),
-                "topic_summary": m.get("topic_summary"),
-            }
-            for m in enriched_metas
-        ]
-    )
+    # Build parents (note: we pass through speaker fields)
+    parents = run_build_parents(metas=[{
+        "video_id": m["video_id"],
+        "title": m.get("title", ""),
+        "description": m.get("description", ""),
+        "channel_name": m.get("channel_name"),
+        "speaker_primary": m.get("speaker_primary"),
+        "published_at": m.get("published_at"),
+        "duration_s": m.get("duration_s", 0.0),
+        "url": m.get("url"),
+        "thumbnail_url": m.get("thumbnail_url"),
+        "language": m.get("language", "en"),
+        "entities": m.get("entities", []),
+        "chapters": m.get("chapters"),
+        "document_type": "youtube_video",
+        "source": "youtube",
+        "router_tags": m.get("router_tags"),
+        "aliases": m.get("aliases"),
+        "canonical_entities": m.get("canonical_entities"),
+        "is_explainer": m.get("is_explainer"),
+        "router_boost": m.get("router_boost"),
+        "topic_summary": m.get("topic_summary"),
+        # speakers
+        "speaker_map": m.get("speaker_map"),
+    } for m in enriched_metas])
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
@@ -458,7 +421,7 @@ def main():
     missing_parents = 0
     skipped_empty = 0
 
-    for (meta, raw) in metas_raw:
+    for (meta, raw, _path) in metas_raw_paths2:
         pid = meta["video_id"]
         parent = parents_map.get(pid)
         if not parent:
@@ -466,6 +429,7 @@ def main():
             missing_parents += 1
             continue
 
+        # You can modify build_children_from_raw to use parent["speaker_map"] to relabel speakers if desired.
         children = build_children_from_raw(parent, raw)
         if not children:
             logging.info(f"[v2] no children emitted for {pid} ({_ascii(meta.get('title') or '')})")
@@ -482,6 +446,19 @@ def main():
         f"router_cached={cached_hits}, router_enriched={enriched}, router_failed={failed_enrich})."
     )
 
+def _guess_audio_path(json_path: Path) -> Optional[Path]:
+    # Look for a sibling .mp3/.wav using the same stem
+    stem = json_path.stem.replace("_diarized_content", "")
+    for ext in (".mp3", ".wav", ".m4a"):
+        cand = json_path.with_name(f"{stem}{ext}")
+        if cand.exists():
+            return cand
+    # or parent dir with same basename
+    for ext in (".mp3", ".wav", ".m4a"):
+        cand = json_path.parent / f"{stem}{ext}"
+        if cand.exists():
+            return cand
+    return None
 
 if __name__ == "__main__":
     main()
