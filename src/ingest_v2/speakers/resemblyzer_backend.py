@@ -10,8 +10,10 @@ import numpy as np
 
 # Runtime deps (install):
 #   pip install resemblyzer==0.1.3a1 librosa==0.10.2.post1 soundfile==0.12.1 numpy
-from resemblyzer import VoiceEncoder, preprocess_wav
 import soundfile as sf
+import librosa
+from resemblyzer import VoiceEncoder, preprocess_wav
+
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Public API
@@ -72,7 +74,7 @@ def embed_speakers_from_audio(
 
     # Load full waveform once (mono float32)
     # soundfile gives (samples, channels) or (samples,)
-    wav, sr = sf.read(str(audio_p), dtype="float32", always_2d=False)
+    wav, sr = librosa.load(str(audio_p), sr=None, mono=True)  # handles mp3/m4a via audioread/ffmpeg
     if wav.ndim == 2:
         # mixdown to mono
         wav = wav.mean(axis=1)

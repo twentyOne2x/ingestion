@@ -16,25 +16,32 @@ def resolve_speakers(
 ) -> Dict[str, Any]:
     """
     Returns a speaker map + primary guess, merging Tier-1 + Tier-2 run in parallel.
-    Output:
-      {
-        "speaker_map": {
-            "S1": {"name":"Mert Mumtaz","role":"Host","confidence":0.92,"source":"tier2|tier1"},
-            "S2": {"name":"Guest #1","role":"Guest","confidence":0.74,"source":"tier1"},
-            ...
-        },
-        "speaker_primary": "S1"
-      }
+    Also:
+      - optional auto-enroll of primary speaker into library.json (if enabled)
+      - save per-video speaker_map to SPEAKER_MAP_DIR
     """
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
         f1 = pool.submit(_tier1_names_from_text, meta, raw)
         f2 = pool.submit(_tier2_voice_match, meta, raw, audio_hint_path)
-
         t1 = _safe_result(f1, fallback={})
         t2 = _safe_result(f2, fallback={})
 
     merged = _merge_tier1_tier2(t1, t2)
-    merged["speaker_primary"] = _guess_primary(raw)
+    primary = _guess_primary(raw)
+    merged["speaker_primary"] = primary
+
+    # ── Auto-enroll the primary speaker if no library match and config allows ──
+    try:
+        _maybe_auto_enroll_primary(meta, raw, audio_hint_path, merged, t2)
+    except Exception as e:
+        logging.warning("[speakers] auto-enroll failed (non-fatal): %s", e)
+
+    # ── Persist per-video speaker_map for auditability ──
+    try:
+        _write_speaker_map(meta, merged)
+    except Exception as e:
+        logging.warning("[speakers] failed to write speaker_map export: %s", e)
+
     return merged
 
 
@@ -104,7 +111,7 @@ def _tier1_names_from_text(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[st
 
 
 # ----------------------------
-# Tier 2: voice embeddings (optional, local)
+# Tier 2: voice embeddings (local)
 # ----------------------------
 def _tier2_voice_match(
     meta: Dict[str, Any],
@@ -113,18 +120,17 @@ def _tier2_voice_match(
 ) -> Dict[str, Any]:
     """
     Local embedding backend using Resemblyzer (no external API).
-    Controlled by VOICE_EMBED_BACKEND env:
-      - 'resemblyzer' or 'local' -> compute local embeddings
-      - 'none' (default)         -> skip
-      - 'assemblyai'             -> NOT implemented here; warning + skip
+    VOICE_EMBED_BACKEND:
+      - 'resemblyzer' / 'local' -> compute local embeddings & match library
+      - 'none' (default)        -> skip
+      - 'assemblyai'            -> not implemented here
     """
     backend = os.getenv("VOICE_EMBED_BACKEND", "none").lower()
     if backend in ("none", ""):
         return {}
     if backend in ("assemblyai", "aai"):
-        logging.warning("[speakers/tier2] 'assemblyai' backend not implemented in this repo. Use 'resemblyzer'.")
+        logging.warning("[speakers/tier2] 'assemblyai' backend not implemented. Use 'resemblyzer'.")
         return {}
-
     if backend not in ("resemblyzer", "local"):
         logging.warning("[speakers/tier2] unknown backend=%s; expected 'resemblyzer' or 'none'", backend)
         return {}
@@ -134,12 +140,12 @@ def _tier2_voice_match(
         logging.info("[speakers/tier2] no audio found for vid=%s; skip tier2", meta.get("video_id"))
         return {}
 
-    # Load local library of known voices (name -> embedding list[float])
     voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
     lib_path = voices_dir / "library.json"
     library = _load_voice_library(lib_path)
     if not library:
         logging.info("[speakers/tier2] no voice library at %s; skip tier2", lib_path)
+        # We still return empty; auto-enroll may fill it later
         return {}
 
     # Local embedding (Resemblyzer)
@@ -159,11 +165,103 @@ def _tier2_voice_match(
         if best_name and best_sim >= threshold:
             speaker_map[spk] = {
                 "name": best_name,
-                "role": "Guest",  # merged with Tier-1 below
+                "role": "Guest",  # merged with Tier-1 later
                 "confidence": float(min(0.99, max(0.0, best_sim))),
                 "source": "tier2",
             }
     return {"speaker_map": speaker_map}
+
+
+# ----------------------------
+# Auto-enroll + exports
+# ----------------------------
+def _maybe_auto_enroll_primary(
+    meta: Dict[str, Any],
+    raw: Dict[str, Any],
+    audio_hint_path: Optional[Path],
+    merged_out: Dict[str, Any],
+    t2_out: Dict[str, Any],
+) -> None:
+    if os.getenv("VOICE_AUTO_ENROLL", "yes").lower() not in ("1", "true", "yes", "y"):
+        return
+    backend = os.getenv("VOICE_EMBED_BACKEND", "none").lower()
+    if backend not in ("resemblyzer", "local"):
+        return
+
+    # If Tier-2 already identified the primary with a library match, nothing to do
+    primary = merged_out.get("speaker_primary") or "S1"
+    t2map = (t2_out or {}).get("speaker_map") or {}
+    if primary in t2map and t2map[primary].get("name"):
+        return
+
+    # Require minimum talk time
+    min_talk = float(os.getenv("VOICE_ENROLL_MIN_TALK_S", "60"))
+    if _talk_time_seconds(raw, primary) < min_talk:
+        logging.info("[speakers/enroll] primary %s spoke < %.1fs; skip auto-enroll", primary, min_talk)
+        return
+
+    # Compute embedding for the primary and write to library
+    audio_path = _find_audio_for_meta(meta, audio_hint_path)
+    if not audio_path or not audio_path.exists():
+        return
+
+    try:
+        from .resemblyzer import embed_speakers_from_audio
+    except Exception as e:
+        logging.warning("[speakers/enroll] resemblyzer unavailable: %s", e)
+        return
+
+    emb_by_spk = embed_speakers_from_audio(str(audio_path), raw, meta=meta)
+    vec = emb_by_spk.get(primary)
+    if not vec:
+        logging.info("[speakers/enroll] no embedding vector for primary %s; skip", primary)
+        return
+
+    # Decide the name
+    forced = os.getenv("VOICE_AUTO_ENROLL_NAME", "").strip()
+    if forced:
+        name = forced
+    else:
+        ch = (meta.get("channel_name") or "").lstrip("@").strip()
+        name = ch.replace("_", " ").replace("Fndn", "Foundation") if ch else "Host"
+
+    voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
+    lib_path = voices_dir / "library.json"
+    library = _load_voice_library(lib_path)
+    library[name] = vec  # overwrite/refresh if exists
+    lib_path.parent.mkdir(parents=True, exist_ok=True)
+    lib_path.write_text(json.dumps(library, ensure_ascii=False, indent=2), encoding="utf-8")
+    logging.info("[speakers/enroll] auto-enrolled '%s' into %s", name, lib_path)
+
+    # Also update merged map so this run shows the name immediately
+    sp = merged_out.setdefault("speaker_map", {}).setdefault(primary, {"role": "Host"})
+    sp["name"] = name
+    sp["source"] = (sp.get("source") or "") + "|auto-enroll"
+    sp["confidence"] = max(0.8, float(sp.get("confidence") or 0.0))
+
+def _write_speaker_map(meta: Dict[str, Any], merged: Dict[str, Any]) -> None:
+    outdir = Path(os.getenv("SPEAKER_MAP_DIR", "pipeline_storage_v2/speaker_maps"))
+    outdir.mkdir(parents=True, exist_ok=True)
+    vid = meta.get("video_id") or "unknown"
+    out = {
+        "video_id": vid,
+        "title": meta.get("title"),
+        "channel_name": meta.get("channel_name"),
+        "speaker_primary": merged.get("speaker_primary"),
+        "speaker_map": merged.get("speaker_map") or {},
+    }
+    (outdir / f"{vid}.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def _talk_time_seconds(raw: Dict[str, Any], speaker: str) -> float:
+    total = 0.0
+    for s in (raw.get("segments") or []):
+        spk = s.get("speaker") or "S1"
+        if spk != speaker:
+            continue
+        st = float(s.get("start") or 0.0)
+        et = float(s.get("end") or st)
+        total += max(0.0, et - st)
+    return total
 
 
 # ----------------------------
@@ -208,8 +306,6 @@ def _guess_primary(raw: Dict[str, Any]) -> str:
     return max(talk, key=talk.get) if talk else "S1"
 
 def _find_audio_for_meta(meta: Dict[str, Any], audio_hint_path: Optional[Path]) -> Optional[Path]:
-    # The pipeline already tries to find a sibling audio file and passes it in.
-    # Honor the hint and don't scan the filesystem here to keep this module pure.
     return audio_hint_path if (audio_hint_path and audio_hint_path.exists()) else None
 
 def _load_voice_library(p: Path) -> Dict[str, List[float]]:
