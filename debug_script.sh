@@ -2,17 +2,29 @@
 
 # Define an array of file paths
 FILES=(
-"src/Llama_index_sandbox/run_youtube_ingestion_pipeline.py"
-"src/Llama_index_sandbox/ingestion_pipeline_youtube_only.py"
-"src/Llama_index_sandbox/index.py"
-"src/Llama_index_sandbox/globals.py"
-"src/Llama_index_sandbox/embed.py"
-"src/Llama_index_sandbox/constants.py"
-"src/Llama_index_sandbox/config.py"
-"src/Llama_index_sandbox/__init__.py"
-"src/Llama_index_sandbox/utils/utils.py"
-
+  "src/ingest_v2",
+  "src/ingest_v2/configs",
+  "src/ingest_v2/entities",
+  "src/ingest_v2/pipelines",
+  "src/ingest_v2/schemas",
+  "src/ingest_v2/segmenter",
+  "src/ingest_v2/sources",
+  "src/ingest_v2/tests/fixtures",
+  "src/ingest_v2/transcripts",
+  "src/ingest_v2/utils",
+  "src/ingest_v2/validators",
+  "scripts",
 )
+
+# "src/Llama_index_sandbox/run_youtube_ingestion_pipeline.py"
+# "src/Llama_index_sandbox/ingestion_pipeline_youtube_only.py"
+# "src/Llama_index_sandbox/index.py"
+# "src/Llama_index_sandbox/globals.py"
+# "src/Llama_index_sandbox/embed.py"
+# "src/Llama_index_sandbox/constants.py"
+# "src/Llama_index_sandbox/config.py"
+# "src/Llama_index_sandbox/__init__.py"
+# "src/Llama_index_sandbox/utils/utils.py"
 
 remove_comments="${1:-true}"  # Default to true if no parameter is provided
 

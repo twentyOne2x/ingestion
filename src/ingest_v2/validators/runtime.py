@@ -1,18 +1,113 @@
-from ..schemas.child import ChildNode
-from ..schemas.parent import ParentNode
+# src/ingest_v2/validators/runtime.py
+
+import os
+import logging
+import re
+from typing import Optional, Tuple
+
 import requests
 
-def validate_child_runtime(x: dict, duration_s: float) -> None:
-    c = ChildNode(**x)
-    assert 0 <= c.start_s < c.end_s <= duration_s, "timestamp order invalid"
-    assert 15 - 1e-6 <= (c.end_s - c.start_s) <= 60 + 1e-6, "window size out of bounds"
-    assert len(c.text) >= 80 or c.text.endswith("?"), "text too short"
-    if c.clip_url:
-        try:
-            resp = requests.head(str(c.clip_url), allow_redirects=True, timeout=4)
-            assert resp.status_code in (200, 301, 302, 303, 307, 308)
-        except Exception:
-            pass
+from ..schemas.child import ChildNode
+from ..schemas.parent import ParentNode
+from ..configs.settings import settings_v2
 
-def validate_parent_runtime(p: dict) -> None:
-    ParentNode(**p)
+
+_ASCII_RE = re.compile(r"[^\x00-\x7F]+")
+
+
+def _safe(s: str, max_len: int = 180) -> str:
+    """ASCII-safe preview for logs to avoid latin-1 console crashes."""
+    s = s or ""
+    if len(s) > max_len:
+        s = s[:max_len] + "..."
+    return _ASCII_RE.sub("?", s)
+
+
+def _ctx_str(prefix: str, c: "ChildNode", duration_s: float, extra: Optional[str] = None) -> str:
+    seg_len = (c.end_s - c.start_s) if (c.start_s is not None and c.end_s is not None) else -1.0
+    snippet = _safe(c.text)
+    base = (
+        f"{prefix} parent_id={_safe(str(c.parent_id))} seg_id={_safe(str(c.segment_id))} "
+        f"start={c.start_s:.3f} end={c.end_s:.3f} len={seg_len:.3f} "
+        f"dur={duration_s:.3f} lang={_safe(str(c.language))} "
+        f"speaker={_safe(str(c.speaker))} text_len={len(c.text)} preview={snippet!r}"
+    )
+    return base + (f" | {extra}" if extra else "")
+
+
+def validate_child_runtime(x: dict, duration_s: float) -> Tuple[bool, str]:
+    """
+    Returns (ok, reason). Never raises.
+    Accepts padding: allowed_max = max_s + 2*pad + tol.
+    Optional HEAD check gated by VALIDATE_URLS.
+    """
+    # Settings
+    EPS = 1e-6
+    min_s = getattr(settings_v2, "SEGMENT_MIN_S", 15.0)
+    max_s = getattr(settings_v2, "SEGMENT_MAX_S", 60.0)
+    pad_s = getattr(settings_v2, "SEGMENT_PAD_S", 1.5)
+    tol_s = getattr(settings_v2, "SEGMENT_TOLERANCE_S", 0.75)
+
+    upper_with_pad = max_s + (2.0 * pad_s) + tol_s
+    lower_with_tol = min_s - tol_s
+
+    # Build schema object
+    try:
+        c = ChildNode(**x)
+    except Exception as e:
+        try:
+            pid = x.get("parent_id"); sid = x.get("segment_id")
+        except Exception:
+            pid = sid = None
+        logging.warning(f"[validate_child] schema_error parent_id={pid} seg_id={sid} err={_safe(str(e))}")
+        return False, "schema_error"
+
+    # Timestamp order
+    if not (0 <= c.start_s < c.end_s <= duration_s + EPS):
+        logging.info(_ctx_str("[validate_child] bad_timestamps", c, duration_s))
+        return False, "timestamp_order_invalid"
+
+    seg_len = c.end_s - c.start_s
+
+    # Window size (with padding tolerance)
+    if not (lower_with_tol <= seg_len <= upper_with_pad):
+        extra = f"allowed=[{lower_with_tol:.3f},{upper_with_pad:.3f}] min={min_s} max={max_s} pad={pad_s} tol={tol_s}"
+        logging.info(_ctx_str("[validate_child] window_oob", c, duration_s, extra))
+        return False, "window_size_out_of_bounds"
+
+    # Text sufficiency
+    if not (len(c.text) >= 80 or (c.text.endswith("?") and len(c.text) >= 20)):
+        logging.info(_ctx_str("[validate_child] text_too_short", c, duration_s))
+        return False, "text_too_short"
+
+    # Optional URL HEAD check (non-fatal)
+    if os.getenv("VALIDATE_URLS", "0").lower() in ("1", "true", "yes"):
+        if c.clip_url:
+            try:
+                resp = requests.head(str(c.clip_url), allow_redirects=True, timeout=4)
+                if resp.status_code not in (200, 301, 302, 303, 307, 308):
+                    logging.info(
+                        f"[validate_child] clip_url_status parent_id={c.parent_id} seg_id={c.segment_id} "
+                        f"status={resp.status_code} url={_safe(str(c.clip_url), 240)}"
+                    )
+            except Exception as e:
+                logging.info(
+                    f"[validate_child] clip_url_head_failed parent_id={c.parent_id} seg_id={c.segment_id} "
+                    f"err={_safe(str(e))} url={_safe(str(c.clip_url), 240)}"
+                )
+
+    return True, "ok"
+
+
+def validate_parent_runtime(p: dict) -> Tuple[bool, str]:
+    try:
+        parent = ParentNode(**p)
+    except Exception as e:
+        pid = p.get("parent_id")
+        logging.warning(f"[validate_parent] schema_error parent_id={pid} err={_safe(str(e))}")
+        return False, "schema_error"
+
+    if parent.duration_s is None or parent.duration_s < 0:
+        logging.info(f"[validate_parent] non_positive_duration parent_id={parent.parent_id} duration_s={parent.duration_s}")
+        # Not fatal, but report
+    return True, "ok"

@@ -9,8 +9,8 @@ class SettingsV2:
     SEGMENT_PAD_S: float = float(os.getenv("SEGMENT_PAD_S", 1.5))
     MIN_TEXT_CHARS: int = int(os.getenv("MIN_TEXT_CHARS", 160))
 
-    EMBED_MODEL: str = os.getenv("EMBED_MODEL", "text-embedding-3-small")
-    EMBED_DIM: int = int(os.getenv("EMBED_DIM", "1536"))
+    EMBED_MODEL: str = os.getenv("EMBED_MODEL", "text-embedding-3-large")
+    EMBED_DIM: int = int(os.getenv("EMBED_DIM", "3072"))
     EMBED_PROVIDER: str = os.getenv("EMBED_PROVIDER", "openai")  # openai|sentence-transformers
 
     PINECONE_INDEX_NAME: str = os.getenv("PINECONE_INDEX_NAME", "icmfyi")

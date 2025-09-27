@@ -1,49 +1,84 @@
 import logging
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Callable
+
 from ..configs.settings import settings_v2
-from ..utils.pinecone_client import get_index, upsert_vectors
+from ..utils.pinecone_client import get_index, upsert_vectors, sanitize_metadata, trim_metadata_utf8
 from ..utils.backoff import expo_backoff
 
-def _embedder():
+
+def _embedder() -> Callable[[List[str]], List[List[float]]]:
+    """
+    Return a function that embeds a list of texts -> list of vectors.
+    Supports OpenAI or sentence-transformers based on settings.
+    """
     if settings_v2.EMBED_PROVIDER == "openai":
         from openai import OpenAI
         client = OpenAI()
         model = settings_v2.EMBED_MODEL
+
         def embed_texts(texts: List[str]) -> List[List[float]]:
-            vecs = []
-            for i in range(0, len(texts), 128):
-                chunk = texts[i:i+128]
-                resp = client.embeddings.create(model=model, input=chunk)
-                vecs.extend([d.embedding for d in resp.data])
+            vecs: List[List[float]] = []
+            # conservative batch size for OpenAI
+            bs = 128
+            for i in range(0, len(texts), bs):
+                chunk = texts[i : i + bs]
+                attempt = 0
+                while True:
+                    try:
+                        resp = client.embeddings.create(model=model, input=chunk)
+                        vecs.extend([d.embedding for d in resp.data])
+                        break
+                    except Exception as e:
+                        attempt += 1
+                        logging.warning(f"[embed/openai] retry {attempt} size={len(chunk)} err={e}")
+                        expo_backoff(attempt)
             return vecs
+
         return embed_texts
-    else:
-        from sentence_transformers import SentenceTransformer
-        model = SentenceTransformer(settings_v2.EMBED_MODEL)
-        def embed_texts(texts: List[str]) -> List[List[float]]:
-            return model.encode(texts, batch_size=64, normalize_embeddings=True).tolist()
-        return embed_texts
+
+    # sentence-transformers path
+    from sentence_transformers import SentenceTransformer
+    model = SentenceTransformer(settings_v2.EMBED_MODEL)
+
+    def embed_texts(texts: List[str]) -> List[List[float]]:
+        # normalize to unit vectors for cosine (optional but consistent)
+        return model.encode(texts, batch_size=64, normalize_embeddings=True).tolist()
+
+    return embed_texts
+
 
 def choose_namespace(document_type: str) -> str:
-    return settings_v2.NAMESPACE_VIDEOS if document_type == "youtube_video" else settings_v2.NAMESPACE_STREAMS
+    if document_type == "youtube_video":
+        return settings_v2.NAMESPACE_VIDEOS
+    return settings_v2.NAMESPACE_STREAMS
 
-def trim_metadata(meta: Dict[str, Any]) -> Dict[str, Any]:
-    import json
-    s = json.dumps(meta, ensure_ascii=False)
-    if len(s.encode("utf-8")) <= settings_v2.MAX_METADATA_BYTES:
-        return meta
-    m = dict(meta)
-    t = m.get("text", "")
-    if t and len(t) > 1200:
-        m["text"] = t[:1200] + "…"
-    return m
 
-def upsert_children(children: List[Dict[str, Any]]):
+def _prep_metadata_for_upsert(c: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Sanitize + trim metadata once (if caller bypasses upsert_vectors' internal sanitize).
+    """
+    md = sanitize_metadata(c)
+    md = trim_metadata_utf8(md, settings_v2.MAX_METADATA_BYTES)
+    return md
+
+
+def upsert_children(children: List[Dict[str, Any]]) -> None:
+    """
+    - Embeds child texts
+    - Upserts to Pinecone with namespace routing
+    - Retries on transient errors
+    """
     if not children:
         return
+
+    # All children are from same document_type within one parent batch
+    ns = choose_namespace(children[0]["document_type"])
     index = get_index(settings_v2.PINECONE_INDEX_NAME, settings_v2.EMBED_DIM)
+
+    # Build embeddings with retries inside
     embed = _embedder()
     texts = [c["text"] for c in children]
+
     attempt = 0
     while True:
         try:
@@ -51,15 +86,22 @@ def upsert_children(children: List[Dict[str, Any]]):
             break
         except Exception as e:
             attempt += 1
-            logging.warning(f"[embed] retry {attempt} due to {e}")
+            logging.warning(f"[embed] retry {attempt} err={e}")
             expo_backoff(attempt)
 
-    vectors = [{
-        "id": c["segment_id"],
-        "values": vec,
-        "metadata": trim_metadata(c),
-    } for c, vec in zip(children, embs)]
+    if len(embs) != len(children):
+        logging.error(f"[upsert] embedding/count mismatch: {len(embs)} != {len(children)}; dropping batch")
+        return
 
-    ns = choose_namespace(children[0]["document_type"])
+    vectors = [
+        {
+            "id": c["segment_id"],
+            "values": vec,
+            "metadata": _prep_metadata_for_upsert(c),
+        }
+        for c, vec in zip(children, embs)
+    ]
+
+    # Delegate batching + retries + final sanitize to helper
     upsert_vectors(index=index, namespace=ns, vectors=vectors, batch_size=100)
     logging.info(f"[upsert] upserted {len(vectors)} vectors into namespace={ns}")
