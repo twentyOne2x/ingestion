@@ -1,4 +1,4 @@
-# src/ingest_v2/pipelines/run_all.py
+# File: src/ingest_v2/pipelines/run_all.py
 
 import argparse
 import asyncio
@@ -35,6 +35,15 @@ def _snip(s: str, n: int) -> str:
     return s if len(s) <= n else (s[: max(0, n - 1)] + "…")
 
 
+def _ascii(s: str, max_len: int = 400) -> str:
+    """Make log strings ASCII-safe to avoid latin-1/terminal codec issues."""
+    s = _snip(s or "", max_len)
+    try:
+        return s.encode("ascii", "ignore").decode("ascii")
+    except Exception:
+        return s  # last resort
+
+
 def _safe_float(x: Any) -> Optional[float]:
     try:
         if x is None:
@@ -54,11 +63,6 @@ def _ms_to_s(x: Any) -> Optional[float]:
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _is_trivial_raw_segment(seg: Dict[str, Any]) -> bool:
-    """
-    A segment is trivial if it has no text, no words, and no usable start/end.
-    Matches the bad file shape:
-      [{"text": "", "start": null, "end": null, "words": []}]
-    """
     no_text = not (seg.get("text") or "").strip()
     no_words = not seg.get("words")
     start_none = seg.get("start") is None
@@ -67,7 +71,6 @@ def _is_trivial_raw_segment(seg: Dict[str, Any]) -> bool:
 
 
 def _looks_like_single_empty_file(obj: Any) -> bool:
-    """Detect the exact 'single empty row' file you showed."""
     try:
         if not isinstance(obj, list) or len(obj) != 1:
             return False
@@ -86,16 +89,9 @@ def _looks_like_single_empty_file(obj: Any) -> bool:
 
 # ────────────────────────────────────────────────────────────────────────────────
 # AssemblyAI → v2 raw normalizer
-# Accepts top-level list OR {"segments":[...]} and converts ms→s
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
-    """
-    Convert AssemblyAI diarized JSON (ms timestamps) to v2 raw format:
-      {"segments":[{"start":s,"end":s,"speaker":"S1","text":"...", "words":[...]}]}
-    - Filters trivial/empty segments
-    - Converts ms→s when start/end are numeric
-    """
     if isinstance(obj, dict) and "segments" in obj:
         segs_in = obj["segments"]
     elif isinstance(obj, list):
@@ -105,7 +101,6 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
 
     out_segments: List[Dict[str, Any]] = []
     for seg in segs_in:
-        # Drop trivial rows up front
         if _is_trivial_raw_segment(seg):
             continue
 
@@ -127,7 +122,6 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
         end_s = _ms_to_s(seg.get("end"))
 
         text = (seg.get("text") or "").strip()
-        # If both times are None and no content, skip
         if start_s is None and end_s is None and not text and not out_words:
             continue
 
@@ -145,28 +139,65 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
 
 
 # ────────────────────────────────────────────────────────────────────────────────
-# Helpers: path → (video_id, title, channel, published_at)
-# Assumes folder shape:
-# .../diarized_youtube_content_YYYY-MM-DD/@ChannelName/<DATE>_<VIDEOID>_<TITLE>/<same>_diarized_content.json
+# Robust YouTube ID extraction
 # ────────────────────────────────────────────────────────────────────────────────
-
-_YTID_RE = re.compile(r"(?<![A-Za-z0-9_-])([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])")
+# The dataset naming is `<YYYY-MM-DD>_<VIDEOID>_<TITLE>`; the 11-char ID may be
+# surrounded by underscores (e.g., "..._iNXO_1p6Sp4_..."). Our old boundary-
+# based regex missed those because "_" is part of the allowed ID charset.
+#
+# Strategy:
+#  1) Prefer the `<date>_<id>_` pattern anywhere in each path component.
+#  2) Fallback: capture `__<id>_` (double underscore cases).
+#  3) Fallback: in each component, capture between underscores `_(id)_`.
+#  4) Last resort: grab the first 11-char token of `[A-Za-z0-9_-]{11}`.
+#
+# This keeps us faithful to the dataset convention and far more tolerant.
+_DATE_ID_RE = re.compile(r"(?P<date>\d{4}-\d{2}-\d{2})_(?P<id>[A-Za-z0-9_-]{11})_")
+_DBL_UNDERSCORE_ID_RE = re.compile(r"__([A-Za-z0-9_-]{11})_")
+_UNDERSCORE_BRACKETED_ID_RE = re.compile(r"_(?P<id>[A-Za-z0-9_-]{11})(?:_|$)")
+_LOOSE_ID_RE = re.compile(r"[A-Za-z0-9_-]{11}")  # permissive last resort
 
 
 def _extract_video_id_from_path(path: Path) -> Optional[str]:
     """
-    Best-effort extraction of YouTube video_id (11 chars) from filename or directory.
+    Robust extraction of YouTube video_id (11 chars) from anywhere in the path.
+    Prefer <date>_<id>_ pattern, then common underscore-delimited forms.
     """
-    candidates: List[str] = []
-    parts = [path.stem, path.name, path.parent.name]
-    for p in parts:
-        for m in _YTID_RE.finditer(p):
-            candidates.append(m.group(1))
-    return candidates[0] if candidates else None
+    # check a handful of relevant components plus full path
+    pieces = [
+        path.name, path.stem, path.as_posix(),
+        path.parent.name, path.parent.stem if hasattr(path.parent, "stem") else path.parent.name
+    ]
+
+    # 1) date+id pattern
+    for s in pieces:
+        m = _DATE_ID_RE.search(s)
+        if m:
+            return m.group("id")
+
+    # 2) double-underscore then id
+    for s in pieces:
+        m = _DBL_UNDERSCORE_ID_RE.search(s)
+        if m:
+            return m.group(1)
+
+    # 3) underscore-delimited id
+    for s in pieces:
+        for m in _UNDERSCORE_BRACKETED_ID_RE.finditer(s):
+            cand = m.group("id")
+            if cand:
+                return cand
+
+    # 4) loose fallback
+    for s in pieces:
+        m = _LOOSE_ID_RE.search(s)
+        if m:
+            return m.group(0)
+
+    return None
 
 
 def _extract_title_from_dir(path: Path) -> str:
-    """Use the leaf directory name as title if available, else filename without suffix."""
     leaf = path.parent.name.strip()
     if leaf and "_diarized_content" not in leaf:
         return leaf
@@ -174,13 +205,11 @@ def _extract_title_from_dir(path: Path) -> str:
 
 
 def _extract_channel_from_path(path: Path) -> Optional[str]:
-    # parent-of-parent is usually "@Channel"
     maybe = path.parent.parent.name
     return maybe if maybe.startswith("@") else None
 
 
 def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
-    # e.g. "2025-08-04_-pjDPU6q2es_Title" → "2025-08-04"
     m = re.match(r"^(\d{4}-\d{2}-\d{2})\b", title_or_dir)
     return m.group(1) if m else None
 
@@ -192,31 +221,26 @@ def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
 def _iter_youtube_assets_from_fs(
     root_dir: Path, prune_empty: bool = False
 ) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any]]]:
-    """
-    Walk for *_diarized_content.json, normalize, and yield (meta, raw_for_segmenter).
-    If prune_empty=True, delete files that are clearly empty/ill-formed.
-    """
     for p in root_dir.rglob("*_diarized_content.json"):
         try:
             raw_text = p.read_text(encoding="utf-8")
             obj = json.loads(raw_text)
         except Exception as e:
-            logging.warning(f"[v2] skip unreadable JSON: {p} ({e})")
+            logging.warning(f"[v2] skip unreadable JSON: {p} ({_ascii(str(e))})")
             continue
 
-        # Optional pruning for files that are exactly the bad shape shown
         if prune_empty and _looks_like_single_empty_file(obj):
             try:
                 p.unlink(missing_ok=True)
                 logging.info(f"[v2] pruned empty AssemblyAI file: {p}")
             except Exception as e:
-                logging.warning(f"[v2] failed to prune {p}: {e}")
+                logging.warning(f"[v2] failed to prune {p}: {_ascii(str(e))}")
             continue
 
         try:
             raw_norm = _convert_assemblyai_json_to_raw(obj)
         except Exception as e:
-            logging.warning(f"[v2] skip malformed AssemblyAI JSON: {p} ({e})")
+            logging.warning(f"[v2] skip malformed AssemblyAI JSON: {p} ({_ascii(str(e))})")
             continue
 
         segs = raw_norm.get("segments", [])
@@ -224,30 +248,31 @@ def _iter_youtube_assets_from_fs(
             logging.info(f"[v2] no non-trivial segments after normalization: {p}")
             continue
 
-        # Compute duration as the max valid 'end'
         ends: List[float] = []
         for s in segs:
             e = s.get("end")
             if isinstance(e, (int, float)):
                 ends.append(float(e))
-            # tolerate None / missing
-
         duration_s = max(ends) if ends else 0.0
 
-        video_id = _extract_video_id_from_path(p) or os.path.basename(p).split("_")[0]
+        video_id = _extract_video_id_from_path(p)
+        if not video_id:
+            logging.warning(f"[v2] SKIP: could not find YouTube video_id in path={p}")
+            continue
+
         title = _extract_title_from_dir(p)
         channel_name = _extract_channel_from_path(p)
-        published_at = _extract_date_prefix(title)  # yyyy-mm-dd if present
+        published_at = _extract_date_prefix(title)
 
         meta = {
             "video_id": video_id,
             "title": title,
-            "description": "",  # will be enriched by router step
+            "description": "",
             "channel_name": channel_name,
             "speaker_primary": None,
-            "published_at": published_at,  # yyyy-mm-dd or None
+            "published_at": published_at,
             "duration_s": duration_s,
-            "url": f"https://www.youtube.com/watch?v={video_id}" if video_id else None,
+            "url": f"https://www.youtube.com/watch?v={video_id}",
             "thumbnail_url": None,
             "language": "en",
             "entities": [],
@@ -256,11 +281,10 @@ def _iter_youtube_assets_from_fs(
             "source": "youtube",
         }
 
-        # shape expected by build_children_from_raw()
         raw_for_segmenter = {
-            "segments": segs,  # sentence normalization uses words if present
-            "caption_lines": [],  # optional
-            "diarization": [],  # optional
+            "segments": segs,
+            "caption_lines": [],
+            "diarization": [],
         }
 
         yield meta, raw_for_segmenter
@@ -297,36 +321,31 @@ def main():
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
-    # ── Enrich parents with router fields using sidecar cache
     enriched_metas: List[Dict[str, Any]] = []
     enriched = 0
     cached_hits = 0
     failed_enrich = 0
 
-    # Split into cache hits and misses
-    to_enrich: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []  # (meta, raw)
+    to_enrich: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []
     for (meta, raw) in metas_raw:
         pid = meta["video_id"]
         enrich = None
         try:
             enrich = router_cache_load(pid)
         except Exception as e:
-            logging.warning(f"[v2/router/cache] read failed for {pid}: {e}")
+            logging.warning(f"[v2/router/cache] read failed for {pid}: {_ascii(str(e))}")
 
         if enrich is not None:
             cached_hits += 1
-
-            # Preview logging for cache hits
             n = int(os.getenv("ROUTER_LOG_DESC_CHARS", "240"))
             logging.info(
                 "[router/cache] vid=%s boost=%s tags=%s desc_preview=%r topic_preview=%r",
                 pid,
                 enrich.get("router_boost"),
                 (enrich.get("router_tags") or [])[:6],
-                _snip(enrich.get("description") or "", n),
-                _snip(enrich.get("topic_summary") or "", max(80, n // 2)),
+                _ascii(_snip(enrich.get("description") or "", n)),
+                _ascii(_snip(enrich.get("topic_summary") or "", max(80, n // 2))),
             )
-
             merged = dict(meta)
             merged.update(
                 {
@@ -343,7 +362,6 @@ def main():
         else:
             to_enrich.append((meta, raw))
 
-    # Concurrently enrich cache misses
     if to_enrich:
         async def _batch_enrich(pairs: List[Tuple[Dict[str, Any], Dict[str, Any]]], concurrency: int):
             sem = asyncio.Semaphore(concurrency)
@@ -360,7 +378,7 @@ def main():
                     try:
                         router_cache_save(pid, enrich)
                     except Exception as e:
-                        logging.warning(f"[v2/router/cache] save failed for {pid}: {e}")
+                        logging.warning(f"[v2/router/cache] save failed for {pid}: {_ascii(str(e))}")
                     return meta, enrich, None
                 except Exception as e:
                     return meta, None, e
@@ -373,7 +391,7 @@ def main():
         for meta, enrich, err in results:
             pid = meta["video_id"]
             if err or enrich is None:
-                logging.warning(f"[v2/router] enrichment failed for {pid}: {err}")
+                logging.warning(f"[v2/router] enrichment failed for {pid}: {_ascii(str(err))}")
                 failed_enrich += 1
                 enrich = {
                     "description": meta.get("description") or "",
@@ -406,7 +424,6 @@ def main():
         f"fresh_enriched={enriched} failed={failed_enrich}"
     )
 
-    # Build parents (one per asset) with enriched metadata
     parents = run_build_parents(
         metas=[
             {
@@ -424,7 +441,6 @@ def main():
                 "chapters": m.get("chapters"),
                 "document_type": "youtube_video",
                 "source": "youtube",
-                # Router fields (ParentNode schema has them)
                 "router_tags": m.get("router_tags"),
                 "aliases": m.get("aliases"),
                 "canonical_entities": m.get("canonical_entities"),
@@ -438,7 +454,6 @@ def main():
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
-    # Build children & upsert
     total_children = 0
     missing_parents = 0
     skipped_empty = 0
@@ -453,7 +468,7 @@ def main():
 
         children = build_children_from_raw(parent, raw)
         if not children:
-            logging.info(f"[v2] no children emitted for {pid} ({meta.get('title')})")
+            logging.info(f"[v2] no children emitted for {pid} ({_ascii(meta.get('title') or '')})")
             skipped_empty += 1
             continue
 

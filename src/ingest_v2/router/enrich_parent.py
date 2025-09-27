@@ -17,13 +17,21 @@ def _snip(s: str, n: int) -> str:
     return s if len(s) <= n else (s[: max(0, n - 1)] + "…")
 
 
+def _ascii(s: str, max_len: int = 400) -> str:
+    """Make log strings ASCII-safe to avoid latin-1/terminal codec issues."""
+    s = _snip(s or "", max_len)
+    try:
+        return s.encode("ascii", "ignore").decode("ascii")
+    except Exception:
+        return s
+
+
 def _summarize_sentences_for_prompt(
     sentences: List[Dict[str, Any]],
     cap: int,
 ) -> List[Dict[str, Any]]:
     if not sentences:
         return []
-    # Take earliest sentences (cap) to keep token usage predictable
     return sentences[:cap]
 
 
@@ -34,7 +42,6 @@ def _build_messages(meta: Dict[str, Any], sentences: List[Dict[str, Any]]) -> Li
     ents = meta.get("entities") or []
     base_desc = meta.get("description") or ""
 
-    # Convert sentences to a compact JSON-like block (timestamps + text)
     s_lines: List[Dict[str, Any]] = []
     for s in sentences:
         try:
@@ -109,7 +116,6 @@ def _parse_json(s: str) -> Dict[str, Any]:
     try:
         return json.loads(s)
     except Exception:
-        # Try to salvage a JSON object if model added noise
         start = s.find("{")
         end = s.rfind("}")
         if start >= 0 and end > start:
@@ -120,12 +126,21 @@ def _parse_json(s: str) -> Dict[str, Any]:
         raise
 
 
+def _shape_output(meta: Dict[str, Any], data: Dict[str, Any]) -> Dict[str, Any]:
+    rb = float(data.get("router_boost") or 1.0)
+    rb = max(1.0, min(3.0, rb))
+    return {
+        "description": data.get("description") or meta.get("description") or "",
+        "topic_summary": data.get("topic_summary") or "",
+        "router_tags": [str(x) for x in (data.get("router_tags") or [])][:24],
+        "aliases": [str(x) for x in (data.get("aliases") or [])][:24],
+        "canonical_entities": [str(x) for x in (data.get("canonical_entities") or [])][:24],
+        "is_explainer": bool(data.get("is_explainer")),
+        "router_boost": rb,
+    }
+
+
 def enrich_parent_router_fields(meta: Dict[str, Any], sentences: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """
-    Sync version.
-    Returns dict of fields to merge into meta:
-      description, topic_summary, router_tags, aliases, canonical_entities, is_explainer, router_boost
-    """
     preview = _summarize_sentences_for_prompt(sentences, settings_v2.ROUTER_GEN_MAX_SENTENCES)
     messages = _build_messages(meta, preview)
 
@@ -140,44 +155,29 @@ def enrich_parent_router_fields(meta: Dict[str, Any], sentences: List[Dict[str, 
                 messages=messages,
                 temperature=0.2,
                 response_format={"type": "json_object"},
-                timeout=45,  # seconds (prevents a hung request from stalling the run)
+                timeout=45,
             )
             raw = resp.choices[0].message.content or "{}"
             data = _parse_json(raw)
+            out = _shape_output(meta, data)
 
-            # Light schema guardrails + clamp router_boost to [1.0, 3.0]
-            rb = float(data.get("router_boost") or 1.0)
-            rb = max(1.0, min(3.0, rb))
-
-            out = {
-                "description": data.get("description") or meta.get("description") or "",
-                "topic_summary": data.get("topic_summary") or "",
-                "router_tags": [str(x) for x in (data.get("router_tags") or [])][:24],
-                "aliases": [str(x) for x in (data.get("aliases") or [])][:24],
-                "canonical_entities": [str(x) for x in (data.get("canonical_entities") or [])][:24],
-                "is_explainer": bool(data.get("is_explainer")),
-                "router_boost": rb,
-            }
-
-            # Observability preview
             n = int(os.getenv("ROUTER_LOG_DESC_CHARS", "240"))
             vid = meta.get("video_id") or "unknown"
             logging.info(
                 "[router/enrich] vid=%s boost=%.2f tags=%s desc_preview=%r topic_preview=%r",
                 vid,
-                rb,
+                out["router_boost"],
                 out["router_tags"][:6],
-                _snip(out["description"], n),
-                _snip(out["topic_summary"], max(80, n // 2)),
+                _ascii(_snip(out["description"], n)),
+                _ascii(_snip(out["topic_summary"], max(80, n // 2))),
             )
             return out
         except Exception as e:
             last_err = e
-            logging.warning(f"[router/enrich] attempt={attempt + 1} err={e}")
+            logging.warning(f"[router/enrich] attempt={attempt + 1} err={_ascii(str(e))}")
             expo_backoff(attempt)
 
-    logging.error(f"[router/enrich] failed after retries: {last_err}")
-    # Fallback: minimal fields so we keep pipeline flowing
+    logging.error(f"[router/enrich] failed after retries: {_ascii(str(last_err))}")
     return {
         "description": meta.get("description") or "",
         "topic_summary": "",
@@ -192,9 +192,6 @@ def enrich_parent_router_fields(meta: Dict[str, Any], sentences: List[Dict[str, 
 async def enrich_parent_router_fields_async(
     meta: Dict[str, Any], sentences: List[Dict[str, Any]]
 ) -> Dict[str, Any]:
-    """
-    Async version (for concurrent use). Same fields/behavior as sync.
-    """
     preview = _summarize_sentences_for_prompt(sentences, settings_v2.ROUTER_GEN_MAX_SENTENCES)
     messages = _build_messages(meta, preview)
 
@@ -209,42 +206,29 @@ async def enrich_parent_router_fields_async(
                 messages=messages,
                 temperature=0.2,
                 response_format={"type": "json_object"},
-                timeout=45,  # seconds
+                timeout=45,
             )
             raw = resp.choices[0].message.content or "{}"
             data = _parse_json(raw)
-
-            rb = float(data.get("router_boost") or 1.0)
-            rb = max(1.0, min(3.0, rb))
-
-            out = {
-                "description": data.get("description") or meta.get("description") or "",
-                "topic_summary": data.get("topic_summary") or "",
-                "router_tags": [str(x) for x in (data.get("router_tags") or [])][:24],
-                "aliases": [str(x) for x in (data.get("aliases") or [])][:24],
-                "canonical_entities": [str(x) for x in (data.get("canonical_entities") or [])][:24],
-                "is_explainer": bool(data.get("is_explainer")),
-                "router_boost": rb,
-            }
+            out = _shape_output(meta, data)
 
             n = int(os.getenv("ROUTER_LOG_DESC_CHARS", "240"))
             vid = meta.get("video_id") or "unknown"
             logging.info(
                 "[router/enrich/async] vid=%s boost=%.2f tags=%s desc_preview=%r topic_preview=%r",
                 vid,
-                rb,
+                out["router_boost"],
                 out["router_tags"][:6],
-                _snip(out["description"], n),
-                _snip(out["topic_summary"], max(80, n // 2)),
+                _ascii(_snip(out["description"], n)),
+                _ascii(_snip(out["topic_summary"], max(80, n // 2))),
             )
             return out
         except Exception as e:
             last_err = e
-            logging.warning(f"[router/enrich/async] attempt={attempt + 1} err={e}")
-            # simple async backoff
+            logging.warning(f"[router/enrich/async] attempt={attempt + 1} err={_ascii(str(e))}")
             await asyncio.sleep(min(20.0, 0.5 * (2 ** attempt)))
 
-    logging.error(f"[router/enrich/async] failed after retries: {last_err}")
+    logging.error(f"[router/enrich/async] failed after retries: {_ascii(str(last_err))}")
     return {
         "description": meta.get("description") or "",
         "topic_summary": "",
