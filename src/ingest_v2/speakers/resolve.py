@@ -120,19 +120,16 @@ def _tier2_voice_match(
 ) -> Dict[str, Any]:
     """
     Local embedding backend using Resemblyzer (no external API).
-    VOICE_EMBED_BACKEND:
-      - 'resemblyzer' / 'local' -> compute local embeddings & match library
-      - 'none' (default)        -> skip
-      - 'assemblyai'            -> not implemented here
+    VOICE_EMBED_BACKEND (default 'auto'):
+      - 'auto' / '' / 'resemblyzer' / 'local' -> compute local embeddings & match library
+      - 'none' / 'off' / 'disable'            -> skip
+      - 'assemblyai'                          -> not implemented here
     """
-    backend = os.getenv("VOICE_EMBED_BACKEND", "none").lower()
-    if backend in ("none", ""):
+    backend = os.getenv("VOICE_EMBED_BACKEND", "auto").lower()
+    if backend in ("none", "off", "disable"):
         return {}
     if backend in ("assemblyai", "aai"):
-        logging.warning("[speakers/tier2] 'assemblyai' backend not implemented. Use 'resemblyzer'.")
-        return {}
-    if backend not in ("resemblyzer", "local"):
-        logging.warning("[speakers/tier2] unknown backend=%s; expected 'resemblyzer' or 'none'", backend)
+        logging.warning("[speakers/tier2] 'assemblyai' backend not implemented. Use 'resemblyzer' or 'auto'.")
         return {}
 
     audio_path = _find_audio_for_meta(meta, audio_hint_path)
@@ -143,21 +140,27 @@ def _tier2_voice_match(
     voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
     lib_path = voices_dir / "library.json"
     library = _load_voice_library(lib_path)
-    if not library:
-        logging.info("[speakers/tier2] no voice library at %s; skip tier2", lib_path)
-        # We still return empty; auto-enroll may fill it later
-        return {}
 
-    # Local embedding (Resemblyzer)
+    # Try local Resemblyzer backend
     try:
-        from .resemblyzer import embed_speakers_from_audio
+        from .resemblyzer_backend import embed_speakers_from_audio
     except Exception as e:
-        logging.warning("[speakers/tier2] resemblyzer backend not available: %s", e)
+        logging.warning(
+            "[speakers/tier2] local backend unavailable (install: resemblyzer, librosa, soundfile, numpy): %s", e
+        )
         return {}
 
-    emb_by_spk = embed_speakers_from_audio(str(audio_path), raw, meta=meta)
+    try:
+        emb_by_spk = embed_speakers_from_audio(str(audio_path), raw, meta=meta)
+    except Exception as e:
+        logging.warning("[speakers/tier2] embedding failed: %s", e)
+        return {}
 
-    # Compare each speaker vector with library; pick best if above threshold
+    # If there is no library yet, matching can't happen; auto-enroll may create it later.
+    if not library:
+        logging.info("[speakers/tier2] no voice library at %s; skip matching (auto-enroll may populate it).", lib_path)
+        return {}
+
     threshold = float(os.getenv("VOICE_MATCH_THRESHOLD", "0.80"))
     speaker_map: Dict[str, Dict[str, Any]] = {}
     for spk, vec in emb_by_spk.items():
@@ -165,10 +168,11 @@ def _tier2_voice_match(
         if best_name and best_sim >= threshold:
             speaker_map[spk] = {
                 "name": best_name,
-                "role": "Guest",  # merged with Tier-1 later
+                "role": "Guest",
                 "confidence": float(min(0.99, max(0.0, best_sim))),
                 "source": "tier2",
             }
+
     return {"speaker_map": speaker_map}
 
 
@@ -184,29 +188,26 @@ def _maybe_auto_enroll_primary(
 ) -> None:
     if os.getenv("VOICE_AUTO_ENROLL", "yes").lower() not in ("1", "true", "yes", "y"):
         return
-    backend = os.getenv("VOICE_EMBED_BACKEND", "none").lower()
-    if backend not in ("resemblyzer", "local"):
+    backend = os.getenv("VOICE_EMBED_BACKEND", "auto").lower()
+    if backend in ("none", "off", "disable"):
         return
 
-    # If Tier-2 already identified the primary with a library match, nothing to do
     primary = merged_out.get("speaker_primary") or "S1"
     t2map = (t2_out or {}).get("speaker_map") or {}
     if primary in t2map and t2map[primary].get("name"):
         return
 
-    # Require minimum talk time
     min_talk = float(os.getenv("VOICE_ENROLL_MIN_TALK_S", "60"))
     if _talk_time_seconds(raw, primary) < min_talk:
         logging.info("[speakers/enroll] primary %s spoke < %.1fs; skip auto-enroll", primary, min_talk)
         return
 
-    # Compute embedding for the primary and write to library
     audio_path = _find_audio_for_meta(meta, audio_hint_path)
     if not audio_path or not audio_path.exists():
         return
 
     try:
-        from .resemblyzer import embed_speakers_from_audio
+        from .resemblyzer_backend import embed_speakers_from_audio
     except Exception as e:
         logging.warning("[speakers/enroll] resemblyzer unavailable: %s", e)
         return
@@ -217,7 +218,6 @@ def _maybe_auto_enroll_primary(
         logging.info("[speakers/enroll] no embedding vector for primary %s; skip", primary)
         return
 
-    # Decide the name
     forced = os.getenv("VOICE_AUTO_ENROLL_NAME", "").strip()
     if forced:
         name = forced
@@ -233,7 +233,6 @@ def _maybe_auto_enroll_primary(
     lib_path.write_text(json.dumps(library, ensure_ascii=False, indent=2), encoding="utf-8")
     logging.info("[speakers/enroll] auto-enrolled '%s' into %s", name, lib_path)
 
-    # Also update merged map so this run shows the name immediately
     sp = merged_out.setdefault("speaker_map", {}).setdefault(primary, {"role": "Host"})
     sp["name"] = name
     sp["source"] = (sp.get("source") or "") + "|auto-enroll"

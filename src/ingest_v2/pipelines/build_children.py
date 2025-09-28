@@ -1,8 +1,10 @@
 # src/ingest_v2/pipelines/build_children.py
 import json
 import logging
+import os
+import time
 import uuid
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from ..configs.settings import settings_v2
 from ..entities.extract import extract_entities
@@ -260,7 +262,10 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
     2) Split any over-long child into sentence-aligned subchunks with small overlap.
     3) Add one per-parent summary node (node_type='summary').
     4) Extract entities, validate each node, keep only OK.
+    5) (Optional) Relabel speakers to resolved names from parent['speaker_map'].
     """
+    t0 = time.perf_counter()
+
     # Normalize to sentence list (used by segmenter fixes + summary)
     sentences = normalize_to_sentences(raw)
     if not sentences:
@@ -282,6 +287,7 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
         chapter_lookup=chapter_lookup,
         language=parent.get("language", "en"),
     )
+    t1 = time.perf_counter()
 
     # 2) Split any over-long windows
     max_s = float(settings_v2.SEGMENT_MAX_S)
@@ -311,6 +317,42 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
             f"orig_len={seg_len:.3f}s -> {len(subchildren)} subchunks"
         )
         fixed_children.extend(subchildren)
+    t2 = time.perf_counter()
+
+    # 2.5) Optional relabel: map 'S1' -> resolved speaker name, keep original in 'speaker_label'
+    speaker_map = (parent.get("speaker_map") or {}) if isinstance(parent.get("speaker_map"), dict) else {}
+    # mode: 'label' (keep S1), 'name' (replace with name), 'both' ("Vitalik (S2)")
+    mode = os.getenv("SPEAKER_NAME_MODE", "name").lower()
+    if speaker_map and mode in ("name", "both"):
+        def _map(spk: Optional[str]) -> Tuple[str, Optional[str]]:
+            if not spk:
+                return spk, None
+            entry = speaker_map.get(spk) or {}
+            name = entry.get("name")
+            if not name:
+                return spk, None
+            if mode == "both":
+                return f"{name} ({spk})", spk
+            return name, spk
+
+        relabeled = 0
+        for ch in fixed_children:
+            spk = ch.get("speaker")
+            new_s, orig = _map(spk)
+            if new_s and new_s != spk:
+                ch["speaker_label"] = orig or spk
+                ch["speaker"] = new_s
+                # Optionally surface role/confidence as extras (ignored by validator)
+                entry = speaker_map.get(orig or spk) or speaker_map.get(spk) or {}
+                if entry.get("role"):
+                    ch["speaker_role"] = entry["role"]
+                if entry.get("source"):
+                    ch["speaker_source"] = entry["source"]
+                if entry.get("confidence") is not None:
+                    ch["speaker_confidence"] = float(entry["confidence"])
+                relabeled += 1
+        if relabeled:
+            logging.info(f"[children/speakers] parent_id={parent_id} relabeled={relabeled}")
 
     # 3) Entities + validation + keep/drop counters
     kept: List[Dict[str, Any]] = []
@@ -323,6 +365,7 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
             kept.append(ch)
         else:
             dropped_counts[reason] = dropped_counts.get(reason, 0) + 1
+    t3 = time.perf_counter()
 
     # 4) Add a higher-level summary node (best-effort)
     summary_node = _make_parent_summary_child(
@@ -335,6 +378,7 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
             kept.append(summary_node)
         else:
             dropped_counts[reason] = dropped_counts.get(reason, 0) + 1
+    t4 = time.perf_counter()
 
     # Logging
     if any(dropped_counts.values()):
@@ -345,5 +389,12 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
         )
     else:
         logging.info(f"[children] parent_id={parent_id} kept_all={len(kept)}")
+
+    # Timing
+    logging.info(
+        "[timing/children] parent_id=%s normalize=%.3fs build=%.3fs split=%.3fs "
+        "entities+validate=%.3fs summary=%.3fs total=%.3fs",
+        parent_id, (t1 - t0), (t2 - t1), (t3 - t2), (t4 - t3), (time.perf_counter() - t4), (time.perf_counter() - t0)
+    )
 
     return kept

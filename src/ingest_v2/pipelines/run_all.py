@@ -1,9 +1,12 @@
 import argparse
 import asyncio
+import concurrent.futures
 import json
 import logging
+import math
 import os
 import re
+import time
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -81,12 +84,37 @@ def _looks_like_single_empty_file(obj: Any) -> bool:
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
-    if isinstance(obj, dict) and "segments" in obj:
-        segs_in = obj["segments"]
+    """
+    Normalize AssemblyAI-like payloads into:
+        {"segments": [{"start": float|None, "end": float|None, "speaker": str, "text": str, "words": [...]?}, ...]}
+
+    Supports:
+      - {"segments": [...]}  (preferred)
+      - [{"..."}]            (legacy)
+      - {"utterances": [...]} (fallback)
+    """
+    segs_in = None
+
+    if isinstance(obj, dict):
+        if "segments" in obj and isinstance(obj["segments"], list):
+            segs_in = obj["segments"]
+        elif "utterances" in obj and isinstance(obj["utterances"], list):
+            # Map utterance shape → segment shape best-effort
+            segs_in = []
+            for utt in obj["utterances"]:
+                # Common utterance fields: start, end, speaker, text, words
+                segs_in.append({
+                    "start": utt.get("start"),
+                    "end": utt.get("end"),
+                    "speaker": utt.get("speaker") or utt.get("speaker_label"),
+                    "text": utt.get("text"),
+                    "words": utt.get("words") or [],  # often present already
+                })
     elif isinstance(obj, list):
         segs_in = obj
-    else:
-        raise ValueError("Expected top-level list or dict with 'segments'")
+
+    if not isinstance(segs_in, list):
+        raise ValueError("Expected top-level list or dict with 'segments'/'utterances'")
 
     out_segments: List[Dict[str, Any]] = []
     for seg in segs_in:
@@ -96,33 +124,32 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
         words_in = seg.get("words")
         out_words = None
         if isinstance(words_in, list) and words_in:
-            out_words = [
-                {
-                    "text": (w.get("text") or "").strip(),
+            out_words = []
+            for w in words_in:
+                wtext = (w.get("text") or "").strip()
+                if not wtext:
+                    continue
+                out_words.append({
+                    "text": wtext,
                     "start": _ms_to_s(w.get("start")),
                     "end": _ms_to_s(w.get("end")),
                     "speaker": w.get("speaker") or seg.get("speaker") or "S1",
-                }
-                for w in words_in
-                if (w.get("text") or "").strip()
-            ]
+                })
 
         start_s = _ms_to_s(seg.get("start"))
         end_s = _ms_to_s(seg.get("end"))
-
         text = (seg.get("text") or "").strip()
+
         if start_s is None and end_s is None and not text and not out_words:
             continue
 
-        out_segments.append(
-            {
-                "start": start_s,
-                "end": end_s,
-                "speaker": seg.get("speaker") or seg.get("speaker_label") or "S1",
-                "text": text,
-                **({"words": out_words} if out_words is not None else {}),
-            }
-        )
+        out_segments.append({
+            "start": start_s,
+            "end": end_s,
+            "speaker": seg.get("speaker") or seg.get("speaker_label") or "S1",
+            "text": text,
+            **({"words": out_words} if out_words is not None else {}),
+        })
 
     return {"segments": out_segments}
 
@@ -196,7 +223,7 @@ def _iter_youtube_assets_from_fs(
                 p.unlink(missing_ok=True)
                 logging.info(f"[v2] pruned empty AssemblyAI file: {p}")
             except Exception as e:
-                logging.warning(f"[v2] failed to prune {p}: {_ascii(str(e))}")
+                logging.warning(f"[v2] failed to prune {p}: {_ascii(str(e))})")
             continue
 
         try:
@@ -262,6 +289,43 @@ async def _enrich_async(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[str, 
         sentences = []
     return await enrich_parent_router_fields_async(meta, sentences)
 
+def _prioritize_assets(
+    metas_raw_paths: List[Tuple[Dict[str, Any], Dict[str, Any], Path]],
+    deprioritize_channels: Optional[List[str]] = None,
+    push_to_end_regexes: Optional[List[str]] = None,
+) -> List[Tuple[Dict[str, Any], Dict[str, Any], Path]]:
+    """
+    Return a new list where items from the given channels (exact match) and/or
+    whose channel name matches any regex are pushed to the end. Within priority
+    groups, keep a stable ordering using (published_at, video_id).
+
+    Example:
+        metas_raw_paths = _prioritize_assets(
+            metas_raw_paths,
+            deprioritize_channels=["@SolanaFndn"],
+            push_to_end_regexes=[r"^@Solana.*"]  # optional
+        )
+    """
+    deprio_set = set(deprioritize_channels or [])
+    regex_objs = [re.compile(p) for p in (push_to_end_regexes or [])]
+
+    def _is_deprio(channel: Optional[str]) -> bool:
+        ch = (channel or "").strip()
+        if ch in deprio_set:
+            return True
+        return any(rx.search(ch) for rx in regex_objs)
+
+    def _key(item: Tuple[Dict[str, Any], Dict[str, Any], Path]):
+        meta, _raw, _p = item
+        ch = meta.get("channel_name")
+        date = meta.get("published_at") or "0000-00-00"
+        vid = meta.get("video_id") or ""
+        # True sorts after False → deprioritized to the end
+        return (_is_deprio(ch), date, vid)
+
+    return sorted(metas_raw_paths, key=_key)
+
+
 def main():
     setup_logger("ingest_v2")
     ap = argparse.ArgumentParser()
@@ -270,7 +334,12 @@ def main():
     ap.add_argument("--root", default=YOUTUBE_VIDEO_DIRECTORY, help="Root dir with diarized JSONs")
     ap.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
     ap.add_argument("--concurrency", type=int, default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")))
+    ap.add_argument("--speakers-workers", type=int, default=int(os.getenv("SPEAKERS_WORKERS", "0")),
+                    help="Workers for speaker resolution across videos (default: 80% of CPUs when 0)")
     args = ap.parse_args()
+
+    # Ensure Tier-2 voice matching is ON by default unless explicitly disabled.
+    os.environ.setdefault("VOICE_EMBED_BACKEND", "auto")
 
     if args.doc_type != "youtube_video":
         logging.info("[v2] 'stream' not wired yet in run_all; nothing to do.")
@@ -284,23 +353,68 @@ def main():
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
-    # Resolve speakers Tier1+Tier2 in-process (fast)
-    metas_raw_paths2 = []
-    for (meta, raw, json_path) in metas_raw_paths:
-        # Optional audio search next to JSON (same stem .mp3/.wav)
+    # ── Resolve speakers across videos in parallel (≈70% of CPUs by default) ──
+    cpu = os.cpu_count() or 4
+    workers = args.speakers_workers or max(1, math.floor(0.7 * cpu))
+    logging.info(f"[v2/speakers] resolving across {len(metas_raw_paths)} assets with {workers} workers")
+
+    metas_raw_paths2: List[Tuple[Dict[str, Any], Dict[str, Any], Path]] = []
+    t_speakers_total = 0.0
+
+    def _resolve_one(item: Tuple[Dict[str, Any], Dict[str, Any], Path]):
+        meta, raw, json_path = item
+        t0 = time.perf_counter()
         audio_path = _guess_audio_path(json_path)
-        spk = resolve_speakers(meta, raw, audio_hint_path=audio_path)
+        try:
+            spk = resolve_speakers(meta, raw, audio_hint_path=audio_path)
+        except Exception as e:
+            logging.warning("[v2/speakers] resolve failed vid=%s: %s", meta.get("video_id"), _ascii(str(e)))
+            spk = {}
+        dt = time.perf_counter() - t0
+
+        # Merge results into meta
         if spk.get("speaker_map"):
             meta["speaker_map"] = spk["speaker_map"]
         if spk.get("speaker_primary"):
             meta["speaker_primary"] = spk["speaker_primary"]
-        metas_raw_paths2.append((meta, raw, json_path))
+
+        # Friendly per-video summary (host + guests)
+        vid = meta.get("video_id")
+        spmap = meta.get("speaker_map") or {}
+        primary = meta.get("speaker_primary")
+        host_name = (spmap.get(primary, {}) or {}).get("name") or "Host"
+        guests = []
+        for spk_label, info in spmap.items():
+            if spk_label == primary:
+                continue
+            nm = (info.get("name") or "").strip()
+            if not nm or nm.startswith("Speaker "):
+                continue
+            guests.append(f"{nm}({info.get('confidence',0.0):.2f},{info.get('source','')})")
+
+        logging.info("[v2/speakers] vid=%s resolved in %.2fs host=%r guests=%s",
+                     vid, dt, host_name, guests or "[]")
+
+        return meta, raw, json_path, dt
+
+    metas_raw_paths = _prioritize_assets(
+        metas_raw_paths,
+        deprioritize_channels=["@SolanaFndn", "@timroughgardenlectures1861"]
+    )
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(_resolve_one, item) for item in metas_raw_paths]
+        for fut in concurrent.futures.as_completed(futures):
+            meta, raw, json_path, dt = fut.result()
+            metas_raw_paths2.append((meta, raw, json_path))
+            t_speakers_total += dt
 
     # Enrich via OpenAI with cache (async batching)
     enriched_metas: List[Dict[str, Any]] = []
     enriched = 0
     cached_hits = 0
     failed_enrich = 0
+    t_enrich_total = 0.0
 
     to_enrich: List[Tuple[Dict[str, Any], Dict[str, Any]]] = []
     for (meta, raw, _p) in metas_raw_paths2:
@@ -342,20 +456,23 @@ def main():
             async def _one(meta: Dict[str, Any], raw: Dict[str, Any]):
                 pid = meta["video_id"]
                 try:
+                    t0 = time.perf_counter()
                     async with sem:
                         enrich = await _enrich_async(meta, raw)
+                    dt = time.perf_counter() - t0
+                    logging.info("[v2/router] vid=%s enriched in %.2fs", pid, dt)
                     try:
                         router_cache_save(pid, enrich)
                     except Exception as e:
                         logging.warning(f"[v2/router/cache] save failed for {pid}: {_ascii(str(e))}")
-                    return meta, enrich, None
+                    return meta, enrich, None, dt
                 except Exception as e:
-                    return meta, None, e
-            tasks = [asyncio.create_task(_one(m,r)) for (m,r) in pairs]
+                    return meta, None, e, 0.0
+            tasks = [asyncio.create_task(_one(m, r)) for (m, r) in pairs]
             return await asyncio.gather(*tasks)
 
         results = asyncio.run(_batch_enrich(to_enrich, args.concurrency))
-        for meta, enrich, err in results:
+        for meta, enrich, err, dt in results:
             pid = meta["video_id"]
             if err or enrich is None:
                 logging.warning(f"[v2/router] enrichment failed for {pid}: {_ascii(str(err))}")
@@ -371,6 +488,7 @@ def main():
                 }
             else:
                 enriched += 1
+                t_enrich_total += dt
 
             merged = dict(meta)
             merged.update({
@@ -420,6 +538,7 @@ def main():
     total_children = 0
     missing_parents = 0
     skipped_empty = 0
+    t_children_total = 0.0
 
     for (meta, raw, _path) in metas_raw_paths2:
         pid = meta["video_id"]
@@ -429,6 +548,7 @@ def main():
             missing_parents += 1
             continue
 
+        t0 = time.perf_counter()
         # You can modify build_children_from_raw to use parent["speaker_map"] to relabel speakers if desired.
         children = build_children_from_raw(parent, raw)
         if not children:
@@ -437,13 +557,23 @@ def main():
             continue
 
         upsert_children(children)
+        dt = time.perf_counter() - t0
+        t_children_total += dt
         total_children += len(children)
+        logging.info("[v2/children] vid=%s upserted=%d in %.2fs", pid, len(children), dt)
 
     logging.info(
         f"[ingest_v2] finished upserting {total_children} child segments "
         f"from {len(parents)} parents "
         f"(missing_parents={missing_parents}, skipped_empty={skipped_empty}, "
         f"router_cached={cached_hits}, router_enriched={enriched}, router_failed={failed_enrich})."
+    )
+
+    # Timing summary (rough but useful)
+    avg_speakers = t_speakers_total / max(1, len(metas_raw_paths2))
+    logging.info(
+        "[timing] speakers_total=%.2fs (~%.2fs/video), enrich_total=%.2fs, children_total=%.2fs",
+        t_speakers_total, avg_speakers, t_enrich_total, t_children_total,
     )
 
 def _guess_audio_path(json_path: Path) -> Optional[Path]:
