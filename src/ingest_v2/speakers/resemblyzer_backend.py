@@ -31,11 +31,12 @@ def embed_speakers_from_audio(
     - Loads the single audio file at `audio_path`
     - Computes per-segment speaker embeddings with Resemblyzer, then mean-pools per speaker
     - Caches results to disk so we don't re-encode
+    - Encoder is cached per-process and can run on GPU if VOICE_DEVICE allows.
     """
 
     audio_p = Path(audio_path)
     if not audio_p.exists():
-        logging.warning("[tier2/aai_backend] audio missing at %s", audio_p)
+        logging.debug("[tier2/resemblyzer] audio missing at %s", audio_p)
         return {}
 
     # Cache dir & key
@@ -47,16 +48,14 @@ def embed_speakers_from_audio(
 
     # Short-circuit if cache exists
     cached = _try_read_json(cache_file)
-    if cached:
-        logging.info("[tier2/aai_backend] cache hit for vid=%s (%s)", vid, cache_file)
-        # validate vector shape minimally
-        if _looks_like_embed_map(cached):
-            return cached
+    if cached and _looks_like_embed_map(cached):
+        logging.debug("[tier2/resemblyzer] cache hit vid=%s (%s)", vid, cache_file)
+        return cached
 
-    # Build time ranges per speaker from your diarized segments
+    # Build time ranges per speaker from diarized segments
     segs = (raw or {}).get("segments") or []
     if not segs:
-        logging.info("[tier2/aai_backend] no segments in raw; nothing to embed")
+        logging.debug("[tier2/resemblyzer] no segments in raw; nothing to embed")
         return {}
 
     spans_by_spk: Dict[str, List[Tuple[float, float]]] = {}
@@ -69,18 +68,16 @@ def embed_speakers_from_audio(
         spans_by_spk.setdefault(spk, []).append((st, et))
 
     if not spans_by_spk:
-        logging.info("[tier2/aai_backend] no valid (start,end) spans; nothing to embed")
+        logging.debug("[tier2/resemblyzer] no valid (start,end) spans; nothing to embed")
         return {}
 
     # Load full waveform once (mono float32)
-    # soundfile gives (samples, channels) or (samples,)
     wav, sr = librosa.load(str(audio_p), sr=None, mono=True)  # handles mp3/m4a via audioread/ffmpeg
     if wav.ndim == 2:
-        # mixdown to mono
-        wav = wav.mean(axis=1)
+        wav = wav.mean(axis=1)  # mixdown
 
-    # Init encoder once
-    encoder = VoiceEncoder()
+    # Init encoder once (respects VOICE_DEVICE). Cached per-process.
+    encoder = _get_encoder()
 
     # Encode per span, then mean-pool per speaker
     out: Dict[str, List[float]] = {}
@@ -94,38 +91,29 @@ def embed_speakers_from_audio(
                 continue
 
             clip = wav[start_i:end_i]
-            # Resemblyzer expects either a file path or a preprocessed wav;
-            # we'll preprocess the raw mono segment
             try:
-                # preprocess_wav can accept a floating array + sr via librosa interface,
-                # but the simplest here: assume 16k is fine (Resemblyzer does resample internally)
-                # Convert to embedding directly:
-                #   NOTE: VoiceEncoder.embed_utterance expects 16k mono np.ndarray
-                #   preprocess_wav will handle loudness normalization & VAD by default.
                 seg_pre = preprocess_wav(clip, source_sr=sr)
                 if len(seg_pre) < int(0.4 * 16000):
                     continue
                 emb = encoder.embed_utterance(seg_pre)
                 vecs.append(emb.astype("float32"))
             except Exception as e:
-                logging.warning("[tier2/aai_backend] embedding failed for %s span (%.2f, %.2f): %s", spk, st, et, e)
+                logging.warning("[tier2/resemblyzer] embedding failed for %s span (%.2f, %.2f): %s", spk, st, et, e)
 
         if vecs:
             mean_vec = np.mean(np.stack(vecs, axis=0), axis=0)
-            # L2 normalize
             norm = np.linalg.norm(mean_vec) + 1e-12
             out[spk] = (mean_vec / norm).astype("float32").tolist()
 
-    # Cache to disk
+    # Atomic cache write to avoid partial files under concurrency
     try:
         if out:
-            cache_file.write_text(json.dumps(out), encoding="utf-8")
-            logging.info("[tier2/aai_backend] wrote cache for vid=%s at %s", vid, cache_file)
+            _atomic_write_json(cache_file, out)
+            logging.debug("[tier2/resemblyzer] wrote cache vid=%s -> %s", vid, cache_file)
     except Exception as e:
-        logging.warning("[tier2/aai_backend] failed writing cache: %s", e)
+        logging.warning("[tier2/resemblyzer] failed writing cache: %s", e)
 
     return out
-
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -183,3 +171,62 @@ def _fallback_video_key(audio_p: Path, raw: Dict[str, Any]) -> str:
     last = str(segs[-1].get("end")) if segs else "na"
     s = f"{audio_p.as_posix()}::{first}::{last}"
     return hashlib.sha1(s.encode("utf-8")).hexdigest()[:16]
+
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Helpers
+# ────────────────────────────────────────────────────────────────────────────────
+
+from functools import lru_cache
+
+try:
+    import torch  # optional; used for GPU selection
+except Exception:
+    torch = None
+
+def _select_device_from_env() -> str:
+    """
+    VOICE_DEVICE:
+      - 'cpu'  (default)
+      - 'auto' (cuda if available else cpu)
+      - 'cuda', 'cuda:0', etc. (falls back to cpu if unavailable)
+    """
+    want = (os.getenv("VOICE_DEVICE", "cpu") or "cpu").strip().lower()
+    if want in ("", "cpu"):
+        return "cpu"
+    if want == "auto":
+        if torch is not None and getattr(torch, "cuda", None) and torch.cuda.is_available():
+            return "cuda"
+        return "cpu"
+    if want.startswith("cuda"):
+        if torch is not None and getattr(torch, "cuda", None) and torch.cuda.is_available():
+            return want
+        logging.info("[tier2/resemblyzer] VOICE_DEVICE=%r requested but CUDA not available; using CPU", want)
+        return "cpu"
+    return "cpu"
+
+@lru_cache(maxsize=4)
+def _get_encoder() -> VoiceEncoder:
+    dev_str = _select_device_from_env()
+    try:
+        enc = VoiceEncoder(device=dev_str)  # string accepted by resemblyzer
+        logging.info("[tier2/resemblyzer] VoiceEncoder initialized on device=%s", dev_str)
+        return enc
+    except Exception as e:
+        logging.warning("[tier2/resemblyzer] failed to init VoiceEncoder on %s: %s; falling back to CPU", dev_str, e)
+        return VoiceEncoder(device="cpu")
+
+def warmup_encoder() -> str:
+    """Optional: call once at worker startup to keep the model resident."""
+    enc = _get_encoder()
+    # small no-op to materialize lazy weights on some backends
+    try:
+        _ = getattr(enc, "device", None)
+    except Exception:
+        pass
+    return _select_device_from_env()
+
+def _atomic_write_json(path: Path, obj: Any) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, path)  # atomic on POSIX & Windows

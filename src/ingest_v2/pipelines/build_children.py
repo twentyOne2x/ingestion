@@ -13,6 +13,9 @@ from ..transcripts.normalize import normalize_to_sentences
 from ..utils.ids import segment_uuid, sha1_hex
 from ..utils.timefmt import floor_s, s_to_hms_ms
 from ..validators.runtime import validate_child_runtime
+import re
+from openai import OpenAI  # <- for the entity LLM pass
+from ..speakers.name_filters import filter_to_people, looks_like_person, normalize_alias
 
 
 # ────────────────────────────────────────────────────────────────────────────────
@@ -256,14 +259,30 @@ def _make_parent_summary_child(
 # Main entry
 # ────────────────────────────────────────────────────────────────────────────────
 
+def _canon_entity(e: str) -> str:
+    e = (e or "").strip()
+    if not e:
+        return ""
+    if e.startswith("$"):   return e.upper()
+    if e.startswith("@"):   return e.lower()
+    return e
+
+
 def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     1) Build initial children via segmenter (15–60s, padded).
     2) Split any over-long child into sentence-aligned subchunks with small overlap.
     3) Add one per-parent summary node (node_type='summary').
-    4) Extract entities, validate each node, keep only OK.
-    5) (Optional) Relabel speakers to resolved names from parent['speaker_map'].
+    4) Extract entities using:
+         - inline tickers/handles from text,
+         - relabeled speaker name,
+         - parent context entities,
+         - AssemblyAI entities (no LLM).
+    5) Validate each node, keep only OK.
+    6) (Optional) Relabel speakers to resolved names from parent['speaker_map'].
     """
+    from ..entities.postprocess import postprocess_aai_entities
+
     t0 = time.perf_counter()
 
     # Normalize to sentence list (used by segmenter fixes + summary)
@@ -321,8 +340,7 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
 
     # 2.5) Optional relabel: map 'S1' -> resolved speaker name, keep original in 'speaker_label'
     speaker_map = (parent.get("speaker_map") or {}) if isinstance(parent.get("speaker_map"), dict) else {}
-    # mode: 'label' (keep S1), 'name' (replace with name), 'both' ("Vitalik (S2)")
-    mode = os.getenv("SPEAKER_NAME_MODE", "name").lower()
+    mode = os.getenv("SPEAKER_NAME_MODE", "name").lower()  # 'label' | 'name' | 'both'
     if speaker_map and mode in ("name", "both"):
         def _map(spk: Optional[str]) -> Tuple[str, Optional[str]]:
             if not spk:
@@ -342,7 +360,6 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
             if new_s and new_s != spk:
                 ch["speaker_label"] = orig or spk
                 ch["speaker"] = new_s
-                # Optionally surface role/confidence as extras (ignored by validator)
                 entry = speaker_map.get(orig or spk) or speaker_map.get(spk) or {}
                 if entry.get("role"):
                     ch["speaker_role"] = entry["role"]
@@ -354,12 +371,26 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
         if relabeled:
             logging.info(f"[children/speakers] parent_id={parent_id} relabeled={relabeled}")
 
+    # --- Global/context entities (AAI only; no LLM) ---
+    aai_clean = set(postprocess_aai_entities((raw or {}).get("entities")))
+    context_entities = set(_parent_context_entities(parent)) | aai_clean
+
     # 3) Entities + validation + keep/drop counters
     kept: List[Dict[str, Any]] = []
     dropped_counts = {"schema_error": 0, "timestamp_order_invalid": 0, "window_size_out_of_bounds": 0, "text_too_short": 0}
 
     for ch in fixed_children:
-        ch["entities"] = extract_entities(ch.get("text", ""))
+        base = set(extract_entities(ch.get("text", "")))
+        # include the (re)labeled speaker as an entity
+        spk_name = (ch.get("speaker") or "").strip()
+        if spk_name:
+            base.add(normalize_alias(spk_name))
+
+        # merge + canon + cap
+        ents = {_canon_entity(x) for x in (base | context_entities)}
+        ents = {x for x in ents if x}  # drop empties
+        ch["entities"] = sorted(ents, key=str.lower)[:64]
+
         ok, reason = validate_child_runtime(ch, duration_s=parent["duration_s"])
         if ok:
             kept.append(ch)
@@ -372,7 +403,11 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
         sentences, parent, char_cap=900, time_cap_s=min(60.0, parent.get("duration_s", 60.0))
     )
     if summary_node and len(summary_node.get("text", "")) >= 80:
-        summary_node["entities"] = extract_entities(summary_node["text"])
+        base = set(extract_entities(summary_node["text"]))
+        ents = {_canon_entity(x) for x in (base | context_entities)}
+        ents = {x for x in ents if x}
+        summary_node["entities"] = sorted(ents, key=str.lower)[:64]
+
         ok, reason = validate_child_runtime(summary_node, duration_s=parent["duration_s"])
         if ok:
             kept.append(summary_node)
@@ -398,3 +433,123 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
     )
 
     return kept
+
+
+def _parent_context_entities(parent: Dict[str, Any]) -> List[str]:
+    """
+    Stable entities to attach to every child:
+    - resolved people from parent['speaker_map']
+    - @handles and $TICKERS from parent['title']
+    - parent['canonical_entities'] from the enrich step
+    - channel if it looks like a person/handle
+    """
+    out: set[str] = set()
+
+    # people from speaker_map
+    spmap = parent.get("speaker_map") or {}
+    people = []
+    for _k, info in (spmap.items() if isinstance(spmap, dict) else []):
+        nm = (info.get("name") or "").strip()
+        if nm:
+            people.append(nm)
+    people = filter_to_people(people, host_names=[parent.get("channel_name") or ""])
+    out.update(normalize_alias(p) for p in people)
+
+    # handles/tickers from title
+    title = parent.get("title") or ""
+    if title:
+        out.update(re.findall(r"@[A-Za-z0-9_]{3,}", title))
+        out.update(re.findall(r"\$[A-Za-z]{2,6}", title))
+
+    # canonical entities from enrich
+    for c in (parent.get("canonical_entities") or []):
+        if isinstance(c, str) and c.strip():
+            out.add(c.strip())
+
+    # channel if person-like
+    ch = parent.get("channel_name") or ""
+    if ch and looks_like_person(ch, host_names=[]):
+        out.add(normalize_alias(ch))
+
+    return sorted({x.strip() for x in out if isinstance(x, str) and x.strip()})[:32]
+
+
+def _preview_text(sentences: List[Dict[str, Any]], cap_s: float = 5 * 60.0, char_cap: int = 1600) -> str:
+    acc, total = [], 0
+    for s in sentences:
+        st = float(s.get("start_s") or s.get("start") or 0.0)
+        if st > cap_s:
+            break
+        t = (s.get("text") or "").strip()
+        if not t:
+            continue
+        if total + len(t) > char_cap:
+            acc.append(t[: max(0, char_cap - total)])
+            break
+        acc.append(t)
+        total += len(t)
+    return " ".join(acc)
+
+
+def _entities_from_title_and_preview(parent: Dict[str, Any], sentences: List[Dict[str, Any]]) -> List[str]:
+    """
+    ALWAYS call a tiny model to extract entities from (title + early transcript preview).
+    Returns a deduped list of strings. Falls back to [] on error.
+    """
+    title = parent.get("title") or ""
+    preview = _preview_text(sentences)
+    model = os.getenv("ENTITIES_LLM_MODEL", "gpt-4o-mini")
+    client = OpenAI()
+
+    sys = (
+        "Extract entities for video search. Return STRICT JSON only.\n"
+        "Include: people (@handles or 'First Last'), orgs, protocols, products, tickers as $TICKER, and key topics/acronyms.\n"
+        "Prefer canonical short forms (e.g., 'data availability sampling' → 'DAS'). De-duplicate."
+    )
+    user = {
+        "title": title,
+        "early_transcript": preview,
+        "format": {
+            "type": "object",
+            "properties": {"entities": {"type": "array", "items": {"type": "string"}}},
+            "required": ["entities"],
+            "additionalProperties": False,
+        },
+    }
+
+    try:
+        resp = client.chat.completions.create(
+            model=model,
+            temperature=0.0,
+            response_format={"type": "json_object"},
+            messages=[
+                {"role": "system", "content": sys},
+                {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
+            ],
+            timeout=45,
+        )
+        raw = resp.choices[0].message.content or "{}"
+        data = json.loads(raw)
+        ents = data.get("entities") or []
+    except Exception as e:
+        logging.warning("[children/entities_llm] failed: %s", e)
+        return []
+
+    # light cleanup + alias normalization for people/handles
+    cleaned: List[str] = []
+    seen = set()
+    for x in ents:
+        if not isinstance(x, str):
+            continue
+        s = x.strip()
+        if not s:
+            continue
+        # normalize obvious person aliases/handles
+        if s.startswith("@") or " " in s:
+            s = normalize_alias(s)
+        low = s.lower()
+        if low in seen:
+            continue
+        seen.add(low)
+        cleaned.append(s)
+    return cleaned[:48]

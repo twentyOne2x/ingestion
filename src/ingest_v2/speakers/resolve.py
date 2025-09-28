@@ -5,6 +5,9 @@ import logging
 import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+from src.ingest_v2.speakers.enroll_guards import safe_auto_enroll
+from src.ingest_v2.speakers.name_filters import filter_to_people, looks_like_person, normalize_alias
+
 
 # ----------------------------
 # Public API
@@ -30,6 +33,11 @@ def resolve_speakers(
     primary = _guess_primary(raw)
     merged["speaker_primary"] = primary
 
+    # Drop org/brand "guests" from the final map; keep host no matter what
+    merged["speaker_map"] = _filter_map_people(
+        merged.get("speaker_map") or {}, keep_keys={primary}, channel_name=meta.get("channel_name") or ""
+    )
+
     # ── Auto-enroll the primary speaker if no library match and config allows ──
     try:
         _maybe_auto_enroll_primary(meta, raw, audio_hint_path, merged, t2)
@@ -49,7 +57,14 @@ def resolve_speakers(
 # Tier 1: transcript/heuristics/metadata
 # ----------------------------
 def _tier1_names_from_text(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[str, Any]:
-    channel = (meta.get("channel_name") or "").lstrip("@")
+    """
+    Tier-1 speaker hints (no LLM). Uses:
+      - talk-time heuristic for host,
+      - regex self-introductions in early window,
+      - candidate names/handles pulled ONLY from AssemblyAI entities.
+    """
+    channel_raw = (meta.get("channel_name") or "")
+    channel = channel_raw.lstrip("@")
     segs: List[Dict[str, Any]] = raw.get("segments") or []
 
     # accumulate talking time
@@ -74,6 +89,8 @@ def _tier1_names_from_text(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[st
             continue
         for m in NAME_RE.finditer(s["text"]):
             name = m.group(1).strip()
+            if not looks_like_person(name, host_names=[channel_raw]):
+                continue
             spk = s.get("speaker") or "S1"
             counts[(spk, name)] = counts.get((spk, name), 0) + 1
 
@@ -87,27 +104,70 @@ def _tier1_names_from_text(meta: Dict[str, Any], raw: Dict[str, Any]) -> Dict[st
             "source": "tier1",
         }
 
-    # host guess
-    if channel and talk_time:
+    # host guess (most talk time)
+    host_spk = None
+    if talk_time:
         host_spk = max(talk_time, key=talk_time.get)
         speaker_map[host_spk]["role"] = "Host"
-        human_channel = channel.replace("Fndn", "Foundation").replace("_", " ").strip()
-        if len(human_channel) > 2:
-            speaker_map[host_spk]["name"] = human_channel
+
+        # Prefer a person/handle as host name; avoid org labels
+        if channel_raw.startswith("@") or looks_like_person(channel, host_names=[]):
+            speaker_map[host_spk]["name"] = channel_raw or channel
             speaker_map[host_spk]["confidence"] = max(0.70, speaker_map[host_spk]["confidence"])
 
-    # apply extracted names
+    # apply extracted self-introduced names
     for (spk, name), c in counts.items():
         prev = speaker_map.get(spk)
         if not prev:
             prev = {"name": f"Speaker {spk.replace('S','')}", "role": "Guest", "confidence": 0.55, "source": "tier1"}
             speaker_map[spk] = prev
         conf = min(0.9, 0.55 + 0.15 * min(3, c))
+        # don't overwrite an identified host name
         if prev.get("role") != "Host" or "Speaker " in prev.get("name", ""):
-            prev["name"] = name
+            prev["name"] = normalize_alias(name)
         prev["confidence"] = max(prev.get("confidence", 0.0), conf)
 
+    # AAI entities → candidate people/handles only (no LLM, no title parsing)
+    try:
+        cands = _people_from_aai_entities(raw, channel_raw)
+        if cands and host_spk:
+            speaker_map = _assign_candidates_to_speakers(
+                speaker_map=speaker_map,
+                segs=segs,
+                talk_time=talk_time,
+                host_spk=host_spk,
+                channel_raw=channel_raw,
+                candidates=cands,
+            )
+            logging.info("[speakers/tier1] aai-entities candidates -> %s", cands)
+    except Exception as e:
+        logging.warning("[speakers/tier1] aai-entities pass failed (non-fatal): %s", e)
+
     return {"speaker_map": speaker_map}
+
+
+def _people_from_aai_entities(raw: Dict[str, Any], channel_raw: str) -> list[str]:
+    """
+    Extract person-like labels from AssemblyAI's entities payload.
+    Accepts @handles and entity_type including 'person'.
+    """
+    ents = (raw or {}).get("entities") or []
+    cands: list[str] = []
+    for e in ents:
+        try:
+            txt = (e.get("text") or "").strip()
+            typ = (e.get("entity_type") or "").lower()
+        except Exception:
+            continue
+        if not txt:
+            continue
+        if txt.startswith("@"):
+            cands.append(txt)
+            continue
+        if "person" in typ:
+            cands.append(txt)
+    # Normalize + drop org-like names; dedupe case-insensitively
+    return filter_to_people(cands, host_names=[channel_raw or ""])
 
 
 # ----------------------------
@@ -141,6 +201,14 @@ def _tier2_voice_match(
     lib_path = voices_dir / "library.json"
     library = _load_voice_library(lib_path)
 
+    # Filter library to person-like labels only (prevents org matches like 'Solana', 'Delphi Digital', etc.)
+    channel_raw = (meta.get("channel_name") or "")
+    people_lib = {k: v for k, v in (library or {}).items() if looks_like_person(k, host_names=[channel_raw])}
+    if library and not people_lib:
+        logging.info("[speakers/tier2] library had only non-person labels; skipping matches.")
+        return {}
+    library = people_lib
+
     # Try local Resemblyzer backend
     try:
         from .resemblyzer_backend import embed_speakers_from_audio
@@ -156,7 +224,6 @@ def _tier2_voice_match(
         logging.warning("[speakers/tier2] embedding failed: %s", e)
         return {}
 
-    # If there is no library yet, matching can't happen; auto-enroll may create it later.
     if not library:
         logging.info("[speakers/tier2] no voice library at %s; skip matching (auto-enroll may populate it).", lib_path)
         return {}
@@ -186,6 +253,7 @@ def _maybe_auto_enroll_primary(
     merged_out: Dict[str, Any],
     t2_out: Dict[str, Any],
 ) -> None:
+    # gate by env
     if os.getenv("VOICE_AUTO_ENROLL", "yes").lower() not in ("1", "true", "yes", "y"):
         return
     backend = os.getenv("VOICE_EMBED_BACKEND", "auto").lower()
@@ -195,6 +263,7 @@ def _maybe_auto_enroll_primary(
     primary = merged_out.get("speaker_primary") or "S1"
     t2map = (t2_out or {}).get("speaker_map") or {}
     if primary in t2map and t2map[primary].get("name"):
+        # already matched in library; no enrollment needed
         return
 
     min_talk = float(os.getenv("VOICE_ENROLL_MIN_TALK_S", "60"))
@@ -218,25 +287,41 @@ def _maybe_auto_enroll_primary(
         logging.info("[speakers/enroll] no embedding vector for primary %s; skip", primary)
         return
 
+    # Decide on a label to enroll that looks like a person or a handle (@user)
     forced = os.getenv("VOICE_AUTO_ENROLL_NAME", "").strip()
+    spmap = (merged_out or {}).get("speaker_map") or {}
+    primary_name = (spmap.get(primary, {}) or {}).get("name") or ""
+    channel_raw = (meta.get("channel_name") or "")
+
+    candidates = []
     if forced:
-        name = forced
-    else:
-        ch = (meta.get("channel_name") or "").lstrip("@").strip()
-        name = ch.replace("_", " ").replace("Fndn", "Foundation") if ch else "Host"
+        candidates.append(forced)
+    if primary_name:
+        candidates.append(primary_name)
+    if channel_raw.startswith("@"):
+        candidates.append(channel_raw)
+
+    label = None
+    for cand in candidates:
+        if looks_like_person(cand, host_names=[]):
+            label = cand
+            break
+    if not label:
+        # avoid enrolling org-y labels like 'Solana', 'Delphi Digital'
+        logging.info("[speakers/enroll] no person-like label for primary; skipping auto-enroll.")
+        return
 
     voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
     lib_path = voices_dir / "library.json"
-    library = _load_voice_library(lib_path)
-    library[name] = vec  # overwrite/refresh if exists
-    lib_path.parent.mkdir(parents=True, exist_ok=True)
-    lib_path.write_text(json.dumps(library, ensure_ascii=False, indent=2), encoding="utf-8")
-    logging.info("[speakers/enroll] auto-enrolled '%s' into %s", name, lib_path)
 
-    sp = merged_out.setdefault("speaker_map", {}).setdefault(primary, {"role": "Host"})
-    sp["name"] = name
-    sp["source"] = (sp.get("source") or "") + "|auto-enroll"
-    sp["confidence"] = max(0.8, float(sp.get("confidence") or 0.0))
+    # Atomic, locked, person-only write
+    enrolled = safe_auto_enroll(str(lib_path), label=label, embedding=vec, host_names=())
+    if enrolled:
+        logging.info("[speakers/enroll] auto-enrolled '%s' into %s", label, lib_path)
+        sp = merged_out.setdefault("speaker_map", {}).setdefault(primary, {"role": "Host"})
+        sp["name"] = label
+        sp["source"] = (sp.get("source") or "") + "|auto-enroll"
+        sp["confidence"] = max(0.8, float(sp.get("confidence") or 0.0))
 
 def _write_speaker_map(meta: Dict[str, Any], merged: Dict[str, Any]) -> None:
     outdir = Path(os.getenv("SPEAKER_MAP_DIR", "pipeline_storage_v2/speaker_maps"))
@@ -267,8 +352,9 @@ def _talk_time_seconds(raw: Dict[str, Any], speaker: str) -> float:
 # Helpers
 # ----------------------------
 def _safe_result(fut, fallback):
+    timeout_s = float(os.getenv("SPEAKERS_STAGE_TIMEOUT_S", "120"))
     try:
-        return fut.result(timeout=30)
+        return fut.result(timeout=timeout_s)
     except Exception as e:
         logging.warning("[speakers] parallel stage failed: %s", e)
         return fallback
@@ -309,10 +395,31 @@ def _find_audio_for_meta(meta: Dict[str, Any], audio_hint_path: Optional[Path]) 
 
 def _load_voice_library(p: Path) -> Dict[str, List[float]]:
     try:
-        if p.exists():
-            return json.loads(p.read_text(encoding="utf-8"))
+        if not p.exists():
+            return {}
+        raw = p.read_text(encoding="utf-8")
+        if not raw.strip():
+            return {}
+        try:
+            obj = json.loads(raw)
+        except json.JSONDecodeError:
+            # In case of a concurrent writer finishing a rename at the same time:
+            # try one more time after a tiny delay
+            try:
+                import time as _t; _t.sleep(0.05)
+                obj = json.loads(p.read_text(encoding="utf-8"))
+            except Exception:
+                logging.warning("[speakers/tier2] voice lib invalid JSON at %s; treating as empty", p)
+                return {}
+        if isinstance(obj, dict):
+            # keep only {str: List[number]}
+            out = {}
+            for k, v in obj.items():
+                if isinstance(k, str) and isinstance(v, list) and all(isinstance(x, (int, float)) for x in v):
+                    out[k] = v
+            return out
     except Exception as e:
-        logging.warning("[speakers/tier2] failed loading voice lib: %s", e)
+        logging.warning("[speakers/tier2] failed loading voice lib %s: %s", p, e)
     return {}
 
 def _best_match(vec: List[float], library: Dict[str, List[float]]) -> Tuple[Optional[str], float]:
@@ -330,3 +437,198 @@ def _best_match(vec: List[float], library: Dict[str, List[float]]) -> Tuple[Opti
         if sim > best_sim:
             best_name, best_sim = name, sim
     return best_name, float(best_sim)
+
+
+def _atomic_write_json(path: Path, obj: Any) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def _filter_map_people(spmap: Dict[str, Any], keep_keys: set[str], channel_name: str = "") -> Dict[str, Any]:
+    """Keep speakers in keep_keys (e.g., primary) + any entries whose 'name' looks like a person."""
+    out = {}
+    hosts = [channel_name] if channel_name else []
+    for k, info in (spmap or {}).items():
+        if k in keep_keys:
+            out[k] = info
+            continue
+        nm = (info.get("name") or "").strip()
+        if nm and looks_like_person(nm, host_names=hosts):
+            out[k] = info
+    return out
+
+
+import re
+from typing import Iterable
+
+def _people_from_title(title: str, channel_raw: str) -> list[str]:
+    """
+    Extract @handles and 2-4 token TitleCase names from the title.
+    Filter to person-like (orgs dropped), normalize + dedupe.
+    """
+    t = (title or "").strip()
+    if not t:
+        return []
+
+    # 1) @handles
+    handles = re.findall(r"@[A-Za-z0-9_]{3,}", t)
+
+    # 2) Split by common guest separators, then scan for TitleCase person names
+    # “with”, “w/”, “feat/ft”, “x”, “&”, “,”, "-", "—", "|"
+    sep_norm = re.sub(r"(?:\bw\/\b|\bwith\b|\bfeat\.?\b|\bfeaturing\b|\bft\.?\b|\bx\b)", ",", t, flags=re.I)
+    chunks = re.split(r"[,&|\-\u2014]+", sep_norm)  # -, —, &, |, comma
+
+    name_like = []
+    NAME_SEQ = re.compile(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})\b")
+    for ch in chunks:
+        for m in NAME_SEQ.finditer(ch):
+            name_like.append(m.group(1).strip())
+
+    cands = handles + name_like
+    return filter_to_people(cands, host_names=[channel_raw or ""])
+
+def _early_text_preview(segs: list[dict], cap_s: float = 5 * 60.0, char_cap: int = 1600) -> str:
+    acc = []
+    total = 0
+    for s in segs:
+        st = float(s.get("start") or 0.0)
+        if st > cap_s:
+            break
+        txt = (s.get("text") or "").strip()
+        if not txt:
+            continue
+        if total + len(txt) > char_cap:
+            acc.append(txt[: max(0, char_cap - total)])
+            break
+        acc.append(txt)
+        total += len(txt)
+    return " ".join(acc)
+
+def _assign_candidates_to_speakers(
+    speaker_map: dict[str, dict],
+    segs: list[dict],
+    talk_time: dict[str, float],
+    host_spk: str,
+    channel_raw: str,
+    candidates: Iterable[str],
+) -> dict[str, dict]:
+    """
+    Conservatively assign title/LLM candidate names to unlabeled non-host speakers.
+    - Prefer not to overwrite Tier-2 matches or non-default names.
+    - If a candidate appears in early text spoken by some S*, favor that S*.
+    - Else map in talk-time order (2nd-most talker gets first remaining candidate), low-ish confidence.
+    """
+    if not candidates:
+        return speaker_map
+
+    # Build quick index of which S* mentioned which candidate in the early window
+    early = [s for s in segs if float(s.get("start") or 0.0) <= 6 * 60.0]
+    mention_by_spk: dict[str, set[str]] = {}
+    for s in early:
+        txt = (s.get("text") or "").lower()
+        spk = s.get("speaker") or "S1"
+        for c in candidates:
+            c_low = normalize_alias(c).lower()
+            # match either full handle or a simple last-name fallback for TitleCase names
+            ok = False
+            if c_low.startswith("@") and c_low in txt:
+                ok = True
+            else:
+                parts = [p for p in c.split() if p and p[0].isupper()]
+                if parts:
+                    last = parts[-1].lower()
+                    if last and re.search(rf"\b{re.escape(last)}\b", txt):
+                        ok = True
+            if ok:
+                mention_by_spk.setdefault(spk, set()).add(normalize_alias(c))
+
+    # Non-host speakers ordered by talk-time (desc)
+    non_host = [k for k in sorted(talk_time, key=talk_time.get, reverse=True) if k != host_spk]
+
+    # Unlabeled slots we feel okay to overwrite: default "Speaker N" with source tier1 only
+    def _is_default_slot(info: dict) -> bool:
+        nm = (info.get("name") or "")
+        src = (info.get("source") or "")
+        return nm.startswith("Speaker ") and ("tier2" not in src)
+
+    # Try precise assignment by mention; then fallback by talk-time
+    assigned: set[str] = set()
+    for spk in non_host:
+        info = speaker_map.get(spk) or {}
+        if not _is_default_slot(info):
+            continue
+        # pick a candidate that this spk mentioned
+        options = list((mention_by_spk.get(spk) or set()) - assigned)
+        chosen = options[0] if options else None
+        if chosen:
+            info["name"] = chosen
+            info["source"] = (info.get("source") or "") + "|title"
+            info["confidence"] = max(float(info.get("confidence") or 0.55), 0.70)
+            speaker_map[spk] = info
+            assigned.add(chosen)
+
+    # Fallback pass: map remaining candidates by talk-time
+    remaining = [normalize_alias(c) for c in candidates if normalize_alias(c) not in assigned]
+    slots = [spk for spk in non_host if _is_default_slot(speaker_map.get(spk) or {})]
+    for spk, cand in zip(slots, remaining):
+        info = speaker_map.get(spk) or {"role": "Guest", "source": "tier1", "confidence": 0.55}
+        info["name"] = cand
+        info["source"] = (info.get("source") or "") + "|title"
+        info["confidence"] = max(float(info.get("confidence") or 0.55), 0.62)
+        speaker_map[spk] = info
+        assigned.add(cand)
+
+    return speaker_map
+
+def _llm_people_hints(meta: dict, segs: list[dict]) -> list[str]:
+    """
+    Optional: ask a tiny model (gpt-4o-mini) for likely human names/handles.
+    Returns a list of canonicalized strings (e.g., '@handle' or 'First Last').
+    Controlled via SPEAKERS_LLM_HINTS=true.
+    """
+    if os.getenv("SPEAKERS_LLM_HINTS", "false").lower() not in ("1", "true", "yes", "y"):
+        return []
+
+    try:
+        from openai import OpenAI
+    except Exception:
+        return []
+
+    title = meta.get("title") or ""
+    channel = meta.get("channel_name") or ""
+    preview = _early_text_preview(segs)
+
+    prompt_user = {
+        "title": title,
+        "channel_name": channel,
+        "early_transcript": preview[:1600],
+        "want": "Return JSON with a short list of likely human speakers (host + guests). Use @handles when obvious; otherwise 'First Last'. No org/brand names. 6 items max.",
+        "format": {"type": "object", "properties": {"people": {"type": "array", "items": {"type": "string"}}}, "required": ["people"], "additionalProperties": False},
+    }
+    sys = (
+        "You normalize names for a podcast/video. Return STRICT JSON only. "
+        "Keep only humans (@handles or First Last). Drop orgs/brands."
+    )
+    model = os.getenv("SPEAKERS_LLM_MODEL", "gpt-4o-mini")
+
+    try:
+        client = OpenAI()
+        resp = client.chat.completions.create(
+            model=model,
+            temperature=0.0,
+            response_format={"type": "json_object"},
+            messages=[
+                {"role": "system", "content": sys},
+                {"role": "user", "content": json.dumps(prompt_user, ensure_ascii=False)},
+            ],
+            timeout=30,
+        )
+        raw = resp.choices[0].message.content or "{}"
+        data = json.loads(raw)
+        cands = data.get("people") or []
+    except Exception as e:
+        logging.info("[speakers/llm] hint call failed: %s", e)
+        return []
+
+    return filter_to_people([normalize_alias(x) for x in cands], host_names=[channel or ""])

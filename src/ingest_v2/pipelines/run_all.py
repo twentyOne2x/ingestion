@@ -25,6 +25,10 @@ from src.ingest_v2.utils.logging import setup_logger
 
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 
+from src.ingest_v2.speakers.name_filters import looks_like_person, filter_to_people, normalize_alias
+
+
+
 # ────────────────────────────────────────────────────────────────────────────────
 # Small helpers
 # ────────────────────────────────────────────────────────────────────────────────
@@ -208,8 +212,16 @@ def _iter_youtube_assets_from_fs(
     root_dir: Path, prune_empty: bool = False
 ) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any], Path]]:
     """
-    Yield (meta, raw_for_segmenter, json_path).
+    Yield (meta, raw_for_segmenter, json_path) for each AssemblyAI diarized JSON.
+
+    This version also:
+      - reads any top-level AssemblyAI `entities` array,
+      - cleans them with postprocess_aai_entities,
+      - seeds Parent `meta["entities"]`,
+      - forwards raw `entities` into `raw_for_segmenter` for later child tagging.
     """
+    from src.ingest_v2.entities.postprocess import postprocess_aai_entities
+
     for p in root_dir.rglob("*_diarized_content.json"):
         try:
             raw_text = p.read_text(encoding="utf-8")
@@ -253,6 +265,10 @@ def _iter_youtube_assets_from_fs(
         channel_name = _extract_channel_from_path(p)
         published_at = _extract_date_prefix(title)
 
+        # AssemblyAI entities (raw) -> cleaned canonical set for parent meta
+        aai_entities_raw = (obj.get("entities") or []) if isinstance(obj, dict) else []
+        cleaned_entities = postprocess_aai_entities(aai_entities_raw)
+
         meta = {
             "video_id": video_id,
             "title": title,
@@ -264,7 +280,7 @@ def _iter_youtube_assets_from_fs(
             "url": f"https://www.youtube.com/watch?v={video_id}",
             "thumbnail_url": None,
             "language": "en",
-            "entities": [],
+            "entities": cleaned_entities,
             "chapters": None,
             "document_type": "youtube_video",
             "source": "youtube",
@@ -274,6 +290,8 @@ def _iter_youtube_assets_from_fs(
             "segments": segs,
             "caption_lines": [],
             "diarization": [],
+            # forward the raw AAI entities so children can consume them
+            "entities": aai_entities_raw,
         }
 
         yield meta, raw_for_segmenter, p
@@ -324,6 +342,22 @@ def _prioritize_assets(
         return (_is_deprio(ch), date, vid)
 
     return sorted(metas_raw_paths, key=_key)
+
+
+def _filter_speaker_map_people(spmap: Dict[str, Any], keep_keys: set[str], host_names=()) -> Dict[str, Any]:
+    """
+    Keep (a) any speaker keys in keep_keys (e.g., primary host), and
+    (b) any entries whose 'name' looks like a person.
+    """
+    out = {}
+    for k, info in (spmap or {}).items():
+        if k in keep_keys:
+            out[k] = info
+            continue
+        nm = (info.get("name") or "").strip()
+        if nm and looks_like_person(nm, host_names=host_names):
+            out[k] = info
+    return out
 
 
 def main():
@@ -378,19 +412,38 @@ def main():
         if spk.get("speaker_primary"):
             meta["speaker_primary"] = spk["speaker_primary"]
 
+        # ── NEW: normalize host alias so variants collapse ──
+        if meta.get("speaker_primary"):
+            meta["speaker_primary"] = normalize_alias(meta["speaker_primary"])
+        primary = meta.get("speaker_primary")
+
+        # people-only filter using the normalized host name
+        spmap = meta.get("speaker_map") or {}
+        keep = {primary} if primary else set()
+        spmap = _filter_speaker_map_people(spmap, keep_keys=keep, host_names=[primary or ""])
+        meta["speaker_map"] = spmap
+
         # Friendly per-video summary (host + guests)
         vid = meta.get("video_id")
-        spmap = meta.get("speaker_map") or {}
-        primary = meta.get("speaker_primary")
         host_name = (spmap.get(primary, {}) or {}).get("name") or "Host"
-        guests = []
+
+        # ── NEW: collapse/clean guest names for logging visibility ──
+        guest_names = []
         for spk_label, info in spmap.items():
             if spk_label == primary:
                 continue
             nm = (info.get("name") or "").strip()
-            if not nm or nm.startswith("Speaker "):
+            if nm:
+                guest_names.append(normalize_alias(nm))
+        guest_names = filter_to_people(guest_names, host_names=[primary or ""])
+
+        guests = []
+        for spk_label, info in spmap.items():
+            nm = (info.get("name") or "").strip()
+            if not nm:
                 continue
-            guests.append(f"{nm}({info.get('confidence',0.0):.2f},{info.get('source','')})")
+            if normalize_alias(nm) in guest_names:
+                guests.append(f"{nm}({info.get('confidence', 0.0):.2f},{info.get('source', '')})")
 
         logging.info("[v2/speakers] vid=%s resolved in %.2fs host=%r guests=%s",
                      vid, dt, host_name, guests or "[]")
