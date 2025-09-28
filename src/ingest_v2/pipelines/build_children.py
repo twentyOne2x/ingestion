@@ -14,7 +14,6 @@ from ..utils.ids import segment_uuid, sha1_hex
 from ..utils.timefmt import floor_s, s_to_hms_ms
 from ..validators.runtime import validate_child_runtime
 import re
-from openai import OpenAI  # <- for the entity LLM pass
 from ..speakers.name_filters import filter_to_people, looks_like_person, normalize_alias
 
 
@@ -489,67 +488,3 @@ def _preview_text(sentences: List[Dict[str, Any]], cap_s: float = 5 * 60.0, char
         acc.append(t)
         total += len(t)
     return " ".join(acc)
-
-
-def _entities_from_title_and_preview(parent: Dict[str, Any], sentences: List[Dict[str, Any]]) -> List[str]:
-    """
-    ALWAYS call a tiny model to extract entities from (title + early transcript preview).
-    Returns a deduped list of strings. Falls back to [] on error.
-    """
-    title = parent.get("title") or ""
-    preview = _preview_text(sentences)
-    model = os.getenv("ENTITIES_LLM_MODEL", "gpt-4o-mini")
-    client = OpenAI()
-
-    sys = (
-        "Extract entities for video search. Return STRICT JSON only.\n"
-        "Include: people (@handles or 'First Last'), orgs, protocols, products, tickers as $TICKER, and key topics/acronyms.\n"
-        "Prefer canonical short forms (e.g., 'data availability sampling' → 'DAS'). De-duplicate."
-    )
-    user = {
-        "title": title,
-        "early_transcript": preview,
-        "format": {
-            "type": "object",
-            "properties": {"entities": {"type": "array", "items": {"type": "string"}}},
-            "required": ["entities"],
-            "additionalProperties": False,
-        },
-    }
-
-    try:
-        resp = client.chat.completions.create(
-            model=model,
-            temperature=0.0,
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": sys},
-                {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
-            ],
-            timeout=45,
-        )
-        raw = resp.choices[0].message.content or "{}"
-        data = json.loads(raw)
-        ents = data.get("entities") or []
-    except Exception as e:
-        logging.warning("[children/entities_llm] failed: %s", e)
-        return []
-
-    # light cleanup + alias normalization for people/handles
-    cleaned: List[str] = []
-    seen = set()
-    for x in ents:
-        if not isinstance(x, str):
-            continue
-        s = x.strip()
-        if not s:
-            continue
-        # normalize obvious person aliases/handles
-        if s.startswith("@") or " " in s:
-            s = normalize_alias(s)
-        low = s.lower()
-        if low in seen:
-            continue
-        seen.add(low)
-        cleaned.append(s)
-    return cleaned[:48]

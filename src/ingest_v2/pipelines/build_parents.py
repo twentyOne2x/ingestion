@@ -3,7 +3,6 @@ from typing import Dict, Any, List
 from ..schemas.parent import ParentNode
 from ..sources.youtube import build_parent_from_metadata
 from ..validators.runtime import validate_parent_runtime
-from ..utils.logging import setup_logger
 
 def build_parent(meta: Dict[str, Any]) -> ParentNode:
     p = build_parent_from_metadata(meta)

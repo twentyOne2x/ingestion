@@ -185,7 +185,7 @@ def _tier2_voice_match(
       - 'none' / 'off' / 'disable'            -> skip
       - 'assemblyai'                          -> not implemented here
     """
-    backend = os.getenv("VOICE_EMBED_BACKEND", "auto").lower()
+    backend = os.getenv("VOICE_EMBED_BACKEND", "off").lower()
     if backend in ("none", "off", "disable"):
         return {}
     if backend in ("assemblyai", "aai"):
@@ -256,7 +256,7 @@ def _maybe_auto_enroll_primary(
     # gate by env
     if os.getenv("VOICE_AUTO_ENROLL", "yes").lower() not in ("1", "true", "yes", "y"):
         return
-    backend = os.getenv("VOICE_EMBED_BACKEND", "auto").lower()
+    backend = os.getenv("VOICE_EMBED_BACKEND", "off").lower()
     if backend in ("none", "off", "disable"):
         return
 

@@ -66,16 +66,15 @@ def upsert_children(children: List[Dict[str, Any]]) -> None:
     """
     - Embeds child texts
     - Upserts to Pinecone with namespace routing
+    - Logs final (deduped) entities written per vector
     - Retries on transient errors
     """
     if not children:
         return
 
-    # All children are from same document_type within one parent batch
     ns = choose_namespace(children[0]["document_type"])
     index = get_index(settings_v2.PINECONE_INDEX_NAME, settings_v2.EMBED_DIM)
 
-    # Build embeddings with retries inside
     embed = _embedder()
     texts = [c["text"] for c in children]
 
@@ -93,15 +92,25 @@ def upsert_children(children: List[Dict[str, Any]]) -> None:
         logging.error(f"[upsert] embedding/count mismatch: {len(embs)} != {len(children)}; dropping batch")
         return
 
-    vectors = [
-        {
-            "id": c["segment_id"],
-            "values": vec,
-            "metadata": _prep_metadata_for_upsert(c),
-        }
-        for c, vec in zip(children, embs)
-    ]
+    vectors = []
+    for c, vec in zip(children, embs):
+        # ensure entities are deduped (order-preserving) before sanitize/trim
+        ents = c.get("entities") or []
+        if isinstance(ents, list) and ents:
+            ents = list(dict.fromkeys([str(x) for x in ents]))
+            c["entities"] = ents
 
-    # Delegate batching + retries + final sanitize to helper
+        md = _prep_metadata_for_upsert(c)
+        # (re)assert dedupe after sanitize just in case
+        if isinstance(md.get("entities"), list):
+            md["entities"] = list(dict.fromkeys(md["entities"]))
+
+        vectors.append({"id": c["segment_id"], "values": vec, "metadata": md})
+
+    # log a concise preview of what we will actually write
+    for v in vectors[: min(8, len(vectors))]:
+        ents = v["metadata"].get("entities") or []
+        logging.info("[upsert/entities] id=%s count=%d preview=%s", v["id"], len(ents), ents[:12])
+
     upsert_vectors(index=index, namespace=ns, vectors=vectors, batch_size=100)
     logging.info(f"[upsert] upserted {len(vectors)} vectors into namespace={ns}")

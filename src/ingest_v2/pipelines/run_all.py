@@ -214,13 +214,33 @@ def _iter_youtube_assets_from_fs(
     """
     Yield (meta, raw_for_segmenter, json_path) for each AssemblyAI diarized JSON.
 
-    This version also:
-      - reads any top-level AssemblyAI `entities` array,
-      - cleans them with postprocess_aai_entities,
+    Adds support for sibling sidecar '*_entities.json':
+      - prefers sidecar over top-level `entities`,
+      - cleans via postprocess_aai_entities,
       - seeds Parent `meta["entities"]`,
       - forwards raw `entities` into `raw_for_segmenter` for later child tagging.
     """
     from src.ingest_v2.entities.postprocess import postprocess_aai_entities
+
+    def _entities_sidecar_path(content_path: Path) -> Path:
+        stem = content_path.stem.replace("_diarized_content", "")
+        return content_path.with_name(f"{stem}_entities.json")
+
+    def _normalize_entities_payload(payload: Any) -> List[Dict[str, Any]]:
+        """
+        Accepts:
+          - list[dict{text, entity_type, ...}] (AAI style)
+          - list[str]                           (wrapped into {text, entity_type='custom'})
+          - dict with key 'entities'            (we take that list)
+        """
+        if isinstance(payload, dict) and isinstance(payload.get("entities"), list):
+            payload = payload["entities"]
+        if isinstance(payload, list):
+            if payload and isinstance(payload[0], dict):
+                return payload
+            if payload and isinstance(payload[0], str):
+                return [{"text": s, "entity_type": "custom"} for s in payload if isinstance(s, str)]
+        return []
 
     for p in root_dir.rglob("*_diarized_content.json"):
         try:
@@ -265,9 +285,13 @@ def _iter_youtube_assets_from_fs(
         channel_name = _extract_channel_from_path(p)
         published_at = _extract_date_prefix(title)
 
-        # AssemblyAI entities (raw) -> cleaned canonical set for parent meta
-        aai_entities_raw = (obj.get("entities") or []) if isinstance(obj, dict) else []
+        # Sidecar/top-level entities (raw) -> cleaned canonical set for parent meta
+        aai_entities_raw = _load_entities_for_json_path(p, obj)
         cleaned_entities = postprocess_aai_entities(aai_entities_raw)
+        logging.info(
+            "[v2/entities] vid=%s cleaned=%d sample=%s",
+            video_id, len(cleaned_entities), cleaned_entities[:8],
+        )
 
         meta = {
             "video_id": video_id,
@@ -290,8 +314,7 @@ def _iter_youtube_assets_from_fs(
             "segments": segs,
             "caption_lines": [],
             "diarization": [],
-            # forward the raw AAI entities so children can consume them
-            "entities": aai_entities_raw,
+            "entities": aai_entities_raw,  # pass raw for child-level tagging
         }
 
         yield meta, raw_for_segmenter, p
@@ -372,8 +395,8 @@ def main():
                     help="Workers for speaker resolution across videos (default: 80% of CPUs when 0)")
     args = ap.parse_args()
 
-    # Ensure Tier-2 voice matching is ON by default unless explicitly disabled.
-    os.environ.setdefault("VOICE_EMBED_BACKEND", "auto")
+    # Ensure Tier-2 voice matching is OFF by default; set VOICE_EMBED_BACKEND=auto to enable.
+    os.environ.setdefault("VOICE_EMBED_BACKEND", "off")
 
     if args.doc_type != "youtube_video":
         logging.info("[v2] 'stream' not wired yet in run_all; nothing to do.")
@@ -642,6 +665,53 @@ def _guess_audio_path(json_path: Path) -> Optional[Path]:
         if cand.exists():
             return cand
     return None
+
+# add near other imports
+from typing import Any, Dict, List
+from pathlib import Path
+import json, logging
+
+def _entities_sidecar_path(json_path: Path) -> Path:
+    stem = json_path.stem.replace("_diarized_content", "")
+    return json_path.with_name(f"{stem}_entities.json")
+
+def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, Any]]:
+    """
+    Prefer a sibling '*_entities.json'. Fallback to top-level obj['entities'].
+    Accepts:
+      - list[dict{text, entity_type, ...}] (AAI style)
+      - list[str]                           (we wrap into dicts)
+      - dict with key 'entities'            (we take that list)
+    """
+    def _norm(payload) -> List[Dict[str, Any]]:
+        if isinstance(payload, dict) and isinstance(payload.get("entities"), list):
+            payload = payload["entities"]
+        if isinstance(payload, list):
+            if payload and isinstance(payload[0], dict):
+                return payload
+            if payload and isinstance(payload[0], str):
+                return [{"text": s, "entity_type": "custom"} for s in payload if isinstance(s, str)]
+            return []
+        return []
+
+    sidecar = _entities_sidecar_path(content_path)
+    try:
+        if sidecar.exists():
+            raw = json.loads(sidecar.read_text(encoding="utf-8"))
+            ents = _norm(raw)
+            logging.info("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(ents))
+            return ents
+    except Exception as e:
+        logging.warning("[v2/entities] sidecar read failed %s: %s", sidecar, e)
+
+    ents = _norm((obj or {}).get("entities"))
+    if ents:
+        logging.info("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(ents))
+    else:
+        logging.info("[v2/entities] no entities for %s", content_path.name)
+    return ents
+
+
 
 if __name__ == "__main__":
     main()
