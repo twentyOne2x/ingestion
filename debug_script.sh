@@ -4,9 +4,12 @@
 FILES=(
 "src/ingest_v2/router/enrich_parent.py"
 "src/ingest_v2/speakers/resolve.py"
-"src/ingest_v2/speakers/resemblyzer.py"
+"src/ingest_v2/speakers/resemblyzer_backend.py"
 "src/ingest_v2/pipelines/run_all.py"
-"src/ingest_v2/speakers/voice_lib_cli.py"
+"src/ingest_v2/pipelines/build_parents.py"
+"src/ingest_v2/pipelines/build_children.py"
+"src/ingest_v2/schemas/child.py"
+"src/ingest_v2/schemas/parent.py"
 )
 
 remove_comments="${1:-true}"  # Default to true if no parameter is provided
