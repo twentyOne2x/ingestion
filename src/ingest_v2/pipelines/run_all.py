@@ -392,7 +392,9 @@ def main():
     ap.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
     ap.add_argument("--concurrency", type=int, default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")))
     ap.add_argument("--speakers-workers", type=int, default=int(os.getenv("SPEAKERS_WORKERS", "0")),
-                    help="Workers for speaker resolution across videos (default: 80% of CPUs when 0)")
+                    help="Workers for speaker resolution across videos (default: ~70% of CPUs when 0)")
+    ap.add_argument("--skip-speakers", action="store_true",
+                    help="Skip cross-video speaker resolution/enroll stages")
     args = ap.parse_args()
 
     # Ensure Tier-2 voice matching is OFF by default; set VOICE_EMBED_BACKEND=auto to enable.
@@ -410,82 +412,83 @@ def main():
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
-    # ── Resolve speakers across videos in parallel (≈70% of CPUs by default) ──
-    cpu = os.cpu_count() or 4
-    workers = args.speakers_workers or max(1, math.floor(0.7 * cpu))
-    logging.info(f"[v2/speakers] resolving across {len(metas_raw_paths)} assets with {workers} workers")
-
-    metas_raw_paths2: List[Tuple[Dict[str, Any], Dict[str, Any], Path]] = []
-    t_speakers_total = 0.0
-
-    def _resolve_one(item: Tuple[Dict[str, Any], Dict[str, Any], Path]):
-        meta, raw, json_path = item
-        t0 = time.perf_counter()
-        audio_path = _guess_audio_path(json_path)
-        try:
-            spk = resolve_speakers(meta, raw, audio_hint_path=audio_path)
-        except Exception as e:
-            logging.warning("[v2/speakers] resolve failed vid=%s: %s", meta.get("video_id"), _ascii(str(e)))
-            spk = {}
-        dt = time.perf_counter() - t0
-
-        # Merge results into meta
-        if spk.get("speaker_map"):
-            meta["speaker_map"] = spk["speaker_map"]
-        if spk.get("speaker_primary"):
-            meta["speaker_primary"] = spk["speaker_primary"]
-
-        # ── NEW: normalize host alias so variants collapse ──
-        if meta.get("speaker_primary"):
-            meta["speaker_primary"] = normalize_alias(meta["speaker_primary"])
-        primary = meta.get("speaker_primary")
-
-        # people-only filter using the normalized host name
-        spmap = meta.get("speaker_map") or {}
-        keep = {primary} if primary else set()
-        spmap = _filter_speaker_map_people(spmap, keep_keys=keep, host_names=[primary or ""])
-        meta["speaker_map"] = spmap
-
-        # Friendly per-video summary (host + guests)
-        vid = meta.get("video_id")
-        host_name = (spmap.get(primary, {}) or {}).get("name") or "Host"
-
-        # ── NEW: collapse/clean guest names for logging visibility ──
-        guest_names = []
-        for spk_label, info in spmap.items():
-            if spk_label == primary:
-                continue
-            nm = (info.get("name") or "").strip()
-            if nm:
-                guest_names.append(normalize_alias(nm))
-        guest_names = filter_to_people(guest_names, host_names=[primary or ""])
-
-        guests = []
-        for spk_label, info in spmap.items():
-            nm = (info.get("name") or "").strip()
-            if not nm:
-                continue
-            if normalize_alias(nm) in guest_names:
-                guests.append(f"{nm}({info.get('confidence', 0.0):.2f},{info.get('source', '')})")
-
-        logging.info("[v2/speakers] vid=%s resolved in %.2fs host=%r guests=%s",
-                     vid, dt, host_name, guests or "[]")
-
-        return meta, raw, json_path, dt
-
+    # ── Prioritize assets (stable within groups) ────────────────────────────────
     metas_raw_paths = _prioritize_assets(
         metas_raw_paths,
         deprioritize_channels=["@SolanaFndn", "@timroughgardenlectures1861"]
     )
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(_resolve_one, item) for item in metas_raw_paths]
-        for fut in concurrent.futures.as_completed(futures):
-            meta, raw, json_path, dt = fut.result()
-            metas_raw_paths2.append((meta, raw, json_path))
-            t_speakers_total += dt
+    # ── Speakers stage (skippable) ─────────────────────────────────────────────
+    metas_raw_paths2: List[Tuple[Dict[str, Any], Dict[str, Any], Path]] = []
+    t_speakers_total = 0.0
 
-    # Enrich via OpenAI with cache (async batching)
+    if args.skip_speakers:
+        logging.info("[v2/speakers] skipping speaker resolution (--skip-speakers)")
+        metas_raw_paths2 = [(m, r, p) for (m, r, p) in metas_raw_paths]
+    else:
+        cpu = os.cpu_count() or 4
+        workers = args.speakers_workers or max(1, math.floor(0.7 * cpu))
+        logging.info(f"[v2/speakers] resolving across {len(metas_raw_paths)} assets with {workers} workers")
+
+        def _resolve_one(item: Tuple[Dict[str, Any], Dict[str, Any], Path]):
+            meta, raw, json_path = item
+            t0 = time.perf_counter()
+            audio_path = _guess_audio_path(json_path)
+            try:
+                spk = resolve_speakers(meta, raw, audio_hint_path=audio_path)
+            except Exception as e:
+                logging.warning("[v2/speakers] resolve failed vid=%s: %s", meta.get("video_id"), _ascii(str(e)))
+                spk = {}
+            dt = time.perf_counter() - t0
+
+            # Merge results into meta
+            if spk.get("speaker_map"):
+                meta["speaker_map"] = spk["speaker_map"]
+            if spk.get("speaker_primary"):
+                meta["speaker_primary"] = spk["speaker_primary"]
+
+            # normalize + filter people
+            if meta.get("speaker_primary"):
+                meta["speaker_primary"] = normalize_alias(meta["speaker_primary"])
+            primary = meta.get("speaker_primary")
+
+            spmap = meta.get("speaker_map") or {}
+            keep = {primary} if primary else set()
+            spmap = _filter_speaker_map_people(spmap, keep_keys=keep, host_names=[primary or ""])
+            meta["speaker_map"] = spmap
+
+            # friendly log
+            vid = meta.get("video_id")
+            host_name = (spmap.get(primary, {}) or {}).get("name") or "Host"
+            guest_names = []
+            for spk_label, info in spmap.items():
+                if spk_label == primary:
+                    continue
+                nm = (info.get("name") or "").strip()
+                if nm:
+                    guest_names.append(normalize_alias(nm))
+            guest_names = filter_to_people(guest_names, host_names=[primary or ""])
+            guests = []
+            for spk_label, info in spmap.items():
+                nm = (info.get("name") or "").strip()
+                if not nm:
+                    continue
+                if normalize_alias(nm) in guest_names:
+                    guests.append(f"{nm}({info.get('confidence', 0.0):.2f},{info.get('source', '')})")
+
+            logging.info("[v2/speakers] vid=%s resolved in %.2fs host=%r guests=%s",
+                         vid, dt, host_name, guests or "[]")
+
+            return meta, raw, json_path, dt
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(_resolve_one, item) for item in metas_raw_paths]
+            for fut in concurrent.futures.as_completed(futures):
+                meta, raw, json_path, dt = fut.result()
+                metas_raw_paths2.append((meta, raw, json_path))
+                t_speakers_total += dt
+
+    # ── Enrich via LLM (with cache) ────────────────────────────────────────────
     enriched_metas: List[Dict[str, Any]] = []
     enriched = 0
     cached_hits = 0
@@ -583,7 +586,7 @@ def main():
         f"fresh_enriched={enriched} failed={failed_enrich}"
     )
 
-    # Build parents (note: we pass through speaker fields)
+    # ── Build parents ───────────────────────────────────────────────────────────
     parents = run_build_parents(metas=[{
         "video_id": m["video_id"],
         "title": m.get("title", ""),
@@ -611,6 +614,7 @@ def main():
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
+    # ── Build + upsert children ────────────────────────────────────────────────
     total_children = 0
     missing_parents = 0
     skipped_empty = 0
@@ -625,7 +629,6 @@ def main():
             continue
 
         t0 = time.perf_counter()
-        # You can modify build_children_from_raw to use parent["speaker_map"] to relabel speakers if desired.
         children = build_children_from_raw(parent, raw)
         if not children:
             logging.info(f"[v2] no children emitted for {pid} ({_ascii(meta.get('title') or '')})")
@@ -645,7 +648,7 @@ def main():
         f"router_cached={cached_hits}, router_enriched={enriched}, router_failed={failed_enrich})."
     )
 
-    # Timing summary (rough but useful)
+    # Timing summary
     avg_speakers = t_speakers_total / max(1, len(metas_raw_paths2))
     logging.info(
         "[timing] speakers_total=%.2fs (~%.2fs/video), enrich_total=%.2fs, children_total=%.2fs",
@@ -704,7 +707,9 @@ def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str,
     except Exception as e:
         logging.warning("[v2/entities] sidecar read failed %s: %s", sidecar, e)
 
-    ents = _norm((obj or {}).get("entities"))
+    # SAFE: only read top-level entities if the top-level object is a dict
+    top_payload = obj.get("entities") if isinstance(obj, dict) else None
+    ents = _norm(top_payload)
     if ents:
         logging.info("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(ents))
     else:

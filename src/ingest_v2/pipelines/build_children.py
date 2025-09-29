@@ -4,7 +4,7 @@ import logging
 import os
 import time
 import uuid
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Iterable
 
 from ..configs.settings import settings_v2
 from ..entities.extract import extract_entities
@@ -237,7 +237,7 @@ def _make_parent_summary_child(
     # but leaving uuid4 keeps it distinct from child windows.
     node = {
         "node_type": "summary",
-        "segment_id": str(uuid.uuid4()),
+        "segment_id": segment_uuid(parent["parent_id"], start_s, end_s),
         "parent_id": parent["parent_id"],
         "document_type": parent["document_type"],
         "text": text,
@@ -265,6 +265,46 @@ def _canon_entity(e: str) -> str:
     if e.startswith("$"):   return e.upper()
     if e.startswith("@"):   return e.lower()
     return e
+
+def _rank_entities_for_text(
+    text: str,
+    entities: Iterable[str],
+    context_entities: Iterable[str],
+    speaker: Optional[str] = None,
+) -> List[str]:
+    """
+    Rank entities by:
+      1) inline frequency in `text`
+      2) special forms (tickers/handles)
+      3) whether equals speaker label
+      4) present in parent/context list
+      5) first appearance position
+      6) alphabetical (stable)
+    """
+    txt_lc = (text or "").lower()
+    ctx = set(context_entities or [])
+    spk = (speaker or "").strip().lower()
+
+    def _first_pos(e: str) -> int:
+        i = txt_lc.find(e.lower())
+        if i >= 0:
+            return i
+        core = e[1:] if e[:1] in ("$", "@") else e
+        return txt_lc.find(core.lower())
+
+    def _score(e: str) -> tuple:
+        el = e.lower()
+        cnt = txt_lc.count(el)
+        if cnt == 0 and e[:1] in ("$", "@"):
+            cnt = txt_lc.count(el[1:])
+        is_ticker_handle = 1 if e[:1] in ("$", "@") else 0
+        is_speaker = 1 if spk and el == spk else 0
+        in_context = 1 if e in ctx else 0
+        pos = _first_pos(e)
+        pos = 10_000 if pos < 0 else pos
+        return (-cnt, -is_ticker_handle, -is_speaker, -in_context, pos, el)
+
+    return sorted(dict.fromkeys(entities), key=_score)
 
 
 def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -385,10 +425,18 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
         if spk_name:
             base.add(normalize_alias(spk_name))
 
-        # merge + canon + cap
-        ents = {_canon_entity(x) for x in (base | context_entities)}
-        ents = {x for x in ents if x}  # drop empties
-        ch["entities"] = sorted(ents, key=str.lower)[:64]
+        # merge + canon
+        all_ents = {_canon_entity(x) for x in (base | context_entities)}
+        all_ents = {x for x in all_ents if x}  # drop empties
+
+        # NEW: rank entities by importance for this child
+        ranked = _rank_entities_for_text(
+            text=ch.get("text", ""),
+            entities=all_ents,
+            context_entities=context_entities,
+            speaker=spk_name,
+        )
+        ch["entities"] = ranked[:64]
 
         ok, reason = validate_child_runtime(ch, duration_s=parent["duration_s"])
         if ok:
@@ -403,9 +451,15 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
     )
     if summary_node and len(summary_node.get("text", "")) >= 80:
         base = set(extract_entities(summary_node["text"]))
-        ents = {_canon_entity(x) for x in (base | context_entities)}
-        ents = {x for x in ents if x}
-        summary_node["entities"] = sorted(ents, key=str.lower)[:64]
+        all_ents = {_canon_entity(x) for x in (base | context_entities)}
+        all_ents = {x for x in all_ents if x}
+        ranked = _rank_entities_for_text(
+            text=summary_node.get("text", ""),
+            entities=all_ents,
+            context_entities=context_entities,
+            speaker=None,
+        )
+        summary_node["entities"] = ranked[:64]
 
         ok, reason = validate_child_runtime(summary_node, duration_s=parent["duration_s"])
         if ok:
@@ -488,3 +542,4 @@ def _preview_text(sentences: List[Dict[str, Any]], cap_s: float = 5 * 60.0, char
         acc.append(t)
         total += len(t)
     return " ".join(acc)
+

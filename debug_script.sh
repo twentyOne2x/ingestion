@@ -46,8 +46,8 @@ else
     echo "Warning: Directory $src_dir not found"
 fi
 
-# Print directory structure of the specified path excluding certain paths
-tree "$tree_dir" -I "node_modules|public|components|lib|assets|venv|utils|logs|fonts|cache|__pycache__" -L 4
+# Print directory structure of the specified path excluding certain paths and .json files
+tree "$tree_dir" -I "node_modules|public|components|lib|assets|venv|utils|logs|fonts|cache|__pycache__|*.json" -L 4
 
 # Conditionally add the pre-error context and error section if logs were processed
 if [ "$logs_processed" = true ]; then
@@ -60,11 +60,6 @@ if [ "$logs_processed" = true ]; then
 fi
 
 echo "\`\`\`"  # End triple backticks
-if [ "$logs_processed" = true ]; then
-    echo "Please fix"
-else
-    echo "Given the above: "
-fi
 } | xclip -selection clipboard
 
 echo "Logs and script content have been copied to clipboard."

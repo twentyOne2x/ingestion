@@ -32,5 +32,10 @@ class SettingsV2:
 
     # Where to store enrichment sidecars (kept outside Parent docs)
     ROUTER_CACHE_DIR: str = os.getenv("ROUTER_CACHE_DIR", "pipeline_storage_v2/router_cache")
+    # Embedding + upsert knobs
+    EMBED_BATCH_SIZE: int = int(os.getenv("EMBED_BATCH_SIZE", "256"))
+    EMBED_CONCURRENCY: int = int(os.getenv("EMBED_CONCURRENCY", "2"))
+    PINECONE_UPSERT_BATCH: int = int(os.getenv("PINECONE_UPSERT_BATCH", "500"))
+
 
 settings_v2 = SettingsV2()
