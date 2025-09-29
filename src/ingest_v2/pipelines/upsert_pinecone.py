@@ -10,7 +10,7 @@ from math import ceil
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from ..utils.batching import chunked
-
+from ..utils.progress import progress
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Fast JSON size estimation helpers (for bytes-aware batching)
@@ -203,6 +203,64 @@ def _prep_metadata_for_upsert(c: Dict[str, Any]) -> Dict[str, Any]:
 
 
 # ────────────────────────────────────────────────────────────────────────────────
+# Parallel, retrying Pinecone upserts (drop-in)
+# Knobs:
+#   PINECONE_UPSERT_CONCURRENCY: default 3
+#   PINECONE_UPSERT_RETRIES:     default 5
+# ────────────────────────────────────────────────────────────────────────────────
+
+def _retry_upsert_once(index, namespace: str, vectors: List[Dict[str, Any]]):
+    # Force single HTTP call inside upsert_vectors by setting batch_size=len(vectors)
+    upsert_vectors(index=index, namespace=namespace, vectors=vectors, batch_size=len(vectors))
+
+def _retry_upsert(index, namespace: str, vectors: List[Dict[str, Any]], max_retries: int):
+    attempt = 0
+    while True:
+        try:
+            _retry_upsert_once(index, namespace, vectors)
+            return
+        except Exception as e:
+            attempt += 1
+            if attempt > max_retries:
+                logging.exception("[upsert/send] giving up size=%d err=%s", len(vectors), e)
+                raise
+            logging.warning("[upsert/send] retry=%d size=%d err=%s", attempt, len(vectors), e)
+            expo_backoff(attempt)
+
+def _send_upserts_parallel(
+    index,
+    namespace: str,
+    batches: List[tuple],
+    pc_bs: int,
+    parent_id: str,
+) -> int:
+    max_workers = int(os.getenv("PINECONE_UPSERT_CONCURRENCY", "3"))
+    max_retries = int(os.getenv("PINECONE_UPSERT_RETRIES", "5"))
+
+    futs = {}
+    sent = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        for i, (vec_batch, _est_bytes) in enumerate(batches, 1):
+            # Respect count-based batch size within each bytes-batch
+            for j, k in enumerate(range(0, len(vec_batch), pc_bs), 1):
+                sub = vec_batch[k:k + pc_bs]
+                est_sub = sum(_estimate_vector_bytes(v) for v in sub) + 2 + 1024
+                logging.info("[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
+                             parent_id, i, j, len(sub), est_sub)
+                fut = ex.submit(_retry_upsert, index, namespace, sub, max_retries)
+                futs[fut] = len(sub)
+
+        for f in as_completed(futs):
+            # propagate any failure
+            f.result()
+            # progress only after a successful upsert of that sub-batch
+            progress.add_done(futs[f])
+            logging.info("[progress] %s", progress.fmt())
+            sent += 1
+
+    return sent
+
+# ────────────────────────────────────────────────────────────────────────────────
 # Main upsert
 # ────────────────────────────────────────────────────────────────────────────────
 
@@ -210,10 +268,13 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
     if not children:
         return {"t_embed": 0.0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
+    # local import so this is truly drop-in
+    from ..utils.progress import progress
+
     ns = choose_namespace(children[0]["document_type"])
     index = get_index(settings_v2.PINECONE_INDEX_NAME, settings_v2.EMBED_DIM)
 
-    # --- DIFF: check what's already there
+    # --- DIFF: check what's already there (chunked to avoid 414s)
     ids = [c["segment_id"] for c in children]
     existing = _fetch_existing_meta(index, ns, ids)
 
@@ -226,16 +287,21 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
         if not prev:
             to_embed.append(c)  # new id
             continue
+
         if str(prev.get("source_hash") or "") != str(c.get("source_hash") or ""):
-            to_embed.append(c)  # text (or time window) changed ⇒ re-embed
+            to_embed.append(c)  # text/timewindow changed ⇒ re-embed
             continue
+
         # text same; maybe metadata changed — update without embedding
         md_new = _prep_metadata_for_upsert(c)
-        # cheap compare; if different, push to update
         if {k: v for k, v in md_new.items() if k != "text"} != {k: v for k, v in prev.items() if k != "text"}:
             to_update_meta.append({"id": seg_id, "metadata": md_new})
 
-    # --- fast path: only metadata updates
+    # plan the work for this parent
+    progress.add_planned(len(to_embed))
+    logging.info("[progress] %s", progress.fmt())
+
+    # --- fast path: only metadata updates (best-effort)
     for item in to_update_meta:
         try:
             index.update(id=item["id"], namespace=ns, set_metadata=item["metadata"])
@@ -244,6 +310,11 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
     # --- embed + upsert only diffs
     if not to_embed:
+        logging.info("[upsert/diff] new_or_changed=0 meta_only=%d skipped=%d",
+                     len(to_update_meta), len(children) - len(to_update_meta))
+        # parent finished (nothing to embed)
+        progress.parent_done()
+        logging.info("[progress] %s", progress.fmt())
         return {"t_embed": 0.0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
     embed = _embedder()
@@ -255,14 +326,21 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
     if len(embs) != len(to_embed):
         logging.error("[upsert] embedding/count mismatch: %d != %d; dropping batch", len(embs), len(to_embed))
+        # parent finished (failed to proceed)
+        progress.parent_done()
+        logging.info("[progress] %s", progress.fmt())
         return {"t_embed": t1 - t0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
+    # Build Pinecone vectors
     vectors: List[Dict[str, Any]] = []
     for c, vec in zip(to_embed, embs):
         md = _prep_metadata_for_upsert(c)
         vectors.append({"id": c["segment_id"], "values": vec, "metadata": md})
 
     if not vectors:
+        # parent finished (nothing to send)
+        progress.parent_done()
+        logging.info("[progress] %s", progress.fmt())
         return {"t_embed": (t1 - t0), "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
     # ---- Debug stats before upsert
@@ -298,29 +376,33 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
         parent_id, len(vectors), len(batches), pc_bs, max_req
     )
 
+    # ---- Parallel, retried upserts (this should call progress.add_done per sub-batch)
     t2 = perf_counter()
-    sent_batches = 0
-    for i, (vec_batch, est_bytes) in enumerate(batches, 1):
-        # Also respect count-based batch size inside each bytes-batch
-        for j, k in enumerate(range(0, len(vec_batch), pc_bs), 1):
-            sub = vec_batch[k:k + pc_bs]
-            est_sub = sum(_estimate_vector_bytes(v) for v in sub) + 2 + 1024
-            logging.info("[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
-                         parent_id, i, j, len(sub), est_sub)
-            # Force a single HTTP call per 'sub' inside upsert_vectors by passing batch_size=len(sub).
-            # (upsert_vectors internally chunks by count.)
-            try:
-                upsert_vectors(index=index, namespace=ns, vectors=sub, batch_size=len(sub))
-            except Exception as e:
-                logging.warning("[upsert/send] failed parent=%s batch=%d.%d size=%d err=%s",
-                                parent_id, i, j, len(sub), e)
-                raise
-            sent_batches += 1
+    sent_batches = _send_upserts_parallel(
+        index=index,
+        namespace=ns,
+        batches=batches,
+        pc_bs=pc_bs,
+        parent_id=parent_id,
+    )
     t3 = perf_counter()
+
+    # parent finished (all sub-batches accounted for)
+    progress.parent_done()
+    logging.info("[progress] %s", progress.fmt())
 
     embed_bs = getattr(embed, "_batch_size", 128)
     embed_reqs = ceil(len(texts) / max(1, int(embed_bs)))
     pinecone_batches = sent_batches
-    logging.info("[upsert/diff] new_or_changed=%d meta_only=%d skipped=%d",
-                 len(to_embed), len(to_update_meta), len(children) - len(to_embed) - len(to_update_meta))
-    return {"t_embed": (t1 - t0), "t_upsert": (t3 - t2), "embed_reqs": embed_reqs, "pinecone_batches": pinecone_batches}
+
+    logging.info(
+        "[upsert/diff] new_or_changed=%d meta_only=%d skipped=%d",
+        len(to_embed), len(to_update_meta), len(children) - len(to_embed) - len(to_update_meta)
+    )
+
+    return {
+        "t_embed": (t1 - t0),
+        "t_upsert": (t3 - t2),
+        "embed_reqs": embed_reqs,
+        "pinecone_batches": pinecone_batches,
+    }

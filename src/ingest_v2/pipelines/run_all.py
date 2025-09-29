@@ -24,12 +24,11 @@ from src.ingest_v2.router.enrich_parent import (
 from src.ingest_v2.speakers.resolve import resolve_speakers
 from src.ingest_v2.transcripts.normalize import normalize_to_sentences
 from src.ingest_v2.utils.logging import setup_logger
+from src.ingest_v2.utils.progress import progress
 
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 
 from src.ingest_v2.speakers.name_filters import looks_like_person, filter_to_people, normalize_alias
-
-
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Small helpers
@@ -667,6 +666,8 @@ def main():
         # speakers
         "speaker_map": m.get("speaker_map"),
     } for m in enriched_metas])
+
+    progress.set_parents_total(len(parents))
 
     parents_map = {p.parent_id: p.dict() for p in parents}
 
