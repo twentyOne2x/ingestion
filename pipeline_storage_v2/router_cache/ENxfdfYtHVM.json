@@ -1,0 +1,26 @@
+{
+  "description": "Barrett Williams discusses Ranger Finance's role as a DeFi command center, focusing on perpetuals aggregation and enhancing trader experience. He highlights the lack of real perps aggregators on Solana and the need for seamless trading solutions. The conversation covers the integration of various protocols and the future of on-chain finance, emphasizing the importance of user experience and the shift towards decentralized applications.",
+  "topic_summary": "Barrett Williams from Ranger Finance explains the significance of perpetuals aggregation in DeFi, the current landscape of trading protocols, and the future of on-chain finance, particularly on Solana. He emphasizes the need for user-friendly applications and the integration of multiple trading venues to enhance the trading experience [t=2:88-240:94].",
+  "router_tags": [
+    "DeFi",
+    "Perpetuals",
+    "Solana",
+    "Trading",
+    "Aggregation"
+  ],
+  "aliases": [
+    "Barrett Williams",
+    "Ranger Finance",
+    "Ranger"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@kraken",
+    "@bakkt",
+    "@denari"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

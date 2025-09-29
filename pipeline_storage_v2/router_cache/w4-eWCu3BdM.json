@@ -1,0 +1,26 @@
+{
+  "description": "Nick and Jacob from the Solana Foundation Devrel team discuss the latest updates in the Solana Changelog, including duplicate block prevention using Turbine, the new Cargo Registry for deploying programs, and a Rust upgrade to version 1.73.0. They highlight improvements in Anchor programs that have reduced binary size by 33%.",
+  "topic_summary": "Updates on duplicate block prevention [t=16:64], Cargo Registry for program deployment [t=80:97], Rust upgrade to 1.73.0 [t=164:37], and efficiency improvements in Anchor programs [t=234:58].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Duplicate Block Prevention",
+    "Cargo Registry",
+    "Rust Upgrade",
+    "Anchor Programs"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Acheron",
+    "@SoulAndy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the intersection of cryptocurrency and science, exploring how blockchain technology can enhance scientific data sharing and speculation. The speaker emphasizes the need for continuous data streams in science similar to those in sports betting.",
+  "topic_summary": "Exploration of cryptocurrency's potential to revolutionize scientific research and data sharing, highlighting the shift from NFTs to fungible assets in the scientific community [t=92:59].",
+  "router_tags": [
+    "Crypto",
+    "Science",
+    "Blockchain",
+    "NFTs",
+    "Fungible Assets"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$250,000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

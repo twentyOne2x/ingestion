@@ -1,0 +1,20 @@
+{
+  "video_id": "Ccy1wn8v4ro",
+  "title": "2023-11-14_Ccy1wn8v4ro_Solana Changelog - November 14 - Blockstore, Breakpoint, and Relaxed Transaction Constraints",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Steven Lucher",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

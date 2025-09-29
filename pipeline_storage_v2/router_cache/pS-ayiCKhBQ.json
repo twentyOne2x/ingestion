@@ -1,0 +1,29 @@
+{
+  "description": "Lecture 7 discusses the Tendermint protocol, its workings, and guarantees. It highlights the protocol's fault tolerance and practical applications in blockchains like Cosmos and Terra. The lecture also contrasts Tendermint with other consensus models, emphasizing its relevance in achieving consensus under certain conditions.",
+  "topic_summary": "This lecture covers the Tendermint protocol, focusing on its fault tolerance properties and practical applications in blockchain technology. It explains the importance of the partially synchronous model in consensus protocols and the implications of Byzantine nodes on achieving safety and liveness.",
+  "router_tags": [
+    "Blockchain",
+    "Tendermint",
+    "Consensus Protocols",
+    "Byzantine Fault Tolerance",
+    "Cosmos",
+    "Terra"
+  ],
+  "aliases": [
+    "Tendermint",
+    "tendermint",
+    "TENDERMINT"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@dwork",
+    "@stockmayer",
+    "@jkwon",
+    "@ethanbuchman",
+    "@jaekwon",
+    "@zarkomilosevic"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

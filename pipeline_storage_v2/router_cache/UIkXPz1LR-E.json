@@ -1,0 +1,21 @@
+{
+  "description": "In this episode, Amy discusses her internship at Cupcake, a social gaming platform where users can play games using a currency called Sugar. She shares her experiences learning to improve the app's performance and building Web3 games.",
+  "topic_summary": "Amy talks about her role at Cupcake, detailing the platform's game mechanics and her contributions to enhancing user experience [t=0:24 - 2:06].",
+  "router_tags": [
+    "Cupcake",
+    "Web3",
+    "gaming",
+    "internship"
+  ],
+  "aliases": [
+    "Cupcake",
+    "cupcake",
+    "CUPCAKE"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$CUPCAKE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

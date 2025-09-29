@@ -1,0 +1,20 @@
+{
+  "video_id": "u9QTZLEmNXM",
+  "title": "2025-07-17_u9QTZLEmNXM_Ghoshal: Creating $DUPE, Ben Pasternak Beef, Crypto Investors - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ben Pastor",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

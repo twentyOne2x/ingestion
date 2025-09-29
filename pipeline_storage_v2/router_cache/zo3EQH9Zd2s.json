@@ -1,0 +1,29 @@
+{
+  "description": "Sami Kassab discusses decentralized physical infrastructure networks (Deepin) and their potential to incentivize real-world infrastructure deployment using token economics. He explains the categories of Deepin, including server networks, decentralized wireless networks, sensor networks, and energy networks, highlighting their innovative applications and challenges.",
+  "topic_summary": "Explore the concept of decentralized physical infrastructure networks (Deepin) with Sami Kassab, focusing on how blockchain technology can incentivize the development of real-world infrastructure like wireless networks and sensor systems. [t=0:24] to [t=299:46]",
+  "router_tags": [
+    "Deepin",
+    "Decentralized Infrastructure",
+    "Blockchain",
+    "Crypto Economics",
+    "Wireless Networks",
+    "Sensor Networks",
+    "Energy Networks"
+  ],
+  "aliases": [
+    "Sami Kassab",
+    "sami kassab",
+    "SAMi KASSAB"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "$250 Billion",
+    "$500,000",
+    "$5 Million"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

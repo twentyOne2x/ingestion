@@ -1,0 +1,24 @@
+{
+  "description": "Richard Wu, co-founder of Tensor, announces the open-sourcing of the Tensor ecosystem, which includes the NFT marketplace and various protocols. He highlights the new business model with a 50/50 fee split between the Tensor Foundation treasury and developers. Wu invites developers to build on Tensor and mentions the launch of a grant program.",
+  "topic_summary": "At [t=0:03], Richard Wu introduces Tensor as the leading NFT marketplace on Solana, boasting over $2 billion in volume. The platform is now fully open-sourced, allowing developers to integrate without permission. Wu emphasizes a new business model with a 50/50 fee split and encourages innovation on the platform.",
+  "router_tags": [
+    "NFT",
+    "Tensor",
+    "Solana",
+    "Open Source",
+    "Marketplace",
+    "Blockchain"
+  ],
+  "aliases": [
+    "tensor",
+    "Tensor",
+    "TENSOR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

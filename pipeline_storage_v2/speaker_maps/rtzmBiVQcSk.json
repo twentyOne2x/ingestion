@@ -1,0 +1,20 @@
+{
+  "video_id": "rtzmBiVQcSk",
+  "title": "2025-08-08_rtzmBiVQcSk_Ben Rubin: Crypto Communities, Paid Groups, Towns vs Whop and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ben Ruben",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

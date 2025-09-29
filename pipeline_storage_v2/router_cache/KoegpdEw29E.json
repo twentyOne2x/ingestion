@@ -1,0 +1,25 @@
+{
+  "description": "Lecture discussing smooth analysis and its application to Pareto curves, including the knapsack problem and an algorithm for finding undominated solutions.",
+  "topic_summary": "This lecture covers the concept of Pareto curves in the context of smooth analysis, explaining how to identify undominated solutions and their relevance to the knapsack problem. It introduces an algorithm to generate the Pareto curve and select the optimal solution based on value and weight constraints [t=0:24].",
+  "router_tags": [
+    "Smooth Analysis",
+    "Pareto Curves",
+    "Knapsack Problem",
+    "Algorithms",
+    "Optimization"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$GAUSSIAN",
+    "$LEBESGUE",
+    "@MOITRA",
+    "@ODONNELL",
+    "@ROGLIN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

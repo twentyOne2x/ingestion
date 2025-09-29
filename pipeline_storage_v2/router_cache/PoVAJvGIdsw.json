@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses validator and RPC hardware requirements with Guy from Latitude Sh and Tim from Solana Foundation. They clarify the differences between validators and RPCs, emphasizing the need for specific hardware specifications for each role.",
+  "topic_summary": "The discussion covers the hardware requirements for running validators and RPCs on the Solana network, including CPU, memory, and storage specifications. Key points include the necessity of high-frequency CPUs, recommended RAM sizes, and the importance of NVMe drives for performance.",
+  "router_tags": [
+    "Solana",
+    "validators",
+    "RPC",
+    "hardware requirements",
+    "blockchain"
+  ],
+  "aliases": [
+    "Solana Validator Requirements",
+    "Solana Hardware Specs",
+    "Validator and RPC Hardware"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

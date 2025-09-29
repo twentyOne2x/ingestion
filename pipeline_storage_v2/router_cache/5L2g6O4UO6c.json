@@ -1,0 +1,29 @@
+{
+  "description": "This video discusses Bitcoin's role as a safe haven against the declining US dollar, highlighting its origins during the 2008 financial crisis and recent banking collapses. It explores the contrasting views on the dollar's future, including Balaji's prediction of hyperinflation and Bitcoin's potential rise in value.",
+  "topic_summary": "Bitcoin's emergence as a response to financial crises and its potential as a hedge against the US dollar's decline is examined. The discussion includes expert insights on the implications of US government debt and the dollar's status as a global reserve currency [t=2:00 - t=275:99].",
+  "router_tags": [
+    "Bitcoin",
+    "US Dollar",
+    "Hyperinflation",
+    "Financial Crisis",
+    "Global Reserve Currency"
+  ],
+  "aliases": [
+    "bitcoin",
+    "Bitcoin",
+    "BTC",
+    "balaji",
+    "Balaji"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Delphi_Digital",
+    "$1 Million",
+    "$200 Billion",
+    "$3 Trillion",
+    "@Kevin",
+    "@ElizabethWarren"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "A debate on the competitiveness of SVMs on Ethereum compared to Solana Mainnet, featuring insights from Terry Chung and Kevin Galler.",
+  "topic_summary": "Discussion on whether SVMs and EVMs are competitive with Solana Mainnet, exploring topics like fees, MEV, and the impact of different execution environments [t=25:96].",
+  "router_tags": [
+    "SVM",
+    "EVM",
+    "Solana",
+    "Ethereum",
+    "blockchain",
+    "decentralization"
+  ],
+  "aliases": [
+    "Svm Debate",
+    "Evm Discussion",
+    "Solana vs Ethereum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@Terry",
+    "@Kevin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses NP-hard problems, focusing on the distinction between easy and hard computational problems. It explains polynomial time algorithms and provides examples such as Dijkstra's and Kruskal's algorithms, as well as the Floyd Warshall algorithm.",
+  "topic_summary": "The video provides an overview of NP-hard problems, defining easy problems as those solvable in polynomial time, and hard problems requiring exponential time. It highlights examples of algorithms that illustrate these concepts, including sorting, graph algorithms, and dynamic programming.",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Computational Complexity",
+    "Polynomial Time",
+    "Graph Algorithms"
+  ],
+  "aliases": [
+    "Algorithms for Np-Hard Problems",
+    "NP-Hard Problems",
+    "Computational Complexity"
+  ],
+  "canonical_entities": [
+    "$PRIM",
+    "$KRUSKAL",
+    "$DIJKSTRA",
+    "$FLOYD",
+    "$WARSHALL",
+    "$KAZARAJU"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

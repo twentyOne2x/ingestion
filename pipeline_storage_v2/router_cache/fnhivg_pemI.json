@@ -1,0 +1,24 @@
+{
+  "description": "In this tutorial, learn how to create an on-chain game on Solana in just 10 minutes. The process involves setting up an anchor program, JavaScript client, and Unity client, allowing for real-time interactions within the game. Users can log in, chop trees, and manage their in-game assets like NFTs and tokens efficiently.",
+  "topic_summary": "Creating an on-chain game on Solana, including setting up clients and deploying a program. Demonstrates real-time interactions and game mechanics like chopping trees and managing energy and tokens [t=0:24 - t=3:24].",
+  "router_tags": [
+    "Solana",
+    "On-chain Game",
+    "Unity",
+    "JavaScript",
+    "NFTs",
+    "Game Development"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

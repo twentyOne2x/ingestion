@@ -1,0 +1,23 @@
+{
+  "description": "Chico from Skyrise discusses their mission to support developers in the Solana ecosystem by providing essential resources and connecting them with various initiatives.",
+  "topic_summary": "Chico explains Skyrise's role in enhancing product development within the Solana ecosystem by offering resources and support to founders [t=7:92].",
+  "router_tags": [
+    "Skyrise",
+    "Solana",
+    "Mountain Dao",
+    "development",
+    "resources"
+  ],
+  "aliases": [
+    "Skyrise",
+    "Skyrise",
+    "Chico",
+    "Mountain Dao"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

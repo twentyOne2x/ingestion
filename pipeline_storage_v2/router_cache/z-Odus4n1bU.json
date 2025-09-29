@@ -1,0 +1,23 @@
+{
+  "description": "Eric Zhu discusses various topics including startups, marketing, and experiences in South Korea. He shares anecdotes about working in a South Korean conglomerate's office and the challenges faced due to cultural differences.",
+  "topic_summary": "Eric Zhu shares insights on startups and marketing while recounting experiences in South Korea, including humorous incidents related to cultural misunderstandings [t=51:53].",
+  "router_tags": [
+    "Startups",
+    "Marketing",
+    "South Korea",
+    "Podcast"
+  ],
+  "aliases": [
+    "Eric Zoo",
+    "Eric Zhu"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$2",
+    "$1.5 Million",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

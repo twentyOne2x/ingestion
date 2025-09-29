@@ -1,0 +1,26 @@
+{
+  "description": "Carlos Domingo and Robinson Burkey discuss Securitize's collaboration with Wormhole at the Solana conference, focusing on tokenization and cross-chain interoperability.",
+  "topic_summary": "Securitize announces its integration with Wormhole for cross-chain asset deployment and scalability at the Solana conference [t=99:46]. The collaboration aims to enhance tokenized asset management and compliance across multiple blockchains [t=201:01].",
+  "router_tags": [
+    "Securitize",
+    "Wormhole",
+    "Solana",
+    "Tokenization",
+    "Cross-Chain Interoperability"
+  ],
+  "aliases": [
+    "Securitize",
+    "Wormhole",
+    "Solana",
+    "Carlos Domingo",
+    "Robinson Burkey"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Robinson",
+    "@CarlosDomingo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

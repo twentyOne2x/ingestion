@@ -1,0 +1,24 @@
+{
+  "description": "This video discusses the importance of understanding mathematical foundations in blockchain technology, emphasizing that top practitioners in any field, including blockchain, should be familiar with relevant concepts like consensus protocols and cryptographic primitives.",
+  "topic_summary": "The video serves as an interlude in a lecture series on blockchain foundations, highlighting the significance of theoretical knowledge in computer science and its application to blockchain protocols. It prepares viewers for upcoming discussions on longest chain protocols and their mathematical properties, while encouraging a deeper appreciation for theoretical work in the field [t=0:48].",
+  "router_tags": [
+    "blockchain",
+    "theory",
+    "consensus protocols",
+    "cryptography",
+    "computer science"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Interlude: On Definitions, Theorems, and Proofs",
+    "Blockchain Foundations"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$100 Billion",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

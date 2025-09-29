@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on the necessity of cryptocurrency for AI agents' payment solutions, featuring insights from industry experts.",
+  "topic_summary": "The panel explores the limitations of traditional payment systems for AI agents and discusses the emergence of AI commerce as a new category, emphasizing the need for tailored payment solutions for AI-driven transactions [t=62:63].",
+  "router_tags": [
+    "AI",
+    "Cryptocurrency",
+    "Payments",
+    "Blockchain",
+    "Commerce"
+  ],
+  "aliases": [
+    "Crypto x AI Event",
+    "AI Payments Panel",
+    "Delphi Digital Event"
+  ],
+  "canonical_entities": [
+    "$COIN",
+    "@Delphi_Digital",
+    "@Yuga",
+    "@DonGossen",
+    "@CraigDeWitt"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

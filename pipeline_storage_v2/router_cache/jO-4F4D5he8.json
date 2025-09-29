@@ -1,0 +1,22 @@
+{
+  "description": "Asta discusses trading strategies and experiences in cryptocurrency, including turning $200 into significant profits. The conversation touches on the impact of social media on trading and personal growth in the crypto space.",
+  "topic_summary": "Asta shares insights on trading, including strategies for maximizing investments and the challenges faced in the crypto market. The discussion includes personal anecdotes about starting with minimal investment and achieving substantial gains [t=73.06].",
+  "router_tags": [
+    "Trading",
+    "Cryptocurrency",
+    "Investment Strategies",
+    "Crypto Market",
+    "Personal Finance"
+  ],
+  "aliases": [
+    "Asta",
+    "asta",
+    "ASTA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

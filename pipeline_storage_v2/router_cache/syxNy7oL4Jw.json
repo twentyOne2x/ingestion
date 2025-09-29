@@ -1,0 +1,25 @@
+{
+  "description": "Daniel Lev and Ryan Day discuss real money gaming in Web3, focusing on payment solutions and the challenges faced by esports players and tournaments. They explore the infrastructure needed for payouts and the impact of blockchain on gaming.",
+  "topic_summary": "The discussion covers the evolution of real money gaming, the role of blockchain in enhancing player experiences, and the complexities of payment processing in esports, particularly regarding international payouts and the challenges faced by amateur players [t=118.75].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Esports",
+    "Payments",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Real Money Gaming",
+    "Daniel Lev",
+    "Ryan Day"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DanielLev",
+    "@RyanDay"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

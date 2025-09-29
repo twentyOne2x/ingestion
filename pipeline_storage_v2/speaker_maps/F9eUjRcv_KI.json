@@ -1,0 +1,20 @@
+{
+  "video_id": "F9eUjRcv_KI",
+  "title": "2024-02-28_F9eUjRcv_KI_Solana Changelog Feb 27 - Partitioned Epoch Rewards, Anchor CI, and 2.0",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Soul Andy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

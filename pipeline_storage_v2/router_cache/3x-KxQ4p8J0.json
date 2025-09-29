@@ -1,0 +1,23 @@
+{
+  "description": "Jeffrey Emanuel discusses the implications of AGI on inflation and capital expenditures, emphasizing the distinction between operating and capital expenses. He argues that while initial investments in technology may be high, the long-term effects could lead to deflation, particularly in software sectors [t=154.71].",
+  "topic_summary": "Exploration of AGI's impact on inflation and capital expenditures, with a focus on the deflationary potential of software and the necessary investments in physical robotics [t=210.62].",
+  "router_tags": [
+    "AGI",
+    "inflation",
+    "deflation",
+    "capital expenditures",
+    "software",
+    "robotics"
+  ],
+  "aliases": [
+    "Jeffrey Emanuel",
+    "Jeff Emanuel",
+    "jeffrey emanuel"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$NVIDIA"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

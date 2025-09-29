@@ -1,0 +1,26 @@
+{
+  "description": "Jarry Xiao discusses Atlas, a new implementation of the Solana virtual machine, focusing on its capabilities for verifiable finance and how it scales reads, writes, and replication. Key features include low latency and high throughput.",
+  "topic_summary": "Atlas scales the Solana virtual machine by implementing read-write separation and introducing rpcx for easier data processing. It aims to enhance performance while maintaining compatibility with Solana mainnet [t=7:04].",
+  "router_tags": [
+    "Atlas",
+    "Solana",
+    "Finance",
+    "Ellipsis",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Atlas",
+    "atlas",
+    "SOL",
+    "sol",
+    "Ellipsis",
+    "ellipsis"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

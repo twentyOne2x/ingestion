@@ -1,0 +1,30 @@
+{
+  "description": "Mel Mattison discusses crypto price predictions, the impact of Fed rate cuts, and macroeconomic factors influencing value. He shares insights on the evolving perception of altcoins and the potential for regulatory clarity in the crypto space.",
+  "topic_summary": "In this episode, Mel Mattison explores the intersection of traditional finance and cryptocurrency, emphasizing the significance of macroeconomic trends and regulatory developments. He predicts a bullish outlook for Ethereum and discusses recent movements in the altcoin market, particularly ARB, and its association with Robinhood. [t=0:24] [t=124:70]",
+  "router_tags": [
+    "Crypto",
+    "Finance",
+    "Investing",
+    "Macroeconomics",
+    "Ethereum",
+    "Altcoins",
+    "Regulation"
+  ],
+  "aliases": [
+    "Mel Mattison",
+    "mel mattison",
+    "MEL MATTISON"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$ARB",
+    "@notthreadguy",
+    "@CynthiaLoomis",
+    "@Robinhood",
+    "@TomLee",
+    "@JeromePowell"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

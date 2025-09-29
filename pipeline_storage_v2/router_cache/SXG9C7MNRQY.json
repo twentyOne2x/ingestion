@@ -1,0 +1,22 @@
+{
+  "description": "Marius discusses the evolution of Camino Land and its impact on DeFi, highlighting its growth to a $2 billion market size and plans for new products like Spot Leverage. He emphasizes Solana's scalability and the importance of liquidity in the ecosystem.",
+  "topic_summary": "At Breakpoint 2024, Marius outlines Camino Land's journey, its current success in DeFi, and future developments including the introduction of Spot Leverage and a redesigned user experience for liquidity access [t=4:96-312:95].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Camino",
+    "Breakpoint",
+    "Oracle"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Marius"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

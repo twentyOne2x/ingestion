@@ -1,0 +1,27 @@
+{
+  "description": "Nick and Jacob discuss the latest updates in the Solana ecosystem, including the introduction of SIMD152 for precompiles, making Borsh optional in SDKs, and ongoing BPF migration efforts.",
+  "topic_summary": "The video covers updates on SIMD152 precompiles [t=19:36], Borsh optionality [t=163:45], and the core BPF migration process [t=236:36].",
+  "router_tags": [
+    "Solana",
+    "Borsh",
+    "BPF",
+    "precompiles",
+    "Web3.js"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Borsh",
+    "borsh",
+    "BPF",
+    "bpf"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Kevin",
+    "@BuffaloJoe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

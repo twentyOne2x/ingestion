@@ -1,0 +1,24 @@
+{
+  "description": "Jon Cinque discusses the challenges and future of the Solana SDK at Accelerate 2025, emphasizing the need for improvements and the transition to a new version. He addresses issues with the current Rust SDK, including slow builds and unnecessary dependencies, while outlining plans for a more efficient SDK tailored for on-chain program developers.",
+  "topic_summary": "At [t=22:40], Jon Cinque introduces the Solana SDK and its issues, including slow builds and breaking changes. He discusses the efforts to improve the SDK, focusing on minimizing dependencies and enhancing usability for developers, particularly those working on on-chain programs.",
+  "router_tags": [
+    "Solana",
+    "SDK",
+    "Development",
+    "Blockchain",
+    "Rust"
+  ],
+  "aliases": [
+    "SolanaSdk",
+    "solanasdk",
+    "Solana SDK",
+    "solana-sdk"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Anza",
+    "@KevinHeavey"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

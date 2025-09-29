@@ -1,0 +1,26 @@
+{
+  "description": "At Breakpoint 2023, Simge from Gainforest discusses the integration of local communities like Nandutu's in Uganda with blockchain technology to combat deforestation and promote sustainable practices. Gainforest empowers individuals to protect nature while improving their economic situation through innovative solutions like NFTs and honey production.",
+  "topic_summary": "Simge introduces Nandutu and her community's journey towards sustainability through Gainforest's initiatives, highlighting the intersection of technology and environmental conservation. The presentation covers the impact of local disruptors like Bees and Trees and the role of Solana in supporting these efforts [t=3:36-4:32].",
+  "router_tags": [
+    "Gainforest",
+    "Solana",
+    "deforestation",
+    "sustainability",
+    "blockchain",
+    "NFTs",
+    "environment"
+  ],
+  "aliases": [
+    "Gainforest",
+    "gainforest",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

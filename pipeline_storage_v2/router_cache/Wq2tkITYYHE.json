@@ -1,0 +1,34 @@
+{
+  "description": "Lecture on minimum-cost bipartite matching, discussing the definition, properties, and applications of bipartite graphs and matchings.",
+  "topic_summary": "The lecture covers the minimum-cost perfect matching problem in bipartite graphs, emphasizing the importance of edge costs and the relationship to maximum flow problems. It discusses the assumptions made for convenience, including equal cardinality of the two sides and the existence of a perfect matching. Applications are highlighted, such as job assignments and course scheduling, where preferences can influence the choice of matching. [t=0:32] [t=4:48] [t=165:53]",
+  "router_tags": [
+    "Algorithms",
+    "Bipartite Matching",
+    "Graph Theory",
+    "Optimization"
+  ],
+  "aliases": [
+    "Minimum-Cost Bipartite Matching",
+    "Bipartite Matching Algorithms",
+    "Graph Matching"
+  ],
+  "canonical_entities": [
+    "$HALL",
+    "$KOENIG",
+    "$KUHN",
+    "@HAROLDKUHN",
+    "$EGAVARI",
+    "$MONKREASE",
+    "$JACOBI",
+    "$MAXFLOWMAN",
+    "$FORDFULKERSON",
+    "$EDMONDSKARP",
+    "$KONIG",
+    "@GOOGLE",
+    "$EGEVARE",
+    "$JACOBIANS",
+    "$NOS"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

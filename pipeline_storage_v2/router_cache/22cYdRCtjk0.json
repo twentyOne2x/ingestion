@@ -1,0 +1,24 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses recent updates including Geyser plugins, security enhancements, and new token extensions. Key changes involve improved logging for Geyser plugins [t=19:44], the addition of security.txt for better vulnerability reporting [t=93:04], and the introduction of a group member pointer token extension [t=161:53]. The conversation also covers SIMD88 enabling Core BPF programs, which aims to streamline validator client implementations [t=249:09].",
+  "topic_summary": "Updates on Solana's development including Geyser plugin logging, security.txt integration, new token extensions, and SIMD88 for Core BPF programs.",
+  "router_tags": [
+    "Solana",
+    "Geyser",
+    "BPF",
+    "security",
+    "token extension"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

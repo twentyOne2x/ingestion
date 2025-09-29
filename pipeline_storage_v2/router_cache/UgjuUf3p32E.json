@@ -1,0 +1,26 @@
+{
+  "description": "Nick and Jonas discuss the latest updates in the Solana ecosystem, including new ZK functionalities, the deprecation of Borsch 0.9, and updates to the Anchor CI. They also mention the ongoing Berlin Blockchain Week and the hackathon events.",
+  "topic_summary": "Updates on Solana's changelog, including ZK features [t=68:17], Borsch deprecation [t=122:16], and Anchor CI updates [t=145:78].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "ZK",
+    "Anchor",
+    "Borsch"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "solana foundation",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@samkim",
+    "@johncinque"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

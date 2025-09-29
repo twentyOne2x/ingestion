@@ -1,0 +1,24 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team introduces the Solana Bootcamp, covering the basics of the Solana blockchain, its programming model, and how to develop applications on Solana. Key features include fast confirmation times, low transaction fees, and parallel transaction execution. The session also explains the concept of accounts on Solana and their role in data storage and security.",
+  "topic_summary": "Introduction to Solana blockchain, its technical advantages, programming model, and account structure. Key points include fast transaction validation, low fees, and the importance of accounts in the Solana ecosystem [t=0:00 - t=3:00].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "Programming",
+    "Accounts",
+    "Transactions"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Solana Bootcamp",
+    "Solana Foundation Devrel Team",
+    "solana foundation devrel team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

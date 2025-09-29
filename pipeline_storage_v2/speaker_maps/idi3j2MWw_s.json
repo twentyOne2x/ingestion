@@ -1,0 +1,20 @@
+{
+  "video_id": "idi3j2MWw_s",
+  "title": "2023-09-28_idi3j2MWw_s_Chewing Glass - Brian Long (Triton One, Block Logic) - Ep #17",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

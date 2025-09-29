@@ -1,0 +1,36 @@
+{
+  "description": "Amira discusses sanctions and debanking with Kim Donovan from the Atlantic Council, exploring the role of FinCEN and the impact of U.S. sanctions on economic statecraft. They delve into the increase in sanctions activity, particularly regarding Russia and human rights, and the implications for the crypto community.",
+  "topic_summary": "The conversation covers the U.S. government's use of sanctions as a foreign policy tool, the role of FinCEN, and the recent surge in sanctions designations, particularly in relation to Russia and human rights abuses. Kim Donovan provides insights into the decision-making process behind sanctions and their significance in economic statecraft [t=0:00-0:00].",
+  "router_tags": [
+    "Sanctions",
+    "Debanking",
+    "FinCEN",
+    "Economic Statecraft",
+    "Crypto",
+    "U.S. Government",
+    "Foreign Policy"
+  ],
+  "aliases": [
+    "Kimberly Donovan",
+    "Kim Donovan",
+    "Kim",
+    "Amira"
+  ],
+  "canonical_entities": [
+    "$3 Trillion",
+    "$3 Billion",
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "The United States",
+    "FinCEN",
+    "Office Of Foreign Assets Control",
+    "National Security Council",
+    "Treasury Department",
+    "Tornado Cash",
+    "BTC",
+    "ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

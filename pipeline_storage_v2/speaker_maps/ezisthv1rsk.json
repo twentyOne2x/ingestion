@@ -1,0 +1,26 @@
+{
+  "video_id": "ezisthv1rsk",
+  "title": "2024-11-27_ezisthv1rsk_The Politics of Bits - How Pro-Crypto Is the New Congress w- Geo Saba & John Leganski",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Gary Gensler",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "John Leganski",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

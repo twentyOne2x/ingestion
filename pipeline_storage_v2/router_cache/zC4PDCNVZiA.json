@@ -1,0 +1,39 @@
+{
+  "description": "In this discussion, Sreeram Kannan explains the concept of restaking, its implications for liquid staking networks, and how it addresses challenges in scaling and staking yields, particularly in the Ethereum ecosystem. He emphasizes the importance of open innovation and shared security in developing new consensus protocols and networks.",
+  "topic_summary": "Sreeram Kannan discusses restaking and its role in enhancing staking yields and scalability in blockchain networks, particularly Ethereum. He highlights the need for innovation in consensus protocols and the potential of Eigenlayer to facilitate this.",
+  "router_tags": [
+    "Restaking",
+    "Liquid Staking",
+    "Ethereum",
+    "Consensus Protocols",
+    "Eigenlayer",
+    "Blockchain Innovation"
+  ],
+  "aliases": [
+    "Restaking",
+    "Restaking Thesis",
+    "Sreeram Kannan",
+    "Eigenlayer"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$10 Billion",
+    "$100 Million",
+    "$500 Million",
+    "$3,000",
+    "$1,000",
+    "$5 Billion",
+    "$2 Billion",
+    "@SolanaFndn",
+    "@Ethan",
+    "@Circle",
+    "@Tolle",
+    "@Sriram",
+    "@Intel",
+    "@Stripe",
+    "@LaY"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

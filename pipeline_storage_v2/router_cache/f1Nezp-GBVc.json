@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the differences between Generalized Second Price (GSP) auctions and Vickrey auctions, highlighting that GSP is not always truthful. It provides an example with two slots and three bidders to illustrate how bidders may have incentives to underbid, particularly focusing on the implications of bidding strategies and their effects on utility.",
+  "topic_summary": "The lecture covers GSP vs. Vickrey auctions, explaining why GSP can lead to non-truthful bidding behavior. It uses a practical example with two slots and three bidders to demonstrate the mechanics of bidding and the resulting utilities, particularly emphasizing the conditions under which bidders might benefit from underbidding [t=0:8].",
+  "router_tags": [
+    "auctions",
+    "GSP",
+    "Vickrey",
+    "computer science",
+    "bidding strategies"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "GSP vs. VCG Auctions",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$13.01",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

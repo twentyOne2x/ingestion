@@ -1,0 +1,29 @@
+{
+  "description": "Joe McCann and Arthur Cheong discuss the differences between liquid and venture investments in crypto, focusing on performance metrics and investment strategies. They highlight the challenges faced by venture funds in outperforming liquid assets, particularly in the context of Solana's performance over the past three years [t=69:48].",
+  "topic_summary": "The discussion centers on the alpha in liquid versus venture investments, with insights into fund duration, liquidity profiles, and historical performance of crypto assets like Solana and Ethereum [t=237:43].",
+  "router_tags": [
+    "Crypto Investment",
+    "Liquid Venture",
+    "Hedge Funds",
+    "Solana",
+    "Ethereum",
+    "Venture Capital"
+  ],
+  "aliases": [
+    "Joe McCann",
+    "Arthur Cheong",
+    "Defiance Capital",
+    "Asymmetric"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BTC",
+    "$ETH",
+    "$DOGE",
+    "@Joe",
+    "@Arthur"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

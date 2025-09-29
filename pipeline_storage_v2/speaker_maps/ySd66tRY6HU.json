@@ -1,0 +1,20 @@
+{
+  "video_id": "ySd66tRY6HU",
+  "title": "2024-09-21_ySd66tRY6HU_Breakpoint 2024: Product Keynote: In the Blink of an Eye (Chris Osborn)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Chris Osborne",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

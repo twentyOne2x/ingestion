@@ -1,0 +1,25 @@
+{
+  "description": "Clemente discusses trading strategies, mistakes, and the myth of being an inverse signal in trading. He shares personal experiences with buying and selling during market fluctuations.",
+  "topic_summary": "Clemente, the pump bear, reflects on trading mistakes and market signals, emphasizing the unpredictability of trading outcomes [t=0:32]. He addresses the myth of being an inverse signal in trading and shares insights on his trading experiences [t=74:72].",
+  "router_tags": [
+    "Trading",
+    "Crypto",
+    "Market Analysis",
+    "Clemente",
+    "Podcast"
+  ],
+  "aliases": [
+    "Clemente",
+    "clemente",
+    "CLEMENTE",
+    "Pump Bear",
+    "pump bear"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the future of gaming with a focus on blockchain integration and the potential for high-stakes competitions in MMOs. The conversation touches on the evolution of player engagement and the economic implications of in-game assets.",
+  "topic_summary": "Exploration of blockchain gaming and its impact on player ownership and economic models in MMOs. The discussion highlights the significance of community and gameplay mechanics in shaping the future of gaming [t=0:10].",
+  "router_tags": [
+    "Blockchain Gaming",
+    "MMO",
+    "Crypto",
+    "Gaming Economy",
+    "Player Ownership"
+  ],
+  "aliases": [
+    "Cambria",
+    "Degen MMO",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

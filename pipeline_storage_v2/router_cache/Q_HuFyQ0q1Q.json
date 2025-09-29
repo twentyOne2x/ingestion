@@ -1,0 +1,28 @@
+{
+  "description": "Dan Albert delivers closing remarks at Breakpoint 2024, reflecting on the event's success and the Solana community's support. He expresses gratitude for the attendees and highlights the importance of continuing the Breakpoint tradition globally.",
+  "topic_summary": "Closing remarks from Breakpoint 2024, emphasizing community support and announcing Breakpoint 2025 in Abu Dhabi [t=213.09].",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "Community",
+    "Event",
+    "Abu Dhabi"
+  ],
+  "aliases": [
+    "Breakpoint",
+    "breakpoint",
+    "SOL",
+    "sol",
+    "Foundation",
+    "foundation",
+    "@SolanaFndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on current trading strategies, focusing on the performance of Pump and Bonk tokens. Insights into market sentiment and trading tactics are shared.",
+  "topic_summary": "Exploration of trading strategies with emphasis on Pump vs Bonk tokens, including market reactions and future potential [t=0:08].",
+  "router_tags": [
+    "Trading",
+    "Crypto",
+    "Pump",
+    "Bonk",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "ShockedJS",
+    "Shockedjs",
+    "notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "$BONK",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

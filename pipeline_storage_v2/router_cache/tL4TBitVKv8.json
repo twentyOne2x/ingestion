@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on AI alignment and the implications of advanced AI development, featuring insights from Yudkowski and the effective altruism movement. The talk addresses the potential dangers of AI, funding dynamics, and the philosophical underpinnings of creating safe AI systems.",
+  "topic_summary": "Yudkowski discusses AI alignment and the risks of creating advanced AI systems that could threaten humanity. He highlights the role of effective altruists in funding AI research and the paradox of their efforts potentially leading to the creation of the very AI they seek to control. The conversation emphasizes the need for responsible stewardship and the exploration of open-source solutions for AI development [t=0:32 - t=299:97].",
+  "router_tags": [
+    "AI",
+    "alignment",
+    "effective altruism",
+    "Yudkowski",
+    "Open Philanthropy",
+    "Psyche Network"
+  ],
+  "aliases": [
+    "Solana Accelerate 2025",
+    "SolanaFndn",
+    "Yudkowski",
+    "Effective Altruism"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Yudkowsky",
+    "@OpenPhilanthropy",
+    "@ElonMusk",
+    "@IlyaSutskever",
+    "@DarioAmodei"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

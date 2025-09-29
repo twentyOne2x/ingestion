@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 11 discusses the importance of transaction fees and economic efficiency in blockchain protocols, emphasizing the role of native currencies in facilitating transactions and incentivizing network participation. It covers the necessity of transaction fees to manage blockchain resources and prevent spam, as well as the differences in transaction processing between Bitcoin and Ethereum.",
+  "topic_summary": "This lecture focuses on transaction fees in blockchain systems, explaining their necessity for managing limited processing power and preventing misuse. It highlights how native currencies enable transaction fees and incentivize network participants, with specific examples from Bitcoin and Ethereum protocols [t=175.21].",
+  "router_tags": [
+    "blockchain",
+    "transaction fees",
+    "economic efficiency",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Transaction Fees and Economic Efficiency",
+    "Lecture 11"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

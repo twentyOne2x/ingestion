@@ -1,0 +1,20 @@
+{
+  "video_id": "Q_-AQY1IJPc",
+  "title": "2014-01-28_Q_-AQY1IJPc_Frontiers in Mechanism Design (Lecture 5: The Gross Substitutes Condition)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Crawford Noer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

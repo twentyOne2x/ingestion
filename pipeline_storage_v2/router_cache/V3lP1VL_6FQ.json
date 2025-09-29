@@ -1,0 +1,21 @@
+{
+  "description": "Overview of the Solana Accelerate APAC 2025 events scheduled in major Chinese cities.",
+  "topic_summary": "The Solana Accelerate APAC 2025 will feature events in Shanghai, Hangzhou, Shenzhen, and Beijing, focusing on the growth of the Solana ecosystem in these regions. [t=00:59]",
+  "router_tags": [
+    "Solana",
+    "APAC",
+    "events",
+    "China"
+  ],
+  "aliases": [
+    "Solana Accelerate APAC",
+    "solana accelerate apac",
+    "Solana accelerate apac 2025"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

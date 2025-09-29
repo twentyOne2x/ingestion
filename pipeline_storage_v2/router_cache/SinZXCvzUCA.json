@@ -1,0 +1,26 @@
+{
+  "description": "Sergey Nazarov discusses the evolution of the finance industry, emphasizing the role of Chainlink in powering decentralized finance (DeFi) on Solana. He highlights the launch of CCIP on Solana, which enhances cross-chain security and programmability for institutional adoption. Nazarov outlines the importance of Chainlink's comprehensive solutions for capital markets and the collaborative efforts with the Solana Foundation to support early-stage projects in the ecosystem.",
+  "topic_summary": "Nazarov outlines the future of finance with Chainlink's role in DeFi on Solana, the launch of CCIP for secure cross-chain transactions, and the partnership with the Solana Foundation to foster innovation in the ecosystem. Key points include the need for security in capital markets and the integration of various building blocks for blockchain interaction [t=0:00-3:00].",
+  "router_tags": [
+    "Chainlink",
+    "Solana",
+    "DeFi",
+    "CCIP",
+    "Capital Markets"
+  ],
+  "aliases": [
+    "Chainlink",
+    "chainlink",
+    "Solana",
+    "solana",
+    "CCIP",
+    "ccip"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

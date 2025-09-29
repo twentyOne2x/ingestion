@@ -1,0 +1,26 @@
+{
+  "video_id": "zcm9iY8KcZM",
+  "title": "2024-07-09_zcm9iY8KcZM_The CBDC Debate (Part 1) w- Congressman Tom Emmer (R-MN)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Tom Emmer",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Bill Foster",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, host Chase interviews Armani Ferrante about his journey in the Solana ecosystem, discussing his transition from working at Apple to exploring the crypto space. They delve into his experiences, the technologies he worked with, and the cultural aspects of development in Solana. [t=39:04]",
+  "topic_summary": "Chase and Armani Ferrante discuss the development landscape in Solana, Armani's background in tech, and his transition from Apple to the crypto ecosystem. They explore the challenges and opportunities in building decentralized applications. [t=39:04]",
+  "router_tags": [
+    "Solana",
+    "Crypto Development",
+    "Web3",
+    "Armani Ferrante",
+    "Tech Journey"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Armani Ferrante",
+    "armani ferrante"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

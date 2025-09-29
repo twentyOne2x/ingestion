@@ -1,0 +1,29 @@
+{
+  "description": "Jeremy Allaire discusses the strong state of the USDC economy, highlighting its significant growth and adoption within the Solana ecosystem. He emphasizes the impressive transaction volumes and the innovations in cross-chain liquidity through CCTP, which enables seamless movement of USDC across different ecosystems. Allaire also addresses the safety, transparency, and liquidity of USDC, detailing the reserves held in secure banks and the Circle Reserve Fund.",
+  "topic_summary": "In this keynote, Jeremy Allaire presents the robust growth of the USDC economy, particularly within the Solana ecosystem, showcasing transaction volumes of $16.2 trillion since launch and nearly $8 trillion in 2024 alone [t=82.69]. He highlights the importance of CCTP for cross-chain liquidity and the transparency of USDC reserves, audited by Deloitte and Touche.",
+  "router_tags": [
+    "USDC",
+    "Solana",
+    "Circle",
+    "CCTP",
+    "stablecoins",
+    "blockchain",
+    "liquidity"
+  ],
+  "aliases": [
+    "Jeremy Allaire",
+    "jeremy allaire",
+    "USDC",
+    "usdc",
+    "CCTP",
+    "cctp"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn",
+    "$SOL",
+    "@Circle"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

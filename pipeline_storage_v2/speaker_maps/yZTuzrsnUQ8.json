@@ -1,0 +1,26 @@
+{
+  "video_id": "yZTuzrsnUQ8",
+  "title": "2025-02-11_yZTuzrsnUQ8_If you're interested in Crypto, watch this video...",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Aiden Ross",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Elon Musk",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

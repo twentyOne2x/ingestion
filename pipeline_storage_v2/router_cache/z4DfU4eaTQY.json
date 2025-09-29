@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on the market's reaction to a recent assassination attempt on Trump and its implications for crypto prices.",
+  "topic_summary": "The panel discusses the potential market impact of Trump's assassination attempt, speculating on how it could have shifted crypto prices significantly [t=22:56]. They reflect on the emotional responses and public support for Trump following the incident [t=110:10].",
+  "router_tags": [
+    "Trump",
+    "Crypto",
+    "Market Analysis",
+    "Assassination Attempt"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "@Trump",
+    "@Biden",
+    "@Coinbase",
+    "@JamieDimon",
+    "@PeterThiel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

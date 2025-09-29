@@ -1,0 +1,22 @@
+{
+  "description": "Mal from Streamflow discusses the platform's role in addressing crypto scams, including rug pulls and bad token launches. Streamflow has processed over 600 million in various tokens and has over 1 million users. Upcoming features include permissionless token staking and aligned unlocks, which are milestone-based unlock mechanisms. Streamflow v2 aims to decentralize the platform and involve users as stakeholders.",
+  "topic_summary": "Streamflow's solutions for crypto scams, upcoming features like token staking and aligned unlocks, and plans for decentralization [t=0:00-0:00].",
+  "router_tags": [
+    "Streamflow",
+    "crypto",
+    "staking",
+    "decentralization",
+    "Solana"
+  ],
+  "aliases": [
+    "Streamflow",
+    "streamflow",
+    "STREAMFLOW"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

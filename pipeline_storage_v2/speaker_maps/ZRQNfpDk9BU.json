@@ -1,0 +1,26 @@
+{
+  "video_id": "ZRQNfpDk9BU",
+  "title": "2024-04-23_ZRQNfpDk9BU_Why Does the Mexican Government Want to Tokenize Its Treasuries w- David Taylor (Etherfuse)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Isaac Saldana",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "David Adujo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

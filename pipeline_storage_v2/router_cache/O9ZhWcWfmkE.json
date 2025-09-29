@@ -1,0 +1,25 @@
+{
+  "description": "The video discusses recent changes in the Solana ecosystem, including updates on compute unit management and transaction data loading limits. It highlights a shift from estimated to requested compute units, affecting transaction prioritization and fees. Additionally, it addresses a cap on account data loading per transaction and improvements to node connectivity with BigTable. Support for versioned transactions in program tests is also introduced.",
+  "topic_summary": "Key updates in Solana's changelog include changes to compute unit estimation [t=28.73], transaction data loading limits [t=215.81], and enhancements to BigTable connectivity [t=256.73].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Compute Units",
+    "Transaction Limits",
+    "BigTable",
+    "Versioned Transactions"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@Serum"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Solana Hacker House in London, showcasing the latest developments and community engagement in the Solana ecosystem.",
+  "topic_summary": "Overview of the Solana Hacker House event in London, highlighting key discussions and activities [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "London",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Solana Hacker House",
+    "solana hacker house",
+    "SOLANA HACKER HOUSE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

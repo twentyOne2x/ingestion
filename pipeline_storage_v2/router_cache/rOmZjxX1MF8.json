@@ -1,0 +1,24 @@
+{
+  "description": "J.T. Liss discusses the future of one-on-one art at Accelerate 2025, emphasizing the importance of education, collaboration, and outreach for artists and collectors. He highlights Exchange Art as a unique artist-led marketplace in Web3, focusing on grassroots cultural movements and providing resources for artists to thrive.",
+  "topic_summary": "At [t=0:00], J.T. Liss introduces the concept of one-on-one art. He explains Exchange Art's role as an artist-led marketplace at [t=14:88]. The discussion covers key values like education and collaboration, with initiatives to support artists through workshops and grants, as well as partnerships with other marketplaces at [t=200:34].",
+  "router_tags": [
+    "Art",
+    "Web3",
+    "NFT",
+    "Education",
+    "Collaboration",
+    "Exchange Art"
+  ],
+  "aliases": [
+    "Exchange Art",
+    "exchange art",
+    "EXCHANGE ART"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

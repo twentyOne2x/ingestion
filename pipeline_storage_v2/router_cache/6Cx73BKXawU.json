@@ -1,0 +1,25 @@
+{
+  "description": "Akshay from Proto discusses the intersection of maps, geospatial technology, and Web3, emphasizing the need for updated mapping solutions that reflect real-world changes and user-generated content.",
+  "topic_summary": "The talk covers the evolution of mapping technology, the challenges of data collection, and how Web3 can empower independent mapmakers to create decentralized, user-generated maps. It highlights Proto's approach to making mapping accessible through mobile technology and community engagement.",
+  "router_tags": [
+    "maps",
+    "geospatial",
+    "Web3",
+    "user-generated content",
+    "mapping technology"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$PROTO",
+    "$DEEPIN",
+    "$HELIUM"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

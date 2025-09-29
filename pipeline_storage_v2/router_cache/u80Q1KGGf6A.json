@@ -1,0 +1,34 @@
+{
+  "description": "Andrew Allen from Coinbase discusses the role of DeFi in enhancing economic freedom and the launch of CBBTC, a crypto-backed Bitcoin product. He highlights the growth of DeFi and its integration with Coinbase's services, including crypto-backed loans and the demand for easy access to crypto assets.",
+  "topic_summary": "In this presentation, Andrew Allen outlines Coinbase's vision for DeFi, the introduction of CBBTC, and the growth of crypto-backed loans, emphasizing the importance of user access to decentralized finance [t=0:24-5:36].",
+  "router_tags": [
+    "Coinbase",
+    "DeFi",
+    "CBBTC",
+    "Crypto Loans",
+    "Economic Freedom"
+  ],
+  "aliases": [
+    "Coinbase",
+    "coinbase",
+    "Cbbtc",
+    "cbbtc",
+    "SOL",
+    "sol",
+    "BTC",
+    "btc",
+    "USDC",
+    "usdc",
+    "Andrew Allen",
+    "andrew allen"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$USDC",
+    "@SolanaFndn",
+    "@AndrewAllen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Henry Stern, co-founder of Privy, discusses user onboarding in crypto, emphasizing the importance of meeting users where they are and building infrastructure that facilitates mainstream adoption. He highlights the evolution of the Solana ecosystem and the need for compelling user experiences in crypto applications.",
+  "topic_summary": "Stern outlines key rules for onboarding users to crypto, focusing on infrastructure, compliance, and user-centric design. He argues that the gap in crypto adoption has closed, and now is the time to build user-friendly applications that leverage existing technologies and user behaviors [t=0:40].",
+  "router_tags": [
+    "User Onboarding",
+    "Crypto Infrastructure",
+    "Solana",
+    "Privy",
+    "Mainstream Adoption"
+  ],
+  "aliases": [
+    "henry stern",
+    "Henry Stern",
+    "Privy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$3.5 Trillion",
+    "@Ilmoy",
+    "@Vector"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

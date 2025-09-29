@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the launch of tokenized equities on Solana by Kraken, highlighting the evolution of crypto and the potential for global liquidity and access to capital. The conversation touches on past attempts at tokenized equities and the strategic roadmap for Kraken's future.",
+  "topic_summary": "At [t=27:04], Kraken announces tokenized equities on Solana, exploring the implications for global access to capital and liquidity. The dialogue reflects on the evolution of crypto and the need for innovative financial products.",
+  "router_tags": [
+    "Kraken",
+    "Solana",
+    "Tokenized Equities",
+    "Crypto",
+    "Liquidity",
+    "Financial Innovation"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Kraken Exchange"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@krakenfx"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

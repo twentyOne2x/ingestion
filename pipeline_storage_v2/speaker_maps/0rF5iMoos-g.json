@@ -1,0 +1,38 @@
+{
+  "video_id": "0rF5iMoos-g",
+  "title": "2024-11-22_0rF5iMoos-g_Interviewing The Creator Of $CENTS... (Somewheresy)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Fred Charman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "John Zanzibar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Young Internet",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "John Oliver",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

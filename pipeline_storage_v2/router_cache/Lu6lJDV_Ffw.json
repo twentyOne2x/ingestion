@@ -1,0 +1,24 @@
+{
+  "description": "Jacob Creech and Noah discuss state compression technology, focusing on its application in linking off-chain data to on-chain systems using concurrent Merkle trees. They explore the challenges of data allocation costs on Solana and how state compression can optimize this by minimizing on-chain data while referencing off-chain data. The conversation also touches on the historical context of NFT metadata and airdrop mechanisms on Ethereum as a comparative example.",
+  "topic_summary": "The video covers state compression on Solana, explaining its importance in reducing on-chain data costs through the use of concurrent Merkle trees. It highlights the challenges faced with NFT metadata and how similar problems have been addressed in other blockchain ecosystems.",
+  "router_tags": [
+    "State Compression",
+    "Merkle Trees",
+    "Solana",
+    "NFT",
+    "Blockchain Technology"
+  ],
+  "aliases": [
+    "State Compression",
+    "State compression",
+    "Merkle Trees",
+    "Merkle trees"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

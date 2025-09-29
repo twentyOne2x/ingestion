@@ -1,0 +1,28 @@
+{
+  "description": "Thread Guy interviews Luca Netz in Venice, California, discussing business strategies and the challenges of frequent travel for meetings. They explore the differences between in-person and virtual meetings, emphasizing productivity and energy levels.",
+  "topic_summary": "Luca Netz shares insights on building a business, the importance of in-person interactions, and managing time effectively while traveling for work. [t=0:32] [t=5:04] [t=64:47]",
+  "router_tags": [
+    "Business",
+    "Entrepreneurship",
+    "Travel",
+    "Meetings",
+    "Productivity"
+  ],
+  "aliases": [
+    "Luca Netz",
+    "Luca Nets",
+    "Luca Netz",
+    "Thread Guy",
+    "Not Thread Guy"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$PUDGY",
+    "$BNB",
+    "$DOGE",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

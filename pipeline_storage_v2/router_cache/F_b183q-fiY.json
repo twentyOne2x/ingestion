@@ -1,0 +1,24 @@
+{
+  "description": "Anatoly Yakovenko and Thomas Lambertz discuss security in Solana, focusing on the Rust programming language, smart contract verification, and the importance of input validation. They explore the challenges of ensuring security in complex programming models and the potential for dual implementations of smart contracts.",
+  "topic_summary": "The conversation covers various aspects of security in Solana, including the strengths of Rust, the need for better verification tools, and the implications of runtime changes. They emphasize the importance of input validation and the potential for redundancy in smart contract implementations.",
+  "router_tags": [
+    "Solana",
+    "Security",
+    "Smart Contracts",
+    "Rust",
+    "Verification"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Security Day Fireside Chat",
+    "Anatoly Yakovenko",
+    "Thomas Lambertz"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@thomas"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

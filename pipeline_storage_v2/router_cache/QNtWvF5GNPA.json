@@ -1,0 +1,27 @@
+{
+  "description": "This panel discusses the potential of decentralized AI training to compete with centralized models like OpenAI and Anthropic. Experts from various leading projects share insights on the current state and future of decentralized AI training.",
+  "topic_summary": "Panel on decentralized versus centralized AI training, exploring the feasibility of open-source models competing with centralized counterparts [t=62:63].",
+  "router_tags": [
+    "Decentralized AI",
+    "Centralized AI",
+    "AI Training",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Decentralized AI Training",
+    "Decentralized AI",
+    "Centralized AI Training",
+    "Crypto x AI Event"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "@ambient",
+    "@jensen",
+    "@nous",
+    "@primeintellect",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

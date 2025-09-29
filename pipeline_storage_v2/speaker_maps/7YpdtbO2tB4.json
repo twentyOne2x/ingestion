@@ -1,0 +1,20 @@
+{
+  "video_id": "7YpdtbO2tB4",
+  "title": "2023-07-25_7YpdtbO2tB4_Validated - Can Block Explorers Eventually Work Like Traditional Search Engines",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Fatu Raman",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

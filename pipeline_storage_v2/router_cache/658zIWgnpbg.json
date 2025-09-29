@@ -1,0 +1,22 @@
+{
+  "description": "Explore the Solana ecosystem, highlighting its community-driven approach and the collaborative spirit among builders. The discussion emphasizes the growth and maturity of the ecosystem, showcasing how participants can easily connect and innovate together. [t=3:76] [t=68:82]",
+  "topic_summary": "The video discusses the vibrant and inclusive nature of the Solana ecosystem, where community members actively contribute and collaborate to drive innovation and growth. [t=36:64]",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Blockchain",
+    "Community",
+    "Innovation"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "solana stories",
+    "SOLANA STORIES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

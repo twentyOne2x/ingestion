@@ -1,0 +1,23 @@
+{
+  "description": "Explore Sia's journey as an artist in the NFT space, her family background in art, and her experiences showcasing her work at significant exhibitions, including Breakpoint in Amsterdam and her upcoming collaboration with Soulflare.",
+  "topic_summary": "Sia's artistic journey in the NFT space began three years ago, influenced by her artistic family. Key highlights include her first solo exhibition in Belgrade and participation in the Art on Exchange exhibition at Breakpoint [t=85.88]. She is set to collaborate with Soulflare for upcoming products at Apex Budapest [t=104.64].",
+  "router_tags": [
+    "Sia",
+    "NFT",
+    "Art Exhibition",
+    "Solana",
+    "Breakpoint",
+    "Soulflare"
+  ],
+  "aliases": [
+    "Sia",
+    "sia",
+    "SIA"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

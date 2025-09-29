@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the evolution of AI in crypto, featuring insights on past investments and market trends.",
+  "topic_summary": "The conversation reflects on the speaker's experiences in crypto, particularly with investments like Veracity, and the realization of market dynamics over time [t=30:44].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Investing",
+    "Veracity",
+    "Market Trends"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$VRA",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

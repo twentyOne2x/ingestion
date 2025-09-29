@@ -1,0 +1,33 @@
+{
+  "description": "In this episode, the host discusses the journey of turning $5,000 into $10 million through various hustles and trading secrets. The guest shares insights on finding value in DeFi, starting from TikTok, and navigating the complexities of crypto investments.",
+  "topic_summary": "The conversation covers the guest's entry into DeFi, strategies for identifying undervalued assets, and reflections on their early experiences in crypto trading [t=65:14].",
+  "router_tags": [
+    "DeFi",
+    "Crypto",
+    "Trading",
+    "Investing",
+    "Finance",
+    "Podcast"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$5,000",
+    "$10M",
+    "$ETH",
+    "$BTC",
+    "@Tyche",
+    "$DOGE",
+    "$1",
+    "$2",
+    "$3",
+    "$6",
+    "$30",
+    "$USDC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

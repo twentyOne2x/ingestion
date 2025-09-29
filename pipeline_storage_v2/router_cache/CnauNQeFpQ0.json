@@ -1,0 +1,25 @@
+{
+  "description": "Brandon from Inflect discusses optimizing server infrastructure for Solana, focusing on hardware types for RPCs and validators. He shares insights on benchmarking and performance tuning, including the use of Prime 95 and the Solana benchmark utility.",
+  "topic_summary": "Brandon explains the challenges and strategies in optimizing server performance for Solana, highlighting the differences between RPC and validator nodes and the importance of benchmarking tools [t=0:88-343:27].",
+  "router_tags": [
+    "Solana",
+    "Inflect",
+    "Server Optimization",
+    "Benchmarking",
+    "Infrastructure"
+  ],
+  "aliases": [
+    "Brandon",
+    "brandon",
+    "Inflect",
+    "inflect",
+    "@SolanaFndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

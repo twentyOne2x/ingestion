@@ -1,0 +1,23 @@
+{
+  "description": "Ken from Backpack Exchange discusses the evolving landscape of crypto regulations, emphasizing the need for principles-based approaches to ensure investor protection and market integrity. He highlights recent regulatory developments in various regions and the importance of adapting existing laws to the unique aspects of crypto, including decentralization and control dynamics.",
+  "topic_summary": "Ken explores the principles of crypto regulation, addressing the balance between innovation and compliance. He outlines key regulatory principles such as preventing financial crimes, ensuring investor protection, and maintaining market integrity, while also acknowledging the unique characteristics of crypto that require tailored regulatory approaches [t=0:00-0:00].",
+  "router_tags": [
+    "Crypto Regulation",
+    "Decentralization",
+    "Investor Protection",
+    "Market Integrity",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Backpack",
+    "backpack",
+    "BackPack"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@Backpack",
+    "Hong Kong"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

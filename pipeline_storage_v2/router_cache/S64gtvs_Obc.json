@@ -1,0 +1,25 @@
+{
+  "description": "Abhay Kumar from the Helium Foundation discusses the evolution of Helium and its role in Decentralized Physical Infrastructure Networks (DePIN). He highlights the challenges of building wireless networks and the importance of incentivization in deploying these networks. Kumar explains the dual nature of the Helium Network, encompassing both IoT and mobile networks, and the economic model that drives user participation and network growth.",
+  "topic_summary": "Exploration of Helium's infrastructure networks, the concept of DePIN, and future opportunities on Solana. Discussion includes the evolution of Helium, its incentivization model, and its dual network structure for IoT and mobile services.",
+  "router_tags": [
+    "Helium",
+    "DePIN",
+    "Solana",
+    "IoT",
+    "Mobile Networks",
+    "Blockchain"
+  ],
+  "aliases": [
+    "helium",
+    "Helium",
+    "DePIN",
+    "depins",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$HNT",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

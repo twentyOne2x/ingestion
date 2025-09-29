@@ -1,0 +1,22 @@
+{
+  "description": "In this episode of Chewing Glass, Zano from Jito Labs discusses his journey into tech, his experiences at Breakpoint, and the development culture within the Solana ecosystem. He shares insights on his background in computer science and how he got started in programming.",
+  "topic_summary": "Zano talks about his transition into tech, his educational background in computer science, and his experiences in the Solana ecosystem, including his first impressions of the community and his work at Jito Labs. [t=0:40] [t=43:18]",
+  "router_tags": [
+    "Solana",
+    "Jito Labs",
+    "Tech Journey",
+    "Computer Science",
+    "Developer Culture"
+  ],
+  "aliases": [
+    "Zano",
+    "zano",
+    "ZANO"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@zano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

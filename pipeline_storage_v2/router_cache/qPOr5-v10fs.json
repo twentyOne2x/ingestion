@@ -1,0 +1,24 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses recent updates including faster build scripts, verification of ELF with active feature sets, and improvements in CPI calls to enhance developer experience.",
+  "topic_summary": "Updates on Solana's development tools and features, including build speed enhancements [t=29:63], deployment verification [t=56:13], and changes to CPI call requirements [t=107:88].",
+  "router_tags": [
+    "Solana",
+    "Development",
+    "Blockchain",
+    "CPI",
+    "NFTs"
+  ],
+  "aliases": [
+    "solana changelog",
+    "solana updates",
+    "solana development"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Blakiosaurus",
+    "@Metaplex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

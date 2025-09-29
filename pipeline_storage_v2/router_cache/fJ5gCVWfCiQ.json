@@ -1,0 +1,20 @@
+{
+  "description": "This lecture discusses solving the SMR problem in blockchain protocols, focusing on achieving consistency and liveness through a rotating leader mechanism. It emphasizes the importance of coordination among nodes and the assumptions required for the protocol to function effectively.",
+  "topic_summary": "The lecture explains how to implement a rotating leader protocol to ensure consistency and liveness in blockchain systems, detailing the necessary assumptions and the process of transaction ordering and broadcasting [t=0:64].",
+  "router_tags": [
+    "Blockchain",
+    "Consensus",
+    "Distributed Systems",
+    "Byzantine Fault Tolerance"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 2.2",
+    "SMR Reduces to Byzantine Broadcast"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

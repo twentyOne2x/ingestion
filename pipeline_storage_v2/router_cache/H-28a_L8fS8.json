@@ -1,0 +1,29 @@
+{
+  "description": "Ting from Delphi Digital discusses the current state and future trends of NFTs, highlighting the hype cycle, speculation, and the potential for real utility in the coming years. Key topics include the impact of major brands, the rise of Solana NFTs, and the emergence of NFT finance and marketplaces.",
+  "topic_summary": "The video explores the evolution of NFTs, their speculative nature, and the shift towards real-world applications. It covers the challenges faced by the Solana ecosystem and the potential growth of NFT finance and specialized marketplaces [t=0:16-4:00].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Ethereum",
+    "NFT Finance",
+    "NFT Marketplaces"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "@delphi_digital",
+    "Delphi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@Delphi_Digital",
+    "$BTC",
+    "$FTX",
+    "$ALAMEDA",
+    "$MAGIC",
+    "$INSTAGRAM"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

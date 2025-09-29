@@ -1,0 +1,21 @@
+{
+  "description": "During an exclusive dinner, a guest asks Trump about the future of crypto, particularly in the context of the upcoming election. Trump expresses optimism about crypto's future and humorously suggests that the national debt of $35 trillion could be paid off with crypto.",
+  "topic_summary": "Trump discusses the future of cryptocurrency and its potential impact on national debt [t=33:39].",
+  "router_tags": [
+    "Trump",
+    "crypto",
+    "NFTs",
+    "election",
+    "debt"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$35 Trillion"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

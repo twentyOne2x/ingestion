@@ -1,0 +1,26 @@
+{
+  "video_id": "3POY_tQsH78",
+  "title": "2024-10-10_3POY_tQsH78_Solana Foundation Validator Discussion - Sept 5 2024",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "C": {
+      "name": "Ben Kanto",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "F": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

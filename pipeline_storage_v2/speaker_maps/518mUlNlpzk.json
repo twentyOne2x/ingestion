@@ -1,0 +1,26 @@
+{
+  "video_id": "518mUlNlpzk",
+  "title": "2024-11-21_518mUlNlpzk_Interviewing The Creator Of $ZEREBRO... (jyu_eth)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Cardi Ken Carson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Sam Altman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

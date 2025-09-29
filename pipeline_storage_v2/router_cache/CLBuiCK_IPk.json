@@ -1,0 +1,22 @@
+{
+  "description": "Dave Ford discusses the intersection of crypto and climate change, sharing his experiences with environmental initiatives and the potential of blockchain technology to enhance transparency in carbon offset markets.",
+  "topic_summary": "Ford highlights the challenges of climate change and the role of blockchain in addressing these issues, emphasizing the need for verification in carbon markets and the importance of educating industries about crypto's environmental impact [t=3:76-371:12].",
+  "router_tags": [
+    "Crypto",
+    "Climate Change",
+    "Blockchain",
+    "Environmental Initiatives",
+    "Carbon Offsets"
+  ],
+  "aliases": [
+    "Dave Ford",
+    "dave ford",
+    "DAVE FORD"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

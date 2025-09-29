@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on a panic observed in Mainnet Beta version 1.14, including identification, debugging, and potential solutions.",
+  "topic_summary": "The session covers the identification of a panic in Mainnet Beta 1.14, the debugging process, and lessons learned to prevent future occurrences. Key points include the panic's symptoms, consensus mismatch, and the steps taken to reproduce the issue using the Solana Ledger Tool [t=0:56].",
+  "router_tags": [
+    "Solana",
+    "Mainnet Beta",
+    "Debugging",
+    "Panic",
+    "Consensus Mismatch"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

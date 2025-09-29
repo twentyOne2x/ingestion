@@ -1,0 +1,22 @@
+{
+  "description": "A presentation on researching the Solana ecosystem, discussing challenges, learnings, and opportunities for growth.",
+  "topic_summary": "The speaker shares insights on the importance of ecosystem research for Solana, emphasizing the need to establish a narrative and attract more founders to enhance the ecosystem. They outline their research process, the significance of data, and the role of public goods in funding ecosystem initiatives. Ideas for future research topics are also suggested.",
+  "router_tags": [
+    "Solana",
+    "Ecosystem Research",
+    "Blockchain",
+    "Crypto",
+    "Fintech"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

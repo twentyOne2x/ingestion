@@ -1,0 +1,22 @@
+{
+  "description": "Coyote discusses his trading journey, including early mistakes in NFTs and learning from others in the trading community. He emphasizes the importance of being early in the market and shares insights on his trading style, which involves taking significant risks and making bold moves.",
+  "topic_summary": "Coyote's trading evolution from NFTs to on-chain strategies, highlighting his willingness to take risks and adapt his approach over time. He reflects on past trades and the dynamics of the trading environment.",
+  "router_tags": [
+    "Trading",
+    "On-Chain",
+    "NFTs",
+    "Risk Management",
+    "Crypto"
+  ],
+  "aliases": [
+    "Coyote4PF",
+    "Coyote",
+    "coyote4pf"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

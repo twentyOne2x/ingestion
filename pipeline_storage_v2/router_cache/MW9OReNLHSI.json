@@ -1,0 +1,20 @@
+{
+  "description": "Metawealth helps individuals invest in real estate using cryptocurrency, making this asset class accessible to a broader audience.",
+  "topic_summary": "Discussion on how Metawealth enables real estate investment through crypto, targeting accessibility for all [t=0:40].",
+  "router_tags": [
+    "real estate",
+    "crypto investment",
+    "Metawealth"
+  ],
+  "aliases": [
+    "MetaWealth",
+    "metawealth",
+    "METAWEALTH"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "matterwealth."
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

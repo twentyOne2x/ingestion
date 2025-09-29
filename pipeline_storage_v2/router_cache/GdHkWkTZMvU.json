@@ -1,0 +1,27 @@
+{
+  "description": "Patrick OGrady discusses multi-concurrent proposers and their importance for decentralized exchanges at the Solana conference. He introduces the concept of decoupled state machine replication (DSMR) and its potential to enhance throughput while addressing challenges like transaction validity and fee payment. The talk highlights the need for mechanisms to protect market makers and ensure fair participation in auctions.",
+  "topic_summary": "OGrady explains the significance of multi-concurrent proposers in decentralized exchanges, emphasizing the need for auction mechanisms and transaction prioritization. He contrasts traditional blockchain operations with DSMR, advocating for higher throughput and addressing potential vulnerabilities in transaction processing.",
+  "router_tags": [
+    "Solana",
+    "Decentralized Exchange",
+    "Blockchain",
+    "Multi-Concurrent Proposers",
+    "Decoupled State Machine Replication"
+  ],
+  "aliases": [
+    "Patrick Ogrady",
+    "Commonware",
+    "SOL",
+    "Anatoly",
+    "Avalabs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@Commonware",
+    "@Avalabs",
+    "@Coinbase"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

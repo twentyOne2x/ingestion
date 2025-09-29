@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Solana validator updates and educational workshops, including a focus on the JITO client and its features.",
+  "topic_summary": "Validator updates include recommendations for versions 1.13.5 and 1.14.10. An educational workshop on security is planned, with opportunities for community involvement. The JITO team discusses their client, which enhances MEV revenue capture for validators [t=1:28].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "JITO",
+    "MEV",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Jito",
+    "jito"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@jito"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

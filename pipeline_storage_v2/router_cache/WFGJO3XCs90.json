@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to implement transfer fees for tokens on Solana easily with the transfer fee token extension.",
+  "topic_summary": "This video explains the process of adding transfer fees to tokens on Solana, including setting parameters during token minting and ensuring expected fees are included during transfers [t=0:40].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Transfer Fees",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

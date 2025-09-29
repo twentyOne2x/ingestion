@@ -1,0 +1,21 @@
+{
+  "description": "Interview with Ansem discussing the future of memecoins, market timing, and personal experiences with trading, including insights on Trump and Solana.",
+  "topic_summary": "Ansem shares insights on memecoins and trading strategies, reflecting on market movements and personal trading decisions, particularly around Trump and Solana [t=23:36].",
+  "router_tags": [
+    "Memecoins",
+    "Trading",
+    "Cryptocurrency",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Trump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

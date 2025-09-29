@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Hive Mind podcast, host Jose Macedou discusses on-chain liquidity with experts from Delphi, including Ceteris, Jan Lieberman, Duncan (Flood Capital), and Matt (Oxdefi). They explore the evolution of on-chain liquidity from Ether Delta to AMMs like Uniswap and Curve, analyzing the challenges and innovations in the space.",
+  "topic_summary": "The discussion covers the history and future of on-chain liquidity, starting from Ether Delta's inefficiencies [t=0:24] to the rise of AMMs that address gas constraints [t=189:86]. The experts share insights on liquidity provision and the impact of farming rewards on user participation [t=265:55].",
+  "router_tags": [
+    "On-Chain Liquidity",
+    "DeFi",
+    "AMM",
+    "Ethereum",
+    "Podcast"
+  ],
+  "aliases": [
+    "On-Chain Liquidity",
+    "Onchain Liquidity",
+    "DeFi Podcast",
+    "Hive Mind Podcast"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@0xdef1",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

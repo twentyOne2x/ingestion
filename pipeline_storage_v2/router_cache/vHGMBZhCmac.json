@@ -1,0 +1,31 @@
+{
+  "description": "This video discusses the mechanisms and risks associated with staking Ethereum (ETH) through Liquid Staking Derivatives (LSDs). It covers the illiquidity of staked ETH, the different types of LSDs, and the associated risks of staking with various providers.",
+  "topic_summary": "The video explores the total staked Ethereum value, the concept of Liquid Staking Derivatives [t=11.76], and the different types of LSDs including rebasing tokens, reward-bearing tokens, and base plus reward tokens [t=80.42]. It also highlights the risks involved with staking and the centralization concerns of LSD providers [t=215.4].",
+  "router_tags": [
+    "Ethereum",
+    "Staking",
+    "Liquid Staking Derivatives",
+    "Lido",
+    "Coinbase",
+    "Rocketpool",
+    "Stakewise",
+    "Frax"
+  ],
+  "aliases": [
+    "staking ethereum",
+    "liquid staking derivatives",
+    "eth staking",
+    "LSD mechanisms"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital",
+    "$25 Billion",
+    "$LDO",
+    "$RPL",
+    "$FRAX",
+    "$SWISE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

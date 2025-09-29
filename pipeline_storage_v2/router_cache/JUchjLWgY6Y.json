@@ -1,0 +1,24 @@
+{
+  "description": "Austin speaks with Alexei Zakharov, CEO of Otter Finance, about Banking 3.0 and the evolution of digital banking. They discuss Otter's decentralized platform, which offers a bank-like experience without custody of assets, using USDC for international transactions. The conversation explores the challenges of going bankless, user adoption, and the importance of self-custody in financial products.",
+  "topic_summary": "The discussion centers on the concept of Banking 3.0, which aims to replicate modern banking functions using stablecoins and blockchain technology, specifically Solana. Key topics include user experience, the role of deposit insurance in web3, and the potential for decentralized finance to provide universal financial access.",
+  "router_tags": [
+    "Banking 3.0",
+    "Digital Banking",
+    "Web3",
+    "Decentralized Finance",
+    "Stablecoins"
+  ],
+  "aliases": [
+    "banking 3.0",
+    "Banking 3.0",
+    "Otter Finance",
+    "otter finance"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

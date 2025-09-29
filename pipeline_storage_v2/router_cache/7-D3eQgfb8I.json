@@ -1,0 +1,22 @@
+{
+  "description": "Anthony introduces the second day of Solana Breakpoint 2024, highlighting a packed schedule of technical talks and workshops. He emphasizes the importance of the audience's participation and introduces Ariel Seidman, CEO of Hivemapper, who will discuss mapping technologies and funding in the current environment.",
+  "topic_summary": "Introduction to Solana Breakpoint 2024 Day 2, featuring Ariel Seidman's talk on Hivemapper and the challenges of funding mapping technologies in today's market. [t=911.53]",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2024",
+    "Hivemapper",
+    "mapping technologies",
+    "funding"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "@solanafndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

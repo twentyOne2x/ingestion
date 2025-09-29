@@ -1,0 +1,23 @@
+{
+  "description": "John McAfee discusses the evolution of cryptocurrency, emphasizing the limitations of Bitcoin and the rise of Monero as a preferred option for privacy. He argues that Bitcoin's lack of privacy and inability to support smart contracts have diminished its value in the current landscape.",
+  "topic_summary": "In this episode, John McAfee shares insights on the future of cryptocurrency, asserting that Bitcoin is becoming obsolete and that Monero is the leading choice for privacy-focused transactions [t=282.92].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Bitcoin",
+    "Monero",
+    "Blockchain",
+    "Privacy"
+  ],
+  "aliases": [
+    "John Mcafee",
+    "John McAfee",
+    "john mcafee"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$MONERO",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

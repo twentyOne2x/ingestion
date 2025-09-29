@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Solana Foundation Validator updates, including software upgrades and upcoming events like Breakpoint and Block Zero.",
+  "topic_summary": "Updates on validator software versions [t=39:30], educational workshops [t=150:30], and upcoming events including Breakpoint and Block Zero [t=196:00].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Updates",
+    "Events"
+  ],
+  "aliases": [
+    "solana foundation validator discussion",
+    "Solana Foundation Validator Discussion",
+    "Solana Validator Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Chris",
+    "@Brian",
+    "@Marinade"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

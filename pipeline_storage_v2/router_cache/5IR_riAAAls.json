@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana Community Validator updates, including maintenance requests, validator roles, and SFDP changes.",
+  "topic_summary": "The Solana Community Validator Discussion on December 7, 2023, covers validator updates, maintenance requests for software upgrades, and proposed changes to the SFDP, including vote cost coverage and matching stakes. The meeting highlights ongoing investigations into network issues and encourages community feedback on forum announcements. [t=0:16]",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Community",
+    "SFDP",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Meeting",
+    "Validator Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

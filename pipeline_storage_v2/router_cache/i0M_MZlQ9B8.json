@@ -1,0 +1,31 @@
+{
+  "description": "Tim Roughgarden discusses the economic implications of permissionless consensus in blockchain, focusing on 51% attacks and their impact on protocols like Bitcoin and Ethereum. He explores Nakamoto's insights on the incentives for attackers and the potential consequences of double spend attacks.",
+  "topic_summary": "The talk covers the economic limits of permissionless consensus, particularly the risks and incentives associated with 51% attacks on blockchain protocols, referencing Nakamoto's original arguments and the evolution of security narratives in proof of work and proof of stake systems [t=0:56].",
+  "router_tags": [
+    "Blockchain",
+    "Consensus",
+    "51% Attack",
+    "Bitcoin",
+    "Ethereum",
+    "Proof of Work",
+    "Proof of Stake"
+  ],
+  "aliases": [
+    "Tim Roughgarden",
+    "tim roughgarden",
+    "TIM ROUGHGARDEN"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@EricButtish",
+    "@UniversityOfChicago",
+    "@AndyLewisPye",
+    "@LondonSchoolOfEconomics",
+    "@TimRoughgarden",
+    "@VitalikButerin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

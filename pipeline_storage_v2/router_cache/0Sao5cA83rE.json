@@ -1,0 +1,24 @@
+{
+  "description": "Colin discusses the establishment of a Web3 school in Sierra Leone, focusing on blockchain education through the Christex Foundation. The initiative aims to address local educational gaps and infrastructure challenges, emphasizing the importance of in-person learning in a region with limited internet access and electricity.",
+  "topic_summary": "Colin from Solana Foundation presents a project aimed at creating a physical Web3 school in Sierra Leone to educate locals on blockchain technology and development, addressing the lack of opportunities and resources in the region. The project is supported by a grant from the Solana Foundation and involves collaboration with the University of Sierra Leone.",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Education",
+    "Sierra Leone",
+    "Solana"
+  ],
+  "aliases": [
+    "Colin",
+    "colin",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@UniversityOfSierraLeone"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

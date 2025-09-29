@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing essential tools for analyzing randomized algorithms, including probability concepts and linearity of expectations.",
+  "topic_summary": "The lecture covers the analysis of randomized algorithms, focusing on key probabilistic tools such as Chebyshev, Chernoff, and Markov bounds, and introduces the concept of linearity of expectations [t=237.14].",
+  "router_tags": [
+    "randomized algorithms",
+    "probability",
+    "expectation",
+    "analysis",
+    "machine learning"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$ALGO"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

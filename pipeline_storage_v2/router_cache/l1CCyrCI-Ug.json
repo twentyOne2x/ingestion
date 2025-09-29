@@ -1,0 +1,31 @@
+{
+  "description": "Ali from Reciprocal Ventures introduces a panel discussing liquid staking on Solana, featuring Michael from Marinade, Lane, and Nicholas from Swissborg. They explore the differences between liquid and native staking, highlighting the advantages of liquid staking such as automated delegation and liquidity unlocking. Michael explains the pain points of traditional staking and the benefits of using AMSOL for diversified staking across validators. Lane discusses the unique value of their single validator liquid staking token, launched prior to Breakpoint 2022.",
+  "topic_summary": "The panel discusses liquid staking on Solana, comparing it to native staking. Key points include the advantages of automated delegation, liquidity, and the introduction of single validator liquid staking tokens. The conversation emphasizes the evolution of staking strategies and their impact on the Solana ecosystem.",
+  "router_tags": [
+    "Liquid Staking",
+    "Solana",
+    "Marinade",
+    "Lane",
+    "Swissborg",
+    "DeFi",
+    "Staking"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "SolanaFndn",
+    "Reciprocal Ventures",
+    "Marinade",
+    "Lane",
+    "Swissborg"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Michael",
+    "@Nicholas",
+    "@Lane"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

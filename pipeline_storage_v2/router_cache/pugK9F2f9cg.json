@@ -1,0 +1,28 @@
+{
+  "description": "This lecture focuses on the transition from welfare maximization to revenue maximization in mechanism design, highlighting the challenges and strategies involved in optimizing revenue through various mechanisms.",
+  "topic_summary": "The lecture discusses the shift from welfare maximization to revenue maximization, emphasizing the complexities of designing mechanisms that optimize revenue based on buyer valuations and market conditions. Key concepts include the importance of prior distributions and the differences between single and multi-parameter settings [t=0:64].",
+  "router_tags": [
+    "Mechanism Design",
+    "Revenue Maximization",
+    "Welfare Maximization",
+    "Bayesian Incentive Compatibility",
+    "Auction Theory"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Lecture 18 Multi-Parameter Revenue-Maximization",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$10",
+    "$20",
+    "@timroughgardenlectures1861",
+    "@Myerson",
+    "@Klemperer",
+    "@Bayes",
+    "@Epsilon",
+    "@Ollie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

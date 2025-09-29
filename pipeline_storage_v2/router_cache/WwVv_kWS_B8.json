@@ -1,0 +1,24 @@
+{
+  "description": "Raj Gokal and Balaji Srinivasan discuss the Solana network's role in the concept of network states, emphasizing its efficiency and infrastructure capabilities. They explore decentralization, success metrics for network states, and the importance of real estate in the digital economy.",
+  "topic_summary": "At [t=12:88], the speakers welcome attendees and express gratitude for their presence in Singapore. They highlight the significance of Breakpoint 2024 and discuss Solana's infrastructure for network states at [t=57:68]. Balaji shares insights on decentralization and success metrics for network states, including population and real estate considerations, at [t=146:00].",
+  "router_tags": [
+    "Solana",
+    "Network State",
+    "Decentralization",
+    "Breakpoint 2024",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Raj Gokal",
+    "Balaji Srinivasan",
+    "Solana Network",
+    "Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

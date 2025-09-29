@@ -1,0 +1,24 @@
+{
+  "description": "Dr. Blocks discusses the evolution and efficiency of Switchboard, an oracle service for Solana, highlighting its journey since 2021, the challenges of sourcing pricing data, and the introduction of their on-demand pricing service.",
+  "topic_summary": "The presentation covers the development of Switchboard, its role in providing secure pricing data for Solana, and the transition to a more efficient on-demand model for data retrieval [t=250.52].",
+  "router_tags": [
+    "Switchboard",
+    "Oracles",
+    "Solana",
+    "Data Layer",
+    "Pricing Services"
+  ],
+  "aliases": [
+    "Dr. Blocks",
+    "doctorblocks",
+    "Switchboard",
+    "switchboard"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Circle"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

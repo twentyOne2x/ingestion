@@ -1,0 +1,27 @@
+{
+  "description": "Zhen Hoe Yong discusses Mitora's role in building dynamic liquidity pools essential for the crypto ecosystem, emphasizing customizability and the importance of liquidity for token launches and real-world assets. He highlights the success of Mitora, including over $200 billion in all-time stock volume and $1 billion in fees generated for liquidity providers. The talk introduces new products like DBC and Dynamic AMM V2, aimed at enhancing liquidity management and preventing sniper attacks during token launches.",
+  "topic_summary": "Zhen Hoe Yong presents Mitora's innovative liquidity solutions, focusing on customizable liquidity pools and the launch of Dynamic AMM V2, which combines features from existing products to enhance user experience and security in token launches. Key metrics of success and partnerships with notable launchpads are also discussed [t=0:00-0:00].",
+  "router_tags": [
+    "Liquidity Pools",
+    "Crypto",
+    "Token Launch",
+    "Dynamic AMM",
+    "Mitora"
+  ],
+  "aliases": [
+    "Mitora",
+    "Mitura",
+    "Vitora",
+    "Meteora",
+    "Dynamic AMM V2"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "@BeliefTender",
+    "@TimeFun"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

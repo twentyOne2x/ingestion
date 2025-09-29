@@ -1,0 +1,25 @@
+{
+  "description": "Dylan Zhang discusses the intersection of crypto and AI, focusing on the development of user search engines and the application of blockchain data in DeFi. He explains how AI can create dynamic structures within DeFi protocols, enhancing their functionality and adaptability.",
+  "topic_summary": "The conversation covers Dylan Zhang's journey into crypto and AI, the challenges of processing social data, and the potential of AI to transform DeFi by introducing dynamic mechanisms. Zhang emphasizes the symbiotic relationship between AI and DeFi, suggesting that both can benefit from each other in the long run.",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "DeFi",
+    "Blockchain",
+    "User Search Engine"
+  ],
+  "aliases": [
+    "Dylan Zhang",
+    "Dylan",
+    "Zhang"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$BTC",
+    "$SOL",
+    "@Vitalik",
+    "@PondAi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

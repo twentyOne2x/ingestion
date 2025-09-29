@@ -1,0 +1,27 @@
+{
+  "description": "Jules Urbach discusses updates from Render at Breakpoint 2022, highlighting advancements in GPU rendering, AI art, and the future of holographic displays.",
+  "topic_summary": "At [t=3:92], Jules Urbach shares insights on Render's progress over the past year, emphasizing the evolution of GPU rendering and its implications for art and content creation. He discusses the transition from traditional rendering to real-time AI rendering and the potential of decentralized GPU computing. The talk also touches on the future of mobile computing and holographic displays inspired by Star Trek's Holodeck.",
+  "router_tags": [
+    "Render",
+    "GPU Rendering",
+    "AI Art",
+    "Holographic Displays",
+    "Decentralized Computing"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Render Updates",
+    "Jules Urbach"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Otoy",
+    "@Nvidia",
+    "@Google",
+    "@Microsoft",
+    "@LightfieldLab"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

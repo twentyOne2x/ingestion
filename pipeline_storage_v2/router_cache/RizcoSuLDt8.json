@@ -1,0 +1,24 @@
+{
+  "description": "Lecture discussing MIR and MIDR mechanisms, focusing on challenges in achieving strong incentive guarantees while maintaining performance and computational tractability.",
+  "topic_summary": "Exploration of modular evaluation cases and the extension of approximation algorithms to desicc mechanisms. Discussion includes Myerson's lemma and the challenges of monotonicity in multi-parameter problems [t=0:72].",
+  "router_tags": [
+    "Mechanism Design",
+    "Incentive Compatibility",
+    "Approximation Algorithms",
+    "Game Theory",
+    "Economics"
+  ],
+  "aliases": [
+    "RizcoSulDt8",
+    "RizcoSulDT8",
+    "rizcosuldT8"
+  ],
+  "canonical_entities": [
+    "$100",
+    "@timroughgardenlectures1861",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

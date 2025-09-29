@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses NP completeness, focusing on the 3SAT problem and Levin reductions. It explains how NP complete problems encode all problems in NP and the significance of Levin reductions in demonstrating problem relationships.",
+  "topic_summary": "The video covers NP completeness and Levin reductions, emphasizing the relationship between NP hard problems and their encoding of all NP problems. It also contrasts Levin reductions with Cook reductions and introduces the concept of cart reductions.",
+  "router_tags": [
+    "NP-Completeness",
+    "Algorithms",
+    "Complexity Theory",
+    "Levin Reductions",
+    "Cook Reductions"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

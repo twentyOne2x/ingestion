@@ -1,0 +1,22 @@
+{
+  "description": "Alicia Lykin shares her journey into Web3 and the Solana ecosystem, discussing the importance of self-awareness, overcoming self-doubt, and the role of supportive relationships in entrepreneurship.",
+  "topic_summary": "Alicia Lykin discusses her transition from the corporate world to Web3, emphasizing the significance of trusting oneself and the impact of community support on personal and professional growth. She reflects on her experiences in paddling and entrepreneurship, highlighting problem-solving and resilience.",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Entrepreneurship",
+    "Self-Doubt",
+    "Community Support"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

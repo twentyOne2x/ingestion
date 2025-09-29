@@ -1,0 +1,22 @@
+{
+  "description": "In this talk, the speaker discusses the 'GREED Experiment' that arose during a period of excessive speculation in cryptocurrency, sharing insights and humorous anecdotes about the dynamics of the crypto market and social media engagement.",
+  "topic_summary": "The speaker reflects on the impulsive nature of crypto investments during the 'shitcoin season' [t=56:99], recounting how a satirical tweet about greed unexpectedly led to a surge in engagement and followers [t=152:58].",
+  "router_tags": [
+    "cryptocurrency",
+    "social media",
+    "investment",
+    "speculation",
+    "satire"
+  ],
+  "aliases": [
+    "Greed Experiment",
+    "GREED Experiment",
+    "Greed experiment"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

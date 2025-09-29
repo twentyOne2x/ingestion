@@ -1,0 +1,26 @@
+{
+  "video_id": "UHs0tP2z6Tc",
+  "title": "2025-07-26_UHs0tP2z6Tc_Millionaire Crypto Traders Explain BEST Strategies, Biggest Wins-Losses, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "John Pork",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "John Port",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

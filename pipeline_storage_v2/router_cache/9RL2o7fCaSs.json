@@ -1,0 +1,25 @@
+{
+  "description": "A debate on the build vs. buy decision in the context of Deepin, featuring Ariel Seidman, CEO of Hivemapper, and Santiago Santos, CEO of Inversion. They discuss their differing approaches to scaling businesses with crypto integration and the future of traditional companies adopting crypto mechanisms.",
+  "topic_summary": "The discussion revolves around whether the first billion-dollar revenue Deepin company will be a Web2/Web1 company that is acquired or a Web3 native company built from the ground up. Key insights include financing strategies and the role of crypto in enhancing business efficiency [t=24:08].",
+  "router_tags": [
+    "Deepin",
+    "Crypto",
+    "Web3",
+    "Hivemapper",
+    "Inversion",
+    "Business Strategy"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Build vs. Buy",
+    "Deepin Debate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ArielSeidman",
+    "@SantiagoSantos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

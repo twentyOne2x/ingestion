@@ -1,0 +1,20 @@
+{
+  "video_id": "viwVC4i3hfQ",
+  "title": "2022-12-20_viwVC4i3hfQ_Solana Changelog - 2022 Recap & Looking Ahead to 2023!",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Juan Jacob",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

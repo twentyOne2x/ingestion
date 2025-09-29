@@ -1,0 +1,23 @@
+{
+  "description": "Lecture on the properties of second-price auctions, focusing on the Vickrey auction and its truthful bidding strategy. Discusses the utility of bidders and the implications of bidding strategies in different auction formats.",
+  "topic_summary": "Explains why the Vickrey auction is a truthful auction, emphasizing the dominant strategy of truthful bidding and its impact on bidder utility. Covers comparisons with first-price auctions and the role of the auctioneer in ensuring optimal bidding.",
+  "router_tags": [
+    "auctions",
+    "Vickrey",
+    "bidding strategy",
+    "game theory",
+    "computer science"
+  ],
+  "aliases": [
+    "Vickory",
+    "Vickery",
+    "Vic Re",
+    "Bitter Eyes"
+  ],
+  "canonical_entities": [
+    "$20",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Rudy, founder and CEO of Ztx, discusses the motivations behind pursuing a Web3 venture, emphasizing the desire for alternate realities and self-expression through avatars. He highlights Zepeto, a leading Metaverse platform, which allows users to create and monetize virtual items, fostering a global community of creators. The platform has attracted over 300 million users and facilitates significant economic opportunities for individuals, particularly in underdeveloped regions.",
+  "topic_summary": "Rudy explores the intersection of identity, creativity, and economic opportunity in the Metaverse, using Zepeto as a case study for how virtual environments can empower individuals to pursue their passions and generate income, while also addressing the broader implications of Web3 technologies.",
+  "router_tags": [
+    "Web3",
+    "Metaverse",
+    "Zepeto",
+    "Virtual Reality",
+    "Digital Economy",
+    "Identity",
+    "Creativity"
+  ],
+  "aliases": [
+    "Ztx",
+    "Zepeto",
+    "Rudy",
+    "Zepeto X",
+    "Genesis Mint"
+  ],
+  "canonical_entities": [
+    "$ZTX",
+    "$ZEPETO",
+    "@Rudy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

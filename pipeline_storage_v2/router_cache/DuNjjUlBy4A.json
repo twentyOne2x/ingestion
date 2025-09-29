@@ -1,0 +1,23 @@
+{
+  "description": "The podcast discusses gamifying trading experiences and features a live tech demo. It explores various trading concepts, including options trading and the integration of user experience in crypto platforms.",
+  "topic_summary": "The episode covers the intersection of gaming and trading, highlighting innovative trading experiences and the role of platforms like Robinhood in the crypto space. It also touches on DeFi education and user engagement strategies [t=42:94].",
+  "router_tags": [
+    "Trading",
+    "Crypto",
+    "DeFi",
+    "Gamification",
+    "Tech Demo"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@RobinHood",
+    "@Khalid"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

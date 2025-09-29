@@ -1,0 +1,25 @@
+{
+  "description": "Yat Siu, chairman and co-founder of Animoca Brands, discusses the role of tokens in the crypto ecosystem, emphasizing their representation of network effects and the importance of institutional interest in token projects. He highlights the evolution of tokens and their comparison to early internet chat rooms and mobile apps, stressing the need for projects to demonstrate long-term value to attract institutional investors.",
+  "topic_summary": "Yat Siu explores the significance of tokens in the crypto space, their connection to network effects, and the impact of institutional interest on token valuation. He draws parallels between the current token landscape and early internet trends, advocating for a focus on sustainable value creation.",
+  "router_tags": [
+    "Animoca Brands",
+    "Tokens",
+    "Network Effects",
+    "Institutional Investment",
+    "Crypto Ecosystem",
+    "Solana",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Yat Siu",
+    "yat siu",
+    "YAT SIU"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@YatSiu",
+    "@AnimocaBrands"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

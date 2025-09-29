@@ -1,0 +1,26 @@
+{
+  "video_id": "9JD8xC-RmCE",
+  "title": "2024-12-19_9JD8xC-RmCE_An Ex-Crypto Regulator Talks Shop w- Matthew Homer",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Brian Brooks",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Matt Homer",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

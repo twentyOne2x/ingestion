@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on capital flows, trading strategies, and comparisons between gold and Bitcoin.",
+  "topic_summary": "Explores trading advice on whether to go long or short, focusing on Bitcoin and gold, while addressing various financial entities and market dynamics [t=27:06].",
+  "router_tags": [
+    "Trading",
+    "Bitcoin",
+    "Gold",
+    "Capital Flows",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$GOOGL",
+    "$FB",
+    "$MSFT",
+    "@ReserveFederal",
+    "$FORTKNOX"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

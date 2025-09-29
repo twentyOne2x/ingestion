@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on market trends, AI girlfriends, and the role of venture capital in crypto. Insights into daily activities and strategies for sourcing new projects.",
+  "topic_summary": "Exploration of current market dynamics and personal insights into the crypto space, including the importance of networking and product evaluation [t=28:57].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Venture Capital",
+    "Market Trends",
+    "Finance"
+  ],
+  "aliases": [
+    "Smac",
+    "TG Podcast",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$DOGE",
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

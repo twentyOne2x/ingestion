@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses K approval voting and introduces knapsack voting as an alternative that considers project costs, allowing voters to propose budgets for funding projects. It emphasizes the importance of internalizing costs for better decision-making.",
+  "topic_summary": "Knapsack voting offers a method for voters to allocate a budget among projects, contrasting with K approval voting by requiring consideration of project costs. This approach aims to enhance decision-making by aligning voter preferences with budget constraints [t=330.85].",
+  "router_tags": [
+    "Voting",
+    "Knapsack Voting",
+    "K Approval Voting",
+    "Decision Making",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Knapsack Voting",
+    "K Approval Voting",
+    "Voting Mechanisms"
+  ],
+  "canonical_entities": [
+    "$1 Million",
+    "@stanford"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

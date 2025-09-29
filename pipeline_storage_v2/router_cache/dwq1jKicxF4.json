@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on current market focus, trading challenges, and the state of on-chain activities. The conversation highlights the influence of KOLs and the perceived lack of organic growth in the crypto space.",
+  "topic_summary": "Exploration of market dynamics and trading strategies, emphasizing the role of KOLs and the challenges faced in the current crypto landscape [t=0:48].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "KOLs",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "not thread guy"
+  ],
+  "canonical_entities": [
+    "$BONK",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

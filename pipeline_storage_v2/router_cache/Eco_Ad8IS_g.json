@@ -1,0 +1,23 @@
+{
+  "description": "Manolis Nikiforakis, CEO of WeatherXM, discusses the deployment of weather stations globally, focusing on their impact in Mombasa, Kenya. The stations generate crypto rewards that can power small homes and schools. WeatherXM utilizes blockchain technology for data verification and explores new use cases in weather data applications, including parametric insurance and prediction markets. The network has rapidly expanded to nearly 10,000 stations in two years, with ongoing projects in Solana to further enhance crypto adoption.",
+  "topic_summary": "Manolis Nikiforakis from WeatherXM shares insights on global weather station deployment and its benefits, particularly in Kenya, highlighting the integration of blockchain technology and the expansion of their network within the Solana ecosystem [t=0:08-1:05].",
+  "router_tags": [
+    "WeatherXM",
+    "Blockchain",
+    "Crypto",
+    "Weather Stations",
+    "Solana"
+  ],
+  "aliases": [
+    "Weatherxm",
+    "weatherxm",
+    "Manolis Nikiforakis",
+    "manolis nikiforakis"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

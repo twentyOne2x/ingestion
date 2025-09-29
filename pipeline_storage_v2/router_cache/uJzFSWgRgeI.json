@@ -1,0 +1,25 @@
+{
+  "description": "Solana Breakpoint 2024 Day 1 features discussions on the new permissionless application layer, bridging experiences, and a demo of the Zeta UI. The session highlights the upcoming TestNet and closed beta for Zepp stakers, along with insights from Shane Malidor of Forged on blockchain tools for tokenomics and market making.",
+  "topic_summary": "The event covers advancements in Solana's application layer, bridging technology, and tools for blockchain builders, including tokenomics and market maker engagement. Key announcements include a closed beta for TestNet and a focus on enhancing user experience in DeFi.",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Blockchain",
+    "Tokenomics",
+    "Web3"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ShaneMalidor",
+    "@Forged"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

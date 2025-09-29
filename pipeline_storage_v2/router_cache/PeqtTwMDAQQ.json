@@ -1,0 +1,29 @@
+{
+  "description": "Tom Shaughnessy hosts Mustafa Al-Bassam, co-founder of Celestia, discussing modular blockchains and their role in decentralization and power distribution. Mustafa shares his journey from hacktivism to blockchain innovation, emphasizing the importance of information access and the impact of decentralized systems on societal power dynamics.",
+  "topic_summary": "Mustafa Al-Bassam explores modular blockchains, their significance for sovereign communities, and the evolution of blockchain technology from his experiences in hacktivism to current innovations in decentralization [t=0:16-0:21].",
+  "router_tags": [
+    "Modular Blockchains",
+    "Decentralization",
+    "Sovereign Communities",
+    "Hacktivism",
+    "Celestia",
+    "Blockchain Technology"
+  ],
+  "aliases": [
+    "Mustafa Al-Bassam",
+    "Mustafa Albasam",
+    "Tom Shaughnessy",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@Delphi_Digital",
+    "@Mustafa",
+    "@Vitalik",
+    "@Satoshi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

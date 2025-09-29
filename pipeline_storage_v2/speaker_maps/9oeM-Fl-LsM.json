@@ -1,0 +1,26 @@
+{
+  "video_id": "9oeM-Fl-LsM",
+  "title": "2024-01-17_9oeM-Fl-LsM_The Case for Onchain Options Trading w- Lev and Serge from DeVol Network",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Arrow Debreau",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Serge Levi",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

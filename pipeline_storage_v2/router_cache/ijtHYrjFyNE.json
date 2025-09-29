@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses NP-hard problems, focusing on the three SAT problem and the Cook-Levin theorem. It covers the importance of reductions in establishing NP hardness and provides tools for tackling NP-hard problems.",
+  "topic_summary": "The chapter aims to enhance understanding of NP-hard problems, starting with the three SAT problem and demonstrating how reductions can establish the NP hardness of various problems [t=73.25]. It emphasizes the significance of recognizing NP-hard problems and the implications of polynomial time algorithms [t=129.48].",
+  "router_tags": [
+    "NP-hard",
+    "Algorithms",
+    "Reductions",
+    "SAT problem",
+    "Cook-Levin theorem"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$NP",
+    "$P",
+    "$SAT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

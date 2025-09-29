@@ -1,0 +1,25 @@
+{
+  "description": "Austin speaks with Humayun Shaikh, CEO of Fetch, about the intersection of blockchain and AI. They discuss the potential of decentralized AI to transform internet transactions and the skepticism surrounding its adoption. Humayun shares insights on the real use cases for blockchain and AI, emphasizing the importance of decentralization and the immutability of ledgers.",
+  "topic_summary": "Exploration of blockchain-powered AI and its implications for decentralized systems. Discussion on the skepticism towards decentralized AI and its potential to revolutionize internet transactions [t=0:24 - t=2:52].",
+  "router_tags": [
+    "Blockchain",
+    "AI",
+    "Decentralization",
+    "Fetch",
+    "Humayun Shaikh"
+  ],
+  "aliases": [
+    "validated",
+    "Validated",
+    "Austin",
+    "humayun",
+    "Humayun"
+  ],
+  "canonical_entities": [
+    "$FETCH",
+    "@SolanaFndn",
+    "@humayun"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

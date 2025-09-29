@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly, co-founder of Solana, discusses the importance of community and the vision for a global state machine that enhances crypto adoption. He highlights the advancements in technology that improve latency and throughput, emphasizing the collaborative efforts within the ecosystem. Examples include Helium's affordable data plans and Star Atlas's gaming innovations, showcasing the potential of decentralized systems to outperform traditional infrastructures.",
+  "topic_summary": "Anatoly outlines the mission of Solana Labs to create a unified global state machine for various applications, emphasizing community collaboration and technological advancements that drive crypto adoption. He provides examples of successful projects within the ecosystem that demonstrate the benefits of decentralization and composability in finance and gaming [t=0:00-3:00].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Decentralization",
+    "Technology",
+    "Community"
+  ],
+  "aliases": [
+    "Anatoly",
+    "anatoly",
+    "ANATOLY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

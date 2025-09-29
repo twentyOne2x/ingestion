@@ -1,0 +1,26 @@
+{
+  "video_id": "6M8SGByj-yM",
+  "title": "2024-09-20_6M8SGByj-yM_Breakpoint 2024: Welcome to Breakpoint 2024 (Lily Liu, Kash Dhanda)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Cash Donda",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Kevin Effen Bowers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

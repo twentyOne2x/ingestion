@@ -1,0 +1,28 @@
+{
+  "description": "George from Step Finance discusses blockchain realities, emphasizing the importance of accurate metrics and data analysis. He highlights daily active addresses, TVL trends, and the growth of DeFi projects, particularly in the context of stablecoin supply on Solana compared to other chains.",
+  "topic_summary": "Overview of blockchain metrics, focusing on daily active addresses, TVL, DeFi growth, and stablecoin supply trends on Solana [t=0:00-0:00].",
+  "router_tags": [
+    "Blockchain",
+    "DeFi",
+    "Stablecoins",
+    "Solana",
+    "Metrics"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Check the Chain Bro",
+    "Breakpoint2023",
+    "CheckTheChainBro"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@SolanaFndn",
+    "@George",
+    "$USDC",
+    "$USDT",
+    "$37 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

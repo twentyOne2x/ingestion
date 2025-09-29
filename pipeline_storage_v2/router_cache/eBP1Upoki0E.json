@@ -1,0 +1,22 @@
+{
+  "description": "Lecture 9 covers linear programming duality, focusing on the relationship between primal and dual linear programs. It discusses generating upper bounds, the transformation of variables and constraints when passing to the dual, and the concept of weak duality, which states that every dual solution provides an upper bound on the primal objective function value. The lecture also introduces complementary slackness conditions as a sufficient condition for optimality.",
+  "topic_summary": "This lecture continues the discussion on linear programming, emphasizing duality and its implications. It explains how to derive the dual from a primal linear program, the significance of weak duality, and introduces complementary slackness as a condition for optimal solutions. Key concepts include the transformation of maximization to minimization and the relationship between feasible solutions of primal and dual programs [t=0:56].",
+  "router_tags": [
+    "linear programming",
+    "duality",
+    "optimization",
+    "algorithms",
+    "computer science"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$LP",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

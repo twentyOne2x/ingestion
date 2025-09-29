@@ -1,0 +1,23 @@
+{
+  "description": "Austin hosts Trevor Bacon, CEO of Parcel, discussing the integration of Real World Assets (RWAs) on blockchain, emphasizing their potential to bridge traditional finance and DeFi, enhance liquidity, and lower entry barriers for investors. Concerns regarding data asymmetries and centralization in RWA markets are also addressed.",
+  "topic_summary": "Trevor Bacon explains RWAs, their significance in the blockchain ecosystem, and the challenges they face, including data verification and centralization issues. He highlights how Parcel aims to create efficiencies in real estate and asset financing through blockchain technology.",
+  "router_tags": [
+    "Real World Assets",
+    "Blockchain",
+    "DeFi",
+    "Finance",
+    "Tokenization"
+  ],
+  "aliases": [
+    "validated",
+    "Validated",
+    "VALIDATED"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@trevorbacon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

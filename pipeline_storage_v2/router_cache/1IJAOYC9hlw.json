@@ -1,0 +1,22 @@
+{
+  "description": "The discussion focuses on the challenges of real-time indexing on high TPS chains like Solana, emphasizing the need for efficient data handling and the limitations of traditional approaches. Key points include the importance of minimizing latency, managing historical data complexities, and addressing frequent reorgs in the blockchain.",
+  "topic_summary": "This presentation covers the necessity of real-time indexing for high TPS chains, particularly Solana, and introduces substreams as a solution to improve performance and manage data efficiently while addressing challenges like historical data access and reorg handling. Key insights include the use of GRPC protocol for efficient data transmission and the design of substreams for parallel processing.",
+  "router_tags": [
+    "Solana",
+    "Indexing",
+    "Blockchain",
+    "Real-time Data",
+    "Substreams"
+  ],
+  "aliases": [
+    "Scale or Die 2025",
+    "Solana Indexing",
+    "Giuliano The Graph"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

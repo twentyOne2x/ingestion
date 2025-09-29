@@ -1,0 +1,24 @@
+{
+  "description": "In this interview, the creator discusses the development of the cryptocurrency $CENTS and its origins in a dystopian media project. They share insights on the lore behind the project and their journey in AI and software engineering, including the creation of a unique AI character, John Zanzibar, and the use of the Eliza platform.",
+  "topic_summary": "The creator of $CENTS shares their journey in developing the cryptocurrency, its lore, and the integration of AI technologies in its creation, including the influence of past media projects and innovations in AI agent design. Key moments include discussions on the project's origins and the role of the Eliza platform in its development [t=0:08-259:20].",
+  "router_tags": [
+    "cryptocurrency",
+    "AI",
+    "media",
+    "interview",
+    "technology"
+  ],
+  "aliases": [
+    "$Cents",
+    "$cents",
+    "$CENTS",
+    "@NotThreadGuy",
+    "@notthreadguy"
+  ],
+  "canonical_entities": [
+    "$CENTS",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

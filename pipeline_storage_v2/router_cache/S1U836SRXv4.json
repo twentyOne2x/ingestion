@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the conclusion of the OPOS hackathon and the introduction of Burner.codes, a tool for creating burner wallets directly in the browser. It also highlights innovative projects like a hardware demonstration by Jonas from the Devrel team.",
+  "topic_summary": "Updates from the Solana ecosystem, including the OPOS hackathon results and new tools like Burner.codes for wallet creation [t=12:00].",
+  "router_tags": [
+    "Solana",
+    "OPOS Hackathon",
+    "Burner.codes",
+    "Web3",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana Updates",
+    "Burner Codes"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

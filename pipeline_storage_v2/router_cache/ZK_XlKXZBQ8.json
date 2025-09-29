@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on the partnership between Robinhood and Arbitrum, focusing on the launch of tokenized equities and ETFs on the blockchain. The conversation highlights the significance of integrating traditional finance with decentralized finance, aiming to make blockchain technology more accessible to a broader audience.",
+  "topic_summary": "Exploration of the Robinhood and Arbitrum partnership, emphasizing the launch of tokenized equities and the user experience in the Robinhood app. The discussion covers the implications for both blockchain enthusiasts and the general public, particularly regarding accessibility to blockchain technology [t=183.36].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Robinhood",
+    "Arbitrum",
+    "Tokenized Equities",
+    "DeFi",
+    "Finance"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Robin Hood",
+    "Robinhood"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "$ETH",
+    "$BTC",
+    "$AMZN",
+    "$GOOGL",
+    "@Robinhood",
+    "@Arbitrum"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Raj, the founding engineering manager at Phantom, discusses the introduction of Phantom Quest, a Web3 incentive program aimed at engaging new and existing users. He explains the importance of user experience and the need for innovative features to keep users engaged in the Solana ecosystem. The presentation covers the mechanics of quests, including eligibility requirements and user interactions, as well as statistics from the initial launch phase.",
+  "topic_summary": "Raj introduces Phantom Quest, a Web3 incentive program designed to engage users in the Solana ecosystem. He outlines the quest mechanics, user eligibility, and initial engagement statistics, emphasizing the importance of user experience and innovative features in Web3.",
+  "router_tags": [
+    "Phantom",
+    "Web3",
+    "Solana",
+    "Incentive Program",
+    "User Engagement"
+  ],
+  "aliases": [
+    "phantom",
+    "Phantom",
+    "Phantom Quest",
+    "Quest Hub"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Sergio Mello, head of stablecoins at Anchorage Digital, discusses the importance of bridging the gap for institutions entering DeFi. He explains Anchorage's unique licensing and the Porto self-custody app, which allows institutions to engage in DeFi securely. Mello emphasizes the need for transparency in transactions to prevent significant losses, referencing a recent incident where a big exchange lost $1.5 billion due to lack of visibility [t=212.62].",
+  "topic_summary": "Sergio Mello from Anchorage Digital presents on the role of Anchorage in facilitating institutional access to DeFi through secure and transparent solutions, highlighting the Porto app and the importance of regulatory clarity [t=92.1].",
+  "router_tags": [
+    "DeFi",
+    "Anchorage Digital",
+    "Sergio Mello",
+    "Porto",
+    "Solana"
+  ],
+  "aliases": [
+    "Sergio Mello",
+    "sergio mello",
+    "Anchorage Digital",
+    "anchorage digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anchorage"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

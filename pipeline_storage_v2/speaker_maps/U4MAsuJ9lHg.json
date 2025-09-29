@@ -1,0 +1,20 @@
+{
+  "video_id": "U4MAsuJ9lHg",
+  "title": "2024-09-21_U4MAsuJ9lHg_Breakpoint 2024: Product Keynote: DeSci Breaks Ground on Solana (Paul Kohlhaas)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Paul Collas",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

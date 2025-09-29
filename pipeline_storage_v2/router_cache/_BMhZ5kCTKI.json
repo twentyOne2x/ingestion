@@ -1,0 +1,27 @@
+{
+  "description": "Mateo Ward discusses his transition from the Solana Foundation to co-found Double Zero with Andrew McConnell, focusing on high-performance networking and its applications in blockchain and distributed systems. They share their backgrounds in internet infrastructure and finance, emphasizing the importance of low latency and high performance in modern networks.",
+  "topic_summary": "The conversation covers the evolution of internet infrastructure, the founders' experiences in high-performance networking, and the significance of low latency in financial systems and blockchain applications [t=0:24 - t=376:05].",
+  "router_tags": [
+    "Bandwidth",
+    "Latency",
+    "High Performance Networking",
+    "Blockchain",
+    "Distributed Systems",
+    "Finance"
+  ],
+  "aliases": [
+    "Mateo Ward",
+    "Matteo Ward",
+    "Andrew McConnell",
+    "Andrew Mcconnell"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@KevinBowers",
+    "@TomPetty"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

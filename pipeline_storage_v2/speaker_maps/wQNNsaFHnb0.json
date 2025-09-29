@@ -1,0 +1,26 @@
+{
+  "video_id": "wQNNsaFHnb0",
+  "title": "2024-09-21_wQNNsaFHnb0_Breakpoint 2024: Debate: 100 Validators Are Sufficient to Run a Decentralized L1",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dan Albert",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

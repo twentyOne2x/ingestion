@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on validator updates, commission changes, and monitoring commission cheating schemes. John from Solana Labs proposes a vote program change to limit commission changes to the first half of the epoch. Marinade team discusses commission cheaters and a new validator dashboard.",
+  "topic_summary": "Validator Community Call covering updates on commission changes [t=18:28], Marinade's monitoring of commission cheaters [t=32:32], and a new validator dashboard [t=47:60]. John discusses a proposal to limit commission changes [t=194:18].",
+  "router_tags": [
+    "Validator Community",
+    "Commission Changes",
+    "Solana",
+    "Marinade",
+    "Vote Program"
+  ],
+  "aliases": [
+    "Validator Community Call",
+    "Validator Community Discussion",
+    "Validator Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@John",
+    "@Zentetsu",
+    "@Trent",
+    "@SoulBlaze",
+    "@Marinade"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Akash from Stripe discusses the company's crypto team and its focus on building tools for Web3 developers. He highlights the challenges non-crypto native consumers face when onboarding to Web3 platforms and introduces Stripe's fiat to crypto on-ramp solution, demonstrated using Audius as a partner. The on-ramp simplifies the process for users to acquire crypto assets without needing extensive knowledge of the underlying technology.",
+  "topic_summary": "Stripe's crypto team aims to facilitate easier onboarding for non-crypto native consumers to Web3 platforms through a fiat to crypto on-ramp solution, as demonstrated with Audius [t=119.24].",
+  "router_tags": [
+    "Stripe",
+    "Web3",
+    "Crypto",
+    "Payments",
+    "Audius"
+  ],
+  "aliases": [
+    "stripe",
+    "Stripe",
+    "Akash",
+    "akash"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@audiusproject"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

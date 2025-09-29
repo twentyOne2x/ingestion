@@ -1,0 +1,26 @@
+{
+  "description": "Nicholas Connor and Conor from Cordial Systems discuss the challenges of enterprise self-custody solutions for blockchain, focusing on the need for security and flexibility in managing digital assets. They share their experiences and insights on building a custody solution that addresses the unique requirements of businesses in the blockchain space.",
+  "topic_summary": "The discussion covers the evolution of self-custody solutions for enterprises, the limitations of existing products, and the importance of security and accessibility in managing digital assets. Key points include the use of multi-party computation (MPC) for distributed trust and the challenges of maintaining security while enabling team access to custody solutions [t=0:24-371:20].",
+  "router_tags": [
+    "self-custody",
+    "blockchain",
+    "enterprise solutions",
+    "digital assets",
+    "multi-party computation"
+  ],
+  "aliases": [
+    "Nicolas Connor",
+    "Nicholas Connor",
+    "Cordial Systems",
+    "Cordial systems"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jump",
+    "@Ledger",
+    "@CordialSystems"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

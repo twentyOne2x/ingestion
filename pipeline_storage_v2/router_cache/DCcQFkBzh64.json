@@ -1,0 +1,28 @@
+{
+  "description": "Felix Chung and Raphael Dieu present Reap, a platform that connects on-chain and off-chain financial payments, enabling stablecoin transactions through a Visa card and B2B payments.",
+  "topic_summary": "Reap integrates stablecoins like USDC and USDT with traditional banking systems, allowing users to make payments and manage finances seamlessly in both fiat and crypto environments. Key features include the REAP card for direct payments and a reporting function for financial data aggregation. [t=9:04] [t=39:85] [t=277:58]",
+  "router_tags": [
+    "Reap",
+    "Stablecoins",
+    "Visa",
+    "USDC",
+    "USDT",
+    "Fiat Payments",
+    "Web3 Finance"
+  ],
+  "aliases": [
+    "Reap",
+    "reap",
+    "REAP",
+    "Reap Global",
+    "reap global"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$USDT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Junit discusses the development of Bulk, a decentralized market maker on-chain that allows token creators to implement market-making strategies trustlessly. The app is in development and will be live soon after completing an angel round.",
+  "topic_summary": "Junit introduces Bulk, a decentralized market maker aimed at enhancing market health on Solana, with plans to compete against established market makers [t=15:36]. The app is not yet live but will be available for testing shortly [t=27:02].",
+  "router_tags": [
+    "decentralized finance",
+    "market maker",
+    "Solana",
+    "Bulk"
+  ],
+  "aliases": [
+    "Junit",
+    "Junit",
+    "BulkTrade",
+    "bulktrade"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

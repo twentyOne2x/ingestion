@@ -1,0 +1,20 @@
+{
+  "video_id": "nEIzHWTfci0",
+  "title": "2024-10-21_nEIzHWTfci0_This Person Could Reveal The Truth of Satoshi Nakamoto, The Creator of Bitcoin",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Meredith Patterson",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

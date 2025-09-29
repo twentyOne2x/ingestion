@@ -1,0 +1,27 @@
+{
+  "description": "Stephen Hess discusses the evolution of the Solana NFT ecosystem and Metaplex's role in it, highlighting the introduction of new standards and tools that support creators and developers in the space.",
+  "topic_summary": "The conversation covers the growth of the Solana NFT ecosystem from 2021 to 2024, the impact of Metaplex, and the introduction of the Core standard, emphasizing community engagement and technological advancements [t=4:96-439:33].",
+  "router_tags": [
+    "Metaplex",
+    "NFT",
+    "Solana",
+    "Crypto",
+    "Blockchain",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Metaplex",
+    "metaplex",
+    "METAPLEX",
+    "Stephen Hess",
+    "stephen hess",
+    "STEPHEN HESS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

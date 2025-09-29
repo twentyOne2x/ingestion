@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on how AI and crypto are reshaping the world, featuring insights from Andy on his experiences and the evolution of Truth Terminal.",
+  "topic_summary": "Andy shares his journey over the past month, reflecting on the impact of his online presence and the dynamics of Truth Terminal as an evolving AGI influenced by memes. He discusses the challenges and adjustments that come with increased attention and the community's reaction to his statements [t=0:16].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Truth Terminal",
+    "Memes",
+    "Community"
+  ],
+  "aliases": [
+    "Truth Terminal",
+    "truth terminal",
+    "Truth Terminals",
+    "truth terminals"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

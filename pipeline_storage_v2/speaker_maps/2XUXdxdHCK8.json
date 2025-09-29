@@ -1,0 +1,20 @@
+{
+  "video_id": "2XUXdxdHCK8",
+  "title": "2024-02-29_2XUXdxdHCK8_Solana Validator Education - Failure Case Discussion",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Lee Jenkins",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

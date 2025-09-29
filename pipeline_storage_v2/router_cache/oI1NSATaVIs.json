@@ -1,0 +1,26 @@
+{
+  "description": "Danny from Runtime Verification discusses scalable formal verification for smart contracts on Solana, emphasizing its importance for software security and bug detection. He highlights the benefits of formal verification over traditional testing methods and introduces Compass, a formal verification platform for Solana developed in collaboration with the Solana Foundation.",
+  "topic_summary": "The talk covers the significance of formal verification in securing smart contracts, the advantages of using formal methods like symbolic execution, and the introduction of Compass as a tool for developers to enhance software reliability and performance. It also references successful implementations by major companies like Microsoft and Amazon.",
+  "router_tags": [
+    "formal verification",
+    "Solana",
+    "smart contracts",
+    "Runtime Verification",
+    "Compass"
+  ],
+  "aliases": [
+    "Scale or Die",
+    "Kompass",
+    "Runtime Verification",
+    "Danny"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RuntimeVerification",
+    "@Microsoft",
+    "@Amazon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses the liveness property in longest chain consensus, emphasizing the importance of honest nodes in finalizing transactions and the implications of the W balance condition.",
+  "topic_summary": "The video covers the final property of longest chain consensus related to liveness, detailing how transactions known to honest nodes are guaranteed to be finalized. It also explains the W balance condition and its significance in ensuring a majority of honest leaders in a sequence.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "liveness",
+    "W balance",
+    "honest nodes"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Liveness and Chain Quality",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

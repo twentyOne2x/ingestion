@@ -1,0 +1,24 @@
+{
+  "description": "Miller Whitehouse Levine introduces the Solana Policy Institute at Ship or Die Day Two, emphasizing the importance of policy in fostering innovation and understanding the regulatory landscape for crypto. He highlights the need for education among policymakers and the unique capabilities of the Solana ecosystem.",
+  "topic_summary": "At [t=00:00], Miller Whitehouse Levine discusses the role of the Solana Policy Institute in shaping crypto policy, addressing misconceptions about Solana compared to Bitcoin, and the importance of legal certainty for builders in the crypto space. He calls for community engagement and collaboration to ensure Solana's potential is realized in the U.S.",
+  "router_tags": [
+    "Solana",
+    "Crypto Policy",
+    "Innovation",
+    "Regulation",
+    "Stablecoin",
+    "Congress"
+  ],
+  "aliases": [
+    "Solana Policy Institute",
+    "solana policy institute",
+    "SOLANA POLICY INSTITUTE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

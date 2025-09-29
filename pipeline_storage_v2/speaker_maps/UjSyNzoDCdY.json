@@ -1,0 +1,20 @@
+{
+  "video_id": "UjSyNzoDCdY",
+  "title": "2024-11-18_UjSyNzoDCdY_Dylan Zhang: Crypto Native AI Models Behind the Future of AI Agents",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dylan Zhang",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

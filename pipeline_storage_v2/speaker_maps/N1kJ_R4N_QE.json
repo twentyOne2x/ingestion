@@ -1,0 +1,20 @@
+{
+  "video_id": "N1kJ_R4N_QE",
+  "title": "2023-11-03_N1kJ_R4N_QE_Breakpoint 2023: Building a Creator Community",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Magic Eden",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

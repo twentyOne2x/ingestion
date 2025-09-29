@@ -1,0 +1,32 @@
+{
+  "description": "Marcus from Circle discusses the integration of Eurocoin with Solana, highlighting its potential for instant FX transactions and seamless payments in Euros. He emphasizes the utility of USDC and Eurocoin in enhancing the Solana ecosystem, including lending and borrowing functionalities.",
+  "topic_summary": "At Breakpoint 2022, Marcus from Circle announces the upcoming integration of Eurocoin with Solana, targeting mainnet availability in early 2023. He outlines the benefits of using USDC and Eurocoin for fast transactions, lending, and payments, and introduces the Cross Chain Transfer Protocol for seamless blockchain interactions.",
+  "router_tags": [
+    "Circle",
+    "Solana",
+    "Eurocoin",
+    "USDC",
+    "Cryptocurrency",
+    "Blockchain",
+    "DeFi",
+    "Payments"
+  ],
+  "aliases": [
+    "Circle",
+    "circle",
+    "EUROCOIN",
+    "eurocoin",
+    "USDC",
+    "usdc",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$EUROCOIN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

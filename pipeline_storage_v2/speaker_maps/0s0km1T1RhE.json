@@ -1,0 +1,20 @@
+{
+  "video_id": "0s0km1T1RhE",
+  "title": "2024-05-07_0s0km1T1RhE_Does DEX Liquidity Need a Defense Layer w- Nitesh Nath (DFlow)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Nitesh Nath",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

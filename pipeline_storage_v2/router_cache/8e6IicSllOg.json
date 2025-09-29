@@ -1,0 +1,29 @@
+{
+  "description": "This week's Changelog covers updates on Solana, including the end of the Renaissance hackathon, the introduction of SIMD133 for getting vote counts on delegated stake, and improvements to the scan index for better performance. Additionally, a bug fix in web3js regarding pre-flight commitment is discussed, along with the introduction of Flare, a CLI tool for developers. The episode concludes with a shoutout to top contributors on Stack Exchange.",
+  "topic_summary": "Updates on Solana's development including SIMD133, scan index improvements, web3js bug fixes, and the introduction of Flare CLI for smart contract interaction [t=0:00-2:13].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Development",
+    "Web3",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "SOL Changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Bri",
+    "@Jacob",
+    "@John",
+    "@Ari",
+    "@Jonas",
+    "@WhiteSeal",
+    "@Nabil"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

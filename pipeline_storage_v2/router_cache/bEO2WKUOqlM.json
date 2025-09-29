@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses the mechanics of staking in proof of stake blockchain protocols, focusing on design decisions regarding deposits, withdrawals, and validator participation.",
+  "topic_summary": "The video covers the fundamental principles of staking mechanics, including escrow contracts, validator identification, minimum and maximum stake durations, and the implications of warm-up and cool-down periods for validators [t=0:40].",
+  "router_tags": [
+    "blockchain",
+    "staking",
+    "proof of stake",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Mechanics of Staking",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "The presentation discusses the evolution of Solana's OpenBook protocol, highlighting its transition from Serum, which peaked at $700 million in daily trading volume. The community's rapid response to FTX's collapse led to the development of OpenBook, a decentralized exchange protocol that is open-source and free to use. The speaker emphasizes the importance of community integration and the introduction of a second version that incorporates feedback from various protocols. The design choices, including the use of a crank mechanism, are explained in the context of trading efficiency and throughput.",
+  "topic_summary": "The talk covers the transition from Serum to OpenBook, community involvement in its development, and the technical aspects of the protocol's design, including the crank mechanism for trading.",
+  "router_tags": [
+    "Solana",
+    "OpenBook",
+    "DeFi",
+    "Serum",
+    "FTX",
+    "Decentralized Exchange",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Openbook",
+    "OpenBook",
+    "solana",
+    "sol",
+    "Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

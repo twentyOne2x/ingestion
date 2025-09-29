@@ -1,0 +1,25 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses updates in the Solana Changelog, including SIMD180 leader schedule migration and Geyser plugin enhancements. The conversation highlights changes in validator selection and slot completion notifications.",
+  "topic_summary": "Updates on SIMD180 leader schedule migration [t=37:67], validator selection changes [t=42:15], and Geyser plugin enhancements for slot completion [t=140:99].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JustinStarry",
+    "@Ashwin",
+    "@Jstari",
+    "@kv"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

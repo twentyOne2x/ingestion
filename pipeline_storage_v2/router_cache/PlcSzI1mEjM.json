@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the future of memecoins, AI crypto wallets, and insights on Circle and other topics.",
+  "topic_summary": "The podcast features a conversation about the potential failures of memecoins and the evolution of AI in the crypto space, including personal experiences in tech and the development of LLMs [t=0:24].",
+  "router_tags": [
+    "memecoins",
+    "AI",
+    "crypto",
+    "wallets",
+    "Circle"
+  ],
+  "aliases": [
+    "Foobar",
+    "Foobar Podcast",
+    "TG Podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "@Amazon",
+    "@MichaelJordan",
+    "@Queen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

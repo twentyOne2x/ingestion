@@ -1,0 +1,26 @@
+{
+  "description": "This event features a discussion with Ron Bodkin, founder of Theoric AI, about the intersection of AI and Web3, emphasizing the importance of decentralized systems in shaping the future of AI. The conversation covers Bodkin's extensive background in AI and big data, his experiences at major tech companies, and the potential for AI to benefit from Web3 technologies.",
+  "topic_summary": "Ron Bodkin discusses the evolution of AI and its integration with Web3 technologies, highlighting the need for decentralized systems to prevent monopolistic control over AI. He shares insights from his career in AI and big data, including his roles at Quantcast and Google Cloud, and the founding of Theoric AI.",
+  "router_tags": [
+    "AI",
+    "Web3",
+    "Decentralization",
+    "Big Data",
+    "Theoric AI",
+    "Ron Bodkin"
+  ],
+  "aliases": [
+    "Theoric AI",
+    "Theoric ai",
+    "Ron Bodkin",
+    "ron bodkin"
+  ],
+  "canonical_entities": [
+    "$GOOGL",
+    "$AMZN",
+    "@Delphi_Digital",
+    "@RonBodkin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

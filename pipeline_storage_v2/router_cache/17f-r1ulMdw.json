@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on poker strategies and crypto trading, focusing on a $26,000 stake.",
+  "topic_summary": "Exploring poker dynamics and cryptocurrency investments, emphasizing high-stakes scenarios [t=0:00].",
+  "router_tags": [
+    "poker",
+    "crypto",
+    "cryptotrading",
+    "bitcoin"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

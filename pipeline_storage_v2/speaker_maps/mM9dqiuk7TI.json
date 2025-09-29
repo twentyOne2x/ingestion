@@ -1,0 +1,20 @@
+{
+  "video_id": "mM9dqiuk7TI",
+  "title": "2024-04-16_mM9dqiuk7TI_The Long-Term Vision for the DA Layer w- Connor O'Hara (Celestia Labs)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Connor Austin",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

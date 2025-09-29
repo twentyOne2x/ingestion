@@ -1,0 +1,20 @@
+{
+  "video_id": "KpQWQ2We6KE",
+  "title": "2024-09-20_KpQWQ2We6KE_Breakpoint 2024: Debate: The Future of Web3 Games Will Rely on SVM L2s",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Chris Zhu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

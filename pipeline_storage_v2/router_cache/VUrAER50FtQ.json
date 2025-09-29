@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on trenching, trading experiences, and the crypto market with insights into personal trading history.",
+  "topic_summary": "The podcast features a conversation about the dark side of trenching in trading, personal experiences with cryptocurrencies like Ethereum and Stellar Lumen, and the challenges faced in perpetual trading [t=110:41].",
+  "router_tags": [
+    "trading",
+    "crypto",
+    "Ethereum",
+    "Stellar Lumen",
+    "perpetual trading"
+  ],
+  "aliases": [
+    "Letterbomb",
+    "letterbomb",
+    "Letter Bomb",
+    "letter Bomb"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

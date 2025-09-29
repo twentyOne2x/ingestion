@@ -1,0 +1,25 @@
+{
+  "description": "Ludo Galabru discusses Surfpool, an upgrade to the Solana Test Validator, emphasizing its developer experience and integration with real-world data.",
+  "topic_summary": "The presentation covers Surfpool's capabilities, including its infrastructure as code tooling and how it enhances the developer experience by combining local testing with mainnet data [t=255.11].",
+  "router_tags": [
+    "Surfpool",
+    "Solana",
+    "Developer Experience",
+    "Infrastructure as Code",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Surfpool",
+    "surfpool",
+    "SurfPool"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Ledoux",
+    "@Mikaya",
+    "@Consensys"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

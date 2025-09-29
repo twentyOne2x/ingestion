@@ -1,0 +1,25 @@
+{
+  "description": "Ashwath Balakrishnan discusses the current state and future trends of decentralized finance (DeFi), highlighting challenges and opportunities for innovation in the sector.",
+  "topic_summary": "Balakrishnan outlines the decline of DeFi since its peak in 2020, the hesitance of new projects to launch, and the potential for growth through innovations like Gearbox and decentralized derivatives. He emphasizes the importance of liquidity, speculation, and the need for familiar trading mechanisms to attract market makers back to decentralized exchanges [t=0:16].",
+  "router_tags": [
+    "DeFi",
+    "Gearbox",
+    "Decentralized Finance",
+    "Cryptocurrency",
+    "Innovation"
+  ],
+  "aliases": [
+    "Ashwath Balakrishnan",
+    "ashwath balakrishnan",
+    "ASHWATH B",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

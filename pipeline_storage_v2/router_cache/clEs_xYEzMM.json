@@ -1,0 +1,35 @@
+{
+  "description": "This week's Changelog covers updates including a hackathon called Radar, RPC method removals in the 2.0 upgrade, and several commits improving Solana's infrastructure. Key highlights include optimizations by John Jinque and fixes by Noah for Stake accounts on the Explorer. Acheron introduces a helpful update to Anchor, while Hardhat Chad releases a Rust Wallet adapter for the Deoxys framework.",
+  "topic_summary": "Updates on Solana's development including hackathon details, RPC method changes, and significant contributions from developers like John Jinque and Noah. Improvements to Anchor and the introduction of a Rust Wallet adapter are also discussed.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Hackathon",
+    "RPC",
+    "Anchor",
+    "Rust",
+    "Deoxys"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "changelog",
+    "Changelog",
+    "radar",
+    "Radar",
+    "anchor",
+    "Anchor",
+    "rust",
+    "Rust"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JohnJinque",
+    "@Noah",
+    "@Acheron",
+    "@HardhatChad"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

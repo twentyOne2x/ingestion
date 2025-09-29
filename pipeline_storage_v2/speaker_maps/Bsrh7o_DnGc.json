@@ -1,0 +1,20 @@
+{
+  "video_id": "Bsrh7o_DnGc",
+  "title": "2025-09-23_Bsrh7o_DnGc_CookerFlips: Making $7.5M In 3 Days, ASTER, Best Trades and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Port Tom",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "fab8jq_ZR40",
+  "title": "2024-08-15_fab8jq_ZR40_Solana Changelog Aug 14",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "John Mike",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

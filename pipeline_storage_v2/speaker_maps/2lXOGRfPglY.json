@@ -1,0 +1,32 @@
+{
+  "video_id": "2lXOGRfPglY",
+  "title": "2024-03-22_2lXOGRfPglY_Delphi's Hivemind: ETFs, 4844, Solana L2s & Ethena",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Alex Krueger",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jan Lieberman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Jose Macedou",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

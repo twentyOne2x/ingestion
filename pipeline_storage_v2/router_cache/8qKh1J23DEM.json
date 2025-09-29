@@ -1,0 +1,25 @@
+{
+  "description": "Kevin Bowers discusses high performance computing for crypto, focusing on accelerating ED 25519 with data parallelism. He highlights the growth of the engineering team and the importance of decentralized compute in modern CPUs and GPUs. Bowers explains the limitations posed by the speed of light in data movement and the need for efficient data parallelism in computing.",
+  "topic_summary": "The talk covers advancements in high performance computing for crypto, emphasizing data parallelism and the challenges of CPU architecture. Bowers addresses misconceptions about decentralized compute and illustrates the importance of optimizing data flow and memory management in engineering.",
+  "router_tags": [
+    "High Performance Computing",
+    "Crypto",
+    "Data Parallelism",
+    "ED 25519",
+    "Decentralized Compute"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "High Performance Computing for Crypto",
+    "Kevin Bowers",
+    "Jump Trading Group"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KevinBowers",
+    "@AustinFederer"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

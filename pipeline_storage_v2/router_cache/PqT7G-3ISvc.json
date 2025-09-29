@@ -1,0 +1,30 @@
+{
+  "description": "Nick and Zamil discuss the Explorer Kit (EK), an open-source SDK designed to parse various data types in a unified standard. They highlight its capabilities in handling transactions, accounts, events, and errors, emphasizing its efficiency in reducing bundle size for applications using multiple SDKs. The presentation showcases EK's ability to decode and deserialize data, particularly for programs like Phoenix and Token Metadata, which traditionally faced challenges in data visualization.",
+  "topic_summary": "Introduction to Explorer Kit (EK) as a unified parsing solution for Solana applications, addressing the need for efficient data handling and reduced bundle sizes in front-end applications. The discussion includes technical insights into the SDK's functionality and its advantages over traditional methods.",
+  "router_tags": [
+    "Explorer Kit",
+    "Solana",
+    "SDK",
+    "Data Parsing",
+    "Open Source"
+  ],
+  "aliases": [
+    "Explorer Kit",
+    "explorer kit",
+    "EK",
+    "ek"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Phoenix",
+    "@Zamil",
+    "@SteveLushua",
+    "@Kenobi",
+    "@Loris",
+    "@Anchor",
+    "@SteveLucher"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

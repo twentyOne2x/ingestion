@@ -1,0 +1,25 @@
+{
+  "description": "In this fireside chat at Solana Accelerate, Kyle Samani and Beau Hynes discuss the importance of the U.S. as a leader in the crypto space, emphasizing the President's initiatives to foster innovation and create a favorable regulatory environment for digital assets. They highlight the establishment of the Digital Assets Working Group and the legislative efforts underway to support the growth of the industry.",
+  "topic_summary": "Kyle Samani and Beau Hynes explore U.S. leadership in crypto, the President's initiatives for innovation, and the formation of the Digital Assets Working Group to enhance regulatory clarity and support industry growth [t=55:17].",
+  "router_tags": [
+    "Crypto",
+    "Digital Assets",
+    "Regulation",
+    "Innovation",
+    "U.S. Government"
+  ],
+  "aliases": [
+    "Bo Hines",
+    "Beau Hynes",
+    "Kyle Samani",
+    "Solana Accelerate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BeauHynes",
+    "@KyleSamani"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

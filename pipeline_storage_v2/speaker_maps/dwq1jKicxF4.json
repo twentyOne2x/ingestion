@@ -1,0 +1,20 @@
+{
+  "video_id": "dwq1jKicxF4",
+  "title": "2025-07-26_dwq1jKicxF4_Profit: $300M+ Fumble, Best Crypto Traders Ever, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Crusty Dave",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

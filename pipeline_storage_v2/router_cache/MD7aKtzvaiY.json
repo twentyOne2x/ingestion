@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on verifiable inference featuring founders from leading crypto AI projects. Topics include the importance of verifiable inference, real-world applications, and various approaches to integrating trust minimized solutions in AI.",
+  "topic_summary": "Discussion on verifiable inference, its significance, and applications in AI and blockchain, featuring insights from project founders [t=56:02].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Verifiable Inference",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Verifiable Inference",
+    "Crypto x AI Event",
+    "Inference Labs",
+    "Sphere One",
+    "ISO Network",
+    "Ambient"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "@Ryan",
+    "@Colin",
+    "@Jeremy",
+    "@Travis",
+    "$OLAS"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,32 @@
+{
+  "video_id": "u9rivG0OFeg",
+  "title": "2024-02-08_u9rivG0OFeg_Does Value Accrue to Frontends Solana Outage's & ETH Narrarives",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Jose Macedou",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jan Lieberman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ceteris Paribus",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

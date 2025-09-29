@@ -1,0 +1,24 @@
+{
+  "description": "Omar Zaki presents Mantis, a Solana Network Extension L2 focused on processing user intents and ensuring best execution in crypto transactions. The Mantis Rollup allows users to submit intents from both Ethereum and Solana, bridging the two ecosystems and enabling native yield earning.",
+  "topic_summary": "Mantis is a Layer 2 solution on Solana designed to process user intents, featuring a rollup that connects Ethereum and Solana, facilitating cross-chain transactions and yield generation [t=3:84-4:32].",
+  "router_tags": [
+    "Mantis",
+    "Solana",
+    "Layer 2",
+    "Ethereum",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Mantis",
+    "mantis",
+    "MANTIS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$USDT",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

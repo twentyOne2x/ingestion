@@ -1,0 +1,20 @@
+{
+  "video_id": "zDAx6yx7gGw",
+  "title": "2023-03-14_zDAx6yx7gGw_Validated - What the Hell is Going On in Crypto Venture Investing with Ben and David from Acquired",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Li Jin",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

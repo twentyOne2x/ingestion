@@ -1,0 +1,21 @@
+{
+  "description": "In this episode, the speaker discusses their role in breaking and securing Solana contracts with Neodym, a security company. They emphasize the importance of securing progress for builders in the blockchain space.",
+  "topic_summary": "The conversation covers the speaker's approach to hacking Solana contracts and assisting builders in securing their projects. They mention their company, Neodym, and provide contact information for further inquiries [t=16:16].",
+  "router_tags": [
+    "Solana",
+    "Neodym",
+    "Blockchain Security",
+    "Contract Hacking"
+  ],
+  "aliases": [
+    "Neodym",
+    "neodym",
+    "NEODYM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

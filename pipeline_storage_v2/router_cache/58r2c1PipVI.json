@@ -1,0 +1,30 @@
+{
+  "description": "The speaker critiques Raoul Pal's views on AI and crypto, arguing that while AI is advancing rapidly, crypto is lagging behind. They emphasize the potential of AI in crypto, predicting it will lead to significant wealth creation. They also highlight the disconnect between traditional AI funding and the crypto space, asserting that the two will eventually intertwine.",
+  "topic_summary": "Discussion on the future of AI and crypto, emphasizing the rapid advancements in AI technology and the potential for AI-driven crypto investments to create wealth by 2025 [t=11:92].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Investment",
+    "Blockchain",
+    "Technology"
+  ],
+  "aliases": [
+    "Thread Guy",
+    "Thread guy",
+    "notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$16 Billion",
+    "$2 Million",
+    "$1 Billion",
+    "Google",
+    "Microsoft",
+    "Apple",
+    "@notthreadguy",
+    "@RaoulPal",
+    "@Elliot"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

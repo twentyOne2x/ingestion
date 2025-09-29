@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the Makespan Minimization problem, a scheduling challenge in NP-hard problems, focusing on efficient heuristic algorithms and greedy algorithm design. It covers the definition of jobs, machines, and the objective of minimizing the makespan, which is the maximum load on any machine. The video also highlights practical applications and the importance of heuristic approaches in scheduling.",
+  "topic_summary": "The video introduces the Makespan Minimization problem in scheduling, explaining the concepts of jobs, machines, and the objective of minimizing the makespan [t=80.58]. It discusses the need for heuristic algorithms due to the NP-hard nature of the problem and emphasizes the effectiveness of greedy algorithms [t=351.99].",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Scheduling",
+    "Makespan Minimization",
+    "Heuristic Algorithms",
+    "Greedy Algorithms"
+  ],
+  "aliases": [
+    "Algorithms for NP-Hard Problems",
+    "Makespan Minimization",
+    "Greedy Algorithms"
+  ],
+  "canonical_entities": [
+    "$NP-HARD",
+    "$SCHEDULING",
+    "$MAKESPAN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Austin interviews Yannick Shraddha, co-founder of Elusive, discussing blockchain privacy tools and the regulatory challenges surrounding them. They explore the need for privacy in decentralized systems, especially in light of compliance issues highlighted by the Tornado Cash sanctions. The conversation delves into the balance between privacy and compliance, mechanisms for flagging illicit actors, and the complexities of confidentiality and anonymity in blockchain transactions.",
+  "topic_summary": "The episode addresses the intersection of blockchain technology and privacy, focusing on regulatory challenges and the development of privacy tools like Elusive. It highlights the importance of privacy for widespread blockchain adoption and discusses the nuances of confidentiality and anonymity in transactions.",
+  "router_tags": [
+    "Blockchain",
+    "Privacy",
+    "Regulation",
+    "Decentralization",
+    "Elusive"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "SOLANA",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@YannickShraddha"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

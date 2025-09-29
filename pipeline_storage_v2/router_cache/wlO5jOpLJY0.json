@@ -1,0 +1,21 @@
+{
+  "description": "Claudio discusses the Old Domains name service protocol, which allows for custom domains on Solana. The service is integrated with various projects and platforms, making it accessible for users to acquire domains.",
+  "topic_summary": "Claudio explains the Old Domains protocol for custom domains on Solana, highlighting its integration with multiple projects and platforms [t=6:00].",
+  "router_tags": [
+    "Solana",
+    "domains",
+    "name service",
+    "blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Claudio",
+    "claudio"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the complexities introduced in a fully permissionless consensus setting, including Byzantine agreement and Sybil attacks. The proof of a proposition regarding these complexities is presented.",
+  "topic_summary": "The tutorial covers the challenges of achieving Byzantine agreement in a fully permissionless environment, emphasizing the impact of unknown player sets and potential Sybil attacks [t=6:56].",
+  "router_tags": [
+    "Byzantine Agreement",
+    "Sybil Attacks",
+    "Consensus Protocols",
+    "Permissionless Systems"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BYZ",
+    "$SYB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Nick from the Solana Foundation discusses the latest updates including the ongoing hackathon, opportunities for grants related to real world assets, and recent commits focused on privacy and compute units.",
+  "topic_summary": "The video covers the Solana hackathon, a request for product grants related to security tokens and real world assets [t=110.27], and recent developments in privacy technology on the Solana blockchain [t=278.89].",
+  "router_tags": [
+    "Solana",
+    "hackathon",
+    "real world assets",
+    "privacy",
+    "grants"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Jon Wong discusses the evolution of products on the Solana blockchain, emphasizing the importance of understanding the reasons for building on-chain and the benefits of composability and efficiency in product development.",
+  "topic_summary": "In this talk, Jon Wong explores the past, present, and future of products on Solana, focusing on insights gained from working with builders in the ecosystem. He highlights the value of trustlessness, security, and interoperability in creating innovative on-chain products [t=13:20].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Product Development",
+    "Composability",
+    "Crypto Ecosystem"
+  ],
+  "aliases": [
+    "John Wong",
+    "Jon Wong",
+    "J Wong"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Baxis"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

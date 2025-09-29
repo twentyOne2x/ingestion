@@ -1,0 +1,26 @@
+{
+  "description": "In this episode, Joe continues the Solana Bootcamp, focusing on decentralized exchanges (DEX) and the constant product algorithm. He explains how DeFi enables peer-to-peer finance without intermediaries, highlighting the advantages of DEXs like Orca and Raydium. The session covers key components of DeFi, including self-executing contracts and virtual tokens, and discusses the mechanics of token swaps and liquidity.",
+  "topic_summary": "The episode explores decentralized finance (DeFi) and decentralized exchanges (DEX), detailing their functions, benefits, and the constant product algorithm that underpins token swaps. It emphasizes the shift from traditional finance to a permissionless system on the Solana blockchain, showcasing major DEX platforms.",
+  "router_tags": [
+    "DeFi",
+    "DEX",
+    "Solana",
+    "Orca",
+    "Raydium",
+    "Constant Product Algorithm"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Solana Bootcamp",
+    "solana bootcamp 2023",
+    "Solana Bootcamp 2023"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Orca",
+    "@Raydium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

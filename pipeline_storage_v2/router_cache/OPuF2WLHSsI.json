@@ -1,0 +1,22 @@
+{
+  "description": "Lecture on the properties of Proof-of-Work, focusing on Sybil resistance and the mechanics of solving cryptographic puzzles. Discusses the role of nonce, hash functions, and the relationship between computational power and node selection probability.",
+  "topic_summary": "Explores Proof-of-Work properties, particularly Sybil resistance, detailing how nodes solve cryptographic puzzles and the implications of computational power on leader election probabilities [t=0:72].",
+  "router_tags": [
+    "Proof-of-Work",
+    "Sybil Resistance",
+    "Cryptography",
+    "Blockchain",
+    "Consensus Mechanisms"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 9.3",
+    "Proof-of-Work Properties"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

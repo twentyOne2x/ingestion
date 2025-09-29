@@ -1,0 +1,26 @@
+{
+  "video_id": "pl2Xmr3il5Y",
+  "title": "2024-11-16_pl2Xmr3il5Y_How To PROFIT When Trading Memecoins ft. Tradermayne",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Wo Long",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Harry Potter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

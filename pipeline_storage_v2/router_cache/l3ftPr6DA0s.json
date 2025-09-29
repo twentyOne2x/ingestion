@@ -1,0 +1,34 @@
+{
+  "description": "Ariel Seidman discusses Hivemapper, a decentralized mapping project that allows users to collect street images using dashcams, rewarding them for their contributions. The conversation explores how Hivemapper aims to compete with centralized mapping services like Google Maps by leveraging blockchain technology and community-driven data collection.",
+  "topic_summary": "In this episode, Ariel Seidman explains how Hivemapper is revolutionizing mapping through decentralized infrastructure, enabling users to create and maintain maps while earning rewards. The discussion highlights the potential for disruption in the mapping industry and the benefits of decentralized models over traditional centralized approaches [t=0:24].",
+  "router_tags": [
+    "Hivemapper",
+    "Decentralized Mapping",
+    "Blockchain",
+    "Web3",
+    "Infrastructure",
+    "Crypto"
+  ],
+  "aliases": [
+    "Hivemapper",
+    "hivemapper",
+    "HIVE MAPPER",
+    "HiveMapper"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ArielSeidman",
+    "@Google",
+    "@Uber",
+    "@Apple",
+    "@Airbnb",
+    "@Uniswap",
+    "@Salesforce",
+    "@Tesla",
+    "@Pepsi",
+    "@Yahoo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

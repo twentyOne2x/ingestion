@@ -1,0 +1,24 @@
+{
+  "description": "Tory Green, COO of Ionet, discusses the value of GPUs as the lifeblood of AI and the challenges posed by GPU shortages in the cloud. Ionet aims to aggregate GPU supply to create a massive AI compute cloud on Solana.",
+  "topic_summary": "At Breakpoint 2023, Tory Green highlights the critical role of GPUs in AI development and the significant market demand versus supply issues. Ionet's solution involves leveraging underutilized GPUs to build a powerful AI compute network on Solana [t=335:97].",
+  "router_tags": [
+    "AI",
+    "GPUs",
+    "Ionet",
+    "Cloud Computing",
+    "Breakpoint 2023"
+  ],
+  "aliases": [
+    "Ionet",
+    "I O",
+    "IonET",
+    "IONET"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@torygreen"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

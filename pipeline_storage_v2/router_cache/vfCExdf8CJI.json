@@ -1,0 +1,26 @@
+{
+  "description": "Simon Amore discusses building user-centric products at Accelerate 2025, focusing on the importance of technology solutions over technology itself. He emphasizes the need for simplicity in user experience, using examples from mobile technology and Sling Money's approach to payments.",
+  "topic_summary": "Simon Amore shares insights on creating user-centric products, highlighting that users prioritize solutions over technology. He illustrates this with examples from mobile devices and explains how Sling Money aims to simplify money transfers globally.",
+  "router_tags": [
+    "User-Centric Design",
+    "Payments",
+    "Blockchain",
+    "Sling Money",
+    "Technology Solutions"
+  ],
+  "aliases": [
+    "Simon Amore",
+    "simon amore",
+    "Simon AMORE",
+    "Sling Money",
+    "sling money"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SimonAmore",
+    "@ClaytonChristensen"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Delphi's markets team discusses their year ahead report for 2025, analyzing macro trends and expectations for crypto and risk assets. They reflect on the past year's developments, including the impact of ETFs and liquidity trends on Bitcoin and other assets.",
+  "topic_summary": "The podcast covers the outlook for 2025 in crypto markets, highlighting macroeconomic factors, liquidity trends, and the influence of recent events like ETF launches and the US election on market dynamics. The discussion includes reflections on the previous year's performance and expectations moving forward [t=0:16].",
+  "router_tags": [
+    "Crypto",
+    "Market Analysis",
+    "Bitcoin",
+    "Ethereum",
+    "Solana",
+    "ETFs",
+    "Liquidity"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "Delphi",
+    "delphi"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

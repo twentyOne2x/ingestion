@@ -1,0 +1,23 @@
+{
+  "description": "Sam Williams discusses Arweave, a decentralized permanent information storage system, emphasizing the importance of permanent storage in combating misinformation and preserving history.",
+  "topic_summary": "The conversation explores the significance of permanent information storage, the mechanics of Arweave's decentralized system, and its potential to provide an immutable record of events, including the Russia-Ukraine conflict and other historical moments [t=74:57].",
+  "router_tags": [
+    "Arweave",
+    "decentralized storage",
+    "permanent information",
+    "blockchain",
+    "censorship resistance"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "SAM WILLIAMS",
+    "Sam Williams"
+  ],
+  "canonical_entities": [
+    "$AR",
+    "@SamWilliams"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Core community call discussing the new epoch rewards proposal. Haoran from Solana Labs introduces the proposal aimed at addressing long block times at epoch boundaries, suggesting a new distribution method for rewards over multiple blocks instead of a single block payout.",
+  "topic_summary": "Discussion on epoch rewards proposal to improve scalability by spreading reward distribution over multiple blocks instead of a single block at epoch boundaries. Key phases include reward calculation and reward distribution, with an estimated 40 seconds for calculation and distribution over M blocks.",
+  "router_tags": [
+    "epoch rewards",
+    "Solana",
+    "community call",
+    "blockchain",
+    "reward distribution"
+  ],
+  "aliases": [
+    "Epoch Rewards V2",
+    "epoch rewards v2",
+    "epoch rewards",
+    "Epoch rewards"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Haoran"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

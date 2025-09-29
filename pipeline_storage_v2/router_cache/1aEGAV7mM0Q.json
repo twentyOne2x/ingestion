@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Solana Changelog, Jonas from the Solana Foundation Devrel team discusses recent updates including a fix for cloning accounts, enhancements to the Ledger tool for transaction recording, and increased hardware requirements for validators. The episode also covers updates to RPC endpoints and the introduction of a new syscall for improved validator governance and consensus mechanisms.",
+  "topic_summary": "Updates on Solana's validator fixes, RPC enhancements, and new syscall features discussed by Jonas and the Solana Foundation Devrel team [t=3:76-250:64].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Validator Updates",
+    "RPC",
+    "Syscall"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas",
+    "@JeanCinquer",
+    "@Jacob",
+    "@JohnShankway",
+    "@JoeBuffalo",
+    "@JSTarry"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

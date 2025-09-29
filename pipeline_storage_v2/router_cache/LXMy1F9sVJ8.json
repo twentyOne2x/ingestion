@@ -1,0 +1,27 @@
+{
+  "description": "Steven Laver, engineering lead for Solana Mobile, presents updates on Solana Mobile, including the Saga phone and its features, such as the Seed Vault and Solana DAPP Store. He discusses the importance of mobile in Web3 and the upcoming availability of devices for pre-order.",
+  "topic_summary": "Updates on Solana Mobile and the Saga phone, including features, pre-order information, and the significance of mobile technology in Web3 [t=1:44 - t=304:31].",
+  "router_tags": [
+    "Solana",
+    "Mobile",
+    "Web3",
+    "Saga",
+    "DAPP Store",
+    "Seed Vault"
+  ],
+  "aliases": [
+    "Solana Mobile",
+    "solana mobile",
+    "Saga Phone",
+    "saga phone"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$1,000",
+    "$100",
+    "@Oprah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

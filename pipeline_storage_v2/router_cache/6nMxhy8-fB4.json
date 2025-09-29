@@ -1,0 +1,22 @@
+{
+  "description": "Lecture on Byzantine broadcast problem, discussing protocols for fault tolerance and consensus among nodes. Covers the need for cross-checking messages and the process of reaching agreement despite potential dishonest senders.",
+  "topic_summary": "Exploration of Byzantine broadcast protocols, focusing on achieving consensus among nodes in the presence of faults. Discusses the importance of message verification and the role of honest nodes in ensuring reliable communication [t=0:48].",
+  "router_tags": [
+    "Byzantine Broadcast",
+    "Consensus Protocols",
+    "Fault Tolerance",
+    "Distributed Systems"
+  ],
+  "aliases": [
+    "Byzantine Broadcast",
+    "byzantine broadcast",
+    "Consensus Protocols",
+    "consensus protocols"
+  ],
+  "canonical_entities": [
+    "$DELOITTE",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

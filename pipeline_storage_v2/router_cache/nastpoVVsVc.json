@@ -1,0 +1,21 @@
+{
+  "description": "Thorsten discusses Lucid, a development tool for building on Solana, featuring one-click installation and local validation capabilities.",
+  "topic_summary": "Lucid enables rapid development on Solana by providing a local validator, cloning capabilities from DevNet or MainNet, and account state modification for enhanced productivity [t=8.24].",
+  "router_tags": [
+    "Solana",
+    "Development",
+    "Lucid",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Luzid",
+    "lucid",
+    "LUCID"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@thorsten"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

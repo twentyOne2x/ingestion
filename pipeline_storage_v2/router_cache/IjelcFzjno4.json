@@ -1,0 +1,22 @@
+{
+  "description": "In this episode of Chewing Glass, host Chase talks with Mert Mumtaz, co-founder of Helios, about his journey in software development and the Solana ecosystem. Mert shares insights on his background in applied math and communications engineering, his early experiences with coding, and his transition from theoretical math to practical software development. The conversation touches on the importance of shipping products and Mert's initial exposure to blockchain technology.",
+  "topic_summary": "Chase interviews Mert Mumtaz about his career in software development, his work with Helios, and his experiences in the Solana ecosystem. They discuss Mert's educational background, coding languages, and the shift from theoretical to practical applications in tech [t=0:48-2:40].",
+  "router_tags": [
+    "Solana",
+    "Helios",
+    "Software Development",
+    "Blockchain",
+    "AI in Coding"
+  ],
+  "aliases": [
+    "Mert Mumtaz",
+    "Mert",
+    "Helios Co-Founder"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@MertMumtaz"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

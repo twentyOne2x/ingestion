@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial covers managing large accounts on Solana, focusing on memory limitations and techniques to optimize stack space. It discusses stack size limits, creating larger accounts, and zero copy serialization. The presenter demonstrates using a repository with tests to illustrate these concepts.",
+  "topic_summary": "Managing large accounts on Solana involves understanding memory constraints, specifically stack and heap size limits, and utilizing techniques to create accounts exceeding standard limits. The tutorial includes practical examples and tests to illustrate these methods [t=0:16 - t=3:60].",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Memory Management",
+    "Blockchain",
+    "Programming"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

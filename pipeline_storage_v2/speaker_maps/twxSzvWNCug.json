@@ -1,0 +1,20 @@
+{
+  "video_id": "twxSzvWNCug",
+  "title": "2024-11-21_twxSzvWNCug_The Politics of Bits - How Big Is Crypto's Illicit Finance Problem w- Ari Redbord",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ari Redboard",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

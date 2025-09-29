@@ -1,0 +1,22 @@
+{
+  "description": "Lucia discusses her project, a music streaming platform aimed at electronic music producers and DJs, addressing the issue of low payments in the industry.",
+  "topic_summary": "Lucia is building a music streaming platform for electronic music producers and DJs, aiming to provide fair compensation and empower fans [t=5:44].",
+  "router_tags": [
+    "music",
+    "streaming",
+    "producers",
+    "DJs",
+    "electronic"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$50",
+    "@lucia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

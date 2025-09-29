@@ -1,0 +1,26 @@
+{
+  "description": "Jansen Teng discusses the evolution of virtual agents and their integration into consumer-facing applications, emphasizing the need for foundational models to enhance autonomous capabilities. He highlights the potential of AI frameworks and the importance of tokenization in creating better user interfaces.",
+  "topic_summary": "Exploration of virtual agents' rise in the crypto-AI space, addressing foundational models, consumer interaction, and the future of AI technologies [t=0:16 - t=209:88].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Virtual Agents",
+    "Tokenization",
+    "Consumer Technology"
+  ],
+  "aliases": [
+    "Jansen Teng",
+    "Jansen teng",
+    "JANSEN TENG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@Delphi_Digital",
+    "@Vitalik",
+    "@SamAltman",
+    "@Google"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "In this session, the speakers discuss building a creator community, focusing on NFTs and empowering creators. Rex from Magic Eden shares insights on the evolution of their platform and the importance of creator support. Max from Sniper xyz emphasizes the role of creators in market dynamics and the impact of creator royalties on NFT production. Kais from OK Bears reflects on the growth of their platforms and the significance of community engagement.",
+  "topic_summary": "The discussion centers on the development of a creator community within the NFT space, highlighting the roles of various platforms and the importance of supporting creators to drive market growth. Key topics include the evolution of NFT marketplaces, creator royalties, and community engagement strategies [t=3:92 - t=360:48].",
+  "router_tags": [
+    "NFT",
+    "Creator Community",
+    "Magic Eden",
+    "Sniper xyz",
+    "OK Bears",
+    "Solana"
+  ],
+  "aliases": [
+    "Creator Community",
+    "NFT Marketplace",
+    "Magic Eden",
+    "Sniper XYZ",
+    "OK Bears"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Rex",
+    "@Max",
+    "@Kais"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

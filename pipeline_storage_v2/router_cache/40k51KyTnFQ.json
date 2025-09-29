@@ -1,0 +1,25 @@
+{
+  "description": "Jacob and Joe discuss the latest changes in Solana, focusing on SIMD16 application fees for writable accounts and the upcoming Sandstorm hackathon from January 10th to 23rd.",
+  "topic_summary": "The episode covers SIMD16's introduction of application fees for writable accounts [t=21:24], the implications for DApps [t=33:49], and the Sandstorm hackathon organized by Helios Labs and Lamport Dao [t=213:27].",
+  "router_tags": [
+    "Solana",
+    "SIMD16",
+    "dApp Fees",
+    "Sandstorm",
+    "Helios Labs",
+    "Lamport Dao"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@HeliosLabs",
+    "@LamportDao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,44 @@
+{
+  "video_id": "uekRb4qCqAo",
+  "title": "2024-10-28_uekRb4qCqAo_Crypto x AI Demo Day: Building the Future",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Sandy Liang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Kevin Kelly",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Kevin Kelly",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Beauty Tha Thinh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Oliver Hill",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Ty Schenk discusses his journey in the blockchain space, starting from his early experiences with Bitcoin to founding Keta. He shares insights on building a crypto payment processor and his collaboration with Eric Schmidt, emphasizing the need for flexibility in crypto transactions to address volatility and enhance merchant adoption.",
+  "topic_summary": "Ty Schenk, founder of Keta, shares his experiences in the blockchain industry, detailing his journey from early Bitcoin involvement to developing a crypto payment solution. He highlights the importance of addressing volatility for merchants and discusses his partnership with Eric Schmidt to realize his vision for Keta. Key points include the thesis for Keta and the approach to launching the project in a more democratic manner.",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Keta",
+    "Payment Processing",
+    "Eric Schmidt",
+    "Bitcoin",
+    "Crypto Adoption"
+  ],
+  "aliases": [
+    "Ty Schenk",
+    "Keta",
+    "KEDA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ericschmidt"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

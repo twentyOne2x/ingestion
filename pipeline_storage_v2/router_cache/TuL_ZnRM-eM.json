@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the valuation discrepancies between Wormhole and Synapse, highlighting their trading volumes and market caps.",
+  "topic_summary": "Analyzing the valuation differences between Wormhole and Synapse, with Wormhole trading at $5.7 billion and Synapse at $130 million despite higher volume [t=0:01].",
+  "router_tags": [
+    "crypto",
+    "altcoins",
+    "TheHivemind",
+    "shorts",
+    "bitcoin",
+    "Delphi"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "DELphi Digital"
+  ],
+  "canonical_entities": [
+    "$WORM",
+    "$SNAP",
+    "@AlphaDuncan",
+    "@Synapse"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

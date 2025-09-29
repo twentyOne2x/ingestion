@@ -1,0 +1,27 @@
+{
+  "description": "Cuy Sheffield from Visa and Goldie from Fireblocks discuss the intersection of traditional finance and cryptocurrency, highlighting Visa's evolution and its role in the crypto space.",
+  "topic_summary": "The conversation features insights on Visa's history, its adaptation to digital payments, and the emergence of crypto as the next wave in financial technology [t=263.63].",
+  "router_tags": [
+    "Visa",
+    "Fireblocks",
+    "Cryptocurrency",
+    "Digital Payments",
+    "Stablecoins",
+    "Solana"
+  ],
+  "aliases": [
+    "Cuy Sheffield",
+    "Goldie",
+    "Kai Sheffield",
+    "Visa Crypto",
+    "Fireblocks"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@CuySheffield",
+    "@Goldie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

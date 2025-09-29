@@ -1,0 +1,21 @@
+{
+  "description": "Panel discussion on the importance of auditing in the Solana ecosystem, featuring insights from various security experts. The panelists discuss the significance of using tools and manual checks to ensure code security and the role of auditors in the development process.",
+  "topic_summary": "The panel emphasizes the critical role of auditing in maintaining security within the Solana ecosystem, discussing tools and practices for effective auditing [t=114.54].",
+  "router_tags": [
+    "Solana",
+    "auditing",
+    "security",
+    "blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

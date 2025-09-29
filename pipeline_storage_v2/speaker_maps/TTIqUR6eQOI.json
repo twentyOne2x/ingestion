@@ -1,0 +1,14 @@
+{
+  "video_id": "TTIqUR6eQOI",
+  "title": "2023-06-29_TTIqUR6eQOI_Solana Hacker House Tel Aviv",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

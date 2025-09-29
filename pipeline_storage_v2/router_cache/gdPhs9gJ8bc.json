@@ -1,0 +1,23 @@
+{
+  "description": "This week's Changelog discusses the latest updates on Solana, including the 1.14.17 release and the IDL standard proposal. The hosts encourage community engagement through developer talks and Twitter spaces, highlighting the importance of staying informed about changes that may affect existing programs. They also introduce new debugging tools and Dune analytics for better data insights.",
+  "topic_summary": "Updates on Solana's 1.14.17 release, IDL standard proposal, debugging tools, and Dune analytics for on-chain data.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "IDL",
+    "Dune",
+    "Developer Tools"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana Updates",
+    "solana updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

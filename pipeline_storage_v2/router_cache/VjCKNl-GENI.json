@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses the inefficiency of equilibria in algorithmic game theory, focusing on positive externalities in network models. It contrasts previous negative externality examples with new models that allow for multiple equilibria, emphasizing the benefits of collaboration in network formation.",
+  "topic_summary": "The lecture covers the transition from negative to positive externalities in game theory, introducing network cost sharing games. It highlights the implications of multiple equilibria and the importance of minimizing overall network costs while maximizing benefits for all players [t=0:72].",
+  "router_tags": [
+    "Game Theory",
+    "Nash Equilibria",
+    "Network Models",
+    "Positive Externalities",
+    "Cost Sharing"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Nash Equilibria Lecture",
+    "Network Cost Sharing Games"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$MattJackson",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

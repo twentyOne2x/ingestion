@@ -1,0 +1,26 @@
+{
+  "description": "Max Resnick discusses the roadmap to achieving a decentralized Nasdaq, emphasizing the need for increased bandwidth and transaction speeds. He highlights the importance of competitive pricing to attract uninformed traders and outlines the technical improvements required to reach these goals.",
+  "topic_summary": "In this talk, Max Resnick outlines the vision for a decentralized Nasdaq, detailing the technical advancements needed to compete with centralized exchanges like Nasdaq and CME. He emphasizes the importance of transaction speed, bandwidth, and competitive pricing in achieving this goal. Key points include increasing TPS to a million, reducing block times to 20 milliseconds, and understanding the dynamics of market spreads.",
+  "router_tags": [
+    "Decentralized Nasdaq",
+    "Solana",
+    "Blockchain",
+    "Crypto Trading",
+    "Market Dynamics"
+  ],
+  "aliases": [
+    "Max Resnick",
+    "max resnick",
+    "MAX RESNICK"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "NASDAQ",
+    "CME",
+    "Visa",
+    "Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

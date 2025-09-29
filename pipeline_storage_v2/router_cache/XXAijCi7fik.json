@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Jose Maria Macedou is joined by co-founders Matti and Fab from Legion to discuss the revival of ICOs. They explore the current market structure, the history of ICOs, and how Legion aims to address existing issues while democratizing access to capital formation.",
+  "topic_summary": "The podcast covers the ambitious goals of Legion to bring back ICOs, the challenges of the current market structure, and the founders' backgrounds in finance and crypto. They emphasize the importance of community in token distribution and the need for a more accessible financial system [t=24:00].",
+  "router_tags": [
+    "ICOs",
+    "crypto",
+    "blockchain",
+    "decentralization",
+    "capital formation",
+    "community building"
+  ],
+  "aliases": [
+    "Legion",
+    "legion",
+    "ICO Revival",
+    "ico revival"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Delphi_Digital",
+    "@JoseMariaMacedou",
+    "@Matti",
+    "@Fab"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

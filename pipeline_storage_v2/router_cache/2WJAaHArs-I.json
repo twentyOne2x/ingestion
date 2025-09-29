@@ -1,0 +1,29 @@
+{
+  "description": "Leah Winberg discusses her company Chipped, which offers microchip manicures that share social media profiles via NFC technology. She highlights collaborations with major brands and the need for infrastructure to enable seamless consumer transactions in the Web3 space.",
+  "topic_summary": "Leah Winberg presents Chipped's innovative microchip manicure at Accelerate 2025, emphasizing the integration of digital and physical experiences and the potential for consumer engagement through NFC technology. She addresses the current gaps in infrastructure for consumer transactions in the crypto space [t=0:00 - t=3:00].",
+  "router_tags": [
+    "Chipped",
+    "Tapstack",
+    "NFC Technology",
+    "Web3",
+    "Consumer Engagement",
+    "Fashion Tech"
+  ],
+  "aliases": [
+    "Leah Winberg",
+    "Winnie",
+    "Chipped",
+    "Tap Stack"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Forbes",
+    "@HighSnobiety",
+    "@HypeBay",
+    "@ParisHilton",
+    "@WorldOfWomen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

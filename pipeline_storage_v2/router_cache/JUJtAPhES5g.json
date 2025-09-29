@@ -1,0 +1,23 @@
+{
+  "description": "Steven Lucher from Solana Labs introduces the new Web3.js API, comparing it to vegetables for its health benefits over sugary APIs. He discusses the need for a more customizable, tree-shakeable, and modern JavaScript library for interacting with the Solana blockchain. The talk highlights improvements in bundle size and performance, showcasing significant reductions in application size and better compatibility with modern encryption algorithms.",
+  "topic_summary": "Introduction to the new Web3.js API, its design philosophy, improvements over the old version, and its benefits for developers working with the Solana blockchain [t=1:36 - t=450:65].",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "API",
+    "JavaScript",
+    "Blockchain"
+  ],
+  "aliases": [
+    "web3js",
+    "Web3Js",
+    "Web3.js",
+    "Web 3 JS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Zohai from Flash Trade discusses challenges in DeFi and solutions being developed within the Solana ecosystem, focusing on composability and asset-backed perpetuals.",
+  "topic_summary": "The presentation covers the importance of composability in DeFi on Solana, the team's journey in building solutions, and the impact of market events on their development strategy [t=285:52].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Composability",
+    "Flash Trade",
+    "Asset Backed Perpetuals"
+  ],
+  "aliases": [
+    "Flash Trade",
+    "flash trade",
+    "Flashtrade",
+    "flashtrade"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Zohai",
+    "$100 Million",
+    "Mango"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

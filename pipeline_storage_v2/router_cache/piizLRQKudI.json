@@ -1,0 +1,21 @@
+{
+  "description": "Recap of Day 1 at Breakpoint 2023, highlighting community engagement and the launch of Fire Dancer on testnet.",
+  "topic_summary": "Breakpoint 2023 Day 1 recap, emphasizing community size and the announcement of Fire Dancer's testnet launch [t=0:24][t=43:34].",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "Fire Dancer",
+    "testnet"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

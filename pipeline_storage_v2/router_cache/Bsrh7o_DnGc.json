@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on trading strategies and recent successes in the crypto market, focusing on Aster and notable traders like Qwerty. Insights into making significant profits in a short time frame.",
+  "topic_summary": "Exploration of trading dynamics and performance, particularly around Aster, with mentions of key figures in the crypto space. Highlights include a reported profit of $7.5K from a trade on Haster [t=115.7].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "Aster",
+    "Qwerty",
+    "Haster",
+    "profit"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Qwerty",
+    "qwerty"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "@Qwerty"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

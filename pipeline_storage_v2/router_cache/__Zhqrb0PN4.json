@@ -1,0 +1,24 @@
+{
+  "description": "Thomas, CEO of NeoDym, discusses the evolution of Solana security from its early days in 2020 to its current state. He shares insights on the challenges developers faced and the growth of the Solana ecosystem, including the impact of inflation and the emergence of smart contracts.",
+  "topic_summary": "An overview of Solana's security journey, highlighting past challenges and future prospects, with personal insights from Thomas, CEO of NeoDym, a security research company focused on Solana. [t=3:52] [t=248:35]",
+  "router_tags": [
+    "Solana",
+    "Blockchain Security",
+    "Crypto Development",
+    "Smart Contracts",
+    "Cybersecurity"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Thomas"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

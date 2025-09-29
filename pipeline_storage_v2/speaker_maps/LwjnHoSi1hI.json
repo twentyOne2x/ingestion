@@ -1,0 +1,20 @@
+{
+  "video_id": "LwjnHoSi1hI",
+  "title": "2025-08-01_LwjnHoSi1hI_Rasmr: Saving Memecoins, $PUMP's Future, Crypto Streamers, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Harry Potter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

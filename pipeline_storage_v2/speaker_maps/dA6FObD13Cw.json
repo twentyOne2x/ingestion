@@ -1,0 +1,20 @@
+{
+  "video_id": "dA6FObD13Cw",
+  "title": "2025-09-06_dA6FObD13Cw_James Zhang: Solana Treasuries, Managing A $450M DAT, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "James Young",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

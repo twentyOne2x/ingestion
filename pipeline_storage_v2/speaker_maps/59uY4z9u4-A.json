@@ -1,0 +1,26 @@
+{
+  "video_id": "59uY4z9u4-A",
+  "title": "2024-05-09_59uY4z9u4-A_Solana Foundation Validator Discussion - May 9 2024",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "C": {
+      "name": "Ryan Michael",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Jacob Gadakian",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

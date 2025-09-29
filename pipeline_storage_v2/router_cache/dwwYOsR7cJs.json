@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, the host discusses trading strategies, experiences in crypto, and the challenges faced by traders. The guest shares insights on trading perpetual contracts and reflects on their journey since entering the crypto space in late 2020. They highlight the importance of recognizing when to cut losses and the psychological barriers that prevent traders from doing so.",
+  "topic_summary": "The conversation covers trading strategies, the evolution of the guest's trading practices, and the psychological aspects of trading in crypto. Key points include the transition from traditional trading to perpetual contracts and the impact of market crashes on traders' decisions [t=165.5].",
+  "router_tags": [
+    "Crypto Trading",
+    "Perpetual Contracts",
+    "Market Psychology",
+    "NFTs",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@JamesWynn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

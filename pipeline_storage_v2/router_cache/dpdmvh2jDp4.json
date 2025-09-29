@@ -1,0 +1,20 @@
+{
+  "description": "This tutorial discusses optimistic responsiveness in blockchain protocols, focusing on message delays and transaction confirmations after GST. It highlights the challenges of achieving responsiveness in dynamically available settings and presents a theorem stating that no zero resilient blockchain protocol can be optimistically responsive in such environments.",
+  "topic_summary": "The video covers the concept of optimistic responsiveness in blockchain protocols, emphasizing the importance of actual message delays over known bounds. It presents a theorem regarding the impossibility of zero resilient protocols being optimistically responsive in dynamically available settings, illustrated through a high-level proof sketch.",
+  "router_tags": [
+    "Blockchain",
+    "Consensus",
+    "Tutorial",
+    "Cryptography"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "Permissionless consensus tutorial",
+    "permissionless consensus tutorial"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

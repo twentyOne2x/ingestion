@@ -1,0 +1,23 @@
+{
+  "description": "Mike discusses Helio, a major payments processor on Solana, and its new features for selling products directly on X using Blinks technology and Fantom for payments.",
+  "topic_summary": "Overview of Helio's capabilities for creating pay links and selling products on X, featuring integration with Fantom for payments [t=15:919].",
+  "router_tags": [
+    "Helio",
+    "Fantom",
+    "Solana",
+    "payments",
+    "X"
+  ],
+  "aliases": [
+    "Helio",
+    "helio",
+    "Fantom",
+    "fantom"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "zRoM3xmAFXk",
+  "title": "2024-11-16_zRoM3xmAFXk_The INSANE Future of AI Crypto... (Project89)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Maine Trader",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

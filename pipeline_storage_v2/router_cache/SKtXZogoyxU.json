@@ -1,0 +1,23 @@
+{
+  "description": "Swissborg discusses its role in transforming the centralized exchange landscape at Solana Breakpoint 2023, emphasizing community trust and innovation in decentralized finance.",
+  "topic_summary": "At [t=3:12], Swissborg expresses gratitude to the Solana community for their support. The speaker reflects on historical financial institutions and the evolution of money, highlighting the need for change in the current centralized exchange model. Swissborg aims to leverage Solana's ecosystem to enhance trading and financial freedom for users, contrasting itself with traditional exchanges and emphasizing transparency and decentralization throughout the discussion.",
+  "router_tags": [
+    "Swissborg",
+    "Solana",
+    "Decentralized Finance",
+    "CEX",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SwissBorg",
+    "swissborg",
+    "SWISSBORG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Swissborg"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

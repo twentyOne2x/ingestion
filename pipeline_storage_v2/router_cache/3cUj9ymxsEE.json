@@ -1,0 +1,24 @@
+{
+  "description": "Ray Jacobson discusses Audius, a decentralized music marketplace, its evolution, and the migration from Ethereum to Solana. He emphasizes the importance of blockchain in creating direct relationships between artists and fans, and how Audius aims to empower artists in monetizing their work.",
+  "topic_summary": "The conversation covers Audius's origins, its transition to Solana, and the impact of blockchain technology on the music industry, particularly in enhancing transparency and artist control over monetization [t=0:24-39:44].",
+  "router_tags": [
+    "Audius",
+    "Blockchain",
+    "Music Streaming",
+    "Solana",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Ray Jacobson",
+    "ray jacobson",
+    "Audius",
+    "audius"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

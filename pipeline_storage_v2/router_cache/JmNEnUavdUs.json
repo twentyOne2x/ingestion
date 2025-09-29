@@ -1,0 +1,24 @@
+{
+  "description": "This lecture discusses the Bitcoin mining process, explaining how miners solve cryptographic puzzles to authorize transactions and create new bitcoins. It covers the mechanics of the SHA256 hash function and the concept of proof of work, emphasizing the difficulty of finding eligible blocks that start with a specific number of zeros.",
+  "topic_summary": "In-depth exploration of Bitcoin mining, focusing on transaction authorization, the creation of new bitcoins, and the role of cryptographic hash functions like SHA256 in the mining process. The lecture highlights the challenges miners face in finding valid blocks for the blockchain [t=0:8-0:404].",
+  "router_tags": [
+    "Bitcoin",
+    "Mining",
+    "Cryptography",
+    "Blockchain",
+    "SHA256",
+    "Proof of Work"
+  ],
+  "aliases": [
+    "Bitcoin Mining",
+    "btc mining",
+    "BTC MINING",
+    "Bitcoin mining process"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

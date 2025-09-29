@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly discusses the concept of the network state, exploring the possibility of creating new countries similar to how new currencies and companies have been established. He emphasizes the potential for decentralized social networks to own land and operate like traditional nation-states.",
+  "topic_summary": "The network state as a decentralized country concept, comparing it to Bitcoin and discussing the feasibility of starting new countries. The talk covers the evolution from small communities to large decentralized entities capable of owning real estate and functioning like legacy states [t=42:72].",
+  "router_tags": [
+    "network state",
+    "decentralization",
+    "new countries",
+    "social networks",
+    "real estate"
+  ],
+  "aliases": [
+    "Network State",
+    "network state",
+    "Networkstate",
+    "networkState"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "A discussion on how decisions are made in Washington, featuring insights from policy experts and their experiences in government.",
+  "topic_summary": "The panel discusses the dynamics of decision-making in D.C., comparing it to popular shows like 'Veep' and 'House of Cards' [t=80:53]. They share anecdotes about real-life political scenarios, including humorous moments during remote hearings [t=135:07].",
+  "router_tags": [
+    "Washington",
+    "politics",
+    "decision-making",
+    "Web3",
+    "government",
+    "policy"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: Veep or House of Cards"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@TomEmmer",
+    "@PatToomey",
+    "@KirstenGillibrand",
+    "@MaxineWaters",
+    "@GaryGensler"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of Chewing Glass, host Chase talks with Sheck, a member of the Super Team and founder of Word So Club, about his journey into Web3 and his experiences with programming languages like Python, Golang, and Rust. They discuss the differences in type systems and performance between these languages, as well as Sheck's early experiences in crypto and his passion for functional programming.",
+  "topic_summary": "Chase interviews Sheck about his background in engineering, the transition to Web3, and his programming journey from Python and Golang to Rust, highlighting the differences in type systems and performance. They also touch on Sheck's first experiences with cryptocurrency.",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Programming",
+    "Rust",
+    "Python",
+    "Golang",
+    "Cryptocurrency",
+    "Developer Advocacy"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "CHEWING GLASS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sheck",
+    "@Chase"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

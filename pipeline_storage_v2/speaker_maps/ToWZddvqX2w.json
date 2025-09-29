@@ -1,0 +1,20 @@
+{
+  "video_id": "ToWZddvqX2w",
+  "title": "2025-05-22_ToWZddvqX2w_Ship or Die 2025: Why Tech Founders Should Launch on Solana (Bobby Ghoshal, Imran Khan)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Nikita Beers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

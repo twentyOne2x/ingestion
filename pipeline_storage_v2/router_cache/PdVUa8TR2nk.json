@@ -1,0 +1,26 @@
+{
+  "description": "Dean Little discusses Zeus Network, a Bitcoin ecosystem on Solana, highlighting its features and growth since launch. Jeff Park shares insights on the integration of Bitcoin with Solana, emphasizing the demand for better alternatives in the Bitcoin ecosystem and the advantages of Solana's infrastructure for financial services.",
+  "topic_summary": "The conversation covers the integration of Bitcoin on Solana, the development of Zeus Network, and the potential for enhanced financial services through this collaboration. Key points include the advantages of Solana's technology and the growing demand for Bitcoin utilities.",
+  "router_tags": [
+    "Bitcoin",
+    "Solana",
+    "Zeus Network",
+    "DeFi",
+    "Crypto"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Fireside Chat Solana and Bitcoin",
+    "Zeus Network",
+    "Bitwise"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@SolanaFndn",
+    "@JeffPark",
+    "@DeanLittle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

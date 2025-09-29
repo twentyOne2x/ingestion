@@ -1,0 +1,23 @@
+{
+  "description": "Christian Montoya discusses MetaMask's integration of Solana support, focusing on user expectations and the evolution of wallet experiences in the multi-chain environment.",
+  "topic_summary": "Montoya outlines the transition to native Solana support in MetaMask, addressing user needs for fast token trading and portfolio tracking, and the importance of a seamless multi-chain wallet experience [t=0:32-422:88].",
+  "router_tags": [
+    "MetaMask",
+    "Solana",
+    "Multi-chain",
+    "Wallet Experience",
+    "User Expectations"
+  ],
+  "aliases": [
+    "Metamask",
+    "metamask",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

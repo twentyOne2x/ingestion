@@ -1,0 +1,22 @@
+{
+  "description": "Nick discusses building a network of community-owned small language models with data provenance protocols to incentivize data sharing and monetization for developers. The focus is on automating developer support for various web3 teams, with over 5050 models currently live. Users can try it out with assistor AI.",
+  "topic_summary": "Discussion on building community-owned language models for developers, focusing on data sharing and support automation [t=0:40].",
+  "router_tags": [
+    "language models",
+    "web3",
+    "developer support",
+    "data sharing"
+  ],
+  "aliases": [
+    "Assistor AI",
+    "assistor ai",
+    "Assistor",
+    "assistor"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

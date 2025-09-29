@@ -1,0 +1,25 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses the highlights from Breakpoint, including presentations on runtime V2 and Fire Dancer, and recent commits like the Block Store by Tiara.",
+  "topic_summary": "The video covers key insights from Breakpoint, focusing on runtime V2 and Fire Dancer developments, along with updates on the Block Store feature. Notable speakers include Steven Lucher and Kevin Bauer, with discussions on improving developer experience and performance metrics.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "runtime V2",
+    "Fire Dancer",
+    "Block Store"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@stevenlucher",
+    "@kevinbower"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

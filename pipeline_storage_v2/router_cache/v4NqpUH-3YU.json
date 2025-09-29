@@ -1,0 +1,26 @@
+{
+  "description": "Alison Mangiero and Hadley Stern discuss the Proof of Stake Alliance, its founding, and the importance of regulatory clarity for staking in the crypto industry. They highlight the progress made in engaging with the SEC and the need for continued education on staking misconceptions.",
+  "topic_summary": "The conversation covers the establishment of the Proof of Stake Alliance, the evolution of staking policy, and the ongoing efforts to achieve regulatory clarity for staking services, particularly in relation to Solana. Key points include the differences between staking and lending, and the need for education among lawmakers [t=270.73].",
+  "router_tags": [
+    "Proof of Stake",
+    "Staking",
+    "Regulatory Clarity",
+    "Crypto Education",
+    "Solana"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Accelerate 2025",
+    "Marinade",
+    "Alison Mangiero",
+    "Hadley Stern"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Alison",
+    "@Hadley"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This week's Solana changelog discusses recent developments including programmable smart wallets and improvements to RPC efficiency. Key highlights include the SRFC0009 proposal for signing in with programmable wallets using off-chain delegates, and a new method to access the leader schedule for upcoming epochs. Additionally, resources for building games with Clockwork and the Light RPC by Mango Markets are introduced.",
+  "topic_summary": "The changelog covers updates from the core community call, focusing on SRFC0009 for programmable wallets [t=75.34], optimistic restart automation [t=51.16], and enhancements to RPC infrastructure [t=347.0].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Smart Wallets",
+    "RPC",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

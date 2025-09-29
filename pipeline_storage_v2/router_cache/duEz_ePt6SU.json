@@ -1,0 +1,24 @@
+{
+  "description": "Stepan Simkin, co-founder and CEO of Squad Labs, discusses the advancements in the Squad ecosystem, including the development of Squad's Protocol V5, which aims to enhance the on-chain economy by improving smart account functionalities and introducing FusePay, a virtual prepaid card for stablecoin transactions.",
+  "topic_summary": "In this keynote, Stepan Simkin outlines key developments in Squad's ecosystem, including the upcoming Squad's Protocol V5 with enhanced features for developers and the launch of FusePay, a prepaid card for stablecoin spending, aimed at bridging on-chain and off-chain payments [t=3:6].",
+  "router_tags": [
+    "Squad Labs",
+    "Squads Protocol",
+    "FusePay",
+    "stablecoins",
+    "on-chain economy"
+  ],
+  "aliases": [
+    "Squad Labs",
+    "Squads",
+    "Fuse Pay",
+    "Stepan Simkin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Stepan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

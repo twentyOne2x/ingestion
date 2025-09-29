@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Congressman Tom Emmer discusses the CBDC Anti Surveillance Act, emphasizing concerns about government surveillance through central bank digital currencies (CBDCs) and the importance of checks and balances in financial data collection. He contrasts the American value system with the surveillance practices seen in countries like China, particularly regarding the digital yuan.",
+  "topic_summary": "Congressman Tom Emmer addresses the implications of CBDCs and the CBDC Anti Surveillance Act, highlighting the need for safeguards against government surveillance of financial data [t=185.04].",
+  "router_tags": [
+    "CBDC",
+    "Tom Emmer",
+    "crypto policy",
+    "digital currency",
+    "surveillance"
+  ],
+  "aliases": [
+    "Tom Emmer",
+    "congressman emmer",
+    "Emmer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@TomEmmer"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the evolution of AI agents, the impact of centralization vs. decentralization, and the potential for open-source AGI. Highlights include the need for diverse models and the role of community-driven innovation in AI development.",
+  "topic_summary": "Exploration of AI agents, their development, and the competition between centralized and decentralized approaches to achieving AGI. Emphasis on the importance of community involvement and the efficiency of open-source models.",
+  "router_tags": [
+    "AI",
+    "Open Source",
+    "AGI",
+    "Crypto",
+    "Innovation"
+  ],
+  "aliases": [
+    "Shaw",
+    "shaw",
+    "SHAW"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "$6 Million",
+    "$200",
+    "$1,000"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

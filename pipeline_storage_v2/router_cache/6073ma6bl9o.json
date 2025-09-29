@@ -1,0 +1,35 @@
+{
+  "description": "Discussion on building REKT, NFTs in 2025, and Tradfi's entry into crypto. Insights on leadership in crypto and the challenges faced by founders.",
+  "topic_summary": "Exploration of the crypto landscape, including the role of leadership and community expectations, with references to notable figures and companies in the industry. [t=0:16] [t=118:67]",
+  "router_tags": [
+    "Crypto",
+    "NFTs",
+    "Tradfi",
+    "Leadership",
+    "Community"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nike",
+    "@SiliconValley",
+    "@Spencer",
+    "@Nasdaq",
+    "@Nunico",
+    "@GoldmanSachs",
+    "@MorganStanley",
+    "@Quatro",
+    "@Valley",
+    "@Penguin",
+    "@Lucas",
+    "@Maple",
+    "@GamesSquare",
+    "@Yates"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

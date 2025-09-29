@@ -1,0 +1,26 @@
+{
+  "description": "Jess Holgrave, CEO of Reown, discusses the evolution of WalletConnect, now rebranded as Rione, and its new decentralized network. The presentation highlights the launch of the WalletConnect token and the introduction of toolkits for developers to enhance user experience in the Solana ecosystem.",
+  "topic_summary": "In this keynote, Jess Holgrave outlines the transition from WalletConnect to Rione, emphasizing decentralization, the introduction of new toolkits for developers, and the goal of improving user experience in Web3 applications. Key partnerships with Drift and Jupiter are also mentioned.",
+  "router_tags": [
+    "WalletConnect",
+    "Rione",
+    "Solana",
+    "Web3",
+    "Decentralization",
+    "Developer Tools"
+  ],
+  "aliases": [
+    "Walletconnect",
+    "Wallet Connect",
+    "Rione",
+    "Jess Holgrave",
+    "Reown"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

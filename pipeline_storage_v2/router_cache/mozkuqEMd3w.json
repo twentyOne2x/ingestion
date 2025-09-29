@@ -1,0 +1,22 @@
+{
+  "description": "Presentation on the current state of development across the Star Atlas ecosystem, highlighting gaming updates and the work of Automata, the studio behind Star Atlas.",
+  "topic_summary": "Discussion on Star Atlas as the next generation of gaming, its ecosystem development, and the integration of blockchain technology in gaming. Key themes include the significance of the marketplace and infrastructure advancements like Fuzzy Lemur and Starcom.",
+  "router_tags": [
+    "Star Atlas",
+    "Web3",
+    "gaming",
+    "blockchain",
+    "Solana"
+  ],
+  "aliases": [
+    "Star Atlas",
+    "Automata",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

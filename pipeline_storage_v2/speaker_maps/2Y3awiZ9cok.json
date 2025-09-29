@@ -1,0 +1,20 @@
+{
+  "video_id": "2Y3awiZ9cok",
+  "title": "2024-01-30_2Y3awiZ9cok_A Cross-Chain DePIN Conversation w- Alex Rawitz (DIMO)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Fred Wilson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

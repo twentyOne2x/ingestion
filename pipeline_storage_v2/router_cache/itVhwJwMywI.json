@@ -1,0 +1,23 @@
+{
+  "description": "Jacob Boren discusses the development of Reflect, a decentralized infrastructure for stablecoins on Solana, emphasizing its unique selling point of full decentralization and a self-contained Zkrisk engine.",
+  "topic_summary": "Explore Reflect, a self-sustaining stablecoin platform on Solana that operates independently of centralized entities, featuring a verifiable Zkrisk engine for maintenance-free operation. [t=14:08]",
+  "router_tags": [
+    "Stablecoins",
+    "Decentralization",
+    "Solana",
+    "Reflect"
+  ],
+  "aliases": [
+    "Reflect",
+    "reflect",
+    "Reflect.cx",
+    "reflect.cx"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JakobBoren"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

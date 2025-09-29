@@ -1,0 +1,27 @@
+{
+  "description": "Matt Luongo discusses the relevance of Bitcoin in a smart contract world, focusing on the Threshold Network and its TBTC product. He highlights the custodial nature of Bitcoin on various networks and the importance of decentralized custody solutions.",
+  "topic_summary": "The conversation covers the merger of KEEP and Nucypher into the Threshold Network, the role of Bitcoin in decentralized finance, and the challenges of integrating smart contracts with Bitcoin's custodial nature. [t=4:72] [t=15:60] [t=45:34] [t=106:59]",
+  "router_tags": [
+    "Bitcoin",
+    "Smart Contracts",
+    "Threshold Network",
+    "DeFi",
+    "Custodial Solutions"
+  ],
+  "aliases": [
+    "Matt Luongo",
+    "matt luongo",
+    "MATT LUONGO"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@SolanaFndn",
+    "@BisonTrails",
+    "@Nucypher",
+    "@Bitgo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

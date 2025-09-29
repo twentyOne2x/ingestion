@@ -1,0 +1,22 @@
+{
+  "description": "Legendary trader discusses current crypto trading strategies and market conditions.",
+  "topic_summary": "The trader reflects on their trading habits and market dynamics, emphasizing a bearish outlook on altcoins while remaining optimistic about Bitcoin's future price movements. They note a significant decoupling of Bitcoin from altcoins and highlight the importance of institutional interest in Bitcoin over other cryptocurrencies. [t=81:14]",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Bitcoin",
+    "Altcoins",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "PonziTrader",
+    "ponzitrader",
+    "PONZITRADER"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

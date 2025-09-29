@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Ubermendes discusses the current state of crypto trading in 2024, touching on various topics including the humorous aspects of coins like 'fart coin' and the dynamics of market trends. The conversation includes personal anecdotes and insights into the crypto landscape.",
+  "topic_summary": "Ubermendes and guests explore the humor in crypto, particularly 'fart coin', and share experiences in trading and market trends [t=0:08-0:40].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "fart coin",
+    "market trends",
+    "humor"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "Ubermendes",
+    "uberMendes"
+  ],
+  "canonical_entities": [
+    "$FART",
+    "@Ubermendes"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

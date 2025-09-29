@@ -1,0 +1,21 @@
+{
+  "description": "Join us at the All-In Summit 2025 in Los Angeles from September 7-9 to explore Solana's future and innovations.",
+  "topic_summary": "Solana is set to showcase its advancements at the All-In Summit 2025 in Los Angeles from September 7-9 [t=12:48].",
+  "router_tags": [
+    "Solana",
+    "All-In Summit",
+    "2025",
+    "Los Angeles"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

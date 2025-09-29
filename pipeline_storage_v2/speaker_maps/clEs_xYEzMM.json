@@ -1,0 +1,20 @@
+{
+  "video_id": "clEs_xYEzMM",
+  "title": "2024-09-05_clEs_xYEzMM_Solana Changelog Sep 4 - Rust Wallet Adapter, Optimized Entrypoint, and Anchor improvements",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Hardhat Chad",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

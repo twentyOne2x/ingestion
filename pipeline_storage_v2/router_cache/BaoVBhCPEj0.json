@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the future of orbital data centers and the potential for large-scale construction on Mars, including the role of companies like SpaceX and the implications for energy limitations on Earth. The conversation touches on the excitement around asteroid mining and lunar tourism, as well as the challenges of establishing data centers in space.",
+  "topic_summary": "Exploration of orbital data centers, Mars colonization, asteroid mining, and lunar tourism, highlighting the technological advancements and business opportunities in the space industry [t=0:08 - t=357:05].",
+  "router_tags": [
+    "Orbital Data Centers",
+    "SpaceX",
+    "Mars Colonization",
+    "Asteroid Mining",
+    "Lunar Tourism"
+  ],
+  "aliases": [
+    "Starcloud",
+    "Star Cloud",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$MSFT",
+    "$ORCL",
+    "$GOOGL",
+    "$AXS",
+    "$SOFIA",
+    "@Messari",
+    "@WalterIsakson",
+    "@IssacAkman",
+    "@Filipe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

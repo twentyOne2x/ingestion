@@ -1,0 +1,26 @@
+{
+  "description": "Lecture discussing maximum flow algorithms, focusing on the push-relabel algorithm. It covers augmenting path algorithms, including Ford Fulkerson and Edmonds Karp, and introduces the push-relabel paradigm as a faster alternative.",
+  "topic_summary": "The lecture explores maximum flow algorithms, particularly the push-relabel method, contrasting it with augmenting path algorithms like Ford Fulkerson and Edmonds Karp. It emphasizes the efficiency of push-relabel algorithms in practical applications [t=68:71].",
+  "router_tags": [
+    "Algorithms",
+    "Maximum Flow",
+    "Push-Relabel",
+    "Edmonds Karp",
+    "Ford Fulkerson"
+  ],
+  "aliases": [
+    "Push-Relabel Algorithm",
+    "Maximum Flow Algorithms",
+    "Ford Fulkerson Algorithm",
+    "Edmonds Karp Algorithm"
+  ],
+  "canonical_entities": [
+    "$FORD",
+    "$EDK",
+    "$DINOCH",
+    "$GOLDBERG",
+    "$TARJAN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "BaoVBhCPEj0",
+  "title": "2025-09-17_BaoVBhCPEj0_Starcloud: The Rise of Orbital Data Centers - Delphi Intelligence's 2035",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Issac Akman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Walter Isakson",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Thomas and Nico discuss Riverguard's approach to identifying and mitigating simple exploits in Solana transactions, emphasizing the importance of security audits and automation to protect contracts from vulnerabilities.",
+  "topic_summary": "The presentation covers the challenges of securing Solana transactions, the nature of simple exploits, and the need for automated testing methods to enhance security measures [t=3:76-302:30].",
+  "router_tags": [
+    "Solana",
+    "security",
+    "Riverguard",
+    "exploits",
+    "audits"
+  ],
+  "aliases": [
+    "Riverguard",
+    "riverguard",
+    "RIVERGUARD"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

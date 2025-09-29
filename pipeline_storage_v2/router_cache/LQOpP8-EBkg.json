@@ -1,0 +1,22 @@
+{
+  "description": "Andrea and Gabriele introduce a new framework for on-chain gaming, discussing the benefits of fully on-chain games including permissionless mods, persistency, and open economies. They present Bolt, a high-performance, composable framework designed to enhance the developer experience and support scalable gaming applications.",
+  "topic_summary": "The presentation covers the introduction of Bolt, a framework for on-chain gaming that aims to simplify development while maintaining high performance and scalability. Key features include modularity, integration with existing Solana infrastructure, and the use of an entity component system (ECS) for composability.",
+  "router_tags": [
+    "On-Chain Gaming",
+    "Blockchain",
+    "Solana",
+    "Game Development",
+    "Frameworks"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Bolt Framework",
+    "On-Chain Games"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "9M0amDckaF8",
+  "title": "2023-05-31_9M0amDckaF8_Solana Hacker House Taipei",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

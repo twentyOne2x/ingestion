@@ -1,0 +1,32 @@
+{
+  "description": "Nathan Clapp discusses the concept of 'magic' in product design, emphasizing the importance of surprise and delight in creating user experiences. He demonstrates a magic trick to illustrate how breaking expectations can create a sense of wonder. Clapp draws parallels between Web2 and Web3 user experiences, highlighting the need to simplify onboarding for new users unfamiliar with blockchain constraints. He introduces Slingshot, a mobile token trading app, as an example of creating magical experiences in Web3.",
+  "topic_summary": "Exploration of user experience design in Web3, focusing on creating delightful and surprising interactions. Discussion includes the importance of context and user expectations, with a demonstration of a magic trick to illustrate key points. The talk also covers onboarding challenges for new users transitioning from Web2 to Web3.",
+  "router_tags": [
+    "Product Design",
+    "User Experience",
+    "Web3",
+    "Magic",
+    "Onboarding",
+    "Token Trading"
+  ],
+  "aliases": [
+    "Nathan Clapp",
+    "nathan clapp",
+    "NATHAN CLAPP"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$BTC",
+    "$80",
+    "$100",
+    "$20",
+    "@MagicEden",
+    "@Magicden",
+    "@Slingshot",
+    "@Venmo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

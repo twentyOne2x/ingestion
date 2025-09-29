@@ -1,0 +1,25 @@
+{
+  "description": "A recap of Solana's developments in 2022, highlighting advancements in developer tooling, transaction capabilities, and upcoming features for 2023.",
+  "topic_summary": "The video discusses significant improvements in Solana's developer tools, including new libraries and features like version transactions and priority fees. It also covers the increase in compute unit caps and future research on transaction size enhancements [t=0:24-3:30].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "2022 Recap",
+    "Developer Tools",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JuanJacob",
+    "@JohnSink",
+    "@Acheron"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Learn about the CPI Guard token extension on Solana, which enhances user authorization for fund transfers, ensuring transparency in transactions.",
+  "topic_summary": "This video explains the importance of user authorization in fund transfers on Solana, highlighting the CPI Guard extension that prevents unauthorized CPI calls [t=19:44].",
+  "router_tags": [
+    "Solana",
+    "CPI Guard",
+    "Token Extensions",
+    "User Authorization"
+  ],
+  "aliases": [
+    "Cpi Guard",
+    "cpi guard",
+    "CPI guard"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

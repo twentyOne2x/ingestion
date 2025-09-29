@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses the Prisoner's Dilemma, a key concept in game theory, and its application in peer-to-peer file transfer systems like BitTorrent. It introduces the players, Alice and Bob, who must decide whether to upload files for each other, weighing their payoffs and costs in a structured game format.",
+  "topic_summary": "The lecture covers the Prisoner's Dilemma, focusing on decision-making in game theory, player strategies, and the implications of uploading files in a peer-to-peer context [t=0:72]. It explains the payoff matrix and how players' decisions affect their outcomes [t=208:16].",
+  "router_tags": [
+    "Game Theory",
+    "Prisoner's Dilemma",
+    "Incentives",
+    "Computer Science",
+    "BitTorrent"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "TimRoughgardenLectures"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Alice",
+    "@Bob"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

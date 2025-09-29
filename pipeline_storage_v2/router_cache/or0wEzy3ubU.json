@@ -1,0 +1,30 @@
+{
+  "description": "Austin Hurwitz discusses the evolution of Doodles from an NFT project to a recognized entertainment brand, emphasizing the need for a new storytelling model that empowers creators and communities through Dreamnet, a storytelling protocol that allows for collaborative narrative building and monetization.",
+  "topic_summary": "Austin Hurwitz presents Dreamnet, a storytelling protocol designed to revolutionize media by enabling creators and communities to collaboratively build and monetize narratives, addressing the flaws in current media models [t=0:00-2:30].",
+  "router_tags": [
+    "Doodles",
+    "NFT",
+    "Dreamnet",
+    "storytelling",
+    "Solana",
+    "community",
+    "AI"
+  ],
+  "aliases": [
+    "Austin",
+    "austin",
+    "Doodles",
+    "doodles",
+    "Dreamnet",
+    "dreamnet",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@austin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

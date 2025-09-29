@@ -1,0 +1,26 @@
+{
+  "video_id": "fPoE024Jx6Y",
+  "title": "2025-05-23_fPoE024Jx6Y_Ship or Die at Accelerate 2025: Fireside Chat (Rebecca Rettig, Summer Mersinger, Giovann Vicioso)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Giovanni Vicioso",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Summer Mersinger",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

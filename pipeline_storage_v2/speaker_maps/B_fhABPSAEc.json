@@ -1,0 +1,26 @@
+{
+  "video_id": "B_fhABPSAEc",
+  "title": "2022-06-03_B_fhABPSAEc_DISRUPTORS: Demand Destruction and the Exponential Age With Raoul Pal",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Bill Ack",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ralph Ral",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

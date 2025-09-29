@@ -1,0 +1,22 @@
+{
+  "description": "Panelists discuss the current state of crypto venture capital, exploring market dynamics, investment strategies, and the impact of recent developments like ETF listings on venture activity.",
+  "topic_summary": "The discussion covers the transition from a bear market to a more optimistic outlook in crypto, the challenges of deal flow, and the evolving landscape for early-stage investments in Web3 projects. Key insights include the importance of exits for venture capitalists and the dichotomy between new entrepreneurs and existing unicorns struggling to find growth.",
+  "router_tags": [
+    "Crypto",
+    "Venture Capital",
+    "Web3",
+    "Investment",
+    "ETF"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "The Pot of Money",
+    "VC Perspective"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

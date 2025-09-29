@@ -1,0 +1,28 @@
+{
+  "description": "Andres Monti discusses security and risk monitoring for Solana applications, emphasizing the need for more than just audits in the blockchain industry. He introduces RANGE, a platform designed to enhance security for blockchain applications and protocols, highlighting partnerships with major organizations and the importance of using Rust for future developments.",
+  "topic_summary": "In this talk, Andres Monti outlines the challenges of security in blockchain, particularly for Solana, and presents RANGE's mission to provide comprehensive risk monitoring and support for developers and organizations. He discusses the evolution of security practices and the significance of Rust in building safe applications [t=3:04-284:69].",
+  "router_tags": [
+    "Solana",
+    "Blockchain Security",
+    "Risk Monitoring",
+    "RANGE",
+    "Rust",
+    "DeFi",
+    "Crypto"
+  ],
+  "aliases": [
+    "Andres Monti",
+    "Andres Monty",
+    "Rains",
+    "Range"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Armani",
+    "$19 Billion",
+    "@Circle"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

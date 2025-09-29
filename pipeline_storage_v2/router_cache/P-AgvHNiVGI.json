@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses moral hazard as a challenge of information asymmetry, particularly in online marketplaces like Amazon and eBay. It explains how moral hazard arises when decision-makers have more information about their actions than others, leading to potential harmful actions against others, such as sellers ripping off buyers after receiving payment.",
+  "topic_summary": "The lecture covers the concept of moral hazard, contrasting it with adverse selection, and explores its implications in various markets, including health insurance and labor. It emphasizes the role of reputation systems in mitigating these issues by exposing information about seller actions and quality, thereby enhancing market efficiency.",
+  "router_tags": [
+    "Moral Hazard",
+    "Information Asymmetry",
+    "Reputation Systems",
+    "Online Marketplaces",
+    "Adverse Selection"
+  ],
+  "aliases": [
+    "Moral Hazard",
+    "moral hazard",
+    "MORAL HAZARD"
+  ],
+  "canonical_entities": [
+    "$AMZN",
+    "$EBAY",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

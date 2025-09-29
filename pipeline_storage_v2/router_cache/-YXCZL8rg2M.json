@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the resurgence of NFTs in 2025, focusing on what to hold, OG Punk lore, and market insights.",
+  "topic_summary": "Exploration of NFT trends and personal experiences in the market, including bidding on Punks and the value of unique digital art [t=54:61].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Punks",
+    "Ethereum",
+    "Digital Art"
+  ],
+  "aliases": [
+    "DeeZe",
+    "deeze",
+    "NFT's Comeback",
+    "NFT Comeback"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "$360,000",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

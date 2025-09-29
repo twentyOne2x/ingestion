@@ -1,0 +1,24 @@
+{
+  "description": "In this interview, the creator of $SHEGEN discusses the inspiration behind the project, emphasizing the need for a female AI that reflects the humor and intelligence of women. The conversation touches on the development process, including the use of jailbreaks and synthetic data, and introduces Fiona, the AI character designed to challenge stereotypes.",
+  "topic_summary": "The creator of $SHEGEN shares insights on developing a female AI named Fiona, highlighting the importance of representation in AI and the creative process behind her character [t=0:08-0:76].",
+  "router_tags": [
+    "AI",
+    "Women In Tech",
+    "Blockchain",
+    "SHEGEN",
+    "Fiona",
+    "Interviews"
+  ],
+  "aliases": [
+    "$shegen",
+    "$SHEGEN",
+    "@notthreadguy",
+    "@NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SHEGEN",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

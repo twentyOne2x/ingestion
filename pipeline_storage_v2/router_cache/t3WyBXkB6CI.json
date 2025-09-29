@@ -1,0 +1,25 @@
+{
+  "description": "Amira discusses the implications of the recent U.S. elections on cryptocurrency policy with Sheila Warren, CEO of the Crypto Council for Innovation. They explore the potential changes in legislation and the key players influencing crypto policy under the new administration.",
+  "topic_summary": "The podcast delves into the impact of the 2024 U.S. elections on cryptocurrency, highlighting the shift in political attitudes towards crypto, particularly with the anticipated return of Donald Trump to the presidency and Republican control of Congress. The discussion includes insights on bipartisan approaches to crypto policy and the evolving landscape of digital assets.",
+  "router_tags": [
+    "Crypto Policy",
+    "US Elections",
+    "Donald Trump",
+    "Sheila Warren",
+    "Legislation",
+    "Bipartisanship"
+  ],
+  "aliases": [
+    "The Politics of Bits",
+    "Politics of Bits",
+    "Crypto Council for Innovation",
+    "Sheila Warren"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn",
+    "@sheilawarren"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Highlights from Day 2 of Breakpoint, focusing on transaction growth and performance metrics.",
+  "topic_summary": "Discussion on increasing transaction volumes, with Verify Tiles and Aggregate achieving approximately 1.2 million transactions per second [t=0:24].",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "transactions",
+    "performance"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

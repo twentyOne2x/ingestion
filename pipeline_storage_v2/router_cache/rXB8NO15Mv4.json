@@ -1,0 +1,24 @@
+{
+  "description": "Philip Taffet discusses accelerating Reed Solomon coding for fast network communications, addressing challenges in distributing data globally and the need for redundancy to recover lost packets.",
+  "topic_summary": "The presentation covers the complexities of network communications, exploring various methods to distribute data efficiently while managing latency and bandwidth issues. It emphasizes the importance of Reed Solomon coding for ensuring data integrity during transmission, particularly in lossy networks.",
+  "router_tags": [
+    "Reed Solomon",
+    "network communications",
+    "data distribution",
+    "redundancy",
+    "latency",
+    "bandwidth"
+  ],
+  "aliases": [
+    "Reed Solomon",
+    "Reed solman",
+    "Kevin",
+    "Philip Taffet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "The video features a discussion with Luke Bowen, a prominent entrepreneur and crypto influencer. The host expresses admiration for Luke's insights and personality, highlighting their previous interactions and the impact of Luke's content on platforms like TikTok and YouTube. The host also acknowledges Zach XBT's support and contributions.",
+  "topic_summary": "Discussion with Luke Bowen about his entrepreneurial journey and influence in the crypto space. The host shares personal anecdotes and interactions with both Luke and Zach XBT, emphasizing their significance in the community. [t=0:56] [t=91:88]",
+  "router_tags": [
+    "Luke Bowen",
+    "Zach XBT",
+    "Crypto",
+    "Entrepreneurship",
+    "Influencers"
+  ],
+  "aliases": [
+    "Luke Bowen",
+    "Luke belmor",
+    "Zach XBT",
+    "Eliotrades",
+    "Elliot"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$SOL",
+    "@ZachXBT",
+    "@Eliotrades"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

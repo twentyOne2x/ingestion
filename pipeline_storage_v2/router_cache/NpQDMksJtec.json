@@ -1,0 +1,23 @@
+{
+  "description": "Mikel and Mitch discuss capital formation for subnets on the Bittensor network, emphasizing the importance of funding and innovation in decentralized finance.",
+  "topic_summary": "The conversation covers the challenges and opportunities in enabling capital formation for subnets on Bittensor's $10B+ network, highlighting the evolution of funding processes and the role of decentralized protocols [t=0:00].",
+  "router_tags": [
+    "Bittensor",
+    "capital formation",
+    "subnets",
+    "decentralized finance",
+    "innovation"
+  ],
+  "aliases": [
+    "Mikel",
+    "Mitch",
+    "Tau",
+    "Bittensor"
+  ],
+  "canonical_entities": [
+    "$BTT",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

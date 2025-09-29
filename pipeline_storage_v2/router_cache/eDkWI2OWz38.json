@@ -1,0 +1,25 @@
+{
+  "description": "Austin interviews Alex Kavalakis, COO of Hug and co-founder of Meta Angels, discussing the acquisition of Meta Angels by Hug and the implications for the NFT community. They explore the values of accessibility, transparency, and generosity that define Meta Angels, and how these principles shape community building in Web3 [t=0:24].",
+  "topic_summary": "The conversation focuses on the acquisition of Meta Angels by Hug, the unique community values of Meta Angels, and the challenges and opportunities in scaling community-oriented projects in the NFT space [t=20:24].",
+  "router_tags": [
+    "NFT",
+    "Web3",
+    "Community",
+    "Acquisition",
+    "Meta Angels",
+    "Hug"
+  ],
+  "aliases": [
+    "Meta Angels",
+    "meta angels",
+    "Hug",
+    "hug"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

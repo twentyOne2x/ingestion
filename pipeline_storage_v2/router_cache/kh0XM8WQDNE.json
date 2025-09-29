@@ -1,0 +1,25 @@
+{
+  "description": "This workshop covers token extensions on Solana, focusing on token metadata. Participants will learn about the features and functionalities of token metadata extensions, including practical demonstrations and resources available on GitHub.",
+  "topic_summary": "The session discusses the importance of token metadata extensions in Solana, showcasing their capabilities and how developers can utilize them effectively. Key events at ETH Denver and community engagement opportunities are also highlighted [t=0:72].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Token Metadata",
+    "Developer Workshop",
+    "ETH Denver"
+  ],
+  "aliases": [
+    "Token Extensions on Solana",
+    "Token Metadata Developer Workshop",
+    "Solana Token Extensions"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nick",
+    "@JacobCreech",
+    "@Hall"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

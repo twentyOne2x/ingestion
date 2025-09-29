@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the future of AI in cryptocurrency, featuring insights from various guests and their experiences in the crypto space.",
+  "topic_summary": "The conversation begins with greetings and personal introductions [t=0:16]. The speaker shares their recent experiences with cryptocurrency, including their initial exposure through a meme coin and their observations of the crypto community [t=42:65]. They discuss the dynamics of trading and community engagement, highlighting the learning process involved [t=70:14].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Blockchain",
+    "Meme Coin",
+    "Community"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@MaineTrader"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

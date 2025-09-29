@@ -1,0 +1,24 @@
+{
+  "description": "Cindy and David, co-founders of Drift Protocol, discuss building a derivatives exchange on Solana that competes with centralized exchanges. They explain perpetual futures, their market size, and the growth of DeFi perps, emphasizing the need for permissionless trading in crypto. Drift has achieved significant volume and user engagement since its inception, aiming to bridge the gap between DeFi and CeFi.",
+  "topic_summary": "At Breakpoint 2023, Drift Protocol co-founders Cindy and David present on the evolution of perpetual futures in crypto, the advantages of DeFi trading, and Drift's growth trajectory, highlighting their goal to dominate the decentralized exchange market.",
+  "router_tags": [
+    "Drift Protocol",
+    "DeFi",
+    "Perpetual Futures",
+    "Solana",
+    "Decentralized Exchange"
+  ],
+  "aliases": [
+    "drift protocol",
+    "Drift",
+    "Cindy",
+    "David"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

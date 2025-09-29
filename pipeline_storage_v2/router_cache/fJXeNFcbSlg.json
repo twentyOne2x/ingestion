@@ -1,0 +1,21 @@
+{
+  "description": "Max from Sniper discusses their NFT marketplace and aggregator on Solana, focusing on financializing NFTs and introducing token extensions for deflationary NFTs.",
+  "topic_summary": "Max from Sniper explains their NFT marketplace on Solana, emphasizing the importance of early adoption of new technologies and the innovative features they are developing, including token extensions for NFTs [t=7:36].",
+  "router_tags": [
+    "NFT",
+    "Marketplace",
+    "Solana",
+    "Aggregator"
+  ],
+  "aliases": [
+    "Sniper",
+    "sniper",
+    "SNIPER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

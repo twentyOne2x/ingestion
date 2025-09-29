@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses the differences between centralized and decentralized markets, using examples such as college admissions in the United States and ride-sharing platforms like Uber and Lyft. It highlights how transactions are managed in these markets and the implications of centralization on user experience and market dynamics.",
+  "topic_summary": "The lecture compares centralized and decentralized markets, explaining how transactions are controlled in each type. It emphasizes the role of platforms in influencing market behavior and discusses the nuances between pure centralization and decentralization [t=0:64-8:0].",
+  "router_tags": [
+    "Centralized Markets",
+    "Decentralized Markets",
+    "Market Dynamics",
+    "Technology in Markets",
+    "Economics"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Lecture 1.3",
+    "Centralized vs. Decentralized Markets"
+  ],
+  "canonical_entities": [
+    "$UBER",
+    "$LYFT",
+    "$AMZN",
+    "@timroughgardenlectures1861",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

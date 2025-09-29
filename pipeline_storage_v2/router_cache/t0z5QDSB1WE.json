@@ -1,0 +1,24 @@
+{
+  "description": "Workshop discussing the SVM and its applications beyond the Solana blockchain, featuring insights from software engineers Lukas and Joe on transaction processing and innovative use cases.",
+  "topic_summary": "The session covers the SVM's architecture, transaction processing pipeline, and its potential for new applications outside of traditional blockchain use, including ephemeral rollups and permissioned environments. [t=3:44] [t=283:26]",
+  "router_tags": [
+    "SVM",
+    "Solana",
+    "Blockchain",
+    "Transaction Processing",
+    "Software Development"
+  ],
+  "aliases": [
+    "Svm",
+    "Solana Virtual Machine",
+    "svm"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Lucas",
+    "@Joe"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

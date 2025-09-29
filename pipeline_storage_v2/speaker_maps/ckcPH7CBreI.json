@@ -1,0 +1,20 @@
+{
+  "video_id": "ckcPH7CBreI",
+  "title": "2022-11-07_ckcPH7CBreI_Breakpoint 2022: Location Tracking With Helium and Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jose Marcelino",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

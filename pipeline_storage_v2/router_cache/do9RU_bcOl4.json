@@ -1,0 +1,26 @@
+{
+  "description": "Lecture on parameterized analysis of online paging, discussing the performance of caching algorithms and the advantages of the least recently used (LRU) policy over alternatives like first in, first out. The lecture emphasizes the importance of locality in data and how it affects algorithm performance.",
+  "topic_summary": "This lecture focuses on parameterized analysis in online paging, exploring how to evaluate caching algorithms based on data locality. It aims to establish a rigorous comparison of LRU against other algorithms, addressing previous shortcomings in competitive analysis.",
+  "router_tags": [
+    "Algorithm Analysis",
+    "Online Paging",
+    "Caching Algorithms",
+    "Parameterized Analysis",
+    "Least Recently Used"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$Kirkpatrick",
+    "$Seidel",
+    "$Young",
+    "$Dijkstra",
+    "$FloydWarshall",
+    "$KirkpatrickSeidel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

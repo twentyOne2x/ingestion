@@ -1,0 +1,23 @@
+{
+  "description": "Matt Staats hosts a panel discussing the scalability of NFTs on Solana, featuring insights from Dayo Adeosun, Larissa Barboo, and Vic Huynh. They explore the blockchain trilemma, Solana's hybrid consensus model, and the implications for creators seeking to monetize their work.",
+  "topic_summary": "The panel addresses the importance of scalability in NFTs, highlighting Solana's advantages in transaction speed and cost, and how these factors impact creators and the broader market [t=2:88-368:04].",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Scalability",
+    "Blockchain",
+    "Web3",
+    "Creators"
+  ],
+  "aliases": [
+    "nfts for all",
+    "solana scalability",
+    "breakpoint 2022"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

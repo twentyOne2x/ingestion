@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the importance of having exposure to the Solana ecosystem and meme coins in investment portfolios. The speakers emphasize the need for a balanced approach to investing, highlighting the performance of meme coins compared to traditional assets like Bitcoin and Ethereum. They also address the challenges faced by builders in the Solana ecosystem due to speculative trading behavior.",
+  "topic_summary": "Exploration of investment strategies focusing on the Solana ecosystem and meme coins, including their potential for high returns and the cultural significance of meme coins in the current market [t=0:00 - t=3:10].",
+  "router_tags": [
+    "Solana",
+    "Meme Coins",
+    "Investment Strategies",
+    "Cryptocurrency",
+    "DeFi"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Meme coins",
+    "meme Coins"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

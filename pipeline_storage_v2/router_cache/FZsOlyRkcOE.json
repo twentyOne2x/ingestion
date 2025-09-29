@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly Yakovenko and Mert Mumtaz discuss the evolution of Solana, touching on personal anecdotes and the future of mobile technology in the crypto space.",
+  "topic_summary": "The conversation covers Solana's development, Anatoly's motivations, and the introduction of the new Seeker phone, highlighting the challenges of mobile ecosystems and the potential for crypto integration [t=13:04-283:98].",
+  "router_tags": [
+    "Solana",
+    "Anatoly Yakovenko",
+    "Mobile Technology",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Anatoly",
+    "Toli",
+    "Solana",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

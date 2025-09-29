@@ -1,0 +1,38 @@
+{
+  "video_id": "qjOB0b6ibgg",
+  "title": "2024-01-25_qjOB0b6ibgg_On-Chain Liquidity: The Past, Present and Future feat. @0xdef1",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Jeff Dorman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Jan Lieberman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Jose Macedou",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Larry Fink",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

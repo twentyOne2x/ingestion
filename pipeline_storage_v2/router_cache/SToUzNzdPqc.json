@@ -1,0 +1,24 @@
+{
+  "description": "Lecture discussing the limitations and potential improvements of state machine replication protocols, particularly focusing on Tendermint and its guarantees regarding Byzantine nodes and consensus.",
+  "topic_summary": "Explores the trade-offs in consensus protocols, particularly Tendermint, and discusses alternative approaches and improvements in blockchain technology, including Facebook's Diem and Ethereum's upcoming changes.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "Tendermint",
+    "Byzantine fault tolerance",
+    "Ethereum",
+    "Diem"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Facebook"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

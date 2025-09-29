@@ -1,0 +1,26 @@
+{
+  "description": "Kevin Bowers discusses Jump Trading's new Solana validator client, Fire Dancer, covering its development, background, and the importance of community involvement.",
+  "topic_summary": "In this talk, Kevin Bowers introduces Fire Dancer, a new validator for Solana, and shares his unique background in computational physics and its relevance to Jump Trading's work in crypto. He emphasizes the open development process and community engagement [t=52.92].",
+  "router_tags": [
+    "Solana",
+    "Jump Trading",
+    "Fire Dancer",
+    "Validator Client",
+    "Crypto"
+  ],
+  "aliases": [
+    "Kevin Bowers",
+    "kevin bowers",
+    "JUMP",
+    "jump trading",
+    "Fire Dancer",
+    "fire dancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

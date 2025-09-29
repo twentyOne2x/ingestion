@@ -1,0 +1,23 @@
+{
+  "description": "Senator Bill Hagerty discusses the implications of blockchain and cryptocurrency on national security, emphasizing the need for a supportive environment in the U.S. to prevent illicit financing, particularly from state actors like North Korea. He highlights the importance of addressing fraud while recognizing the potential of cryptocurrency technology.",
+  "topic_summary": "Senator Hagerty addresses the intersection of cryptocurrency and national security, sharing insights from his experience as U.S. Ambassador to Japan during the Coincheck hack. He advocates for pro-crypto policies and warns against central bank digital currencies that could hinder innovation [t=0:72].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Blockchain",
+    "National Security",
+    "U.S. Senate",
+    "Pro-Crypto Policies"
+  ],
+  "aliases": [
+    "Senator Bill Hagerty",
+    "Hagerty",
+    "Bill Hagerty"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This episode of Solana Bytes discusses the permanent delegate token mint extension in the Solana token program, highlighting its features, implications, and use cases, particularly in relation to security and account management.",
+  "topic_summary": "Exploration of the permanent delegate token mint extension on Solana, including its authority over token accounts and potential security concerns [t=0:24 - t=11:06].",
+  "router_tags": [
+    "Solana",
+    "Token Mint",
+    "Permanent Delegate",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Permanent Delegate",
+    "Permanent delegate",
+    "permanent delegate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

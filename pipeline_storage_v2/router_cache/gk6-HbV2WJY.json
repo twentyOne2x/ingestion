@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on music NFTs, creator coins, and the evolution of Coop Records, a crypto record label. The platform allows users to buy and sell music as coins, requiring approval from artists and labels for ownership rights. [t=0:32] [t=39:84] [t=57:97]",
+  "topic_summary": "Exploration of music NFTs and creator coins through Coop Records, focusing on the platform's functionality and market evolution since its launch two years ago. [t=0:32] [t=78:21]",
+  "router_tags": [
+    "Music NFTs",
+    "Crypto Artists",
+    "Creator Coins",
+    "Coop Records"
+  ],
+  "aliases": [
+    "CoopahTroopa",
+    "coopahtroopa",
+    "Coop Records",
+    "cooprecords"
+  ],
+  "canonical_entities": [
+    "$ZORA",
+    "@notthreadguy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

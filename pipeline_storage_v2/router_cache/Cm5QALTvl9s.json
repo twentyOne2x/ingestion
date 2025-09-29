@@ -1,0 +1,32 @@
+{
+  "description": "Sergio Mello and Walter Hessert discuss USDG and the Global Dollar Network, highlighting its role as a regulated US dollar-backed stablecoin and the benefits of partnership within the network. They explain how the network rewards partners based on their contributions, contrasting it with traditional stablecoin models where issuers retain most economic benefits. The conversation touches on the evolving landscape of stablecoins and the importance of institutional participation in the market.",
+  "topic_summary": "The discussion covers the Global Dollar Network and USDG, focusing on partnership benefits, the shift in stablecoin dynamics, and the potential for institutional engagement in the crypto space [t=11:04].",
+  "router_tags": [
+    "USDG",
+    "Global Dollar Network",
+    "stablecoins",
+    "cryptocurrency",
+    "partnership",
+    "institutional finance"
+  ],
+  "aliases": [
+    "Usdg",
+    "USDG",
+    "Global Dollar Network",
+    "global dollar network"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "$USDT",
+    "$PAX",
+    "$SOL",
+    "@Robinhood",
+    "@Paxos",
+    "@Circle",
+    "@Kraken",
+    "@Anchorage",
+    "@JPMorgan"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

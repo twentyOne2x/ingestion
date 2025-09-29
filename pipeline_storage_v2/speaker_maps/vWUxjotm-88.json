@@ -1,0 +1,32 @@
+{
+  "video_id": "vWUxjotm-88",
+  "title": "2024-10-23_vWUxjotm-88_Theoriq AI: AI Agent Collectives - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Ron Bodkin",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Jeff Hinton",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ron Bodkin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Mike Horton discusses Geodnet's mission to provide affordable, centimeter-accurate positioning services globally, leveraging blockchain technology and the Solana ecosystem.",
+  "topic_summary": "Geodnet aims to build the largest precise positioning network for robotics, utilizing over 14,000 satellite reference stations to enhance accuracy from meter to centimeter level. The integration of blockchain ensures a decentralized and reliable network. Horton predicts a quadrillion-dollar market opportunity in decentralized precise positioning over the next decade, impacting various industries including telecommunications and energy. [t=1:52] [t=110:16]",
+  "router_tags": [
+    "Geodnet",
+    "Solana",
+    "Decentralized Positioning",
+    "Robotics",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Geodnet",
+    "geodnet",
+    "Solana",
+    "solana",
+    "Deepin",
+    "deepin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

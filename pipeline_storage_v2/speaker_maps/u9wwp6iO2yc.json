@@ -1,0 +1,26 @@
+{
+  "video_id": "u9wwp6iO2yc",
+  "title": "2024-09-05_u9wwp6iO2yc_Prasad Mahadik: Is Solana Going Modular",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Tiny Dancer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

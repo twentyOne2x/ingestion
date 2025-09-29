@@ -1,0 +1,20 @@
+{
+  "video_id": "cLTVsNB8jio",
+  "title": "2024-09-20_cLTVsNB8jio_Breakpoint 2024: Product Keynote: Jambo (James Zhang, Sam Kang)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jack Malo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

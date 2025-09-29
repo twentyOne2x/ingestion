@@ -1,0 +1,24 @@
+{
+  "description": "Nick and Jacob from the Solana Foundation Devrel team discuss the latest updates in the Solana ecosystem, including governance proposals for distributing priority fees to validators and performance improvements in the network's runtime.",
+  "topic_summary": "The video covers governance proposals on Solana, specifically the distribution of priority fees to validators [t=33.49], the introduction of SIMD149 for snapshot epoch stakes [t=124.02], and performance enhancements made by Alessandro [t=174.54].",
+  "router_tags": [
+    "Solana",
+    "Governance",
+    "Blockchain",
+    "Performance Improvements"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nick",
+    "@Jacob",
+    "@Alessandro"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

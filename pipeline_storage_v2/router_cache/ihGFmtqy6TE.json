@@ -1,0 +1,26 @@
+{
+  "description": "Dustin and Kevin discuss the future of the Metaplex Foundation, focusing on the adoption of compressed NFTs and the challenges faced in decentralized standards and infrastructure. They highlight the need for easier integration of blockchain technology for enterprises.",
+  "topic_summary": "The discussion covers the potential of compressed NFTs on Solana, the barriers to enterprise adoption, and the solutions being developed by Metaplex to simplify the use of NFTs in applications. Key points include the importance of decentralized standards and the Metaplex utility layer's features.",
+  "router_tags": [
+    "Metaplex",
+    "NFT",
+    "Solana",
+    "Compressed NFTs",
+    "Blockchain",
+    "Enterprise Adoption"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Metaplex Foundation",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dustin",
+    "@Kevin",
+    "@Underdog"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "nHiFLxm9990",
+  "title": "2023-09-06_nHiFLxm9990_HYPERDRIVE Hackathon",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

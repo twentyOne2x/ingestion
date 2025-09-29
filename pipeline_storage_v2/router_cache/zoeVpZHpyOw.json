@@ -1,0 +1,21 @@
+{
+  "description": "Explore how to purchase gifts for loved ones using cryptocurrency on the Solana blockchain during the holiday season.",
+  "topic_summary": "Learn about buying holiday gifts with crypto on Solana [t=00:00].",
+  "router_tags": [
+    "crypto",
+    "Solana",
+    "holiday gifts",
+    "blockchain"
+  ],
+  "aliases": [
+    "Onchain Holiday",
+    "onchain holiday",
+    "OnChain Holiday"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

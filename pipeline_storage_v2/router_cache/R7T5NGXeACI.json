@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on the resurgence of ICOs, the implications of ETH issuance changes, and ongoing DeFi challenges. The hosts explore investment club dynamics and the adverse selection problem in crypto investments, emphasizing the need for smart capital allocation and community engagement.",
+  "topic_summary": "The podcast covers the return of ICOs, adjustments in ETH issuance, and the complexities of DeFi, including investment club structures and their impact on capital distribution [t=0:32-4:00].",
+  "router_tags": [
+    "ICOs",
+    "ETH",
+    "DeFi",
+    "investment clubs",
+    "crypto",
+    "community engagement"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "Delphi",
+    "delphi"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$DAI",
+    "$USDC",
+    "$SOL",
+    "@Delphi_Digital",
+    "@Jose",
+    "@Duncan",
+    "@Kobe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

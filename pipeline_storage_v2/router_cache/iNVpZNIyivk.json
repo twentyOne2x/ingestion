@@ -1,0 +1,26 @@
+{
+  "description": "In this interview, @notthreadguy speaks with Imran Chow and other creators of AllianceDAO about their experiences and insights in the crypto space. They discuss the importance of community and collaboration in building successful projects.",
+  "topic_summary": "The discussion covers the role of AllianceDAO as a crypto accelerator, emphasizing the strength of its founder community and the collaborative efforts among its members [t=88:29].",
+  "router_tags": [
+    "AllianceDAO",
+    "crypto",
+    "interview",
+    "community",
+    "accelerator"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Imran Chow",
+    "ImranChow"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

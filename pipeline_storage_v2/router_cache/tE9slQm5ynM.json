@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the bullish outlook for Pumpfun, covering its potential in the memecoin space.",
+  "topic_summary": "Exploration of the bullish thesis for Pumpfun and its relevance in the Solana ecosystem, including mentions of Token Lake and Samantha [t=27:46].",
+  "router_tags": [
+    "pumpfun",
+    "cryptonews",
+    "solana",
+    "memecoin",
+    "memecoins"
+  ],
+  "aliases": [
+    "Pumpfun",
+    "pumpFun",
+    "PUMPFUN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@TokenLake",
+    "@Samantha"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

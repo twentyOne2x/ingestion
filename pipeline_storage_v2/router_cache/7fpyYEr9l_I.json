@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of The Delphi Podcast, hosts discuss the Degen community and the significance of Layer 3 (L3) innovations in the crypto space. Special guests Yasik, Will, and Ian share insights on Degen's development, its tipping functionality, and the potential of L3s for customization and economic agency within communities. The conversation highlights the low-cost experimentation enabled by L3s and the evolution of Degen since its launch in January 2024.",
+  "topic_summary": "The podcast explores the Degen community's journey and the role of Layer 3 technologies in enhancing customization and economic models in crypto. It discusses the innovative aspects of L3s, including low gas fees and the ability for communities to design their economies.",
+  "router_tags": [
+    "Degen",
+    "Layer 3",
+    "Crypto",
+    "Podcast",
+    "Delphi Digital"
+  ],
+  "aliases": [
+    "Degen",
+    "Degen Chain",
+    "Degen Community",
+    "L3s",
+    "Layer 3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Yasik",
+    "@Will",
+    "@Ian"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

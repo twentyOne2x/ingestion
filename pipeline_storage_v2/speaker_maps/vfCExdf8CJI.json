@@ -1,0 +1,20 @@
+{
+  "video_id": "vfCExdf8CJI",
+  "title": "2025-05-23_vfCExdf8CJI_Ship or Die at Accelerate 2025: Building User-Centric Products (Simon Amor - Sling Money)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Simon Amore",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

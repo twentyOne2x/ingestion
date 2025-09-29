@@ -1,0 +1,20 @@
+{
+  "video_id": "0WQAmmJJ34c",
+  "title": "2025-01-05_0WQAmmJJ34c_Shaw: The Rise of ai16zs Eliza-Crypto  AI Agents, a $2.5B Valuation, Trending Globally on GitHub",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Mark Andreessen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Justin Wang discusses Zeus Network's approach to bridging Bitcoin and Solana, emphasizing its role as a communication layer rather than a traditional layer 2 solution. He explains how Zeus enables programmability for UTXO chains on Solana, addressing liquidity fragmentation and usability concerns.",
+  "topic_summary": "In this episode, Justin Wang explains how Zeus Network acts as a layer 1.5 solution, allowing Bitcoin and other UTXO assets to be programmable on Solana. He contrasts this with traditional sidechains and discusses the importance of sustainable yield in blockchain ecosystems [t=0:24-353:52].",
+  "router_tags": [
+    "Bitcoin",
+    "Solana",
+    "Zeus Network",
+    "Programmable Assets",
+    "Blockchain",
+    "Layer 1.5"
+  ],
+  "aliases": [
+    "Justin Wang",
+    "Zeus Network",
+    "zeus network",
+    "justin wang"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@JustinWang",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

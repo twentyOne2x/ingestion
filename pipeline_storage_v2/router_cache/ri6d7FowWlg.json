@@ -1,0 +1,22 @@
+{
+  "description": "A debate on whether the Solana Foundation should be dissolved, featuring Dan from the Solana Foundation and Victor from Rockaway X. Dan argues for dissolution, citing the foundation's unique funding model and the ecosystem's growth, while Victor defends the foundation's role and values within the community.",
+  "topic_summary": "The debate centers on the future of the Solana Foundation, discussing its funding, operational efficiency, and the evolving needs of the Solana ecosystem. Key points include the foundation's historical context, its impact on the network, and differing perspectives on its necessity moving forward. [t=8:56] [t=12:96] [t=265:19]",
+  "router_tags": [
+    "Solana",
+    "Foundation",
+    "Debate",
+    "Ecosystem",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "solana foundation",
+    "SOLANA FOUNDATION"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "The immutable ownership extension enhances token security by making ownership unchangeable. This prevents unauthorized ownership transfers, which can occur when a DAPP derives a token account from a wallet and mint. The immutable owner flag will be enabled by default for all associated token accounts, simplifying the process for users.",
+  "topic_summary": "Learn about the immutable ownership extension for tokens on Solana, which enhances security by preventing ownership reassignment. This feature will be enabled by default for associated token accounts, making token management safer [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Token Security",
+    "Immutable Ownership",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

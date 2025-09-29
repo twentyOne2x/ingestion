@@ -1,0 +1,28 @@
+{
+  "description": "Greg Exethalas, general counsel at Multicoin Capital, leads a discussion on political advocacy in the crypto space at Breakpoint 2023. He is joined by Marina, co-founder of the European Crypto Initiative, and Miller Whitehouse Levine from the DeFi Education Fund. They explore the differences in advocacy approaches between the US and EU, focusing on regulatory challenges and strategies for engaging policymakers.",
+  "topic_summary": "At Breakpoint 2023, experts discuss effective political advocacy in the crypto industry, comparing the regulatory landscapes and advocacy strategies in the US and EU. They highlight the complexities of engaging with Congress and regulatory bodies in the US versus the more predictable approach in the EU, particularly regarding the Markets in Crypto-Assets (MiCA) regulation.",
+  "router_tags": [
+    "political advocacy",
+    "crypto regulation",
+    "DeFi",
+    "EU",
+    "US",
+    "Breakpoint 2023"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "Solana Foundation",
+    "DeFi Education Fund",
+    "European Crypto Initiative"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@MillerWhitehouseLevine",
+    "@Marina"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

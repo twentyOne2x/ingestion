@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the NP-hardness of the independent set problem, detailing a reduction from the 3SAT problem. It explains the independent set problem, where the goal is to find a maximum subset of non-adjacent vertices in an undirected graph, and illustrates its implications for other NP-hard problems.",
+  "topic_summary": "The video covers the independent set problem's NP-hardness, starting with a reduction from 3SAT. It explains the problem's definition, examples, and its relation to other NP-hard problems like clique and vertex cover [t=0:64].",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Independent Set",
+    "Algorithms",
+    "3SAT",
+    "Graph Theory"
+  ],
+  "aliases": [
+    "Algorithms For NP-Hard Problems",
+    "Independent Set Is NP-Hard",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$3SAT",
+    "@CookLevin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "VHnhWXbcBEE",
+  "title": "2025-06-25_2023-10-31_VHnhWXbcBEE_Breakpoint 2023: OPOS - Sling",
+  "channel_name": null,
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "Speaker A",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    }
+  }
+}

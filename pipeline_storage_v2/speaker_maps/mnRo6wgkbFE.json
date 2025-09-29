@@ -1,0 +1,26 @@
+{
+  "video_id": "mnRo6wgkbFE",
+  "title": "2025-05-22_mnRo6wgkbFE_Solana Accelerate 2025 - Day 1 - East Coast Stage",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Congressman Richie Torres",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Richie Torres",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

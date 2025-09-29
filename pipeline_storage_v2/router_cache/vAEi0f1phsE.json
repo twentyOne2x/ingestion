@@ -1,0 +1,24 @@
+{
+  "description": "Davis Hart introduces Gameshift Beta, a Web3 gaming API by Solana Labs, emphasizing the importance of technology and metagaming in evolving the gaming experience. He discusses how blockchain can enhance asset ownership and player engagement, ultimately broadening the audience for games.",
+  "topic_summary": "In this presentation, Davis Hart outlines the launch of Gameshift Beta, focusing on how blockchain technology can transform gaming through asset ownership and metagaming, enabling new player interactions and experiences [t=3:92-304:70].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Blockchain",
+    "Solana",
+    "Gameshift"
+  ],
+  "aliases": [
+    "Gameshift",
+    "Game Shift",
+    "Davis Hart",
+    "Solana Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DavisHart"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

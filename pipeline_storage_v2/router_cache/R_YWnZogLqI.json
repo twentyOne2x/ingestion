@@ -1,0 +1,23 @@
+{
+  "description": "Tristan Frizza discusses Zeta Markets, a decentralized exchange (DEX) that aims to provide derivatives trading on-chain, akin to centralized exchanges (CEX). He shares insights on the evolution of DeFi, the challenges of implementing complex trading systems on blockchain, and the vision behind Zeta's offerings.",
+  "topic_summary": "Tristan Frizza introduces Zeta Markets and its mission to bring derivatives trading on-chain, highlighting the importance of self-custody and transparency in DeFi. He reflects on the historical context of trading technologies and the challenges faced in developing sophisticated trading platforms in the crypto space. [t=0:24 - t=3:19]",
+  "router_tags": [
+    "Zeta Markets",
+    "DeFi",
+    "Decentralized Exchange",
+    "Derivatives",
+    "Solana"
+  ],
+  "aliases": [
+    "Zeta Markets",
+    "Zeta",
+    "Tristan Frizza",
+    "Tristan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

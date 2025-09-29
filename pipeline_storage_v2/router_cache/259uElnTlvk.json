@@ -1,0 +1,22 @@
+{
+  "description": "Updates on the Solana ecosystem, including the conclusion of Grizzly Thon with over 800 project submissions and a proposal to price compute units. The discussion highlights the importance of marketing projects and the ongoing development of the validator startup process.",
+  "topic_summary": "The video discusses the recent Grizzly Thon hackathon results and a new proposal regarding pricing compute units on the Solana blockchain. It emphasizes community engagement and project visibility.",
+  "router_tags": [
+    "Solana",
+    "Grizzly Thon",
+    "Compute Units",
+    "Developer Forum"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Grizzly Thon",
+    "grizzly thon"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

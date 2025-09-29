@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the three different commitment statuses for Solana transactions: finalized, confirmed, and processed. It discusses the implications of each status and provides a real-life example of transaction processing times.",
+  "topic_summary": "Overview of Solana transaction commitment statuses: finalized [t=3:36], confirmed [t=42:55], and processed [t=17:68].",
+  "router_tags": [
+    "Solana",
+    "Transaction Commitments",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Transaction Commitments",
+    "transaction commitments",
+    "Transaction commitments"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

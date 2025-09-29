@@ -1,0 +1,20 @@
+{
+  "video_id": "9IpBpsceMKY",
+  "title": "2025-09-17_9IpBpsceMKY_Clemente: The PUMP Bear Case, Trading Mistakes, CCMs and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dave Porto",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

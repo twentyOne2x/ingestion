@@ -1,0 +1,24 @@
+{
+  "description": "R3 discusses its journey in tokenizing securities and collaborating with major financial institutions. The focus is on making institutional-grade products accessible to a broader audience through tokenization and the potential of Solana's technology in transforming the financial sector.",
+  "topic_summary": "R3's innovative approach to tokenization and its collaboration with Solana aims to revolutionize access to financial products, emphasizing scalability and security in the digital asset space. Key points include the future of digital asset control and the importance of replacing outdated technology with distributed systems on Solana [t=57:92].",
+  "router_tags": [
+    "Solana",
+    "R3",
+    "Tokenization",
+    "DeFi",
+    "TradFi",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "solana",
+    "r3",
+    "R3",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

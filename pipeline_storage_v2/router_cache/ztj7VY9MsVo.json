@@ -1,0 +1,24 @@
+{
+  "description": "Travis Good discusses Ambient, a decentralized proof of work (PoW) blockchain that aims to create a new currency based on machine intelligence. He explains how Ambient operates on a large language model and seeks to provide a unit of intelligence applicable across various sectors, reflecting the growing role of AI in the economy.",
+  "topic_summary": "In this episode, Travis Good elaborates on Ambient's vision to redefine currency in an AI-driven economy, contrasting it with Bitcoin's evolution. He emphasizes the importance of creating a currency that represents machine intelligence and its implications for the future.",
+  "router_tags": [
+    "Ambient",
+    "Machine Intelligence",
+    "Decentralized",
+    "Blockchain",
+    "Cryptocurrency",
+    "AI"
+  ],
+  "aliases": [
+    "ambient",
+    "Travis Good",
+    "Travis",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

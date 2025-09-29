@@ -1,0 +1,26 @@
+{
+  "description": "This lecture discusses the implications of selfish mining in blockchain systems, focusing on deviations from honest behavior and their impact on Nakamoto consensus. It explores various strategies that nodes may employ to maximize block rewards, even when not holding a majority hash rate.",
+  "topic_summary": "The lecture covers the analysis of selfish mining strategies, demonstrating that nodes can have incentives to deviate from honest behavior in Nakamoto consensus, particularly when they control a significant portion of the hash rate. It also discusses the lack of evidence for such strategies in practice, particularly in Bitcoin.",
+  "router_tags": [
+    "blockchain",
+    "selfish mining",
+    "Nakamoto consensus",
+    "game theory",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 10",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@Eyal",
+    "@SarirNakamoto",
+    "@Tesla"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

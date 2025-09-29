@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing asymmetric information in markets, focusing on adverse selection and the market for lemons, a concept introduced by George Akerlof.",
+  "topic_summary": "The lecture covers the implications of asymmetric information in markets, particularly how it leads to adverse selection. It uses the market for used cars as a primary example, explaining how sellers have more information than buyers, which can result in market failure. The discussion includes scenarios of symmetric and asymmetric information, and the equilibrium outcomes for good and bad cars in the market. [t=0:64] to [t=415:81]",
+  "router_tags": [
+    "asymmetric information",
+    "adverse selection",
+    "market for lemons",
+    "George Akerlof",
+    "economics"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Lecture 3.1",
+    "Market for Lemons"
+  ],
+  "canonical_entities": [
+    "$Akerlof",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

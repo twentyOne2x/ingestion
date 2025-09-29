@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, hosts Barrett Williams and Edgar Pavlovsky discuss their journey in the Solana ecosystem, touching on their backgrounds in finance and programming, and how they transitioned into the tech space. They share insights on their experiences in college, their passion for quantitative finance, and their development of trading models.",
+  "topic_summary": "Barrett and Edgar explore their paths from finance to tech, discussing their college experiences, programming skills, and the evolution of their interests in quantitative finance [t=0:72-0:270].",
+  "router_tags": [
+    "Solana",
+    "quantitative finance",
+    "programming",
+    "blockchain",
+    "tech development"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Chewing glass"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BarrettWilliams",
+    "@EdgarPavlovsky"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

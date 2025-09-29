@@ -1,0 +1,24 @@
+{
+  "description": "The video discusses the scalability of the Helium network and how Solana is uniquely positioned to support it. It emphasizes the need for intuitive, fast, and simple user experiences, highlighting Solana's speed and low fees that make it comparable to Web2 products. The discussion also touches on the advantages of blockchain in providing freedom and accessibility, and the specific benefits of Solana's composability and performance for BCAF.",
+  "topic_summary": "Exploration of Solana's capabilities in supporting scalable blockchain solutions for the Helium network, focusing on user experience and operational efficiency [t=0:24-41:82].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Helium",
+    "Scalability",
+    "Web2"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "SOLANA",
+    "@solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on Bitcoin's all-time highs, macroeconomic factors, and the impact of fiscal policy on crypto markets.",
+  "topic_summary": "The podcast explores the reasons behind Bitcoin's surge to all-time highs, focusing on macroeconomic conditions, fiscal deficits, and changing capital flows due to tariffs. The conversation highlights the shift in institutional investment strategies towards Bitcoin and gold as hedges against market risks [t=34:54].",
+  "router_tags": [
+    "Bitcoin",
+    "macro",
+    "crypto",
+    "fiscal policy",
+    "investing"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "@NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "$SOL",
+    "$ETH",
+    "$NVDA",
+    "@realDonaldTrump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the development of AI Vibe coding platform on Solana, highlighting its features and community engagement. The speakers emphasize the importance of user-friendly applications and the challenges of integrating complex features while maintaining a fun experience for users. They also touch on the market dynamics and the need for effective communication between developers and users.",
+  "topic_summary": "Exploration of the AI Vibe coding platform on Solana, its applications, and the community's role in development. Key points include the balance between complexity and user engagement, and the market's influence on development strategies. [t=2:56] [t=369:45]",
+  "router_tags": [
+    "AI",
+    "Solana",
+    "Coding",
+    "Development",
+    "Community"
+  ],
+  "aliases": [
+    "Dev.Fun",
+    "Dev.fun",
+    "dev.fun"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

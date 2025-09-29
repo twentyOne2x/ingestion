@@ -1,0 +1,25 @@
+{
+  "description": "A debate featuring Tiff Huang, Luca Schnetzler, and Frank DeGods discussing the future of NFTs. Tiff introduces herself and mentions her work with ME Foundation and the upcoming token launch. Luca argues that NFTs are not dead but highlights the decline in trading volume and the lack of new use cases. Frank discusses the evolution of NFTs and the importance of community.",
+  "topic_summary": "The panel debates the current state and future of NFTs, addressing trading volume declines, the impact of optional royalties, and the need for new use cases beyond profile pictures. They explore the evolution of NFTs and the significance of community in the NFT space [t=49:63].",
+  "router_tags": [
+    "NFTs",
+    "Debate",
+    "Solana",
+    "Crypto",
+    "Community"
+  ],
+  "aliases": [
+    "Tiff Huang",
+    "Luca Schnetzler",
+    "Frank DeGods",
+    "NFT Debate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Lukanetz",
+    "@FrankDeGods"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

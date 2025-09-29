@@ -1,0 +1,22 @@
+{
+  "description": "The video documents a person's experience meeting Donald Trump after purchasing a $25,000 ticket for an exclusive VIP gala dinner. The narrator discusses their expectations and preparations for the encounter, including the potential to ask Trump a significant question, with $200,000 on the line. The narrative includes insights into the Polymarket prediction market related to the interview.",
+  "topic_summary": "Meeting Donald Trump for $25,000 at a VIP gala dinner, expectations for the encounter, and insights into Polymarket predictions.",
+  "router_tags": [
+    "Donald Trump",
+    "VIP gala",
+    "Polymarket",
+    "NFT",
+    "interview"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "$TRUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

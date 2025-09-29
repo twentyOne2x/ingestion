@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the design and functionality of the Backpack Exchange trading system, emphasizing its decentralized nature and risk management strategies.",
+  "topic_summary": "Exploration of compliance and innovation in crypto, focusing on the use of cryptography to enhance market integrity and regulatory transparency. Highlights include the importance of verifiability and the role of technology in mitigating risks [t=0:40 - t=4:04].",
+  "router_tags": [
+    "Solana",
+    "Backpack",
+    "Crypto",
+    "Trading",
+    "Compliance",
+    "Innovation"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RichieTorres"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

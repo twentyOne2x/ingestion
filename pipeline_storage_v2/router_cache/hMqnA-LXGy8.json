@@ -1,0 +1,26 @@
+{
+  "description": "EllioTrades discusses the launch of Black Hole DEX, addressing liquidity issues in crypto and the need for a reliable launch strategy for quality projects. He emphasizes community involvement and the unique tokenomics model that prioritizes community over founders.",
+  "topic_summary": "In this video, EllioTrades explains the concept behind Black Hole DEX, a decentralized exchange aimed at solving liquidity fragmentation in the crypto market. He outlines the project's vision, the innovative token model, and the commitment to community-driven growth [t=0:24].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Decentralized Exchange",
+    "Liquidity",
+    "Tokenomics"
+  ],
+  "aliases": [
+    "EllioTrades",
+    "elliottrades",
+    "Ellio Trades"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "$AVAX",
+    "@notthreadguy",
+    "@Becker"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

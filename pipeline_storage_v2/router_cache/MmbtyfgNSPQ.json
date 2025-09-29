@@ -1,0 +1,24 @@
+{
+  "description": "Builders present DePIN (Decentralized Physical Infrastructure Network) to U.S. policymakers, emphasizing its social and economic benefits, particularly in competing against big tech and creating jobs. The discussion highlights the importance of education in shaping policy and counters negative perceptions of crypto. Examples include how Geodnet aids small farmers and the role of blockchain in providing reliable infrastructure.",
+  "topic_summary": "At Capitol Hill, builders discuss DePIN's potential to enhance community resilience and job creation, while educating policymakers on the positive impacts of decentralized infrastructure [t=35:42].",
+  "router_tags": [
+    "DePIN",
+    "Solana",
+    "blockchain",
+    "infrastructure",
+    "policy",
+    "crypto"
+  ],
+  "aliases": [
+    "Depin",
+    "DePin",
+    "depin",
+    "dePin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

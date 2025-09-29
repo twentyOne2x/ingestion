@@ -1,0 +1,30 @@
+{
+  "description": "Nick and Jonas discuss the Renaissance Hackathon, which started on March 4 and runs for about 30 days. They highlight the involvement of Coliseum in managing the hackathon and the opportunity for winners to join the Colosseum accelerator program. They also cover updates on platform tools, including a shift to Agave and improvements in account data handling. The conversation touches on the new company Anza, formed by core protocol engineers, and its impact on the Solana ecosystem.",
+  "topic_summary": "Discussion on the Renaissance Hackathon, updates on Solana platform tools, and the formation of Anza by core protocol engineers.",
+  "router_tags": [
+    "Solana",
+    "Hackathon",
+    "Anza",
+    "Agave",
+    "Coliseum",
+    "Developer Relations"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Anza",
+    "Agave",
+    "Coliseum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@WillHickey",
+    "@Tierra",
+    "@Trent",
+    "@Yihao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

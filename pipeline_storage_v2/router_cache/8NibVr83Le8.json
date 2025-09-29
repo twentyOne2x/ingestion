@@ -1,0 +1,29 @@
+{
+  "description": "In this episode of The Solana Podcast, host Matt Staats introduces a panel discussing the future of NFTs and their scalability. The conversation highlights the impact of Solana's unique blockchain technology on mass adoption and the challenges faced by creators in the NFT space. Panelists include Dayo Adeoshan, Larissa Barbu, and Vic Huynh, who share insights on market conditions and the potential for growth in digital assets.",
+  "topic_summary": "The panel discusses the scalability of NFTs on Solana, the challenges faced by creators, and the potential for mass adoption in the NFT market. Key points include the advantages of Solana's blockchain technology and the importance of a liquid market for creators [t=9:04-340:87].",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "blockchain",
+    "mass adoption",
+    "digital assets"
+  ],
+  "aliases": [
+    "NFTs For All",
+    "NFTs for all",
+    "The Solana Podcast",
+    "the solana podcast"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$30",
+    "$1000",
+    "$20",
+    "$10",
+    "$30,000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

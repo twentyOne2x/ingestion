@@ -1,0 +1,21 @@
+{
+  "description": "Nick from the Solana Foundation discusses the latest updates including wallet delegation for secure proof of ownership, improvements in the Solana Monorepo for Windows stability, and the open-sourcing of developer resources on Solana.com.",
+  "topic_summary": "Updates on wallet delegation standard [t=8:52], Windows development stability [t=118:26], and open-source developer resources [t=209:37].",
+  "router_tags": [
+    "Solana",
+    "Wallet Delegation",
+    "Developer Resources",
+    "Anchor Updates"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

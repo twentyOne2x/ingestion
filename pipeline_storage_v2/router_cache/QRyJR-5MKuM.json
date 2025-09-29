@@ -1,0 +1,25 @@
+{
+  "description": "Lecture 9.2 discusses the extension of longest chain consensus using proof-of-work civil resistance in permissionless settings. It reviews key concepts from the previous lecture and outlines the differences in leader selection and block proposal processes in this context.",
+  "topic_summary": "The lecture covers the transition from permissioned to permissionless blockchain consensus, focusing on proof-of-work civil resistance and its implications for leader selection and block proposals. Key differences from previous models are highlighted, including the event-driven nature of rounds and the limitations on block proposals.",
+  "router_tags": [
+    "blockchain",
+    "proof-of-work",
+    "longest chain consensus",
+    "permissionless",
+    "Cynthia Dwork",
+    "Nakamoto"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 9.2",
+    "Proof-of-Work"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@CynthiaDwork"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

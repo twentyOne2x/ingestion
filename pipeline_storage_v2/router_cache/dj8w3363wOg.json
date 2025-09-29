@@ -1,0 +1,28 @@
+{
+  "description": "Panel discussion featuring Matt Abbott, Marc Sedam, and Paul Kohlhaas on the role of university research in driving innovation, particularly in decentralized science and commercialization of research.",
+  "topic_summary": "The panel discusses the importance of science in society and crypto, the commercialization of research at universities, and the impact of funding cuts on scientific progress. They highlight the collaboration between institutions like Newcastle University and the role of decentralized science in funding research projects [t=233.93].",
+  "router_tags": [
+    "decentralized science",
+    "university research",
+    "innovation",
+    "commercialization",
+    "funding"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "University Research Driving Innovation",
+    "Matt Abbott",
+    "Marc Sedam",
+    "Paul Kohlhaas"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$1.5 Billion",
+    "@NYU",
+    "@Newcastle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

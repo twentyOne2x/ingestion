@@ -1,0 +1,29 @@
+{
+  "description": "Lecture 14 discusses the price of anarchy in simple auctions, emphasizing the importance of simplicity in auction design and exploring the implications of using second-price auctions. The lecture also covers the concept of submodular valuations and the challenges in achieving good mechanisms without complex incentive structures.",
+  "topic_summary": "This lecture focuses on the price of anarchy in simple auctions, highlighting the need for simplicity in auction mechanisms and the exploration of pure Nash equilibria. It introduces the concept of submodular valuations and discusses the modeling of auctions as simultaneous second-price auctions [t=265.76].",
+  "router_tags": [
+    "Mechanism Design",
+    "Auctions",
+    "Price of Anarchy",
+    "Nash Equilibria",
+    "Submodular Valuations"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Price of Anarchy in Auctions",
+    "Simple Auctions Lecture"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$BayesNash",
+    "$KelsoCrawford",
+    "$Cristutalou",
+    "$Kovacs",
+    "$Shapiro",
+    "$BitterEye",
+    "$Bidori",
+    "$Vijay"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Jason Pagaladis from Delphi discusses the challenges faced by the crypto markets in 2022, including the FTX and Alameda collapse, and the broader macroeconomic issues affecting the industry.",
+  "topic_summary": "The video covers the impact of various financial crises on crypto markets, the sentiment shift post-FTX collapse, and the potential for a prolonged bear market influenced by macroeconomic factors [t=0:16-375:61].",
+  "router_tags": [
+    "Crypto Markets",
+    "FTX Collapse",
+    "Macroeconomics",
+    "Bear Market",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@JasonPagaladis",
+    "@Delphi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

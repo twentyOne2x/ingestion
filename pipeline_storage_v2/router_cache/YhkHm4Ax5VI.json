@@ -1,0 +1,31 @@
+{
+  "description": "Panel discussion featuring leaders in Solana DeFi discussing the challenges and opportunities for institutional adoption, liquidity, and market depth.",
+  "topic_summary": "The panel addresses the current state of Solana DeFi, focusing on institutional readiness, liquidity challenges, and the need for improved compliance and analytics. Key insights include the importance of efficient protocols and the potential for Solana to leverage its speed and architecture to attract larger players in the market. [t=0:48] [t=225:35]",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Institutional",
+    "Liquidity",
+    "Crypto"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Institutional DeFi",
+    "Solana Defi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Eugene",
+    "@Eduardo",
+    "@Nathan",
+    "@Mac",
+    "@Orca",
+    "@Ellipsis",
+    "@Galaxy",
+    "@Temporal",
+    "@Kamino"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

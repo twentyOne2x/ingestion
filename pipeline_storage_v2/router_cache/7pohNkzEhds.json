@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion featuring Banana Jason Shore and Cassin Trenor discussing the Voices of Kibera project, its impact on artists in Nairobi, and the potential of blockchain in philanthropy.",
+  "topic_summary": "The panel explores the Voices of Kibera initiative, highlighting its origins, successes, and the transformative role of blockchain in supporting underserved communities [t=62:86].",
+  "router_tags": [
+    "Voices of Kibera",
+    "blockchain",
+    "philanthropy",
+    "art",
+    "Nairobi",
+    "Solana"
+  ],
+  "aliases": [
+    "Voices of Kibera",
+    "voices of kibera",
+    "Kibera Voices",
+    "kibera voices"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@CassinTrenor",
+    "@HumanNeedsProject"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

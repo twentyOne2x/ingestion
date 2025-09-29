@@ -1,0 +1,22 @@
+{
+  "description": "Dirt Digola discusses the Future DAO's on-chain token migrator, designed to help projects recover from rug pulls by allowing users to exchange their community tokens for new ones.",
+  "topic_summary": "Dirt Digola introduces Future DAO's protocol aimed at mitigating the impact of rug pulls in the crypto space by facilitating token migration [t=7:36].",
+  "router_tags": [
+    "Future DAO",
+    "token migration",
+    "rug pulls",
+    "crypto recovery"
+  ],
+  "aliases": [
+    "Future Dao",
+    "future dao",
+    "Dirt Digola",
+    "dirt digola"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$FUTURE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

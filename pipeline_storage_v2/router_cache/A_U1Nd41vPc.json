@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses minting compressed NFTs on Solana, demonstrating the process from setting up a wallet to creating a tree for storing NFTs. He explains the importance of parameters like max depth and canopy depth in determining the tree size and associated costs. The video covers the use of SDKs for account compression and the creation of NFT collections.",
+  "topic_summary": "In this video, Nick explains how to mint compressed NFTs on Solana, including wallet setup, tree creation, and the use of SDKs for managing NFT collections. Key concepts such as tree size parameters and their implications on costs are discussed throughout the tutorial.",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Compressed NFTs",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "solana bytes",
+    "Solana Bytes",
+    "SolanaFndn",
+    "solana foundation devrel team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

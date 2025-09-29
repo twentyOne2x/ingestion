@@ -1,0 +1,28 @@
+{
+  "description": "Caitlin Cook discusses the launch of Moonwalk Fitness, a fitness accountability app designed to help users build healthy habits through social and financial incentives. The app incorporates competitions where users can win prizes by meeting daily step goals, utilizing cryptocurrencies like Solana, USDC, and Bonk. The upcoming iOS and Android apps will enhance user experience with familiar login and payment methods, aiming to attract a broader audience.",
+  "topic_summary": "In this keynote, Caitlin Cook introduces Moonwalk Fitness, highlighting its role in promoting health through accountability and gamification. The app's unique features, including competitions and financial incentives, aim to engage users effectively. The launch of user-friendly mobile apps is set to broaden its appeal beyond crypto enthusiasts [t=144:06].",
+  "router_tags": [
+    "fitness",
+    "health",
+    "Moonwalk",
+    "crypto",
+    "app launch",
+    "Caitlin Cook"
+  ],
+  "aliases": [
+    "Moonwalk Fitness",
+    "moonwalk fitness",
+    "MOONWALK",
+    "Caitlin Cook",
+    "caitlin cook"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$USDC",
+    "$BONK",
+    "@SolanaFndn",
+    "@CaitlinCook"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

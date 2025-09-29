@@ -1,0 +1,25 @@
+{
+  "description": "Dan Reaser and Robinson Burkey, co-founders of the Wormhole Foundation, discuss the history and future of Wormhole, including the launch of new protocols and enhancements to existing products. They highlight the evolution from connecting Solana to Ethereum, the introduction of general message passing, and the upcoming Era 3 focused on user experience. Key features include native swaps, upgrades to Portal, and the launch of Wormhole Institutional.",
+  "topic_summary": "Overview of Wormhole's development from 2020 to the upcoming Era 3, emphasizing product launches and user-focused enhancements [t=9:84-293:84].",
+  "router_tags": [
+    "Wormhole",
+    "Solana",
+    "Ethereum",
+    "cross-chain",
+    "blockchain",
+    "protocol"
+  ],
+  "aliases": [
+    "wormhole",
+    "Wormhole",
+    "WORMHOLE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Robinson",
+    "@DanReaser"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

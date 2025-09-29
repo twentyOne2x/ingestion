@@ -1,0 +1,28 @@
+{
+  "description": "John Egan and Sheraz Shere discuss the practical realities of scaling stablecoins, highlighting product market fit and the challenges of implementing use cases at scale. They introduce Stripe's stablecoin financial accounts, which allow businesses in 101 new countries to store dollar-denominated stablecoins and access US and European financial rails. They also cover a stablecoin-backed card issuance solution developed in partnership with Visa and Bridge, aimed at enabling global spending capabilities for businesses.",
+  "topic_summary": "The conversation focuses on the evolution and challenges of stablecoins in the financial ecosystem, particularly addressing the last mile issues in crypto and payments. Key innovations from Stripe, including stablecoin financial accounts and card issuance, are presented as solutions to enhance interoperability and global access.",
+  "router_tags": [
+    "Stablecoins",
+    "Stripe",
+    "Payments",
+    "Fintech",
+    "Crypto",
+    "Financial Innovation"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Stablecoin Financial Accounts",
+    "Stripe Solutions",
+    "Visa Partnership"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$USDC",
+    "@Stripe",
+    "@Visa",
+    "@Bridge",
+    "@Ramp"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "QL_yJWI-kNI",
+  "title": "2024-06-05_QL_yJWI-kNI_Firedancer w- Kevin Bowers",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kevin Bowers",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion about Solana's initiatives and community engagement in Melbourne.",
+  "topic_summary": "Overview of the Solana Hacker House event in Melbourne, highlighting community involvement and development opportunities [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Melbourne",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

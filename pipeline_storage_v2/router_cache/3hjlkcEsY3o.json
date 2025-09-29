@@ -1,0 +1,24 @@
+{
+  "description": "On Valentine's Day, the host discusses losing $250,000 in a crypto investment linked to a meme coin launched by the President of the Central African Republic. The coin initially surged to a billion dollars but turned out to be a scam, resulting in significant losses for investors. The host shares insights on the recent launch of a project by Argentina's President Javier Milei aimed at boosting the economy, which raised red flags due to its reliance on a Google form for funding applications.",
+  "topic_summary": "The video covers a significant loss in crypto investments due to a meme coin scam and discusses a new economic initiative by Argentina's President Javier Milei, highlighting concerns over its legitimacy [t=0:96].",
+  "router_tags": [
+    "crypto",
+    "Argentina",
+    "meme coin",
+    "investment loss",
+    "Javier Milei"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@JavierMilei",
+    "@CentralAfricanRepublic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

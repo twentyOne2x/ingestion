@@ -1,0 +1,20 @@
+{
+  "video_id": "6AHw-0SLmXo",
+  "title": "2024-03-07_6AHw-0SLmXo_ep 4: Julian Holguin - Bringing Characters to Life",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Iron Man",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

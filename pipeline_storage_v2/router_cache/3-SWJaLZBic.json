@@ -1,0 +1,24 @@
+{
+  "description": "Anatoly Yakovenko, co-founder of Solana Labs, shares his journey into crypto and the inspiration behind Solana's blockchain technology. He discusses a pivotal moment at Cafe Soleil with co-founder Stephen, where he conceptualized a faster blockchain using time division multiple access (TDMA) principles. Yakovenko emphasizes the importance of transparency and open-source data in creating a fair market environment, highlighting how these factors reduce business risk and enable founders to achieve product-market fit.",
+  "topic_summary": "Anatoly Yakovenko recounts his entry into crypto and the development of Solana's blockchain, focusing on the innovative use of TDMA for improved speed and efficiency in transactions. He reflects on the challenges of balancing family life and entrepreneurship, and the significance of transparency in fostering business growth [t=0:96-131:46].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Entrepreneurship",
+    "Innovation"
+  ],
+  "aliases": [
+    "Anatoly Yakovenko",
+    "anatoly",
+    "Anatoly",
+    "SOL",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

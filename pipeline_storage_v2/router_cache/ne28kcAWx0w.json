@@ -1,0 +1,23 @@
+{
+  "description": "Kathleen Breitman discusses the evolution of the cryptocurrency industry since the inception of Tezos in 2017, highlighting trends, challenges, and the future of tokenization, particularly in real-world assets.",
+  "topic_summary": "Breitman reflects on the cryptocurrency industry's maturity since 2017, addressing misconceptions about data commodification, Dapps, and private blockchains. She emphasizes the potential of tokenizing real-world assets and the importance of regulatory clarity for secondary markets [t=326.24].",
+  "router_tags": [
+    "Tezos",
+    "Cryptocurrency",
+    "Blockchain",
+    "Tokenization",
+    "Real World Assets"
+  ],
+  "aliases": [
+    "Kathleen Breitman",
+    "Kathleen Brightman",
+    "kathleen_breitman",
+    "kathleen_brightman"
+  ],
+  "canonical_entities": [
+    "$TEZ",
+    "@KathleenBreitman"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Sam Kazemian discusses his journey in crypto since 2013, the evolution of stablecoins, and the impact of recent regulations on the industry. He highlights the importance of compliance for stablecoins like FRAX and shares insights on the failures of projects like Terra [t=0:64-214:8].",
+  "topic_summary": "The podcast covers the history of stablecoins, regulatory changes affecting the crypto landscape, and the significance of compliance in ensuring the stability and trustworthiness of digital currencies [t=0:64-214:8].",
+  "router_tags": [
+    "Stablecoins",
+    "Crypto Regulation",
+    "DeFi",
+    "Frax",
+    "Terra",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Sam Kazemian",
+    "sam kazemian",
+    "Kazemian"
+  ],
+  "canonical_entities": [
+    "$FRAX",
+    "$USDC",
+    "$USDT",
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@Hagerty",
+    "@Loomis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

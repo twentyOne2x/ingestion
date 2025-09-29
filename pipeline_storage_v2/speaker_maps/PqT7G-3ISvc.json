@@ -1,0 +1,20 @@
+{
+  "video_id": "PqT7G-3ISvc",
+  "title": "2023-11-02_PqT7G-3ISvc_Breakpoint 2023: ExplorerKit: The Future Standard of Parsing",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Steve Lushua",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "oZ0VtPqxixw",
+  "title": "2024-06-25_oZ0VtPqxixw_The War Between Centralized (OpenAI, Gemini, Anthropic) and Crypto x AI's Open Source Movement",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nassim Taleb",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

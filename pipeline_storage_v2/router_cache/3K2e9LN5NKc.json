@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the advantages of token extensions on the Solana blockchain, focusing on their role in facilitating payments, accounts payable, and cross-border transactions. It highlights how token extensions integrate metadata directly into transactions, enhancing payment attribution and operational efficiency for businesses.",
+  "topic_summary": "Exploration of token extensions on Solana and their impact on finance and business use cases, including payments attribution and cross-border settlements [t=37:33].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Blockchain",
+    "Finance",
+    "DeFi"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

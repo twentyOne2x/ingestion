@@ -1,0 +1,23 @@
+{
+  "description": "Chris Wong discusses the IDL Guesser tool designed to help Solana program developers identify IDLs from closed-source programs. He highlights the challenges faced when IDLs are not published, emphasizing the importance of IDLs for integration and security analysis. The tool leverages the Anchor framework to accurately guess IDLs, providing insights into its functionality and effectiveness [t=2:88-385:93].",
+  "topic_summary": "The presentation covers the significance of IDLs in Solana program development, the limitations of current practices, and introduces the IDL Guesser tool as a solution for identifying IDLs with high accuracy, particularly for programs written in Anchor [t=2:88-385:93].",
+  "router_tags": [
+    "Solana",
+    "IDL",
+    "Anchor",
+    "Security",
+    "Development"
+  ],
+  "aliases": [
+    "Chris Wong",
+    "Chris",
+    "SOL",
+    "Judge"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

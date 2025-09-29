@@ -1,0 +1,23 @@
+{
+  "description": "John from Solana Labs discusses the new token program, Token 2022, its functionalities, and the rationale behind its development. He addresses common questions and concerns regarding its adoption and safety.",
+  "topic_summary": "Overview of Token 2022, its enhancements over SPL token, and its deployment status. Discussion includes audience questions and technical details about token functionalities and safety [t=3:20].",
+  "router_tags": [
+    "Token 2022",
+    "SPL Token",
+    "Solana",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "token 2022",
+    "Token 2022",
+    "Token2022",
+    "token2022"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

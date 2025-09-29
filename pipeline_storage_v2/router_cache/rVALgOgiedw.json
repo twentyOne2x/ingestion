@@ -1,0 +1,24 @@
+{
+  "description": "This week's Changelog covers the recent upgrade to Solana 1.16, highlighting new features such as confidential transfers and the introduction of Solana Requests for Comments (SRFCs). The discussion includes insights on upcoming feature activations and the importance of community involvement in proposing standards.",
+  "topic_summary": "The video discusses the Solana 1.16 upgrade, focusing on confidential transfers, SRFCs, and future feature activations. It emphasizes community engagement in developing standards and improving the Solana ecosystem.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Feature Activations",
+    "Confidential Transfers",
+    "SRFCs"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Joe",
+    "@Jacob"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

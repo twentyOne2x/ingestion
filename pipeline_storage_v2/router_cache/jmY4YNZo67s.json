@@ -1,0 +1,35 @@
+{
+  "description": "In this episode of the Delphi Podcast, John from Delphi Ventures hosts Josh, co-founder of Astria, discussing the evolution of shared sequencer networks and the significance of data availability layers in blockchain technology. They explore Josh's journey from software engineering at Google to his involvement in crypto, emphasizing the role of decentralized systems and the challenges of scalability in blockchain.",
+  "topic_summary": "John and Josh discuss the importance of data availability layers and shared sequencer networks in blockchain, highlighting the evolution from centralized sequencers to decentralized solutions. They delve into the technical aspects of scaling blockchains and the implications for rollups and data sampling.",
+  "router_tags": [
+    "Decentralization",
+    "Blockchain",
+    "Data Availability",
+    "Shared Sequencer",
+    "Astria",
+    "Crypto"
+  ],
+  "aliases": [
+    "Decentralization Unleashed",
+    "Astria Approach",
+    "Delphi Podcast",
+    "Shared Sequencer Network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Josh",
+    "@Mustafa",
+    "@John_Adler",
+    "@Justin_Drake",
+    "@Celestia",
+    "@Polkadot",
+    "@Cosmos",
+    "@Google",
+    "@Apple",
+    "@Uniswap",
+    "@Arbitrum"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

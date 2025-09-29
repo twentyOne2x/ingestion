@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the concept of data availability, emphasizing its role in ensuring data retrievability and archival integrity.",
+  "topic_summary": "Exploration of data availability as a niche problem, focusing on its importance in data retrievability and archival processes [t=4:72-26:40].",
+  "router_tags": [
+    "data availability",
+    "blockchain",
+    "Solana"
+  ],
+  "aliases": [
+    "Data Availability",
+    "data availability",
+    "DATA AVAILABILITY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

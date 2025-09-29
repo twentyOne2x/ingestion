@@ -1,0 +1,26 @@
+{
+  "video_id": "qSJiGyvO3PU",
+  "title": "2025-02-07_qSJiGyvO3PU_Daryl Xu: Building B3, The Next Evolution in Crypto Gaming Infrastructure",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Larry Fink",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Sammy Kim",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "qPOr5-v10fs",
+  "title": "2024-06-26_qPOr5-v10fs_Solana Changelog Jun 26 - ZK Elgamal program, better feature gate testing locally, and more",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "John, Jimmy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "-ocbMjGxAEA",
+  "title": "2024-08-20_-ocbMjGxAEA_Turning BTC into a Programmable Asset on Solana w- Justin Wang (Zeus Network)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Anatolia Raj",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "video_id": "CG0DfRe8zok",
+  "title": "2024-04-18_CG0DfRe8zok_Delphi's Hivemind: This Time is Different Dispersion in Alts and New Halving Narratives",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Jamie Dimon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Luke Martin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Franklin Templeton",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

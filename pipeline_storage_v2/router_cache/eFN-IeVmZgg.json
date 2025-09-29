@@ -1,0 +1,22 @@
+{
+  "description": "The speaker discusses the evolution of the gaming industry, highlighting its growth to a projected $200 billion market. They share personal experiences from their career, including roles at Sega and Xbox, and emphasize the importance of online gaming and new business models.",
+  "topic_summary": "Exploration of the gaming industry's transformation into a global powerhouse, focusing on technological advancements and market growth [t=0:00].",
+  "router_tags": [
+    "Gaming",
+    "Web3",
+    "Blockchain",
+    "Technology",
+    "Business Models"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Show Me the Money",
+    "Gaming Industry Evolution"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

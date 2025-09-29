@@ -1,0 +1,24 @@
+{
+  "description": "This week's Changelog discusses the shutdown of Cardinal Labs and its impact on developers, the adoption of token 2022 by Jupiter, a tooling round on Qubic for Solana projects, and updates on SPL token issues outlined in SRC 14.",
+  "topic_summary": "Key updates include the closure of Cardinal Labs [t=7:20], Jupiter's support for token 2022 [t=90:98], a funding initiative for Solana tools on Qubic [t=143:57], and discussions on SPL token improvements in SRC 14 [t=238:07].",
+  "router_tags": [
+    "Solana",
+    "Cardinal Labs",
+    "Jupiter",
+    "token 2022",
+    "Qubic",
+    "SPL token",
+    "SRC 14"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

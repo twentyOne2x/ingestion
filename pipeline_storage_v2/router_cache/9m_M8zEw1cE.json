@@ -1,0 +1,23 @@
+{
+  "description": "Core Community Call discussing light clients for Solana, featuring Anoush from the Tiny Dance team. The session covers the motivation for implementing light clients, transaction proof verification, and various methods to enhance blockchain security. Key points include the need for users to verify RPC queries and the importance of low hardware requirements for light clients. The discussion also explores different implementation strategies and their implications for the Solana network.",
+  "topic_summary": "Discussion on implementing light clients for Solana, focusing on transaction proof verification and methods to enhance security and usability for users. Key challenges and solutions are presented, including the need for low hardware requirements and verification of transaction statuses.",
+  "router_tags": [
+    "Solana",
+    "Light Clients",
+    "Blockchain Security",
+    "Transaction Proof",
+    "Community Call"
+  ],
+  "aliases": [
+    "Core Community Call",
+    "Solana Community Call",
+    "Tiny Dance Team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Anoush"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

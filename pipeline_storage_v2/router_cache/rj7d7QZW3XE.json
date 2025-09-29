@@ -1,0 +1,22 @@
+{
+  "description": "The speaker discusses their journey as a creator transitioning from Web2 to Web3, highlighting the challenges faced on platforms like Instagram, including monetization issues and censorship. They emphasize the importance of decentralization and content ownership in the creator economy.",
+  "topic_summary": "Exploration of the creator economy in Web3 versus Web2, focusing on personal experiences with social media, monetization challenges, and the potential of blockchain technology to empower creators [t=3:68-307:69].",
+  "router_tags": [
+    "Web3",
+    "Creator Economy",
+    "Social Media",
+    "Monetization",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Creator Economy in Web3",
+    "Creator Economy in Web2"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

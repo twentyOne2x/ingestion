@@ -1,0 +1,23 @@
+{
+  "description": "This workshop covers Solana Pay, its use cases beyond payments, and how to interact with the Seven Seas game using transaction requests. Participants will learn to create a QR code that connects to a local development server, facilitating transactions in the game. The session emphasizes Solana's low fees, fast settlement, and high throughput, making it suitable for enterprise-grade payment infrastructures.",
+  "topic_summary": "Explore Solana Pay's capabilities, including its role in facilitating commerce on-chain, composability for dynamic checkout experiences, and various use cases such as NFTs and loyalty programs. The workshop includes practical demonstrations of transaction requests and their applications.",
+  "router_tags": [
+    "Solana",
+    "Solana Pay",
+    "Blockchain",
+    "Payments",
+    "NFTs",
+    "E-commerce"
+  ],
+  "aliases": [
+    "solana pay",
+    "Solana Pay",
+    "SOLANA PAY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

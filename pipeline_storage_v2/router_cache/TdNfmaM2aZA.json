@@ -1,0 +1,22 @@
+{
+  "description": "Dante Disparte discusses the evolution and potential of stablecoins as a transformative financial tool, addressing regulatory challenges and adoption hurdles in the U.S. and globally.",
+  "topic_summary": "The episode explores the development of stablecoins over the past five years, their role in payments, and the regulatory landscape impacting their adoption. Key points include the current state of stablecoin legislation and the integration of stablecoins with major payment systems [t=90.47].",
+  "router_tags": [
+    "stablecoins",
+    "cryptocurrency",
+    "financial inclusion",
+    "regulation",
+    "payments"
+  ],
+  "aliases": [
+    "Dante Disparte",
+    "dante disparte",
+    "DANTE DISPARTE"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

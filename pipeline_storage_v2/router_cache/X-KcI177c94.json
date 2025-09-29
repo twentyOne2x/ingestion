@@ -1,0 +1,23 @@
+{
+  "description": "The speaker expresses a strong desire to distance themselves from Andrew Tate, despite acknowledging that an interview with him significantly boosted their career. They reflect on the negative impact the experience had on their mental state, describing feelings of depression and a lack of motivation for content creation following the interview.",
+  "topic_summary": "The speaker discusses their complicated feelings towards Andrew Tate, recognizing his influence and intelligence while also sharing the emotional toll of their interaction with him [t=0:40 - t=97:25].",
+  "router_tags": [
+    "Andrew Tate",
+    "Mental Health",
+    "Content Creation",
+    "Influence",
+    "Career Growth"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Andrew Tate",
+    "Tate"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "@AndrewTate"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

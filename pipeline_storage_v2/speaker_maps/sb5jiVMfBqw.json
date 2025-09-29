@@ -1,0 +1,26 @@
+{
+  "video_id": "sb5jiVMfBqw",
+  "title": "2024-09-20_sb5jiVMfBqw_BP 2024: Fireside: PayPalUSD and Solana (Jose Fernandez da Ponte, Omer Goldberg, Sheraz Shere)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jose Fernandez Duponte",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Omer Goldberg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

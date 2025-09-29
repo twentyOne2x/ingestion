@@ -1,0 +1,24 @@
+{
+  "description": "Lecture 3.1 discusses the PSL-FLM impossibility result in blockchain consensus protocols, focusing on the limitations of achieving validity and agreement under certain assumptions. It highlights the role of cryptography and introduces proof techniques relevant to distributed computing.",
+  "topic_summary": "The lecture transitions from possibility results to impossibility results in consensus protocols, emphasizing that no protocol can satisfy all desired properties simultaneously. It references historical context, including Alan Turing's work and the FLP impossibility result, to illustrate the theoretical foundations of distributed computing.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "impossibility results",
+    "distributed computing",
+    "cryptography"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 3.1",
+    "PSL-FLM Impossibility Result"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@timroughgarden",
+    "@P.Shashak",
+    "@Lamport"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

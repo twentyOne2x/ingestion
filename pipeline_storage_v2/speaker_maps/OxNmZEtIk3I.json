@@ -1,0 +1,20 @@
+{
+  "video_id": "OxNmZEtIk3I",
+  "title": "2024-09-21_OxNmZEtIk3I_Breakpoint 2024: Workshop: Cranking Up Frankendancer (Anway De, Philip Taffet)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Reed Solomon",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

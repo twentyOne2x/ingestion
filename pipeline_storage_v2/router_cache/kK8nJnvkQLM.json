@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to enhance the readability of your on-chain programs in Solana Explorers by uploading your IDL.",
+  "topic_summary": "This video demonstrates how to make your Solana programs more readable on Explorers by using the command 'anchoridl init' to upload your IDL, allowing for better visibility of account names and instruction data [t=28:34].",
+  "router_tags": [
+    "Solana",
+    "programming",
+    "explorers",
+    "IDL",
+    "blockchain"
+  ],
+  "aliases": [
+    "How to Make Programs Readable on Explorers",
+    "Readable Programs on Solana",
+    "Solana Program Readability"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

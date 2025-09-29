@@ -1,0 +1,22 @@
+{
+  "description": "Jerry Hsiao discusses building decentralized order books, focusing on their technical design and trade-offs. He explains the mechanics of order books, including buy and sell orders, price levels, and the importance of price discovery in markets. Hsiao emphasizes the benefits of decentralization, such as instantaneous settlement and public transparency of trades.",
+  "topic_summary": "In this talk, Jerry Hsiao explains the concept of decentralized order books, detailing their structure, functionality, and significance in market dynamics. He highlights the advantages of using blockchain technology for order books, including faster transaction times and enhanced liquidity management.",
+  "router_tags": [
+    "Decentralized Finance",
+    "Order Books",
+    "Blockchain",
+    "Solana",
+    "Market Dynamics"
+  ],
+  "aliases": [
+    "Jerry Hsiao",
+    "jerry hsiao",
+    "JERRY HIAO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Jacob Creech discusses Solana's gossip protocol, explaining how validators share information efficiently within the network. He describes the process of nodes communicating and the importance of minimizing duplicate messages.",
+  "topic_summary": "Overview of Solana's gossip protocol, its function in validator communication, and methods to optimize message propagation [t=12:04].",
+  "router_tags": [
+    "Solana",
+    "Gossip Protocol",
+    "Blockchain",
+    "Networking"
+  ],
+  "aliases": [
+    "Solana's Gossip Protocol",
+    "Gossip Protocol",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

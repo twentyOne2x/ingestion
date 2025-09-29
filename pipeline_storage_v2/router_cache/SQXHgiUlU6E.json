@@ -1,0 +1,23 @@
+{
+  "description": "The Solana Core Community Call on January 20, 2023, discusses various agenda items including Program runtime v2, transaction limitations, and the Mango team's application account. Alexander Meissner and Alessandro present updates on the MOVE programming language and its integration into Solana, emphasizing community feedback and upcoming changes to program runtime.",
+  "topic_summary": "Discussion on Solana's Program runtime v2, featuring Alexander Meissner and Alessandro. Key points include the introduction of the MOVE programming language, changes to program structure, and improvements in sandboxing for better efficiency. Community feedback is encouraged.",
+  "router_tags": [
+    "Solana",
+    "Community Call",
+    "Program Runtime",
+    "MOVE Language",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "solana core community call",
+    "Solana Community Call",
+    "SQXHgiUlU6E"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Alexander"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

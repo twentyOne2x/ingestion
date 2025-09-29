@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team explains how to use the metadata token extension on the SPL token extension program. He initializes a project, installs dependencies, and demonstrates creating a new mint with metadata on the Solana blockchain.",
+  "topic_summary": "Overview of using the metadata token extension on Solana's SPL token program, including project setup, dependency installation, and mint creation with metadata [t=0:24 - t=374:17].",
+  "router_tags": [
+    "Solana",
+    "Token Metadata",
+    "SPL Token",
+    "DevNet",
+    "Web3"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

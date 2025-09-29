@@ -1,0 +1,24 @@
+{
+  "description": "Nikita Bier discusses the challenges and strategies in building consumer apps within the Solana ecosystem, emphasizing the importance of targeting niche communities and the volatility of the consumer app market.",
+  "topic_summary": "In this session, Nikita Bier shares insights on developing consumer apps on Solana, highlighting the need for a focused approach, the significance of design, and the necessity of making informed decisions during product development. Key points include the importance of identifying target audiences [t=39:74], the volatility of the market [t=94:35], and the value of early design investment [t=201:26].",
+  "router_tags": [
+    "Solana",
+    "Consumer Apps",
+    "Product Development",
+    "Nikita Bier",
+    "Crypto"
+  ],
+  "aliases": [
+    "Nikita Bier",
+    "nikita bier",
+    "Nikita B.",
+    "nikita b."
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@nikitabier"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

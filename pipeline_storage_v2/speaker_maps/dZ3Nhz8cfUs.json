@@ -1,0 +1,14 @@
+{
+  "video_id": "dZ3Nhz8cfUs",
+  "title": "2022-11-07_dZ3Nhz8cfUs_Breakpoint 2022: Oh Buoy, an Anchor Workshop",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

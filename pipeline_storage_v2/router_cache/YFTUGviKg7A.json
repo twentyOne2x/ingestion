@@ -1,0 +1,22 @@
+{
+  "description": "This episode of Solana Bytes discusses interest bearing tokens on the Solana network, explaining how they work and how to implement them using the token 2022 program. It covers setting interest rates, creating a mint, and viewing accrued interest over time.",
+  "topic_summary": "Exploration of interest bearing tokens on Solana, including their functionality and implementation [t=12:72].",
+  "router_tags": [
+    "Solana",
+    "Interest Bearing Tokens",
+    "Token Extensions",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Interest Bearing Tokens",
+    "Interest-bearing Tokens",
+    "Interest-bearing tokens"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

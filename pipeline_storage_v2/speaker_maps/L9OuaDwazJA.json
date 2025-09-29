@@ -1,0 +1,26 @@
+{
+  "video_id": "L9OuaDwazJA",
+  "title": "2025-05-22_L9OuaDwazJA_Ship or Die 2025: Will Stablecoins Be Winner-Takes-All (Johann Kerbrat, Eric Kuhn, Matthew Homer)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Matt Homer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Matt Homer",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

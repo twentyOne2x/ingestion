@@ -1,0 +1,30 @@
+{
+  "description": "In this episode, Dan Romero discusses his journey with Forecaster and shares insights on social media innovations like Frames and NFTs. The conversation touches on the dynamics of Twitter and the impact of recent events in the crypto space.",
+  "topic_summary": "Dan Romero talks about his experience with Forecaster, his obsession with social media innovations, and the challenges of navigating the crypto landscape amidst recent turmoil [t=0:00-1:30].",
+  "router_tags": [
+    "Farcaster",
+    "Forecaster",
+    "Social Media",
+    "Crypto",
+    "NFTs"
+  ],
+  "aliases": [
+    "Dan Romero",
+    "dan romero",
+    "DAN ROMERO"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "@vitalik",
+    "@brian",
+    "@elon",
+    "@zuck",
+    "@sbf",
+    "@GaryGensler"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

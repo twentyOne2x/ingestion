@@ -1,0 +1,20 @@
+{
+  "video_id": "QDOBlrTD-v0",
+  "title": "2023-02-21_QDOBlrTD-v0_Validated - Are Zero-Knowledge Proofs All They're Hyped Up to Be",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Togril Maharamov",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

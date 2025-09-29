@@ -1,0 +1,31 @@
+{
+  "description": "Panel discussion on Web3 gaming featuring insights from industry leaders. Topics include the potential for mass adoption of Web3 through gaming, project introductions, and innovative game concepts.",
+  "topic_summary": "Exploration of Web3 gaming's role in mainstream adoption, featuring project introductions and discussions on unique game mechanics and narratives [t=15:36].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "NFTs",
+    "Solana",
+    "Blockchain"
+  ],
+  "aliases": [
+    "web3 gaming",
+    "Web3 Gaming",
+    "NFT Gaming",
+    "Solana Gaming"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JustinHoneyland",
+    "@Simon",
+    "@TomukaSwan",
+    "@DFL_Irving",
+    "$HXD",
+    "$3Million",
+    "$4",
+    "$200000"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "In this lightning talk at Accelerate 2025, the speaker discusses the evolution of real world assets (RWAs) in the DeFi space, emphasizing the need for improved infrastructure and regulatory clarity. They introduce Centrifuge's new DRWA tokens on Solana, aimed at enhancing utility and liquidity in DeFi.",
+  "topic_summary": "The talk covers the integration of RWAs into DeFi, the challenges faced in tokenization, and the launch of Centrifuge's DRWA tokens on Solana, highlighting partnerships with key DeFi protocols like Raydium and Camino. [t=376.19]",
+  "router_tags": [
+    "Centrifuge",
+    "DeFi",
+    "Real World Assets",
+    "Solana",
+    "Tokenization"
+  ],
+  "aliases": [
+    "centrifuge",
+    "Centrifuge",
+    "DeFi",
+    "defi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@LarryPhone",
+    "@Apollo",
+    "@JaniceHenderson",
+    "@BlocktowerCredit"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

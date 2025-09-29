@@ -1,0 +1,26 @@
+{
+  "video_id": "j7pSbdJdVQk",
+  "title": "2024-11-19_j7pSbdJdVQk_How AI Crypto Will Change The World... (Truth Terminal)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jason Bourne",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Andrew Yang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

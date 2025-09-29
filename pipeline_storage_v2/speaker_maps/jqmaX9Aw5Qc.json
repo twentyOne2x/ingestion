@@ -1,0 +1,26 @@
+{
+  "video_id": "jqmaX9Aw5Qc",
+  "title": "2025-08-23_jqmaX9Aw5Qc_Haseeb: Crypto VCs, Prediction Markets, Crypto & AI and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ikigai Travis",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

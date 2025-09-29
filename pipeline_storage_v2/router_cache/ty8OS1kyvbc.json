@@ -1,0 +1,32 @@
+{
+  "description": "Discussion on effective money spending strategies in social trading, emphasizing the importance of capital as a resource and the need for smart investments to achieve significant growth.",
+  "topic_summary": "Exploration of capital utilization in social trading, with insights on competition against major platforms like Binance and Coinbase [t=27:64]. The conversation highlights the significance of strategic acquisitions and the impact of incentives on revenue generation [t=13:88].",
+  "router_tags": [
+    "Social Trading",
+    "Capital Management",
+    "Investment Strategies",
+    "Market Competition"
+  ],
+  "aliases": [
+    "Pump.Fun",
+    "Pump.fun",
+    "pump.fun"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$100",
+    "$120",
+    "$200 Billion",
+    "$500 Billion",
+    "$1 Trillion",
+    "$2 Million",
+    "$200 Million",
+    "$SOL",
+    "@Delphi_Digital",
+    "@ElonMusk",
+    "@MarcAndreessen",
+    "@PeterThiel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

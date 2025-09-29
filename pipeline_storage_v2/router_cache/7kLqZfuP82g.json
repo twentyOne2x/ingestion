@@ -1,0 +1,39 @@
+{
+  "description": "Panel discussion at Breakpoint 2023 featuring key figures in the Solana DeFi ecosystem, discussing the transformative potential of DeFi and its implications for the future.",
+  "topic_summary": "The panel explores how DeFi on Solana is set to revolutionize finance, emphasizing the unique capabilities of the Solana blockchain to support innovative applications and decentralized finance solutions [t=188:11].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Breakpoint",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "DeFi Will Change Everything",
+    "Breakpoint",
+    "Solana DeFi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Tristan",
+    "@Swissborg",
+    "@Tommy",
+    "@Kevin",
+    "@Orey",
+    "@Zeta",
+    "@Armada",
+    "@ETH",
+    "@Kirok",
+    "@Orca",
+    "@SarahSwazell",
+    "@Quroc",
+    "@Binance",
+    "@Cyrus",
+    "@Evm",
+    "@Jupiter"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

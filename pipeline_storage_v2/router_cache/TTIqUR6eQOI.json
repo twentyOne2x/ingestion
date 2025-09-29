@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the Solana Hacker House event in Tel Aviv, focusing on community engagement and development opportunities.",
+  "topic_summary": "Overview of the Solana Hacker House in Tel Aviv, highlighting key activities and community involvement [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Tel Aviv",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

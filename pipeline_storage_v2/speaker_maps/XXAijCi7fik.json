@@ -1,0 +1,26 @@
+{
+  "video_id": "XXAijCi7fik",
+  "title": "2024-09-11_XXAijCi7fik_Legion: The Return of ICOs",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Jose Maria Macedou",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Jay Clayton",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

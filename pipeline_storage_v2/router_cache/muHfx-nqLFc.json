@@ -1,0 +1,21 @@
+{
+  "description": "Lecture on the Traveling Salesman Problem (TSP), discussing its significance in NP-completeness and approximation algorithms. The speaker explains the problem's definition, its historical context, and practical applications, including setup costs in task ordering and disk drive request management.",
+  "topic_summary": "The Traveling Salesman Problem (TSP) is a classic NP-complete problem that involves finding the shortest possible route visiting each vertex exactly once. The lecture covers its historical background, approximation challenges, and real-world applications such as task sequencing and disk scheduling [t=2:48].",
+  "router_tags": [
+    "Algorithms",
+    "Traveling Salesman Problem",
+    "NP-completeness",
+    "Approximation Algorithms"
+  ],
+  "aliases": [
+    "Traveling Salesman Problem",
+    "TSP",
+    "Traveling Salesman"
+  ],
+  "canonical_entities": [
+    "$TSP",
+    "@georgedanzig"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

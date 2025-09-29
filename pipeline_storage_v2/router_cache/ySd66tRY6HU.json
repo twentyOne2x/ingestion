@@ -1,0 +1,26 @@
+{
+  "description": "Chris Osborne, founder and CEO of Dialect, introduces Blinks, a new technology launched in collaboration with Solana Foundation. Blinks enhance URLs, allowing users to take actions directly from shared links without visiting websites. This presentation covers the launch, integrations with wallets, and the transformative potential of Blinks in creating a hyper portable Internet. Osborne discusses various applications, including token swaps, NFT transactions, and enhanced user experiences across platforms like Twitter and Drip.",
+  "topic_summary": "In this keynote, Chris Osborne presents Blinks, a technology that revolutionizes how users interact with the web by enabling actions directly from URLs. He highlights the launch of Blinks, its integrations with wallets, and its potential to create a new kind of Internet experience that is more seamless and interactive.",
+  "router_tags": [
+    "Blinks",
+    "Solana",
+    "Crypto",
+    "Web3",
+    "Technology"
+  ],
+  "aliases": [
+    "Blinks",
+    "blinks",
+    "Chris Osborne",
+    "chris osborne",
+    "Dialect",
+    "dialect"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

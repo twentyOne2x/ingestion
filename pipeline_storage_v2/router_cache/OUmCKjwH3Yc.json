@@ -1,0 +1,22 @@
+{
+  "description": "Highlights from the Ship or Die conference in New York City, focusing on regulatory pathways for stablecoins and innovation in the crypto space.",
+  "topic_summary": "The conference discusses ongoing legislation in Congress regarding stablecoins and the importance of a permissionless ecosystem for innovation in crypto [t=33:66].",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Stablecoins",
+    "Innovation",
+    "Legislation"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses long-range attacks on proof of stake blockchains, contrasting them with proof of work protocols. It explores the trust assumptions necessary for a new node to sync with a blockchain and the importance of verifying sources for protocol software and transaction history.",
+  "topic_summary": "Long-range attacks on proof of stake blockchains are examined, including trust assumptions for new nodes and methods for verifying blockchain state through multiple sources. The lecture highlights differences between proof of work and proof of stake in terms of source verification and chain selection criteria.",
+  "router_tags": [
+    "blockchain",
+    "long-range attacks",
+    "proof of stake",
+    "proof of work",
+    "Nakamoto consensus"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Long-Range Attacks Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Nakamoto",
+    "@Coinbase",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "pOXf445ubkk",
+  "title": "2024-10-21_pOXf445ubkk_Crypto x AI: Investing Across The Stack - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "D": {
+      "name": "Satoshi Nakamoto",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Noam Chomsky",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

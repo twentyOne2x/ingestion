@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing the foundations of blockchains, focusing on verifiable random functions (VRFs) and their role in proof of stake random sampling. It covers the properties of VRFs, challenges in implementation, and potential solutions.",
+  "topic_summary": "The lecture explains how VRFs can be used in proof of stake sampling to ensure secrecy and verifiability. It discusses the challenges of achieving a single sample and the complications that arise from independent evaluations of VRFs by public key owners. The speaker outlines options for addressing these challenges, including the possibility of forgoing secrecy.",
+  "router_tags": [
+    "blockchain",
+    "VRF",
+    "proof of stake",
+    "random sampling",
+    "cryptography"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

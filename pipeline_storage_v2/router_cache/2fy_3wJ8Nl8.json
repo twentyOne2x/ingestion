@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the recent failures of several banks and explores whether Bitcoin could be a solution. It highlights the historical context of Bitcoin's creation during the 2008 financial crisis and draws parallels to current events, including the collapse of Signature Bank, Silvergate Bank, and Silicon Valley Bank.",
+  "topic_summary": "Amidst significant bank failures, the video examines Bitcoin's role as a potential alternative to traditional banking systems, referencing its origins during the 2008 crisis and the recent banking turmoil [t=15.72].",
+  "router_tags": [
+    "Bitcoin",
+    "Banking",
+    "Financial Crisis",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Signature",
+    "@Silvergate",
+    "@SiliconValley"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

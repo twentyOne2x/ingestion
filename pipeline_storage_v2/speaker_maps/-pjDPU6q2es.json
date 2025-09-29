@@ -1,0 +1,20 @@
+{
+  "video_id": "-pjDPU6q2es",
+  "title": "2025-08-04_-pjDPU6q2es_Packy McCormick: Capitalism, Crypto Use Cases, and The Great Online Game - ACC 1.2",
+  "channel_name": "@AccelerateWithMert",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@AccelerateWithMert",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ben Sporango",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

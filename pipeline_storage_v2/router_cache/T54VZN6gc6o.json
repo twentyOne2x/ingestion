@@ -1,0 +1,23 @@
+{
+  "description": "Alessandro Decina discusses performance issues in agave, emphasizing the need to fix bugs to enhance scalability. He highlights misconceptions about scalability limits and shares insights from stress tests on agave, revealing significant delays in block propagation due to Turbine's inefficiencies. The talk aims to demonstrate that resolving these issues could lead to substantial performance improvements.",
+  "topic_summary": "Performance challenges in agave and potential solutions for scalability improvements [t=0:00-0:00].",
+  "router_tags": [
+    "Performance",
+    "Agave",
+    "Scalability",
+    "Crypto",
+    "Solana"
+  ],
+  "aliases": [
+    "Alessandro Decina",
+    "Tolly",
+    "Anza",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

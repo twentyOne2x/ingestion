@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on improving cryptocurrency reputation, featuring insights on Twitter bans, product building, and the launch of Ethos.",
+  "topic_summary": "The conversation covers the challenges of maintaining a presence on Twitter amidst bans [t=27.09], the speaker's background in Web3 and product development [t=91.24], and the creation of Ethos to enhance trust in the crypto space [t=120.33].",
+  "router_tags": [
+    "cryptocurrency",
+    "Twitter",
+    "Web3",
+    "Ethos",
+    "trust",
+    "reputation"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$ETH",
+    "$BTC",
+    "$10 Billion",
+    "$20,000",
+    "$SOL",
+    "@Serpent",
+    "@JessePollock",
+    "@JingTao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

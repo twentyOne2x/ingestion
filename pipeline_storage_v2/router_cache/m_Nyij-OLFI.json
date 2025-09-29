@@ -1,0 +1,21 @@
+{
+  "description": "Lecture on maximizing block rewards in Nakamoto consensus, discussing block production rates and the implications of orphaned blocks.",
+  "topic_summary": "Explores Nakamoto consensus and block rewards, emphasizing the importance of block finalization and the impact of orphaned blocks on reward distribution. Discusses difficulty adjustment in Bitcoin to maintain a steady rate of block production [t=10:00].",
+  "router_tags": [
+    "blockchain",
+    "Nakamoto consensus",
+    "Bitcoin",
+    "block rewards"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Maximizing Block Rewards",
+    "Lecture 10.2"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

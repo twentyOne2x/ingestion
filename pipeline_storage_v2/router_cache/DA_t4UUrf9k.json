@@ -1,0 +1,22 @@
+{
+  "description": "Kash Dhanda discusses the role of Jupiter in the global unified market, highlighting the evolution of asset issuance from decentralized systems to modern permissionless frameworks. He draws parallels between historical banking systems and current trends in decentralized finance, emphasizing community empowerment and the challenges faced.",
+  "topic_summary": "The presentation covers the transition from historical decentralized banking systems to contemporary permissionless asset issuance, focusing on Jupiter's significance in the Solana ecosystem and the broader implications for the global market [t=16:56].",
+  "router_tags": [
+    "Jupiter",
+    "Solana",
+    "DeFi",
+    "Asset Issuance",
+    "Global Market"
+  ],
+  "aliases": [
+    "Kash Dhanda",
+    "kash dhanda",
+    "KASH DHANDA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

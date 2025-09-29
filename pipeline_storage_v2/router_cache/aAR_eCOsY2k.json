@@ -1,0 +1,24 @@
+{
+  "description": "This talk explores the essential elements of building on Solana, emphasizing talent, grit, and luck. The speaker shares personal experiences and insights on the importance of enjoying the process and adapting definitions of success.",
+  "topic_summary": "Demystifying building on Solana, focusing on talent, grit, and luck in the development process. The speaker reflects on personal experiences and the need to enjoy the journey of building in Web3 [t=1:28 - t=327:31].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Building",
+    "Development",
+    "Luck",
+    "Grit",
+    "Talent"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Demystifying Building",
+    "Know Your Why"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

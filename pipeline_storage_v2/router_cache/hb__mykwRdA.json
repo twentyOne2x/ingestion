@@ -1,0 +1,22 @@
+{
+  "description": "Will, a software engineer at Orca, discusses common pitfalls in Solana program development, emphasizing the importance of security checks such as verifying transaction signers and program ownership. He outlines key practices like using identifiers for program accounts and handling integer math safely to prevent overflows and underflows.",
+  "topic_summary": "In this talk, Will presents the 'ten commandments' for secure Solana program development, covering essential security practices and common mistakes developers make, particularly in relation to transaction signers, program ownership, and integer math operations [t=1:92].",
+  "router_tags": [
+    "Solana",
+    "program development",
+    "security",
+    "smart contracts",
+    "integer math"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Navigating Common Pitfalls in Solana Program",
+    "Solana Program Development"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

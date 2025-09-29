@@ -1,0 +1,20 @@
+{
+  "video_id": "y2bmFzbKPbs",
+  "title": "2024-10-14_y2bmFzbKPbs_Erik Voorhees: The Battle for Human Freedom in the Post-Human World - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Alexander Good",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

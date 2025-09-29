@@ -1,0 +1,21 @@
+{
+  "description": "A musical performance featuring the Voices of Kibera, highlighting community spirit and artistic expression.",
+  "topic_summary": "The event showcases the Voices of Kibera, emphasizing community engagement and the power of music to connect people [t=16:16].",
+  "router_tags": [
+    "music",
+    "performance",
+    "community",
+    "Kibera",
+    "art"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "breakpoint 2023"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

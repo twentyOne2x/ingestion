@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator updates, OS version survey, and upcoming events including Breakpoint Block Zero Stake Point and MEV Day.",
+  "topic_summary": "Validator updates and feedback on OS versions discussed. Upcoming events highlighted, including Breakpoint and MEV Day. Open discussion for additional topics [t=0:08 - t=54:65].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "MEV",
+    "Breakpoint"
+  ],
+  "aliases": [
+    "Solana Foundation Validator Discussion",
+    "Solana Validator Talk",
+    "Solana Validator Meeting"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

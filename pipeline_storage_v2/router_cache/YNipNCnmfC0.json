@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the importance of stablecoins, the challenges in the NFT market, and insights into AI infrastructure and investments.",
+  "topic_summary": "The founder of USD AI shares insights on stablecoins, the evolution of their project from NFT lending to AI, and the financial dynamics of the AI sector, including the high costs of computing resources [t=0:24-2:16].",
+  "router_tags": [
+    "Stablecoins",
+    "AI",
+    "NFTs",
+    "Crypto",
+    "Investments"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$4",
+    "$SOL",
+    "@Microsoft",
+    "@OpenAI",
+    "@Nvidia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

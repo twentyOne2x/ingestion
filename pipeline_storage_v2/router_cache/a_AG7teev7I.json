@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion on opportunities for artists and collectors within the Solana ecosystem, featuring insights from various creators and announcements about upcoming events.",
+  "topic_summary": "Exploration of unique opportunities for artists in Web3, particularly within the Solana ecosystem, including community building and collaboration among creators [t=132.88].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Digital Art",
+    "Artists",
+    "Collectors",
+    "Opportunities"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "solanafndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

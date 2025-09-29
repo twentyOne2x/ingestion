@@ -1,0 +1,14 @@
+{
+  "video_id": "VH-OolG7IUU",
+  "title": "2023-11-03_VH-OolG7IUU_Breakpoint 2023: Music by Josh Savage",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

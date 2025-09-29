@@ -1,0 +1,26 @@
+{
+  "description": "Anvit discusses the introduction of Solana to Python at Breakpoint 2023, highlighting the challenges developers face with Solana's unique account model and Rust programming language. He introduces CR Slang and Seahorse as solutions to make Solana more accessible, emphasizing the importance of simplicity and innovation in development.",
+  "topic_summary": "At [t=13:88], Anvit presents on making Solana approachable for developers using Python. He explains the steep learning curve associated with Solana programming at [t=85:89] and introduces Seahorse, a framework that simplifies development by integrating Python with Solana's capabilities at [t=199:44]. He also announces Seahorse University, aimed at educating developers on Solana programming at [t=397:14].",
+  "router_tags": [
+    "Solana",
+    "Python",
+    "Seahorse",
+    "Breakpoint",
+    "Developer Experience"
+  ],
+  "aliases": [
+    "seahorse",
+    "Seahorse",
+    "Breakpoint",
+    "breakpoint",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Anvit"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

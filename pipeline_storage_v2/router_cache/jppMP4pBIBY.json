@@ -1,0 +1,22 @@
+{
+  "description": "Nick from the Solana Foundation introduces the latest updates including confidential transfers via token CLI and transaction subscriptions to PubSub. The discussion highlights performance improvements for RPC and new features for developers.",
+  "topic_summary": "Updates on Solana's token CLI for confidential transfers [t=101.92], transaction subscriptions to PubSub [t=21.76], and new developer resources [t=165.88].",
+  "router_tags": [
+    "Solana",
+    "Token CLI",
+    "Confidential Transfers",
+    "PubSub",
+    "Developer Resources"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

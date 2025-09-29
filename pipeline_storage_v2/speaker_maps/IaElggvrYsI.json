@@ -1,0 +1,20 @@
+{
+  "video_id": "IaElggvrYsI",
+  "title": "2024-09-19_IaElggvrYsI_Spotlight: Firedancer v0 Architecture",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Tim Garcia",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

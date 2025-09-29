@@ -1,0 +1,24 @@
+{
+  "description": "Lecture 2 of the series on blockchain foundations discusses the state machine replication (SMR) problem and its solution using the Byzantine broadcast approach, specifically the Dolev Strong protocol. It emphasizes the importance of consistency and liveness in protocols, detailing how nodes maintain local histories of transactions and the significance of transaction order to prevent issues like double spending.",
+  "topic_summary": "This lecture covers the state machine replication problem, focusing on the synchronous model and the Dolev Strong protocol for Byzantine broadcast. It defines key properties of blockchain protocols, including consistency and liveness, and explains how nodes manage transaction histories to ensure agreement across the network [t=0:64-310:08].",
+  "router_tags": [
+    "blockchain",
+    "state machine replication",
+    "Byzantine broadcast",
+    "Dolev Strong protocol",
+    "consensus"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchain Foundations",
+    "Lecture 2.1",
+    "Lecture 2"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Dolev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "pkMoafMp1kU",
+  "title": "2014-10-23_pkMoafMp1kU_Beyond Worst-Case Analysis (Lecture 10: Planted and Semi-Random Graph Models)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Erdos Renyi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Erdis Renyi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

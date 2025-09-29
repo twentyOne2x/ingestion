@@ -1,0 +1,20 @@
+{
+  "video_id": "Rewe3WNXQeA",
+  "title": "2024-02-07_Rewe3WNXQeA_Chewing Glass - Carlos Noriega (Juicer)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Maddie Taylor",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

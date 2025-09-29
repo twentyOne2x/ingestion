@@ -1,0 +1,29 @@
+{
+  "description": "Austin hosts a discussion with Chris Greco and Lauren Culbertson about Section 230 and its implications for blockchain technology. They explore the origins of Section 230, its role in shaping the internet, and whether blockchain requires similar legal protections. The conversation highlights recent Supreme Court cases and the evolving landscape of tech liability.",
+  "topic_summary": "The episode delves into Section 230's historical context, its impact on tech platforms, and the potential need for blockchain-specific legislation. The hosts discuss the balance between free speech and liability in the digital age, referencing key legal cases and the foundational role of Section 230 in internet governance [t=0:24 - t=4:48].",
+  "router_tags": [
+    "Blockchain",
+    "Section 230",
+    "Internet Law",
+    "Tech Policy",
+    "Free Speech"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "VALIDATED"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisGreco",
+    "@LaurenCulbertson",
+    "@AmiraValiani",
+    "@JordanBelfort",
+    "@RonWyden",
+    "@ChrisCox",
+    "@JamesExxon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Fernando Ordunia Rangel discusses the challenges of financial systems in Latin America and introduces Decaf, a wallet aimed at providing financial freedom through blockchain technology, particularly on the Solana network. He emphasizes the importance of onboarding users to crypto and enabling access to stable currencies like USDC to combat inflation and improve financial stability.",
+  "topic_summary": "Fernando Ordunia Rangel explains how Decaf leverages Solana's blockchain to offer financial solutions for individuals in regions with unstable financial systems, focusing on ease of onboarding and access to stable currencies [t=55:18].",
+  "router_tags": [
+    "Solana",
+    "Decaf",
+    "Blockchain",
+    "Financial Freedom",
+    "USDC",
+    "Latin America"
+  ],
+  "aliases": [
+    "Decaf",
+    "decaf",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@FernandoOrduniaRangel",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

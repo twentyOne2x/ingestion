@@ -1,0 +1,26 @@
+{
+  "description": "Tanya, co-founder of Sleek, discusses the potential of consumer apps, particularly in the social sector, to drive mass adoption of Web3 technologies. She highlights the rise of socialfi, which combines social media with decentralized finance, and the financial incentives that attract users. Tanya emphasizes the importance of ownership and utility in building successful social applications.",
+  "topic_summary": "Tanya explores how consumer apps, especially in the social domain, can facilitate the transition to Web3. She discusses the concept of socialfi, the challenges faced by creators on traditional platforms, and the need for a balance between speculation and utility in app development. The talk emphasizes ownership of data and the financial opportunities presented by decentralized social applications.",
+  "router_tags": [
+    "Web3",
+    "Socialfi",
+    "Consumer Apps",
+    "Decentralized Finance",
+    "Social Media"
+  ],
+  "aliases": [
+    "Tanya",
+    "tanya",
+    "Sleek",
+    "sleek"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@SolanaFndn",
+    "@friendtech",
+    "@Uniswap"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

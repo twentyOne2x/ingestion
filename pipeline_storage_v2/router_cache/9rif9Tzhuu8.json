@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Delphi Podcast, John Fletcher discusses the Innovation Game (TIG), a decentralized science project aimed at accelerating algorithmic innovation. He explains how TIG uses a coordination protocol to improve algorithms for scientific problems through a proof of work system similar to Bitcoin. The conversation covers the project's origins, the challenges faced by scientists in securing funding, and the unique structure of open-source projects in the context of algorithm development.",
+  "topic_summary": "John Fletcher introduces the Innovation Game (TIG), detailing its purpose to enhance algorithmic innovation through a decentralized approach. He highlights the project's unique proof of work mechanism and its market-driven evaluation of algorithms, while also reflecting on the challenges faced by researchers in obtaining funding for scientific endeavors [t=1:28 - t=3:60].",
+  "router_tags": [
+    "Innovation",
+    "Decentralized Science",
+    "Algorithmic Innovation",
+    "Proof of Work",
+    "Funding in Science"
+  ],
+  "aliases": [
+    "TIG",
+    "The Innovation Game",
+    "Innovation Game",
+    "Delphi Podcast"
+  ],
+  "canonical_entities": [
+    "$TIG",
+    "@Delphi_Digital",
+    "@John_Fletcher",
+    "@Stephen_Hawking"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

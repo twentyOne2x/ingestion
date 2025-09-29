@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly Yakovenko discusses his journey in tech, starting from his early coding experiences in the Soviet Union to founding Solana Labs. He reflects on the challenges and developments in the Solana ecosystem.",
+  "topic_summary": "Anatoly Yakovenko shares insights on his background, coding journey, and the evolution of Solana, highlighting key moments and technological advancements [t=0:00].",
+  "router_tags": [
+    "Solana",
+    "Anatoly Yakovenko",
+    "technology",
+    "coding",
+    "software development"
+  ],
+  "aliases": [
+    "Anatoly",
+    "Anatoly Yakovinko",
+    "anatoly",
+    "yakovenko"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

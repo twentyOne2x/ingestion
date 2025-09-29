@@ -1,0 +1,24 @@
+{
+  "description": "Joseph Onorati discusses Solana DATs, the long-term vision for DeFi Development Corp, and recent funding achievements, including a $125 million raise. He shares insights on the Solana ecosystem and the company's strategy in the DeFi space.",
+  "topic_summary": "In this episode, Joseph Onorati introduces himself as CEO of DeFi Development Corp, the first publicly listed Solana treasury company in the U.S. He reflects on the company's journey, the state of Solana DeFi, and the potential for interest rate arbitrage in the market [t=0:40].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Cryptocurrency",
+    "Funding",
+    "Treasury"
+  ],
+  "aliases": [
+    "Joseph Onorati",
+    "Joe Onorati",
+    "Joseph Svonorati",
+    "Joe Svonorati"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "$DFDV"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

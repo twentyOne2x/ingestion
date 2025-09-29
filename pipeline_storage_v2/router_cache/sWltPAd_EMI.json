@@ -1,0 +1,22 @@
+{
+  "description": "Lecture 4 discusses the asynchronous model of communication in consensus protocols, focusing on relaxing assumptions from previous lectures. It introduces the FLP impossibility theorem and the challenges of achieving consensus in the presence of Byzantine nodes.",
+  "topic_summary": "The lecture covers the transition from synchronous to asynchronous models in blockchain protocols, emphasizing the importance of relaxing assumptions about node behavior and communication reliability. It highlights the Dolev strong protocol and its implications for consensus in decentralized systems [t=0:16].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "asynchronous communication",
+    "FLP impossibility theorem",
+    "Dolev strong protocol"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Dolev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Jacob and Nick discuss the recent Solana Changelog, highlighting the success of the Coliseum hackathon with 1359 project submissions, the largest in crypto history. They mention a report indicating increased builder interest in Solana, leading to more opportunities and projects. They also cover updates on writable account data limits, Windows support for the Agave tool suite, and performance optimizations in transaction processing.",
+  "topic_summary": "In this episode, Jacob and Nick review the latest developments in the Solana ecosystem, including hackathon results, builder interest, and technical updates on account data limits and performance improvements [t=0:03 - t=2:55].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Hackathon",
+    "Crypto",
+    "Development"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@jacob",
+    "@nick",
+    "@brendan",
+    "@yihao",
+    "@andrew",
+    "@alessandro"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

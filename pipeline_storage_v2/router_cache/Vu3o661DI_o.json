@@ -1,0 +1,25 @@
+{
+  "description": "Lecture 13 discusses Black Box Reductions in mechanism design, focusing on Bayes Nash implementations and their properties. The lecture outlines goals for simple, polynomial-time mechanisms that are Bayesian incentive compatible, emphasizing the importance of direct revelation mechanisms in achieving expected utility.",
+  "topic_summary": "The lecture covers Bayes Nash equilibrium and its implications for mechanism design, particularly in relation to welfare maximization and incentive compatibility. It introduces a methodology involving black box reductions to achieve Bayesian incentive compatibility from existing algorithms.",
+  "router_tags": [
+    "Mechanism Design",
+    "Bayes Nash",
+    "Incentive Compatibility",
+    "Algorithm Design",
+    "Game Theory"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Bayes Nash Implementations",
+    "Black Box Reductions"
+  ],
+  "canonical_entities": [
+    "$BAYES",
+    "@timroughgardenlectures1861",
+    "$SOL",
+    "@jasonhartline",
+    "@bobbykleinberg"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

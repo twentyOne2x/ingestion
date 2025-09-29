@@ -1,0 +1,25 @@
+{
+  "description": "Carter Feldman discusses the integration of Dogecoin with Solana, exploring how to enhance Dogecoin's utility and create a trust-minimized bridge between the two ecosystems. He highlights the development of a Doge Lite client for verifying Dogecoin transactions on Solana and the potential for staking and earning yield with Doge tokens.",
+  "topic_summary": "The presentation covers the verification of Dogecoin on Solana, aiming to strengthen the Dogecoin ecosystem by bridging it with Solana. Key points include the development of a Doge Lite client, the challenges faced, and the benefits of integrating Doge into Solana's ecosystem, including staking opportunities and access to various projects [t=310:72].",
+  "router_tags": [
+    "Dogecoin",
+    "Solana",
+    "Blockchain",
+    "Crypto Integration",
+    "Staking"
+  ],
+  "aliases": [
+    "Carter Feldman",
+    "carter feldman",
+    "CARTER FELDMAN"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "$SOL",
+    "@NinjasInPajamas",
+    "$BTC",
+    "$BONK"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

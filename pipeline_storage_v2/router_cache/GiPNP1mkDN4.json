@@ -1,0 +1,25 @@
+{
+  "description": "This week's Changelog discusses Solana's recent updates, including the introduction of Soling for Solidity smart contracts, enhancing accessibility for Ethereum developers. The upcoming Game Jam starting July 26 is highlighted, encouraging participation and showcasing resources for game development on Solana.",
+  "topic_summary": "Updates on Solana's Solidity integration [t=16:40], upcoming Game Jam [t=106:30], and resources for game development [t=159:43].",
+  "router_tags": [
+    "Solana",
+    "Game Jam",
+    "Solidity",
+    "Ethereum",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "solana updates",
+    "Solana Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@jacobcreech",
+    "@Jonas"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Lecture on clustering, discussing the goal of finding meaningful clusterings and the computational problems defined by metric spaces. The lecture references a paper by Balkan, Blum, and Gupta, and emphasizes the importance of the triangle inequality in metric spaces.",
+  "topic_summary": "The lecture introduces clustering in metric spaces, focusing on the need for meaningful clusterings and the challenges in defining objective functions for qualitative problems. It highlights the assumption of a target clustering that exists but is unknown.",
+  "router_tags": [
+    "Clustering",
+    "Metric Spaces",
+    "Approximation Algorithms",
+    "Triangle Inequality",
+    "Data Structures"
+  ],
+  "aliases": [
+    "Beyond Worst-Case Analysis",
+    "Clustering in Approximation-Stable Instances",
+    "Lecture 6"
+  ],
+  "canonical_entities": [
+    "$BLUM",
+    "$GUPTA",
+    "$BALKAN"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

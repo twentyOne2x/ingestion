@@ -1,0 +1,23 @@
+{
+  "description": "Joe Van Loon introduces Radar, an open-source static analysis tool for Solana programs, emphasizing its ease of use for developers and auditors. He discusses its features, including customizable detectors and integration with GitHub workflows.",
+  "topic_summary": "In this presentation, Joe Van Loon explains Radar, a static analysis tool designed for Solana programs, highlighting its unique features and benefits for enhancing project security [t=10:48].",
+  "router_tags": [
+    "Solana",
+    "Static Analysis",
+    "Security Tools",
+    "Radar"
+  ],
+  "aliases": [
+    "Joe Van Loon",
+    "joe van loon",
+    "Radar",
+    "radar"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@TomerBar"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

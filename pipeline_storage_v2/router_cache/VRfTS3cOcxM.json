@@ -1,0 +1,24 @@
+{
+  "description": "David Rodas, founder and CEO of Permissionless Labs, discusses Pipe Network, a content delivery solution designed to reduce latency by utilizing hyperlocal nodes. The presentation includes a demo of the client portal and showcases how users can quickly access data through the network.",
+  "topic_summary": "David Rodas introduces Pipe Network, emphasizing its ability to deliver data at unprecedented speeds by leveraging hyperlocal nodes to minimize latency. The talk covers the architecture of the network and includes a demo of its functionality [t=5:52 - t=178:47].",
+  "router_tags": [
+    "Data Delivery",
+    "Content Delivery Network",
+    "Latency Reduction",
+    "Pipe Network",
+    "Demo"
+  ],
+  "aliases": [
+    "David Rodas",
+    "David Rhodus",
+    "Permissionless Labs"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$AWS",
+    "$VALVE",
+    "$PLTR"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

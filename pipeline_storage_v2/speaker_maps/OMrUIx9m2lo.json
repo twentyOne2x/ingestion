@@ -1,0 +1,20 @@
+{
+  "video_id": "OMrUIx9m2lo",
+  "title": "2024-10-31_OMrUIx9m2lo_Solana Changelog Oct 23",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Brendan Washington",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "JXJlyjtZN_I",
+  "title": "2024-09-03_JXJlyjtZN_I_Blinks and Actions w- Jon Wong (Solana Foundation) and Chris Osborn (Dialect)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jordan Sexton",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Nick Frostbutter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

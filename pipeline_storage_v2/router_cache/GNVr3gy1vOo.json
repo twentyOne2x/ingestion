@@ -1,0 +1,24 @@
+{
+  "description": "Nick and Jonas from the Solana Foundation discuss the latest updates, including the Helium Network's migration to Solana, new CLI features, and a proposed syscall for tracking network restarts.",
+  "topic_summary": "The video covers the Helium Network's successful migration to Solana [t=14:56], new CLI commands for finding program addresses [t=63.8], and a proposed syscall to get the last restart slot [t=112.66]. It also highlights a new name service repository and RPC provider updates [t=206.51].",
+  "router_tags": [
+    "Solana",
+    "Helium",
+    "Blockchain",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "helium",
+    "Helium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@helium"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

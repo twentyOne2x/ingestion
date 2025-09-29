@@ -1,0 +1,25 @@
+{
+  "description": "Tristan Frizza discusses Zeta Markets' vision for a decentralized trading platform, highlighting infrastructure improvements for Solana DeFi and the growth in total value locked (TVL) and derivatives volume. He introduces Bullet, Solana's first real-time L2 solution aimed at enhancing performance and user experience.",
+  "topic_summary": "Tristan Frizza presents Zeta Markets' advancements in decentralized trading, focusing on performance, user experience, and the introduction of Bullet for low-latency applications [t=5:44-188:30].",
+  "router_tags": [
+    "Zeta Markets",
+    "Solana",
+    "DeFi",
+    "Bullet",
+    "Trading",
+    "Decentralized Exchange"
+  ],
+  "aliases": [
+    "Zeta Markets",
+    "Zeta",
+    "Tristan Frizza",
+    "Solana Foundation",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

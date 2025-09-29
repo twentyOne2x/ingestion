@@ -1,0 +1,20 @@
+{
+  "video_id": "Y8OrISZVXmA",
+  "title": "2023-04-12_Y8OrISZVXmA_Chewing Glass - Stranzhay (GenesysGo) - Ep #12",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Britney Spears",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

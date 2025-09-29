@@ -1,0 +1,29 @@
+{
+  "description": "Lecture on routing games, focusing on network over-provisioning strategies and their impact on performance metrics such as packet drops and traffic delay.",
+  "topic_summary": "Discussion on the concept of over-provisioning in communication networks, its empirical benefits, and mathematical results supporting its effectiveness in improving network performance [t=0:48 - t=451:32].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Network Over-Provisioning",
+    "Routing Games",
+    "Communication Networks"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Network Over-Provisioning",
+    "Routing Games"
+  ],
+  "canonical_entities": [
+    "$Pigu",
+    "$Pigou",
+    "$Piggoo",
+    "@EvaTardos",
+    "$Picus",
+    "@NationalGeographyBee",
+    "@AlexTrebek",
+    "$Epstein",
+    "@ChrisTutalu",
+    "$Kitsupius"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

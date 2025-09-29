@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the Solana Validator Community Call covering updates on Testnet and Mainnet rollout plans. Emphasis on interoperability testing and the need for a stable version before Mainnet deployment.",
+  "topic_summary": "Validator updates and rollout plans for Solana's Testnet and Mainnet, focusing on version 1.14 and its implications for stability and bug detection [t=1:52].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Testnet",
+    "Mainnet",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the launch of Saga, Helium's migration to Solana, and a new proposal for automatic cluster repair.",
+  "topic_summary": "Key updates include the Saga launch [t=6:16], Helium's migration to Solana [t=89:05], and a proposal for automatic cluster repair to minimize downtime [t=135:27].",
+  "router_tags": [
+    "Solana",
+    "Saga",
+    "Helium",
+    "Changelog",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "saga",
+    "Saga",
+    "helium",
+    "Helium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Introduction to DePin and its applications in hardware integration with Solana. Covers controlling hardware like Raspberry Pi via Smart Contracts and Solana Pay QR codes, and explores various projects utilizing the Helium network and Lorawan technology.",
+  "topic_summary": "Explains the concept of DePin, its significance in building infrastructure, and practical examples including controlling a Raspberry Pi with Solana QR codes [t=169.93], and various projects like Helium and Hivemapper [t=100.25].",
+  "router_tags": [
+    "DePin",
+    "Solana",
+    "Hardware Integration",
+    "Smart Contracts",
+    "Blockchain"
+  ],
+  "aliases": [
+    "depin",
+    "DePin",
+    "Solana Hardware",
+    "Solana Integration"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Helium",
+    "@Hivemapper"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

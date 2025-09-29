@@ -1,0 +1,22 @@
+{
+  "description": "Jayant Krishnamurthy discusses the evolution of oracles in blockchain, focusing on PYTH's unique approach to data sourcing and the collaboration among financial institutions. He explains how PYTH addresses the limitations of traditional oracles by involving data providers directly, ensuring access to high-value financial data, and incentivizing participation through token grants. The conversation highlights the competitive nature of financial firms and their surprising collaboration on PYTH, driven by shared interests and the potential benefits of blockchain technology.",
+  "topic_summary": "The episode explores the role of PYTH in the blockchain oracle landscape, emphasizing its first-party data sourcing model and the collaboration among major financial institutions. It addresses the incentives for data providers and the importance of proprietary financial data in blockchain applications. Key discussions include the historical context of oracles, the competitive dynamics of financial firms, and the innovative solutions PYTH offers to enhance data accessibility on the blockchain.",
+  "router_tags": [
+    "PYTH",
+    "Blockchain Oracles",
+    "Data Providers",
+    "Financial Markets",
+    "Crypto Incentives"
+  ],
+  "aliases": [
+    "Pyth",
+    "Pyth Network",
+    "PYTH Network"
+  ],
+  "canonical_entities": [
+    "$PITH",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

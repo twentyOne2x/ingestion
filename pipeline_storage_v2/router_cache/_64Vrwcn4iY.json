@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the future of the $PUMP token, PumpFun Airdrop, and streamer coins. The speaker shares insights on trading strategies and market sentiment.",
+  "topic_summary": "The podcast covers the launch of the $PUMP token, its potential as a short to midterm trade, and the underlying market dynamics influencing its value. Key points include the token's market cap, trading strategies, and the impact of community sentiment on trading decisions [t=116.45].",
+  "router_tags": [
+    "$PUMP",
+    "PumpFun",
+    "crypto",
+    "trading",
+    "meme coins"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This lecture discusses the independence of consensus protocols and Sybil resistance mechanisms, using a matrix to illustrate different combinations. It highlights Bitcoin's use of Nakamoto consensus and proof of work, contrasts it with Solana's proof of stake, and addresses the challenges of mixing proof of work with BFT type consensus. The impossibility result presented explains the limitations of longest chain consensus in partially synchronous settings, emphasizing the need for consistency even under attack scenarios.",
+  "topic_summary": "The lecture explores the relationship between consensus protocols and Sybil resistance, focusing on the impossibility of effectively combining proof of work with BFT consensus. It reviews the characteristics of various blockchain protocols and the challenges faced in maintaining consistency during network disruptions.",
+  "router_tags": [
+    "blockchain",
+    "consensus protocols",
+    "Sybil resistance",
+    "proof of work",
+    "BFT consensus"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchains Lecture",
+    "Lecture 9.6"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "@Chenkins",
+    "@AndrewLewisPye"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

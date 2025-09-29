@@ -1,0 +1,24 @@
+{
+  "description": "This workshop covers the setup of Firedancer v0, also known as Franken Dancer, including its differences from Agave and how to manage validators on both testnet and mainnet. It features discussions on networking, block building, and tools for monitoring validator performance.",
+  "topic_summary": "Overview of Firedancer v0 setup, differences from Agave, and validator management on testnet and mainnet. Discussion includes networking stack, block building pipeline, and tools for monitoring performance [t=2:48 - t=288:94].",
+  "router_tags": [
+    "Firedancer",
+    "Agave",
+    "Solana",
+    "Validator Setup",
+    "Blockchain Education"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Franken Dancer",
+    "Fire Dancer",
+    "Firedancer V0"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

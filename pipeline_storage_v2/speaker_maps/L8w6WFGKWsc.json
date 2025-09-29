@@ -1,0 +1,32 @@
+{
+  "video_id": "L8w6WFGKWsc",
+  "title": "2024-05-17_L8w6WFGKWsc_Arthur Hayes, Kyle Samani and Cindy Leow: Drift Protocol and the Future of DeFi",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Arthur Hayes",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Brian Armstrong",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

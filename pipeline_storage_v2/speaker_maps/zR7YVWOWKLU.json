@@ -1,0 +1,20 @@
+{
+  "video_id": "zR7YVWOWKLU",
+  "title": "2025-08-13_zR7YVWOWKLU_Victor: Internet Money is the Future, Creating 'Slash', Crypto Banking and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Victor Grunder",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

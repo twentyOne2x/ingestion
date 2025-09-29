@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Haseeb discusses his role as a managing partner at Dragonfly, a multibillion-dollar crypto venture fund, and shares insights on various crypto investments and debates, including a notable discussion on Ethereum's future.",
+  "topic_summary": "Haseeb, managing partner at Dragonfly, shares insights on crypto investments and debates, including Ethereum's potential and market dynamics [t=0:16-1:20]. He reflects on past debates and the evolution of the crypto space [t=90:82-159:92].",
+  "router_tags": [
+    "Crypto",
+    "Venture Capital",
+    "Ethereum",
+    "Investments",
+    "Debate"
+  ],
+  "aliases": [
+    "Haseeb",
+    "Haseeb Qureshi",
+    "Haseeb Q."
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@notthreadguy",
+    "@Bankless"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

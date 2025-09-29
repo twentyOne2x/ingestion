@@ -1,0 +1,26 @@
+{
+  "video_id": "zo3EQH9Zd2s",
+  "title": "2023-02-07_zo3EQH9Zd2s_Validated - Crypto-Powered Physical Infrastructure with Sami Kassab",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Sami Kassab",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Sami Kassab",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Tarun Chitra discusses the evolution of fee structures in blockchain, particularly in Solana, emphasizing the importance of resource pricing and congestion costs. He explores how different resources like execution, storage, and bandwidth can be priced to optimize performance and reduce volatility in fees [t=5:04].",
+  "topic_summary": "The talk focuses on multi-dimensional fee markets in blockchain, addressing how to manage resource pricing effectively to enhance transaction throughput and user experience. Chitra highlights the challenges of congestion pricing and the implications of shared versus separate resource costs [t=299:77].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Fees",
+    "Resource Pricing",
+    "Congestion Pricing"
+  ],
+  "aliases": [
+    "Tarun Chitra",
+    "tarun chitra",
+    "TARUN CHITRA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

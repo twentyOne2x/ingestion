@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial introduces Session Keys, an open-source tool designed to enhance user experience in applications by reducing the need for constant wallet signing. The presenter demonstrates a game called Lumberjack, where players can chop trees using a session token instead of their Phantom Wallet, streamlining interactions. The session keys create ephemeral key pairs in the browser, allowing for temporary actions without repeated confirmations. The tutorial also discusses security considerations and how to manage session tokens effectively.",
+  "topic_summary": "Overview of Session Keys on Solana, demonstrating their application in a game to improve user experience by minimizing wallet interactions [t=0:40].",
+  "router_tags": [
+    "Solana",
+    "Session Keys",
+    "User Experience",
+    "Blockchain",
+    "Gaming"
+  ],
+  "aliases": [
+    "session keys",
+    "Session Keys",
+    "SessionKeys"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

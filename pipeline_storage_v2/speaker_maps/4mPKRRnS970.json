@@ -1,0 +1,14 @@
+{
+  "video_id": "4mPKRRnS970",
+  "title": "2023-12-27_4mPKRRnS970_What is Hivemapper  Hear about mapping powered by the people at Solana Breakpoint 2023",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

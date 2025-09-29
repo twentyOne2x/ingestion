@@ -1,0 +1,27 @@
+{
+  "description": "In this heated debate, Raoul Pal discusses strategies for making money in AI crypto by 2025, emphasizing the importance of understanding the market and technology.",
+  "topic_summary": "Raoul Pal shares insights on AI crypto investments and market trends for 2025, with a focus on strategies to achieve financial success [t=7:40].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Investing",
+    "Debate",
+    "Raoul Pal"
+  ],
+  "aliases": [
+    "Raoul Pal",
+    "Raul Powell",
+    "Thread Guy"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "$XRP",
+    "@RaoulPal",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

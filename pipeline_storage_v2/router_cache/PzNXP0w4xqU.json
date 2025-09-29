@@ -1,0 +1,24 @@
+{
+  "description": "Ariel Seidman, CEO of Hivemapper, discusses the innovative approach to mapping using crowdsourced data and the Solana blockchain. Hivemapper utilizes dash cams to collect imagery and location data, rewarding contributors with honey tokens. The focus is on low transaction fees, ease of use, and a supportive ecosystem provided by Solana.",
+  "topic_summary": "Exploration of Hivemapper's crowdsourced mapping technology and its integration with the Solana blockchain for efficient data collection and rewards [t=0:08-0:58].",
+  "router_tags": [
+    "Hivemapper",
+    "Solana",
+    "Crowdsourced Mapping",
+    "Blockchain Technology",
+    "Dashcam"
+  ],
+  "aliases": [
+    "Hivemapper",
+    "hivemapper",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ArielSeidman"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

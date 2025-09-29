@@ -1,0 +1,24 @@
+{
+  "description": "Olivier from Sonarwatch discusses Solana's data structures, focusing on program accounts and data accounts. He explains the roles of different account types, including executable code storage and data storage, with examples of token accounts and their data.",
+  "topic_summary": "Overview of Solana's data structures, including program accounts and data accounts, with examples of token accounts and their functionalities [t=5:04].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Data Structures",
+    "Smart Contracts",
+    "Token Accounts"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA",
+    "SolanaFndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

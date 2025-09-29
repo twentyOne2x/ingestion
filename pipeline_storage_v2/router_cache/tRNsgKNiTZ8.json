@@ -1,0 +1,29 @@
+{
+  "description": "Chris Burniske and Joel Monegro discuss their experiences in crypto, the formation of Placeholder, and their unique approach to combining venture capital and public market strategies.",
+  "topic_summary": "The conversation covers the origins of Placeholder, the division of labor between Chris and Joel, and their perspectives on crypto investments, particularly in relation to Solana and market dynamics [t=5:68-351:33].",
+  "router_tags": [
+    "Placeholder",
+    "Crypto",
+    "Venture Capital",
+    "Public Markets",
+    "Solana",
+    "Investment Strategies"
+  ],
+  "aliases": [
+    "Placeholder Playbook",
+    "Chris Burniske",
+    "Joel Monegro",
+    "Chris",
+    "Joel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisBurniske",
+    "@JoelMonegro",
+    "@CathieWood",
+    "@Vitalik"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

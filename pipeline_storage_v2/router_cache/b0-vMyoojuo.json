@@ -1,0 +1,22 @@
+{
+  "description": "This video provides an introduction to setting up a Solana validator, covering essential steps and concepts for first-time validators. It includes a live demo of the setup process and outlines future topics for deeper operational insights.",
+  "topic_summary": "The session begins with an overview of validator setup [t=2:88]. Key points include installing the Solana CLI, creating a vote account, and server setup [t=94:51]. The video emphasizes the importance of separating vote account setup from server operations [t=150:33]. Future discussions will cover advanced topics like building Solana from source and monitoring validators [t=190:36].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Cryptocurrency",
+    "Education"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Solana Validator Setup",
+    "Validator Workshop"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

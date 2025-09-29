@@ -1,0 +1,27 @@
+{
+  "description": "In this video, @notthreadguy shares a personal response to recent controversies surrounding his actions in the crypto space, particularly related to an incident on Valentine's Day involving a trading loss of $200,000. He discusses feeling betrayed by friends and the lack of support during a challenging time.",
+  "topic_summary": "The speaker addresses recent controversies in the crypto community, focusing on personal experiences of betrayal and the impact of a significant trading loss on Valentine's Day [t=204.75].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "controversy",
+    "personal response",
+    "Valentine's Day"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Hayden",
+    "@Coffeezilla",
+    "@DavePortnoy",
+    "@Kelsey",
+    "@Sargito",
+    "@Yuga"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

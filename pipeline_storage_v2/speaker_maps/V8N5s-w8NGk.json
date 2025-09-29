@@ -1,0 +1,20 @@
+{
+  "video_id": "V8N5s-w8NGk",
+  "title": "2024-12-10_V8N5s-w8NGk_Solana Artists in Residence at Art Basel 2024 - Laura El",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Laura Elle",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

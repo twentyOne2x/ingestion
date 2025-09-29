@@ -1,0 +1,24 @@
+{
+  "description": "Donnie Dinch discusses the latest developments at Phantom, including the launch of Phantom accounts and usernames, a novel key-based authentication method, and the introduction of Phantom Embedded Wallets. He highlights the growth of Phantom with 7 million monthly active users and nearly $9 billion in swap volume in 2024. The presentation emphasizes the need for improved wallet experiences to onboard more users into crypto.",
+  "topic_summary": "Keynote by Donnie Dinch on Phantom's advancements, including user growth, new wallet features, and the importance of enhancing wallet experiences for broader crypto adoption. Highlights include the launch of Phantom accounts and the new embedded wallet functionality [t=42.63].",
+  "router_tags": [
+    "Phantom",
+    "Crypto Wallet",
+    "Blockchain",
+    "User Experience",
+    "Web3"
+  ],
+  "aliases": [
+    "Phantom",
+    "phantom",
+    "DONNIE DINCH",
+    "donnie dinch"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

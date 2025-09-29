@@ -1,0 +1,25 @@
+{
+  "description": "Discussion about the future of AI applications and their integration with crypto, featuring insights from Griffin and mentions of various tech companies and personalities.",
+  "topic_summary": "Exploration of AI app development and its intersection with cryptocurrency, highlighting Griffin's role in this evolving landscape. [t=42:77]",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Tech",
+    "Startups",
+    "Innovation"
+  ],
+  "aliases": [
+    "Griffain",
+    "Griffin",
+    "Griffane"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "@Griffin",
+    "@Jakey",
+    "@Rasma"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Siong Ong introduces the Jupyter ecosystem at Breakpoint 2024, highlighting its three main pillars: the Jupyter Platform, the Community, and the JOO Tokens. The Jupyter platform features Spot, Perps, and Launchpad products, achieving significant trading volumes and integrations. The JOOP Dao boasts over 300,000 active voters, engaging in community discussions. Innovations like Dynamic Slippage and the Jupyter Works Group are discussed, alongside product updates including the Metapolis API platform and Jupyter iFQ aimed at enhancing liquidity on Solana.",
+  "topic_summary": "At Breakpoint 2024, Siong Ong presents the Jupyter ecosystem, detailing its structure, community engagement, and innovative products designed to improve user experience and liquidity on Solana. Key updates include the introduction of the Metapolis API and Jupyter iFQ.",
+  "router_tags": [
+    "Jupyter",
+    "Solana",
+    "DAO",
+    "Cryptocurrency",
+    "Blockchain",
+    "Liquidity",
+    "Trading"
+  ],
+  "aliases": [
+    "Jupyter",
+    "jupyter",
+    "JOOP",
+    "joop",
+    "Siong Ong",
+    "siong ong"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

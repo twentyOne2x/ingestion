@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses greedy heuristic algorithms for the maximum coverage problem, illustrating how to assemble a diverse team within a budget while maximizing skill representation.",
+  "topic_summary": "The maximum coverage problem involves selecting subsets to cover as many elements as possible given a budget. It is applicable in various scenarios, such as team hiring and optimizing resource locations.",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Greedy Heuristic",
+    "Maximum Coverage"
+  ],
+  "aliases": [
+    "Algorithms For NP-Hard Problems",
+    "Greedy Heuristic for Maximum Coverage"
+  ],
+  "canonical_entities": [
+    "$ALGORITHMS",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

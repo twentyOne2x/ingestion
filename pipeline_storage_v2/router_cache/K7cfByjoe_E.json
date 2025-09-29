@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the Solana Foundation Validator updates, including an urgent OpenSSH vulnerability and updates on Firedancer and Mainnet beta.",
+  "topic_summary": "The meeting covers the OpenSSH vulnerability [t=54:11], validator updates [t=182:89], and the Firedancer bug bounty [t=277:77].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Firedancer",
+    "OpenSSH",
+    "Bug Bounty"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "solana foundation",
+    "SOLANA FOUNDATION"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Ankur Jain discusses the importance of mobile dApps and the technologies being developed to enhance user experience in Web3. He emphasizes the need for mobile accessibility to reach a broader audience, citing statistics about smartphone usage globally.",
+  "topic_summary": "Ankur Jain from the Solana Mobile team presents on mobile dApps, highlighting user needs in Web3 and the significance of mobile technology for broader engagement. He shares insights on market trends and user demographics, advocating for a mobile-first approach in development [t=246:79].",
+  "router_tags": [
+    "mobile dApps",
+    "Web3",
+    "Solana",
+    "Ankur Jain",
+    "technology",
+    "user experience"
+  ],
+  "aliases": [
+    "Ankur Jain",
+    "ankur jain",
+    "ANKUR JAIN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

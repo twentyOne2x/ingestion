@@ -1,0 +1,24 @@
+{
+  "description": "A fireside chat featuring Thomas Uhm and Colleen Sullivan discussing Tom's transition from Jane Street to JITO, his experiences in crypto, and the similarities between JITO and Jane Street's approach to market infrastructure.",
+  "topic_summary": "Tom Uhm shares insights on his career at Jane Street, his decision to join JITO, and the importance of market infrastructure in crypto [t=0:00]. He reflects on his journey in crypto, the challenges faced by trading firms, and the innovative solutions offered by JITO [t=71:63].",
+  "router_tags": [
+    "Crypto",
+    "JITO",
+    "Jane Street",
+    "Market Infrastructure",
+    "Solana"
+  ],
+  "aliases": [
+    "Tom Uhm",
+    "Colleen Sullivan",
+    "Jito",
+    "Jane Street"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Jito"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

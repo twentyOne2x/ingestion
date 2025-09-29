@@ -1,0 +1,25 @@
+{
+  "description": "In this fireside chat, Filip Dragoslavic and Trevor Filter discuss the launch of the SOFLA card and the differences between Flexa and traditional crypto payment cards. They emphasize the seamless, privacy-preserving nature of Flexa's payment solutions, which allow users to transact with various cryptocurrencies without sharing personal data. The conversation also touches on the future of crypto payments and the integration of blockchain technology by major payment networks like Visa and MasterCard.",
+  "topic_summary": "Filip Dragoslavic and Trevor Filter explore the launch of the SOFLA card and Flexa's unique approach to crypto payments, highlighting its privacy features and merchant integration. They discuss the evolving landscape of payment solutions and the role of blockchain technology in the future of transactions [t=0:00-0:00].",
+  "router_tags": [
+    "Crypto Payments",
+    "Flexa",
+    "SOFLA Card",
+    "Blockchain",
+    "Privacy",
+    "Merchant Integration"
+  ],
+  "aliases": [
+    "Soulflare",
+    "SOFLA",
+    "Flexa",
+    "Flexa Network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@FlexaHQ"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

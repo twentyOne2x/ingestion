@@ -1,0 +1,22 @@
+{
+  "description": "Tim Roughgarden introduces the video playlist accompanying the book 'Algorithms Illuminated Part Algorithms for NP Hard Problems'. He outlines the prerequisites for viewers, including familiarity with asymptotic notation, basic data structures, graphs, and algorithm design paradigms like greedy algorithms and dynamic programming. The video discusses NP hard problems, their implications, and the need for algorithm designers to compromise on correctness or speed when tackling these problems. It also covers heuristic algorithms, local search techniques, and dynamic programming as methods to address NP hard challenges.",
+  "topic_summary": "In this video, Tim Roughgarden provides an overview of NP hard problems and the necessary background knowledge for understanding the content of the playlist. He emphasizes the importance of recognizing NP hard problems and discusses strategies for designing algorithms that either compromise on correctness or speed. The video serves as an introduction to the concepts that will be explored in greater detail in subsequent chapters, including heuristic algorithms and dynamic programming.",
+  "router_tags": [
+    "Algorithms",
+    "NP Hard Problems",
+    "Algorithm Design",
+    "Heuristic Algorithms",
+    "Dynamic Programming"
+  ],
+  "aliases": [
+    "Tim Roughgarden",
+    "tim roughgarden",
+    "TIM ROUGHGARDEN"
+  ],
+  "canonical_entities": [
+    "$NP_HARD",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

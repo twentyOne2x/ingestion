@@ -1,0 +1,24 @@
+{
+  "description": "This week's Changelog discusses updates including the auto-extend feature for programs in the CLI, improvements in program deployment using RPC, and highlights from the Turbo game jam.",
+  "topic_summary": "The episode covers the new auto-extend feature for CLI programs [t=69:36], changes in program deployment due to RPC adjustments [t=135:24], and the Turbo game jam announcement [t=216:98].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "CLI",
+    "RPC",
+    "Turbo",
+    "Game Jam"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

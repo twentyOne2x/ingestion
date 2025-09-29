@@ -1,0 +1,23 @@
+{
+  "description": "In this presentation, the speaker discusses the inefficiencies of liquidity provision in decentralized finance, using a fishing analogy to illustrate the need for better data and strategies. They introduce the Liquidity Terminal, a new interface designed to help liquidity providers analyze pools and manage positions effectively.",
+  "topic_summary": "The speaker highlights the challenges faced by liquidity providers and introduces the Liquidity Terminal, emphasizing its features like the Yield Finder to enhance decision-making and efficiency in liquidity provision [t=3:60].",
+  "router_tags": [
+    "Liquidity Provision",
+    "DeFi",
+    "Orca",
+    "Solana",
+    "Yield Finder"
+  ],
+  "aliases": [
+    "Liquidity Terminal",
+    "Liquidity terminal",
+    "ORCA",
+    "Orca"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@orca"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

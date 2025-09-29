@@ -1,0 +1,28 @@
+{
+  "description": "At Breakpoint 2023, moderator Bolt Online leads a discussion with young professionals in the Web3 space, focusing on their experiences and challenges as they transition from students to contributors in the Solana ecosystem. Speakers include Valentin Madrid from Squad Protocol and Elio Jordan Lopez from Into TheVerse, who share insights on their journeys and projects.",
+  "topic_summary": "The panel discusses the increasing involvement of youth in Web3, sharing personal stories and advice for aspiring contributors in the Solana ecosystem. Key topics include early experiences in technology, project development, and community support.",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Breakpoint",
+    "Youth",
+    "Technology",
+    "Gaming"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "Solana Breakpoint",
+    "Youth in Web3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Valentin",
+    "@ElioJordanLopez",
+    "@IntoTheverse",
+    "@SquadProtocol"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "This lecture discusses the dynamics of block rewards and transaction fees in blockchain systems, focusing on Bitcoin and Ethereum. It explores how transaction fees have gained significance, especially in Ethereum due to the rise of decentralized finance (DeFi) [t=76.06]. The lecture also addresses the implications of selfish mining attacks in the context of increasing transaction fees [t=215.18].",
+  "topic_summary": "The lecture examines the historical and current relationship between block rewards and transaction fees in Bitcoin and Ethereum, highlighting the potential future shifts in this balance and the impact on mining strategies [t=127.26].",
+  "router_tags": [
+    "blockchain",
+    "Bitcoin",
+    "Ethereum",
+    "transaction fees",
+    "block rewards",
+    "selfish mining"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Carlston",
+    "@Kolodner",
+    "@Weinberg",
+    "@Narayanan"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

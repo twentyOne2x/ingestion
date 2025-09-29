@@ -1,0 +1,26 @@
+{
+  "description": "Robinson Burkey discusses Wormhole's role in enhancing Solana's Internet capital markets, highlighting its interoperability and asset transfer capabilities. He emphasizes the significance of liquidity fragmentation and the challenges it poses in the crypto ecosystem.",
+  "topic_summary": "Keynote on Wormhole's impact on Solana's capital markets, focusing on interoperability, asset transfers, and liquidity challenges [t=0:24-0:56].",
+  "router_tags": [
+    "Wormhole",
+    "Solana",
+    "Interoperability",
+    "Crypto",
+    "Liquidity"
+  ],
+  "aliases": [
+    "wormhole",
+    "Wormhole",
+    "WormHole"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$USDC",
+    "$ETH",
+    "$USDT",
+    "$BTC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

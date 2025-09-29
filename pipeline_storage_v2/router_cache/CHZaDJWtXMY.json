@@ -1,0 +1,29 @@
+{
+  "description": "Mert Mumtaz and Raj Gokal welcome attendees to the first major Solana conference in the U.S., discussing the significance of the location and the opportunities for builders in the crypto space. They emphasize the importance of regulatory clarity and the potential for innovation in consumer-focused products. The conference aims to connect product builders with policymakers to foster collaboration and growth in the industry.",
+  "topic_summary": "At the Accelerate 2025 conference, Mert Mumtaz and Raj Gokal discuss the importance of the U.S. as a venue for Solana's first major conference, the role of regulatory clarity in fostering innovation, and the need for product builders to engage with lawmakers. They highlight the presence of notable figures like Nikita and the Solana Policy Institute, aiming to bridge the gap between technology and policy [t=0:24-0:64].",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Conference",
+    "Innovation",
+    "Regulatory Clarity",
+    "Product Development"
+  ],
+  "aliases": [
+    "Solana",
+    "SOL",
+    "Mert Mumtaz",
+    "Raj Gokal",
+    "Nikita",
+    "Venmo",
+    "Tolle"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@Nikita",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

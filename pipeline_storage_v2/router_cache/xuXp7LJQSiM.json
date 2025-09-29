@@ -1,0 +1,26 @@
+{
+  "description": "Lecture on self-improving algorithms, focusing on their assumptions and applications in sorting. Discusses the importance of learning input distributions over time and how algorithms can adapt to these distributions for improved performance.",
+  "topic_summary": "Explores self-improving algorithms, emphasizing their ability to learn from multiple IID inputs drawn from unknown distributions. Highlights the transition from average case analysis to algorithms that adapt based on observed data, particularly in sorting tasks.",
+  "router_tags": [
+    "self-improving algorithms",
+    "sorting",
+    "algorithm design",
+    "input distribution",
+    "IID inputs"
+  ],
+  "aliases": [
+    "Self-Improving Algorithms",
+    "Self improving algorithms",
+    "self improving Algorithms"
+  ],
+  "canonical_entities": [
+    "$SHANNON",
+    "$HUFFMAN",
+    "$CHERNOFF",
+    "$KNUTH",
+    "$CHERTOFF",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

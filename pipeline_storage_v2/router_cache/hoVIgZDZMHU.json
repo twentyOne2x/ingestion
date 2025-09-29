@@ -1,0 +1,21 @@
+{
+  "description": "In this tutorial, the concept of reactive resources is defined, emphasizing their role in permissionless consensus protocols. The discussion includes the distinction between reactive and permissioned protocols, particularly in the context of Bizcoin hybrid and Solidar protocols, and how external resources can influence the ownership of on-chain resources [t=1:44].",
+  "topic_summary": "This video focuses on defining reactive resources within the framework of permissionless consensus protocols, exploring how external factors can force changes in resource ownership [t=1:44].",
+  "router_tags": [
+    "Consensus",
+    "Blockchain",
+    "Protocols",
+    "Reactive Resources"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "Permissionless consensus tutorial",
+    "permissionless consensus tutorial"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

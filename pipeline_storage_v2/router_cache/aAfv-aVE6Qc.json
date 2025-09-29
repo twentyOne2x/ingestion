@@ -1,0 +1,28 @@
+{
+  "description": "Carlos Noriega discusses scaling on-chain infrastructure for consumer fintech, emphasizing the need for security, programmability, and cost efficiency in managing accounts for millions of users. He highlights the challenges of current wallet systems and introduces Squads' smart contract wallet infrastructure on Solana, which aims to address these issues while maintaining transaction efficiency.",
+  "topic_summary": "The talk focuses on building scalable on-chain infrastructure for fintech applications, addressing security, programmability, and cost management for a large user base. It also discusses the limitations of current wallet solutions and presents Squads' innovative approach to smart contract wallets on Solana.",
+  "router_tags": [
+    "Fintech",
+    "Blockchain",
+    "Solana",
+    "Smart Wallets",
+    "Scalability"
+  ],
+  "aliases": [
+    "Carlos Noriega",
+    "carlos noriega",
+    "Squads",
+    "squads"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$10 Billion",
+    "$20 Million",
+    "$300",
+    "@Revolut",
+    "@Jerry"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

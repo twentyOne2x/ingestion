@@ -1,0 +1,28 @@
+{
+  "description": "Jerry, co-founder of Ellipsis Labs, discusses the Phoenix project, a spot limit order book DEX on Solana, highlighting its features, milestones, and market performance. Phoenix allows immediate fund withdrawals post-trade, contrasting with previous systems that relied on third-party settlements. Since its launch, Phoenix has achieved over $500 million in trading volume and has integrated with top trading firms. The presentation also covers market share metrics and the performance of market makers compared to liquidity providers on other platforms like Orca.",
+  "topic_summary": "The presentation covers the launch and performance of Phoenix, a DEX on Solana, emphasizing its unique features, market share growth, and the efficiency of active liquidity compared to passive liquidity in sustaining market dynamics. Key metrics and comparisons with other trading platforms are discussed.",
+  "router_tags": [
+    "Solana",
+    "Phoenix",
+    "Ellipsis Labs",
+    "DEX",
+    "Active Liquidity",
+    "Market Share",
+    "Trading Volume"
+  ],
+  "aliases": [
+    "Phoenix",
+    "phoenix",
+    "SOL",
+    "sol",
+    "Jerry",
+    "jerry"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

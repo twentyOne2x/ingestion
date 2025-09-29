@@ -1,0 +1,28 @@
+{
+  "description": "Yash Agarwal discusses the development of SendAI and its mission to enhance attention capital markets on Solana. He highlights the launch of the Solana AI Hackathon, which featured over 400 projects and a PE cap of $800 million. The talk covers the introduction of the Solana App Kit, enabling rapid mobile app development with over 50 protocol integrations, and announces five new mobile applications aimed at increasing consumer adoption.",
+  "topic_summary": "In this talk, Yash Agarwal outlines the advancements in building applications on Solana, focusing on mobile integration and the launch of the Solana App Kit. He emphasizes the importance of mobile-native solutions and introduces five new apps designed to leverage the capabilities of the Solana ecosystem, aiming for greater consumer engagement and adoption [t=3:52 - t=361:64].",
+  "router_tags": [
+    "Solana",
+    "AI",
+    "Mobile Apps",
+    "Hackathon",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SendAI",
+    "sendai",
+    "Send Ai",
+    "send ai"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$800 Million",
+    "$300 Million",
+    "@Radium",
+    "@Meteora",
+    "@PumpFunLaunchLab"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

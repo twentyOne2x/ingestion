@@ -1,0 +1,23 @@
+{
+  "description": "Nicholas, co-founder of Courtyard, discusses the success of trading cards and the evolution of NFTs. He shares his background in sports card flipping and how he transitioned to launching Courtyard, which ties physical cards to digital ownership. The conversation covers the Genesis drop of Pokémon cards and the platform's growth over three years.",
+  "topic_summary": "Nicholas explains the rise of trading cards and NFTs, detailing his journey from sports card reseller to co-founding Courtyard, which integrates physical and digital card ownership. He reflects on the initial NFT drop and the platform's development over time.",
+  "router_tags": [
+    "NFTs",
+    "Trading Cards",
+    "Courtyard",
+    "Digital Ownership",
+    "Pokémon"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "notthreadguy",
+    "Courtyard"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$NFT",
+    "$POKEMON"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

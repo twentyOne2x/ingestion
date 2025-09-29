@@ -1,0 +1,23 @@
+{
+  "description": "Fuse Energy aims to transform the fragmented energy market by building a decentralized energy network on Solana, focusing on customer empowerment and transparency in energy consumption.",
+  "topic_summary": "The discussion highlights the challenges in the energy sector, the innovative approach of Fuse Energy in creating a community-powered virtual power plant on Solana, and the advantages of blockchain technology in energy distribution and pricing [t=61:93].",
+  "router_tags": [
+    "DePIN",
+    "Solana",
+    "Energy",
+    "Blockchain",
+    "Virtual Power Plant"
+  ],
+  "aliases": [
+    "DePIN",
+    "Deepin",
+    "Fuse Energy",
+    "Fuse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "FaZe Banks discusses Trump's influence on the upcoming election, expressing excitement and confidence. He shares personal feelings and opinions on Trump's current state and his own success.",
+  "topic_summary": "FaZe Banks talks about Trump's role in the election and his personal achievements [t=0:00].",
+  "router_tags": [
+    "politics",
+    "republican",
+    "election",
+    "faze",
+    "banks"
+  ],
+  "aliases": [
+    "Faze Banks",
+    "faze banks",
+    "FaZe banks"
+  ],
+  "canonical_entities": [
+    "$TRUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

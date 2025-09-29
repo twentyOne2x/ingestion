@@ -1,0 +1,26 @@
+{
+  "video_id": "ty8OS1kyvbc",
+  "title": "2025-09-08_ty8OS1kyvbc_pump.fun's Sapijiju: First-Ever Discussion on Building the Future of Social Trading",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Marc Andreessen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Andreessen Horvitz",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

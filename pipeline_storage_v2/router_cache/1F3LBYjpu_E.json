@@ -1,0 +1,21 @@
+{
+  "description": "The third day of Breakpoint 2022 at Pateo de Gale features a packed program with technical deep dives, workshops, and a closing ceremony. Attendees are encouraged to explore other venues and utilize noise-canceling headsets for better audio experience.",
+  "topic_summary": "Day 3 of Breakpoint 2022 includes talks on smart messaging by Chris from Dialect, emphasizing interactive messaging capabilities in the Web3 ecosystem. The event concludes with a celebration featuring DJs.",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "Web3",
+    "smart messaging",
+    "technical workshops"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

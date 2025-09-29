@@ -1,0 +1,26 @@
+{
+  "video_id": "dj8w3363wOg",
+  "title": "2025-05-23_dj8w3363wOg_Ship or Die 2025: University Research Driving Innovation (Matt Abbott, Marc Sedam, Paul Kohlhaas)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Paul Kohlhaas",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Mark Saddam",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

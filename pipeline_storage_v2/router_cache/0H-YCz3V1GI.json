@@ -1,0 +1,25 @@
+{
+  "description": "Merdan Aslan discusses his work on Maindocs, a financial management and documentation software for crypto, aimed at helping users better understand blockchain data.",
+  "topic_summary": "Merdan Aslan, a Solana developer and member of Super Team Germany, explains the functionalities of Maindocs and invites developers to join the team [t=11:04].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "financial management",
+    "software development"
+  ],
+  "aliases": [
+    "Merdan",
+    "Merdan Aslan",
+    "Super Team Germany",
+    "Maindocs Io"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@MerdanAslan",
+    "@SuperTeamGermany",
+    "@MaindocsIo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

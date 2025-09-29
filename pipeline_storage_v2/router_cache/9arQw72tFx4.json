@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the potential of decentralized orchestration through Deepin, highlighting its growing interest and applications within the Solana ecosystem.",
+  "topic_summary": "Exploration of Deepin's capabilities and its impact on decentralized solutions, emphasizing the excitement and interest in Solana [t=24:24].",
+  "router_tags": [
+    "DePIN",
+    "Solana",
+    "Decentralization",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Deepin",
+    "DeepIn",
+    "dePIN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

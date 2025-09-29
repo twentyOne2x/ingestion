@@ -1,0 +1,25 @@
+{
+  "description": "Derek Chia introduces Crypto House, a blockchain analytics service powered by Clickhouse and Goldsky. He explains the features of Clickhouse, including its SQL compatibility, high write capacity, and efficiency in processing large datasets. The presentation highlights the benefits of using Clickhouse for real-time blockchain analytics and its partnership with Goldsky for data provision.",
+  "topic_summary": "Introduction to Crypto House and Clickhouse, focusing on blockchain analytics capabilities and real-time data processing [t=8:48].",
+  "router_tags": [
+    "Blockchain",
+    "Analytics",
+    "Clickhouse",
+    "Goldsky",
+    "Crypto House"
+  ],
+  "aliases": [
+    "Crypto House",
+    "cryptohouse",
+    "Clickhouse",
+    "clickhouse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AaronChu",
+    "@JupiterExchange"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

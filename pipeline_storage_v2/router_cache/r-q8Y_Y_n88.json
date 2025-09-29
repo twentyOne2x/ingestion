@@ -1,0 +1,28 @@
+{
+  "description": "Frederik from Dune discusses Solana's blockchain activity, highlighting trends in active users and sectors like DEXs and NFTs. He announces Dune's new human-readable data tables for Solana, improving user experience and performance for data analysis.",
+  "topic_summary": "The presentation covers Solana's user activity trends, the performance of DEXs and NFTs, and introduces Dune's new data tables for easier blockchain analysis [t=3:28 - t=410:88].",
+  "router_tags": [
+    "Solana",
+    "Dune",
+    "Blockchain",
+    "Data Analysis",
+    "NFTs",
+    "DEXs"
+  ],
+  "aliases": [
+    "Frederik",
+    "Frederick",
+    "Dune",
+    "SolanaFndn",
+    "Solana Fm"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@JamesTroutman",
+    "@Messari"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

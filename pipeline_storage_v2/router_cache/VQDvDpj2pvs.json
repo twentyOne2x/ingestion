@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on the future of crypto payments and infrastructure featuring Omid Aladini, Stijn Paumen, and Ivan Soto-Wright at the Solana Accelerate Conference. They explore the integration of Helio and Iron under Moonpay, the vision for mainstream crypto adoption, and the benefits of crypto payments over traditional systems.",
+  "topic_summary": "At [t=1:36], the panel introduces the ambition to create a new financial system. They discuss the unified vision behind integrating Iron and Helio with Moonpay at [t=19:52]. The conversation highlights the importance of wallets in crypto adoption at [t=57:57] and the advantages of Helio's payment solutions at [t=115:92]. The discussion also touches on the market potential for stablecoins and the future of crypto payments at [t=287:71].",
+  "router_tags": [
+    "crypto",
+    "payments",
+    "blockchain",
+    "Solana",
+    "Moonpay",
+    "Helio",
+    "Iron",
+    "financial systems"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Omid Aladini",
+    "Stijn Paumen",
+    "Ivan Soto-Wright",
+    "MacKenzie Sigalos"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ivan",
+    "@stein",
+    "@omid",
+    "@moonpay",
+    "@helio",
+    "@iron"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

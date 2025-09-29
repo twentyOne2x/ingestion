@@ -1,0 +1,26 @@
+{
+  "video_id": "Ou-r8wyxPzY",
+  "title": "2025-02-06_Ou-r8wyxPzY_Saving Adin Ross' $10,000,000 Crypto Portfolio",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Hunter Biden",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Eric Trump",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

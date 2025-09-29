@@ -1,0 +1,24 @@
+{
+  "description": "Yannik Schrade discusses the evolution and practical applications of zero knowledge technology, highlighting its resurgence on the Solana blockchain and its implications for privacy and scalability in computing.",
+  "topic_summary": "The episode covers the fundamentals of zero knowledge technology, its historical context, and its current applications, particularly on Solana. Schrade explains the differences between zero knowledge proofs and other cryptographic methods, emphasizing the importance of verifiable compute and the removal of trusted entities in distributed systems. [t=0:32] [t=36:09] [t=318:34]",
+  "router_tags": [
+    "Zero Knowledge",
+    "Solana",
+    "Cryptography",
+    "Privacy",
+    "Blockchain",
+    "Verifiable Compute"
+  ],
+  "aliases": [
+    "Yannik Schrade",
+    "Yannick Schrade",
+    "Arcium",
+    "Arkium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

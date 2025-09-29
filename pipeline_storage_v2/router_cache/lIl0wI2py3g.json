@@ -1,0 +1,30 @@
+{
+  "description": "Nick and Jonas from the Solana Foundation Devrel team discuss recent updates in the Solana ecosystem, including commits, the Agave installer, and Project Old Faithful, which stores Solana ledger history on Filecoin. They highlight the importance of backing up local key pairs during updates and introduce new tools and SDK versions.",
+  "topic_summary": "Updates on Solana development including commit changes, Agave installer precautions, and Project Old Faithful's capabilities for ledger history storage [t=134.79].",
+  "router_tags": [
+    "Solana",
+    "Agave",
+    "Old Faithful",
+    "Filecoin",
+    "SDK",
+    "Development"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "solana changelog",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nick",
+    "@Jonas",
+    "@JohnCinque",
+    "@BrianLong",
+    "@Triton",
+    "@HardHatchet"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

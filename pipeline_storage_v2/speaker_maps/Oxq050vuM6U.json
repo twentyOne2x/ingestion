@@ -1,0 +1,20 @@
+{
+  "video_id": "Oxq050vuM6U",
+  "title": "2023-06-14_Oxq050vuM6U_Chewing Glass - Ilmoi & Richard Wu (Tensor) - Episode #13",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Noah Prince",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

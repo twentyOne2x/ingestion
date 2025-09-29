@@ -1,0 +1,20 @@
+{
+  "video_id": "l1CCyrCI-Ug",
+  "title": "2023-10-31_l1CCyrCI-Ug_Breakpoint 2023: Water from a Stone: Liquid Staking on Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Nicholas Swissborg",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

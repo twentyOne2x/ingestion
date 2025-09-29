@@ -1,0 +1,25 @@
+{
+  "description": "Tim Roughgarden discusses how blockchain protocols function, targeting both technical and non-technical audiences. He explains key concepts like consensus, validators, and decentralization, emphasizing the importance of understanding the technology behind Web3.",
+  "topic_summary": "In this lecture, Tim Roughgarden explores the inner workings of blockchain protocols, focusing on their role in creating a decentralized virtual machine. He covers essential terminology, the concept of consensus, and the challenges of permissionless systems, while addressing various audience motivations for learning about the technology [t=0:00-3:36].",
+  "router_tags": [
+    "Blockchain",
+    "Web3",
+    "Decentralization",
+    "Consensus",
+    "Technology Education"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgarden",
+    "$ETH",
+    "$BTC",
+    "$BNB",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

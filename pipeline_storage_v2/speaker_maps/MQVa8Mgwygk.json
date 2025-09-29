@@ -1,0 +1,14 @@
+{
+  "video_id": "MQVa8Mgwygk",
+  "title": "2022-11-07_MQVa8Mgwygk_Breakpoint 2022: Welcome to Pateo da Gale",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

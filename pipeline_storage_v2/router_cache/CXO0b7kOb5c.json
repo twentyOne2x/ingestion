@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 19 discusses revenue maximization in multi-parameter settings, building on Myerson's theory of optimal auctions. The lecture explores the complexities of achieving revenue maximization and introduces linear programming as a tool for auction design. Key concepts include the need for randomization in auctions and the independence of bidders' valuations.",
+  "topic_summary": "This lecture focuses on extending Myerson's single-parameter auction theory to multi-parameter settings, emphasizing the challenges and the role of linear programming in auction design. The discussion includes the importance of randomization and the independence of bidders' valuations.",
+  "router_tags": [
+    "Mechanism Design",
+    "Auction Theory",
+    "Revenue Maximization",
+    "Linear Programming"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "Tim Roughgarden",
+    "Lecture 19"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$10",
+    "$8",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

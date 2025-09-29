@@ -1,0 +1,20 @@
+{
+  "video_id": "inoNX7cTzbY",
+  "title": "2024-09-17_inoNX7cTzbY_Jason Zhao: $140M Raised to Rewrite the Rules of Intellectual Property with Story Protocol",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Chris Dixon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Explore the evolution of Web3 mobile applications and the role of Solana in this transformation.",
+  "topic_summary": "Discussion on the advancements in Web3 mobile technology and Solana's contributions to this space [t=00:00].",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Mobile Technology",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Seeker",
+    "solana seeker",
+    "SOLANA SEEKER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

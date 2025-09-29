@@ -1,0 +1,29 @@
+{
+  "description": "This presentation discusses the Burn-and-Mint tokenomics model, focusing on how it creates value through the interaction between contributors, consumers, and the platform. It highlights the importance of trust, acceptance, and value in establishing a currency's legitimacy, and explains the role of pricing oracles in maintaining price stability in fiat while allowing token price fluctuations. The historical context of Burn-and-Mint is provided, tracing its origins to the project Factum and its popularization by Kyle Samani of Multicoin. The analysis includes strategic considerations for token holders regarding value perception and pricing dynamics.",
+  "topic_summary": "The talk covers Burn-and-Mint tokenomics, emphasizing its structure involving contributors and consumers, the significance of pricing oracles, and the historical development of the model. It also addresses the strategic behavior of token holders in relation to value and pricing.",
+  "router_tags": [
+    "Tokenomics",
+    "Burn and Mint",
+    "Cryptocurrency",
+    "Blockchain",
+    "Value Creation"
+  ],
+  "aliases": [
+    "Burn and Mint Tokenomics",
+    "Burn-and-Mint",
+    "Goldilocks Tokenomics"
+  ],
+  "canonical_entities": [
+    "$50",
+    "$0.01",
+    "$1",
+    "$BTC",
+    "@KyleSamani",
+    "@Multicoin",
+    "@Onicoi",
+    "@IsaacNewton",
+    "@Leibniz"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

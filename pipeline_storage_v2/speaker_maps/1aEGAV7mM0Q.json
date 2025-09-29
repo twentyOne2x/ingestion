@@ -1,0 +1,20 @@
+{
+  "video_id": "1aEGAV7mM0Q",
+  "title": "2024-06-19_1aEGAV7mM0Q_Solana Changelog Jun 19 - Test validator fix, new Syscall, RPC updates, and more",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Joe Buffalo",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

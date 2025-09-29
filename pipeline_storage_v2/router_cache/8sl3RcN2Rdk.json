@@ -1,0 +1,25 @@
+{
+  "description": "Kevin Bowers discusses the evolution of the Fire Dancer validator, emphasizing its significance for the Solana community's health and performance. He outlines the team's progress and technical challenges faced over the past two years, including the need for high-speed parallel cryptography and efficient transaction execution. Bowers highlights the importance of streamlining data flow in distributed computing to meet the demands of modern blockchain systems.",
+  "topic_summary": "In this keynote, Kevin Bowers presents an overview of the Fire Dancer project, detailing its development, technical requirements, and the team's efforts to enhance Solana's validator capabilities. He reflects on past presentations and the ongoing challenges in achieving high performance and reliability in blockchain technology [t=27:58].",
+  "router_tags": [
+    "Solana",
+    "Fire Dancer",
+    "Blockchain",
+    "Validator",
+    "Distributed Computing",
+    "Technical Presentation"
+  ],
+  "aliases": [
+    "Kevin Bowers",
+    "kevin bowers",
+    "Fire Dancer",
+    "fire dancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

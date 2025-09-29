@@ -1,0 +1,24 @@
+{
+  "description": "Kaveh from Jump Trading Group discusses FPGA acceleration for signature verification, achieving 1 million verifications per second with low latency. The presentation includes a demo of eight FPGAs processing 8 million verifications per second using only 400 watts peak power.",
+  "topic_summary": "The talk covers FPGA technology, its architecture, and its application in accelerating signature verification processes, highlighting performance metrics and power efficiency [t=118.01].",
+  "router_tags": [
+    "FPGA",
+    "signature verification",
+    "hardware acceleration",
+    "Jump Trading",
+    "Xilinx"
+  ],
+  "aliases": [
+    "Kaveh",
+    "KAVEH",
+    "kaveh"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$AMD",
+    "$XILINX",
+    "$JUMP"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

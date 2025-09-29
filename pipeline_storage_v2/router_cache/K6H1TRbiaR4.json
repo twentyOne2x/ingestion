@@ -1,0 +1,24 @@
+{
+  "description": "Felix Willem discusses the security measures taken for Firedancer, an independent Solana validator, emphasizing the importance of diversity in validator implementations to mitigate risks from vulnerabilities and backdoors. He highlights the challenges of ensuring compatibility with Solana Labs' validator while maintaining security, particularly given Firedancer's use of C, which lacks memory safety guarantees. Strategies for addressing security challenges include designing for defense in depth and collaborating closely with the engineering team throughout the development lifecycle.",
+  "topic_summary": "Overview of security strategies for Firedancer, an independent Solana validator, focusing on the importance of diverse implementations, compatibility with existing protocols, and mitigating memory safety vulnerabilities.",
+  "router_tags": [
+    "Firedancer",
+    "Solana",
+    "Blockchain Security",
+    "Validator Implementation",
+    "Memory Safety"
+  ],
+  "aliases": [
+    "Firedancer",
+    "firedancer",
+    "FIRE DANCER",
+    "filanzer",
+    "Filanzer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

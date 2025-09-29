@@ -1,0 +1,23 @@
+{
+  "description": "Sheena discusses Parena, a stablecoin infrastructure on Solana, enabling seamless swaps between stablecoins with lower fees and faster rates. Users can deposit stablecoins for deeper liquidity and earn USD Stars LP Tokens. Future plans include a CTP stablecoin backed by real assets.",
+  "topic_summary": "Overview of Parena's stablecoin infrastructure on Solana, focusing on features like seamless stablecoin swaps and liquidity pools [t=0:24 - t=42:06].",
+  "router_tags": [
+    "Stablecoins",
+    "Solana",
+    "Parena",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Parena",
+    "PARENA",
+    "Sheena",
+    "SHEENA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sheena"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

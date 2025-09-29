@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the evolution of robotics and AI, focusing on hardware supply chains and the competitive landscape in the industry. Key insights include the dominance of companies like Google and Tesla in robotics and the geopolitical implications of robotics development.",
+  "topic_summary": "Exploration of robotics and AI advancements, hardware supply chains, and the competitive dynamics among major tech companies [t=0:08 - t=2:56].",
+  "router_tags": [
+    "Robotics",
+    "AI",
+    "Technology",
+    "Supply Chain",
+    "Geopolitics"
+  ],
+  "aliases": [
+    "Jose Macedo",
+    "Delphi Intelligence",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$BTC",
+    "$SOL",
+    "@Tesla",
+    "@Google"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

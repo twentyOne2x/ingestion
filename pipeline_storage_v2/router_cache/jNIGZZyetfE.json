@@ -1,0 +1,23 @@
+{
+  "description": "Brandon discusses the development of on-chain fantasy leagues aimed at onboarding new users to the Solana ecosystem. He emphasizes the importance of making fantasy leagues engaging and accessible, particularly targeting F1 fans and sim racers. The platform, Podium, allows users to predict race outcomes and mint NFTs easily using Google sign-in, fostering a competitive environment with leaderboards and customizable avatars.",
+  "topic_summary": "Brandon outlines the strategy for onboarding new users to Solana through engaging on-chain fantasy leagues, focusing on F1 racing and leveraging partnerships with meme accounts and crypto companies to expand reach and accessibility [t=1:04 - t=3:06].",
+  "router_tags": [
+    "Fantasy Leagues",
+    "Solana",
+    "F1 Racing",
+    "NFTs",
+    "Onboarding",
+    "Gaming"
+  ],
+  "aliases": [
+    "Podium",
+    "podium",
+    "PODIUM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

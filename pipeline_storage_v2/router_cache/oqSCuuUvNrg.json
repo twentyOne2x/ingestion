@@ -1,0 +1,26 @@
+{
+  "description": "Vibu, founder of Solana Spaces, discusses the innovative Solana Store in New York City, highlighting its interactive features and community engagement. The store serves as a hub for learning about Solana and Web3, offering tutorials and rewards like NFTs and USDC for participation. The presentation also introduces the Solana Embassy in Miami, a multifunctional space designed to enhance the crypto experience.",
+  "topic_summary": "Overview of Solana Spaces and its initiatives, including the Solana Store in NYC and the Solana Embassy in Miami, focusing on community engagement and educational opportunities in the crypto space. [t=1:36] [t=11:30] [t=17:20]",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Crypto",
+    "NFT",
+    "Retail",
+    "Community",
+    "Education"
+  ],
+  "aliases": [
+    "Solana Spaces",
+    "Solana Store",
+    "Solana Embassy",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

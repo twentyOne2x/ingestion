@@ -1,0 +1,22 @@
+{
+  "description": "Paul Bohm discusses how protocols can replace traditional companies, sharing his journey from Austria to founding Teleport, a ride-sharing app built on an open protocol that rewards early adopters. He reflects on the importance of community and the impact of open protocols on innovation.",
+  "topic_summary": "In this talk, Paul Bohm explains the concept of protocols, their significance in technology, and how they can foster community and collaboration, drawing from his experiences in establishing a hackerspace and the evolution of crowdfunding through platforms like Kickstarter. [t=11:60]",
+  "router_tags": [
+    "Protocols",
+    "Open Source",
+    "Community Building",
+    "Ride Sharing",
+    "Innovation"
+  ],
+  "aliases": [
+    "Paul Bohm",
+    "Paul Bo",
+    "Teleport"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

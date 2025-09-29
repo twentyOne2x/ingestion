@@ -1,0 +1,25 @@
+{
+  "description": "Ian Dilick discusses the integration of World ID into the Solana ecosystem, explaining its purpose in verifying unique human identities online without compromising privacy. He highlights the use of the Orb device for iris scanning and the benefits of World ID for applications like social media and customer incentives.",
+  "topic_summary": "World ID is introduced as a solution for verifying unique human identities online, utilizing the Orb device for iris scanning and aiming for integration within the Solana ecosystem. The presentation covers its privacy-first approach and potential applications in various sectors, including social media and customer incentives.",
+  "router_tags": [
+    "World ID",
+    "Solana",
+    "Tools For Humanity",
+    "Ethereum",
+    "Privacy",
+    "Identity Verification"
+  ],
+  "aliases": [
+    "world id",
+    "World Id",
+    "Tools for Humanity",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

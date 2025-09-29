@@ -1,0 +1,21 @@
+{
+  "description": "Tiffany from the Solana Foundation introduces a panel discussing IP development and brand building in Web3, featuring insights from industry veterans including Tariq, Peter, and others. They share their backgrounds in gaming, creative fields, and their experiences with NFT launches.",
+  "topic_summary": "Panelists discuss their experiences in Web3, focusing on NFT launches, creative backgrounds, and the evolution of their projects. They highlight the importance of community feedback and iterative development in building successful IP.",
+  "router_tags": [
+    "Web3",
+    "NFT",
+    "Gaming",
+    "IP Development",
+    "Brand Building"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

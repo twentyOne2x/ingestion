@@ -1,0 +1,24 @@
+{
+  "description": "This week's Changelog discusses updates including the Program Runtime ABI v2, Rust upgrade to 1.81.0, and the transition to Agave v2.0. Key changes involve improved CPI call limitations and serialization efficiency, enhancing application developer experience.",
+  "topic_summary": "Updates on Solana's Program Runtime ABI v2 and Rust upgrade, highlighting changes that improve efficiency and developer experience. Discussion on Agave v2.0 transition and upcoming RPC API deprecations.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Program Runtime",
+    "Rust",
+    "Agave"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA",
+    "@solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

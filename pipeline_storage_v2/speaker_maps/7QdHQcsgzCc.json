@@ -1,0 +1,26 @@
+{
+  "video_id": "7QdHQcsgzCc",
+  "title": "2025-07-13_7QdHQcsgzCc_How Phantom Is About To Change Crypto Trading Forever",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Brandon Faye",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "5ft-yT97wo4",
+  "title": "2024-09-21_5ft-yT97wo4_Breakpoint 2024: Technical Talk: Sig: Read-Optimized Solana Validator Client (Drew Nutter)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Drew Nutter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

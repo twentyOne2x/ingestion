@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses the online bipartite matching problem, where vertices on the right side appear one at a time, and a matching must be made immediately upon their arrival. The goal is to compute a maximum matching without edge weights, aiming for a competitive ratio as close to one as possible. The lecture also highlights the limitations of deterministic algorithms in achieving a competitive ratio better than 1/2.",
+  "topic_summary": "Lecture on online bipartite matching problem, focusing on immediate matching upon vertex arrival and competitive ratios. Discusses limitations of deterministic algorithms in achieving optimal matching.",
+  "router_tags": [
+    "Algorithms",
+    "Online Matching",
+    "Bipartite Graphs",
+    "Competitive Ratio"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ALGO",
+    "@timroughgarden"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

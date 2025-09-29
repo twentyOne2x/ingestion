@@ -1,0 +1,21 @@
+{
+  "description": "This video covers the use of Transfer Hooks in Solana, including building a Hello World transfer hook, a counter transfer hook, and implementing dynamic PDAs. It also discusses advanced examples and resources available for developers.",
+  "topic_summary": "Learn about Transfer Hooks in Solana, including practical examples and advanced implementations [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Transfer Hooks",
+    "Token Extensions",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Transfer Hooks",
+    "transfer hooks",
+    "Transfer hooks"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

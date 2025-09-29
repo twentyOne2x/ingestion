@@ -1,0 +1,27 @@
+{
+  "description": "Thomas, Valentine, and Vova discuss account abstraction on Solana, focusing on Squad's protocol and its applications. They explain the technical aspects of account abstraction, its benefits for developers, and the features of smart wallets, including spending limits and social recovery options.",
+  "topic_summary": "The presentation covers the fundamentals of account abstraction on Solana, its technical workings, and how it enhances wallet security and functionality. Key features include custom security measures, spending limits, and the integration of smart contracts.",
+  "router_tags": [
+    "Solana",
+    "Account Abstraction",
+    "Smart Wallets",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: Account Abstraction on Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Valentine",
+    "@Thomas",
+    "@Vova",
+    "@StepanSol",
+    "@Google"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

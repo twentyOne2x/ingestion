@@ -1,0 +1,22 @@
+{
+  "description": "Jonah and Avi discuss the current market trends, the impact of Powell's policies, and their views on crypto, particularly NFTs and Ether rocks.",
+  "topic_summary": "The hosts share insights on NFTs, with a focus on the value of Ether rocks, discussing past sales and current market conditions [t=11:68]. They also touch on community engagement and personal experiences in the crypto space [t=60:01].",
+  "router_tags": [
+    "Crypto",
+    "Market Analysis",
+    "NFTs",
+    "Ether",
+    "Investing"
+  ],
+  "aliases": [
+    "Jonah & Avi",
+    "TG Podcast",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

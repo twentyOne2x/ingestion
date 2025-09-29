@@ -1,0 +1,22 @@
+{
+  "description": "This lecture introduces the concept of consensus in blockchain technology, discussing the challenges posed by network unreliability and potential malicious attacks. It outlines the importance of digital signature schemes and cryptographic tools in achieving consensus among distributed nodes.",
+  "topic_summary": "The lecture covers the foundational aspects of consensus protocols, emphasizing the need for reliable communication and the role of cryptography, particularly digital signatures, in maintaining synchronization among nodes despite potential disruptions [t=0:72-75:63].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "digital signatures",
+    "cryptography",
+    "distributed systems"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$Dijkstra",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This tutorial discusses the impossibility of achieving consensus in dynamically available protocols under partial synchrony, highlighting key results and implications for Byzantine agreement protocols.",
+  "topic_summary": "The video outlines a negative result regarding dynamically available protocols and their inability to solve consensus under partial synchrony, emphasizing the need for resource constraints to achieve consensus [t=314.8].",
+  "router_tags": [
+    "Byzantine Agreement",
+    "Consensus Protocols",
+    "Distributed Systems",
+    "Partial Synchrony"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "Permissionless Consensus",
+    "Consensus Tutorial"
+  ],
+  "canonical_entities": [
+    "$BYZ",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

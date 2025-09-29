@@ -1,0 +1,27 @@
+{
+  "description": "This week's Changelog discusses the proposal SIMD148, introducing Move stake and Move Lamport instructions for stake accounts, enhancing developer experience. It also covers recent commits related to CLI improvements, including auto-refresh for block hashes during large program deployments and the addition of recent prioritization fees. Community contributions are highlighted, particularly from Kevin, who is optimizing the core repo by removing unnecessary dependencies. The episode concludes with updates on documentation improvements at Solana.",
+  "topic_summary": "Highlights from the Solana Changelog including SIMD148 proposal for stake accounts [t=15:12], CLI improvements [t=58:43], community contributions [t=144:84], and documentation updates [t=190:34].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Developer Experience",
+    "Community Contributions",
+    "Documentation"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Kevin",
+    "@Tierra",
+    "@Nick",
+    "@Jacob",
+    "@JohnShankui"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

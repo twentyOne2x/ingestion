@@ -1,0 +1,20 @@
+{
+  "video_id": "Uc9zvaerY_o",
+  "title": "2024-05-29_Uc9zvaerY_o_PYUSD on Solana - Developer Workshop",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Pari Lingampalli",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

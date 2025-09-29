@@ -1,0 +1,22 @@
+{
+  "description": "In this episode of The Solana Podcast, the panel discusses the evolution of crypto wallets in relation to the historical browser wars, highlighting the importance of user experience and ownership in Web3. Moderated by Sarah Coppett, the conversation features insights from industry leaders about the future of wallets and their functionalities.",
+  "topic_summary": "The panel explores the parallels between the browser wars of the late 90s and early 2000s and the current landscape of crypto wallets, emphasizing lessons learned regarding user experience and ownership in Web3 [t=127.21].",
+  "router_tags": [
+    "Solana",
+    "crypto wallets",
+    "Web3",
+    "browser wars",
+    "blockchain"
+  ],
+  "aliases": [
+    "Solana Podcast",
+    "solana podcast",
+    "The Solana Podcast"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

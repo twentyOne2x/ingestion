@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial demonstrates how to create a Solana SPL token using the Solana CLI tools. It covers installing the CLI, creating a key pair, setting it as the default, and minting the token with specific parameters.",
+  "topic_summary": "Creating a Solana SPL token involves installing CLI tools, generating a key pair, and executing commands to mint the token with defined attributes [t=235.37].",
+  "router_tags": [
+    "Solana",
+    "SPL Token",
+    "Token Creation",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Solana Fndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

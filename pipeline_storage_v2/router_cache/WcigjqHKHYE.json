@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the extension of longest chain consensus to the synchronous model, addressing assumptions and their implications for Byzantine nodes and message delays. It emphasizes the importance of setting the puzzle difficulty parameter tau for effective block production.",
+  "topic_summary": "The video covers the transition from a super synchronous model to a general synchronous model in blockchain consensus, focusing on the implications of message delays and the setting of puzzle difficulty to ensure liveness and chain quality. Key assumptions are analyzed, particularly the need for honest nodes to maintain synchronization despite communication delays [t=0:48].",
+  "router_tags": [
+    "Blockchain",
+    "Consensus",
+    "Synchronous Model",
+    "Proof of Work",
+    "Byzantine Fault Tolerance"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchains Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

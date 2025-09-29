@@ -1,0 +1,26 @@
+{
+  "video_id": "QNtWvF5GNPA",
+  "title": "2024-10-17_QNtWvF5GNPA_Decentralized AI Training: Can It Dismantle Centralized Powerhouses - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Charles Strauss",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Sam Altman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

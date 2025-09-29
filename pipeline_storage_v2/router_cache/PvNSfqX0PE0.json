@@ -1,0 +1,23 @@
+{
+  "description": "Tom Shaughnessy introduces Trake, who discusses the evolution and significance of DAOs in finance, emphasizing their decentralized nature and potential for human coordination [t=0:24]. Trake shares personal experiences with Yearn and the challenges of working in a decentralized environment [t=125:16].",
+  "topic_summary": "In this episode, Trake explores the concept of DAOs, their operational mechanics, and their importance in collective development. He provides insights into the decentralized finance landscape and shares his journey from traditional work to contributing full-time to Yearn [t=41:48].",
+  "router_tags": [
+    "DAOs",
+    "Decentralized Finance",
+    "Yearn",
+    "Trake",
+    "Crypto"
+  ],
+  "aliases": [
+    "Trake",
+    "Trakeeopteryx",
+    "Tom Shaughnessy"
+  ],
+  "canonical_entities": [
+    "$YFI",
+    "@Delphi_Digital",
+    "@andre"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

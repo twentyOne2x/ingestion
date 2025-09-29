@@ -1,0 +1,21 @@
+{
+  "description": "The Solana APEX Summit 2025 will take place in Mumbai on October 6th, focusing on the growth of blockchain technology in India and its potential market impact.",
+  "topic_summary": "Discussion on the significance of blockchain in India, talent acquisition, and the upcoming APEX Summit in Mumbai [t=82:28].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Mumbai",
+    "APEX Summit"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "DfqKMx3pY8o",
+  "title": "2023-02-14_DfqKMx3pY8o_Validated - Meet a web3 Musician Who Makes Money with Black Dave",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Dave Curry",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

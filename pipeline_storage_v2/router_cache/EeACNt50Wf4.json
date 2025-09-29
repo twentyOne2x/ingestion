@@ -1,0 +1,27 @@
+{
+  "description": "This video discusses the big picture of NP-hard problems and their reductions, focusing on 19 problems and 18 reductions from the 3SAT problem.",
+  "topic_summary": "The video outlines the organization of NP-hard problems, emphasizing the importance of understanding reductions and their implications on computational tractability and intractability. It includes a quiz on the knapsack problem and mixed integer programming, illustrating how intractability spreads through reductions [t=50:18].",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Algorithms",
+    "Computational Complexity",
+    "Reductions",
+    "3SAT"
+  ],
+  "aliases": [
+    "Algorithms For NP-Hard Problems",
+    "NP-Hard Problems Overview",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861",
+    "@CookLevin",
+    "@BellmanFord",
+    "@FloydWarshall",
+    "@MichaelGary",
+    "@DavidJohnson"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

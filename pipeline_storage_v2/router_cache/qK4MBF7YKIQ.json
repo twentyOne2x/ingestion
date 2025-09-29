@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Delphi podcast, host Pierce interviews Vlad, the founder and CEO of Gunzilla Games. Vlad shares his background in fintech and gaming, detailing his journey from creating a major payment system in Europe to co-founding successful gaming companies, including Plink and the studio behind Warface. He discusses the vision behind Gunzilla Games and their latest project, Off the Grid, a next-generation multiplayer shooter available on multiple platforms. Vlad emphasizes the ongoing development and future plans for the game, currently in Early Access.",
+  "topic_summary": "Pierce interviews Vlad from Gunzilla Games about his career in fintech and gaming, the founding of Gunzilla, and their new game Off the Grid, highlighting its development and future updates [t=0:96-445:19].",
+  "router_tags": [
+    "Gunzilla Games",
+    "Off the Grid",
+    "multiplayer shooter",
+    "gaming industry",
+    "Vlad",
+    "Delphi podcast"
+  ],
+  "aliases": [
+    "Gunzilla Games",
+    "gunzilla games",
+    "GUNZILLA GAMES"
+  ],
+  "canonical_entities": [
+    "$PLINK",
+    "@Vlad"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

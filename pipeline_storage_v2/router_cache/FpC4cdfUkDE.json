@@ -1,0 +1,21 @@
+{
+  "description": "In this episode, Wales discusses the Dinsley's DAO, a small accelerator that collaborates with hackathons in the Solana ecosystem to ensure projects continue developing after winning prizes.",
+  "topic_summary": "Wales introduces Dinsley's DAO, which supports hackathon projects in the Solana ecosystem by forming teams to verify ongoing development [t=7:92].",
+  "router_tags": [
+    "Solana",
+    "DAO",
+    "hackathon",
+    "development"
+  ],
+  "aliases": [
+    "Dinsley's Dao",
+    "Dinsleys DAO",
+    "dinsley's dao"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

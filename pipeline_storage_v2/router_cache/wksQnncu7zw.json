@@ -1,0 +1,23 @@
+{
+  "description": "Sheila Lerio, Marcelo, and Kevin Yang discuss the Metacrafters platform, which enables builders to learn from blockchain experts, earn rewards, and secure jobs in Web3. They emphasize the importance of education and community in advancing developers from Web2 to Web3, while introducing their new Soul Proof courses that teach JavaScript and Rust.",
+  "topic_summary": "Metacrafters aims to transition developers from Web2 to Web3 through education and job placement, featuring courses on Solana development and a unique Learn-and-Earn model. The platform collaborates with Solana experts to provide high-quality education and opportunities for developers.",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Metacrafters",
+    "Learn-and-Earn",
+    "Blockchain Education"
+  ],
+  "aliases": [
+    "metacrafters",
+    "MetaCrafters",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

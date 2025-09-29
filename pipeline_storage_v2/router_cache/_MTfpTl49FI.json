@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on memecoins leaking millions in fees, market dynamics, and upcoming regulatory decisions impacting crypto assets.",
+  "topic_summary": "The episode covers market trends, the significance of the SAB121 vote on asset custody, and the current state of altcoins and Bitcoin, highlighting the bearish sentiment in the crypto community [t=0:16].",
+  "router_tags": [
+    "memecoins",
+    "crypto",
+    "market analysis",
+    "altcoins",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Memecoins Leaking Millions",
+    "Memecoins Leaking millions",
+    "memecoins leaking millions"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

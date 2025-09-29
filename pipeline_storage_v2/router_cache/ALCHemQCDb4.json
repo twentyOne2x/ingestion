@@ -1,0 +1,22 @@
+{
+  "description": "John from the Solana Foundation introduces Solang, a tool for building on Solana using Solidity. He explains installation requirements for Solana CLI and Anchor framework, project setup, and provides an overview of a basic smart contract and its interactions.",
+  "topic_summary": "Introduction to Solang for Solidity development on Solana, including installation, project setup, smart contract basics, and testing procedures [t=0:24 - t=3:03].",
+  "router_tags": [
+    "Solana",
+    "Solidity",
+    "Solang",
+    "Smart Contracts",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "Solang",
+    "solang",
+    "SOLANG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

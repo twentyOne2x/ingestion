@@ -1,0 +1,23 @@
+{
+  "description": "Tim Roughgarden announces the launch of the Columbia Ethereum Research Center focused on blockchain protocol design, funded by the Ethereum foundation.",
+  "topic_summary": "The Columbia Ethereum Research Center aims to advance blockchain protocol research and education, with activities including research grants, workshops, and seminars. The Ethereum foundation supports the center with significant funding, including matching donations for contributions.",
+  "router_tags": [
+    "Blockchain",
+    "Ethereum",
+    "Research",
+    "Columbia University",
+    "Protocol Design"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "Tim Roughgarden",
+    "Columbia Ethereum Research Center"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@timroughgarden",
+    "@Columbia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

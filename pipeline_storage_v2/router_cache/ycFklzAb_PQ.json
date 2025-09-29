@@ -1,0 +1,30 @@
+{
+  "description": "Mike Saunders shares a personal story about purchasing Olivia Rodrigo tickets for his daughters and the challenges of ticket buying and selling, highlighting the issues with middlemen and scams in the industry. He introduces XP, a platform designed to eliminate these problems using blockchain technology.",
+  "topic_summary": "Mike Saunders discusses his experience with ticket purchasing and the creation of XP to address the challenges in the ticketing industry, emphasizing the benefits of blockchain technology for trust and efficiency [t=141.83].",
+  "router_tags": [
+    "ticketing",
+    "blockchain",
+    "XP",
+    "marketplace",
+    "scams"
+  ],
+  "aliases": [
+    "Mike Saunders",
+    "mike saunders",
+    "XP",
+    "xp"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$USDC",
+    "@OliviaRodrigo",
+    "@Grubhub",
+    "@KendrickLamar",
+    "@Beyonce",
+    "@GrizzlyThon",
+    "@Knicks"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

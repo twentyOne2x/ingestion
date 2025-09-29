@@ -1,0 +1,22 @@
+{
+  "description": "The presentation discusses the importance of on-chain derivatives, highlighting historical failures in traditional derivatives markets and advocating for increased transparency and inclusivity in trading. It introduces HERO, an open on-chain primitive designed to enhance the derivatives landscape.",
+  "topic_summary": "The case for on-chain derivatives is explored, referencing historical trading failures and the need for transparency in a $600 trillion derivatives market. The presentation introduces HERO, a solution for creating a more inclusive and transparent derivatives market.",
+  "router_tags": [
+    "on-chain derivatives",
+    "transparency",
+    "HERO",
+    "trading",
+    "blockchain"
+  ],
+  "aliases": [
+    "On-Chain Derivatives",
+    "Hero DeFi",
+    "HERO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

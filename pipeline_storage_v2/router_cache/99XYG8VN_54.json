@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on ETF markets, prediction markets, and crypto trends. The hosts analyze the recent bearish sentiment around ETFs and the implications for ETH and BTC, highlighting upcoming catalysts like Trump's involvement in the Bitcoin conference [t=206.89].",
+  "topic_summary": "Exploration of ETF market dynamics, crypto predictions, and political influences on cryptocurrency, particularly focusing on ETH and BTC ahead of the ETF launch at the end of July [t=87.17].",
+  "router_tags": [
+    "ETF",
+    "Crypto",
+    "Prediction Markets",
+    "ETH",
+    "BTC",
+    "Politics"
+  ],
+  "aliases": [
+    "Crypto Crossroads",
+    "Crypto crossroads",
+    "crypto crossroads"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Delphi_Digital",
+    "@Trump",
+    "@Vivek"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

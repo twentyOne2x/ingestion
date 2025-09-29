@@ -1,0 +1,25 @@
+{
+  "description": "Lecture on longest chain consensus in blockchain, focusing on its application in permissioned settings and its transition to permissionless settings using proof of work. Discusses the importance of understanding principles over specific protocols like Bitcoin.",
+  "topic_summary": "This lecture covers longest chain consensus, its implications in permissioned and permissionless blockchain settings, and introduces proof of work as a mechanism for block proposer selection. It emphasizes the distinction between consensus rules and block proposal mechanisms.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "longest chain",
+    "proof of work",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Longest Chain Consensus",
+    "Longest-chain Consensus",
+    "longest chain consensus"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "$ETH",
+    "$ADA",
+    "$XTZ"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

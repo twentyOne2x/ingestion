@@ -1,0 +1,26 @@
+{
+  "description": "Richard Liu discusses the concept of PayFi, emphasizing the need for faster, more efficient money movement globally. He highlights the inefficiencies in current payment systems and introduces PayFi as a solution leveraging blockchain technology to revolutionize payments.",
+  "topic_summary": "In this talk, Richard Liu explains the limitations of traditional payment systems and presents PayFi as a blockchain-based solution to enhance the speed and accessibility of money transfers, particularly in high-density financial hubs like New York [t=186.15].",
+  "router_tags": [
+    "PayFi",
+    "Blockchain",
+    "Payments",
+    "Huma Finance",
+    "Solana",
+    "Financial Technology"
+  ],
+  "aliases": [
+    "PayFi",
+    "payfi",
+    "Huma Finance",
+    "huma finance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Huma",
+    "@SolanaFndn",
+    "@Circle"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

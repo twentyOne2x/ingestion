@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the complexity class NP, focusing on problems with easily recognized solutions and the conditions for a search problem to belong to NP. It covers examples like the traveling salesman problem and 3SAT, illustrating the definition of NP through efficient recognition of solutions.",
+  "topic_summary": "The video explains NP problems, emphasizing the efficient recognition of solutions and the conditions that define membership in the complexity class NP. It provides examples such as the traveling salesman problem and 3SAT, detailing how to verify candidate solutions efficiently [t=0:00 - t=3:49].",
+  "router_tags": [
+    "Algorithms",
+    "Complexity Theory",
+    "NP Problems",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Algorithms For NP-Hard Problems",
+    "NP Hard Problems",
+    "Complexity Class NP"
+  ],
+  "canonical_entities": [
+    "$NP",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

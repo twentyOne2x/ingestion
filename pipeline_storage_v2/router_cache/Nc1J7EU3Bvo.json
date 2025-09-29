@@ -1,0 +1,25 @@
+{
+  "description": "Scott, co-founder of Alphabetum Labs, discusses Token 22, its current status, and future potential in the Solana ecosystem. He highlights the protocol's advantages, including reduced workload and enhanced functionality for developers. The talk covers the development of Fluxbeam, a DEX for Token 22, and the importance of audits and extensions for the protocol's success.",
+  "topic_summary": "Scott introduces Token 22, its development, and its implications for the Solana ecosystem. He explains the transition from Token V1 to V2, the benefits of the new protocol, and the ongoing audits to ensure security and functionality. The discussion includes the integration of various tools and the role of the Solana Foundation in supporting these advancements.",
+  "router_tags": [
+    "Token 22",
+    "Solana",
+    "DeFi",
+    "Fluxbeam",
+    "Blockchain",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "token 22",
+    "Token22",
+    "Token V2",
+    "Fluxbeam DEX"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Scott",
+    "@Alphabetum"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

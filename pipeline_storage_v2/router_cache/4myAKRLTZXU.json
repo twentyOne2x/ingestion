@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the future of AI in crypto featuring D_Gilz. The hosts share insights on various cryptocurrencies and their potential impact on the market.",
+  "topic_summary": "Exploration of AI's role in cryptocurrency, featuring discussions on notable figures and projects in the space. Mention of various cryptocurrencies like DOGE, BTC, and SOL, and references to social media interactions [t=25:12].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Cryptocurrency",
+    "Future",
+    "D_Gilz"
+  ],
+  "aliases": [
+    "D_Gilz",
+    "d_gilz",
+    "D_GILZ"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "$BTC",
+    "$SOL",
+    "@notthreadguy",
+    "@Zara"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

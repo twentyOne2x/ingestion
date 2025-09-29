@@ -1,0 +1,26 @@
+{
+  "video_id": "kUNhoQ-Vpqk",
+  "title": "2024-12-06_kUNhoQ-Vpqk_Interviewing Luca Netz, Creator of Pudgy Penguins",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Larry Fink",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Mark Cuban",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

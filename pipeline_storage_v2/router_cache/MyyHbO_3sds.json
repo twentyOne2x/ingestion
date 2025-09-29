@@ -1,0 +1,22 @@
+{
+  "description": "Magus discusses his trading journey, including his early experiences and mentorship in the crypto space. He reflects on his luck and the importance of being early in the market, as well as the challenges faced by traders.",
+  "topic_summary": "Magus shares insights on trading Bitcoin [$BTC], his mentorship experiences, and the evolution of his trading style from 2016 to present [t=0:48]. He emphasizes the significance of early entry into the market and the learning process involved in trading.",
+  "router_tags": [
+    "Bitcoin",
+    "trading",
+    "cryptocurrency",
+    "mentorship",
+    "portfolio management"
+  ],
+  "aliases": [
+    "Magus",
+    "magus",
+    "MAGUS"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

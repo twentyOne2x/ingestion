@@ -1,0 +1,24 @@
+{
+  "description": "Kevin Bowers discusses the Fire Dancer project, its development stages, and its impact on the Solana network, aiming for a million TPS. He outlines the ambitious goals set since 2021 and the foundational work done to enhance performance and robustness.",
+  "topic_summary": "In this episode, Kevin Bowers elaborates on the Fire Dancer initiative, detailing its roadmap, the importance of a high-performance computing stack, and the phased approach to replacing Solana's existing infrastructure to achieve significant performance improvements [t=0:24-0:56].",
+  "router_tags": [
+    "Fire Dancer",
+    "Solana",
+    "Kevin Bowers",
+    "Blockchain",
+    "Performance",
+    "Technology"
+  ],
+  "aliases": [
+    "Fire Dancer",
+    "Fire dancer",
+    "Franken Dancer",
+    "Franken dancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

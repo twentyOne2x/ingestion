@@ -1,0 +1,22 @@
+{
+  "description": "Highlights from Breakpoint 2022, featuring discussions on Web3 education in Sierra Leone, NFT advocacy in Washington, and network cost reduction on Solana.",
+  "topic_summary": "This episode compiles three talks: 1) Web3 School in Sierra Leone [t=34:39], focusing on blockchain education; 2) NFT advocacy in Washington [t=42:07]; 3) Network cost reduction through compression [t=50:71].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Blockchain",
+    "NFTs",
+    "Education"
+  ],
+  "aliases": [
+    "Solana Podcast",
+    "solana podcast",
+    "SOLANA PODCAST"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

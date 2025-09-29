@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Jose Maria Macedou discusses the financial agents platform Almanac with co-founders Lars and Michael. They explore the platform's capabilities in building AI agents for financial strategies, addressing the complexities of DeFi, and the importance of optimizing financial decision-making.",
+  "topic_summary": "The podcast covers the development and significance of Almanac, a platform for creating AI agents that optimize financial strategies in the complex DeFi landscape. It highlights the challenges faced by humans in processing vast amounts of data and how agents can provide solutions without the limitations of human needs.",
+  "router_tags": [
+    "DeFi",
+    "AI",
+    "Finance",
+    "Almanac",
+    "Podcast"
+  ],
+  "aliases": [
+    "Almanac",
+    "almanac",
+    "ALMANAC"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital",
+    "@JoseMariaMacedou",
+    "@Lars",
+    "@Michael"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on wallet technologies in the Solana ecosystem featuring various experts. They introduce themselves and share insights on wallet security, user onboarding, and innovative approaches to seed phrase management.",
+  "topic_summary": "Experts from different wallet solutions discuss their approaches to wallet security and user experience, including unique methods for handling seed phrases and onboarding processes [t=145].",
+  "router_tags": [
+    "Solana",
+    "wallets",
+    "crypto",
+    "blockchain",
+    "security"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Vidor",
+    "@Ashik",
+    "@Vova",
+    "@Francesco"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

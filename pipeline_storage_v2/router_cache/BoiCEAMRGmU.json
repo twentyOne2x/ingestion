@@ -1,0 +1,22 @@
+{
+  "description": "Yuan Gao discusses the launch and growth of Gradient's Edge Node Compute Network on Solana, highlighting the increasing demand for compute resources and the community's engagement.",
+  "topic_summary": "The conversation covers the rapid user growth post-launch [t=2:32], the network's global reach with 1 million nodes [t=35:98], and the importance of user experience in the Solana ecosystem [t=76:20].",
+  "router_tags": [
+    "Solana",
+    "Edge Compute",
+    "DePIN",
+    "AI",
+    "Gradient"
+  ],
+  "aliases": [
+    "BoiCEAMRGmU",
+    "Boiceamrgmu",
+    "Gradient's Edge Node"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

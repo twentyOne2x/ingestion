@@ -1,0 +1,20 @@
+{
+  "video_id": "OLh5NFXiSWc",
+  "title": "2023-02-24_OLh5NFXiSWc_Fireside Chat: Different Approaches to Scaling Blockchains",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Avi Chal",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

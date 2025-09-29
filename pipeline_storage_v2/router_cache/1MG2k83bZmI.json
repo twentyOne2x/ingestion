@@ -1,0 +1,20 @@
+{
+  "description": "Lecture on advanced topics in Algorithmic Game Theory, focusing on mechanism design and its applications, particularly in auctions.",
+  "topic_summary": "Introduction to mechanism design, emphasizing the conflict between auctioneers' goals (efficient allocation, high revenue) and participants' objectives (maximizing net utility) [t=131:15]. Discussion includes the evolution of game theory and recent developments in the field [t=116:63].",
+  "router_tags": [
+    "Mechanism Design",
+    "Game Theory",
+    "Auctions",
+    "Algorithmic Game Theory"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Mechanism Design Lecture",
+    "Algorithmic Game Theory Lecture"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

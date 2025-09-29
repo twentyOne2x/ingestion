@@ -1,0 +1,21 @@
+{
+  "description": "Lecture discussing adverse selection in markets, particularly in health insurance and labor markets. It explains how asymmetric information affects market dynamics and leads to potential market failures.",
+  "topic_summary": "The lecture covers adverse selection, starting with the market for lemons [t=0:64]. It illustrates how health insurance companies face challenges due to asymmetric information about individual health [t=19:52]. The discussion extends to labor markets and online advertising [t=262.88].",
+  "router_tags": [
+    "adverse selection",
+    "health insurance",
+    "labor market",
+    "asymmetric information"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$5,000",
+    "@Yahoo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

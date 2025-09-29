@@ -1,0 +1,26 @@
+{
+  "video_id": "mODQ86rJws8",
+  "title": "2024-10-18_mODQ86rJws8_Sovereign AI's Battlefield: Compute, Storage, & Running On The Edge - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "E": {
+      "name": "Pondering Durian",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Pondering Durian",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Brennan Watt, VP of Core Engineering at Anza, discusses the advancements in the Agave client, the successor to the original Solana Labs client, highlighting improvements in transaction efficiency and network performance.",
+  "topic_summary": "Brennan Watt presents on the engineering behind Agave, emphasizing the performance metrics of the Solana network, including slot latency, transaction confirmation times, and block capacity utilization, while stressing the need for continued innovation in a competitive landscape [t=2:8].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Agave",
+    "Engineering",
+    "Performance"
+  ],
+  "aliases": [
+    "Brennan Watt",
+    "brennan watt",
+    "Anza",
+    "anza"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

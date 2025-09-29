@@ -1,0 +1,26 @@
+{
+  "video_id": "2ZNszJURUls",
+  "title": "2025-06-13_2ZNszJURUls_Dont Miss the Bitcoin Treasury Company BOOM (David Bailey & Udi)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "David Bailey",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

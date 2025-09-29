@@ -1,0 +1,23 @@
+{
+  "description": "Matthew Zamora, co-founder and CEO of Boombox Labs, discusses the Boombox Market, an all-in-one music marketplace where users can buy, sell, and trade various audio types. He emphasizes the importance of enhancing the artist-fan connection through an interactive consumption experience and introduces features like Boombox Sample, an open royalty-free sample platform, and boomtrack, which facilitate artist revenue and ownership transparency using Solana blockchain technology.",
+  "topic_summary": "In this session, Matthew Zamora outlines how Boombox Market is redefining music ownership by empowering artists with tools for direct fan engagement and revenue generation. He highlights the role of blockchain in ensuring transparent transactions and instant royalty payments, while also addressing challenges in the sample music industry.",
+  "router_tags": [
+    "Music Ownership",
+    "Blockchain",
+    "NFTs",
+    "Solana",
+    "Music Marketplace"
+  ],
+  "aliases": [
+    "boombox",
+    "Boombox",
+    "Boombox Labs",
+    "Matthew Zamora"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

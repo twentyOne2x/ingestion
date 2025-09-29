@@ -1,0 +1,25 @@
+{
+  "description": "Jon Wong from the Solana Foundation and Chris Osborn from Dialect discuss the innovative concept of 'blinks' in blockchain technology, which allows users to share more than just links, enabling actions like token swaps and governance voting directly from shared content.",
+  "topic_summary": "The conversation covers the introduction of 'blinks' as a new way to enhance user interaction on Solana, detailing their functionality and the technology behind them, including their origins in Solana Pay specifications. The discussion highlights how blinks can facilitate various transactions and social finance use cases, making blockchain more accessible.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Blinks",
+    "Dialect",
+    "Crypto",
+    "Web3"
+  ],
+  "aliases": [
+    "Blinks",
+    "blinks",
+    "Dialect",
+    "dialect"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisOsborn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

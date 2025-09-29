@@ -1,0 +1,25 @@
+{
+  "description": "Chris, founder and CEO of Dialect, discusses how blockchain technology is transforming online communities and culture. He introduces Dialect, a Web3 messaging platform that allows users to send messages and collect NFTs in the form of chat stickers, enhancing user interaction and ownership in the digital space. The platform utilizes Smart Messages for seamless transactions and interactions, enabling users to trade and collect stickers directly in chats without incurring costs.",
+  "topic_summary": "At Breakpoint 2023, Chris from Dialect highlights the evolution of online communication through blockchain, focusing on collectible chat stickers and the innovative Smart Message protocol that facilitates Web3 interactions directly in messaging.",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Collectibles",
+    "Messaging",
+    "NFTs",
+    "Solana"
+  ],
+  "aliases": [
+    "Dialect",
+    "Dialect Messaging",
+    "Chris",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Om5GjiXRb3k",
+  "title": "2024-04-23_Om5GjiXRb3k_Solana Changelog Apr 23 - migrating BPF programs, priority fees on the CLI, and more",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "John Shinkway",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

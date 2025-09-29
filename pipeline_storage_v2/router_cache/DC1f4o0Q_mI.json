@@ -1,0 +1,22 @@
+{
+  "description": "Diogenes discusses his unique name origin and experiences with pronunciation challenges. The conversation transitions to networking in the crypto space and recommendations for future guests.",
+  "topic_summary": "Networking in crypto, personal anecdotes about name pronunciation, and guest recommendations in the podcasting space.",
+  "router_tags": [
+    "Crypto",
+    "Podcast",
+    "Networking",
+    "Diogenes",
+    "USDH"
+  ],
+  "aliases": [
+    "Diogenes",
+    "diogenes",
+    "Dio"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$USDH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

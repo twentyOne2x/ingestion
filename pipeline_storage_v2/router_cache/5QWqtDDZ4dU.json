@@ -1,0 +1,24 @@
+{
+  "description": "R3 CEO David Rutter discusses the collaboration with Solana, highlighting the strengths of Solana's ecosystem and the potential for interoperability between regulated networks and public chains.",
+  "topic_summary": "R3's partnership with Solana aims to merge traditional finance (TRADFI) with decentralized finance (DEFI), enabling new asset distribution channels and liquidity solutions [t=0:08 - t=1:13].",
+  "router_tags": [
+    "Solana",
+    "R3",
+    "blockchain",
+    "TRADFI",
+    "DEFI"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "R3",
+    "r3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DavidRutter"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

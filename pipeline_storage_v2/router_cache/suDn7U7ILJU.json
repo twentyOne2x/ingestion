@@ -1,0 +1,23 @@
+{
+  "description": "In this video, the host engages with the founder of Jupiter Exchange, discussing their experiences and the platform's vibe. They share personal feelings of anxiety and the importance of community support in the crypto space.",
+  "topic_summary": "The conversation covers the founder's insights on Jupiter Exchange and the emotional aspects of navigating the crypto world, including security concerns and community vibes [t=1:44].",
+  "router_tags": [
+    "Jupiter Exchange",
+    "Crypto",
+    "Community",
+    "Anxiety",
+    "Security"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "notthreadguy",
+    "Jupiter Exchange",
+    "jupiter exchange"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Tristan Frizza discusses building an on-chain NASDAQ using ZK rollup technology on Solana, focusing on achieving millisecond-level trading speeds and addressing the limitations of traditional finance.",
+  "topic_summary": "The presentation covers the transition from traditional finance to decentralized finance, emphasizing the need for 24/7 markets, self-custodial solutions, and the advantages of using Solana for derivatives trading. Key points include the current state of trading volumes, the importance of speed and liquidity, and the innovative features of the Bullet platform.",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "ZK Rollup",
+    "Trading",
+    "Bullet",
+    "NASDAQ"
+  ],
+  "aliases": [
+    "Tristan Frizza",
+    "tristan frizza",
+    "Bullet",
+    "bullet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ETH",
+    "$BTC",
+    "$USDC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

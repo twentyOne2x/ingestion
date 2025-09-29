@@ -1,0 +1,22 @@
+{
+  "description": "In this episode, the host interviews a guest about their project, PubKey Link, an open-source Discord verification system that allows role verification based on wallet assets.",
+  "topic_summary": "Discussion on PubKey Link, an open-source Discord verification tool that enables role verification based on wallet assets, including fungible and non-fungible tokens. [t=8:00] [t=14:84]",
+  "router_tags": [
+    "Discord",
+    "verification",
+    "open source",
+    "tokens",
+    "PubKey Link"
+  ],
+  "aliases": [
+    "Pubkey Link",
+    "PUBKEY LINK",
+    "pubkey link"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

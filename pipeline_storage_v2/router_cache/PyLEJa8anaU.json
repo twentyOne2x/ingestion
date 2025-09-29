@@ -1,0 +1,23 @@
+{
+  "description": "This episode of Solana Bytes discusses the immutable owner extension on the Solana token 2022 program, explaining its importance in ensuring that ownership of a token account cannot be reassigned. The guide walks through creating a new token mint, establishing an account, and applying the immutable owner extension, demonstrating the process and expected outcomes when attempting to transfer ownership [t=0:24 - t=95:05].",
+  "topic_summary": "Exploration of the immutable owner extension on Solana's token program, focusing on its functionality and implications for token account ownership [t=0:24 - t=95:05].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Immutable Owner",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

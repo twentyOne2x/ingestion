@@ -1,0 +1,27 @@
+{
+  "description": "This lecture discusses Verifiable Delay Functions (VDFs) in the context of blockchain protocols, focusing on their properties and the challenges in their implementation. It explores the need for functions that are inherently sequential and the implications for both honest nodes and potential attackers.",
+  "topic_summary": "The lecture outlines the characteristics of VDFs, emphasizing the need for evaluation time to be invariant to computational resources. It discusses the sequential nature of these functions and the importance of efficient verifiability, drawing parallels to verifiable random functions (VRFs) and the foundational work by Bonnet, Bonneau, Boons, and Fish [t=356.43].",
+  "router_tags": [
+    "Blockchain",
+    "Verifiable Delay Functions",
+    "Cryptography",
+    "Proof of Stake",
+    "Randomness"
+  ],
+  "aliases": [
+    "Verifiable Delay Functions",
+    "VDFs",
+    "Blockchain Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@bonnet",
+    "@bonneau",
+    "@boons",
+    "@fish"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

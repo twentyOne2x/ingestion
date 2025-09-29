@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the implications of Web3 social platforms and their potential to provide real utility beyond mere speculation, referencing the unisocks incident.",
+  "topic_summary": "Exploration of Web3 social platforms and their role in creator monetization without reliance on traditional advertising, emphasizing community engagement and utility [t=186:23].",
+  "router_tags": [
+    "Web3",
+    "Social Media",
+    "NFTs",
+    "Creator Economy",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Web3 Social",
+    "Web3Social"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Vixit",
+    "@RaymondLee",
+    "@Mark"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

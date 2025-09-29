@@ -1,0 +1,24 @@
+{
+  "description": "The presentation discusses the integration of Helio with Solana to enhance payment systems and digital commerce. It highlights the potential for blockchain to facilitate peer-to-peer transactions without intermediaries, aiming for mass adoption of blockchain technology through simplified user experiences. The speaker emphasizes the need for user-friendly solutions to onboard non-crypto users, exemplified by a media paywall demo and the concept of enabling everyday consumers to make purchases without prior crypto knowledge.",
+  "topic_summary": "Exploration of blockchain payments, focusing on Helio's partnership with Solana to revolutionize digital commerce and enhance user experience in crypto transactions. The talk addresses barriers to adoption and strategies to simplify crypto payments for mainstream users [t=0:00-10:00].",
+  "router_tags": [
+    "Blockchain",
+    "Payments",
+    "Digital Commerce",
+    "Solana",
+    "Helio",
+    "Crypto Adoption"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Payments on Solana",
+    "Digital Commerce Revolution"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

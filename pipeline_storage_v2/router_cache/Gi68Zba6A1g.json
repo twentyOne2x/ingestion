@@ -1,0 +1,21 @@
+{
+  "description": "Lecture 8 covers linear programming duality, building on previous concepts of linear programs and their applications. The lecture includes examples and a discussion on maximizing objective functions.",
+  "topic_summary": "The lecture introduces linear programming duality, explaining the relationship between primal and dual problems, and emphasizes its importance in the course [t=210.57].",
+  "router_tags": [
+    "linear programming",
+    "duality",
+    "algorithms",
+    "optimization"
+  ],
+  "aliases": [
+    "Linear Programming Duality",
+    "LP Duality",
+    "Duality in Linear Programming"
+  ],
+  "canonical_entities": [
+    "$LP",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

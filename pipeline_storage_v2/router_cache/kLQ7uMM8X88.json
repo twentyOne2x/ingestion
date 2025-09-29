@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on enabling high performance interoperability for the Solana ecosystem, addressing challenges in the DEFI landscape and presenting innovative solutions for cross-chain transactions.",
+  "topic_summary": "The presentation covers the fragmented state of liquidity across different chains and the need for a unified system to enhance capital efficiency in DEFI. It outlines the core pillars of cross-chain interoperability, critiques existing bridge solutions, and introduces a new infrastructure model that emphasizes zero TVL and efficient liquidity usage. Use cases include seamless onboarding for EVM users and instant cross-chain payments, highlighting the advantages of the proposed system over traditional bridges [t=3:52-452:29].",
+  "router_tags": [
+    "Solana",
+    "Interoperability",
+    "DEFI",
+    "Cross-chain",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "breakpoint 2023"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$BNB",
+    "@Solflare",
+    "$MATIC",
+    "@EspressoCash"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

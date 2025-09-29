@@ -1,0 +1,25 @@
+{
+  "description": "A debate featuring Chris Zhu and Andrea discussing the future of Web3 games and the necessity of Layer 2 solutions on Solana. Chris advocates for the need of a gaming SVM to enhance Solana's gaming ecosystem, while Andrea argues against traditional L2s, emphasizing the unique requirements of gaming.",
+  "topic_summary": "The discussion revolves around whether Web3 games on Solana require Layer 2 solutions, with Chris supporting the idea for better scalability and ecosystem growth [t=173.629], and Andrea opposing it, citing the need for specific gaming properties that traditional L2s do not provide [t=105.83].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Solana",
+    "Layer 2",
+    "SVM"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2024: Debate",
+    "Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisZhu",
+    "@Andrea"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

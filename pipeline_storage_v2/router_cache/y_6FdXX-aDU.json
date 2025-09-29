@@ -1,0 +1,21 @@
+{
+  "description": "In this video, the host shares a story about a friend named Fuji who works in content management and has recently become interested in crypto trading. After a quick onboarding session, Fuji starts trading and quickly engages with the community, leading to a successful investment in a cryptocurrency called Soul.",
+  "topic_summary": "Fuji's journey from being a novice to trading crypto successfully in a short time, highlighting the onboarding process and community engagement [t=0:48-1:05].",
+  "router_tags": [
+    "Crypto Trading",
+    "Investment",
+    "Onboarding",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

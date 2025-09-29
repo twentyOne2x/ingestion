@@ -1,0 +1,24 @@
+{
+  "description": "Itai Turbahn discusses user onboarding and wallet abstraction in web3, emphasizing the misconceptions around wallets and the need for improved self-custody solutions.",
+  "topic_summary": "The conversation explores the challenges of naming conventions in crypto, the importance of wallet security, and the future integration of crypto components in everyday applications [t=0:24].",
+  "router_tags": [
+    "web3",
+    "crypto",
+    "wallet",
+    "user onboarding",
+    "self custody"
+  ],
+  "aliases": [
+    "Itai Turbahn",
+    "itai turbahn",
+    "Dynamic Labs",
+    "dynamic labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Itai"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Announcement of Solana Breakpoint 2025 event in Abu Dhabi from December 11-13.",
+  "topic_summary": "Details about the upcoming Solana Breakpoint 2025 event in Abu Dhabi, highlighting key dates and location. [t=00:16]",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Abu Dhabi",
+    "Event"
+  ],
+  "aliases": [
+    "Solana Breakpoint",
+    "solana breakpoint",
+    "Breakpoint 2025"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

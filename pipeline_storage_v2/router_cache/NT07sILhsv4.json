@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses mechanism design without money, focusing on kidney exchange and stable matching. It explores the challenges of organ donation, particularly kidney transplants, and the concept of living donors. The lecture highlights the compatibility issues in kidney transplants and introduces the idea of kidney exchange as a solution to facilitate transplants between incompatible pairs.",
+  "topic_summary": "The lecture covers kidney exchange as a mechanism design application, discussing the need for a nationwide database to match incompatible patient-donor pairs and the algorithms that have been developed to facilitate these exchanges, which have saved thousands of lives [t=1:04-10:26].",
+  "router_tags": [
+    "Kidney Exchange",
+    "Mechanism Design",
+    "Stable Matching",
+    "Organ Donation",
+    "Living Donors"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Kidney Exchange Lecture",
+    "Lecture on Kidney Exchange"
+  ],
+  "canonical_entities": [
+    "$ALROTH",
+    "@JohnsHopkins"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

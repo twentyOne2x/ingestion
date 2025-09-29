@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on how endurance sports influence the Solana community and its founders' drive for improvement and resilience.",
+  "topic_summary": "Explores the connection between sports and entrepreneurship, emphasizing persistence and competitiveness [t=1:44 - t=147:49].",
+  "router_tags": [
+    "Solana",
+    "Endurance Sports",
+    "Entrepreneurship",
+    "Resilience"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "solana stories",
+    "SOLANA STORIES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Bryan Pellegrino discusses his journey as a founder of Layer Zero, the development of Stargate, and the importance of cross-chain communication in crypto. He shares insights on the evolution of Layer Zero and its impact on the crypto ecosystem.",
+  "topic_summary": "Bryan Pellegrino, CEO of Layer Zero Labs, explains the creation of Layer Zero and Stargate, emphasizing the need for seamless communication between blockchains. He highlights the growth of assets built on Layer Zero and its significance in the current crypto landscape [t=0:08-160:76].",
+  "router_tags": [
+    "Layer Zero",
+    "Stargate",
+    "Crypto",
+    "Blockchain",
+    "Cross-chain"
+  ],
+  "aliases": [
+    "Bryan Pellegrino",
+    "Bryan Pelgro",
+    "Layer Zero Labs",
+    "Stargate"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

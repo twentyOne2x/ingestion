@@ -1,0 +1,27 @@
+{
+  "description": "Michael Cho, co-founder of FrodoBots, discusses their project at Breakpoint 2024, focusing on the intersection of robotics and gaming. They introduce 'Earth Rovers', a browser-based game allowing players to control real robots remotely. The game incorporates a scavenger hunt mode with NFTs and aims to advance AI through real-world data collection. They also announce an upcoming Earth Rover challenge in Abu Dhabi, collaborating with top AI researchers.",
+  "topic_summary": "At [t=0:05], Michael Cho introduces FrodoBots and their gaming project. By [t=0:23], he describes 'Earth Rovers', a game where players control robots in real life. The game includes a scavenger hunt mode for NFTs, announced at [t=1:30]. They highlight their AI data set and upcoming competition in Abu Dhabi at [t=2:50].",
+  "router_tags": [
+    "Robotics",
+    "Gaming",
+    "AI",
+    "Earth Rovers",
+    "NFTs",
+    "Scavenger Hunt"
+  ],
+  "aliases": [
+    "FrodoBots",
+    "Frodobots",
+    "frodoBots"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MichaelCho",
+    "@GoogleDeepMind",
+    "@CarnegieMellon",
+    "@UCBerkeley"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

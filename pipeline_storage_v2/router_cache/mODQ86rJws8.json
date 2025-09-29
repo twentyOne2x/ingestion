@@ -1,0 +1,27 @@
+{
+  "description": "This event discusses the intersection of AI and decentralized infrastructure, featuring insights from industry leaders on compute, storage, and edge capabilities. The panel includes Greg from Akash, Mohammed from Exoplabs, and Michael from Zero G Labs, who share their projects and perspectives on the evolving landscape of decentralized technologies.",
+  "topic_summary": "The panel explores the demand for decentralized compute and storage solutions, competition with hyperscalers, and recent growth metrics in the decentralized infrastructure space. Key insights include the unique approaches of each panelist's project and the challenges faced in scaling against dominant incumbents [t=255.49].",
+  "router_tags": [
+    "AI",
+    "Decentralized Infrastructure",
+    "Compute",
+    "Storage",
+    "Edge Computing",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Sovereign AI's Battlefield",
+    "Crypto x AI Event",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$AKASH",
+    "@Delphi_Digital",
+    "@Mohammed",
+    "@Michael",
+    "@Greg"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

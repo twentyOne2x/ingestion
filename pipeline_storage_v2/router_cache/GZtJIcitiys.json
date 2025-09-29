@@ -1,0 +1,27 @@
+{
+  "description": "Jonas and Mike McKenna discuss the latest updates in the Solana ecosystem, including the Mountain Dao blockchain hacking festival in Salt Lake City, recent outages on Mainnet Beta, and new features for developers to access Devnet Sol. They highlight improvements in the SPL JavaScript SDK and announce the upcoming Scribes hackathon with $137,390 in prizes for documentation and creative contributions.",
+  "topic_summary": "Updates from the Solana ecosystem including Mountain Dao festival, Mainnet Beta outage resolution, Devnet Sol access improvements, SPL JavaScript SDK enhancements, and the Scribes hackathon announcement [t=3:68-349:93].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Devnet",
+    "SPL SDK",
+    "Hackathon"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "SolanaFndn",
+    "Lampard Dao",
+    "Helios"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Lampard",
+    "@Helios"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

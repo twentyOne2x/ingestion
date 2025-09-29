@@ -1,0 +1,21 @@
+{
+  "description": "Aidan and Calvin, co-founders of Buddy Link, discuss the evolution of their platform aimed at enhancing Web3 engagement. They highlight the challenges of user education in crypto and the need for secure discovery tools. The presentation covers the concept of engagement tooling, its importance for businesses, and introduces Buddy as a next-generation referral marketing hub designed to connect users and businesses effectively.",
+  "topic_summary": "The talk focuses on Buddy Link's mission to improve Web3 engagement through secure discovery and referral systems. It addresses the cold start problem in Web3 and emphasizes the importance of community and composability in the ecosystem. The founders share insights on user acquisition and retention strategies, as well as the challenges faced by businesses in the current landscape.",
+  "router_tags": [
+    "Web3",
+    "Engagement",
+    "Crypto",
+    "Referral Marketing",
+    "Community Building"
+  ],
+  "aliases": [
+    "Buddy Link",
+    "buddylink",
+    "BuddyLink"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

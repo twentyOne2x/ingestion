@@ -1,0 +1,24 @@
+{
+  "description": "Krystof Kosina discusses cross-chain solvers and their development on Solana, highlighting challenges and solutions in creating production-level applications. He emphasizes the importance of efficient capital management and transaction reliability on Solana.",
+  "topic_summary": "The presentation covers the evolution of cross-chain solvers, the challenges faced in blockchain ecosystems, and the innovative solutions developed by Rockaway X, including the Plutus Signer and automated liquidity management strategies. Key issues like transaction lending on Solana are also addressed.",
+  "router_tags": [
+    "cross-chain",
+    "Solana",
+    "blockchain",
+    "RockawayX",
+    "Mayan Wormhole"
+  ],
+  "aliases": [
+    "Scale or Die",
+    "Solver Infrastructure",
+    "Krystof Kosina",
+    "Rockaway X Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

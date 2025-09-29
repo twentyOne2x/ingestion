@@ -1,0 +1,24 @@
+{
+  "description": "Amir Bandeali, co-founder of 0x, shares insights on Solana's evolution and his experiences in the blockchain space since 2016. He discusses the early skepticism towards new blockchains, the growth of decentralized finance (DeFi), and the impact of market events like the FTX collapse on Solana's development.",
+  "topic_summary": "Amir reflects on his journey with Solana from its early days as Loom Protocol to its current status in the DeFi landscape. He highlights the challenges and decisions faced by 0x in relation to building on Solana, especially during market fluctuations [t=3:44-275:50].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "0x",
+    "Blockchain",
+    "EVM"
+  ],
+  "aliases": [
+    "Amir Bandeali",
+    "amir bandeali",
+    "0x",
+    "0X"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

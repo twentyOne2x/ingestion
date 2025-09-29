@@ -1,0 +1,44 @@
+{
+  "video_id": "7kLqZfuP82g",
+  "title": "2023-11-01_7kLqZfuP82g_Breakpoint 2023: DeFi Will Change Everything, Again",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "C": {
+      "name": "Kevin Cyrus",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Sci Fi",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Sarah Swazell",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Tristan Orey",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Fire Dancer",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

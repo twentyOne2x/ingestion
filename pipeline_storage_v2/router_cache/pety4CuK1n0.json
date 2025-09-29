@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the challenges of obtaining randomness on-chain, highlighting methods like Xorshift and SHA256, and the risks of malicious actors manipulating transactions. It emphasizes the necessity of using oracles for secure random values, especially in financial contexts.",
+  "topic_summary": "Challenges of obtaining randomness on-chain and secure methods to achieve it [t=0:16].",
+  "router_tags": [
+    "randomness",
+    "blockchain",
+    "Solana",
+    "security",
+    "oracles"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

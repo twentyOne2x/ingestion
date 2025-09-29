@@ -1,0 +1,14 @@
+{
+  "video_id": "xIFgro8uulQ",
+  "title": "2023-11-03_xIFgro8uulQ_Breakpoint 2023: Power Talk: Hubble Protocol",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

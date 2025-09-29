@@ -1,0 +1,22 @@
+{
+  "description": "At Breakpoint 2023, the Solana Incubator was launched to support startups in the Solana ecosystem. The program aims to address challenges in building Web3 applications, including blockchain integration, user experience design, and operational hurdles.",
+  "topic_summary": "The Solana Incubator offers hands-on engineering support, helping teams integrate blockchain technology and build user-friendly products. It leverages Solana Labs' expertise to foster sustainable businesses within the ecosystem.",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Incubator",
+    "Blockchain",
+    "Startup"
+  ],
+  "aliases": [
+    "Solana Incubator",
+    "solana incubator",
+    "SOLANA INCUBATOR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

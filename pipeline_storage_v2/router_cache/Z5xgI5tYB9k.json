@@ -1,0 +1,23 @@
+{
+  "description": "Austin Federa and Mateo Ward discuss the concept of internet cartels and high-frequency trading, emphasizing the critical infrastructure of the internet and its vulnerabilities. They share insights from their backgrounds in telecommunications and networking, highlighting the challenges and innovations in building high-performance networks.",
+  "topic_summary": "The episode explores the influence of internet cartels on connectivity and the implications for high-frequency trading. It features discussions on the founders' experiences in telecommunications and the development of advanced networking solutions, including the establishment of Double Zero.",
+  "router_tags": [
+    "Internet Cartels",
+    "High-Frequency Trading",
+    "Telecommunications",
+    "Networking",
+    "Double Zero"
+  ],
+  "aliases": [
+    "Austin Federa",
+    "Mateo Ward",
+    "austin federa",
+    "mateo ward"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Lecture discussing the complexities of multi-unit auctions, focusing on downward sloping valuations and the VCG mechanism for surplus maximization.",
+  "topic_summary": "In this lecture, the speaker explores scenario four of mechanism design, emphasizing multi-unit auctions and the implications of downward sloping valuations [t=137.66]. The discussion includes the structure of the VCG mechanism and its polynomial time solution for surplus maximization [t=268.34].",
+  "router_tags": [
+    "Mechanism Design",
+    "Auctions",
+    "Surplus Maximization",
+    "VCG Mechanism",
+    "Economics"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ZERO",
+    "$WALLRAZI",
+    "$HUAWEI",
+    "$BITTEREYE",
+    "$KJ",
+    "$AUSUBEL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

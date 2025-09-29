@@ -1,0 +1,23 @@
+{
+  "description": "The presentation discusses the expansion of Automated Market Maker (AMM) design space on Solana, focusing on user benefits, capital efficiency, and risk management. It introduces two mechanisms: market making beyond constant function equations and interconnected markets, highlighting the importance of avoiding stale orders and impermanent loss.",
+  "topic_summary": "Exploration of AMM design space on Solana, emphasizing user-centric protocols and innovative market making mechanisms [t=3:00].",
+  "router_tags": [
+    "AMM",
+    "Solana",
+    "Market Making",
+    "DeFi",
+    "Liquidity"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

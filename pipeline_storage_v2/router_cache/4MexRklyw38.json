@@ -1,0 +1,25 @@
+{
+  "description": "Proph3t His Holiness discusses the advantages and challenges of launching on MetaDAO, emphasizing the need for a new token launch model that aligns community interests and provides legal ownership through the Marshall Islands DAO LLC. He critiques traditional token launches and presents a high float early launch strategy to ensure transparency and community engagement.",
+  "topic_summary": "The talk covers the evolution of token launches, the pitfalls of current practices, and introduces a new model for token generation that prioritizes community ownership and transparency, with insights on future capital formation in crypto.",
+  "router_tags": [
+    "MetaDAO",
+    "Token Launch",
+    "Crypto",
+    "Decentralized Finance",
+    "Community Ownership"
+  ],
+  "aliases": [
+    "Metadao",
+    "Meta Dao",
+    "Meta DAO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "@SolanaFndn",
+    "@BrianSmith"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

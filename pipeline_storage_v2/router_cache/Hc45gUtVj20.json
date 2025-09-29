@@ -1,0 +1,22 @@
+{
+  "description": "Alessandro and Alex from the Solana Labs Runtime team discuss Program Runtime v2, focusing on enhancements for faster execution and improved APIs. They highlight changes to CPI, memory operations, and the introduction of generic interfaces to enhance program composability.",
+  "topic_summary": "Overview of Program Runtime v2 improvements, including execution speed, API simplifications, and support for generic interfaces [t=30:85].",
+  "router_tags": [
+    "Solana",
+    "Runtime",
+    "Program Development",
+    "CPI",
+    "APIs"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

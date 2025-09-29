@@ -1,0 +1,32 @@
+{
+  "description": "Discussion on the Move programming language, its origins at Facebook, and its relevance in blockchain development. The speaker shares personal experiences with coding and the challenges faced with Solidity, emphasizing the need for secure and efficient smart contract development.",
+  "topic_summary": "Exploration of the Move language's development, its advantages over Solidity, and its potential impact on blockchain applications. The conversation highlights the importance of security in smart contracts and the evolution of programming languages in the blockchain space.",
+  "router_tags": [
+    "Move",
+    "Blockchain",
+    "Programming Languages",
+    "Smart Contracts",
+    "Solidity",
+    "Aptos",
+    "Development"
+  ],
+  "aliases": [
+    "Move",
+    "move",
+    "MOVE",
+    "Rushi Manche",
+    "rushi manche"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "$USDC",
+    "$USDT",
+    "@zuckerberg",
+    "@Aptos"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

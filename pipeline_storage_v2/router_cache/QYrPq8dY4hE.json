@@ -1,0 +1,24 @@
+{
+  "description": "Jakub from Radius Ark discusses their projects, including tokenizing flight inventory for Adeline, launching NFT collections for music artists, and creating geofenced NFTs for events.",
+  "topic_summary": "Discussion on innovative projects by Radius Ark, including tokenization and NFT launches [t=0:40].",
+  "router_tags": [
+    "NFT",
+    "Radius Ark",
+    "Tokenization",
+    "Web3",
+    "Music"
+  ],
+  "aliases": [
+    "Radius Art",
+    "radiusart",
+    "Radius ark",
+    "radius Ark"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$Nft",
+    "@Adeline"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

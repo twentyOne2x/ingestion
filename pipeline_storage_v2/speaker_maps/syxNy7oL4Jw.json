@@ -1,0 +1,20 @@
+{
+  "video_id": "syxNy7oL4Jw",
+  "title": "2024-09-20_syxNy7oL4Jw_Breakpoint 2024: Fireside: Real Money Gaming in Web3 (Daniel Lev, Ryan Day)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Daniel Lev",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

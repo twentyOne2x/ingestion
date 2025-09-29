@@ -1,0 +1,22 @@
+{
+  "description": "Mike Cahill from Duralabs announces the evolution of the Pith Network, an oracle that provides trustworthy data to blockchain applications. He discusses the need for low-latency data in DeFi and the journey of Pith in overcoming challenges in the competitive oracle market.",
+  "topic_summary": "Pith Network's evolution and its role in providing reliable, low-latency data for blockchain applications, addressing challenges in the oracle market, and the integration of diverse data sources.",
+  "router_tags": [
+    "Pith Network",
+    "Oracle",
+    "Blockchain",
+    "DeFi",
+    "Data Economy"
+  ],
+  "aliases": [
+    "Pith Network",
+    "Pith",
+    "PYTH"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

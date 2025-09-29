@@ -1,0 +1,27 @@
+{
+  "description": "Jim Ironaddicteddog discusses Zeus Network's initiatives to integrate Bitcoin with Solana, including the launch of Apollo for BTC deposits and the upcoming Zeus Layer infrastructure. The presentation covers technical aspects of Simplified Payment Verification and the implementation of Bitcoin protocol features on Solana.",
+  "topic_summary": "Overview of Zeus Network's products and technology aimed at bridging Bitcoin and Solana, including Apollo, zooscan, and Zeus Layer, with a focus on Simplified Payment Verification and Schnorr signatures [t=5:12-10:32][t=31:1-37:14][t=162:58-307:82].",
+  "router_tags": [
+    "Bitcoin",
+    "Solana",
+    "Zeus Network",
+    "Schnorr",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Zeus Network",
+    "zeus network",
+    "Zeus",
+    "zeus"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@Satoshi",
+    "@Peterson",
+    "$Monero"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Drake Evans, CTO of Agora, discusses the evolution of stablecoins, focusing on AUSD and the concept of stablecoin 3.0. He highlights the transformative potential of blockchain-based finance for global financial infrastructure and the importance of privacy in financial transactions. The talk emphasizes the need for better user experience in stablecoin adoption and introduces confidential transfers on the Solana Blockchain, which balance privacy with auditability.",
+  "topic_summary": "In this talk, Drake Evans presents Agora's vision for the future of stablecoins, addressing the challenges of user experience and privacy in blockchain finance. He introduces confidential transfers as a solution to enhance adoption and discusses the potential market impact of stablecoins in various sectors, including cross-border and enterprise payments. [t=6:32] [t=276:54]",
+  "router_tags": [
+    "Stablecoins",
+    "Blockchain",
+    "Agora",
+    "Confidential Transfers",
+    "Digital Finance"
+  ],
+  "aliases": [
+    "Agora",
+    "agora",
+    "AUSD",
+    "ausd",
+    "Drake Evans",
+    "drake evans"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

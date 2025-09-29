@@ -1,0 +1,22 @@
+{
+  "description": "Michael from the Fire Dancer team provides an overview of the dashboard built for Solana validators, highlighting its utility for developers, end users, and validator operators. The interface aims to enhance understanding and operation of the validator software, facilitating quick diagnostics and improvements.",
+  "topic_summary": "In this video, Michael discusses the features and benefits of the Fire Dancer dashboard for Solana validators, focusing on its role in aiding developers and operators in managing validator performance and software.",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Fire Dancer",
+    "Dashboard",
+    "Education"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

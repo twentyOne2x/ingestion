@@ -1,0 +1,23 @@
+{
+  "description": "An interview with doma, a successful prediction market trader, discussing strategies for making money in prediction markets and insights on the current market landscape.",
+  "topic_summary": "Doma shares insights on prediction markets, including the poly market suit debate and potential opportunities in 2025. [t=6:88] The conversation also touches on personal experiences and losses in betting markets. [t=82:07]",
+  "router_tags": [
+    "prediction markets",
+    "crypto",
+    "trading",
+    "finance",
+    "interview"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Doma",
+    "doma"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

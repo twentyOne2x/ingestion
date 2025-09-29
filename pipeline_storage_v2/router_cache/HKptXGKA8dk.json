@@ -1,0 +1,22 @@
+{
+  "description": "Gabriele Picco discusses advancements in real-time applications on Solana using Ephemeral Rollups, addressing challenges and solutions for low-latency gaming experiences.",
+  "topic_summary": "The presentation covers the development of real-time applications on Solana, emphasizing the importance of low latency for competitive gaming and the innovative use of Ephemeral Rollups to achieve this. Key features include parallel transaction execution and customizable runtime environments, which enhance user experience and scalability [t=4:32 - t=337:45].",
+  "router_tags": [
+    "Solana",
+    "Ephemeral Rollups",
+    "Real-Time Apps",
+    "Gaming",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "SolanaFndn",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@GabrielePicco"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

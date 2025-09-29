@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses second-price (Vickrey) auctions, explaining how they function and their strategic simplicity for bidders. It highlights the differences between first-price and second-price auctions, emphasizing that in a Vickrey auction, the winner pays the second highest bid rather than their own bid. The concept of dominant strategies in bidding is also explored.",
+  "topic_summary": "The lecture covers the mechanics of second-price auctions, including bid collection, winner determination, and pricing based on the second highest bid. It explains the strategic advantages of bidding truthfully in such auctions and compares it to first-price auctions.",
+  "router_tags": [
+    "Vickrey Auction",
+    "Second-Price Auction",
+    "Auction Theory",
+    "Game Theory",
+    "Bidding Strategies"
+  ],
+  "aliases": [
+    "Vickrey auction",
+    "vickrey auction",
+    "Second price auction",
+    "second price auction"
+  ],
+  "canonical_entities": [
+    "$250",
+    "@timroughgardenlectures1861",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

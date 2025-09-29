@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on building HeavenDex, addressing memecoins, and insights from Pasternak and others.",
+  "topic_summary": "The podcast features a conversation about the development of HeavenDex, the challenges of memecoins, and the contributions of various individuals in the crypto space. The hosts engage in a dynamic dialogue, sharing experiences and insights from their journeys in crypto, particularly focusing on the degen side of the industry [t=142:95].",
+  "router_tags": [
+    "HeavenDex",
+    "memecoins",
+    "crypto",
+    "Pasternak",
+    "Telegram"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$HEAVEN",
+    "@Pasternak"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

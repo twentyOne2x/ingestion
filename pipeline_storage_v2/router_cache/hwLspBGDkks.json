@@ -1,0 +1,22 @@
+{
+  "description": "Jes Volarovich discusses the importance of mobile applications in modern development, emphasizing user engagement and the shift from PCs to mobile devices. He shares insights from his experience building Dreader, a platform for digital comics, and explores when and why to consider mobile app development.",
+  "topic_summary": "The talk covers the transition from desktop to mobile usage, the necessity of mobile apps for user engagement, and practical considerations for developers. Key points include user behavior, app portability, and the types of applications that benefit from mobile formats [t=178.91].",
+  "router_tags": [
+    "Mobile Development",
+    "User Engagement",
+    "Digital Comics",
+    "Dreader",
+    "Solana"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

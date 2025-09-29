@@ -1,0 +1,24 @@
+{
+  "description": "This week's Changelog discusses Solana's updates including the SIMD22 proposal for multi stake delegation, the introduction of Space Operator, and recent commits affecting program costs and transaction data limits.",
+  "topic_summary": "The video covers key updates in Solana's ecosystem, including the SIMD22 proposal for multi stake delegation [t=29:32], the Space Operator tool for learning [t=140:43], and recent changes to program costs and transaction data limits [t=184:06].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "SIMD22",
+    "Space Operator",
+    "program costs"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana Updates",
+    "solana updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Andy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

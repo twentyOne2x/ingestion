@@ -1,0 +1,24 @@
+{
+  "description": "Aidan Neil from LadderLabs discusses LadderCaster, the first fully on-chain game on Solana, and Buddylink, a referral and attribution protocol for businesses.",
+  "topic_summary": "In this video, Aidan Neil introduces LadderCaster, highlighting its status as the first fully on-chain game on Solana [t=8:00]. He also explains Buddylink, which allows businesses to set up customizable referral systems and plans to include additional engagement tools [t=18:00].",
+  "router_tags": [
+    "Solana",
+    "LadderCaster",
+    "Buddylink",
+    "on-chain",
+    "gaming",
+    "referral systems"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "laddercaster",
+    "buddylink"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

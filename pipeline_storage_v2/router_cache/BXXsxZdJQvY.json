@@ -1,0 +1,22 @@
+{
+  "description": "In this episode of the TG Podcast, Guy, founder of Athena, discusses the evolution of stablecoins, his experiences in traditional finance, and the changing sentiment in the crypto space since 2020. He reflects on the lessons learned from the DeFi boom and the current skepticism surrounding the potential of crypto to transform the financial landscape.",
+  "topic_summary": "Guy shares insights on the growth of stablecoins, the impact of institutional interest in crypto, and the challenges faced by existing projects. He highlights the differences in market sentiment between 2020 and 2025, emphasizing the need for clear value capture in the evolving crypto ecosystem [t=0:16-366:08].",
+  "router_tags": [
+    "stablecoins",
+    "crypto",
+    "DeFi",
+    "Athena",
+    "financial services"
+  ],
+  "aliases": [
+    "Guy",
+    "notthreadguy",
+    "Athena"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

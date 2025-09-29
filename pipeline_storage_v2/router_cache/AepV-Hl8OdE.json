@@ -1,0 +1,25 @@
+{
+  "description": "David Johnston discusses the Morpheus project, which attracted $400M in stETH within two weeks of its launch. The project aims to create a decentralized network of AI agents that operate transparently and without a formal team, relying on community support and open-source contributions.",
+  "topic_summary": "Morpheus's fair launch attracted significant investment in stETH, highlighting community interest in decentralized AI solutions. Johnston emphasizes the importance of personal AI that operates independently of corporations or governments, aiming to empower users.",
+  "router_tags": [
+    "Morpheus",
+    "AI",
+    "decentralization",
+    "crypto",
+    "ETH",
+    "open source"
+  ],
+  "aliases": [
+    "Morpheus",
+    "morpheus",
+    "DAVID JOHNSTON",
+    "David Johnston"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital",
+    "@David_Johnston"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

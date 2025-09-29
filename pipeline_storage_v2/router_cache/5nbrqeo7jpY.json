@@ -1,0 +1,25 @@
+{
+  "description": "Delphi Digital hosts a discussion with Andrej, co-founder and CEO of Within Labs, about GRASS Network, a decentralized data layer for AI. They explore the challenges of retrieving quality data for AI models and the ethical implications of current data practices. GRASS aims to provide a solution by allowing users to join a network that scrapes large amounts of data while ensuring ethical data usage.",
+  "topic_summary": "In this session, Andrej discusses the intersection of AI and crypto, detailing how GRASS Network addresses the issues of data retrieval and ethical data practices. He emphasizes the importance of decentralization in achieving efficiency and performance in AI applications [t=100.3].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Decentralization",
+    "Data Retrieval",
+    "Ethics in AI"
+  ],
+  "aliases": [
+    "Grass",
+    "grass",
+    "GRASS",
+    "andrej",
+    "Andrej"
+  ],
+  "canonical_entities": [
+    "$GRASS",
+    "@Delphi_Digital",
+    "@Andrej"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

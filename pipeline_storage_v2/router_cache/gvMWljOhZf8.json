@@ -1,0 +1,25 @@
+{
+  "description": "Alex Smirnov discusses the importance of real-time connectivity in DeFi at Breakpoint 2024, emphasizing dbridge's role in bridging liquidity across blockchain ecosystems.",
+  "topic_summary": "At [t=22:08], Alex highlights that 'DeFi doesn't wait' and stresses the need for real-time transactions in DeFi. He explains dbridge's Internet of Liquidity, enabling instant transfers and bridging over $2 billion in liquidity. The upcoming launch of the DBR token on October 17th is also announced.",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Liquidity",
+    "Solana",
+    "dbridge"
+  ],
+  "aliases": [
+    "Dbridge",
+    "dBridge",
+    "DBR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$2 Billion",
+    "$60 Billion",
+    "Dbr"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

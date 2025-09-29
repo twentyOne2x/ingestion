@@ -1,0 +1,22 @@
+{
+  "description": "Nick and Jonas from the Solana Foundation discuss recent updates in the Solana ecosystem, including performance improvements for validators, enhancements to the Solana Web3.js library, and new installation methods for Solana tools. They highlight changes to snapshot directories, RPC methods, and the introduction of a new package manager for easier installation.",
+  "topic_summary": "Updates on Solana's performance improvements for validators, changes in Solana Web3.js, and new installation methods for Solana tools [t=0:24 - t=3:15].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "validators",
+    "performance improvements",
+    "development tools"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

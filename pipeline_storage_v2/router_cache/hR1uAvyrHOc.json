@@ -1,0 +1,23 @@
+{
+  "description": "Alevtina Yakovenko hosts the second day of Breakpoint 2023, focusing on security in the crypto landscape. The session includes a keynote by Thomas Lambert, CEO of NeoDym, discussing the security market's evolution and future.",
+  "topic_summary": "Day two of Breakpoint 2023 emphasizes security in crypto, featuring discussions on protocol safety and personal awareness. Keynote speaker Thomas Lambert will provide insights into the security market's past and future [t=71.02].",
+  "router_tags": [
+    "Breakpoint 2023",
+    "Solana",
+    "Security",
+    "Crypto",
+    "Conference"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Solana Foundation",
+    "Alevtina Yakovenko"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@AlevtinaYakovenko",
+    "$NEO"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

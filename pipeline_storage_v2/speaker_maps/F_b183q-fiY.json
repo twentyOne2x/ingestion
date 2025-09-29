@@ -1,0 +1,14 @@
+{
+  "video_id": "F_b183q-fiY",
+  "title": "2023-11-01_F_b183q-fiY_Breakpoint 2023: A Security Day Fireside Chat with Anatoly Yakovenko and Thomas Lambertz",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

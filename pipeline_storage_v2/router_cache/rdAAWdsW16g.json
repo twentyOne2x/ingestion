@@ -1,0 +1,22 @@
+{
+  "description": "Siddharth Shetty discusses the concept of the Finternet, emphasizing the need for a unified financial infrastructure that allows users control over various asset types. He highlights the importance of tokenization and the potential for digital assets to simplify transactions, drawing parallels to the evolution of the internet and smartphones. The talk also covers the establishment of Internet labs to explore these ideas further and the Solana community's support for projects related to the Finternet.",
+  "topic_summary": "In this talk, Siddharth Shetty introduces the Finternet, a vision for a unified financial infrastructure that enhances user control over assets and simplifies transactions through tokenization. He discusses the challenges of current financial systems and the potential for innovation in this space, referencing ongoing projects and collaborations.",
+  "router_tags": [
+    "Finternet",
+    "Tokenization",
+    "Financial Infrastructure",
+    "Digital Assets",
+    "Solana"
+  ],
+  "aliases": [
+    "Finternet",
+    "finternet",
+    "FINTERNET"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

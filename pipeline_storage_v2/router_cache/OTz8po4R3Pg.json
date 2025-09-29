@@ -1,0 +1,40 @@
+{
+  "description": "Discussion on the future of DeFi, focusing on ZKTLS applications in payday loans, wage access, and decentralized marketplaces like DoorDash. Highlights include the potential for ZK technology to disrupt existing Web2 services and the revival of parametric insurance models.",
+  "topic_summary": "Exploration of ZKTLS in DeFi, its impact on lending, and the potential to transform service-based marketplaces and insurance sectors. Emphasis on the innovative use of blockchain technology to enhance user trust and efficiency in financial services [t=0:16-0:22].",
+  "router_tags": [
+    "DeFi",
+    "ZKTLS",
+    "Blockchain",
+    "Insurance",
+    "Decentralized Finance",
+    "Web2 Disruption"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "Delphi",
+    "delphi"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$USDC",
+    "$SOL",
+    "@Delphi_Digital",
+    "@Jordan",
+    "@Robbie",
+    "@Neil",
+    "@Doordash",
+    "@Infinix",
+    "@Uniswap",
+    "@Dialect",
+    "@Backpack",
+    "@Kamino",
+    "@Jupyter",
+    "@Trishar",
+    "@Barachain",
+    "@Jesse",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

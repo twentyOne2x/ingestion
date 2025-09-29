@@ -1,0 +1,22 @@
+{
+  "description": "ASICS discusses their involvement in Web3 and their transition to the Solana blockchain, emphasizing their commitment to health and community through innovative product launches and NFT integration.",
+  "topic_summary": "ASICS shares their Web3 journey, highlighting their previous experience on Ethereum and the advantages of Solana for scalability and speed in selling running shoes. They explore the connection between physical products and digital experiences through NFTs [t=72:74].",
+  "router_tags": [
+    "ASICS",
+    "Solana",
+    "Web3",
+    "NFT",
+    "running shoes"
+  ],
+  "aliases": [
+    "Asics",
+    "asics",
+    "ASICS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

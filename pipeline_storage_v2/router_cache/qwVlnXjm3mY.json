@@ -1,0 +1,24 @@
+{
+  "description": "Brandon discusses Czar, a platform aimed at accelerating stablecoin adoption for unbanked populations, particularly in high inflation markets. He shares insights from his experience in Pakistan, highlighting the potential of agent banking to facilitate cash on-ramps for digital currencies. Czar aims to leverage existing agent networks to provide decentralized cash exchange services, similar to Western Union, while simplifying the user experience with a stablecoin wallet and debit card.",
+  "topic_summary": "Brandon presents Czar, a platform designed to onboard the next billion users to stablecoins by utilizing agent banking networks to facilitate cash transactions and digital currency exchanges. The talk emphasizes the challenges of cash dependency in emerging markets and the innovative solutions Czar offers to bridge this gap [t=252.12].",
+  "router_tags": [
+    "Stablecoins",
+    "Agent Banking",
+    "Financial Inclusion",
+    "Web3",
+    "Digital Currency"
+  ],
+  "aliases": [
+    "Czar",
+    "CzAR",
+    "czar",
+    "CzAR platform"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

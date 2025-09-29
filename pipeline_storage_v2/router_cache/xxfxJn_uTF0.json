@@ -1,0 +1,23 @@
+{
+  "description": "Amir, founder of Helium and CEO of Nova Labs, discusses the evolution and current state of the Helium network, emphasizing its role in supporting low-power IoT devices and the transition to a community-driven wireless network. He highlights the growth of hotspots and the increasing usage of IoT devices on the network, with significant data transmission growth from 2.2 billion to 7.5 billion times in one year. He also showcases innovative applications developed using Helium, such as tracking devices and environmental sensors.",
+  "topic_summary": "Amir outlines the history and development of the Helium network, its focus on IoT devices, and the transition to a community-powered model. He shares insights on the network's growth and the innovative applications emerging from it, illustrating the impact of Helium on the IoT landscape.",
+  "router_tags": [
+    "Helium",
+    "IoT",
+    "Wireless Network",
+    "Nova Labs",
+    "Community Power"
+  ],
+  "aliases": [
+    "helium",
+    "Helium Network",
+    "Nova Labs",
+    "IoT Network"
+  ],
+  "canonical_entities": [
+    "$HNT",
+    "@Amir"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

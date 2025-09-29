@@ -1,0 +1,22 @@
+{
+  "description": "Drew Nutter discusses the development of a read-optimized Solana Validator client called SIG at Breakpoint 2024. He explains the challenges of slot lag in Solana and how SIG aims to improve user experience by enhancing read operations and client diversity.",
+  "topic_summary": "At [t=0:05], Drew Nutter introduces himself and Syndica's project SIG, a read-optimized Solana Validator client. He highlights the issues with current RPC nodes and slot lag, and outlines the improvements SIG will bring to the Solana ecosystem, including better fault tolerance and developer support.",
+  "router_tags": [
+    "Solana",
+    "Validator Client",
+    "Syndica",
+    "Breakpoint 2024",
+    "Drew Nutter"
+  ],
+  "aliases": [
+    "Drew Nutter",
+    "drew nutter",
+    "DREW NUTTER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Syndica"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

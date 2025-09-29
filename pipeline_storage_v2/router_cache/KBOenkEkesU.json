@@ -1,0 +1,31 @@
+{
+  "description": "Mary Gooneratne introduces Sponsored Vaults, a new credit primitive for programmable credit markets that allows institutions to create targeted credit markets for growth. She discusses the limitations of existing DeFi lending protocols and how Sponsored Vaults address these issues by enabling the creation of credit markets at zero marginal cost, facilitating asset adoption and protocol growth.",
+  "topic_summary": "The presentation covers the introduction of Sponsored Vaults, their advantages over traditional DeFi lending protocols, and their potential to enhance credit market accessibility and efficiency in the DeFi ecosystem [t=1:84].",
+  "router_tags": [
+    "DeFi",
+    "Credit Markets",
+    "Sponsored Vaults",
+    "Loopscale",
+    "Programmable Credit"
+  ],
+  "aliases": [
+    "Mary Gooneratne",
+    "mary gooneratne",
+    "loopscale",
+    "LoopScale"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$100,000",
+    "$100 Million",
+    "USDG",
+    "Paxos",
+    "Affirm",
+    "$120 Billion",
+    "Global Dollar",
+    "Helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

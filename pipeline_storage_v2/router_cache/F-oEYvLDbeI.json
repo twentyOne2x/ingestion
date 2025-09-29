@@ -1,0 +1,25 @@
+{
+  "description": "Sunny Aggarwal discusses the Polaris Cross-Chain Router, a new product aimed at improving liquidity access across different blockchain ecosystems. He highlights the challenges of fragmented liquidity and the need for a user-centric approach in crypto applications.",
+  "topic_summary": "At [t=11:12], Sunny introduces Polaris, explaining its purpose to bridge liquidity across chains. He emphasizes the importance of user experience and the need to address the 'great chain divide' in crypto liquidity. The presentation includes a demonstration of Polaris's features, such as wallet connectivity and asset aggregation.",
+  "router_tags": [
+    "Polaris",
+    "Cross-Chain",
+    "Liquidity",
+    "Dex",
+    "Osmosis",
+    "Crypto UX"
+  ],
+  "aliases": [
+    "polaris",
+    "Polaris Router",
+    "Polaris Cross-Chain Router"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Osmosis",
+    "@Interfluke"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

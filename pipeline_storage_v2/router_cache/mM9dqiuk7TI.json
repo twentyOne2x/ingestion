@@ -1,0 +1,26 @@
+{
+  "description": "Connor O'Hara discusses his journey in blockchain, starting from early Bitcoin usage to his current role at Celestia Labs. He emphasizes the importance of Bitcoin as a currency and expresses skepticism towards NFTs and gaming applications. O'Hara highlights his interest in DeFi, scaling solutions, and privacy innovations in cryptocurrency.",
+  "topic_summary": "In this episode, Connor O'Hara shares insights on the evolution of blockchain technology, his experiences with Bitcoin, and the future of decentralized finance and privacy solutions. He reflects on the changes in the crypto landscape and his ongoing commitment to improving Bitcoin's functionality [t=4:64-324:92].",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Bitcoin",
+    "DeFi",
+    "Privacy",
+    "Celestia",
+    "Solana"
+  ],
+  "aliases": [
+    "Connor O'Hara",
+    "connor o'hara",
+    "CONNOR O'HARA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

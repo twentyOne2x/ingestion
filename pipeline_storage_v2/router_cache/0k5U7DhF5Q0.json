@@ -1,0 +1,24 @@
+{
+  "description": "Discover how Easy Labs leverages Solana technology to reduce card processing fees for small businesses. Learn about the benefits of using their payment processing solution.",
+  "topic_summary": "Easy Labs is developing a payment processing solution powered by Solana technology to help small businesses save on card processing fees. [t=0:24] The service aims to reduce merchant processing costs significantly for credit and debit card transactions. [t=12:92] Interested users can get started by visiting Easy.co. [t=29:52]",
+  "router_tags": [
+    "solana",
+    "web3",
+    "crypto",
+    "payment processing",
+    "small business"
+  ],
+  "aliases": [
+    "Easy",
+    "easy",
+    "EASY",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

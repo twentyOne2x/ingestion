@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator updates and upcoming events including Accelerate NYC. Key topics include SIMD governance votes, validator software updates, and performance feedback on Fire Dancer and Agave clients.",
+  "topic_summary": "Validator updates and discussions on SIMD governance votes [t=36:19], upcoming Accelerate NYC event [t=15:28], and performance of validator clients [t=265:60].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Governance",
+    "Accelerate NYC",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

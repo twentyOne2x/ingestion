@@ -1,0 +1,35 @@
+{
+  "description": "Austin hosts a discussion with former OFAC lawyer Dave Stetson and FinCEN director Mike Mosher, along with co-host Amira Valiani, about the US government's approach to illicit activities in Web3, focusing on the implications of the Warren-Marshall Bill and the Tornado Cash sanctions. The episode explores how OFAC and FinCEN operate, their roles in national security, and the challenges of regulating blockchain technology [t=0:24-0:48].",
+  "topic_summary": "The episode covers the intersection of blockchain technology, national security, and regulatory frameworks, particularly focusing on OFAC and FinCEN's roles in addressing illicit activities and the implications of the Warren-Marshall Bill [t=28:34-37:86].",
+  "router_tags": [
+    "Web3",
+    "OFAC",
+    "FinCEN",
+    "Tornado Cash",
+    "Warren-Marshall Bill",
+    "Blockchain Regulation",
+    "National Security"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "VALIDATED"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "North Korea",
+    "Tornado Cash",
+    "Dave Stetson",
+    "Mike Mosher",
+    "Amira Valiani",
+    "OFAC",
+    "FinCEN",
+    "US Government",
+    "Treasury Department",
+    "Department Of Treasury"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

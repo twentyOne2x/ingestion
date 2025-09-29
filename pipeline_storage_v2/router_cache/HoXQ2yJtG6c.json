@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the 'Only Possible' campaign by Solana, focusing on user experiences, marketing strategies, and technology behind Solana. The speaker emphasizes the importance of community engagement and factual information in building effective marketing campaigns.",
+  "topic_summary": "The presentation covers the launch and execution of the 'Only Possible' campaign, detailing strategies for community involvement and technology promotion. Key points include the need for clear communication about Solana's capabilities and the phased approach to marketing efforts [t=3:36-311:01].",
+  "router_tags": [
+    "Solana",
+    "Only Possible",
+    "Marketing",
+    "Technology",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Only Possible",
+    "Only possible",
+    "SOL",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

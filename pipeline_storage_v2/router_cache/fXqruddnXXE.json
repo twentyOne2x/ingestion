@@ -1,0 +1,25 @@
+{
+  "description": "In this interview, Thread Guy speaks with Good Alexander, founder of Post Fiat, about the rapid acceleration of AI and its implications for the future. They discuss the intersection of blockchain and AI, the creator economy, and the impact of data availability on AI development.",
+  "topic_summary": "Thread Guy interviews Good Alexander on surviving in a post-AGI world, focusing on AI acceleration and its effects on the creator economy [t=12:48].",
+  "router_tags": [
+    "AI",
+    "Blockchain",
+    "Post Fiat",
+    "Creator Economy",
+    "Data"
+  ],
+  "aliases": [
+    "Thread Guy",
+    "Good Alexander",
+    "Michael"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$XRP",
+    "$BTC",
+    "$ETH",
+    "$AMZN"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

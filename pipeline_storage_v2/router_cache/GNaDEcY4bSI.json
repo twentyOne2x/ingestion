@@ -1,0 +1,25 @@
+{
+  "description": "Nick and Jacob from the Solana Foundation discuss updates in the Solana ecosystem, including the Coliseum hackathon, improvements to transaction processing, and the release of Web3JS Tech Preview number two.",
+  "topic_summary": "Updates on the Solana ecosystem including the Coliseum hackathon [t=15:28], transaction processing improvements [t=148:73], and Web3JS Tech Preview number two [t=301:85].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Hackathon",
+    "Web3JS",
+    "Transaction Processing"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Solana Foundation",
+    "Coliseum",
+    "Web3JS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

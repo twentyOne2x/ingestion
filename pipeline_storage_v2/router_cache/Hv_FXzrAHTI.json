@@ -1,0 +1,30 @@
+{
+  "description": "Mike Hudack, co-founder of Sling, demonstrates the money transfer capabilities of Sling, integrating Solana and stablecoins for instant global payments. The demo includes sending money from Europe to Kenya and highlights the ease of use and low costs compared to traditional methods.",
+  "topic_summary": "Sling's innovative money transfer solution allows users to send money globally with ease, utilizing Solana and stablecoins. The presentation showcases real-time transactions, user-friendly interfaces, and the integration of various financial systems for seamless operations [t=8:16].",
+  "router_tags": [
+    "Sling",
+    "Solana",
+    "money transfer",
+    "stablecoins",
+    "global payments"
+  ],
+  "aliases": [
+    "sling",
+    "Sling",
+    "Sling App",
+    "sling app"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDP",
+    "$USDC",
+    "@Simon",
+    "@Caleb",
+    "@Apple",
+    "@Nubank",
+    "@Pesa"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

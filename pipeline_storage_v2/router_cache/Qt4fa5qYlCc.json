@@ -1,0 +1,25 @@
+{
+  "description": "Lance Weiler discusses decentralized futures and the potential of collaborative innovation in art and technology, referencing historical initiatives like E.A.T. and the role of Bell Labs in fostering creativity through technology.",
+  "topic_summary": "Weiler explores the intersection of art and technology, emphasizing decentralized collaboration and the impact of generative tools on culture and innovation. He invites participation in upcoming events aimed at fostering this dialogue [t=0:48].",
+  "router_tags": [
+    "Decentralized Futures",
+    "Art and Technology",
+    "Collaboration",
+    "Innovation",
+    "E.A.T.",
+    "Bell Labs",
+    "Generative Tools"
+  ],
+  "aliases": [
+    "Lance Weiler",
+    "lance weiler",
+    "LANCE WEILER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

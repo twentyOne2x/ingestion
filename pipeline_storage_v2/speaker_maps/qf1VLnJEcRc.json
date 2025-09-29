@@ -1,0 +1,26 @@
+{
+  "video_id": "qf1VLnJEcRc",
+  "title": "2025-05-23_qf1VLnJEcRc_Ship or Die at Accelerate 2025: Web3 Music Isn't Working (Ray Jacobson, Dan Smith, Clayton Blaha)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Clayton Blaha",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Clayton Blaha",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

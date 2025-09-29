@@ -1,0 +1,20 @@
+{
+  "video_id": "-7QLjK2cttA",
+  "title": "2023-05-20_-7QLjK2cttA_Is Bitcoin worth $0 (ft. Elizabeth Warren)",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Elizabeth Warren",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

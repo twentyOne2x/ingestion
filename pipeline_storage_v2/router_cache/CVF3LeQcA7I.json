@@ -1,0 +1,26 @@
+{
+  "description": "Noah Prince discusses the migration of Helium to Solana, highlighting its decentralized wireless network and $5 mobile plan. He explains the challenges faced in deploying IoT solutions and the innovative incentive systems that enabled the growth of the Helium network.",
+  "topic_summary": "Noah Prince from Helium Foundation explains the migration to Solana, the benefits of decentralized wireless, and the evolution of Helium's IoT network from 2013 to 2021, including the introduction of a mobile network and the challenges of scaling.",
+  "router_tags": [
+    "Helium",
+    "Solana",
+    "IoT",
+    "Blockchain",
+    "Decentralized Wireless"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "Helium Foundation",
+    "Noah Prince"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$5",
+    "$50",
+    "$40",
+    "@helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

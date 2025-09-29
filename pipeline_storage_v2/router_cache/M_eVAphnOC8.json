@@ -1,0 +1,26 @@
+{
+  "description": "Delphi's Gaming Year Ahead podcast discusses the gaming landscape as it transitions into 2025, highlighting successful token launches and the competition for player liquidity. The hosts share insights on notable projects and the challenges faced in user acquisition within the Web3 space.",
+  "topic_summary": "The podcast covers the state of gaming in 2023, the impact of successful token launches, and predictions for 2025, including the competition for player engagement and notable projects like Fableborn and Rift Storm [t=0:16].",
+  "router_tags": [
+    "Gaming",
+    "Web3",
+    "Token Launches",
+    "Player Engagement",
+    "Market Trends"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "Delphi_Digital"
+  ],
+  "canonical_entities": [
+    "$NVIDIA",
+    "@Joe",
+    "@Duncan",
+    "@Hunter",
+    "$NEXON",
+    "$Hytopia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

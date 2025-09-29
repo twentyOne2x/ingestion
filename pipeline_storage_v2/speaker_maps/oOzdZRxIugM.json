@@ -1,0 +1,20 @@
+{
+  "video_id": "oOzdZRxIugM",
+  "title": "2016-02-19_oOzdZRxIugM_A Second Course in Algorithms (Lecture 13: Online Scheduling and Online Steiner Tree)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ron Graham",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

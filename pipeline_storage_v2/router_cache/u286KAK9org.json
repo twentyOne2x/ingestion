@@ -1,0 +1,21 @@
+{
+  "description": "A humorous exchange at a poker table involving hookah smoking, featuring Anselm and Cameron Ansem.",
+  "topic_summary": "Discussion about hookah use during poker games, with playful banter between players [t=0:08].",
+  "router_tags": [
+    "crypto",
+    "poker",
+    "cryptocurrency",
+    "pokerlifestyle"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "Anselm",
+    "Cameron Ansem"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

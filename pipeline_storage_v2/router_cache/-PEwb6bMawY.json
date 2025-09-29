@@ -1,0 +1,31 @@
+{
+  "description": "In 2025, the discussion revolves around the proliferation of stablecoins, with various companies like Robinhood and Ripple launching their own. The speakers explore the motivations behind these launches, emphasizing the need for branded stablecoins and addressing consumer experience issues. They highlight the challenges of too many stablecoins and the desire for programmability and payment functionalities. The conversation also touches on the evolution of stablecoins as foundational infrastructure for fintech, enabling customization and improved user experiences.",
+  "topic_summary": "The video discusses the rise of stablecoins in 2025, exploring why companies are launching their own, the consumer needs driving this trend, and the future of stablecoins as essential infrastructure for fintech applications. Key points include the challenges of existing stablecoins and the importance of customization for user experience [t=13:92-348:63].",
+  "router_tags": [
+    "Stablecoins",
+    "Fintech",
+    "Cryptocurrency",
+    "Digital Currency",
+    "Consumer Experience"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Stablecoin Discussion",
+    "Stablecoin Future"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Robinhood",
+    "@Ripple",
+    "@Circle",
+    "@Tether",
+    "@Stripe",
+    "@Binance",
+    "@Coinbase",
+    "@JPMorgan",
+    "@Citibank"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

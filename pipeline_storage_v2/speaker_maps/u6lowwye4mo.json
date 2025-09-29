@@ -1,0 +1,26 @@
+{
+  "video_id": "u6lowwye4mo",
+  "title": "2024-07-29_u6lowwye4mo_How Memecoins Will Get You RICH - Pump Fun Founder's Full Insight",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Caitlyn Jenner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Dan Romero",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

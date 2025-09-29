@@ -1,0 +1,23 @@
+{
+  "description": "Welcome to Day 3 of Breakpoint 2022 at Pateo. The event features a packed schedule with technical deep dives, workshops, and discussions. Attendees are encouraged to utilize noise-canceling headsets for better audio experience. Refreshments are available, and shuttles are running to other venues. The day concludes with a closing ceremony and celebration featuring DJs.",
+  "topic_summary": "Day 3 of Breakpoint 2022 includes technical sessions, networking opportunities, and a closing ceremony with entertainment. Keynote by Chris from Dialect on smart messaging and notifications, highlighting integration in Solana wallets [t=151.04].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "Pateo",
+    "technical workshops",
+    "smart messaging"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "Solana Foundation",
+    "Pateo"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@Dialect"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

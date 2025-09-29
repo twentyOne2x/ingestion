@@ -1,0 +1,25 @@
+{
+  "description": "Nuseir Yassin and Akshay BD discuss creator monetization, bank balances, and the impact of followers on income during a fireside chat.",
+  "topic_summary": "The conversation covers the financial realities of content creators, including the misconception that follower count directly correlates with income. Yassin reveals his bank balance of $6.8 million despite having 65 million followers, emphasizing the complexities of monetization in the creator economy [t=29:85].",
+  "router_tags": [
+    "Creator Economy",
+    "Monetization",
+    "Social Media",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "Nuseir Yassin",
+    "Akshay BD",
+    "Nassair",
+    "Nazair",
+    "Nas Daily"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Nuseir",
+    "@Akshay"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discusses selfish mining strategies in Bitcoin, focusing on forking attacks and block withholding tactics. It explains the implications of miners keeping blocks secret and the risks involved in not broadcasting eligible blocks promptly.",
+  "topic_summary": "Exploration of selfish mining in Bitcoin, including forking attacks and the strategic withholding of blocks by miners. The lecture emphasizes the importance of broadcasting blocks to maintain network integrity and the consequences of delayed announcements [t=0:72].",
+  "router_tags": [
+    "Bitcoin",
+    "Selfish Mining",
+    "Blockchain",
+    "Cryptocurrency",
+    "Mining Attacks"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@satoshi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

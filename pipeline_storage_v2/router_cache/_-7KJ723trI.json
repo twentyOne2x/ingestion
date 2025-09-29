@@ -1,0 +1,27 @@
+{
+  "description": "This lecture discusses the significance of auctions in computer science, particularly focusing on single-item auctions. It explores bidder behavior, valuation, and the economic implications of auctions in the modern internet economy.",
+  "topic_summary": "The lecture covers the basics of single-item auctions, including bidder valuations, preferences, and the role of auctions in online advertising and revenue generation for tech companies [t=0:00 - t=5:00].",
+  "router_tags": [
+    "auctions",
+    "computer science",
+    "economics",
+    "bidders",
+    "valuation"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Single-Item Auctions",
+    "Auctions Lecture"
+  ],
+  "canonical_entities": [
+    "$100",
+    "$250",
+    "$175",
+    "$110",
+    "$75",
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

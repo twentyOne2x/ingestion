@@ -1,0 +1,24 @@
+{
+  "description": "Dan Albert and John welcome attendees to the Ship or Die event at Accelerate Week in New York City. They highlight the significance of the event, which has attracted 3,000 participants, and emphasize collaboration in the blockchain industry. The conference features two stages focusing on different topics, including institutional finance and consumer crypto products. Attendees are encouraged to explore the venue and engage with interactive demos and art installations.",
+  "topic_summary": "Introduction to the Ship or Die event at Accelerate Week, discussing its scale, significance, and the agenda for the upcoming days. Highlights include the focus on collaboration in blockchain and the diverse content available across two stages [t=0:00-10:00].",
+  "router_tags": [
+    "Solana",
+    "Accelerate Week",
+    "Ship or Die",
+    "Blockchain",
+    "Conference"
+  ],
+  "aliases": [
+    "Ship Or Die",
+    "Accelerate Week",
+    "Solana Foundation",
+    "Dan Albert",
+    "John Wong"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

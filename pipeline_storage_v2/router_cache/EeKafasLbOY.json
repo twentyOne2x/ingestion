@@ -1,0 +1,21 @@
+{
+  "description": "Recap of Day 2 at Breakpoint 2023, highlighting key discussions on loyalty orders and the role of tokens in promoting open source software.",
+  "topic_summary": "Discussion on loyalty orders increasing to 31% [t=00:13] and the importance of tokens in fostering a collaborative ecosystem [t=00:34].",
+  "router_tags": [
+    "Breakpoint 2023",
+    "Solana",
+    "tokens",
+    "loyalty"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

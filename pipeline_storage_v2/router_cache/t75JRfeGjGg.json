@@ -1,0 +1,25 @@
+{
+  "description": "Alexander Guy discusses SVM Kit, a tool for managing Solana infrastructure as code, aimed at simplifying the deployment of private chains and RPC nodes. He highlights the challenges of setting up Solana networks and how SVM Kit automates these processes, allowing for deterministic launches and easy management of infrastructure.",
+  "topic_summary": "Overview of SVM Kit for Solana infrastructure management, addressing deployment challenges and automation solutions [t=5:92].",
+  "router_tags": [
+    "Solana",
+    "SVM Kit",
+    "Infrastructure as Code",
+    "Blockchain",
+    "DevOps"
+  ],
+  "aliases": [
+    "Svm Kit",
+    "SVM kit",
+    "SVMKIT",
+    "SVM Kit Hackers Group",
+    "SVMKIT Hackers Group"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@AlexanderGuy",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

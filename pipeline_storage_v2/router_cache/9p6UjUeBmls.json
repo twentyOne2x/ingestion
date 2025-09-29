@@ -1,0 +1,28 @@
+{
+  "description": "Introduction to the Solana Attestation Service, a protocol for linking off-chain data with on-chain wallets, enhancing KYC processes and tokenized attestations. Live demo featuring Chuck and Rohan showcasing its capabilities.",
+  "topic_summary": "Overview of the Solana Attestation Service and its applications in KYC and data management, including a live demonstration of its integration with Roam and Polyflow [t=59:01].",
+  "router_tags": [
+    "Solana",
+    "KYC",
+    "Blockchain",
+    "Attestation Service",
+    "Web3",
+    "Devnet"
+  ],
+  "aliases": [
+    "Ship Or Die",
+    "ship or die",
+    "Solana Attestation Service",
+    "solana attestation service"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Chuck",
+    "@Rohan",
+    "@Polyflow",
+    "@Roam"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

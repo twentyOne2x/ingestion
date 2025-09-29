@@ -1,0 +1,28 @@
+{
+  "description": "This week's Changelog discusses the latest updates on Solana, including the Firedancer implementation of Qwik, which achieved 1.08 million TPS at a 1KB transaction size. The episode also covers the proposal for a native events program to improve logging, the new gaming section in the Solana Cookbook, and updates on the Super Team Earn platform. Additionally, the Solidity compiler has been added to the Solana installer to enhance developer experience.",
+  "topic_summary": "Highlights include Firedancer's Qwik implementation achieving high TPS [t=52.79], a proposal for a native events program [t=153.76], the introduction of a gaming section in the Cookbook [t=250.79], and updates to the Super Team Earn platform [t=313.55]. The addition of the Solidity compiler to the Solana installer is also discussed [t=372.82].",
+  "router_tags": [
+    "Solana",
+    "Firedancer",
+    "Qwik",
+    "Native Events",
+    "Gaming",
+    "Solidity",
+    "Super Team"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Firedancer",
+    "FIRE DANCER",
+    "Super Team",
+    "SUPER TEAM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

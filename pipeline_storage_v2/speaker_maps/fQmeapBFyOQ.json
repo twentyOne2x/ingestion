@@ -1,0 +1,26 @@
+{
+  "video_id": "fQmeapBFyOQ",
+  "title": "2023-10-31_fQmeapBFyOQ_Breakpoint 2023: The Future of Finance and Blockchains, with VISA",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Monetary Authority",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Shiraz Sher",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

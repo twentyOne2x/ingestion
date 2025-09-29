@@ -1,0 +1,26 @@
+{
+  "description": "Tim Roughgarden discusses the complexities of Web3 technologies, addressing common misconceptions and questions about blockchain, NFTs, and cryptocurrencies. He emphasizes the importance of distinguishing between the technology's implementation and its applications.",
+  "topic_summary": "In this talk, Roughgarden explores the misunderstood aspects of Web3, including the differences between proof of work and proof of stake, the value of NFTs, and investment decisions in cryptocurrencies like Bitcoin and Ethereum. He aims to clarify these topics and provide a mental model for understanding Web3 technologies.",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "NFT",
+    "Cryptocurrency",
+    "Proof of Work",
+    "Proof of Stake"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@SatoshiNakamoto",
+    "@Columbia",
+    "@Lionhack",
+    "@BlockchainClub"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

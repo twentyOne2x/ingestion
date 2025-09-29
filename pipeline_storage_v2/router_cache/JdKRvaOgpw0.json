@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses empirical truths about algorithms, focusing on hash functions and their performance compared to random functions. It introduces the concept of linear probing for collision resolution in hash tables.",
+  "topic_summary": "The lecture covers the effectiveness of simple hash functions under the assumption of randomness in data, the mechanics of hash functions, and the linear probing method for handling collisions in hash tables [t=0:24 - t=312:72].",
+  "router_tags": [
+    "hash functions",
+    "linear probing",
+    "collision resolution",
+    "algorithms",
+    "data structures"
+  ],
+  "aliases": [
+    "Beyond Worst-Case Analysis",
+    "Lecture 16",
+    "Pseudorandom Data",
+    "Universal Hashing"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

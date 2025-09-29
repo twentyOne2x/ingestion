@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the unique business culture in the APAC region, emphasizing the rapid validation of ideas and the importance of personal relationships in the crypto space. Highlights the significance of the Solana ecosystem and the opportunities at the Apex Singapore summit for young founders.",
+  "topic_summary": "Exploration of APAC business dynamics, the role of super apps, and the collaborative spirit in the crypto community, with a focus on the Solana ecosystem and networking opportunities at the Apex Singapore summit [t=111:54].",
+  "router_tags": [
+    "APAC",
+    "Solana",
+    "Crypto",
+    "Business Culture",
+    "Networking"
+  ],
+  "aliases": [
+    "Apex Singapore",
+    "Apex Singapore Summit",
+    "Solana APEX"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

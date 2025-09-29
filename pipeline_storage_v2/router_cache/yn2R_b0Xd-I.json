@@ -1,0 +1,22 @@
+{
+  "description": "The speaker reflects on their journey in streaming and content creation, expressing moments of doubt and nostalgia. They discuss their initial motivations for joining Twitter and the pressures of maintaining a content-driven career.",
+  "topic_summary": "The speaker shares their experiences with streaming, the challenges faced on Twitter, and the evolution of their content creation journey, highlighting a mix of passion and obligation [t=1:04 - t=144:42].",
+  "router_tags": [
+    "streaming",
+    "content creation",
+    "Twitter",
+    "crypto",
+    "personal journey"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

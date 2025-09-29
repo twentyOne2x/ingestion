@@ -1,0 +1,20 @@
+{
+  "video_id": "yoeu5MFEPwI",
+  "title": "2025-08-07_yoeu5MFEPwI_Daniel Tenreiro: Crypto's Future, Peter Thiel, Macro and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ilay Chris",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

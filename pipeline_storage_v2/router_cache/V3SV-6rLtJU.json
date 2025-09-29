@@ -1,0 +1,32 @@
+{
+  "description": "Ben Sprango, head of Strategic BD at the Solana Foundation, introduces a panel discussing off-chain assets (RWAs) and their integration into blockchain technology. Panelists include Max from Credix, Zvi from Baxis, Trevor from Parcel, Mary from Bridge Split, Adam from Roku A Team, and Domingo from Homebase, each presenting their projects and innovations in the space.",
+  "topic_summary": "The panel explores the potential of off-chain assets, focusing on how blockchain can enhance liquidity and accessibility in various markets, particularly in the wine and spirits industry and real estate. They discuss the challenges of traditional asset trading and how tokenization can address these issues [t=20:96].",
+  "router_tags": [
+    "offchain assets",
+    "blockchain",
+    "liquidity",
+    "tokenization",
+    "real estate",
+    "wine and spirits"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@MaximPisa",
+    "@ZviWiesel",
+    "@TrevorBacon",
+    "@Mary",
+    "@Adam",
+    "@Domingo",
+    "@BenSprango",
+    "@Backsys"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

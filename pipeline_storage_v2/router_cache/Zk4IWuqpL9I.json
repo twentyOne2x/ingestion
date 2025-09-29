@@ -1,0 +1,25 @@
+{
+  "description": "Matt Led discusses indexing Solana on-chain data at scale, addressing challenges like availability, scalability, and data integrity. He introduces Sendigov's Web3 native cloud and its RPC infrastructure, along with specialized APIs. The talk also covers the complexities of managing real-time streaming infrastructure and the need for flexibility in indexing solutions.",
+  "topic_summary": "The presentation focuses on the technical aspects of indexing on-chain data in Solana, highlighting the challenges and solutions provided by Sendigov's Indexer. Key points include the importance of real-time data processing, historical event management, and the use of a WASM runtime for flexibility in indexing.",
+  "router_tags": [
+    "Solana",
+    "Indexing",
+    "Web3",
+    "Blockchain",
+    "Data Infrastructure"
+  ],
+  "aliases": [
+    "Dyndexer",
+    "Dynamic Indexer",
+    "Sendigov",
+    "Syndicub"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@MattLed",
+    "@Sendigov",
+    "@Syndicub"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

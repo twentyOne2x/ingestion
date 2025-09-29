@@ -1,0 +1,20 @@
+{
+  "video_id": "9srk18Jacr0",
+  "title": "2023-02-28_9srk18Jacr0_Validated - How web3 Is Disrupting the Web 2 Venture Playbook with Li Jin",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Li Jin",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

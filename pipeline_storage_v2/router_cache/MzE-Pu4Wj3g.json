@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly discusses Solana's vision as a smart contract platform that synchronizes global information rapidly, addressing fairness in access to market data and the importance of an open developer environment. He emphasizes the need for efficient data propagation and consensus mechanisms to support high throughput applications.",
+  "topic_summary": "The conversation centers on Solana's unique approach to building a fast, open platform for developers, focusing on global information synchronization and the challenges of data propagation in trading environments. Anatoly outlines the technical foundations that enable real-time market data distribution.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Smart Contracts",
+    "Market Data",
+    "Developer Platform"
+  ],
+  "aliases": [
+    "Anatoly",
+    "anatoly",
+    "LOGAN",
+    "logAN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

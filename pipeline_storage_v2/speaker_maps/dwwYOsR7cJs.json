@@ -1,0 +1,20 @@
+{
+  "video_id": "dwwYOsR7cJs",
+  "title": "2025-08-19_dwwYOsR7cJs_Heart: How To Win With Perps, BTC's Future, Vibecoding and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "James Wynn",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

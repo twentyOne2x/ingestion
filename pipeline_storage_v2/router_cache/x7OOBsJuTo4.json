@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of Validated, Oli discusses the evolution of the Solana network with its co-founder. They reflect on past challenges, including network outages and the importance of balancing innovation with stability. The conversation highlights the need for time to stabilize complex systems and the trade-offs faced by founders in the tech space.",
+  "topic_summary": "Oli and the co-founder of Solana discuss the network's development, challenges faced in early 2022, and the importance of understanding failures in production. They emphasize the need for robust solutions and the trade-offs between innovation and conservatism in product development.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Web3",
+    "Technology",
+    "Innovation"
+  ],
+  "aliases": [
+    "Validated",
+    "The Toly Episode",
+    "validated",
+    "the toly episode"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

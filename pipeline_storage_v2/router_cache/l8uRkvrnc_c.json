@@ -1,0 +1,27 @@
+{
+  "description": "This lecture discusses the concept of a 'computer in the sky' that serves as a neutral infrastructure for general purpose computation, emphasizing its potential for ownership and digital signatures.",
+  "topic_summary": "Exploration of a vision for a decentralized, robust computing system that allows for open access and ownership verification through digital signatures [t=0:00-3:76].",
+  "router_tags": [
+    "computer science",
+    "decentralization",
+    "digital ownership",
+    "public key cryptography",
+    "general purpose computation"
+  ],
+  "aliases": [
+    "Computer In The Sky",
+    "computer in the sky",
+    "The Computer In The Sky"
+  ],
+  "canonical_entities": [
+    "$TM",
+    "@elonmusk",
+    "@ticketmaster",
+    "@twitter",
+    "@meta",
+    "@uber",
+    "@theunitedstates"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "8e6IicSllOg",
+  "title": "2024-04-10_8e6IicSllOg_Solana Changelog Apr 9 - Flare and GetEpochStake",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ari, Jonas",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

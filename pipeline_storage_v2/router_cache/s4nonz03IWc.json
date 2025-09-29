@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the announcement of Grizzly Thon winners and the introduction of state compression technology, which significantly reduces the cost of minting NFTs.",
+  "topic_summary": "The Solana Changelog for April 11 covers the Grizzly Thon results, the benefits of state compression for NFT minting [t=78.46], and introduces the One Million NFTs project as a practical example of compressed NFTs [t=167.56].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Changelog",
+    "Grizzly Thon",
+    "State Compression"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "solana changelog april 11"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

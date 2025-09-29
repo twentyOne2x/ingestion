@@ -1,0 +1,34 @@
+{
+  "description": "Thomas Bohner discusses the evolution of decentralized finance (DeFi) and the role of Credix in building a digital infrastructure for the private credit market, focusing on Latin America. He highlights the challenges of integrating traditional finance with blockchain technology and the importance of risk management and legal frameworks in creating a sustainable DeFi ecosystem.",
+  "topic_summary": "The conversation covers the development of DeFi, the significance of credit in this space, and how Credix aims to bridge traditional finance with blockchain solutions, particularly in Latin America. Bohner emphasizes the need for regulatory compliance and effective risk management to enhance investor confidence in decentralized credit markets [t=4:48-392:54].",
+  "router_tags": [
+    "DeFi",
+    "Credix",
+    "Blockchain",
+    "Private Credit",
+    "Latin America",
+    "Digital Infrastructure"
+  ],
+  "aliases": [
+    "Thomas Bohner",
+    "thomas bohner",
+    "CREDIX",
+    "credix"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Robinhood",
+    "@Goldman",
+    "@Apple",
+    "@Google",
+    "@Bolsonaro",
+    "@JpMorgan",
+    "@Blackstone",
+    "@Fitch",
+    "@Moody",
+    "@SAndP"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

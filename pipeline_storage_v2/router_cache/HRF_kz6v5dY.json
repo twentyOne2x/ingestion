@@ -1,0 +1,23 @@
+{
+  "description": "KZ discusses the importance of building beyond just the product in the crypto space, emphasizing the human side of business and the significance of team dynamics, partnerships, and community engagement.",
+  "topic_summary": "KZ explores the concept of building a business in the crypto space, highlighting the roles of team, partners, and community in creating a successful protocol. He uses the analogy of galaxies to illustrate how these elements interact and influence each other [t=249:16].",
+  "router_tags": [
+    "Building",
+    "Crypto",
+    "Business",
+    "Community",
+    "Partnerships"
+  ],
+  "aliases": [
+    "KZ",
+    "Kz",
+    "kz"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Orca"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

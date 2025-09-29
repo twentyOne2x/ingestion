@@ -1,0 +1,25 @@
+{
+  "description": "FP Lee discusses the evolution of liquid staking on Solana, detailing the project's history and its differences from Ethereum solutions like Lido. He shares insights on the challenges faced and the competitive landscape in DeFi, including liquidity incentives and the development of the first SPL staking contracts.",
+  "topic_summary": "Exploration of liquid staking on Solana, its historical context, and comparison with Ethereum's Lido, including challenges and competitive dynamics in the DeFi space [t=0:24 - t=273:62].",
+  "router_tags": [
+    "Liquid Staking",
+    "Solana",
+    "DeFi",
+    "Lido",
+    "Marinade"
+  ],
+  "aliases": [
+    "fp lee",
+    "FP Lee",
+    "sanctum",
+    "Sanctum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JohnCinke",
+    "@Don"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

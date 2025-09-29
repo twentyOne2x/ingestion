@@ -1,0 +1,25 @@
+{
+  "description": "Chris discusses the development of Sonic SVM, Solana's dedicated gaming chain, which enables faster market entry for game developers and offers comprehensive commercial support.",
+  "topic_summary": "Chris explains the features of Sonic SVM, including on-chain gaming printers and ECS frameworks, enhancing game development on Solana [t=6:36].",
+  "router_tags": [
+    "Sonic SVM",
+    "Solana",
+    "gaming",
+    "blockchain",
+    "Onshine"
+  ],
+  "aliases": [
+    "Sonic Svm",
+    "sonic svm",
+    "Solana Gaming Chain",
+    "solana gaming chain"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Chris",
+    "@Onshine"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

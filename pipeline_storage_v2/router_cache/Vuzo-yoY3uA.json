@@ -1,0 +1,23 @@
+{
+  "description": "Tiff, the general manager for Solana at Magic Eden, shares her personal journey and the evolution of Magic Eden over the past year. She reflects on the challenges faced, the importance of community feedback, and the company's growth amidst the dynamic landscape of the NFT market.",
+  "topic_summary": "Tiff discusses her experiences at Magic Eden, the company's journey from a startup to a more established platform, and the ongoing challenges of balancing innovation with product quality. She emphasizes the significance of community support and the company's commitment to Solana.",
+  "router_tags": [
+    "Magic Eden",
+    "Solana",
+    "NFTs",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "Tiff",
+    "tiff",
+    "Magic Eden",
+    "magic eden"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion about a mysterious figure in crypto, with references to various personalities and projects. The conversation includes excitement about the figure's return and speculation on their potential recognition in the crypto space.",
+  "topic_summary": "Exploration of a notable figure in the crypto community, with interactions highlighting their impact and the group's anticipation of their contributions. [t=46:17] The dialogue reflects a mix of humor and curiosity about the figure's background and future.",
+  "router_tags": [
+    "Crypto",
+    "Mysterious Figure",
+    "Community Discussion",
+    "Speculation",
+    "Recognition"
+  ],
+  "aliases": [
+    "Schloms",
+    "Schlomes",
+    "Schlomms",
+    "Schlons",
+    "Schlo"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

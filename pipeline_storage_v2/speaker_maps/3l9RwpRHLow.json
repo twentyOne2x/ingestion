@@ -1,0 +1,20 @@
+{
+  "video_id": "3l9RwpRHLow",
+  "title": "2023-12-12_3l9RwpRHLow_Solana Changelog - December 12 - Solana Speedrun and Transaction Scheduling",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "John Cinque",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Ben Sprango, Head of Strategic BD at Solana Foundation, leads a discussion with venture panelists from Framework Ventures and Coin Fund about the current state of crypto VC funding, investment strategies, and market trends.",
+  "topic_summary": "The panel discusses recent changes in the crypto market, investment priorities, and the focus on DeFi and gaming innovations. They emphasize the importance of mission-driven founders and the need for tangible projects in the current investment landscape [t=169.47].",
+  "router_tags": [
+    "Crypto",
+    "Venture Capital",
+    "DeFi",
+    "Investment",
+    "Funding"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: Breaking Down the Current State of Crypto VC - Funding"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

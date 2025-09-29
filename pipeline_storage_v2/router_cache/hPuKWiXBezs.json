@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the potential of Decentralized Science (DeSci) at the Solana DeScience Fair, focusing on funding models, integration of AI and blockchain in healthcare, and making science more accessible.",
+  "topic_summary": "Exploration of how DSCI can transform scientific research and healthcare through decentralized technology and community involvement. Highlights include the need for blockchain in healthcare [t=53:34] and the alignment of rare diseases and crypto [t=70:04].",
+  "router_tags": [
+    "DeSci",
+    "Solana",
+    "blockchain",
+    "healthcare",
+    "AI",
+    "crypto"
+  ],
+  "aliases": [
+    "desci",
+    "DeSci",
+    "DSCI",
+    "DSCAI"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

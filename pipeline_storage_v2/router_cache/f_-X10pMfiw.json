@@ -1,0 +1,26 @@
+{
+  "description": "Vishal Gupta, CEO of Trumarkets, discusses the launch of 24/7 markets on Solana, addressing trading experience issues in CEFI and DeFi, and emphasizing the need for fair access and transparency in crypto markets.",
+  "topic_summary": "In this talk, Vishal Gupta outlines the mission of Trumarkets to create equitable trading environments in crypto, drawing contrasts between traditional and decentralized finance, and highlighting the importance of transparency and fair access in market operations [t=174.08].",
+  "router_tags": [
+    "Trumarkets",
+    "Vishal Gupta",
+    "Solana",
+    "crypto markets",
+    "DeFi",
+    "CEFI",
+    "transparency",
+    "fair access"
+  ],
+  "aliases": [
+    "Trumarkets",
+    "trumarkets",
+    "Vishal Gupta",
+    "vishal gupta"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@vishalgupta"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

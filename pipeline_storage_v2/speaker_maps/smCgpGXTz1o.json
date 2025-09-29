@@ -1,0 +1,20 @@
+{
+  "video_id": "smCgpGXTz1o",
+  "title": "2024-12-13_smCgpGXTz1o_Off The Grid: Inside Neill Blomkamp's Game World",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Richard Morgan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

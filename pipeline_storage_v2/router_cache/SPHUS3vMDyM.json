@@ -1,0 +1,26 @@
+{
+  "description": "Michael McGee and Philip Taffet from the Firedancer team discuss the performance of the Franken Dancer on Solana, highlighting its ability to handle transactions efficiently without drops during high-stress events like the Trump token launch [t=60:42]. They explain architectural improvements made to enhance transaction processing speed and scalability [t=142:6].",
+  "topic_summary": "The presentation covers the performance of the Firedancer system, showcasing its speed and reliability in processing transactions on the Solana network, particularly during peak loads [t=60:42].",
+  "router_tags": [
+    "Firedancer",
+    "Solana",
+    "Blockchain",
+    "Performance",
+    "Transactions"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Fire Dancer",
+    "Franken Dancer",
+    "Fragnancer",
+    "Frank Announcer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MichaelMcGee",
+    "@PhilipTaffet"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

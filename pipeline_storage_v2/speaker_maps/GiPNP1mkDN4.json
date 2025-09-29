@@ -1,0 +1,20 @@
+{
+  "video_id": "GiPNP1mkDN4",
+  "title": "2023-07-26_GiPNP1mkDN4_Solana Changelog - July 25 - Events, Pyre, and Anchor",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jacob Creech",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

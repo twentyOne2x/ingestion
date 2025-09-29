@@ -1,0 +1,26 @@
+{
+  "description": "Welcome to Day 3 of Breakpoint 2022. The event features discussions on Helium's migration to Solana, workshops on SPL governance, and updates from Ledger and Render. A live podcast recording by Acquire will cover Qualcomm's history. The day will conclude with talks on Web3's role in human rights and a closing celebration.",
+  "topic_summary": "Day 3 highlights include technical discussions on Helium's migration [t=40:08], workshops on SPL governance [t=65:82], and a live podcast by Acquire on Qualcomm [t=125:21]. Closing discussions will focus on Web3 and human rights [t=150:54].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "Web3",
+    "Helium",
+    "SPL Governance",
+    "Acquire Podcast",
+    "Human Rights"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Acquire"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

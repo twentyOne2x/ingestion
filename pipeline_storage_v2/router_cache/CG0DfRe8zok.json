@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on market dynamics, focusing on the recent volatility in altcoins and the impact of upcoming halving events. The hosts analyze the dispersion in performance among various cryptocurrencies, highlighting significant price movements and market sentiment.",
+  "topic_summary": "The episode explores the current state of the cryptocurrency market, emphasizing the differences in performance among altcoins compared to Bitcoin. The hosts discuss the implications of recent market trends and the potential for recovery in the coming weeks [t=54:75].",
+  "router_tags": [
+    "cryptocurrency",
+    "market analysis",
+    "altcoins",
+    "Bitcoin",
+    "halving",
+    "dispersion"
+  ],
+  "aliases": [
+    "Delphi's Hivemind",
+    "Delphi Digital",
+    "Hive Mind"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "$USDC",
+    "$USDT",
+    "$MATIC",
+    "$ARB",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

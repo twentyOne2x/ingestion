@@ -1,0 +1,22 @@
+{
+  "description": "The video discusses the concept of pivoting in startups, emphasizing that it is a natural part of product development. Founders often face social pressure when changing their ideas, but adaptability is crucial for success. The speaker shares personal experiences of reinvention and the importance of persistence in the face of challenges.",
+  "topic_summary": "Exploration of pivoting in startups, the social pressures involved, and the importance of adaptability and persistence in achieving success [t=2:40 - 10:30].",
+  "router_tags": [
+    "pivoting",
+    "startups",
+    "adaptability",
+    "product development",
+    "persistence"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "solana stories",
+    "SOLANA STORIES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Sam Lessin and Iqram Magdon-Ismail discuss the evolution of Venmo, its early challenges, and the emergence of Jelly Jelly, a meme coin that rapidly gained popularity.",
+  "topic_summary": "The conversation reflects on the journey of Venmo, the significance of trust in financial transactions, and the innovative approach behind the creation of Jelly Jelly as a meme coin in the crypto space. Key moments include the inception of Venmo, the challenges faced in its early days, and the viral success of Jelly Jelly [t=161.75].",
+  "router_tags": [
+    "Venmo",
+    "Crypto",
+    "Meme Coin",
+    "Jelly Jelly",
+    "Solana"
+  ],
+  "aliases": [
+    "Venmo",
+    "Sam Lessin",
+    "Iqram Magdon-Ismail",
+    "Jelly Jelly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

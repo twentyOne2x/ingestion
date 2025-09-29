@@ -1,0 +1,23 @@
+{
+  "description": "Lecture discussing sponsored search auctions, their significance in online advertising, and how they differ from single item auctions. The speaker explains the mechanics of these auctions, including the roles of advertisers and the nature of goods being sold, which are essentially ad placements on search results pages.",
+  "topic_summary": "Exploration of sponsored search auctions, highlighting their importance to companies like Google and the auction dynamics involved in determining ad placements based on keyword searches [t=0:64].",
+  "router_tags": [
+    "Sponsored Search Auctions",
+    "Keyword Auctions",
+    "Online Advertising",
+    "Auction Theory",
+    "Google"
+  ],
+  "aliases": [
+    "Sponsored Search Auctions",
+    "Keyword Auctions",
+    "Position Auctions"
+  ],
+  "canonical_entities": [
+    "$GOOGL",
+    "@timroughgardenlectures1861",
+    "$NIKON"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

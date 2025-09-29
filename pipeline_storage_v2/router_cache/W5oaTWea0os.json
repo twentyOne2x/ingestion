@@ -1,0 +1,25 @@
+{
+  "description": "Gemma announces PowerLedger's expansion onto Solana Mainnet at Breakpoint 2024, highlighting the benefits of this migration for both PowerLedger and the Solana ecosystem. She discusses the upcoming light paper, the introduction of the power token on Solana, and plans for a liquidity pool on Raydium. Gemma also shares insights about PowerLedger's history, its software for utilities, and its commitment to democratizing energy.",
+  "topic_summary": "At [t=16:80], PowerLedger announces its migration to Solana Mainnet, detailing plans for a light paper, power token availability, and a liquidity pool on Raydium. The presentation covers PowerLedger's history, its software solutions, and its role in promoting sustainable energy.",
+  "router_tags": [
+    "PowerLedger",
+    "Solana",
+    "Breakpoint",
+    "Sustainable Energy",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Powerledger",
+    "powerledger",
+    "POWERLEDGER",
+    "Gemma",
+    "gemma"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@PowerLedger"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "GWGtRoiE0fw",
+  "title": "2024-09-12_GWGtRoiE0fw_Solana Changelog Sep 11- Professional Education, Deprecated RPC Methods, Reduced Default CU per Inst",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Mohammed Saeed",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

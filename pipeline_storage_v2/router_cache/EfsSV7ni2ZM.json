@@ -1,0 +1,22 @@
+{
+  "description": "Tim Roughgarden discusses permissionless consensus, focusing on both possibility and impossibility results. He provides background on distributed computing and blockchains, emphasizing the importance of consensus in maintaining synchronization among machines despite network failures and malicious attacks. The talk highlights state machine replication as a key multi-shot consensus problem relevant to blockchain contexts.",
+  "topic_summary": "The talk covers the fundamentals of permissionless consensus, including definitions, challenges, and the significance of state machine replication in blockchain technology. It addresses how consensus is achieved in the presence of network issues and malicious actors, and outlines the roles of nodes and clients in the protocol.",
+  "router_tags": [
+    "Consensus",
+    "Blockchain",
+    "Distributed Computing",
+    "State Machine Replication",
+    "ICDCN"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "TIMROUGHGARDENLECTURES1861"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

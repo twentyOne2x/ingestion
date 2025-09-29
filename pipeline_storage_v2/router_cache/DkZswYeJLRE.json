@@ -1,0 +1,30 @@
+{
+  "description": "Lecture on algorithmic game theory focusing on simple near-optimal auctions, discussing Vickrey auctions and optimal auction mechanisms.",
+  "topic_summary": "This lecture covers the principles of auction design, particularly the expected revenue maximization through virtual surplus calculations. Key concepts include the virtual valuation of bidders and the implications of regular distributions on auction outcomes. The discussion emphasizes the importance of maximizing virtual surplus in single parameter environments [t=1:00 - t=3:00].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Auctions",
+    "Vickrey Auction",
+    "Optimal Auctions",
+    "Virtual Surplus"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Auctions",
+    "Vickrey Auction",
+    "Optimal Auctions",
+    "Virtual Surplus"
+  ],
+  "canonical_entities": [
+    "$170",
+    "$SOL",
+    "@timroughgardenlectures1861",
+    "@Klemperer",
+    "@Myerson",
+    "@JasonHartline",
+    "@RogerMeyerson",
+    "@JeremyBulow"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

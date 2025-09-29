@@ -1,0 +1,20 @@
+{
+  "video_id": "4CFBCjX4umY",
+  "title": "2022-11-07_4CFBCjX4umY_Breakpoint 2022: Extending the SVM",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Noah Gandotra",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

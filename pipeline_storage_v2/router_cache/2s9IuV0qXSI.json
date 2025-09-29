@@ -1,0 +1,24 @@
+{
+  "description": "Robert Chen discusses common bugs in Solana, particularly focusing on stack corruption issues stemming from a bug in the Solana compiler. He provides examples to illustrate how stack allocation can lead to unexpected behavior in programs, emphasizing the importance of understanding compiler warnings and stack frame limits.",
+  "topic_summary": "Exploration of stack corruption bugs in Solana programs due to compiler issues, with examples demonstrating the impact of stack allocation on variable states [t=3:68-365:93].",
+  "router_tags": [
+    "Solana",
+    "Stack Corruption",
+    "Compiler Bugs",
+    "Programming",
+    "Technical Talk"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Safe Solana Stack Smashing",
+    "OtterSec",
+    "Robert Chen"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jerry"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

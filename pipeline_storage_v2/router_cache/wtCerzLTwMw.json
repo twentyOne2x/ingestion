@@ -1,0 +1,24 @@
+{
+  "description": "JP, the Chief Product Officer at Civic, discusses improving user experience in Web3 by eliminating the need for traditional wallets. He emphasizes the challenges users face, such as seed phrases and KYC processes, which can deter new users from engaging with Web3 applications. He questions the necessity of wallets in the Web3 ecosystem and suggests that onboarding could be simplified without losing the benefits of using Solana.",
+  "topic_summary": "JP from Civic explores the complexities of user onboarding in Web3 and argues for a rethinking of wallet necessity, highlighting user experience challenges and potential simplifications [t=31:27].",
+  "router_tags": [
+    "Web3",
+    "User Experience",
+    "Civic",
+    "Solana",
+    "Wallets"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Civic",
+    "jp"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@jp"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

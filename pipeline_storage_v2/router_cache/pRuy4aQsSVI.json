@@ -1,0 +1,22 @@
+{
+  "description": "Sebastian Bor discusses SPL Governance, a contract framework for on-chain governance applicable to DAOs and various organizations. He explains its design, architecture, and the potential for creating custom governance solutions using composable programs on Solana.",
+  "topic_summary": "Overview of SPL Governance and its architecture, including the use of plugins like VoterStake Registry and Civic Gateway for enhanced governance capabilities. Discussion on the importance of locking tokens for governance power and the integration of NFTs in voting processes.",
+  "router_tags": [
+    "SPL Governance",
+    "DAO",
+    "Solana",
+    "On-chain Governance",
+    "Plugins"
+  ],
+  "aliases": [
+    "Spl Governance",
+    "SPL governance",
+    "Dao Governance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

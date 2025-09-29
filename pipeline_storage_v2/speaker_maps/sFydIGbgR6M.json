@@ -1,0 +1,20 @@
+{
+  "video_id": "sFydIGbgR6M",
+  "title": "2024-07-29_sFydIGbgR6M_Only Possible on Solana - XP",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Mike Saunders",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

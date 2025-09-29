@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the P vs NP conjecture, explaining the definitions of P and NP, and the implications of their relationship. It highlights the significance of the conjecture in computer science and mathematics, referencing the Clay Institute's millennium problems and the $1 million reward for a solution.",
+  "topic_summary": "The video covers the P vs NP conjecture, detailing the definitions of P and NP, the implications of their relationship, and the significance of the conjecture in the context of open problems in computer science and mathematics. It also discusses the potential consequences of proving or disproving the conjecture, including its relation to NP-hard problems.",
+  "router_tags": [
+    "P vs NP",
+    "NP-hard problems",
+    "computer science",
+    "mathematics",
+    "Clay Institute",
+    "millennium problems"
+  ],
+  "aliases": [
+    "P vs NP",
+    "P not equal to NP",
+    "P!=NP"
+  ],
+  "canonical_entities": [
+    "$1 Million",
+    "@ClayInstitute"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

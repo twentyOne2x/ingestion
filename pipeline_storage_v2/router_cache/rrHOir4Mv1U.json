@@ -1,0 +1,21 @@
+{
+  "description": "Explore how ValueRouter enables users to swap any asset into SOL on Solana, facilitating transactions for new users without SOL.",
+  "topic_summary": "ValueRouter allows seamless asset swaps into SOL on Solana, enhancing accessibility for users [t=14:32].",
+  "router_tags": [
+    "Solana",
+    "ValueRouter",
+    "Asset Swap",
+    "Cross Chain"
+  ],
+  "aliases": [
+    "ValueRouter",
+    "valuerouter",
+    "Value router"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

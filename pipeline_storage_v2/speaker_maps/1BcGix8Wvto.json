@@ -1,0 +1,20 @@
+{
+  "video_id": "1BcGix8Wvto",
+  "title": "2025-07-11_1BcGix8Wvto_Dev.Fun: Leading AI Vibe Coding Platform on Solana with 20,000+ Applications Live",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "M. Abaya",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

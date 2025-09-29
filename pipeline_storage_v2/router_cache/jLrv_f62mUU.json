@@ -1,0 +1,22 @@
+{
+  "description": "Explore Hivemapper's decentralized global mapping network, utilizing dash cams to collect imagery and mine honey tokens. Learn about the device's capabilities and the extensive testing conducted worldwide.",
+  "topic_summary": "Hivemapper builds a decentralized global map using dash cams that collect imagery and mine cryptocurrency. The presentation discusses the device's features, testing across various countries, and the rewards for users driving with the dash cam [t=1:92].",
+  "router_tags": [
+    "Hivemapper",
+    "Decentralized Mapping",
+    "Dash Cam",
+    "Cryptocurrency",
+    "Honey Tokens"
+  ],
+  "aliases": [
+    "Hivemapper",
+    "Hivemapper",
+    "hivemapper"
+  ],
+  "canonical_entities": [
+    "$HONEY",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

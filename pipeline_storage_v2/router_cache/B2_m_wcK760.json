@@ -1,0 +1,25 @@
+{
+  "description": "A debate on the impact of institutionalization on network centralization in the crypto ecosystem, featuring Hasan Ahmed from Coinbase and Eva Lawrence from Figment. They discuss the role of institutions in staking, the challenges they face, and the importance of working with established providers to maintain decentralization. Key points include the current state of institutional involvement in staking and the complexities of compliance and risk management in decentralized networks. [t=4:64] [t=348:95]",
+  "topic_summary": "The discussion centers around whether institutionalization leads to network centralization, with insights on staking practices, institutional participation, and the balance between compliance and decentralization. [t=348:95]",
+  "router_tags": [
+    "Institutionalization",
+    "Decentralization",
+    "Staking",
+    "Crypto Ecosystem",
+    "Compliance"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@coinbase",
+    "@eva",
+    "@figment",
+    "@hasanahmed"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

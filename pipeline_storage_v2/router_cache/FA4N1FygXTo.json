@@ -1,0 +1,23 @@
+{
+  "description": "Solomon from the Solana Foundation welcomes attendees to Scale or Die Day 2, outlining the day's schedule, including programming times and workshop details. He highlights the focus on infrastructure and dev tooling, and mentions a workshop on wallet standards and a happy hour event.",
+  "topic_summary": "Overview of Scale or Die Day 2, including logistics, programming focus on infrastructure and dev tooling, and workshop opportunities. Mention of happy hour and networking.",
+  "router_tags": [
+    "Solana",
+    "Scale or Die",
+    "workshops",
+    "infrastructure",
+    "dev tooling"
+  ],
+  "aliases": [
+    "Scale Or Die",
+    "Scalar Die",
+    "Solomon",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

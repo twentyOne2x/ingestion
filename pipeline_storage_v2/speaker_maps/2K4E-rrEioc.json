@@ -1,0 +1,20 @@
+{
+  "video_id": "2K4E-rrEioc",
+  "title": "2024-12-18_2K4E-rrEioc_Why AI Crypto Is The Future... w- Ejaaz",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Alexander Tyche",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, host discusses the journey of Siong, a Solana engineer from Mercurial Meteora and Jupiter. They explore Siong's background, education, and experiences in the tech industry, including his time at Y Combinator and the launch of Jupiter.",
+  "topic_summary": "Siong shares insights on his developer journey, education in computer science, and experiences in startups, including his involvement with Y Combinator and the launch of Jupiter [t=39:42].",
+  "router_tags": [
+    "Solana",
+    "Jupiter",
+    "Siong",
+    "Mercurial Meteora",
+    "Y Combinator"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Siong",
+    "siong"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@siong"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

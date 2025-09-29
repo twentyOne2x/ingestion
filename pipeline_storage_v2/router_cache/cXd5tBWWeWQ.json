@@ -1,0 +1,27 @@
+{
+  "description": "Jack Lu discusses the evolution of Magic Eden at Breakpoint 2024, focusing on onboarding new users to Web3 and expanding the platform's capabilities beyond NFTs.",
+  "topic_summary": "At [t=12:24], Jack Lu reflects on Magic Eden's journey since its inception, emphasizing the need for a simplified onboarding process for new users in the complex Web3 landscape. He outlines the platform's growth, including cross-chain swaps and a mobile app, and introduces upcoming features aimed at enhancing user experience and accessibility.",
+  "router_tags": [
+    "Magic Eden",
+    "Web3",
+    "NFTs",
+    "Cross-Chain",
+    "Mobile App",
+    "User Onboarding"
+  ],
+  "aliases": [
+    "Magic eden",
+    "magic eden",
+    "MAGIC EDEN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@Coinbase",
+    "@Binance",
+    "@MagicEden"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

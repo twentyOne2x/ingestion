@@ -1,0 +1,24 @@
+{
+  "description": "Mike Horton discusses Geodnet, a service for precise robot positioning, emphasizing its role in the future of robotics and decentralized infrastructure. He highlights Geodnet's accuracy, community involvement, and partnerships with organizations like the USDA for precision farming.",
+  "topic_summary": "Geodnet provides centimeter-accurate positioning for robots, utilizing a network of reference stations and tokenomics to incentivize participation. The service is validated by various organizations and aims to enhance precision farming and robotics in the U.S.",
+  "router_tags": [
+    "Geodnet",
+    "Robotics",
+    "Tokenization",
+    "Precision Farming",
+    "Web3",
+    "Deepin"
+  ],
+  "aliases": [
+    "Geodnet",
+    "GeodNet",
+    "geodnet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Alireza Ghods, CEO of Natix, discusses the company's development of a global mapping network using smart AI cameras. Natix aims to create the largest street camera infrastructure, capturing visual data for applications in map making, autonomous driving, and physical AI. The company is expanding into the African market, particularly Kenya, where it sees a strong product-market fit for crypto technology. Natix utilizes blockchain for settlement and coordination, rewarding users with its native cryptocurrency and enabling token holders to participate in network governance. The choice of Solana is attributed to its superior user experience and support for non-crypto native users.",
+  "topic_summary": "Natix is building a global mapping network using AI cameras, focusing on the African market and leveraging blockchain technology for governance and user rewards. The company highlights the advantages of using Solana for its user-friendly experience.",
+  "router_tags": [
+    "Natix",
+    "Solana",
+    "AI Cameras",
+    "Blockchain",
+    "Cryptocurrency",
+    "Autonomous Driving"
+  ],
+  "aliases": [
+    "Natix",
+    "natix",
+    "NATIX"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

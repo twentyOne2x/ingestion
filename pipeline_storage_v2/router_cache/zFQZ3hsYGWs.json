@@ -1,0 +1,24 @@
+{
+  "description": "Join Michael Paik and Frank Ubermendes as they discuss the latest trends in crypto trading, including insights on trading strategies and market movements.",
+  "topic_summary": "Michael and Frank share their experiences in crypto trading, discussing various strategies and the current state of the market. They also touch on the significance of community and inside jokes in trading culture [t=66:23].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Investing",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "Michael Paik",
+    "Frank Ubermendes",
+    "Mike Paik",
+    "Uber Mendes"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$ETH",
+    "$SOL",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

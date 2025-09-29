@@ -1,0 +1,23 @@
+{
+  "description": "Jonas Hahn discusses building on-chain games using Solana, highlighting its advantages such as low transaction fees, fast confirmation times, and decentralized infrastructure. He covers the benefits of composability, user identity through wallets, and the potential for microtransactions without high fees. The session includes a live demo and insights on engaging with the Solana gaming community.",
+  "topic_summary": "Introduction to building games on Solana, covering advantages like low fees [t=72.71], fast transactions [t=65.91], and decentralized infrastructure [t=136.7]. Discussion on user identity via wallets [t=171.19] and microtransactions [t=197.03]. Live demo of games and community engagement.",
+  "router_tags": [
+    "Solana",
+    "Blockchain Gaming",
+    "On-Chain Games",
+    "Game Development",
+    "NFTs"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Discussion on the role of liquid tokens in decentralized AI networks, featuring insights from industry experts on the current landscape and future developments in crypto and AI integration.",
+  "topic_summary": "Panelists explore the evolving crypto AI stack, emphasizing the importance of decentralized GPU networks for AI inference and the integration of tokens in these ecosystems. Key insights include the fluidity of the stack and the significance of investments in AI-related projects [t=0:24-3:92].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Decentralization",
+    "Tokens",
+    "Investment"
+  ],
+  "aliases": [
+    "Incentivizing Innovation",
+    "Liquid Tokens",
+    "Decentralized AI Networks",
+    "Crypto x AI Event"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Multicoin",
+    "@Nia",
+    "@VeniceAi",
+    "@Mira",
+    "@Theric",
+    "@MarkWeinstein",
+    "@EdRoman",
+    "@Cheyenne",
+    "@Shayan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the potential of music NFTs to transform the music industry, highlighting the challenges artists face under the current model and how NFTs can provide new revenue streams and fan engagement opportunities.",
+  "topic_summary": "The video explores the rise of music NFTs, their impact on artists' earnings, and the shift in industry dynamics, emphasizing the importance of direct artist-to-fan relationships and the potential for NFTs to reshape the music landscape [t=0:16].",
+  "router_tags": [
+    "NFTs",
+    "Music Industry",
+    "Digital Art",
+    "Artist Empowerment",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Music Nfts",
+    "NFTs in Music",
+    "Digital Music Assets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Latasha",
+    "@Disclosure",
+    "@GuyLawrence"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

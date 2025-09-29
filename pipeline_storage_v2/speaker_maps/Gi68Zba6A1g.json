@@ -1,0 +1,20 @@
+{
+  "video_id": "Gi68Zba6A1g",
+  "title": "2016-01-29_Gi68Zba6A1g_A Second Course in Algorirthms (Lecture 8: Linear Programming Duality --- Part 1)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ford Fulkerson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

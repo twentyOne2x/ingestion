@@ -1,0 +1,30 @@
+{
+  "description": "John from the Solana Foundation Devrel team discusses updates including a new community events page, Hyperdrive hackathon office hours, and resources for learning Solana development. He highlights commits improving program deployment speed and mentions contributions from community members like Solandhi and John Wong.",
+  "topic_summary": "Updates on Solana's community events, educational resources, and performance improvements for program deployment [t=0:32-4:64]. Highlights include a new community events page, Hyperdrive hackathon office hours, and significant commits enhancing deployment speed [t=105:95-115:80].",
+  "router_tags": [
+    "Solana",
+    "Hyperdrive",
+    "community events",
+    "program deployment",
+    "development resources"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "solana foundation",
+    "Solandhi",
+    "solandhi",
+    "John Wong",
+    "john wong",
+    "Joe",
+    "joe"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@solandhi",
+    "@johnwong",
+    "@joe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on whether to sell or hold SOL after a recent trade gain. The speaker considers trimming their position but expresses a desire to let it ride for potential further gains.",
+  "topic_summary": "Exploration of trading strategies for SOL, weighing the decision to sell or hold based on market conditions and personal sentiment [t=2:08].",
+  "router_tags": [
+    "crypto",
+    "cryptotrading",
+    "cryptocurrency",
+    "solana",
+    "bitcoin"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

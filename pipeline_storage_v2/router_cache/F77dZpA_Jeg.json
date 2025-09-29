@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on validator updates, security issues, and upcoming events including Breakpoint. Emphasis on timely updates for mainnet beta validators and community engagement.",
+  "topic_summary": "Validator updates and security issues discussed, including the importance of updating to version 118.22. Breakpoint event details shared, highlighting side events like Block Zero and MEV Day [t=218.74].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Breakpoint",
+    "Marinade",
+    "Stake Auction Marketplace"
+  ],
+  "aliases": [
+    "Solana Foundation Validator Discussion",
+    "Salon Foundation Validator Discussion",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Marinade",
+    "@Breakpoint"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

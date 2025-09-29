@@ -1,0 +1,27 @@
+{
+  "description": "Kyle Samani and Tarek Mansour discuss the evolution of prediction markets, Kalshi's growth, and the regulatory challenges faced in the U.S. They highlight the relevance of prediction markets in making informed decisions about future events, including elections and economic indicators.",
+  "topic_summary": "The conversation covers the founding of Kalshi, its rapid growth since 2019, and the integration of prediction markets into various sectors, including politics, finance, and culture. Tarek shares insights on the regulatory landscape and the potential of prediction markets to democratize access to financial information [t=0:24 - t=272:36].",
+  "router_tags": [
+    "Kalshi",
+    "Prediction Markets",
+    "Finance",
+    "Regulation",
+    "Growth",
+    "Economics",
+    "Culture"
+  ],
+  "aliases": [
+    "kalshi",
+    "Tarek Mansour",
+    "Kyle Samani",
+    "Multicoin Capital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Tarek",
+    "@Kyle",
+    "@Multicoin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

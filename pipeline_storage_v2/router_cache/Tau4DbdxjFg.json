@@ -1,0 +1,22 @@
+{
+  "description": "In this video, Mike discusses the Orca protocol, a core liquidity layer on Solana, highlighting its unique features for traders, liquidity providers, and builders.",
+  "topic_summary": "Mike explains Orca's role as a liquidity layer on Solana, focusing on its benefits for traders [t=12:00], liquidity providers [t=15:04], and developers [t=19:76]. He encourages viewers to explore Orca and integrate it into their projects [t=36:10].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Orca",
+    "Liquidity",
+    "Crypto"
+  ],
+  "aliases": [
+    "Orca",
+    "ORCA",
+    "orca"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

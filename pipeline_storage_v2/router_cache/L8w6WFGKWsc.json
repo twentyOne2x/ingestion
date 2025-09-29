@@ -1,0 +1,30 @@
+{
+  "description": "In this episode of the Delphi podcast, hosts discuss the Drift Protocol and its vision for decentralized finance (DeFi) with co-founders Cindy Leow, Arthur Hayes, and Kyle Samani. They explore the evolution of DeFi, the importance of censorship resistance, and the potential for decentralized exchanges to provide access to financial markets globally. The conversation highlights the founders' backgrounds and their motivations for building Drift, a leading decentralized exchange on Solana.",
+  "topic_summary": "The podcast covers the Drift Protocol's inception, its role in DeFi, and the founders' insights on the future of decentralized finance, emphasizing the need for permissionless trading and access to derivatives [t=276.05].",
+  "router_tags": [
+    "DeFi",
+    "Drift Protocol",
+    "Decentralized Exchange",
+    "Solana",
+    "Censorship Resistance",
+    "Crypto Trading",
+    "Financial Markets"
+  ],
+  "aliases": [
+    "drift protocol",
+    "Drift",
+    "Cindy Leow",
+    "Arthur Hayes",
+    "Kyle Samani",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Cindy",
+    "@ArthurHayes",
+    "@KyleSamani",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

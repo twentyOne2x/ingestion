@@ -1,0 +1,21 @@
+{
+  "description": "Lecture discusses the application of the prisoner's dilemma in peer-to-peer file distribution systems, specifically BitTorrent, highlighting the importance of repeated interactions and cooperation strategies like tit for tat.",
+  "topic_summary": "Explores the prisoner's dilemma and its implications for BitTorrent, emphasizing how breaking files into smaller pieces changes incentives and fosters cooperation among peers [t=203.95].",
+  "router_tags": [
+    "Computer Science",
+    "BitTorrent",
+    "Incentives",
+    "Game Theory"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTT",
+    "@BramCohen"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

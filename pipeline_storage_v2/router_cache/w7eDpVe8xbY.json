@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the SIMD-0326 proposal for Solana validators, addressing criticisms and implementation details.",
+  "topic_summary": "The meeting covers the SIMD-0326 proposal, its specifications, and criticisms regarding the VAT and validator participation limits. Key points include the complexity of the protocol, the need for further clarifications during implementation, and the implications of burning SOL to manage inflation [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "SIMD",
+    "Protocol",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "solana foundation",
+    "@solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

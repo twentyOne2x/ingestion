@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses the launch of Agave 2.0 on mainnet, highlighting its adoption and improvements over previous versions. He emphasizes the need for users to update deprecated RPC calls and introduces features in Agave 2.1, including Cargo Build SBF and enhancements for account management in CPIs. The conversation also covers recent commits aimed at improving Windows compatibility and voting efficiency using the QUIC protocol.",
+  "topic_summary": "Agave 2.0 is now live on mainnet, with a high adoption rate. Deprecated RPC calls are no longer supported. Agave 2.1 introduces Cargo Build SBF, new features for account management, and improvements for Windows users. Voting will utilize the QUIC protocol for better performance.",
+  "router_tags": [
+    "Solana",
+    "Agave",
+    "Blockchain",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion about building an operating system for human-agent coordination, integrating messaging, payments, and autonomous agents in one platform.",
+  "topic_summary": "Exploration of a web3 application that combines messaging, payments, and AI agents, enabling on-chain interactions on Solana and Ethereum [t=16:36].",
+  "router_tags": [
+    "Web3",
+    "AI",
+    "Messaging",
+    "Solana",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Zo",
+    "zo",
+    "Z O",
+    "Z o"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

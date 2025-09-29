@@ -1,0 +1,25 @@
+{
+  "description": "The video features a heated poker night among crypto traders, showcasing intense interactions and betting strategies. Key moments include discussions about bets and player dynamics, with notable mentions of players like Frank and Ansem. The atmosphere is charged with excitement and competitive spirit.",
+  "topic_summary": "Crypto traders engage in a high-stakes poker game, filled with banter and strategic plays. Highlights include player interactions and betting decisions, creating a lively and entertaining environment [t=0:16].",
+  "router_tags": [
+    "Crypto",
+    "Poker",
+    "Streaming",
+    "Gaming",
+    "Entertainment"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$600",
+    "$100",
+    "$9,000",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

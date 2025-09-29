@@ -1,0 +1,30 @@
+{
+  "description": "In this episode of the TG Podcast, the host interviews Path (Cryptopathic), a cryptocurrency trader since 2013. They discuss his early experiences in trading, the evolution of crypto Twitter, and notable figures in the space like Max Kaiser and Bob Lacks. Path shares insights on trading altcoins and NFTs, and reflects on the changes in the crypto landscape over the years.",
+  "topic_summary": "Path discusses his journey in cryptocurrency trading since 2013, including his early trading experiences, the emergence of altcoins, and the role of social media in crypto. He highlights key figures in the community and shares his thoughts on the current state of the market [t=33:06].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "NFTs",
+    "crypto Twitter",
+    "altcoins",
+    "Max Kaiser",
+    "Bob Lacks"
+  ],
+  "aliases": [
+    "Path",
+    "Cryptopathic",
+    "cryptopathic"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$DOGE",
+    "$SOL",
+    "@notthreadguy",
+    "@MaxKaiser",
+    "@BobLacks",
+    "@KingBTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This video discusses the Bellman-Held-Karp algorithm for solving the Traveling Salesman Problem (TSP) using dynamic programming. It highlights the challenges of NP-hard problems and the trade-off between correctness and speed. The video also introduces Stirling's approximation to illustrate the growth of factorial functions compared to exponential functions.",
+  "topic_summary": "In this section, the focus is on designing exact algorithms for NP-hard problems, specifically the TSP. The Bellman-Held-Karp algorithm is presented as a more efficient alternative to naive exhaustive search, with an expected running time of O(2^n) compared to O(n!). The video also explains the implications of Stirling's approximation on algorithm performance.",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Dynamic Programming",
+    "Traveling Salesman Problem",
+    "Bellman-Held-Karp",
+    "Stirling's Approximation"
+  ],
+  "aliases": [
+    "Algorithms for NP-Hard Problems",
+    "Bellman-Held-Karp Algorithm",
+    "TSP Algorithm",
+    "Dynamic Programming TSP"
+  ],
+  "canonical_entities": [
+    "$TSP",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

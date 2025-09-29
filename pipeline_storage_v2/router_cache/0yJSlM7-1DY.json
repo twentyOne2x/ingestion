@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on RPC 2.0 at Breakpoint 2023 featuring insights from various panelists including Max from Mango Markets, Noah from Helios, and Nick discussing Geyser and webhooks.",
+  "topic_summary": "Panelists explore the implications of RPC 2.0, addressing challenges in decentralized application infrastructure and the evolution of tools like Geyser for data handling [t=10:40].",
+  "router_tags": [
+    "Solana",
+    "RPC 2.0",
+    "Breakpoint",
+    "Web3",
+    "Data Infrastructure",
+    "Geyser",
+    "Webhooks"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Solana RPC 2.0",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Noah",
+    "@Max",
+    "@Nick",
+    "@Geyser",
+    "@Bonfida"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

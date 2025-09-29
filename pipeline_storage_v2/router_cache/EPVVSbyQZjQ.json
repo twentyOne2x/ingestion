@@ -1,0 +1,24 @@
+{
+  "description": "Amy Street discusses her journey in the Solana ecosystem and her role at Rove World, emphasizing the potential of Web3 technology to bridge gaps in the entertainment industry. She highlights the challenges of ticket scalping and the need for innovative solutions in event management.",
+  "topic_summary": "Amy Street shares her transition from the music industry to Web3, detailing her involvement with Rove World and the development of Blockchain Ticketing to combat ticket scalping and enhance fan experiences [t=376.19].",
+  "router_tags": [
+    "Web3",
+    "Solana",
+    "Rove World",
+    "Blockchain Ticketing",
+    "Entertainment Industry"
+  ],
+  "aliases": [
+    "Amy Street",
+    "amy street",
+    "Rove World",
+    "rove world"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Rove"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

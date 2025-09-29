@@ -1,0 +1,20 @@
+{
+  "video_id": "SzzlWDArmRw",
+  "title": "2024-04-16_SzzlWDArmRw_Solana Changelog Apr 16 - Vote Instructions, Bank forwarding, QOS",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dotsol Spaghetti",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

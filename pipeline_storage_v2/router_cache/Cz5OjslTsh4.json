@@ -1,0 +1,24 @@
+{
+  "description": "Chris Wang from Sex Ray discusses the role of AI in enhancing smart contract security, focusing on opportunities, challenges, and lessons learned in the field.",
+  "topic_summary": "The talk covers the integration of generative AI in blockchain security, emphasizing the evolution of automated solutions for smart contract audits and vulnerability assessments [t=20:24].",
+  "router_tags": [
+    "AI",
+    "Blockchain",
+    "Smart Contracts",
+    "Security",
+    "Generative AI"
+  ],
+  "aliases": [
+    "Chris Wang",
+    "Sex Ray",
+    "Sextree",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisWang"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

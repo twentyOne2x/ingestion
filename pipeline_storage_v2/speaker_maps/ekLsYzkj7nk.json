@@ -1,0 +1,26 @@
+{
+  "video_id": "ekLsYzkj7nk",
+  "title": "2023-10-31_ekLsYzkj7nk_Breakpoint 2023: Resetting Consumer Expectations",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Chris Fiore",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Pedro Miranda",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

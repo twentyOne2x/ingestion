@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the Solana Community Validator updates, including mainnet beta recommendations, educational workshop insights, and upcoming events like Breakpoint 2023.",
+  "topic_summary": "The meeting covers validator updates, educational workshop outcomes, and details about the upcoming Breakpoint conference [t=2:88].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Community",
+    "Conference"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Discussion",
+    "Solana Validator"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

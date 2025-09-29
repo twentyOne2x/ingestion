@@ -1,0 +1,23 @@
+{
+  "description": "Ray Chan discusses the evolution of memes and NFTs, sharing insights from his journey with NYGA and the impact of community in Web3.",
+  "topic_summary": "Ray Chan reflects on his experiences in meme culture and NFTs, emphasizing community building in the crypto space. He shares anecdotes from his early days with NYGA and the transition to NFTs, highlighting the significance of identity and community engagement in the digital age [t=0:24].",
+  "router_tags": [
+    "NFT",
+    "Meme",
+    "Community",
+    "Web3",
+    "Crypto"
+  ],
+  "aliases": [
+    "Ray Chan",
+    "ray chan",
+    "RAY CHAN"
+  ],
+  "canonical_entities": [
+    "$MEME",
+    "@SolanaFndn",
+    "@KevinDurant"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

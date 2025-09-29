@@ -1,0 +1,20 @@
+{
+  "video_id": "By7Q_-8R8To",
+  "title": "2025-08-16_By7Q_-8R8To_DeltaXBT: Best Trading Advice, Perps Trading, Crypto vs Stocks and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Al Camel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

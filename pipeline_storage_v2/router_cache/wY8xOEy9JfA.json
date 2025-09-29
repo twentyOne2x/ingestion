@@ -1,0 +1,28 @@
+{
+  "description": "In this video, the host discusses the performance of AI crypto coins with a prominent trader. They analyze the current market trends, the impact of AI on crypto investments, and the saturation of meme coins. The trader shares insights on the potential growth of AI categories and the challenges faced by meme coins in attracting institutional investors. Key points include the recent success of AI Go and the overall market sentiment towards AI and meme coins.",
+  "topic_summary": "The discussion focuses on the rise of AI crypto coins, market performance, and the challenges faced by meme coins. The trader emphasizes the distinction between AI and meme categories, highlighting the different investor bases and market dynamics. The conversation also touches on recent successes in the AI sector and the potential for future growth.",
+  "router_tags": [
+    "AI Crypto",
+    "Market Analysis",
+    "Meme Coins",
+    "Investing",
+    "Crypto Trends"
+  ],
+  "aliases": [
+    "D. Gilz",
+    "D_Gilz",
+    "d_gilz"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "$BTC",
+    "$SOL",
+    "@notthreadguy",
+    "@Murad",
+    "@MarkAndreessen",
+    "@Justin",
+    "@ZachDocs"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

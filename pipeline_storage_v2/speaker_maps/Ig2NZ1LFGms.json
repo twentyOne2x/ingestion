@@ -1,0 +1,32 @@
+{
+  "video_id": "Ig2NZ1LFGms",
+  "title": "2024-10-31_Ig2NZ1LFGms_Mira: Beyond Co-Pilots - Making AI Production-Ready - Crypto x AI Events",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Casey Caruso",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Joe Biden",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the protocol for Sybil resistance in proof of stake systems with non-uniform stakes, focusing on committee and block proposer selection based on stake amounts.",
+  "topic_summary": "The lecture covers the adaptation of consensus protocols to accommodate validators with varying stake amounts, emphasizing the importance of sampling procedures that reflect stake distribution [t=0:32].",
+  "router_tags": [
+    "blockchain",
+    "Sybil resistance",
+    "proof of stake",
+    "consensus",
+    "validators"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Sybil-Resistance with Non-Uniform Stakes",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "FP Lee discusses strategies for token promotion and market manipulation, emphasizing the importance of hype over product development. He shares insights on raising valuations and controlling supply to benefit insiders at the expense of retail investors.",
+  "topic_summary": "FP Lee presents a guide on token promotion tactics, including building hype, manipulating valuations, and controlling supply to enrich insiders while disadvantaging retail investors. Key points include the importance of early hype [t=74.67], raising private round valuations [t=101.96], and constricting token supply [t=138.64].",
+  "router_tags": [
+    "Token Promotion",
+    "Market Manipulation",
+    "Crypto Strategies",
+    "Insider Trading"
+  ],
+  "aliases": [
+    "Sanctum",
+    "sanctum",
+    "FP Lee",
+    "fp lee"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Wasilawyer"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

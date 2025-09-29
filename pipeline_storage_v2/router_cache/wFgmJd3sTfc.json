@@ -1,0 +1,22 @@
+{
+  "description": "The video follows a group spending 72 hours in Romania to meet Andrew Tate. They discuss travel plans, preparations, and their excitement about the upcoming podcast recording. The group reflects on their journey and the adrenaline of the experience.",
+  "topic_summary": "The group prepares for their trip to Romania, discussing logistics and their plans to meet Andrew Tate. They express their excitement and share insights about their journey leading up to this moment. [t=0:16] [t=141:18]",
+  "router_tags": [
+    "Andrew Tate",
+    "Romania",
+    "Travel Vlog",
+    "Podcast",
+    "Adventure"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$TATE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

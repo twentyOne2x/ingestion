@@ -1,0 +1,23 @@
+{
+  "description": "Tim Roughgarden discusses the concept of Accountable Liveness in blockchain protocols, addressing who is responsible when issues arise, such as double spend attacks and liveness violations. He highlights the importance of consensus protocols and the role of validators in maintaining the integrity of transactions [t=0:72].",
+  "topic_summary": "The presentation explores accountability in blockchain protocols, focusing on the implications of double spend attacks and liveness violations. It emphasizes the need for robust consensus mechanisms to ensure both consistency and liveness in transaction processing [t=0:72].",
+  "router_tags": [
+    "Blockchain",
+    "Liveness",
+    "Consensus Protocols",
+    "Double Spend",
+    "Tim Roughgarden"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgarden",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

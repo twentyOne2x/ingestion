@@ -1,0 +1,33 @@
+{
+  "description": "Iman Motamity from Solana Labs discusses the Solana incubator's role in driving real-world adoption of Solana, focusing on partnerships and innovations from various teams. Key highlights include Alpha Ledger's $800 million in assets, Marinade's institutional staking, Crunch Lab's machine learning solutions, and Easy Labs' payment processing innovations. The presentation also covers USDMI's partnership with the Republic of Marshall Islands to introduce Solana's yield-bearing stablecoin.",
+  "topic_summary": "The session covers the Solana incubator's initiatives to foster real-world adoption through collaborations with innovative teams, highlighting significant projects in finance, data, and payments, as well as the upcoming Cohort 3 applications.",
+  "router_tags": [
+    "Solana",
+    "Incubator",
+    "Real World Adoption",
+    "Finance",
+    "Machine Learning",
+    "Payments",
+    "Stablecoin"
+  ],
+  "aliases": [
+    "Iman Motamity",
+    "Iman Motamedi",
+    "Solana Labs",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Fidelity",
+    "@Bitgo",
+    "@Audi",
+    "@CrunchLab",
+    "@Marinade",
+    "@EasyLabs",
+    "@USDMI",
+    "@RepublicOfMarshallIslands"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

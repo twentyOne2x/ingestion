@@ -1,0 +1,24 @@
+{
+  "description": "Wei Zhou discusses the potential of bringing on-chain foreign exchange (FX) to Solana, focusing on the Philippines' unique remittance market and the launch of a new stablecoin, PHPC, on the Solana network.",
+  "topic_summary": "The presentation highlights the Philippines' demographic advantages, the significance of remittances, and the opportunity to integrate pesos into the blockchain ecosystem. Zhou emphasizes the launch of PHPC and its implications for liquidity and transparency in the FX market on Solana [t=178.71].",
+  "router_tags": [
+    "Solana",
+    "Stablecoin",
+    "Philippines",
+    "Remittance",
+    "Foreign Exchange"
+  ],
+  "aliases": [
+    "Coins Ph",
+    "coins ph",
+    "PHPC",
+    "phpc"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$PHPC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

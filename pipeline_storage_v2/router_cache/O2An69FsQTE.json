@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the Solana Sandstorm hackathon and the SIMD3 proposal for dynamic base fees. It highlights the importance of community involvement and the adjustments in compute costs.",
+  "topic_summary": "Updates on Solana ecosystem including hackathon details [t=10:00], SIMD3 proposal for dynamic fees [t=54:62], and compute cost adjustments [t=288:88].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Hackathon",
+    "SIMD3",
+    "Compute Costs"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana Updates",
+    "Solana News"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

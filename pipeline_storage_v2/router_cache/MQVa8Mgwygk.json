@@ -1,0 +1,24 @@
+{
+  "description": "Welcome to Breakpoint 2022 at Pateo da Gale. The event features a packed schedule with technical talks and networking opportunities. Attendees are encouraged to explore the venue and enjoy refreshments.",
+  "topic_summary": "The opening session introduces the event and highlights the developer tooling ecosystem's growth over the past year, emphasizing how non-technical individuals can now easily engage with Solana development [t=130.19].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "developer tooling",
+    "Pateo da Gale"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "Solana Foundation",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@JacobCreech",
+    "@Andrea"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

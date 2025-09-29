@@ -1,0 +1,20 @@
+{
+  "video_id": "sndDK0zs428",
+  "title": "2025-08-09_sndDK0zs428_Fahd Ananta: $1M+ Trades, Trading in 2025, Crypto's Information Flow and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

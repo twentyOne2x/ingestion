@@ -1,0 +1,20 @@
+{
+  "description": "This lecture discusses the FLP impossibility theorem, which states that no deterministic protocol can achieve Byzantine agreement in an asynchronous model with even one Byzantine node. It covers the definitions of key properties such as termination and agreement, and contrasts the asynchronous model with the synchronous model where solutions are possible under certain conditions.",
+  "topic_summary": "The FLP impossibility theorem highlights the challenges of achieving consensus in distributed computing, particularly in asynchronous environments. It emphasizes the limitations of protocols in the presence of Byzantine nodes and the implications for consensus mechanisms.",
+  "router_tags": [
+    "FLP Impossibility Theorem",
+    "Byzantine Agreement",
+    "Distributed Computing",
+    "Consensus Protocols"
+  ],
+  "aliases": [
+    "FLP Impossibility",
+    "FLP Theorem",
+    "Byzantine Agreement Problem"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

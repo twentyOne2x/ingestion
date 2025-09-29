@@ -1,0 +1,21 @@
+{
+  "description": "Lecture on clustering and perturbation stability, focusing on the k-median problem and the implications of distance functions in clustering algorithms.",
+  "topic_summary": "Continuing from previous discussions, the lecture explores the k-median problem, emphasizing the importance of distance functions and their stability under perturbations. The objective is to minimize the sum of distances from points to their nearest centers, ensuring that the chosen clustering remains optimal under various conditions [t=0:24].",
+  "router_tags": [
+    "clustering",
+    "k-median",
+    "perturbation stability",
+    "algorithm",
+    "distance function"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

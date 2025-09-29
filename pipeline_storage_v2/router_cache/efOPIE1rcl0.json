@@ -1,0 +1,27 @@
+{
+  "description": "Viktor Fischer discusses fuzzing in the Solana ecosystem, highlighting its importance for security and the development of smart contract auditing tools by Aki. He shares insights on the growth of Aki and its educational initiatives.",
+  "topic_summary": "Fuzzing is introduced as a dynamic testing tool for code, with Aki's open-source tool Trident aimed at enhancing security in the Solana ecosystem. The discussion includes the significance of smart contract audits and educational programs for developers [t=201.78].",
+  "router_tags": [
+    "Solana",
+    "Fuzzing",
+    "Smart Contracts",
+    "Auditing",
+    "Blockchain Security"
+  ],
+  "aliases": [
+    "Fuzzing",
+    "Fuzzing Tool",
+    "Aki",
+    "Trident"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AkiBlockchain",
+    "@TrailOfBits",
+    "@Foundry",
+    "@Medusa"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

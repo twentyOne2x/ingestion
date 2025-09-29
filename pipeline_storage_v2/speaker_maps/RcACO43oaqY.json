@@ -1,0 +1,26 @@
+{
+  "video_id": "RcACO43oaqY",
+  "title": "2023-11-02_RcACO43oaqY_Breakpoint 2023: Breaking Down the Current State of Crypto VC - Funding",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Austin Barack",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ben Sprango",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "0H-YCz3V1GI",
+  "title": "2024-10-15_0H-YCz3V1GI_What Are You Building Ft. Maindocs",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Merdan Aslan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

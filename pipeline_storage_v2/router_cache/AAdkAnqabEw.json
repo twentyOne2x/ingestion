@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on the current state of crypto, focusing on institutional adoption, trading strategies, and market psychology. The conversation highlights the impact of Donald Trump's meme coin launch and the evolving landscape of regulations and investments in the crypto space.",
+  "topic_summary": "The podcast explores the dichotomy between traditional finance and crypto, emphasizing the importance of a long-term investment perspective. It discusses the psychological aspects of trading and the challenges of timing the market, particularly in light of recent developments in the crypto world [t=11:08].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Investment",
+    "Regulations",
+    "Market Psychology"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "$ETH",
+    "@DonaldTrump",
+    "@JP_Morgan",
+    "@Robinhood",
+    "@Coinbase",
+    "@Facebook",
+    "@Spotify",
+    "@Microsoft"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

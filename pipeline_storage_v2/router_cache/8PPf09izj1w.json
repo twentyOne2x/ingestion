@@ -1,0 +1,22 @@
+{
+  "description": "The speaker discusses the value of being wrong on the Internet and how engaging in arguments can lead to learning opportunities. They reflect on their early experiences in online chats and how these shaped their understanding of various topics, including trading and competition, ultimately leading to the creation of Solana.",
+  "topic_summary": "Exploration of learning through online debates and the evolution of ideas from early Internet experiences to the development of Solana [t=20:24].",
+  "router_tags": [
+    "Internet",
+    "Learning",
+    "Solana",
+    "Crypto",
+    "Debate"
+  ],
+  "aliases": [
+    "@AccelerateWithMert",
+    "@acceleratewithmert",
+    "Accelerate With Mert"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@AccelerateWithMert"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Brandon Millman discusses Phantom's evolution from a crypto product to a consumer finance platform, emphasizing usability and the importance of self-custody wallets in the Solana ecosystem. He highlights the growth of Phantom, with 17 million monthly active users, and the increasing adoption of DeFi applications, particularly on Solana, where decentralized exchange volume surpasses centralized exchanges. Millman addresses the usability challenges in crypto and the need for improved tech stacks to enhance user experience.",
+  "topic_summary": "Brandon Millman outlines Phantom's transition to a finance platform, focusing on usability challenges in crypto and the role of self-custody wallets in enhancing user adoption within the Solana ecosystem. He highlights the significant growth in user engagement and the dominance of decentralized finance applications on Solana.",
+  "router_tags": [
+    "Crypto",
+    "Finance",
+    "Phantom",
+    "Solana",
+    "DeFi",
+    "Usability"
+  ],
+  "aliases": [
+    "Brandon Millman",
+    "brandon millman",
+    "Phantom",
+    "phantom"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@phantom"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

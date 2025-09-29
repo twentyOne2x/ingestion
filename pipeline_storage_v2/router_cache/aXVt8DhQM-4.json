@@ -1,0 +1,26 @@
+{
+  "description": "Christine Moy and Reid Simon discuss the launch of Apollo's tokenized credit fund on Solana via Securitize, marking a historic moment for private credit availability on a blockchain. They explore the benefits of tokenization, sustainable yield generation, and the alignment of interests between Apollo and its investors.",
+  "topic_summary": "The event highlights the tokenization of Apollo's flagship credit fund on Solana, the innovative leverage strategy to enhance yield, and the importance of aligning investor interests in the context of decentralized finance [t=18:00].",
+  "router_tags": [
+    "Tokenization",
+    "DeFi",
+    "Crypto",
+    "Private Credit",
+    "Yield Generation"
+  ],
+  "aliases": [
+    "Christine Moy",
+    "Reid Simon",
+    "Apollo",
+    "Securitize"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$750 Billion",
+    "$2 Trillion",
+    "$11 Billion"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

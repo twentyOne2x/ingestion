@@ -1,0 +1,20 @@
+{
+  "video_id": "zrQ52XRcINc",
+  "title": "2023-12-12_zrQ52XRcINc_Is Bitcoin Still Relevant In a Smart Contract World w- Matt Luongo (Thesis)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Mike Belsheet",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

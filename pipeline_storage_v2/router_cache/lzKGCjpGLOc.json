@@ -1,0 +1,25 @@
+{
+  "description": "Ben Zhou and Lily Liu discuss Bybit's journey, its founding story, and the differences that set it apart from other exchanges. They explore the evolution of the crypto industry and Bybit's role in supporting various ecosystems, including Solana.",
+  "topic_summary": "The conversation covers Bybit's founding in 2018, its focus on improving trading experiences, and its collaborative approach with other projects in the crypto space. They also touch on the relationship between centralized finance (CeFi) and decentralized finance (DeFi) and their respective roles in the ecosystem [t=210.71].",
+  "router_tags": [
+    "Bybit",
+    "Crypto",
+    "Exchanges",
+    "DeFi",
+    "CeFi",
+    "Solana"
+  ],
+  "aliases": [
+    "Bybit",
+    "bybit",
+    "BYBIT"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BenZhou",
+    "@LilyLiu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

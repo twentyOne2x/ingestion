@@ -1,0 +1,23 @@
+{
+  "description": "Gammy Chan discusses his background in crypto, starting from mining Bitcoin in 2011 during college. He shares his experiences and challenges faced as a broke college student, including selling mined crypto for basic needs. He highlights his success during the 2017 Bull Run when he was able to invest more seriously in crypto.",
+  "topic_summary": "Gammy Chan's journey in cryptocurrency from mining Bitcoin in college to achieving success during the 2017 Bull Run [t=124.98].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Bitcoin",
+    "Investing",
+    "Blockchain",
+    "2017 Bull Run"
+  ],
+  "aliases": [
+    "Gammy Chan",
+    "Gammy chan",
+    "gammy chan"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

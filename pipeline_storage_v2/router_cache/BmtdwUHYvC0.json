@@ -1,0 +1,22 @@
+{
+  "description": "Lance Weiler discusses the intersection of storytelling, new media, and technology, reflecting on his 20-year journey in film and digital production. He highlights the democratization of content creation and distribution, drawing parallels between past and present technological shifts in the industry.",
+  "topic_summary": "Exploration of storytelling in the context of blockchain and AI, emphasizing the evolution of media production and the impact of generative technologies on the industry. Weiler shares insights on the challenges and opportunities presented by new platforms and the importance of transparency in creator attribution.",
+  "router_tags": [
+    "Blockchain",
+    "AI",
+    "Storytelling",
+    "Media Production",
+    "Generative Technologies"
+  ],
+  "aliases": [
+    "Lance Weiler",
+    "lance weiler",
+    "LANCE WEILER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

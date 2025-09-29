@@ -1,0 +1,20 @@
+{
+  "video_id": "9qujkzpp2og",
+  "title": "2024-02-14_9qujkzpp2og_How DRiP Is Able to Give Away Millions of NFTs for Free",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

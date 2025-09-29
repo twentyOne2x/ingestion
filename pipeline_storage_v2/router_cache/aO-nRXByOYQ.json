@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 12 discusses LP decoding and introduces the concept of smoothed analysis. The lecture builds on previous discussions about decoding and bipartite graphs, focusing on conditions for efficient linear programming solutions.",
+  "topic_summary": "The lecture covers the proof of LP decoding, sufficient conditions for linear programming to yield exact solutions, and the properties of bipartite graphs necessary for these conditions. Key concepts include bounded degree, expansion conditions, and the relationship between errors and LP exactness [t=0:24].",
+  "router_tags": [
+    "LP Decoding",
+    "Smoothed Analysis",
+    "Bipartite Graphs",
+    "Linear Programming",
+    "Error Correction"
+  ],
+  "aliases": [
+    "Lp Decoding",
+    "Smooth Analysis",
+    "Bipartite Graph",
+    "Linear Programming"
+  ],
+  "canonical_entities": [
+    "$LP",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

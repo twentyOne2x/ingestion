@@ -1,0 +1,28 @@
+{
+  "description": "Welcome to Breakpoint 2024, featuring discussions on Solana's growth and technology advancements. Key highlights include the representation of over 114 countries and significant participation from Asia, which leads in user engagement and developer activity. The event emphasizes the importance of performance and progress in the Solana network, showcasing innovations from various teams including Syndica, Jito, and Fire Dancer.",
+  "topic_summary": "Breakpoint 2024 highlights Solana's global impact, technological advancements, and community support. The event features discussions on network performance, validator contributions, and innovations aimed at enhancing the Solana ecosystem. [t=100.13] Over 6,000 tickets sold and representation from 114 countries underscores the event's significance.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Blockchain",
+    "Crypto",
+    "Technology",
+    "Asia",
+    "Validators",
+    "Innovation"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "breakpoint 2024",
+    "Breakpoint",
+    "breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@CashDonda"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Iman Motamity introduces the Solana Incubator program, highlighting its purpose to support startups in building alongside Solana Labs. The program focuses on tailored support, hands-on development, and fostering connections within the ecosystem. Applications for the second cohort are open, emphasizing in-person collaboration and mentorship.",
+  "topic_summary": "Overview of the Solana Incubator program, its goals, and the application process for the upcoming cohort. Discussion on the importance of in-person collaboration and tailored support for startups in the Web3 space.",
+  "router_tags": [
+    "Solana",
+    "Incubator",
+    "Web3",
+    "Startups",
+    "Mentorship"
+  ],
+  "aliases": [
+    "Solana Incubator",
+    "solana incubator",
+    "Solana Labs",
+    "solana labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@ImanMotamity",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

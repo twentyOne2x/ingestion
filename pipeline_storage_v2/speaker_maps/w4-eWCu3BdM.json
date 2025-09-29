@@ -1,0 +1,20 @@
+{
+  "video_id": "w4-eWCu3BdM",
+  "title": "2023-10-17_w4-eWCu3BdM_Solana Changelog - October 17 - Duplicate Block Prevention, Anchor, and Cargo Registry",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Steven Lucher",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

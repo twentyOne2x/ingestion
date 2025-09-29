@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the limitations of centralized rideshare services and presents Teleport as a decentralized alternative built on Solana. It highlights how Teleport allows riders and drivers to collaborate, resulting in lower fees and better earnings for drivers. The speaker shares personal experiences with traditional rideshare platforms and emphasizes the benefits of using crypto and other payment methods on Teleport.",
+  "topic_summary": "Exploration of decentralized rideshare solutions on Solana, focusing on Teleport's model that enhances competition and reduces costs for users [t=75:12].",
+  "router_tags": [
+    "Rideshare",
+    "Decentralization",
+    "Solana",
+    "Teleport",
+    "Crypto"
+  ],
+  "aliases": [
+    "Teleport",
+    "Teleport App",
+    "teleport",
+    "teleport app"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

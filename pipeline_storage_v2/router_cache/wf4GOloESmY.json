@@ -1,0 +1,24 @@
+{
+  "description": "In this episode, Jacob and Nick discuss the latest updates in the Solana ecosystem, focusing on the Agave client and the challenges of increasing block space on the network. They highlight the importance of optimizing compute usage and the implications of transaction limits on performance.",
+  "topic_summary": "The hosts cover the Agave client update [t=17:84], the current compute cap of 48 million per block [t=68:73], and the need for better optimization of compute usage to prevent wasted block space [t=145:79]. They also mention a guide on using priority fees to navigate block space issues [t=321:03].",
+  "router_tags": [
+    "Solana",
+    "Agave",
+    "block space",
+    "compute optimization",
+    "transaction limits"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Agave",
+    "agave"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Anza"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

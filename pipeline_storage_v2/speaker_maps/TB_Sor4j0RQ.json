@@ -1,0 +1,20 @@
+{
+  "video_id": "TB_Sor4j0RQ",
+  "title": "2014-02-19_TB_Sor4j0RQ_Frontiers in Mechanism Design (Lecture 12: Bayesian Incentive-Compatibility)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Bayes Nash",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Breakpoint 2025 will take place in Abu Dhabi during Formula One and Finance Week, focusing on revenue and returns. The event will feature product keynotes, debates, and interviews, uniting tech and finance leaders.",
+  "topic_summary": "Breakpoint 2025 in Abu Dhabi will showcase innovations in capital markets during [t=0:16] Formula One and Finance Week, emphasizing revenue and returns [t=12:32]. Expect engaging formats like keynotes and debates [t=30:80].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Finance",
+    "Abu Dhabi",
+    "F1"
+  ],
+  "aliases": [
+    "Breakpoint",
+    "breakpoint",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

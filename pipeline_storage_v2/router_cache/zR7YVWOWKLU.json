@@ -1,0 +1,22 @@
+{
+  "description": "Victor Grunder discusses the Slash app, a digital banking platform aimed at small and medium-sized businesses, particularly in the crypto sector. He explains how Slash centralizes financial tools for crypto companies and offers a global USD account for businesses outside the US to manage their finances effectively.",
+  "topic_summary": "Victor Grunder introduces Slash, a banking platform for crypto and international businesses, highlighting its unique features and competitive advantages in the market [t=31:89].",
+  "router_tags": [
+    "Crypto",
+    "Banking",
+    "Digital Finance",
+    "Slash",
+    "Victor Grunder"
+  ],
+  "aliases": [
+    "Victor",
+    "Victor Grunder",
+    "Slash App"
+  ],
+  "canonical_entities": [
+    "$ALT",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

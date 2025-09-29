@@ -1,0 +1,25 @@
+{
+  "description": "Chris Abiad discusses building products in the crypto space, emphasizing the importance of identifying user problems and creating solutions that add value. He shares frameworks for assessing product applicability and usage frequency, using examples from both crypto and traditional markets.",
+  "topic_summary": "In this talk, Chris Abiad outlines strategies for developing crypto products by focusing on user problems and creating compelling narratives. He highlights the need for products to solve real issues and discusses market segmentation between Web2 and Web3 audiences.",
+  "router_tags": [
+    "Crypto",
+    "Product Development",
+    "Web3",
+    "User Experience",
+    "Market Strategy"
+  ],
+  "aliases": [
+    "Chris Abiad",
+    "chris abiad",
+    "Chris abiad",
+    "Chris Abiad"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$5",
+    "$SOL",
+    "@helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

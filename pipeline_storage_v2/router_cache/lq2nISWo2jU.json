@@ -1,0 +1,27 @@
+{
+  "description": "A debate featuring Christopher Jensen and Anthony Scaramucci discussing the necessity of blockchain in Wall Street, focusing on tokenization and its implications for the financial system.",
+  "topic_summary": "The debate explores whether Wall Street requires blockchain technology, with Jensen arguing for its necessity as an augmentation to existing systems [t=105.73], while Scaramucci counters that current systems are sufficient [t=155.27].",
+  "router_tags": [
+    "Blockchain",
+    "Wall Street",
+    "Tokenization",
+    "Debate",
+    "Finance"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2025",
+    "Breakpoint 2025"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChristopherJensen",
+    "@AnthonyScaramucci",
+    "@ElizabethWarren",
+    "@GaryGensler"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Solana Accelerate NYC 2025 is a conference highlighting innovations in crypto and blockchain, featuring two major events: Scale or Die and Ship or Die, from May 19th to 23rd in New York City.",
+  "topic_summary": "The conference celebrates American innovation in technology, focusing on the future of crypto and blockchain with events designed for developers and product builders [t=39:50].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "innovation",
+    "conference",
+    "New York City"
+  ],
+  "aliases": [
+    "Solana Accelerate NYC",
+    "Solana accelerate nyc",
+    "solana accelerate nyc"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

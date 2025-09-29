@@ -1,0 +1,24 @@
+{
+  "description": "At Breakpoint 2023, Boba Guys discusses their innovative on-chain loyalty program built on Solana, highlighting their journey from physical punch cards to a digital solution that enhances customer engagement and sustainability.",
+  "topic_summary": "Boba Guys introduces their next-gen loyalty program on Solana, emphasizing innovation, cost efficiency, and community engagement. They discuss the transition from physical to digital loyalty systems and the advantages of using Solana's technology [t=17:16].",
+  "router_tags": [
+    "Boba Guys",
+    "Solana",
+    "loyalty program",
+    "blockchain",
+    "innovation",
+    "customer engagement"
+  ],
+  "aliases": [
+    "Boba guys",
+    "boba Guys",
+    "SOL",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

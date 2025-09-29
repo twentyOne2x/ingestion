@@ -1,0 +1,27 @@
+{
+  "description": "A panel discussion featuring industry leaders discussing the current state and future of DeFi, focusing on institutional involvement and the importance of liquidity in ecosystems like Solana.",
+  "topic_summary": "Panelists explore institutional considerations for deploying capital in DeFi, emphasizing the need for vibrant marketplaces and technological advantages of blockchains like Solana. They discuss incentive programs and the role of retail communities in attracting institutional liquidity [t=102:37].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Institutional Investment",
+    "Liquidity",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Defi Insti Panel",
+    "Breakpoint 2023: Defi - Insti Panel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ShaneMolidar",
+    "$10 Billion",
+    "$1 Trillion",
+    "$5 Billion"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

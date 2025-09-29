@@ -1,0 +1,28 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses the latest changes in the Solana ecosystem, focusing on the removal of deprecated code and the introduction of new features in version 2.0. He emphasizes the importance of updating code to avoid deprecated functions and highlights the new Web3.js tech preview.",
+  "topic_summary": "In this changelog, key updates include the removal of deprecated code as Solana transitions to version 2.0, the introduction of a bot helper for deprecation warnings, and the release of Web3.js tech preview number four. Developers are encouraged to provide feedback on the new Web3.js features.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Web3.js",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana changelog",
+    "Solana Foundation Devrel Team",
+    "solana foundation devrel team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@StevenLucher",
+    "@JohnCinque",
+    "@Loris"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

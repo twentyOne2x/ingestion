@@ -1,0 +1,23 @@
+{
+  "description": "Michael Saunders, CEO of Captain Labs, discusses the evolution of marketplaces and the impact of centralization on consumer choices. He highlights the potential of blockchain technology to empower consumers by allowing them to own their data and make independent decisions. Saunders introduces XP XYZ, a platform that brings ticketing to the blockchain, enabling the trading of digital assets like concert tickets.",
+  "topic_summary": "In this talk, Michael Saunders explores the disruption of traditional marketplaces through blockchain technology, emphasizing consumer empowerment and the launch of XP XYZ for ticketing on the blockchain. Key points include the transition from centralized marketplaces to decentralized solutions and the integration of real-world assets into the blockchain ecosystem [t=3:76-332:31].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Ticketing",
+    "Decentralization",
+    "Consumer Empowerment"
+  ],
+  "aliases": [
+    "Michael Saunders",
+    "michael saunders",
+    "Captain Labs",
+    "captain labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

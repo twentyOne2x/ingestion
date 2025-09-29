@@ -1,0 +1,22 @@
+{
+  "description": "Jacob Creech discusses the Solana tooling ecosystem, focusing on improving developer experience and the tools available for building applications. He reviews tools from the past year, including Solana Playground, which allows for quick development without installation, and CreateSolana Dapp, a CLI for bootstrapping development environments.",
+  "topic_summary": "Exploration of Solana's tooling ecosystem, highlighting improvements in developer experience and new tools that enhance application development speed and ease.",
+  "router_tags": [
+    "Solana",
+    "Developer Tools",
+    "Blockchain",
+    "Web Development"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

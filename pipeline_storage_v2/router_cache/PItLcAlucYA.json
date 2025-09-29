@@ -1,0 +1,21 @@
+{
+  "description": "This week's Solana Changelog discusses changes including an exponential fee for write lock accounts, improvements in transaction simulation, and the Dubious Dependency Removal Project aimed at reducing dependencies in the validator client.",
+  "topic_summary": "The episode covers the SIMD110 proposal for write lock fees [t=15:52], enhancements to transaction simulation for token accounts [t=264:85], and the Dubious Dependency Removal Project [t=198:13].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

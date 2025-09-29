@@ -1,0 +1,26 @@
+{
+  "description": "Nick Frost Butter and Jonas discuss the latest changes in Solana, including the removal of deprecated RPC methods in version 2.0 and improvements in stake management for stake pool providers. They highlight the importance of updating to newer RPC endpoints and the impact of recent version upgrades on dependencies.",
+  "topic_summary": "Overview of Solana's changelog for July 3, focusing on deprecated RPC methods removal and stake management enhancements [t=0:24 - t=215:09].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "RPC",
+    "Stake Management",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana changelog Jul 3",
+    "solana changelog jul 3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas",
+    "@NickFrostButter",
+    "@JohnShinko"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

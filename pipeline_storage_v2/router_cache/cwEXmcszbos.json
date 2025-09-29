@@ -1,0 +1,24 @@
+{
+  "description": "Lecture 5 discusses the FLP Impossibility Theorem, focusing on Byzantine agreement and its implications in the asynchronous model. The lecture outlines the asynchronous model's characteristics, the consensus problems it addresses, and the impossibility of achieving consensus under certain conditions, even with minimal Byzantine failures.",
+  "topic_summary": "In this lecture, the FLP Impossibility Theorem is explored, demonstrating that Byzantine agreement is unattainable in the asynchronous model, regardless of the number of Byzantine nodes. The proof involves showing that certain configurations can lead to non-termination of the protocol, emphasizing the role of adversarial control over message delivery.",
+  "router_tags": [
+    "Blockchain",
+    "Consensus",
+    "FLP Impossibility Theorem",
+    "Byzantine Agreement",
+    "Asynchronous Model"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BYZ",
+    "@fisher",
+    "@lynch",
+    "@patterson"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

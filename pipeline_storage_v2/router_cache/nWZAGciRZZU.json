@@ -1,0 +1,21 @@
+{
+  "description": "Tim Roughgarden discusses fair division with combinatorial valuations, focusing on valuation functions and fairness constraints. He highlights the differences between optimization approaches and fair allocation methods, emphasizing the lack of monetary transfers in fair division settings.",
+  "topic_summary": "The talk covers fair division principles, combinatorial valuations, and the importance of fairness constraints over optimization in allocation problems. It contrasts traditional mechanism design with fair division approaches, particularly in the context of indivisible goods.",
+  "router_tags": [
+    "Fair Division",
+    "Combinatorial Valuations",
+    "Valuation Functions",
+    "Social Welfare",
+    "Incentive Compatibility"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

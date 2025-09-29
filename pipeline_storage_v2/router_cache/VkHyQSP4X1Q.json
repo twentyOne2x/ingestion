@@ -1,0 +1,25 @@
+{
+  "description": "Dan Albert from the Solana Foundation discusses the success of the Accelerate 2025 event, highlights upcoming community events, and promotes the Solana Summit and Breakpoint conference.",
+  "topic_summary": "Dan Albert expresses gratitude for the Accelerate 2025 event and encourages participation in future Solana community events across the US and internationally, including Solana Summit in Vietnam and Breakpoint in Abu Dhabi [t=0:00-3:08].",
+  "router_tags": [
+    "Solana",
+    "Accelerate 2025",
+    "community events",
+    "Solana Summit",
+    "Breakpoint",
+    "Abu Dhabi",
+    "New York City"
+  ],
+  "aliases": [
+    "Dan Albert",
+    "Solana Foundation",
+    "SolanaFndn",
+    "Accelerate 2025"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

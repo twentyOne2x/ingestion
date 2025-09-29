@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator failover strategies in Solana, focusing on handling failures and minimizing downtime during upgrades or outages.",
+  "topic_summary": "The workshop covers techniques for running a secondary validator as a failover option, ensuring that operators can maintain service continuity without double voting. Key points include transitioning identities and managing planned outages for software upgrades [t=150.80].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Failover",
+    "Blockchain",
+    "Education"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Solana Validator Workshop",
+    "Validator Failover Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

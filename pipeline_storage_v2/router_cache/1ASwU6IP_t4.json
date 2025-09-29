@@ -1,0 +1,23 @@
+{
+  "description": "Anna Yuan discusses the infrastructure for money at Breakpoint 2024, introducing Numerair, a multi-asset stable swap designed to enhance liquidity and facilitate transactions in the evolving stablecoin landscape.",
+  "topic_summary": "At [t=10:00], Anna Yuan emphasizes the need for a unified stablecoin infrastructure to prevent fragmented growth as multiple stablecoins launch. She introduces Numerair at [t=92:03], highlighting its unique features and the vision for future stablecoin integration.",
+  "router_tags": [
+    "Stablecoins",
+    "Cryptocurrency",
+    "Finance",
+    "Blockchain",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Parena",
+    "Perenna",
+    "Numerair",
+    "Anna Yuan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

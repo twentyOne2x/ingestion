@@ -1,0 +1,26 @@
+{
+  "description": "Delphi's Decentralized AI Conference features a panel discussion on the collaboration of AI models in the crypto space. The conversation explores the rise of AI agents and their potential impact on financial interactions within crypto ecosystems. Panelists Nick Evans and Himanshu discuss the significance of AI in crypto, addressing the role of bots and the future of meme coins.",
+  "topic_summary": "The panel discusses the collaboration of AI models on-chain, focusing on the rise of AI agents in crypto and their implications for financial interactions. Key insights include the efficiency of AI agents and their potential to transform user engagement in crypto ecosystems [t=72.45].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Decentralization",
+    "Blockchain",
+    "Financial Technology"
+  ],
+  "aliases": [
+    "Coordination Networks",
+    "Decentralized AI Conference",
+    "Crypto x AI Event",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Delphi_Digital",
+    "@Nick_Evans",
+    "@Himanshu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

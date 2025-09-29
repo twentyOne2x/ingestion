@@ -1,0 +1,20 @@
+{
+  "video_id": "jmY4YNZo67s",
+  "title": "2024-04-18_jmY4YNZo67s_Decentralization Unleashed: The Astria Approach to Rollup Sequencing",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "John Adler",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

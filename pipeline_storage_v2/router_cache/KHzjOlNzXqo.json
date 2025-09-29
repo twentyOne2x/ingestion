@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the potential for Bitcoin and the crypto market to reach new highs in 2025, with insights on market dynamics, Fed policies, and trading strategies.",
+  "topic_summary": "The conversation covers Bitcoin's price range, Fed's hawkish stance, and upcoming market reactions, particularly in light of Trump's influence. The speaker emphasizes the importance of timing for long positions, especially around key support levels [t=1:28 - t=136:82].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Trading",
+    "Market Analysis",
+    "Fed Policy"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Trump",
+    "$ETH",
+    "$SOL",
+    "$DOGE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses the FLP impossibility result and its implications for blockchain and consensus protocols, emphasizing the trade-offs between consistency and liveness in asynchronous models.",
+  "topic_summary": "The FLP impossibility result indicates that in asynchronous models, one must choose between consistency and liveness when designing consensus protocols. It highlights the importance of understanding the limitations of blockchain designs and the role of assumptions like network reliability and public key infrastructure.",
+  "router_tags": [
+    "Blockchain",
+    "Consensus Protocols",
+    "FLP Impossibility",
+    "Distributed Computing",
+    "Asynchronous Models"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "FLP Theorem Interpretation",
+    "Lecture 5.3"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

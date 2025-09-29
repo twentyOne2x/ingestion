@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on how meme coins, particularly those inspired by pets, have revitalized confidence in cryptocurrency and led to a return to decentralization, reminiscent of early Bitcoin principles.",
+  "topic_summary": "Exploration of the impact of meme coins on crypto confidence and decentralization [t=0:16 - t=33:18].",
+  "router_tags": [
+    "crypto",
+    "doge",
+    "memecoins",
+    "bitcoins",
+    "bitcoin",
+    "btc",
+    "eth",
+    "ethereum"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$Rpal",
+    "$BTC",
+    "@HalFinney"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

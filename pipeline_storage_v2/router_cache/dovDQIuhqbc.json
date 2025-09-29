@@ -1,0 +1,23 @@
+{
+  "description": "Matthew Krak discusses Layer Zero Labs, an Omnichain interoperability protocol, highlighting its features and benefits for app developers, including permissionless interaction and customizable security measures. He addresses the complexities of cross-chain messaging and the historical issues with bridge security, emphasizing the importance of decentralized verification and the potential for new use cases in interoperability.",
+  "topic_summary": "In this workshop, Matthew Krak explains Layer Zero Labs' Omnichain interoperability protocol, its advantages over traditional bridge infrastructures, and the significance of decentralized verification networks for app developers. He outlines the challenges of cross-chain messaging and the historical context of bridge security failures, advocating for a more flexible and secure approach to application development.",
+  "router_tags": [
+    "Layer Zero",
+    "Omnichain",
+    "Interoperability",
+    "Blockchain",
+    "Cross-Chain"
+  ],
+  "aliases": [
+    "Layer Zero Labs",
+    "Layer 0",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ElectricCapital"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

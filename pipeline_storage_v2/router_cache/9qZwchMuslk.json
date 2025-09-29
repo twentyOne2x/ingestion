@@ -1,0 +1,23 @@
+{
+  "description": "Lecture on Algorithmic Game Theory focusing on Myerson's Lemma and the properties of Vickrey auctions. Discusses incentive compatibility and auction design methodologies.",
+  "topic_summary": "The lecture covers the Vickrey auction's properties, including dominant strategy incentive compatibility and its implications for auction design. It explores the potential for similar mechanisms in complex allocation problems like sponsored search auctions [t=154:22].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Myerson's Lemma",
+    "Vickrey Auction",
+    "Incentive Compatibility",
+    "Auction Design"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Myerson's lemma",
+    "Vickrey auction",
+    "Auction design"
+  ],
+  "canonical_entities": [
+    "$MYERSON",
+    "@Vickrey"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

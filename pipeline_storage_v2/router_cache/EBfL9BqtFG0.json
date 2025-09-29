@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the adoption of Coinbase's Base chain, EVM market share, and market catalysts.",
+  "topic_summary": "Jose Macedou hosts a podcast featuring insights from Delphi's research team, including discussions on blockchain infrastructure and DeFi developments. The episode covers recent trends in crypto, including the launch of Friend Tech and macroeconomic factors affecting the market. [t=0:32] [t=68:37]",
+  "router_tags": [
+    "Coinbase",
+    "Base Chain",
+    "EVM",
+    "DeFi",
+    "Crypto Trends"
+  ],
+  "aliases": [
+    "Friend Tech or Foe",
+    "Coinbase's Base Chain",
+    "Delphi Digital Podcast"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$BTC",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

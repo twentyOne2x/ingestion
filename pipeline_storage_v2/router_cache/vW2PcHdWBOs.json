@@ -1,0 +1,30 @@
+{
+  "description": "Abil Karaman discusses the concept of payment financing and its significance in the economy, highlighting the limitations of current financial institutions and the potential of crypto solutions like stablecoins and PayFi.",
+  "topic_summary": "Karaman explains that payment financing is essential for economic growth, with credit cards facilitating $16 trillion and trade finance enabling $10 trillion in payments. He emphasizes the need for innovative solutions like PayFi to meet increasing demand for payment financing, leveraging blockchain technology and stablecoins. The presentation also introduces Huma's achievements in the PayFi space, including $1.9 billion in transactions and the upcoming launch of the Schema protocol on Solana.",
+  "router_tags": [
+    "Payment Financing",
+    "Stablecoins",
+    "PayFi",
+    "Blockchain",
+    "Huma Finance",
+    "Solana"
+  ],
+  "aliases": [
+    "Abil Karaman",
+    "Huma Finance",
+    "Stablecoins",
+    "PayFi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$16 Trillion",
+    "$10 Trillion",
+    "$1.9 Billion",
+    "$0",
+    "BTC",
+    "ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

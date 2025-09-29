@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses a simple recipe for proving that problems are NP hard, emphasizing the importance of recognizing NP hard problems in projects and the skills needed to prove NP hardness through reductions.",
+  "topic_summary": "The video covers how to identify NP hard problems and the two essential skills for proving NP hardness: knowing known NP hard problems and spotting reductions between problems. It outlines a two-step recipe for establishing NP hardness: selecting a known NP hard problem and reducing it to the problem of interest. Examples of reductions are also provided.",
+  "router_tags": [
+    "NP-Hard",
+    "Algorithm",
+    "Computational Problems",
+    "Reductions"
+  ],
+  "aliases": [
+    "Algorithm For NP-Hard Problems",
+    "NP Hardness Proving",
+    "NP-Hard Problems"
+  ],
+  "canonical_entities": [
+    "$NP",
+    "$P",
+    "$NP-Hard"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

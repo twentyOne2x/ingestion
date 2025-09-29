@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to create interest-bearing tokens on Solana by defining an interest rate during token creation. This extension allows you to visualize token growth in real time using JavaScript.",
+  "topic_summary": "Explore the process of creating interest-bearing tokens on Solana, including the functionality of the extension and how to manage token values effectively [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Token Extensions",
+    "Interest Bearing Tokens"
+  ],
+  "aliases": [
+    "Web3 Coding",
+    "Token Extensions",
+    "Interest Bearing Tokens"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

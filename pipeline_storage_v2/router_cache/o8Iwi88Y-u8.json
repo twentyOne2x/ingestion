@@ -1,0 +1,24 @@
+{
+  "description": "Lecture 6 introduces the partially synchronous model, a crucial framework for understanding network communication in blockchain systems. It highlights the importance of this model as a balance between synchronous and asynchronous models, discussing its implications for consensus protocols and limitations when dealing with Byzantine nodes.",
+  "topic_summary": "This lecture covers the partially synchronous model, its significance in blockchain communication, limitations regarding Byzantine nodes, and the CAP theorem's relevance to consensus protocols. Key points include the 33% threshold for Byzantine nodes and the trade-offs in achieving consistency, availability, and partition tolerance.",
+  "router_tags": [
+    "blockchain",
+    "distributed systems",
+    "consensus protocols",
+    "synchronous model",
+    "asynchronous model",
+    "CAP theorem"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 6.1",
+    "Partially Synchronous Model"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

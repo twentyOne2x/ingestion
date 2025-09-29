@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 12 discusses proof of stake blockchain protocols, highlighting their importance and complexity. It contrasts proof of stake with proof of work, emphasizing the evolution and challenges in designing secure proof of stake systems. The lecture also explores various consensus mechanisms and the diversity in proof of stake protocols.",
+  "topic_summary": "Overview of proof of stake blockchain protocols, their significance, and the challenges in their design compared to proof of work systems. Discussion includes the evolution of protocols and various consensus mechanisms [t=5:56].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "proof of work",
+    "Nakamoto consensus",
+    "cryptography"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 12",
+    "Proof of Stake Protocols"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "@DonKnuth"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

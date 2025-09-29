@@ -1,0 +1,27 @@
+{
+  "description": "Yannick Schrade discusses the importance of encryption in blockchain applications, particularly on Solana. He emphasizes the need for privacy to onboard more users and presents Arqium's capabilities in enabling encrypted transactions and computations without exposing underlying data.",
+  "topic_summary": "Yannick Schrade highlights the role of encryption in enhancing privacy for blockchain applications on Solana, focusing on Arqium's technology that allows for secure transactions and data processing [t=10:08].",
+  "router_tags": [
+    "Encryption",
+    "Blockchain",
+    "Solana",
+    "Privacy",
+    "Arqium",
+    "Defi"
+  ],
+  "aliases": [
+    "Yannick",
+    "Yannik",
+    "Arqium",
+    "Arkium",
+    "Archeum",
+    "Arkhium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on the structural advantages of Deepin networks over traditional telecom companies, focusing on capital efficiency and spectrum arbitrage. Highlights the cost differences between Helium and major carriers like Verizon, emphasizing the potential for lower consumer prices and innovative incentive structures.",
+  "topic_summary": "Exploration of Deepin's advantages in telecom, including cost efficiency and spectrum usage, contrasted with traditional telecom models. Discusses how these innovations could reshape the industry landscape.",
+  "router_tags": [
+    "Telecom",
+    "Deepin",
+    "Helium",
+    "Spectrum",
+    "Cost Efficiency"
+  ],
+  "aliases": [
+    "Delphi's AI",
+    "Delphi Digital",
+    "Delphi's AI + DePIN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "$20",
+    "$60",
+    "$90",
+    "$1.9 Billion",
+    "@Verizon",
+    "@Netflix"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

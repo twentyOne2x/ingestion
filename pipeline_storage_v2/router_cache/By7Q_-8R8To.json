@@ -1,0 +1,23 @@
+{
+  "description": "Delta XBT discusses trading strategies, the differences between crypto and stocks, and shares insights on trading psychology and methodology.",
+  "topic_summary": "In this episode, Delta XBT shares his trading philosophy and experiences, emphasizing the psychological aspects of trading and the importance of managing audience expectations when sharing trades. He also touches on the risks involved in trading and the impact of social media on trading decisions [t=88:49].",
+  "router_tags": [
+    "trading",
+    "crypto",
+    "stocks",
+    "psychology",
+    "Delta XBT"
+  ],
+  "aliases": [
+    "Delta XBT",
+    "delta xbt",
+    "DeltaXBT"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

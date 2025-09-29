@@ -1,0 +1,22 @@
+{
+  "description": "Lecture covers the Hungarian algorithm for minimum cost bipartite perfect matching and explores generalizations such as maximum flow and bipartite matching problems. It discusses optimality conditions, negative cycles, and algorithm design strategies.",
+  "topic_summary": "The lecture focuses on completing the Hungarian algorithm for minimum cost bipartite matching [t=2:48] and introduces generalizations to maximum flow problems [t=11:44]. It explains the significance of negative cycles in determining optimality [t=53:09] and outlines algorithmic strategies to maintain invariants for achieving a perfect matching [t=165:54].",
+  "router_tags": [
+    "Algorithms",
+    "Bipartite Matching",
+    "Maximum Flow",
+    "Hungarian Algorithm",
+    "Graph Theory"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$EDG",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

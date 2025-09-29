@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial covers compute unit optimizations in Solana programs, discussing transaction limits, cost structures, and strategies for enhancing performance.",
+  "topic_summary": "The video explains how to optimize compute units (CUs) in Solana programs, highlighting the importance of managing CU limits and fees for efficient transaction processing. It addresses common issues with transaction failures due to CU exhaustion and provides insights into analyzing and optimizing CU usage for better performance [t=3:36 - t=363:67].",
+  "router_tags": [
+    "Solana",
+    "Compute Units",
+    "Optimization",
+    "Blockchain",
+    "Programming"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

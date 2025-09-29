@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on enhancing the safety of Solana contracts, focusing on SBF programs and the challenges of security in crypto and DeFi. The presentation covers the importance of formal verification and Certora's approach to providing tools for developers to write specifications and verify code. It highlights the verification pipeline, including the use of LLVM and SBF, and the challenges faced in the process.",
+  "topic_summary": "The talk addresses the need for safer Solana contracts, the rise in crypto hacks, and Certora's formal verification solutions. It explains the verification process from Rust code to SBF, emphasizing the importance of understanding the Solana virtual machine.",
+  "router_tags": [
+    "Solana",
+    "SBF",
+    "DeFi",
+    "Formal Verification",
+    "Crypto Security"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Safe SBF Programs",
+    "Solana Safety"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Scott Hague presents the Fluxbeam keynote, discussing the past year's developments and the launch of Fluxbeam Infinity, a new token trading interface designed to enhance trading experiences on Solana.",
+  "topic_summary": "In this keynote, Scott Hague outlines Fluxbeam's journey over the past two years, addressing issues in the Solana ecosystem, introducing Rugcheck for scam monitoring, and unveiling Fluxbeam Infinity, which integrates real-time data and advanced trading features for improved user experience [t=134.3].",
+  "router_tags": [
+    "Fluxbeam",
+    "Solana",
+    "DeFi",
+    "Token Trading",
+    "Rugcheck",
+    "Fluxbot"
+  ],
+  "aliases": [
+    "Fluxbeam",
+    "FluxBot",
+    "fluxbeam",
+    "fluxbot"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

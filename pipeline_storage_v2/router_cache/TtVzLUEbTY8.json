@@ -1,0 +1,26 @@
+{
+  "description": "This lecture discusses the dynamics of the New York Stock Exchange (NYSE) and high frequency trading (HFT), illustrating how speed impacts trading outcomes and the potential for redesigning the NYSE to reduce HFT incentives. It highlights the significant financial stakes involved in trading and the innovations aimed at improving transaction speeds.",
+  "topic_summary": "The lecture explores the structure of the NYSE, the implications of high frequency trading, and proposes a redesign to mitigate HFT incentives. It emphasizes the importance of transaction speed and the potential for batching trades to improve market efficiency [t=272.04].",
+  "router_tags": [
+    "New York Stock Exchange",
+    "High Frequency Trading",
+    "Market Design",
+    "Transaction Batching",
+    "Economics"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Lecture 1.4: Reimagining the NYSE",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$200",
+    "$210",
+    "$300 Million",
+    "$SOL",
+    "@timroughgardenlectures1861",
+    "@facebook"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

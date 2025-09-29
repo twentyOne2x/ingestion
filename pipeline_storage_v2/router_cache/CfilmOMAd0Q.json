@@ -1,0 +1,27 @@
+{
+  "description": "Dylan Rolnick discusses decentralized distributed intelligence and AI alignment, emphasizing the importance of open-source models over centralized control. He critiques the moral implications of alignment as defined by powerful entities and highlights the need for AI to respect biological life.",
+  "topic_summary": "Rolnick explores the concept of AI alignment, contrasting centralized oversight with open-source approaches. He critiques the moral authority of centralized entities and discusses the historical context of alignment as defined by Elizar Yudkowski.",
+  "router_tags": [
+    "AI Alignment",
+    "Decentralized Intelligence",
+    "Open Source",
+    "Ethics in AI",
+    "Dylan Rolnick"
+  ],
+  "aliases": [
+    "Dylan Rolnick",
+    "Dylan rolNick",
+    "Dylan RolNICK"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@Yudkowski",
+    "@OpenPhilanthropy",
+    "@Anthropic",
+    "@Google",
+    "$BTC",
+    "$30 Million"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

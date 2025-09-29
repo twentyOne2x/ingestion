@@ -1,0 +1,25 @@
+{
+  "description": "Fabrizio Giabardo discusses the challenges of the current crypto fundraising system and introduces Legion, a regulatory compliant platform aimed at reviving ICOs and ensuring accountability among investors and projects.",
+  "topic_summary": "Giabardo highlights the issues of misaligned incentives in crypto fundraising, the need for accountability, and presents Legion as a solution for compliant fundraising and community engagement [t=132.21].",
+  "router_tags": [
+    "ICO",
+    "Legion",
+    "crypto fundraising",
+    "Web3",
+    "finance"
+  ],
+  "aliases": [
+    "Legion",
+    "legion",
+    "LEGION",
+    "Legion Cc",
+    "legion cc"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@LauraShin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Interview with Yohei Nakajima, creator of $PIPPIN, discussing his journey into the meme coin space and the Solana ecosystem.",
+  "topic_summary": "Yohei Nakajima shares his experiences in the meme coin space, starting from generating SVGs with AI to creating the Pippin meme coin. He discusses community involvement and the transition from casual interest to active participation in the Solana ecosystem [t=0:16].",
+  "router_tags": [
+    "Pippin",
+    "Meme Coin",
+    "Solana",
+    "Yohei Nakajima",
+    "NFT",
+    "Crypto"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "Yohei Nakajima"
+  ],
+  "canonical_entities": [
+    "$PIPPIN",
+    "@notthreadguy",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

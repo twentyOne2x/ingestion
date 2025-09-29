@@ -1,0 +1,22 @@
+{
+  "description": "Tarun Chitra discusses optimizing fee markets in Solana, highlighting the importance of local ISV markets and dynamic fee structures. He emphasizes the unique aspects of Solana's fee system compared to Ethereum, particularly in resource pricing and execution parallelism. The talk covers the challenges of balancing demand across local fee markets and proposes a framework for efficient resource management.",
+  "topic_summary": "In this talk, Tarun Chitra explores the optimization of fee markets in Solana, discussing local ISV markets, dynamic fee structures, and the unique pricing of resources. He addresses the challenges of load balancing and the advantages of Solana's architecture over Ethereum, particularly in terms of execution efficiency and resource management [t=1:36].",
+  "router_tags": [
+    "Solana",
+    "Fee Markets",
+    "Blockchain",
+    "Resource Management",
+    "Tarun Chitra"
+  ],
+  "aliases": [
+    "Tarun Chitra",
+    "tarun chitra",
+    "TARUN CHITRA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

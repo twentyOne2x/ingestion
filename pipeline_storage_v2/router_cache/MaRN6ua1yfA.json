@@ -1,0 +1,21 @@
+{
+  "description": "Lecture 7 introduces linear programming, emphasizing its applications and duality. It discusses the importance of linear programming in algorithmic efficiency and problem-solving, highlighting its relevance in both theoretical and practical contexts.",
+  "topic_summary": "This lecture covers the transition from combinatorial optimization to linear programming, explaining its significance in algorithm design and real-world applications. It also introduces the concept of duality in linear programming, which aids in understanding optimality conditions and solution bounds [t=17:76].",
+  "router_tags": [
+    "Algorithms",
+    "Linear Programming",
+    "Optimization",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Linear Programming",
+    "Linear programming",
+    "linear programming"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

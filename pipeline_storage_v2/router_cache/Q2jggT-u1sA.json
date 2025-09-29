@@ -1,0 +1,23 @@
+{
+  "description": "This episode of Solana Bytes discusses reallocating token account sizes using the reallocate extension on the Solana blockchain. It covers the process of creating a token mint, initializing a token account, and adding extensions like the memo transfer extension. The video provides a step-by-step guide on how to manage token account sizes effectively.",
+  "topic_summary": "The video explains how to use the reallocate instruction to adjust token account sizes for additional extensions, focusing on the memo transfer extension. It details the creation of a token mint and associated accounts, and the necessary steps to reallocate space for extensions [t=40:38].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Reallocate Instruction",
+    "SPL Token",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "solana bytes",
+    "Solana Bytes",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

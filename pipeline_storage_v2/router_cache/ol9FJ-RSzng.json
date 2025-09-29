@@ -1,0 +1,21 @@
+{
+  "description": "Dean discusses the development of token extensions in Realms, enabling users to create DAOs and access various features. The conversation highlights the innovative mix of permanent delegate and transfer hooks for setting up election cycles.",
+  "topic_summary": "Exploration of token extensions in Realms DAO, focusing on user capabilities and creative solutions for governance [t=11:52].",
+  "router_tags": [
+    "Realms DAO",
+    "token extensions",
+    "DAOs",
+    "Solana"
+  ],
+  "aliases": [
+    "Realms Dao",
+    "realms dao",
+    "REALMS DAO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

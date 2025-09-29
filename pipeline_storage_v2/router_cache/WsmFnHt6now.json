@@ -1,0 +1,31 @@
+{
+  "description": "Yan Zhang discusses Roam, a global roaming network that offers secure, seamless connectivity by integrating public Wi-Fi. The network has grown to over 600,000 nodes and nearly 800,000 users in 200 countries, addressing issues with traditional public Wi-Fi.",
+  "topic_summary": "Roam provides a decentralized network solution for global connectivity, leveraging public Wi-Fi and blockchain technology to enhance user experience and security. The presentation highlights the network's growth, partnerships, and future plans, including a token airdrop and new services.",
+  "router_tags": [
+    "Roam",
+    "Wi-Fi",
+    "Blockchain",
+    "Decentralized Network",
+    "Public Wi-Fi",
+    "Global Connectivity"
+  ],
+  "aliases": [
+    "Roam",
+    "roam",
+    "Wi-Fi",
+    "wi-fi",
+    "Yan Zhang",
+    "yan zhang"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Samsung",
+    "@PayFi",
+    "@Deepin",
+    "@HoumaFinancing",
+    "@Polyfollow"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the storage of Solana NFTs on-chain, explaining the distinction between NFT tokens and their associated assets. It highlights the importance of on-chain storage, critiques the current state of NFTs, and references historical trends in the NFT market.",
+  "topic_summary": "The video provides an overview of how Solana NFTs can be stored on-chain, addressing misconceptions about NFTs being entirely on-chain and discussing the implications of off-chain storage. It also contrasts the evolution of NFTs from unlimited collectibles to limited editions and their perceived value in the digital art market [t=1:20].",
+  "router_tags": [
+    "Solana",
+    "NFTs",
+    "On-Chain Storage",
+    "Digital Art",
+    "Metaplex"
+  ],
+  "aliases": [
+    "solanafndn",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

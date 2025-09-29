@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on ETF flows and their impact on Bitcoin (BTC), altcoins, and meme tokens, featuring insights from Delphi Digital's team.",
+  "topic_summary": "The podcast explores current market conditions, comparing them to late 2020's BTC all-time high breach, and emphasizes the importance of Coinbase's premium and ETF activity in the crypto market [t=0:24].",
+  "router_tags": [
+    "ETF",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Market Analysis",
+    "Delphi Digital"
+  ],
+  "aliases": [
+    "Etf Flows",
+    "ETF flows",
+    "ETF Flow Analysis"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Delphi_Digital",
+    "@Ceteris",
+    "@Duncan",
+    "@Jason",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

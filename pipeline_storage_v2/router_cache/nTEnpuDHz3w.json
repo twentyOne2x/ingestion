@@ -1,0 +1,26 @@
+{
+  "description": "Alevtina Yakovenko hosts Day 3 of Breakpoint 2022, focusing on gaming directions and the Solana GamesKit. The panel features industry leaders discussing the future of Web3 gaming and digital ownership.",
+  "topic_summary": "Day 3 of Breakpoint 2022 highlights gaming innovations in Web3, featuring discussions on Solana GamesKit and insights from leading developers in the gaming industry [t=85.74].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "gaming",
+    "Breakpoint 2022",
+    "NFTs"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@genopets",
+    "@Ludex",
+    "@CardinalLabs",
+    "@PragmaPlatform"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

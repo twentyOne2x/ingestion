@@ -1,0 +1,24 @@
+{
+  "description": "Lecture discussing the differences between Proof-of-Stake and Proof-of-Work consensus mechanisms, focusing on their civil resistance, energy consumption, and performance advantages.",
+  "topic_summary": "The lecture compares Proof-of-Stake and Proof-of-Work, highlighting energy efficiency and performance benefits of Proof-of-Stake, while addressing the complexities and controversies surrounding both methods [t=0:56].",
+  "router_tags": [
+    "blockchain",
+    "proof-of-stake",
+    "proof-of-work",
+    "consensus mechanisms",
+    "energy consumption"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Proof-of-Stake vs. Proof-of-Work",
+    "Lecture 12"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@Bgp"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

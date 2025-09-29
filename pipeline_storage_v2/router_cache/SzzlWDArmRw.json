@@ -1,0 +1,30 @@
+{
+  "description": "Bri and Jacob discuss the latest updates in the Solana ecosystem, including the deprecation of legacy vote instructions, banking stage forwarding filters, and stake-weighted QoS adjustments. They highlight improvements in transaction simulation and resource optimization for developers.",
+  "topic_summary": "Updates on Solana's Changelog for April 16, covering vote instruction changes [t=11:04], banking stage forwarding [t=40:26], and QoS adjustments [t=86:62].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Vote Instructions",
+    "Bank Forwarding",
+    "QoS"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Stebagam",
+    "@SolAndy",
+    "@Jacob",
+    "@John",
+    "@Jonas",
+    "@Stevie",
+    "@DotsolSpaghetti"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

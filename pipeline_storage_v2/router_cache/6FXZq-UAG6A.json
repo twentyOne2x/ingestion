@@ -1,0 +1,26 @@
+{
+  "description": "Founder explains how Pump Fun allows users to create their own cryptocurrency in under two minutes for just $2. It eliminates the need for expensive tools and liquidity, making it accessible for everyone. The platform aims to democratize meme coin creation and trading.",
+  "topic_summary": "Pump Fun enables users to create and trade meme coins easily and affordably, addressing previous barriers in the crypto space [t=12:88]. The platform's bonding curve ensures fairness in token distribution [t=82:07].",
+  "router_tags": [
+    "Pump Fun",
+    "cryptocurrency",
+    "meme coins",
+    "blockchain",
+    "crypto trading"
+  ],
+  "aliases": [
+    "Pump Fun",
+    "pump fun",
+    "Pumped Up Fund",
+    "pumped up fund"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "$DOGE",
+    "@notthreadguy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

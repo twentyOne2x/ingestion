@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the intersection of traditional finance and decentralized finance, focusing on yield generation and credit solutions in the Solana ecosystem. Key speakers include Mark from Kamino and Dan Roberts from ONRI, who discuss recent product launches and strategies to enhance DeFi traction on Solana.",
+  "topic_summary": "The panel explores the current state of DeFi on Solana compared to Ethereum, emphasizing the need for more tokens and innovative collateral solutions to drive growth. They highlight recent developments in credit markets and the introduction of new products aimed at increasing liquidity and user engagement in the ecosystem [t=0:48 - t=304:70].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "TradFi",
+    "Yield",
+    "Credit Solutions",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "TradFi x DeFi",
+    "Dan Roberts",
+    "Mark Hull",
+    "Viktor Fischer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

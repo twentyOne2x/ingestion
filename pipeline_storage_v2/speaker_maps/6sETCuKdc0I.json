@@ -1,0 +1,14 @@
+{
+  "video_id": "6sETCuKdc0I",
+  "title": "2023-10-27_6sETCuKdc0I_Spotlight: Intro to DePin",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This lecture discusses knapsack voting, a method that allows voters to select public projects while considering budget constraints. It contrasts knapsack voting with K approval voting, highlighting the advantages of incorporating project costs into the voting process. The lecture also explores the mathematical properties of knapsack voting, including truthfulness and Pareto optimality, under specific assumptions about voter preferences.",
+  "topic_summary": "Knapsack voting vs. K approval voting; budget constraints in voting; mathematical properties of knapsack voting; truthfulness and Pareto optimality [t=0:88-388:90].",
+  "router_tags": [
+    "Voting Theory",
+    "Knapsack Voting",
+    "K Approval Voting",
+    "Participatory Budgeting",
+    "Truthfulness",
+    "Pareto Optimality"
+  ],
+  "aliases": [
+    "Knapsack Voting",
+    "Knapsack voting",
+    "K Approval Voting",
+    "K approval voting"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

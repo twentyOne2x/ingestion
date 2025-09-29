@@ -1,0 +1,23 @@
+{
+  "description": "Tony Blasencia discusses the use of NFTs and compression to enhance blockchain data richness, addressing issues like data silos and interoperability. He emphasizes the need for on-chain activity and user-centric data management.",
+  "topic_summary": "In this talk, Tony Blasencia explores how NFTs and data compression can create a more data-rich blockchain, highlighting the importance of interoperability and user activity on-chain. He shares insights from his experience in consumer marketplaces and presents findings from a BCG study on user preferences for data capture and personalized experiences [t=1:20].",
+  "router_tags": [
+    "Blockchain",
+    "NFTs",
+    "Data Compression",
+    "Interoperability",
+    "Solana"
+  ],
+  "aliases": [
+    "Tony Blasencia",
+    "tony blasencia",
+    "TONY BLASENCIA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

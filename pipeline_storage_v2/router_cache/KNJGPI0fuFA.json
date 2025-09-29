@@ -1,0 +1,23 @@
+{
+  "description": "Tim Roughgarden introduces a lecture series on blockchain foundations, outlining the course structure and intended audience. He emphasizes the focus on blockchain science and technology, avoiding hype and investment discussions.",
+  "topic_summary": "The series aims to explore blockchain protocols, their applications, and fundamental principles, while equipping viewers with tools to evaluate existing technologies and understand trade-offs in consensus solutions. Roughgarden encourages viewers to engage deeply with the material and acknowledges the emerging significance of blockchain in computer science.",
+  "router_tags": [
+    "blockchain",
+    "cryptography",
+    "distributed systems",
+    "computer science",
+    "education"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures 1861"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

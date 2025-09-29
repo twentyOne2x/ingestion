@@ -1,0 +1,21 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team and Jacob discuss the latest updates in the Solana ecosystem, including MountainDao version 5 and transaction size fees. They emphasize the importance of increased transaction capacity and the economic implications of transaction fees on the network's performance.",
+  "topic_summary": "Updates on MountainDao and transaction size fees in Solana, highlighting the need for increased transaction capacity and the impact of fees on network performance [t=56:68].",
+  "router_tags": [
+    "Solana",
+    "MountainDao",
+    "transaction fees",
+    "developer updates"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "mountaindaov5"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

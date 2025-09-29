@@ -1,0 +1,24 @@
+{
+  "description": "Iggy Azalea discusses her experiences in crypto, internet culture, and her recent activities in Miami. She shares insights on trading, celebrity involvement in crypto, and her personal challenges with sleep and work.",
+  "topic_summary": "In this episode, Iggy Azalea engages in a candid conversation about her controversial presence in the crypto space, touching on topics like trading strategies and the impact of celebrity endorsements in the industry. The discussion also highlights her busy schedule and the challenges of adapting to a new environment [t=0:16-1:09].",
+  "router_tags": [
+    "Iggy Azalea",
+    "Crypto",
+    "Internet Culture",
+    "Trading",
+    "Celebrity",
+    "Miami"
+  ],
+  "aliases": [
+    "Iggy Azalea",
+    "Iggy Aelia",
+    "Thread Guy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "@IggyAzalea"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Day two of Breakpoint 2022 features discussions on various topics including technical presentations, coding tutorials, and the Solana ecosystem. Highlights include workshops on performance optimization, building NFTs, and the Hacker House program. The event also addresses the challenges of in-person attendance and showcases community-driven side events like an electric go-kart race.",
+  "topic_summary": "Breakpoint 2022 Day 2 covers technical workshops, community showcases, and discussions on regenerative finance and decentralized finance [t=3:20-291:13].",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "NFT",
+    "DeFi",
+    "workshops",
+    "community events"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "Solana Foundation",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

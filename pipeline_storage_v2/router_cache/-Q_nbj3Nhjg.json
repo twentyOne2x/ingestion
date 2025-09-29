@@ -1,0 +1,33 @@
+{
+  "description": "Sam Lehman discusses the evolution of reinforcement learning and its implications for decentralized AI, emphasizing modular models and the potential for plug-and-play experts. He reflects on the shift from pre-training to inference and the inevitability of distributed AI, while considering the challenges posed by proprietary systems.",
+  "topic_summary": "Lehman explores the future of decentralized AI, focusing on modular mixture of experts models and the transition from pre-training to inference. He highlights the need for innovation and collaboration in AI development amidst concerns over proprietary systems.",
+  "router_tags": [
+    "Reinforcement Learning",
+    "Decentralized AI",
+    "Modular Models",
+    "AI Innovation",
+    "Open Source"
+  ],
+  "aliases": [
+    "Sam Lehman",
+    "sam lehman",
+    "SAM LEHMAN"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$SOL",
+    "@Sam",
+    "@Jensen",
+    "@PrimeIntellect",
+    "@Pluralis",
+    "@Frontier",
+    "@StephenWolfram",
+    "@ChadG",
+    "@DiedrichKingma",
+    "@Stefani",
+    "@Dario",
+    "@Anthropic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

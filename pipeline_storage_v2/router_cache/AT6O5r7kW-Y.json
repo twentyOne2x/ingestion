@@ -1,0 +1,22 @@
+{
+  "description": "Chris interviews Bonny about their global decentralized data network that rewards users for sharing personal data. Users can upload receipts and earn tokens through the Bonnie app.",
+  "topic_summary": "Discussion on building a decentralized data network with Bonnie, focusing on fair compensation for personal data shared by users. [t=0:24] [t=1:76] [t=17:96]",
+  "router_tags": [
+    "decentralized",
+    "data network",
+    "Bonny",
+    "tokens",
+    "personal data"
+  ],
+  "aliases": [
+    "Bonny",
+    "bonny",
+    "BONNY"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$BONNY"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

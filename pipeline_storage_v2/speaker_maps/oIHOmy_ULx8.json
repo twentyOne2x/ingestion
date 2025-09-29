@@ -1,0 +1,20 @@
+{
+  "video_id": "oIHOmy_ULx8",
+  "title": "2024-06-19_oIHOmy_ULx8_Smokey The Bera: Berachain Is A Playground for Infinite Economic Games",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Chad Devs",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

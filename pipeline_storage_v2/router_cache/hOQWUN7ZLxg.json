@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the challenges of designing proof of stake blockchain protocols, focusing on the problem of randomly sampling public keys based on stake amounts. It introduces a solution called weighted round robin, which approximates proportional sampling by generating batches of samples instead of individual ones. The method aims to reflect the stake distribution while acknowledging its limitations, such as predictability of leaders in advance.",
+  "topic_summary": "The lecture covers the design challenges of proof of stake blockchains, particularly the difficulty of generating randomness internally. It presents weighted round robin as a practical solution for leader selection, explaining its mechanics and implications for blockchain protocols [t=0:32 - t=4:08].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "weighted round robin",
+    "random sampling",
+    "cryptography"
+  ],
+  "aliases": [
+    "Weighted Round Robin",
+    "weighted round robin",
+    "Weighted round robin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

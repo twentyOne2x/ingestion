@@ -1,0 +1,20 @@
+{
+  "video_id": "C2o493vidQw",
+  "title": "2024-08-28_C2o493vidQw_Solana Changelog Aug 28 - Simulate compute units in CLI, deprecating legacy vote instructions, Radar",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Hawa Kalan",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

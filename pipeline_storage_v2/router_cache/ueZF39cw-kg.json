@@ -1,0 +1,30 @@
+{
+  "description": "Tom Shaughnessy hosts Zucky Munion to discuss the Cosmos project, its history, and its potential in the blockchain ecosystem. Zucky shares insights on the project's inception, its unique approach to blockchain design, and its relevance in today's crypto landscape.",
+  "topic_summary": "In this episode, Zucky Munion explores the evolution of Cosmos, its foundational concepts, and its significance in the blockchain space. He highlights the project's journey from its early days to its current status as a key player in decentralized technology [t=0:16].",
+  "router_tags": [
+    "Cosmos",
+    "Blockchain",
+    "Cryptocurrency",
+    "Decentralization",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Zucky Munion",
+    "Zaki Bunyan",
+    "Tom Shaughnessy"
+  ],
+  "canonical_entities": [
+    "$ATOM",
+    "@Delphi_Digital",
+    "$SOL",
+    "@Vitalik",
+    "@Vlad",
+    "@Ethan",
+    "@Jay",
+    "@ArthurBrightman",
+    "@MartinKopelman",
+    "@DominicWilliams"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

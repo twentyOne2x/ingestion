@@ -1,0 +1,25 @@
+{
+  "description": "Todd Stevens discusses Figure's dual business model focusing on blockchain and traditional finance, highlighting their commitment to integrating DeFi with Solana. He emphasizes the launch of a yield-bearing stablecoin and the potential for democratizing access to prime brokerage for the DeFi community.",
+  "topic_summary": "In this talk, Todd Stevens outlines Figure's strategy to leverage blockchain technology in lending and capital markets, aiming to bring real-world assets to the DeFi ecosystem on Solana. He discusses the introduction of a yield-bearing stablecoin and the opportunity to democratize prime brokerage access, targeting a $850 billion market.",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Lending",
+    "Stablecoin",
+    "Solana",
+    "Capital Markets"
+  ],
+  "aliases": [
+    "Todd Stevens",
+    "todd stevens",
+    "FIGURE",
+    "Figure"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

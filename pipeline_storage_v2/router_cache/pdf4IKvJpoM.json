@@ -1,0 +1,21 @@
+{
+  "description": "Join the biggest poker stream ever, powered by @Polymarket, on November 3rd. Experience high stakes and intense gameplay as players compete for victory.",
+  "topic_summary": "The stream features high-stakes poker gameplay with players and excitement building as the event approaches. [t=2:40] The atmosphere is charged as drinks run out and anticipation grows. [t=31:91]",
+  "router_tags": [
+    "poker",
+    "live stream",
+    "Polymarket",
+    "gaming",
+    "high stakes"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "@Polymarket"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

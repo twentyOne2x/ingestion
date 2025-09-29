@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing announcements, project choices, and the theory of gross substitutes valuations in mechanism design.",
+  "topic_summary": "The lecture covers the transition from optional exercise sets to project focus, the announcement of a bonus lecture on gross substitutes valuations, and a review of ascending implementations in auctions, particularly addressing the limitations of achieving VCG outcomes in ascending auctions for gross substitutes valuations [t=0:88].",
+  "router_tags": [
+    "Mechanism Design",
+    "Auction Theory",
+    "Gross Substitutes",
+    "Valuations",
+    "Economics"
+  ],
+  "aliases": [
+    "Frontiers In Mechanism Design",
+    "Lecture 7 Submodular Valuations",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$GS",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

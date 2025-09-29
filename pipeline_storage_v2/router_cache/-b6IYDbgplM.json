@@ -1,0 +1,22 @@
+{
+  "description": "Overview of Solana's updates for the week of January 13-19, 2023, including developer ecosystem growth and proposal SIMD0005 regarding transaction execution responsibilities.",
+  "topic_summary": "Discussion on Solana's developer ecosystem growth, reaching over 2000 developers in 2022, and the SIMD0005 proposal which changes transaction execution responsibilities from the leader to validators [t=28:74]. Highlights include RPC updates for non-vote transactions and improvements in the Explorer [t=156:88].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Developer Ecosystem",
+    "RPC",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana Updates",
+    "Solana News"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

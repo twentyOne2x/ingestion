@@ -1,0 +1,22 @@
+{
+  "description": "Anas Khader discusses the importance of tokens in decentralized protocols and introduces Flash Trade's innovative approach to token economics, addressing key pain points for token holders.",
+  "topic_summary": "At [t=4:56], Anas Khader opens the session at Breakpoint. He emphasizes the role of tokens in decentralized protocols and outlines major issues faced by token holders, including transparency in fund usage, vesting schedules, and governance. Flash Trade aims to revolutionize token economics by eliminating linear vesting schedules and aligning incentives between the team and token holders. The protocol has achieved over $11 billion in volume and generated $10 million in fees within nine months, all while remaining community-aligned. Khader also hints at upcoming features, including a new margin engine and limit orders.",
+  "router_tags": [
+    "Flash Trade",
+    "Token Economics",
+    "Decentralized Protocols",
+    "Governance",
+    "Solana"
+  ],
+  "aliases": [
+    "Flash Trade",
+    "flash trade",
+    "FLASH TRADE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the significance of token unlocks and their impact on token prices, providing real-life examples and analysis techniques.",
+  "topic_summary": "Learn about the effects of token unlocks on prices and how to analyze unlocking schedules to predict market movements [t=0:24].",
+  "router_tags": [
+    "token unlocks",
+    "crypto analysis",
+    "market trends"
+  ],
+  "aliases": [
+    "Pay Attention to Token Unlocks",
+    "Pay attention to token unlocks",
+    "pay attention to token unlocks"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

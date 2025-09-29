@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on the utility of NFTs, exploring their unique characteristics and potential applications in both ecosystem-specific and broader contexts. The conversation highlights the evolution of technology and infrastructure in relation to NFT adoption and the need for applications that leverage NFTs effectively.",
+  "topic_summary": "Exploration of NFT utility, market trends, and the transition from ecosystem-specific use cases to broader applications for humanity, including ticketing and IP authentication. The discussion emphasizes the importance of technology and infrastructure in enabling NFT adoption and the role of NFTs in the evolving landscape of Web3.",
+  "router_tags": [
+    "NFTs",
+    "Web3",
+    "Technology",
+    "Adoption",
+    "Infrastructure"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: Finding Utility for NFTs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DannyGrant",
+    "@RossGrasman",
+    "@Nike",
+    "@Adidas",
+    "@Rihanna",
+    "@Coachella",
+    "@Banksy",
+    "@Zynga"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

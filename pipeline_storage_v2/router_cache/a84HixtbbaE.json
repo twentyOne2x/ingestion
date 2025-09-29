@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on building a transaction delivery network that improves upon existing solutions, focusing on the Cascade Cascade Network.",
+  "topic_summary": "Brian discusses the challenges faced while working on Solana and introduces the Cascade Cascade Network for transaction delivery [t=0:24].",
+  "router_tags": [
+    "transaction delivery",
+    "Solana",
+    "Cascade Cascade Network"
+  ],
+  "aliases": [
+    "Cascade Cascade",
+    "cascade cascade",
+    "CASCADE CASCADE"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "www.triton.1"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

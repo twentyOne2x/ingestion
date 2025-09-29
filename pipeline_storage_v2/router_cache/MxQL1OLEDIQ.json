@@ -1,0 +1,22 @@
+{
+  "description": "Vibhu Norby, co-founder and CEO of Drip, presents the Drip platform, a collectibles app on the Solana blockchain, highlighting its features and a live demo of the mobile app.",
+  "topic_summary": "Introduction to Drip, a collectibles platform on Solana, showcasing its mobile app and features for creators [t=0:00-3:00].",
+  "router_tags": [
+    "Drip",
+    "Solana",
+    "Collectibles",
+    "Blockchain",
+    "Mobile App"
+  ],
+  "aliases": [
+    "Drip",
+    "drip",
+    "DRIP"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

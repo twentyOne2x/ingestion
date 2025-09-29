@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses the implications of selfish mining in blockchain, focusing on how honest nodes can influence tie-breaking in longest chain consensus. It explores the challenges faced by a deviating node (node A) when honest nodes control tie-breaking, emphasizing the need for a profit-maximizing strategy that balances block inclusion and orphaning honest blocks. The analysis reveals that deviating from longest chain consensus may only be beneficial for larger nodes (around 33% hash rate) and highlights the unexpected issues that arise even with less than 50% non-honest hash rate.",
+  "topic_summary": "The lecture examines selfish mining strategies in blockchain, particularly under conditions where honest nodes dictate tie-breaking. It outlines the complexities and risks involved for a deviating node aiming to maximize block rewards while navigating the constraints imposed by honest nodes. The discussion includes the threshold of hash rate needed for effective deviation and the qualitative insights into Nakamoto consensus failures.",
+  "router_tags": [
+    "blockchain",
+    "selfish mining",
+    "longest chain consensus",
+    "Nakamoto consensus",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Selfish Mining Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgarden",
+    "@Nakamoto",
+    "@Markov",
+    "@Sarir"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

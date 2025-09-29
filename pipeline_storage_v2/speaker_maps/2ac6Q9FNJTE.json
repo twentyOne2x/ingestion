@@ -1,0 +1,26 @@
+{
+  "video_id": "2ac6Q9FNJTE",
+  "title": "2025-05-22_2ac6Q9FNJTE_Ship or Die 2025: TradFi x DeFi: Risk-Abated Yield (Dan Roberts, Mark Hull, Viktor Fischer)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Dan Roberts",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dan Roberts",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

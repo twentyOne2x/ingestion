@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the decline of memecoins and the current state of altcoins, particularly focusing on Bitcoin and Solana. The speakers express bearish sentiments on most Layer 1s, emphasizing the importance of killer apps and the challenges faced by chains like Solana due to inflation and sell pressure from successful applications.",
+  "topic_summary": "The conversation highlights the end of the memecoin era, the dominance of Bitcoin, and the struggles of Solana amidst a saturated market of Layer 1 solutions [t=114:78].",
+  "router_tags": [
+    "memecoins",
+    "Bitcoin",
+    "Solana",
+    "cryptocurrency",
+    "altcoins",
+    "Layer 1",
+    "Hyper Liquid"
+  ],
+  "aliases": [
+    "KookCapitalLLC",
+    "kookcapitalllc",
+    "Kook Capital LLC"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

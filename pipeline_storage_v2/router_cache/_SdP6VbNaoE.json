@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Delphi Podcast, Jose Marie Macedou hosts Matti from Legion and Philip from Cookie 3 to discuss the evolution of on-chain fundraising and the concept of Attention Capital Markets. They explore the integration of traditional finance with blockchain technology, the challenges of capital attribution in Web3, and the innovative solutions being developed to measure and enhance creator influence in the crypto space.",
+  "topic_summary": "The discussion covers the journey of Legion and Cookie 3 in the context of on-chain fundraising, the significance of capital attribution in Web3, and the vision behind Attention Capital Markets, emphasizing the connection between attention and financial commitment [t=459.3].",
+  "router_tags": [
+    "Onchain Fundraising",
+    "Attention Capital Markets",
+    "Web3",
+    "Crypto",
+    "Blockchain",
+    "Delphi Podcast"
+  ],
+  "aliases": [
+    "Legion",
+    "Cookie3",
+    "Legion Cc",
+    "Legion D O T C C",
+    "Philip",
+    "Matti"
+  ],
+  "canonical_entities": [
+    "$LEGION",
+    "$COOKIE3",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

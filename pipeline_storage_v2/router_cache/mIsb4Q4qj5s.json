@@ -1,0 +1,25 @@
+{
+  "description": "The keynote discusses building communities that launch products, focusing on the Bonk ecosystem and its initiatives to engage users through various projects and partnerships.",
+  "topic_summary": "At [t=15:44], the speaker emphasizes the importance of community engagement in product launches. They highlight Bonk's role as a widely used token on Solana and discuss various projects like Bonk 4 Paws and Bonk Boxing. The talk also covers partnerships with organizations like Borussia Dortmund and the introduction of a Bonk exchange traded product, aiming to increase accessibility to Bonk for users worldwide.",
+  "router_tags": [
+    "Bonk",
+    "Solana",
+    "Community Building",
+    "Product Launch",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "bonk",
+    "Bonk",
+    "BONK"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BONK",
+    "@Bonk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Jesse Pollak discusses the importance of owning cryptocurrency and shares insights on his daily activities at Coinbase, including team collaboration and external engagements.",
+  "topic_summary": "Pollak emphasizes the necessity of cryptocurrency ownership and outlines his multifaceted role at Coinbase, focusing on team support, external builder interactions, and strategic planning for 2025 [t=236].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Coinbase",
+    "Blockchain",
+    "Finance",
+    "Investing"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "Jesse Pollak"
+  ],
+  "canonical_entities": [
+    "$COIN",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

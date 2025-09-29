@@ -1,0 +1,24 @@
+{
+  "description": "A debate on the merits of non-custodial wallets featuring Nass Eddequiouaq and Brian Friel. The discussion explores the spectrum of custody versus self-custody, the role of wallet providers, and the onboarding of users to crypto through exchanges and wallets. Key points include the importance of user control and the evolution of wallet technology.",
+  "topic_summary": "Debate on whether non-custodial wallets are overrated, focusing on custody dynamics, user onboarding, and wallet provider roles in the crypto ecosystem. [t=3:44] Introduction by Sagar. [t=4:64] Opening remarks by Nass. [t=90:21] Discussion on wallet adoption and user control.",
+  "router_tags": [
+    "Non-Custodial Wallets",
+    "Crypto Debate",
+    "Wallet Technology",
+    "Self-Custody",
+    "User Onboarding"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2024: Debate",
+    "Breakpoint2024: Non-Custodial Wallets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

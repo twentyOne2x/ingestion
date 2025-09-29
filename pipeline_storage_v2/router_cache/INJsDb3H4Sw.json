@@ -1,0 +1,27 @@
+{
+  "description": "This video discusses the final outcome of the FCC Incentive Auction, detailing the auction process, revenue generated, and its impact on the US deficit.",
+  "topic_summary": "The FCC Incentive Auction ran from March 2016 to March 2017, involving nearly 3,000 stations and generating $20 billion in revenue while clearing $10 billion in costs, resulting in a $7 billion surplus for deficit reduction. The auction's success was attributed to advanced algorithmic techniques for NP-hard problems [t=0:72].",
+  "router_tags": [
+    "FCC",
+    "Incentive Auction",
+    "Spectrum Auction",
+    "Telecommunications",
+    "Algorithmic Techniques"
+  ],
+  "aliases": [
+    "Fcc Incentive Auction",
+    "fcc incentive auction",
+    "FCC Incentive auction"
+  ],
+  "canonical_entities": [
+    "$10 Billion",
+    "$20 Billion",
+    "$7 Billion",
+    "$86 Billion",
+    "$23 Billion",
+    "$60 Billion",
+    "@Congress"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

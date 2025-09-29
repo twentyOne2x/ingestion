@@ -1,0 +1,21 @@
+{
+  "description": "In this stream, the host discusses a significant financial loss of $1,000,000, emphasizing the seriousness of the situation and seeking a supportive environment to share the details. The conversation touches on various topics, including the impact of recent investments and the emotional toll of the loss.",
+  "topic_summary": "The host recounts losing $1,000,000 in a day, reflecting on the implications and seeking understanding from the audience [t=0:08].",
+  "router_tags": [
+    "financial loss",
+    "investment",
+    "crypto",
+    "therapy session"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

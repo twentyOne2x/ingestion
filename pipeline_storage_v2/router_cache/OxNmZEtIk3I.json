@@ -1,0 +1,24 @@
+{
+  "description": "Philip and Anwe discuss the performance of the Financer Networking Stack, focusing on the Firedancer architecture and its optimizations for blockchain validation. They explain the importance of high-performance validators and the decisions made to enhance system throughput, including the use of tiles for processing transactions efficiently. Key components such as the NET tile, QUIC tile, and signature verification are highlighted, along with performance improvements achieved through AVX acceleration and parallelization strategies.",
+  "topic_summary": "Overview of Firedancer's architecture and performance optimizations for the Financer Networking Stack, emphasizing the role of high-performance validators in blockchain capacity and efficiency. Key components and their enhancements are discussed, including the impact of parallelism and data flow optimization.",
+  "router_tags": [
+    "Firedancer",
+    "Financer Networking Stack",
+    "Blockchain",
+    "Performance Optimization",
+    "Solana"
+  ],
+  "aliases": [
+    "Frankendancer",
+    "Frank Dancer",
+    "Firedancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Kevin",
+    "@Anwe"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

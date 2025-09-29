@@ -1,0 +1,24 @@
+{
+  "description": "Robert Chen from Ottersec discusses decompiling Solana programs, focusing on a recent hack involving Loopscale that resulted in a $5 million loss. The presentation covers the challenges of analyzing closed-source programs on Solana and introduces a decompilation framework used to investigate the hack, including insights on how to reverse engineer BPF bytecode [t=6:64-335:01].",
+  "topic_summary": "The talk addresses the complexities of decompiling Solana programs, the implications of closed-source software, and practical applications of reverse engineering tools in the context of a recent hack on the Loopscale lending market [t=6:64-335:01].",
+  "router_tags": [
+    "Solana",
+    "Decompilation",
+    "Reverse Engineering",
+    "Blockchain Security",
+    "Loopscale"
+  ],
+  "aliases": [
+    "Robert Chen",
+    "Ottersec",
+    "SolanaFndn",
+    "loopscale"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@loopscale"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

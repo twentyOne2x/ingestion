@@ -1,0 +1,25 @@
+{
+  "description": "Ben Mills introduces a panel discussing the future of FinTech, focusing on the challenges and opportunities in the African payments ecosystem, particularly regarding hyper fragmentation and the integration of stablecoins.",
+  "topic_summary": "The panel explores the current state of FinTech, identifying key challenges such as regulatory fragmentation in Africa and the potential of crypto solutions to enhance financial inclusion and accessibility [t=161:65].",
+  "router_tags": [
+    "FinTech",
+    "Crypto",
+    "Payments",
+    "Africa",
+    "Stablecoins"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Future of FinTech",
+    "Solana FinTech"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GuerraKiwana",
+    "@GeorgeStella",
+    "@Ian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

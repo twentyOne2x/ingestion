@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the Geyser Reload feature, improvements in tooling, and potential changes to account size fees. It highlights the Qlik service proposal aimed at reducing latency issues for validators across different regions, the ease of plugin development for Geyser, and the introduction of a new tooling section in the Solana developer forum.",
+  "topic_summary": "Updates on Solana's Geyser Reload, tooling improvements, and account size fee proposals. Discussion on the Qlik service to enhance validator communication and new features for Geyser developers [t=0:16 - t=3:28].",
+  "router_tags": [
+    "Solana",
+    "Geyser",
+    "Qlik Service",
+    "Tooling",
+    "Account Size Fee"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Geyser",
+    "geyser",
+    "Qlik",
+    "qlik"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

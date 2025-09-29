@@ -1,0 +1,22 @@
+{
+  "description": "The first Solana core community call discusses the purpose of the meeting, future developments, and the process for proposing changes to the Solana Protocol. Participants express the need for better communication and collaboration among developers, particularly regarding breaking changes and quality of service incidents. The call also touches on the importance of visibility into upcoming changes and the approval process for contributions.",
+  "topic_summary": "Overview of the first Solana core community call, focusing on developer collaboration, proposal processes, and community engagement regarding protocol changes. Discussion includes the need for an agenda and the significance of SIMDs in facilitating proposals and changes [t=2:96-75:44].",
+  "router_tags": [
+    "Solana",
+    "Community Call",
+    "Developer Sync",
+    "Protocol Changes",
+    "SIMD"
+  ],
+  "aliases": [
+    "Solana Core Community Call",
+    "Solana Developer Sync",
+    "Solana Protocol Meeting"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Austin discusses zero-knowledge proofs with Togril Maharamov, exploring their definition, use cases, and challenges. They compare the current state of zero-knowledge systems to the early days of blockchain technology, emphasizing their potential impact on privacy and scalability in crypto.",
+  "topic_summary": "The conversation covers the fundamentals of zero-knowledge proofs, their applications in privacy-focused cryptocurrencies like Monero and Zcash, and their emerging role in blockchain scalability solutions. The discussion highlights the importance of understanding these technologies as they evolve.",
+  "router_tags": [
+    "Zero Knowledge Proofs",
+    "Blockchain",
+    "Cryptocurrency",
+    "Privacy",
+    "Scalability"
+  ],
+  "aliases": [
+    "Zero Knowledge Proofs",
+    "ZK Proofs",
+    "ZKPs",
+    "Zero-Knowledge Systems"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "$ZEC",
+    "$XMR",
+    "@SolanaFndn",
+    "@TogrilMaharamov"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

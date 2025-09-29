@@ -1,0 +1,27 @@
+{
+  "description": "Zano Sherwani and Ben Coverston discuss MEV (Miner Extractable Value) in blockchain systems, particularly focusing on its implications in Solana and Ethereum. They explore the nature of MEV, its impact on user experience, and the potential for it to evolve into a significant sector in DeFi.",
+  "topic_summary": "The conversation covers the definition of MEV, its relevance in blockchain technology, and the ongoing debate about its effects on market dynamics and user experience. The speakers emphasize the need for competitive pricing and user satisfaction in decentralized exchanges [t=209.25].",
+  "router_tags": [
+    "MEV",
+    "Blockchain",
+    "DeFi",
+    "Solana",
+    "Ethereum",
+    "Market Structure"
+  ],
+  "aliases": [
+    "Mev",
+    "Miner Extractable Value",
+    "MEV"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Acuna",
+    "@CitadelSecurities",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

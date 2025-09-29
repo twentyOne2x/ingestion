@@ -1,0 +1,24 @@
+{
+  "description": "Austin speaks with Chris Osborne, founder and CEO of Dialect, about the need for a mobile revolution in crypto. They discuss Dialect's Web3 messaging protocol, which includes features like wallet-to-wallet chat and NFT stickers. Chris emphasizes the importance of mobile in the next bull run and the challenges of getting Web3 apps approved by traditional app stores.",
+  "topic_summary": "The conversation explores the intersection of mobile technology and cryptocurrency, highlighting Dialect's role in advancing mobile-first solutions for Web3 applications. Chris discusses the historical context of mobile adoption and the unique challenges faced by crypto in this space, suggesting that 2023 may mark a significant shift towards mobile integration in the crypto ecosystem.",
+  "router_tags": [
+    "Crypto",
+    "Mobile Revolution",
+    "Web3",
+    "Dialect",
+    "Solana"
+  ],
+  "aliases": [
+    "Dialect",
+    "dialect",
+    "SOLANA",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on trading strategies and market conditions, focusing on the challenges of trading in the current environment. Insights on narrative trading and the impact of market trends on trading decisions.",
+  "topic_summary": "Exploration of trading experiences and strategies, particularly in the context of recent market changes and the viability of various coins [t=0:48].",
+  "router_tags": [
+    "trading",
+    "cryptocurrency",
+    "memecoins",
+    "market analysis"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Oriel",
+    "@Portamerica"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

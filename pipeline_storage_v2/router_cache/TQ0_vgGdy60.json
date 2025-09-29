@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the energy efficiency of Solana transactions compared to a Google search, highlighting that a single transaction on Solana consumes about 700 joules, which is less than the energy required for a Google search.",
+  "topic_summary": "Solana's energy consumption per transaction is significantly lower than that of a Google search, with a single transaction using approximately 700 joules [t=8:88].",
+  "router_tags": [
+    "Solana",
+    "Energy Efficiency",
+    "Web3",
+    "Google Search"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

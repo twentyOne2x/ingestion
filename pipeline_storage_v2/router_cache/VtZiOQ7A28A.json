@@ -1,0 +1,23 @@
+{
+  "description": "This week's Changelog discusses the announcement of Mountain Dao V4 in August, a Game Jam called Speedrun starting July 26, and the proposal SIMD 50 to increase prioritization fees on Solana. The episode features insights on the importance of Mountain Dao for developers and details about the Game Jam format and objectives.",
+  "topic_summary": "The video covers updates on Mountain Dao V4 [t=8:00], the upcoming Game Jam [t=79:25], and the SIMD 50 proposal regarding prioritization fees [t=151.64].",
+  "router_tags": [
+    "Solana",
+    "Game Jam",
+    "Mountain Dao",
+    "Prioritization Fees",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

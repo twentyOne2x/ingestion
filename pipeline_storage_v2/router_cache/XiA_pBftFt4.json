@@ -1,0 +1,22 @@
+{
+  "description": "In this episode, the focus is on arbitrage trading, exploring its mechanics and applications in decentralized finance (DeFi). The host discusses the concept of arbitrage, types of arbitrage trading, and provides a practical example using liquidity pools. The session aims to deepen understanding of market making and arbitrage strategies.",
+  "topic_summary": "The episode covers arbitrage trading, its definition, types (spatial, temporal, statistical), and a practical example involving liquidity pools to illustrate how arbitrage opportunities arise [t=0:24 - t=3:09].",
+  "router_tags": [
+    "arbitrage",
+    "DeFi",
+    "Solana",
+    "liquidity pools",
+    "trading strategies"
+  ],
+  "aliases": [
+    "Solana Bootcamp",
+    "Solana bootcamp",
+    "solana bootcamp"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

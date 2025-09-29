@@ -1,0 +1,23 @@
+{
+  "description": "This video provides an addendum to Lecture 8, discussing the importance of balanced leader sequences in achieving consensus properties in blockchain systems. It outlines the common prefix property and the assumptions necessary for its proof, particularly in relation to Byzantine leaders and the implications for proof of work and proof of stake settings.",
+  "topic_summary": "The video elaborates on the significance of balanced leader sequences for consensus properties in blockchain, specifically focusing on the common prefix property and its proof under various assumptions. It highlights the nuances in proofs related to leader behavior and consensus mechanisms, particularly in the context of Byzantine leaders and different consensus models [t=0:24].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "leader sequences",
+    "Byzantine fault tolerance",
+    "proof of work",
+    "proof of stake"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

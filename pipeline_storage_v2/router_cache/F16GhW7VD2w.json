@@ -1,0 +1,27 @@
+{
+  "description": "Austin speaks with Ori Kwon, co-founder of Orca, about designing user-friendly DeFi protocols on Solana. They discuss the importance of design in Web3, the challenges of bad UX, and the need for designers in crypto. Ori shares her background in technology and design, her journey to Orca, and the evolution of user expectations in technology.",
+  "topic_summary": "The conversation highlights the intersection of design and crypto, emphasizing the necessity of user-centered design in Web3 applications. Ori discusses her experiences and insights on creating intuitive products that meet user needs, contrasting the current state of crypto design with traditional software.",
+  "router_tags": [
+    "Crypto",
+    "DeFi",
+    "Design",
+    "Web3",
+    "User Experience",
+    "Solana"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "VALIDATED",
+    "Orca",
+    "orca"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@OriKwon",
+    "@Yutaro"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

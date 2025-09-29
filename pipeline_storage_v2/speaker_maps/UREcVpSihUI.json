@@ -1,0 +1,20 @@
+{
+  "video_id": "UREcVpSihUI",
+  "title": "2025-07-20_UREcVpSihUI_Tom Kysar: Advice for New Traders, Building in Crypto, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "M. Weiss",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

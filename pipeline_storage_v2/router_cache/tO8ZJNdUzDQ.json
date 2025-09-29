@@ -1,0 +1,24 @@
+{
+  "description": "Brian Long discusses the role of RPC services in blockchain, particularly in relation to Solana. He explains how RPCs are essential for user interaction with the blockchain, providing a standardized backend for applications. The conversation touches on the evolution of RPCs, their operational mechanics, and the hardware requirements for running RPC nodes effectively.",
+  "topic_summary": "Brian Long explains the fundamentals of RPC services in blockchain, emphasizing their importance for data retrieval and transaction processing. He compares RPCs to cloud services, highlighting their standardized nature and the specialized hardware needed for optimal performance. The discussion includes insights into the historical context of RPC usage and the technical intricacies of Solana's RPC infrastructure.",
+  "router_tags": [
+    "RPC",
+    "Blockchain",
+    "Solana",
+    "Web3",
+    "Data Retrieval"
+  ],
+  "aliases": [
+    "Rpc",
+    "rpc",
+    "Rpcs",
+    "rpcs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BrianLong"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

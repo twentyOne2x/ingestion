@@ -1,0 +1,32 @@
+{
+  "video_id": "XSMAailFKZ0",
+  "title": "2023-04-25_XSMAailFKZ0_Validated - Two Ex-OFAC Lawyers Walk Into a Bar ... and Discuss the Warren-Marshall Bill",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Dave Stetson",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Mike Mosher",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Dave Stetson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

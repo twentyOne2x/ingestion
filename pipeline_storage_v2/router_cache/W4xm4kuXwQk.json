@@ -1,0 +1,23 @@
+{
+  "description": "Spotlight discussion on state compression technology developed by Solana Labs, focusing on its application in compressing NFTs and reducing on-chain data costs.",
+  "topic_summary": "The video features Nick, Jonas, and Noah discussing state compression on Solana, explaining its functionality, benefits, and potential applications, including NFTs and regulatory adherence. Key points include reduced costs, secure data logging, and the use of Merkle trees for data verification [t=0:32-4:54].",
+  "router_tags": [
+    "Solana",
+    "State Compression",
+    "NFTs",
+    "Blockchain",
+    "Data Storage"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@NoahGundotra",
+    "@Jonas"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

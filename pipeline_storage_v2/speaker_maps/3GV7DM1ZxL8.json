@@ -1,0 +1,32 @@
+{
+  "video_id": "3GV7DM1ZxL8",
+  "title": "2022-11-07_3GV7DM1ZxL8_Breakpoint 2022: Final Boss: Can Web3 Gaming Win Over the Gamers",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Andrew Long",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Andrew Long",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Dan Borstelman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

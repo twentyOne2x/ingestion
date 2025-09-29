@@ -1,0 +1,22 @@
+{
+  "description": "Learn how token extensions on Solana can enhance transaction clarity by requiring memos for transfers. This feature aims to provide richer data on transactions, similar to bank statements, making it easier to recall transaction purposes.",
+  "topic_summary": "Explore the necessity of memos in token transfers on Solana, which will help users remember transaction details like purchases or services [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Memo Requirement",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

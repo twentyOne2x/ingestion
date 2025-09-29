@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discusses the Dolev Strong protocol and its implications for Byzantine broadcast, addressing the contradiction between previous results regarding validity and agreement. It emphasizes the importance of the PKI assumption in understanding these results and explores the challenges of extending proofs under this assumption.",
+  "topic_summary": "The lecture covers the Dolev Strong protocol's role in Byzantine broadcast, the significance of the PKI assumption, and the complexities introduced when attempting to reconcile different results on validity and agreement in the context of Byzantine nodes. Key issues arise in defining thought experiments and simulating node behavior under PKI.",
+  "router_tags": [
+    "Blockchains",
+    "PKI",
+    "Byzantine Broadcast",
+    "Dolev Strong Protocol"
+  ],
+  "aliases": [
+    "Dolev Strong",
+    "Dolev",
+    "dolev strong",
+    "dolev"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

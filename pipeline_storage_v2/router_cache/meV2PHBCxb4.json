@@ -1,0 +1,24 @@
+{
+  "description": "John from Solana Labs discusses advancements in Token 2022, focusing on new features for developers, including confidential transfers and token metadata transfer hooks. He highlights the importance of making on-chain programs more accessible and functional for developers in the Solana ecosystem.",
+  "topic_summary": "John presents updates on Token 2022, emphasizing its enhanced functionality for developers, including confidential transfers and metadata hooks, which aim to improve integration within the Solana ecosystem. Key updates include completed audits and upcoming features expected in early 2024 [t=126:92].",
+  "router_tags": [
+    "Token2022",
+    "Solana",
+    "Blockchain",
+    "Development",
+    "ConfidentialTransfers"
+  ],
+  "aliases": [
+    "Token 2022",
+    "token 2022",
+    "Token2022",
+    "token2022"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SamKim",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

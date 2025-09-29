@@ -1,0 +1,24 @@
+{
+  "description": "Rep. Ritchie Torres discusses the potential of cryptocurrency and blockchain technology to improve financial systems, particularly for low-income communities. He highlights the establishment of the Congressional Crypto Congress and the importance of stablecoins in providing access to stable currency for those affected by inflation and corrupt governments.",
+  "topic_summary": "In this fireside chat, Rep. Ritchie Torres emphasizes the progressive nature of cryptocurrency and its ability to revolutionize finance, particularly for marginalized communities. He advocates for blockchain technology as a solution to financial inequities and discusses the role of stablecoins in enhancing economic stability [t=40:15].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Blockchain",
+    "Stablecoins",
+    "Financial Inclusion",
+    "Congress",
+    "Web3"
+  ],
+  "aliases": [
+    "Ritchie Torres",
+    "Rep. Torres",
+    "Congressman Torres"
+  ],
+  "canonical_entities": [
+    "$200 Million",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

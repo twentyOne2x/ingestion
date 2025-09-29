@@ -1,0 +1,23 @@
+{
+  "description": "In this interview, Jeffy discusses the rapid developments in his project over the past 10 days, including building connections and partnerships. He shares insights about his mixtape, the selection process for tracks, and the growth of his team, which now consists of eight to nine members. The conversation also touches on the timing of their framework announcement amidst other AI developments.",
+  "topic_summary": "Jeffy reflects on the fast-paced growth of his project, the mixtape release, and team expansion, while addressing the strategic timing of their announcements [t=124:99].",
+  "router_tags": [
+    "Interview",
+    "Zerebro",
+    "AI",
+    "Music",
+    "Partnerships"
+  ],
+  "aliases": [
+    "Jeffy",
+    "jeffy",
+    "Zerebro",
+    "zerebro"
+  ],
+  "canonical_entities": [
+    "$ZEREBRO",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Ty Swartz discusses Instagram's integration of Solana for digital collectibles, emphasizing the platform's commitment to supporting creators and the unique features of NFTs on Instagram.",
+  "topic_summary": "At [t=5:92], Ty Swartz introduces Instagram's new support for Solana NFTs, highlighting the platform's focus on creators and the distinct experience of digital collectibles on Instagram. He explains the integration process and the significance of blockchain for creators at [t=57:35].",
+  "router_tags": [
+    "Instagram",
+    "Solana",
+    "NFTs",
+    "Digital Collectibles",
+    "Creators"
+  ],
+  "aliases": [
+    "Instagram",
+    "solana",
+    "Breakpoint",
+    "Ty Swartz",
+    "digital collectibles"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

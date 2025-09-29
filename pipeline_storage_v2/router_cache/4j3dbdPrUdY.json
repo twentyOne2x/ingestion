@@ -1,0 +1,24 @@
+{
+  "description": "Mitch, CTO of Switchboard, discusses the evolution of Oracle technology and the introduction of Switchboard V3, focusing on enhancing security, versatility, and execution capabilities in the Oracle ecosystem. He highlights the need for improved data feeds and the integration of trusted execution environments to ensure data integrity and reliability.",
+  "topic_summary": "In this presentation, Mitch outlines the advancements in Oracle technology, particularly Switchboard V3, which aims to address security weaknesses and enhance the functionality of data feeds in the Solana ecosystem. He emphasizes the importance of dynamic execution and the need for Oracles to provide comprehensive data solutions beyond simple price feeds [t=178.09].",
+  "router_tags": [
+    "Oracle",
+    "Switchboard",
+    "Solana",
+    "Blockchain",
+    "Data Feeds"
+  ],
+  "aliases": [
+    "Mitch",
+    "mitch",
+    "Switchboard",
+    "switchboard"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

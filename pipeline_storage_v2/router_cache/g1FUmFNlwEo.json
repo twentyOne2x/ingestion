@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the adoption of Bitcoin and the potential for community-driven initiatives related to health and wellness, referencing Balaji's network states concept.",
+  "topic_summary": "Exploration of Bitcoin's institutional adoption and the future of crypto payments, alongside innovative community engagement ideas inspired by health-related token incentives [t=0:08 - t=134:57].",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto",
+    "ETFs",
+    "Community",
+    "Health"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Balaji"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

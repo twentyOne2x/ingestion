@@ -1,0 +1,20 @@
+{
+  "video_id": "nQuO3INdRkw",
+  "title": "2025-06-13_nQuO3INdRkw_Solana Foundation Validator Discussion - June 12 2025",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "A": {
+      "name": "Brian Wong",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

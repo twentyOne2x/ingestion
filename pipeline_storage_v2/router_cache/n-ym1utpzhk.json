@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial demonstrates how to create dynamic NFTs using the token extensions program on Solana. It covers minting NFTs, adding metadata, and saving data on-chain, illustrated through a beaver NFT example.",
+  "topic_summary": "Learn to create dynamic NFTs with token extensions, including minting and metadata management [t=3:12 - t=3:76]. The tutorial showcases a beaver NFT that collects wood and saves data on-chain [t=47:34 - t=80:45].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Token Extensions",
+    "Metaplex",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Dynamic Nfts Tutorial",
+    "Creating Dynamic NFTs",
+    "NFT Minting Tutorial"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

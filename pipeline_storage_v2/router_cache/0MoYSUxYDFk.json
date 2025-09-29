@@ -1,0 +1,23 @@
+{
+  "description": "Highlights from Breakpoint 2023, showcasing the advancements in decentralized networks and Solana's efficiency.",
+  "topic_summary": "Breakpoint 2023 emphasizes Solana's transaction capabilities and energy efficiency, highlighting its position as a leading platform for decentralized applications. Key discussions include the optimal tech stack for backend app chains and the community's role in sustaining innovation [t=24:48].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Decentralization",
+    "Blockchain",
+    "Energy Efficiency"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "breakpoint 2023",
+    "Breakpoint2023",
+    "breakpoint2023"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

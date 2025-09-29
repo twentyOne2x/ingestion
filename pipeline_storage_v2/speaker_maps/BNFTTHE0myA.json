@@ -1,0 +1,20 @@
+{
+  "video_id": "BNFTTHE0myA",
+  "title": "2023-11-03_BNFTTHE0myA_Breakpoint 2023: Governance and the Building Blocks of a DAO",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Tommy Johnson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

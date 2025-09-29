@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana's third birthday and updates on Validator community, including testnet changes and software release processes.",
+  "topic_summary": "Validator community updates including Solana's birthday [t=30:09], testnet restart to version 1.13.6 [t=61:24], and Anatoly's insights on testing and software release improvements [t=112:28].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Testnet",
+    "Software Release",
+    "Community Discussion"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

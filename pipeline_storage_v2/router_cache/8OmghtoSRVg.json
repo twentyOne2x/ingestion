@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the potential delay of ETH ETF approval, influenced by political factors and the role of key figures like Gensler and Trump. The speaker expresses skepticism about approval this year, suggesting a need for significant political change.",
+  "topic_summary": "Exploration of the ETH ETF delay and its political implications, particularly in an election year. The conversation highlights the influence of Gensler and the possibility of a Trump presidency affecting regulatory decisions [t=0:01 - t=0:50].",
+  "router_tags": [
+    "ethereum",
+    "bitcoin",
+    "crypto",
+    "ETF",
+    "politics"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Gensler",
+    "@Trump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

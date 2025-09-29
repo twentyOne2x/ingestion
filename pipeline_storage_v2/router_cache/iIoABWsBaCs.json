@@ -1,0 +1,23 @@
+{
+  "description": "Matteo discusses Aqorast, a serverless cloud computing network that utilizes smartphones for decentralized and secure computation. The conversation covers how the technology ensures confidentiality through Trusted Execution Environments (TEEs) in smartphones and how users can participate by downloading the app.",
+  "topic_summary": "Exploration of Aqorast's serverless cloud computing network leveraging smartphones for secure workloads and user participation via app download [t=0:16 - t=36:14].",
+  "router_tags": [
+    "cloud computing",
+    "Aqorast",
+    "smartphones",
+    "decentralization",
+    "Web3"
+  ],
+  "aliases": [
+    "Aqorast",
+    "aqorast",
+    "Acurast",
+    "acurast"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

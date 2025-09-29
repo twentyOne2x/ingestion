@@ -1,0 +1,27 @@
+{
+  "description": "Albert Chen discusses Model Context Protocol (MCP) and its significance in AI tool integration. He explains how MCP provides a unified interface for AI applications, enhancing their capabilities and addressing issues like hallucinations in AI outputs. The talk covers the evolution of AI tools, the importance of CRUD operations, and recent developments in MCP marketplaces, including the introduction of payment models for tool usage.",
+  "topic_summary": "In this session, Albert Chen introduces Model Context Protocol (MCP) as a unified standard for AI tools, emphasizing its role in improving AI functionality and addressing challenges in the AI space. He highlights recent advancements, including payment integration for MCP tools and the commoditization of large language models.",
+  "router_tags": [
+    "AI",
+    "MCP",
+    "Web3",
+    "Monetization",
+    "Tool Integration",
+    "Stripe",
+    "Coinbase"
+  ],
+  "aliases": [
+    "Albert Chen",
+    "albert chen",
+    "ALBERT CHEN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Coinbase",
+    "@Anthropic",
+    "@Stripe"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

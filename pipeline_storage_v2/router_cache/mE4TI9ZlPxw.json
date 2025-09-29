@@ -1,0 +1,25 @@
+{
+  "description": "Arnold Lee discusses the challenges and lessons learned in building a crypto payments company on Solana, focusing on cross-border payments and the obstacles faced with banks and regulators.",
+  "topic_summary": "Arnold Lee, co-founder of Sphere, shares insights on the complexities of crypto payments, the importance of compliance, and introduces Spheranet as a solution for fintechs to connect with banks and regulators [t=5:60-382:85].",
+  "router_tags": [
+    "crypto",
+    "payments",
+    "Solana",
+    "fintech",
+    "blockchain",
+    "Spheranet"
+  ],
+  "aliases": [
+    "arnold",
+    "Arnold Lee",
+    "Sphere",
+    "spheranet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

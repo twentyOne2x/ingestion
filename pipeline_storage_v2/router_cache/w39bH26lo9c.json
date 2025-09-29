@@ -1,0 +1,23 @@
+{
+  "description": "Interview with BoredElonMusk discussing his projects and contributions to AI and crypto. Highlights include his friendship and support for the host, along with insights into his work in the tech space.",
+  "topic_summary": "BoredElonMusk shares insights on AI and crypto, emphasizing his genuine approach to building technology [t=0:08 - t=80:50].",
+  "router_tags": [
+    "BoredElonMusk",
+    "AI",
+    "crypto",
+    "technology",
+    "interview"
+  ],
+  "aliases": [
+    "Bored Elon Musk",
+    "boredelonmusk",
+    "BoredElonMusk"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$SOL",
+    "@elonmusk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

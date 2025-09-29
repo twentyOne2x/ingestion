@@ -1,0 +1,24 @@
+{
+  "description": "Jonas Hahn discusses the second day of Breakpoint 2023, highlighting events from the previous day, including the Magic Eden party and various technical advancements in Solana's ecosystem.",
+  "topic_summary": "At Breakpoint 2023, Jonas Hahn reflects on the previous day's events, including parties and significant announcements like Fire Dancer's launch on testnet, Game Shift by Solana Labs, and a VR experience by 3land. He emphasizes the blend of fun and technical innovation in the Solana community.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Fire Dancer",
+    "Game Shift",
+    "Magic Eden",
+    "VR Experience"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Solana Foundation",
+    "Jonas Hahn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Tim Roughgarden introduces the online short course 'Incentives in Computer Science', aimed at providing tools from Economics and Game Theory for computer science students. The course is designed to be accessible to a broad audience, including those without a background in economics or computer science.",
+  "topic_summary": "The course covers various modules including the role of incentives in technology, the Prisoner's Dilemma, asymmetric information, auctions, and participatory budgeting. It emphasizes the importance of economic principles in technology platforms and market design.",
+  "router_tags": [
+    "Incentives",
+    "Computer Science",
+    "Economics",
+    "Game Theory",
+    "Online Course"
+  ],
+  "aliases": [
+    "Incentives In Computer Science",
+    "Incentives in Computer Science",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgarden",
+    "$GOOGL",
+    "$FB",
+    "$AMZN",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

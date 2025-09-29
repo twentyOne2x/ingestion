@@ -1,0 +1,28 @@
+{
+  "description": "Nick discusses Phantom's integration with Solana Mobile using React Native, detailing the architecture and functionality of the seed vault for transaction signing.",
+  "topic_summary": "Overview of Phantom Mobile's integration with Solana Mobile, focusing on the seed vault's role in signing transactions [t=79:17].",
+  "router_tags": [
+    "Phantom",
+    "Solana",
+    "React Native",
+    "Mobile Integration",
+    "Seed Vault"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Nick",
+    "@phantom",
+    "@airbnb",
+    "@verily",
+    "@alphabet",
+    "@apple",
+    "@google"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

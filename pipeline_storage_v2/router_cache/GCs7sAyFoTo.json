@@ -1,0 +1,27 @@
+{
+  "description": "Matty introduces the panel discussing decentralized decision-making in DAOs, featuring Mark, Daljeet, and Nam, who share their experiences and insights on the importance of DAOs in modern governance and community building.",
+  "topic_summary": "The discussion covers the significance of DAOs in managing complex systems, their economic and social power, and the future of decentralized governance, emphasizing the need for effective decision-making mechanisms [t=140.59].",
+  "router_tags": [
+    "DAOs",
+    "Decentralized Governance",
+    "Solana",
+    "Community Building",
+    "Crypto"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Proof of Impact",
+    "Decentralized Decision-Making"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Mark",
+    "@Daljeet",
+    "@Nam",
+    "@Monkeydao",
+    "@OpenBlock"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

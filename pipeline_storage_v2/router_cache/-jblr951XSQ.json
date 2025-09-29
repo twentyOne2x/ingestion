@@ -1,0 +1,26 @@
+{
+  "description": "Breakpoint 2022 concludes with discussions on Helium's migration to Solana, workshops on SPL governance, and a live podcast recording on Qualcomm's history. The event features insights from Ledger and Stripe, and explores Web3's role in human rights.",
+  "topic_summary": "Day 3 of Breakpoint 2022 includes technical discussions on Helium's transition to Solana [t=35:20], workshops on SPL governance [t=60:93], and a live podcast recording on Qualcomm [t=111:82]. The day wraps up with a closing celebration [t=203:74].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "Web3",
+    "Helium",
+    "Ledger",
+    "Stripe",
+    "SPL governance",
+    "podcast"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

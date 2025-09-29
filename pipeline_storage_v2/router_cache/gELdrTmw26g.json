@@ -1,0 +1,23 @@
+{
+  "description": "The presentation discusses the Squads multisig infrastructure for Solana, detailing its protocol layer, product offerings, and security measures. It highlights the integration of various products with Squads and the ongoing efforts for formal verification of the Squads v3 program.",
+  "topic_summary": "Overview of Squads multisig infrastructure on Solana, its products, security audits, and the importance of formal verification in smart contracts [t=149.56].",
+  "router_tags": [
+    "Solana",
+    "multisig",
+    "smart contracts",
+    "formal verification",
+    "security"
+  ],
+  "aliases": [
+    "Squads",
+    "squads",
+    "SQUADS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

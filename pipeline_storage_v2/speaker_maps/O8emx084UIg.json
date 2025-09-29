@@ -1,0 +1,20 @@
+{
+  "video_id": "O8emx084UIg",
+  "title": "2025-07-19_O8emx084UIg_David Hoffman: Changing Ethereum Forever, ETH Treasuries, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "David Hoffman",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

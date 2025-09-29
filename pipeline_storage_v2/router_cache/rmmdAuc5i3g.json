@@ -1,0 +1,26 @@
+{
+  "description": "Lecture 9 discusses the foundations of blockchains, focusing on permissionless consensus and Sybil attacks. It contrasts permissioned and permissionless settings, highlighting the implications for consensus protocols, particularly in Bitcoin and Ethereum.",
+  "topic_summary": "This lecture covers the transition from permissioned to permissionless consensus protocols, addressing Sybil resistance and the operational differences in public blockchains like Bitcoin and Ethereum. It emphasizes the challenges posed by unknown nodes in a permissionless environment [t=0:64].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "permissionless",
+    "Sybil attacks",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 9.1",
+    "Permissionless Consensus"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgardenlectures1861",
+    "Sybil",
+    "Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

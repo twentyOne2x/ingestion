@@ -1,0 +1,22 @@
+{
+  "description": "Overview of upcoming lectures on blockchain consensus protocols, emphasizing foundational concepts and historical context.",
+  "topic_summary": "The series will cover classical consensus protocols, their principles, and culminate with the Tendermint protocol, discussing its consistency and eventual liveness properties. Key proofs and results from distributed computing will be highlighted throughout the lectures [t=0:32-8:88].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "Tendermint",
+    "distributed computing"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Facebook"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

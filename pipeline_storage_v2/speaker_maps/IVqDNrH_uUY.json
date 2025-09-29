@@ -1,0 +1,20 @@
+{
+  "video_id": "IVqDNrH_uUY",
+  "title": "2025-07-01_IVqDNrH_uUY_How He Built A $10,000,000 Crypto Business",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "A debate featuring Vibhu Norby and Tarun Chitra discussing whether crypto's only use-case is speculation. The discussion covers the properties of money that make it suitable for speculation, including liquidity fragmentation and the impact of censorship resistance on trading activities.",
+  "topic_summary": "The debate centers on the argument that speculation is the primary application of cryptocurrency, supported by points on liquidity, asset creation, and the inherent properties of money that favor trading activities [t=26:54].",
+  "router_tags": [
+    "crypto",
+    "speculation",
+    "debate",
+    "blockchain",
+    "finance"
+  ],
+  "aliases": [
+    "Vibhu Norby",
+    "Tarun Chitra",
+    "Vibu",
+    "Tarun"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Vibhu",
+    "@Tarun"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

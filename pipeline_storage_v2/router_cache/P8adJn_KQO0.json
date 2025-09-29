@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses the limitations of equilibrium computation, focusing on mixed Nash equilibria. It covers the complexity of computing equilibria in bimatrix games and the challenges in finding polynomial time algorithms for these problems. The lecture also explores the relationship between mixed Nash equilibria and PLS completeness, emphasizing the difficulty of proving NP completeness for this problem.",
+  "topic_summary": "The lecture addresses mixed Nash equilibria in bimatrix games, their computational complexity, and the lack of efficient algorithms for their computation. It highlights the distinction between zero-sum and general-sum games and introduces PLS completeness as a relevant complexity class for these problems [t=0:56].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Nash Equilibria",
+    "Complexity Theory",
+    "Mixed Strategies",
+    "Bimatrix Games"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Nash Equilibria",
+    "Mixed Nash Equilibria",
+    "Complexity Theory"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "dMIhJEH94qc",
+  "title": "2025-05-22_dMIhJEH94qc_Ship or Die 2025: Fireside Chat: Wormhole and Securitize (Michael Sonnenshein, Saeed Badreg)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Michael Sonnenschein",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Tom Murphy",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

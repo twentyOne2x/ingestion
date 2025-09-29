@@ -1,0 +1,23 @@
+{
+  "description": "In this stream, the host discusses the value of time as a currency and introduces 'Time Fun', a platform where creators can tokenize their time for access to their services. The conversation touches on the evolution of meme coins and the host's journey in developing this concept over the past year and a half.",
+  "topic_summary": "The stream explores the concept of time as a valuable currency, detailing the 'Time Fun' platform where creators can monetize their time through tokens. The discussion includes insights on the current state of meme coins and the host's experiences in building the platform since its launch on Solana.",
+  "router_tags": [
+    "Time Fun",
+    "Tokenization",
+    "Creators",
+    "Meme Coins",
+    "Solana"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "0xKawz",
+    "0xkawz"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

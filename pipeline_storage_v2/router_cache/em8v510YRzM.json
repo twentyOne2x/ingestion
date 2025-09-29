@@ -1,0 +1,24 @@
+{
+  "description": "Lecture discussing the transition from proof of work to proof of stake in blockchain protocols, focusing on longest chain consensus and its challenges. It highlights the relevance of Cardano and the academic literature on proof of stake protocols.",
+  "topic_summary": "Exploration of proof of stake longest chain protocols, their implementation challenges, and the academic focus on these protocols as of 2023. Discussion includes the importance of understanding consensus mechanisms and the evolution of blockchain technology [t=0:56].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "longest chain",
+    "Cardano",
+    "Nakamoto consensus"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Proof-of-Stake Longest-Chain Protocols",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ADA",
+    "@Nakamoto",
+    "@Orobo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

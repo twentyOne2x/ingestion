@@ -1,0 +1,23 @@
+{
+  "description": "In this interview, Devin Finzer, CEO of OpenSea, discusses the launch of the OpenSea Token and shares insights on the challenges and developments in the NFT space.",
+  "topic_summary": "Devin Finzer talks about the OpenSea Token launch and the journey of OpenSea over the past two years, addressing the community's challenges and expectations [t=89:54].",
+  "router_tags": [
+    "OpenSea",
+    "NFT",
+    "Devin Finzer",
+    "Token Launch",
+    "Crypto"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "Devin Finzer",
+    "Devin",
+    "Open Sea"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

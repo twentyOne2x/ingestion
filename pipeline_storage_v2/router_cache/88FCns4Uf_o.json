@@ -1,0 +1,29 @@
+{
+  "description": "Derek, CEO of Matchday, introduces the platform aimed at enhancing the Solana gaming ecosystem, emphasizing the emotional connection between football and gaming. Sebastian, Chief Gaming Officer, discusses the growth of football and gaming, predicting a $500 billion industry by 2030. He highlights the transformative potential of web3 technology and its impact on user engagement and NFT spending.",
+  "topic_summary": "At Breakpoint 2022, Derek and Sebastian discuss Matchday's vision for integrating football with gaming, the massive audience for football, and the potential of web3 technology to revolutionize the gaming industry. They highlight the emotional engagement in both fields and the expected growth in the gaming market.",
+  "router_tags": [
+    "Matchday",
+    "Solana",
+    "Football",
+    "Gaming",
+    "Web3",
+    "NFTs"
+  ],
+  "aliases": [
+    "Matchday",
+    "matchday",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Derek",
+    "@Sebastian",
+    "@IanKonami",
+    "@ArthurCClarke",
+    "@Nokia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

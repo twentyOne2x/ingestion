@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses proof of stake random sampling, focusing on the need for a better solution that samples public keys based on stake distribution when selecting leaders. It introduces the concept of a randomness beacon, which provides perfect randomness for sampling.",
+  "topic_summary": "Exploration of proof of stake random sampling methods, emphasizing the use of randomness beacons to improve leader selection processes in blockchain systems. The lecture outlines how to utilize random outputs to sample public keys proportionally to their stakes [t=0:24].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "randomness beacon",
+    "random sampling"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$NAKAMOTO",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

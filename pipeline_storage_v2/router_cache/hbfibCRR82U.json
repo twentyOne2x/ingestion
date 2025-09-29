@@ -1,0 +1,20 @@
+{
+  "description": "Lecture discussing MIDR mechanisms via scaling algorithms, focusing on welfare maximization and randomized rounding techniques.",
+  "topic_summary": "The lecture covers the algorithmic problem of welfare maximization, emphasizing polynomial time solutions and the use of randomized rounding to achieve near-optimal allocations. It also addresses the challenges of NP-hard versions of welfare maximization and the limitations of traditional mechanisms like VCG.",
+  "router_tags": [
+    "Mechanism Design",
+    "Welfare Maximization",
+    "Algorithms",
+    "Randomized Rounding"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

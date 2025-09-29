@@ -1,0 +1,24 @@
+{
+  "description": "Tim Roughgarden discusses the complexities of mechanism design in blockchain protocols, highlighting eight reasons why it is challenging yet fascinating. He emphasizes the importance of understanding trust issues and the unique characteristics of blockchain technology that complicate traditional solutions.",
+  "topic_summary": "In this talk, Tim Roughgarden explores the difficulties of applying traditional mechanism design principles to blockchain systems, outlining eight key challenges and their implications for the field. He introduces the concept of mechanism design as 'inverse game theory' and discusses how blockchain's decentralized nature affects trust and decision-making processes.",
+  "router_tags": [
+    "Blockchain",
+    "Mechanism Design",
+    "Game Theory",
+    "Crypto Economics",
+    "Incentives"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Nakamoto",
+    "@ElaineShih"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

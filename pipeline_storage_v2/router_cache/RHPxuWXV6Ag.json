@@ -1,0 +1,25 @@
+{
+  "description": "The keynote discusses the Bonk for Paws initiative, a charitable effort within the BONK ecosystem that utilizes blockchain technology to facilitate donations for animal charities. It highlights the challenges faced by crypto donors and the solutions provided by the initiative, including increased transparency and efficiency in donations.",
+  "topic_summary": "The presentation covers the Bonk for Paws initiative, its fundraising efforts, and the technology behind its donation process. It emphasizes the importance of transparency, efficiency, and financial inclusion in charitable donations, particularly in the crypto space. The initiative has raised approximately $25,000 through various events and aims to enhance donor anonymity in future transactions [t=221.71].",
+  "router_tags": [
+    "Bonk",
+    "charity",
+    "blockchain",
+    "donations",
+    "Solana"
+  ],
+  "aliases": [
+    "Bonk for Paws",
+    "bonk for paws",
+    "BONK for Paws",
+    "bonk For Paws"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "@venta"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "In this session, the speaker discusses the transition from play-to-earn games to engaging real users in a bear market. They reflect on their journey since launching the first game on Solana in 2021, the challenges faced, and the lessons learned from the FTX collapse. The focus is on building sustainable gaming experiences rather than chasing trends.",
+  "topic_summary": "The presentation covers the evolution of gaming in the crypto space, emphasizing the shift from play-to-earn models to creating genuine user experiences. The speaker highlights the importance of resilience during market downturns and the need for innovative game design.",
+  "router_tags": [
+    "Gaming",
+    "Crypto",
+    "Bear Market",
+    "Play to Earn",
+    "Solana"
+  ],
+  "aliases": [
+    "Kind Night",
+    "kind night",
+    "Sona Segaphone",
+    "sona segaphone"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

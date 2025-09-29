@@ -1,0 +1,20 @@
+{
+  "video_id": "R0JNxCIhabk",
+  "title": "2025-07-15_R0JNxCIhabk_Fejau: BTC All Time Highs, Rate Cuts, QE, and DeFI vs TradFI - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Liz Truss",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

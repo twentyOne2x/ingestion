@@ -1,0 +1,22 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses transferring compressed NFTs and fetching asset data from RPC indexers. The video covers creating compressed NFTs, querying the blockchain, and logging asset information. It also explains how to transfer ownership of compressed NFTs, including asset proof verification and constructing transfer instructions.",
+  "topic_summary": "The video explains the process of transferring compressed NFTs on the Solana blockchain, including querying asset data and verifying ownership. Key steps include using RPC indexers, logging asset information, and constructing transfer instructions with proof verification.",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Blockchain",
+    "RPC",
+    "Asset Transfer"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "SOLANA BYTES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

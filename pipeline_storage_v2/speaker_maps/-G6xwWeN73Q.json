@@ -1,0 +1,20 @@
+{
+  "video_id": "-G6xwWeN73Q",
+  "title": "2025-01-16_-G6xwWeN73Q_What the Democrats Got Wrong About the Election w- Justin Slaughter (Paradigm)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Justin Slaughter",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

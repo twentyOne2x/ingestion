@@ -1,0 +1,23 @@
+{
+  "description": "PayPal USD is now available on the Solana blockchain, enhancing its speed and cost-effectiveness for transactions. Issued by Paxos Trust Company, this integration aims to demonstrate a more efficient way for financial institutions to handle payments.",
+  "topic_summary": "The launch of PayPal USD on Solana [t=2:40] aims to improve digital currency transactions. The partnership with Paxos and Solana is expected to transition PyUSD from awareness to utility [t=76:35].",
+  "router_tags": [
+    "PayPal",
+    "Solana",
+    "Paxos",
+    "cryptocurrency",
+    "stablecoin"
+  ],
+  "aliases": [
+    "paypal",
+    "PayPal",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$PYUSD",
+    "@Paxos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

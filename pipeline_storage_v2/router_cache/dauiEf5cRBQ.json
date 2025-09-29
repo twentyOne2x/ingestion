@@ -1,0 +1,22 @@
+{
+  "description": "Cash Donda and Lily from the Solana Foundation welcome attendees to Breakpoint 2024, highlighting the event's scale with over 6,000 tickets sold and representation from 114 countries. They discuss Solana's global reach, its technological advancements, and the importance of validators in the network's success. The event marks a significant moment for Solana in Asia, emphasizing the growth and resilience of the community.",
+  "topic_summary": "Breakpoint 2024 opens with discussions on Solana's global impact, technological progress, and community support. The speakers emphasize the network's growth and the role of validators in achieving high transaction volumes, showcasing innovations like Fire Dancer.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2024",
+    "Blockchain",
+    "Crypto",
+    "Technology"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "SolanaFndn",
+    "Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

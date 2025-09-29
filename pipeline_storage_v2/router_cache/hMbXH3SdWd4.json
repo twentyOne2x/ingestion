@@ -1,0 +1,24 @@
+{
+  "description": "Tim Roughgarden discusses results and challenges in cryptoeconomics, comparing it to mechanism design and exploring the unique characteristics of problems in this field. He highlights the interplay between micro and macroeconomic aspects in designing mechanisms that utilize cryptocurrencies.",
+  "topic_summary": "In this talk, Tim Roughgarden examines the complexities of cryptoeconomics, contrasting it with traditional mechanism design. He emphasizes the unique challenges posed by the integration of cryptocurrencies into economic mechanisms, particularly how they affect both micro and macroeconomic outcomes [t=0:56].",
+  "router_tags": [
+    "Cryptoeconomics",
+    "Mechanism Design",
+    "Tim Roughgarden",
+    "Blockchain",
+    "Economics"
+  ],
+  "aliases": [
+    "Tim Roughgarden",
+    "tim roughgarden",
+    "TIM ROUGHGARDEN"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden",
+    "$ETH",
+    "$USDC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

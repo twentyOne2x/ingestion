@@ -1,0 +1,22 @@
+{
+  "description": "This workshop covers the setup of a non-root user for Solana Validator operations, emphasizing the importance of security and best practices in SSH configuration.",
+  "topic_summary": "The session discusses SSH setup for Solana Validators, focusing on creating a non-root user and disabling root login to enhance security. Key points include the risks of using root access and methods to mitigate unauthorized access [t=1:76-78:34].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "SSH",
+    "Security",
+    "Linux"
+  ],
+  "aliases": [
+    "solana validator education",
+    "SSH setup for solana",
+    "solana validator workshop"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

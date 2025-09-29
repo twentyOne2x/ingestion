@@ -1,0 +1,26 @@
+{
+  "description": "Iman Motamity introduces the Solana Incubator Cohort 2 Demo Day, highlighting the program's focus on scaling knowledge and supporting ecosystem growth. The cohort aims to drive real-world adoption of Solana through six teams working on various projects. Manish Dutta from Alpha Ledger discusses their efforts in tokenizing real-world assets, emphasizing their experience and partnerships.",
+  "topic_summary": "The Solana Incubator Cohort 2 focuses on fostering real-world adoption of Solana through collaborative projects. Key presentations include insights from Manish Dutta of Alpha Ledger on tokenizing real-world assets and the importance of institutional partnerships.",
+  "router_tags": [
+    "Solana",
+    "Incubator",
+    "Demo Day",
+    "Tokenization",
+    "Real World Assets",
+    "Crypto Adoption"
+  ],
+  "aliases": [
+    "Solana Incubator",
+    "Solana Cohort 2",
+    "Cohort 2 Demo Day"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ImanMotamity",
+    "@ManishDutta",
+    "@AlphaLedger"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

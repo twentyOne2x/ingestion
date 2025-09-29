@@ -1,0 +1,14 @@
+{
+  "video_id": "CoQDWbWst1I",
+  "title": "2023-07-19_CoQDWbWst1I_Spotlight: Solang",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

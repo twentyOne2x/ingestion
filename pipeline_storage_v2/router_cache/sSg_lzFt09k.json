@@ -1,0 +1,27 @@
+{
+  "description": "Yannick Schrade, co-founder and CEO of Arkium, introduces Archeum, a technology aimed at enhancing privacy and data security through a global supercomputer for hyper-encrypted Internet. The presentation covers the infrastructure for processing encrypted data, the innovations of ARCS OS, and the potential for confidential applications on Solana.",
+  "topic_summary": "Yannick Schrade discusses the development of Archeum, a computational network that enables secure processing of encrypted data, addressing privacy challenges and facilitating confidential applications on Solana. Key innovations include a decentralized operating system and a custom Rust compiler.",
+  "router_tags": [
+    "Archeum",
+    "Arkium",
+    "Data Security",
+    "Privacy",
+    "Solana",
+    "Cryptography",
+    "Confidential Computing"
+  ],
+  "aliases": [
+    "Archeum",
+    "Arkium",
+    "Arqium",
+    "Yannick",
+    "Arqeum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Yannick"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

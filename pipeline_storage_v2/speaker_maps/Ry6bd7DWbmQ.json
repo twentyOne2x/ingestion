@@ -1,0 +1,20 @@
+{
+  "video_id": "Ry6bd7DWbmQ",
+  "title": "2025-05-23_Ry6bd7DWbmQ_Ship or Die at Accelerate 2025: Fireside Chat: Rep. Ritchie Torres (Ritchie Torres, Amira Valliani)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Chris Dixon",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

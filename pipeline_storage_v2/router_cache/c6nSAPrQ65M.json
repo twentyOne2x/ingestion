@@ -1,0 +1,22 @@
+{
+  "description": "Jack, co-founder and CEO of Magic Eden, discusses the journey of Magic Eden, its achievements as the leading NFT marketplace on Solana, and the challenges faced due to the optional royalty trend. He reflects on the team's growth and innovation over the past year, emphasizing the importance of community and collaboration in addressing industry issues.",
+  "topic_summary": "Jack shares insights on Magic Eden's evolution, the impact of optional royalties on the NFT market, and the company's commitment to finding solutions within the Solana ecosystem. He highlights new business models and asset classes as key themes for the future of creator monetization in NFTs.",
+  "router_tags": [
+    "Magic Eden",
+    "NFT Marketplace",
+    "Solana",
+    "Creator Monetization",
+    "Blockchain"
+  ],
+  "aliases": [
+    "magic eden",
+    "Magic eden",
+    "MAGIC EDEN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "i7qE3nDzFeg",
+  "title": "2023-11-02_i7qE3nDzFeg_Breakpoint 2023: How Solana Empowers Consumer Data Sovereignty",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Hugh Rhodes",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

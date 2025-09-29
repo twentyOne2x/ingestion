@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the complexities of mechanism design when incorporating payment constraints, moving beyond the quasilinear utility model. It highlights budget constraints and their implications in various applications, particularly in auctions and advertising.",
+  "topic_summary": "The lecture explores mechanism design with payment constraints, emphasizing budget limitations and their impact on utility maximization. It contrasts traditional models with scenarios where payments are restricted, illustrating the challenges and considerations in designing effective mechanisms [t=1:12 - t=476:14].",
+  "router_tags": [
+    "Mechanism Design",
+    "Game Theory",
+    "Quasilinear Utility",
+    "Budget Constraints",
+    "Auction Theory"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Mechanism Design Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$100",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

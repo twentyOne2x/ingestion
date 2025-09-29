@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses selfish mining strategies in blockchain, focusing on how nodes can deviate from longest chain consensus to maximize rewards. It highlights the historical context of selfish mining research, particularly the work by Eyal and Sarir, and its implications for Nakamoto consensus. The lecture emphasizes the incentives for nodes to unilaterally deviate from honest behavior to increase their share of block rewards.",
+  "topic_summary": "The lecture explores selfish mining, detailing how nodes can profit by deviating from the longest chain consensus protocol. It discusses the foundational work by Eyal and Sarir, the implications for Bitcoin, and the broader context of profit-driven deviations in blockchain behavior. Key concepts include the Nash equilibrium in mining strategies and the importance of block production in maximizing rewards [t=0:48].",
+  "router_tags": [
+    "blockchain",
+    "selfish mining",
+    "Nakamoto consensus",
+    "Eyal",
+    "Sarir",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Selfish Mining",
+    "Selfish mining",
+    "selfish Mining"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "@Eyal",
+    "@Sarir"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

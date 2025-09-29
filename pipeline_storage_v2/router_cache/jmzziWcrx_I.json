@@ -1,0 +1,22 @@
+{
+  "description": "In this video, the host discusses the development of a Unity Web2 game called Legends of the Sun with SpaceMandev. They explore features like item minting as compressed objects and a central limit order book for trading low liquidity items on Solana.",
+  "topic_summary": "Discussion on building Legends of the Sun, a Unity Web2 game, including features like generalized compression and a central limit order book for trading on Solana [t=21:60].",
+  "router_tags": [
+    "Solana",
+    "Legends of the Sun",
+    "Web2 Game",
+    "Game Development",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

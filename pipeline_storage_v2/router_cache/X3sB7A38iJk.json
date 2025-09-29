@@ -1,0 +1,22 @@
+{
+  "description": "Mike Hudack, CEO of Avian Labs, discusses the efficiency and cost-effectiveness of their web3 payments app, Sling, built on Solana. He highlights the advantages of instant and nearly free international money transfers compared to traditional methods.",
+  "topic_summary": "Hudack explains how Sling allows users to transfer money internationally at a fraction of the cost and time compared to traditional services, emphasizing the significant improvements in speed and affordability [t=0:24].",
+  "router_tags": [
+    "web3",
+    "payments",
+    "Solana",
+    "Sling",
+    "international transfers"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

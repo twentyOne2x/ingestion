@@ -1,0 +1,25 @@
+{
+  "description": "Muneeb Ali discusses the potential of Bitcoin Layer 2 solutions, focusing on Stacks and its goal to unlock Bitcoin capital. He highlights the challenges developers face in utilizing Bitcoin for DeFi and introduces recent technical advancements that enhance trust in Bitcoin L2s. Ali also shares plans for integrating Stacks with Solana, aiming to create decentralized bridges for Bitcoin assets.",
+  "topic_summary": "Muneeb Ali presents an overview of Bitcoin L2 developments, emphasizing the need for decentralized solutions to access Bitcoin capital. He outlines the limitations of current systems and the opportunities for developers, particularly in relation to Stacks and its upcoming integration with Solana [t=259:49].",
+  "router_tags": [
+    "Bitcoin",
+    "Stacks",
+    "DeFi",
+    "Solana",
+    "Layer 2"
+  ],
+  "aliases": [
+    "Muneeb Ali",
+    "muneeb",
+    "MUNEEB",
+    "Stacks",
+    "stacks"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@Muneeb"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

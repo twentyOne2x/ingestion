@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on revolutionizing trading cards and the Pokemon market through blockchain technology, focusing on community-driven initiatives and organic growth.",
+  "topic_summary": "The podcast features insights on trading card transactions, the impact of blockchain on the trading card economy, and the importance of community engagement in launching new tokens. Highlights include the evolution from traditional trading to online platforms like eBay and the innovative approaches taken by Collector Crypt to enhance user experience [t=0:16].",
+  "router_tags": [
+    "Trading Cards",
+    "Blockchain",
+    "Crypto",
+    "Community",
+    "P2P Trading"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

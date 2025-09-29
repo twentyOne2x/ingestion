@@ -1,0 +1,27 @@
+{
+  "description": "A debate on whether every large application should launch its own Layer 1 (L1) or Layer 2 (L2) blockchain, featuring insights from industry experts.",
+  "topic_summary": "The discussion highlights the lifecycle of applications transitioning from general-purpose chains to their own L1 or L2 solutions, driven by the need for economic control, customization of block space, and the limitations of existing networks like Solana [t=58:85].",
+  "router_tags": [
+    "blockchain",
+    "L1",
+    "L2",
+    "Solana",
+    "crypto",
+    "decentralization"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2024 Debate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Zucky",
+    "@Ben",
+    "@Mason",
+    "@Lilly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

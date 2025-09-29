@@ -1,0 +1,21 @@
+{
+  "description": "Steven Laver demonstrates how to mint an NFT using Minty Fresh, showcasing a photo taken at the Saga event in Melbourne. The process includes uploading the photo to IPFS and applying signatures through the Soulflare wallet.",
+  "topic_summary": "Minting an NFT with Minty Fresh from a live event photo [t=1:44 - 84:20].",
+  "router_tags": [
+    "NFT",
+    "Minting",
+    "Solana",
+    "Minty Fresh"
+  ],
+  "aliases": [
+    "Minty Fresh",
+    "minty fresh",
+    "Minty fresh"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

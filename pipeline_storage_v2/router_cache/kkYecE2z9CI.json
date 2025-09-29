@@ -1,0 +1,21 @@
+{
+  "description": "Selden discusses Torque, an on-chain growth stack that enables builders to incentivize users for various actions. The platform allows for unique reward mechanisms tied to both on-chain and off-chain actions, such as distributing tokens to users joining a Telegram group. Currently in alpha, interested users can apply for the waitlist.",
+  "topic_summary": "Torque provides a platform for rewarding users through innovative token distribution methods, enhancing user engagement and protocol growth [t=0:16-0:39].",
+  "router_tags": [
+    "Web3",
+    "incentives",
+    "token distribution",
+    "growth stack"
+  ],
+  "aliases": [
+    "Torque",
+    "torque",
+    "TORQUE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion featuring lawmakers Rick Scott, Bill Hagerty, and French Hill on the importance of Congress engaging in digital asset and blockchain policy. They discuss the need for bipartisan support and the potential for innovation in the U.S. crypto landscape.",
+  "topic_summary": "Lawmakers emphasize the significance of legislative engagement in digital assets and blockchain, highlighting the Genius Act and its potential to modernize payment systems and foster innovation in the U.S. [t=1:04] [t=17:80] [t=62:14] [t=170:87]",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Legislation",
+    "Digital Assets",
+    "Innovation",
+    "Genius Act"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Accelerate 2025",
+    "Rick Scott",
+    "Bill Hagerty",
+    "French Hill"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@RickScott",
+    "@BillHagerty",
+    "@FrenchHill"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

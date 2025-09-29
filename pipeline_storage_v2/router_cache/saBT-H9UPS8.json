@@ -1,0 +1,19 @@
+{
+  "description": "Learn how to use the Mint Close Authority Extension on Solana to reclaim rent from temporary tokens. Ensure all tokens are burnt before closing the mint to prevent accidental closures.",
+  "topic_summary": "This video explains the Mint Close Authority Extension for Solana tokens, allowing users to close mints and reclaim rent, provided the token supply is zero [t=20:72].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Mint Close Authority"
+  ],
+  "aliases": [
+    "Learn to Code with Token Extensions",
+    "Mint Close Authority Extension"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

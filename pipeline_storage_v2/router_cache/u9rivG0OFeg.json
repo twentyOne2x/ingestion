@@ -1,0 +1,32 @@
+{
+  "description": "In this episode of the Hive Mind podcast, host Jose Macedou discusses the recent Solana outage and the Jupiter launch with guests Ceteris Paribus, Jan Lieberman, and Duncan. The conversation covers insights into the crypto market, the implications of the outage, and the details surrounding the Jupiter launch pool [t=68:55].",
+  "topic_summary": "The podcast explores the impact of the Solana outage and the launch of the Jupiter protocol, discussing market reactions and technical details of the launch pool [t=68:55].",
+  "router_tags": [
+    "Solana",
+    "Ethereum",
+    "Crypto",
+    "Podcast",
+    "Jupiter",
+    "Outage"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "Delphi Hive",
+    "Jose Macedou",
+    "Ceteris Paribus",
+    "Jan Lieberman",
+    "Duncan",
+    "Flood Capital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@Delphi_Digital",
+    "@Ceteris",
+    "@JanLieberman",
+    "@Duncan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

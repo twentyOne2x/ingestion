@@ -1,0 +1,30 @@
+{
+  "description": "This lecture focuses on parameterized analysis, particularly in computing large independent sets in graphs. It discusses the importance of having a numerical measure of input difficulty and how it can improve algorithm performance. Examples include the analysis of the LRU algorithm and comparisons with FIFO, emphasizing the benefits of parameterized analysis in distinguishing algorithm performance and providing insights on when to use specific algorithms.",
+  "topic_summary": "Lecture on parameterized analysis in algorithms, focusing on independent sets in graphs and performance measures. Discusses the advantages of parameterized analysis over worst-case analysis, including better insights into algorithm performance and guidance on algorithm selection based on input types.",
+  "router_tags": [
+    "Parameterized Analysis",
+    "Algorithm Performance",
+    "Independent Sets",
+    "Graph Theory",
+    "LRU Algorithm",
+    "Algorithm Comparison"
+  ],
+  "aliases": [
+    "Parameterized Analysis",
+    "Parameterized analysis",
+    "algorithm performance",
+    "Independent Sets",
+    "graph theory"
+  ],
+  "canonical_entities": [
+    "$Kirkpatrick",
+    "$Seidel",
+    "$Dorison",
+    "$Reichman",
+    "$Reckman",
+    "$Feiger",
+    "$RyanWilliams"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

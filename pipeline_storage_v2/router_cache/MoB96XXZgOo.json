@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses the properties of longest chain consensus in blockchain systems, focusing on the balance of leader selection. It explores the implications of random leader selection versus deterministic methods, highlighting the probability of Byzantine nodes affecting consensus outcomes.",
+  "topic_summary": "The lecture analyzes how random leader selection can maintain balance in blockchain consensus, emphasizing the need for a majority of honest nodes and the probabilistic nature of finality in permissionless settings. It contrasts random selection with deterministic methods, illustrating potential vulnerabilities.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "random leader selection",
+    "Byzantine fault tolerance"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

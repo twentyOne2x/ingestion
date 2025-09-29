@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the development of Cube, a decentralized exchange aimed at addressing issues faced by centralized exchanges, particularly in the wake of the FTX incident. The speaker outlines the challenges of self-custody and liquidity, and introduces a multi-party computation (MPC) vault for secure token management.",
+  "topic_summary": "The speaker reflects on the evolution of Cube, emphasizing the need for secure self-custody solutions and improved liquidity in decentralized exchanges, while detailing the architecture of their trading platform and its advantages over traditional exchanges [t=4:72-456:41].",
+  "router_tags": [
+    "decentralized exchange",
+    "Cube",
+    "self-custody",
+    "liquidity",
+    "MPC",
+    "trading"
+  ],
+  "aliases": [
+    "Cube",
+    "cube",
+    "CUBE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

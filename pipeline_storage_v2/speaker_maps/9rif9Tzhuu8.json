@@ -1,0 +1,20 @@
+{
+  "video_id": "9rif9Tzhuu8",
+  "title": "2024-08-30_9rif9Tzhuu8_The Innovation Game: The Market-Driven Approach to Solving Big Science Problems",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "John Fletcher",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

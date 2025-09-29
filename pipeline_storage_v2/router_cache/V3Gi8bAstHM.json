@@ -1,0 +1,32 @@
+{
+  "description": "Phil Hettyatnia discusses the importance of design in building user-friendly Web3 products, emphasizing the need for effective communication with users and the consequences of poor design on cryptocurrency adoption. He shares insights from his experiences and references notable figures and companies in the tech space.",
+  "topic_summary": "The talk covers the significance of design in technology, particularly in the context of Web3 and cryptocurrency. Hettyatnia highlights real-world examples, including El Salvador's cryptocurrency initiatives and the challenges faced due to design flaws. He advocates for a user-centered approach to product development.",
+  "router_tags": [
+    "Web3",
+    "Design",
+    "Cryptocurrency",
+    "User Experience",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Phil Hettyatnia",
+    "phil hettyatnia",
+    "Airfoil",
+    "airfoil"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$BTC",
+    "$ETH",
+    "@PPPeter",
+    "@SimonSinek",
+    "@DonNorman",
+    "@Lenovo",
+    "@AppleScience",
+    "@Discord"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

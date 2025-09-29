@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Project Liberty and the Decentralized AI Society, focusing on the importance of individual control over digital lives and the implications of AI in society. Highlights include the need for fiduciary agents and the risks of centralized AI systems [t=0:00].",
+  "topic_summary": "Exploration of the agentic economy and the role of agents in AI, emphasizing the need for individuals to have control over their data and digital identities. The conversation also touches on historical parallels in sports and the evolution of data ownership legislation [t=0:00].",
+  "router_tags": [
+    "Project Liberty",
+    "Decentralized AI",
+    "Data Ownership",
+    "AI Economy",
+    "Fiduciary Agents"
+  ],
+  "aliases": [
+    "Project Liberty",
+    "project liberty",
+    "Decentralized AI Society",
+    "decentralized ai society"
+  ],
+  "canonical_entities": [
+    "$LIBERTY",
+    "@FrankMcCourt",
+    "@MichaelJCasey"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

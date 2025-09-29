@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on crypto trading strategies, focusing on MOBY, DexScreener, and market trends. Insights into the evolution of trading narratives and personal experiences in the crypto space.",
+  "topic_summary": "Exploration of trading dynamics in crypto, including the rise of MOBY and the significance of on-chain activities. The conversation highlights the importance of safe investments and the current market sentiment around high FTV launches [t=125.8].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "MOBY",
+    "DexScreener",
+    "investment strategies"
+  ],
+  "aliases": [
+    "SatsDats",
+    "satsdats",
+    "Sats Dats"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

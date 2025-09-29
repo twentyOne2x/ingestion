@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses issues with proof of stake Byzantine Fault Tolerance (BFT) protocols, focusing on the Tendermint protocol and its implementation challenges. It addresses the need for committee selection and leader identification in a dynamic validator environment, emphasizing the importance of verifiable random functions (VRFs) for sampling committee members and block proposers.",
+  "topic_summary": "The video explores the integration of VRF-based random sampling with the Tendermint protocol, highlighting three key issues related to leader identity, committee selection, and the implications of changing validators over time. It emphasizes the need for shared information between committees to maintain consistency and liveness in the protocol.",
+  "router_tags": [
+    "Blockchain",
+    "Proof of Stake",
+    "Byzantine Fault Tolerance",
+    "Tendermint",
+    "Verifiable Random Functions"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Issues with PoS BFT-Type Protocols",
+    "Tendermint Protocol Issues"
+  ],
+  "canonical_entities": [
+    "$BFT",
+    "$PoS",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

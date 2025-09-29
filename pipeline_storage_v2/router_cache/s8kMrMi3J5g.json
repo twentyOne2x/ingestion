@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, the tutorial covers clockwork threads, randomness, and Zero copy within the context of the Pirate Bootcamp. The session includes a demonstration of deploying a ship and utilizing clockwork threads to automate ship movements every two seconds. Additionally, it explores how to achieve randomness on-chain and the use of the Switchboard Oracle for secure randomness. The episode concludes with a discussion on various triggers for clockwork threads and their applications.",
+  "topic_summary": "The episode focuses on automating transactions using clockwork threads, achieving on-chain randomness, and exploring different triggers for executing instructions. Key concepts include the deployment of ships in a simulated environment and the integration of oracles for enhanced functionality [t=9:12 - t=343:86].",
+  "router_tags": [
+    "Solana",
+    "Oracles",
+    "Clockwork",
+    "Randomness",
+    "Blockchain",
+    "Automation"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Solana Bootcamp",
+    "SOLANA BOOTCAMP"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

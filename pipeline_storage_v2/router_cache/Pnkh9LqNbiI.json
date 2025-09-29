@@ -1,0 +1,22 @@
+{
+  "description": "Mert, co-founder and CEO of Helius, discusses the unique capabilities of the Solana blockchain, emphasizing its strong community and technological advantages. He highlights how Solana enables developers to create decentralized applications efficiently and effectively, with support from a global network of developers.",
+  "topic_summary": "Exploration of Solana's unique blockchain technology and community support for developers, enabling innovative applications and decentralized infrastructure [t=0:24 - t=186:74].",
+  "router_tags": [
+    "Solana",
+    "Helius",
+    "Blockchain",
+    "Decentralized Applications",
+    "Developer Community"
+  ],
+  "aliases": [
+    "Helios",
+    "Helius",
+    "Tealious"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

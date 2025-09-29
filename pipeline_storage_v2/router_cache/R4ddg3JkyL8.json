@@ -1,0 +1,23 @@
+{
+  "description": "Andrea from MagicBlock discusses their framework for on-chain games on Solana, highlighting their game engine, Bolt, which enhances game composability.",
+  "topic_summary": "Andrea introduces MagicBlock, a framework for on-chain games on Solana, emphasizing the Bolt game engine and its composability features [t=8:00].",
+  "router_tags": [
+    "Solana",
+    "MagicBlock",
+    "on-chain games",
+    "game development",
+    "Bolt engine"
+  ],
+  "aliases": [
+    "Magicblock",
+    "magicblock",
+    "MAGICBLOCK"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Andrea"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

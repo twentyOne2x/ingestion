@@ -1,0 +1,23 @@
+{
+  "description": "Ben Brophy discusses Solana's advantages for institutional growth, highlighting its speed, low costs, and developer ecosystem. He emphasizes the collaboration with R3 to enhance digital asset infrastructure.",
+  "topic_summary": "Ben Brophy from Solana Foundation outlines the benefits of Solana for capital markets and its partnership with R3 to support tokenized assets [t=21:04].",
+  "router_tags": [
+    "Solana",
+    "R3",
+    "digital assets",
+    "capital markets",
+    "blockchain"
+  ],
+  "aliases": [
+    "Ben Brophy",
+    "ben brophy",
+    "BEN BROPHY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@R3"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

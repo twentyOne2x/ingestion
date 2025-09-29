@@ -1,0 +1,32 @@
+{
+  "description": "Matt from Metaplex discusses compressed NFTs on Solana, highlighting their cost-effectiveness compared to Ethereum. He explains the infrastructure behind Metaplex, the significance of compressed NFTs, and their potential to unlock new use cases. Various partners and tools supporting this innovation are mentioned, along with examples of applications and experiments in the ecosystem.",
+  "topic_summary": "The presentation covers the advantages of compressed NFTs on Solana, including reduced minting costs and increased accessibility for creators and collectors. It emphasizes the role of Metaplex and its partners in driving adoption and innovation within the NFT space.",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Metaplex",
+    "Compressed NFTs",
+    "Bubblegum",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Compressed Nfts",
+    "Bubblegum Nfts",
+    "Compressed NFTs",
+    "Bubblegum NFTs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@Helios",
+    "@Triton",
+    "@Vercel",
+    "@Underdog",
+    "@Drip",
+    "@Helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

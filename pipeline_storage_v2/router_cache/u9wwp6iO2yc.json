@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Delphi Digital Podcast, host Ceteris discusses the modular approach of Solana with analyst Prasad Mahadik. They explore recent developments in Solana's rollups, the separation of the SVM from the validator client, and the implications for Solana and other blockchain ecosystems. The conversation includes insights on specific rollups like Magic Block and SpiceNet, and the advancements in ZK verification on Solana.",
+  "topic_summary": "The podcast covers Solana's transition to a modular architecture, focusing on the separation of the SVM and its impact on rollups and app chains. It discusses the significance of recent developments and the potential for Solana to evolve in the blockchain landscape [t=101:56].",
+  "router_tags": [
+    "Solana",
+    "Modular Architecture",
+    "Blockchain",
+    "Rollups",
+    "ZK Verification",
+    "Delphi Digital"
+  ],
+  "aliases": [
+    "Prasad Mahadik",
+    "Ceteris",
+    "Delphi Digital",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

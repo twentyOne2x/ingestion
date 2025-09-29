@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Solana Foundation Validator updates, including mainnet updates and the upcoming 2.0 transition. Key points include the recommendation for mainnet update 11823, the timeline for 2.0 adoption post-Breakpoint, and necessary changes for RPC operators. The session also covers documentation updates and the impact of direct memory mapping on transactions.",
+  "topic_summary": "Validator updates and 2.0 transition details discussed, including RPC operator preparations and documentation status. [t=2:64] [t=31:84] [t=189:39]",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "RPC",
+    "Agave",
+    "Mainnet",
+    "2.0"
+  ],
+  "aliases": [
+    "Solana Foundation Validator Discussion",
+    "Solana Validator Discussion",
+    "SolanaFndn",
+    "Solano Foundation Validator Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "W4xm4kuXwQk",
+  "title": "2023-04-06_W4xm4kuXwQk_Spotlight: Discussion on State Compression",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Noah Gundotra",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

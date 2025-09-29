@@ -1,0 +1,23 @@
+{
+  "description": "Nick and Sven discuss ZK compression, a solution for scaling Solana by making account creation cheaper and addressing state growth issues. They explain how ZK compression works, its benefits, and its implications for developers.",
+  "topic_summary": "The keynote covers ZK compression, its role in reducing costs for account creation on Solana, and its potential to solve state growth problems. It emphasizes the ease of integration for developers and the foundational aspects of ZK Compute.",
+  "router_tags": [
+    "ZK Compression",
+    "Solana",
+    "Scaling",
+    "Blockchain",
+    "Developer Tools"
+  ],
+  "aliases": [
+    "zk compression",
+    "ZK Compression",
+    "Zk Compression",
+    "zk-compression"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

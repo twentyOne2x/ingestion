@@ -1,0 +1,25 @@
+{
+  "description": "Overview of the lecture series on blockchain technology, discussing the structure of a blockchain stack and its various layers.",
+  "topic_summary": "The lecture covers the blockchain stack, starting from the Internet layer [t=57:22], moving to the consensus layer [t=106:30], then the scaling layer [t=208:65], and finally the application layer [t=291:59]. It highlights the importance of each layer and their functionalities.",
+  "router_tags": [
+    "blockchain",
+    "lecture",
+    "technology",
+    "Ethereum",
+    "Bitcoin",
+    "Uniswap"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 1.2",
+    "Blockchain Overview"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$UNI",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

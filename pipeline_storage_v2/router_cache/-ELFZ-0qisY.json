@@ -1,0 +1,24 @@
+{
+  "description": "Lecture on Markov Chain Analysis in blockchain strategies, discussing the implications of node A's hash rate and the effects of orphaned blocks on consensus.",
+  "topic_summary": "Explores the analysis of blockchain strategies using Markov chain analysis, detailing the states of a Markov chain related to node A's lead in block production and the consequences of orphaning blocks [t=0:56].",
+  "router_tags": [
+    "Blockchain",
+    "Markov Chain",
+    "Cryptocurrency",
+    "Consensus",
+    "Node Strategy"
+  ],
+  "aliases": [
+    "Markov Chain Analysis",
+    "markov chain analysis",
+    "markov chain",
+    "Markov",
+    "markov"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Jason Li from Solaire discusses the concept of restaking in crypto, emphasizing its significance on the Solana blockchain. He highlights the advantages of restaking, including cost efficiency and faster transactions compared to Ethereum. Li introduces Solaire's innovative solutions for liquidity and the announcement of a new yield-bearing token, SUSD, backed by RWA assets.",
+  "topic_summary": "In this keynote, Jason Li explains restaking in crypto, its implications for Solana, and introduces Solaire's new yield-bearing token, SUSD, aimed at enhancing liquidity and user experience in the ecosystem. Key points include the benefits of restaking, the importance of a cost-effective base chain, and the introduction of stable assets.",
+  "router_tags": [
+    "Solana",
+    "Restaking",
+    "Solaire",
+    "Crypto",
+    "Yield",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solaire",
+    "solaire",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

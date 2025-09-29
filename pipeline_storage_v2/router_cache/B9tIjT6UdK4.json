@@ -1,0 +1,25 @@
+{
+  "description": "Austin Federa welcomes attendees to Breakpoint 2022 in Lisbon, highlighting the growth of the event with over 3,600 participants. The conference features various venues with technical workshops, updates from the Solana ecosystem, and discussions on blockchain's future. Key topics include Solana Mobile updates, the Helium migration to Solana, and insights from Anatoly, co-founder of Solana, on engineering challenges.",
+  "topic_summary": "Breakpoint 2022 in Lisbon showcases the Solana ecosystem with workshops, major updates, and discussions on blockchain technology. Highlights include Solana Mobile updates, Helium's migration, and engineering challenges presented by Anatoly.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2022",
+    "Blockchain",
+    "Conference",
+    "Helium",
+    "Anatoly"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "solana",
+    "solana foundation",
+    "solana fndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

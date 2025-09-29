@@ -1,0 +1,25 @@
+{
+  "description": "Juan Otero discusses Travala, a Web3 travel booking platform, targeting 1.5 billion travelers. He highlights the integration of Solana, offering zero transaction fees and various crypto assets. The AVA Smart program provides loyalty benefits, including discounts and airport lounge access.",
+  "topic_summary": "At [t=00:00], Juan Otero introduces Travala's mission to revolutionize travel booking with Web3 technology. He emphasizes the platform's growth and integration with Solana, enhancing user experience with crypto payments and loyalty rewards. The AVA Smart program is introduced at [t=04:08], offering unique benefits to users.",
+  "router_tags": [
+    "Travala",
+    "Web3",
+    "Travel Booking",
+    "Solana",
+    "Crypto Loyalty"
+  ],
+  "aliases": [
+    "Travala",
+    "travala",
+    "AVA",
+    "ava",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$AVA",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

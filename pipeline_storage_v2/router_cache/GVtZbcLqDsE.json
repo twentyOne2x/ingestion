@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on interoperability protocols in blockchain, focusing on bridging solutions between Ethereum and Solana. Panelists include Praneet from Moongate, Aakash from Wormhole Labs, and Alex from dbridge, who share insights on their respective technologies and user experiences.",
+  "topic_summary": "Exploration of blockchain interoperability, emphasizing the importance of protocols for transferring value between different chains. The panelists discuss their roles in enhancing cross-chain communication and the user experience when interacting with bridges [t=3:60 - t=298:66].",
+  "router_tags": [
+    "Blockchain",
+    "Interoperability",
+    "Solana",
+    "Ethereum",
+    "Cross-Chain",
+    "Bridges",
+    "DeFi"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Bridge Technologies",
+    "Solana Interoperability"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "USDC",
+    "@Praneet",
+    "@Aakash",
+    "@Alex",
+    "@Moongate",
+    "@Wormhole",
+    "@dbridge"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

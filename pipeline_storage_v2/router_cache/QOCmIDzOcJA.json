@@ -1,0 +1,29 @@
+{
+  "description": "This lecture discusses best-response dynamics in algorithmic game theory, exploring how players can reach equilibria in games and the learning algorithms involved in this process.",
+  "topic_summary": "The lecture focuses on the concept of best-response dynamics, examining how players can achieve a pure strategy Nash equilibrium through iterative processes. It addresses the challenges of computing equilibria quickly and the need for models that describe player behavior when not at equilibrium. Key questions include how players coordinate and learn to reach equilibria, and the implications for analyzing systems like auctions and networks. [t=1:36] [t=9:28] [t=277:38]",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Best-Response Dynamics",
+    "Nash Equilibrium",
+    "Learning Algorithms",
+    "Equilibria"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Best-Response Dynamics",
+    "Nash Equilibrium",
+    "Learning Algorithms"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$Rosenthal",
+    "$ShannonSinclair",
+    "$Lipschitz",
+    "$ChezyNash",
+    "$Mondor",
+    "$Shapley",
+    "$Schroderness"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

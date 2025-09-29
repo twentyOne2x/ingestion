@@ -1,0 +1,20 @@
+{
+  "video_id": "1Jju2l3w2_w",
+  "title": "2023-02-08_1Jju2l3w2_w_Getting Started with Solana: Gaming",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Kyle Soul",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

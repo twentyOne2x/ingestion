@@ -1,0 +1,22 @@
+{
+  "description": "Nicholas Penny discusses the scaling of NFT compression to production, detailing the journey from initial concepts to stable implementation. He explains the benefits of compressed NFTs, including cost efficiency and secure storage using Merkle trees.",
+  "topic_summary": "The talk covers the evolution of NFT compression, its technical underpinnings, and the advantages it offers for minting NFTs at a lower cost, with a focus on the role of Merkle trees in ensuring data integrity [t=70:18].",
+  "router_tags": [
+    "NFT",
+    "compression",
+    "Solana",
+    "Merkle trees",
+    "blockchain"
+  ],
+  "aliases": [
+    "@Solanafndn",
+    "@solanafndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

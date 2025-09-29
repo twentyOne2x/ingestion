@@ -1,0 +1,26 @@
+{
+  "description": "Trevor Harris Jones and Jules Urbach discuss the Render Network's decentralized compute capabilities, GPU scarcity, and the future of AI and rendering technologies.",
+  "topic_summary": "The conversation covers the evolution of rendering technology, the role of decentralized systems in GPU computing, and the potential of Deepin in transforming industries [t=0:16].",
+  "router_tags": [
+    "Render",
+    "DePIN",
+    "Solana",
+    "Decentralized Computing",
+    "AI",
+    "GPU",
+    "Deepin"
+  ],
+  "aliases": [
+    "Render Network",
+    "Render",
+    "Trevor Harris Jones",
+    "Jules Urbach"
+  ],
+  "canonical_entities": [
+    "$RNDR",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

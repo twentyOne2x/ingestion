@@ -1,0 +1,22 @@
+{
+  "description": "Vanessa from Drift Protocol discusses the importance of mobile user experience in trading, highlighting user behavior and preferences for mobile platforms. She shares insights on mobile usage statistics, user engagement, and key considerations for developing mobile applications.",
+  "topic_summary": "Vanessa outlines Drift Protocol's approach to mobile user experience, emphasizing the growing demand for mobile trading capabilities and the need for effective design strategies to cater to mobile users [t=8:72].",
+  "router_tags": [
+    "Mobile User Experience",
+    "Drift Protocol",
+    "Trading",
+    "Design Strategies",
+    "Web3"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@DriftProtocol"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

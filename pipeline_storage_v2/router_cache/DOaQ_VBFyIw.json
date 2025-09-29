@@ -1,0 +1,20 @@
+{
+  "description": "Core community call discussing feature gate threshold activation, led by Joe. The proposal aims to automate the activation process for features based on validator support, requiring 95% stake before activation. The process involves signaling support through a bit mask and managing feature gates across epic boundaries.",
+  "topic_summary": "Discussion on automating feature gate activation in Solana, focusing on validator support and the proposed use of bit masks to manage feature sets across epic boundaries. Key points include the need for 95% stake support and the role of PDAs in the process.",
+  "router_tags": [
+    "Solana",
+    "Feature Activation",
+    "Community Call"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

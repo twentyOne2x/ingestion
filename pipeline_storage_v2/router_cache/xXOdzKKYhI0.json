@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of Breakpoint 2023, Sam Rune discusses the evolution of Maker and its DAO structure, emphasizing the importance of resilience and governance in decentralized finance. He outlines the challenges faced as Maker scaled, particularly with managing a $5 billion stablecoin, DAI. Rune introduces the concept of subDAOs as a solution to enhance flexibility and decision-making within the DAO framework, aiming for a more robust governance model that parallels political science principles.",
+  "topic_summary": "Sam Rune from Maker shares insights on building resilient DAOs, the challenges of scaling Maker, and the innovative concept of subDAOs to improve governance and stability in decentralized finance [t=0:24 - t=369:74].",
+  "router_tags": [
+    "Maker",
+    "DAO",
+    "DeFi",
+    "subDAOs",
+    "blockchain",
+    "governance",
+    "stablecoin"
+  ],
+  "aliases": [
+    "sam rune",
+    "Sam Rune",
+    "Maker",
+    "maker"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

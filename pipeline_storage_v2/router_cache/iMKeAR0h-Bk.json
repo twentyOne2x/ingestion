@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses an approach to implementing a randomness beacon by crowdsourcing randomness from nodes in a proof of stake context. It explores the challenges of ensuring randomness without relying on external processes and emphasizes the need for cooperation among nodes. The lecture also critiques a naive method of using XOR for randomness generation and outlines the conditions under which it could be effective.",
+  "topic_summary": "The lecture focuses on crowdsourcing randomness in blockchain protocols, particularly in proof of stake systems. It examines the limitations of existing methods and proposes a model where nodes generate and contribute randomness locally, aiming for a reliable output despite potential Byzantine failures. The discussion includes the XOR method for combining randomness contributions and its implications for security and reliability.",
+  "router_tags": [
+    "blockchain",
+    "randomness beacon",
+    "crowdsourcing",
+    "proof of stake",
+    "Nakamoto Consensus"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

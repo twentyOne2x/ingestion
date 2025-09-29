@@ -1,0 +1,21 @@
+{
+  "description": "Andy discusses the importance of creating engaging content, particularly in the context of Solana development. He shares tips on how to get started, experiment with different formats, and maintain motivation while creating content.",
+  "topic_summary": "In this talk, Andy emphasizes the significance of good content for spreading awareness about Solana and educating users. He provides practical advice on content creation, including starting without perfection, experimenting with formats, and focusing on topics that inspire passion [t=1:76-326:23].",
+  "router_tags": [
+    "Solana",
+    "Content Creation",
+    "Development",
+    "Education"
+  ],
+  "aliases": [
+    "Sol Andy",
+    "sol andy",
+    "SOL ANDY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

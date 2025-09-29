@@ -1,0 +1,25 @@
+{
+  "description": "John and Colin from the Solana Foundation discuss the latest updates including the launch of the OpenAI ChatGPT plugin for Solana, the introduction of the Euro East Stablecoin, and new features like Sign in with Solana and Shopify integration.",
+  "topic_summary": "Highlights from the Solana Changelog include the OpenAI ChatGPT plugin [t=5:36], Euro East Stablecoin [t=28:42], Sign in with Solana [t=80:23], and Shopify integration [t=130:62].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "ChatGPT",
+    "Stablecoin",
+    "Sign in with Solana",
+    "Shopify"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@phantom",
+    "@Shopify"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

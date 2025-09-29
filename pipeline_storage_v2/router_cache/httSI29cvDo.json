@@ -1,0 +1,24 @@
+{
+  "description": "Delphi Digital hosts a panel featuring Ilya and Alex, co-founders of NEAR, discussing the intersection of cryptocurrency and AI, including the significance of the 'Attention is All You Need' paper and its impact on AI applications like ChatGPT.",
+  "topic_summary": "The panel explores NEAR's origins in AI, the development of the Transformer model, and its implications for natural language processing and AI applications [t=0:24-486:46].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "NEAR",
+    "Blockchain",
+    "Natural Language Processing"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "Delphi_digital",
+    "DelphiDigital"
+  ],
+  "canonical_entities": [
+    "$NEAR",
+    "@Delphi_Digital",
+    "@Ilya",
+    "@Alex"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

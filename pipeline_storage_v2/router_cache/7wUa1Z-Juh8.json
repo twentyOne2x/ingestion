@@ -1,0 +1,25 @@
+{
+  "description": "Yuan Gao, co-founder of Gradient Network, presents the vision for Edge Compute on Solana, introduces the Sentrinode product, and discusses the importance of low latency and decentralized connectivity.",
+  "topic_summary": "In this keynote, Yuan Gao outlines Gradient Network's approach to Edge Compute, emphasizing locality and dispersion, and introduces Sentrinode, a lightweight client for peer-to-peer connections. The presentation highlights the potential of Edge Compute in various verticals and the importance of a robust connectivity layer [t=6:24 - t=326:32].",
+  "router_tags": [
+    "Edge Compute",
+    "Gradient Network",
+    "Sentrinode",
+    "Solana",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Yuan Gao",
+    "yuan gao",
+    "Yuan g.",
+    "gradient network",
+    "Gradient Network"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@YuanGao"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

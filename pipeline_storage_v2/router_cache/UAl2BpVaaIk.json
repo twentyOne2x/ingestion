@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Delphi Podcast, Sriram, founder of Eigenlayer, discusses the protocol's innovative approach to decentralized trust and its implications for building new crypto applications. He explains the concept of restaking and how Eigenlayer allows protocols to inherit Ethereum's security by leveraging staked ETH. The conversation also covers the role of actively validated services (AVS) within the Eigenlayer ecosystem and the importance of validation in the crypto space.",
+  "topic_summary": "Sriram explains Eigenlayer's forkable token system, emphasizing decentralized trust and the concept of restaking [t=59.03]. He discusses the significance of actively validated services (AVS) and their role in the crypto ecosystem [t=246.56].",
+  "router_tags": [
+    "Eigenlayer",
+    "Decentralized Trust",
+    "Restaking",
+    "AVS",
+    "Crypto Applications"
+  ],
+  "aliases": [
+    "Eigenlayer",
+    "Eigen Layer",
+    "Eigen Layer Protocol"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$CEL",
+    "@Sriram",
+    "@Jose"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

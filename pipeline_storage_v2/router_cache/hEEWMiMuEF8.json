@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the Firedancer update for Solana, detailing its goals to enhance validator diversity and performance. The Firedancer project aims to reimplement the validator code base for maximum efficiency and reliability, led by Jump Trading's Kevin Bowers. The importance of having multiple independent validators is emphasized to ensure network resiliency.",
+  "topic_summary": "Firedancer is a new validator implementation for Solana, focusing on optimizing performance and increasing validator diversity. The project is spearheaded by Jump Trading, aiming to eliminate software inefficiencies and ensure the network's long-term decentralization and reliability. [t=26:89] [t=119:50]",
+  "router_tags": [
+    "Solana",
+    "Firedancer",
+    "validator",
+    "Jump Trading",
+    "network performance",
+    "decentralization"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Fire Dancer",
+    "FIRE DANCER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JumpTrading",
+    "@KevinBowers"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

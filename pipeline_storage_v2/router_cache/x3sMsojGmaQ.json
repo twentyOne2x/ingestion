@@ -1,0 +1,23 @@
+{
+  "description": "This week's Changelog discusses updates on Solana, including the ongoing Grizzly Thon hackathon, the third core Community call, and a unique public debug session for a bug in version 1.14. A proposal for epoch rewards is highlighted, aiming to improve the calculation and distribution process. New commits on cost tracking and the introduction of Rust-based frameworks Oxylana and Kaizen are also covered.",
+  "topic_summary": "Updates on Solana's ecosystem including Grizzly Thon hackathon [t=9.60], Community call [t=19.20], public debug session [t=44.30], epoch rewards proposal [t=90.17], and new Rust frameworks [t=210.58].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Epoch Rewards",
+    "Grizzly Thon",
+    "Debug Session",
+    "Rust Frameworks"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

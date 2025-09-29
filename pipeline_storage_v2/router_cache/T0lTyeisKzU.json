@@ -1,0 +1,25 @@
+{
+  "description": "Nick from the Solana Foundation discusses validator security with Guy from Latitude Sh and Tim from Solana Foundation. They cover physical and virtual security measures for servers, including two-factor authentication, SSH provisioning, and the importance of wiping machines after decommissioning. They emphasize the need for trusted operating systems and the separation of withdrawal keys from validator servers to enhance security. DDoS attack mitigation strategies are also discussed, highlighting the importance of throughput and intelligence in defense mechanisms.",
+  "topic_summary": "Discussion on Solana validator security practices, including server security, key management, and DDoS attack mitigation strategies [t=0:24 - t=4:57].",
+  "router_tags": [
+    "Solana",
+    "Validator Security",
+    "DDoS Mitigation",
+    "Cybersecurity",
+    "Infrastructure"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA",
+    "solana validator",
+    "Validator Security"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the evolution of decentralization from Zappos to Web3, focusing on go-to-market strategies for decentralized applications.",
+  "topic_summary": "The conversation explores the transition from traditional business models to decentralized governance, highlighting customer acquisition tactics and the importance of user engagement in Web3 [t=272.53].",
+  "router_tags": [
+    "Web3",
+    "Decentralization",
+    "Go To Market",
+    "Customer Acquisition",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: Going to Market",
+    "Breakpoint2023: Insights from a16z"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

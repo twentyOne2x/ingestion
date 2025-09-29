@@ -1,0 +1,20 @@
+{
+  "video_id": "ztj7VY9MsVo",
+  "title": "2025-04-07_ztj7VY9MsVo_Travis Good: Machine Intelligence as New Currency-Ambient, a Decentralized PoW Rival to OpenAI",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ashton Brenner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

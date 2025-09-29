@@ -1,0 +1,23 @@
+{
+  "description": "Michael Rinko and Kevin Kelly discuss the impact of attention on market dynamics, focusing on meme coins and their role in the current market cycle. They explore how attention influences demand and the sustainability of assets, referencing the evolution of market trends from L1 trades to meme coins.",
+  "topic_summary": "The podcast delves into how attention drives market behavior, particularly in the context of meme coins and their growing significance. Rinko shares insights from his report on the subject, while Kelly emphasizes the importance of attention in influencing market demand and asset valuation. Key questions about the long-term viability of meme coins are also addressed [t=267.18].",
+  "router_tags": [
+    "Attention Economy",
+    "Meme Coins",
+    "Market Dynamics",
+    "Crypto Trends",
+    "Valuation"
+  ],
+  "aliases": [
+    "Michael Rinko",
+    "Kevin Kelly",
+    "Delphi Digital",
+    "Kev"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

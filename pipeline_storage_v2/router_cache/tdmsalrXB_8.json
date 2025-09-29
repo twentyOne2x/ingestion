@@ -1,0 +1,23 @@
+{
+  "description": "Duran Li discusses tools and techniques developed at Messari to build data-driven applications on Solana, addressing challenges like data fragmentation and ingestion. He shares insights on creating a community-focused Solana portal and the evolution of their data processing from ETL to ELT, emphasizing the importance of data observability and governance in AI applications.",
+  "topic_summary": "In this talk, Duran Li presents strategies for building insightful applications on Solana, focusing on data challenges and solutions, including the development of a community portal and the transition to improved data processing methodologies [t=10:48].",
+  "router_tags": [
+    "Solana",
+    "Messari",
+    "Data Engineering",
+    "AI",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Duran Li",
+    "Duran Ct",
+    "Messari"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@messari"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

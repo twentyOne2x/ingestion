@@ -1,0 +1,14 @@
+{
+  "video_id": "KOGxEm2yEuw",
+  "title": "2025-05-22_KOGxEm2yEuw_Ship or Die at Accelerate 2025: Fireside Chat (Jeremy Allaire, Anatoly Yakovenko, Dan Albert)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

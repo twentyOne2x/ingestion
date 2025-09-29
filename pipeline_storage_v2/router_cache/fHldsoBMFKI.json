@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses a greedy heuristic for the maximum coverage problem, explaining its guarantees on coverage relative to the optimal solution. The greedy algorithm's performance is analyzed through examples and key lemmas, illustrating how it approaches optimality despite potential missteps.",
+  "topic_summary": "The greedy algorithm for maximum coverage guarantees a coverage of at least 1 - 1/k of the optimal solution, with specific percentages provided for different values of k. The lecture explores the algorithm's iterations and the concept of deficiency in coverage, leading to a proof of the algorithm's effectiveness.",
+  "router_tags": [
+    "Algorithms",
+    "Greedy Heuristic",
+    "NP-Hard Problems",
+    "Maximum Coverage"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$COVERAGE",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

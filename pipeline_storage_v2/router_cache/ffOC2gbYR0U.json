@@ -1,0 +1,25 @@
+{
+  "description": "Courtney from Solana Foundation and Marina Guriva from NEON Labs discuss the advancements made in the past year, focusing on development, integration, and community growth. They highlight the successful launch of Neonvium on Solana Devnet and the challenges faced in bridging Ethereum and Solana ecosystems.",
+  "topic_summary": "The session covers NEON Labs' progress over the past year, including code development, security audits, community engagement, and the challenges of integrating Ethereum applications into the Solana ecosystem [t=0:00-0:00].",
+  "router_tags": [
+    "Solana",
+    "Neon",
+    "Ethereum",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Neon Labs",
+    "Marina Guriva"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@courtney",
+    "@marinaguriva"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

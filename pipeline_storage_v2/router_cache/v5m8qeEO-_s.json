@@ -1,0 +1,23 @@
+{
+  "description": "Discussion with co-founders of Coliseum, a hackathon platform for the Solana ecosystem, covering their backgrounds and the platform's impact.",
+  "topic_summary": "The conversation explores the significance of Coliseum in the Solana ecosystem, featuring insights from co-founders Maddie, Clay, and Nate about their experiences and the platform's goals [t=40:54].",
+  "router_tags": [
+    "Solana",
+    "Coliseum",
+    "hackathon",
+    "crypto",
+    "blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Coliseum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

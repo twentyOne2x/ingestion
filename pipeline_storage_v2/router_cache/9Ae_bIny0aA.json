@@ -1,0 +1,21 @@
+{
+  "description": "Lecture discussing the impossibility of achieving consensus in asynchronous models, focusing on Byzantine agreement protocols. It covers the definition of protocols, the role of nodes, and the conditions required for a protocol to solve the Byzantine agreement problem.",
+  "topic_summary": "The lecture explains the Byzantine agreement problem, contrasting it with Byzantine broadcast and emphasizing the need for consensus among nodes without a distinguished sender. It outlines the properties of termination, agreement, and validity necessary for a successful protocol.",
+  "router_tags": [
+    "Byzantine Agreement",
+    "Consensus Protocols",
+    "Blockchain",
+    "Distributed Systems"
+  ],
+  "aliases": [
+    "Byzantine Agreement",
+    "byzantine agreement",
+    "BYZANTINE AGREEMENT"
+  ],
+  "canonical_entities": [
+    "$BYZ",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

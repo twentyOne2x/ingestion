@@ -1,0 +1,24 @@
+{
+  "description": "Andrew Tate discusses his entry into the crypto space, sharing insights on his early investments and the importance of hard work in achieving success. He reflects on his experiences during the bull run and the COVID crash, emphasizing the risks of promoting easy money in crypto.",
+  "topic_summary": "Andrew Tate reveals his journey in crypto, mentioning his investments during significant market events and the lessons he believes are crucial for newcomers. He stresses the need for hard work rather than relying on luck.",
+  "router_tags": [
+    "Andrew Tate",
+    "Crypto",
+    "Investing",
+    "Bitcoin",
+    "Ethereum",
+    "Pancake Swap"
+  ],
+  "aliases": [
+    "Andrew Tate",
+    "andrew tate",
+    "ANDREW TATE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

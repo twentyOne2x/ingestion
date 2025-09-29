@@ -1,0 +1,23 @@
+{
+  "description": "This episode of Solana Bytes discusses the Mint close authority extension, enabling the closure of mint accounts in the token 2022 program. It covers the process of creating a token mint, applying the extension, and closing the account, emphasizing that a token mint can only be closed if its supply is zero.",
+  "topic_summary": "Exploration of the Mint close authority extension in the Solana token program, including practical implementation and limitations [t=0:24 - t=98:07].",
+  "router_tags": [
+    "Solana",
+    "Token Mint",
+    "Mint Close Authority",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

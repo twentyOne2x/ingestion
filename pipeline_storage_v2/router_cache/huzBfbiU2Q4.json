@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the future of Ethereum and its ecosystem, focusing on the role of Mega Eth and Hyper Liquid in 2025. The conversation highlights the shift towards application-centric development and the diminishing interest in infrastructure alone.",
+  "topic_summary": "Exploration of Ethereum's trajectory in 2025, emphasizing the importance of applications over infrastructure [t=76:49].",
+  "router_tags": [
+    "Ethereum",
+    "Mega Eth",
+    "Hyper Liquid",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "BreadGuy",
+    "Mega Eth",
+    "Hyper Liquid"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "@notthreadguy",
+    "@breadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

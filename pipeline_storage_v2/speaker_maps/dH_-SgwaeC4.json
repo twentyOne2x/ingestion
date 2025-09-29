@@ -1,0 +1,14 @@
+{
+  "video_id": "dH_-SgwaeC4",
+  "title": "2025-06-25_2023-11-01_dH_-SgwaeC4_Breakpoint 2023: OPOS - Orca",
+  "channel_name": null,
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "Speaker A",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    }
+  }
+}

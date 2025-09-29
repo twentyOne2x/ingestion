@@ -1,0 +1,22 @@
+{
+  "description": "A presentation reviewing significant hacks in the Solana ecosystem, discussing incidents, patterns, and preventative measures.",
+  "topic_summary": "Overview of Solana hacks in 2022, including major incidents like Wormhole and Mango, and analysis of the Nirvana hack [t=228.45].",
+  "router_tags": [
+    "Solana",
+    "hacks",
+    "blockchain",
+    "security",
+    "defi"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Solana Hacks",
+    "Solana Security"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

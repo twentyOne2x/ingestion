@@ -1,0 +1,25 @@
+{
+  "description": "Defi Pancakes discusses Titan Meta Aggregator's mission to optimize swap execution on Solana using LightSVM, a fast and flexible Solana VM for simulating transactions. He shares his background in crypto and the development of Titan's proprietary routing algorithm, Talos, which aims to provide the best swap prices. The presentation highlights the importance of simulating transactions at scale and the advantages of LightSVM in testing smart contracts and verifying logic.",
+  "topic_summary": "Defi Pancakes presents Titan Meta Aggregator's use of LightSVM for optimizing swap execution on Solana, detailing its features and benefits for developers in the crypto space. He emphasizes the need for efficient testing and simulation tools in building decentralized applications.",
+  "router_tags": [
+    "Solana",
+    "LightSVM",
+    "Titan Meta Aggregator",
+    "Defi Pancakes",
+    "Crypto Development",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "defi pancakes",
+    "Defi Pancakes",
+    "Titan Meta Aggregator",
+    "Titan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$10 Million Usdc"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

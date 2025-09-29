@@ -1,0 +1,22 @@
+{
+  "description": "Mike MacCana welcomes attendees to the developer stage at Breakpoint 2023, emphasizing the significance of building on Solana. He introduces upcoming talks on on-chain program security and the new web3js, highlighting the importance of these topics for developers. He also discusses community engagement, decentralized governance, and the interactive experiences available at the conference.",
+  "topic_summary": "Kick-off of Breakpoint 2023 by Mike MacCana, focusing on Solana development, upcoming talks on program security and web3js, and community discussions on governance and engagement. [t=1:84] [t=54:98] [t=104:39]",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2023",
+    "web3js",
+    "on-chain security",
+    "decentralized governance"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

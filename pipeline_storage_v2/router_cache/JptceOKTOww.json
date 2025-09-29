@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly Yakovenko discusses the advantages of Solana's technology over existing centralized systems, emphasizing its speed, cost-effectiveness, and the benefits of decentralization.",
+  "topic_summary": "Yakovenko highlights how Solana's decentralized approach leads to a superior system compared to centralized servers, arguing that the constraints of decentralization drive innovation and improvement [t=0:16 - t=46:23].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Decentralization",
+    "Technology",
+    "Breakpoint 2023"
+  ],
+  "aliases": [
+    "Anatoly Yakovenko",
+    "anatoly yakovenko",
+    "ANATOLY YAKOVENKO"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

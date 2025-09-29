@@ -1,0 +1,23 @@
+{
+  "description": "Tong from Hollow World discusses building in crypto, AI media content, and the evolution of digital identity. He shares his journey from AI engineering to creating an ecosystem for content creation, emphasizing the importance of user experience in crypto.",
+  "topic_summary": "Tong explains Hollow World's role in content creation and digital identity, detailing his background in AI and crypto, and the development of innovative products like animated NFTs and customizable avatars [t=0:48-185:26].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Media",
+    "Web3",
+    "NFTs"
+  ],
+  "aliases": [
+    "Tong",
+    "Hollow World",
+    "Holo World"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

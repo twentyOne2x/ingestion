@@ -1,0 +1,23 @@
+{
+  "description": "This week's Changelog discusses the ongoing Game Jam, the RFC for Real World Assets Security Token Standard, improvements in program deployment speed, and the release of a new Solana Boot Camp series.",
+  "topic_summary": "The Game Jam is currently active with themes around upgrades, while the Oppos hackathon is also underway. RFC 20 proposes a new standard for security tokens focused on real estate. Improvements in program deployment speed are noted, and a new pirate-themed Boot Camp series has been released for developers. [t=10:12] [t=39:18] [t=74.89] [t=110.88] [t=169.12]",
+  "router_tags": [
+    "Solana",
+    "Game Jam",
+    "RFC 20",
+    "Real World Assets",
+    "Boot Camp"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "solana updates",
+    "Solana Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

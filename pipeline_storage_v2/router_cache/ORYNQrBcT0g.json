@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses security best practices for Solana validators, focusing on Ubuntu security and key management. It highlights the importance of using SSH keys for login, disabling password authentication, and considering two-factor authentication. The speaker shares experiences of compromised identity keys and offers strategies to enhance validator security.",
+  "topic_summary": "Security best practices for Solana validators, including Ubuntu hardening, key security, and community discussion on effective methods [t=52:82].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Security",
+    "Best Practices",
+    "Ubuntu"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Solana Validator Security",
+    "Solana Security Best Practices"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 10 discusses the foundations of blockchains, focusing on block rewards and the incentives for nodes to participate in consensus protocols. It highlights the importance of native currencies in blockchain protocols and how they can motivate nodes to contribute to the network.",
+  "topic_summary": "This lecture addresses the role of block rewards in motivating nodes to run consensus protocols, particularly in permissionless contexts. It also explores the concept of native currencies and their significance in blockchain protocols, setting the stage for future discussions on transaction fees and proof of stake.",
+  "router_tags": [
+    "blockchain",
+    "block rewards",
+    "incentives",
+    "native currency",
+    "consensus protocols"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 10.1",
+    "Block Rewards"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$BTC",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

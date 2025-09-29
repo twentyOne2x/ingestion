@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the viability of Crypto AI, featuring insights from industry leaders Kyle Samani and Imad. The conversation explores the hype surrounding Crypto AI and its potential as vaporware, focusing on decentralized compute marketplaces and the challenges of financializing compute.",
+  "topic_summary": "Debate on whether Crypto AI is vaporware, highlighting the excitement around GPU marketplaces and the complexities of financializing compute [t=68:00].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Vaporware",
+    "Decentralized Applications",
+    "Compute Marketplaces"
+  ],
+  "aliases": [
+    "Crypto x AI Event",
+    "Crypto AI Debate",
+    "Going Beyond the Hype"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$BTC",
+    "@Kyle_Samani",
+    "@Imad",
+    "$35 Billion",
+    "$4 Billion"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

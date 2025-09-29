@@ -1,0 +1,20 @@
+{
+  "video_id": "61ij0-yhi0s",
+  "title": "2023-11-03_61ij0-yhi0s_Breakpoint 2023: How Should Web3 Games Acquire Users",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "D": {
+      "name": "Pages Parallel",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

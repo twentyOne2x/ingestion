@@ -1,0 +1,30 @@
+{
+  "description": "Alan Chang, founder and CEO of Fuse, discusses the urgent need for a decentralized energy network to address energy consumption and carbon emissions. He introduces Project Zero, which enables users to contribute to decarbonizing the grid and earn tokens through various actions, such as reducing energy usage during peak times and utilizing public EV charging. The initiative aims to make energy clean, affordable, and abundant while incentivizing renewable energy generation.",
+  "topic_summary": "In this keynote, Alan Chang outlines the challenges of energy production and consumption, emphasizing the need for a decentralized energy network. Project Zero aims to facilitate user participation in energy management and promote renewable energy solutions. The presentation highlights the economic implications of energy transition and the role of technology in achieving sustainability goals [t=10:40].",
+  "router_tags": [
+    "Energy",
+    "Decentralized Network",
+    "Renewable Energy",
+    "Project Zero",
+    "Sustainability",
+    "Token Economy"
+  ],
+  "aliases": [
+    "Project Zero",
+    "project zero",
+    "Fuse Energy",
+    "fuse energy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$90 Million",
+    "@Multicoin",
+    "@Revolut",
+    "@Citadel",
+    "@Tesla"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

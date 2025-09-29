@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on surviving in the current crypto landscape with insights from EasyEats.",
+  "topic_summary": "Exploration of market pressures and strategies in crypto trading, including references to various entities and market dynamics [t=1:40][t=1440:57].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "survival",
+    "market dynamics"
+  ],
+  "aliases": [
+    "Easyeats",
+    "EasyEats",
+    "easyEats"
+  ],
+  "canonical_entities": [
+    "$SAVA",
+    "@jean",
+    "@jesus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Cathie Wood discusses her insights on Solana, Ethereum, and the crypto market, highlighting Solana's resilience and developer growth. She reflects on the impact of Bitcoin ETFs and the potential for a Solana ETF to attract new investors.",
+  "topic_summary": "In this fireside chat, Cathie Wood shares her perspective on the crypto landscape, emphasizing Solana's advantages over Ethereum and the importance of developer engagement. She also addresses the regulatory environment for ETFs and staking opportunities [t=2:40 - t=295:88].",
+  "router_tags": [
+    "Cathie Wood",
+    "Solana",
+    "Ethereum",
+    "Crypto Market",
+    "ETFs",
+    "Investing"
+  ],
+  "aliases": [
+    "Cathie Wood",
+    "Kathy Wood",
+    "ARK Invest"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "ETH",
+    "@CathieWood",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

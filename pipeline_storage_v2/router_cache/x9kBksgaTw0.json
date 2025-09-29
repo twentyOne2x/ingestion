@@ -1,0 +1,23 @@
+{
+  "description": "Ariel Seidman discusses Hivemapper, a decentralized mapping technology, and its funding challenges in the current economic climate. He explains how users contribute to building a global map through driving with a specialized dashcam device, rewarding them with cryptocurrency.",
+  "topic_summary": "Ariel Seidman introduces Hivemapper, emphasizing its decentralized mapping approach and the impact of changing funding environments on startups. He highlights the efficiency required in current VC funding and contrasts it with past trends.",
+  "router_tags": [
+    "Hivemapper",
+    "Decentralized Mapping",
+    "Cryptocurrency",
+    "Startup Funding",
+    "Ariel Seidman"
+  ],
+  "aliases": [
+    "Ariel Seidman",
+    "ariel seidman",
+    "Ariel",
+    "ariel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

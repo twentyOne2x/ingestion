@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the Compliance Friendly Token Program on Solana, highlighting how token extensions meet the strict requirements of payments companies and regulated enterprises.",
+  "topic_summary": "The video covers the native capabilities of token extensions on Solana that address privacy, payment attribution, reversibility, and access controls, eliminating the need for private chains [t=7:28-38:69].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Compliance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

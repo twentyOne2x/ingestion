@@ -1,0 +1,24 @@
+{
+  "description": "Ryan Watkins and Monk discuss the future of Hyperliquid, trading trends for 2025, and insights from their experiences in the crypto space.",
+  "topic_summary": "The conversation covers the evolution of trading in the crypto market, the significance of Hyperliquid, and personal anecdotes from their trading journeys, including early investments and market observations [t=0:56-215:11].",
+  "router_tags": [
+    "Hyperliquid",
+    "Crypto Trading",
+    "DeFi",
+    "Market Trends",
+    "Investing"
+  ],
+  "aliases": [
+    "Ryan Watkins",
+    "Monk",
+    "notthreadguy",
+    "Thread Guy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "@RiyanGosling"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

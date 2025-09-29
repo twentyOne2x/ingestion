@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on token-aligned companies and their value to token holders, featuring insights on Bonk's initiatives in sports and charity partnerships.",
+  "topic_summary": "At [t=0:00], the speaker welcomes attendees at Solana XLR8 in New York. The focus is on creating value for token holders through various initiatives, including Bonk Bets for sports fans [t=100:02] and partnerships with charities like Buddies for Paws [t=234:21].",
+  "router_tags": [
+    "Bonk",
+    "Tokenomics",
+    "Charity",
+    "Sports",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Token-Aligned Companies",
+    "Caleb Abraham",
+    "Clement Fournier",
+    "Tendies",
+    "Nom"
+  ],
+  "canonical_entities": [
+    "$BONK",
+    "@SolanaFndn",
+    "@BuddiesForPaws",
+    "@Coinbase"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

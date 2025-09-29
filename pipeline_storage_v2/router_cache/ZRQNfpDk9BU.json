@@ -1,0 +1,27 @@
+{
+  "description": "David Taylor discusses the Mexican government's interest in tokenizing its treasuries, exploring the intersection of traditional finance and blockchain technology.",
+  "topic_summary": "The conversation covers the evolution of real-world assets in crypto, regulatory challenges, and Etherfuse's pivot towards creating secure on-chain securities, particularly in Mexico [t=21:44].",
+  "router_tags": [
+    "Tokenization",
+    "Treasuries",
+    "Blockchain",
+    "Crypto",
+    "Regulation",
+    "Etherfuse",
+    "Real World Assets"
+  ],
+  "aliases": [
+    "Etherfuse",
+    "Ether Fuse",
+    "EtherFeast"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Etherfuse",
+    "@IsaacSaldana",
+    "@DavidAdujo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

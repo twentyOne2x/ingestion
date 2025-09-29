@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the cheapest protocol in crypto, focusing on market valuation and revenue models.",
+  "topic_summary": "Exploration of the cheapest protocol in the crypto space, emphasizing the contrast between buy and burn models versus revenue share models. The speaker notes that while buy and burn may lead to higher long-term value, short-term yields are prioritized, and current market concerns are affecting present value assessments [t=4:56].",
+  "router_tags": [
+    "crypto",
+    "bitcoin",
+    "altcoins",
+    "thehivemind"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

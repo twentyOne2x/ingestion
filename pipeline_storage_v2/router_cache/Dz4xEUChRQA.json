@@ -1,0 +1,24 @@
+{
+  "description": "Ahmad Abbasi discusses the development of a new validator client for the Solana blockchain, built in Zig, and its implications for the ecosystem. He shares insights on the transition from an RPC service to building a validator client to enhance RPC capabilities. The conversation covers the motivations behind this shift, the technical choices made, and the response from the community.",
+  "topic_summary": "The episode explores the creation of a Zig-based validator client for Solana, addressing the need for diverse client implementations and the strategic decisions made by Syndica amidst a challenging market environment. Key points include the evolution of the project from an RPC service to a validator client and the technical advantages of using Zig.",
+  "router_tags": [
+    "Solana",
+    "Validator Client",
+    "Zig",
+    "RPC",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Ahmad Abbasi",
+    "ahmad abbasi",
+    "Syndica",
+    "syndica"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

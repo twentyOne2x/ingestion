@@ -1,0 +1,21 @@
+{
+  "description": "A discussion on why New York City is considered the greatest city in the world, highlighting its diversity and the resilience of its people.",
+  "topic_summary": "Exploration of New York City's unique qualities and the inspiration drawn from its diverse community [t=6:08].",
+  "router_tags": [
+    "New York",
+    "City Life",
+    "Diversity",
+    "Inspiration"
+  ],
+  "aliases": [
+    "New York City",
+    "NYC",
+    "new york",
+    "new york city"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

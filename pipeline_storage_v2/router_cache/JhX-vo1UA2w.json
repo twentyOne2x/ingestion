@@ -1,0 +1,24 @@
+{
+  "description": "Stijn Paumen, CEO of Helio, discusses the impact of crypto checkouts on sales, highlighting Helio's growth and innovations in payment solutions for merchants.",
+  "topic_summary": "Stijn Paumen introduces Helio's advancements in crypto checkouts, emphasizing their role in driving sales and reaching new customers. He outlines the growth of the crypto commerce market and Helio's solutions for seamless on-chain transactions, including integrations with platforms like Shopify and Discord. The presentation also covers new features for customer loyalty and engagement.",
+  "router_tags": [
+    "Crypto",
+    "E-commerce",
+    "Payments",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Helio",
+    "Helion",
+    "Stijn Paumen",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BrianJohnson"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

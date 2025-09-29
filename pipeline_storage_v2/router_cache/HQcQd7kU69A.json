@@ -1,0 +1,26 @@
+{
+  "description": "This lecture explores the intersection of incentives and computer science, highlighting how technological advancements have created and transformed markets. It discusses examples like Amazon, Google, and Facebook, emphasizing their roles in existing markets rather than creating new ones. The importance of understanding market design and the implications of technology on market dynamics are also covered.",
+  "topic_summary": "The lecture examines how computer science has influenced various markets, using examples such as Amazon and Google to illustrate the transformation of existing markets through technology. It emphasizes the need for a deeper understanding of market design and the impact of incentives.",
+  "router_tags": [
+    "Computer Science",
+    "Markets",
+    "Incentives",
+    "Technology",
+    "Amazon",
+    "Google",
+    "Facebook"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Markets in Computer Science",
+    "Computer Science Markets"
+  ],
+  "canonical_entities": [
+    "$AMZN",
+    "$GOOGL",
+    "$FB",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

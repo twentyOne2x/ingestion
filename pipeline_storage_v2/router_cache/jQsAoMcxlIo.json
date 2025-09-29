@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing revenue-maximizing auctions, contrasting with surplus-maximizing auctions. Covers concepts like Vickrey auctions and incentive constraints, emphasizing the importance of revenue as a primary goal in certain scenarios.",
+  "topic_summary": "Introduction to revenue-maximizing auctions [t=1:44]. Discussion on the significance of revenue in auction theory, particularly in government auctions [t=90:61]. Comparison of surplus maximization and revenue maximization [t=220:77].",
+  "router_tags": [
+    "Auction Theory",
+    "Revenue Maximization",
+    "Game Theory",
+    "Vickrey Auction",
+    "Incentive Constraints"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Revenue Maximizing Auctions",
+    "Auction Theory Lectures"
+  ],
+  "canonical_entities": [
+    "$MYR",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Spencer discusses his journey in the NFT space, including his background in trading and startups, and his experiences with platforms like Blur and Magic Eden. He shares insights on market strategies and the evolution of trading discussions on Twitter.",
+  "topic_summary": "In this episode, Spencer reflects on the NFT market, his trading strategies, and the changing dynamics of sharing trades on social media [t=0:40]. He emphasizes the importance of understanding real trades versus those discussed online [t=171:16].",
+  "router_tags": [
+    "NFTs",
+    "Crypto",
+    "Trading",
+    "Market Strategies",
+    "Blur",
+    "Magic Eden"
+  ],
+  "aliases": [
+    "Spencer",
+    "spencer",
+    "SPENCER"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$BTC",
+    "@notthreadguy",
+    "@spencer",
+    "$1,000",
+    "$10 Million",
+    "$400 Billion",
+    "$1.5 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

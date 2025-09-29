@@ -1,0 +1,24 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team introduces the changelog, highlighting the Metaplex C hackathon and its focus on compressed NFTs. Updates include SIMD118 on Partitioned Epoch Rewards, preparations for version 2.0, and improvements to the Get Token largest accounts method for better speed. The Anchor CI checks for compatibility with downstream projects to ensure a smoother developer experience.",
+  "topic_summary": "Changelog updates from the Solana Foundation, including SIMD118, upcoming version 2.0, and improvements in the Anchor CI for better compatibility with downstream projects.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Metaplex",
+    "Anchor",
+    "Development"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "SolanaFndn",
+    "solana foundation",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

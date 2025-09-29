@@ -1,0 +1,23 @@
+{
+  "description": "Jean Jacques Duclos, also known as Eco33, discusses his work as a generative artist at Art Basel Miami 2023, showcasing his collection on Solana and introducing interactive elements to engage the audience.",
+  "topic_summary": "At Art Basel Miami 2023, Eco33 presents his generative art, including the E box collection and the Terra Incognita series, while highlighting the supportive Solana community and the innovative use of technology in art [t=0:08 - t=1:41].",
+  "router_tags": [
+    "Solana",
+    "Art Basel",
+    "Generative Art",
+    "Interactive Art",
+    "Eco33"
+  ],
+  "aliases": [
+    "Eco33",
+    "eco33",
+    "Jean Jacques Duclos",
+    "jean jacques duclos"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "o5J7tX492uE",
+  "title": "2024-09-20_o5J7tX492uE_Breakpoint 2024: Product Keynote: 20 Lessons for Crypto Founders (Imran Khan)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Paul Graham",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This lecture discusses forking attacks in blockchain systems, particularly focusing on Bitcoin. It covers miner incentives, the longest chain rule, and vulnerabilities such as Sybil attacks. The speaker explains how miners can exploit the system and the implications of deliberate forking, including double spend attacks.",
+  "topic_summary": "Incentives in Bitcoin mining, Sybil attacks, and deliberate forking strategies are explored. The lecture emphasizes the importance of understanding miner behavior and the potential vulnerabilities introduced by incentives [t=0:64-90:67].",
+  "router_tags": [
+    "Bitcoin",
+    "Forking Attacks",
+    "Blockchain",
+    "Mining",
+    "Incentives",
+    "Sybil Attack",
+    "Double Spend"
+  ],
+  "aliases": [
+    "Incentives In Computer Science",
+    "Forking Attacks Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Balaji bets $1 million that Bitcoin will reach $1 million in 90 days, anticipating US dollar hyperinflation.",
+  "topic_summary": "Balaji argues that hyperinflation occurs rapidly, leading to a significant increase in Bitcoin's value compared to the US dollar, which has been the global reserve currency since World War II [t=30:08]. The discussion contrasts views on the dollar's future, with some predicting hyperinflation and others suggesting a shift to a new reserve currency [t=49:65].",
+  "router_tags": [
+    "Bitcoin",
+    "Hyperinflation",
+    "US Dollar",
+    "Reserve Currency"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Balaji"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

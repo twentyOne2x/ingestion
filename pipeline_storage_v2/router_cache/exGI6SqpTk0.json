@@ -1,0 +1,26 @@
+{
+  "description": "Michael Egorov discusses the evolution of DeFi, emphasizing the importance of governance and the differences between traditional decentralized finance and newer models. He highlights the role of Curve and Yield Basis in governance, the impact of centralized exchanges, and the risks associated with regulatory changes.",
+  "topic_summary": "Egorov explores the dynamics of cross-chain systems, governance in DeFi, and the contrasting approaches of various projects like Curve, Athena, and Hyper Liquid. He reflects on the changes in DeFi since its inception and the implications for future growth and regulation [t=0:16 - t=460:45].",
+  "router_tags": [
+    "DeFi",
+    "Yield Basis",
+    "Governance",
+    "Curve",
+    "Cross-Chain",
+    "Regulation"
+  ],
+  "aliases": [
+    "Michael Egorov",
+    "michael egorov",
+    "MICHAEL EGOROV"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$CRV",
+    "@Delphi_Digital",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

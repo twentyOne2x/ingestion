@@ -1,0 +1,20 @@
+{
+  "description": "In this video, the hosts engage in a light-hearted conversation with a guest known as Sharkboy, discussing his recent activity on Twitter and his background in the crypto space. They explore his rise in popularity and the dynamics of their interactions in the chat.",
+  "topic_summary": "The hosts chat with Sharkboy about his Twitter presence and crypto journey, including his return to tweeting and the impact of his content on his following [t=78:53].",
+  "router_tags": [
+    "crypto",
+    "Twitter",
+    "Sharkboy",
+    "interview"
+  ],
+  "aliases": [
+    "Sharkboy",
+    "sharkBoy",
+    "SHARKBOY"
+  ],
+  "canonical_entities": [
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

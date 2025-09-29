@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the bullish case for Pump, including trading strategies and market movements. Highlights include a significant trade made at 0.003 and insights on market dynamics [t=0:24].",
+  "topic_summary": "Exploration of the Pump market, trading strategies, and the impact of buybacks on price movements. The conversation includes personal trading experiences and market analysis [t=0:24].",
+  "router_tags": [
+    "Pump",
+    "Trading",
+    "Cryptocurrency",
+    "Market Analysis",
+    "Buybacks"
+  ],
+  "aliases": [
+    "Qwerty",
+    "qwerty",
+    "QWERTY"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

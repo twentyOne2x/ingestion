@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on data interpretation and the evolution of Solana Explorers, featuring insights from developers in the ecosystem.",
+  "topic_summary": "Exploration of the development of Solana Explorers and wallets, discussing early challenges and advancements in data interpretation for users [t=28:02].",
+  "router_tags": [
+    "Solana",
+    "data interpretation",
+    "blockchain",
+    "wallets",
+    "developers"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Explorers",
+    "Explorers 2023"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GeorgeHarrop",
+    "@Hermani",
+    "@Nick"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

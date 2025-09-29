@@ -1,0 +1,29 @@
+{
+  "description": "Ben Naderesky, Co-Founder and CEO of Solstice Labs, discusses the upcoming launch of USX, Solana's stablecoin, emphasizing its security, trust, utility, and permissionless access. He highlights the integration of USX with Solstice's Yield Vault, allowing holders to earn competitive yields and access innovative payment solutions.",
+  "topic_summary": "In this talk, Ben Naderesky outlines the principles behind Solana's stablecoin, USX, which aims to enhance the Solana ecosystem by providing a secure, trusted, and utility-driven financial instrument. The presentation covers the launch details, partnerships, and the expected impact on the market, including a focus on community involvement and institutional support [t=9:60-342:81].",
+  "router_tags": [
+    "Solana",
+    "Stablecoin",
+    "USX",
+    "DeFi",
+    "Yield Vault",
+    "Ben Naderesky",
+    "Solstice Labs"
+  ],
+  "aliases": [
+    "Solstice",
+    "Solstice Labs",
+    "USX",
+    "Ben Naderesky",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Solsticeio",
+    "$1 Billion",
+    "@DeusExCapital"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

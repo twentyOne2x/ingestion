@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion on Web3 Music featuring leaders from the industry, including insights on tools for artists and the evolution of music marketplaces.",
+  "topic_summary": "Discussion on the advancements and challenges in Web3 music, focusing on artist support and the effectiveness of current technologies [t=158:60].",
+  "router_tags": [
+    "Web3",
+    "Music",
+    "NFTs",
+    "Artists",
+    "Marketplace"
+  ],
+  "aliases": [
+    "web3 music",
+    "Web3 Music",
+    "Web3Music"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$AUDIUS"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

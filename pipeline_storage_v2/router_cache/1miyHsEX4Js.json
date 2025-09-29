@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on trading strategies, crypto market dynamics, and personal experiences with skepticism on social media. The guest shares insights on significant trading gains and the challenges of public perception.",
+  "topic_summary": "The podcast covers trading advice, reactions to guest announcements, and personal trading experiences, including a notable gain of $5,000 to $200,000 in a month [t=98:68].",
+  "router_tags": [
+    "trading",
+    "crypto",
+    "investing",
+    "Twitter",
+    "podcast"
+  ],
+  "aliases": [
+    "Income Sharks",
+    "Income sharks",
+    "income sharks"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$DOGE",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

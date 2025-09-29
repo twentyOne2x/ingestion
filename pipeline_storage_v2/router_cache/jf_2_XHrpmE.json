@@ -1,0 +1,30 @@
+{
+  "description": "This video discusses the FCC Incentive Auction, a case study on NP-hard problems, focusing on the reallocation of wireless spectrum in the U.S. The auction involved complex algorithms to manage scarce resources effectively.",
+  "topic_summary": "The video explores the FCC Incentive Auction as a practical application of algorithms for NP-hard problems, emphasizing the historical context of spectrum allocation and the shift in usage from terrestrial television to mobile data [t=0:00-8:00].",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Wireless Spectrum",
+    "FCC Incentive Auction",
+    "Algorithms",
+    "Computer Science",
+    "Economics"
+  ],
+  "aliases": [
+    "Fcc Incentive Auction",
+    "FCC Incentive auction",
+    "fcc incentive auction"
+  ],
+  "canonical_entities": [
+    "$FCC",
+    "@timroughgardenlectures1861",
+    "$TMO",
+    "$VZ",
+    "$CMCSA",
+    "@KevinLaytonBrown",
+    "@PaulMilgram",
+    "@IlyaSegal",
+    "@Stanford"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

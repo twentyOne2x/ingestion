@@ -1,0 +1,23 @@
+{
+  "description": "Mike Saunders, CEO of XP, discusses the evolution of ticketing technology and the need for a better fan experience. XP offers a marketplace with 50 million tickets at lower prices, emphasizing transparency and blockchain technology to create a fair market. The platform allows payments in various forms, including USDC, eliminating hidden fees and ensuring a seamless ticket purchasing experience.",
+  "topic_summary": "Mike Saunders introduces XP, a ticket exchange platform that enhances fan experiences by providing transparent pricing and a wide selection of tickets. The use of blockchain technology aims to create a fair market for fans, allowing them to connect more deeply with their favorite artists and events [t=0:24].",
+  "router_tags": [
+    "ticketing",
+    "blockchain",
+    "fan experience",
+    "XP",
+    "live events"
+  ],
+  "aliases": [
+    "Xp",
+    "xp",
+    "X.P."
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MikeSaunders"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

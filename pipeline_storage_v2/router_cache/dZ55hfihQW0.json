@@ -1,0 +1,23 @@
+{
+  "description": "Interview with Udi Wertheimer discussing Taproot Wizards and the current state of Bitcoin.",
+  "topic_summary": "Udi Wertheimer shares insights on Taproot Wizards and reflects on Bitcoin's price fluctuations, including a moment when Bitcoin reached $99.5 [t=78:65].",
+  "router_tags": [
+    "Bitcoin",
+    "Taproot Wizards",
+    "Udi Wertheimer",
+    "Cryptocurrency",
+    "Interview"
+  ],
+  "aliases": [
+    "Udi Wertheimer",
+    "udi wertheimer",
+    "Udi",
+    "udi"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

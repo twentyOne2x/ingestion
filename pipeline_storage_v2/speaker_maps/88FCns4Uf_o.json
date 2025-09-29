@@ -1,0 +1,20 @@
+{
+  "video_id": "88FCns4Uf_o",
+  "title": "2022-11-07_88FCns4Uf_o_Breakpoint 2022: Matchday on Working With Football's Biggest Star",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Arthur C. Clarke",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

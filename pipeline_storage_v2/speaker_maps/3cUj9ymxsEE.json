@@ -1,0 +1,20 @@
+{
+  "video_id": "3cUj9ymxsEE",
+  "title": "2024-07-16_3cUj9ymxsEE_Bringing Blockchain to Music Streaming w- Ray Jacobson (Audius)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Stephen Witt",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "description": "This episode of the Solana Changelog discusses recent updates in the Solana ecosystem, including fee markets for storage, Geyser improvements, and the introduction of programmable NFTs by Metaplex. It also highlights the new debugger tool Bokken for Solana programs.",
+  "topic_summary": "The episode covers significant proposals and updates in the Solana ecosystem, focusing on fee markets for storage [t=31:78], Geyser enhancements [t=170:56], and the release of programmable NFTs by Metaplex [t=242:95]. It also introduces Bokken, a debugging tool for Solana programs [t=270:79].",
+  "router_tags": [
+    "Solana",
+    "Geyser",
+    "NFTs",
+    "Metaplex",
+    "Bokken",
+    "programming",
+    "debugging"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@metaplex",
+    "@lamport",
+    "@colin",
+    "@jacob"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "In this talk, the speaker discusses innovative teaching methods, emphasizing the importance of adapting educational techniques from various sources, including stand-up comedy. The speaker shares personal experiences with MOOCs and self-publishing, while also highlighting the value of collaboration and connection in academia.",
+  "topic_summary": "The speaker explores the concept of 'teaching backwards' and shares insights on how to enhance teaching effectiveness by borrowing techniques from diverse fields, particularly stand-up comedy, to engage students better. [t=225:09]",
+  "router_tags": [
+    "Teaching",
+    "Education",
+    "MOOCs",
+    "Self-Publishing",
+    "Stand-Up Comedy"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$AMZN",
+    "$INGR",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

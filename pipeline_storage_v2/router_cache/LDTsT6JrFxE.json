@@ -1,0 +1,27 @@
+{
+  "description": "Eugene from Ellipsis Labs discusses the current issues in decentralized finance (DeFi) and proposes solutions to improve its sustainability and user experience. He emphasizes the need for DeFi to compete with traditional finance (TradFi) by enhancing liquidity quality and user outcomes, particularly in trading systems. The talk highlights the shortcomings of automated market makers (AMMs) and the importance of rapid, permissionless innovation in DeFi.",
+  "topic_summary": "Eugene addresses the problems in DeFi, focusing on liquidity, user experience, and the need for improvement to compete with TradFi. He critiques AMMs and discusses the necessity for DeFi to evolve beyond its current state.",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Ellipsis Labs",
+    "TradFi",
+    "AMM",
+    "liquidity"
+  ],
+  "aliases": [
+    "defi",
+    "DeFi",
+    "tradfi",
+    "TradFi",
+    "amm",
+    "AMM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Eugene"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

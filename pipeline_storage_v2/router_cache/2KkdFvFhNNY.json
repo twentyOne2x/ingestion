@@ -1,0 +1,25 @@
+{
+  "description": "Ben introduces the panel discussing tBTC's integration with Solana, emphasizing its decentralized nature and security features. The conversation highlights the risks of centralized Bitcoin representations in DeFi and how tBTC mitigates these risks through a decentralized architecture.",
+  "topic_summary": "The panel discusses the launch of tBTC on Solana, its decentralized structure, and how it addresses risks associated with centralized Bitcoin representations in DeFi protocols. The conversation also touches on the partnership with Wormhole and the importance of maintaining decentralization.",
+  "router_tags": [
+    "tBTC",
+    "Solana",
+    "DeFi",
+    "Bitcoin",
+    "Wormhole",
+    "Threshold Network"
+  ],
+  "aliases": [
+    "Tbtc",
+    "tBtc",
+    "TBTC"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@SolanaFndn",
+    "@Threshold"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

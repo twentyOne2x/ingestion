@@ -1,0 +1,26 @@
+{
+  "description": "The presentation discusses the evolution of Deepin and its connection to Helium, focusing on the innovative hosting model developed by Hotspotty. It highlights the inefficiencies in traditional telecom infrastructure and how decentralized networks can improve service delivery and community engagement.",
+  "topic_summary": "Exploration of Deepin's role in Web3 adoption, the transformation of telecom models through community-driven infrastructure, and the introduction of new services aimed at enhancing growth in the space. Key insights on the inefficiencies of legacy systems and the benefits of decentralized networks are shared throughout the talk.",
+  "router_tags": [
+    "Web3",
+    "Deepin",
+    "Helium",
+    "Hotspotty",
+    "Telecom",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Deepin",
+    "Dipin",
+    "Hotspotty",
+    "Helium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DanielAndraji",
+    "@MaximGoosens"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

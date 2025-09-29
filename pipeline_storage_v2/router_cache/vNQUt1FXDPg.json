@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the directed Hamiltonian path problem, its NP-hardness, and its reduction from the 3sat problem. It explains the structure of directed graphs and how Hamiltonian paths can be used to represent truth assignments in 3sat instances.",
+  "topic_summary": "The video covers the directed Hamiltonian path problem, its significance in NP-hardness proofs, and the method of reducing the 3sat problem to this graph problem. It illustrates how to encode truth assignments using Hamiltonian paths in a constructed graph.",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Hamiltonian Path",
+    "3SAT Reduction",
+    "Graph Theory",
+    "Algorithms"
+  ],
+  "aliases": [
+    "Hamiltonian Path",
+    "Directed Hamiltonian Path",
+    "NP Hardness",
+    "3SAT Problem"
+  ],
+  "canonical_entities": [
+    "$HAMILTON",
+    "$3SAT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

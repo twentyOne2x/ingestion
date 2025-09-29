@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the proof that the Traveling Salesman Problem (TSP) is NP-hard, building on previous concepts from Hamiltonian paths. It outlines the reduction from the undirected Hamiltonian path problem to the TSP, demonstrating how to construct a complete graph and assign edge costs to facilitate this reduction.",
+  "topic_summary": "The video covers the NP-hardness of the Traveling Salesman Problem by reducing it from the undirected Hamiltonian path problem. It explains the construction of a complete graph and the assignment of edge costs, leading to the conclusion that if a TSP solution has zero cost, it indicates the existence of a Hamiltonian path in the original graph [t=339.59].",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Traveling Salesman Problem",
+    "Hamiltonian Path"
+  ],
+  "aliases": [
+    "Algorithms for NP-Hard Problems",
+    "TSP Is NP-Hard",
+    "Traveling Salesman Problem NP-Hard"
+  ],
+  "canonical_entities": [
+    "$TSP",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

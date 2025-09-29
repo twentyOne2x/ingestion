@@ -1,0 +1,26 @@
+{
+  "description": "A debate at Breakpoint 2024 discussing whether Solana is more future-proof than Ethereum, featuring Santiago from SRS and Avicil from Electric Capital. The discussion covers definitions of future-proofing, technology resilience, application variety, and user diversity.",
+  "topic_summary": "The debate centers on the future-proofing of Solana versus Ethereum, with arguments focusing on technology resilience, application variety, and user base diversity. Avicil argues Ethereum's established network and developer ecosystem make it more future-proof [t=270:52].",
+  "router_tags": [
+    "Solana",
+    "Ethereum",
+    "Blockchain",
+    "Future-Proof",
+    "Debate"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2024 Debate",
+    "Breakpoint2024: Solana vs Ethereum"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@santiago",
+    "@avicil",
+    "@electric"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

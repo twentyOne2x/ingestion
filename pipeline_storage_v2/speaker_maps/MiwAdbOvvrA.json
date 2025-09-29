@@ -1,0 +1,20 @@
+{
+  "video_id": "MiwAdbOvvrA",
+  "title": "2025-07-30_MiwAdbOvvrA_Mel Mattison: Crypto Price Predictions, Fed Rate Cuts, What Drives Value, Macro & More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

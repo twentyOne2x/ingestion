@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana's developments and community engagement at the Hacker House in Taipei.",
+  "topic_summary": "Overview of the Solana Hacker House event in Taipei, highlighting community interactions and project showcases [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Taipei",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

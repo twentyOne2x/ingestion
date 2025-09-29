@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on account hashing proposal led by Josh Siegel from Fire Dancer, focusing on optimizing performance and scalability in Solana's system. The proposal aims to replace the current account state delta hash mechanism with a more efficient method that maintains a full hash for all accounts in each slot, enhancing speed without performance drawbacks.",
+  "topic_summary": "Josh Siegel discusses the challenges and solutions related to account hashing in Solana, emphasizing the need for a more efficient approach to handle account state updates and improve overall system performance. Key points include the transition from a complex Merkle tree system to a simpler arithmetic-based hashing method.",
+  "router_tags": [
+    "Solana",
+    "account hashing",
+    "performance optimization",
+    "Fire Dancer",
+    "cryptography"
+  ],
+  "aliases": [
+    "Account Hashing Proposal",
+    "Core Community Call",
+    "Solana Account Hashing"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@JoshSiegel",
+    "@FireDancer",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

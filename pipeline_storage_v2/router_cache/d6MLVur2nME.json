@@ -1,0 +1,25 @@
+{
+  "description": "Emmett Hollier, general manager of Solana Mobile, discusses the launch of the Seeker mobile device, which will start shipping on August 4th. He highlights the growth of the Solana ecosystem, with over 100 teams building for mobile and the importance of decentralizing the Web3 mobile experience. The talk covers the introduction of TPIN, a new architecture for secure mobile ecosystems, and the native asset 'skr' for the Solana Mobile economy.",
+  "topic_summary": "Emmett Hollier presents the Seeker mobile device launch and the decentralization of the Web3 mobile ecosystem, emphasizing security and community involvement [t=78:27].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Mobile",
+    "Seeker",
+    "TPIN",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Solana Mobile",
+    "solana mobile",
+    "Seeker",
+    "seeker"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@EmmettHollier"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

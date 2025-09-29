@@ -1,0 +1,22 @@
+{
+  "description": "In this episode, the hosts discuss the creation of DUPE, a new venture, and the dynamics of the crypto investment landscape. They touch on hiring strategies, product development, and recent experiences in China, including factory visits and product evaluations.",
+  "topic_summary": "The conversation covers the launch of DUPE, hiring practices, product development insights, and reflections on recent travels to China [t=71:35].",
+  "router_tags": [
+    "DUPE",
+    "Crypto",
+    "Hiring",
+    "Product Development",
+    "China"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "Ben Pasternak",
+    "Ben Pastor"
+  ],
+  "canonical_entities": [
+    "$DUPE",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

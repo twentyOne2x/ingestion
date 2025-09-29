@@ -1,0 +1,20 @@
+{
+  "video_id": "gYOTFfy5n3E",
+  "title": "2025-05-23_gYOTFfy5n3E_Ship or Die at Accelerate 2025: The Future of Digital Assets (Roger Bayston, Nick Ducoff)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Jenny Johnson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

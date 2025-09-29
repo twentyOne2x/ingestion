@@ -1,0 +1,23 @@
+{
+  "description": "Lucas, co-founder and CEO of Jito Labs, discusses the company's role in Solana's infrastructure, liquid staking, and the future of ETFs in the crypto space. Jito is the largest liquid staking protocol in Solana, generating significant value for stakers and providing trading infrastructure. The conversation touches on the importance of ETFs for the Solana ecosystem and Jito's involvement in regulatory discussions with the SEC regarding liquid staking tokens.",
+  "topic_summary": "Lucas from Jito Labs explains the significance of Jito's trading infrastructure and liquid staking in Solana's ecosystem, while addressing the potential impact of ETFs on the future of Solana [t=160.58].",
+  "router_tags": [
+    "Crypto",
+    "Solana",
+    "ETFs",
+    "Liquid Staking",
+    "Jito Labs"
+  ],
+  "aliases": [
+    "Jito Labs",
+    "jito labs",
+    "JITO",
+    "jito"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

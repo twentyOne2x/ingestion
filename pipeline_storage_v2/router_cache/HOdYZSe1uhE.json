@@ -1,0 +1,23 @@
+{
+  "description": "In this video, the host demonstrates a voting application built on Solana, showcasing how users can interact with the app and the implications of network fees based on user activity. The discussion includes the importance of prioritization fees and how they affect transaction costs, especially in high-traffic scenarios. The host also explores the current fee structure on Solana and how compute units impact overall transaction costs.",
+  "topic_summary": "The video covers the development and functionality of a voting application on Solana, focusing on user interactions, transaction fees, and the impact of network congestion on prioritization fees [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Blockchain",
+    "Voting Application",
+    "Transaction Fees",
+    "Developer Bootcamp"
+  ],
+  "aliases": [
+    "Solana Developer Bootcamp 2024",
+    "Solana Bootcamp",
+    "Solana Dev Camp"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

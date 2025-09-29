@@ -1,0 +1,20 @@
+{
+  "video_id": "wMgy4n7vRSU",
+  "title": "2014-09-30_wMgy4n7vRSU_Beyond Worst-Case Analysis (Lecture 2: Instance-Optimal Geometric Algorithms)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kirkpatrick Seidel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

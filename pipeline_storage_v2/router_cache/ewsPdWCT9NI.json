@@ -1,0 +1,24 @@
+{
+  "description": "Barrett from Mountain Dao discusses the Cypher protocol, aimed at fostering a community experience for Solana, providing essential components for developers to launch and grow their projects within the ecosystem.",
+  "topic_summary": "Barrett from Mountain Dao introduces Cypher, a protocol designed to support developers in the Solana ecosystem, covering aspects like business, growth, marketing, and design [t=4:24 - t=35:24].",
+  "router_tags": [
+    "Solana",
+    "Cypher",
+    "Mountain Dao",
+    "Community",
+    "Development"
+  ],
+  "aliases": [
+    "Mountain Dao",
+    "mountaindao",
+    "Cypher",
+    "cypher"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

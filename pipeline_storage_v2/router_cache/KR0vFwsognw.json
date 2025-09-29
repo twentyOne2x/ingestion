@@ -1,0 +1,22 @@
+{
+  "description": "Neil Chatterjee, CEO of Dawn and Andrena, discusses the potential of decentralized broadband networks on Solana, aiming to reduce internet costs for consumers from $128 to $10 per month. He emphasizes the importance of connectivity sovereignty and the role of Deepin in digital infrastructure.",
+  "topic_summary": "Exploration of decentralized broadband networks and their impact on internet costs and connectivity, featuring insights from Neil Chatterjee on the Dawn protocol and its integration with Solana [t=0:16-0:37].",
+  "router_tags": [
+    "DePIN",
+    "Solana",
+    "Decentralized Broadband",
+    "Dawn Protocol",
+    "Connectivity Sovereignty"
+  ],
+  "aliases": [
+    "DePin",
+    "Dawn And Andrena",
+    "Neil Chatterjee"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

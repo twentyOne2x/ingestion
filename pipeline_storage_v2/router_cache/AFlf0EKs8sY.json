@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on security considerations for RPC providers, highlighting potential risks and attack vectors that could compromise data integrity and application functionality.",
+  "topic_summary": "The conversation addresses the importance of security in RPC services, the implications of compromised data, and the need for due diligence in selecting RPC providers. Key points include the risks to applications and users, the potential for malicious data to disrupt services, and strategies for mitigating these risks [t=3:28-310:89].",
+  "router_tags": [
+    "Security",
+    "RPC Providers",
+    "Solana",
+    "Data Integrity",
+    "Application Risks"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@brianlong",
+    "@nicholas",
+    "@helios",
+    "@cloudflare"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

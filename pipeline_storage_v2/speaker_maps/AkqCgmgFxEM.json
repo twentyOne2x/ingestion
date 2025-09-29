@@ -1,0 +1,20 @@
+{
+  "video_id": "AkqCgmgFxEM",
+  "title": "2025-05-22_AkqCgmgFxEM_Ship or Die at Accelerate 2025: IBRL (Kevin Bowers - Firedancer, Brennan Watt - Anza)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Brennan Watt",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

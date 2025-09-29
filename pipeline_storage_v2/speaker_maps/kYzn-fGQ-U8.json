@@ -1,0 +1,26 @@
+{
+  "video_id": "kYzn-fGQ-U8",
+  "title": "2025-07-30_kYzn-fGQ-U8_Lucacs: Trading Trends, Noise_XYZ, Fixing Memecoins and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Sydney Sweeney",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Kakius Maximus",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

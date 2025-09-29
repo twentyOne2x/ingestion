@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the application of randomized models to graph problems, focusing on Erdos Renyi graphs and their limitations in differentiating algorithm performance. It explores conditions for polynomial time algorithms in NP hard problems like maximum clique and minimum bisection, emphasizing the need for more informative input models [t=0:24].",
+  "topic_summary": "The lecture covers randomized graph models, specifically Erdos Renyi, and their implications for algorithm analysis. It highlights the challenges in using these models for problems like minimum bisection, where many solutions yield similar results, thus complicating algorithm differentiation [t=10:32].",
+  "router_tags": [
+    "Graph Theory",
+    "Randomized Algorithms",
+    "Erdos Renyi",
+    "NP Hard Problems",
+    "Algorithm Analysis"
+  ],
+  "aliases": [
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ERDOS",
+    "@timroughgarden"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

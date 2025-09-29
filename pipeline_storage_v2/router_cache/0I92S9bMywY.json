@@ -1,0 +1,21 @@
+{
+  "description": "Lecture discussing the CAP theorem, its properties, and implications for distributed systems. The CAP theorem states that in the presence of a network partition, a system can only guarantee two of the three properties: consistency, availability, and partition tolerance.",
+  "topic_summary": "The CAP theorem, articulated by Eric Brewer and later proved by Seth Gilbert and Nancy Lynch, outlines the trade-offs in distributed systems. It emphasizes that during a network partition, a system must choose between consistency and availability [t=211.99].",
+  "router_tags": [
+    "CAP theorem",
+    "distributed systems",
+    "consistency",
+    "availability",
+    "partition tolerance"
+  ],
+  "aliases": [
+    "Cap Theorem",
+    "Cap Theorem Lecture",
+    "CAP Principle"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

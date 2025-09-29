@@ -1,0 +1,22 @@
+{
+  "description": "This presentation discusses techniques for enhancing Solana security, focusing on fuzzing and formal verification methods. It highlights the challenges faced in the context of recent fund losses in protocols like Mango and emphasizes the importance of understanding what to fuzz in smart contract applications.",
+  "topic_summary": "The talk covers the significance of fuzzing in Solana security research, addressing misconceptions and detailing the fuzzing process, including mutation techniques and performance considerations. It also explores the complexities of defining fuzzing objectives for smart contracts.",
+  "router_tags": [
+    "Solana",
+    "fuzzing",
+    "security",
+    "smart contracts",
+    "blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

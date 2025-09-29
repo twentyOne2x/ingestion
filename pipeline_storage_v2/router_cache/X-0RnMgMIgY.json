@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Solana community validators, featuring updates on the mainnet, validator educational workshop, and Marinade's presentation on protected staking rewards.",
+  "topic_summary": "The meeting covers validator updates, upcoming community events, and Marinade's new product on protected staking rewards [t=1:76].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Marinade",
+    "Web3",
+    "Staking"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solano Community Validator Discussion",
+    "Marinade",
+    "Marinate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@marinade"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

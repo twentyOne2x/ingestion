@@ -1,0 +1,23 @@
+{
+  "description": "Lecture 9.7 discusses the foundations of blockchains, focusing on the introduction of cryptocurrencies and their relationship with blockchain technology. It highlights the motivations behind creating a native currency, such as incentivizing nodes to participate in the protocol and addressing capacity constraints through transaction fees.",
+  "topic_summary": "This lecture serves as a transition to upcoming discussions on cryptocurrencies, exploring their role in blockchain technology, the challenges they introduce, and the implications for consensus protocols. It sets the stage for lectures on transaction fees and proof of stake mechanisms.",
+  "router_tags": [
+    "blockchain",
+    "cryptocurrency",
+    "Nakamoto",
+    "Bitcoin",
+    "proof of work",
+    "proof of stake"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Cryptocurrencies Lecture",
+    "Lecture 9.7"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

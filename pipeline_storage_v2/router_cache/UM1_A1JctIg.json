@@ -1,0 +1,25 @@
+{
+  "description": "Delphi Podcast discusses the future of AI with David Menarsh, co-founder of Valerie and OLAS, focusing on multi-agent systems and the evolution of autonomous AI agents.",
+  "topic_summary": "The conversation explores the potential for a million models in AI versus a few large models, the unique background of the Valerie team, and the vision for creating general-purpose autonomous AI agents that users can own and operate independently [t=51:85].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Multi-Agent Systems",
+    "Autonomous Agents",
+    "Delphi Podcast"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "Delphi podcast",
+    "Olas",
+    "Valerie"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@David_Menarsh",
+    "@Valerie"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

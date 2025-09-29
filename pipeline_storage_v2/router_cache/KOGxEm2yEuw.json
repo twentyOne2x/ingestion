@@ -1,0 +1,27 @@
+{
+  "description": "In this fireside chat, Jeremy Allaire and Anatoly Yakovenko discuss the evolution of the Solana Network and its partnership with Circle, focusing on the significance of USDC in Solana's growth and the future of digital currencies.",
+  "topic_summary": "The discussion covers the launch of Solana and USDC, the importance of low transaction fees, mainstream adoption of blockchain technology, and the need for regulatory clarity to enhance digital currency usage [t=5:68-370:81].",
+  "router_tags": [
+    "Solana",
+    "USDC",
+    "Circle",
+    "Blockchain",
+    "Digital Currency",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "KOGxEm2yEuw",
+    "Ship or Die",
+    "Jeremy Allaire",
+    "Anatoly Yakovenko"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "@jeremy",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

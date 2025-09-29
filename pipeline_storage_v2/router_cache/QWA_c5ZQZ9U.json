@@ -1,0 +1,28 @@
+{
+  "description": "At Breakpoint 2023, the Render Network Foundation discusses its advancements in rendering technology, community engagement, and the launch of its SPL token on Solana. The presentation highlights the network's impact on the film industry and its support for artists through grants and innovative projects.",
+  "topic_summary": "The Render Network Foundation showcases its achievements and future plans, including the introduction of a new token on Solana and the expansion of its services to include AI jobs. The presentation emphasizes community involvement and the growth of the network in 2023.",
+  "router_tags": [
+    "Render Network",
+    "Solana",
+    "blockchain",
+    "3D rendering",
+    "AI",
+    "community"
+  ],
+  "aliases": [
+    "Render Network",
+    "render network",
+    "Render",
+    "render"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Helium",
+    "@Wormhole",
+    "@Ionet",
+    "@BeamCloud"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

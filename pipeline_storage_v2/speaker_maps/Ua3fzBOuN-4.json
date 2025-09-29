@@ -1,0 +1,26 @@
+{
+  "video_id": "Ua3fzBOuN-4",
+  "title": "2024-12-04_Ua3fzBOuN-4_This was my craziest interview ever... (Taiki Maeda)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Molly Mudang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Chumba Wamba",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

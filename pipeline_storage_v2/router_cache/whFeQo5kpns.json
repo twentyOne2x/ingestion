@@ -1,0 +1,23 @@
+{
+  "description": "Edison Chen discusses the Cudis Wearable AI Smart Ring, its development, and the community engagement around it, particularly in Hong Kong and Japan. He highlights the importance of hackathons and the active support from the Solana community.",
+  "topic_summary": "Edison Chen shares insights on the Cudis Wearable AI Smart Ring, its community impact, and the benefits of building on Solana, emphasizing the role of hackathons in fostering innovation [t=35.9].",
+  "router_tags": [
+    "Wearable Technology",
+    "AI",
+    "Solana",
+    "Health Tech",
+    "Hackathon"
+  ],
+  "aliases": [
+    "Cudis",
+    "Cudis Wearable",
+    "Edison Chen",
+    "Edison"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Lecture discussing online paging and resource augmentation techniques for algorithm analysis.",
+  "topic_summary": "This lecture covers the limitations of traditional worst-case analysis for online paging, introducing resource augmentation and loose competitiveness as alternative techniques for better performance predictions. The focus is on meaningful comparisons between algorithms like LRU and FIFO, emphasizing the importance of understanding various analysis frameworks [t=0:24].",
+  "router_tags": [
+    "algorithm analysis",
+    "online paging",
+    "resource augmentation",
+    "caching",
+    "algorithm design"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

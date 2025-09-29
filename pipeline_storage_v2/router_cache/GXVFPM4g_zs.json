@@ -1,0 +1,34 @@
+{
+  "description": "Adam and Sylvie discuss their experience at Breakpoint 2023, focusing on the use of Solana Pay and Solightning for seamless payments and cross-chain swaps between Bitcoin and Solana. They demonstrate a successful payment at Melly's Cookie Bar using Solana Pay and explain the mechanics of Solightning, emphasizing its trustless nature and efficiency.",
+  "topic_summary": "At Breakpoint 2023, Adam and Sylvie showcase Solightning, a trustless cross-chain DEX for Bitcoin and Solana, highlighting its use for payments and swaps. They provide a live demo of using Solana Pay at a cafe and explain the technical aspects of the platform.",
+  "router_tags": [
+    "Solana",
+    "Bitcoin",
+    "Solana Pay",
+    "Solightning",
+    "Cross-chain",
+    "Payments",
+    "Swaps",
+    "Breakpoint 2023"
+  ],
+  "aliases": [
+    "Solana",
+    "SOL",
+    "Solana Pay",
+    "Solightning",
+    "Breakpoint",
+    "Adam",
+    "Sylvie",
+    "Daniel",
+    "Melly's Cookie Bar"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@adam",
+    "@sylvie",
+    "@daniel"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

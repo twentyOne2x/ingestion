@@ -1,0 +1,20 @@
+{
+  "video_id": "FZsOlyRkcOE",
+  "title": "2024-09-20_FZsOlyRkcOE_Breakpoint 2024: Fireside: Solana 2.0 (Anatoly Yakovenko, Mert Mumtaz)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Marquise Brownlee",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

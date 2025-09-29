@@ -1,0 +1,23 @@
+{
+  "description": "This week's changelog discusses recent changes in Solana, including an outage that affected slot confirmations [t=13:28]. Future updates are planned, including a testnet downgrade to match the mainnet beta version [t=59:42]. A proposal for application fees during network congestion is highlighted, aimed at reducing spam transactions [t=112:61]. The release of a new Solana Verifiable builds CLI tool is also covered, enhancing code verification for users [t=225:51]. Updates to the Solana test validator and Geyser interface are mentioned, improving performance and usability [t=309:54].",
+  "topic_summary": "Recent updates in Solana include addressing an outage, upcoming changes to the testnet, a proposal for application fees, the introduction of a Verifiable builds CLI tool, and improvements to the test validator and Geyser interface.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Updates",
+    "Development",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

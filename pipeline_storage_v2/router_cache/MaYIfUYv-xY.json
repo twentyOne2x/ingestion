@@ -1,0 +1,25 @@
+{
+  "description": "Fred Kruger discusses why Bitcoin is considered the best investment ever, touching on various financial aspects and comparisons with other assets.",
+  "topic_summary": "In this conversation, Fred Kruger emphasizes Bitcoin's potential as an investment, referencing significant financial figures and the broader market context. The discussion includes mentions of other cryptocurrencies like Solana and Ethereum, as well as market valuations around $100 trillion and $8 trillion [t=0:24].",
+  "router_tags": [
+    "Bitcoin",
+    "Investment",
+    "Cryptocurrency",
+    "Finance",
+    "Solana",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Fred Kruger",
+    "Fred",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "$SOL",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

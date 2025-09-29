@@ -1,0 +1,24 @@
+{
+  "description": "This week's Solana Changelog covers NFT locking, the GetHealth update, and the Open Clockwork initiative. Key highlights include the upcoming Breakpoint event and the importance of marketing for hackathon projects. The new wallet feature allows users to lock NFTs, preventing accidental transactions.",
+  "topic_summary": "In this episode, Jacob and Jonas discuss recent updates in the Solana ecosystem, including the GetHealth endpoint improvements [t=125.68], the Open Clockwork initiative [t=241.71], and a new NFT locking feature [t=283.15]. They emphasize the significance of marketing for hackathon success [t=105.54].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "GetHealth",
+    "Open Clockwork",
+    "Breakpoint",
+    "Hackathon"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

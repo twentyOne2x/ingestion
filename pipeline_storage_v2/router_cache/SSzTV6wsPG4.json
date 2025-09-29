@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the proposal to disable rent collection, advancements in GraphQL resolver development, and a guide for confidential token transfers.",
+  "topic_summary": "Key updates include the potential removal of rent collection in Solana's runtime [t=17:88], the introduction of a GraphQL client resolver for improved data querying [t=111:17], and a Quick Start guide for confidential token transfers [t=191:45].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "GraphQL",
+    "Confidential Tokens",
+    "Development"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SolaNADEVS",
+    "@Joe",
+    "@Jacob",
+    "@JohnCinque"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

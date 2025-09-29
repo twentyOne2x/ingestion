@@ -1,0 +1,24 @@
+{
+  "description": "Core Community Call discussing the upcoming release changes and updates on SIMD46. Will provides insights on the mainnet upgrade progress and encourages community participation in reviewing proposals. Wen shares motivations for enhancing Solana's reliability and performance.",
+  "topic_summary": "Updates on the mainnet upgrade and community proposals, including timely vote credits and partition Epoch Rewards. Discussion on improving Solana's reliability and performance [t=0:48 - t=244:54].",
+  "router_tags": [
+    "Solana",
+    "Core Community",
+    "Mainnet Upgrade",
+    "SIMD",
+    "Reliability"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Core Community Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Will",
+    "@Wen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

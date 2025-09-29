@@ -1,0 +1,23 @@
+{
+  "description": "At Breakpoint 2023, the Star Atlas team discusses their developments on the Solana blockchain, including new game features and integrations. They emphasize the importance of their upcoming Unreal Release 2.2, which introduces competitive combat racing and blockchain features like ship configuration and character progression.",
+  "topic_summary": "The presentation covers the journey of Star Atlas, highlighting their game development on Solana, the release of R 2.1 on Epic Games Store, and the upcoming features in Unreal Release 2.2, including blockchain integrations and gameplay enhancements [t=109.65].",
+  "router_tags": [
+    "Star Atlas",
+    "Solana",
+    "Blockchain Gaming",
+    "Unreal Engine",
+    "Breakpoint 2023"
+  ],
+  "aliases": [
+    "Star Atlas",
+    "star atlas",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

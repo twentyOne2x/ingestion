@@ -1,0 +1,26 @@
+{
+  "video_id": "F77dZpA_Jeg",
+  "title": "2024-10-10_F77dZpA_Jeg_Solana Foundation Validator Discussion - Aug 15 2024",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Brian Smith",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ryan Long",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

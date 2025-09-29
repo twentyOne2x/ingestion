@@ -1,0 +1,23 @@
+{
+  "description": "Weekly Changelog discussing updates in Solana development, including SIMD changes, new tools, and program SDK plans.",
+  "topic_summary": "Highlights include SIMD163 changes [t=12:80], introduction of the hash cache tool [t=57:52], removal of the vote buffer [t=74:18], and a new program SDK plan [t=114:03]. Resource of the week is Lucid for local program development [t=177:86].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Development",
+    "SDK",
+    "Tools"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@thorsten"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

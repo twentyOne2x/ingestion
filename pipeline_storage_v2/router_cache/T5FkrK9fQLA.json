@@ -1,0 +1,20 @@
+{
+  "description": "In this tutorial, the protocol for permissionless consensus is verified, focusing on termination, validity, and agreement. The video discusses the behavior of faulty players and how the protocol ensures that honest players can reach consensus despite potential disruptions.",
+  "topic_summary": "The video covers the verification of a consensus protocol, emphasizing the conditions under which honest players can terminate, produce valid outputs, and agree on a common input. Key points include the limitations on faulty players and the implications for consensus.",
+  "router_tags": [
+    "Consensus",
+    "Blockchain",
+    "Protocol Verification",
+    "Distributed Systems"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

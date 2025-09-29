@@ -1,0 +1,26 @@
+{
+  "description": "David Bailey and Udi discuss the rise of Bitcoin treasury companies and their global market positions. They highlight UTXO Management's success and the importance of understanding Bitcoin holding companies.",
+  "topic_summary": "The conversation covers the expansion of Bitcoin treasury companies, UTXO Management's performance, and insights into the Bitcoin market dynamics [t=10:72].",
+  "router_tags": [
+    "Bitcoin",
+    "Treasury",
+    "UTXO Management",
+    "David Bailey",
+    "Udi"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "David Bailey",
+    "Udi"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "@Sailor",
+    "@Udi",
+    "@Microstrategy",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

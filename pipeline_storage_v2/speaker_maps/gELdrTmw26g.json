@@ -1,0 +1,14 @@
+{
+  "video_id": "gELdrTmw26g",
+  "title": "2022-11-07_gELdrTmw26g_Breakpoint 2022: A Framework for Formal Verification of Solana Programs",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

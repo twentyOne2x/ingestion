@@ -1,0 +1,31 @@
+{
+  "description": "Lecture 3 covers the Crawford-Knoer auction, focusing on ascending auctions and their complexities. The instructor discusses project topics and the importance of sincere bidding in auctions. The lecture emphasizes the design of auctions for non-identical items and the intricacies involved in achieving ex post incentive compatibility.",
+  "topic_summary": "In this lecture, the focus is on ascending auctions, particularly scenario three involving non-identical items and unit demand bidders. The discussion includes the design complexities and the need for auctions to be ex post incentive compatible, ensuring sincere bidding and maximizing surplus [t=204.75].",
+  "router_tags": [
+    "Auction Theory",
+    "Ascending Auctions",
+    "Crawford-Knoer Auction",
+    "Game Theory",
+    "Mechanism Design"
+  ],
+  "aliases": [
+    "Crawford-Knoer Auction",
+    "Ck Auction",
+    "Ascending Auctions"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$CkAuction",
+    "$GaleShapley",
+    "$Lawson",
+    "$Epsilon",
+    "$Rossi",
+    "$Crawford",
+    "$Huawei",
+    "$Wurzi",
+    "$BMinus1",
+    "$Mulhausen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

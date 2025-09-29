@@ -1,0 +1,26 @@
+{
+  "video_id": "qvH2zoNRMbQ",
+  "title": "2024-07-05_qvH2zoNRMbQ_The 2024 Pro-Crypto Election w- Senator Bill Hagerty (R-TN)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Senator Hagerty",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Kyle Cemani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

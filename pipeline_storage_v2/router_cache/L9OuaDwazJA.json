@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the future of stablecoins, featuring insights from Matt Homer, Johan from Robinhood, and Eric from Gemini. They explore whether stablecoins will be a winner-takes-all market, the diverse ecosystem of stablecoins, and the potential for various use cases in payments and treasury management.",
+  "topic_summary": "Panelists debate the competitive landscape of stablecoins, discussing their roles in crypto, potential use cases, and the impact of federal legislation on the market. Key points include the importance of tokenization and the need for multiple stablecoins to serve different purposes [t=0:24 - t=4:14].",
+  "router_tags": [
+    "Stablecoins",
+    "Crypto",
+    "Payments",
+    "Tokenization",
+    "Legislation"
+  ],
+  "aliases": [
+    "Stablecoins",
+    "Stable",
+    "Matt Homer",
+    "Johan",
+    "Eric Kuhn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Robinhood",
+    "@Gemini",
+    "@Stripe",
+    "@Polymarket",
+    "@Circle",
+    "@Paxos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This workshop covers the setup of Jito Relayer for Solana validators, discussing its components, functionality, and the importance of transaction bundles. It includes insights from experts and addresses common questions about the Jito ecosystem.",
+  "topic_summary": "The session introduces Jito Solana, an MEV Validator client, and explains the role of relayers and searchers in transaction processing, emphasizing the concept of bundles and their significance in transaction ordering [t=2:48 - t=339:15].",
+  "router_tags": [
+    "Solana",
+    "Jito",
+    "Validator",
+    "Relayer",
+    "MEV",
+    "Blockchain"
+  ],
+  "aliases": [
+    "jito",
+    "Jito Solana",
+    "JITO",
+    "Solana Validator",
+    "Jito Relayer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

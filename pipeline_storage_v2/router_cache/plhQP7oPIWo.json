@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Solana community validator updates, including staking plans and new tools.",
+  "topic_summary": "The meeting covers validator updates, the introduction of Ben Hawkins as the new head of staking, and discussions on the rollout plan for version 1.14.17, with a focus on security and testing. Marinade will also present new staking products towards the end of the session. [t=2:16] [t=6:48] [t=14:56] [t=35:97] [t=75:99]",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Staking",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Meeting",
+    "Solana Validator Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@benhawkins"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

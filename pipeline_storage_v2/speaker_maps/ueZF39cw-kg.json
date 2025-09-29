@@ -1,0 +1,20 @@
+{
+  "video_id": "ueZF39cw-kg",
+  "title": "2022-08-19_ueZF39cw-kg_DISRUPTORS: Into the Cosmos Galaxy with Zaki Manian",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Tom Shaughnessy",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

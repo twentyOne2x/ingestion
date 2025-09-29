@@ -1,0 +1,20 @@
+{
+  "video_id": "sfeVlS2Sl_E",
+  "title": "2014-02-21_sfeVlS2Sl_E_Frontiers in Mechanism Design (Lecture 14: The Price of Anarchy in Simple Auctions)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kelso Crawford",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

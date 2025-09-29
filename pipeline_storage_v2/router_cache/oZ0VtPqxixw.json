@@ -1,0 +1,34 @@
+{
+  "description": "Discussion on the conflict between centralized AI (OpenAI, Gemini, Anthropic) and the open-source movement in crypto AI, featuring insights from industry experts.",
+  "topic_summary": "The podcast explores the dynamics between centralized AI and decentralized, open-source AI, debating the future of AI models and their governance [t=265.61].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Open Source",
+    "Centralized AI",
+    "Decentralized AI"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "@delphi_digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Delphi_Digital",
+    "@Ben",
+    "@Michael",
+    "@Travis",
+    "@Jensen",
+    "@Demis",
+    "@NassimTaleb",
+    "@JP_Morgan_Chase",
+    "@Meta",
+    "@Google",
+    "@Apple",
+    "@Nvidia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

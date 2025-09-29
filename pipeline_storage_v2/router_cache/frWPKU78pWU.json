@@ -1,0 +1,22 @@
+{
+  "description": "Shakeel discusses the challenges in software development, highlighting the high failure rate of projects due to issues in software requirement specifications (SRS) and project management. He emphasizes the importance of proper visualization and understanding of requirements to reduce rework and increase success rates in the software industry.",
+  "topic_summary": "The presentation covers the software development lifecycle, common pitfalls leading to project failures, and the significance of accurate requirements gathering and visualization in improving project outcomes. Shakeel shares insights from his experience and research findings on the software industry's challenges.",
+  "router_tags": [
+    "Software Development",
+    "Project Management",
+    "Web3",
+    "Solana",
+    "NFTs",
+    "Zero-Knowledge Proofs"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

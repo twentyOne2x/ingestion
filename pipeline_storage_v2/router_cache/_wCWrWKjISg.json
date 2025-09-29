@@ -1,0 +1,23 @@
+{
+  "description": "The presentation discusses Ledger's mission to secure Web3, highlighting the inadequacies of Web2 technology in managing digital assets. It introduces Ledger's hardware wallet, the Ledger Nano S Plus X, and its secure element that protects private keys. The talk emphasizes the importance of security in self-custody and introduces Ledger Connect, a tool for safely interacting with smart contracts. Notably, Solana is integrated into Ledger's ecosystem, allowing users to manage Solana assets securely.",
+  "topic_summary": "Ledger's approach to enhancing security in Web3 through hardware wallets and Ledger Connect, with a focus on Solana integration.",
+  "router_tags": [
+    "Ledger",
+    "Web3",
+    "Solana",
+    "Security",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "ledger",
+    "Ledger",
+    "SOLANA",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

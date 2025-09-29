@@ -1,0 +1,24 @@
+{
+  "description": "This week's Solana Changelog discusses the latest updates including the Diet Clients proposal, the 1.15 release, and Metaplex Fusion developments. The Grizzlyathon hackathon is ongoing, providing opportunities for developers to showcase their projects. Key highlights include the introduction of Diet Clients for validator sampling and a new feature to burn rent for validator identity accounts. The release of version 1.15 is noted, with a call for upgrades on mainnet beta.",
+  "topic_summary": "Updates on Solana's development including Diet Clients proposal [t=56.06], 1.15 release [t=178.28], and Metaplex Fusion [t=235.15].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Diet Clients",
+    "Metaplex Fusion",
+    "Grizzlyathon",
+    "1.15 Release"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

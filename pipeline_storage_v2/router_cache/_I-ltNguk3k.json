@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses issues with proof of stake (PoS) longest-chain protocols, focusing on the complications arising from variable numbers of winners in VRF-based random sampling. It highlights the impact on latency and throughput due to time slots without leaders and the challenges posed by Byzantine leaders proposing multiple blocks.",
+  "topic_summary": "Exploration of PoS longest-chain consensus protocols, addressing VRF-based sampling issues, leader variability, and Byzantine leader implications on consensus properties [t=0:56 - t=337:85].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "longest chain",
+    "VRF",
+    "Byzantine fault tolerance"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchains Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakamoto",
+    "@Dolev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Dz4xEUChRQA",
+  "title": "2024-03-26_Dz4xEUChRQA_Rethinking Solana's Validator Client Paradigm w- Ahmad Abbasi (Syndica)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kevin Bowers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

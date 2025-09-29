@@ -1,0 +1,20 @@
+{
+  "video_id": "jZbbayUurSw",
+  "title": "2016-01-22_jZbbayUurSw_A Second Course in Algorithms (Lecture 6: Generalizations of Maximum Flow and Bipartite Matching)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ford Fulkerson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

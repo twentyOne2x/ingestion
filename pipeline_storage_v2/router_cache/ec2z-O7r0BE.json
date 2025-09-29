@@ -1,0 +1,28 @@
+{
+  "description": "Andrey Folalev, CTO of Neon Labs, presents Neon EVM, a fast and cost-effective Ethereum Virtual Machine running on Solana. It supports parallel transaction processing and integrates with Ethereum tools and libraries, enabling developers to deploy Ethereum-compatible contracts on Solana.",
+  "topic_summary": "Neon EVM is introduced as a solution for running Ethereum applications on Solana, highlighting its speed, low fees, and compatibility with Ethereum development tools. The presentation covers its architecture, transaction processing capabilities, and future plans for interoperability with other EVM chains.",
+  "router_tags": [
+    "Neon EVM",
+    "Solana",
+    "Ethereum",
+    "Blockchain",
+    "DeFi",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Neon evm",
+    "Neon EVM",
+    "neon evm",
+    "neon EVM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@AndreyFolalev",
+    "@SolanaFndn",
+    "@Vitalik",
+    "@AlexMirnov",
+    "@Everstake"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

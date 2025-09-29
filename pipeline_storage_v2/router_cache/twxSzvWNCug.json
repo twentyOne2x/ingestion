@@ -1,0 +1,25 @@
+{
+  "description": "Ari Redboard discusses the intersection of cryptocurrency and illicit finance, focusing on the scale of the problem and the role of criminal actors in the crypto ecosystem. He highlights that while illicit activity accounts for under 1% of overall crypto transactions, it remains a significant concern, particularly regarding North Korea's theft of $4 billion for weapons proliferation.",
+  "topic_summary": "The conversation explores the challenges of illicit finance in cryptocurrency, emphasizing the need for mitigation strategies despite the majority of crypto activity being lawful. Redboard provides insights into North Korea's use of crypto for funding illicit activities and the importance of understanding the risks involved.",
+  "router_tags": [
+    "Cryptocurrency",
+    "Illicit Finance",
+    "North Korea",
+    "Ari Redboard",
+    "Blockchain",
+    "Crypto Security"
+  ],
+  "aliases": [
+    "Ari Redboard",
+    "Ari",
+    "Amira"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AriRedboard",
+    "@TRM"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

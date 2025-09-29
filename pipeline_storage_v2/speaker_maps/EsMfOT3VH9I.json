@@ -1,0 +1,20 @@
+{
+  "video_id": "EsMfOT3VH9I",
+  "title": "2025-05-23_EsMfOT3VH9I_Ship or Die at Accelerate 2025: (Tarek Mansour - Kalshi, Kyle Samani - Multicoin Capital)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Morgan Wallen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

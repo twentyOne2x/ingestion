@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the integration of Shopify with Solana, featuring insights from industry leaders on e-commerce and brand development.",
+  "topic_summary": "Josh Freed, Anthony Torrey, and Gonzalo Gutierrez discuss the intersection of e-commerce and blockchain technology, focusing on Shopify's role in enhancing online business experiences [t=205:75].",
+  "router_tags": [
+    "Shopify",
+    "Solana",
+    "E-commerce",
+    "Blockchain",
+    "Web3",
+    "Mad Lads",
+    "Motivo Media"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Shopify Powered by Solana",
+    "CizGaUrNtHs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GonzaloGutierrez",
+    "@AnthonyTorrey"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

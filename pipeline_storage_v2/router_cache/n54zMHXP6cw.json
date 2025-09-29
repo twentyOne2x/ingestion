@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the evolving landscape of crypto in America, focusing on the competition between New York and San Francisco as leading hubs for blockchain development.",
+  "topic_summary": "Exploration of the shift in crypto development from discomfort in the U.S. to New York emerging as a central hub for crypto innovation [t=11:76]. The speaker highlights the debate between New York and San Francisco, emphasizing the advantages of New York for crypto builders [t=40:39].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "New York",
+    "San Francisco",
+    "Solana"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

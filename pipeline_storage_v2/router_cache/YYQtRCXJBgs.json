@@ -1,0 +1,21 @@
+{
+  "description": "This tutorial demonstrates how to create an energy-based game called Sol Lumberjack on the Solana blockchain. Players can chop trees to earn wood while managing their energy levels, which refill over time. The tutorial covers the program structure, player data, and energy management mechanics.",
+  "topic_summary": "Creating an energy management system for a blockchain game on Solana, focusing on player interactions and game mechanics [t=0:32].",
+  "router_tags": [
+    "Solana",
+    "Game Development",
+    "Blockchain",
+    "Energy Systems"
+  ],
+  "aliases": [
+    "Sol Lumberjack Tutorial",
+    "Creating an Energy Game",
+    "Solana Game Development"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

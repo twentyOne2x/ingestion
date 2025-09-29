@@ -1,0 +1,22 @@
+{
+  "description": "Discussion covering validator updates, TestNet outage analysis, and upcoming events for validators.",
+  "topic_summary": "The meeting includes updates on mainnet version 1.14 and 1.17, TestNet version 1.16.0, and the recent TestNet outage on May 27, 2023. Key topics include the importance of upgrading before Epoch 460 [t=87:17], feature activation details [t=128:69], and system clock synchronization issues [t=249:29].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "TestNet",
+    "MainNet",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Community Validator Discussion",
+    "Solana Validator Meeting"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Lecture discussing pricing strategies with an unknown distribution of buyer willingness to pay. It explores the trade-offs in setting a price for a good or service, considering the probability of sale and revenue per sale.",
+  "topic_summary": "The lecture focuses on a pricing problem where the seller must determine an optimal price P without knowing the buyer's willingness to pay V. It discusses the implications of setting price higher or lower and the relationship between price, probability of sale, and revenue [t=1:12].",
+  "router_tags": [
+    "Pricing",
+    "Economics",
+    "Algorithm",
+    "Distribution",
+    "Auction"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$GOOGL",
+    "@Andy",
+    "@Chernoff",
+    "@Raphael",
+    "@Lebesgue",
+    "@Riemann"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

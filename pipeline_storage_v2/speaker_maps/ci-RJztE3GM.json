@@ -1,0 +1,20 @@
+{
+  "video_id": "ci-RJztE3GM",
+  "title": "2025-07-10_ci-RJztE3GM_How He Made $2,000,000 Predicting The Future",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Cheney Kiel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

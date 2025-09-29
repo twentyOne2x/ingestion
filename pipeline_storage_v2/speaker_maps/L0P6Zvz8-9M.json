@@ -1,0 +1,20 @@
+{
+  "video_id": "L0P6Zvz8-9M",
+  "title": "2023-05-16_L0P6Zvz8-9M_Validated - So How Does DeFi Work, Anyway",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Cindy Liao",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

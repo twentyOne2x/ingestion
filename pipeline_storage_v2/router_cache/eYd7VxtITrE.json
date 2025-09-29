@@ -1,0 +1,25 @@
+{
+  "description": "Lecture on robust price-of-anarchy bounds in smooth games, discussing the derivation of price-of-anarchy bounds and their implications for coarse correlated equilibria.",
+  "topic_summary": "The lecture covers the derivation of price-of-anarchy bounds, focusing on Nash equilibria and their applications in various game scenarios, including location games and selfish routing games. Key concepts include the definition of price-of-anarchy, the structure of proofs, and the relationship between equilibrium and optimal costs [t=1:84].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Price of Anarchy",
+    "Nash Equilibrium",
+    "Robust Bounds",
+    "Smooth Games"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Price Of Anarchy",
+    "Nash Equilibrium",
+    "Robust Price Of Anarchy"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$Veddes",
+    "$Vetta",
+    "$Smoonis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Lecture on the foundations of blockchains focusing on EIP-1559, discussing transaction fee mechanisms and their implications for user experience in blockchain protocols.",
+  "topic_summary": "Explores the transition from first price auctions to EIP-1559's base fee mechanism for transaction inclusion, comparing it to shopping experiences on platforms like Amazon [t=51.29].",
+  "router_tags": [
+    "blockchain",
+    "EIP-1559",
+    "transaction fees",
+    "Ethereum",
+    "Vitalik Buterin"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@timroughgarden",
+    "$BTC",
+    "$20",
+    "@VitalikButerin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

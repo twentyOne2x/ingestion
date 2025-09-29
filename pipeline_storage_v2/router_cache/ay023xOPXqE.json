@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing the Dolev-Strong protocol, focusing on its validity and agreement properties under specific assumptions, including a known set of nodes and public key infrastructure.",
+  "topic_summary": "The Dolev-Strong protocol is analyzed for its ability to satisfy validity and agreement in Byzantine broadcast scenarios, emphasizing the importance of honest sender communication and message integrity [t=0:24].",
+  "router_tags": [
+    "Dolev-Strong",
+    "Byzantine",
+    "blockchain",
+    "protocol analysis"
+  ],
+  "aliases": [
+    "Dolev Strong",
+    "dolev strong",
+    "Dolev-Strong",
+    "dolev-strong"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

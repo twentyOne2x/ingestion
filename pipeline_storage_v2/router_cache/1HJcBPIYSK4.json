@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the Repeated Prisoner's Dilemma, exploring why cooperation can occur despite incentives to defect. It examines scenarios where short-term gains from defection are outweighed by long-term costs, emphasizing the importance of reputation in transactions. The lecture also introduces the concept of backward induction and proposes a model with a random number of stages to better reflect real-world cooperation.",
+  "topic_summary": "Incentives in the Repeated Prisoner's Dilemma and the dynamics of cooperation versus defection, including the implications of backward induction and a model with uncertain stage lengths.",
+  "router_tags": [
+    "Prisoner's Dilemma",
+    "Game Theory",
+    "Cooperation",
+    "Defection",
+    "Incentives"
+  ],
+  "aliases": [
+    "Incentives In Computer Science",
+    "Repeated Prisoner's Dilemma",
+    "Lecture 2.2"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$BNB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

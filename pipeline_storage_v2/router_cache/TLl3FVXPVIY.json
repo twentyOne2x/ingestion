@@ -1,0 +1,27 @@
+{
+  "description": "Lecture on multi-parameter mechanism design and the VCG mechanism, discussing revenue maximization in keyword auctions and the application of theory by researchers Michael Ostrovsky and Michael Schwartz at Yahoo.",
+  "topic_summary": "The lecture covers the application of mechanism design theory to keyword auctions, focusing on reserve prices and their impact on revenue maximization. It highlights a case study by Ostrovsky and Schwartz, who analyzed Yahoo's auction practices and proposed adjustments based on theoretical models [t=0:56].",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Mechanism Design",
+    "Keyword Auctions",
+    "Revenue Maximization",
+    "Ostrovsky",
+    "Schwartz"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Mechanism Design",
+    "Keyword Auctions"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$YHOO",
+    "$0.40",
+    "$0.10",
+    "$0.25",
+    "$250 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

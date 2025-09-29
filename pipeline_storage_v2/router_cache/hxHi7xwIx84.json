@@ -1,0 +1,26 @@
+{
+  "description": "Sandra Persing from Circle discusses the growth of USDC and its integration with the Solana community, highlighting the success of global hacker houses and the future of payments through blockchain technology.",
+  "topic_summary": "At [t=00:03], Sandra Persing introduces Circle and its mission. She emphasizes the importance of USDC as a stablecoin and its role in empowering developers. The discussion includes the impact of Solana hacker houses and the introduction of the Cross Chain Transfer Protocol (CCTP) at [t=04:59].",
+  "router_tags": [
+    "USDC",
+    "Solana",
+    "Circle",
+    "Cross Chain Transfer Protocol",
+    "Hacker House",
+    "Blockchain",
+    "Payments"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Circle",
+    "Sandra Persing",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn",
+    "@SandraPersing"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

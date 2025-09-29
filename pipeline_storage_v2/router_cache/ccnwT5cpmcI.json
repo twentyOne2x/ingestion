@@ -1,0 +1,43 @@
+{
+  "description": "In this episode, the hosts discuss the recent ZK Sync airdrop and its implications, contrasting it with Layer 0's approach to anti-sybil measures. They explore the reactions to airdrops, the distribution of tokens, and the challenges faced by teams in identifying genuine users versus sybils. The conversation touches on the effectiveness of NFT-based airdrops and the perceived value of tokens among different user groups.",
+  "topic_summary": "The episode covers the ZK Sync airdrop reactions, Layer 0's anti-sybil strategies, and the dynamics of NFT airdrops, highlighting user experiences and token distribution issues [t=55.35].",
+  "router_tags": [
+    "ZK Sync",
+    "Layer 0",
+    "Airdrop",
+    "NFT",
+    "Sybil",
+    "Token Distribution"
+  ],
+  "aliases": [
+    "The Great L0 Sybil Hunt",
+    "Robinhood's Meme Season",
+    "Is TON the next hot L1"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "@Coinbase",
+    "@Signal",
+    "@Robinhood",
+    "@JustinDrake",
+    "@Telegram",
+    "$BTC",
+    "$USDC",
+    "$5,000",
+    "$17,000",
+    "$75 Million",
+    "@Binance",
+    "@Kraken",
+    "@Facebook",
+    "@Twitter",
+    "@JayZ",
+    "@WarrenBuffett",
+    "@JoeRogan",
+    "@HulkHogan",
+    "@KimK",
+    "@JustinSun"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

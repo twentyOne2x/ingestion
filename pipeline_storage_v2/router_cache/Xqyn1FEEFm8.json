@@ -1,0 +1,24 @@
+{
+  "description": "Kevin Cole from Temporal discusses efficient Solana programs, highlighting improvements in network performance and robustness, including the development of new clients and networking protocols. He introduces Peregrine, a framework aimed at enhancing efficiency in Solana programs, which significantly reduces executable size and block space usage.",
+  "topic_summary": "Cole outlines the shift in focus towards performance optimization in Solana, detailing advancements in client development, packet ingestion, and the introduction of the Peregrine framework for efficient program execution [t=3:04 - t=232:84].",
+  "router_tags": [
+    "Solana",
+    "Efficient Programs",
+    "Temporal",
+    "Peregrine",
+    "Firedancer"
+  ],
+  "aliases": [
+    "Kevin Cole",
+    "Temporal",
+    "Peregrine",
+    "Firedancer"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@KevinCole"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

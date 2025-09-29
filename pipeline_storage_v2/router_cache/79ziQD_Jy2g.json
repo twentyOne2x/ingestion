@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on building permission smart contracts with identity components to enhance dapp security using Civic Pass. Learn how to access resources for development.",
+  "topic_summary": "Exploration of permission smart contracts and their implementation on Solana, including the use of Civic Pass for identity verification [t=1:52].",
+  "router_tags": [
+    "Solana",
+    "Civic",
+    "Smart Contracts",
+    "Blockchain",
+    "DApps"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@civvi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

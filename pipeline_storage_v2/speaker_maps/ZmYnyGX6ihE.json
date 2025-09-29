@@ -1,0 +1,20 @@
+{
+  "video_id": "ZmYnyGX6ihE",
+  "title": "2024-12-18_ZmYnyGX6ihE_Delphi's Infrastructure Year Ahead 2025",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Facundo Prasada Mohammad",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

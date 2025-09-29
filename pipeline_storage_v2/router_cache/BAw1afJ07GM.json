@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator updates and upcoming changes in the Solana ecosystem, including the delegation program and educational workshops. Highlights include issues with the 1.16.10 version and proposed changes to the SFTP program to support voting costs for a limited time.",
+  "topic_summary": "Validator updates for mainnet and testnet, issues with version 1.16.10, and proposed changes to the Solana Foundation Delegation Program (SFDP) [t=10:72].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Staking",
+    "Community"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

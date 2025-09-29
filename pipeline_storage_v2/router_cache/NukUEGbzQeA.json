@@ -1,0 +1,22 @@
+{
+  "description": "In this episode, the host welcomes a legendary trader to discuss trading strategies, particularly in crypto. The guest shares their journey from stock trading on Robin Hood to focusing on crypto, highlighting a pivotal moment during the FTX crisis when they executed a significant short trade after observing withdrawal pauses [t=134.09].",
+  "topic_summary": "The podcast covers trading news, strategies for making money in crypto, and personal trading experiences, including a notable FTX trade that led to substantial gains [t=134.09].",
+  "router_tags": [
+    "Crypto Trading",
+    "FTX",
+    "News Trading",
+    "NFT",
+    "Stock Market"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "NOTTHREADGUY"
+  ],
+  "canonical_entities": [
+    "$FTT",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the Tendermint protocol, focusing on its design for consistency and eventual liveness. It provides a careful proof that ensures no two honest nodes can commit different versions of the same block, particularly block number nine. The lecture emphasizes the importance of quorum certificates in maintaining this consistency and outlines the prerequisites for their creation.",
+  "topic_summary": "The lecture covers the Tendermint protocol's consistency guarantees, detailing how it prevents conflicting block commitments among honest nodes. It explains the role of quorum certificates and the conditions necessary for their formation, ensuring that all honest nodes agree on the same block version.",
+  "router_tags": [
+    "Tendermint",
+    "blockchain",
+    "consistency",
+    "quorum certificates",
+    "state machine replication"
+  ],
+  "aliases": [
+    "Tendermint",
+    "tendermint",
+    "TENDERMINT"
+  ],
+  "canonical_entities": [
+    "$TEND",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

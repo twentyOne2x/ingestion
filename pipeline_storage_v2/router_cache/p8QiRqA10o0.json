@@ -1,0 +1,27 @@
+{
+  "description": "In this inaugural episode of Validated, Austin speaks with Ryan Selkis, founder of Messari, about his journey in crypto since 2013, the evolution of the industry, and the philosophical underpinnings that attracted him to blockchain technology. They discuss the changing landscape of crypto, the influx of new users, and the importance of skepticism in the community.",
+  "topic_summary": "Ryan Selkis shares insights on the crypto industry, reflecting on its growth since 2013, the impact of new users, and the philosophical values that continue to drive the community. He emphasizes the need for skepticism and the importance of long-term commitment in the evolving crypto landscape [t=274.36].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Web3",
+    "Ryan Selkis",
+    "Messari",
+    "Investing",
+    "Philosophy"
+  ],
+  "aliases": [
+    "Ryan Selkis",
+    "ryan selkis",
+    "SELKIS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RyanSelkis",
+    "@vitalik",
+    "@EricVoorhees"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

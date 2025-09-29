@@ -1,0 +1,21 @@
+{
+  "description": "Ben Fielding discusses the application of philosophical rules to AI learning, emphasizing the importance of dialogue in forming opinions and enhancing reasoning. He explores the concept of RL Swarm, where models communicate and learn from each other, leading to scalable improvements in AI understanding.",
+  "topic_summary": "The conversation covers the integration of philosophical thinking into AI development, the role of dialogue in enhancing reasoning, and the innovative approach of RL Swarm for peer-to-peer reinforcement learning among models [t=0:16 - t=272:29].",
+  "router_tags": [
+    "AI",
+    "Reinforcement Learning",
+    "Philosophy",
+    "Machine Learning",
+    "Dialogue"
+  ],
+  "aliases": [
+    "Ben Fielding",
+    "ben fielding",
+    "BEN FIELDING"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

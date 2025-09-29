@@ -1,0 +1,24 @@
+{
+  "description": "Jonas discusses the development of Sonic, a gaming rollup that serves as a runtime environment for various games, incorporating ECS framework primitives and zero knowledge proofs for state aggregation.",
+  "topic_summary": "In this episode, Jonas outlines the features of Sonic, a gaming rollup built on the HyperGrid framework, enabling the creation of diverse gaming environments and applications [t=0:32-0:33].",
+  "router_tags": [
+    "gaming",
+    "rollup",
+    "Sonic",
+    "HyperGrid",
+    "ECS",
+    "zero knowledge proofs"
+  ],
+  "aliases": [
+    "Sonic SVM",
+    "sonic svm",
+    "Sonic Svm"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

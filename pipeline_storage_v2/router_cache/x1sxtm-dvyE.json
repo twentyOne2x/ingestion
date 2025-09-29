@@ -1,0 +1,23 @@
+{
+  "description": "The video discusses Alpenglow, the new consensus protocol for Solana, highlighting its development by Anza Research and its expected performance improvements in bandwidth and latency.",
+  "topic_summary": "Introduction to Alpenglow, Solana's new consensus protocol, focusing on its performance metrics such as bandwidth and latency, with a target finality of 150 milliseconds [t=201.0].",
+  "router_tags": [
+    "Solana",
+    "Alpenglow",
+    "Consensus Protocol",
+    "Blockchain",
+    "Performance"
+  ],
+  "aliases": [
+    "Alpenglow",
+    "alpenglow",
+    "ALPENGLOW"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

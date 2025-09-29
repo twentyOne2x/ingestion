@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses four key factors affecting crypto token unlocks, including the size of the unlock, liquidity, perpetual futures, and tokenomics.",
+  "topic_summary": "Factors influencing token unlocks include unlock size [t=0:24], liquidity [t=10:24], perpetual futures [t=24:56], and tokenomics [t=39:21]. Understanding these can aid in analyzing projects and their unlocking schedules [t=49:05].",
+  "router_tags": [
+    "crypto",
+    "tokenomics",
+    "unlock",
+    "liquidity",
+    "perpetual futures"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

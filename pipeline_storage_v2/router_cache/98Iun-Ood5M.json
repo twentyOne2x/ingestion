@@ -1,0 +1,27 @@
+{
+  "description": "Chris Osborne discusses the challenges of current crypto user experiences and introduces Dialect's products, Blinks and Alerts, aimed at improving interactions on the blockchain. He emphasizes the need for simpler actions and better integration within Web3 environments.",
+  "topic_summary": "At [t=28:29], Chris Osborne outlines the potential of blockchains to enhance internet interactions but highlights existing usability issues. He presents Dialect's Blinks and Alerts as solutions to streamline user actions in crypto, particularly focusing on the importance of timing and placement in user experience.",
+  "router_tags": [
+    "Blockchain",
+    "User Experience",
+    "Web3",
+    "Crypto",
+    "Dialect",
+    "Blinks",
+    "Alerts"
+  ],
+  "aliases": [
+    "Chris Osborne",
+    "Chris Osborn",
+    "Dialect",
+    "Blinks",
+    "Alerts"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisOsborne"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

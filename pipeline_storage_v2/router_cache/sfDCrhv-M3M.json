@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on the role of Web3 in protecting human rights, featuring experts from the Solana Foundation, Starling Lab, Rohingya Archive, and Arweave. Topics include the documentation of genocides, the Rohingya people's plight, and decentralized storage solutions for preserving identity and cultural heritage.",
+  "topic_summary": "Exploration of how Web3 technologies can safeguard human rights through decentralized storage and documentation of personal and historical records, particularly focusing on the Rohingya community's struggle for identity and recognition [t=186.95].",
+  "router_tags": [
+    "Web3",
+    "Human Rights",
+    "Decentralized Storage",
+    "Rohingya",
+    "Cultural Heritage"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Web3's Role in Protecting Human Rights",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@StarlingLab",
+    "@RohingyaArchive",
+    "@Arweave"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

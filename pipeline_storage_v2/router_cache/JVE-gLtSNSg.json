@@ -1,0 +1,22 @@
+{
+  "description": "Sam, co-founder of Onocoi, discusses the development of a global network to enhance GPS accuracy, aiming for affordability and accessibility. Currently, Onocoi has 5,600 stations and is rapidly expanding in Africa and Southeast Asia. They estimate needing around 65,000 additional stations to achieve global coverage. Onocoi is participating in the Deepin Summit Conference 2025 in Zanzibar to educate and recruit contributors for their project, which utilizes blockchain technology for incentivization. Building on Solana is highlighted for its speed and low transaction fees, essential for high precision GPS infrastructure.",
+  "topic_summary": "Onocoi is building a decentralized high precision positioning network on Solana, aiming to improve global GPS accuracy with a community-driven approach. The project is expanding rapidly and seeks to connect more stations worldwide.",
+  "router_tags": [
+    "GPS",
+    "Blockchain",
+    "Decentralization",
+    "Solana",
+    "High Precision Positioning"
+  ],
+  "aliases": [
+    "Onocoi",
+    "onacoi",
+    "ONACOI"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

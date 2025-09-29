@@ -1,0 +1,26 @@
+{
+  "video_id": "3NqXBC_QhJ0",
+  "title": "2023-12-20_3NqXBC_QhJ0_Core Community Call - Dec 15th, 2023 - Account Hashing Proposal",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Josh Siegel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Kevin Bowers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

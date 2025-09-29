@@ -1,0 +1,20 @@
+{
+  "video_id": "lIl0wI2py3g",
+  "title": "2024-11-04_lIl0wI2py3g_Solana Changelog Oct 30th",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

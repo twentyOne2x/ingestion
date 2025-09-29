@@ -1,0 +1,22 @@
+{
+  "description": "David Choi and Conor Moore discuss USD.AI and its role in financing AI infrastructure. They explore the implications of tokenizing assets and the challenges of credit markets in the context of blockchain technology.",
+  "topic_summary": "The conversation covers the intersection of AI infrastructure financing and blockchain, highlighting the potential for innovation in credit markets and asset tokenization. Key points include the importance of collateralized assets and the future of decentralized finance [t=0:00-10:00].",
+  "router_tags": [
+    "AI",
+    "Blockchain",
+    "Financing",
+    "Tokenization",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Usd.ai",
+    "USD.AI",
+    "usd.ai"
+  ],
+  "canonical_entities": [
+    "$USDR",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

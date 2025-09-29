@@ -1,0 +1,22 @@
+{
+  "description": "Jord, founder of Light Protocol, discusses advancements in state compression on Solana using batched Merkle trees and ZK compression techniques. He explains how these innovations aim to scale Solana's state management while reducing costs and maintaining performance. The presentation covers the mechanics of Merkle trees, the benefits of ZK proofs, and the architecture for implementing batch Mercuries.",
+  "topic_summary": "The talk focuses on scaling Solana's state using batched Merkle trees and ZK compression, detailing how these technologies enhance efficiency and reduce costs in state management. Key points include the comparison of current and batch Mercuries, the use of ZK proofs, and the architectural design for implementing these solutions [t=2:32 - t=313:79].",
+  "router_tags": [
+    "Solana",
+    "Merkle Trees",
+    "ZK Compression",
+    "State Management"
+  ],
+  "aliases": [
+    "Light Protocol",
+    "Light",
+    "Merkle Trees",
+    "ZK Compression"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

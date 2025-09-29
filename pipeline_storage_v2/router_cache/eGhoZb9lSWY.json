@@ -1,0 +1,22 @@
+{
+  "description": "Jack, also known as Vibes, discusses Web3 security best practices at Breakpoint 2023. He emphasizes the importance of establishing a secure environment for development, managing private keys, and monitoring wallets. Key points include using dedicated machines, installing ad blockers, bookmarking trusted dapps, and setting up two-factor authentication. He advises against using SMS for two-factor authentication and highlights the risks of remote access applications. Jack also covers the significance of maintaining a security mindset and using tools like Docker and automated security tools for smart contract development.",
+  "topic_summary": "Jack presents on Web3 security, covering secure environments, private key management, and wallet monitoring. He provides practical tips for developers and users to enhance their security practices.",
+  "router_tags": [
+    "Web3",
+    "Security",
+    "Best Practices",
+    "Solana",
+    "Development"
+  ],
+  "aliases": [
+    "jack",
+    "Vibes",
+    "Jack Vibes"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

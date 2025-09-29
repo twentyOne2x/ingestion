@@ -1,0 +1,23 @@
+{
+  "description": "This workshop covers the Jito Solana client setup and its benefits for validators, led by Lucas from JITO. It explains how Jito enhances MEV extraction and provides a high-level overview of its infrastructure and onboarding process.",
+  "topic_summary": "Introduction to Jito Solana client, its advantages for validators, and the technical workings of MEV extraction [t=2:8] to [t=384:48].",
+  "router_tags": [
+    "Solana",
+    "Jito",
+    "Validator",
+    "MEV",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Jito Solana",
+    "jito solana",
+    "JITO",
+    "jito"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@jito"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

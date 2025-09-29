@@ -1,0 +1,22 @@
+{
+  "description": "Final lecture on smooth analysis, focusing on understanding computational problems through smooth analysis and polynomial smooth complexity. Discusses binary optimization problems, particularly the knapsack problem, and the relationship between smooth and pseudo-polynomial complexities.",
+  "topic_summary": "Explores the concept of smooth analysis in computational complexity, emphasizing binary optimization problems like knapsack. Establishes a relationship between polynomial smooth complexity and pseudo-polynomial worst-case complexity [t=303:46].",
+  "router_tags": [
+    "smooth analysis",
+    "computational complexity",
+    "binary optimization",
+    "knapsack problem",
+    "pseudopolynomial time"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgarden",
+    "$KNAPSACK"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

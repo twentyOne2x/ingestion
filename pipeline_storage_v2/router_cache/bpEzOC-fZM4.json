@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses section 23.2 of Algorithms Illuminated Part 4, focusing on decision, search, and optimization problems in computational complexity.",
+  "topic_summary": "The video categorizes computational problems into three types: decision problems, which yield binary answers [t=42.36]; search problems, which provide feasible solutions or report their absence [t=115.48]; and optimization problems, which return the best feasible solution based on an objective function [t=169.81]. It emphasizes the importance of search problems in practical applications and the relationship between optimization and search versions of problems [t=428.32].",
+  "router_tags": [
+    "Algorithms",
+    "Computational Complexity",
+    "NP-Hard Problems",
+    "Decision Problems",
+    "Search Problems",
+    "Optimization Problems"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "tim roughgarden lectures"
+  ],
+  "canonical_entities": [
+    "$NP",
+    "$TSP",
+    "$SAT",
+    "$3SAT",
+    "$Knapsack"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

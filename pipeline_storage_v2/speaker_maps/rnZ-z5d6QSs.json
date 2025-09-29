@@ -1,0 +1,26 @@
+{
+  "video_id": "rnZ-z5d6QSs",
+  "title": "2025-08-13_rnZ-z5d6QSs_Path: Best Trading Advice, Biggest Regrets, ZORA and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Max Kaiser",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Wu Long",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

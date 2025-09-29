@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana community validator updates, including version recommendations, testnet status, and validator education initiatives.",
+  "topic_summary": "Updates on Solana validator version 1.13.5 recommended for mainnet [t=65:07], delinquency rates down to 1.93% [t=91:23], and testnet reactivation [t=156:48]. Call for volunteers for educational workshops [t=257:96].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Testnet",
+    "Community",
+    "Education"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

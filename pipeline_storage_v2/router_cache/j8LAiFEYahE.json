@@ -1,0 +1,25 @@
+{
+  "description": "Ellie Farrisi discusses the evolving landscape of stablecoins and their increasing adoption among fintech providers. She highlights the shift in dialogue from merely converting fiat to stablecoins to exploring the potential uses of stablecoins in transactions and payments. Farrisi emphasizes the importance of infrastructure that supports this growth and the role of companies like Dynamic and Stripe in facilitating these transactions.",
+  "topic_summary": "Ellie Farrisi from Dynamic presents insights on the rising interest in stablecoins, detailing how fintech companies are shifting their focus towards utilizing stablecoins for transactions rather than just conversions. She discusses the infrastructure needed to support this trend and the implications for global payments, especially in regions affected by hyperinflation. The talk underscores the importance of user choice and security in managing digital assets.",
+  "router_tags": [
+    "Stablecoins",
+    "Fintech",
+    "Dynamic",
+    "Stripe",
+    "Payments",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Ellie Farrisi",
+    "Elifarisi",
+    "Dynamic"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Stripe",
+    "@Actual"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

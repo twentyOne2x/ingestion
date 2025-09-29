@@ -1,0 +1,23 @@
+{
+  "description": "A panel discussion featuring cryptographers and ZK builders discussing the evolution and applications of zero-knowledge proofs in cryptography.",
+  "topic_summary": "The panel introduces key figures in cryptography, sharing their journeys into the crypto and ZK space, and discussing the historical development of zero-knowledge proofs from theoretical concepts to practical applications [t=4:40].",
+  "router_tags": [
+    "Zero-Knowledge",
+    "Cryptography",
+    "Blockchain",
+    "Privacy",
+    "Solana"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Zero-Knowledge Is About More Than Privacy",
+    "Breakpoint 2022: Zero-Knowledge"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

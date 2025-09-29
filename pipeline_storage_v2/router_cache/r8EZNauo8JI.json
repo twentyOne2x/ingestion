@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on token extensions in the Solana ecosystem, featuring insights from key developers and strategists on how these extensions enhance blockchain functionality.",
+  "topic_summary": "The panel covers the introduction and implications of token extensions on Solana, discussing their potential to improve developer experiences and enterprise engagement, particularly in relation to transfer hooks and compliance features [t=299.75].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Blockchain",
+    "Panel Discussion",
+    "Developer Relations"
+  ],
+  "aliases": [
+    "Token Extensions on Solana",
+    "Token Extensions",
+    "Solana Token Extensions"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AustinFedera",
+    "@JacobCreech",
+    "@ShirazSher",
+    "@John"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

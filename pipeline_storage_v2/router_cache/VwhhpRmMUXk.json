@@ -1,0 +1,23 @@
+{
+  "description": "A panel discussion on Bittensor, focusing on its role in decentralizing AI and addressing the risks of centralized AI development. The panelists include analysts from various firms discussing the evolution and purpose of Bittensor in the AI landscape.",
+  "topic_summary": "The panel explores the founding principles of Bittensor, its evolution from a text prompting network to a comprehensive AI development platform, and its implications for decentralization in AI. Key points include the risks of centralized AI and the importance of transparency in AI systems [t=144.06].",
+  "router_tags": [
+    "Bittensor",
+    "AI",
+    "Decentralization",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Bittensor",
+    "Bittensors",
+    "BITTENSOR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

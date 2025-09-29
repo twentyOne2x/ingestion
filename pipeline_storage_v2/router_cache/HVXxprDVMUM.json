@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Tommy introduces a panel of experts discussing the intersection of cryptocurrency and AI agents. The guests include Justin Bennington, Shah, Ethan, Jensen, and Karan, who share insights on their projects and the future of AI in the crypto space. They explore various applications, including social interactions, gaming, and open-source contributions, while emphasizing the importance of collaboration and innovation in the field.",
+  "topic_summary": "The podcast features discussions on AI agents in the crypto ecosystem, highlighting projects like Eliza, Hermes, and the contributions of various experts in the field. The conversation covers the potential of AI in enhancing user experiences and the collaborative nature of development in this space [t=0:00].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Podcast",
+    "Blockchain",
+    "Technology"
+  ],
+  "aliases": [
+    "Crypto x AI Agents",
+    "Delphi Podcast",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital",
+    "@Somewheresy",
+    "@Shah",
+    "@Ethan",
+    "@Jensen",
+    "@Karan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

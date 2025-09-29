@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the Solana Foundation Validator updates, including changes to the call schedule and upcoming educational workshops.",
+  "topic_summary": "The Solana Foundation Validator Discussion on March 14, 2024, covers updates on validator call schedules, educational workshops, and specific topics like the agave fork and fee structures [t=2:32].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Discussion",
+    "Agave",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana foundation validator discussion",
+    "Solana Foundation Validator Discussion",
+    "Solana Validator Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RexStJohn",
+    "@Chainflow",
+    "@Anza"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

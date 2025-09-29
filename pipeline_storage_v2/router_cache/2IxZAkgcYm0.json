@@ -1,0 +1,23 @@
+{
+  "description": "Jacob Everly discusses boundless execution on Solana, focusing on the advancements in zero-knowledge (ZK) technology and its implications for developers. He explains how RISC0 simplifies ZK development, allowing for efficient execution and verification of transactions.",
+  "topic_summary": "The talk covers the evolution of execution on blockchains, the challenges of ZK technology, and how RISC0 enables developers to leverage ZK for more efficient and scalable applications. Key points include the benefits of using Rust for programming and the cost-effectiveness of ZK execution compared to traditional methods [t=216.16].",
+  "router_tags": [
+    "Solana",
+    "ZK",
+    "RISC0",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Risc Zero",
+    "Boundless Execution",
+    "Jacob Everly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

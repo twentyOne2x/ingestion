@@ -1,0 +1,20 @@
+{
+  "video_id": "AepV-Hl8OdE",
+  "title": "2024-05-02_AepV-Hl8OdE_David Johnston: Morpheus's Fair Launch Attracts $400M in stETH to Build Network of AI Agents",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Eric Voorhees",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

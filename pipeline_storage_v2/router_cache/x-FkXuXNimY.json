@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on the transition from traditional finance (TradFi) to decentralized finance (DeFi), featuring insights from industry experts on blockchain technology and the Solana ecosystem.",
+  "topic_summary": "The panelists discuss their backgrounds in finance and trading, the impact of Solana's technology on their work, and the innovations in decentralized trading systems like Serum. They explore the significance of blockchain's speed and efficiency in financial markets [t=3:84-501:92].",
+  "router_tags": [
+    "TradFi",
+    "DeFi",
+    "Blockchain",
+    "Solana",
+    "Crypto",
+    "Finance",
+    "Trading"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "breakpoint 2023"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@FranklinTempleton",
+    "@DanGunsberg",
+    "@GregScanlon"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

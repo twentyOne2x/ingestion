@@ -1,0 +1,22 @@
+{
+  "description": "The presentation discusses the importance of market intelligence in the context of crypto as a defense mechanism against information wars. It highlights the challenges faced by decentralized finance (DeFi) and the need for accurate data amidst regulatory scrutiny. The speaker shares insights on the political landscape affecting crypto and emphasizes the role of culture in shaping policy decisions.",
+  "topic_summary": "Exploration of market intelligence as a defense strategy in crypto, addressing the information war, the significance of DeFi, and the political dynamics influencing the industry. Key points include the necessity of data in navigating regulatory challenges and the impact of cultural shifts on political actions regarding crypto.",
+  "router_tags": [
+    "Crypto",
+    "Market Intelligence",
+    "DeFi",
+    "Information War",
+    "Regulation"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Market Intelligence is Crypto's Defense Tech",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

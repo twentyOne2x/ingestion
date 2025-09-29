@@ -1,0 +1,21 @@
+{
+  "description": "Join @notthreadguy as he competes in a golf challenge with a Williams Racing Formula 1 driver. The video features a series of unique golf holes with various challenges, including hitting balls through obstacles and making tricky shots.",
+  "topic_summary": "Golf challenge with a Formula 1 driver featuring unique obstacles and competitive gameplay [t=01:06].",
+  "router_tags": [
+    "Golf",
+    "Formula 1",
+    "Challenge",
+    "Sports"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Thread Guy",
+    "threadguy"
+  ],
+  "canonical_entities": [
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

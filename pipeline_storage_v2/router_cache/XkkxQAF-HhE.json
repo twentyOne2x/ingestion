@@ -1,0 +1,25 @@
+{
+  "description": "The Solana Core Community Call on February 17, 2023, features discussions on application fees by Galactus from the Mango team and timely vote credits by Zentetsu. Galactus introduces a new fee structure for decentralized applications (dApps) that allows fees to be paid to the dApp authority instead of validators, with a rebate mechanism for users. The aim is to reduce network congestion and discourage spam transactions. The call includes technical details about the implementation of application fees and instructions for dApps.",
+  "topic_summary": "Discussion on new application fees for dApps and their impact on Solana's network congestion, featuring Galactus from Mango and Zentetsu.",
+  "router_tags": [
+    "Solana",
+    "dApps",
+    "Application Fees",
+    "Blockchain",
+    "Community Call"
+  ],
+  "aliases": [
+    "solana core community call",
+    "Solana Community Call",
+    "Solana Core Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Galactus",
+    "@Zentetsu",
+    "@Mango"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

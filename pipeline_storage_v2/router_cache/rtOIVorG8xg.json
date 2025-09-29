@@ -1,0 +1,28 @@
+{
+  "description": "Nathan Allman discusses the tokenization of capital markets, focusing on the benefits of tokenizing traditional financial assets and the development of yieldcoins, particularly OUSG and USD Y, to enhance accessibility and liquidity in the market.",
+  "topic_summary": "Allman explains the concept of tokenization [t=2:64], its significance [t=5:68], and its future potential [t=8:08]. He highlights the advantages of tokenization, including 24/7 transferability and programmability [t=29:57]. The discussion covers the evolution of tokenized assets, the launch of yieldcoins, and the upcoming Ondo Global Markets platform [t=355:52].",
+  "router_tags": [
+    "Tokenization",
+    "Capital Markets",
+    "DeFi",
+    "Stablecoins",
+    "Yieldcoins",
+    "Ondo Finance",
+    "Solana"
+  ],
+  "aliases": [
+    "Nathan Allman",
+    "Nathan allman",
+    "nathan allman"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Robinhood",
+    "$200 Billion",
+    "$250 Million",
+    "@Ondo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

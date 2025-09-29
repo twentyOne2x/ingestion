@@ -1,0 +1,27 @@
+{
+  "description": "A fireside chat featuring Michael Sonnenschein and Saeed Badreg discussing the advancements in tokenization and cross-chain technology, particularly through Wormhole and Securitize. They explore the rapid growth of tokenized securities and the integration of traditional finance with decentralized finance.",
+  "topic_summary": "The discussion covers the acceleration of tokenization in finance, the role of Wormhole in facilitating cross-chain transactions, and the impact of these technologies on traditional investment strategies. Key points include the growth of tokenized assets, institutional interest, and the benefits of on-chain investments [t=0:48 - t=4:00].",
+  "router_tags": [
+    "Tokenization",
+    "Wormhole",
+    "Securitize",
+    "Cross-chain",
+    "Decentralized Finance",
+    "Institutional Investment"
+  ],
+  "aliases": [
+    "ship or die 2025",
+    "fireside chat",
+    "wormhole",
+    "securitize",
+    "michael sonnenschein",
+    "saeed badreg"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

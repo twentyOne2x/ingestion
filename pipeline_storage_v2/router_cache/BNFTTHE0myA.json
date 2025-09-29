@@ -1,0 +1,24 @@
+{
+  "description": "Tommy Johnson and Taylor discuss the evolution of DAOs within the Solana ecosystem, highlighting challenges in governance and participation. They emphasize the importance of community engagement and the need for effective DAOs to support Solana's growth as a global state machine. They also address issues of participation and retention, referencing recent DAO governance failures and the regulatory hurdles faced by institutions.",
+  "topic_summary": "The presentation covers the foundational aspects of DAOs, their governance challenges, and the critical role of community participation in the Solana ecosystem. It discusses the need for effective governance structures and the implications of regulatory environments on institutional participation.",
+  "router_tags": [
+    "DAO",
+    "Solana",
+    "Governance",
+    "Tokenomics",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Governance and the Building Blocks of a DAO",
+    "Solana DAO Governance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@TommyJohnson",
+    "@Taylor"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

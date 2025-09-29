@@ -1,0 +1,14 @@
+{
+  "video_id": "E-x8AuGfagc",
+  "title": "2023-09-17_E-x8AuGfagc_Solana Hacker House Bengaluru",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

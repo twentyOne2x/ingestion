@@ -1,0 +1,20 @@
+{
+  "video_id": "vjjAgmP3XuY",
+  "title": "2025-08-17_vjjAgmP3XuY_Jihoz: Crypto Gaming's Future, Building Axie Infinity and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Gabriel Lidden",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

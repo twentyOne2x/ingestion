@@ -1,0 +1,26 @@
+{
+  "description": "Austin speaks with Charles Guillem, CTO at Ledger, about the importance of self-custody in cryptocurrency. They discuss the evolution of Ledger's hardware wallets, user education, and the need for secure private key management. The conversation highlights the significance of self-custody in the Web3 revolution and the responsibilities that come with owning digital assets.",
+  "topic_summary": "The discussion centers on self-custody in cryptocurrency, emphasizing its importance for security and ownership. Charles Guillem explains the role of hardware wallets, the risks of losing private keys, and the evolution of Ledger's products since 2014. The conversation also touches on user experience challenges in Web3 and the need for better education around private key management [t=0:24 - t=311:16].",
+  "router_tags": [
+    "Self-Custody",
+    "Cryptocurrency",
+    "Ledger",
+    "Web3",
+    "Private Keys",
+    "Hardware Wallets"
+  ],
+  "aliases": [
+    "Not Your Keys, Not Your Crypto",
+    "Self Custody",
+    "Ledger Wallet",
+    "Charles Guillem"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@CharlesGuillem",
+    "Ledger"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

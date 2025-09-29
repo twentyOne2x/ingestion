@@ -1,0 +1,20 @@
+{
+  "video_id": "SPHUS3vMDyM",
+  "title": "2025-05-19_SPHUS3vMDyM_Scale or Die at Accelerate 2025: Dropped Transactions & Empty Blocks (Michael & Philip - Firedancer)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Philip Taffet",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

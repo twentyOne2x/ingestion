@@ -1,0 +1,20 @@
+{
+  "video_id": "r-q8Y_Y_n88",
+  "title": "2022-11-07_r-q8Y_Y_n88_Breakpoint 2022: Measure What Matters Using Explorers Effectively",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "James Troutman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

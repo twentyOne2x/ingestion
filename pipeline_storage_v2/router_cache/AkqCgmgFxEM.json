@@ -1,0 +1,24 @@
+{
+  "description": "Brennan Watt and Kevin Bowers discuss the IBRL initiative aimed at enhancing Solana's performance by increasing bandwidth and reducing latency. They highlight the importance of user experience and the engineering efforts behind Solana's architecture, including the development of the Firedancer validator and its impact on the ecosystem.",
+  "topic_summary": "The session covers the IBRL initiative, the role of Agave and Firedancer in Solana's infrastructure, and the engineering challenges and goals related to high performance and scalability in blockchain technology. Key points include the need for efficient data flow and the implications of validator performance on the network.",
+  "router_tags": [
+    "Solana",
+    "Firedancer",
+    "IBRL",
+    "Blockchain",
+    "Validator",
+    "Performance"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Fire Dancer",
+    "Anza",
+    "Agave"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

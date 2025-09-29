@@ -1,0 +1,22 @@
+{
+  "description": "This workshop provides an overview of the transaction lifecycle on the Solana blockchain, detailing how transactions are created, processed, and confirmed. It covers the roles of RPC nodes, validators, and the impact of Stakeway QoS on transaction flow.",
+  "topic_summary": "The session discusses the transaction lifecycle from creation to confirmation, focusing on the roles of RPC nodes and validators, and introduces Stakeway QoS as an intermediary step in transaction processing [t=2:00 - t=243:60].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Transaction Lifecycle",
+    "Validator Workshop",
+    "Stakeway QoS"
+  ],
+  "aliases": [
+    "Solana Validator Educational",
+    "Solana Validator Workshop",
+    "Solana Educational Salon"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

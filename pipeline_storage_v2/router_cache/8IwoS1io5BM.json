@@ -1,0 +1,21 @@
+{
+  "description": "This lecture covers the maximum cut problem, focusing on approximation algorithms and semidefinite programming. It discusses the formulation of the problem, the challenges of finding optimal solutions, and the breakthrough by Gomes and Williamson in 1994 that improved approximation ratios beyond 1/2.",
+  "topic_summary": "The lecture introduces the maximum cut problem, explaining its formulation and the use of semidefinite programming for approximation algorithms. It highlights the historical context of approximation algorithms and the significant advancements made in the 1990s.",
+  "router_tags": [
+    "Algorithms",
+    "Approximation Algorithms",
+    "Semidefinite Programming",
+    "Maximum Cut Problem"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures 1861"
+  ],
+  "canonical_entities": [
+    "$GOMES",
+    "$WILLIAMSON"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

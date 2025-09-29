@@ -1,0 +1,20 @@
+{
+  "description": "In this tutorial, the speaker introduces the concept of permissionless consensus, focusing on the fully permissionless setting without resource considerations. The video outlines three new challenges that arise when transitioning from permissioned to permissionless protocols, including unknown participants, the ability for entities to start or stop participation, and the risk of civil attacks. The speaker emphasizes the shift in focus from fault tolerance to decentralization.",
+  "topic_summary": "This video discusses the fully permissionless setting in consensus protocols, highlighting the introduction of three challenges: unknown participant sets, variable participation, and civil attack risks. It sets the stage for understanding decentralization in permissionless systems.",
+  "router_tags": [
+    "Consensus",
+    "Permissionless",
+    "Decentralization",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "Permissionless consensus tutorial",
+    "permissionless consensus tutorial"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

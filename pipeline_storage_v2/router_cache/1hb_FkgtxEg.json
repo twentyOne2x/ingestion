@@ -1,0 +1,30 @@
+{
+  "description": "Kyle Samani discusses the vision for Forward, a NASDAQ-listed company, focusing on the integration of capital markets on the Solana blockchain. He emphasizes the importance of demonstrating that a publicly traded company can operate entirely on-chain, including securities trading, governance, and payroll processes. The conversation also touches on misconceptions about decentralized finance (DeFi) and the future of capital markets.",
+  "topic_summary": "Kyle Samani outlines Forward's mission to pioneer Internet capital markets on Solana, aiming to tokenize equity and move operations on-chain. He highlights the need to prove scalability and functionality of Solana for various asset classes, including equities and commodities, while addressing common misconceptions in the crypto space [t=240.88].",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Capital Markets",
+    "DeFi",
+    "Blockchain",
+    "Forward",
+    "Kyle Samani"
+  ],
+  "aliases": [
+    "Kyle Samani",
+    "kyle samani",
+    "FORWARD",
+    "Forward"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@KyleSamani",
+    "@AccelerateWithMert",
+    "$100 Million",
+    "$1.65 Billion",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

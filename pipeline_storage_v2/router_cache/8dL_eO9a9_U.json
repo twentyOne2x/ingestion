@@ -1,0 +1,24 @@
+{
+  "description": "Koby Zhang, CEO of Zen, discusses Web3 innovations from Ant Group, focusing on blockchain infrastructure and security enhancements. He introduces services like Power Zebra for faster zero-knowledge proofs and Zen AI scan for smart contract security, addressing compliance and regulatory challenges in Web3 applications.",
+  "topic_summary": "Koby Zhang presents Web3 innovations from Zen, detailing infrastructure improvements, security measures for smart contracts, and compliance strategies against emerging threats in the digital landscape. Key topics include performance optimization and AI-driven security solutions [t=5:60].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Smart Contracts",
+    "Security",
+    "Infrastructure",
+    "AI"
+  ],
+  "aliases": [
+    "Koby Zhang",
+    "Cobe Zhang",
+    "Zen"
+  ],
+  "canonical_entities": [
+    "$ZEN",
+    "@SolanaFndn",
+    "@antgroup"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

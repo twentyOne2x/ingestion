@@ -1,0 +1,28 @@
+{
+  "description": "Austin Federa discusses the development of a new high-performance Internet infrastructure designed for distributed systems, emphasizing the need for a dedicated network layer that addresses the limitations of the public Internet, particularly for blockchain applications.",
+  "topic_summary": "In this segment, Austin Federa introduces the Double Zero network, a purpose-built infrastructure aimed at enhancing performance for distributed systems. He highlights the challenges of the current Internet, including latency and variability, and presents the N1 network layer as a solution for high-performance applications [t=2:48-281:08].",
+  "router_tags": [
+    "Internet",
+    "Blockchain",
+    "Distributed Systems",
+    "Network Infrastructure",
+    "High Performance"
+  ],
+  "aliases": [
+    "Austin Federa",
+    "austin federa",
+    "Double Zero",
+    "double zero"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Meta",
+    "@Google",
+    "@Instagram",
+    "@Twitter",
+    "@Coinlist"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

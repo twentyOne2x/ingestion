@@ -1,0 +1,22 @@
+{
+  "description": "Lucas from Solana Labs discusses Solang, a Solidity compiler for running Solidity code natively on Solana. He explains its features, including support for Solana constructs, integration with Anchor CLI, and the ability to deploy Solidity contracts without emulation. Solang simplifies the transition for developers familiar with Solidity, allowing them to leverage existing code with minimal adjustments.",
+  "topic_summary": "Overview of Solang, a Solidity compiler for Solana, highlighting its capabilities, integration with Anchor, and advantages for Solidity developers transitioning to Solana. Discussion includes the differences between Solang and Neon VM, the use of PDAs, and the ease of deploying contracts.",
+  "router_tags": [
+    "Solang",
+    "Solidity",
+    "Solana",
+    "Anchor",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solang",
+    "solang",
+    "SOLANG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

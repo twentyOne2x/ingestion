@@ -1,0 +1,21 @@
+{
+  "description": "Sam Andrew discusses the innovative business model in crypto, emphasizing its importance alongside product development. He compares historical tech companies like Microsoft and Facebook, highlighting how they combined great products with new business models. The talk explores the continuum of crypto business models, from memes to infrastructure and applications, detailing their monetization strategies and valuation methods.",
+  "topic_summary": "Exploration of crypto's new business model, its historical context, and comparison with traditional tech companies. Discussion on the continuum of business models in crypto, focusing on memes, infrastructure, and applications, and their respective monetization and valuation.",
+  "router_tags": [
+    "Crypto",
+    "Business Model",
+    "Innovation",
+    "Technology",
+    "Infrastructure"
+  ],
+  "aliases": [
+    "Sam Andrew",
+    "sam andrew",
+    "SAM ANDREW"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

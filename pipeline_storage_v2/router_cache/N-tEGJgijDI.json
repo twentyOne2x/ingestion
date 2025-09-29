@@ -1,0 +1,23 @@
+{
+  "description": "This lecture defines the asynchronous model, contrasting it with the synchronous model. It discusses the implications of having no shared clock and no guaranteed message delivery, emphasizing the necessity of eventual message delivery for maintaining liveness in state machine replication.",
+  "topic_summary": "The asynchronous model is characterized by the absence of a shared global clock and no guarantees on message delivery times. The lecture outlines the fundamental assumptions required for the model and prepares for proving an impossibility result regarding consensus protocols.",
+  "router_tags": [
+    "blockchain",
+    "asynchronous model",
+    "consensus protocols",
+    "theory",
+    "distributed systems"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 4.2",
+    "Asynchronous Model"
+  ],
+  "canonical_entities": [
+    "$Dijkstra",
+    "$Bellman",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

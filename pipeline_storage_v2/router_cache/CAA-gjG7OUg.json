@@ -1,0 +1,25 @@
+{
+  "description": "Gareth Jenkinson moderates a panel discussing the role of blockchain in fostering a regenerative economy, featuring insights from James, Daniel Kelleher, and Simga on their respective projects, EcoToken, Sunrise Stake, and Gainforest. They explore how these initiatives leverage blockchain technology to create positive environmental impacts and promote sustainable practices.",
+  "topic_summary": "The panel delves into the concept of a regenerative economy, contrasting it with traditional extractive models. It highlights how blockchain can empower project developers, enhance transparency, and facilitate the creation of carbon credits and other environmental benefits, ultimately benefiting both communities and the planet [t=3:52-4:56].",
+  "router_tags": [
+    "Blockchain",
+    "Regenerative Economy",
+    "Environmental Impact",
+    "Crypto",
+    "Sustainability"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Regenerative Economy Panel",
+    "Solana Environmental Initiatives"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@James",
+    "@DanielKelleher",
+    "@Simga"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

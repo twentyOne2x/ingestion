@@ -1,0 +1,23 @@
+{
+  "description": "This video explains different types of liquid staking derivatives (LSDs) available for Ethereum, including rebasing tokens, reward-bearing tokens, and base plus reward tokens.",
+  "topic_summary": "Explore the various types of liquid staking derivatives (LSDs) for Ethereum, including rebasing tokens with Lido [t=1:92], reward-bearing tokens with Coinbase and Rocketpool [t=16:96], and base plus reward tokens with Stakewise [t=28:49].",
+  "router_tags": [
+    "Ethereum",
+    "Liquid Staking",
+    "Lido",
+    "Coinbase",
+    "Rocketpool"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Lido",
+    "@Coinbase",
+    "@Rocketpool"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

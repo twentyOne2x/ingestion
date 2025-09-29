@@ -1,0 +1,26 @@
+{
+  "description": "A fireside chat featuring Alex Blania and Ali Yahya discussing the launch of World in the US, the implications of AI on human interaction, and the importance of Proof of Human technology.",
+  "topic_summary": "The conversation covers the recent launch of World in the US [t=8:00], the challenges of AI interaction [t=17:36], and a research project from the University of Zurich demonstrating AI's influence on public opinion [t=186:77].",
+  "router_tags": [
+    "AI",
+    "Proof of Human",
+    "World",
+    "Launch",
+    "University of Zurich",
+    "Public Opinion"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Accelerate 2025",
+    "Fireside Chat",
+    "Alex Blania",
+    "Ali Yahya"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

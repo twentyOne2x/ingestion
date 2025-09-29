@@ -1,0 +1,20 @@
+{
+  "video_id": "sAdAuYyTrbM",
+  "title": "2024-03-07_sAdAuYyTrbM_ep 1: Jeff Staple - Believing in the Culture",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jeff Staple",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

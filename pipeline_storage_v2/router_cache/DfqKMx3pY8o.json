@@ -1,0 +1,24 @@
+{
+  "description": "Austin speaks with musician and visual artist Dave Curry, known as Black Dave, who utilizes Web3 tools to engage with his audience and create music. They discuss Dave's unique position as a Web3 native musician, the challenges and advantages of Web3 compared to traditional music platforms, and the evolving relationship between artists and fans in the digital age.",
+  "topic_summary": "The conversation explores Black Dave's journey in Web3 music, the benefits of NFTs, and the importance of community engagement in the music industry. Dave emphasizes the value of ownership and presence in music experiences, contrasting Web3's proactive user engagement with traditional streaming models [t=0:24-3:23].",
+  "router_tags": [
+    "Web3",
+    "Music",
+    "NFTs",
+    "Black Dave",
+    "Digital Art",
+    "Community"
+  ],
+  "aliases": [
+    "Black Dave",
+    "Dave Curry",
+    "black dave",
+    "dave curry"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Lecture discussing undominated implementations and challenges in mechanism design, focusing on NP-hard problems and approximation algorithms.",
+  "topic_summary": "The lecture covers the complexities of achieving strong incentive guarantees in mechanism design, particularly when dealing with NP-hard scenarios. It highlights the difficulties of obtaining positive results when adding incentive constraints, referencing specific algorithms and results from recent research [t=0:64].",
+  "router_tags": [
+    "Mechanism Design",
+    "Incentive Compatibility",
+    "NP-hard Problems",
+    "Approximation Algorithms",
+    "Game Theory"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Lecture 11",
+    "Undominated Implementations",
+    "Shrinking Auction"
+  ],
+  "canonical_entities": [
+    "$MYR",
+    "@Vondrak",
+    "@DougZinsmee",
+    "@DougMee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

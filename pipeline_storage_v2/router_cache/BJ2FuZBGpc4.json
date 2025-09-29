@@ -1,0 +1,27 @@
+{
+  "description": "Nick and Joe from the Solana Foundation discuss updates including discounted dev tickets for Breakpoint, the launch of Superteam UK, and the release of Anchor 28. They highlight the Token Metadata interface and recent commits related to migrating Turbine to QUIC for improved performance. Resources for developers, including guides on building programs and running validators, are also shared.",
+  "topic_summary": "Updates on Solana's development, including ticket sales for Breakpoint, the launch of Superteam UK, the release of Anchor 28, and improvements to the Turbine protocol. Resources for developers are highlighted.",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Token Metadata",
+    "Turbine",
+    "QUIC",
+    "Developer Resources"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA",
+    "solana foundation",
+    "Solana Foundation",
+    "@solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

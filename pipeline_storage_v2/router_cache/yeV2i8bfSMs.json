@@ -1,0 +1,22 @@
+{
+  "description": "This workshop covers stake weighted QoS in Solana, explaining its purpose and functionality. It discusses the implementation of QUIC, its advantages over UDP, and the concept of priority access for validators based on their stake. The analogy of highways and toll roads is used to illustrate how stake impacts connection access and transaction throughput.",
+  "topic_summary": "The session focuses on stake weighted QoS, its implementation in Solana, and the importance of stake for validators in accessing network connections. It clarifies the distinction between stake weighted QoS and priority fees, emphasizing their roles in transaction processing and network efficiency [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Validator Education",
+    "Stake Weighted QoS",
+    "QUIC",
+    "Networking"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Stake Weighted QoS",
+    "Stakeway QoS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

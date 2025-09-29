@@ -1,0 +1,26 @@
+{
+  "video_id": "q7lt7cwN0Ew",
+  "title": "2014-10-09_q7lt7cwN0Ew_Beyond Worst-Case Analysis (Lecture 5: Computing Independent Sets:A Parameterized Analysis)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kirkpatrick Seidel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Feiger Reichman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

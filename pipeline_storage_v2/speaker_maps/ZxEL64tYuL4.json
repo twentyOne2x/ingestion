@@ -1,0 +1,20 @@
+{
+  "video_id": "ZxEL64tYuL4",
+  "title": "2023-10-03_ZxEL64tYuL4_Validated - What Decentralized Credit Means for Emerging Markets w- Thomas Bohner",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "David Letterman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

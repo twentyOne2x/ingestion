@@ -1,0 +1,23 @@
+{
+  "description": "A speaker discusses the intersection of blockchain technology and climate change at the Breakpoint 2023 conference, emphasizing the environmental impact of Bitcoin and the importance of shared values in addressing climate issues.",
+  "topic_summary": "At [t=3:44], the speaker expresses gratitude for the opportunity to discuss climate challenges related to blockchain. They highlight the shared values between climate activism and blockchain communities, particularly focusing on the environmental implications of Bitcoin's energy consumption, which is compared to that of the Netherlands at [t=220:30]. The speaker stresses the need for a positive impact from blockchain technology on the climate crisis.",
+  "router_tags": [
+    "Blockchain",
+    "Climate Change",
+    "Bitcoin",
+    "Web3",
+    "Environmental Impact"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Solana Foundation",
+    "Climate Activism"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Greenpeace"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

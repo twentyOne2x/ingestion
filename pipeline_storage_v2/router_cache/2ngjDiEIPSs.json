@@ -1,0 +1,24 @@
+{
+  "description": "Dan Albert and Diego Perez de Ayala discuss their experiences with Solana, the evolution of the blockchain, and the importance of community engagement. They reflect on the early days of Solana and the technological advancements that have shaped its growth.",
+  "topic_summary": "Fireside chat covering the past, present, and future of Solana, emphasizing community, technology, and the unique social layer that supports the blockchain [t=3:44 - t=319:84].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Community",
+    "Technology",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "Dan Albert",
+    "dan albert",
+    "Diego Perez de Ayala",
+    "diego perez de ayala"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "4myAKRLTZXU",
+  "title": "2024-11-24_4myAKRLTZXU_The CRAZY Future Of AI Crypto... ft. D_Gilz",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Andrew Tate",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

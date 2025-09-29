@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discusses polynomial time implementation of VCG mechanism for welfare maximization using linear programming. It explores connections between gross substitutes valuations and welfare maximization, emphasizing bipartite matching as a framework for understanding these concepts.",
+  "topic_summary": "The lecture focuses on implementing welfare maximization in polynomial time through the VCG mechanism, utilizing linear programming techniques. It highlights the relationship between gross substitutes and welfare maximization, particularly in the context of unit demand bidders and bipartite matching.",
+  "router_tags": [
+    "Mechanism Design",
+    "Welfare Maximization",
+    "VCG Mechanism",
+    "Linear Programming",
+    "Bipartite Matching"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Gross Substitutes Welfare Maximization",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$VCG",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

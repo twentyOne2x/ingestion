@@ -1,0 +1,20 @@
+{
+  "video_id": "e7hUe3Giilw",
+  "title": "2023-11-07_e7hUe3Giilw_Validated - How Justin Bons Changed His Thesis About Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Justin Bonds",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

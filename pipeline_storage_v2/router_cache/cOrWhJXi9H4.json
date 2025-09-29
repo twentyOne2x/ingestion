@@ -1,0 +1,22 @@
+{
+  "description": "This lecture explores the fundamental aspects of blockchains and Web3, addressing the what, how, and why of the technology. It emphasizes the evolution of blockchain understanding since Bitcoin's inception and aims to clarify misconceptions about its capabilities.",
+  "topic_summary": "The discussion centers on the nature of blockchains as a computational model, the realizability of its functionalities, and the significance of these functionalities in the context of technological evolution and societal impact. Key questions include what new functionalities blockchains provide, how they can be implemented, and why these functionalities matter.",
+  "router_tags": [
+    "blockchain",
+    "Web3",
+    "technology",
+    "computer science"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "tim roughgarden lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

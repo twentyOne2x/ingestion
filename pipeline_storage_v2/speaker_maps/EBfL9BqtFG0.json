@@ -1,0 +1,32 @@
+{
+  "video_id": "EBfL9BqtFG0",
+  "title": "2023-09-18_EBfL9BqtFG0_Friend.tech or Foe: Coinbase's Base Chain's Uptake, EVMs market share and Catalysts for the Market",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Matt Bridge",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Jose Macedou",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Rob Disclosure",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "7Ue8BcH15XI",
+  "title": "2023-07-18_7Ue8BcH15XI_Validated - What It Takes to Build a AAA On-Chain with Michael Wagner",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Michael Wagner",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

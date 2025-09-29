@@ -1,0 +1,14 @@
+{
+  "video_id": "RvRMlxWr_p0",
+  "title": "2024-10-01_RvRMlxWr_p0_What Are You Building Ft. MagicBlock",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

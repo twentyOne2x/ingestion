@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the future of memecoins, particularly $PUMP, and insights into crypto streaming. Rasma shares thoughts on trading strategies and the potential of Pump Fund, emphasizing its financial strength and growth opportunities.",
+  "topic_summary": "Exploration of memecoins and $PUMP's prospects, featuring Rasma's insights on trading and the influence of crypto streamers [t=0:16].",
+  "router_tags": [
+    "memecoins",
+    "$PUMP",
+    "crypto",
+    "streamers",
+    "trading"
+  ],
+  "aliases": [
+    "Rasma",
+    "rasma",
+    "RASMUR",
+    "rasmur"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

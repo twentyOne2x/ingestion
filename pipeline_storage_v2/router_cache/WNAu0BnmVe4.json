@@ -1,0 +1,22 @@
+{
+  "description": "Nick from the Solana Foundation discusses the latest updates in the Solana ecosystem, including new features from Fantom and Jupiter Exchange, and the upcoming Loader v4 and runtime v2.",
+  "topic_summary": "Updates on Solana's ecosystem including new features for NFT collections, bridging capabilities via Jupiter Exchange, and the introduction of Loader v4 and feature gates for runtime v2 [t=175.19].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Jupiter Exchange",
+    "Loader v4",
+    "runtime v2"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

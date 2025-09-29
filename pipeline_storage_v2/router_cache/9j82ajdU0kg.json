@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on illicit finance in crypto, featuring experts from various backgrounds discussing the importance of addressing financial crime and the balance between privacy and regulation.",
+  "topic_summary": "The panel explores the significance of illicit finance in cryptocurrency, focusing on its implications for policy in the US and Europe. Key speakers include experts from the Solana Foundation, TRM Labs, Coin Center, and the Department of State, discussing the role of money in criminal activities and the challenges of maintaining privacy while combating financial crime [t=3:76].",
+  "router_tags": [
+    "Illicit Finance",
+    "Crypto Policy",
+    "Privacy",
+    "Blockchain",
+    "Financial Crime"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Illicit Finance and Privacy in Crypto",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@TRM_Labs",
+    "@CoinCenter",
+    "@StateDept"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

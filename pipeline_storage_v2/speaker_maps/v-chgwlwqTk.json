@@ -1,0 +1,20 @@
+{
+  "video_id": "v-chgwlwqTk",
+  "title": "2016-02-08_v-chgwlwqTk_A Second Course in Algorithms (Lecture 10: The Minimax Theorem & Algorithms for Linear Programming)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Von Neumann",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

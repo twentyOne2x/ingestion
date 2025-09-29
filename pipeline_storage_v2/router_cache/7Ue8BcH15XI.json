@@ -1,0 +1,27 @@
+{
+  "description": "Michael Wagner discusses the development of Star Atlas, a high production value, space-themed game built on Solana. He explains the ambitious goal of integrating blockchain as the game's infrastructure, addressing the evolution of monetization in the gaming industry, and the potential for decentralization and user ownership.",
+  "topic_summary": "In this episode, Michael Wagner, CEO of Automata, shares insights on building Star Atlas, a blockchain-based game on Solana, and the implications of blockchain technology in gaming. He explores the challenges and opportunities in the gaming industry, including user education and competition with traditional gaming models [t=0:24 - t=3:30].",
+  "router_tags": [
+    "Blockchain Gaming",
+    "Star Atlas",
+    "Solana",
+    "Web3",
+    "Game Development",
+    "NFTs",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Michael Wagner",
+    "michael wagner",
+    "Michael W.",
+    "Automata",
+    "automata"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@michaelwagner"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

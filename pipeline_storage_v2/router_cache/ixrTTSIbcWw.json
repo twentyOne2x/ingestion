@@ -1,0 +1,22 @@
+{
+  "description": "Laura Shen introduces the Solana Mobile Saga Preview event in Melbourne, discussing the excitement of engaging with the local Solana community and the upcoming features of the Saga device. Stephen Laver, head of engineering, will present mobile native experiences and unveil a special use case for the device. The event includes a Q&A session and a hands-on experience with Solana Mobile devices.",
+  "topic_summary": "The Solana Mobile Saga Preview event highlights the launch of the Saga device and its integration with the Solana Mobile stack, focusing on enhancing the Web3 experience for users in Australia and New Zealand. Key speakers include Laura Shen and Stephen Laver, who will discuss the device's features and community engagement.",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Mobile",
+    "Saga",
+    "Melbourne"
+  ],
+  "aliases": [
+    "Solana Mobile Saga",
+    "Solana Mobile",
+    "Saga Device"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

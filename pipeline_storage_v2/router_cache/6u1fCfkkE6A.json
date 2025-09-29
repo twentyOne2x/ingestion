@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, Dean M. Little discusses his journey into software engineering, starting from a young age with programming a Z80. He shares insights on his education, self-taught experiences, and his work with the Solana ecosystem and Zeus Network, which aims to integrate Bitcoin with Solana.",
+  "topic_summary": "Dean M. Little's background in software engineering, his educational journey, and his current projects in the Solana ecosystem, including his role at Zeus Network [t=66.33].",
+  "router_tags": [
+    "Solana",
+    "Software Engineering",
+    "Web3",
+    "Bitcoin",
+    "Zeus Network"
+  ],
+  "aliases": [
+    "Dean M. Little",
+    "dean m. little",
+    "Dean Little",
+    "dean little"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DeanMLittle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

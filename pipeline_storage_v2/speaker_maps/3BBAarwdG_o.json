@@ -1,0 +1,20 @@
+{
+  "video_id": "3BBAarwdG_o",
+  "title": "2025-08-05_3BBAarwdG_o_0xMaz: SolSniper, Phantom Acquisition, Crypto & NFTs and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Soul Sniper",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

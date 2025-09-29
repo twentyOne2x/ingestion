@@ -1,0 +1,20 @@
+{
+  "video_id": "httSI29cvDo",
+  "title": "2024-10-25_httSI29cvDo_Revisiting The Fundamentals of Crypto x AI with NEAR - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "D": {
+      "name": "Jeff Dean",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

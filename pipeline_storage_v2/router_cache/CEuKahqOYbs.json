@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses token extensions on Solana, highlighting their role in providing optionality and choice for developers and businesses. It covers various extensions such as transfer hooks, confidential transfers, and permanent delegate tokens, emphasizing their functionalities and benefits for compliance and privacy in blockchain transactions.",
+  "topic_summary": "Token extensions on Solana enhance the capabilities of SPL tokens, offering features like transfer hooks for transaction control [t=97.26], confidential transfers for privacy [t=131.55], and permanent delegate tokens for issuer authority [t=179.02]. These tools enable businesses to meet regulatory requirements while leveraging blockchain technology.",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Blockchain",
+    "DeFi",
+    "Compliance"
+  ],
+  "aliases": [
+    "Token Extensions",
+    "token extensions",
+    "Tokenextensions",
+    "tokenextensions"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

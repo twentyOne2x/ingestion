@@ -1,0 +1,23 @@
+{
+  "description": "Jean Herelle discusses CrunchDAO, a decentralized AI community with 6,600 active machine learning engineers and partnerships with major financial institutions. He introduces PI, a new product that generates insights from data without requiring coding skills. The aim is to unlock a $1.2 billion opportunity in the foreign exchange market by leveraging collective intelligence.",
+  "topic_summary": "CrunchDAO's role in decentralized AI and the introduction of PI for generating unique insights from data, targeting the foreign exchange market for significant revenue opportunities [t=297:45].",
+  "router_tags": [
+    "CrunchDAO",
+    "AI",
+    "Machine Learning",
+    "Decentralized Finance",
+    "Foreign Exchange"
+  ],
+  "aliases": [
+    "Crunchdao",
+    "Crunch Dao",
+    "Crunch Lab",
+    "Crunch DAO"
+  ],
+  "canonical_entities": [
+    "$1.2 Billion",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

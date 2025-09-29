@@ -1,0 +1,30 @@
+{
+  "description": "Gan from Mongolia discusses his journey in finance, the establishment of the Investor Nation movement, and the introduction of blockchain-based loyalty programs to enhance banking services.",
+  "topic_summary": "Gan shares insights on Mongolia's transition to a market economy, his experiences in finance, and the impact of blockchain technology on banking and investment in Mongolia [t=3:28-443:41].",
+  "router_tags": [
+    "Mongolia",
+    "Blockchain",
+    "Finance",
+    "Investor Nation",
+    "Loyalty Programs",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Investor Nation",
+    "investor nation",
+    "INVESTOR NATION"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "@CentralBankOfMongolia",
+    "@SavingsAndLoanCooperative",
+    "@MinistryOfFinance",
+    "@ArtFinancialGroup",
+    "@InternationalDigitalAssets",
+    "$USDC",
+    "$Artcoins"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

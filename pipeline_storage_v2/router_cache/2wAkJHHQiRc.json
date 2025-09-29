@@ -1,0 +1,25 @@
+{
+  "description": "This lecture discusses long-range attacks in blockchain protocols, particularly in proof of stake systems, and explores various mitigation strategies. It highlights the challenges of ensuring security when nodes can go offline and the implications of trust assumptions in blockchain design.",
+  "topic_summary": "The video covers long-range attacks in blockchain systems, emphasizing their relevance to proof of stake protocols. It outlines the nature of these attacks, the assumptions made in blockchain design, and potential strategies for mitigation, including the importance of monitoring blockchain activity in real-time [t=0:56].",
+  "router_tags": [
+    "blockchain",
+    "long-range attacks",
+    "proof of stake",
+    "security",
+    "mitigation strategies"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Foundations Of Blockchains",
+    "foundations of blockchains"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Johnny",
+    "@Nakamoto",
+    "@DebKannon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

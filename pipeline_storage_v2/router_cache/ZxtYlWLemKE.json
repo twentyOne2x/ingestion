@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the concept of tokenization, highlighting its potential to transform traditional financial assets into digital tokens that can be traded 24/7. It emphasizes the accessibility of investing through tokenization and the innovative possibilities it presents for various assets, including unique items like a Stradivarius violin. The speaker believes we are at the beginning of a significant evolution in tokenization, which will greatly expand by 2035.",
+  "topic_summary": "Exploration of tokenization as a transformative financial mechanism, enabling the trading of traditional assets on blockchain technology and fostering community engagement. The future of tokenization is anticipated to be vastly different and more expansive.",
+  "router_tags": [
+    "Tokenization",
+    "Solana",
+    "Blockchain",
+    "Financial Innovation",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "solana stories",
+    "SOLANA STORIES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

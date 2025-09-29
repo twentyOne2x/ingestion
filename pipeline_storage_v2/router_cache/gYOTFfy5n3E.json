@@ -1,0 +1,26 @@
+{
+  "description": "Roger Bayston discusses Franklin Templeton's pioneering role in tokenized funds on Solana, highlighting the challenges and innovations in the blockchain space, including instant transferability and intraday yield mechanisms. He shares a personal anecdote about his son's digital currency experiences, emphasizing the significance of regulatory navigation and the future of asset management on-chain.",
+  "topic_summary": "The conversation covers Franklin Templeton's journey into blockchain technology, the impact of tokenized funds, regulatory challenges, and the potential for significant assets to transition to the blockchain in the future. Key innovations like intraday yield and the importance of transfer agency are also discussed.",
+  "router_tags": [
+    "Franklin Templeton",
+    "Blockchain",
+    "Tokenization",
+    "Digital Assets",
+    "Solana",
+    "Regulatory Challenges"
+  ],
+  "aliases": [
+    "Roger Bayston",
+    "Franklin Templeton",
+    "SolanaFndn",
+    "Jenny Johnson"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JennyJohnson",
+    "@RogerBayston"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

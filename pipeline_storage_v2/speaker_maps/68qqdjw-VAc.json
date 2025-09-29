@@ -1,0 +1,20 @@
+{
+  "video_id": "68qqdjw-VAc",
+  "title": "2024-07-03_68qqdjw-VAc_Solana Changelog Jul 3 - Removing deprecated RPC methods in v2.0 and Solana Actions and blinks",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Nick Frost Butter",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

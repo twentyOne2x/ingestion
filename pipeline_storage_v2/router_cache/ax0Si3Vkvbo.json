@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial demonstrates how to create an idle game called Lumberjack on the Solana blockchain using the Clockwork tool. The game collects wood every 10 seconds and utilizes a thread to trigger transactions automatically. Viewers learn about initializing game data, transaction costs, and how to upgrade their lumberjack using collected resources.",
+  "topic_summary": "Creating an idle game on Solana with Clockwork, focusing on transaction automation and resource management [t=0:48 - t=281:86].",
+  "router_tags": [
+    "Solana",
+    "Idle Game",
+    "Clockwork",
+    "Blockchain Gaming",
+    "DApp Development"
+  ],
+  "aliases": [
+    "solanafndn",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

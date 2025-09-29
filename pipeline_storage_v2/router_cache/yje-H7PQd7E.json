@@ -1,0 +1,23 @@
+{
+  "description": "Nick from Helios discusses their developer platform on Solana, focusing on a new compression solution for tokens and accounts. This allows for mass distribution of tokens at a low cost, potentially around 5 to 10 SOL for 1 million tokens.",
+  "topic_summary": "Helios is building a developer platform on Solana that offers a compression solution for tokens and accounts, enabling cost-effective mass distribution of tokens [t=7:24].",
+  "router_tags": [
+    "Helios",
+    "Solana",
+    "Token Distribution",
+    "Blockchain",
+    "Developer Platform"
+  ],
+  "aliases": [
+    "Helios",
+    "helios",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

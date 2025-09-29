@@ -1,0 +1,39 @@
+{
+  "description": "Discussion on fixing memecoin launchpads, the current state of crypto, and innovation in the space.",
+  "topic_summary": "Hosts discuss personal injuries and transitions in their careers, including experiences at Amazon and Coinbase, and the development of a social trading app at Coinbase [t=130:29].",
+  "router_tags": [
+    "Crypto",
+    "Memecoins",
+    "Launchpads",
+    "Innovation",
+    "Trading"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@Coinbase",
+    "@Amazon",
+    "@Twitter",
+    "@Axiom",
+    "@Nike",
+    "@TravisScott",
+    "@Shoku",
+    "@Bonk",
+    "@YCombinator",
+    "@USGovernment",
+    "@HyperLiquid",
+    "@Uniswap",
+    "@Shopify",
+    "@GeneMichael",
+    "@Trump",
+    "@Jordan",
+    "@HyperUnit"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,40 @@
+{
+  "description": "Logan Allen discusses the launch of Nockchain's competition for ZK Proof of Work miners, emphasizing the importance of upgrades and the potential for Bitcoin-based ecosystems. He highlights various projects and technologies that could enhance the Bitcoin network, while also touching on the gaming aspect of community engagement.",
+  "topic_summary": "The video covers the initiation of a global competition for ZK Proof of Work miners by Nockchain, focusing on technological advancements and community involvement in the Bitcoin ecosystem. Key discussions include the verification of Bitcoin opcodes and the integration of gaming elements into blockchain interactions [t=1:92 - t=528:26].",
+  "router_tags": [
+    "Bitcoin",
+    "ZK Proof of Work",
+    "Nockchain",
+    "Blockchain Technology",
+    "Gaming",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Logan Allen",
+    "Wendy",
+    "Koins",
+    "Erich Wahl",
+    "Steiner",
+    "Soltech",
+    "Wassmann",
+    "Nachten",
+    "Justin Murphy",
+    "Warren",
+    "Regent Von Zapow"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Wendy",
+    "@Koins",
+    "@ErichWahl",
+    "@Steiner",
+    "@Soltech",
+    "@Wassmann",
+    "@Nachten",
+    "@JustinMurphy",
+    "@Warren",
+    "@RegentVonZapow"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

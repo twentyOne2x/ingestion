@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses levels of expertise in understanding NP-hard problems, as outlined in section 19.2 of 'Algorithms Illuminated, Part 4'. It covers levels from total ignorance to advanced mastery, detailing what knowledge is necessary at each stage.",
+  "topic_summary": "The video outlines four levels of expertise regarding NP-hard problems: Level 0 (total ignorance) [t=25.69], Level 1 (basic awareness) [t=46.89], Level 2 (algorithmic toolbox) [t=105.0], Level 3 (diagnosing NP-hardness) [t=154.6], and Level 4 (deep mathematical understanding) [t=200.34]. It emphasizes the importance of knowing how to approach NP-hard problems based on one's expertise level.",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Algorithms",
+    "Expertise Levels",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Algorithms for NP-Hard Problems",
+    "NP Hardness Expertise",
+    "Understanding NP Hard Problems"
+  ],
+  "canonical_entities": [
+    "$NP",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

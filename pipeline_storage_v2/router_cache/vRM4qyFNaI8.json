@@ -1,0 +1,26 @@
+{
+  "description": "This lecture discusses the Price of Anarchy in first-price auctions, contrasting it with second-price auctions. It covers the unique Bayes Nash equilibrium in single-item auctions and the implications of bidder strategies based on competition levels.",
+  "topic_summary": "The lecture focuses on first-price auctions, explaining the lack of dominant strategies and the unique Bayes Nash equilibrium. It highlights how bidders should shade their bids based on expected values of competitors, particularly in IID settings [t=1:92-283:77].",
+  "router_tags": [
+    "Mechanism Design",
+    "Auctions",
+    "Game Theory",
+    "Price of Anarchy",
+    "Bayes Nash Equilibrium"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Mechanism Design Lectures",
+    "Auction Theory"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$BayesNash",
+    "$Vickrey",
+    "@Amanda",
+    "@Tardos",
+    "@Hasidim"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

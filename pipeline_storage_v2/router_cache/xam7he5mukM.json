@@ -1,0 +1,21 @@
+{
+  "description": "This lecture discusses the FLP impossibility results in Byzantine agreement, focusing on the proof by contradiction. It outlines the necessary properties of determination, agreement, and validity, and introduces the concept of configurations as snapshots of protocol states.",
+  "topic_summary": "The lecture covers the FLP impossibility theorem, detailing how no deterministic protocol can achieve Byzantine agreement with even one faulty node. It explains the significance of configurations and message deliveries in protocol execution, emphasizing the role of adversaries in controlling message transitions.",
+  "router_tags": [
+    "Byzantine Agreement",
+    "FLP Impossibility",
+    "Blockchain",
+    "Distributed Systems"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 4.5 Configurations",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$FLP",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

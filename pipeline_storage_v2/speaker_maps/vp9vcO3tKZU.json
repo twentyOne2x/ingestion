@@ -1,0 +1,26 @@
+{
+  "video_id": "vp9vcO3tKZU",
+  "title": "2024-09-21_vp9vcO3tKZU_Breakpoint 2024: Fireside: Where's the Alpha: Liquid or Venture (Joe McCann, Arthur Cheong)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kamala Harris",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Iggy Azalea",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Announcement of the winners from the Hyperdrive Hackathon, highlighting the success of Solana's hackathon program and its global participation.",
+  "topic_summary": "In this video, the winners of the Hyperdrive Hackathon are revealed, showcasing the evolution of Solana's hackathon program since its inception. The discussion includes participation statistics, project submissions, and the focus on startup founders in the hackathon structure. Notable winners across various tracks are announced, emphasizing the competitive nature of the event and the encouragement for all participants to continue building innovative projects.",
+  "router_tags": [
+    "Solana",
+    "hackathon",
+    "Hyperdrive",
+    "winners",
+    "startup",
+    "innovation"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

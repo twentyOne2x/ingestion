@@ -1,0 +1,26 @@
+{
+  "video_id": "qLbcvtIAPnI",
+  "title": "2025-05-22_qLbcvtIAPnI_Ship or Die at Accelerate 2025: Internet Capital Markets (Akshay BD - Solana Foundation)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Larry Fink",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Vinod Khosla",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

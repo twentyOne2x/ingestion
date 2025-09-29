@@ -1,0 +1,23 @@
+{
+  "description": "Jongar Kiss discusses XDAP frameworks, focusing on the implications of building decentralized applications that operate across multiple blockchains. He explains the challenges of asynchronous communication and concurrency in cross-chain environments, emphasizing the need for careful architecture to manage state changes and error handling effectively.",
+  "topic_summary": "The talk covers the architecture of XDAPs, the differences between traditional smart contracts and XDAPs, and the importance of message passing for cross-chain communication. It highlights the need for frameworks to handle concurrency and state management in decentralized applications.",
+  "router_tags": [
+    "XDAP",
+    "Smart Contracts",
+    "Cross-Chain",
+    "Blockchain",
+    "Decentralized Applications"
+  ],
+  "aliases": [
+    "xdap",
+    "Xdap",
+    "XDap"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Wormhole"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on Solana's role in Internet Capital Markets at the All-In Summit 2025.",
+  "topic_summary": "Solana's impact on capital markets is explored, highlighting its innovations and future potential [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Capital Markets",
+    "All-In Summit",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

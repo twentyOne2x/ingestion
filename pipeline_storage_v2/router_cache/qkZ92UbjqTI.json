@@ -1,0 +1,20 @@
+{
+  "description": "Lecture discussing the implementation of a separation oracle in mechanism design, focusing on randomized rounding and its application to dual linear systems.",
+  "topic_summary": "The lecture covers the separation oracle's implementation, including the use of randomized rounding and its effects on fractional solutions [t=176:28].",
+  "router_tags": [
+    "Mechanism Design",
+    "Separation Oracle",
+    "Randomized Rounding",
+    "Linear Systems"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Mechanism Design Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

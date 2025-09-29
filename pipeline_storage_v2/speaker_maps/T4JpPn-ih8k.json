@@ -1,0 +1,20 @@
+{
+  "video_id": "T4JpPn-ih8k",
+  "title": "2024-11-18_T4JpPn-ih8k_Interviewing The Creator Of ai16z... (ShawMakesMagic)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "J. Krishnamurti",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

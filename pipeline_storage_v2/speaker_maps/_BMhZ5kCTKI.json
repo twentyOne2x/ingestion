@@ -1,0 +1,26 @@
+{
+  "video_id": "_BMhZ5kCTKI",
+  "title": "2025-02-25__BMhZ5kCTKI_Increase Bandwidth, Reduce Latency w- Mateo Ward and Andrew McConnell",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Matteo Ward",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Kevin Bowers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

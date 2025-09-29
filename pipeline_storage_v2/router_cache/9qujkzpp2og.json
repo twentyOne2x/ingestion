@@ -1,0 +1,26 @@
+{
+  "description": "In this episode, Vibhu from Driphouse discusses the evolution of Drip, a platform that allows artists and creators to distribute on-chain content to fans. The conversation covers the transition from Solana Spaces to Drip, the impact of market changes, and the innovative features of Drip, including its rapid growth and the introduction of compressed NFTs.",
+  "topic_summary": "Vibhu explains how Driphouse emerged from Solana Spaces, focusing on the challenges and opportunities in the NFT space, particularly during market fluctuations. The discussion highlights Drip's unique approach to content distribution and its role in reshaping perceptions of NFTs and creator relationships [t=0:32-372:67].",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Web3",
+    "Driphouse",
+    "Content Creation",
+    "Digital Art"
+  ],
+  "aliases": [
+    "Drip",
+    "drip",
+    "DRIP",
+    "Driphouse",
+    "driphouse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Vibhu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

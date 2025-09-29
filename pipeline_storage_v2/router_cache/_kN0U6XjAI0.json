@@ -1,0 +1,23 @@
+{
+  "description": "Anthony Scaramucci discusses the evolving landscape of cryptocurrency regulation and the potential of Solana in institutional finance. He highlights the importance of bipartisan regulation and the efficiency of blockchain technology in transaction verification, emphasizing Solana's role in tokenization and real-world assets.",
+  "topic_summary": "Scaramucci addresses the significance of Solana in institutional finance and the need for effective cryptocurrency regulation, referencing the potential savings in transaction verification costs [t=178.7].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Solana",
+    "Institutional Finance",
+    "Blockchain",
+    "Tokenization",
+    "Regulation"
+  ],
+  "aliases": [
+    "Anthony Scaramucci",
+    "Anthony",
+    "Scaramucci"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

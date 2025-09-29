@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses eBay's reputation system, highlighting its unique features compared to other platforms like Amazon. It covers the historical context of eBay's founding in 1995, the importance of buyer-seller feedback, and the challenges of retaliation in feedback systems. The lecture also contrasts sequential and simultaneous feedback mechanisms, noting changes made by eBay to mitigate negative feedback retaliation.",
+  "topic_summary": "The lecture explores the evolution and mechanics of eBay's reputation system, emphasizing the mutual rating between buyers and sellers, the skew towards positive feedback, and the implications of feedback design choices on user behavior and platform integrity [t=0:64].",
+  "router_tags": [
+    "eBay",
+    "Reputation System",
+    "Feedback Mechanism",
+    "Online Marketplaces",
+    "User Ratings"
+  ],
+  "aliases": [
+    "Ebay",
+    "EBAY",
+    "eBay"
+  ],
+  "canonical_entities": [
+    "$EBAY",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

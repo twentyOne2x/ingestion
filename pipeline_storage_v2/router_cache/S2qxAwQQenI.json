@@ -1,0 +1,26 @@
+{
+  "description": "Wyre discusses its regulatory crypto payment solutions and new integrations with Solana, emphasizing its fiat on-ramp capabilities and developer-focused API suite.",
+  "topic_summary": "Wyre, a regulatory crypto payments company, highlights its services including fiat on-ramps and managed crypto solutions, aiming to simplify crypto transactions for developers and users. [t=0:00]",
+  "router_tags": [
+    "Wyre",
+    "Solana",
+    "Crypto Payments",
+    "Fiat On-Ramp",
+    "KYC",
+    "API Integration"
+  ],
+  "aliases": [
+    "Wyre",
+    "WYRE",
+    "solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$KIN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

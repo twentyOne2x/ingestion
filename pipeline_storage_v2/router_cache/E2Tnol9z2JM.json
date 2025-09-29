@@ -1,0 +1,25 @@
+{
+  "description": "Jacob Creech and John discuss the latest updates in the Solana ecosystem, including the Solana Speedrun game jam, the SIMD53 Turbine proposal, and the rollout of Merkle shreds on testnet. They emphasize the importance of community engagement on Stack Exchange and highlight Solandy's new security series for Solana programs.",
+  "topic_summary": "This week's Changelog covers updates on Solana Speedrun [t=20:56], SIMD53 Turbine proposal [t=76:15], Merkle shreds rollout [t=209:66], and a new security series by Solandy [t=266:61].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Game Development",
+    "Blockchain",
+    "Security"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "solana foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@solandy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

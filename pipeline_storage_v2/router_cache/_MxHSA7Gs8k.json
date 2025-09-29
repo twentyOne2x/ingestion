@@ -1,0 +1,23 @@
+{
+  "description": "The panel discusses the growth of Solana communities, featuring insights from George of Step Finance on Solana All Stars, which aims to engage users through events in various cities, and Jonas from Medicamp, who shares experiences in building a supportive environment for developers and non-developers alike.",
+  "topic_summary": "Panelists explore community building in Solana, focusing on user engagement and developer support through initiatives like Solana All Stars and Medicamp. They highlight the importance of connecting developers with users to foster growth in the ecosystem.",
+  "router_tags": [
+    "Solana",
+    "community building",
+    "developer engagement",
+    "user acquisition",
+    "blockchain"
+  ],
+  "aliases": [
+    "solana communities",
+    "solana all stars",
+    "medicamp",
+    "superteam vietnam"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

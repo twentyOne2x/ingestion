@@ -1,0 +1,23 @@
+{
+  "description": "Lecture on augmenting path algorithms for maximum flow, covering directed graphs, flows, residual graphs, and the Ford-Fulkerson algorithm.",
+  "topic_summary": "Discussion on flows in directed graphs, capacity constraints, and the concept of residual graphs. Explanation of the Ford-Fulkerson algorithm and its correctness in determining maximum flow [t=0:40].",
+  "router_tags": [
+    "Algorithms",
+    "Maximum Flow",
+    "Graph Theory",
+    "Ford-Fulkerson",
+    "Residual Graphs"
+  ],
+  "aliases": [
+    "Augmenting Path Algorithms",
+    "Maximum Flow Algorithms",
+    "Ford Fulkerson Algorithm"
+  ],
+  "canonical_entities": [
+    "$EDK",
+    "@ford",
+    "@fulkerson"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

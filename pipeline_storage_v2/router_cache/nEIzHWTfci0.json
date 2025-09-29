@@ -1,0 +1,23 @@
+{
+  "description": "Thread Guy discusses the potential revelation of Satoshi Nakamoto's identity with Meredith Patterson, exploring the lore surrounding Bitcoin and the impact of a recent documentary on the crypto community.",
+  "topic_summary": "In this episode, Thread Guy and Meredith Patterson delve into the mystery of Satoshi Nakamoto, the creator of Bitcoin, and share insights on the crypto market and digital cash systems, referencing a documentary that sparked interest in the topic [t=0:24].",
+  "router_tags": [
+    "Bitcoin",
+    "Satoshi Nakamoto",
+    "crypto",
+    "digital cash",
+    "documentary"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "Thread Guy",
+    "Meredith Patterson"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "@meredith"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

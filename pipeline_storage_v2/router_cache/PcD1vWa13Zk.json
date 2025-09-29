@@ -1,0 +1,24 @@
+{
+  "description": "Solomon from the Solana Foundation opens the Scale or Die conference in New York City, emphasizing the need for deep technical discussions among developers in the Solana ecosystem. The event aims to facilitate focused conversations and hands-on workshops, addressing the lack of dedicated developer spaces in previous conferences.",
+  "topic_summary": "The conference serves as a platform for developers to engage in technical discussions, share insights, and collaborate on the latest changes in the Solana ecosystem. It includes workshops and programming focused on core protocols and infrastructure.",
+  "router_tags": [
+    "Solana",
+    "Scale or Die",
+    "Accelerate 2025",
+    "developer conference",
+    "technical discussions"
+  ],
+  "aliases": [
+    "Scale Or Die",
+    "scale or die",
+    "SOL",
+    "solomon",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

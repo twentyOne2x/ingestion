@@ -1,0 +1,22 @@
+{
+  "description": "Ankur Jain demonstrates the Minty Fresh app, allowing users to mint NFTs from their photos, including a sunset image at the Golden Gate Bridge in San Francisco. The process involves uploading the image to IPFS and signing transactions using a mobile wallet.",
+  "topic_summary": "Demo of Minty Fresh NFT minting app, showcasing how to create NFTs from personal photos [t=29:62].",
+  "router_tags": [
+    "NFT",
+    "Minting",
+    "Web3",
+    "Blockchain",
+    "Photography"
+  ],
+  "aliases": [
+    "Minty Fresh",
+    "Minty fresh",
+    "minty fresh"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

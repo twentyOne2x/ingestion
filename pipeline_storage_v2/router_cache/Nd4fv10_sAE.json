@@ -1,0 +1,28 @@
+{
+  "description": "In this episode, Jacob and Nick discuss the latest updates in the Solana ecosystem, including a proposal for dynamic compute unit limits, enhancements to the CLI for setting compute unit prices, and the ongoing migration of BPF programs. They also cover changes to the 118 scheduler that favor lower compute transactions, improving transaction scheduling efficiency.",
+  "topic_summary": "Highlights from the Solana Changelog, including dynamic CU limits proposal [t=67:72], CLI updates for compute unit pricing [t=101:66], and BPF program migration efforts [t=185:24].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Compute Units",
+    "CLI",
+    "BPF Migration",
+    "Scheduler"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@cavemanloverboy",
+    "@jstari",
+    "@JoeBuffalo",
+    "@Andrew"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

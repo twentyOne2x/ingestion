@@ -1,0 +1,25 @@
+{
+  "description": "Rune Christensen discusses the launch of Sky on Solana, detailing its features including the USDS stablecoin and governance token. He highlights the integration with Wormhole and the upcoming liquidity incentive program to boost DeFi on Solana.",
+  "topic_summary": "Sky, an upgrade of the Maker Protocol, is launching on Solana with new features like USDS and Sky tokens. It aims to enhance the DeFi ecosystem on Solana through significant liquidity incentives and integration with existing protocols. [t=99:16]",
+  "router_tags": [
+    "Sky",
+    "Solana",
+    "DeFi",
+    "USDS",
+    "Wormhole"
+  ],
+  "aliases": [
+    "Sky",
+    "sky",
+    "USDS",
+    "usds",
+    "Rune Christensen",
+    "rune christensen"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

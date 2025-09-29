@@ -1,0 +1,23 @@
+{
+  "description": "Jarry Xiao discusses the innovative approach of Phoenix in DeFi, contrasting it with traditional order book systems and the limitations of Ethereum's model. He emphasizes the importance of active market participation and the computational demands of order books compared to automated market makers (AMMs).",
+  "topic_summary": "Exploration of Phoenix's unique order book design in DeFi, its advantages over traditional systems, and the challenges posed by Ethereum's constraints [t=30:57].",
+  "router_tags": [
+    "DeFi",
+    "Phoenix",
+    "Solana",
+    "Order Book",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Jarry Xiao",
+    "Jarry xiao",
+    "Jerry Xiao",
+    "Jerry xiao"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

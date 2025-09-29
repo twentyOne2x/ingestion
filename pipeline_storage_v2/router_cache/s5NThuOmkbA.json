@@ -1,0 +1,25 @@
+{
+  "description": "Mark Greenberg from Kraken discusses the challenges of trading equities and introduces X Stocks, a new platform for permissionless self-custody of tokenized equities, in partnership with Bakkt. The initiative aims to provide 24/7 access to various asset classes on-chain, enhancing usability and accessibility for users globally.",
+  "topic_summary": "At [t=5:44], Mark Greenberg introduces himself and highlights the difficulties of trading equities. He emphasizes Kraken's mission to integrate crypto with all asset classes, leading to the announcement of X Stocks at [t=78:49]. David from Bakkt elaborates on the platform's features, including tokenization of popular US stocks and the importance of a decentralized finance (DeFi) stack for usability at [t=185:87].",
+  "router_tags": [
+    "Kraken",
+    "Bakkt",
+    "X Stocks",
+    "Tokenized Equities",
+    "DeFi",
+    "Solana"
+  ],
+  "aliases": [
+    "x stocks",
+    "X Stocks",
+    "Kraken",
+    "Bakkt"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

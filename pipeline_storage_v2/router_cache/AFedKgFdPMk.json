@@ -1,0 +1,23 @@
+{
+  "description": "Ben Pasternak and PeacefulDecay engage in a debate about launchpad competitors, discussing various ideas and perspectives in the crypto space.",
+  "topic_summary": "The podcast features a debate between Ben Pasternak and PeacefulDecay, covering topics such as the ICO excitement, launchcoin's impact, and the challenges within the crypto space [t=59:04].",
+  "router_tags": [
+    "debate",
+    "crypto",
+    "launchpad",
+    "ICO",
+    "blockchain"
+  ],
+  "aliases": [
+    "Ben Pasternak",
+    "ben pasternak",
+    "PeacefulDecay",
+    "peacefuldecay"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

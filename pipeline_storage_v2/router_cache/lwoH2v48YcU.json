@@ -1,0 +1,25 @@
+{
+  "description": "Lucas Bruder discusses the concept of restaking and its implications for Solana protocols, emphasizing the advancements in the Solana network and the role of Jito Labs in this ecosystem. He highlights the decentralized nature of Stakenet and the importance of reliable data for the JITOSOUL stake pool.",
+  "topic_summary": "In this talk, Lucas Bruder explains restaking and its significance for Solana, detailing the functionality of Stakenet and the need for reliable data in decentralized staking protocols. He also addresses the rapid improvements in the Solana network and the vision of Anatoly.",
+  "router_tags": [
+    "Solana",
+    "Restaking",
+    "Jito",
+    "Stakenet",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Lucas Bruder",
+    "Buffalo",
+    "Jito Labs",
+    "Stakenet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

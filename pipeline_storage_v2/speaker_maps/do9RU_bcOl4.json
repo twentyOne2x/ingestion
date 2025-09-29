@@ -1,0 +1,20 @@
+{
+  "video_id": "do9RU_bcOl4",
+  "title": "2014-10-02_do9RU_bcOl4_Beyond Worst-Case Analysis (Lecture 4: Parameterized Analysis of Online Paging)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Floyd Warshaw",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

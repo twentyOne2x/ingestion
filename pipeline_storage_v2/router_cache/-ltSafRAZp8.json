@@ -1,0 +1,24 @@
+{
+  "description": "Mike Kahl, CEO of Dora Labs, presents an update on the Pith Network at Breakpoint 2024, focusing on its mission to enhance DeFi infrastructure. He discusses the introduction of Oracle Integrity Staking and the launch of Pith price feeds, emphasizing the importance of accurate data in the DeFi ecosystem.",
+  "topic_summary": "At [t=20:72], Mike Kahl introduces the Pith Network's mission to improve DeFi infrastructure. He highlights the launch of Oracle Integrity Staking and Pith price feeds at [t=75:92], aiming to ensure data accuracy and reliability for developers.",
+  "router_tags": [
+    "DeFi",
+    "Pyth Network",
+    "Oracle Integrity Staking",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Pyth Network",
+    "Pith Network",
+    "Mike Kahl",
+    "Dora Labs",
+    "Guardians of Defy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

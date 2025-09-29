@@ -1,0 +1,23 @@
+{
+  "description": "Shane Molador discusses the importance of token price performance in the cryptocurrency sector, emphasizing that it can significantly impact user engagement and protocol success. He outlines common pitfalls for token issuers and offers strategies for optimizing tokenomics and market relationships.",
+  "topic_summary": "The talk covers the critical role of token price in user motivation and protocol activity, highlighting the negative feedback loop caused by poor price performance. It also addresses compliance strategies for token issuers and the importance of effective market maker relationships.",
+  "router_tags": [
+    "Tokenomics",
+    "Market Making",
+    "Cryptocurrency",
+    "Token Performance",
+    "Solana"
+  ],
+  "aliases": [
+    "Shane Molador",
+    "shane molador",
+    "FORGED",
+    "forged"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

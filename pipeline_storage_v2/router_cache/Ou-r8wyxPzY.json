@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on managing a $10 million crypto portfolio, focusing on Ethereum's performance and investment strategies.",
+  "topic_summary": "The conversation highlights the risks of being fully allocated to Ethereum, with references to its price fluctuations around $2,500 and the impact of external factors like tariffs. The participants debate investment strategies and the importance of diversification in crypto portfolios [t=1:20].",
+  "router_tags": [
+    "Crypto",
+    "Ethereum",
+    "Investment",
+    "Portfolio Management"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@EricTrump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "The video discusses the Dabba Wireless Network in India, co-founded by Shubhendu Sharma and Karam Lakshman, which aims to provide Internet connectivity in emerging markets using blockchain technology. It highlights their journey from a personal use case to a scalable product that enables individuals to sponsor Internet connections for those in need.",
+  "topic_summary": "Dabba Wireless Network leverages blockchain to provide high-speed Internet access to underserved populations, aiming to connect a billion people. The initiative has already enabled 11,000 locations and plans to expand significantly over the next decade [t=112.98].",
+  "router_tags": [
+    "Internet Connectivity",
+    "Blockchain",
+    "Emerging Markets",
+    "Solana",
+    "Dabba Wireless"
+  ],
+  "aliases": [
+    "Dabba Wireless Network",
+    "Dabba Wireless",
+    "Deepin Ecosystem",
+    "Deepin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ShubhenduSharma",
+    "@KaramLakshman"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

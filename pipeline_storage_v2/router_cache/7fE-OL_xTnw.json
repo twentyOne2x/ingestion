@@ -1,0 +1,22 @@
+{
+  "description": "The NFT Showdown features pitches from finalists, including Hellbenders, an NFT collection and mobile game focused on environmental themes and community engagement.",
+  "topic_summary": "The event showcases NFT projects with a focus on innovation and community, featuring a judging panel of industry leaders. Hellbenders is highlighted as a unique project combining gaming and environmental activism [t=207.04].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Hellbenders",
+    "gaming",
+    "environment"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

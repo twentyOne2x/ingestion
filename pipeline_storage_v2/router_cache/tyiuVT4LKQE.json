@@ -1,0 +1,25 @@
+{
+  "description": "Vijay Chetty, CEO of Eclipse, discusses the features and advantages of Eclipse, a layer two solution for Ethereum that leverages the Solana virtual machine (SVM) for speed and scalability while inheriting Ethereum's security. He highlights the integration of Celestia for data availability and the focus on high throughput and decentralized finance (DeFi) applications.",
+  "topic_summary": "In this keynote, Vijay Chetty introduces Eclipse, Ethereum's first SVM layer two solution, emphasizing its unique capabilities, partnerships, and the roadmap for future developments in DeFi and user experiences. He discusses the importance of high throughput and the integration of various projects to enhance the Ethereum ecosystem.",
+  "router_tags": [
+    "Eclipse",
+    "Ethereum",
+    "SVM",
+    "DeFi",
+    "Solana",
+    "Celestia"
+  ],
+  "aliases": [
+    "Eclipse",
+    "eclipse",
+    "ECLIPSE"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$CEL",
+    "@Vijay"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

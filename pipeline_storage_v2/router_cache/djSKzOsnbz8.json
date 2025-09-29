@@ -1,0 +1,25 @@
+{
+  "description": "Anna Kazlauskas discusses the value of data as an asset class and its implications for AI, emphasizing the challenges of accessing quality data from major platforms. She introduces Vana's approach to unlocking user data and creating data DAOs, highlighting their role in the evolving data economy.",
+  "topic_summary": "The talk covers the significance of data in AI training, the limitations of current data access, and how Vana enables users to control their data. It also explores the concept of data DAOs and their potential in the Solana ecosystem, particularly in relation to data tokenization and market dynamics [t=4:96].",
+  "router_tags": [
+    "Data Economy",
+    "AI Training",
+    "Decentralization",
+    "Vana",
+    "Data DAO",
+    "Solana"
+  ],
+  "aliases": [
+    "Vana",
+    "vana",
+    "VANA"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@janetyellen",
+    "@solanafndn",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

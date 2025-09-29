@@ -1,0 +1,24 @@
+{
+  "description": "Davis Hart from Solana Labs discusses Game Shift, an API service designed to simplify game development on Solana by providing essential backend features like wallets, assets, and payments, allowing developers to focus on their game design without deep blockchain knowledge.",
+  "topic_summary": "In this episode, Davis Hart explains how Game Shift serves as a blockchain backend service for game developers, detailing its REST-based API and how it simplifies the integration of blockchain functionalities like NFT minting and token management [t=0:24-3:13].",
+  "router_tags": [
+    "Game Development",
+    "Blockchain",
+    "Solana",
+    "Game Shift",
+    "API",
+    "NFTs"
+  ],
+  "aliases": [
+    "Game Shift",
+    "gameshift",
+    "Gameshift"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@gameshift",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Closing remarks from Breakpoint 2023, highlighting community growth and appreciation for attendees and contributors.",
+  "topic_summary": "The speaker expresses gratitude for the community's support and reflects on the growth and maturity of projects showcased at Breakpoint 2023. They emphasize the importance of the community in driving the network forward and acknowledge the efforts of the teams that organized the event. [t=0:00] to [t=3:18]",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "Community",
+    "Event"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "breakpoint 2023",
+    "BREAKPOINT 2023"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

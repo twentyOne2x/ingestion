@@ -1,0 +1,27 @@
+{
+  "description": "A debate featuring Joanna Zen and Cindy on the differences between Eastern and Western crypto, discussing technology, user engagement, and market preferences.",
+  "topic_summary": "Joanna and Cindy explore the distinctions between Eastern and Western crypto markets, focusing on technology and user bases. Joanna argues from a Western perspective, highlighting her experience in the US, while Cindy represents the Eastern viewpoint, emphasizing her background in Asia. The discussion touches on geographical definitions and market dynamics [t=36:22].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "technology",
+    "Eastern vs Western",
+    "Solana",
+    "defi"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Cindy",
+    "Joanna Zen",
+    "Drift",
+    "Drip"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@JoannaZen",
+    "@Cindy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

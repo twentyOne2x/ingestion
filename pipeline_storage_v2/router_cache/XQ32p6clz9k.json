@@ -1,0 +1,27 @@
+{
+  "description": "Lecture discusses the tractability of correlated equilibria and the learning algorithms associated with them. It highlights the relationship between coarse correlated equilibria and more refined equilibrium concepts, including the use of no swap regret algorithms. The lecture also contrasts learning dynamics with linear programming approaches to establish polynomial time tractability.",
+  "topic_summary": "The lecture covers the tractability of correlated equilibria and introduces learning algorithms that can achieve this. It emphasizes the significance of no swap regret algorithms in converging to correlated equilibria, and discusses the trade-offs between learning dynamics and linear programming methods for solving equilibrium concepts. [t=1:60] [t=106:00] [t=164:32]",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Correlated Equilibria",
+    "Learning Algorithms",
+    "Nash Equilibria",
+    "Game Theory"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Correlated Equilibria",
+    "Learning Algorithms",
+    "Nash Equilibria"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$Markov",
+    "$Borel",
+    "$Brower",
+    "$Mansour",
+    "$George Danzig"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

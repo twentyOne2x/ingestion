@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Helium's community-driven wireless network and its integration with Solana, highlighting cost efficiency and scalability.",
+  "topic_summary": "Exploration of Helium's wireless networks, including 5G and IoT, and the role of Solana in facilitating connectivity and incentivizing infrastructure providers. Key points include the potential for $20 cell phone plans [t=4:48], the need for widespread connectivity [t=93:26], and the advantages of using Solana's blockchain technology [t=186:28].",
+  "router_tags": [
+    "Helium",
+    "Solana",
+    "Wireless Networks",
+    "Blockchain",
+    "IoT"
+  ],
+  "aliases": [
+    "Helium",
+    "helium",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

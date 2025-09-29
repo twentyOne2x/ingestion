@@ -1,0 +1,26 @@
+{
+  "video_id": "ned5Tdp3F3M",
+  "title": "2024-07-23_ned5Tdp3F3M_What Futarchy Looks Like in Practice w- Kollan House (MetaDAO)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Robin Hanson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Alex Jones",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

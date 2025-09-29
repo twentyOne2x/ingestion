@@ -1,0 +1,22 @@
+{
+  "description": "Aleftina Yakovenko introduces Nacho Mileo at Breakpoint 2022, discussing the importance of open-source development and the challenges faced by crypto in Argentina, including trust issues with banks and the need for decentralized alternatives.",
+  "topic_summary": "Nacho Mileo presents on the theme of 'Freedom to Fork', addressing the evolution of crypto in Argentina, the significance of user ownership of keys, and the potential impact of social media integration on crypto adoption [t=0:48-392:58].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2022",
+    "Crypto",
+    "Open Source",
+    "Decentralization"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

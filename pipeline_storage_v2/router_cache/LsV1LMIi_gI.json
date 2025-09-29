@@ -1,0 +1,23 @@
+{
+  "description": "In this session, the speaker discusses Jupiter's growth and advancements in decentralized trading on Solana. They highlight the development of a new routing engine, various swap products, and the integration of liquidity infrastructure to enhance user experience in DeFi.",
+  "topic_summary": "The presentation covers Jupiter's evolution, its commitment to building a decentralized trading system on Solana, and its role as a leading DEX. Key features include best price guarantees, improved liquidity, and integration with various platforms. [t=8:56] [t=70:16] [t=175:81]",
+  "router_tags": [
+    "DeFi",
+    "Jupiter",
+    "Solana",
+    "Decentralized Trading",
+    "Crypto Aggregation"
+  ],
+  "aliases": [
+    "Jupiter",
+    "jupiter",
+    "JUPITER",
+    "JUPtr"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

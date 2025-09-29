@@ -1,0 +1,25 @@
+{
+  "description": "Michael Repetny from Marinade presents Marinade V2, a new liquid staking solution for Solana, addressing smart contract risks, validator issues, and hidden commissions.",
+  "topic_summary": "In this keynote, Michael discusses the launch of Marinade V2, highlighting its non-custodial nature, protected staking rewards, and the new Stake Auction marketplace for maximizing yield on Solana [t=0:00-0:00].",
+  "router_tags": [
+    "Marinade",
+    "Solana",
+    "Staking",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Marinade",
+    "MARINADE",
+    "marinade",
+    "Marinade V2",
+    "MARINADE V2"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

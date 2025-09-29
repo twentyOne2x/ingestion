@@ -1,0 +1,25 @@
+{
+  "description": "Amy Street hosts a panel discussing fundraising strategies during bear markets, featuring insights from founders and venture capitalists. Panelists include Julian from Elusive, Shabin from Cezanne Capital, and Tushar from Multicoin Capital, sharing their experiences and recommendations for attracting VC attention.",
+  "topic_summary": "Panelists discuss effective fundraising strategies in bear markets, emphasizing the importance of networking through hacker houses and personal introductions to VCs. They share their journeys and insights on building in the Solana ecosystem.",
+  "router_tags": [
+    "fundraising",
+    "bear market",
+    "venture capital",
+    "Solana",
+    "crypto"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Fundraising in a Bear",
+    "Solana Fundraising Panel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Julian",
+    "@Shabin",
+    "@Tushar"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

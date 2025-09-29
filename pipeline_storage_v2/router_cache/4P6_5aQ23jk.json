@@ -1,0 +1,24 @@
+{
+  "description": "This video serves as an epilogue to the Algorithms Illuminated book series, providing insights into algorithm design and problem-solving strategies.",
+  "topic_summary": "The speaker discusses a structured approach to tackling new computational problems, emphasizing the importance of leveraging existing algorithms and understanding various design paradigms. Key steps include identifying applicable algorithms, utilizing efficient primitives, and exploring greedy and divide-and-conquer strategies [t=0:64].",
+  "router_tags": [
+    "Algorithm Design",
+    "Computational Problems",
+    "Algorithms Illuminated",
+    "Greedy Algorithms",
+    "Divide and Conquer"
+  ],
+  "aliases": [
+    "A Field Guide to Algorithm Design",
+    "Algorithms Illuminated Epilogue",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$DIJKSTRA",
+    "$EINSTEIN",
+    "$BELLMAN",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Gwart and Robert Chang discuss various topics including Binance, buybacks, and the SEC's engagement with crypto. They share insights on Hester Pierce's involvement and the evolving landscape of cryptocurrency regulation.",
+  "topic_summary": "The podcast covers discussions on Binance, BNB, SEC engagement with crypto, and notable figures like Hester Pierce and Robert Chang's experiences in the industry. [t=0:56] Gwart and Chang engage in light conversation before diving into serious topics like regulatory changes and community engagement. [t=19:12]",
+  "router_tags": [
+    "Binance",
+    "BNB",
+    "SEC",
+    "Crypto",
+    "Podcast"
+  ],
+  "aliases": [
+    "Gwart",
+    "Robert Chang",
+    "Rasmur Chang",
+    "Chang",
+    "Robert"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@notthreadguy",
+    "@HesterPierce"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

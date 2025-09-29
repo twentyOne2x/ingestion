@@ -1,0 +1,23 @@
+{
+  "description": "Nathan Galindo discusses the evolution of Solana University, its impact on students, and future aspirations at Breakpoint 2023. He highlights the importance of community connections and innovation in the blockchain space.",
+  "topic_summary": "At [t=3:84], Nathan Galindo introduces the presentation on Solana University, covering its history, achievements, and future goals. He emphasizes the need for academic engagement with blockchain technology and the community's growth since Breakpoint 2022. The presentation includes insights from Solana U ambassadors and showcases collaborations that have emerged from the program.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Education",
+    "Innovation",
+    "Community"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Solana U",
+    "Solana University"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "This lecture discusses spectrum auctions, focusing on the challenges of implementing common trial auctions and the need for indirect mechanisms. It highlights the complexities of bidders' valuations and the limitations of direct revelation mechanisms, introducing alternative auction formats such as the Vickrey auction and English auctions.",
+  "topic_summary": "The lecture covers spectrum auctions, emphasizing the transition from direct revelation mechanisms to indirect mechanisms due to practical challenges. It discusses the implications of bidder valuations and auction formats, including Vickrey and English auctions, while addressing computational intractability and revenue concerns [t=2:48 - t=351:38].",
+  "router_tags": [
+    "spectrum auctions",
+    "Vickrey auctions",
+    "indirect mechanisms",
+    "auction theory",
+    "game theory"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Spectrum Auctions",
+    "Vickrey Auctions",
+    "Wireless Spectrum Auctions"
+  ],
+  "canonical_entities": [
+    "$VZ",
+    "@verizon",
+    "$AT&T",
+    "$NZ",
+    "$VCG"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

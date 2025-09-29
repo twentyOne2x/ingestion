@@ -1,0 +1,23 @@
+{
+  "description": "This workshop covers the setup and operational guide for Firedancer v0, a Solana validator. It includes discussions on its architecture, versioning, and hardware requirements.",
+  "topic_summary": "Introduction to Firedancer v0 and its setup process, including codebase details and validator architecture [t=1:76].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Firedancer",
+    "Blockchain",
+    "Education"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Frankendancer",
+    "Franken Dancer",
+    "Solana Validator"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

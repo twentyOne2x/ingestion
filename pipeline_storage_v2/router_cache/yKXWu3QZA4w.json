@@ -1,0 +1,25 @@
+{
+  "description": "Senator Kirsten Gillibrand discusses her involvement in cryptocurrency policy, emphasizing the importance of stablecoin legislation and bipartisan collaboration. She highlights her journey into the crypto space, her partnership with Senator Cynthia Lummis, and the need for clear regulations to protect consumers and ensure financial stability.",
+  "topic_summary": "In this fireside chat, Senator Gillibrand shares her insights on crypto policy, the significance of stablecoins, and the bipartisan efforts to establish regulatory frameworks. She reflects on the challenges posed by political figures like Trump and advocates for consumer protections in the cryptocurrency market [t=0:00-0:00].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Stablecoins",
+    "Bipartisan Policy",
+    "Financial Regulation",
+    "Senate"
+  ],
+  "aliases": [
+    "Kirsten Gillibrand",
+    "Senator Gillibrand",
+    "Gillibrand"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@KirstenGillibrand",
+    "@CynthiaLummis",
+    "@SenWarren",
+    "@realDonaldTrump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

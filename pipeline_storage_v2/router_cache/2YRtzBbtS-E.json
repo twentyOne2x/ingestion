@@ -1,0 +1,26 @@
+{
+  "description": "In this episode, Austin speaks with Aaron Henshaw, co-founder and CTO of Bison Trails, about blockchain infrastructure and its evolution. They discuss the transition from mining operations to professional-grade infrastructure, the impact of enterprise-level demands, and the growth of protocols in 2022. Aaron shares insights from his experience at Coinbase Cloud and the challenges of maintaining blockchain networks at scale.",
+  "topic_summary": "Aaron Henshaw discusses the evolution of blockchain infrastructure, the professionalization of mining, and the increasing demands from enterprises for robust blockchain solutions. He reflects on his journey from Bison Trails to Coinbase Cloud, highlighting the importance of understanding the foundational elements of blockchain technology [t=10:32].",
+  "router_tags": [
+    "Blockchain",
+    "Infrastructure",
+    "Crypto",
+    "Bison Trails",
+    "Coinbase",
+    "Web3"
+  ],
+  "aliases": [
+    "Build Block Better",
+    "Validated",
+    "Infrastructure Week"
+  ],
+  "canonical_entities": [
+    "$COIN",
+    "@SolanaFndn",
+    "$ETH",
+    "$LDO",
+    "$AWS"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

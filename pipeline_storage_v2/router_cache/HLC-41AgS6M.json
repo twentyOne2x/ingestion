@@ -1,0 +1,23 @@
+{
+  "description": "Thomas from Squads presents a feature for managing retro authority offshore validators using multisig, enhancing security and collective management. He discusses the limitations of single key setups and the advantages of multisig for asset management, including treasury assets and withdrawal authority keys. The presentation highlights the importance of security and the immutability of the multisig program, which is open source and widely used in the Solana ecosystem.",
+  "topic_summary": "Overview of multisig implementation for managing validator authority and assets, emphasizing security and collective management benefits [t=0:56].",
+  "router_tags": [
+    "Solana",
+    "Multisig",
+    "Validator Management",
+    "Crypto Security",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Squads",
+    "squads",
+    "Squad Protocol",
+    "squad protocol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

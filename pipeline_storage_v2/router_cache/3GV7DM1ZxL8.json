@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on whether Web3 gaming can attract traditional Web2 gamers, featuring insights from industry leaders on economic models and player experiences.",
+  "topic_summary": "The panel explores the integration of Web3 gaming and its potential to engage Web2 gamers, emphasizing the importance of player experience and economic models in gaming [t=10:00].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Blockchain",
+    "Solana",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Final Boss",
+    "Web3 Gaming",
+    "Solana Games Day"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DanBorstelman",
+    "@AndrewLong",
+    "@Aidan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

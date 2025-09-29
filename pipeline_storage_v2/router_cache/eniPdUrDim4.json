@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Hive Mind podcast, hosts discuss the recent Eigen layer airdrop and the controversies surrounding it, including VPN blocking and non-transferability of tokens. They analyze the implications for retail investors and the overall market dynamics.",
+  "topic_summary": "The episode covers the Eigen layer airdrop and the associated issues that have sparked debate among the crypto community, particularly focusing on the non-transferability of tokens and the impact of VPN requirements on user experience [t=66:69].",
+  "router_tags": [
+    "Eigen Layer",
+    "Airdrop",
+    "Cryptocurrency",
+    "Altcoin",
+    "Investing"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "Delphi Labs",
+    "Floodcap",
+    "Duncan"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

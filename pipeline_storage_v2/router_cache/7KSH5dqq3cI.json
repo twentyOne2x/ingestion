@@ -1,0 +1,30 @@
+{
+  "description": "Joe discusses the evolution of crypto wallets, comparing them to the early days of smartphones. He highlights the need for improved user experience and security in crypto wallets, showcasing various wallets like MetaMask, Frame, Rabi, and Backpack. The video emphasizes the potential for a transformative 'iPhone moment' in the crypto space, driven by innovations in wallet technology.",
+  "topic_summary": "The video explores the current state of crypto wallets and their potential evolution towards a more user-friendly experience, akin to the iPhone's impact on smartphones. It covers various wallet technologies and their features, emphasizing the importance of security and usability in the crypto ecosystem [t=23:52].",
+  "router_tags": [
+    "Crypto Wallets",
+    "User Experience",
+    "Blockchain Technology",
+    "Decentralized Applications",
+    "Security"
+  ],
+  "aliases": [
+    "Joe",
+    "Delphi Digital",
+    "Backpack",
+    "XNFT",
+    "MetaMask",
+    "Rabi",
+    "Solana Saga"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital",
+    "@MetaMask",
+    "@Rabi",
+    "@Backpack",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

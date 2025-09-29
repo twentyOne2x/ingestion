@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the importance of decentralized data networks in Web3, featuring insights from leaders of Helium, Teleport, Hivemapper, and Hotspotty.",
+  "topic_summary": "Panelists introduce their decentralized projects and discuss the significance of decentralization in enhancing services like ride sharing and mapping, contrasting them with centralized counterparts like Uber and Google Maps. The conversation emphasizes how decentralization can improve user experience and trust in these services [t=222.85].",
+  "router_tags": [
+    "Decentralization",
+    "Web3",
+    "Data Networks",
+    "Ride Sharing",
+    "Mapping"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$HIVEMAPPER",
+    "$HELIUM",
+    "$TELEPORT"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

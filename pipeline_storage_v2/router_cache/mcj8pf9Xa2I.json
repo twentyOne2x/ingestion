@@ -1,0 +1,22 @@
+{
+  "description": "Todd Wiesel discusses the rapid advancement of technology and its implications for adoption and regulation in the crypto space.",
+  "topic_summary": "Wiesel emphasizes the importance of accelerating technological adoption for scaling and normalizing crypto, highlighting the interest of major banks in becoming custodians for digital assets [t=0:16].",
+  "router_tags": [
+    "technology",
+    "crypto",
+    "adoption",
+    "regulation",
+    "banking"
+  ],
+  "aliases": [
+    "Todd Wiesel",
+    "todd wiesel",
+    "Baxus",
+    "baxus"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

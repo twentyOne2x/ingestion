@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Validated, host Austin speaks with Kevin Bowers, Chief Science Officer at Jump Trading, about high performance computing and the development of Firedancer, an independent validator client for the Solana blockchain. The discussion covers Kevin's unconventional career path, the significance of having multiple validator clients, and the intricacies of computer science focused on speed and efficiency [t=0:24-0:48].",
+  "topic_summary": "Kevin Bowers discusses his journey in high performance computing, the creation of Firedancer for Solana, and the importance of independent validator clients in blockchain technology [t=11:04-14:88].",
+  "router_tags": [
+    "High Performance Computing",
+    "Solana",
+    "Firedancer",
+    "Blockchain",
+    "Validator Client"
+  ],
+  "aliases": [
+    "Kevin Bowers",
+    "kevin bowers",
+    "K Bowers",
+    "k bowers"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JumpTrading"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

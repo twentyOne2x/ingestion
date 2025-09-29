@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of Chewing Glass, the host welcomes Strange, a developer from Genesis Go, discussing his journey from being a Spanish teacher to a software engineer. Strange shares insights on his bootcamp experience, transitioning from Java to full-stack development, and his interest in cloud services. The conversation touches on the challenges and learning curves in the tech industry.",
+  "topic_summary": "Strange discusses his path to becoming a software engineer, including his background in education, bootcamp experience, and work in the Solana ecosystem. He reflects on the evolution of his skills and interests in technology, particularly in cloud services and full-stack development [t=38:70].",
+  "router_tags": [
+    "Solana",
+    "Genesis Go",
+    "Software Development",
+    "Bootcamp",
+    "Cloud Services"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Chewing glass"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Strange",
+    "@Metaplex",
+    "@GenesisGo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

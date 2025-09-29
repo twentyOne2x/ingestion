@@ -1,0 +1,27 @@
+{
+  "description": "Kyle Espanola, co-founder and CTO of ABK Labs, discusses their contributions to open source initiatives on Solana and their current projects, including Triton One and collaboration with the WIN foundation on token extension utilities.",
+  "topic_summary": "Kyle Espanola from ABK Labs talks about their focus on sovereignty through technology and their work on open source projects within the Solana ecosystem, specifically highlighting Triton One and token extensions [t=12:24].",
+  "router_tags": [
+    "Solana",
+    "ABK Labs",
+    "Triton One",
+    "Token Extensions",
+    "Open Source"
+  ],
+  "aliases": [
+    "Kyle Espanola",
+    "Abk",
+    "SOL",
+    "Triton One",
+    "Win"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@KyleEspanola",
+    "@ABK_Labs",
+    "@WIN_Foundation"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

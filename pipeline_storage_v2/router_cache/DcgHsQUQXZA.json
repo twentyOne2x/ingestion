@@ -1,0 +1,22 @@
+{
+  "description": "John from the Solana Foundation discusses state compression, a method to securely store data on the Solana ledger, enabling the integration of various assets on-chain. He emphasizes the importance of scalability and the potential for composability in blockchain applications, particularly in relation to NFTs.",
+  "topic_summary": "The presentation covers the concept of state compression on Solana, its significance for on-chain data management, and its applications, especially in the NFT space. John highlights the need for scalable solutions to accommodate a growing number of users and assets on the blockchain [t=159.22].",
+  "router_tags": [
+    "Solana",
+    "State Compression",
+    "Blockchain",
+    "NFTs",
+    "Data Management"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: A World in a Grain of Sand"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

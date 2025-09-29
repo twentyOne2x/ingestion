@@ -1,0 +1,26 @@
+{
+  "description": "This lecture discusses the proof of the impossibility result for Byzantine broadcast, focusing on the case where one out of three nodes is Byzantine. It highlights the challenges in proving such impossibility results and the assumptions that differentiate various protocols.",
+  "topic_summary": "The lecture covers the Byzantine broadcast problem, emphasizing the impossibility of achieving both validity and agreement when a third of the nodes are Byzantine [t=17:04]. It contrasts this with previous results and encourages viewers to understand the proof's nuances [t=44:73].",
+  "router_tags": [
+    "Byzantine Broadcast",
+    "Impossibility Results",
+    "Distributed Computing",
+    "Protocols",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Proof of PSL-FLM Impossibility",
+    "Lecture 3.2"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Fisher",
+    "@Merritt",
+    "@Lamport",
+    "@RatclioTuring",
+    "@Levin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

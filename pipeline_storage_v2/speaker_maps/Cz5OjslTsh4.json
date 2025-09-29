@@ -1,0 +1,20 @@
+{
+  "video_id": "Cz5OjslTsh4",
+  "title": "2023-10-31_Cz5OjslTsh4_Breakpoint 2023: How to use Artificial Intelligence to improve Smart Contract Security",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Chris Wang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

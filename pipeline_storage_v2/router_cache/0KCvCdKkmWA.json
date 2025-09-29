@@ -1,0 +1,23 @@
+{
+  "description": "A debate between Mizuki and TypoProtocol discussing accusations of Mizuki being a 'larp' and the validity of TypoProtocol's technology. The conversation covers the nature of their projects and the claims made against Mizuki's AI capabilities.",
+  "topic_summary": "Debate on AI technology claims and accusations against Mizuki as a 'larp' [t=7:60]. Discussion includes TypoProtocol's approach and the perceived lack of substance in Mizuki's technology [t=169:48].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Debate",
+    "Mizuki",
+    "TypoProtocol"
+  ],
+  "aliases": [
+    "Mizuki",
+    "mizuki",
+    "TypoProtocol",
+    "typoprotocol"
+  ],
+  "canonical_entities": [
+    "$MIZUKI",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

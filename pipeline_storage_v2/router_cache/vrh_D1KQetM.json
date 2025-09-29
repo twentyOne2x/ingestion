@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial discusses the concept of permissionless consensus, focusing on the separation of quasi permissionless and permission settings. It examines the definition of row boundedness in protocols, particularly in relation to proof of stake and the implications of Byzantine players controlling stake. The tutorial also explores the challenges of proof of work protocols in partial synchrony and presents a scenario involving a payment circle to illustrate potential issues with stake allocation.",
+  "topic_summary": "The video covers permissionless consensus, row boundedness, and the interaction between proof of stake and Byzantine players. It highlights the limitations of proof of work protocols in partial synchrony and provides an example of a payment circle to demonstrate stake allocation challenges.",
+  "router_tags": [
+    "Consensus",
+    "Blockchain",
+    "Proof of Stake",
+    "Byzantine Fault Tolerance",
+    "Permissionless Systems"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "Permissionless Consensus",
+    "Consensus Tutorial"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

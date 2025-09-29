@@ -1,0 +1,22 @@
+{
+  "description": "Explore the potential of the permanent delegate extension on Solana, enabling the creation of super authorities for token management, including burning and transferring tokens.",
+  "topic_summary": "The video discusses the new permanent delegate extension on Solana, allowing for advanced token management, including use cases for stablecoin issuers and NFT auctions [t=0:08 - t=44:51].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Token Management",
+    "Blockchain",
+    "Stablecoin"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

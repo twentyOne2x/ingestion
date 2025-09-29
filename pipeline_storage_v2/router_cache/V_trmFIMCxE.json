@@ -1,0 +1,23 @@
+{
+  "description": "Lecture discussing algorithms that outperform brute-force search for NP-hard problems, focusing on vertex cover, traveling salesman, and 3SAT.",
+  "topic_summary": "Explores methods to achieve full correctness in NP-hard problems while running faster than brute-force search, emphasizing parameterized algorithms and their efficiency for small parameters [t=2:56].",
+  "router_tags": [
+    "Algorithms",
+    "NP-hard problems",
+    "Parameterized complexity",
+    "Vertex cover",
+    "Traveling salesman",
+    "3SAT"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@RyanWilliams"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

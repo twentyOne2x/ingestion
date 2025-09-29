@@ -1,0 +1,20 @@
+{
+  "video_id": "rvVgp9y7lUE",
+  "title": "2023-10-31_rvVgp9y7lUE_Breakpoint 2023: Welcome to Breakpoint 2023",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Megan Hughes",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

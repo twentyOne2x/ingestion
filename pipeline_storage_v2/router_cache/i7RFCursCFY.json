@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the current state of onchain trading, NFT trends, and personal trading strategies.",
+  "topic_summary": "The podcast features insights into the challenges of onchain trading and the NFT market, with a focus on personal trading experiences and strategies [t=0:16]. The guest discusses their trading strengths and weaknesses, particularly in onchain and narrative trading [t=125:23].",
+  "router_tags": [
+    "Onchain",
+    "NFTs",
+    "Trading",
+    "Crypto",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "@NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

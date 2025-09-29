@@ -1,0 +1,20 @@
+{
+  "video_id": "yhaT2pf5Ads",
+  "title": "2014-01-29_yhaT2pf5Ads_Frontiers in Mechanism Design (Lecture 6: Gross Substitutes-Welfare Maximization in Polynomial Time)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kelso Crawford",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

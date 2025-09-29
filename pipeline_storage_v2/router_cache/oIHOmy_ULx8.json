@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Tommy interviews Smoky, co-founder of Barachain, discussing the unique approach of their project in the crypto space, emphasizing fun and community engagement while navigating the challenges of growth and decentralization.",
+  "topic_summary": "Tommy and Smoky explore Barachain's innovative approach to creating a vibrant community in the crypto space, balancing humor and seriousness while discussing the project's evolution and future challenges [t=1:20].",
+  "router_tags": [
+    "Barachain",
+    "crypto",
+    "community",
+    "podcast",
+    "Delphi Digital"
+  ],
+  "aliases": [
+    "Smokey",
+    "Smoky",
+    "Barachain",
+    "Bear Chain"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

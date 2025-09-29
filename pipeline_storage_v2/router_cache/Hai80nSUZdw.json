@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team and Jonas discuss the latest updates in the Solana ecosystem, including SIMD 191 for relaxed transaction constraints, improvements in program deployment, and enhancements to cache performance.",
+  "topic_summary": "The video covers updates on SIMD 191 for transaction processing, CLI improvements in Agave, and cache size enhancements for better performance. Key contributors include Andrew Fitzgerald, Woody, and Alexandro from Anza.",
+  "router_tags": [
+    "Solana",
+    "web3.js",
+    "SIMD",
+    "Agave",
+    "transaction processing"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

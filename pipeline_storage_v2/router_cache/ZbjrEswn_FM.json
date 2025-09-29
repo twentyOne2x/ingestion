@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the recent ETF developments and their impact on the crypto market, particularly Ethereum. The episode features insights from Jason, Jan, and Duncan, highlighting unexpected market reactions and potential bullish trends for Ethereum and altcoins.",
+  "topic_summary": "The episode covers the unexpected approval odds for the Ethereum ETF, market reactions, and implications for Ethereum and the broader crypto ecosystem. Key points include the significant price movements of ETH and the potential for increased investment flows into DeFi and altcoins [t=42:81].",
+  "router_tags": [
+    "ETH",
+    "ETF",
+    "crypto",
+    "market analysis",
+    "DeFi"
+  ],
+  "aliases": [
+    "Eth Etf Reaction",
+    "ETH ETF Reaction",
+    "Eth Etf",
+    "ETF Reaction"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

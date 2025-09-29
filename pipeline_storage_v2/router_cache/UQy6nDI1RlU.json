@@ -1,0 +1,36 @@
+{
+  "description": "In this episode of the Solana Changelog, hosts discuss recent updates including optimizations for transaction fees and program accounts, as well as the approval of SIMD96. Key improvements include faster retrieval of program accounts and enhanced CPI tracking for testing.",
+  "topic_summary": "The episode covers significant updates in the Solana ecosystem, highlighting optimizations in transaction fee calculations [t=40:73], improvements in getting program accounts [t=103:57], and the approval of SIMD96 which will enhance validator fee distribution [t=153:079].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "SIMD96",
+    "Optimization",
+    "Development"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Bri",
+    "@Dean",
+    "@Joey",
+    "@Stack",
+    "@Foundation",
+    "@Consensys",
+    "@Jacob",
+    "@Turbine",
+    "@Metaplex",
+    "@Jimmy",
+    "@Chalda",
+    "@Mitchell",
+    "@Dennis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

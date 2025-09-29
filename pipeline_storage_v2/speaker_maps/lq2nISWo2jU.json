@@ -1,0 +1,26 @@
+{
+  "video_id": "lq2nISWo2jU",
+  "title": "2024-09-20_lq2nISWo2jU_Breakpoint 2024: Debate: Wall Street Doesn't Need Blockchain",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Anthony Scaramucci",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Christopher Jensen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "qJ8Oqr70IeU",
+  "title": "2025-01-10_qJ8Oqr70IeU_Jansen Teng: Inside Virtuals Meteoric Rise, Race to Billion-Dollar Crypto-AI Agents, Life after AGI",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "John Maynard Keynes",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Sam Altman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This workshop covers the startup logs of a Solana validator, explaining the significance of various log messages during the validator's initialization process. Key insights are provided by Steve from Solana Labs, focusing on troubleshooting and understanding log outputs.",
+  "topic_summary": "Overview of Solana validator startup logs and their implications for performance and troubleshooting [t=0:00]. Discussion includes common issues, tools for monitoring, and detailed log analysis [t=1:00].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Education",
+    "Logs"
+  ],
+  "aliases": [
+    "solana validator education",
+    "Solana Validator Education",
+    "validator startup logs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@steve"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

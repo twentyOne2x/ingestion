@@ -1,0 +1,24 @@
+{
+  "description": "Nick Frostbutter discusses Solana Blinks and Actions, aiming to enhance user interaction with blockchain transactions through shareable URLs. He emphasizes the importance of developer engagement and the potential of these tools to facilitate seamless transactions across the internet.",
+  "topic_summary": "In this workshop, Nick Frostbutter introduces Solana Blinks and Actions, explaining their functionalities and benefits for developers and users alike. He highlights how these tools can transform standard URL sharing into interactive blockchain experiences, enabling direct transactions and wallet connections [t=78:02].",
+  "router_tags": [
+    "Solana",
+    "Blinks",
+    "Actions",
+    "Blockchain",
+    "Developer Relations",
+    "Web3"
+  ],
+  "aliases": [
+    "Nick Frostbutter",
+    "Nick Frosty",
+    "Nick"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dialect"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

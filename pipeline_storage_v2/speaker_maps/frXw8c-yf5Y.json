@@ -1,0 +1,20 @@
+{
+  "video_id": "frXw8c-yf5Y",
+  "title": "2023-03-28_frXw8c-yf5Y_Validated - How a Web 2 CMO Is Navigating web3 Strategy",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Lisa Palette",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

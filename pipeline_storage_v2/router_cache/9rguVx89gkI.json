@@ -1,0 +1,23 @@
+{
+  "description": "Dean Pappas discusses the governance ecosystem on Solana, highlighting its components, voter participation, and treasury management tools.",
+  "topic_summary": "The presentation covers Solana Governance, emphasizing its three main components: measuring sentiment, decision-making, and stakeholder engagement. It showcases the record voter participation and the tools available for treasury management, including Realms, Metadao, and Symmetry. The talk also touches on the innovative governance features unique to Solana, such as voting via Twitter and decentralized treasury management.",
+  "router_tags": [
+    "Solana",
+    "Governance",
+    "DAO",
+    "Treasury Management",
+    "Voter Participation"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Solana Governance",
+    "Dean Pappas"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

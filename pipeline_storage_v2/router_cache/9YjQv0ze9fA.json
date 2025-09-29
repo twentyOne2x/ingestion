@@ -1,0 +1,23 @@
+{
+  "description": "Yi Wen from Nitro Labs discusses the integration of ZK technology with Solana's eBPF level, focusing on the benefits of proving SVM transactions and the challenges faced during implementation.",
+  "topic_summary": "The presentation covers the advantages of using ZK proofs to enhance transaction security and efficiency on Solana, particularly in the context of SVM rollups and the Termina platform's scaling solutions [t=19:76].",
+  "router_tags": [
+    "Solana",
+    "ZK Integration",
+    "eBPF",
+    "SVM",
+    "Nitro Labs"
+  ],
+  "aliases": [
+    "Yi Wen",
+    "Yiwen Gao",
+    "Nitro Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

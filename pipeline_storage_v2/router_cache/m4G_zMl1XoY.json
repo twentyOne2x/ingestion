@@ -1,0 +1,30 @@
+{
+  "description": "Finn Bags discusses his recent experience on a MrBeast stream, detailing the preparation and execution of a significant donation during the live event. He shares insights about his app, Bags, and the fundraising efforts of Team Water and their coin, Watercoin.",
+  "topic_summary": "Finn Bags shares his journey into live streaming and fundraising, including a $100,000 donation during a MrBeast stream [t=185]. He explains the role of his app, Bags, in supporting creators and the success of Team Water's fundraising efforts [t=119].",
+  "router_tags": [
+    "MrBeast",
+    "Finn Bags",
+    "Team Water",
+    "Watercoin",
+    "fundraising",
+    "live stream",
+    "creator economy"
+  ],
+  "aliases": [
+    "Finn Bags",
+    "Finn",
+    "Mr. Beast",
+    "MrBeast",
+    "Thread Guy",
+    "Team Water"
+  ],
+  "canonical_entities": [
+    "$WATER",
+    "@notthreadguy",
+    "$1500",
+    "$300,000",
+    "$100,000"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

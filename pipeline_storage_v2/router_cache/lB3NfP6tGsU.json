@@ -1,0 +1,25 @@
+{
+  "description": "Liam Digg discusses the Swig smart wallet, focusing on its engineering for efficiency and advanced features. He explains the evolution of wallets, the advantages of using Solana, and the capabilities of Swig, including programmable smart wallets and role-based permissions.",
+  "topic_summary": "Liam Digg introduces Swig smart wallet, emphasizing its efficiency and programmability for advanced crypto transactions. He outlines its features, including role-based permissions and sub-accounts, and discusses the benefits of building on the Solana platform [t=0:32-3:36].",
+  "router_tags": [
+    "Swig",
+    "Smart Wallet",
+    "Blockchain",
+    "Solana",
+    "Crypto"
+  ],
+  "aliases": [
+    "Liam Digg",
+    "Liam D.",
+    "SWIG",
+    "Swig Smart Wallet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@SolanaFndn",
+    "@Anagram"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

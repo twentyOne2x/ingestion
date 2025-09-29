@@ -1,0 +1,26 @@
+{
+  "description": "David, founder of Tapestry, discusses the importance of owning your social graph, emphasizing that users should have access to their followers across platforms. Linda, from Farcaster, highlights the unique features of their permissionless social network, including crypto integration and seamless user experience across chains. They explore the future of social graphs and the potential of OpenSocial protocols.",
+  "topic_summary": "The talk focuses on the ownership of social graphs, the benefits of permissionless networks like Farcaster, and the integration of crypto functionalities to enhance user experience [t=45.58].",
+  "router_tags": [
+    "Social Graph",
+    "Web3",
+    "Farcaster",
+    "OpenSocial",
+    "Crypto Integration",
+    "User Ownership"
+  ],
+  "aliases": [
+    "Farcaster",
+    "farcaster",
+    "Tapestry",
+    "tapestry",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

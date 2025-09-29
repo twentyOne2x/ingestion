@@ -1,0 +1,29 @@
+{
+  "description": "Crypto x AI Demo Day showcases innovative teams building at the intersection of crypto and AI. The event features product demos from various builders, highlighting applications in payment rails, DeFi agents, smart contract security, and AI-powered branding. The session emphasizes privacy and uncensored interactions with AI tools like Venice, which allows users to analyze documents and generate insights without storing data.",
+  "topic_summary": "The event presents the convergence of crypto and AI, featuring product demonstrations and discussions on innovative applications. Key topics include privacy in AI interactions, document analysis, and the use of various AI models for enhanced insights.",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Demo Day",
+    "Venice",
+    "Decentralized Applications",
+    "Blockchain",
+    "Product Demos"
+  ],
+  "aliases": [
+    "Crypto x AI Demo Day",
+    "Crypto AI Month",
+    "Demo Day",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@NIA",
+    "@Venice_Ai",
+    "@Kevin_Kelly",
+    "@Nvidia"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on car troubles, including a dead battery issue with a Porsche and past vehicle incidents. Transition into a conversation about Bryce Scales and his work in e-commerce and advertising.",
+  "topic_summary": "The podcast covers car issues, particularly with luxury vehicles, and introduces Bryce Scales, who focuses on e-commerce and advertising rather than crypto [t=122.23].",
+  "router_tags": [
+    "Cars",
+    "E-Commerce",
+    "Crypto",
+    "Finance",
+    "Social Media"
+  ],
+  "aliases": [
+    "BrezScales",
+    "Bryce Scales",
+    "brezscales"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

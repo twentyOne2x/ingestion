@@ -1,0 +1,20 @@
+{
+  "video_id": "BiU4ppg6Bag",
+  "title": "2025-07-23_BiU4ppg6Bag_Alon: Raising $1B, $PUMP Token, Airdrop, and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Aiden Ross Kyson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

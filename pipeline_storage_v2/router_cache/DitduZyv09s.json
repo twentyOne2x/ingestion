@@ -1,0 +1,22 @@
+{
+  "description": "Breakpoint 2022 Day 2 features workshops focused on building ZK privacy apps on Solana. Nico from Elusive discusses the importance of privacy in Web3 and how it can enhance user experience while preventing potential dangers associated with public transactions.",
+  "topic_summary": "Nico from Elusive leads a workshop on building ZK privacy apps on Solana, emphasizing the significance of privacy in Web3 and its implications for user safety and experience [t=78.0].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Privacy",
+    "ZK Apps",
+    "Elusive"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

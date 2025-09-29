@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Delphi Podcast, Tommy speaks with HE Manshu, a core contributor to Sentient, about their recent $85 million funding round led by Peter Thiel's fund. They discuss the implications of this funding for building AI models and the challenges of scaling in the AI landscape. Manshu shares his academic background and journey into the crypto AI space, highlighting the intersection of AI and blockchain technology.",
+  "topic_summary": "Tommy and HE Manshu discuss Sentient's $85 million funding round, the challenges of scaling AI in the crypto space, and Manshu's academic journey in AI and blockchain [t=1:20].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Funding",
+    "Blockchain",
+    "Sentient"
+  ],
+  "aliases": [
+    "Sentient",
+    "sentient",
+    "SENTIENT"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

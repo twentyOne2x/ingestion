@@ -1,0 +1,23 @@
+{
+  "description": "Ray Lee discusses Daisy, an influencer marketing platform that rewards creators based on engagement metrics rather than fixed payments. The platform aims to bridge the gap between performance and creator marketing by utilizing data from social media accounts to enhance campaign effectiveness. Daisy allows brands to launch campaigns easily and engage a network of creators for organic and paid content amplification.",
+  "topic_summary": "Ray Lee introduces Daisy, a creator-powered ad network that optimizes influencer marketing by rewarding engagement. The platform facilitates easy campaign launches and enhances brand visibility through creator networks, demonstrating significant ROI and creator satisfaction.",
+  "router_tags": [
+    "Influencer Marketing",
+    "Creator Economy",
+    "Social Media",
+    "Daisy",
+    "Ray Lee"
+  ],
+  "aliases": [
+    "Daisy",
+    "daisy",
+    "DAISY"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RayLee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

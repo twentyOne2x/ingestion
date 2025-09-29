@@ -1,0 +1,26 @@
+{
+  "video_id": "5AoPTR3speo",
+  "title": "2024-09-21_5AoPTR3speo_Breakpoint 2024: Debate: Most DePIN Is Overhyped and Capital Inefficient",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Rube Goldberg",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Matt Abhay",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

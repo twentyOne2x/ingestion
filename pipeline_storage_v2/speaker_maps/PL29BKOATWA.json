@@ -1,0 +1,20 @@
+{
+  "video_id": "PL29BKOATWA",
+  "title": "2024-03-07_PL29BKOATWA_ep 6: Nate Alex - Authenticity and Unconventional Art",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Nate Alex",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

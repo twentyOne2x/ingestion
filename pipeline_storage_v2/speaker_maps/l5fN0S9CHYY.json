@@ -1,0 +1,26 @@
+{
+  "video_id": "l5fN0S9CHYY",
+  "title": "2025-01-15_l5fN0S9CHYY_How To Make MILLIONS From AI Crypto w- Raoul Pal (HEATED DEBATE)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Raoul Powell",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Alex Good",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

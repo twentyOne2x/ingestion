@@ -1,0 +1,24 @@
+{
+  "description": "Kalidorant discusses the significance of perpetual contracts (perps) in trading, highlighting their simplicity and popularity compared to options. He explains the historical context of perps and their advantages in expressing market views. The conversation touches on the growth of the perps market and its appeal in crypto trading.",
+  "topic_summary": "Kalidorant, CEO of Ostium, elaborates on the rise of perpetual contracts (perps) in trading, their advantages over options, and the historical context of their development [t=0:24-244:42].",
+  "router_tags": [
+    "perpetual contracts",
+    "crypto trading",
+    "Ostium",
+    "market structure",
+    "options trading"
+  ],
+  "aliases": [
+    "Kalidorant",
+    "kalidorant",
+    "KALIDORANT"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "@robinhood",
+    "@nodobjev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on extending the Solana Virtual Machine (SVM) with insights from industry experts. Topics include the functionality of SVM, comparisons with Ethereum's virtual machine, and the integration of Ethereum dApps on Solana through Neon Labs.",
+  "topic_summary": "The panel discusses the Solana Virtual Machine, its capabilities, and how it compares to Ethereum's virtual machine. They explore the integration of Ethereum dApps on Solana, highlighting the work of Neon Labs and the concept of account compression [t=365].",
+  "router_tags": [
+    "Solana",
+    "SVM",
+    "Neon Labs",
+    "Ethereum",
+    "dApps",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "solana",
+    "solana labs",
+    "neon",
+    "neon labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

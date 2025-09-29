@@ -1,0 +1,24 @@
+{
+  "description": "Logan Dobson discusses Stand With Crypto, a nonprofit organization focused on mobilizing crypto owners to engage politically, especially ahead of the 2024 elections. The organization encourages grassroots advocacy and provides educational resources on crypto-related legislation.",
+  "topic_summary": "Logan Dobson explains the mission of Stand With Crypto, highlighting its role in mobilizing the crypto community for political engagement and legislative advocacy, particularly in the context of the upcoming elections [t=30:16].",
+  "router_tags": [
+    "Crypto",
+    "Political Engagement",
+    "Grassroots Advocacy",
+    "Legislation",
+    "2024 Elections"
+  ],
+  "aliases": [
+    "Stand With Crypto",
+    "stand with crypto",
+    "STAND WITH CRYPTO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@LoganDobson",
+    "@SolanaFndn",
+    "@Congress"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

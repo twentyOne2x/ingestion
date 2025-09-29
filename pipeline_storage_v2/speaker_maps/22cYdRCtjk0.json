@@ -1,0 +1,20 @@
+{
+  "video_id": "22cYdRCtjk0",
+  "title": "2023-12-06_22cYdRCtjk0_Solana Changelog - December 5 - Geyser, GroupMember Extension, and Core BPF Programs",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Joe Caulfield",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

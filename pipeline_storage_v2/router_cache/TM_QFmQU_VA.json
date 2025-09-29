@@ -1,0 +1,26 @@
+{
+  "description": "Lecture on algorithmic game theory covering course goals and tournament structures, with examples from the Olympics [t=1:36].",
+  "topic_summary": "Introduction to algorithmic game theory, focusing on participant behavior and system design challenges, illustrated by a case study of the women's doubles badminton tournament at the London Olympics [t=1:36][t=288:03].",
+  "router_tags": [
+    "algorithmic game theory",
+    "tournament design",
+    "Olympics",
+    "badminton",
+    "strategic behavior"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Game Theory",
+    "CS364A",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$Nash",
+    "$Google",
+    "$Stanford",
+    "$Olympic Committee"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

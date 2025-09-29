@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the intersection of AI and crypto, featuring insights from Ninad, co-founder of Mira, on the challenges and opportunities in AI development. The conversation covers the evolution of AI technologies, the importance of reliability, and the potential of AI as a co-pilot in various applications.",
+  "topic_summary": "Exploration of AI's current state, its challenges, and future potential, particularly in relation to crypto. Insights into the role of AI in enhancing productivity and the need for reliability in high-stakes applications [t=351:65].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Decentralized Applications",
+    "Mira",
+    "Delphi Digital"
+  ],
+  "aliases": [
+    "Mira",
+    "mira",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$5",
+    "$BTC",
+    "@Delphi_Digital",
+    "@Ninad",
+    "@Anil"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

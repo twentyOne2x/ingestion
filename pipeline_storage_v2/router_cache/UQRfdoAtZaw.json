@@ -1,0 +1,23 @@
+{
+  "description": "This lecture explores longest chain consensus in partially synchronous models, addressing challenges like network delays and outages. It highlights the limitations of achieving finality under these conditions and discusses the implications of network partitions on consensus mechanisms.",
+  "topic_summary": "The lecture discusses longest chain consensus under partially synchronous conditions, emphasizing the impact of network delays and partitions on finality and consensus guarantees. It contrasts synchronous and partially synchronous models, illustrating potential failures in consensus when nodes cannot communicate due to network issues. [t=0:48] [t=4:40] [t=147:28]",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "synchrony",
+    "network delays",
+    "Byzantine fault tolerance"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchains Lecture",
+    "Consensus Mechanisms"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

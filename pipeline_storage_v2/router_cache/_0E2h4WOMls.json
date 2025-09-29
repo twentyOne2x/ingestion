@@ -1,0 +1,24 @@
+{
+  "description": "Kyle from Hedgehog Markets discusses their development of permissionless prediction markets on Solana, focusing on user experience and market types including AMM, Parimutuel, and PVP markets.",
+  "topic_summary": "Hedgehog Markets is building permissionless prediction markets on Solana, aiming for a user-friendly interface and multiple market types, including AMM and Parimutuel, with upcoming PVP markets [t=8:24].",
+  "router_tags": [
+    "Hedgehog Markets",
+    "Solana",
+    "prediction markets",
+    "AMM",
+    "Parimutuel",
+    "PVP"
+  ],
+  "aliases": [
+    "Hedgehog markets",
+    "hedgehog markets",
+    "Hedgehog",
+    "hedgehog"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

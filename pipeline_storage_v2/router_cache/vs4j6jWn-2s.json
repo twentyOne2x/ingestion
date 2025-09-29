@@ -1,0 +1,25 @@
+{
+  "description": "In this video, @notthreadguy shares his experience of spending $50,000 to meet MrBeast. He discusses his donation, the importance of supporting charitable causes, and his media company, Counterparty, which focuses on Internet money. He proposes a 30-minute interview with MrBeast, offering to double his donation if MrBeast agrees to join the stream.",
+  "topic_summary": "Aiden Ross discusses his $50,000 donation to meet MrBeast and proposes a follow-up interview while promoting charitable giving and his media company focused on Internet finance. [t=0:16] [t=126:33]",
+  "router_tags": [
+    "MrBeast",
+    "donation",
+    "charity",
+    "streaming",
+    "Counterparty",
+    "Internet money"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Aiden Ross",
+    "aiden ross"
+  ],
+  "canonical_entities": [
+    "$50,000",
+    "@notthreadguy",
+    "@MrBeast"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

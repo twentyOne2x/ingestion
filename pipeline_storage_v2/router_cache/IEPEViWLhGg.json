@@ -1,0 +1,31 @@
+{
+  "description": "Bartosz Lipinski discusses the evolution of Cube, a hybrid exchange, highlighting its decentralized NPC, custody layer, and the introduction of an intent network for executing complex strategies across multiple chains like Solana, Bitcoin, and Ethereum. He emphasizes the importance of avoiding value cannibalization and introduces the concept of a guardian network and a new token called ISO for governance and staking.",
+  "topic_summary": "Overview of Cube's development, intent execution network, and future plans for a guardian network and new token ISO [t=0:00-5:39].",
+  "router_tags": [
+    "Cube",
+    "Hybrid Exchange",
+    "Decentralized Finance",
+    "Solana",
+    "Bitcoin",
+    "Ethereum",
+    "Intent Network"
+  ],
+  "aliases": [
+    "Cube",
+    "cube",
+    "CUBE",
+    "Guardian",
+    "guardian",
+    "ISO",
+    "iso"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "$ISO",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

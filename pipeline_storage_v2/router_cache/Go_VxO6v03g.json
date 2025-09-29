@@ -1,0 +1,22 @@
+{
+  "description": "Welcome to Breakpoint 2024, where attendees gather for networking and insightful presentations. The event features speakers from various projects including Answer and Fire Dancer, with a focus on developer engagement and community interaction.",
+  "topic_summary": "Introduction to Breakpoint 2024, highlighting the agenda, networking opportunities, and notable speakers. The event is designed for developers and includes various stages and spaces for interaction [t=3:84].",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "Developer Conference",
+    "Networking",
+    "Presentations"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Breakpoint2024 Event"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

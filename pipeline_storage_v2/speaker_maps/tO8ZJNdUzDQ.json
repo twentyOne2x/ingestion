@@ -1,0 +1,20 @@
+{
+  "video_id": "tO8ZJNdUzDQ",
+  "title": "2024-09-17_tO8ZJNdUzDQ_WTF RPC w- Brian Long (Triton One)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

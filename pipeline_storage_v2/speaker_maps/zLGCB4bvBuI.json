@@ -1,0 +1,26 @@
+{
+  "video_id": "zLGCB4bvBuI",
+  "title": "2024-09-25_zLGCB4bvBuI_Breakpoint 2024: Product Keynote: Securitize & Wormhole (Carlos Domingo, Robinson Burkey)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Carlos Domingo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Carlos Domingo",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

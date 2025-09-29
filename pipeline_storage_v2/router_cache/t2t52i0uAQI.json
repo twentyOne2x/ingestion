@@ -1,0 +1,27 @@
+{
+  "description": "This lecture discusses the advantages and disadvantages of proof-of-stake (PoS) versus proof-of-work (PoW) blockchain protocols, addressing common misconceptions and the implications of permissionlessness in these systems. It highlights the differences in how participants engage with each protocol and the liquidity of their respective currencies.",
+  "topic_summary": "The lecture explores the debate between proof-of-stake and proof-of-work, focusing on their advantages and disadvantages, the concept of permissionlessness, and the implications for user participation and liquidity in blockchain networks. Key points include the registration requirements in PoS and the ability to acquire coins directly through mining in PoW [t=0:88-367:34].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "proof of work",
+    "Nakamoto consensus",
+    "liquidity",
+    "decentralization"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Proof-of-Stake vs. Proof-of-Work",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Coinbase",
+    "@Uniswap",
+    "$ADA",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

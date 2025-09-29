@@ -1,0 +1,23 @@
+{
+  "description": "Kohji Nagata introduces Colony, a survival sim game powered by Solana, where players guide AI-driven avatars to survive and thrive in an evolving world. The game features unique interactions, allowing players to influence their avatars' experiences and decisions.",
+  "topic_summary": "In this keynote, Kohji Nagata discusses Colony, a game that combines survival elements with AI-driven avatars, emphasizing player interaction and the game's integration with the Solana blockchain. The presentation highlights the game's development progress and future plans for a closed Alpha in early 2025.",
+  "router_tags": [
+    "Colony",
+    "Solana",
+    "gaming",
+    "AI",
+    "blockchain"
+  ],
+  "aliases": [
+    "Colony",
+    "colony",
+    "Kohji Nagata",
+    "kohji nagata"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

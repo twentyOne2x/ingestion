@@ -1,0 +1,24 @@
+{
+  "description": "Colleen and Justin discuss the challenges facing Web3 games, including the need for better distribution mechanisms and the integration of game developers into the crypto ecosystem. They highlight the importance of rewarding users to advocate for games and explore potential solutions to incentivize user engagement without overwhelming game economies with complex systems.",
+  "topic_summary": "The conversation focuses on the barriers to success for Web3 games, particularly distribution issues and the need for a more accessible ecosystem for game developers. Justin emphasizes the importance of user rewards and simpler integration methods for game economies.",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Crypto",
+    "Game Development",
+    "Distribution"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Open Game Protocol",
+    "Justin Waldron",
+    "Colleen"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JustinWaldron"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

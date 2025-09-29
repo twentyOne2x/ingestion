@@ -1,0 +1,28 @@
+{
+  "description": "Austin speaks with Cindy Liao, co-founder of Drift, about the complexities of DeFi, its foundational concepts, and its differences from traditional finance. They explore the accessibility of DeFi, its challenges, and the evolving landscape of decentralized finance [t=0:24].",
+  "topic_summary": "The episode delves into the intricacies of DeFi, discussing its foundational aspects, the role of smart contracts, and the challenges it faces compared to centralized finance. Cindy emphasizes the importance of accessibility and the potential for financial freedom through decentralized applications [t=18:00].",
+  "router_tags": [
+    "DeFi",
+    "Decentralized Finance",
+    "Smart Contracts",
+    "Cindy Liao",
+    "Drift",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "defi",
+    "DeFi",
+    "Cindy Liao",
+    "cindy liao"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@CindyLiao",
+    "$USDC",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

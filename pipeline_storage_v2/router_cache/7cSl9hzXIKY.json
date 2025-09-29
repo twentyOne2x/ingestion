@@ -1,0 +1,21 @@
+{
+  "description": "Leo Caillard, a French marble sculptor, discusses the intersection of marble art and blockchain technology, emphasizing the dialogue between past and future. He highlights the physicality of marble compared to the digital nature of blockchain, and how blockchain can modernize the art market by enabling fractional ownership of physical art pieces. Caillard aims to surprise viewers at the Solana space by showcasing marble sculpting alongside digital art, illustrating that blockchain is relevant to various art forms.",
+  "topic_summary": "Leo Caillard explores the fusion of marble sculpting and blockchain technology, aiming to redefine the art market and engage viewers with the physicality of his work in a digital context [t=7:04-118:13].",
+  "router_tags": [
+    "Solana",
+    "Art Basel",
+    "Marble Sculpting",
+    "Blockchain",
+    "Digital Art"
+  ],
+  "aliases": [
+    "leo caillard",
+    "Leo Caillard"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

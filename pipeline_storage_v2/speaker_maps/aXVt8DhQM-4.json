@@ -1,0 +1,20 @@
+{
+  "video_id": "aXVt8DhQM-4",
+  "title": "2025-05-23_aXVt8DhQM-4_Ship or Die at Accelerate 2025: Tokenizing Trust (Christine Moy, Reid Simon, Cindy Leow)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Christine Moy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

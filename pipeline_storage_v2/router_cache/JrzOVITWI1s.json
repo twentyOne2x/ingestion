@@ -1,0 +1,23 @@
+{
+  "description": "This talk discusses the Creator Economy on Solana, focusing on building on-chain relationships and monetization strategies through Access Protocol. It covers the platform's user experience, subscription models, and the importance of direct creator-consumer relationships.",
+  "topic_summary": "The presentation explores Access Protocol's role in the Creator Economy on Solana, highlighting user engagement, subscription models using ACS tokens, and the development of various products to enhance creator monetization and user interaction [t=1:20].",
+  "router_tags": [
+    "Creator Economy",
+    "Solana",
+    "Web3",
+    "Monetization",
+    "Access Protocol"
+  ],
+  "aliases": [
+    "creator economy",
+    "solana",
+    "access protocol",
+    "web3 monetization"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Overview of Hivemapper, a Solana-based project utilizing dash cams in Ubers for real-time mapping data.",
+  "topic_summary": "Hivemapper leverages everyday vehicles to enhance map accuracy and refresh rates, contrasting with traditional mapping methods that rely on expensive vehicles [t=6:32].",
+  "router_tags": [
+    "Hivemapper",
+    "Solana",
+    "mapping",
+    "real-time data",
+    "crypto"
+  ],
+  "aliases": [
+    "Hivemapper",
+    "hivemapper",
+    "HIVEMAPPER"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

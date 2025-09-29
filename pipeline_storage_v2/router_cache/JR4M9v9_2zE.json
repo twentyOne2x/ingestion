@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on how Hyperliquid has transformed the crypto landscape, featuring insights from Flood and FrankDeGods. The conversation touches on the significance of Hyperliquid as a $40 billion asset and the evolving nature of trading in the crypto space.",
+  "topic_summary": "Exploration of Hyperliquid's impact on cryptocurrency trading and market dynamics, with references to notable figures and trends in the industry. [t=28:23] [t=40:11]",
+  "router_tags": [
+    "Hyperliquid",
+    "Crypto",
+    "Trading",
+    "Finance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Hyper Liquid",
+    "hyper liquid",
+    "Hyperliquid",
+    "hyperliquid"
+  ],
+  "canonical_entities": [
+    "$40 Billion",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

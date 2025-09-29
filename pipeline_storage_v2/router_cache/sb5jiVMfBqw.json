@@ -1,0 +1,29 @@
+{
+  "description": "Jose Fernandez da Ponte discusses PayPal's decision to issue a stablecoin on Solana, highlighting its advantages over Ethereum for payment solutions. He emphasizes the importance of speed, cost efficiency, and the unique assets PayPal brings to the table, including a large user base and merchant network.",
+  "topic_summary": "At Breakpoint 2024, Jose Fernandez da Ponte from PayPal explains the rationale behind issuing PyUSD on Solana, noting its rapid growth and the need for efficient payment solutions in the crypto space [t=7:12].",
+  "router_tags": [
+    "PayPal",
+    "Solana",
+    "stablecoin",
+    "PyUSD",
+    "crypto payments",
+    "Breakpoint 2024"
+  ],
+  "aliases": [
+    "paypal",
+    "PayPal",
+    "Jose Fernandez Duponte",
+    "Jose",
+    "Omer Goldberg",
+    "Sheraz Shere"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@paypal",
+    "@josefernandezduponte",
+    "@omergoldberg",
+    "@sherazshere"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

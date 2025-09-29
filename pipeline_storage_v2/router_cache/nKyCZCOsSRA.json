@@ -1,0 +1,27 @@
+{
+  "description": "Austin interviews Armani Ferrante, co-founder and CEO of CORL, discussing his journey in the Solana ecosystem, the development of Anchor and Backpack, and the launch of the madlads NFT project. They reflect on the evolution of the Solana developer community and the challenges of blockchain scaling from 2018 to 2021.",
+  "topic_summary": "The conversation covers Armani's early experiences in the Solana ecosystem, the significance of madlads, and philosophical discussions on blockchain development and community values [t=0:24 - t=377:93].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Anchor",
+    "Backpack",
+    "madlads",
+    "blockchain",
+    "Ethereum",
+    "development"
+  ],
+  "aliases": [
+    "Armani Ferrante",
+    "Armani",
+    "CORL",
+    "Mad Lads"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

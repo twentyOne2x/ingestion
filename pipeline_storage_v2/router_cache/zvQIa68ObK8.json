@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Changelog, Mike McKenna from the Solana Foundation discusses recent updates including reduced program deployment costs and improvements to the Solana network. Key highlights include a fix for deploying large programs, a reduction in deployment costs from twice to once the program size, and updates to the CLI for better program management. The episode emphasizes ongoing enhancements to the Solana ecosystem.",
+  "topic_summary": "The Changelog covers significant updates in the Solana ecosystem, focusing on lower deployment costs for programs and improvements in program management. Key fixes and enhancements are discussed, including those related to large program deployments and CLI updates.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "program deployment",
+    "network updates",
+    "CLI improvements"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MikeMckenna",
+    "@JohnCinque",
+    "@GodmodeGalactus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

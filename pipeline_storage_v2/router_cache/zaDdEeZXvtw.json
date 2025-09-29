@@ -1,0 +1,23 @@
+{
+  "description": "Solana Breakpoint 2022 features discussions on integrating Web3 into daily life, blockchain technology, and real-world asset ownership. The event includes opportunities for community contributions to the agenda and insights into building a location layer on Solana.",
+  "topic_summary": "The event covers the integration of blockchain technology with real-life applications, focusing on community engagement and the development of a spatial data registry for real-world assets on Solana [t=0:64-5:12].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Web3",
+    "Blockchain",
+    "Community Engagement",
+    "Real World Assets"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Solana Breakpoint",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

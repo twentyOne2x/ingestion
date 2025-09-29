@@ -1,0 +1,25 @@
+{
+  "description": "Lecture 11 discusses the inefficiency of equilibrium in games, focusing on selfish routing and the Price of Anarchy. It contrasts previous mechanism design concepts with the analysis of games that exist in the wild, where players aim to minimize travel time in traffic networks. The lecture highlights the difference between full information games and those with private information, emphasizing the historical context of these ideas in computer science.",
+  "topic_summary": "This lecture explores the inefficiencies in game equilibria, particularly in traffic networks, and introduces concepts like Nash equilibria. It discusses the implications of players' strategic behavior in existing games and the challenges of achieving optimal outcomes without the ability to design the game rules.",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Selfish Routing",
+    "Price of Anarchy",
+    "Nash Equilibria",
+    "Traffic Networks"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Selfish Routing",
+    "Price Of Anarchy",
+    "Nash Equilibria"
+  ],
+  "canonical_entities": [
+    "$MYR",
+    "@Kutsupius",
+    "@PapDimitriou",
+    "@EvaTardos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

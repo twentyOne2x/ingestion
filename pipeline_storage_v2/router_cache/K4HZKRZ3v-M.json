@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses algorithmic strategies for NP-hard problems, emphasizing the challenges and compromises involved in solving such problems. It highlights the importance of understanding NP hardness and its implications for algorithm design.",
+  "topic_summary": "The video covers the nature of NP-hard problems, the misconceptions about their solvability, and the three types of compromises algorithm designers may need to make: generality, correctness, and speed. It also introduces specific NP-hard problems, such as the weighted independent set problem, and sets the stage for deeper dives in subsequent videos.",
+  "router_tags": [
+    "NP-Hard Problems",
+    "Algorithm Design",
+    "Computational Complexity",
+    "Algorithms Illuminated"
+  ],
+  "aliases": [
+    "Algorithms For NP-Hard Problems",
+    "NP Hard Problems Strategies",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$NP-HARD",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Trevor Harries Jones discusses the progress and achievements of Render at Breakpoint 2024, highlighting community proposals, artist grants, and the completion of the upgrade to Solana.",
+  "topic_summary": "At [t=00:04], Trevor introduces himself and expresses excitement about Breakpoint. He outlines the community's achievements, including funding for artists and the completion of the Solana upgrade at [t=01:12]. He announces new features like the One Click wizard and Redshift's public beta, emphasizing growth and collaboration with the AI community.",
+  "router_tags": [
+    "Render",
+    "Solana",
+    "Breakpoint",
+    "AI",
+    "Community Growth"
+  ],
+  "aliases": [
+    "Render",
+    "render",
+    "Solana",
+    "solana",
+    "Breakpoint",
+    "breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Alex Rawitz discusses DIMO's decentralized vehicle platform, addressing the fragmentation in the auto industry and how they leverage Helium's IoT network for data sharing and improved consumer experiences.",
+  "topic_summary": "The conversation explores DIMO's mission to create a connected vehicle platform that enhances information sharing among stakeholders in the auto industry, utilizing Helium's network for IoT integration [t=4:64-319:06].",
+  "router_tags": [
+    "DIMO",
+    "Helium",
+    "IoT",
+    "Blockchain",
+    "Automotive",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Dimo",
+    "dimo",
+    "DIMO Project"
+  ],
+  "canonical_entities": [
+    "$TSLA",
+    "$TM",
+    "$HLM",
+    "@AlexRawitz",
+    "$ETH",
+    "$SOL",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

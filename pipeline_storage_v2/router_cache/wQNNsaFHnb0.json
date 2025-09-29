@@ -1,0 +1,22 @@
+{
+  "description": "Dan Albert introduces a debate on whether 100 validators are sufficient for a decentralized Solana L1. Brian Long argues in favor, emphasizing economic efficiency and performance benefits, while Anatoly Tolle counters, highlighting the importance of physical security and decentralization principles.",
+  "topic_summary": "The debate explores the sufficiency of 100 validators for Solana's decentralized layer 1, discussing economic security, validator performance, and the implications for network decentralization [t=25:12].",
+  "router_tags": [
+    "Solana",
+    "validators",
+    "decentralization",
+    "blockchain",
+    "L1"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

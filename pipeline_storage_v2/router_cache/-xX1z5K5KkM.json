@@ -1,0 +1,27 @@
+{
+  "description": "Lecture on course expectations, focusing on recent research in mechanism design, particularly unit-demand bidders and Walrasian equilibria.",
+  "topic_summary": "The lecture outlines the course structure, including the absence of problem sets, introduction of exercise sets, and the focus on research projects. It emphasizes the importance of engagement with material and provides details on deliverables and attendance expectations. [t=2:00] [t=28:40] [t=266:00]",
+  "router_tags": [
+    "Mechanism Design",
+    "Unit-Demand Bidders",
+    "Walrasian Equilibria",
+    "Research Projects",
+    "Course Expectations"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Mechanism Design Lecture",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$Woznian",
+    "$BitterI",
+    "$Vijay",
+    "$Walbron",
+    "$POfG",
+    "$IOfJ",
+    "$Walworthy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

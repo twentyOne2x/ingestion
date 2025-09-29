@@ -1,0 +1,22 @@
+{
+  "description": "Elizabeth Warren discusses the perceived value of Bitcoin compared to platinum, questioning its intrinsic worth and likening it to a belief system rather than a tangible asset.",
+  "topic_summary": "In this interview, Elizabeth Warren critiques Bitcoin's value proposition, comparing it to platinum and emphasizing that both derive value from societal belief rather than intrinsic qualities. She highlights the risk of value loss if belief in these assets wanes. [t=0:08] to [t=43:66]",
+  "router_tags": [
+    "Bitcoin",
+    "Elizabeth Warren",
+    "Cryptocurrency",
+    "Value",
+    "Investment"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ElizabethWarren"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Pari Lingampalli, Lead Product Manager at PayPal, discusses PyUSD on Solana, highlighting its benefits such as near-instant global settlements and low-cost transactions. Elon Gitter from Paxos explains how to work with PyUSD and demonstrates a Rust program for sending tokens to multiple addresses using the Anchor framework.",
+  "topic_summary": "Overview of PyUSD on Solana, its integration with PayPal, and a technical demonstration of a token transfer program using Rust and the Anchor framework [t=7:52-370:07].",
+  "router_tags": [
+    "PyUSD",
+    "Solana",
+    "PayPal",
+    "Paxos",
+    "Stablecoin",
+    "Blockchain",
+    "Token Transfer"
+  ],
+  "aliases": [
+    "Pyusd",
+    "pyusd",
+    "Paxos",
+    "paxos"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@PayPal",
+    "@Paxos",
+    "@PariLingampalli",
+    "@ElonGitter"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

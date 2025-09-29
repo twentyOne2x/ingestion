@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the 3-SAT problem and the Cook-Levin theorem, which establishes that 3-SAT is NP-hard. It covers the historical context of the theorem's proof by Stephen Cook and Leonid Levin in 1971, and the implications of NP-hardness as demonstrated by Richard Karp in 1972. The video also explains the structure of the 3-SAT problem, including its constraints and the significance of boolean variables.",
+  "topic_summary": "The video provides an overview of the 3-SAT problem, its classification as NP-hard, and the foundational Cook-Levin theorem. It highlights the contributions of Stephen Cook and Leonid Levin, as well as Richard Karp's work on NP-hard problems. The explanation includes the nature of boolean variables and disjunctions in 3-SAT, emphasizing its importance in computational theory.",
+  "router_tags": [
+    "NP-Hard",
+    "3-SAT",
+    "Cook-Levin Theorem",
+    "Algorithms",
+    "Computational Complexity"
+  ],
+  "aliases": [
+    "3-Sat",
+    "Cook Levin Theorem",
+    "NP Hard Problems"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861",
+    "@stephencook",
+    "@leonidlevin",
+    "@richardkarp"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

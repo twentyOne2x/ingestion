@@ -1,0 +1,26 @@
+{
+  "description": "In this interview, the host discusses various topics with Shaw, including upcoming features and the significance of AI16Z. The conversation touches on recent events and personal insights, highlighting the dynamic nature of the tech landscape.",
+  "topic_summary": "Interview with Shaw discussing AI16Z and recent tech developments [t=0:08-0:10].",
+  "router_tags": [
+    "AI16Z",
+    "Shaw",
+    "Tech Interview",
+    "Elon Musk",
+    "Twitter",
+    "Innovation"
+  ],
+  "aliases": [
+    "Shaw",
+    "shaw",
+    "SHAW"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$SOL",
+    "@elonmusk",
+    "@andreessen",
+    "@naval"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

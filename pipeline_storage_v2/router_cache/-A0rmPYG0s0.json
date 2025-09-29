@@ -1,0 +1,26 @@
+{
+  "description": "In this video, @notthreadguy discusses trading memecoins with Adin Ross, highlighting strategies for identifying promising coins and the intense focus required for success in the crypto market. The conversation touches on the challenges and rewards of trading, including significant gains from early investments.",
+  "topic_summary": "Adin Ross learns about trading memecoins and the strategies involved in identifying profitable opportunities in the crypto market [t=0:24].",
+  "router_tags": [
+    "memecoins",
+    "trading",
+    "crypto",
+    "Adin Ross",
+    "Vitalik",
+    "investment"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@adinross",
+    "@vitalik"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

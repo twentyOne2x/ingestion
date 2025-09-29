@@ -1,0 +1,22 @@
+{
+  "description": "This presentation discusses how MetaKeep aims to onboard 4.3 billion people to Web3 by leveraging powerful technologies and building an invisible infrastructure for blockchain applications. The speaker shares insights from their experience with major tech companies and the challenges faced in creating a usable wallet for blockchain transactions.",
+  "topic_summary": "MetaKeep's strategy for onboarding users to Web3, focusing on wallet usability and distribution challenges. The speaker highlights the importance of integrating blockchain solutions into widely used platforms like WhatsApp to facilitate cross-border payments and enhance user adoption.",
+  "router_tags": [
+    "Web3",
+    "MetaKeep",
+    "blockchain",
+    "wallet",
+    "payments"
+  ],
+  "aliases": [
+    "MetaKeep",
+    "metakeep",
+    "Meta Keep"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

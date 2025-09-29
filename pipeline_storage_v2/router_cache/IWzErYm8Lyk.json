@@ -1,0 +1,20 @@
+{
+  "description": "Lecture on online learning and the multiplicative weights algorithm, discussing decision-making under uncertainty and the implications for linear programming and game theory.",
+  "topic_summary": "Introduction to online problems and algorithms, focusing on the multiplicative weights update method and its applications in decision-making scenarios [t=0:40].",
+  "router_tags": [
+    "Algorithms",
+    "Online Learning",
+    "Multiplicative Weights",
+    "Game Theory"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

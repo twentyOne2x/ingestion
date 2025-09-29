@@ -1,0 +1,26 @@
+{
+  "video_id": "yqc6sBWZqBc",
+  "title": "2025-05-23_yqc6sBWZqBc_Ship or Die at Accelerate 2025: Capital Market Fit (Clay Robbins, Breck Stodghill)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Brex Dodgel",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Clay Robbins",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

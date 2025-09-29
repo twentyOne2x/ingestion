@@ -1,0 +1,23 @@
+{
+  "description": "Alan Chang discusses the urgent power crisis in America, highlighting the instability of the power grid due to increasing demand from AI tech and data centers. He emphasizes the need for a fundamental change in energy distribution and the importance of addressing the flaws in the current energy system. Chang introduces Fuse, a company working to enhance grid resilience through innovative technologies like batteries and solar EV chargers.",
+  "topic_summary": "The presentation addresses the current power crisis in the US, the limitations of the existing power grid, and the innovative solutions being implemented by Fuse to adapt to increasing energy demands [t=20:64 - t=343:94].",
+  "router_tags": [
+    "Energy Crisis",
+    "Power Grid",
+    "Sustainable Innovation",
+    "Fuse Energy",
+    "AI Technology"
+  ],
+  "aliases": [
+    "Fuse",
+    "fuse",
+    "FUSE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn",
+    "$AMZN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

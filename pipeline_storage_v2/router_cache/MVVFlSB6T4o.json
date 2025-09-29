@@ -1,0 +1,25 @@
+{
+  "description": "David from Tencent Cloud discusses the company's global cloud computing services, focusing on its role in the Solana ecosystem and partnerships with various industries, including gaming and finance.",
+  "topic_summary": "Tencent Cloud's international strategy, product offerings for Web3, and collaborations with gaming and finance sectors are highlighted. Key products include cloud computing services, media services SDKs, and infrastructure for blockchain nodes [t=425].",
+  "router_tags": [
+    "Tencent Cloud",
+    "Web3",
+    "Cloud Computing",
+    "Gaming",
+    "Finance",
+    "Solana"
+  ],
+  "aliases": [
+    "Tencent Cloud",
+    "tencent cloud",
+    "TENCENT CLOUD"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BewareLabs",
+    "@Cosmin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

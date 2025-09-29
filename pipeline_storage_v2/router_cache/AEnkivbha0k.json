@@ -1,0 +1,23 @@
+{
+  "description": "This Core Community Call discusses the new tuning parameters for QWIK and the SIMD46/CISFAR updates presented by Max Flamingo. The session includes insights on performance benchmarks and memory management for validators.",
+  "topic_summary": "Max Flamingo presents on SIMD46 and QWIK tuning parameters, focusing on performance targets and memory considerations for validators. Discussion includes the challenges of reverse engineering tuning requirements and the importance of maintaining optimal transaction processing rates [t=0:00 - t=3:36].",
+  "router_tags": [
+    "Solana",
+    "Community Call",
+    "QWIK",
+    "SIMD46",
+    "CISFAR"
+  ],
+  "aliases": [
+    "Core Community Call",
+    "Core community call",
+    "core community call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@maxflamingo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

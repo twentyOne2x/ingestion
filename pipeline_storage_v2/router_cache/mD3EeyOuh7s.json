@@ -1,0 +1,20 @@
+{
+  "description": "The default account state token extension allows accounts to have a default state upon creation, giving token issuers control over token distribution by limiting who can hold the token. For example, if Bob's account is frozen, Alice cannot send tokens to him until the issuer thaws the account.",
+  "topic_summary": "This video explains the default account state token extension, highlighting its role in controlling token distribution and account states, with practical examples involving Bob and Alice [t=0:48-39:35].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Account State"
+  ],
+  "aliases": [
+    "Solana Token Extensions",
+    "solana token extensions",
+    "Solana Default Account State"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Alex Lee discusses the competition between Chinese and American AI, addressing the impact of government policies on technology and economic sustainability. He highlights the challenges faced by China, including overcapacity and the need for supply-side reforms. The conversation touches on fiscal policies and their implications for domestic consumption and inflation.",
+  "topic_summary": "The discussion centers on the competition in AI between China and the US, with a focus on government interventions, economic challenges, and potential reforms. Key points include the rat race in technology sectors, fiscal policies, and the long-term outlook for China's economy [t=0:16 - t=3:01].",
+  "router_tags": [
+    "AI",
+    "China",
+    "US",
+    "Economy",
+    "Fiscal Policy",
+    "Technology"
+  ],
+  "aliases": [
+    "Alex Lee",
+    "alex lee",
+    "DELHI DIGITAL",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$NIO",
+    "$BYD",
+    "$SOL",
+    "@Delphi_Digital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

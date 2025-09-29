@@ -1,0 +1,26 @@
+{
+  "video_id": "Vc5QZX2BXl8",
+  "title": "2024-10-24_Vc5QZX2BXl8_Incentivizing Innovation: Role of Liquid Tokens in Decentralized AI Networks - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "E": {
+      "name": "Mark Weinstein",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Ed Roman",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

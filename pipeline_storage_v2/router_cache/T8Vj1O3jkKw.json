@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on trading memecoins, market trends, and predictions for 2025. The host shares insights on Takabu's performance and the current state of the market.",
+  "topic_summary": "Exploration of trading strategies in the memecoin sector, focusing on Takabu and the evolving landscape of financialization and gamblification in crypto markets [t=141:39].",
+  "router_tags": [
+    "memecoins",
+    "trading",
+    "crypto",
+    "Takabu",
+    "financialization",
+    "gamblification"
+  ],
+  "aliases": [
+    "Coyote",
+    "coyote",
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$TAKABA",
+    "@notthreadguy",
+    "@suspendedCap",
+    "@ContrarianCurse"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

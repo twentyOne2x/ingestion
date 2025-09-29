@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Michael interviews Profit, the founder of Metadao, discussing the role of markets in decision-making and the efficiency of prediction markets, particularly in the context of the upcoming presidential election.",
+  "topic_summary": "The conversation explores the concept of market efficiency, the effectiveness of prediction markets compared to traditional polling methods, and recent movements in political prediction markets, especially regarding Trump and Kamala Harris [t=195.33].",
+  "router_tags": [
+    "MetaDAO",
+    "Prediction Markets",
+    "Market Efficiency",
+    "Delphi Podcast",
+    "Political Forecasting"
+  ],
+  "aliases": [
+    "Metadao",
+    "MetaDao",
+    "Profit",
+    "profit"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Delphi_Digital",
+    "@Profit"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "ljFGnpDJ9Dc",
+  "title": "2023-11-03_ljFGnpDJ9Dc_Breakpoint 2023: Stablecoin Panel",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Kento Yanami",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

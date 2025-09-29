@@ -1,0 +1,25 @@
+{
+  "description": "Austin hosts Ben Gilbert and David Rosenthal from Acquired to discuss the current state of crypto venture investing and the long-term potential of blockchain technology. They explore the evolution of their perspectives on crypto, the challenges faced by venture capitalists, and the future of investing in the space.",
+  "topic_summary": "The episode covers insights from Ben and David on crypto venture investing, addressing misconceptions and the broader context of the market downturns. They emphasize that current challenges are not unique to web3 and provide a historical perspective on the evolution of venture capital interest in crypto [t=42:57].",
+  "router_tags": [
+    "Crypto",
+    "Venture Capital",
+    "Blockchain",
+    "Investing",
+    "Web3"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "ACQUIRED",
+    "Acquired"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ben_gilbert",
+    "@david_rosenthal"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

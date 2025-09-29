@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, the host discusses the return of a prominent crypto trader to Twitter after a hiatus. They explore the trader's experiences during their absence, the narratives surrounding their departure, and the current state of crypto trading. The conversation touches on market dynamics and the trader's strategies for engaging with the community moving forward.",
+  "topic_summary": "The episode covers the trader's return to Twitter, their experiences during a break from social media, and insights into crypto trading strategies and market conditions [t=0:08-247:94].",
+  "router_tags": [
+    "Crypto Trading",
+    "Twitter",
+    "Market Insights",
+    "Trader Experience",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Ubermendes",
+    "Uber Mendes",
+    "Not Thread Guy",
+    "Notthreadguy"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

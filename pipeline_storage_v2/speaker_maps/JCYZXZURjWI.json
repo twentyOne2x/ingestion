@@ -1,0 +1,26 @@
+{
+  "video_id": "JCYZXZURjWI",
+  "title": "2023-11-03_JCYZXZURjWI_Breakpoint 2023: Political Advocacy From the Pros: What Effective Engagement Looks Like",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Miller Whitehouse Levine",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Greg Exethalas",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Delphi Podcast, host Jose Maria Macedu interviews Ilya Polosukhin, co-founder of Near, discussing his background in AI and machine learning, the new Crypto XAI accelerator, and the intersection of crypto and AI. Ilya shares insights on his journey from Ukraine to Google, his work on neural networks, and the evolution of AI technologies.",
+  "topic_summary": "Ilya Polosukhin discusses his early interest in AI, his experiences at Google, and the launch of the Crypto XAI accelerator with Near Delphi Labs. The conversation covers the importance of AI in today's tech landscape and the potential for innovation in the crypto space [t=14:32].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Delphi Labs",
+    "Accelerator",
+    "Machine Learning"
+  ],
+  "aliases": [
+    "Ilya Polosukhin",
+    "Ilya Polosukhin",
+    "Ilya"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Delphi_Digital",
+    "@Google",
+    "@Microsoft",
+    "@Instagram"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

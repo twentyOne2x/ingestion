@@ -1,0 +1,30 @@
+{
+  "description": "Michael Green discusses the future of tokenization and the decline of traditional financial products like mutual funds and ETFs. He argues that while traditional finance seems robust, it is a mirage driven by passive investing strategies. Green emphasizes that tokenization is in its infancy and highlights the importance of digital tokens as the future of securities.",
+  "topic_summary": "In this talk, Michael Green critiques traditional finance, emphasizing the decline of mutual funds and ETFs, and advocates for the future of tokenization and digital securities, suggesting that current investment strategies are misleading and unsustainable [t=1:12-290:08].",
+  "router_tags": [
+    "Tokenization",
+    "Digital Securities",
+    "Passive Investing",
+    "Financial Innovation",
+    "ETFs",
+    "Mutual Funds"
+  ],
+  "aliases": [
+    "Michael Green",
+    "Mike Green",
+    "Simplify"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$200 Million",
+    "Enron",
+    "Richard Feynman",
+    "$100,000",
+    "Department Of Justice",
+    "Kraken",
+    "New Jersey"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

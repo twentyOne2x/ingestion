@@ -1,0 +1,24 @@
+{
+  "description": "Loris Leiva discusses Kinobi, a developer tool designed to enhance the accessibility of Solana programs by providing a standard interface definition language (IDL) that allows for secure retrieval of program information. Kinobi enables the creation of program clients in various languages and facilitates the merging of IDLs for customized applications.",
+  "topic_summary": "In this keynote, Loris Leiva introduces Kinobi, explaining its purpose to help Solana programs connect with users and other applications. He contrasts Kinobi with Anchor, highlighting its flexibility in defining data types and serialization strategies. Kinobi allows for the generation of program clients and the customization of IDLs, enhancing developer experience and interoperability within the Solana ecosystem. Key features include the ability to create custom IDLs and generate various client types for different programming languages [t=267.87].",
+  "router_tags": [
+    "Kinobi",
+    "Solana",
+    "Web3",
+    "IDL",
+    "Developer Tools"
+  ],
+  "aliases": [
+    "Kinobi",
+    "kinobi",
+    "KINO",
+    "Kinobi Tool"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@LorisLeiva"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

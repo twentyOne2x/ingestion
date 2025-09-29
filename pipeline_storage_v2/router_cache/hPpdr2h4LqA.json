@@ -1,0 +1,23 @@
+{
+  "description": "Lecture on smooth analysis, discussing its hybrid model combining average and worst-case analysis, particularly in the context of local search algorithms and the traveling salesman problem.",
+  "topic_summary": "The lecture covers smooth analysis, its application in local search algorithms, and the traveling salesman problem, emphasizing the importance of perturbations in performance guarantees. Key concepts include the balance between worst-case and average-case scenarios [t=0:40] and the relevance of local search in optimization problems [t=187:89].",
+  "router_tags": [
+    "smooth analysis",
+    "local search",
+    "optimization",
+    "traveling salesman problem",
+    "algorithm analysis"
+  ],
+  "aliases": [
+    "Smooth Analysis",
+    "Local Search",
+    "Optimization Techniques",
+    "Traveling Salesperson Problem"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

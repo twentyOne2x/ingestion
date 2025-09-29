@@ -1,0 +1,14 @@
+{
+  "video_id": "vmmgHG2zTMg",
+  "title": "2024-01-01_vmmgHG2zTMg_Star Atlas, a web3 real time strategy game built on Solana.",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

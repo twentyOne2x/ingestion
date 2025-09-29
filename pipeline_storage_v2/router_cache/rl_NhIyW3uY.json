@@ -1,0 +1,21 @@
+{
+  "description": "Andrew Tate discusses the political landscape surrounding Donald Trump, questioning the motives behind attempts to imprison him and speculating on potential assassination risks due to his influence. He reflects on past elections and the implications of power dynamics in American politics.",
+  "topic_summary": "Tate analyzes the political strategies against Trump and the potential consequences of his return to power, suggesting that those in control may resort to extreme measures to maintain their influence [t=39:26].",
+  "router_tags": [
+    "Trump",
+    "Assassination",
+    "Politics",
+    "Andrew Tate"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$TRUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

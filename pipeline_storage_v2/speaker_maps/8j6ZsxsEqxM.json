@@ -1,0 +1,32 @@
+{
+  "video_id": "8j6ZsxsEqxM",
+  "title": "2023-11-01_8j6ZsxsEqxM_Breakpoint 2023: Veep or House of Cards How Washington Makes Decisions",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Landon Veep",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Tom Emmer",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Landon Zinda",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Solana validator updates, educational workshops, and community topics. Ashwin from Anza presents on SIMD for slashing. Updates on mainnet beta version 2.0.18 and Firedancer version 202 2016. Feature activations including TVC and partition epoch rewards discussed, with future activations planned for early 2025.",
+  "topic_summary": "Validator updates and community discussions on Solana, including SIMD for slashing [t=23:64], mainnet beta updates [t=56:05], and future feature activations [t=201:67].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Cryptocurrency",
+    "Mainnet",
+    "Feature Activation"
+  ],
+  "aliases": [
+    "solana foundation",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Ashwin",
+    "@Anza"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

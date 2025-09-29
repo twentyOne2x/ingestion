@@ -1,0 +1,29 @@
+{
+  "description": "Lecture on Bayesian Incentive-Compatibility discussing proofs and mechanisms in auction theory. Covers Lemma 2 and Lemma 3, focusing on the greedy algorithm and its implications for welfare maximization [t=0:88-66:06].",
+  "topic_summary": "Exploration of Bayesian mechanisms in auction design, emphasizing the relationship between bidder strategies and welfare outcomes. The lecture details the proofs of key lemmas related to the shrinking mechanism and greedy algorithm [t=0:88-66:06].",
+  "router_tags": [
+    "Mechanism Design",
+    "Bayesian Incentive Compatibility",
+    "Auction Theory",
+    "Greedy Algorithm",
+    "Welfare Maximization"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Bayesian Incentive Compatibility",
+    "Lecture 12"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$Myerson",
+    "$Bayes",
+    "$BayesNash",
+    "$Bayesian",
+    "@LeviSwami",
+    "@BuellahKlemperer",
+    "$Meierson",
+    "$Marison"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

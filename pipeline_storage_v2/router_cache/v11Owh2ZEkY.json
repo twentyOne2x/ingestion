@@ -1,0 +1,26 @@
+{
+  "description": "FP Lee discusses the launch of Sanctum Creator Coins, emphasizing their role in building and monetizing communities within the Solana ecosystem. He addresses the need for real value in crypto beyond speculation, highlighting the permissionless and sustainable nature of Creator Coins.",
+  "topic_summary": "At [t=5:92], FP Lee introduces the concept of Creator Coins as a solution to the current pessimism in crypto. He explains how these coins allow creators to monetize their communities and provides examples of their application, including projects like FloJo and Bangshark. The talk emphasizes the importance of real value creation in the crypto space.",
+  "router_tags": [
+    "Solana",
+    "Creator Coins",
+    "LSTs",
+    "Breakpoint",
+    "Sanctum"
+  ],
+  "aliases": [
+    "sanctum",
+    "creator coins",
+    "flojo",
+    "bangshark",
+    "bang shark"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@FloJo",
+    "@Bangshark"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,32 @@
+{
+  "video_id": "W71-5x1DWig",
+  "title": "2024-10-30_W71-5x1DWig_Going beyond the hype of Crypto x AI: Vapourware or not - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jose Macedu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "David Hoffman discusses his role in the Ethereum community, the shift towards public equities, and the emergence of ETH treasury companies. He emphasizes the importance of understanding different blockchain languages and communities while maintaining credibility within Ethereum.",
+  "topic_summary": "David Hoffman explores Ethereum's evolution, the impact of public equities on crypto, and the potential of upcoming ETH treasury companies [t=105:92].",
+  "router_tags": [
+    "Ethereum",
+    "Public Equities",
+    "ETH Treasuries",
+    "Crypto",
+    "David Hoffman"
+  ],
+  "aliases": [
+    "David Hoffman",
+    "david hoffman",
+    "DAVID HOFFMAN"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@notthreadguy",
+    "@Ryan",
+    "@AnthonySazano",
+    "@Circle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

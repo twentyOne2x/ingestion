@@ -1,0 +1,28 @@
+{
+  "description": "Thread Guy interviews Garga, CEO of Yuga Labs, discussing the evolution of the company and the NFT space, reflecting on the challenges faced over the past two years and the growth from a small team to a larger organization. They touch on the dynamics of leadership and the importance of maintaining a mission-driven approach in a corporate environment.",
+  "topic_summary": "In this episode, Thread Guy and Garga explore the journey of Yuga Labs, the impact of NFTs, and the challenges of scaling a creative organization. They discuss the transition from a small team to a larger one and the need to stay aligned with their mission amidst bureaucracy.",
+  "router_tags": [
+    "Yuga Labs",
+    "NFTs",
+    "Ape",
+    "Apecoin",
+    "Web3",
+    "Leadership",
+    "Crypto",
+    "Miami",
+    "Coconut Grove"
+  ],
+  "aliases": [
+    "Thread Guy",
+    "thread guy",
+    "Garga",
+    "garga"
+  ],
+  "canonical_entities": [
+    "$Ape",
+    "@notthreadguy",
+    "@garga"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Mike discusses his journey in building Sling on Solana, highlighting the advantages of blockchain technology for financial transactions and identity verification.",
+  "topic_summary": "Mike shares his experiences transitioning from traditional banking to blockchain, emphasizing the efficiency of crypto transactions compared to conventional methods [t=245.98].",
+  "router_tags": [
+    "Sling",
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Identity Verification"
+  ],
+  "aliases": [
+    "sling",
+    "Sling",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

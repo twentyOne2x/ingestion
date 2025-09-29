@@ -1,0 +1,32 @@
+{
+  "description": "At Breakpoint 2023, John from the Solana Foundation introduces a panel discussing Solana Pay and user onboarding. Panelists include cm from Monstre, Isaac from Venta, and Fernando from Decaf, who share insights on their collaborative efforts to enhance payment solutions using NFC technology and the challenges of onboarding merchants. They discuss the differences in user engagement across various regions and the importance of adapting to local needs in payment systems.",
+  "topic_summary": "The panel reflects on the developments in Solana Pay, the integration of NFC technology for payments, and the regional differences in user engagement and onboarding strategies at Breakpoint 2023 [t=2:48-267:33].",
+  "router_tags": [
+    "Solana",
+    "Solana Pay",
+    "Breakpoint 2023",
+    "NFC Technology",
+    "User Onboarding",
+    "Payments"
+  ],
+  "aliases": [
+    "solana",
+    "solanapay",
+    "Breakpoint",
+    "cm",
+    "Isaac",
+    "Fernando",
+    "Monstre",
+    "Venta",
+    "Decaf"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@cm",
+    "@Isaac",
+    "@Fernando"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

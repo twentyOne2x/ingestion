@@ -1,0 +1,26 @@
+{
+  "video_id": "Ex6fZGKU5nI",
+  "title": "2024-06-11_Ex6fZGKU5nI_Michael Rinko and Kevin Kelly: The Liquidity of Attention Drives Markets & Dictates Winners",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Kevin Michael",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Michael Rinko",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

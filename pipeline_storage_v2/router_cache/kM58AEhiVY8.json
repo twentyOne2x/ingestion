@@ -1,0 +1,28 @@
+{
+  "description": "Arnold Lee discusses the challenges of international trade and cross-border payments, highlighting the difficulties faced by individuals like Bob and Ahmed in processing transactions and shipping machinery. He emphasizes the need for better onboarding and education regarding stablecoins and blockchain technology to improve settlement times and compliance.",
+  "topic_summary": "Arnold Lee explores the complexities of international trade, focusing on the payment challenges between U.S. exporters and Nigerian importers, and the potential of blockchain technology to streamline these processes [t=321:47].",
+  "router_tags": [
+    "International Trade",
+    "Cross-Border Payments",
+    "Stablecoins",
+    "Blockchain Technology"
+  ],
+  "aliases": [
+    "Arnold Lee",
+    "arnold lee",
+    "Sphere",
+    "sphere"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$SOL",
+    "@Wendy",
+    "@VenusGemCorp",
+    "@Achmet",
+    "@BobIndin",
+    "@Wilder",
+    "@ZachWolfen"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

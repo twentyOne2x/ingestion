@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including the Solana Speedrun game jam and improvements to the transaction scheduler and ledger tool.",
+  "topic_summary": "Highlights include the Solana Speedrun game jam starting on the video's release day [t=24:72], updates on transaction scheduling to enhance network efficiency [t=90:83], and improvements to the Anchor testing process in the Solana Monorepo [t=190:09].",
+  "router_tags": [
+    "Solana",
+    "Speedrun",
+    "Game Jam",
+    "Transaction Scheduler",
+    "Ledger Tool",
+    "Anchor"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Speedrun",
+    "solana updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas",
+    "@Jacob",
+    "@JohnCinque"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

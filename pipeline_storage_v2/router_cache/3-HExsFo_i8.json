@@ -1,0 +1,24 @@
+{
+  "description": "Solomon Ponomarev from the Solana Foundation discusses Mithril, a self-verifying node for the Solana ecosystem, addressing challenges in transaction verification and node requirements.",
+  "topic_summary": "The presentation covers the development of Mithril, a full node client that enables self-verification of transactions on Solana, highlighting its advantages over traditional nodes and the challenges faced in the ecosystem [t=0:48].",
+  "router_tags": [
+    "Solana",
+    "Mithril",
+    "Self Verification",
+    "Blockchain",
+    "Node Requirements"
+  ],
+  "aliases": [
+    "Solomon Ponomarev",
+    "Solomon",
+    "Sana Foundation",
+    "Overclock"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Overclock"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

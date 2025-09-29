@@ -1,0 +1,32 @@
+{
+  "description": "Lecture on LP decoding and error correcting codes, covering concepts like Hamming distance and the use of bipartite graphs in code construction.",
+  "topic_summary": "Introduction to LP decoding and its application in error correcting codes, focusing on the minimum Hamming distance and the ability to detect and correct errors. Discussion on using linear programming for efficient reconstruction of corrupted code words [t=221.46].",
+  "router_tags": [
+    "LP Decoding",
+    "Error Correcting Codes",
+    "Hamming Distance",
+    "Bipartite Graphs",
+    "Linear Programming"
+  ],
+  "aliases": [
+    "Lp Decoding",
+    "Error Correcting Codes",
+    "Hamming Distance",
+    "Bipartite Graphs",
+    "Linear Programming"
+  ],
+  "canonical_entities": [
+    "$Wainwright",
+    "$Stein",
+    "$Gallagher",
+    "$Tanner",
+    "$Sipser",
+    "$Spielman",
+    "$Chernoff",
+    "$Feldman",
+    "$Malkin",
+    "$Servettio"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the concept of staking Ethereum, highlighting its current value, the illiquidity of staked ETH, and the incentives for staking.",
+  "topic_summary": "Staking Ethereum is worth over $25 billion, providing network security and yield incentives. As more ETH is staked, yields decrease, but dollar value increases with ETH price. Various LSD providers offer solutions for illiquidity by issuing liquid tokens and managing node operations. [t=1:20] [t=30:15]",
+  "router_tags": [
+    "Ethereum",
+    "Staking",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

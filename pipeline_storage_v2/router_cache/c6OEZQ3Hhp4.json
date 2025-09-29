@@ -1,0 +1,20 @@
+{
+  "description": "Lecture on exact recovery and compressive sensing, discussing NP hard problems and heuristics for optimal solutions.",
+  "topic_summary": "Continuation of studying NP hard problems with a focus on linear systems and the concept of sparsity in solutions [t=215.95].",
+  "router_tags": [
+    "Compressive Sensing",
+    "NP Hard Problems",
+    "Linear Systems",
+    "Sparsity"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "@timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

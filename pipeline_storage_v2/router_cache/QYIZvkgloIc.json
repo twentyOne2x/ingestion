@@ -1,0 +1,25 @@
+{
+  "description": "Ryan Duguid discusses the advancements of Photo Finish Live on Solana, highlighting its potential in the wagering industry and the introduction of the open tote protocol for efficient betting pools.",
+  "topic_summary": "At [t=1:92], Ryan Duguid introduces himself and the purpose of the presentation. He outlines the success of Photo Finish Live and its integration with Solana, emphasizing the need for modernizing the wagering industry by providing instant and low-cost betting solutions. The open tote protocol is introduced at [t=199:81], designed to streamline betting processes. The presentation concludes with the vision of a compounding liquidity network supported by the Crown token.",
+  "router_tags": [
+    "Photo Finish Live",
+    "Wagering",
+    "Blockchain",
+    "Solana",
+    "Open Tote Protocol",
+    "Gaming"
+  ],
+  "aliases": [
+    "Ryan Duguid",
+    "Photo Finish Live",
+    "Crown Token",
+    "Open Tote Protocol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$CROWN"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

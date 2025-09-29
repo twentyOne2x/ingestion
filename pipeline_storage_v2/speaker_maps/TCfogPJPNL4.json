@@ -1,0 +1,20 @@
+{
+  "video_id": "TCfogPJPNL4",
+  "title": "2023-02-09_TCfogPJPNL4_Chewing Glass - Shek (Gum) - Ep #9",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Arc Shea",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

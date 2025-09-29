@@ -1,0 +1,22 @@
+{
+  "description": "Andrew McConnell discusses high performance networking and the role of DoubleZero in enabling IBRL, focusing on bandwidth, throughput, and latency concepts.",
+  "topic_summary": "The talk covers the fundamentals of high performance wide area networks, emphasizing the importance of bandwidth, throughput, and latency in achieving IBRL. McConnell explains how these elements impact network design and performance, particularly in the context of data flows and direct routing between endpoints [t=252.98].",
+  "router_tags": [
+    "High Performance Networking",
+    "IBRL",
+    "Bandwidth",
+    "Throughput",
+    "Latency"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

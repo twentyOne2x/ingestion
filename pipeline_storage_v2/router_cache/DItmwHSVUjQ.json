@@ -1,0 +1,27 @@
+{
+  "description": "In this episode, Tradermayne discusses strategies for trading meme coins and the importance of risk management. He reflects on missed opportunities and the volatility of the crypto market, emphasizing the need to accept losses and the unpredictability of investments.",
+  "topic_summary": "Tradermayne shares insights on trading meme coins, the risks involved, and personal experiences with significant losses and missed gains [t=48:21].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Meme Coins",
+    "Investing",
+    "Risk Management"
+  ],
+  "aliases": [
+    "Tradermayne",
+    "TraderMayne",
+    "trader_mayne"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@MichaelSaylor",
+    "@elonmusk",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

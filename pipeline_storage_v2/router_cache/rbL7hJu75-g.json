@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial introduces a framework for analyzing permissionless consensus protocols, covering concepts like impossibility results and the differences between permissioned and permissionless settings. It emphasizes the need for a general framework to rigorously prove results in the context of protocols like Bitcoin and proof of stake systems.",
+  "topic_summary": "The tutorial discusses the necessity of a general framework for permissionless consensus protocols, highlighting key concepts such as impossibility results and the distinctions between various operational settings, including fully permissionless and dynamically available settings. It aims to clarify definitions and hierarchies within permissionless protocols.",
+  "router_tags": [
+    "Consensus",
+    "Blockchain",
+    "Proof of Work",
+    "Proof of Stake",
+    "Permissionless"
+  ],
+  "aliases": [
+    "Tim Ruffgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Ruffgarden"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

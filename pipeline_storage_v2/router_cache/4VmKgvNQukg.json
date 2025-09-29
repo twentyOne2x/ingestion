@@ -1,0 +1,20 @@
+{
+  "description": "Anvita discusses transaction simulation in the Solana ecosystem, highlighting its importance and limitations. She explains how transaction simulation helps users understand asset transfers and potential vulnerabilities before signing transactions [t=19:12]. Anvita also addresses the risks associated with durable transactions and the need for wallets to provide critical warnings [t=239:01].",
+  "topic_summary": "The presentation covers transaction simulation in the Solana ecosystem, its utility for users, the risks of durable transactions, and the importance of wallet warnings to prevent vulnerabilities [t=19:12].",
+  "router_tags": [
+    "Solana",
+    "Transaction Simulation",
+    "Blockchain Security",
+    "Wallet Ecosystem"
+  ],
+  "aliases": [
+    "Anvita",
+    "anvita",
+    "ANVITA"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Stjord discusses the global GPU shortage and its impact on AI innovation. He introduces Nosana, a decentralized network leveraging Solana technology to connect GPU owners with AI users, aiming to alleviate the GPU scarcity issue. The presentation covers the implications of the shortage, including increased costs and inequitable access to resources, and highlights the need for a solution to enhance AI computation capabilities.",
+  "topic_summary": "The presentation addresses the critical GPU shortage affecting AI development and introduces Nosana as a solution to connect GPU providers with AI users, enhancing access and efficiency in computations [t=1:20].",
+  "router_tags": [
+    "GPU Shortage",
+    "AI Innovation",
+    "Nosana",
+    "Solana",
+    "Decentralized Computing"
+  ],
+  "aliases": [
+    "Nosana",
+    "nosana",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@elonmusk",
+    "$72,000",
+    "$100 Million"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

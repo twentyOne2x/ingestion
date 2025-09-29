@@ -1,0 +1,23 @@
+{
+  "description": "Thread Guy hosts Julian Holguin, CEO of Doodles, discussing the current state of the NFT market and the energy surrounding Doodles. They touch on Grammy week activities and the importance of community engagement in Web3.",
+  "topic_summary": "Julian Holguin shares insights on Doodles' community engagement and the NFT market during Grammy week [t=34:73].",
+  "router_tags": [
+    "Doodles",
+    "NFT",
+    "Grammy",
+    "Web3",
+    "Julian Holguin"
+  ],
+  "aliases": [
+    "Thread Guy",
+    "thread guy",
+    "Julian Holguin",
+    "julian holguin"
+  ],
+  "canonical_entities": [
+    "$Doodles",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

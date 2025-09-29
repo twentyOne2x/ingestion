@@ -1,0 +1,24 @@
+{
+  "description": "Cynthia Lo Bessette from Fidelity discusses the integration of traditional finance (TradFi) with decentralized finance (DeFi), highlighting the evolution of settlement times and the potential for blockchain technology to enhance capital markets.",
+  "topic_summary": "The conversation covers the transition from traditional settlement times (T+5 days) to faster on-chain transactions, emphasizing the benefits of speed, cost reduction, and decreased counterparty risk in financial markets [t=336.06].",
+  "router_tags": [
+    "DeFi",
+    "TradFi",
+    "Blockchain",
+    "Capital Markets",
+    "Fidelity"
+  ],
+  "aliases": [
+    "Cynthia Lo Bessette",
+    "Cynthia",
+    "Fidelity"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@CynthiaLoBessette",
+    "@Fidelity"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

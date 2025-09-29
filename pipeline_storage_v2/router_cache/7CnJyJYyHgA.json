@@ -1,0 +1,24 @@
+{
+  "description": "Jarry Xiao discusses the Solana Virtual Machine (SVM), explaining its role as an interpreter for EBPF bytecode and its significance in executing programs on the Solana blockchain. He covers the basics of computer architecture, the function of the execution environment, and the programming model that governs acceptable state changes during transactions.",
+  "topic_summary": "Overview of the Solana Virtual Machine (SVM) and its components, including the interpreter for EBPF bytecode and the execution environment that enforces programming rules. Key points include the architecture of CPU instructions and the importance of the programming model in transaction processing.",
+  "router_tags": [
+    "Solana",
+    "SVM",
+    "EBPF",
+    "blockchain",
+    "programming model"
+  ],
+  "aliases": [
+    "Jarry Xiao",
+    "Jerry Xiao",
+    "Jarry",
+    "Jerry"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jerry"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

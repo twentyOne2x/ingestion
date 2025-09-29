@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the advanced single token program for developers on the Solana blockchain, focusing on token extensions that enhance customization and leverage Solana's fast and low-cost transactions.",
+  "topic_summary": "Exploration of token extensions on Solana, highlighting their benefits for developers in creating customized token experiences [t=6:08 - 22:56].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

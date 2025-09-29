@@ -1,0 +1,24 @@
+{
+  "description": "The Helium Network is transitioning to Solana to enhance scalability and reliability. This presentation discusses the Helium Network's growth, its decentralized wireless network model, and the introduction of the mobile network. It also covers the community-driven process of implementing changes through Helium Improvement Proposals (HIPs), including HIP 51 and HIP 70, which focus on governance and scaling.",
+  "topic_summary": "Helium Network's migration to Solana for improved scalability and reliability, covering its decentralized wireless network and mobile network launch, alongside community-driven governance through HIPs.",
+  "router_tags": [
+    "Helium Network",
+    "Solana",
+    "Decentralized Networks",
+    "IoT",
+    "Mobile Network",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Helium network",
+    "helium Network",
+    "SOLANA",
+    "Solana network"
+  ],
+  "canonical_entities": [
+    "$HNT",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Kha Nguyen, co-founder of Bird Eye, presents updates at Breakpoint 2024, highlighting significant user engagement and new features for their platform.",
+  "topic_summary": "At [t=4:56], Kha Nguyen introduces Bird Eye's achievements in 2024, including 24 million retail users and 44 million daily API requests. He announces three major upgrades: a faster interface, customizable dashboards with Birdeye Panel, and a new mobile app with instant notifications, all set to launch in October 2024.",
+  "router_tags": [
+    "Bird Eye",
+    "Breakpoint",
+    "SOL",
+    "Birdeye",
+    "crypto",
+    "trading"
+  ],
+  "aliases": [
+    "Bird Eye",
+    "BirdEye",
+    "Birdeye",
+    "Breakpoint",
+    "SOL"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

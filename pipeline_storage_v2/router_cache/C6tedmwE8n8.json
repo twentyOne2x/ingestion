@@ -1,0 +1,28 @@
+{
+  "description": "Jeff from Turbine discusses validator behavior research aimed at ensuring Solana's chain health. The team, formed at the request of Brian Long, includes validator operators and focuses on objective, reproducible data to enhance the ecosystem. Key topics include the impact of modified validator clients on chain stability and the importance of collaboration among validators. The research highlights the need to protect the chain while respecting individual business models within the validator community.",
+  "topic_summary": "Research on validator behavior to ensure Solana's chain health, focusing on the effects of client modifications and the collaborative efforts of validator operators. Discussion includes the importance of maintaining chain stability and the role of validators in the ecosystem [t=109.49].",
+  "router_tags": [
+    "Solana",
+    "Validator Behavior",
+    "Chain Health",
+    "Research",
+    "Turbine"
+  ],
+  "aliases": [
+    "Turbine",
+    "turbine",
+    "TURBINE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Turbine",
+    "@BrianLong",
+    "@BrianZentetsu",
+    "@MichaelGabriel",
+    "@Halyad",
+    "@Ashwin",
+    "@Alpenglow"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

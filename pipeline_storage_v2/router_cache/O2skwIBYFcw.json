@@ -1,0 +1,25 @@
+{
+  "description": "Nick from the Solana Foundation Dev Rel team discusses the latest updates in the Solana ecosystem, including the Radar hackathon ending on October 8th, SIMD175 for disabling partitioned rent collection, and improvements in CLI for simulated compute units in transactions.",
+  "topic_summary": "Updates on the Radar hackathon [t=37:62], SIMD175 changes [t=79:14], and CLI enhancements for compute units [t=198:57].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Radar",
+    "SIMD",
+    "CLI",
+    "Compute Units"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@jacob",
+    "@johncinque"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

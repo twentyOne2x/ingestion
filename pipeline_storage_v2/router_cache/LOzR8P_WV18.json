@@ -1,0 +1,32 @@
+{
+  "description": "A discussion on the balance between innovation and network stability in the Solana ecosystem, emphasizing the importance of client diversity and the challenges faced by validators managing multiple protocols.",
+  "topic_summary": "The talk explores the necessity of client diversity in the Solana network, addressing the risks and benefits associated with multiple clients, and the implications for network stability and performance [t=264].",
+  "router_tags": [
+    "Solana",
+    "network stability",
+    "client diversity",
+    "blockchain",
+    "validators"
+  ],
+  "aliases": [
+    "Scale or Die 2025",
+    "vanilla can be the best flavor",
+    "SOL",
+    "Jas",
+    "Block Demon",
+    "Astrolane",
+    "Brian",
+    "Jito Paladin"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jas",
+    "@BlockDemon",
+    "@Astrolane",
+    "@Brian",
+    "@JitoPaladin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

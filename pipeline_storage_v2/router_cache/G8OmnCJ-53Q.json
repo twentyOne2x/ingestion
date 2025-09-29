@@ -1,0 +1,22 @@
+{
+  "description": "Presentation of the School of Solana by AKI Blockchain, detailing the bootcamp's structure, requirements, and past successes.",
+  "topic_summary": "Introduction to the School of Solana, covering its online format, curriculum focused on Solana, Rust, and Anchor framework, and the application process for prospective students. Highlights include the importance of prior programming knowledge and the success of previous cohorts [t=140.88].",
+  "router_tags": [
+    "Solana",
+    "Blockchain Education",
+    "Rust Programming",
+    "AKI Blockchain"
+  ],
+  "aliases": [
+    "School of Solana",
+    "School Of Solana",
+    "School of Sauna"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

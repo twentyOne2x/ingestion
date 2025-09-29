@@ -1,0 +1,20 @@
+{
+  "video_id": "62LsYM46UM8",
+  "title": "2025-08-21_62LsYM46UM8_Luca Netz: Pudgy Penguins, Building in Crypto, Virality and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Jean Des",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

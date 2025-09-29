@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the evolving dress code in the crypto industry, highlighting the clash between hoodie and suit cultures. The conversation explores institutional adoption and the importance of contributions over appearances.",
+  "topic_summary": "The video contrasts hoodie and suit cultures in crypto, emphasizing the shift towards inclusivity and merit-based recognition [t=15:68].",
+  "router_tags": [
+    "crypto",
+    "Solana",
+    "dress code",
+    "institutional adoption"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "Solana stories",
+    "solana stories"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Robert Leshner discusses the evolution of decentralized finance (DeFi) and the concept behind Compound, a protocol that allows users to earn interest or borrow crypto tokens. He shares his journey into crypto, starting from his early experiences with Bitcoin and leading to the creation of Compound, which revolutionized borrowing and lending by using a pooled asset model.",
+  "topic_summary": "In this episode, Robert Leshner explains the origins of Compound and its impact on the DeFi space. He reflects on the early days of crypto, the challenges of building a decentralized lending platform, and the significance of Ethereum in shaping the future of finance [t=0:64].",
+  "router_tags": [
+    "DeFi",
+    "Compound",
+    "Blockchain",
+    "Cryptocurrency",
+    "Finance"
+  ],
+  "aliases": [
+    "Robert Leshner",
+    "robert leshner",
+    "ROBERT LESHNER"
+  ],
+  "canonical_entities": [
+    "$COMP",
+    "@RobertLeshner"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

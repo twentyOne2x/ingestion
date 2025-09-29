@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, host Jace talks with Carlos, a member of Super Team Germany, about his journey in the Solana ecosystem and his recent success in hackathons, including the hyperdrive hackathon with his finance product, Juicer. They discuss Carlos's background in documentary photography, his transition to tech, and the impact of the pandemic on his career choices.",
+  "topic_summary": "Carlos shares his unique path from documentary photography to developing on the Solana blockchain, highlighting his experiences in hackathons and the challenges faced during the pandemic [t=43:50].",
+  "router_tags": [
+    "Solana",
+    "Hackathon",
+    "Juicer",
+    "Finance",
+    "Development",
+    "Carlos Noriega"
+  ],
+  "aliases": [
+    "Carlos Noriega",
+    "carlos noriega",
+    "Carlos",
+    "carlos"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

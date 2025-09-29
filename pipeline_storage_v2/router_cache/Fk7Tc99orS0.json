@@ -1,0 +1,28 @@
+{
+  "description": "Lecture 8 discusses the foundations of blockchains, focusing on longest chain consensus and comparing it with BFT protocols like Tendermint. It highlights the differences in design and failure modes between these consensus mechanisms.",
+  "topic_summary": "The lecture covers longest chain consensus protocols, exemplified by Bitcoin and Ethereum, contrasting them with Byzantine Fault Tolerant (BFT) protocols like Tendermint. It explains how longest chain protocols embrace forks and prioritize liveness over consistency during network partitions, leading to different failure modes such as chain reorganizations and potential double spend attacks [t=368.21].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "Tendermint",
+    "Bitcoin",
+    "Ethereum",
+    "protocols"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 8",
+    "Consensus Protocols"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@facebook",
+    "$TEND",
+    "$COSMOS",
+    "$TERRA",
+    "$ALGO"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

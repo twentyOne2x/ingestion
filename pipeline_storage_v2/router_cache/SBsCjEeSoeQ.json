@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses common rookie mistakes related to NP-hard problems, emphasizing the importance of understanding NP hardness in practical programming and computer science. It covers five key mistakes, including misconceptions about the acronym NP, the distinction between NP and NP-hard problems, and the relevance of NP hardness in real-world applications.",
+  "topic_summary": "The video outlines five rookie mistakes regarding NP-hard problems, including misunderstandings of the term NP, the implications of NP hardness, and common misconceptions about computational complexity. It highlights the practical significance of NP hardness and the importance of accurate problem reduction in theoretical computer science.",
+  "router_tags": [
+    "NP-Hard",
+    "Algorithms",
+    "Computer Science",
+    "Complexity Theory",
+    "Programming"
+  ],
+  "aliases": [
+    "@TimRoughgardenLectures1861",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$MOORE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

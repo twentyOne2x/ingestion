@@ -1,0 +1,24 @@
+{
+  "description": "Chris Osborne, CEO of Dialect, discusses the launch of Smart Messaging, a new specification aimed at enhancing Web3 interactions through messaging. He highlights the potential of blockchain to transform user experiences and the integration of messaging tools within the Solana ecosystem. Smart Messaging allows users to perform various actions like transferring tokens and minting NFTs directly through messages. The specification is now live and open for developer feedback.",
+  "topic_summary": "The presentation covers the introduction of Smart Messaging, its capabilities, and its integration within the Solana ecosystem. It emphasizes the innovative potential of Web3 messaging compared to Web2, showcasing various use cases and announcing a grant program for developers.",
+  "router_tags": [
+    "Web3",
+    "Smart Messaging",
+    "Solana",
+    "Blockchain",
+    "NFTs",
+    "DeFi"
+  ],
+  "aliases": [
+    "smart messaging",
+    "Smart Messaging",
+    "SmartMessaging"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dialect"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

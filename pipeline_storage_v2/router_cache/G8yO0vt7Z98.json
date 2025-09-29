@@ -1,0 +1,23 @@
+{
+  "description": "Saurabh, co-founder and CTO of Tri Carbonara, discusses measuring Solana's carbon emissions in real time. He addresses the common concern about blockchain's energy consumption and presents the platform tricarbonara, which provides insights into the carbon footprint of Solana's network. The talk emphasizes the importance of real-time data and the efficiency of Solana transactions compared to traditional searches.",
+  "topic_summary": "The presentation covers the methodology for measuring Solana's carbon footprint, the significance of real-time data, and the efficiency of blockchain technology in terms of energy consumption. It highlights the development of the tricarbonara platform and its role in providing accurate carbon emission data.",
+  "router_tags": [
+    "Solana",
+    "Carbon Footprint",
+    "Blockchain",
+    "Energy Consumption",
+    "Tricarbonara"
+  ],
+  "aliases": [
+    "Tricarbonara",
+    "Tri Carbonara",
+    "solanaclimate.com"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

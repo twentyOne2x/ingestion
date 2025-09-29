@@ -1,0 +1,24 @@
+{
+  "description": "Noah Prince discusses Tuktuk, an on-chain automation engine developed at Helium, which allows for scheduled tasks on the Solana blockchain. He demonstrates its functionality with a subscription service that automates token distribution to wallet holders, showcasing its use cases in governance and DeFi.",
+  "topic_summary": "Tuktuk enables on-chain automation for scheduled tasks on Solana, addressing the need for reliable cron jobs after the shutdown of Clockwork in 2023. It offers a cost-effective solution for various applications, including governance and DeFi.",
+  "router_tags": [
+    "Tuktuk",
+    "Helium",
+    "Solana",
+    "Cron Jobs",
+    "Automation",
+    "DeFi"
+  ],
+  "aliases": [
+    "Tuktuk",
+    "tuktuk",
+    "TUKTUK"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@NoahPrince"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

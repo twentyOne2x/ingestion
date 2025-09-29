@@ -1,0 +1,29 @@
+{
+  "description": "Michael Shalov discusses the rapid mainstream adoption of crypto, highlighting Fireblocks' role in supporting institutions with custody and tokenization. He emphasizes the growth of stablecoins, which have reached a market cap of $230 billion and processed $30 trillion in transactions last year. Regulatory advancements are facilitating this adoption, with over 3,300 institutions investing in Bitcoin and a significant shift towards stablecoin usage for payments.",
+  "topic_summary": "The presentation covers the evolution of crypto adoption, focusing on institutional investment, the rise of stablecoins, and the impact of regulatory changes on the market. Shalov outlines how Fireblocks supports various market participants and the increasing utility of digital assets in mainstream finance. Key statistics include $10 trillion in volume processed and the growing interest in tokenization and stablecoin transactions [t=2:32-457:99].",
+  "router_tags": [
+    "Crypto Adoption",
+    "Stablecoins",
+    "Institutional Investment",
+    "Fireblocks",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Michael Shalov",
+    "Michael Shaulov",
+    "Fireblocks"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BTC",
+    "$USDT",
+    "$USDC",
+    "$10 Trillion",
+    "$61 Billion",
+    "$230 Billion",
+    "$30 Trillion"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

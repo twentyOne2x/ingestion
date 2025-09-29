@@ -1,0 +1,27 @@
+{
+  "description": "Wei Zhou discusses the importance of understanding market dynamics for crypto projects, emphasizing the need for localized fiat on and off ramps to support Solana developers. He highlights the challenges of accessing stablecoins in various regions and the significance of integrating local fiat infrastructure to facilitate transactions [t=1:84].",
+  "topic_summary": "Wei Zhou presents insights on expanding Coins.ph's services in the US and globally, focusing on the necessity of fiat integration for Solana's ecosystem. He shares experiences from his time at Binance and the critical role of local fiat systems in enhancing user access to crypto [t=1:00].",
+  "router_tags": [
+    "Solana",
+    "Fiat Integration",
+    "Crypto Expansion",
+    "Coins.ph",
+    "Wei Zhou"
+  ],
+  "aliases": [
+    "Wei Zhou",
+    "Wei Joe",
+    "Coins.ph"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$1",
+    "$7 Million",
+    "$BTC",
+    "$USDC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

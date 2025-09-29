@@ -1,0 +1,20 @@
+{
+  "video_id": "KZNy4sSGPDI",
+  "title": "2023-08-15_KZNy4sSGPDI_Solana Changelog - August 15 - Bankrun JS, Bubblegum, and Radiance",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jacob Creech",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

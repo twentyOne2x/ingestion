@@ -1,0 +1,26 @@
+{
+  "description": "Lecture 15 introduces approximation algorithms in the context of NP hard problems, emphasizing the importance of understanding options available to algorithm designers when faced with such challenges. The lecture discusses the need for increased effort and potential compromises when dealing with NP hard problems, including the possibility of focusing on special cases that may be solvable in polynomial time.",
+  "topic_summary": "This lecture focuses on approximation algorithms and the implications of NP hard problems for algorithm designers. It covers the necessity of human and computational effort, the potential for special cases to be solvable in polynomial time, and the exploration of various strategies for tackling NP hard problems.",
+  "router_tags": [
+    "Algorithms",
+    "Approximation Algorithms",
+    "NP Hard Problems",
+    "Computer Science",
+    "Optimization"
+  ],
+  "aliases": [
+    "Approximation Algorithms",
+    "NP Hard Problems",
+    "Algorithm Design"
+  ],
+  "canonical_entities": [
+    "$Graham",
+    "$Steiner",
+    "$Prim",
+    "$Dijkstra",
+    "$Dick Karp",
+    "@Twitter"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

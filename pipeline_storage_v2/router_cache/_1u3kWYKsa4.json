@@ -1,0 +1,23 @@
+{
+  "description": "Chris Wang discusses the open source version of X Ray, a static analyzer for Solana smart contracts, highlighting its features and installation process. The tool empowers developers to create custom rules for security analysis.",
+  "topic_summary": "Introduction to X Ray, a static analysis tool for Solana smart contracts, including installation and usage instructions. The talk emphasizes the importance of developer empowerment in creating security rules.",
+  "router_tags": [
+    "Solana",
+    "Smart Contracts",
+    "Static Analysis",
+    "Open Source",
+    "Security"
+  ],
+  "aliases": [
+    "X Ray",
+    "x ray",
+    "Xray",
+    "xray"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

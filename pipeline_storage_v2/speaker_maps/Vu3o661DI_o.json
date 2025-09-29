@@ -1,0 +1,26 @@
+{
+  "video_id": "Vu3o661DI_o",
+  "title": "2014-02-20_Vu3o661DI_o_Frontiers in Mechanism Design (Lecture 13: Black Box Reductions)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Bayes Nash",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Xi Wang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

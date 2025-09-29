@@ -1,0 +1,23 @@
+{
+  "description": "Bjoern Wagner discusses the importance of strong APIs for accelerating market entry in blockchain technology, emphasizing the need for integration and adaptation in the fast-paced crypto environment.",
+  "topic_summary": "In this talk, Bjoern Wagner highlights the significance of strong APIs over maintaining multiple SDKs, advocating for a streamlined approach to integration that benefits both developers and users [t=295].",
+  "router_tags": [
+    "Blockchain",
+    "APIs",
+    "Integration",
+    "Web3",
+    "Development"
+  ],
+  "aliases": [
+    "Bjoern Wagner",
+    "Bjorn Wagner",
+    "Dialect Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

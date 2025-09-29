@@ -1,0 +1,26 @@
+{
+  "description": "Andrew Lewis Pye from the London School of Economics discusses blockchain security and its relation to design choices like proof of work versus proof of stake. He explains how user participation is determined by access to scarce resources and the implications for security, particularly in permissionless blockchains like Bitcoin. The presentation highlights the production of certificates in different protocols, emphasizing that proof of work protocols cannot produce certificates, while proof of stake protocols can be designed to do so.",
+  "topic_summary": "The presentation explores how blockchain security is influenced by design choices, focusing on user selection methods and their impact on security in permissionless blockchains. It contrasts proof of work and proof of stake protocols, particularly in their ability to produce certificates that confirm block validity. Key insights include the theoretical implications of these design choices on security guarantees.",
+  "router_tags": [
+    "Blockchain",
+    "Security",
+    "Proof of Work",
+    "Proof of Stake",
+    "Certificates"
+  ],
+  "aliases": [
+    "Andrew Lewis Pye",
+    "Tim Rathgarden",
+    "London School of Economics",
+    "Columbia University"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@andrewlewis",
+    "@timrathgarden",
+    "@lse",
+    "@columbia"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

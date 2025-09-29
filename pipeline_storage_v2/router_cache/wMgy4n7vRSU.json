@@ -1,0 +1,32 @@
+{
+  "description": "This lecture discusses instance optimality in algorithms, focusing on the 2D maxima problem, where the goal is to identify undominated points from a set of input points in the plane. The lecture highlights an algorithm from the mid-80s that achieves strong instance optimality guarantees.",
+  "topic_summary": "The lecture covers instance optimality and the 2D maxima problem, explaining how to identify undominated points among given input points. It emphasizes the significance of comparison-based algorithms and the goal of achieving an instance optimal algorithm.",
+  "router_tags": [
+    "Algorithms",
+    "Computational Geometry",
+    "Instance Optimality",
+    "2D Maxima Problem"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$64,000",
+    "@timroughgardenlectures1861",
+    "@Kirkpatrick",
+    "@Seidel",
+    "@Andy",
+    "@Floyd",
+    "@Pratt",
+    "@Rivest",
+    "@Tarjan",
+    "@PatrickSeidel",
+    "@Elliot",
+    "@Afshani",
+    "@AfshaniBarbehChan"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

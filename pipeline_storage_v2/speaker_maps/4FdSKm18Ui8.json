@@ -1,0 +1,20 @@
+{
+  "video_id": "4FdSKm18Ui8",
+  "title": "2025-08-05_4FdSKm18Ui8_SatsDats: Making Money Trading, MOBY vs DexScreener, $PUMP and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "David Hoffman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

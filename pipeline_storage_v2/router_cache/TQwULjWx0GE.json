@@ -1,0 +1,22 @@
+{
+  "description": "Nousa discusses the future of social media, emphasizing its potential to enhance human capabilities rather than detract from them. He introduces 'or,' a decentralized platform focused on sound, aiming to improve attention spans and emotional engagement [t=1:12 - t=360:22].",
+  "topic_summary": "The talk explores the negative impacts of current social media on mental health and creativity, proposing a new model that leverages sound to foster deeper connections and imagination [t=21:36 - t=221:23].",
+  "router_tags": [
+    "social media",
+    "blockchain",
+    "mental health",
+    "decentralization",
+    "audio NFTs"
+  ],
+  "aliases": [
+    "Nousa",
+    "nousa",
+    "OR",
+    "or"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

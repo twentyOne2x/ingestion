@@ -1,0 +1,29 @@
+{
+  "description": "In this episode of the Solana Changelog, Nick from the SLA Foundation DevRel team discusses updates including SIMD187 stricter ELS headers, Agave version 2.1 pre-release, and QWIK improvements led by Alessandro. The conversation highlights security enhancements and breaking changes in dependencies.",
+  "topic_summary": "Updates on SIMD187 headers [t=19:84], Agave version 2.1 [t=106:07], and QWIK improvements [t=208:92].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "SIMD",
+    "Agave",
+    "QWIK"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOLANA",
+    "solana changelog",
+    "Solana Changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Alessandro",
+    "@Jonas",
+    "@Anza",
+    "@Alexander",
+    "@Quinn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

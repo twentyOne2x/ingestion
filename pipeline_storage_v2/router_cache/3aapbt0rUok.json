@@ -1,0 +1,25 @@
+{
+  "description": "Dana from Solana Foundation discusses onboarding new users with industry experts Andrew, Prakash, Sin Lin, and Trevor. They share personal experiences and insights on the challenges and strategies for onboarding a billion new users into the crypto space.",
+  "topic_summary": "The panel explores the importance of onboarding new users in crypto, sharing personal 'red pill' experiences and discussing resources that could enhance the onboarding process. They emphasize the role of community and networking in facilitating user engagement and education [t=0:24-2:30].",
+  "router_tags": [
+    "Onboarding",
+    "Crypto",
+    "Web3",
+    "Community",
+    "Networking"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Three Commas",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@RepublicCrypto",
+    "@Stepn",
+    "@Chingari",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

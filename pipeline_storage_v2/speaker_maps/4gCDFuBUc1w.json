@@ -1,0 +1,20 @@
+{
+  "video_id": "4gCDFuBUc1w",
+  "title": "2025-05-22_4gCDFuBUc1w_Ship or Die at Accelerate 2025: Fireside Chat - Jito & Brevan Howard (Thomas Uhm, Colleen Sullivan)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Rebecca Redig",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

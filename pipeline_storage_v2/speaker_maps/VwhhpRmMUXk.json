@@ -1,0 +1,26 @@
+{
+  "video_id": "VwhhpRmMUXk",
+  "title": "2024-10-16_VwhhpRmMUXk_A Debate on Bittensor - Crypto x AI Event",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Joseph Jacks",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Dustin Tander",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

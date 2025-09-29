@@ -1,0 +1,20 @@
+{
+  "video_id": "Jwxx7PU8MCc",
+  "title": "2022-03-18_Jwxx7PU8MCc_A Bull Case for Music NFTs: Everything You Need To Know About The Next .WAV Of On-Chain Art",
+  "channel_name": "@Delphi_Digital",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Guy Lawrence",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

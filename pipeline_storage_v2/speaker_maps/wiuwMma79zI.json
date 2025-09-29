@@ -1,0 +1,20 @@
+{
+  "video_id": "wiuwMma79zI",
+  "title": "2025-05-23_wiuwMma79zI_Ship or Die 2025: Enterprise Adoption of Stablecoins (Aadil Mamujee, Garrett Harper)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ben Thompson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

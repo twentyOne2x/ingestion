@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the intersection of cryptocurrency and artificial intelligence, featuring insights from industry experts on investment opportunities and challenges in the crypto AI space.",
+  "topic_summary": "The panel explores the controversial nature of crypto AI, addressing skepticism about product market fit and the dominance of major AI labs. Discussions include the potential of open-source AI and its implications for decentralized applications [t=270.92].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Investing",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Crypto x AI",
+    "Crypto x Ai",
+    "Crypto AI",
+    "Crypto AI Event"
+  ],
+  "canonical_entities": [
+    "$8",
+    "@Delphi_Digital",
+    "@Jake_Brookman",
+    "@Will",
+    "@Casey"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

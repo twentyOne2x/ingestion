@@ -1,0 +1,22 @@
+{
+  "description": "Lecture discussing Pure Nash Equilibria and PLS-Completeness in Algorithmic Game Theory. Covers concepts of equilibrium, learning processes, and convergence in games, including mixed and pure Nash equilibria.",
+  "topic_summary": "The lecture explores the convergence of players to equilibria in games, focusing on both positive and negative results regarding learning processes and their implications for equilibrium concepts. It emphasizes the importance of understanding Nash equilibria in various game contexts, including zero-sum games and routing games, and discusses the computational aspects of finding these equilibria.",
+  "router_tags": [
+    "Algorithmic Game Theory",
+    "Nash Equilibria",
+    "Game Theory",
+    "Equilibrium Concepts",
+    "Learning Processes"
+  ],
+  "aliases": [
+    "Algorithmic Game Theory",
+    "Nash Equilibria",
+    "Pure Nash Equilibria"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

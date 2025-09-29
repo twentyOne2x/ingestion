@@ -1,0 +1,20 @@
+{
+  "video_id": "Vvq2nQSapPI",
+  "title": "2024-03-07_Vvq2nQSapPI_ep 5: Luca Netz - Building Business is a Science",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Luca Netz",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

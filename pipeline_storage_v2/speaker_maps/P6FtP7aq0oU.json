@@ -1,0 +1,20 @@
+{
+  "video_id": "P6FtP7aq0oU",
+  "title": "2023-11-04_P6FtP7aq0oU_Breakpoint 2023: Defi - Insti Panel",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Shane Molidar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

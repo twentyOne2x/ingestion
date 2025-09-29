@@ -1,0 +1,26 @@
+{
+  "description": "Nabil Manji discusses the importance of blockchain for payment processing companies, focusing on Worldpay's role in the payment ecosystem and its recent collaborations with Visa and USDC. He explains Worldpay's services, revenue model, and the risks associated with payment processing, highlighting the company's significant transaction volume.",
+  "topic_summary": "In this episode, Nabil Manji outlines the need for payment processing companies to adopt blockchain technology, detailing Worldpay's operations and its financial services. He emphasizes the complexities of payment processing and the financial risks involved, particularly in relation to chargebacks and transaction fees. The discussion includes insights into Worldpay's projected $2.22 trillion in payment acceptance for the year.",
+  "router_tags": [
+    "Payment Processing",
+    "Blockchain",
+    "Worldpay",
+    "Visa",
+    "USDC",
+    "Financial Services"
+  ],
+  "aliases": [
+    "Nabil Manji",
+    "nabil manji",
+    "NABIL MANJI"
+  ],
+  "canonical_entities": [
+    "$V",
+    "$USDC",
+    "@SolanaFndn",
+    "$1.7 Trillion",
+    "$2.22 Trillion"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

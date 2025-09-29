@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the Solana changelog for February 20, covering feature activation schedules, the decoupling of the SVM, and the upgrade to Rust v1.76. It provides insights into how features are activated on the mainnet and the implications of the recent changes in the Solana ecosystem.",
+  "topic_summary": "The video outlines the feature activation schedule for Solana, explaining the process of activating features on mainnet and the recent decoupling of the SVM. It also highlights the upgrade to Rust v1.76 and its benefits for developers, along with updates on the new SPL version and a Solana course for EVM developers [t=3:28-5:24].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Feature Activation",
+    "Rust Upgrade",
+    "SVM Decoupling"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JonasHahn",
+    "@JacobCreech",
+    "@AnatolyKovenko"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

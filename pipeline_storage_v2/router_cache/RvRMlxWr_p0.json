@@ -1,0 +1,20 @@
+{
+  "description": "Gabriele discusses building infrastructure for food chain games on the blockchain, focusing on simplifying game development with a framework called Bolt and using ephemeral rollups for scalability and latency improvements.",
+  "topic_summary": "Gabriele outlines the challenges of developing blockchain-based food chain games and introduces solutions like the Bolt framework and ephemeral rollups for enhanced performance [t=0:24 - t=38:43].",
+  "router_tags": [
+    "Blockchain",
+    "Game Development",
+    "Infrastructure",
+    "Food Chain Games"
+  ],
+  "aliases": [
+    "Gabriele",
+    "gabriele",
+    "GABRIELE"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

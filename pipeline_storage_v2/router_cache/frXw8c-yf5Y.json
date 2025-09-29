@@ -1,0 +1,23 @@
+{
+  "description": "Austin interviews Lisa Palette, CMO of Fossil Group, discussing her experience with Web3 strategies and innovation in traditional brands. They explore the impact of NFTs, consumer engagement, and the importance of authenticity in marketing.",
+  "topic_summary": "Lisa Palette shares insights on navigating Web3 strategies for Fossil Group, emphasizing the need for authenticity and innovation in brand engagement. The discussion covers the evolution of consumer interest in Web3 and how brands can adapt to changing market dynamics [t=0:24 - t=3:09].",
+  "router_tags": [
+    "Web3",
+    "NFTs",
+    "Marketing",
+    "Innovation",
+    "Consumer Engagement"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "Fossil Group",
+    "fossil group"
+  ],
+  "canonical_entities": [
+    "$FOSL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

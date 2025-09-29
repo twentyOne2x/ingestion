@@ -1,0 +1,24 @@
+{
+  "description": "A debate on whether scams in the crypto space should be reported to the SEC, featuring Emily Myers from Electric Capital and Mike Dudis from Six Man Ventures. The discussion covers the importance of reporting scams to protect users and enhance the reputation of the crypto industry.",
+  "topic_summary": "The debate discusses the necessity of reporting crypto scams to the SEC, highlighting arguments for and against it. Key points include the SEC's role in deterring scams, protecting investors, and the crypto community's responsibility in reporting fraudulent activities. [t=23:92] [t=256:43]",
+  "router_tags": [
+    "crypto",
+    "SEC",
+    "scams",
+    "reporting",
+    "debate"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint2024",
+    "Scams Reporting Debate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@EmilyMyers",
+    "@MikeDudis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Chris Zhu and Tim Fan discuss the intersection of AI and Web3, focusing on the open-source multimodal model 'Bagel' and its capabilities. They explore the training process of Bagel, which involved learning from YouTube videos, and the emergence of agentic browsers in the AI landscape.",
+  "topic_summary": "The conversation covers the development of the Bagel model, its unique training methodology, and the evolving trends in agentic browsers within the AI sector, highlighting recent advancements and community engagement in the field [t=4:00 - t=344:01].",
+  "router_tags": [
+    "AI",
+    "Web3",
+    "Open Source",
+    "Multimodal Models",
+    "Agentic Browsers"
+  ],
+  "aliases": [
+    "Tim Fan",
+    "Chris Zhu",
+    "tim fan",
+    "chris zhu",
+    "@solanafndn",
+    "@SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@timfan",
+    "@chriszhu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

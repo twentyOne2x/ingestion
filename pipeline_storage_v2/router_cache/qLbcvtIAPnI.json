@@ -1,0 +1,22 @@
+{
+  "description": "Akshay BD from the Solana Foundation discusses the future of Internet capital markets, highlighting the challenges of traditional capital markets and proposing solutions through universal basic ownership via crypto, particularly on the Solana platform.",
+  "topic_summary": "The talk addresses the inadequacies of current capital markets [t=40:87], the disparity in asset ownership [t=135:19], and the potential for a new model that allows universal asset ownership through technology [t=217:83].",
+  "router_tags": [
+    "Internet Capital Markets",
+    "Solana",
+    "Universal Basic Ownership",
+    "Crypto",
+    "Financial Inclusion"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

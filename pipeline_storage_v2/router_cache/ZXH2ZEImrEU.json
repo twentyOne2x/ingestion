@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the transaction fee mechanism in Ethereum, specifically EIP 1559, and the implications of excessively low base fees on auction dynamics and miner behavior.",
+  "topic_summary": "The lecture covers the mechanics of Ethereum's EIP 1559 transaction fee system, explaining how base fees are adjusted and the conditions under which they are considered excessively low. It contrasts two regimes: one where bidding is straightforward and another where competition among transactions resembles first price auctions [t=0:32].",
+  "router_tags": [
+    "Ethereum",
+    "EIP 1559",
+    "transaction fees",
+    "blockchain",
+    "auction dynamics"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 11.6",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

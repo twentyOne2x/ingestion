@@ -1,0 +1,24 @@
+{
+  "description": "Discussion featuring Jason Urban, Michael Hubbard, and Robert Leshner on the integration of equities and financial assets within the Solana ecosystem, exploring the benefits of trading on blockchain and the future of capital markets.",
+  "topic_summary": "The panel discusses the advantages of trading equities on Solana, including instant settlement and lower costs, while addressing the need for parity across trading venues [t=187.0]. They explore the potential of on-chain capital markets to enhance liquidity and shareholder interaction [t=258.27].",
+  "router_tags": [
+    "Solana",
+    "Equities",
+    "Blockchain",
+    "Capital Markets",
+    "Financial Assets"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@jasonurban",
+    "@michaelhubbard",
+    "@robertleshner"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

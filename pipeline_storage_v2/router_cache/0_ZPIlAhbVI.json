@@ -1,0 +1,28 @@
+{
+  "description": "Lecture discussing the Price of Anarchy in Bayes-Nash equilibria, focusing on simple auction mechanisms and their performance under specific conditions.",
+  "topic_summary": "The lecture covers the characteristics of simple auctions, particularly simultaneous second price auctions, and explores the conditions under which these auctions yield favorable equilibria. It also addresses the challenges of overbidding and the implications for welfare in Nash equilibria [t=276.19].",
+  "router_tags": [
+    "Mechanism Design",
+    "Bayes-Nash Equilibria",
+    "Auction Theory",
+    "Game Theory"
+  ],
+  "aliases": [
+    "Frontiers in Mechanism Design",
+    "Price of Anarchy",
+    "Bayes Nash Equilibria"
+  ],
+  "canonical_entities": [
+    "$Nash",
+    "$BayesNash",
+    "$KelsoCrawford",
+    "$Bitter",
+    "@Chris",
+    "@Dudelu",
+    "@Kovacs",
+    "@Shapira",
+    "@Dopper"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

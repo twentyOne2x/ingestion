@@ -1,0 +1,29 @@
+{
+  "description": "Pedro Miranda introduces a panel discussing consumer expectations on Solana, focusing on applications and the future of Web3. Panelists include Ilya from Tensor, Chris Fiore from Step Finance, and Arnold from Sphere, who share insights on NFTs, DeFi, and payment solutions in the crypto space.",
+  "topic_summary": "The panel explores the current state of crypto consumers, emphasizing the importance of technology in providing financial access and reducing trust in intermediaries. They discuss the potential for crypto to onboard users in regions lacking financial infrastructure, such as Nigeria and Turkey, and the philosophical principles that underpin the technology.",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "NFTs",
+    "DeFi",
+    "Consumer Expectations",
+    "Payments"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "Solana Foundation",
+    "Tensor",
+    "Step Finance",
+    "Sphere"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Ilya",
+    "@ChrisFiore",
+    "@Arnold"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

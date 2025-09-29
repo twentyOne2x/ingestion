@@ -1,0 +1,25 @@
+{
+  "description": "Mike Reed discusses the development of a money fund on the Solana blockchain, highlighting operational efficiencies and the excitement around tokenization. He shares insights on the journey from concept to implementation, including the challenges faced and the eventual interest from clients as market conditions changed.",
+  "topic_summary": "Mike Reed from Franklin Templeton Investments presents on creating a money fund on the Solana blockchain, detailing the process, challenges, and the evolving interest from clients as interest rates rose. He emphasizes the importance of building a native solution without third-party involvement.",
+  "router_tags": [
+    "Solana",
+    "blockchain",
+    "finance",
+    "tokenization",
+    "money fund"
+  ],
+  "aliases": [
+    "Breakpoint 2024",
+    "Breakpoint",
+    "SolanaFndn",
+    "Mike Reed",
+    "Franklin Templeton"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@MikeReed",
+    "@FranklinTempleton"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

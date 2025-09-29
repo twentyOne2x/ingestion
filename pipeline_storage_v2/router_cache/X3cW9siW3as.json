@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses proof of stake random sampling, focusing on the need for secrecy in the selection process. It critiques previous methods for revealing the leader's identity too early and proposes solutions that maintain confidentiality until block proposals are made.",
+  "topic_summary": "The lecture explores verifiable random functions (VRFs) in proof of stake protocols, emphasizing the importance of secrecy in leader selection and the challenges of achieving this with ideal randomness beacons. It compares the proposed methods to Nakamoto consensus and digital signature schemes.",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "random sampling",
+    "verifiable random functions",
+    "Nakamoto consensus"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 12.9",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@timroughgarden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

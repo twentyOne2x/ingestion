@@ -1,0 +1,24 @@
+{
+  "description": "Andrej and Austin discuss Neon, an Ethereum virtual machine emulation layer on Solana, highlighting its unique ability to execute transactions in parallel. They explore the engineering challenges and optimizations that enabled this functionality, emphasizing the integration of Ethereum tools and applications within the Solana ecosystem.",
+  "topic_summary": "The conversation covers the development of Neon on Solana, its parallel transaction execution capabilities, and the integration of Ethereum's ecosystem into Solana. Key points include the unique architecture of Solana, the engineering efforts behind Neon, and the potential use cases for developers.",
+  "router_tags": [
+    "Solana",
+    "Neon",
+    "EVM",
+    "Ethereum",
+    "Blockchain",
+    "Parallel Execution"
+  ],
+  "aliases": [
+    "neon",
+    "Neon EVM",
+    "Neon evm",
+    "NEON"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

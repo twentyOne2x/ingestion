@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on the bullish implications of the ETH ETF and a comparison of Solana's technology versus Ton's distribution. The episode features insights from Jason, a macro trader, and Jordan, head of DeFi research at Delphi. The conversation touches on recent market movements, including Bitcoin's decline and the impact of Mt. Gox coin distribution on market sentiment.",
+  "topic_summary": "Exploration of the bullish sentiment surrounding the ETH ETF and the technological advantages of Solana compared to Ton's distribution model. The discussion includes market analysis and insights into recent Bitcoin price movements and their correlation with equities.",
+  "router_tags": [
+    "ETH",
+    "SOL",
+    "Ton",
+    "ETF",
+    "Bitcoin",
+    "DeFi",
+    "market analysis"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "Delphi",
+    "ETH ETF",
+    "Solana ETF"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "@Delphi_Digital",
+    "@Jason",
+    "@Jordan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

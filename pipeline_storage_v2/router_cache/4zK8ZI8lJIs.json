@@ -1,0 +1,28 @@
+{
+  "description": "Pedro Miranda, Anna Tolle, and Nikita Bier discuss strategies for achieving virality in mobile apps, focusing on the upcoming Seeker Solana mobile phone and its implications for developers and users. They explore the importance of user experience and the challenges posed by app store regulations, particularly for crypto applications.",
+  "topic_summary": "The panel discusses going viral in the app store, highlighting the launch of the Seeker mobile phone and its features, including a new security architecture and the availability of the Solana Mobile software stack for other manufacturers. They address UX challenges in crypto adoption and the impact of app store policies on developers [t=0:00-3:00].",
+  "router_tags": [
+    "Solana",
+    "Mobile Apps",
+    "Virality",
+    "Crypto",
+    "User Experience",
+    "App Store"
+  ],
+  "aliases": [
+    "Anatoly",
+    "Toli",
+    "Nikita",
+    "Pedro",
+    "Anna Tolle"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@nikitabier",
+    "@pedromiranda",
+    "@annatolle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "T1z94hjMwZo",
+  "title": "2024-11-19_T1z94hjMwZo_Interviewing The Creator Of $SHEGEN... (Ooliverse)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.8500000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Will Wright",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Roboho Robot",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

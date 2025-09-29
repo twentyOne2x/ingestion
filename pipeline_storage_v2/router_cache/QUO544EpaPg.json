@@ -1,0 +1,30 @@
+{
+  "description": "In this episode of the Hive Mind podcast, hosts discuss the recent ETF developments, market flows, and trading strategies. They analyze the impact of GBTC selling and the dynamics of traders' positions, emphasizing the complexities of net interest in ETFs versus GBTC unwinding. The conversation also touches on the historical context of ETF launches and market sentiment shifts regarding ETH and BTC.",
+  "topic_summary": "The podcast explores ETF market dynamics, GBTC selling impacts, and trader behaviors post-ETF announcements, highlighting the fluctuating market sentiment around cryptocurrencies like ETH and BTC [t=0:32-4:32].",
+  "router_tags": [
+    "ETF",
+    "Cryptocurrency",
+    "Market Analysis",
+    "Trading Strategies",
+    "GBTC",
+    "ETH",
+    "BTC"
+  ],
+  "aliases": [
+    "Hive Mind Podcast",
+    "Delphi Digital Podcast",
+    "Delphi Hive Mind"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "@Delphi_Digital",
+    "@Ceteris",
+    "@JanLieberman",
+    "@Duncan",
+    "@FloodCapital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

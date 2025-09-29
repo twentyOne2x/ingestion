@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the Solana Validator Community's postmortem regarding the outage on February 25, 2023. Key topics included the need for timely restarts, empowering validators, and improving communication methods during outages.",
+  "topic_summary": "The community led a postmortem on the February 25 outage, discussing highlights from the call led by Chris Remus and Max Sherwood. They emphasized the importance of quick restarts [t=152.95], empowering validators [t=172.96], and improving snapshot verification [t=264.73].",
+  "router_tags": [
+    "Solana",
+    "Validator Community",
+    "Outage Discussion",
+    "Postmortem",
+    "Engineering Update"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Discussion",
+    "Validator Community Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@ChrisRemus",
+    "@MaxSherwood"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

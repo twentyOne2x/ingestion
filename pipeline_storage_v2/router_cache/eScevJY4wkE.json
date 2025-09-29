@@ -1,0 +1,28 @@
+{
+  "description": "Marco Mahrus introduces Bridge, an API platform for payments using stablecoins, highlighting its ability to facilitate conversions between currencies and stablecoins. He discusses the projected $4 trillion in cross-border money movement on-chain this year and announces a new card feature for users to spend directly from stablecoin balances, enhancing real-world usability. The collaboration with Squad Labs is noted, along with user experience details for the Fuse Wallet.",
+  "topic_summary": "Bridge API enables seamless stablecoin transactions and introduces a card for spending stablecoins directly, enhancing user experience and real-world applications [t=67:48].",
+  "router_tags": [
+    "Stablecoin",
+    "Payments",
+    "API",
+    "Finance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Marco Mahrus",
+    "marco mahrus",
+    "BRIDGE",
+    "bridge"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$USDC",
+    "$USDT",
+    "$4 Trillion",
+    "@SquadLabs",
+    "@Apple"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

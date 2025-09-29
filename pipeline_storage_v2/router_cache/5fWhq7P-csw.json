@@ -1,0 +1,23 @@
+{
+  "description": "The talk explores how personal belongings and online behavior reveal insights about individuals. It discusses a study by psychologist Sam Gosling, highlighting how people can judge personalities based on possessions and online activity. The speaker emphasizes the value of behavioral data and how it can enhance user experiences while maintaining privacy.",
+  "topic_summary": "The presentation discusses the relationship between personal belongings, online behavior, and identity, illustrating how insights can be drawn from both physical and digital interactions [t=6:96-313:10].",
+  "router_tags": [
+    "identity",
+    "behavioral data",
+    "privacy",
+    "user experience",
+    "psychology"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "You're Holding It Wrong",
+    "0xdesigner"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "@SamGosling",
+    "$Jupiter"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

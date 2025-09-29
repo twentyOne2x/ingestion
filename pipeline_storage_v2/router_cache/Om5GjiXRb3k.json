@@ -1,0 +1,27 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team and Jacob discuss the latest updates in the Solana ecosystem, including the upcoming Bonkathon hackathon, migration of the config program to core BPF, and enhancements to the Solana CLI for priority fees. They also highlight resources like the Solana Mobile Expo template and the significant changes in Anchor 30.",
+  "topic_summary": "Updates on Solana's ecosystem including Bonkathon hackathon [t=24:32], migration of the config program to core BPF [t=64:83], and CLI enhancements for priority fees [t=145:170]. Resources for developers such as Solana Mobile Expo template [t=186:197] and Anchor 30 changes [t=210:254].",
+  "router_tags": [
+    "Solana",
+    "BPF",
+    "Bonkathon",
+    "CLI",
+    "Anchor",
+    "Hackathon"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@JohnShinkway"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

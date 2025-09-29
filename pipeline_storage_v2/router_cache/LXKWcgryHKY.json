@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on community validator updates and proposed changes to call scheduling for Solana validators. The meeting covers feedback on the timing of community-led calls and emphasizes community involvement in the Solana ecosystem.",
+  "topic_summary": "Validator updates and community engagement strategies discussed, including proposed changes to call scheduling on [t=45:37] and feedback on community-led call timing [t=163:76].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Community",
+    "Discussion",
+    "Updates"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Meeting",
+    "Validator Discussion"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Chainflow",
+    "@Max",
+    "@Chris",
+    "@Zentetsu",
+    "@Michael",
+    "@Will",
+    "@Zan",
+    "@Ashwin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

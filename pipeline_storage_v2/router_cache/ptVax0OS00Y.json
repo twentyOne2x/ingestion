@@ -1,0 +1,42 @@
+{
+  "description": "This video outlines 20 key facts about the FTX saga, detailing the collapse of the cryptocurrency exchange and its implications for the crypto market. It covers the financial mismanagement, significant loans to related entities, and the eventual bankruptcy filing.",
+  "topic_summary": "The FTX collapse involved $9 billion in liabilities, significant loans to Paperbird Inc. and Sam Bankman Fried, and a $6 billion market cap loss due to a bank run. The video discusses the impact on the crypto market, including the decline of major cryptocurrencies like Solana and Bitcoin, and the role of Genesis and Digital Currency Group.",
+  "router_tags": [
+    "FTX",
+    "cryptocurrency",
+    "bankruptcy",
+    "crypto market",
+    "Sam Bankman Fried",
+    "Genesis",
+    "Digital Currency Group"
+  ],
+  "aliases": [
+    "ftx saga",
+    "FTX collapse",
+    "FTX story",
+    "FTX scandal"
+  ],
+  "canonical_entities": [
+    "$FTT",
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "$6 Billion",
+    "$9 Billion",
+    "$1 Billion",
+    "$2.3 Billion",
+    "$375 Million",
+    "$190 Million",
+    "$62 Million",
+    "$450 Million",
+    "$1.24 Billion",
+    "$200 Million",
+    "$500 Million",
+    "@SamBankmanFried",
+    "@Delphi_Digital",
+    "@CarolineEllison",
+    "@cz_binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

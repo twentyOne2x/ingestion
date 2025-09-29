@@ -1,0 +1,21 @@
+{
+  "description": "In this episode, the hosts discuss market trends, trading strategies, and personal experiences in the crypto space, including a notable trade involving Far Coin.",
+  "topic_summary": "The conversation covers the evolution of the crypto market since late 2024, trading insights, and the importance of identifying narratives in crypto investments [t=0:16].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "altcoins",
+    "podcast"
+  ],
+  "aliases": [
+    "Gammichan",
+    "gammichan",
+    "GAMMICHAN"
+  ],
+  "canonical_entities": [
+    "$FART",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

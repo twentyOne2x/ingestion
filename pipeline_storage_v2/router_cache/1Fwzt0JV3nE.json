@@ -1,0 +1,29 @@
+{
+  "description": "Max, founder of Sniper, discusses the evolution of NFTs and his journey from a crypto novice to creating a platform for NFT trading. He shares insights on the challenges faced in the NFT space, including high transaction costs and scams, and emphasizes the importance of community and affordable solutions in the Solana ecosystem.",
+  "topic_summary": "Max reflects on his transition into the NFT space, highlighting the rapid growth of NFTs, the challenges of immature tooling, and the motivation behind founding Sniper Labs. He emphasizes the vibrant community in Solana and the need for reliable tools in the NFT market [t=17:04].",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Crypto",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Soul Sniper",
+    "Sniper",
+    "Snipers",
+    "Sniper Labs",
+    "Sniper xyz"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Amazon",
+    "@Robinhood",
+    "@Coinbase",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

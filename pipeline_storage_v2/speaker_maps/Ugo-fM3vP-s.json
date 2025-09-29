@@ -1,0 +1,20 @@
+{
+  "video_id": "Ugo-fM3vP-s",
+  "title": "2024-06-09_Ugo-fM3vP-s_iggy azalea: understanding attention, crypto and internet culture",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Iggy Azalea",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

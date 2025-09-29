@@ -1,0 +1,24 @@
+{
+  "description": "Amin Amali discusses the evolution of ticketing and the challenges faced by venues and artists, particularly during the pandemic. He introduces Kid, a platform designed to empower venues by providing them with their own operating system and data access, allowing them to sell tickets directly without middlemen. The model incentivizes fans, venues, and artists alike, creating a more equitable ticketing ecosystem.",
+  "topic_summary": "Amin Amali presents Kid, a new ticketing platform aimed at empowering venues and artists by providing direct access to data and ticket sales, eliminating reliance on traditional ticketing companies like Ticketmaster. The discussion highlights the benefits of this model for fans and venues, especially in the wake of pandemic challenges [t=0:24-3:24].",
+  "router_tags": [
+    "Ticketing",
+    "Live Events",
+    "Web3",
+    "Music Industry",
+    "Amin Amali"
+  ],
+  "aliases": [
+    "Amin Amali",
+    "Amin Namali",
+    "Ahmed Nimale"
+  ],
+  "canonical_entities": [
+    "$TM",
+    "$USDC",
+    "@SolanaFndn",
+    "@Kid"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

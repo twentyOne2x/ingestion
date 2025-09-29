@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion featuring leaders in the stablecoin space, including insights on interoperability, regulatory challenges, and the future of stablecoins.",
+  "topic_summary": "The panel discusses the mechanisms of various stablecoins, their interoperability, and regulatory considerations, emphasizing the importance of collaboration in the stablecoin ecosystem [t=110.45].",
+  "router_tags": [
+    "Stablecoin",
+    "Solana",
+    "DeFi",
+    "Regulation",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Stablecoin Panel",
+    "Solana Stablecoin Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KentoYanami",
+    "@Alexander",
+    "$QCAD",
+    "$USDC",
+    "$EURC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

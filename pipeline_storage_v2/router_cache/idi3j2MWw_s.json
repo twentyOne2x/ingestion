@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of Chewing Glass, Brian Long from Triton One discusses his journey in the Solana ecosystem, his business background, and the challenges developers face. The conversation highlights the importance of communication and collaboration in the tech space.",
+  "topic_summary": "Brian Long shares insights on his experience in the Solana ecosystem, emphasizing the significance of problem-solving and collaboration among developers [t=39:18].",
+  "router_tags": [
+    "Solana",
+    "Triton One",
+    "Blockchain",
+    "Development",
+    "Business"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Brian Long",
+    "brian long",
+    "Triton One",
+    "triton one"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BrianLong",
+    "@TritonOne"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

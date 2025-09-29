@@ -1,0 +1,24 @@
+{
+  "description": "Profit discusses how Metadao builds markets for decision making, using examples like IBM's CEO decision and Dean's List Dao's tokenomics proposal. He emphasizes the potential of decision markets to influence various sectors, including startups and government policies.",
+  "topic_summary": "The keynote explores the concept of market-governed organizations, highlighting Metadao as the first of its kind. It illustrates how decision markets can aggregate information and guide decisions across different domains, suggesting a future where markets play a central role in civilization.",
+  "router_tags": [
+    "Metadao",
+    "Decision Markets",
+    "Market Governance",
+    "Solana",
+    "Tokenomics"
+  ],
+  "aliases": [
+    "Metadao",
+    "Metadao",
+    "Dean",
+    "Profit"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dean"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

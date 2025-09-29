@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on the evolution of the Solana NFT community, featuring insights from community leaders about their journeys and the growth of the ecosystem.",
+  "topic_summary": "The Solana NFT community has evolved significantly, starting from early projects like DGNAPE Academy to the current landscape. Panelists share their experiences and the importance of community in the NFT space [t=1:04].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Community",
+    "Web3",
+    "Crypto"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: The Evolution of The Solana Community"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AmyStreet",
+    "@Rove",
+    "@Frisk",
+    "@Easy",
+    "@Bodogos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

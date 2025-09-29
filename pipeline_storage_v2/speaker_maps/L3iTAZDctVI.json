@@ -1,0 +1,20 @@
+{
+  "video_id": "L3iTAZDctVI",
+  "title": "2023-09-12_L3iTAZDctVI_Solana Changelog - September 12 - Hyperdrive office hours, community events, faster program deploys",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "John Wong",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

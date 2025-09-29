@@ -1,0 +1,19 @@
+{
+  "description": "A competitive discussion about NFT capabilities and personal challenges.",
+  "topic_summary": "Participants express determination and confidence in their abilities to compete in the NFT space, with a focus on proving their skills [t=10:08] [t=47:45].",
+  "router_tags": [
+    "NFT",
+    "competition",
+    "Solana"
+  ],
+  "aliases": [
+    "Nft Showdown",
+    "NFT showdown",
+    "nft showdown"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

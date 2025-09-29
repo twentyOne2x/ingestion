@@ -1,0 +1,24 @@
+{
+  "description": "This lecture introduces first-price auctions as a method for setting transaction fees in blockchain protocols, highlighting their implementation in Bitcoin and Ethereum.",
+  "topic_summary": "The lecture discusses how users submit bids for transaction fees in first-price auctions, the role of block producers in selecting transactions, and the distinction between transaction fees and block rewards [t=0:48].",
+  "router_tags": [
+    "blockchain",
+    "transaction fees",
+    "first-price auction",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "First-Price Auctions",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@nft"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

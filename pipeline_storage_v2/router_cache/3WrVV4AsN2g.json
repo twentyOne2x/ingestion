@@ -1,0 +1,29 @@
+{
+  "description": "Presentation on Societe Generale Forge's role in bridging capital markets and digital assets, focusing on their tokenization of securities and the launch of the Euro CV Stablecoin.",
+  "topic_summary": "The speaker discusses their background in capital markets, the establishment of SG Forge, and the innovative use of Stablecoins for investment and settlement in digital assets, particularly on the Solana blockchain. Key achievements include the tokenization of a European Investment Bank bond and the development of a MICA compliant Stablecoin for various use cases in finance and DeFi [t=79.43].",
+  "router_tags": [
+    "Societe Generale",
+    "Digital Assets",
+    "Tokenization",
+    "Stablecoin",
+    "Solana",
+    "DeFi",
+    "Capital Markets"
+  ],
+  "aliases": [
+    "Societe Generale Forge",
+    "SG Forge",
+    "Societe General",
+    "Stablecoin",
+    "Euro CV"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JPMorgan",
+    "@Coinbase",
+    "@GoldmanSachs"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

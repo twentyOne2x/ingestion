@@ -1,0 +1,24 @@
+{
+  "description": "Armani discusses the evolution of Solana, focusing on the significance of Solid IO, one of the first wallets on the network, and its impact on various applications and protocols in the DeFi space. He highlights how Solid served as a foundational technology that enabled developers to build on Solana without reinventing existing solutions, thus fostering a robust developer ecosystem.",
+  "topic_summary": "The talk covers the early days of Solana, the role of Solid IO in the development of wallets and DeFi protocols, and how it facilitated the growth of the Solana ecosystem by providing essential infrastructure and documentation for developers [t=27.90].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Blockchain",
+    "Wallets",
+    "Development"
+  ],
+  "aliases": [
+    "Armani",
+    "armani",
+    "SOLID",
+    "Solid IO",
+    "solid io"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

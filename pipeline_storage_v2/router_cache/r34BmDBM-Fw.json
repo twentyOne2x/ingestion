@@ -1,0 +1,23 @@
+{
+  "description": "This week's Changelog discusses Solana updates including Grizzly Thon submissions, a core community call, and a proposal for tiered account storage. The proposal aims to optimize storage based on account usage frequency. Additionally, new compute budget instructions and an Anchor update are highlighted.",
+  "topic_summary": "Updates on Solana including Grizzly Thon submissions [t=7:60], core community call [t=37:18], tiered account storage proposal [t=86:81], new compute budget instruction [t=216:15], and Anchor update [t=282:55].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Grizzly Thon",
+    "Anchor",
+    "Compute Budget"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "Grizzly Thon",
+    "Anchor Framework"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

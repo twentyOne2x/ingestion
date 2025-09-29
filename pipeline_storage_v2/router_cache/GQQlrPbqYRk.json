@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on TPU client next, a new client-side implementation for TPU traffic, addressing previous implementation issues and enhancing transaction processing efficiency.",
+  "topic_summary": "The call covers the TPU client next implementation, its motivation, design, configuration, and performance improvements over the previous connection cache implementation. Key points include transaction handling, connection management, and the ability to customize the client for various use cases [t=0:40].",
+  "router_tags": [
+    "Solana",
+    "TPU",
+    "Client Implementation",
+    "Blockchain",
+    "Transaction Processing"
+  ],
+  "aliases": [
+    "Solana Core Community Call",
+    "SolanaFndn",
+    "TPU Client Next"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

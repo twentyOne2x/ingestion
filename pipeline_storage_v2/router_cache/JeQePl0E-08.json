@@ -1,0 +1,29 @@
+{
+  "description": "Nigel Eccles discusses his background in online gambling, user acquisition strategies, and the growth of FanDuel from its inception in 2009 to its current status as a leading player in the U.S. market. He shares insights on the challenges faced in early user acquisition and the evolution of metrics over time.",
+  "topic_summary": "Nigel Eccles shares his entrepreneurial journey in online gambling, focusing on user acquisition strategies and the growth of FanDuel from its early days to becoming a market leader. He emphasizes the importance of adapting strategies based on user feedback and market conditions [t=0:00 - t=2:00].",
+  "router_tags": [
+    "User Acquisition",
+    "Online Gambling",
+    "FanDuel",
+    "Web3",
+    "Crypto",
+    "Entrepreneurship"
+  ],
+  "aliases": [
+    "Nigel Eccles",
+    "Nigel",
+    "Bethog",
+    "Fandel",
+    "FanDuel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ETH",
+    "$BTC",
+    "$USDT",
+    "@NigelEccles"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

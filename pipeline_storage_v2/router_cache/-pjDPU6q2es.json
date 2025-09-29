@@ -1,0 +1,26 @@
+{
+  "description": "Packy McCormick discusses capitalism, crypto use cases, and his writing process. He reflects on his past writings about Solana and Ethereum, emphasizing the trade-offs of different blockchain technologies. McCormick shares insights on how his views have evolved since the bear market and the importance of understanding various blockchain capabilities.",
+  "topic_summary": "In this episode, Packy McCormick explores the intersection of capitalism and cryptocurrency, sharing his insights on Solana and Ethereum while discussing the evolution of his thoughts on blockchain technology. He highlights the significance of trade-offs in different Layer 1 solutions and the ongoing relevance of his earlier analyses.",
+  "router_tags": [
+    "Capitalism",
+    "Crypto",
+    "Solana",
+    "Ethereum",
+    "Blockchain",
+    "Investing",
+    "Technology"
+  ],
+  "aliases": [
+    "Packy McCormick",
+    "packy mccormick",
+    "P McCormick",
+    "Packy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@AccelerateWithMert"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

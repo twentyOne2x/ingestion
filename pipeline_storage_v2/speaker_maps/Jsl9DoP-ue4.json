@@ -1,0 +1,20 @@
+{
+  "video_id": "Jsl9DoP-ue4",
+  "title": "2024-02-01_Jsl9DoP-ue4_Solana Validator Education - Local Validator State",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "C": {
+      "name": "Book Brooks",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

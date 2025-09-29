@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the evolution of Solana Spaces and the transition to Drip, focusing on user onboarding and the unique value proposition of Drip in the crypto space.",
+  "topic_summary": "Exploration of the journey from Solana Spaces to Drip, highlighting user growth from 100,000 to 800,000 wallets and the importance of delivering consistent art content [t=123.04].",
+  "router_tags": [
+    "Solana",
+    "Drip",
+    "Crypto",
+    "Blockchain",
+    "User Onboarding"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

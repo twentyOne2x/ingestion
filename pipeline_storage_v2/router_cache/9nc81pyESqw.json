@@ -1,0 +1,26 @@
+{
+  "description": "This week's Changelog discusses developer tickets for Breakpoint in Amsterdam, priced at $200, and eligibility based on open source contributions. Metaplex announces plans for program immutability over 18 months and introduces new fees. The discussion also covers the new interfaces proposal aimed at enhancing developer experience on Solana, allowing for more innovation and flexibility in token interactions.",
+  "topic_summary": "Highlights include developer tickets for Breakpoint [t=13:36], Metaplex's immutability plan [t=73:00], and new interfaces for Solana [t=120:12].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Metaplex",
+    "Developer Tickets",
+    "Interfaces"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@metaplex",
+    "@Beytoli",
+    "@JohnSink",
+    "@Noah"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

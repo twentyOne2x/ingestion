@@ -1,0 +1,28 @@
+{
+  "description": "In this session from Breakpoint 2023, Dan Albert leads a discussion on becoming a validator in the Solana ecosystem, featuring insights from Michael, Luke Spruder, and Johnny. They share their backgrounds, motivations, and the technical aspects of running validators, including challenges like on-chain costs and transaction fees [t=328:88].",
+  "topic_summary": "The panel discusses the journey to becoming a validator on Solana, addressing technical challenges, motivations for participation, and the financial implications of running a validator [t=67:20].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Cryptocurrency",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "solanafndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Michael",
+    "@LukeSpruder",
+    "@Johnny",
+    "@JitoLabs",
+    "@SolanaCompass"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

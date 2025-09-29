@@ -1,0 +1,24 @@
+{
+  "description": "This presentation addresses the importance of security in the Web3 space, highlighting the consequences of neglecting it. The speaker shares a personal story about a young founder who faced a tragic outcome after a protocol breach, emphasizing the need for developers to recognize their limitations and take security seriously.",
+  "topic_summary": "The talk focuses on the critical need for developers in the Web3 ecosystem to prioritize security, learn from past mistakes, and understand the serious implications of their work. It challenges the audience to reflect on their responsibilities and the maturity of the industry.",
+  "router_tags": [
+    "Web3",
+    "Security",
+    "Developers",
+    "Blockchain",
+    "Consequences"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@WilliamGilray"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

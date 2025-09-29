@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the vision for a better Internet built on Solana, emphasizing user experience, scalability, and the importance of stable currencies like USDC. It highlights the role of Helium in building wireless networks and the need for blockchain growth alongside it.",
+  "topic_summary": "Exploration of a new Internet model on Solana, focusing on user experience and the integration of stable currencies like USDC to combat inflation. The video also addresses the growth of Helium's wireless networks and the necessity for scalable blockchain solutions [t=0:32-49:24].",
+  "router_tags": [
+    "Solana",
+    "Helium",
+    "USDC",
+    "Blockchain",
+    "Internet"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "Helium",
+    "helium",
+    "USDC",
+    "usdc"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@helium",
+    "@usdc"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

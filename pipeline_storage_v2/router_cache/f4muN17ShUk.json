@@ -1,0 +1,21 @@
+{
+  "description": "In this video, CryptoKaleo discusses trading strategies for Bitcoin in 2025, highlighting recent price movements and resistance levels. He emphasizes the bullish sentiment in the market and shares insights on portfolio allocation and market positioning.",
+  "topic_summary": "CryptoKaleo shares insights on Bitcoin trading strategies for 2025, discussing market trends and personal portfolio allocations. Key moments include Bitcoin's price action around $116 and resistance levels dating back to 2021 [t=15:44].",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto Trading",
+    "Market Analysis",
+    "Portfolio Management"
+  ],
+  "aliases": [
+    "Cryptokaleo",
+    "CryptoKaleo",
+    "cryptokaleo"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

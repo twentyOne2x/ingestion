@@ -1,0 +1,28 @@
+{
+  "description": "Nick and Jonas from the Solana Foundation Devrel team discuss recent changes in the Solana ecosystem, including deprecated methods, removal of unused dependencies, and updates on signature verification processes. They emphasize the importance of upgrading code to avoid deprecated functions and highlight the integration of new cryptographic support for signature verification.",
+  "topic_summary": "Overview of recent Solana updates including deprecated methods, code improvements, and new cryptographic support for signature verification [t=3:68-239:63].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Web3",
+    "Development",
+    "Cryptography"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nick",
+    "@Jonas",
+    "@Kevin",
+    "@SamKim",
+    "@Agave"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

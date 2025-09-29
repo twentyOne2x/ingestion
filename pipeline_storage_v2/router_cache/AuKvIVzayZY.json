@@ -1,0 +1,21 @@
+{
+  "description": "Highlights from Day 1 of the Breakpoint event, showcasing the achievements of Solana engineers and ongoing challenges.",
+  "topic_summary": "Overview of Solana's engineering progress and future challenges discussed at Breakpoint [t=00:22].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Engineering",
+    "Technology"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

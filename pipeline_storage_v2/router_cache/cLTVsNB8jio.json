@@ -1,0 +1,25 @@
+{
+  "description": "Sam from Jambo introduces the company and its mission to empower and inspire through web3 technology. The presentation includes interactive elements and audience engagement, featuring shout-outs and musical interludes.",
+  "topic_summary": "Sam showcases Jambo's vision and engages the audience with interactive elements, emphasizing community and fun [t=5:92-8:88][t=9:20-28:31].",
+  "router_tags": [
+    "Jambo",
+    "Solana",
+    "web3",
+    "community",
+    "Breakpoint 2024"
+  ],
+  "aliases": [
+    "Jambo",
+    "jambo",
+    "JAMBO",
+    "Sam",
+    "sam"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jambo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

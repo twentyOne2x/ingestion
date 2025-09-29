@@ -1,0 +1,24 @@
+{
+  "description": "Demonstration of a point of sale checkout system using PyUSD, featuring a mobile Solana wallet for transaction processing.",
+  "topic_summary": "Overview of a point of sale checkout using PyUSD, including transaction generation and confirmation via a mobile wallet [t=1:76-30:83].",
+  "router_tags": [
+    "PyUSD",
+    "Solana",
+    "Point of Sale",
+    "Checkout",
+    "Mobile Wallet"
+  ],
+  "aliases": [
+    "Pyusd",
+    "Solana",
+    "Point Of Sale",
+    "Checkout",
+    "Mobile Wallet"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "IHXGLKg_BBE",
+  "title": "2024-03-20_IHXGLKg_BBE_ep 8: NFT Nick - Choosing rich",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Rich Nick",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

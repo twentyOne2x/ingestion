@@ -1,0 +1,25 @@
+{
+  "description": "Albert Chen discusses the evolution of GameFi and blockchain gaming, emphasizing the shift towards player-owned economies and the role of Web3 in decentralizing game assets. He highlights Genopets as a gamified habit app that rewards healthy lifestyles through gameplay, where players raise digital pets powered by their daily steps.",
+  "topic_summary": "The conversation covers the current state of GameFi and blockchain gaming, the importance of decentralization, and how Genopets integrates Web3 elements to create a player-driven economy. Chen explains the balance between traditional game publishing and decentralized economic systems, focusing on player interactions and crafting.",
+  "router_tags": [
+    "GameFi",
+    "Blockchain Gaming",
+    "Web3",
+    "Genopets",
+    "Player Owned Economy",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Albert Chen",
+    "albert chen",
+    "Genopets",
+    "genopets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Albert"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This episode of the Solana Changelog discusses recent developer updates, including the conclusion of a game jam with over 230 registrations and 22 submitted games, improvements in developer tooling, and the launch of a developer educator program. Notable updates include the introduction of a transaction receipt route to enhance light client verification.",
+  "topic_summary": "Highlights from the Solana Changelog, including game jam results [t=11:48], tooling advancements [t=66:03], and the developer educator program [t=100:36].",
+  "router_tags": [
+    "Solana",
+    "Game Jam",
+    "Developer Tools",
+    "Educator Program"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas",
+    "@JacobCreech"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

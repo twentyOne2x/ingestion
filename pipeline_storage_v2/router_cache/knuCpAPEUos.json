@@ -1,0 +1,26 @@
+{
+  "description": "David Rutter discusses the convergence of public and private blockchains, emphasizing the importance of timing in business decisions and the evolution of DeFi and TradFi. He highlights the advancements in Solana's capabilities and the changing regulatory landscape that now allows for greater integration of traditional financial institutions with decentralized finance.",
+  "topic_summary": "In this fireside chat, David Rutter of R3 and Lily Liu from the Solana Foundation explore the merging of public and private blockchain technologies, the growth of DeFi, and the role of traditional finance in this evolving landscape. Rutter shares insights on the challenges and opportunities presented by this convergence, particularly in light of recent regulatory changes.",
+  "router_tags": [
+    "blockchain",
+    "DeFi",
+    "TradFi",
+    "Solana",
+    "R3",
+    "Corda",
+    "financial technology"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "David Rutter",
+    "Lily Liu",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

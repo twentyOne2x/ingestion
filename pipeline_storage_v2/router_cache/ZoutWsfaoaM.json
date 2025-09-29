@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the current state of cryptocurrency markets, technical difficulties, and insights into trading strategies. The speakers express concerns about major cryptocurrencies dumping and share personal experiences with trading various coins.",
+  "topic_summary": "The conversation covers the impact of technical issues on market perception, the volatility of major cryptocurrencies like Bitcoin, and personal trading experiences with animal coins and Binance listings [t=0:24 - t=84:65].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "AI",
+    "Binance",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "notthreadguy",
+    "Not Thread Guy"
+  ],
+  "canonical_entities": [
+    "$GOAT",
+    "@notthreadguy",
+    "$BTC",
+    "$PEPE",
+    "$DOGE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

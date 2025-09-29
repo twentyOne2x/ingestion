@@ -1,0 +1,20 @@
+{
+  "video_id": "IQOamUuIwnE",
+  "title": "2024-07-25_IQOamUuIwnE_Solana Changelog Jul 24 - EpochRewards, Agave v2.0 release schedule, Solana Godot SDK",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Fire Dancer",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Austin moderates a panel on state compression in Solana with John Wong, Noah Prince, and Imoy. They discuss how compression reduces data storage costs significantly, enabling the minting of millions of NFTs affordably. The panel explores the technology's implications for NFTs, ownership, and the future of blockchain data storage.",
+  "topic_summary": "The panel discusses the impact of compression technology on NFTs, highlighting its ability to drastically reduce costs and enable new use cases on Solana, including the minting of compressed NFTs for Helium hotspots and mobile subscribers. They also address challenges related to blockchain data storage and retrieval.",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Compression",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Validated",
+    "validated",
+    "VALIDATED"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JohnWong",
+    "@NoahPrince",
+    "@Imoy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

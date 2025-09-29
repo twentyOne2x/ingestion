@@ -1,0 +1,21 @@
+{
+  "description": "Discussion about a poker game where Flacco is mentioned, highlighting the excitement of being the first bust of the night.",
+  "topic_summary": "The video features a poker game moment with references to Flacco and Malcolm, capturing the intensity and reactions of the players [t=22:32].",
+  "router_tags": [
+    "poker",
+    "pokerlive",
+    "polymarket",
+    "cryptocurrency",
+    "crypto"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$FLACCO",
+    "@malcolm"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Austin Federa welcomes attendees to Breakpoint 2022 in Lisbon, highlighting the growth of the event from 2,100 participants last year to over 3,600 this year. He outlines the conference's structure, including various venues and programming focused on technical workshops, major updates from the Solana ecosystem, and discussions on blockchain's future. Key highlights include a demo from the Firedancer Project and insights from Solana co-founder Anatoly on engineering challenges.",
+  "topic_summary": "Breakpoint 2022 features workshops, major updates from the Solana ecosystem, and discussions on blockchain technology, including a demo from the Firedancer Project and insights from Anatoly on engineering challenges.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2022",
+    "Blockchain",
+    "Conference",
+    "Technical Workshops"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

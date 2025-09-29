@@ -1,0 +1,24 @@
+{
+  "description": "Thomas Olufsen discusses the vulnerabilities of two-factor authentication (2FA) in the context of recent SIM-jacking attacks on major crypto exchanges. He emphasizes the ineffectiveness of SMS-based 2FA and advocates for stronger authentication methods. The talk covers the rise of smishing attacks and the need for better security practices in web3.",
+  "topic_summary": "The presentation highlights the risks associated with SMS-based two-factor authentication, detailing how hackers exploit these vulnerabilities to bypass security measures. Olufsen shares insights from his research on recent hacks, urging developers to adopt more secure authentication methods beyond SMS [t=166.16].",
+  "router_tags": [
+    "2FA",
+    "SIM-jacking",
+    "Web3 Security",
+    "Hacking",
+    "Cryptocurrency",
+    "Smishing",
+    "Cybersecurity"
+  ],
+  "aliases": [
+    "Thomas Olufsen",
+    "thomas olufsen",
+    "THOMAS OLUFSEN"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

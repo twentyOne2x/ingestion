@@ -1,0 +1,20 @@
+{
+  "video_id": "2pYSh5cdGXo",
+  "title": "2024-09-20_2pYSh5cdGXo_BP 2024: Debate: Crypto's Only Use-Case Is Speculation (Vibhu Norby, Tarun Chitra, Tristan Yver)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Vibu Tarun",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

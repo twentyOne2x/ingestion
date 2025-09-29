@@ -1,0 +1,24 @@
+{
+  "description": "Tim Garcia from the Solana Foundation discusses Firedancer, a new validator client for the Solana blockchain, focusing on its architecture, security, performance, and independence.",
+  "topic_summary": "Firedancer aims to enhance the Solana blockchain by improving transaction processing speed and security. It operates on a distributed network of machines, ensuring reliability through multiple validated clients. The discussion includes the goals of Firedancer, including security independence and performance enhancements, with a focus on minimizing dependencies and using a unique architecture.",
+  "router_tags": [
+    "Firedancer",
+    "Solana",
+    "Blockchain",
+    "Validator Client",
+    "Performance",
+    "Security"
+  ],
+  "aliases": [
+    "Firedancer",
+    "Firedancer V0",
+    "Frankendancer",
+    "Flydancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Delphi Podcast, Neil Blomkamp discusses his transition from film to gaming, particularly his role as co-founder and creative lead at Godzilla Games, working on the AAA battle royale game 'Off the Grid'. He shares insights on his background in visual effects and his fascination with real-time graphics, as well as the collaborative process of building the game and bringing talent from the film industry into the gaming space.",
+  "topic_summary": "Neil Blomkamp, co-founder of Godzilla Games, shares his journey from film director to game developer, discussing his work on 'Off the Grid' and his passion for real-time graphics [t=1:04-3:28]. He reflects on his film career and the transition to gaming, highlighting the importance of collaboration and innovation in creating immersive experiences [t=10:64-80:159].",
+  "router_tags": [
+    "Neill Blomkamp",
+    "Godzilla Games",
+    "Off the Grid",
+    "gaming",
+    "AAA games",
+    "battle royale",
+    "visual effects",
+    "real-time graphics"
+  ],
+  "aliases": [
+    "Neil Blomkamp",
+    "Neill Blomkamp",
+    "Godzilla Games",
+    "Gonzilla"
+  ],
+  "canonical_entities": [
+    "@Delphi_Digital",
+    "$SOL",
+    "@RichardMorgan",
+    "@NickGekko"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

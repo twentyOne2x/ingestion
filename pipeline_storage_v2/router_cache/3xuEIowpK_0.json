@@ -1,0 +1,24 @@
+{
+  "description": "Chris Wang from sax3 discusses the importance of automating smart contract security, highlighting the need for ongoing security measures even after audits. He introduces sax3's automated security tools, including a vulnerability scanner and a real-time threat monitor.",
+  "topic_summary": "Wang emphasizes the significance of automating smart contract security, citing examples of projects that lost funds despite undergoing audits. He presents sax3's tools aimed at enhancing security in the Solana ecosystem, including a vulnerability scanner and a real-time monitoring solution [t=243:38].",
+  "router_tags": [
+    "Smart Contract Security",
+    "Automation",
+    "Solana",
+    "Security Audits",
+    "Vulnerability Scanner"
+  ],
+  "aliases": [
+    "Sax3",
+    "sax3",
+    "SEC3",
+    "sec3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

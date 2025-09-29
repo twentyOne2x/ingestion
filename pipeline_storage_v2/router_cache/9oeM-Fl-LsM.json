@@ -1,0 +1,26 @@
+{
+  "description": "This episode features Serge and Lev from DeVol Network discussing their on-chain options trading platform built on Solana. They highlight the advantages of Solana's low fees and fast finality, and explain how their protocol differs from traditional models like Uniswap, particularly in handling options trading complexities.",
+  "topic_summary": "Serge and Lev discuss the architecture of their on-chain options trading protocol on Solana, emphasizing the need for speed and efficiency in blockchain technology. They explain how their approach overcomes limitations of existing models and enables new trading functionalities.",
+  "router_tags": [
+    "Options Trading",
+    "DeFi",
+    "Solana",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Devol Network",
+    "DeVol Network",
+    "Serge Levi",
+    "Lev",
+    "Serge"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Lev",
+    "@SergeLevi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

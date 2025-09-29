@@ -1,0 +1,32 @@
+{
+  "description": "In this episode of the Hive Mind podcast, hosts discuss ETF flows, GBTC outflows, and market trends. They analyze the implications of recent outflows and the potential for future trends in the cryptocurrency market, particularly regarding Bitcoin and Ethereum [t=63:47].",
+  "topic_summary": "The podcast covers ETF flows, GBTC outflows, and their impact on the cryptocurrency market, emphasizing the importance of understanding trends over time [t=99:95].",
+  "router_tags": [
+    "ETFs",
+    "GBTC",
+    "cryptocurrency",
+    "Solana",
+    "Ethereum",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "Delphi",
+    "Jose Macedou",
+    "Jan Lieberman",
+    "Duncan",
+    "Flood Capital",
+    "Ceteris"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$BTC",
+    "@Delphi_Digital",
+    "@JoseMacedou",
+    "@JanLieberman",
+    "@Duncan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

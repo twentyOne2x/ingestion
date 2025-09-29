@@ -1,0 +1,20 @@
+{
+  "description": "Highlights from Breakpoint 2022, emphasizing community building among developers and attendees.",
+  "topic_summary": "The event fosters connections among developers, promoting a strong community within the decentralized ecosystem [t=15:60].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "Community Building",
+    "Developer Events"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "breakpoint 2022",
+    "Breakpoint2022"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

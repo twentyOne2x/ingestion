@@ -1,0 +1,28 @@
+{
+  "description": "Liam Heeger and Aryaman Jain present the Firedancer Validator client at Breakpoint 2024, discussing its development and performance on testnet. They highlight the transition from non-operation to building tens of thousands of blocks and achieving significant uptime improvements over the last few months. The presentation includes metrics comparing Firedancer's performance to peers and showcases its capabilities as a validator client.",
+  "topic_summary": "Overview of Firedancer Validator client performance on testnet, including metrics and comparisons with peers, presented by Liam Heeger and Aryaman Jain at Breakpoint 2024.",
+  "router_tags": [
+    "Firedancer",
+    "Validator",
+    "Solana",
+    "Blockchain",
+    "Testnet",
+    "Performance"
+  ],
+  "aliases": [
+    "Liam Heeger",
+    "Liam Eager",
+    "Aryaman Jain",
+    "Ariman Jain",
+    "Fire Dancer",
+    "Firedancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@LiamHeeger",
+    "@AryamanJain"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

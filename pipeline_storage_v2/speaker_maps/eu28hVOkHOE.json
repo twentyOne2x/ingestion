@@ -1,0 +1,20 @@
+{
+  "video_id": "eu28hVOkHOE",
+  "title": "2024-10-31_eu28hVOkHOE_Did Memecoins SAVE Crypto  #crypto #doge #memecoins #bitcoins #bitcoin #btc #eth #ethereum",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Hal Finney",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

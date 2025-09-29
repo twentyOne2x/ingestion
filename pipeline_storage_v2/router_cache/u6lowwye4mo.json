@@ -1,0 +1,27 @@
+{
+  "description": "In this episode, Thread Guy interviews Alon, co-founder of Pump Fun, discussing the rapid growth and challenges in the meme coin space. Alon shares insights on the evolution of Pump Fun since its inception in late January, the impact of market dynamics, and how they cater to users wanting to create their own cryptocurrencies quickly and affordably.",
+  "topic_summary": "Thread Guy talks with Alon from Pump Fun about the explosive growth of meme coins and the platform's development since January. They explore the challenges faced, the mental toll of rapid changes, and how Pump Fun enables users to create their own coins easily [t=198].",
+  "router_tags": [
+    "Meme Coins",
+    "Pump Fun",
+    "Crypto",
+    "Podcast",
+    "Alon",
+    "Thread Guy"
+  ],
+  "aliases": [
+    "Pump Fun",
+    "Pumpfun",
+    "Pump Fund",
+    "Pumpfund"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "$BTC",
+    "$2",
+    "$100"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

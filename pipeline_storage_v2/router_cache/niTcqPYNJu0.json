@@ -1,0 +1,27 @@
+{
+  "description": "John Giral from Delphi Research discusses blockchain infrastructure trends for 2023, focusing on Ethereum's high fees, the emergence of alternative layer ones, layer twos, and Cosmos app chains. He highlights the need for improved interoperability and security in blockchain transactions, particularly in light of recent bridge hacks.",
+  "topic_summary": "The video covers the evolution of blockchain infrastructure, categorizing blockchains into alternative layer ones, layer twos, and Cosmos app chains. It emphasizes the challenges of interoperability and security, particularly due to bridge hacks, and discusses future trends like MEV app chains and modular blockchains [t=429:40].",
+  "router_tags": [
+    "Blockchain",
+    "Ethereum",
+    "Layer 2",
+    "Interoperability",
+    "Security",
+    "MEV"
+  ],
+  "aliases": [
+    "@Delphi_Digital",
+    "@delphi_digital",
+    "Delphi Digital",
+    "delphi digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "$BNB",
+    "@JohnGiral",
+    "@Delphi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

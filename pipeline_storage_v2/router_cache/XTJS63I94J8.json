@@ -1,0 +1,22 @@
+{
+  "description": "Andrew Tate discusses the potential for Donald Trump's assassination, referencing past election controversies and the influence of shadow figures in politics.",
+  "topic_summary": "Tate speculates on the risks Trump faces if he were to threaten established power structures, suggesting that historical patterns of violence against political figures could repeat [t=43:49].",
+  "router_tags": [
+    "Andrew Tate",
+    "Donald Trump",
+    "Assassination",
+    "Politics",
+    "Election"
+  ],
+  "aliases": [
+    "andrew tate",
+    "Andrew Tate",
+    "Tate"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$Hillary"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

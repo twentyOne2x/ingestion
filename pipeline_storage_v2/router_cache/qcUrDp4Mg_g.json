@@ -1,0 +1,24 @@
+{
+  "description": "Brian from Fantom discusses the mission of Fantom to accelerate crypto adoption by ensuring safety and ease of use. He highlights the importance of user experience and retention in the crypto ecosystem, noting that many users engage minimally with DApps despite high transaction volumes on Phantom. He emphasizes the need for better user engagement strategies to improve retention rates.",
+  "topic_summary": "At Breakpoint 2023, Brian from Fantom outlines the challenges of user retention in the crypto space, emphasizing the need for improved user engagement and the role of Fantom in enhancing the user experience on Solana. He presents statistics on user transactions and discusses strategies for retaining users.",
+  "router_tags": [
+    "Fantom",
+    "Solana",
+    "Breakpoint",
+    "Crypto Adoption",
+    "User Experience"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Phantom",
+    "Fantom Wallet",
+    "Brian from Fantom"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Fantom"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

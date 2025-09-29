@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the potential of Solana as a foundation for a decentralized Internet, emphasizing user experience and accessibility to stable currencies like USDC. It highlights the importance of scalability and intuitive interfaces for users.",
+  "topic_summary": "Exploration of Solana's role in creating a decentralized Internet and improving user experience [t=0:24 - 49:16].",
+  "router_tags": [
+    "Solana",
+    "Decentralization",
+    "Blockchain",
+    "User Experience",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Joey from the Helium Foundation introduces the Helium Network and its applications in IoT. He discusses partnerships with Rack Wireless and Vaxis, highlighting the development of Trackpack, a new geolocation tracking solution. The project utilizes Helium's network for real-time tracking of buses at the Breakpoint venue, showcasing the ease of connecting devices to the network using QR codes. The presentation emphasizes the affordability and accessibility of creating IoT solutions on Helium's infrastructure.",
+  "topic_summary": "Overview of Helium's IoT network and its applications, featuring Trackpack's geolocation tracking solution for the Breakpoint venue, emphasizing ease of use and cost-effectiveness [t=5:68-302:73].",
+  "router_tags": [
+    "Helium",
+    "IoT",
+    "Location Tracking",
+    "Solana",
+    "Trackpack",
+    "Vaxis",
+    "Rack Wireless"
+  ],
+  "aliases": [
+    "Helium",
+    "helium",
+    "Trackpack",
+    "trackpack",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JoseMarcelino",
+    "@RackWireless",
+    "@Vaxis"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

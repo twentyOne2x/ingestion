@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Solana community validator updates, including a postmortem of a recent outage and introduction of new developer relations lead Rex St. John.",
+  "topic_summary": "Validator updates and governance discussions, including recommended upgrades and insights from Rex St. John on validator education workshops [t=2:8].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Anza",
+    "Governance",
+    "Outage",
+    "Education"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Discussion",
+    "Validator Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RexStJohn",
+    "@Zentensu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

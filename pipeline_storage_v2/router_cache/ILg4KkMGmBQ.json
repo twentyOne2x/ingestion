@@ -1,0 +1,23 @@
+{
+  "description": "Josh Neuroth from Anchor discusses optimizing Solana nodes and the challenges faced in achieving peak performance. He highlights the need for better hardware to support high transaction rates and the impact of decentralization on node operation. The talk also covers the evolution of Solana's infrastructure and the role of the Solana Foundation in improving server availability amidst a chip shortage.",
+  "topic_summary": "The presentation focuses on optimizing Solana nodes for peak performance, addressing hardware requirements, transaction speeds, and the challenges of decentralization. It also discusses the improvements made in Solana's infrastructure and the support from the Solana Foundation.",
+  "router_tags": [
+    "Solana",
+    "Node Optimization",
+    "Blockchain",
+    "Performance",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Josh Neuroth",
+    "Josh neuroth",
+    "anchor",
+    "Anchor"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

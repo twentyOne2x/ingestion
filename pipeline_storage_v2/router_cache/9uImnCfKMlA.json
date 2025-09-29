@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the algorithmic mystery between the minimum spanning tree problem and the traveling salesman problem, highlighting the challenges of NP-hard problems and the importance of recognizing them.",
+  "topic_summary": "The video introduces the minimum spanning tree (MST) problem, explaining its definition and significance in algorithm design. It contrasts MST with the traveling salesman problem, emphasizing the computational difficulties associated with NP-hard problems. The video also covers efficient algorithms like Prim's and Kruskal's for solving the MST problem, demonstrating their effectiveness despite the vast number of possible spanning trees [t=0:56].",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Minimum Spanning Tree",
+    "Traveling Salesman Problem",
+    "Algorithm Design"
+  ],
+  "aliases": [
+    "Algorithms for NP-Hard Problems",
+    "Minimum Spanning Tree vs Traveling Salesman Problem",
+    "Algorithmic Mystery"
+  ],
+  "canonical_entities": [
+    "$MST",
+    "$TSP",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

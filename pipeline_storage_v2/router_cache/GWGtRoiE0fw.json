@@ -1,0 +1,24 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team discusses updates in the Solana ecosystem, including a new professional education program and changes to RPC methods. The episode highlights resources for training on Solana and the importance of updating deprecated RPC methods.",
+  "topic_summary": "In this episode, the Solana team introduces a professional education repository aimed at training organizations on Solana, discusses the migration of content to Solana.com, and emphasizes the need to update deprecated RPC methods as Agave RPC version 2 is released [t=228.55].",
+  "router_tags": [
+    "Solana",
+    "Education",
+    "RPC Methods",
+    "Training"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MikeMckenna",
+    "@Solanadev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

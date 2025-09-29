@@ -1,0 +1,23 @@
+{
+  "description": "Fernando Otero discusses Pinocchio, a dependency-free SDK for writing efficient programs on Solana. He explains its principles, including avoiding external dependencies and focusing on performance without dynamic memory allocation. He highlights how Pinocchio improves program efficiency by using lightweight view types and optimizing entry points, making it easier to manage resources and reduce costs [t=2:00 - t=54:00].",
+  "topic_summary": "Overview of Pinocchio SDK, its design principles, and performance enhancements for Solana programs, including dependency management and efficient memory usage [t=2:00 - t=54:00].",
+  "router_tags": [
+    "Pinocchio",
+    "Solana",
+    "SDK",
+    "programming",
+    "efficiency"
+  ],
+  "aliases": [
+    "Pinocchio",
+    "Fibo",
+    "Fernando Otero"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

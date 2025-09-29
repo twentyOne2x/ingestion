@@ -1,0 +1,23 @@
+{
+  "description": "Solana aims to lower barriers to capital markets, enabling broader access for institutions and individuals alike. The collaboration with R3 seeks to integrate institutional finance with decentralized finance (DeFi), enhancing liquidity and efficiency while maintaining privacy. This initiative is positioned to facilitate the participation of regulated financial institutions in the public blockchain ecosystem.",
+  "topic_summary": "The discussion highlights Solana's vision for global financial infrastructure, emphasizing the integration of traditional finance with DeFi through R3. It addresses the increasing demand for tokenized assets and the need for institutions to access public blockchain ecosystems securely [t=63:61].",
+  "router_tags": [
+    "Solana",
+    "R3",
+    "DeFi",
+    "Capital Markets",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana",
+    "R3",
+    "defi",
+    "capital markets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

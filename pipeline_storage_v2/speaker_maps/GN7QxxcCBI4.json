@@ -1,0 +1,26 @@
+{
+  "video_id": "GN7QxxcCBI4",
+  "title": "2025-03-04_GN7QxxcCBI4_Is Social Trading Crypto's Next Big Thing w- Ilja Moisejevs and Richard Wu",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Richard Demoy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Nikita Beer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

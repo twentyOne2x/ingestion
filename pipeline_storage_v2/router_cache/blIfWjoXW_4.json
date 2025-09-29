@@ -1,0 +1,22 @@
+{
+  "description": "This episode discusses the upcoming Solana community-led hackathon from August 1st to 21st, a proposal for querying active stake on the cluster, updates to Anchor's IDL generation, and the release of Switchboard Functions.",
+  "topic_summary": "Highlights include the Solana hackathon [t=7:12], a proposal on active stake querying [t=53:29], updates to Anchor's IDL [t=118:26], and the introduction of Switchboard Functions [t=166:62].",
+  "router_tags": [
+    "Solana",
+    "Hackathon",
+    "Anchor",
+    "Switchboard",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

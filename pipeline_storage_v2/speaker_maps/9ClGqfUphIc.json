@@ -1,0 +1,20 @@
+{
+  "video_id": "9ClGqfUphIc",
+  "title": "2024-05-28_9ClGqfUphIc_How Metaplex Core Moves Beyond NFT Standards w- Stephen Hess (Metaplex Studios)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Stephen Hess",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

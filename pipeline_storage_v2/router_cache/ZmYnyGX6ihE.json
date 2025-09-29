@@ -1,0 +1,48 @@
+{
+  "description": "Delphi's infrastructure team discusses the future of blockchain technology, focusing on high throughput chains and their implications for the industry. Analysts explore the evolution of Ethereum, Solana, and emerging chains like Aptos and Sui, emphasizing the importance of performance and scalability in decentralized applications.",
+  "topic_summary": "The discussion centers on the transition to high throughput blockchains, the role of Ethereum and Solana, and the emergence of new chains like Aptos and Sui. Analysts highlight the significance of performance, scalability, and user engagement in shaping the future of blockchain technology [t=0:16 - t=380:96].",
+  "router_tags": [
+    "Blockchain",
+    "High Throughput",
+    "Ethereum",
+    "Solana",
+    "Aptos",
+    "Sui",
+    "Decentralization",
+    "Performance",
+    "Scalability"
+  ],
+  "aliases": [
+    "Delphi Digital",
+    "delphi digital",
+    "Delphi",
+    "delphi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "@Delphi_Digital",
+    "@Justin",
+    "@Prasad",
+    "@Mohamed",
+    "@Fukundo",
+    "@Facundo",
+    "@Su",
+    "@Ceteris",
+    "@Monad",
+    "@Ithaca",
+    "@Paradigm",
+    "@Team Rise",
+    "@Unichain",
+    "@Hyper Liquid",
+    "@Aptos",
+    "@Sui",
+    "@Celestia",
+    "@Delta",
+    "@Fire Dancer",
+    "@North Star"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

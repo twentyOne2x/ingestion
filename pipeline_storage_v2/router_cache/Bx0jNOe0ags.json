@@ -1,0 +1,26 @@
+{
+  "description": "Chris Maddern and Johan Kerbrat discuss the importance of mobile in the crypto space, highlighting how consumer crypto is becoming mainstream and the necessity for mobile-first solutions. They explore Robinhood's shift towards mobile and the development of a non-custodial wallet that simplifies user experience in DeFi and Web3.",
+  "topic_summary": "The conversation emphasizes the shift towards mobile in the crypto industry, with insights on user accessibility and the evolution of Robinhood's offerings in the non-custodial space. Key points include the need for mobile solutions to enhance user experience and the challenges of traditional desktop interfaces.",
+  "router_tags": [
+    "Mobile Crypto",
+    "Robinhood",
+    "DeFi",
+    "Web3",
+    "User Experience"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Accelerate 2025",
+    "Chris Maddern",
+    "Johan Kerbrat"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@RobinhoodCrypto",
+    "@Airbnb",
+    "@IronFish"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

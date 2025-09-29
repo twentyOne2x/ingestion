@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the evolving landscape of cryptocurrency, emphasizing the importance of being involved in crypto by 2025. It highlights the historical significance of government involvement, particularly referencing Trump, and the potential for financial and social freedom through crypto. The speakers encourage viewers to engage with crypto Twitter and learn about the space.",
+  "topic_summary": "The future of cryptocurrency and its integration into society, with a focus on government involvement and the importance of education in the crypto space. [t=0:40] [t=5:32] [t=40:67]",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Elon Musk",
+    "Trump",
+    "Financial Freedom"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "NotThreadGuy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "$XRP",
+    "@ElonMusk",
+    "@realDonaldTrump"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

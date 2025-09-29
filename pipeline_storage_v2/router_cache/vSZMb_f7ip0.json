@@ -1,0 +1,29 @@
+{
+  "description": "This video discusses the implementation of greedy heuristic algorithms as descending clock auctions, specifically in the context of the FCC incentive auction. It addresses the challenges of determining station values and how auctions can provide insights into these values through participant interactions.",
+  "topic_summary": "The video covers the implementation of greedy algorithms in auctions, focusing on the FCC incentive auction and the need to understand station values. It explains how auctions can reveal information about these values through bidding interactions, using examples like selling licenses for television stations [t=202:00].",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Auctions",
+    "FCC Incentive Auction",
+    "Greedy Heuristic"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Algorithms Illuminated"
+  ],
+  "canonical_entities": [
+    "$100",
+    "$1,000,000",
+    "$900 Million",
+    "@rogerfederer",
+    "@USGovernment",
+    "$5 Million",
+    "$4 Million",
+    "@NewYorkCity",
+    "@NewYork"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

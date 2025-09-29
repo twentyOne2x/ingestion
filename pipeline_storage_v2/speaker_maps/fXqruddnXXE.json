@@ -1,0 +1,20 @@
+{
+  "video_id": "fXqruddnXXE",
+  "title": "2025-01-07_fXqruddnXXE_How to Survive in the Post-AGI world... w- Alex Good",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Good Alexander",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

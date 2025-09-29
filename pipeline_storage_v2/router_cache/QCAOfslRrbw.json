@@ -1,0 +1,24 @@
+{
+  "description": "Siddharth Shetty discusses the concept of the Finternet, emphasizing the importance of giving individuals and businesses control over their digital assets. He outlines the journey of building identity systems and payment protocols, and the need for interoperability in financial systems.",
+  "topic_summary": "The Finternet aims to provide agency over various asset types, including regulated and user-controlled assets, through a unified infrastructure that enhances interoperability and reduces transaction costs. The talk highlights the collaboration with notable figures in the financial sector and the potential of cryptographic developments.",
+  "router_tags": [
+    "Finternet",
+    "Digital Identity",
+    "Blockchain",
+    "Financial Systems",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Finternet",
+    "finternet",
+    "FINTERNET"
+  ],
+  "canonical_entities": [
+    "$BIS",
+    "@NandanNilekani",
+    "@PramodVerma",
+    "@AugustineCarstens"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

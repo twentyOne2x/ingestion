@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the challenges facing Web3 music, featuring insights from Clayton Blaha, Ray Jacobson, and Dan Smith. They explore the complexities of the music industry, the impact of NFTs, and the need for better fan engagement in the current landscape.",
+  "topic_summary": "The panel addresses why Web3 music isn't working, highlighting issues like capital access, data problems, and the intricacies of music rights. They reflect on the NFT boom and the necessity for new products that resonate with fans [t=50:51].",
+  "router_tags": [
+    "Web3",
+    "Music Industry",
+    "NFTs",
+    "Audius",
+    "Fan Engagement"
+  ],
+  "aliases": [
+    "Ship or Die",
+    "Web3 Music",
+    "Accelerate 2025"
+  ],
+  "canonical_entities": [
+    "$AUDIUS",
+    "@RayJacobson",
+    "@DanSmith",
+    "@ClaytonBlaha"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

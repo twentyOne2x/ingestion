@@ -1,0 +1,28 @@
+{
+  "description": "Chris Maddern and Christine Hall introduce Rally, a social wallet, at Breakpoint 2024. They discuss the importance of mobile in finance and how Rally transforms user experience by enabling social interactions and eliminating transaction fees on the Solana network.",
+  "topic_summary": "At [t=0:00], Chris and Christine introduce Rally, emphasizing mobile's role in finance. They highlight four key updates: social integration, native payments, gas-free transactions, and a referral program using memes to onboard new users into Web3.",
+  "router_tags": [
+    "Rally",
+    "Solana",
+    "Web3",
+    "Mobile Finance",
+    "Social Wallet"
+  ],
+  "aliases": [
+    "Rally",
+    "rally",
+    "RALLY",
+    "Chris Maddern",
+    "christine hall",
+    "Chris",
+    "Christine"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisMaddern",
+    "@ChristineHall"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

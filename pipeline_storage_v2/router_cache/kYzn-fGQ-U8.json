@@ -1,0 +1,29 @@
+{
+  "description": "Luca discusses his journey into crypto, starting as an NFT trader and co-founding Noise, a platform for trading trends. He highlights the evolution of the attention economy in crypto and the demand for continuous markets, particularly in meme coins and trends like Sydney Sweeney's impact on American Eagle stock.",
+  "topic_summary": "Luca shares insights on trading trends in crypto, the evolution of meme coins, and the demand for platforms that allow users to express their beliefs in trends, referencing examples like Sydney Sweeney and American Eagle [t=245.26].",
+  "router_tags": [
+    "Crypto",
+    "NFTs",
+    "Meme Coins",
+    "Trading Trends",
+    "Attention Economy"
+  ],
+  "aliases": [
+    "Luca",
+    "lucas",
+    "LUCA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy",
+    "$300 Million",
+    "$700 Million",
+    "@sydneysweeney",
+    "@AmericanEagle",
+    "@Google",
+    "@Elon",
+    "@Kaito"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Marius discusses the evolution of DeFi protocols on Solana, reflecting on past market cycles and the necessity of financial services for asset management. He emphasizes the scalability of Solana and the potential for exponential growth in DeFi, highlighting the importance of assets in financial activities and the limitations of centralized systems.",
+  "topic_summary": "Marius explores the role of DeFi in Solana, tracing the historical context of financial services and their evolution. He argues that DeFi is essential for managing assets and facilitating economic activities, contrasting it with the inefficiencies of centralized financial systems.",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Hubble Protocol",
+    "Camino Protocol",
+    "blockchain"
+  ],
+  "aliases": [
+    "Marius",
+    "marius",
+    "Hubble",
+    "hubble",
+    "Camino",
+    "camino"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

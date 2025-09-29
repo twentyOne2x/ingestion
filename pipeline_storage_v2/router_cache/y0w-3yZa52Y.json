@@ -1,0 +1,22 @@
+{
+  "description": "In this community call, the team discusses improvements to the SPL token program aimed at increasing efficiency and reducing compute unit consumption. Key points include the rationale behind the changes, benefits of a more efficient implementation, and future steps for replacing the current program.",
+  "topic_summary": "The discussion focuses on the reimplementation of the SPL token program to enhance efficiency, reduce compute unit usage, and create more block space for transactions. The team outlines the current consumption metrics and potential improvements, including a reduction in binary size and unnecessary log messages.",
+  "router_tags": [
+    "Solana",
+    "SPL Token",
+    "Community Call",
+    "Efficiency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

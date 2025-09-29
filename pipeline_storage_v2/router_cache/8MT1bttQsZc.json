@@ -1,0 +1,21 @@
+{
+  "description": "The video discusses the evolution of the Internet over the past 25-30 years, questioning whether the current version is optimal. It highlights the concentration of power among a few companies and advocates for a community-owned approach through crypto, emphasizing the potential for positive change despite existing challenges.",
+  "topic_summary": "Exploration of the Internet's evolution and the role of crypto in promoting community ownership and innovation [t=1:52-94:79].",
+  "router_tags": [
+    "Internet",
+    "Crypto",
+    "Community Ownership",
+    "Innovation"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

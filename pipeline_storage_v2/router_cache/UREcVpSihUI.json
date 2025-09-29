@@ -1,0 +1,25 @@
+{
+  "description": "Tom Kysar discusses his journey in crypto trading, insights on building in the crypto space, and the evolution of prediction markets.",
+  "topic_summary": "Tom Kysar shares his experiences in the crypto industry, including his early work with bitcoin startups and his role in Augur, the first decentralized prediction market. He emphasizes the challenges and lessons learned from these ventures [t=134.67].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Prediction Markets",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Tom Kysar",
+    "Tom K",
+    "Kysar"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@notthreadguy",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

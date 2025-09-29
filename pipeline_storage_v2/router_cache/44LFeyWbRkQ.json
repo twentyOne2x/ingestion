@@ -1,0 +1,22 @@
+{
+  "description": "Explore the impact of inventors like Edison and the Wright brothers on innovation and technology. This event aims to inspire new ideas in blockchain and technology.",
+  "topic_summary": "The discussion highlights the importance of innovation in technology, referencing historical figures like Edison and the Wrights, and emphasizes the potential for blockchain to improve lives [t=35:26].",
+  "router_tags": [
+    "blockchain",
+    "innovation",
+    "technology",
+    "Edison",
+    "Wrights"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

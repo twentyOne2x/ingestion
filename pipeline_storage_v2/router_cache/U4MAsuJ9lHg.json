@@ -1,0 +1,24 @@
+{
+  "description": "Paul Kohlhaas discusses decentralized science (DeSci) and its impact on Solana, emphasizing the need for funding in scientific research and introducing Wormbot, a platform for tokenized longevity experiments.",
+  "topic_summary": "At [t=05:36], Paul Kohlhaas presents how DeSci is revolutionizing scientific research on Solana, highlighting the challenges scientists face in securing funding and the innovative solutions being developed, including Wormbot for testing longevity compounds.",
+  "router_tags": [
+    "DeSci",
+    "Solana",
+    "longevity",
+    "biotech",
+    "tokenization"
+  ],
+  "aliases": [
+    "Paul Kohlhaas",
+    "Paul Collas",
+    "pump science",
+    "Wormbot"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

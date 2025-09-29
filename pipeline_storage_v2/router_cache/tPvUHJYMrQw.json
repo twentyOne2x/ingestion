@@ -1,0 +1,24 @@
+{
+  "description": "Michael Repetny discusses Marinade's Stake Auction Marketplace, its purpose, and the lessons learned over the past year. He explains the concentration of stake among validators and how the auction system aims to decentralize and improve yield for stakers. The talk covers the mechanics of the auction and its impact on validator participation and market dynamics.",
+  "topic_summary": "In this session, Michael Repetny from Marinade explains the Stake Auction Marketplace, highlighting its role in enhancing Solana's decentralization and providing better yields for stakers. He outlines the auction mechanics and shares insights on the outcomes and challenges faced since its launch.",
+  "router_tags": [
+    "Solana",
+    "Marinade",
+    "Stake Auction",
+    "Liquid Staking",
+    "Decentralization"
+  ],
+  "aliases": [
+    "stake auction marketplace",
+    "stake auction",
+    "Marinade",
+    "Michael Repetny"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

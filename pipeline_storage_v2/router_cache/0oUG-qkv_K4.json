@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the future of $PUMP and its competition, including insights on the Bonk team and their strategies. The conversation touches on the challenges faced by Pump Fund and the effectiveness of Axiom compared to Photon.",
+  "topic_summary": "Exploration of $PUMP's potential to reach new highs and the competitive landscape it faces, particularly from the Bonk team. Insights into the operational differences between Axiom and Photon are also discussed [t=1:84-139:0].",
+  "router_tags": [
+    "$PUMP",
+    "Bonk",
+    "Axiom",
+    "Photon",
+    "trading",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$PUMP",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

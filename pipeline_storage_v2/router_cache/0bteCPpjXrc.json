@@ -1,0 +1,24 @@
+{
+  "description": "Amira from the Solana Foundation discusses CBDCs with Congressman Bill Foster, focusing on privacy, surveillance, and the implications of legislation like the CBDC Anti Surveillance Act. Foster shares his unique background in technology and his views on the balance between privacy and regulation in the financial sector.",
+  "topic_summary": "The episode features Congressman Bill Foster discussing his insights on CBDCs, privacy concerns, and recent legislative actions regarding cryptocurrency. Key topics include the implications of the CBDC Anti Surveillance Act and the need for controlled anonymity in digital currencies [t=465].",
+  "router_tags": [
+    "CBDC",
+    "Cryptocurrency",
+    "Privacy",
+    "Legislation",
+    "Congress"
+  ],
+  "aliases": [
+    "Cbdc Debate",
+    "CBDC Debate",
+    "Cbdc",
+    "CBDC"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BillFoster"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

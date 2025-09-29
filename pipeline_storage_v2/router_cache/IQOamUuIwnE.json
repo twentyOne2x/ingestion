@@ -1,0 +1,27 @@
+{
+  "description": "Nick from the Solana Foundation Dev Rel team discusses the latest updates in the Solana Changelog, including the merging of SIMD 7.5, updates on Epoch Rewards documentation, and the upcoming release schedule for version 2.0.",
+  "topic_summary": "Highlights include the merging of SIMD 7.5 for native curve support, updates on Epoch Rewards documentation, and the release schedule for Solana version 2.0, along with tooling improvements from the recent game jam.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Epoch Rewards",
+    "SIMD",
+    "Godot SDK",
+    "Game Jam"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jonas",
+    "@Anza",
+    "@Danny",
+    "@Tomukas1"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

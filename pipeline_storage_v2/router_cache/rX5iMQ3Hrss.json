@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on the impact of AI and crypto on the economy, exploring the potential for avoiding major recessions and the rapid changes in technology over the past decade.",
+  "topic_summary": "The conversation covers economic resilience, the influence of AI and crypto, and the transformative nature of technology, referencing Australia's long economic stability [t=35:57] and the exponential growth of digital companies [t=141:72].",
+  "router_tags": [
+    "AI",
+    "Crypto",
+    "Economy",
+    "Recession",
+    "Technology"
+  ],
+  "aliases": [
+    "Investing Frameworks For The Exponential Age",
+    "Crypto x AI Event",
+    "Delphi Digital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "@Raoul",
+    "@Netflix",
+    "@RealVision",
+    "@Facebook",
+    "@Amazon",
+    "@Google",
+    "@Kevin",
+    "@DavidMatin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

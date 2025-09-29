@@ -1,0 +1,23 @@
+{
+  "description": "Emmett discusses Ledger's mission to secure Web3 and the importance of self-custody. He highlights the challenges of Web2 technology in managing digital assets and presents Ledger's hardware wallet innovations, including Ledger Connect for safe interactions with smart contracts. He emphasizes Solana's integration with Ledger products.",
+  "topic_summary": "Ledger's security solutions for Web3, including hardware wallets and Ledger Connect for smart contract safety. Solana's support in Ledger's ecosystem is also highlighted.",
+  "router_tags": [
+    "Ledger",
+    "Web3",
+    "Solana",
+    "Security",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Ledger",
+    "ledger"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the evolution of crypto policy in the U.S. featuring Beau Hines from the White House and Kyle Samani at Solana Accelerate 2025.",
+  "topic_summary": "Beau Hines discusses the U.S. government's commitment to becoming the crypto capital of the world, highlighting recent executive orders and legislative initiatives aimed at fostering innovation in the digital assets space [t=88:28].",
+  "router_tags": [
+    "crypto",
+    "policy",
+    "Solana",
+    "digital assets",
+    "innovation",
+    "U.S. government"
+  ],
+  "aliases": [
+    "Solana Accelerate",
+    "Solana accelerate",
+    "solana accelerate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BeauHines",
+    "@KyleSamani",
+    "@realDonaldTrump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This week's Changelog discusses updates to the Solana program, including the introduction of SIMD164 for extending program size and owner checks to prevent unauthorized extensions. It also covers the runtime core BPF migration and improvements to the SVM API for easier development of projects like rollups.",
+  "topic_summary": "Updates on Solana's program changes, including SIMD164, owner checks, BPF migration, and SVM API enhancements [t=0:00-3:41].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "SVM",
+    "BPF",
+    "Development"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

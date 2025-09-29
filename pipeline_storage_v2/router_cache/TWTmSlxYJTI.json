@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the evolution of social media within the Solana ecosystem, featuring insights from various founders and creators.",
+  "topic_summary": "Panelists introduce themselves and their projects, highlighting innovations in social media and digital content on Solana. Colleen discusses ecosystem growth, Chris presents Dialect's unique messaging features, Nigel explains Vault Music's artist-centric model, Adam shares insights on Standard Crypto's investments, and Vixit introduces Solarplex Solar's marketplace for creators [t=3:44-263:43].",
+  "router_tags": [
+    "Solana",
+    "Social Media",
+    "Web3",
+    "Digital Content",
+    "Music",
+    "Ecosystem Growth"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@Chris",
+    "@NigelEchols",
+    "@Adam",
+    "@Vixit",
+    "@Colleen"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

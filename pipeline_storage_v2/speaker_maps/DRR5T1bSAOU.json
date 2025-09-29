@@ -1,0 +1,20 @@
+{
+  "video_id": "DRR5T1bSAOU",
+  "title": "2025-07-07_DRR5T1bSAOU_Why The End Of Memecoins Is Near w- KookCapitalLLC",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ubazane Zihabin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

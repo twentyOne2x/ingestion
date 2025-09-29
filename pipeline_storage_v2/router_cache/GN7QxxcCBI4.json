@@ -1,0 +1,25 @@
+{
+  "description": "Ilja Moisejevs and Richard Wu discuss the evolution of Tensor and the launch of Vector, a social trading app that combines trading with social media elements. They share insights on product development, user engagement, and the challenges faced in the crypto space.",
+  "topic_summary": "The conversation covers the history of Tensor, the transition to Vector, and the unique features of the social trading app, including its integration of on-chain trades and social feeds [t=249].",
+  "router_tags": [
+    "Social Trading",
+    "Crypto",
+    "Tensor",
+    "Vector",
+    "NFTs",
+    "Product Development"
+  ],
+  "aliases": [
+    "Ilja Moisejevs",
+    "Richard Wu",
+    "Ilmoy",
+    "Richard Demoy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

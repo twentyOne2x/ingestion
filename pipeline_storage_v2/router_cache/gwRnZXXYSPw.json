@@ -1,0 +1,22 @@
+{
+  "description": "The presentation discusses Metaplex, a decentralized protocol for digital assets on Solana, highlighting its growth in the NFT space, community building, and economic impact, including over $1 billion in creator revenue and 22 million NFTs minted. It also covers advancements in asset creation, royalty enforcement, and the future of NFT economies.",
+  "topic_summary": "Metaplex's role in the digital asset economy, its growth in the NFT sector, and future innovations in asset creation and community building on Solana [t=1:76].",
+  "router_tags": [
+    "Metaplex",
+    "NFTs",
+    "Solana",
+    "Digital Assets",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Metaplex",
+    "metaplex",
+    "METAPLEX"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

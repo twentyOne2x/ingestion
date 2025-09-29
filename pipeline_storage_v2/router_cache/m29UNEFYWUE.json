@@ -1,0 +1,30 @@
+{
+  "description": "Melvin from Raccoons discusses the development of the Jupiter routing algorithm, focusing on optimizing trade routes for users. The presentation covers the evolution of the platform, including the challenges faced and solutions implemented to enhance performance and user experience.",
+  "topic_summary": "The talk outlines the design and optimization of the Jupiter routing algorithm, detailing its journey from initial direct swaps to more complex multi-hop routes. Key metrics include $34 billion in volume and 96 million transactions since launch.",
+  "router_tags": [
+    "Jupiter",
+    "Routing Algorithm",
+    "Solana",
+    "DEx Aggregator",
+    "Trade Optimization"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Jupiter",
+    "Raccoons"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$USDC",
+    "@Melvin",
+    "@Pierre",
+    "@Meowin",
+    "$34 Billion",
+    "@Lozano",
+    "@Modaglia",
+    "@Tolly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

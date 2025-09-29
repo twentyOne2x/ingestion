@@ -1,0 +1,26 @@
+{
+  "video_id": "Of6gISbOsi0",
+  "title": "2022-11-07_Of6gISbOsi0_Breakpoint 2022: Why MEV Is Here to Stay",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Eugene Chen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Lucas Bruder",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

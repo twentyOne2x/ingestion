@@ -1,0 +1,20 @@
+{
+  "video_id": "suDn7U7ILJU",
+  "title": "2025-02-12_suDn7U7ILJU_I Met The Founder of Jupiter Exchange... (weremeow)",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Joe Stone",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

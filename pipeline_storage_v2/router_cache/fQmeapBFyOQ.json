@@ -1,0 +1,28 @@
+{
+  "description": "Panel discussion on the future of finance and blockchain featuring experts from Visa and Worldpay. The conversation covers misconceptions about Visa, the role of Worldpay in payment processing, and the evolving landscape of cryptocurrency adoption among large financial institutions.",
+  "topic_summary": "Discussion on the future of finance and blockchain with insights from Visa and Worldpay representatives. Key topics include the role of payment processors, the evolution of cryptocurrency sentiment in regulated institutions, and ongoing innovations in payment technologies [t=3:20].",
+  "router_tags": [
+    "finance",
+    "blockchain",
+    "cryptocurrency",
+    "payments",
+    "Visa",
+    "Worldpay"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Future of Finance",
+    "Solana Foundation",
+    "Visa",
+    "Worldpay"
+  ],
+  "canonical_entities": [
+    "$V",
+    "$W",
+    "@SolanaFndn",
+    "@Visa",
+    "@Worldpay"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

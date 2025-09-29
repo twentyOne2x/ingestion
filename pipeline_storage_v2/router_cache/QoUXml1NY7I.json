@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses the Dolev-Strong protocol, a solution to Byzantine broadcast, emphasizing its assumptions of a synchronous model and its implications for state machine replication. The protocol's reliance on message timing and its slower performance due to additional rounds for faulty nodes are highlighted. The speaker argues for its educational value in understanding consensus protocols.",
+  "topic_summary": "The Dolev-Strong protocol addresses Byzantine broadcast under synchronous conditions, focusing on the challenges posed by Byzantine senders and the importance of message consistency. It aims to help nodes identify Byzantine behavior and reach consensus despite potential faults.",
+  "router_tags": [
+    "Byzantine",
+    "Dolev-Strong Protocol",
+    "Consensus",
+    "Distributed Computing",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Dolev-Strong Protocol",
+    "Dolev Strong Protocol",
+    "Dolev Strong"
+  ],
+  "canonical_entities": [
+    "$BYZ",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

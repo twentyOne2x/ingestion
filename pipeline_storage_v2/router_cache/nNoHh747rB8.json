@@ -1,0 +1,31 @@
+{
+  "description": "Abhay Kumar discusses Helium, a decentralized wireless network aimed at providing connectivity to everyone. He highlights the issues with traditional telecom providers, such as high costs and connectivity problems, and presents Helium's mission to empower users to create a better network. Kumar explains the benefits of Helium Mobile, including free and low-cost phone plans that reward users for sharing their location. He shares growth metrics, including over 960,000 phones using the network and partnerships with major carriers like AT&T and Telefonica.",
+  "topic_summary": "Abhay Kumar presents Helium's decentralized network and mobile service, addressing connectivity challenges posed by traditional telecom companies and showcasing user-driven solutions. He emphasizes the network's rapid growth and partnerships.",
+  "router_tags": [
+    "Helium",
+    "Decentralized Network",
+    "Mobile Connectivity",
+    "Telecom",
+    "User Empowerment"
+  ],
+  "aliases": [
+    "Helium",
+    "helium",
+    "HELIUM",
+    "Helium Mobile",
+    "helium mobile"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$0",
+    "$15",
+    "$30",
+    "$50 Million",
+    "@TMobile",
+    "@Telefonica",
+    "@movistar"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

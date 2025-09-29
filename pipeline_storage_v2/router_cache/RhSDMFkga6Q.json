@@ -1,0 +1,24 @@
+{
+  "description": "Jason Lau discusses advancements in the Solana DeFi ecosystem, including the launch of OkXPay, a daily crypto app, and the introduction of XBTC, a wrapped Bitcoin on Solana.",
+  "topic_summary": "At [t=4:08], Jason Lau introduces the session, highlighting OkX's role in the Solana ecosystem. He discusses the growth of Solana users on the OKX wallet, the EcoHub for on-chain exploration, and the launch of XBTC, a multichain wrapped Bitcoin, at [t=239:64].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "OkX",
+    "XBTC",
+    "Crypto"
+  ],
+  "aliases": [
+    "Okx",
+    "OKX",
+    "solana",
+    "decentralized finance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Gianni"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

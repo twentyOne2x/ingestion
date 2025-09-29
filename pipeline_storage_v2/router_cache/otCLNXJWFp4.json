@@ -1,0 +1,22 @@
+{
+  "description": "Christopher Giancarlo discusses the Digital Dollar Project, focusing on the importance of a digital dollar and its implications for the future of currency and economic values.",
+  "topic_summary": "The session covers the Digital Dollar Project's goals, including future-proofing the dollar, preserving its reserve currency status, and maintaining the values associated with the dollar in a digital economy. Giancarlo emphasizes the significance of a strong US dollar and the role of stablecoins and central bank digital currencies (CBDCs) in the evolving financial landscape [t=5:68].",
+  "router_tags": [
+    "Digital Dollar",
+    "CBDC",
+    "Stablecoins",
+    "Cryptocurrency",
+    "Economic Policy"
+  ],
+  "aliases": [
+    "Digital Dollar Project",
+    "CBDC",
+    "Stablecoins"
+  ],
+  "canonical_entities": [
+    "$USD",
+    "@Giancarlo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

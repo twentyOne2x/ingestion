@@ -1,0 +1,21 @@
+{
+  "description": "This lecture provides a rigorous proof of the 33% impossibility result in blockchain consensus, explaining the conditions under which consistency and liveness can be achieved in a partially synchronous model.",
+  "topic_summary": "The lecture discusses the impossibility result related to Byzantine agreement protocols, emphasizing the critical threshold of 33% Byzantine nodes that can disrupt consensus. It covers the implications of this threshold in both asynchronous and synchronous phases, and the necessity of achieving agreement among honest nodes.",
+  "router_tags": [
+    "Blockchain",
+    "Byzantine Agreement",
+    "Consensus Protocols",
+    "Distributed Systems"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Proof of the 33% Impossibility Result",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

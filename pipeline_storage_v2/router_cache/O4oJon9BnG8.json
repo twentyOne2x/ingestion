@@ -1,0 +1,25 @@
+{
+  "description": "Rossen Yordanov discusses Azuro's role in prediction markets, addressing challenges and opportunities in the crypto landscape. He highlights the historical context of prediction markets, their inefficiencies, and the need for liquidity to enhance user experience. The conversation touches on the evolution of prediction markets and their potential future impact, particularly in relation to significant events like the US Presidential Election [t=413.31].",
+  "topic_summary": "Rossen Yordanov explores the evolution and future of prediction markets in crypto, focusing on Azuro's contributions and the importance of liquidity for market success. He reflects on past challenges and the current landscape, emphasizing the need for effective market-making to drive user engagement [t=376.97].",
+  "router_tags": [
+    "Prediction Markets",
+    "Azuro",
+    "Crypto",
+    "Liquidity",
+    "US Presidential Election",
+    "Market Making"
+  ],
+  "aliases": [
+    "Rossen Yordanov",
+    "Rosen Yordanov",
+    "Azuro",
+    "Azura"
+  ],
+  "canonical_entities": [
+    "$AZURO",
+    "@Delphi_Digital",
+    "@Vitalik"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

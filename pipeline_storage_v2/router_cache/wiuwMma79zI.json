@@ -1,0 +1,24 @@
+{
+  "description": "Garrett Harper and Aadil Mamujee discuss the enterprise adoption of stablecoins, focusing on Bridge's stablecoin APIs and their applications in financial services. They explore how these APIs facilitate easy transitions between fiat and stablecoins, enabling global access to financial systems and innovative products like virtual accounts and the Fuse Card.",
+  "topic_summary": "The discussion highlights the role of stablecoins in modern finance, particularly through Bridge's technology, which simplifies the integration of stablecoins into various financial products. Key points include stablecoin issuance, custodial wallets, and the development of APIs for fintech applications [t=27:92].",
+  "router_tags": [
+    "Stablecoins",
+    "Bridge",
+    "Fintech",
+    "APIs",
+    "Financial Services"
+  ],
+  "aliases": [
+    "Ship or Die 2025",
+    "Stablecoin Adoption",
+    "Bridge Technology"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Garrett",
+    "@Adil"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

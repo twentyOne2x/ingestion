@@ -1,0 +1,21 @@
+{
+  "description": "Welcome to Breakpoint 2022 Day 2 at Pateo de Gale. Attendees are encouraged to enjoy the workshops, food, and facilities available. The first workshop features Nico from Elusive discussing how to build a ZK app on Solana.",
+  "topic_summary": "Introduction to Breakpoint 2022 Day 2, overview of workshops, and welcome address [t=00:00].",
+  "router_tags": [
+    "Breakpoint 2022",
+    "Solana",
+    "workshops",
+    "ZK apps"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

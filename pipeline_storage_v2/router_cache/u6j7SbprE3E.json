@@ -1,0 +1,22 @@
+{
+  "description": "Lily Liu discusses the convergence of traditional finance and blockchain, emphasizing the importance of liquidity and asset distribution in financial markets. She highlights Solana's role in enabling regulated institutions to access public blockchains while ensuring compliance and security.",
+  "topic_summary": "Lily Liu from the Solana Foundation addresses the integration of traditional financial institutions with blockchain technology, focusing on asset distribution and liquidity in markets [t=55:00].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Finance",
+    "Liquidity",
+    "R3"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

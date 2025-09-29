@@ -1,0 +1,24 @@
+{
+  "description": "This tutorial discusses the fully permissionless setting with resource restrictions, highlighting its definition and implications for consensus protocols, particularly focusing on the differences between probabilistic and deterministic protocols. It also introduces complexities such as unknown player sets and Sybil attacks.",
+  "topic_summary": "The video defines the fully permissionless setting with resource restrictions and explores its impact on consensus protocols, emphasizing the necessity of resource restrictions for achieving consensus. It contrasts probabilistic protocols like Bitcoin with deterministic ones and discusses the challenges posed by unknown player sets and Sybil attacks [t=9:12].",
+  "router_tags": [
+    "Consensus",
+    "Permissionless",
+    "Blockchain",
+    "Protocols",
+    "Sybil Attacks"
+  ],
+  "aliases": [
+    "Permissionless Consensus Tutorial",
+    "permissionless consensus tutorial",
+    "Permissionless Consensus",
+    "permissionless consensus"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@karchandani",
+    "@wattenhofer"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

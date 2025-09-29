@@ -1,0 +1,27 @@
+{
+  "description": "Discussion featuring Sid from Maple Finance and David Cson from KeyRock on the intersection of traditional finance and decentralized finance, focusing on lending practices and misconceptions about decentralization.",
+  "topic_summary": "Sid and David share insights on their backgrounds in finance, the evolution of lending in crypto, and the challenges of integrating traditional finance concepts with decentralized systems. They discuss the shift from under-collateralized to more secure lending practices and the importance of transparency in on-chain transactions. [t=1:36] [t=20:00] [t=115:29]",
+  "router_tags": [
+    "DeFi",
+    "Lending",
+    "Traditional Finance",
+    "Crypto",
+    "Maple Finance",
+    "KeyRock"
+  ],
+  "aliases": [
+    "solanafndn",
+    "SolanaFndn",
+    "Maple Finance",
+    "Key Rock",
+    "David Cson"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sid",
+    "@DavidCson"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

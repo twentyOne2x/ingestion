@@ -1,0 +1,22 @@
+{
+  "description": "This video introduces section 23.1 of 'Algorithms Illuminated, Part 4', focusing on NP-hard problems and their implications. It discusses the concept of NP hardness, algorithmic techniques, and the significance of computational complexity theory. The video outlines a method to gather evidence for the intractability of problems like the traveling salesman problem (TSP) by reducing other problems to it, emphasizing the importance of Cook reductions.",
+  "topic_summary": "The video covers NP-hard problems, their algorithmic implications, and the foundational aspects of computational complexity theory. It details a strategy for demonstrating the intractability of the traveling salesman problem by showing that many problems can be reduced to it, thus supporting the hypothesis that no polynomial time algorithm exists for the TSP.",
+  "router_tags": [
+    "Algorithms",
+    "Computational Complexity",
+    "NP-Hard Problems",
+    "Algorithm Design"
+  ],
+  "aliases": [
+    "Algorithms Illuminated",
+    "NP Hardness",
+    "Computational Complexity Theory"
+  ],
+  "canonical_entities": [
+    "$TSP",
+    "@RyanODonnell",
+    "@CarnegieMellon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

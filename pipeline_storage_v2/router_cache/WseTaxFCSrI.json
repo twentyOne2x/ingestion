@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion featuring Dan Calloway and Chuck Morton on whiskey investment and production. They explore the current whiskey market, the benefits of tokenizing barrels, and the innovative practices at Bardstown Bourbon Company, including custom distillation and blending techniques.",
+  "topic_summary": "The panel discusses whiskey as an investment, the current market dynamics, and innovative production methods at Bardstown Bourbon Company. Key points include the advantages of a buyer's market for whiskey barrels and the creative process of blending whiskey from various barrels [t=65:76].",
+  "router_tags": [
+    "whiskey",
+    "investment",
+    "distillation",
+    "Bardstown Bourbon",
+    "Lofted Spirits",
+    "North American Whiskey Fund"
+  ],
+  "aliases": [
+    "Dan Calloway",
+    "Chuck Morton",
+    "Lofted Spirits",
+    "Bardstown Bourbon Company",
+    "North American Whiskey Fund"
+  ],
+  "canonical_entities": [
+    "$BARD",
+    "@LoftedSpirits",
+    "@WhiskeyAdvisors"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Kellian Vitre discusses developer tooling for indexing Solana programs using Carbon, a modular Rust framework. The presentation covers the components of indexing, including data sourcing, decoding, and processing, emphasizing the ease of integrating various data sources and the importance of reducing code redundancy. A demo showcases a real-time SPL token program account index with minimal code, highlighting the use of Helios Laser Stream as a data source.",
+  "topic_summary": "The talk focuses on indexing Solana programs with Carbon, detailing its framework for developers to efficiently manage data sources, decoders, and processors without repetitive coding. A practical demo illustrates the implementation of an SPL token program index.",
+  "router_tags": [
+    "Solana",
+    "Carbon",
+    "Indexing",
+    "Developer Tools",
+    "Helios"
+  ],
+  "aliases": [
+    "Carbon",
+    "carbon",
+    "SOLANA",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Helios"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

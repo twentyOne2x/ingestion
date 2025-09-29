@@ -1,0 +1,23 @@
+{
+  "description": "Lecture discussing the implications of EIP 1559, focusing on the burning of base fee revenues and its effects on miners and Ethereum holders.",
+  "topic_summary": "The lecture covers the burning of base fee revenues in EIP 1559, its game theoretic rationale, and its impact on miners and Ethereum holders. It explains how burning fees reduces inflation and benefits currency holders by potentially increasing the value of remaining coins [t=0:40].",
+  "router_tags": [
+    "EIP 1559",
+    "Ethereum",
+    "blockchain",
+    "transaction fees",
+    "mining"
+  ],
+  "aliases": [
+    "Eip 1559",
+    "eip 1559",
+    "Ethereum",
+    "eth"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

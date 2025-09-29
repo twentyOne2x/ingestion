@@ -1,0 +1,24 @@
+{
+  "description": "This lecture introduces vocabulary related to consensus protocols, focusing on state machine replication (SMR) and its relevance in blockchain technology. It discusses the evolution of the concept from the 1980s to its application in modern decentralized systems.",
+  "topic_summary": "The lecture covers the definition and significance of state machine replication (SMR) in blockchain contexts, explaining how it relates to consensus protocols and the importance of uptime and decentralization in distributed systems [t=0:64-340:41].",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "state machine replication",
+    "decentralization",
+    "protocols"
+  ],
+  "aliases": [
+    "State Machine Replication",
+    "SMR",
+    "Consensus Protocols",
+    "Blockchain Consensus"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "yKXWu3QZA4w",
+  "title": "2025-05-23_yKXWu3QZA4w_Ship or Die 2025: Fireside Chat: Senator Kirsten Gillibrand (Kirsten Gillibrand, Colin McLaren)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Senator Hagerty",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

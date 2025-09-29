@@ -1,0 +1,26 @@
+{
+  "description": "Cyrus Fidel and Nicholas discuss Swissborg's evolution since its ICO, highlighting its wealth management app and integration with Solana. They explain the seamless listing process for tokens on Swissborg and introduce the Helium Token, emphasizing its decentralized 5G network and investment opportunities.",
+  "topic_summary": "Overview of Swissborg's growth, its app for wealth management, and the listing of Helium Token, showcasing the integration with Solana and the benefits for investors [t=249.72].",
+  "router_tags": [
+    "Swissborg",
+    "Helium",
+    "Solana",
+    "Crypto",
+    "Wealth Management"
+  ],
+  "aliases": [
+    "Swissborg",
+    "swissborg",
+    "Helium",
+    "helium",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$HELIUM"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

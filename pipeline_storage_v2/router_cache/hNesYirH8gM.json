@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the exponential time hypothesis (ETH) and its implications for NP-hard problems, particularly focusing on the 3SAT problem and its relationship to algorithm efficiency.",
+  "topic_summary": "The video covers the exponential time hypothesis, asserting that every algorithm solving 3SAT has a worst-case running time of at least C^n, where C > 1. It contrasts ETH with the P vs NP conjecture and introduces the strong exponential time hypothesis (SETH), which suggests that no algorithm can solve certain NP-hard problems faster than exhaustive search as k increases.",
+  "router_tags": [
+    "Algorithms",
+    "NP-Hard Problems",
+    "Exponential Time Hypothesis",
+    "3SAT",
+    "Complexity Theory"
+  ],
+  "aliases": [
+    "Exponential Time Hypothesis",
+    "ETH",
+    "Strong Exponential Time Hypothesis",
+    "SETH"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$3SAT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

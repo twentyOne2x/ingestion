@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana community validator updates, including mainnet and testnet status, and a recap of the validator educational workshop.",
+  "topic_summary": "Validator updates and educational workshop recap [t=2:88-6:40]. Mainnet beta update 1.13.7 recommended [t=31:69-50:09]. Testnet upgrade and features rollout plan discussed [t=110:50-139:00]. Upcoming workshop planned for May 31 [t=251:78-264:19].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Web3",
+    "Community"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Updates",
+    "Validator Educational Workshop"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

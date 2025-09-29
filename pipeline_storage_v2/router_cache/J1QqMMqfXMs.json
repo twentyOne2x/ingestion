@@ -1,0 +1,25 @@
+{
+  "description": "Multichain Advisors discusses their role in supporting Web3 projects, focusing on token generation events and assisting technical founders with non-technical aspects. They highlight their experience with over 60 projects amidst the challenges in the crypto space.",
+  "topic_summary": "Multichain Advisors aims to be the Bain McKenzie BCG of crypto, helping builders in the Solana ecosystem with various projects like Wormhole Pit and Zeus. They offer support for technical founders and engage with the community through Twitter spaces every Wednesday [t=32:58].",
+  "router_tags": [
+    "web3",
+    "solana",
+    "crypto",
+    "consulting",
+    "token generation"
+  ],
+  "aliases": [
+    "Multichain Advisors",
+    "multichainadvisors",
+    "Crypto8.0",
+    "crypto8.0"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@multichainadvisors",
+    "@crypto8.0"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

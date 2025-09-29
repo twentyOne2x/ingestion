@@ -1,0 +1,21 @@
+{
+  "description": "Dave, CEO of Etherfuse, discusses the potential of bonds on the blockchain and the need for mass adoption. He draws parallels between historical financial practices and current blockchain challenges, emphasizing the importance of learning from past mistakes to foster growth in the ecosystem.",
+  "topic_summary": "In this talk, Dave explores the concept of integrating bonds into blockchain technology, referencing historical examples to illustrate the need for innovative solutions to achieve mass adoption. He highlights the instability in current systems and proposes the introduction of stable bonds as a pathway forward [t=284.96].",
+  "router_tags": [
+    "Blockchain",
+    "Bonds",
+    "Mass Adoption",
+    "Etherfuse",
+    "Financial History"
+  ],
+  "aliases": [
+    "Dave",
+    "CEO of Etherfuse",
+    "Etherfuse CEO"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "VHY5MK0CXp4",
+  "title": "2025-08-20_VHY5MK0CXp4_Whop CEO: Online Businesses, Course Selling, Building Whop and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Alice Up",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

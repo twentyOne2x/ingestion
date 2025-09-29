@@ -1,0 +1,24 @@
+{
+  "description": "Jacob and Andrew discuss transaction scheduling in Solana's Banking Stage, explaining its role in processing transactions and filtering out those not included in blocks. They detail the flow from networking to Sigverify and into the Banking Stage, where transactions are prioritized and managed based on the leader schedule.",
+  "topic_summary": "Overview of Solana's Banking Stage, focusing on transaction scheduling and processing. Discussion includes the roles of Sigverify and the management of transaction threads, emphasizing the importance of prioritization and leader scheduling [t=3:92-219:89].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Transaction Scheduling",
+    "Banking Stage",
+    "Sigverify"
+  ],
+  "aliases": [
+    "Solana's Scheduler",
+    "Solana Scheduler",
+    "solana scheduler"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@Andrew"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

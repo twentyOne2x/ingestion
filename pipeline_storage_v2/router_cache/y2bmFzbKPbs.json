@@ -1,0 +1,24 @@
+{
+  "description": "Erik Voorhees discusses the intersection of human freedom, crypto, and AI at the Crypto x AI Event. He emphasizes the importance of building decentralized tools to counteract government overreach and censorship.",
+  "topic_summary": "The conversation explores whether AI can be a friend or foe to individual freedom, with Voorhees advocating for decentralized, uncensored AI solutions like Venice to ensure personal rights are upheld [t=61:50].",
+  "router_tags": [
+    "Crypto",
+    "AI",
+    "Human Freedom",
+    "Decentralization",
+    "Censorship"
+  ],
+  "aliases": [
+    "Erik Voorhees",
+    "Eric Voorhees",
+    "Voorhees"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Delphi_Digital",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

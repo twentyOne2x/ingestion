@@ -1,0 +1,28 @@
+{
+  "description": "Panel discussion on DePIN (Decentralized Physical Infrastructure Networks) featuring Shion from Multicoin, Paul from Teleport, and Noah from Helium Foundation. They explore the mechanics of DePIN networks and their unique advantages on the Solana blockchain.",
+  "topic_summary": "The panel discusses the potential of DePIN networks, focusing on the Rideshare Protocol by Teleport and the Helium network's approach to decentralized internet coverage. Key points include market competition, network rewards, and the challenges of building coverage.",
+  "router_tags": [
+    "DePIN",
+    "Solana",
+    "Rideshare",
+    "Helium",
+    "Decentralization",
+    "Blockchain"
+  ],
+  "aliases": [
+    "DePIN Panel",
+    "Breakpoint 2023",
+    "Teleport",
+    "Helium Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Shion",
+    "@Paul",
+    "@NoahPrince",
+    "@Helium"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

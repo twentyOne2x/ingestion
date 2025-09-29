@@ -1,0 +1,22 @@
+{
+  "description": "This lecture discusses congestion in decentralized markets and the role of signaling in managing transaction overload. It explores how signals can indicate interest and qualifications in various contexts, including college admissions and job applications.",
+  "topic_summary": "The lecture covers the concept of market congestion, the necessity of signaling to manage transaction options, and examples from college admissions and economics job markets. It also addresses the challenges faced by dating platforms due to message overload.",
+  "router_tags": [
+    "Congestion",
+    "Signaling",
+    "Market Dynamics",
+    "Decentralized Markets",
+    "Economics",
+    "Computer Science"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Congestion and Signaling",
+    "Tim Roughgarden Lectures"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "John, the tech lead on the NFT team at Solana Foundation, discusses the challenges and solutions for minting NFTs at scale, emphasizing the need for affordable options for enterprises and users. He introduces the concept of compressed NFTs, which significantly reduce the cost of minting, allowing for millions of NFTs to be created affordably.",
+  "topic_summary": "At [t=4:40], John introduces the session on minting NFTs on Solana. He highlights the importance of scalability for games and enterprises, discussing the current limitations and the vision for a billion users with self-custody. The introduction of compressed NFTs at [t=280:00] is presented as a game changer, allowing for massive NFT minting at low costs.",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Blockchain",
+    "Metaplex",
+    "Compressed NFTs"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "SolanaFndn",
+    "NFT Team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

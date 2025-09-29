@@ -1,0 +1,25 @@
+{
+  "description": "Breck Stodghill and Clay Robbins discuss fundraising in the crypto space, emphasizing the importance of capital market fit and aligning with investors who share the founder's vision. They explore the evolution of venture capital and its role in supporting innovative technologies, particularly in the Solana ecosystem. The conversation covers strategies for securing funding, including the significance of angel investors and the accelerator process.",
+  "topic_summary": "The discussion focuses on fundraising strategies in the crypto industry, the historical context of venture capital, and the importance of aligning with the right investors. Key points include the iterative nature of raising funds and the need for founders to seek capital that supports their long-term vision [t=0:64-0:386].",
+  "router_tags": [
+    "fundraising",
+    "venture capital",
+    "crypto",
+    "Solana",
+    "accelerator",
+    "investment strategies"
+  ],
+  "aliases": [
+    "Ship Or Die",
+    "Accelerate 2025",
+    "Clay Robbins",
+    "Breck Stodghill"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

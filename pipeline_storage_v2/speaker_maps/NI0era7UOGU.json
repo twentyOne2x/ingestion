@@ -1,0 +1,20 @@
+{
+  "video_id": "NI0era7UOGU",
+  "title": "2023-10-31_NI0era7UOGU_Breakpoint 2023: The Pot of Money at the end of the Rainbow: The VC Perspective",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "A": {
+      "name": "Frank Chaparro",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

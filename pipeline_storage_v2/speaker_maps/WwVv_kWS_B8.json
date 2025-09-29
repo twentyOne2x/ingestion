@@ -1,0 +1,26 @@
+{
+  "video_id": "WwVv_kWS_B8",
+  "title": "2024-09-20_WwVv_kWS_B8_Breakpoint 2024: Raj & Balaji Fireside: The Solana Network State (Raj Gokal, Balaji Srinivasan)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Zuck Bezos",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Brian Johnson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Andrew Tate discusses his views on respect, the crypto community, and societal issues while addressing misconceptions about himself. He emphasizes the importance of respect in interactions and critiques the behavior of some streamers [t=0:48].",
+  "topic_summary": "In this podcast episode, Andrew Tate shares insights on crypto, societal respect, and his personal experiences, highlighting the need for better behavior in online communities [t=14:80].",
+  "router_tags": [
+    "Andrew Tate",
+    "Crypto",
+    "Respect",
+    "Society",
+    "Podcast"
+  ],
+  "aliases": [
+    "andrew tate",
+    "Andrew Tate",
+    "Tate"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$3 Million",
+    "$20 Million",
+    "$50 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

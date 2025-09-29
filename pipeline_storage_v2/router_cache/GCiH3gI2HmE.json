@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana Validator updates, including Testnet 1.15.2 rollout, high disk IO issues, and Firedancer updates.",
+  "topic_summary": "The meeting covers updates on Solana validators, specifically the rollout of Testnet 1.15.2 and the ongoing issues with high disk IO affecting version 1.14, along with insights on Firedancer developments. Key points include recommendations for monitoring nodes and upcoming changes to improve performance [t=1:52].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Testnet",
+    "Firedancer",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana validator discussion",
+    "Solana Validator Community Discussion",
+    "solana validator updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

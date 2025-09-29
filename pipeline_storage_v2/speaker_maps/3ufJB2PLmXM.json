@@ -1,0 +1,20 @@
+{
+  "video_id": "3ufJB2PLmXM",
+  "title": "2025-07-16_3ufJB2PLmXM_Labib Yasir: Internet Capital Markets, Launching w- BelieveApp and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Darcy Coolican",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

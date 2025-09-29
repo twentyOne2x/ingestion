@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the limitations of assuming an ideal randomness beacon in blockchain protocols and explores alternative methods for generating pseudo-randomness, particularly in proof of stake systems. It highlights the importance of secrecy in random sampling and introduces verifiable random functions (VRFs) as a solution, while also addressing the challenges of relying on third-party randomness.",
+  "topic_summary": "The lecture focuses on the concept of randomness in blockchain protocols, specifically the transition from ideal randomness beacons to practical implementations using pseudo-randomness. It covers the implications of using VRFs and the need for secure randomness generation in proof of stake protocols, while also hinting at future developments involving verifiable delay functions (VDFs) [t=369.38].",
+  "router_tags": [
+    "blockchain",
+    "randomness",
+    "proof of stake",
+    "verifiable random functions",
+    "pseudo-randomness"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Nakamoto",
+    "@Brock"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

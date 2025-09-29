@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on improving Solana's bandwidth and reducing latency, comparing it to city infrastructure. Highlights advancements in technology that allow for faster blockchain operations and the importance of optimized systems in attracting talent and capital.",
+  "topic_summary": "Exploration of bandwidth and latency improvements in Solana, likening the network to a well-structured city with efficient infrastructure. Emphasizes the ongoing engineering efforts to enhance performance and maintain Solana's position as a leading network.",
+  "router_tags": [
+    "Solana",
+    "bandwidth",
+    "latency",
+    "blockchain",
+    "infrastructure"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

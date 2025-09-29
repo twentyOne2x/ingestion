@@ -1,0 +1,22 @@
+{
+  "description": "This lecture explains the structure and validation of Bitcoin transactions, the concept of the ledger, and how blocks are formed and linked in the blockchain. It covers the roles of senders, receivers, transaction fees, and the cryptographic validation process. The lecture also discusses the unique decentralized nature of Bitcoin, including how transactions are grouped into blocks and how these blocks reference one another to form a chain.",
+  "topic_summary": "The lecture provides an overview of Bitcoin transactions, the ledger system, and the blockchain structure, detailing how transactions are validated and grouped into blocks, which are then linked in a chain format. It highlights the absence of a centralized authority in Bitcoin's operation.",
+  "router_tags": [
+    "Bitcoin",
+    "Blockchain",
+    "Cryptocurrency",
+    "Transactions",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Incentives in Computer Science",
+    "Lecture 6.2",
+    "Bitcoin Blockchain Lecture"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

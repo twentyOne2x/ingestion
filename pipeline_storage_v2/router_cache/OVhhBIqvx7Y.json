@@ -1,0 +1,24 @@
+{
+  "description": "Lecture discussing the transition from proof of work to proof of stake in blockchain protocols, focusing on the advantages of proof of stake and the ongoing debate between the two methods.",
+  "topic_summary": "The lecture outlines the historical context and current trends in blockchain technology, particularly the shift from proof of work to proof of stake, highlighting the advantages of proof of stake, including energy efficiency and direct observability of stake compared to hash rates in proof of work [t=0:32-0:39].",
+  "router_tags": [
+    "blockchain",
+    "proof of stake",
+    "proof of work",
+    "energy consumption",
+    "Sybil resistance"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Lecture 12.4",
+    "Why Proof-of-Stake"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@timroughgardenlectures1861",
+    "@Nakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

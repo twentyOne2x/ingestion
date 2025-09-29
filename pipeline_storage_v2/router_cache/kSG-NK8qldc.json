@@ -1,0 +1,25 @@
+{
+  "description": "The talk reflects on the impact of FTX's collapse on the crypto industry and the decision to continue development despite challenges. It introduces the Backpack Exchange, a wallet and exchange solution that integrates self-custody and regulated financial services without compromising user privacy.",
+  "topic_summary": "The presentation discusses the aftermath of FTX's failure, the resilience of the Solana community, and the introduction of the Backpack Exchange, which combines wallet functionalities with exchange capabilities while ensuring privacy and security [t=4:00 - t=372:96].",
+  "router_tags": [
+    "Solana",
+    "Backpack",
+    "FTX",
+    "crypto",
+    "blockchain",
+    "financial services"
+  ],
+  "aliases": [
+    "Backpack",
+    "backpack",
+    "BackPack",
+    "Back Pack"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

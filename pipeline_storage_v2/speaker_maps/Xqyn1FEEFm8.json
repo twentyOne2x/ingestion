@@ -1,0 +1,20 @@
+{
+  "video_id": "Xqyn1FEEFm8",
+  "title": "2024-09-20_Xqyn1FEEFm8_Breakpoint 2024: Product Keynote: Efficient Solana Programs (Cavey Cool)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Kevin Cole",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

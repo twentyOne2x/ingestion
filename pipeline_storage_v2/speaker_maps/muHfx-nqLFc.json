@@ -1,0 +1,20 @@
+{
+  "video_id": "muHfx-nqLFc",
+  "title": "2016-03-01_muHfx-nqLFc_A Second Course in Algorithms (Lecture 16: The Traveling Salesman Problem)",
+  "channel_name": "@timroughgardenlectures1861",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@timroughgardenlectures1861",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "George Danzig",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

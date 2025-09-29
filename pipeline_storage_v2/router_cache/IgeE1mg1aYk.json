@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial guides users on submitting a game to the Solana Mobile Dapp Store, using Solana 2048 as an example. It covers necessary installations, configurations, and publishing steps, including enabling Corepack, installing Android SDK tools, and preparing app assets like icons and screenshots. [t=0:32] [t=1:08] [t=7:52] [t=14:32] [t=231:95] [t=262:26]",
+  "topic_summary": "Learn how to submit your Dapp to the Solana Mobile Dapp Store, including setup and configuration steps.",
+  "router_tags": [
+    "Solana",
+    "Dapp",
+    "Mobile",
+    "Tutorial",
+    "Game Development"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the Solana community validator updates, including the successful adoption of version 1.1417 by 96% of stake and upcoming educational workshops on validator key management. Emphasis on the improved startup time in version 1.14 and the importance of preserving local state for better performance.",
+  "topic_summary": "Validator updates, educational workshops, 1.1417 adoption success, performance improvements in 1.14, and discussions on compact vote state changes.",
+  "router_tags": [
+    "Solana",
+    "validators",
+    "blockchain",
+    "community",
+    "updates"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "solana community validator discussion",
+    "Solana Validator Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

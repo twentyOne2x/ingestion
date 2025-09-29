@@ -1,0 +1,26 @@
+{
+  "description": "Victor Jung and Andrew Durgee discuss the evolution of private markets and the democratization of investment opportunities at the Accelerate 2025 conference. They highlight the challenges faced by retail investors in accessing private equity and the innovative solutions being developed to allow broader participation in these markets.",
+  "topic_summary": "The conversation covers the background of Hamilton Lane, the importance of democratizing access to private markets, and the regulatory barriers that prevent retail investors from participating in pre-IPO investments. They also discuss their collaborative efforts over the past 18 months to create a registered private markets fund through Republic.",
+  "router_tags": [
+    "Private Markets",
+    "Investment",
+    "Democratization",
+    "Hamilton Lane",
+    "Republic",
+    "Finance"
+  ],
+  "aliases": [
+    "Victor Jung",
+    "Andrew Durgee",
+    "Hamilton Lane",
+    "Republic"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$500",
+    "@elonmusk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

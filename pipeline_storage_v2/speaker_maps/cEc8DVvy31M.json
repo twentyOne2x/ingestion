@@ -1,0 +1,20 @@
+{
+  "video_id": "cEc8DVvy31M",
+  "title": "2024-10-09_cEc8DVvy31M_Solana Changelog Oct 9 - Program Runtime ABI v2, Updating Rust to 1.81.0, Agave v2.0 transition",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "White Seal",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

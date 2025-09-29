@@ -1,0 +1,21 @@
+{
+  "description": "Ansem discusses strategies for selling meme coins for maximum profit, emphasizing the importance of timing and market trends. He explains how to identify price discovery phases and the significance of parabolic trends in charts.",
+  "topic_summary": "Learn how to effectively sell meme coins by understanding market trends and price discovery phases. Ansem shares insights on timing and chart analysis to maximize profits [t=0:16].",
+  "router_tags": [
+    "MemeCoins",
+    "CryptoTrading",
+    "ProfitStrategies",
+    "MarketAnalysis"
+  ],
+  "aliases": [
+    "Ansem",
+    "ansem",
+    "ANSEM"
+  ],
+  "canonical_entities": [
+    "@notthreadguy",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

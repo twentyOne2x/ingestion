@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on user acquisition strategies for Web3 games, featuring insights from industry leaders on community engagement and innovative gameplay mechanics.",
+  "topic_summary": "Discussion on how community strength impacts user acquisition in Web3 gaming, with a focus on unique gameplay experiences and onboarding methods [t=176.98].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "User Acquisition",
+    "Community Engagement",
+    "NFTs"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Breakpoint2023",
+    "Breakpoint2023: How Should Web3 Games Acquire Users"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Tiffany",
+    "@Addie",
+    "@Simon",
+    "@Mason",
+    "@Lucas",
+    "@MixmobIo",
+    "@RallyIo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Simon discusses the development of Solana ID, an identity protocol for the Solana ecosystem aimed at enhancing user engagement and reducing spam and bot activity. The protocol targets DAPPS and aims to provide value to users by improving data utilization and wallet interactions.",
+  "topic_summary": "In this video, Simon outlines the goals of Solana ID, emphasizing its role in enhancing user identity within the Solana ecosystem and its benefits for DAPPS targeting the right users. Key points include reducing spam and improving user retention [t=6:64] [t=30:65].",
+  "router_tags": [
+    "Solana",
+    "identity",
+    "DAPPS",
+    "blockchain",
+    "user engagement"
+  ],
+  "aliases": [
+    "Solana ID",
+    "solana id",
+    "SOLANA ID"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

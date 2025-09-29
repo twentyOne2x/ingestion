@@ -1,0 +1,26 @@
+{
+  "description": "Rebecca Rettig, Summer Mersinger, and Giovanni Vicioso discuss the significance of futures trading on the CME for cryptocurrencies, particularly Solana, and the regulatory landscape affecting the crypto market. They highlight the recent launch of Sol futures and its implications for institutional and retail participation in the crypto ecosystem.",
+  "topic_summary": "The conversation focuses on the launch of Solana futures on the CME and its impact on the cryptocurrency market, regulatory clarity, and the evolution of crypto products since 2022. Key advancements in the CFTC's jurisdiction and the future of perpetual products are also discussed [t=2:40 - t=374:95].",
+  "router_tags": [
+    "Crypto",
+    "Futures",
+    "CME",
+    "Solana",
+    "Regulation",
+    "CFTC"
+  ],
+  "aliases": [
+    "Rebecca Rettig",
+    "Summer Mersinger",
+    "Giovanni Vicioso",
+    "Rebecca Reddig",
+    "CFTC Commissioner"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@CFTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

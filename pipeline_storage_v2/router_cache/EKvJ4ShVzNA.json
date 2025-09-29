@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Solana Bootcamp, participants learn to build their first program using Solana Anchor. The session includes creating a game where users can deploy their minted pirate ships, interact with SBL tokens, and set up a local development environment. The program emphasizes the benefits of Solana's fast transaction speeds and low fees, enabling real-time multiplayer gaming experiences.",
+  "topic_summary": "The session covers the basics of Solana programming, including writing an Anchor program, deploying NFTs in a game, and understanding the blockchain's transaction mechanics. Participants will also learn about integrating SBL tokens and the potential for game development on Solana.",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Blockchain",
+    "Game Development",
+    "NFTs",
+    "SPL Tokens"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Solana Bootcamp",
+    "SOLANA BOOTCAMP"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

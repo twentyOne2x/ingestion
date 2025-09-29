@@ -1,0 +1,24 @@
+{
+  "description": "Andrea from the Solana Foundation introduces the concept of Retroactive Public Goods Funding (RPGF), aiming to reward past contributions to open-source projects within the Solana ecosystem. Daljeet from OpenBlock Labs explains the mechanics of RPGF, emphasizing the importance of incentivizing public goods and the criteria for project eligibility.",
+  "topic_summary": "The discussion revolves around RPGF as a method to fund open-source projects retrospectively, highlighting its potential to sustain public goods in the Solana ecosystem. The speakers outline the process of nominating projects and the role of the Solana Foundation in funding.",
+  "router_tags": [
+    "Solana",
+    "Public Goods",
+    "Funding",
+    "Open Source",
+    "RPGF"
+  ],
+  "aliases": [
+    "Retroactive Public Goods Funding",
+    "RPGF",
+    "Solana Foundation",
+    "OpenBlock Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Daljeet"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

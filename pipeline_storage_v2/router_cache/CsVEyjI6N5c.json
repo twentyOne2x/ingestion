@@ -1,0 +1,26 @@
+{
+  "description": "Nico Cary and Tom Rowbotham discuss the partnership between Path Century and the Oakland Ballers, focusing on revolutionizing loyalty and membership through blockchain technology. They explain how their system allows fans to earn and redeem Bulabucks via a seamless process integrated with Apple and Google Wallets, enhancing the fan experience at games.",
+  "topic_summary": "The presentation covers the integration of blockchain technology in loyalty programs for sports teams, specifically the Oakland Ballers, highlighting the ease of use and benefits for fans [t=0:48-297:23].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Loyalty Programs",
+    "Sports",
+    "Fan Engagement"
+  ],
+  "aliases": [
+    "Ship or Die Accelerate 2025",
+    "Crypto and Commerce",
+    "Nico Cary",
+    "Tom Rowbotham",
+    "PassEntry"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@OaklandBallers",
+    "@PathCentury"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

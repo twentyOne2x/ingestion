@@ -1,0 +1,24 @@
+{
+  "description": "This lecture discusses proof of stake and its role in achieving permissionless consensus, emphasizing the importance of provable guarantees like consistency and liveness. It reviews challenges in permissionless consensus compared to permissioned protocols, highlighting the need for effective vote counting and leader selection in decentralized environments.",
+  "topic_summary": "The lecture covers the fundamentals of permissionless consensus, contrasting it with permissioned consensus protocols. It outlines the challenges faced in implementing consensus mechanisms like BFT and longest chain in a permissionless setting, particularly focusing on vote counting and leader selection issues.",
+  "router_tags": [
+    "blockchain",
+    "consensus",
+    "proof of stake",
+    "permissionless",
+    "decentralization"
+  ],
+  "aliases": [
+    "Foundations of Blockchains",
+    "Blockchains Lecture",
+    "Consensus Protocols"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Nakamoto",
+    "@timroughgardenlectures1861"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

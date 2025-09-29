@@ -1,0 +1,20 @@
+{
+  "video_id": "UgjuUf3p32E",
+  "title": "2024-05-30_UgjuUf3p32E_Solana Changelog May 29 - Trident, Unruggable, and SyscallGetSysvar",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Sam Kim",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

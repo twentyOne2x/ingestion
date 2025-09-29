@@ -1,0 +1,29 @@
+{
+  "description": "Dee Goens discusses Tokenized Social, explaining how social networks can utilize tokens as assets for open market participation. He highlights the evolution of meme coins and their role in creating capital markets around creativity, emphasizing the need for open markets to empower creators and shift revenue from corporations to individuals.",
+  "topic_summary": "In this talk, Dee Goens introduces the concept of Tokenized Social, where social media posts and profiles are represented as tokens. He explores the implications of open markets for creators and critiques traditional social networks for their revenue models that favor corporations over individual creators. [t=0:16] [t=2:00] [t=164:09]",
+  "router_tags": [
+    "Tokenized Social",
+    "Zora",
+    "Creator Economy",
+    "Open Markets",
+    "Meme Coins"
+  ],
+  "aliases": [
+    "Dee Goens",
+    "dee goens",
+    "Zora",
+    "zora"
+  ],
+  "canonical_entities": [
+    "$164 Billion",
+    "@SolanaFndn",
+    "@hayden",
+    "@MrBeast",
+    "@Gabriel",
+    "@Bangers",
+    "$SOL",
+    "@Harvard"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

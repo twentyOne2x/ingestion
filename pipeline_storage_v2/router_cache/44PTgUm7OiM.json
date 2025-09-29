@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the transfer hook feature in the Solana token extensions program, detailing how to implement it for added functionality in token transfers.",
+  "topic_summary": "The transfer hook allows developers to add custom functionality to token transfers on Solana, such as enforcing NFT royalties or limiting transfer amounts [t=0:08].",
+  "router_tags": [
+    "Solana",
+    "Token Extensions",
+    "NFT",
+    "Transfer Hook"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

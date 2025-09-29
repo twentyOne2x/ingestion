@@ -1,0 +1,32 @@
+{
+  "description": "Hugh Rhodes discusses data ownership and the unique capabilities of Solana in empowering consumer data sovereignty. He emphasizes the importance of making people feel great about owning their data and compares data to oil, highlighting the challenges of extracting value from it. He also touches on the historical context of data rights and the impact of regulations like GDPR.",
+  "topic_summary": "The talk explores the concept of data ownership, the role of Solana in enabling consumer data sovereignty, and the economic value of data compared to traditional assets like oil. Rhodes argues that the true value of data emerges when it is transformed into offers and products that benefit consumers.",
+  "router_tags": [
+    "Data Ownership",
+    "Consumer Sovereignty",
+    "Solana",
+    "GDPR",
+    "Data Value"
+  ],
+  "aliases": [
+    "Hugh Rhodes",
+    "hugh rhodes",
+    "Hugh R.",
+    "hugh r."
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Google",
+    "@Facebook",
+    "@Experian",
+    "@Lifelock",
+    "@CreditKarma",
+    "@Netflix",
+    "@Spotify",
+    "@Strava",
+    "@Foursquare"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

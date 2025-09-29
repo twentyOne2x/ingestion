@@ -1,0 +1,20 @@
+{
+  "video_id": "Z3Yi4L_k4mQ",
+  "title": "2025-07-04_Z3Yi4L_k4mQ_Why Your Time Is The Most Valuable Currency w- 0xkawz",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Mishoda Petrovison",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

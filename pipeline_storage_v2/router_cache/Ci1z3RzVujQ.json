@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the potential of crypto to address real-world problems, emphasizing the need for product market fit and the importance of building solid structures on blockchain technology.",
+  "topic_summary": "The talk explores the current state of crypto, its capabilities, and the necessary steps to integrate it into everyday life, focusing on product market fit and the development of viable applications [t=63:88].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Product Market Fit",
+    "Web3",
+    "Human-Centered Design"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Human-Centered Design for Crypto",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Yutaro",
+    "@Ori",
+    "$ETH",
+    "$BTC",
+    "$DAI",
+    "$50",
+    "$20"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

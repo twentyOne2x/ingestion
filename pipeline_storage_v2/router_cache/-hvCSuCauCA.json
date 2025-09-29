@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to speed up your Solana transactions by implementing caching techniques to reduce block hash retrieval time.",
+  "topic_summary": "This video explains how to make Solana transactions faster by caching the block hash, which can reduce retrieval time from 300 milliseconds to 0 milliseconds [t=5:36][t=40:62].",
+  "router_tags": [
+    "Solana",
+    "Transactions",
+    "Blockchain",
+    "Caching"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

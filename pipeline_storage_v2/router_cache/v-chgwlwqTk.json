@@ -1,0 +1,26 @@
+{
+  "description": "Lecture discussing the Minimax Theorem and algorithms for linear programming, including applications in game theory and computer science. The lecture features examples like Rock, Paper, Scissors to illustrate concepts of zero-sum games and strategy randomization.",
+  "topic_summary": "The lecture covers two main topics: the Minimax Theorem, which relates to strong linear programming duality and its implications in game theory [t=7:00], and a survey of algorithms used for solving linear programming problems [t=20:16].",
+  "router_tags": [
+    "Algorithms",
+    "Game Theory",
+    "Linear Programming",
+    "Minimax Theorem"
+  ],
+  "aliases": [
+    "Tim Roughgarden Lectures",
+    "timroughgardenlectures1861",
+    "Tim Roughgarden"
+  ],
+  "canonical_entities": [
+    "@timroughgardenlectures1861",
+    "$SOL",
+    "@georgedanzig",
+    "@von_neumann",
+    "@stanford",
+    "@ucberkeley",
+    "@eugenelawler"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

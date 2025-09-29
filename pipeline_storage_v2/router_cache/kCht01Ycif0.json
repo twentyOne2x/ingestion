@@ -1,0 +1,23 @@
+{
+  "description": "Nick from the Solana Foundation Devrel team explains how to create Solana Actions using the Solana Actions SDK. He covers the basics of setting up a Next JS app, configuring CORS, and building HTTP routes for GET and POST requests. The tutorial includes installing necessary SDKs, creating a project structure, and defining the action's metadata and transaction response.",
+  "topic_summary": "Learn to build Solana Actions with the Solana Actions SDK, covering setup, HTTP routing, and response handling [t=0:24 - t=3:00].",
+  "router_tags": [
+    "Solana",
+    "SDK",
+    "Next JS",
+    "Web Development",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Actions",
+    "solana actions",
+    "Solana SDK",
+    "solana sdk"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solana"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

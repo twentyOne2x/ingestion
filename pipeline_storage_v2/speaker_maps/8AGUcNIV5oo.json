@@ -1,0 +1,20 @@
+{
+  "video_id": "8AGUcNIV5oo",
+  "title": "2025-07-28_8AGUcNIV5oo_Solana and r3: Enabling Broader Financial Access to Capital Markets",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Zalana Hatashun",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}
