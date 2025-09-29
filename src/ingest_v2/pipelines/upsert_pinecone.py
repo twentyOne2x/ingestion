@@ -62,26 +62,68 @@ def _chunk_vectors_by_bytes(vectors: List[Dict[str, Any]], max_bytes: int, safet
 # ────────────────────────────────────────────────────────────────────────────────
 
 def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dict]:
+    """
+    Safely fetch existing vectors' metadata without tripping 414 (Request-URI Too Large).
+    Uses adaptive chunking: starts at PINECONE_FETCH_IDS_PER_REQ (default 200) and halves on 414/413.
+    """
     out: Dict[str, Dict] = {}
-    for chunk in chunked(ids, 1000):
-        resp = index.fetch(ids=chunk, namespace=namespace) or {}
+    if not ids:
+        return out
 
-        # Support both SDKs:
-        vectors = getattr(resp, "vectors", None)  # v3: dict[str, Vector]
-        if vectors is None and isinstance(resp, dict):  # v2: dict style
-            vectors = resp.get("vectors")
+    # Start conservative; allow overrides
+    max_per = int(os.getenv("PINECONE_FETCH_IDS_PER_REQ", "200"))
+    max_per = max(1, max_per)
 
-        if not vectors:
-            continue
+    i = 0
+    logging.info("[fetch/meta] ids=%d start_batch=%d", len(ids), max_per)
 
-        # v3 objects vs v2 dicts
-        sample = next(iter(vectors.values()))
-        if isinstance(sample, dict):
-            for vid, v in vectors.items():
-                out[vid] = (v.get("metadata") or {})
-        else:
-            for vid, v in vectors.items():
-                out[vid] = (getattr(v, "metadata", {}) or {})
+    while i < len(ids):
+        chunk = ids[i:i + max_per]
+
+        attempt = 0
+        while True:
+            try:
+                resp = index.fetch(ids=chunk, namespace=namespace) or {}
+
+                # Support both SDKs:
+                vectors = getattr(resp, "vectors", None)  # v3: dict[str, Vector]
+                if vectors is None and isinstance(resp, dict):  # v2: dict style
+                    vectors = resp.get("vectors")
+
+                if vectors:
+                    sample = next(iter(vectors.values()))
+                    if isinstance(sample, dict):
+                        for vid, v in vectors.items():
+                            out[vid] = (v.get("metadata") or {})
+                    else:
+                        for vid, v in vectors.items():
+                            out[vid] = (getattr(v, "metadata", {}) or {})
+
+                # success → advance window
+                i += len(chunk)
+                break
+
+            except Exception as e:
+                status = getattr(e, "status", None)
+                msg = str(e)
+                # Too-large query (GET) or payload (if SDK switches to POST): shrink
+                if status in (413, 414) or "414" in msg or "Request-URI Too Large" in msg or "Payload Too Large" in msg:
+                    if max_per == 1 and len(chunk) == 1:
+                        logging.error("[fetch/meta] cannot shrink further; re-raising (id=%s)", chunk[0])
+                        raise
+                    old = max_per
+                    max_per = max(1, max_per // 2)
+                    logging.warning("[fetch/meta] %s; reducing ids per request %d → %d and retrying",
+                                    f"{status or ''}".strip(), old, max_per)
+                    # retry same window with smaller chunk
+                    chunk = ids[i:i + max_per]
+                    continue
+
+                # transient → backoff & retry
+                attempt += 1
+                logging.warning("[fetch/meta] fetch failed size=%d attempt=%d err=%s", len(chunk), attempt, e)
+                expo_backoff(attempt)
+
     return out
 
 
