@@ -9,6 +9,8 @@ import re
 import time
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+import hashlib  # add to imports
+
 
 from src.ingest_v2.configs.settings import settings_v2
 from src.ingest_v2.pipelines.build_children import build_children_from_raw
@@ -32,6 +34,67 @@ from src.ingest_v2.speakers.name_filters import looks_like_person, filter_to_peo
 # ────────────────────────────────────────────────────────────────────────────────
 # Small helpers
 # ────────────────────────────────────────────────────────────────────────────────
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Fast JSON + entity cache helpers
+# ────────────────────────────────────────────────────────────────────────────────
+
+def _fast_json_load(path: Path) -> Any:
+    """Prefer orjson for speed; fall back to stdlib json."""
+    data = path.read_bytes()
+    try:
+        import orjson  # type: ignore
+        return orjson.loads(data)
+    except Exception:
+        return json.loads(data.decode("utf-8"))
+
+def _entities_cache_dir() -> Path:
+    # dedicated on-disk cache for cleaned entity lists
+    p = Path(os.getenv("ENTITIES_CACHE_DIR", "pipeline_storage_v2/entities_cache"))
+    p.mkdir(parents=True, exist_ok=True)
+    return p
+
+def _entities_sidecar_path(json_path: Path) -> Path:
+    stem = json_path.stem.replace("_diarized_content", "")
+    return json_path.with_name(f"{stem}_entities.json")
+
+def _entities_cache_key(json_path: Path, obj: Any) -> str:
+    """
+    Stable key based on sidecar (if present) or main JSON mtime/size.
+    Include FAST flag so caches don’t cross-pollute modes.
+    """
+    fast_flag = "fast" if os.getenv("ENTITIES_FAST", "0").lower() in ("1","true","yes","y") else "full"
+    sidecar = _entities_sidecar_path(json_path)
+    if sidecar.exists():
+        st = sidecar.stat()
+        base = f"sc::{sidecar.as_posix()}::{st.st_mtime_ns}::{st.st_size}::{fast_flag}"
+    else:
+        st = json_path.stat()
+        n = 0
+        if isinstance(obj, dict) and isinstance(obj.get("entities"), list):
+            n = len(obj["entities"])
+        base = f"tl::{json_path.as_posix()}::{st.st_mtime_ns}::{st.st_size}::n{n}::{fast_flag}"
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()
+
+def _postprocess_entities_with_cache(raw_entities: List[Dict[str, Any]], cache_key: str) -> List[str]:
+    """
+    Run postprocess_aai_entities with an on-disk read-through cache.
+    """
+    cache_file = _entities_cache_dir() / f"{cache_key}.json"
+    if cache_file.exists():
+        try:
+            return _fast_json_load(cache_file)
+        except Exception:
+            pass
+
+    from src.ingest_v2.entities.postprocess import postprocess_aai_entities
+    cleaned = postprocess_aai_entities(raw_entities)
+    try:
+        cache_file.write_text(json.dumps(cleaned, ensure_ascii=False), encoding="utf-8")
+    except Exception:
+        pass
+    return cleaned
+
 
 def _snip(s: str, n: int) -> str:
     s = (s or "").strip()
@@ -214,41 +277,24 @@ def _iter_youtube_assets_from_fs(
     """
     Yield (meta, raw_for_segmenter, json_path) for each AssemblyAI diarized JSON.
 
-    Adds support for sibling sidecar '*_entities.json':
-      - prefers sidecar over top-level `entities`,
-      - cleans via postprocess_aai_entities,
-      - seeds Parent `meta["entities"]`,
-      - forwards raw `entities` into `raw_for_segmenter` for later child tagging.
+    Uses fast JSON loads, entity cache, optional FAST mode caps,
+    and concurrent per-video processing.
     """
-    from src.ingest_v2.entities.postprocess import postprocess_aai_entities
+    paths = list(root_dir.rglob("*_diarized_content.json"))
+    if not paths:
+        return
 
-    def _entities_sidecar_path(content_path: Path) -> Path:
-        stem = content_path.stem.replace("_diarized_content", "")
-        return content_path.with_name(f"{stem}_entities.json")
+    # workers: default ~70% of CPUs, but at least 1
+    cpu = os.cpu_count() or 4
+    workers_env = os.getenv("ENTITIES_WORKERS", "").strip()
+    workers = int(workers_env) if workers_env.isdigit() and int(workers_env) > 0 else max(1, math.floor(0.7 * cpu))
 
-    def _normalize_entities_payload(payload: Any) -> List[Dict[str, Any]]:
-        """
-        Accepts:
-          - list[dict{text, entity_type, ...}] (AAI style)
-          - list[str]                           (wrapped into {text, entity_type='custom'})
-          - dict with key 'entities'            (we take that list)
-        """
-        if isinstance(payload, dict) and isinstance(payload.get("entities"), list):
-            payload = payload["entities"]
-        if isinstance(payload, list):
-            if payload and isinstance(payload[0], dict):
-                return payload
-            if payload and isinstance(payload[0], str):
-                return [{"text": s, "entity_type": "custom"} for s in payload if isinstance(s, str)]
-        return []
-
-    for p in root_dir.rglob("*_diarized_content.json"):
+    def _process_one(p: Path) -> Optional[Tuple[Dict[str, Any], Dict[str, Any], Path]]:
         try:
-            raw_text = p.read_text(encoding="utf-8")
-            obj = json.loads(raw_text)
-        except Exception as e:
-            logging.warning(f"[v2] skip unreadable JSON: {p} ({_ascii(str(e))})")
-            continue
+            obj = _fast_json_load(p)
+        except Exception:
+            logging.warning(f"[v2] skip unreadable JSON: {p}")
+            return None
 
         if prune_empty and _looks_like_single_empty_file(obj):
             try:
@@ -256,42 +302,47 @@ def _iter_youtube_assets_from_fs(
                 logging.info(f"[v2] pruned empty AssemblyAI file: {p}")
             except Exception as e:
                 logging.warning(f"[v2] failed to prune {p}: {_ascii(str(e))})")
-            continue
+            return None
 
         try:
             raw_norm = _convert_assemblyai_json_to_raw(obj)
         except Exception as e:
             logging.warning(f"[v2] skip malformed AssemblyAI JSON: {p} ({_ascii(str(e))})")
-            continue
+            return None
 
         segs = raw_norm.get("segments", [])
         if not segs:
             logging.info(f"[v2] no non-trivial segments after normalization: {p}")
-            continue
+            return None
 
-        ends: List[float] = []
-        for s in segs:
-            e = s.get("end")
-            if isinstance(e, (int, float)):
-                ends.append(float(e))
+        # duration
+        ends = [float(s.get("end")) for s in segs if isinstance(s.get("end"), (int, float))]
         duration_s = max(ends) if ends else 0.0
 
         video_id = _extract_video_id_from_path(p)
         if not video_id:
             logging.warning(f"[v2] SKIP: could not find YouTube video_id in path={p}")
-            continue
+            return None
 
         title = _extract_title_from_dir(p)
         channel_name = _extract_channel_from_path(p)
         published_at = _extract_date_prefix(title)
 
-        # Sidecar/top-level entities (raw) -> cleaned canonical set for parent meta
+        # Sidecar/top-level entities (raw) -> cleaned canonical set (cached)
         aai_entities_raw = _load_entities_for_json_path(p, obj)
-        cleaned_entities = postprocess_aai_entities(aai_entities_raw)
-        logging.info(
-            "[v2/entities] vid=%s cleaned=%d sample=%s",
-            video_id, len(cleaned_entities), cleaned_entities[:8],
-        )
+
+        # Optional raw cap (in addition to postprocess-side cap)
+        try:
+            if os.getenv("ENTITIES_FAST", "0").lower() in ("1","true","yes","y"):
+                cap = int(os.getenv("ENTITIES_MAX_RAW", "400"))
+                if cap > 0 and len(aai_entities_raw) > cap:
+                    aai_entities_raw = aai_entities_raw[:cap]
+        except Exception:
+            pass
+
+        cache_key = _entities_cache_key(p, obj)
+        cleaned_entities = _postprocess_entities_with_cache(aai_entities_raw, cache_key)
+        logging.info("[v2/entities] vid=%s cleaned=%d sample=%s", video_id, len(cleaned_entities), cleaned_entities[:8])
 
         meta = {
             "video_id": video_id,
@@ -309,15 +360,20 @@ def _iter_youtube_assets_from_fs(
             "document_type": "youtube_video",
             "source": "youtube",
         }
-
         raw_for_segmenter = {
             "segments": segs,
             "caption_lines": [],
             "diarization": [],
             "entities": aai_entities_raw,  # pass raw for child-level tagging
         }
+        return meta, raw_for_segmenter, p
 
-        yield meta, raw_for_segmenter, p
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+        futs = [pool.submit(_process_one, p) for p in paths]
+        for fut in concurrent.futures.as_completed(futs):
+            item = fut.result()
+            if item is not None:
+                yield item
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Main
@@ -635,11 +691,15 @@ def main():
             skipped_empty += 1
             continue
 
-        upsert_children(children)
+        t0 = time.perf_counter()
+        stats = upsert_children(children)   # CHANGED
         dt = time.perf_counter() - t0
         t_children_total += dt
         total_children += len(children)
-        logging.info("[v2/children] vid=%s upserted=%d in %.2fs", pid, len(children), dt)
+        logging.info(
+            "[v2/children] vid=%s upserted=%d in %.2fs (embed=%.2fs upsert=%.2fs embed_reqs=%d pinecone_batches=%d)",
+            pid, len(children), dt, stats["t_embed"], stats["t_upsert"], stats["embed_reqs"], stats["pinecone_batches"]
+        )
 
     logging.info(
         f"[ingest_v2] finished upserting {total_children} child segments "
@@ -700,7 +760,7 @@ def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str,
     sidecar = _entities_sidecar_path(content_path)
     try:
         if sidecar.exists():
-            raw = json.loads(sidecar.read_text(encoding="utf-8"))
+            raw = _fast_json_load(sidecar)
             ents = _norm(raw)
             logging.info("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(ents))
             return ents

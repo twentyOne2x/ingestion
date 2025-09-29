@@ -106,16 +106,24 @@ _ALIAS_KEYS = list(_ALIASES.keys())
 
 def _alias_lookup(txt: str) -> Optional[str]:
     k = _norm_key(txt)
-    if k in _ALIASES: return _ALIASES[k]
+    if k in _ALIASES:
+        return _ALIASES[k]
     k_nospace = k.replace(" ", "")
-    if k_nospace in _ALIASES: return _ALIASES[k_nospace]
-    # light fuzzy
+    if k_nospace in _ALIASES:
+        return _ALIASES[k_nospace]
+
+    # Fast mode: skip fuzzy entirely
+    if os.getenv("ENTITIES_FAST", "0").lower() in ("1", "true", "yes", "y"):
+        return None
+
+    # light fuzzy (default)
     best_key, best_d = None, 10**9
     for key in _ALIAS_KEYS:
         d = _lev(k, key)
         if d < best_d:
             best_d, best_key = d, key
-        if best_d == 0: break
+        if best_d == 0:
+            break
     if best_key is not None:
         L = max(len(k), len(best_key))
         if best_d <= (1 if L <= 6 else 2):
@@ -232,6 +240,15 @@ def _maybe_keep_money_token(txt: str) -> Optional[str]:
 # ── main ───────────────────────────────────────────────────────────────────────
 def postprocess_aai_entities(aai_entities: List[Dict[str, Any]], max_n: int = 64) -> List[str]:
     aai_entities = aai_entities or []
+
+    # FAST mode: optionally cap how many raw items we consider up front
+    if os.getenv("ENTITIES_FAST", "0").lower() in ("1", "true", "yes", "y"):
+        try:
+            cap = int(os.getenv("ENTITIES_MAX_RAW", "400"))
+            if cap > 0 and len(aai_entities) > cap:
+                aai_entities = aai_entities[:cap]
+        except Exception:
+            pass
 
     raw_counts = Counter()
     for e in aai_entities:
