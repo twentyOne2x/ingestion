@@ -1,0 +1,28 @@
+{
+  "description": "Ben Spirango leads a discussion on how institutions are engaging with DeFi, featuring insights from various industry leaders including Marius from Hubble Protocol, Mike Milner from Copper, Omer from Fireblocks, Olive from Friction, and Will Barnes from Jet Protocol. They explore definitions of institutions, their investment strategies, and the evolving landscape of institutional capital in DeFi.",
+  "topic_summary": "The panel discusses the involvement of institutions in DeFi, defining what constitutes an institution, and the different types of institutions engaging with decentralized finance. They highlight the importance of understanding risk profiles and the challenges of integrating traditional finance with DeFi strategies [t=117.17].",
+  "router_tags": [
+    "DeFi",
+    "Institutions",
+    "Finance",
+    "Cryptocurrency",
+    "Investment"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Hubble",
+    "@Copper",
+    "@Fireblocks",
+    "@Friction",
+    "@JetProtocol"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

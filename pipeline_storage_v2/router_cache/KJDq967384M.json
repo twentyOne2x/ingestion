@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on DAOs and governance in the Solana ecosystem featuring Max from Mango Markets and Sebastian from Solana Labs. They explore the evolution of governance UI, the growth of DAOs, and the upcoming SPL Governance V2, which enhances governance capabilities for various DAOs.",
+  "topic_summary": "The workshop covers the current state and future of DAOs on Solana, including governance UI advancements and the introduction of SPL Governance V2, which allows for more flexible governance structures and the integration of NFTs in voting processes. Key insights include the importance of UI design for different DAO types and the potential for innovation in governance.",
+  "router_tags": [
+    "DAOs",
+    "Governance",
+    "Solana",
+    "Mango Markets",
+    "SPL Governance",
+    "NFTs"
+  ],
+  "aliases": [
+    "Riptide Hackathon",
+    "SolanaFndn",
+    "Mango",
+    "Sebastian",
+    "Max"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Mango"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

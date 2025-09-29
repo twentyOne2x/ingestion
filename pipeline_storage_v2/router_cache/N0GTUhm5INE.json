@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Amira Valiany hosts experts Segal Mandelker and Ari Redboard to discuss the intersection of cryptocurrency and national security, particularly in light of geopolitical events like the Ukraine war. They explore the implications of crypto on foreign policy and illicit financial activities, emphasizing the importance of trust and regulation in the crypto economy.",
+  "topic_summary": "The discussion focuses on how cryptocurrency relates to national security, with insights from experts on the challenges and opportunities presented by crypto in the context of global finance and illicit activities, referencing issues like North Korea's involvement in money laundering [t=142.28].",
+  "router_tags": [
+    "Crypto",
+    "National Security",
+    "Finance",
+    "Regulation",
+    "Geopolitics"
+  ],
+  "aliases": [
+    "Crypto & National Security",
+    "Crypto and National Security",
+    "Crypto National Security"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

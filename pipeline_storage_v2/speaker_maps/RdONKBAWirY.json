@@ -1,0 +1,14 @@
+{
+  "video_id": "RdONKBAWirY",
+  "title": "2022-08-10_RdONKBAWirY_Solana Hacker House Seoul",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

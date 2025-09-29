@@ -1,0 +1,22 @@
+{
+  "description": "This video covers processing instructions with native Solana programs, focusing on building and deciphering instructions for operations. It explains how to initialize a journal PDA and create entries, detailing the structure of instruction data and the use of enums for different instruction types. The presenter discusses the Rust implementation of enums and how they relate to instruction processing.",
+  "topic_summary": "Processing instructions in native Solana programs, including journal initialization and entry creation, with a focus on instruction data structure and Rust enum implementation [t=0:00].",
+  "router_tags": [
+    "Solana",
+    "programming",
+    "instructions",
+    "Rust",
+    "enums"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "solana bytes processing instructions"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

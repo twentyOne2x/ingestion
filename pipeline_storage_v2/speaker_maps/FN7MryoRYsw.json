@@ -1,0 +1,38 @@
+{
+  "video_id": "FN7MryoRYsw",
+  "title": "2022-08-18_FN7MryoRYsw_Solana Community Validator Discussion - 18 August 2022",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Fire Dancer",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Kevin Bowers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Anatoly Leo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Brian Long",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

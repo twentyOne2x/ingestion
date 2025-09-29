@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Solana Podcast, guest host Joe McCann interviews Syndica co-founders Daniel and Ahmed about their backgrounds, the importance of user experience in Web3, and how Syndica aims to enhance backend solutions for decentralized applications. They discuss their journey into crypto, the advantages of Solana over other blockchains, and the critical role of user experience in driving adoption in the Web3 space.",
+  "topic_summary": "The episode covers the founders' backgrounds, their motivations for entering the crypto space, the user experience challenges in Web3, and how Syndica plans to address backend needs for decentralized applications. Key points include the accessibility of Solana and the importance of intuitive design for broader adoption [t=0:24 - t=399.54].",
+  "router_tags": [
+    "Syndica",
+    "Web3",
+    "User Experience",
+    "Solana",
+    "Decentralized Applications",
+    "Crypto"
+  ],
+  "aliases": [
+    "Syndica",
+    "syndica",
+    "Syndicate",
+    "syndicate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JoeMcCann"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

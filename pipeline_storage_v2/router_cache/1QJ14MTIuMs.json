@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator updates and community engagement within the Solana ecosystem.",
+  "topic_summary": "The call covers validator updates, including the recommendation to upgrade to version 1.13.3 for mainnet beta and 1.14.5 for testing. A focus on timely voting proposals and community workshops is also highlighted. [t=0:08] [t=30:22] [t=73:27] [t=195:02]",
+  "router_tags": [
+    "Solana",
+    "validators",
+    "community call",
+    "blockchain",
+    "upgrades"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "solana community validator discussion",
+    "Solana Validator Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

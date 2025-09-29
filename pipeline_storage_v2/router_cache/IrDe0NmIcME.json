@@ -1,0 +1,26 @@
+{
+  "description": "Tristan Frizza, Co-Founder & CEO of Zeta Markets, shares his journey into crypto, discussing his early experiences, the challenges faced during the Solana hackathon, and the development of their binary options platform. He emphasizes the importance of engineering and collaboration in building innovative solutions in the DeFi space.",
+  "topic_summary": "Tristan Frizza discusses his entry into crypto, the evolution of Zeta Markets, and insights from participating in the Solana hackathon, including the intense work ethic and technical challenges encountered while developing their platform [t=9:76-312:77].",
+  "router_tags": [
+    "Crypto",
+    "DeFi",
+    "Solana",
+    "Zeta Markets",
+    "Hackathon",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "Tristan Frizza",
+    "tristan frizza",
+    "Zeta Markets",
+    "zeta markets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ZETA"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Alexis Ohanian and Solana Ventures announce a $50 million fund aimed at supporting decentralized social media initiatives.",
+  "topic_summary": "Discussion on the growth of decentralized social media and the role of platforms like Reddit in fostering community engagement [t=0:01]. Ohanian emphasizes the importance of user-generated content and the potential for a new internet paradigm [t=0:21].",
+  "router_tags": [
+    "Decentralized Social Media",
+    "Solana Ventures",
+    "Investment Fund"
+  ],
+  "aliases": [
+    "Alexis Ohanian",
+    "alexis ohanian",
+    "Solana Ventures",
+    "solana ventures"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$BTC",
+    "$SOL",
+    "@BernardBernard"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

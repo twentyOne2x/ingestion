@@ -1,0 +1,26 @@
+{
+  "video_id": "F9zT1_kYsJ0",
+  "title": "2022-11-06_F9zT1_kYsJ0_Breakpoint 2022: Smart-Contract Security 201: Auditing Lessons for Solana Founders",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Courtney Jensen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Chris Wong",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "gVhtB0W8sMk",
+  "title": "2022-02-02_gVhtB0W8sMk_RIPTIDE",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

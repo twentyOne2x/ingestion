@@ -1,0 +1,22 @@
+{
+  "description": "Demonstration of Solana Pay's transaction requests feature at Atlas Cafe, showcasing how NFTs can serve as loyalty tokens for discounts.",
+  "topic_summary": "At [t=0:24], the demo introduces transaction requests in Solana Pay. By using an Atlas Cafe NFT, users can receive a 20% discount on transactions, as shown during a purchase of T-shirts at [t=21:60]. The final transaction amount is $0.88 after applying the discount.",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Loyalty Program",
+    "Transaction Requests"
+  ],
+  "aliases": [
+    "@solanapay",
+    "@SolanaFndn",
+    "Solana Pay",
+    "SolanaPay"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

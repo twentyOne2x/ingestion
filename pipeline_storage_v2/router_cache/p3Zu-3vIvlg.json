@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on the Solana Hacker House event leading to Breakpoint 2022.",
+  "topic_summary": "Overview of the Solana Hacker House and its significance for Breakpoint 2022 [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Breakpoint 2022"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

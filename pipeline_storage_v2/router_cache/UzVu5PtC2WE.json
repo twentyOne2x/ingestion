@@ -1,0 +1,24 @@
+{
+  "description": "In this episode, Joe McCann interviews Sid Powell, CEO and Co-Founder of Maple Finance, discussing the platform's role in decentralized finance (DeFi) lending. Sid explains how Maple operates as a marketplace for institutional lending, providing tools for on-chain lending businesses. He highlights the importance of credit assessment and the potential for expanding access to credit for businesses and institutions.",
+  "topic_summary": "Joe McCann speaks with Sid Powell about Maple Finance, a DeFi lending platform that simplifies institutional lending processes. They discuss credit assessment, the role of traditional finance expertise in the platform, and the potential to expand the market for credit to underserved businesses [t=0:16-3:56].",
+  "router_tags": [
+    "DeFi",
+    "Lending",
+    "Maple Finance",
+    "Institutional Lending",
+    "Credit Assessment"
+  ],
+  "aliases": [
+    "Sid Powell",
+    "Sid powell",
+    "MAPLE",
+    "Maple Finance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SidPowell"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

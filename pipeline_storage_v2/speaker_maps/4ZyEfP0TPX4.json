@@ -1,0 +1,32 @@
+{
+  "video_id": "4ZyEfP0TPX4",
+  "title": "2022-11-05_4ZyEfP0TPX4_Breakpoint 2022: Navigating Blurred Lines - Legal Considerations for Developers",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Yelena Kavanagh",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Karen Ubell",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Nancy Wojas",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

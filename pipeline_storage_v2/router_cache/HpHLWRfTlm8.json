@@ -1,0 +1,28 @@
+{
+  "description": "Anatoly, co-founder of Solana, discusses the launch of the Saga mobile device, designed to enhance crypto experiences on mobile platforms. He emphasizes the importance of self-custody and the challenges faced in the current crypto landscape, particularly regarding user experience and security. The Saga device aims to integrate crypto as a primary function in mobile technology, overcoming existing barriers in app stores and digital ownership.",
+  "topic_summary": "Anatoly introduces the Saga mobile device, highlighting its role in revolutionizing crypto usage on mobile. He addresses the need for self-custody, the challenges of current app store policies, and the innovative features of the Solana mobile stack, including the seed vault and a dedicated app store for Web3 applications. The discussion underscores the importance of secure hardware for a better user experience in the crypto space.",
+  "router_tags": [
+    "Saga",
+    "Solana",
+    "Crypto",
+    "Mobile",
+    "Web3",
+    "Self-Custody",
+    "NFTs",
+    "Seed Vault"
+  ],
+  "aliases": [
+    "Saga",
+    "saga",
+    "SOL",
+    "sol",
+    "@SolanaFndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

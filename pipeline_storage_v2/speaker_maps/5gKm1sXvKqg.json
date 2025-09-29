@@ -1,0 +1,44 @@
+{
+  "video_id": "5gKm1sXvKqg",
+  "title": "2022-11-06_5gKm1sXvKqg_Breakpoint 2022: Tectonic Shifts: How Institutions Are Coming to DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Ben Spirango",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Mike Milner",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Mike Milner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Will Barnes",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Ben Spirango",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

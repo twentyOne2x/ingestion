@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Validator updates, educational workshop recap, and planning for Breakpoint meetup. Emphasis on upgrading from version 1.13.4 to improve cluster performance by disabling UDP for TPU port. Feedback sought on multi-sig solution for validators.",
+  "topic_summary": "Validator community call covering updates, workshop feedback, and Breakpoint meetup planning. Discussion on upgrading to version 1.13.4 and its implications for UDP communication [t=1:28 - t=221:60].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Blockchain",
+    "Community",
+    "Upgrade",
+    "Breakpoint"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Call",
+    "Validator Community Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

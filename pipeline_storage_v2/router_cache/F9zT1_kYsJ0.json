@@ -1,0 +1,26 @@
+{
+  "description": "Courtney Jensen introduces the panel at Breakpoint 2022, discussing the importance of security audits for smart contracts. Chris Wong emphasizes that while some projects succeed without audits, security audits significantly reduce the risk of hacks. He advocates for multiple audits to enhance security confidence. Joseph from Aki Blockchain and Peter from Halborn share insights on their auditing practices and community contributions.",
+  "topic_summary": "Panel discussion on smart contract security and the necessity of audits, featuring insights from industry experts on best practices and community engagement [t=0:12].",
+  "router_tags": [
+    "Smart Contracts",
+    "Security Audits",
+    "Blockchain",
+    "Solana",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Smart-Contract Security 201",
+    "Auditing Lessons"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@ChrisWong",
+    "@Joseph",
+    "@AkiBlockchain",
+    "@Halborn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

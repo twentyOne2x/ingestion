@@ -1,0 +1,38 @@
+{
+  "video_id": "9PLv6iHOjWQ",
+  "title": "2022-11-05_9PLv6iHOjWQ_Breakpoint 2022: Are Wallets Entering the 'Browser Wars' Era",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "A": {
+      "name": "Max Von Wallenberg",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Brian Friel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Philip Dragoslavic",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Victor Pontus",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana's ecosystem and developments at the Hacker House in Seoul.",
+  "topic_summary": "Overview of Solana's initiatives and community engagement at the Seoul Hacker House [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Seoul",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "@solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

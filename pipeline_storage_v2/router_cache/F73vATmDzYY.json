@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on recent developments in the Solana ecosystem, including the announcement of a new hackathon called Riptide and the introduction of Solana Pay, a new payments protocol. The conversation emphasizes community engagement and the integration of developers and validators within the Solana network.",
+  "topic_summary": "The Solana community discusses the Riptide hackathon and the Solana Pay protocol, highlighting opportunities for collaboration among developers and validators [t=54:00].",
+  "router_tags": [
+    "Solana",
+    "Riptide",
+    "Solana Pay",
+    "hackathon",
+    "community",
+    "validators",
+    "developers"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "solanapay",
+    "SolanaPay"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JordanSexton"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

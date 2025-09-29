@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the recent updates and issues related to the Solana validator community, including the rollout of the nonce feature and updates on the QWIK protocol.",
+  "topic_summary": "The call covers the activation of the nonce feature [t=0:00], the rollout of version 1.10.26 addressing liveness issues [t=35:33], and upcoming updates for testnet [t=61:02]. Stephen Akridge discusses QWIK updates, performance optimizations, and benefits of the new protocol [t=149:08].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "QWIK",
+    "Community Call",
+    "Updates"
+  ],
+  "aliases": [
+    "Stephen Akridge",
+    "Steve Steven",
+    "Sentetsu",
+    "Zentetsu",
+    "Valerie"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@StephenAkridge"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

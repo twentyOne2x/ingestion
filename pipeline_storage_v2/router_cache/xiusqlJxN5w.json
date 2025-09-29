@@ -1,0 +1,24 @@
+{
+  "description": "A deep dive into Solana's first light client, discussing its verification processes and consensus mechanisms.",
+  "topic_summary": "The video explores the functionality of Solana's light client, including transaction verification and consensus protocols, with references to Bitcoin's white paper and the importance of decentralized verification [t=2:00 - t=35:11].",
+  "router_tags": [
+    "Solana",
+    "Light Client",
+    "Blockchain",
+    "Consensus",
+    "Verification"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "Hold Me Higher",
+    "Tinydancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SayyaPKirkita",
+    "@Kamila"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

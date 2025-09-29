@@ -1,0 +1,20 @@
+{
+  "video_id": "TBg3lXs7u-8",
+  "title": "2022-03-15_TBg3lXs7u-8_Ahmad & Danial Abbasi - Co-Founders, Syndica Ep #61",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Kyle Simani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

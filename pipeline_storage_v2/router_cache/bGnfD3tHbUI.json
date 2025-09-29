@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on NFT royalties featuring industry leaders discussing the shift towards zero royalty marketplaces and the implications for creators and platforms like Magic Eden and Metaplex.",
+  "topic_summary": "The panel explores the evolving landscape of NFT royalties, the impact of zero royalty marketplaces, and potential solutions for enforcing royalties in the Solana ecosystem [t=0:32].",
+  "router_tags": [
+    "NFT",
+    "Royalties",
+    "Solana",
+    "Magic Eden",
+    "Metaplex",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "NFT Monetization",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dustin",
+    "@Joachun",
+    "@Zed",
+    "@Scum",
+    "@Nyun",
+    "@Joshua"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

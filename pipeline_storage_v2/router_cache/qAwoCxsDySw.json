@@ -1,0 +1,26 @@
+{
+  "description": "In this episode, Joe McCann interviews Nigel Eccles, co-founder and CEO of Vault Laboratories. Nigel shares his extensive background in consumer tech and sports, detailing his journey from launching Flutter.com to founding FanDuel. He discusses his entry into the crypto space, focusing on Ethereum and NFTs, and reflects on the evolution of consumer readiness in the blockchain sector.",
+  "topic_summary": "Nigel Eccles discusses his background in tech and sports, his transition into the crypto space, and the development of consumer-friendly NFT platforms [t=234.4].",
+  "router_tags": [
+    "Crypto",
+    "NFT",
+    "Web3",
+    "Solana",
+    "FanDuel",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Nigel Eccles",
+    "Nigel Echols",
+    "Nigel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@NigelEccles",
+    "@FanDuel",
+    "@Ethereum"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

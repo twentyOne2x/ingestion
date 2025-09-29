@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on validator updates, educational workshops, and a new stake account collateral product by Lucio from Marinade. Emphasis on upgrading to version 1/1039 for stability and plans to increase stake on version 1.13.1. A trial for adjusting call times to accommodate global participants is also introduced.",
+  "topic_summary": "Validator community call covering updates on software versions, educational initiatives, and community engagement. Lucio presents a new product aimed at unlocking stake for validators. Discussion on global participation and call scheduling adjustments.",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Marinade",
+    "Stake",
+    "Community Call"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Call",
+    "Validator Community Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Lucio",
+    "@Marinade"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

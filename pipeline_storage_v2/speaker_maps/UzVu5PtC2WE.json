@@ -1,0 +1,20 @@
+{
+  "video_id": "UzVu5PtC2WE",
+  "title": "2022-07-05_UzVu5PtC2WE_Sid Powell - CEO & Co-Founder, Maple Finance Ep #69",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Sid Powell",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

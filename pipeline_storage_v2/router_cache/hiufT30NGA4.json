@@ -1,0 +1,22 @@
+{
+  "description": "Patrick Sayadarini and Vitali Lahof discuss the importance of securing smart contracts and the challenges faced in traditional systems. They emphasize the need for robust access control and the advantages of blockchain technology in enhancing security [t=0:16].",
+  "topic_summary": "The discussion focuses on securing smart contracts, the limitations of traditional security measures, and the benefits of blockchain for improving security protocols [t=0:16].",
+  "router_tags": [
+    "Smart Contracts",
+    "Blockchain Security",
+    "Access Control",
+    "Traditional Systems"
+  ],
+  "aliases": [
+    "Patrick Sayadarini",
+    "Vitali Lahof",
+    "Disabled Control",
+    "Jenny",
+    "Singh"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

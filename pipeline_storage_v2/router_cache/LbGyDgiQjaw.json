@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of Chewing Glass, host Chase talks with Italo Casas, founder of Sol Dev, about his journey into the Solana ecosystem and the challenges of discovering content within it. They discuss Italo's background in computer science, his experience at Google, and his decision to create a content aggregator to improve the learning experience for developers in the blockchain space.",
+  "topic_summary": "Chase interviews Italo Casas about his background and the creation of Sol Dev, a content aggregator for the Solana ecosystem, highlighting the importance of centralized learning resources in blockchain development [t=43:90].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Content Aggregator",
+    "Development",
+    "Italo Casas"
+  ],
+  "aliases": [
+    "Sol Dev",
+    "SOL DEV",
+    "Italo Casas",
+    "ITALO CASAS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

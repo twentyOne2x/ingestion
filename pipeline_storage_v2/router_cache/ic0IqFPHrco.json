@@ -1,0 +1,28 @@
+{
+  "description": "Mike Freida discusses the establishment of Empire DAO in a six-story building in Soho, Manhattan, dedicated to Web3. The space includes hacker houses, a lounge, and a performance center for tech demonstrations. He shares experiences from the Solana community and the importance of building connections in the Web3 space.",
+  "topic_summary": "Mike Freida introduces Empire DAO, a Web3 hub in NYC, highlighting its facilities and community-building efforts. He recounts his journey in the Solana ecosystem and the significance of collaboration among builders [t=1:00].",
+  "router_tags": [
+    "Web3",
+    "DAO",
+    "Solana",
+    "New York",
+    "Community Building",
+    "Hacker House"
+  ],
+  "aliases": [
+    "Empire Dao",
+    "Empire DAO",
+    "Mike Freida",
+    "Solana NYC"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@OxBanana",
+    "@Reciprocal",
+    "@MagicEden",
+    "@Chico"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

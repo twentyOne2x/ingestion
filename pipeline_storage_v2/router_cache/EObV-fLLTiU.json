@@ -1,0 +1,26 @@
+{
+  "description": "Maddie from Solana Labs hosts a session with Tristan from Zeta Markets and Ayush from Katana, discussing their experiences in decentralized finance (DeFi) and the opportunities in derivatives trading. They share insights on their projects and the growth potential in the DeFi space.",
+  "topic_summary": "The workshop features discussions on the future of decentralized exchanges, focusing on DeFi options and futures, and the scalability of financial protocols. The speakers emphasize the massive market potential and the innovative nature of DeFi derivatives.",
+  "router_tags": [
+    "DeFi",
+    "Decentralized Exchanges",
+    "Cryptocurrency",
+    "Options Trading",
+    "Futures Trading"
+  ],
+  "aliases": [
+    "Riptide Workshop",
+    "Decentralized Exchanges Workshop",
+    "Solana Workshop"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Tristan",
+    "@Ayush",
+    "@Zeta",
+    "@Katana"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

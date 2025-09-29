@@ -1,0 +1,24 @@
+{
+  "description": "A deep dive into Fire Dancer, an independent Solana validator, focusing on performance optimization and system architecture. The presentation covers the structure, progress on block packing, hardware acceleration efforts, and the modular approach to development.",
+  "topic_summary": "The session elaborates on the architecture of Fire Dancer, comparing it to production trading systems, and discusses the optimization of packet ingress, runtime implementation, and consensus algorithms. It highlights the challenges of integrating high-performance components into an evolving ecosystem.",
+  "router_tags": [
+    "Solana",
+    "Fire Dancer",
+    "Performance Optimization",
+    "Blockchain",
+    "Validator"
+  ],
+  "aliases": [
+    "Fire Dancer",
+    "fire dancer",
+    "Firedancer",
+    "firedancer"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KevinBowers"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "HtCBtU-6piw",
+  "title": "2022-04-01_HtCBtU-6piw_Solana Community Validator Discussion - 31 March 2022",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Michael Lucio",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

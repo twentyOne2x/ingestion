@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, T.J. Littlejohn, founder of Mountain Pay, discusses his journey from studying math to becoming a developer in the Solana ecosystem. He shares insights on his experience at Apple and his transition to startups, highlighting the importance of hackathons in his career development.",
+  "topic_summary": "T.J. Littlejohn talks about his background in math and coding, his time at Apple, and his current work in the Solana ecosystem, emphasizing the role of hackathons in his career path [t=44:22].",
+  "router_tags": [
+    "Solana",
+    "Mountain Pay",
+    "T.J. Littlejohn",
+    "hackathons",
+    "iOS development",
+    "startups"
+  ],
+  "aliases": [
+    "T.J. Littlejohn",
+    "Tj Littlejohn",
+    "tj littlejohn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

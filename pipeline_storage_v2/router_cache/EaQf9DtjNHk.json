@@ -1,0 +1,26 @@
+{
+  "description": "Nalin Mitl from Google discusses the integration of Google Cloud with Web3 technologies, highlighting the launch of services for startups, cryptocurrency payment options, and the indexing of Solana data for easier access via BigQuery.",
+  "topic_summary": "The session covers Google's initiatives in Web3, including partnerships, the use of blockchain technology, and advancements in data processing for cryptocurrencies like Solana. Key points include the ability to pay with cryptocurrencies and the importance of optimizing infrastructure for developers [t=1:12-1:12].",
+  "router_tags": [
+    "Google Cloud",
+    "Web3",
+    "Solana",
+    "BigQuery",
+    "Cryptocurrency",
+    "Data Processing"
+  ],
+  "aliases": [
+    "Google Cloud",
+    "Web3",
+    "Solana",
+    "Bigquery",
+    "Cryptocurrency"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn",
+    "@Anatoli"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "hiufT30NGA4",
+  "title": "2021-11-15_hiufT30NGA4_Breakpoint 2021: Secure the Bag: Keeping Smart Contracts Safe",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Vitali Lahof",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Patrick Sayadarini",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This week's Solana Changelog covers a vote credit proposal aimed at incentivizing quick voting among validators, reducing compute costs for Curve 25519 operations, and introducing Seahorse v2 with enhanced Python support.",
+  "topic_summary": "Highlights include a proposal for vote credits to encourage low latency voting [t=11:28], reduced compute costs for Curve 25519 operations [t=113:28], and the release of Seahorse v2 with improved Python features [t=253:48].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Vote Credit",
+    "Seahorse",
+    "Curve 25519"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@Amelia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

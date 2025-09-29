@@ -1,0 +1,26 @@
+{
+  "description": "Colin and Joe discuss the latest updates in the Solana ecosystem, including the importance of the Stack Exchange for developers, upcoming hacker house events, and community proposals like the Lamport withdrawal authority. They emphasize community engagement and the benefits of open-source contributions.",
+  "topic_summary": "Updates on Solana's developer resources, community engagement, and proposals for network improvements [t=0:32 - t=270:18].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Developer Resources",
+    "Community Proposals"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Joe",
+    "@Colin",
+    "@HeavyDutyBuilders",
+    "@Calhacks",
+    "@Hacktx"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Welcome back to Day 2 of Breakpoint 2022. The conference continues with a focus on technical presentations, workshops, and community showcases. Notable discussions include the Hacker House program, regenerative finance, and the state of the Helium Network. Attendees are encouraged to participate in various events, including an electric go-kart race.",
+  "topic_summary": "Day 2 of Breakpoint features workshops on coding, discussions on regenerative finance, and community showcases. Key topics include the Hacker House program, NFT minting, and the Helium Network's state. Attendees can also enjoy side events like an electric go-kart race.",
+  "router_tags": [
+    "Breakpoint",
+    "Solana",
+    "Conference",
+    "Workshops",
+    "Regenerative Finance",
+    "NFTs"
+  ],
+  "aliases": [
+    "Breakpoint",
+    "breakpoint",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KevinBowers",
+    "@Armani",
+    "@Niraj",
+    "@Colin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

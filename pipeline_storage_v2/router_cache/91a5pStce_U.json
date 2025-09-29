@@ -1,0 +1,33 @@
+{
+  "description": "Panelists discuss the future of DeFi, focusing on values such as decentralization and accessibility. They highlight innovations in lending protocols, market making, and the importance of speed and latency in DeFi operations. The conversation also touches on zero-knowledge proofs, AMM improvements, and MEV awareness.",
+  "topic_summary": "Exploration of the next big trends in DeFi, emphasizing the significance of decentralization, accessibility, and technological advancements like zero-knowledge proofs and improved AMMs. Panelists share insights on their projects and the evolving landscape of decentralized finance.",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Finance",
+    "Lending",
+    "Market Making"
+  ],
+  "aliases": [
+    "DeFi Breakpoint",
+    "Defi Breakpoint",
+    "DeFi breakpoint",
+    "defi breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Megha",
+    "@Daniel",
+    "@Jacob",
+    "@JulianButolu",
+    "@Rupert",
+    "@Lulo",
+    "@gsr",
+    "@StakeCapitalGroup",
+    "@Blackpool",
+    "@Amulet"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

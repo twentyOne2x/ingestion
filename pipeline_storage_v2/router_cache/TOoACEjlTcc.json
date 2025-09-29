@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the Solana Validator community updates, including milestones and upcoming changes related to the QWIK protocol and the Tortoise Sun incentive program for delegation participants.",
+  "topic_summary": "Validator community call covering updates on validator count reaching 2,000 [t=32:05], changes in testnet versions [t=61:54], and the launch of the Tortoise Sun program [t=245:81].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "QWIK",
+    "Tortoise Sun",
+    "Edgevana"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Call",
+    "Validator Community Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Everstake",
+    "@Edgevana"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

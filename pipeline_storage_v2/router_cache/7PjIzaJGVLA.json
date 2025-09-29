@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Solana Changelog, Jacob and Joe discuss recent updates in the Solana ecosystem, including reaching 100 billion transactions and upcoming changes like extended program account sizes and account compression.",
+  "topic_summary": "The episode covers significant developments in the Solana network, including the extension of program data accounts [t=32:25], the addition of account compression for the JS library [t=95:07], and new resources from the Super Team Dao and Nil foundation [t=120:91].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@Joe",
+    "@SuperTeam",
+    "@Nil"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

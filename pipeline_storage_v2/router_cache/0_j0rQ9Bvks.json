@@ -1,0 +1,23 @@
+{
+  "description": "This video explains accounts on the Solana blockchain, covering ownership, signers, and program IDs. It details how accounts are created, the role of the system program, and the implications of account ownership. Key concepts include account balance, executable programs, and rent due for storage. The video also demonstrates how to create and modify accounts using Solana Web3js.",
+  "topic_summary": "Overview of Solana accounts, including ownership, creation, and management. Discusses the system program's role and account data handling [t=0:24 - t=2:50].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Accounts",
+    "Smart Contracts",
+    "Web3"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "Solana accounts",
+    "solana accounts"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

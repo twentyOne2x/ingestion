@@ -1,0 +1,41 @@
+{
+  "description": "Anand Gomes, co-founder of Paradigm, discusses the potential for the traditional finance options market to transition on-chain, alongside panelists from various DeFi projects. They explore the current size of the options market in crypto, comparing DeFi and CeFi derivatives, and highlight the growth opportunities in the sector.",
+  "topic_summary": "The panel discusses the transition of the $450 billion daily options market from traditional finance to on-chain solutions, examining the current state of crypto derivatives, which are valued at approximately $3 billion in DeFi and $90 billion in CeFi, compared to $16 trillion in traditional finance. [t=217.23]",
+  "router_tags": [
+    "DeFi",
+    "Options",
+    "Derivatives",
+    "Crypto",
+    "Solana",
+    "Finance"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "SolanaFndn",
+    "Paradigm",
+    "Psyoptions",
+    "Drift",
+    "Zeta",
+    "Sega"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AnandGomes",
+    "@Cindy",
+    "@TommyJohnson",
+    "@Tristan",
+    "@Renan",
+    "@Brunon",
+    "@Arisa",
+    "@Orissa",
+    "@Psyoptions",
+    "@Drift",
+    "@Zeta",
+    "@Sega",
+    "@Deribit"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

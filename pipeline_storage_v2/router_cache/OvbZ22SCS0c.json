@@ -1,0 +1,31 @@
+{
+  "description": "In this episode of The Solana Podcast, hosts Austin and Amira discuss climate activism and blockchain with Greenpeace veteran Rolf Skaar and Bitcoin expert Daniel Huang. They explore the intersection of climate change and cryptocurrency, highlighting the need for renewable energy in mining practices. The conversation reflects on their experiences in Greenland with climate activists and the role of organizations like Greenpeace in addressing environmental issues. [t=9:20] [t=60:10]",
+  "topic_summary": "The episode focuses on the collaboration between climate activists and blockchain industry leaders, discussing the impact of cryptocurrency on climate change and the importance of transitioning to renewable energy sources. [t=106:59]",
+  "router_tags": [
+    "Climate Change",
+    "Blockchain",
+    "Greenpeace",
+    "Bitcoin",
+    "Renewable Energy",
+    "Solana"
+  ],
+  "aliases": [
+    "Greenpeace",
+    "greenpeace",
+    "SOL",
+    "sol",
+    "BTC",
+    "btc",
+    "Ethereum",
+    "eth"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Greenpeace",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

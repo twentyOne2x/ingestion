@@ -1,0 +1,22 @@
+{
+  "description": "This video covers the new version of transactions on Solana, focusing on transaction v0 and address lookup tables. It explains how to create and extend an address lookup table, send transactions using it, and the differences between legacy and v0 transactions. The presenter demonstrates the process using web3js and provides insights on the Explorer for transaction verification.",
+  "topic_summary": "Overview of Solana's transaction v0 and address lookup tables, including creation, usage, and differences from legacy transactions. Demonstrates practical implementation with web3js.",
+  "router_tags": [
+    "Solana",
+    "Transaction v0",
+    "Address Lookup Tables",
+    "Web3js",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "SOLANA BYTES"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

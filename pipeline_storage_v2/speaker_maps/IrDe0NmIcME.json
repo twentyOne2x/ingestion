@@ -1,0 +1,20 @@
+{
+  "video_id": "IrDe0NmIcME",
+  "title": "2022-03-29_IrDe0NmIcME_Tristan Frizza - Co-Founder & CEO, Zeta Markets Ep #62",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Josh Taylor",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

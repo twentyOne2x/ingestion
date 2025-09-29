@@ -1,0 +1,26 @@
+{
+  "video_id": "OvbZ22SCS0c",
+  "title": "2022-09-27_OvbZ22SCS0c_Greenpeace and Greener Crypto - Ep #72 - The Solana Podcast",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Daniel Huang",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Tyler Durden",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

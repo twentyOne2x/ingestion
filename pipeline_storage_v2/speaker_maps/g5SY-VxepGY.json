@@ -1,0 +1,32 @@
+{
+  "video_id": "g5SY-VxepGY",
+  "title": "2022-10-25_g5SY-VxepGY_The Case for Tokenized Carbon - Ep #74 - The Solana Podcast",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Emma Shine",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Ethan Daly",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Mok Koifman",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

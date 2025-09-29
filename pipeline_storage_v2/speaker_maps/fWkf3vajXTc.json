@@ -1,0 +1,14 @@
+{
+  "video_id": "fWkf3vajXTc",
+  "title": "2022-07-11_fWkf3vajXTc_Summer Camp Hackathon",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

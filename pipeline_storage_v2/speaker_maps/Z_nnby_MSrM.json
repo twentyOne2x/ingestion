@@ -1,0 +1,14 @@
+{
+  "video_id": "Z_nnby_MSrM",
+  "title": "2022-11-06_Z_nnby_MSrM_Breakpoint 2022: Lessons Learned From Auditing Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

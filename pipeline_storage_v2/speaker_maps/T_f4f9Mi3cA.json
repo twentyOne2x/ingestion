@@ -1,0 +1,38 @@
+{
+  "video_id": "T_f4f9Mi3cA",
+  "title": "2022-11-06_T_f4f9Mi3cA_Breakpoint 2022: Bringing Real-World Assets to DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "A": {
+      "name": "Samantha Bobot",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Trevor Bacon",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Samantha Bobot",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Ben Sporango",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

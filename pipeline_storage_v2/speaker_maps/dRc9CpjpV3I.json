@@ -1,0 +1,32 @@
+{
+  "video_id": "dRc9CpjpV3I",
+  "title": "2022-11-06_dRc9CpjpV3I_Breakpoint 2022: Can $450B a Day in TradFi Options Finally Move On-Chain",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Tommy Johnson",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Tommy Johnson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Anand Gomes",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

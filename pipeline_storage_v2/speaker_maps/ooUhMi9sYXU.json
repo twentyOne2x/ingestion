@@ -1,0 +1,38 @@
+{
+  "video_id": "ooUhMi9sYXU",
+  "title": "2023-05-02_ooUhMi9sYXU_Live Show: When to Work with web2 - The Pro-CBDC Case - Crypto Twitter vs. the Hill",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "A": {
+      "name": "Amira Valiani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Amy Klobuchar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Brad Pitt",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Pedro Miranda",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

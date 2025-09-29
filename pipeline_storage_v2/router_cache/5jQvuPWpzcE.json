@@ -1,0 +1,26 @@
+{
+  "description": "This week's Changelog discusses updates from Solana, including a draft proposal for a unified scheduler to improve transaction scheduling and block packing [t=15:44]. It also covers the migration from BPF to SPF, emphasizing the importance of using the new Solana binary format [t=70:88]. Additionally, it highlights changes in the Explorer for displaying closed private program accounts and the removal of the deprecated BPF loader from Testnet [t=199:92]. Lastly, Third Web's recent support for Solana is introduced, showcasing their SDKs for simplifying development [t=225:23].",
+  "topic_summary": "Updates on Solana's unified scheduler proposal, BPF to SPF migration, Explorer changes, and Third Web's support for Solana.",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "BPF",
+    "SPF",
+    "Third Web",
+    "NFT",
+    "Testnet"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Third Web",
+    "third web"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@thirdweb"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

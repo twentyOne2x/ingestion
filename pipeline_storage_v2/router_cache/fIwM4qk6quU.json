@@ -1,0 +1,28 @@
+{
+  "description": "This video covers the Solana Changelog for the week of August 29th, 2022, discussing recent updates including hackathon submissions, Stack Exchange moderator elections, and new features like address lookup tables and Solang.",
+  "topic_summary": "Updates on Solana's ecosystem including hackathon submissions [t=13:20], Stack Exchange moderator elections [t=25:84], address lookup tables [t=53:69], and the introduction of Solang for Solidity programming on Solana [t=142:06].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "SDK Changes",
+    "Address Lookup Tables",
+    "Solang",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana SDK Changes",
+    "solana sdk changes"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Colin",
+    "@JacobCreech",
+    "@StevenLusha",
+    "@Otterstock"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

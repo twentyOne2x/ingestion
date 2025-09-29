@@ -1,0 +1,24 @@
+{
+  "description": "Nico from Elusive discusses the importance of privacy in Web3 and how to build ZK privacy apps on Solana. He highlights the risks of pseudonymity in transactions and the need for privacy to protect user information, especially in real-world interactions like payments. The talk covers challenges in implementing privacy features and introduces Elusive's approach to making privacy more accessible and efficient on Solana.",
+  "topic_summary": "Nico explains the significance of privacy in Web3, the limitations of current blockchain transaction anonymity, and how to create ZK privacy applications on Solana. He addresses the risks associated with public transaction visibility and outlines Elusive's solutions to enhance privacy without compromising user experience.",
+  "router_tags": [
+    "Solana",
+    "ZK Apps",
+    "Privacy",
+    "Web3",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Nico",
+    "nico",
+    "Elusive",
+    "elusive"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

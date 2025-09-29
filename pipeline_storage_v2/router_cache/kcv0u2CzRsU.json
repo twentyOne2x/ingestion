@@ -1,0 +1,25 @@
+{
+  "description": "Chris Wong from SEC3 discusses the importance of automating smart contract security, highlighting existing solutions and the need for security post-deployment. He introduces SEC3's tools, including a vulnerability scanner and a real-time threat monitor.",
+  "topic_summary": "The talk covers the significance of automating smart contract security, existing solutions in the Solana ecosystem, and the necessity of ongoing security measures after deployment. Key tools from SEC3 are presented, including a command line scanner and a web-based security platform [t=4:16-310:51].",
+  "router_tags": [
+    "Smart Contract Security",
+    "Automation",
+    "SEC3",
+    "Solana",
+    "Vulnerability Scanning"
+  ],
+  "aliases": [
+    "Chris Wong",
+    "Chris",
+    "Chris Wang",
+    "Secure Web 3",
+    "Silver Bullets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisWong"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

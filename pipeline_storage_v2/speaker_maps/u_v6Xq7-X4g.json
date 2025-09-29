@@ -1,0 +1,20 @@
+{
+  "video_id": "u_v6Xq7-X4g",
+  "title": "2022-09-15_u_v6Xq7-X4g_Amir Haleem - CEO, Nova Labs & Founder, Helium Ep #71",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Amir Halim",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

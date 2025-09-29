@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Solana community validator updates and Marinade's role in liquid staking. Highlights include network updates, validator program compliance, and community engagement.",
+  "topic_summary": "Community meeting covering network updates, validator program compliance issues, and Marinade's liquid staking solution for Solana. Special guest Lucio from Marinade discusses their objectives and decentralization efforts [t=331].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Marinade",
+    "Liquid Staking",
+    "Community"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "solana validator meeting",
+    "marinade finance",
+    "liquid staking solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Marinade"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

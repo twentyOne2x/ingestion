@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the Solana Validator community call covering the agenda, Fire Dancer by Jump Crypto, Validator Futures, and Staking Kiwi.",
+  "topic_summary": "The call includes insights on Fire Dancer's development for Solana, emphasizing decentralization and performance improvements [t=151.02]. Key speakers include Leo from Jump Crypto and Barrett from Cypher Crypto [t=20.88].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Fire Dancer",
+    "Jump Crypto",
+    "Decentralization",
+    "Performance"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "solana validator call",
+    "validator community call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JumpCrypto",
+    "@Cypher"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

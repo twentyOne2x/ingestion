@@ -1,0 +1,38 @@
+{
+  "video_id": "HpHLWRfTlm8",
+  "title": "2023-04-13_HpHLWRfTlm8_Saga Launch Event Livestream",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Josh Taylor",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Josh Stahler",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Jason Keats",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Alan Kay",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

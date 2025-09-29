@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on monitoring Solana nodes, including the use of Watchtower for node and cluster health alerts. Emphasis on contingency planning for node monitoring when unavailable. Mention of setting up alerts via Telegram and the importance of making monitoring easier for validators.",
+  "topic_summary": "Monitoring Solana nodes and using Watchtower for alerts. Importance of backup plans for node monitoring and simplifying the setup process for validators.",
+  "router_tags": [
+    "Solana",
+    "Watchtower",
+    "Node Monitoring",
+    "Alerts",
+    "Validator Education"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Monitoring and Metrics",
+    "Solana Validator Monitoring"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Zantetsu",
+    "@Zentetsu",
+    "@CogentCrypto",
+    "@Watchtower",
+    "@Cisco",
+    "@Grafana"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

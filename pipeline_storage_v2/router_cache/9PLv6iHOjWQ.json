@@ -1,0 +1,38 @@
+{
+  "description": "Panel discussion on the evolution of crypto wallets in relation to the historical browser wars, featuring insights from industry experts on user ownership, market dynamics, and the future of Web3 wallets.",
+  "topic_summary": "Exploration of the parallels between the browser wars of the late 90s and the current landscape of crypto wallets, emphasizing user ownership and market competition [t=28:05].",
+  "router_tags": [
+    "crypto",
+    "wallets",
+    "Web3",
+    "browser wars",
+    "Fantom",
+    "Soulflare",
+    "Ultimate"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "Breakpoint2022: Are Wallets Entering the 'Browser Wars' Era"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BrianFriel",
+    "@PhilipDragoslavic",
+    "@MaxVonWallenberg",
+    "@VictorPontus",
+    "@Google",
+    "@Microsoft",
+    "@Apple",
+    "@Amazon",
+    "@Fantom",
+    "@Stepn",
+    "@ETH",
+    "@BTC",
+    "@Facebook",
+    "@Twitter"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

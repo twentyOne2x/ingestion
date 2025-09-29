@@ -1,0 +1,24 @@
+{
+  "description": "Kickoff event for the Riptide Hackathon featuring Justin Kahn, Anatoly Raj, and others discussing the growth of hackathons and the Solana ecosystem.",
+  "topic_summary": "The Riptide Hackathon is the largest yet, with expectations of over 580 teams participating. The discussion highlights past successes and the potential for new projects in the Solana ecosystem, particularly in payments and user experience [t=0:64-299:77].",
+  "router_tags": [
+    "Hackathon",
+    "Solana",
+    "Crypto",
+    "Payments",
+    "Innovation"
+  ],
+  "aliases": [
+    "Riptide Hackathon",
+    "Riptide",
+    "Justin Kahn",
+    "Anatoly Raj"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@JustinKahn",
+    "@AnatolyRaj"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

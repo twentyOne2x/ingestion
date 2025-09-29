@@ -1,0 +1,24 @@
+{
+  "description": "Frank Chaparro and Armani Ferrante discuss the current state of the crypto industry, the impact of the FTX collapse, and the importance of bridging traditional finance with crypto at Breakpoint 2023.",
+  "topic_summary": "The conversation covers the aftermath of the FTX verdict, the exhaustion within the crypto community, and the necessity for institutions that connect traditional finance with the crypto economy [t=225.2].",
+  "router_tags": [
+    "Breakpoint",
+    "Crypto",
+    "FTX",
+    "Solana",
+    "Finance",
+    "Stablecoins"
+  ],
+  "aliases": [
+    "The Scoop Podcast",
+    "Frank Japaro",
+    "Armani Ferrante"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

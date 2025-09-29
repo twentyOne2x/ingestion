@@ -1,0 +1,23 @@
+{
+  "description": "A discussion on the balance of transparency in DeFi governance, focusing on the roles of community involvement and decision-making power. The panelists explore the challenges of decentralization and the importance of trust and proximity to the protocol.",
+  "topic_summary": "The panel addresses the complexities of transparency in DeFi governance, examining how much information should be shared with users and the balance between community involvement and project control. Key insights include the need for a nuanced approach to decentralization and the role of governance tokens.",
+  "router_tags": [
+    "DeFi",
+    "Governance",
+    "Transparency",
+    "Decentralization",
+    "Community"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

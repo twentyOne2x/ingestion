@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the Exchange Booth project, focusing on its design and implementation. The project aims to simulate a currency exchange using two token types, with prices determined by an oracle. Participants will design the smart contract without a formal autograder, allowing for a hands-on experience in building decentralized applications.",
+  "topic_summary": "Overview of the Exchange Booth project, its objectives, and design considerations. The project emphasizes the use of oracles for price determination and encourages participants to explore creative implementations.",
+  "router_tags": [
+    "Solana",
+    "Smart Contracts",
+    "Decentralized Finance",
+    "Oracle",
+    "Exchange Booth"
+  ],
+  "aliases": [
+    "Solana Bootcamp",
+    "Exchange Booth Project",
+    "Solana Exchange"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

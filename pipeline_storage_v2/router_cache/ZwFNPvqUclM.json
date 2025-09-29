@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Program Derived Addresses (PDAs) in Solana, highlighting their importance in allowing decentralized applications (DApps) to manage their own data without requiring a private key for each transaction. It covers the creation of PDAs, the concept of 'bump' to avoid private key associations, and demonstrates coding examples for tracking user page visits.",
+  "topic_summary": "Introduction to Program Derived Addresses (PDAs) in Solana, their functionality, and implementation in DApps [t=0:00].",
+  "router_tags": [
+    "Solana",
+    "PDAs",
+    "Blockchain",
+    "DApps",
+    "Programming"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

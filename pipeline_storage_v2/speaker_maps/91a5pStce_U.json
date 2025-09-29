@@ -1,0 +1,20 @@
+{
+  "video_id": "91a5pStce_U",
+  "title": "2022-11-06_91a5pStce_U_Breakpoint 2022: What's the Next Big Thing(s) in DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Julian Butolu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

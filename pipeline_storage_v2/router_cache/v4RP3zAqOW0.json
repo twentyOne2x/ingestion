@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on Solana community validator updates, featuring Chris from Dialect discussing new features and Brandon from Inflect sharing insights on Intel CPU benchmarking for Solana validators.",
+  "topic_summary": "Updates on Solana validator community, including network updates, delegation program metrics, and new features from Dialect and Inflect [t=0:16 - t=312:26].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Community",
+    "Dialect",
+    "Inflect",
+    "Intel",
+    "Benchmarking"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "solana community validator discussion",
+    "Solana Validator Updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Dialect",
+    "@Inflect",
+    "@BrandonStanley",
+    "@Chris",
+    "@Brian",
+    "@Blake",
+    "@Tim"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

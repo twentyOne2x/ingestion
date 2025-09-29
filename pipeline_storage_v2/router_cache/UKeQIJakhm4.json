@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on the impact of composability in DeFi, highlighting risks and benefits associated with building interconnected financial systems. Key topics include margin trading, aggregation, and the integration of protocols like Mango and Serum.",
+  "topic_summary": "Exploration of composability in DeFi, emphasizing its importance and the associated risks of creating layered financial systems. The conversation covers various protocols and their integration challenges, including insights from industry experts.",
+  "router_tags": [
+    "DeFi",
+    "Composability",
+    "Risk Management",
+    "Protocols",
+    "Margin Trading"
+  ],
+  "aliases": [
+    "Breakpoinnt 2022",
+    "Breakpoinnt 2022: Composability's Impact on DeFi",
+    "breakpoinnt 2022",
+    "composability's impact on defi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Max",
+    "@Mango",
+    "@Serum",
+    "@Marginfy",
+    "@Edgar",
+    "@Ben",
+    "@SierraMango",
+    "@MorganStanley",
+    "@Bybit",
+    "@Riftus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

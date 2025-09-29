@@ -1,0 +1,20 @@
+{
+  "video_id": "1QJ14MTIuMs",
+  "title": "2022-10-14_1QJ14MTIuMs_Solana Community Validator Discussion - October 13 2022",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Sam Legends",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

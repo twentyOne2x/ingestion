@@ -1,0 +1,22 @@
+{
+  "description": "In this session, the speaker introduces the Echo program, which aims to facilitate the transfer of off-chain data to the Solana blockchain. The program consists of five instructions, focusing on the initial transaction setup and the use of public key cryptography for access control. The speaker emphasizes the importance of understanding the serialization format used in the project and how to represent data correctly when interacting with the blockchain.",
+  "topic_summary": "The Echo program is designed to help developers understand how to transfer off-chain data to the blockchain, covering key concepts such as transaction initiation, public key access control, and data serialization. The session outlines the implementation of five instructions, with a focus on the first three as foundational elements for further development.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Echo Program",
+    "Data Serialization",
+    "Public Key Cryptography"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Echo program",
+    "Solana development"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

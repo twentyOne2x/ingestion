@@ -1,0 +1,26 @@
+{
+  "video_id": "N0GTUhm5INE",
+  "title": "2022-05-24_N0GTUhm5INE_Crypto & National Security Ep #66",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Ari Redboard",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Amira Valiany",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

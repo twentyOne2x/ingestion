@@ -1,0 +1,24 @@
+{
+  "description": "This video discusses the latest updates in the Solana ecosystem, including version transactions, address lookup tables, and a new fee market proposal for storage. Key features and implications for developers are highlighted.",
+  "topic_summary": "Updates on Solana's version transactions and address lookup tables are discussed, along with a new fee market proposal for storage. The video also covers recent commits related to these features and introduces Super Team Earn, a new platform for bounties and job opportunities revealed at the New Delhi Hacker House. [t=0:64] [t=11:28] [t=104:59] [t=233:34]",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Development",
+    "Updates"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "Solana updates",
+    "solana updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SuperTeam"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

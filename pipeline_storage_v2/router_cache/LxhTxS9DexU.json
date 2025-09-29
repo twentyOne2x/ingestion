@@ -1,0 +1,23 @@
+{
+  "description": "Live stream discussing state compression and compressed NFTs on Solana, including minting, reading, and transferring compressed NFTs. The session covers the cost benefits of using compressed NFTs compared to traditional NFTs, with specific examples of cost reductions for large collections.",
+  "topic_summary": "Overview of state compression and its impact on NFT minting costs on Solana, including technical details about Merkle trees and the Bubblegum program for managing compressed NFTs [t=4:56].",
+  "router_tags": [
+    "Solana",
+    "NFTs",
+    "State Compression",
+    "Compressed NFTs",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Austin Federa discusses the partnership between Metaplex and Strata Protocol, focusing on new tools for dynamic pricing in NFT mints. Guests Noah Prince and Austin Adams explain Strata's role in token launches and liquidity management, addressing challenges faced by projects in the Solana ecosystem.",
+  "topic_summary": "The episode covers the collaboration between Metaplex and Strata Protocol, highlighting innovations in NFT minting and token launch processes. It discusses the economic implications of dynamic pricing and the solutions Strata offers to streamline token creation and liquidity management [t=12:84].",
+  "router_tags": [
+    "Metaplex",
+    "Strata Protocol",
+    "NFT",
+    "Solana",
+    "Token Launch",
+    "Dynamic Pricing"
+  ],
+  "aliases": [
+    "Strata Protocol",
+    "strata protocol",
+    "Metaplex",
+    "metaplex"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

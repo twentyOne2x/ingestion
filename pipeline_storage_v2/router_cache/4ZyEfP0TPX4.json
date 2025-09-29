@@ -1,0 +1,31 @@
+{
+  "description": "Yelena Kavanagh leads a discussion on legal challenges for developers in the crypto space, emphasizing the importance of understanding regulatory frameworks and the distinction between securities and non-securities. The panel includes legal experts who share their experiences and insights on navigating the complex landscape of blockchain regulation.",
+  "topic_summary": "The panel addresses the blurred lines of regulatory compliance for developers in the crypto industry, focusing on the classification of tokens and the implications of securities laws [t=352.21].",
+  "router_tags": [
+    "Legal",
+    "Blockchain",
+    "Crypto",
+    "Regulation",
+    "Developers"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Navigating Blurred Lines",
+    "Legal Considerations for Developers"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@YelenaKavanagh",
+    "@LewisCohen",
+    "@KarenUbell",
+    "@NancyWojas",
+    "@CooleyLLP",
+    "@DLXLaw",
+    "@Winklevoss",
+    "@SEC_News",
+    "@CFTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

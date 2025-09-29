@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Solana Podcast, Amir Haleem, CEO of Nova Labs and founder of Helium, discusses the evolution of the Helium Network and its proposed transition to the Solana blockchain. He shares insights on the original vision for Helium, the challenges faced in building a sensor network, and the impact of blockchain technology on their approach to connectivity.",
+  "topic_summary": "Amir Haleem discusses the Helium Network's transition to Solana, its unique approach to building a sensor network, and the influence of blockchain on their operational model [t=12:00].",
+  "router_tags": [
+    "Helium",
+    "Solana",
+    "Blockchain",
+    "Nova Labs",
+    "IoT",
+    "Crypto"
+  ],
+  "aliases": [
+    "Amir Haleem",
+    "Amir Halim",
+    "Nova Labs",
+    "Helium Network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "HNT"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

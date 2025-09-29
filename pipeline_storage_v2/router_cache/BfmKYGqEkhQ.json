@@ -1,0 +1,27 @@
+{
+  "description": "Nam and John discuss their experiences with regulators in Washington, focusing on the implications of DAOs and NFTs in the art world. They emphasize the importance of community involvement in crypto regulation and the potential risks of overregulation stifling creativity.",
+  "topic_summary": "The panel explores the intersection of art, DAOs, and regulation in the crypto space, highlighting the need for understanding and empathy from policymakers regarding the unique culture of Web3 and independent artists. [t=11:12] to [t=363:72]",
+  "router_tags": [
+    "NFT",
+    "DAO",
+    "Web3",
+    "Regulation",
+    "Art",
+    "Crypto"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nam",
+    "@JohnLey",
+    "@JohnCurtis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

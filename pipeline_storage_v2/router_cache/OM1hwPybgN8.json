@@ -1,0 +1,23 @@
+{
+  "description": "At Breakpoint 2023, speakers discuss the integration of blockchain technology in ticketing and community building, highlighting the potential of Solana's ecosystem.",
+  "topic_summary": "The discussion covers the introduction of Tweed, a wallet as a service, and its role in facilitating blockchain experiences for Web2 users, particularly in ticketing and community engagement [t=211.4].",
+  "router_tags": [
+    "Blockchain",
+    "Ticketing",
+    "Solana",
+    "Web2",
+    "Community Building"
+  ],
+  "aliases": [
+    "Breakpoint 2023",
+    "SolanaFndn",
+    "Tweed"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Tweed"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

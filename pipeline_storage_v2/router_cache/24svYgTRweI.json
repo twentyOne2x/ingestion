@@ -1,0 +1,23 @@
+{
+  "description": "Brandon, CEO of Phantom, discusses phishing and scamming in the crypto space, emphasizing the need for community collaboration to combat these threats. He outlines various phishing tactics, including fake websites and social engineering, and shares statistics on Phantom's user growth and transaction volume.",
+  "topic_summary": "Brandon explains the challenges of phishing in crypto, defines phishing in a crypto context, and discusses the types of attacks and solutions available. He highlights the importance of community efforts in addressing these issues and shares a user journey of a new crypto user, Alice.",
+  "router_tags": [
+    "Phishing",
+    "Scamming",
+    "Crypto Security",
+    "Phantom",
+    "Web3",
+    "NFTs"
+  ],
+  "aliases": [
+    "Brandon",
+    "Chillman",
+    "Phantom"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}
