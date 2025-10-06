@@ -10,16 +10,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Xi Chen",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Tim Roughgarden",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Xi Chen",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

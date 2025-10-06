@@ -10,6 +10,12 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "D": {
       "name": "Steve Schwarzman",
       "role": "Guest",
@@ -21,12 +27,6 @@
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
-    },
-    "A": {
-      "name": "@notthreadguy",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
     }
   }
 }

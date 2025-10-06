@@ -10,20 +10,20 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "D": {
+    "A": {
       "name": "Amy Street",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Walker Guffey",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
     "C": {
       "name": "Moon Maxi",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Walker Guffey",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

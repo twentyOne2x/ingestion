@@ -10,6 +10,12 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Jan Lieberman",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@Delphi_Digital",
       "role": "Host",
@@ -17,15 +23,9 @@
       "source": "tier1"
     },
     "C": {
-      "name": "Jan Lieberman",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
       "name": "Ceteris Paribus",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

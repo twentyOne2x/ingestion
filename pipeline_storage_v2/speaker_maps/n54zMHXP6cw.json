@@ -4,16 +4,16 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "D",
   "speaker_map": {
-    "D": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "A": {
       "name": "New York",
       "role": "Guest",
       "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
       "source": "tier1"
     }
   }

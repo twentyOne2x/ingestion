@@ -4,17 +4,35 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Steven Laver",
+    "E": {
+      "name": "Laura Shen",
       "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "B": {
       "name": "@SolanaFndn",
       "role": "Host",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "A": {
+      "name": "Steven Laver",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Steven Laver",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Sydney Zhang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

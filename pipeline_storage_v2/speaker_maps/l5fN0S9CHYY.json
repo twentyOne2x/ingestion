@@ -10,16 +10,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Alexander Good",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "C": {
       "name": "Raoul Powell",
       "role": "Guest",
       "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Alex Good",
-      "role": "Guest",
-      "confidence": 0.7,
       "source": "tier1|title"
     }
   }

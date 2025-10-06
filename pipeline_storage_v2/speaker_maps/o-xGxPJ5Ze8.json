@@ -4,11 +4,29 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
+    "B": {
+      "name": "Jerry Zhao",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Larry Wu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Noah Gandotra",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     }
   }
 }

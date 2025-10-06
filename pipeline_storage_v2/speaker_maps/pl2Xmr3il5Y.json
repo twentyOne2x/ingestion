@@ -10,17 +10,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Harry Potter",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@notthreadguy",
       "role": "Host",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Harry Potter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

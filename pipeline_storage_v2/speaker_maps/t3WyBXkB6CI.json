@@ -10,6 +10,12 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Elizabeth Warren",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Sheila Warren",
       "role": "Guest",
@@ -17,15 +23,9 @@
       "source": "tier1|title"
     },
     "C": {
-      "name": "Steve Scalise",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
       "name": "Donald Trump",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

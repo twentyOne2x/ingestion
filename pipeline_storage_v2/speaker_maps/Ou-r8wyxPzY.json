@@ -5,12 +5,6 @@
   "speaker_primary": "A",
   "speaker_map": {
     "B": {
-      "name": "Hunter Biden",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "C": {
       "name": "Eric Trump",
       "role": "Guest",
       "confidence": 0.7,
@@ -21,6 +15,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Hunter Biden",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     }
   }
 }

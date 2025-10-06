@@ -4,32 +4,8 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
-    "C": {
-      "name": "Dan Calloway",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Andrew Lowe",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "F": {
       "name": "Sam Sa",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "H": {
-      "name": "Mark Saddam",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "I": {
-      "name": "Dan Curtis",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -40,10 +16,40 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "J": {
       "name": "Jean Michel Basquiat",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Dan Calloway",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "I": {
+      "name": "Dan Curtis",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Andrew Lowe",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Crash One",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     },
     "E": {
@@ -52,16 +58,10 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "D": {
-      "name": "Crash One",
+    "H": {
+      "name": "Mark Saddam",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

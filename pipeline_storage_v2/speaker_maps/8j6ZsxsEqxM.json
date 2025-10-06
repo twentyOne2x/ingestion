@@ -10,6 +10,12 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Pat Toomey",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -18,12 +24,6 @@
     },
     "C": {
       "name": "Tom Emmer",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Landon Zinda",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

@@ -4,26 +4,26 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "A": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "H": {
-      "name": "Brian Long",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
       "name": "Michael Hubbard",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "D": {
       "name": "Rex St. John",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "H": {
+      "name": "Brian Long",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

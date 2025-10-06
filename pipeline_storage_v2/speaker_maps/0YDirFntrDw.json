@@ -10,6 +10,12 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Noah Prince",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Steve Jobs",
       "role": "Guest",
@@ -21,12 +27,6 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Noah Prince",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

@@ -4,17 +4,29 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "D",
   "speaker_map": {
-    "D": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "B": {
+      "name": "Lonzo Ball",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "A": {
       "name": "Magic Eden",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Tobias Harris",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

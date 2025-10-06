@@ -4,6 +4,18 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
+    "B": {
+      "name": "Ferris Bueller",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Stefan Avalos",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "C": {
       "name": "@SolanaFndn",
       "role": "Host",

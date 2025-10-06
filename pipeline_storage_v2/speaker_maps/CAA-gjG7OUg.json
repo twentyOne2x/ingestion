@@ -10,6 +10,12 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Gareth Jenkinson",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Daniel Kelleher",
       "role": "Guest",
@@ -21,12 +27,6 @@
       "role": "Host",
       "confidence": 0.7000000000000001,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Gareth Jenkinson",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

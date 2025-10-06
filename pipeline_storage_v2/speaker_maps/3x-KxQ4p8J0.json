@@ -10,14 +10,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "John Bogle",
+    "A": {
+      "name": "Roger Ver",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Roger Ver",
+    "C": {
+      "name": "John Bogle",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

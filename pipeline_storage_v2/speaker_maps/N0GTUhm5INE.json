@@ -4,6 +4,12 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
+    "B": {
+      "name": "Amira Valiany",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "A": {
       "name": "Ari Redboard",
       "role": "Guest",
@@ -15,12 +21,6 @@
       "role": "Host",
       "confidence": 0.7000000000000001,
       "source": "tier1"
-    },
-    "B": {
-      "name": "Amira Valiany",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

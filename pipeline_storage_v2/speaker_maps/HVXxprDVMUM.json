@@ -4,18 +4,6 @@
   "channel_name": "@Delphi_Digital",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Justin Bennington",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "A": {
-      "name": "@Delphi_Digital",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "E": {
       "name": "Blake Lemoine",
       "role": "Guest",
@@ -34,11 +22,23 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "D": {
       "name": "Tim Shell",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
+    },
+    "C": {
+      "name": "Justin Bennington",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     }
   }
 }

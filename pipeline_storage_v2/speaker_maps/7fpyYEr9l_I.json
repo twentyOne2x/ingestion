@@ -10,6 +10,12 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Will Ian",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@Delphi_Digital",
       "role": "Host",
@@ -20,12 +26,6 @@
       "name": "Dan Romero",
       "role": "Guest",
       "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Will Ian",
-      "role": "Guest",
-      "confidence": 0.7,
       "source": "tier1|title"
     }
   }

@@ -4,6 +4,12 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "D",
   "speaker_map": {
+    "A": {
+      "name": "Pedro Miranda",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -12,12 +18,6 @@
     },
     "C": {
       "name": "Chris Fiore",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Pedro Miranda",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

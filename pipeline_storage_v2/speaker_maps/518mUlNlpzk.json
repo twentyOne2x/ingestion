@@ -10,14 +10,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Cardi Ken Carson",
+    "A": {
+      "name": "Sam Altman",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Sam Altman",
+    "C": {
+      "name": "Cardi Ken Carson",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

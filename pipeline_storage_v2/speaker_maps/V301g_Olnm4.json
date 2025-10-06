@@ -9,6 +9,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "A": {
+      "name": "Paul Graham",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -15,6 +15,12 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Fred Wilson",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     }
   }
 }

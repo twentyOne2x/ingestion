@@ -5,7 +5,13 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "Matt Bridge",
+      "name": "Brian Johnson",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ceteris Paribus Ceteris",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -21,12 +27,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Rob Disclosure",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

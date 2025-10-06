@@ -10,16 +10,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Jack Butcher",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "David Hoffman",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Jack Butcher",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     }
   }

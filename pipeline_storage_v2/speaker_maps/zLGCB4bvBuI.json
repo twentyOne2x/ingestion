@@ -10,17 +10,17 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Carlos Domingo",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Carlos Domingo",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Carlos Domingo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

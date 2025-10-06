@@ -10,6 +10,12 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
+    "A": {
+      "name": "Dave Stetson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -18,12 +24,6 @@
     },
     "C": {
       "name": "Mike Mosher",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Dave Stetson",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

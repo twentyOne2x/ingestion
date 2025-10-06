@@ -4,17 +4,17 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Hatsune Miku",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@notthreadguy",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Hatsune Miku",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

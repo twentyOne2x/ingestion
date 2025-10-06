@@ -5,6 +5,12 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
+      "name": "Pone Lord",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
       "name": "Pawn Lord",
       "role": "Guest",
       "confidence": 0.7,
@@ -15,12 +21,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Pone Lord",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

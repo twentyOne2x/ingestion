@@ -4,8 +4,20 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "A": {
       "name": "Yelena Kavanagh",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Nancy Wojas",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -15,18 +27,6 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
-    },
-    "B": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "D": {
-      "name": "Nancy Wojas",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

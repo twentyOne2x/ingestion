@@ -4,20 +4,20 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Tobias Madol",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "F": {
       "name": "Thomas Lambertz",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "H": {
-      "name": "Tobias Model",
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Tobias Madol",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -28,11 +28,11 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "H": {
+      "name": "Tobias Model",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

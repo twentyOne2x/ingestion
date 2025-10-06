@@ -10,16 +10,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Anna Tolle",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Pedro Miranda",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Anna Tolle",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

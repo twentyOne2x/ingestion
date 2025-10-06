@@ -5,13 +5,19 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "Bill Haggerty",
+      "name": "French Hill",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Rick Scott",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
     "D": {
-      "name": "Tim Scott",
+      "name": "Bill Haggerty",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -21,12 +27,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "French Hill",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

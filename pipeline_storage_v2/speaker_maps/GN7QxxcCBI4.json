@@ -10,14 +10,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Richard Demoy",
+    "A": {
+      "name": "Nikita Beer",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Nikita Beer",
+    "C": {
+      "name": "Richard Demoy",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

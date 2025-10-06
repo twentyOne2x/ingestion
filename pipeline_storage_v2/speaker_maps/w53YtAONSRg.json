@@ -5,9 +5,15 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "Eliot Jordan Lopez",
+      "name": "Valentine Madrid",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Elio Jordan Lopez",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     },
     "C": {
@@ -15,12 +21,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Valentine Madrid",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
     }
   }
 }

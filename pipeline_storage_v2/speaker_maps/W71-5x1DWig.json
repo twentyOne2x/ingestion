@@ -10,6 +10,12 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
+    "A": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "@Delphi_Digital",
       "role": "Host",
@@ -18,12 +24,6 @@
     },
     "C": {
       "name": "Jose Macedu",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Kyle Samani",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

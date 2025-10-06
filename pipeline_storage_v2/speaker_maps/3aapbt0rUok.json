@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
-    "C": {
-      "name": "Sin Lin",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Andrew Durge",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "E": {
       "name": "Andrew Durge",
       "role": "Guest",
@@ -28,10 +16,22 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Andrew Durge",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Hester Peirce",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Sin Lin",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     }
   }

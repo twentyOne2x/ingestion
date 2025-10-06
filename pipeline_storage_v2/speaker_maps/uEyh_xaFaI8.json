@@ -4,10 +4,10 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
-    "C": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
+    "E": {
+      "name": "Malaysian Chinese",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
       "source": "tier1"
     },
     "A": {
@@ -16,17 +16,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "E": {
-      "name": "Malaysian Chinese",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "D": {
       "name": "Joan Hill",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     }
   }
 }

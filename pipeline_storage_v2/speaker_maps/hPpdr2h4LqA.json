@@ -10,17 +10,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "David Arthur",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@timroughgardenlectures1861",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "C": {
+      "name": "David Arthur",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

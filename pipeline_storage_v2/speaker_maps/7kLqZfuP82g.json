@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "F",
   "speaker_map": {
-    "C": {
-      "name": "Kevin Cyrus",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Sci Fi",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "E": {
       "name": "Sarah Swazell",
       "role": "Guest",
@@ -34,11 +22,23 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Sci Fi",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
     "D": {
       "name": "Fire Dancer",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Kevin Cyrus",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

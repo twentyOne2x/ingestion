@@ -10,16 +10,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Jordan Sexton",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Nick Frostbutter",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Jordan Sexton",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     }
   }

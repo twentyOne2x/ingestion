@@ -10,6 +10,12 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "D": {
       "name": "Chris Greco",
       "role": "Guest",
@@ -17,16 +23,10 @@
       "source": "tier1|title"
     },
     "C": {
-      "name": "James Exxon",
+      "name": "Ron Wyden",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
-    },
-    "A": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
     }
   }
 }

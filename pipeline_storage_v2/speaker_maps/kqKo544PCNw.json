@@ -10,6 +10,12 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Oda Fallenworth",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Angien Khan",
       "role": "Guest",
@@ -18,12 +24,6 @@
     },
     "C": {
       "name": "M. Abaya",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Oda Fallenworth",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

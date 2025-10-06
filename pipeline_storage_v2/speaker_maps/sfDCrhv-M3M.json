@@ -9,6 +9,24 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "A": {
+      "name": "Sebastian Camposgroth",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Mark Zuckerberg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Elon Musk",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

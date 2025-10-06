@@ -4,12 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Vivian Dow",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -18,6 +12,12 @@
     },
     "D": {
       "name": "Lena Tinka",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Vivian Dow",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

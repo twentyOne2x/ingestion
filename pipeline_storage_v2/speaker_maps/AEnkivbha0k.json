@@ -9,6 +9,24 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "A": {
+      "name": "Max Flamingo",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Zim Tetsu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Stephen Akridge",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -10,17 +10,17 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "C": {
-      "name": "Jose Maria Macedou",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@Delphi_Digital",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Jose Maria Macedou",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

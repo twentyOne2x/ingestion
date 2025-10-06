@@ -4,6 +4,12 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
+    "B": {
+      "name": "Patrick Sayadarini",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -12,12 +18,6 @@
     },
     "C": {
       "name": "Vitali Lahof",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "Patrick Sayadarini",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

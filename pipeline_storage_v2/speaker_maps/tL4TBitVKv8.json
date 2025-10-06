@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Ilya Sutskever",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "E": {
       "name": "Janet Yellen",
       "role": "Guest",
@@ -28,11 +16,23 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "G": {
+      "name": "Dylan Rollnick",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "B": {
       "name": "Dario Amode",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     },
     "D": {
       "name": "Daniela Amodi",
@@ -40,8 +40,8 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "Dylan Rollnick",
+    "C": {
+      "name": "Ilya Sutskever",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
