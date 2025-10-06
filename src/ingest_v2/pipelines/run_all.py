@@ -438,6 +438,126 @@ def _filter_speaker_map_people(spmap: Dict[str, Any], keep_keys: set[str], host_
     return out
 
 
+def _get_ingested_parent_ids(index_name: str, namespace: str) -> set[str]:
+    """
+    Query Pinecone for existing child vectors and extract unique parent_ids.
+    Works efficiently when you have <10k parents (even if >10k children total).
+    """
+    api_key = os.getenv("PINECONE_API_KEY")
+    if not api_key:
+        raise RuntimeError("PINECONE_API_KEY not set")
+
+    from pinecone import Pinecone
+    pc = Pinecone(api_key=api_key)
+    idx = pc.Index(index_name)
+
+    # Detect dimension (same logic as node_summary_cleanup.py)
+    stats = idx.describe_index_stats()
+    dimension = None
+    for ns_stats in stats.get('namespaces', {}).values():
+        if 'dimension' in ns_stats:
+            dimension = ns_stats['dimension']
+            break
+
+    if dimension is None:
+        for try_dim in [3072, 1536, 768]:
+            try:
+                idx.query(
+                    namespace=namespace,
+                    filter={"node_type": "child"},
+                    top_k=1,
+                    include_metadata=True,
+                    vector=[0.0] * try_dim
+                )
+                dimension = try_dim
+                logging.info(f"[dedupe] detected dimension={dimension}")
+                break
+            except:
+                continue
+
+    if dimension is None:
+        raise RuntimeError("Could not determine index dimension")
+
+    logging.info("[dedupe] querying Pinecone for existing parent_ids...")
+    result = idx.query(
+        namespace=namespace,
+        filter={"node_type": "child"},
+        top_k=10000,  # Covers >1739 parents via their children
+        include_metadata=True,
+        vector=[0.0] * dimension
+    )
+
+    parent_ids = {
+        match['metadata']['parent_id']
+        for match in result.get('matches', [])
+        if match.get('metadata', {}).get('parent_id')
+    }
+
+    logging.info(f"[dedupe] found {len(parent_ids)} unique parent_ids already in Pinecone")
+    return parent_ids
+
+def _guess_audio_path(json_path: Path) -> Optional[Path]:
+    # Look for a sibling .mp3/.wav using the same stem
+    stem = json_path.stem.replace("_diarized_content", "")
+    for ext in (".mp3", ".wav", ".m4a"):
+        cand = json_path.with_name(f"{stem}{ext}")
+        if cand.exists():
+            return cand
+    # or parent dir with same basename
+    for ext in (".mp3", ".wav", ".m4a"):
+        cand = json_path.parent / f"{stem}{ext}"
+        if cand.exists():
+            return cand
+    return None
+
+# add near other imports
+from typing import Any, Dict, List
+from pathlib import Path
+import json, logging
+
+def _entities_sidecar_path(json_path: Path) -> Path:
+    stem = json_path.stem.replace("_diarized_content", "")
+    return json_path.with_name(f"{stem}_entities.json")
+
+def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, Any]]:
+    """
+    Prefer a sibling '*_entities.json'. Fallback to top-level obj['entities'].
+    Accepts:
+      - list[dict{text, entity_type, ...}] (AAI style)
+      - list[str]                           (we wrap into dicts)
+      - dict with key 'entities'            (we take that list)
+    """
+    def _norm(payload) -> List[Dict[str, Any]]:
+        if isinstance(payload, dict) and isinstance(payload.get("entities"), list):
+            payload = payload["entities"]
+        if isinstance(payload, list):
+            if payload and isinstance(payload[0], dict):
+                return payload
+            if payload and isinstance(payload[0], str):
+                return [{"text": s, "entity_type": "custom"} for s in payload if isinstance(s, str)]
+            return []
+        return []
+
+    sidecar = _entities_sidecar_path(content_path)
+    try:
+        if sidecar.exists():
+            raw = _fast_json_load(sidecar)
+            ents = _norm(raw)
+            logging.info("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(ents))
+            return ents
+    except Exception as e:
+        logging.warning("[v2/entities] sidecar read failed %s: %s", sidecar, e)
+
+    # SAFE: only read top-level entities if the top-level object is a dict
+    top_payload = obj.get("entities") if isinstance(obj, dict) else None
+    ents = _norm(top_payload)
+    if ents:
+        logging.info("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(ents))
+    else:
+        logging.info("[v2/entities] no entities for %s", content_path.name)
+    return ents
+
+
 def main():
     setup_logger("ingest_v2")
     ap = argparse.ArgumentParser()
@@ -450,6 +570,8 @@ def main():
                     help="Workers for speaker resolution across videos (default: ~70% of CPUs when 0)")
     ap.add_argument("--skip-speakers", action="store_true",
                     help="Skip cross-video speaker resolution/enroll stages")
+    ap.add_argument("--skip-dedupe", action="store_true",
+                    help="Skip Pinecone deduplication check (process all filesystem assets)")
     args = ap.parse_args()
 
     # Ensure Tier-2 voice matching is OFF by default; set VOICE_EMBED_BACKEND=auto to enable.
@@ -466,6 +588,34 @@ def main():
     if not metas_raw_paths:
         logging.info("[v2] no youtube assets found; exiting.")
         return
+
+    # ── FILTER: Remove already-ingested parents ────────────────────────────────
+    if not args.skip_dedupe:
+        logging.info("[v2/dedupe] checking which parents are already in Pinecone...")
+        already_ingested = _get_ingested_parent_ids(
+            index_name=os.getenv("PINECONE_INDEX_NAME", "icmfyi"),
+            namespace=os.getenv("PINECONE_NAMESPACE", "videos")
+        )
+
+        before_count = len(metas_raw_paths)
+        metas_raw_paths = [
+            (meta, raw, path)
+            for (meta, raw, path) in metas_raw_paths
+            if meta["video_id"] not in already_ingested
+        ]
+        after_count = len(metas_raw_paths)
+
+        logging.info(
+            f"[v2/dedupe] parent filter: {before_count} discovered, "
+            f"{len(already_ingested)} already ingested, "
+            f"{after_count} remaining to process"
+        )
+
+        if not metas_raw_paths:
+            logging.info("[v2] all parents already in Pinecone. Nothing to do.")
+            return
+    else:
+        logging.info("[v2/dedupe] skipping deduplication check (--skip-dedupe)")
 
     # ── Prioritize assets (stable within groups) ────────────────────────────────
     metas_raw_paths = _prioritize_assets(
@@ -587,6 +737,7 @@ def main():
     if to_enrich:
         async def _batch_enrich(pairs: List[Tuple[Dict[str, Any], Dict[str, Any]]], concurrency: int):
             sem = asyncio.Semaphore(concurrency)
+
             async def _one(meta: Dict[str, Any], raw: Dict[str, Any]):
                 pid = meta["video_id"]
                 try:
@@ -602,6 +753,7 @@ def main():
                     return meta, enrich, None, dt
                 except Exception as e:
                     return meta, None, e, 0.0
+
             tasks = [asyncio.create_task(_one(m, r)) for (m, r) in pairs]
             return await asyncio.gather(*tasks)
 
@@ -693,7 +845,7 @@ def main():
             continue
 
         t0 = time.perf_counter()
-        stats = upsert_children(children)   # CHANGED
+        stats = upsert_children(children)
         dt = time.perf_counter() - t0
         t_children_total += dt
         total_children += len(children)
@@ -716,66 +868,6 @@ def main():
         t_speakers_total, avg_speakers, t_enrich_total, t_children_total,
     )
 
-def _guess_audio_path(json_path: Path) -> Optional[Path]:
-    # Look for a sibling .mp3/.wav using the same stem
-    stem = json_path.stem.replace("_diarized_content", "")
-    for ext in (".mp3", ".wav", ".m4a"):
-        cand = json_path.with_name(f"{stem}{ext}")
-        if cand.exists():
-            return cand
-    # or parent dir with same basename
-    for ext in (".mp3", ".wav", ".m4a"):
-        cand = json_path.parent / f"{stem}{ext}"
-        if cand.exists():
-            return cand
-    return None
-
-# add near other imports
-from typing import Any, Dict, List
-from pathlib import Path
-import json, logging
-
-def _entities_sidecar_path(json_path: Path) -> Path:
-    stem = json_path.stem.replace("_diarized_content", "")
-    return json_path.with_name(f"{stem}_entities.json")
-
-def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, Any]]:
-    """
-    Prefer a sibling '*_entities.json'. Fallback to top-level obj['entities'].
-    Accepts:
-      - list[dict{text, entity_type, ...}] (AAI style)
-      - list[str]                           (we wrap into dicts)
-      - dict with key 'entities'            (we take that list)
-    """
-    def _norm(payload) -> List[Dict[str, Any]]:
-        if isinstance(payload, dict) and isinstance(payload.get("entities"), list):
-            payload = payload["entities"]
-        if isinstance(payload, list):
-            if payload and isinstance(payload[0], dict):
-                return payload
-            if payload and isinstance(payload[0], str):
-                return [{"text": s, "entity_type": "custom"} for s in payload if isinstance(s, str)]
-            return []
-        return []
-
-    sidecar = _entities_sidecar_path(content_path)
-    try:
-        if sidecar.exists():
-            raw = _fast_json_load(sidecar)
-            ents = _norm(raw)
-            logging.info("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(ents))
-            return ents
-    except Exception as e:
-        logging.warning("[v2/entities] sidecar read failed %s: %s", sidecar, e)
-
-    # SAFE: only read top-level entities if the top-level object is a dict
-    top_payload = obj.get("entities") if isinstance(obj, dict) else None
-    ents = _norm(top_payload)
-    if ents:
-        logging.info("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(ents))
-    else:
-        logging.info("[v2/entities] no entities for %s", content_path.name)
-    return ents
 
 
 
