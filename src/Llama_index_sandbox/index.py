@@ -24,7 +24,7 @@ from src.Llama_index_sandbox.utils.utils import timeit, load_vector_store_from_p
 def initialise_vector_store(embedding_model_vector_dimension, vector_space_distance_metric='cosine') -> PineconeVectorStore:
     api_key = os.environ["PINECONE_API_KEY"]
     pinecone.init(api_key=api_key, environment=os.environ["PINECONE_API_ENVIRONMENT"])
-    index_name = "icmfyi"
+    index_name = "icmfyi-v2"
 
     # Check if the index already exists
     existing_indexes = pinecone.list_indexes()

@@ -593,7 +593,7 @@ def main():
     if not args.skip_dedupe:
         logging.info("[v2/dedupe] checking which parents are already in Pinecone...")
         already_ingested = _get_ingested_parent_ids(
-            index_name=os.getenv("PINECONE_INDEX_NAME", "icmfyi"),
+            index_name=os.getenv("PINECONE_INDEX_NAME", "icmfyi-v2"),
             namespace=os.getenv("PINECONE_NAMESPACE", "videos")
         )
 

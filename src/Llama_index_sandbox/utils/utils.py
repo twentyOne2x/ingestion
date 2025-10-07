@@ -268,7 +268,7 @@ def compute_new_entries(latest_df: pd.DataFrame, current_df: pd.DataFrame, left_
     return new_entries_df
 
 
-def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=False, index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi")):
+def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=False, index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi-v2")):
     pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )
@@ -291,7 +291,7 @@ def load_vector_store_from_pinecone_database(delete_old_index=False, new_index=F
     return vector_store
 
 
-def load_vector_store_from_pinecone_database_legacy(index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi")):
+def load_vector_store_from_pinecone_database_legacy(index_name=os.environ.get("PINECONE_INDEX_NAME", "icmfyi-v2")):
     pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )

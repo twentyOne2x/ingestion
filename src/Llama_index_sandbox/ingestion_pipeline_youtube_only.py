@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore", message="Removing unpickleable")
 num_workers = min(18, os.cpu_count())
 
 
-def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_index=False, index_name="icmfyi"):
+def initialise_pipeline(add_to_vector_store=True, delete_old_index=False, new_index=False, index_name="icmfyi-v2"):
     if add_to_vector_store:
         vector_store = load_vector_store_from_pinecone_database(delete_old_index=delete_old_index, new_index=new_index, index_name=index_name)
     else:

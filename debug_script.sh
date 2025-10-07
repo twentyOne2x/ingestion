@@ -33,8 +33,8 @@ echo "\`\`\`"  # Start triple backticks
 
 # Find all Python files in src/ingest_v2 and process them
 if [ -d "$src_dir" ]; then
-    # Find all .py files, excluding __pycache__ directories
-    find "$src_dir" -type f -name "*.py" ! -path "*/__pycache__/*" | sort | while IFS= read -r file; do
+    # Find all .py files, excluding __pycache__ and pipeline_storage_v2 directories
+    find "$src_dir" -type f -name "*.py" ! -path "*/__pycache__/*" ! -path "*/pipeline_storage_v2/*" | sort | while IFS= read -r file; do
         echo "File: $file"
         echo "---------------------------------"
         cat "$file"
@@ -47,7 +47,7 @@ else
 fi
 
 # Print directory structure of the specified path excluding certain paths and .json files
-tree "$tree_dir" -I "node_modules|public|components|lib|assets|venv|utils|logs|fonts|cache|__pycache__|*.json" -L 4
+tree "$tree_dir" -I "node_modules|public|components|lib|assets|venv|utils|logs|fonts|cache|__pycache__|*.json|tests|sources|segmenters|schemas|scripts|migrations|transcripts|utils|validators|pipeline_storage_v2" -L 4
 
 # Conditionally add the pre-error context and error section if logs were processed
 if [ "$logs_processed" = true ]; then
