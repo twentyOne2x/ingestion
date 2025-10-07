@@ -15,6 +15,7 @@ import hashlib  # add to imports
 from src.ingest_v2.configs.settings import settings_v2
 from src.ingest_v2.pipelines.build_children import build_children_from_raw
 from src.ingest_v2.pipelines.build_parents import run_build_parents
+from src.ingest_v2.pipelines.upsert_parents import upsert_parents
 from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
 from src.ingest_v2.router.cache import load as router_cache_load
 from src.ingest_v2.router.cache import save as router_cache_save
@@ -821,7 +822,11 @@ def main():
 
     progress.set_parents_total(len(parents))
 
-    parents_map = {p.parent_id: p.dict() for p in parents}
+    # parents_map
+    parents_map = {p.parent_id: p.model_dump(mode="json") for p in parents}
+
+    # upsert
+    upsert_parents([{**p.model_dump(mode="json"), "parent_id": p.parent_id} for p in parents])
 
     # ── Build + upsert children ────────────────────────────────────────────────
     total_children = 0
