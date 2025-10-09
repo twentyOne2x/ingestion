@@ -10,6 +10,8 @@ from typing import Dict, Iterable, List, Optional, Tuple
 import pandas as pd
 from tqdm import tqdm
 
+from src.ingest_v2.configs.settings import settings_v2
+
 from .config import load_target_fields
 from .pinecone_helpers import list_ids, fetch_metadata, update_metadata
 
@@ -28,7 +30,7 @@ def _ensure_outdir(base_dir: Optional[str]) -> Path:
         outdir = Path(base_dir)
     else:
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        outdir = Path("pipeline_storage_v2/migrations/metadata_patch") / ts
+        outdir = Path(settings_v2.PIPELINE_STORAGE_ROOT) / "migrations" / "metadata_patch" / ts
     outdir.mkdir(parents=True, exist_ok=True)
     return outdir
 

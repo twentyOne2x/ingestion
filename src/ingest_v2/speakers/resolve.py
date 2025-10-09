@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from src.ingest_v2.speakers.enroll_guards import safe_auto_enroll
 from src.ingest_v2.speakers.name_filters import filter_to_people, looks_like_person, normalize_alias
+from src.ingest_v2.configs.settings import settings_v2
 
 
 # ----------------------------
@@ -197,7 +198,7 @@ def _tier2_voice_match(
         logging.info("[speakers/tier2] no audio found for vid=%s; skip tier2", meta.get("video_id"))
         return {}
 
-    voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
+    voices_dir = Path(settings_v2.VOICE_LIBRARY_DIR)
     lib_path = voices_dir / "library.json"
     library = _load_voice_library(lib_path)
 
@@ -311,7 +312,7 @@ def _maybe_auto_enroll_primary(
         logging.info("[speakers/enroll] no person-like label for primary; skipping auto-enroll.")
         return
 
-    voices_dir = Path(os.getenv("VOICE_LIBRARY_DIR", "pipeline_storage_v2/voices"))
+    voices_dir = Path(settings_v2.VOICE_LIBRARY_DIR)
     lib_path = voices_dir / "library.json"
 
     # Atomic, locked, person-only write
@@ -324,7 +325,7 @@ def _maybe_auto_enroll_primary(
         sp["confidence"] = max(0.8, float(sp.get("confidence") or 0.0))
 
 def _write_speaker_map(meta: Dict[str, Any], merged: Dict[str, Any]) -> None:
-    outdir = Path(os.getenv("SPEAKER_MAP_DIR", "pipeline_storage_v2/speaker_maps"))
+    outdir = Path(settings_v2.SPEAKER_MAP_DIR)
     outdir.mkdir(parents=True, exist_ok=True)
     vid = meta.get("video_id") or "unknown"
     out = {

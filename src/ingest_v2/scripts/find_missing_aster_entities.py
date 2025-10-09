@@ -6,6 +6,7 @@ from dataclasses import dataclass, asdict
 from typing import List, Dict, Any, Optional, Tuple, Iterable
 from pathlib import Path
 from pinecone import Pinecone
+from src.ingest_v2.configs.settings import settings_v2
 
 log = logging.getLogger("aster_inspect_ci")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - aster_inspect_ci - %(levelname)s - %(message)s")
@@ -340,7 +341,8 @@ def main():
     ap.add_argument("--parents", default=None, help="Comma-separated parent_id(s)")
     ap.add_argument("--probe-ids", default=None, help="Comma-separated parent/video ids to probe first")
     ap.add_argument("--needle", default=DEFAULT_NEEDLE)
-    ap.add_argument("--outdir", default="pipeline_storage_v2/entity_reports")
+    default_outdir = Path(settings_v2.PIPELINE_STORAGE_ROOT) / "entity_reports"
+    ap.add_argument("--outdir", default=str(default_outdir))
     ap.add_argument("--limit-parents", type=int, default=200)
     ap.add_argument("--limit-children", type=int, default=5000)
     ap.add_argument("--scan-cap", type=int, default=50000)

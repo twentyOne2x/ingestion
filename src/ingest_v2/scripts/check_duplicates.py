@@ -55,6 +55,7 @@ except Exception:
 
 from pinecone import Pinecone
 import pandas as pd
+from src.ingest_v2.configs.settings import settings_v2
 
 # ───────── logging ─────────
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - dupcheck - %(levelname)s - %(message)s')
@@ -364,7 +365,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Detect duplicate/overlapping vectors in a Pinecone namespace (report only)")
     ap.add_argument("--index", default=None, help="Pinecone index name (or PINECONE_INDEX_NAME)")
     ap.add_argument("--namespace", default=None, help="Namespace (or PINECONE_NAMESPACE, default 'videos')")
-    ap.add_argument("--output-dir", default="pipeline_storage_v2/duplicate_reports", help="Output directory base")
+    default_outdir = Path(settings_v2.PIPELINE_STORAGE_ROOT) / "duplicate_reports"
+    ap.add_argument("--output-dir", default=str(default_outdir), help="Output directory base")
     ap.add_argument("--parents", default=None, help="Comma-separated parent_ids to include (optional)")
     ap.add_argument("--limit", type=int, default=0, help="Max vectors to scan (0 = no limit)")
     ap.add_argument("--batch-size", type=int, default=10000, help="IDs per list_paginated page")

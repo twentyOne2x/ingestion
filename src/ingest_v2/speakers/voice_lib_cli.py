@@ -9,7 +9,9 @@ import numpy as np
 import librosa
 from resemblyzer import VoiceEncoder, preprocess_wav
 
-DEFAULT_LIB_DIR = Path("pipeline_storage_v2/voices")
+from src.ingest_v2.configs.settings import settings_v2
+
+DEFAULT_LIB_DIR = Path(settings_v2.VOICE_LIBRARY_DIR)
 DEFAULT_LIB_PATH = DEFAULT_LIB_DIR / "library.json"
 
 def _load_library(p: Path) -> Dict[str, List[float]]:

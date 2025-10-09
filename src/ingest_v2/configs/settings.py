@@ -1,5 +1,10 @@
 import os
 from dataclasses import dataclass
+from pathlib import Path
+
+
+_REPO_ROOT = Path(__file__).resolve().parents[3]
+_DEFAULT_PIPELINE_STORAGE = _REPO_ROOT / "pipeline_storage_v2"
 
 @dataclass(frozen=True)
 class SettingsV2:
@@ -30,8 +35,13 @@ class SettingsV2:
     ROUTER_GEN_MAX_SENTENCES: int = int(os.getenv("ROUTER_GEN_MAX_SENTENCES", "60"))
     ROUTER_GEN_RETRIES: int = int(os.getenv("ROUTER_GEN_RETRIES", "3"))
 
+    PIPELINE_STORAGE_ROOT: str = os.getenv("PIPELINE_STORAGE_ROOT") or str(_DEFAULT_PIPELINE_STORAGE)
+    ENTITIES_CACHE_DIR: str = os.getenv("ENTITIES_CACHE_DIR") or str(Path(PIPELINE_STORAGE_ROOT) / "entities_cache")
     # Where to store enrichment sidecars (kept outside Parent docs)
-    ROUTER_CACHE_DIR: str = os.getenv("ROUTER_CACHE_DIR", "pipeline_storage_v2/router_cache")
+    ROUTER_CACHE_DIR: str = os.getenv("ROUTER_CACHE_DIR") or str(Path(PIPELINE_STORAGE_ROOT) / "router_cache")
+    SPEAKER_EMBED_CACHE_DIR: str = os.getenv("SPEAKER_EMBED_CACHE_DIR") or str(Path(PIPELINE_STORAGE_ROOT) / "speaker_embeds")
+    SPEAKER_MAP_DIR: str = os.getenv("SPEAKER_MAP_DIR") or str(Path(PIPELINE_STORAGE_ROOT) / "speaker_maps")
+    VOICE_LIBRARY_DIR: str = os.getenv("VOICE_LIBRARY_DIR") or str(Path(PIPELINE_STORAGE_ROOT) / "voices")
     # Embedding + upsert knobs
     EMBED_BATCH_SIZE: int = int(os.getenv("EMBED_BATCH_SIZE", "256"))
     EMBED_CONCURRENCY: int = int(os.getenv("EMBED_CONCURRENCY", "2"))

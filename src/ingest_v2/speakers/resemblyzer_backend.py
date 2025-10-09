@@ -14,6 +14,7 @@ import soundfile as sf
 import librosa
 from resemblyzer import VoiceEncoder, preprocess_wav
 
+from src.ingest_v2.configs.settings import settings_v2
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Public API
@@ -40,7 +41,7 @@ def embed_speakers_from_audio(
         return {}
 
     # Cache dir & key
-    cache_dir = Path(os.getenv("SPEAKER_EMBED_CACHE_DIR", "pipeline_storage_v2/speaker_embeds"))
+    cache_dir = Path(settings_v2.SPEAKER_EMBED_CACHE_DIR)
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     vid = (meta or {}).get("video_id") or _fallback_video_key(audio_p, raw)

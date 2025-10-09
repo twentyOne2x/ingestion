@@ -50,7 +50,7 @@ def _fast_json_load(path: Path) -> Any:
 
 def _entities_cache_dir() -> Path:
     # dedicated on-disk cache for cleaned entity lists
-    p = Path(os.getenv("ENTITIES_CACHE_DIR", "pipeline_storage_v2/entities_cache"))
+    p = Path(settings_v2.ENTITIES_CACHE_DIR)
     p.mkdir(parents=True, exist_ok=True)
     return p
 

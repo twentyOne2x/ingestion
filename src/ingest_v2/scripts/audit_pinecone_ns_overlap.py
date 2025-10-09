@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 from typing import Dict, Any, Iterable, List, Tuple, Optional
 from pinecone import Pinecone
+from src.ingest_v2.configs.settings import settings_v2
 
 log = logging.getLogger("ns_audit")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - ns_audit - %(levelname)s - %(message)s")
@@ -137,7 +138,8 @@ def main():
     ap = argparse.ArgumentParser(description="Audit Pinecone namespaces for vector/parent counts and cross-namespace duplicates.")
     ap.add_argument("--index", default=None, help="Pinecone index name (default env PINECONE_INDEX_NAME)")
     ap.add_argument("--namespaces", default=",videos", help="Comma-separated list. Default scans empty-string and 'videos' (',videos').")
-    ap.add_argument("--report-dir", default="pipeline_storage_v2/audit_reports", help="Where to write JSON report")
+    default_report_dir = Path(settings_v2.PIPELINE_STORAGE_ROOT) / "audit_reports"
+    ap.add_argument("--report-dir", default=str(default_report_dir), help="Where to write JSON report")
     ap.add_argument("--topn", type=int, default=100, help="How many duplicate parents to print")
     args = ap.parse_args()
 
