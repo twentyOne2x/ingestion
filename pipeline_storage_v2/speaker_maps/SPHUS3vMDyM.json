@@ -11,7 +11,7 @@
       "source": "tier1"
     },
     "A": {
-      "name": "Frank Dancer",
+      "name": "Frank Announcer",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

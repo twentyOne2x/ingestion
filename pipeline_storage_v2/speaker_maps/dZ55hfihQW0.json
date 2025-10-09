@@ -4,8 +4,8 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "A",
   "speaker_map": {
-    "B": {
-      "name": "Morgan Freeman",
+    "D": {
+      "name": "Luke Martin",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "D": {
-      "name": "Luke Martin",
+    "C": {
+      "name": "Michael Saylor",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Michael Saylor",
+    "B": {
+      "name": "Morgan Freeman",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

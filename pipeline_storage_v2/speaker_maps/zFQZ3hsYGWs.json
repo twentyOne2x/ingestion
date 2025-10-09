@@ -4,20 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "B": {
-      "name": "@notthreadguy",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "A": {
-      "name": "Michael Peck",
+    "D": {
+      "name": "Frank Stanky",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "Frank Stanky",
+    "A": {
+      "name": "Michael Peck",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -27,6 +21,12 @@
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     }
   }
 }

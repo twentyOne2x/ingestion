@@ -4,6 +4,18 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
+    "A": {
+      "name": "Kristen Eartham",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Isabella Chase",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "E": {
       "name": "Carol House",
       "role": "Guest",
@@ -12,18 +24,6 @@
     },
     "B": {
       "name": "Amira Veliani",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Isabella Chase",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Landon Zinda",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

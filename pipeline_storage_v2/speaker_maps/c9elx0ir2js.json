@@ -4,12 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Rashid Mansoor",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -24,6 +18,12 @@
     },
     "B": {
       "name": "Arc Type",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Rashid Mansoor",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

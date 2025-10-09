@@ -4,22 +4,16 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "D",
   "speaker_map": {
-    "B": {
-      "name": "Michael Hubbard",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "C": {
-      "name": "Dennis Cabinets",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Rex St John",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Michael Hubbard",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     },
     "D": {
@@ -27,6 +21,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "C": {
+      "name": "Dennis Cabinets",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

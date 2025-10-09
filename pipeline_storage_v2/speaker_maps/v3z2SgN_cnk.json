@@ -4,8 +4,20 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "E": {
-      "name": "Bo Hinds",
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "G": {
+      "name": "David Sachs",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Kyle Samani",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,26 +28,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "David Sachs",
+    "E": {
+      "name": "Bo Hinds",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
     "B": {
       "name": "Tom Emmer",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "D": {
-      "name": "Kyle Samani",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

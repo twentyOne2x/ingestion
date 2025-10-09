@@ -4,12 +4,6 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "C",
   "speaker_map": {
-    "B": {
-      "name": "Raul Elon",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Barry Silbert",
       "role": "Guest",
@@ -21,6 +15,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "B": {
+      "name": "Raul Elon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -4,26 +4,32 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
-    "C": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "A": {
       "name": "Ben Sprango",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "E": {
-      "name": "Ben Sprango",
+    "G": {
+      "name": "Zvi Wiesel",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "D": {
+      "name": "Trevor Bacon",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
     "F": {
       "name": "Trevor Bacon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Ben Sprango",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -34,17 +40,11 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "Trevor Bacon",
-      "role": "Guest",
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
       "confidence": 0.7000000000000001,
       "source": "tier1"
-    },
-    "G": {
-      "name": "Zvi Wiesel",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

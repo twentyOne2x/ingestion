@@ -4,11 +4,11 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "B": {
-      "name": "@notthreadguy",
-      "role": "Host",
+    "A": {
+      "name": "Colin Crypto",
+      "role": "Guest",
       "confidence": 0.7,
-      "source": "tier1"
+      "source": "tier1|title"
     },
     "C": {
       "name": "Max Kaiser",
@@ -16,11 +16,11 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Wu Long",
-      "role": "Guest",
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
       "confidence": 0.7,
-      "source": "tier1|title"
+      "source": "tier1"
     }
   }
 }

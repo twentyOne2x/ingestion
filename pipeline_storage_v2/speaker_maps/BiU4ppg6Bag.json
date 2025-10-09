@@ -4,17 +4,17 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "C",
   "speaker_map": {
-    "C": {
-      "name": "@notthreadguy",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "A": {
       "name": "Aiden Ross Kyson",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "C": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     }
   }
 }

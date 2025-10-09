@@ -5,13 +5,13 @@
   "speaker_primary": "D",
   "speaker_map": {
     "B": {
-      "name": "Jose Macedou",
+      "name": "Ceteris Paribus",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
     "A": {
-      "name": "Jan Lieberman",
+      "name": "Jose Macedou",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -23,7 +23,7 @@
       "source": "tier1"
     },
     "C": {
-      "name": "Ceteris Paribus",
+      "name": "Jan Lieberman",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

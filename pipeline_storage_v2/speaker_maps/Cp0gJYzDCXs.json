@@ -4,17 +4,17 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "C": {
-      "name": "Will Hickey",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Michael Hubbard",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     },
     "B": {
       "name": "Michael Vines",
@@ -22,10 +22,10 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "Michael Hubbard",
+    "C": {
+      "name": "Will Hickey",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

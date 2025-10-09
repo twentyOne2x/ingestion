@@ -4,8 +4,20 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
+    "A": {
+      "name": "Ben Hawkins",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "F": {
       "name": "Alex Ray",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Ben Sunny",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,28 +28,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "A": {
-      "name": "Ben Hawkins",
+    "H": {
+      "name": "Brian Smith",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     },
     "D": {
       "name": "Brian Cole",
       "role": "Guest",
       "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "E": {
-      "name": "Ben Sunny",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "H": {
-      "name": "Brian Smith",
-      "role": "Guest",
-      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

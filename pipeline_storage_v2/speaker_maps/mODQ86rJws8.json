@@ -4,6 +4,12 @@
   "channel_name": "@Delphi_Digital",
   "speaker_primary": "D",
   "speaker_map": {
+    "D": {
+      "name": "@Delphi_Digital",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "E": {
       "name": "Pondering Durian",
       "role": "Guest",
@@ -14,12 +20,6 @@
       "name": "Pondering Durian",
       "role": "Guest",
       "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "D": {
-      "name": "@Delphi_Digital",
-      "role": "Host",
-      "confidence": 0.7,
       "source": "tier1"
     }
   }

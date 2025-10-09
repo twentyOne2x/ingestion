@@ -5,13 +5,13 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "Gary Gensler",
+      "name": "Maxine Waters",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
     "A": {
-      "name": "Gio Saba",
+      "name": "Ro Khanna",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

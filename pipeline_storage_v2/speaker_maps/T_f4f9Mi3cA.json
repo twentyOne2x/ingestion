@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "D",
   "speaker_map": {
-    "E": {
-      "name": "Trevor Bacon",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "B": {
-      "name": "Ben Sporango",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Samantha Bobot",
       "role": "Guest",
@@ -27,6 +15,18 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "E": {
+      "name": "Trevor Bacon",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Ben Sporango",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     },
     "C": {
       "name": "Samantha Bobot",

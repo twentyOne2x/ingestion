@@ -4,24 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "F",
   "speaker_map": {
-    "E": {
-      "name": "Sarah Swazell",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "F": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "B": {
-      "name": "Tristan Orey",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Sci Fi",
       "role": "Guest",
@@ -33,6 +15,24 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "F": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Sarah Swazell",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Tristan Orey",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "C": {
       "name": "Kevin Cyrus",

@@ -5,13 +5,13 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "De Hawk",
+      "name": "Kai Sheffield",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
     "A": {
-      "name": "Kai Sheffield",
+      "name": "Dee Hawk",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -4,6 +4,24 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
+    "C": {
+      "name": "Fred Charman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "John Oliver",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "John Zanzibar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "E": {
       "name": "Young Internet",
       "role": "Guest",
@@ -15,24 +33,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "John Zanzibar",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "John Oliver",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "C": {
-      "name": "Fred Charman",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

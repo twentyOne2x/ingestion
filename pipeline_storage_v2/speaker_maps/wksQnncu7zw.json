@@ -9,6 +9,36 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Kevin Yang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Sheila Lerio",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Mark Jerome Boabe",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Ivan Morrow",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Isabel Sieh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

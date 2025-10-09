@@ -5,9 +5,15 @@
   "speaker_primary": "C",
   "speaker_map": {
     "B": {
-      "name": "Austin Federa",
+      "name": "Jacob Creech",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Austin Federa",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     },
     "D": {
@@ -21,12 +27,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Jacob Creech",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

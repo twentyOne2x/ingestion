@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "E": {
-      "name": "Matthias Farrick",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "Franken Dancer",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@SolanaFndn",
       "role": "Host",
@@ -24,6 +12,18 @@
     },
     "D": {
       "name": "Fire Dancer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Matthias Farrick",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Franken Dancer",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

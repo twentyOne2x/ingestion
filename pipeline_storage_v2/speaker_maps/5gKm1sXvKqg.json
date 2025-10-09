@@ -4,24 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "C",
   "speaker_map": {
-    "E": {
-      "name": "Mike Milner",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "F": {
-      "name": "Will Barnes",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "Ben Spirango",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "Ben Spirango",
       "role": "Guest",
@@ -33,6 +15,24 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "F": {
+      "name": "Will Barnes",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Mike Milner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Ben Spirango",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "C": {
       "name": "@SolanaFndn",

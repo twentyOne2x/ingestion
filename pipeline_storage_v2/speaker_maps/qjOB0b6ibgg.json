@@ -4,28 +4,28 @@
   "channel_name": "@Delphi_Digital",
   "speaker_primary": "C",
   "speaker_map": {
+    "D": {
+      "name": "Larry Fink",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Jan Lieberman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "E": {
       "name": "Jeff Dorman",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "F": {
+    "B": {
       "name": "Jose Macedou",
       "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "Jan Lieberman",
-      "role": "Guest",
       "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Larry Fink",
-      "role": "Guest",
-      "confidence": 0.62,
       "source": "tier1|title"
     },
     "C": {

@@ -4,8 +4,20 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "A",
   "speaker_map": {
-    "E": {
-      "name": "Walidar Toren",
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "G": {
+      "name": "Eddie Avermung",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Garb Philip",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,26 +28,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "Eddie Avermung",
+    "E": {
+      "name": "Walidar Toren",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
     "B": {
       "name": "Mandy Fallipzal",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "D": {
-      "name": "Garb Philip",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -4,6 +4,12 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
+    "A": {
+      "name": "Brian Cole",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "F": {
       "name": "Dan Jetsum",
       "role": "Guest",
@@ -16,22 +22,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Brian Cole",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
+    "D": {
       "name": "John Singh",
       "role": "Guest",
-      "confidence": 0.62,
+      "confidence": 0.7,
       "source": "tier1|title"
     },
-    "D": {
+    "C": {
       "name": "Brian Long",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

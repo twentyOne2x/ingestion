@@ -11,13 +11,13 @@
       "source": "tier1|title"
     },
     "A": {
-      "name": "Rick Scott",
+      "name": "Bill Haggerty",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
     "D": {
-      "name": "Bill Haggerty",
+      "name": "Chris Cox",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

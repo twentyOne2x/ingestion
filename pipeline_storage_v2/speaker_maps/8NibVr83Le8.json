@@ -4,18 +4,6 @@
   "channel_name": "@SolanaFndn",
   "speaker_primary": "B",
   "speaker_map": {
-    "E": {
-      "name": "Larissa Barbu",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "@SolanaFndn",
-      "role": "Host",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "A": {
       "name": "Vic Huynh",
       "role": "Guest",
@@ -27,6 +15,18 @@
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "E": {
+      "name": "Larissa Barbu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     },
     "C": {
       "name": "Dayo Adeoshan",

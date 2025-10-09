@@ -4,16 +4,16 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "B": {
-      "name": "@notthreadguy",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "A": {
       "name": "Ben Pasternick",
       "role": "Guest",
       "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
       "source": "tier1"
     }
   }

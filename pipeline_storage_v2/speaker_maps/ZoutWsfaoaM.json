@@ -4,14 +4,8 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "C",
   "speaker_map": {
-    "B": {
-      "name": "Pone Lord",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "A": {
-      "name": "Pawn Lord",
+      "name": "Pone Lord",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -21,6 +15,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "B": {
+      "name": "Pawn Lord",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     }
   }
 }

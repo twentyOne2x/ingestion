@@ -4,12 +4,6 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "A",
   "speaker_map": {
-    "B": {
-      "name": "Andrew Tate",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@notthreadguy",
       "role": "Host",
@@ -20,6 +14,12 @@
       "name": "Patrick Ben David",
       "role": "Guest",
       "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Andrew Tate",
+      "role": "Guest",
+      "confidence": 0.7,
       "source": "tier1|title"
     }
   }
