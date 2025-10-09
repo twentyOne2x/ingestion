@@ -4,20 +4,20 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "C",
   "speaker_map": {
-    "A": {
-      "name": "Dan Roberts",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "@BinanceYoutube",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Dan Roberts",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "B": {
-      "name": "Cathie Wood Ark",
+      "name": "Ray Dalio",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

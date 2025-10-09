@@ -4,20 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "F": {
-      "name": "Pavel Luptak",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Abdul Alim",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Leah Heilpern",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -26,6 +14,12 @@
       "name": "Sam Foreign",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Leah Heilpern",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     },
     "E": {
@@ -39,6 +33,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "F": {
+      "name": "Pavel Luptak",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -4,20 +4,20 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "A",
   "speaker_map": {
+    "C": {
+      "name": "Hunter Biden",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "A": {
       "name": "@notthreadguy",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Eric Trump",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "B": {
-      "name": "Hunter Biden",
+      "name": "Eric Trump",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

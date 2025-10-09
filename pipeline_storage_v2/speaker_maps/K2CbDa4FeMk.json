@@ -4,10 +4,10 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "C",
   "speaker_map": {
-    "D": {
-      "name": "Johnny Element",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
       "source": "tier1"
     },
     "A": {
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "B": {
       "name": "Leonardo Frigo",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Johnny Element",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"

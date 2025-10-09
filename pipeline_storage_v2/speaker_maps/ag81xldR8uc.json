@@ -4,20 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Tarek Amzel",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Jahata Baki",
+    "C": {
+      "name": "Rohan Asif",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Rohan Asif",
+    "A": {
+      "name": "Jahata Baki",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -27,6 +21,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Tarek Amzel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

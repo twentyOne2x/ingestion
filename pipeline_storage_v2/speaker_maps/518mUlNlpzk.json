@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Sam Altman",
+    "C": {
+      "name": "Cardi Ken Carson",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Cardi Ken Carson",
+    "A": {
+      "name": "Sam Altman",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

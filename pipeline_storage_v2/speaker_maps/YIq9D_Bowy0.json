@@ -4,26 +4,20 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "F": {
-      "name": "Jim Diaz",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Michael Silas",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "Vanessa Eisenhower",
+    "A": {
+      "name": "Jack Dorsey",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Jack Dorsey",
+    "D": {
+      "name": "Vanessa Eisenhower",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -39,6 +33,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "F": {
+      "name": "Jim Diaz",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

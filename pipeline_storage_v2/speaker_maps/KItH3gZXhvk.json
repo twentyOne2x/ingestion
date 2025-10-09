@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Samuel Olapade",
+    "C": {
+      "name": "David Kihato",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "David Kihato",
+    "B": {
+      "name": "Satoshi Nakamoto",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "Satoshi Nakamoto",
+    "D": {
+      "name": "Samuel Olapade",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -4,8 +4,8 @@
   "channel_name": "@binancezh",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Ota Xingqiu",
+    "C": {
+      "name": "Sang Sian",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,17 +16,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Sang Sian",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
       "name": "@binancezh",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Ota Xingqiu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

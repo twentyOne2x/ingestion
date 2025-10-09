@@ -4,10 +4,10 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Via Hara",
+    "C": {
+      "name": "Warrior Hong",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     },
     "A": {
@@ -16,17 +16,17 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Warrior Hong",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
       "name": "Warrior Hong",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Via Hara",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
     }
   }
 }

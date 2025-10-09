@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Ikigai Travis",
+    "C": {
+      "name": "Robin Hood",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Robin Hood",
+    "A": {
+      "name": "Ikigai Travis",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

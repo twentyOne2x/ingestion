@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Jamie Crawley",
+    "C": {
+      "name": "Sebastian Bourget",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Sebastien Bourget",
+    "A": {
+      "name": "Steve Aukey",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

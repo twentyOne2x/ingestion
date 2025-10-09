@@ -4,17 +4,17 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "D",
   "speaker_map": {
-    "D": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "A": {
       "name": "Vincent Chalk",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     }
   }
 }

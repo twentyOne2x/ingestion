@@ -4,20 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Hester Pierce",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Crypto Mommy",
+    "C": {
+      "name": "Rasmur Chang",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Rasmur Chang",
+    "A": {
+      "name": "Crypto Mommy",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -27,6 +21,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Hester Pierce",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Yulin Lee",
+    "C": {
+      "name": "Borar Damar",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
@@ -16,17 +16,17 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Borar Damar",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "B": {
       "name": "Borar Damar",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
+    },
+    "D": {
+      "name": "Yulin Lee",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     }
   }
 }

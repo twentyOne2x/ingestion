@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Laia Heilpern",
+    "C": {
+      "name": "Warren Buffett",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,16 +16,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Warren Buffett",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
-      "name": "La Heilpern",
+      "name": "Laia Heilpern",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "La Heilpern",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

@@ -5,13 +5,7 @@
   "speaker_primary": "A",
   "speaker_map": {
     "C": {
-      "name": "Wasee Makram",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Wasim Akram",
+      "name": "Leonel Messi",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -22,14 +16,20 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "E": {
+    "D": {
       "name": "Abdul Alim",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "E": {
+      "name": "Wasee Makram",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "B": {
-      "name": "Imran Abdul Alim",
+      "name": "Wasim Akram",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

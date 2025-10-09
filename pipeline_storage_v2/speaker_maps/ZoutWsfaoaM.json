@@ -4,20 +4,20 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "C",
   "speaker_map": {
-    "A": {
-      "name": "Pone Lord",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "@notthreadguy",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
     },
+    "A": {
+      "name": "Paul Lord",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "B": {
-      "name": "Pawn Lord",
+      "name": "Pone Lord",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

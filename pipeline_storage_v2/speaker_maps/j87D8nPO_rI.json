@@ -4,12 +4,6 @@
   "channel_name": "@binancezh",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Shona Ji",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "A": {
       "name": "@binancezh",
       "role": "Host",
@@ -18,6 +12,12 @@
     },
     "B": {
       "name": "Dali Bow",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Shona Ji",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

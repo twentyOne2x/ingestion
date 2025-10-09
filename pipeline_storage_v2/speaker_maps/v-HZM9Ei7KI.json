@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Gene Michael",
+    "C": {
+      "name": "Travis Scott",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Travis Scott",
+    "A": {
+      "name": "Gene Michael",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

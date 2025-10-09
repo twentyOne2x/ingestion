@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Tomasz Vojevora",
+    "A": {
+      "name": "Daria Krisnova",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Daria Krisnova",
+    "D": {
+      "name": "Tomasz Vojevora",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

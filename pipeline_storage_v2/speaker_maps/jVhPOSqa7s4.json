@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Duncan Mitchell",
+    "C": {
+      "name": "Mitchell Amador",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Mitchell Amador",
+    "A": {
+      "name": "Duncan Mitchell",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -10,20 +10,20 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
     "I": {
       "name": "Udi Wardheimer",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "H": {
-      "name": "Zahra Jaffar",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "G": {
-      "name": "Zahra Jafar",
+    "E": {
+      "name": "Ruben Mehr",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -40,20 +40,20 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "H": {
+      "name": "Zahra Jaffar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Louis Ocegada",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "E": {
-      "name": "Ruben Mehr",
+    "G": {
+      "name": "Zahra Jafar",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

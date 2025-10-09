@@ -10,11 +10,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "A": {
+      "name": "Mashri Alamar Kaziya",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Jamir Mawakana Sabhatna",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "B": {
       "name": "Will Minas",
@@ -28,17 +34,11 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Mashri Alamar Kaziya",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "E": {
-      "name": "Jamir Mawakana Sabhatna",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+    "G": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     }
   }
 }

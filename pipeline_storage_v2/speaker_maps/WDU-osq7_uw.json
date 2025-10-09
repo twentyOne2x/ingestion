@@ -4,11 +4,11 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "C",
   "speaker_map": {
-    "D": {
-      "name": "Batuan Daskin",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     },
     "A": {
       "name": "Leo Chang",
@@ -16,17 +16,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "B": {
       "name": "Batuan Daskin",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Batuan Daskin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Zhang Peng Zhao",
+    "C": {
+      "name": "Luis Mulema",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Luis Mulema",
+    "B": {
+      "name": "George Wakisha",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "George Wakisha",
+    "D": {
+      "name": "Zhang Peng Zhao",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "James Wynn",
+    "C": {
+      "name": "Jeff Jez",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Jeff Jez",
+    "A": {
+      "name": "James Wynn",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

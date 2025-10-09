@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Mark Cuban",
+    "C": {
+      "name": "Larry Fink",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Larry Fink",
+    "A": {
+      "name": "Mark Cuban",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

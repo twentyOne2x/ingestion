@@ -10,8 +10,20 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "I": {
       "name": "Israel Lasso",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Carol Miles",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -22,26 +34,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "Jeff Fomworth",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "D": {
       "name": "Wetech Radomski",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
-    "E": {
-      "name": "Carol Miles",
+    "G": {
+      "name": "Jeff Fomworth",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

@@ -4,32 +4,20 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "C",
   "speaker_map": {
-    "F": {
-      "name": "Lazar Hanyuk",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "@BinanceYoutube",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
     },
-    "D": {
-      "name": "Laszlo Hanyet",
+    "A": {
+      "name": "Rachel Conlon",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "Rachel Conlon",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Richard Tang",
+    "D": {
+      "name": "Laszlo Hanyet",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -44,6 +32,18 @@
       "name": "Lazio Hanyards",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Lazar Hanyuk",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Richard Tang",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

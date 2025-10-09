@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Lindsay Lohan",
+    "C": {
+      "name": "Mark Cuban",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Mark Cuban",
+    "A": {
+      "name": "Lindsay Lohan",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

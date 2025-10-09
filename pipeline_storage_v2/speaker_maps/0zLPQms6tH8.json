@@ -4,11 +4,11 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
+    "C": {
       "name": "Leah Heil Pan",
       "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     },
     "A": {
       "name": "Warren Buffett",
@@ -16,17 +16,17 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Leah Heil Pan",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "B": {
       "name": "@BinanceYoutube",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Leah Heil Pan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

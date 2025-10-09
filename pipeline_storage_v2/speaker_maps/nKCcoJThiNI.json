@@ -4,20 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Katrina Hanous",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "A": {
-      "name": "Katrina Oya Odalia",
+    "C": {
+      "name": "Odelia Trotman",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Odelia Trotman",
+    "A": {
+      "name": "Katrina Oya Odalia",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
@@ -27,6 +21,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Katrina Hanous",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

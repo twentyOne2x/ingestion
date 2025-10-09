@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Jerry Kala",
+    "C": {
+      "name": "Afrizal Riza",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Afrizal Riza",
+    "A": {
+      "name": "Jerry Kala",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

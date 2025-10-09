@@ -10,17 +10,17 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "H": {
-      "name": "Champagne Zhao",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     },
-    "G": {
+    "E": {
       "name": "Rachel Conlon",
       "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     },
     "B": {
       "name": "Cal Van Bal",
@@ -34,23 +34,23 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "H": {
+      "name": "Champagne Zhao",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Kim Murphy",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
-    "E": {
+    "G": {
       "name": "Rachel Conlon",
       "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

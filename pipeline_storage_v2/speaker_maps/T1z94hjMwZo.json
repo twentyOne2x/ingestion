@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Roboho Robot",
+    "C": {
+      "name": "Will Wright",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Will Wright",
+    "A": {
+      "name": "Roboho Robot",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

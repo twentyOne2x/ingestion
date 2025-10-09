@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Yi Le",
+    "C": {
+      "name": "Ugochuku Aroro",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Ugochuku Aroro",
+    "A": {
+      "name": "Yi Le",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"

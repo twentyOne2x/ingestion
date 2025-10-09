@@ -10,14 +10,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "John Oliver",
+    "A": {
+      "name": "John Zanzibar",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "John Zanzibar",
+    "D": {
+      "name": "John Oliver",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

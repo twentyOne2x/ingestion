@@ -10,20 +10,20 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "I": {
       "name": "John Karras",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "H": {
-      "name": "Damila Laodufua",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "G": {
-      "name": "Robbie Greenfield",
+    "E": {
+      "name": "Will Lee",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -40,8 +40,8 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "J": {
-      "name": "Dami Lala",
+    "H": {
+      "name": "Damila Laodufua",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -52,14 +52,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "J": {
+      "name": "Dami Lala",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
-    "E": {
-      "name": "Will Lee",
+    "G": {
+      "name": "Robbie Greenfield",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

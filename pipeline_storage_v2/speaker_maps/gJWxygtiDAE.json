@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Fernando Alonso",
+    "C": {
+      "name": "Esteban Ocon",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Esteban Ocon",
+    "B": {
+      "name": "Angie Angio",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "Angie Angio",
+    "D": {
+      "name": "Fernando Alonso",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

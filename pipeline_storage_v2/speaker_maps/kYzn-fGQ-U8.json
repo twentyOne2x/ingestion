@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Kakius Maximus",
+    "C": {
+      "name": "Sydney Sweeney",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Sydney Sweeney",
+    "A": {
+      "name": "Kakius Maximus",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

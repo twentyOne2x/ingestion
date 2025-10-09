@@ -4,14 +4,14 @@
   "channel_name": "@binancezh",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Yong Da Ling La San Shiga Guadia",
+    "C": {
+      "name": "Anshul Dhir",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Anshul Dhir",
+    "A": {
+      "name": "Yong Da Ling La San Shiga Guadia",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

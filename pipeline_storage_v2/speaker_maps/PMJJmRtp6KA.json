@@ -4,14 +4,14 @@
   "channel_name": "Anthony Pompliano",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Zhou Xiaoquan",
+    "C": {
+      "name": "Matt Rosak",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Matt Rosak",
+    "A": {
+      "name": "Zhou Xiaoquan",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

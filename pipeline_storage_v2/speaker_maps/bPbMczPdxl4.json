@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Ryan Carson",
+    "C": {
+      "name": "Kevin Rose",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Kevin Rose",
+    "A": {
+      "name": "Ryan Carson",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

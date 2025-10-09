@@ -10,20 +10,20 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
     "I": {
       "name": "Romaine Colnett",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "H": {
-      "name": "Athena Apostolo",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "G": {
-      "name": "Damien Petro",
+    "E": {
+      "name": "Eric Barbier",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -40,8 +40,8 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "J": {
-      "name": "Dmitry Verbovsky",
+    "H": {
+      "name": "Athena Apostolo",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -52,14 +52,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "J": {
+      "name": "Dmitry Verbovsky",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
-    "E": {
-      "name": "Eric Barbier",
+    "G": {
+      "name": "Damien Petro",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

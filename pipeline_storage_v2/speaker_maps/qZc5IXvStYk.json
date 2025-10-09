@@ -4,20 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "F": {
-      "name": "Elon Musk",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Jack Dorsey",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Brenton Naika",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -27,6 +15,12 @@
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Brenton Naika",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "E": {
       "name": "Rhianne Osinachi",
@@ -39,6 +33,12 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "F": {
+      "name": "Elon Musk",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

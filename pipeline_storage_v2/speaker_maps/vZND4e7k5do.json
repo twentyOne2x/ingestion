@@ -4,26 +4,20 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "E",
   "speaker_map": {
-    "F": {
-      "name": "Changfeng Zhao",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Patrick Collins",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "D": {
-      "name": "Leo Chang",
+    "A": {
+      "name": "Sa Sam",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "A": {
-      "name": "Sa Sam",
+    "D": {
+      "name": "Leo Chang",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -36,6 +30,12 @@
     },
     "B": {
       "name": "Sami Karim",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Changfeng Zhao",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

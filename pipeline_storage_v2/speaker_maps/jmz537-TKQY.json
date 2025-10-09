@@ -10,14 +10,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "H": {
-      "name": "Bond Lee",
+    "A": {
+      "name": "Logan Paul",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "G": {
-      "name": "Bon Lee",
+    "E": {
+      "name": "Bear Bar",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -34,20 +34,20 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "H": {
+      "name": "Bond Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "D": {
       "name": "Juggernaut Ulbit",
       "role": "Guest",
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "A": {
-      "name": "Logan Paul",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "E": {
-      "name": "Bear Bar",
+    "G": {
+      "name": "Bon Lee",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

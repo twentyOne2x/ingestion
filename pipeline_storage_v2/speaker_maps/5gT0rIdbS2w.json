@@ -4,8 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Brandon Marshall",
+    "C": {
+      "name": "George Mukisha",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,14 +16,14 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "George Mukisha",
+    "B": {
+      "name": "Brenton Naika",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "B": {
-      "name": "Brenton Naika",
+    "D": {
+      "name": "Brandon Marshall",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

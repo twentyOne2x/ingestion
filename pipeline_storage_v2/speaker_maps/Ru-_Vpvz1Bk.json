@@ -4,8 +4,8 @@
   "channel_name": "Sizzling CZ: Changpeng Zhao Videos",
   "speaker_primary": "B",
   "speaker_map": {
-    "D": {
-      "name": "Sinclair Skinner",
+    "C": {
+      "name": "Helen Hai",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -16,17 +16,17 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Helen Hai",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
       "name": "Sizzling CZ: Changpeng Zhao Videos",
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
+    },
+    "D": {
+      "name": "Sinclair Skinner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     }
   }
 }

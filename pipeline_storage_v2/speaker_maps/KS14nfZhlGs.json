@@ -4,11 +4,11 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "D": {
-      "name": "Fareshte Farok",
+    "C": {
+      "name": "Scott Ander",
       "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
     },
     "A": {
       "name": "@BinanceYoutube",
@@ -16,16 +16,16 @@
       "confidence": 0.7,
       "source": "tier1"
     },
-    "C": {
-      "name": "Scott Ander",
-      "role": "Guest",
-      "confidence": 0.7000000000000001,
-      "source": "tier1"
-    },
     "B": {
       "name": "Taylor Benyahia",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Fareshte Farok",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

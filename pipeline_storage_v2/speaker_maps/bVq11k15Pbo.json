@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Elon Wapuri",
+    "C": {
+      "name": "Donald Trump",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Donald Trump",
+    "A": {
+      "name": "Elon Wapuri",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

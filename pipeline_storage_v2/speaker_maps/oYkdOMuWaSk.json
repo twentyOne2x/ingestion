@@ -4,19 +4,37 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "G",
   "speaker_map": {
-    "F": {
-      "name": "Changpeng Zhao",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Diane Ek",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
+    "A": {
+      "name": "Changpeng Zhao",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
     "D": {
+      "name": "Faustin Floret",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Charlie Perrot",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Sara Dianec",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
       "name": "Oliver Yates Schill",
       "role": "Guest",
       "confidence": 0.62,
@@ -27,24 +45,6 @@
       "role": "Host",
       "confidence": 0.7,
       "source": "tier1"
-    },
-    "A": {
-      "name": "Sara Dianec",
-      "role": "Guest",
-      "confidence": 0.7,
-      "source": "tier1|title"
-    },
-    "E": {
-      "name": "Charlie Perrot",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "B": {
-      "name": "Faustin Floret",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
     }
   }
 }

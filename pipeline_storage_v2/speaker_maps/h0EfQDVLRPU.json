@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Slide Whistle",
+    "C": {
+      "name": "Will Smith",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Will Smith",
+    "A": {
+      "name": "Slide Whistle",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

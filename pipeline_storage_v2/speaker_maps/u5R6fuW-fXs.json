@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Adrian Esa",
+    "C": {
+      "name": "Gil Galle",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Gil Galle",
+    "A": {
+      "name": "Adrian Esa",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

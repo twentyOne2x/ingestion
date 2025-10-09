@@ -4,11 +4,11 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "C",
   "speaker_map": {
-    "D": {
-      "name": "Rachel Wolfson",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     },
     "A": {
       "name": "Jiang Ting",
@@ -16,16 +16,16 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "B": {
       "name": "Justin. Sun",
       "role": "Guest",
       "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Rachel Wolfson",
+      "role": "Guest",
+      "confidence": 0.62,
       "source": "tier1|title"
     }
   }

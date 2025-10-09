@@ -4,20 +4,8 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "A",
   "speaker_map": {
-    "F": {
-      "name": "Gary Vee",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "C": {
       "name": "Oliver Von Landsberg Sadie",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "John Josh",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
@@ -28,6 +16,12 @@
       "confidence": 0.7,
       "source": "tier1"
     },
+    "D": {
+      "name": "John Josh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
     "E": {
       "name": "Elon Musk",
       "role": "Guest",
@@ -36,6 +30,12 @@
     },
     "B": {
       "name": "Paul Tudor Jones",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Gary Vee",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

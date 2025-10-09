@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Dan Romero",
+    "C": {
+      "name": "Caitlyn Jenner",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Caitlyn Jenner",
+    "A": {
+      "name": "Dan Romero",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

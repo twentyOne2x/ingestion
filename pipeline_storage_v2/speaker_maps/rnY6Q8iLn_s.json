@@ -4,14 +4,14 @@
   "channel_name": "@binanceacademy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Matt Hunter",
+    "C": {
+      "name": "Farid Hasan",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Farid Hasan",
+    "A": {
+      "name": "Matt Hunter",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

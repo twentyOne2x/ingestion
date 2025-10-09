@@ -5,15 +5,9 @@
   "speaker_primary": "B",
   "speaker_map": {
     "C": {
-      "name": "Yuli Lee",
+      "name": "Niels Anderson Road",
       "role": "Guest",
       "confidence": 0.62,
-      "source": "tier1|title"
-    },
-    "D": {
-      "name": "Will Frenson",
-      "role": "Guest",
-      "confidence": 0.7,
       "source": "tier1|title"
     },
     "A": {
@@ -22,8 +16,14 @@
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "E": {
+    "D": {
       "name": "William Frenson",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Yuli Lee",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

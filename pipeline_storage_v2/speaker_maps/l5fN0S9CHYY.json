@@ -4,16 +4,16 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
+    "C": {
       "name": "Raoul Powell",
       "role": "Guest",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Marc Andreessen",
+    "A": {
+      "name": "Alexander Good",
       "role": "Guest",
-      "confidence": 0.62,
+      "confidence": 0.7,
       "source": "tier1|title"
     },
     "B": {

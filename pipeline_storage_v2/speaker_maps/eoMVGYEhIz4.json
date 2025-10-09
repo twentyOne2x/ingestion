@@ -4,11 +4,11 @@
   "channel_name": "@binancezh",
   "speaker_primary": "C",
   "speaker_map": {
-    "D": {
-      "name": "Luna Guanxi",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
+    "C": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
     },
     "A": {
       "name": "Luna Sugaling",
@@ -16,14 +16,14 @@
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "@binancezh",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
-    },
     "B": {
       "name": "Sanda Joy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Luna Guanxi",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

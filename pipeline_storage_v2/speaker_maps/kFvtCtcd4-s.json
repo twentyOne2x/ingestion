@@ -4,14 +4,14 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Bryan Kastadion",
+    "C": {
+      "name": "Alex Marco",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Alex Marco",
+    "A": {
+      "name": "Bryan Kastadion",
       "role": "Guest",
       "confidence": 0.62,
       "source": "tier1|title"

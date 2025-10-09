@@ -4,11 +4,11 @@
   "channel_name": "@BinanceYoutube",
   "speaker_primary": "D",
   "speaker_map": {
-    "D": {
-      "name": "@BinanceYoutube",
-      "role": "Host",
-      "confidence": 0.7,
-      "source": "tier1"
+    "C": {
+      "name": "Sarah Dale",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
     },
     "A": {
       "name": "Elise Yoshida",
@@ -16,16 +16,16 @@
       "confidence": 0.7000000000000001,
       "source": "tier1"
     },
-    "C": {
-      "name": "Sarah Dale",
-      "role": "Guest",
-      "confidence": 0.62,
-      "source": "tier1|title"
-    },
     "B": {
       "name": "Elise Yoshida",
       "role": "Guest",
       "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
       "source": "tier1"
     }
   }

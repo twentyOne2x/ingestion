@@ -4,14 +4,14 @@
   "channel_name": "@notthreadguy",
   "speaker_primary": "B",
   "speaker_map": {
-    "A": {
-      "name": "Elon Musk",
+    "C": {
+      "name": "Aiden Ross",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
     },
-    "C": {
-      "name": "Aiden Ross",
+    "A": {
+      "name": "Elon Musk",
       "role": "Guest",
       "confidence": 0.7,
       "source": "tier1|title"
