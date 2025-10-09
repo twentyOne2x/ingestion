@@ -8,6 +8,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from src.ingest_v2.speakers.enroll_guards import safe_auto_enroll
 from src.ingest_v2.speakers.name_filters import filter_to_people, looks_like_person, normalize_alias
 from src.ingest_v2.configs.settings import settings_v2
+from src.utils.global_thread_guard import get_global_thread_limiter
 
 
 # ----------------------------
@@ -24,11 +25,13 @@ def resolve_speakers(
       - optional auto-enroll of primary speaker into library.json (if enabled)
       - save per-video speaker_map to SPEAKER_MAP_DIR
     """
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-        f1 = pool.submit(_tier1_names_from_text, meta, raw)
-        f2 = pool.submit(_tier2_voice_match, meta, raw, audio_hint_path)
-        t1 = _safe_result(f1, fallback={})
-        t2 = _safe_result(f2, fallback={})
+    limiter = get_global_thread_limiter()
+    with limiter.claim(2, label="speakers-resolve"):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+            f1 = pool.submit(_tier1_names_from_text, meta, raw)
+            f2 = pool.submit(_tier2_voice_match, meta, raw, audio_hint_path)
+            t1 = _safe_result(f1, fallback={})
+            t2 = _safe_result(f2, fallback={})
 
     merged = _merge_tier1_tier2(t1, t2)
     primary = _guess_primary(raw)

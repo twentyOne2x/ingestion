@@ -13,6 +13,7 @@ from src.Llama_index_sandbox.constants import *
 from src.Llama_index_sandbox.data_ingestion_youtube.load import create_transcripts_from_raw_json_utterances
 from src.Llama_index_sandbox.data_ingestion_youtube.load.clean_transcripts_utterances import correct_typos_in_files
 from src.Llama_index_sandbox.utils.utils import timeit, root_directory, start_logging, save_successful_load_to_csv, compute_new_entries, save_metadata_to_pipeline_dir
+from src.utils.global_thread_guard import get_global_thread_limiter
 
 
 def load_single_video_transcript(youtube_videos_df, file_path):
@@ -149,30 +150,33 @@ def load_video_transcripts(directory_path: Union[str, Path], add_new_transcripts
         files = all_files  # Otherwise, process all files
 
     # Using ThreadPoolExecutor to load PDFs in parallel
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        # Map over all video transcript files in the directory
-        futures = {executor.submit(partial_load_single_transcript, file_path=video_transcript): video_transcript for video_transcript in files}
+    worker_count = min(32, (os.cpu_count() or 1) + 4)
+    limiter = get_global_thread_limiter()
+    with limiter.claim(worker_count, label="transcripts-load"):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=worker_count) as executor:
+            # Map over all video transcript files in the directory
+            futures = {executor.submit(partial_load_single_transcript, file_path=video_transcript): video_transcript for video_transcript in files}
 
-        for future in concurrent.futures.as_completed(futures):
-            video_transcript = futures[future]
-            try:
-                documents, all_documents_details = future.result()
-                # if documents is an empty list then continue
-                if not documents:
-                    continue
-                all_documents.extend(documents)
-                all_metadata.append(all_documents_details)
-                video_transcripts_loaded_count += 1
-            except Exception as e:
-                logging.info(f"Failed to process {str(video_transcript).replace(root_dir, '')}, passing: {e}")
-                # Check if the file name does not start with a date in the format yyyy-mm-dd_
-                if not re.match(r'^\d{4}-\d{2}-\d{2}_[a-zA-Z0-9_-]{11}_', os.path.basename(video_transcript)):
-                    try:
-                        os.remove(video_transcript)
-                        logging.info(f"Deleted invalid file: {video_transcript}")
-                    except OSError as delete_error:
-                        logging.error(f"Error deleting file {video_transcript}: {delete_error}")
-                pass
+            for future in concurrent.futures.as_completed(futures):
+                video_transcript = futures[future]
+                try:
+                    documents, all_documents_details = future.result()
+                    # if documents is an empty list then continue
+                    if not documents:
+                        continue
+                    all_documents.extend(documents)
+                    all_metadata.append(all_documents_details)
+                    video_transcripts_loaded_count += 1
+                except Exception as e:
+                    logging.info(f"Failed to process {str(video_transcript).replace(root_dir, '')}, passing: {e}")
+                    # Check if the file name does not start with a date in the format yyyy-mm-dd_
+                    if not re.match(r'^\d{4}-\d{2}-\d{2}_[a-zA-Z0-9_-]{11}_', os.path.basename(video_transcript)):
+                        try:
+                            os.remove(video_transcript)
+                            logging.info(f"Deleted invalid file: {video_transcript}")
+                        except OSError as delete_error:
+                            logging.error(f"Error deleting file {video_transcript}: {delete_error}")
+                    pass
     logging.info(f"Successfully loaded [{video_transcripts_loaded_count}] documents from video transcripts.")
 
     save_metadata_to_pipeline_dir(all_metadata, root_dir, dir='pipeline_storage/youtube_videos.csv', drop_key='video_link', headers=headers)

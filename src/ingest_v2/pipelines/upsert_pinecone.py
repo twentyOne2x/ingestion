@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from ..utils.batching import chunked
 from ..utils.progress import progress
+from src.utils.global_thread_guard import get_global_thread_limiter
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Fast JSON size estimation helpers (for bytes-aware batching)
@@ -154,14 +155,18 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
                     logging.warning("[embed/openai] retry %d size=%d err=%s", attempt, len(chunk), e)
                     expo_backoff(attempt)
 
+        limiter = get_global_thread_limiter()
+
         def embed_texts(texts: List[str]) -> List[List[float]]:
             chunks = [texts[i:i + bs] for i in range(0, len(texts), bs)]
             out_slots: List[Optional[List[List[float]]]] = [None] * len(chunks)
-            with ThreadPoolExecutor(max_workers=max(1, conc)) as ex:
-                futs = {ex.submit(_embed_chunk, ch): idx for idx, ch in enumerate(chunks)}
-                for fut in as_completed(futs):
-                    idx = futs[fut]
-                    out_slots[idx] = fut.result()
+            worker_count = max(1, conc)
+            with limiter.claim(worker_count, label="embed-openai"):
+                with ThreadPoolExecutor(max_workers=worker_count) as ex:
+                    futs = {ex.submit(_embed_chunk, ch): idx for idx, ch in enumerate(chunks)}
+                    for fut in as_completed(futs):
+                        idx = futs[fut]
+                        out_slots[idx] = fut.result()
             vecs: List[List[float]] = []
             for slot in out_slots:
                 vecs.extend(slot or [])
@@ -239,24 +244,26 @@ def _send_upserts_parallel(
 
     futs = {}
     sent = 0
-    with ThreadPoolExecutor(max_workers=max_workers) as ex:
-        for i, (vec_batch, _est_bytes) in enumerate(batches, 1):
-            # Respect count-based batch size within each bytes-batch
-            for j, k in enumerate(range(0, len(vec_batch), pc_bs), 1):
-                sub = vec_batch[k:k + pc_bs]
-                est_sub = sum(_estimate_vector_bytes(v) for v in sub) + 2 + 1024
-                logging.info("[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
-                             parent_id, i, j, len(sub), est_sub)
-                fut = ex.submit(_retry_upsert, index, namespace, sub, max_retries)
-                futs[fut] = len(sub)
+    limiter = get_global_thread_limiter()
+    with limiter.claim(max_workers, label="pinecone-upsert"):
+        with ThreadPoolExecutor(max_workers=max_workers) as ex:
+            for i, (vec_batch, _est_bytes) in enumerate(batches, 1):
+                # Respect count-based batch size within each bytes-batch
+                for j, k in enumerate(range(0, len(vec_batch), pc_bs), 1):
+                    sub = vec_batch[k:k + pc_bs]
+                    est_sub = sum(_estimate_vector_bytes(v) for v in sub) + 2 + 1024
+                    logging.info("[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
+                                 parent_id, i, j, len(sub), est_sub)
+                    fut = ex.submit(_retry_upsert, index, namespace, sub, max_retries)
+                    futs[fut] = len(sub)
 
-        for f in as_completed(futs):
-            # propagate any failure
-            f.result()
-            # progress only after a successful upsert of that sub-batch
-            progress.add_done(futs[f])
-            logging.info("[progress] %s", progress.fmt())
-            sent += 1
+            for f in as_completed(futs):
+                # propagate any failure
+                f.result()
+                # progress only after a successful upsert of that sub-batch
+                progress.add_done(futs[f])
+                logging.info("[progress] %s", progress.fmt())
+                sent += 1
 
     return sent
 

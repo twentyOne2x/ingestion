@@ -7,6 +7,7 @@ from functools import partial
 
 from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 from src.Llama_index_sandbox.utils.utils import root_directory, timeit
+from src.utils.global_thread_guard import get_global_thread_limiter
 
 
 def format_time(ms):
@@ -145,8 +146,11 @@ def run(log=True):
         process_with_log = partial(process_transcript, log=log)
 
         # Process the files in parallel
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            executor.map(process_with_log, files_to_process)
+        worker_count = min(32, (os.cpu_count() or 1) + 4)
+        limiter = get_global_thread_limiter()
+        with limiter.claim(worker_count, label="transcripts-process"):
+            with concurrent.futures.ThreadPoolExecutor(max_workers=worker_count) as executor:
+                executor.map(process_with_log, files_to_process)
     else:
         if log:
             print("No files need processing.")

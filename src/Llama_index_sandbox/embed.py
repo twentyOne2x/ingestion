@@ -18,6 +18,7 @@ from tiktoken.model import MODEL_TO_ENCODING
 
 from src.Llama_index_sandbox.utils.utils import timeit
 from src.Llama_index_sandbox.utils.token_counter import TokenCounter
+from src.utils.global_thread_guard import get_global_thread_limiter
 import tiktoken
 
 # Suppress deprecation warnings
@@ -80,10 +81,12 @@ def generate_embeddings(nodes: List[TextNode], embedding_model):
                                               progress_counter=progress_counter,
                                               total_nodes=total_nodes)
 
-    num_threads = int(3/4 * multiprocessing.cpu_count())
+    num_threads = max(1, int(3 / 4 * multiprocessing.cpu_count()))
+    limiter = get_global_thread_limiter()
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
-        list(executor.map(partial_generate_node_embedding, nodes))
+    with limiter.claim(num_threads, label="embed-thread"):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
+            list(executor.map(partial_generate_node_embedding, nodes))
 
 
 def construct_single_node(text_chunk, src_doc_metadata):
@@ -96,21 +99,23 @@ def construct_single_node(text_chunk, src_doc_metadata):
 @timeit
 def construct_node(text_chunks, documents, doc_idxs) -> List[TextNode]:
     """ 3. Manually Construct Nodes from Text Chunks """
-    available_workers = int(1 / 2 * multiprocessing.cpu_count())  # Calculate 1/2 of the available CPU count
+    available_workers = max(1, int(1 / 2 * multiprocessing.cpu_count()))  # Calculate 1/2 of the available CPU count
+    limiter = get_global_thread_limiter()
 
-    with ProcessPoolExecutor(max_workers=available_workers) as executor:
-        future_to_idx = {
-            executor.submit(construct_single_node, text_chunks[idx], documents[doc_idxs[idx]].metadata): idx
-            for idx in range(len(text_chunks))
-        }
+    with limiter.claim(available_workers, label="embed-process"):
+        with ProcessPoolExecutor(max_workers=available_workers) as executor:
+            future_to_idx = {
+                executor.submit(construct_single_node, text_chunks[idx], documents[doc_idxs[idx]].metadata): idx
+                for idx in range(len(text_chunks))
+            }
 
-        nodes = []
-        for future in concurrent.futures.as_completed(future_to_idx):
-            try:
-                node = future.result()
-                nodes.append(node)
-            except Exception as exc:
-                logging.error(f"Generated an exception: {exc}")
+            nodes = []
+            for future in concurrent.futures.as_completed(future_to_idx):
+                try:
+                    node = future.result()
+                    nodes.append(node)
+                except Exception as exc:
+                    logging.error(f"Generated an exception: {exc}")
 
     # print a sample node
     # logging.info(f"Sample node: {nodes[0].get_content(metadata_mode=MetadataMode.ALL)}\n\n")

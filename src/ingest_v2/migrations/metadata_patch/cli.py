@@ -11,6 +11,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from src.ingest_v2.configs.settings import settings_v2
+from src.utils.global_thread_guard import get_global_thread_limiter
 
 from .config import load_target_fields
 from .pinecone_helpers import list_ids, fetch_metadata, update_metadata
@@ -126,10 +127,12 @@ def cmd_apply(args) -> int:
     # Simple threaded writer (pinecone-python handles pooling)
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
-    with ThreadPoolExecutor(max_workers=conc) as ex:
-        futs = [ex.submit(update_metadata, [(vid, meta)], ns) for (vid, meta) in updates]
-        for _ in tqdm(as_completed(futs), total=len(futs), desc="apply", unit="upd"):
-            pass
+    limiter = get_global_thread_limiter()
+    with limiter.claim(conc, label="metadata-patch"):
+        with ThreadPoolExecutor(max_workers=conc) as ex:
+            futs = [ex.submit(update_metadata, [(vid, meta)], ns) for (vid, meta) in updates]
+            for _ in tqdm(as_completed(futs), total=len(futs), desc="apply", unit="upd"):
+                pass
 
     print("[apply] done.")
     return 0

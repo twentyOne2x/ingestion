@@ -125,3 +125,4 @@ Dockerfile_twitter_bot_app_local
 temp/
 .storage/*
 *.webm
+/src/ingest_v2/pipelines/pipeline_storage_v2/
