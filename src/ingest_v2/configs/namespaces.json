@@ -1,0 +1,17 @@
+{
+  "namespaces": {
+    "bnb": {
+      "channels": [
+        "Anthony Pompliano","CNBC Television","Cointelegraph","Entrepreneur ME",
+        "FAROKH RADIO","Sizzling CZ: Changpeng Zhao Videos","TOKEN2049",
+        "@BinanceYoutube","@notthreadguy","@binancezh","@binanceacademy"
+      ]
+    },
+    "videos": {
+      "channels": [
+        "@OrangieWEB3","@AccelerateWithMert","@Delphi_Digital",
+        "@notthreadguy","@SolanaFndn","@timroughgardenlectures1861"
+      ]
+    }
+  }
+}

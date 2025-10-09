@@ -260,8 +260,7 @@ def _extract_title_from_dir(path: Path) -> str:
     return path.stem.replace("_diarized_content", "")
 
 def _extract_channel_from_path(path: Path) -> Optional[str]:
-    maybe = path.parent.parent.name
-    return maybe if maybe.startswith("@") else None
+    return path.parent.parent.name  # remove the startswith("@") gate
 
 def _extract_date_prefix(title_or_dir: str) -> Optional[str]:
     m = re.match(r"^(\d{4}-\d{2}-\d{2})\b", title_or_dir)
@@ -511,15 +510,6 @@ def _guess_audio_path(json_path: Path) -> Optional[Path]:
             return cand
     return None
 
-# add near other imports
-from typing import Any, Dict, List
-from pathlib import Path
-import json, logging
-
-def _entities_sidecar_path(json_path: Path) -> Path:
-    stem = json_path.stem.replace("_diarized_content", "")
-    return json_path.with_name(f"{stem}_entities.json")
-
 def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, Any]]:
     """
     Prefer a sibling '*_entities.json'. Fallback to top-level obj['entities'].
@@ -559,10 +549,79 @@ def _load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str,
     return ents
 
 
+# --- namespace-aware channels config (ingestion) ------------------------------
+def _parse_list_env(var: str) -> list[str]:
+    raw = os.getenv(var, "")
+    return [x.strip() for x in re.split(r"[,\s]+", raw) if x.strip()]
+
+
+def _load_namespace_channels(namespace: str) -> list[str]:
+    """
+    Resolve channels for a given namespace.
+    Priority:
+      1) YT_NAMESPACE_CONFIG_JSON  (inline JSON string)
+      2) YT_NAMESPACE_CONFIG       (path to JSON/YAML file)
+      3) Hardcoded fallbacks (optional, keep empty by default)
+    Returns [] if not found.
+    Shape:
+    {
+      "namespaces": {
+        "bnb":    { "channels": ["@BinanceYoutube", "..."] },
+        "videos": { "channels": ["@Delphi_Digital", "..."] }
+      }
+    }
+    """
+    import json as _json
+
+    ns = (namespace or "").strip() or "default"
+
+    # (1) Inline JSON
+    raw_inline = os.getenv("YT_NAMESPACE_CONFIG_JSON")
+    if raw_inline:
+        try:
+            cfg = _json.loads(raw_inline)
+            chans = (cfg.get("namespaces", {}).get(ns, {}) or {}).get("channels", [])
+            if chans: return [c.strip() for c in chans if c.strip()]
+        except Exception:
+            pass
+
+    # (2) File (JSON or YAML)
+    cfg_path = os.getenv("YT_NAMESPACE_CONFIG")
+    if cfg_path:
+        from pathlib import Path
+        p = Path(cfg_path).expanduser().resolve()
+        if p.exists():
+            text = p.read_text(encoding="utf-8")
+            try:
+                if p.suffix.lower() in (".yaml", ".yml"):
+                    import yaml  # type: ignore
+                    cfg = yaml.safe_load(text) or {}
+                else:
+                    cfg = _json.loads(text)
+                chans = (cfg.get("namespaces", {}).get(ns, {}) or {}).get("channels", [])
+                if chans: return [c.strip() for c in chans if c.strip()]
+            except Exception:
+                pass
+
+    # (3) Optional hardcoded fallbacks (leave empty in ingestion repo)
+    # if ns == "bnb": return ["@BinanceYoutube", "@binanceacademy"]
+    # if ns == "videos": return ["@Delphi_Digital"]
+    return []
+
+
 def main():
     setup_logger("ingest_v2")
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--doc-type", default="youtube_video", choices=["youtube_video", "stream"])
+    ap.add_argument("--namespace", default=os.getenv("PINECONE_NAMESPACE", "videos"),
+                    help="Pinecone namespace to write to (defaults to env or 'videos').")
+    ap.add_argument(
+        "--include-channels",
+        nargs="*",
+        default=None,  # explicit override only
+        help="Only ingest these channel folders (e.g. @BinanceYoutube @notthreadguy).",
+    )
     ap.add_argument("--backfill-days", type=int, default=settings_v2.BACKFILL_DAYS)
     ap.add_argument("--root", default=YOUTUBE_VIDEO_DIRECTORY, help="Root dir with diarized JSONs")
     ap.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
@@ -575,8 +634,48 @@ def main():
                     help="Skip Pinecone deduplication check (process all filesystem assets)")
     args = ap.parse_args()
 
+    index_name = os.getenv("PINECONE_INDEX_NAME", "icmfyi-v2")
+    ns = args.namespace
+    logging.info("[cfg] pinecone index=%s  namespace=%s", index_name, ns)
+
+    # 1) Explicit CLI wins
+    channels = [c for c in (args.include_channels or []) if c and c.strip()]
+
+    # 2) If not provided, load from namespace config
+    if not channels:
+        channels = _load_namespace_channels(ns)
+        if channels:
+            logging.info("[cfg] loaded %d channel(s) from namespace '%s'", len(channels), ns)
+
+    # 3) Backward-compat env (deprecated)
+    if not channels:
+        legacy = _parse_list_env("INGEST_INCLUDE_CHANNELS")
+        if legacy:
+            logging.warning(
+                "INGEST_INCLUDE_CHANNELS is DEPRECATED. Move to YT_NAMESPACE_CONFIG or "
+                "YT_NAMESPACE_CONFIG_JSON keyed by namespace='%s'.", ns
+            )
+            channels = legacy
+
+    # Final check
+    if not channels:
+        ap.error(
+            "No channels resolved. Provide --include-channels, or configure YT_NAMESPACE_CONFIG "
+            "(JSON/YAML) or YT_NAMESPACE_CONFIG_JSON for namespace='%s'." % ns
+        )
+
+    logging.info("[cfg] namespace=%s channels=%s", ns, channels)
+
+    # Normalize back onto args for downstream use
+    args.include_channels = channels
+
     # Ensure Tier-2 voice matching is OFF by default; set VOICE_EMBED_BACKEND=auto to enable.
     os.environ.setdefault("VOICE_EMBED_BACKEND", "off")
+
+    # Make namespace choice global for all downstream helpers (dedupe, upsert, parent_resolver, etc.)
+    os.environ["PINECONE_NAMESPACE"] = args.namespace
+    # If you also keep a streams space, you can auto-derive it:
+    os.environ.setdefault("PINECONE_STREAMS_NS", f"{args.namespace}_streams")
 
     if args.doc_type != "youtube_video":
         logging.info("[v2] 'stream' not wired yet in run_all; nothing to do.")
@@ -590,12 +689,26 @@ def main():
         logging.info("[v2] no youtube assets found; exiting.")
         return
 
+    # ── INCLUDE FILTER: restrict to specific channels (exact folder names like '@notthreadguy')
+    if args.include_channels:
+        allow = {c.strip() for c in args.include_channels if c.strip()}
+        before = len(metas_raw_paths)
+        metas_raw_paths = [
+            (m, r, p) for (m, r, p) in metas_raw_paths
+            if (m.get("channel_name") or "").strip() in allow
+        ]
+        logging.info("[v2/filter] channels=%s kept=%d/%d",
+                     sorted(allow), len(metas_raw_paths), before)
+        if not metas_raw_paths:
+            logging.info("[v2] no assets match include filter; exiting.")
+            return
+
     # ── FILTER: Remove already-ingested parents ────────────────────────────────
     if not args.skip_dedupe:
         logging.info("[v2/dedupe] checking which parents are already in Pinecone...")
         already_ingested = _get_ingested_parent_ids(
             index_name=os.getenv("PINECONE_INDEX_NAME", "icmfyi-v2"),
-            namespace=os.getenv("PINECONE_NAMESPACE", "videos")
+            namespace=args.namespace,
         )
 
         before_count = len(metas_raw_paths)
