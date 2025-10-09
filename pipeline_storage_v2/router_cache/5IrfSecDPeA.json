@@ -1,0 +1,23 @@
+{
+  "description": "This lecture discusses the limitations of programming on the Solana blockchain, focusing on stack size and compute unit restrictions. It includes a demonstration of building a simple marketplace application, highlighting the differences between two struct implementations: Marketplace Borsch and Marketplace. The speaker explains the implications of these limitations on application design and performance.",
+  "topic_summary": "Overview of Solana's programming constraints, including stack size limitations [t=210.36], compute unit restrictions [t=252.93], and account allocation limits [t=310.86]. Demonstration of building a marketplace application with practical examples.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Programming",
+    "Marketplace",
+    "Development"
+  ],
+  "aliases": [
+    "solana bootcamp",
+    "Solana Bootcamp",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

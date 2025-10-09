@@ -1,0 +1,30 @@
+{
+  "description": "In this webinar, the hosts discuss the current opportunities in cryptocurrency, highlighting a 48-hour flash sale on Binance where users can buy crypto with zero fees until March 19th. They encourage participants to refer friends to Binance for cashback rewards, emphasizing the security of the platform and the importance of two-factor authentication.",
+  "topic_summary": "The webinar covers Binance's flash sale, referral program, and security measures for cryptocurrency trading [t=37:54].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Webinar",
+    "Flash Sale",
+    "Referral Program",
+    "Security"
+  ],
+  "aliases": [
+    "Markets With Marc",
+    "markets with marc",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$ETH",
+    "$DOGE",
+    "$USDT",
+    "@BinanceYoutube",
+    "@KennethSmith",
+    "@MichaelSaylor"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

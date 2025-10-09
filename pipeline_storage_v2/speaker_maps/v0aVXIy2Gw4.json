@@ -1,0 +1,14 @@
+{
+  "video_id": "v0aVXIy2Gw4",
+  "title": "2022-06-24_v0aVXIy2Gw4_Solana Hacker House London",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

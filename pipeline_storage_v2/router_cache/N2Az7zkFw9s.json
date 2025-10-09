@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on various topics including cryptocurrency, gaming offerings, and community interactions.",
+  "topic_summary": "Participants discuss Initial Exchange Offerings and gaming offerings, alongside community engagement and cryptocurrency insights [t=53:26].",
+  "router_tags": [
+    "cryptocurrency",
+    "gaming",
+    "community",
+    "exchange offerings"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BNB",
+    "@Guan",
+    "@NagaChinchinSoynho",
+    "@JimChurch",
+    "@Shannon",
+    "@Wamijin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

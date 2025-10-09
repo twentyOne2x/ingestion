@@ -1,0 +1,24 @@
+{
+  "description": "A Q&A session discussing various topics related to cryptocurrency, trading strategies, and market analysis.",
+  "topic_summary": "In this session, participants discuss trading strategies, market trends, and the significance of stable coins [t=0:16]. Key figures like Malik Chili and Tammy address common trading challenges and provide insights into market dynamics [t=1:00].",
+  "router_tags": [
+    "Q&A",
+    "cryptocurrency",
+    "trading",
+    "market analysis"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@MalikChili",
+    "@Tammy",
+    "@BillyGao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

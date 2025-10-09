@@ -1,0 +1,29 @@
+{
+  "description": "Kenny discusses his journey into the crypto space, starting with Bitcoin mining and leading to the founding of Manta Network, which focuses on privacy and zero knowledge proofs.",
+  "topic_summary": "The conversation covers the evolution of zero knowledge proofs and their implications for privacy in decentralized applications, along with insights into Manta Network's mission and technology [t=266.1].",
+  "router_tags": [
+    "ZK Proofs",
+    "Web3",
+    "Privacy",
+    "Manta Network",
+    "Decentralized Applications"
+  ],
+  "aliases": [
+    "Kenny",
+    "Kenny's Journey",
+    "Manta Network Insights"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$BTC",
+    "$ETH",
+    "$ZEC",
+    "$ALGO",
+    "$SOL",
+    "@victoria",
+    "@silviomccalli",
+    "@stark"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

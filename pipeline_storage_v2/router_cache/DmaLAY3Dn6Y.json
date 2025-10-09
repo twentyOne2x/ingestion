@@ -1,0 +1,27 @@
+{
+  "description": "Jump Crypto provides an overview of its business, highlighting its origins at the University of Illinois and its evolution into a significant player in the crypto space. The discussion covers the importance of community in crypto, the role of composability, and examples of successful projects like Mango Markets and OASIS.",
+  "topic_summary": "Jump Crypto's business journey, community engagement, and the impact of composability in crypto applications are discussed. Key examples include the development of Mango Markets and the collaborative nature of the crypto ecosystem [t=9:44-554:79].",
+  "router_tags": [
+    "Jump Crypto",
+    "Web3",
+    "DeFi",
+    "Mango Markets",
+    "Community Building",
+    "Blockchain"
+  ],
+  "aliases": [
+    "jump crypto",
+    "JumpCrypto",
+    "JUMP",
+    "jumpTrading"
+  ],
+  "canonical_entities": [
+    "$MNGO",
+    "@Satoshi",
+    "@Mango",
+    "@Pyth",
+    "@Wormhole"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

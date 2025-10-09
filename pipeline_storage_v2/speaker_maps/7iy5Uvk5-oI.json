@@ -1,0 +1,20 @@
+{
+  "video_id": "7iy5Uvk5-oI",
+  "title": "2021-11-15_7iy5Uvk5-oI_Breakpoint 2021: Scalability & Web3 social media - marriage of NFTs & Defi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Joe Biden",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

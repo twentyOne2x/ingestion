@@ -1,0 +1,27 @@
+{
+  "description": "Van discusses how institutions can safely engage with DeFi, emphasizing the importance of stable yields over high-risk investments. He highlights the growth of DeFi and the need for traditional financial institutions to find better returns than the current treasury bond rates.",
+  "topic_summary": "The presentation covers the intersection of DeFi and traditional finance, focusing on the cautious approach institutions take towards DeFi products, the risks involved, and the potential for stable returns. Key points include the growth of DeFi, the importance of audits, and the challenges posed by rug pulls.",
+  "router_tags": [
+    "DeFi",
+    "Traditional Finance",
+    "Cryptocurrency",
+    "Institutional Investment",
+    "Risk Management"
+  ],
+  "aliases": [
+    "Van",
+    "van",
+    "Floating Point Group",
+    "floating point group"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GaryGensler",
+    "$20,000",
+    "Coinbase",
+    "Kraken"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing the Binance NFT marketplace, covering various topics related to cryptocurrency and digital assets.",
+  "topic_summary": "Overview of Binance's NFT marketplace and its implications in the crypto space [t=0:24]. Discussion on financial aspects and market trends in Latin America, including Argentina and Peru [t=2:46]. Insights into crypto applications and user experiences [t=24:53].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "cryptocurrency",
+    "webinar",
+    "Latin America"
+  ],
+  "aliases": [
+    "Binance NFT",
+    "binance nft",
+    "BinanceYoutube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

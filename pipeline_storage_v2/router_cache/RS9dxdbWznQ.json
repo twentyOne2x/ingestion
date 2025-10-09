@@ -1,0 +1,24 @@
+{
+  "description": "Marc Buckner discusses his journey into cryptocurrency, sharing insights on trading and the ease of using Binance. He emphasizes the importance of adapting to market changes, especially during the lockdown period.",
+  "topic_summary": "In this webinar, Marc Buckner shares his experiences with cryptocurrency, starting from his initial interest in Bitcoin to his current trading practices. He highlights the transition from traditional investments to crypto, particularly during the South African lockdown [t=305.39].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Binance",
+    "Trading",
+    "South Africa",
+    "Webinar"
+  ],
+  "aliases": [
+    "Marc Buckner",
+    "Mark Buckner",
+    "Marc",
+    "Mark"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Jeff Li, VP of Product at Binance, discusses the platform's growth to 250 million users and the evolving landscape of crypto technology. He emphasizes the importance of curiosity for developers and shares insights from his experience in social media, focusing on user engagement and product design.",
+  "topic_summary": "Jeff Li explores Binance's journey to 250 million users, the significance of innovation in crypto, and lessons from social media that can enhance user experience in the crypto space. He highlights the need for intuitive design and understanding user preferences [t=240.36].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Jeff Li",
+    "Product Development",
+    "User Experience",
+    "Innovation"
+  ],
+  "aliases": [
+    "Jeff Li",
+    "Jeff Lee",
+    "VP of Product",
+    "Binance VP"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@jeffli"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

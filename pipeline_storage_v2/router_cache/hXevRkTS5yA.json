@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on defining success in Web3 projects, featuring insights from Elan of CyberConnect and Tony from Sumsup. They explore the importance of user adoption, identity verification, and the role of beliefs in Web3 success.",
+  "topic_summary": "Discussion on success metrics in Web3, focusing on user adoption, identity systems, and community beliefs. Elan emphasizes democratizing access to technology, while Tony highlights the significance of identity and user engagement in adoption.",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Crypto",
+    "User Adoption",
+    "Identity Verification",
+    "Decentralized Networks"
+  ],
+  "aliases": [
+    "Web3 Change Makers",
+    "web3 change makers",
+    "Web3 success",
+    "web3 success"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

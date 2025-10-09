@@ -1,0 +1,21 @@
+{
+  "description": "A wrap-up of the Bitcoin Pizza Day 2025 event hosted by Binance.",
+  "topic_summary": "Summary of the Bitcoin Pizza Day 2025 event with Binance, highlighting key moments and discussions [t=00:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Bitcoin Pizza Day 2025",
+    "bitcoin pizza day 2025",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

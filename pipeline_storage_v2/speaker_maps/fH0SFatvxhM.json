@@ -1,0 +1,56 @@
+{
+  "video_id": "fH0SFatvxhM",
+  "title": "2021-05-04_fH0SFatvxhM_NFTs for Artists: The Beginners Guide",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "C": {
+      "name": "Elena Zabilev",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "H": {
+      "name": "Marie Angel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Krista Kim",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Nicole Ruggero",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Colbone Bell Ogle",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Colbone Bell Ogle",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Elena Zavelev",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

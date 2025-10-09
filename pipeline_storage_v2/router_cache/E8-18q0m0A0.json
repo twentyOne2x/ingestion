@@ -1,0 +1,22 @@
+{
+  "description": "This video explains Binance Locked Staking, a process for locking digital assets on a proof of stake blockchain to earn staking rewards. It covers how to stake on Binance, including selecting assets, adjusting durations, and understanding the staking process.",
+  "topic_summary": "Learn about Binance Locked Staking and how to stake your assets on Binance to earn rewards. The video details the steps to participate in staking, the importance of asset locking, and the implications of redeeming staked assets [t=2:8].",
+  "router_tags": [
+    "Binance",
+    "Staking",
+    "Cryptocurrency",
+    "Finance",
+    "Investing"
+  ],
+  "aliases": [
+    "binance locked staking",
+    "Binance Staking",
+    "binance staking"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

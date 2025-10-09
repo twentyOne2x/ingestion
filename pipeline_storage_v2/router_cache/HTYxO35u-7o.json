@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the benefits and limitations of Decentralized Autonomous Organizations (DAOs), highlighting their reliance on smart contracts to reduce human error in voting processes and the challenges they face, including security risks exemplified by the DAO hack in 2016.",
+  "topic_summary": "DAOs utilize smart contracts for governance, minimizing human error and censorship risks, but they are not without vulnerabilities, as demonstrated by the 2016 DAO hack [t=21:76].",
+  "router_tags": [
+    "DAOs",
+    "Ethereum",
+    "Smart Contracts",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Dao",
+    "DAOs",
+    "Decentralized Autonomous Organizations"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

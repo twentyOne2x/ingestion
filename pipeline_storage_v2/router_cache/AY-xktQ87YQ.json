@@ -1,0 +1,23 @@
+{
+  "description": "In this masterclass, Illalaro introduces Bitcoin, explaining its background, functionality, and the societal issues it addresses. Participants can take a quiz for a chance to win Bitcoin rewards. The session covers Bitcoin's creation, its decentralized nature, and how transactions are verified by miners on the blockchain.",
+  "topic_summary": "The masterclass provides a comprehensive overview of Bitcoin, its origins, and its operational mechanics, including the role of miners and the blockchain in transaction verification. It also discusses the societal problems Bitcoin aims to solve, such as economic turmoil and the need for decentralized currency.",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Blockchain",
+    "Masterclass",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Masterclass",
+    "Bitcoin Guide",
+    "Ultimate Bitcoin Guide"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SatoshiNakamoto",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

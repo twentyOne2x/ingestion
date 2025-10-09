@@ -1,0 +1,20 @@
+{
+  "video_id": "JxsyOSNVzMs",
+  "title": "2024-11-10_JxsyOSNVzMs_Sebastien Borget - Co-Founder & COO, The Sandbox - Proof that Web3 is thriving - BBW 2024",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Snoop Dogg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

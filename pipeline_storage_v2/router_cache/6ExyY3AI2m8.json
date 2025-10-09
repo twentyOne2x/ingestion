@@ -1,0 +1,20 @@
+{
+  "description": "Explore the significance of being a Binance Angel and its impact on the community.",
+  "topic_summary": "The program aims to empower individuals through social media initiatives, especially during the pandemic [t=00:05].",
+  "router_tags": [
+    "Binance",
+    "Binance Angels",
+    "community impact",
+    "social media"
+  ],
+  "aliases": [
+    "binance angels",
+    "Binance angels",
+    "BINANCE ANGELS"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

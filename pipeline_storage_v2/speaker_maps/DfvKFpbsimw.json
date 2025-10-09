@@ -1,0 +1,32 @@
+{
+  "video_id": "DfvKFpbsimw",
+  "title": "2022-02-11_DfvKFpbsimw_Riptide Hackathon Workshop: Solana Pay",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Josh Jordan",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Josh Freed",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Josh Freed",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

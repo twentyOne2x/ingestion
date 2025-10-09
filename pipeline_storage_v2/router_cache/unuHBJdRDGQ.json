@@ -1,0 +1,22 @@
+{
+  "description": "This video provides an introduction to cryptocurrency trading, covering the basics of buying and selling assets like Bitcoin. It discusses the importance of choosing the right exchange and the benefits of using centralized platforms like Binance for liquidity and speed in trading.",
+  "topic_summary": "Learn the fundamentals of crypto trading, including how to select exchanges, manage risks, and understand market volatility. The video emphasizes the significance of long-term strategies and effective risk management in cryptocurrency investments [t=0:24 - t=4:00].",
+  "router_tags": [
+    "Crypto Trading",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Binance",
+    "Investing"
+  ],
+  "aliases": [
+    "Crypto Trading",
+    "Cryptocurrency Trading",
+    "Crypto Basics"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

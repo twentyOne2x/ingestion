@@ -1,0 +1,23 @@
+{
+  "description": "This video provides a brief overview of Bitcoin, its creation by Satoshi Nakamoto in 2009, and its significance as the first successful cryptocurrency.",
+  "topic_summary": "Bitcoin, launched in 2009 by Satoshi Nakamoto, is a decentralized digital currency that allows direct transactions without intermediaries. It was detailed in a 2008 white paper, emphasizing cryptographic proof over trust. As of 2022, it remains the largest cryptocurrency by network value. [t=2:00] [t=20:64] [t=48:74]",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Satoshi Nakamoto",
+    "Blockchain",
+    "Digital Currency"
+  ],
+  "aliases": [
+    "bitcoin",
+    "BTC",
+    "Satoshi",
+    "satoshi nakamoto"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@satoshi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

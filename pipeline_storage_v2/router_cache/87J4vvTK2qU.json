@@ -1,0 +1,35 @@
+{
+  "description": "Discussion involving various individuals about NFTs and related topics.",
+  "topic_summary": "Conversation about NFTs and their significance, featuring multiple speakers discussing their experiences and insights [t=05:19].",
+  "router_tags": [
+    "NFT",
+    "crypto",
+    "discussion",
+    "blockchain"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Nijo",
+    "@ShijuXiaZhang",
+    "@SanKaiYajo",
+    "@Jesus",
+    "@PingJinzo",
+    "@SamJosh",
+    "@LaoJatian",
+    "@Nanzan",
+    "@Joseph",
+    "@Hakan",
+    "@ZhouZhang",
+    "@ChunSami",
+    "@TaiJing",
+    "@SunShuni",
+    "@Zhang"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

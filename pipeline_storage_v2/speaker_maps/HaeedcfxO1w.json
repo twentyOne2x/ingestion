@@ -1,0 +1,38 @@
+{
+  "video_id": "HaeedcfxO1w",
+  "title": "2023-03-10_HaeedcfxO1w_Journey of Becoming a Woman Creator in Crypto",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "C": {
+      "name": "Lucy Sheep",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Frank Huggin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Chibi Ripka",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Crypto Angel",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

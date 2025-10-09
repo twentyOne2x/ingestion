@@ -1,0 +1,26 @@
+{
+  "video_id": "j87D8nPO_rI",
+  "title": "2022-02-10_j87D8nPO_rI_Crypto Life-",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "D": {
+      "name": "Shona Ji",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Dali Bow",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

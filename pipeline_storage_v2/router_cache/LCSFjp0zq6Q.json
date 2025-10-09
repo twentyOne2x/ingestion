@@ -1,0 +1,30 @@
+{
+  "description": "Vishal Shakunjan discusses the evolution of financial services through blockchain technology and the importance of understanding investments in the crypto space. He emphasizes the freedom of money and choice for consumers, reflecting on his diverse career journey across various industries.",
+  "topic_summary": "Exploration of blockchain's impact on financial services and the importance of consumer choice in investments. Discussion includes Vishal's career path and insights into the crypto industry.",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Finance",
+    "Investing",
+    "Binance"
+  ],
+  "aliases": [
+    "Vishal Sacheendran",
+    "Vishal Shakunjan",
+    "vishal",
+    "sacheendran"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@RichardTang",
+    "@BritishCouncil",
+    "@BankOfNewYork",
+    "@Tratfire",
+    "@MindfulCity"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

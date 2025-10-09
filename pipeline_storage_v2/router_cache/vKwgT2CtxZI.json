@@ -1,0 +1,25 @@
+{
+  "description": "This video features women leaders from Binance discussing their roles and contributions, particularly in relation to International Women's Day. They share insights on the importance of women in the crypto space and initiatives aimed at increasing female representation in technology and finance.",
+  "topic_summary": "Women leaders from Binance discuss their experiences and initiatives to promote gender equality in the crypto industry, highlighting the significance of education and community support [t=362.38].",
+  "router_tags": [
+    "Binance",
+    "Women in Crypto",
+    "International Women's Day",
+    "Education",
+    "Diversity"
+  ],
+  "aliases": [
+    "Meet the Women Behind Binance",
+    "Women of Binance",
+    "Binance Women Leaders"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@Helen",
+    "@FredaVargas",
+    "@Walich"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

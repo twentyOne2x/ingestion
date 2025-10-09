@@ -1,0 +1,26 @@
+{
+  "video_id": "5-Azy1GQyAA",
+  "title": "2022-03-02_5-Azy1GQyAA_Binance goes to the BWT ALPINE F1 A522 Launch - ALPINE Fan Token",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "D": {
+      "name": "Eina Dafon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Mark Duletz",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

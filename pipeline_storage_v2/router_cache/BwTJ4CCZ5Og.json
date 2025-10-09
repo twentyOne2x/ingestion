@@ -1,0 +1,21 @@
+{
+  "description": "CZ Binance shares tips on how to get a coin listed on Binance, emphasizing the importance of real user engagement over social media shilling. He advises project teams to focus on attracting genuine users and applying directly to Binance for listing.",
+  "topic_summary": "CZ Binance discusses effective strategies for getting a coin listed on Binance, highlighting the need for real user support rather than social media promotions [t=0:16-24:96].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "listing",
+    "CZ Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@cz_binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

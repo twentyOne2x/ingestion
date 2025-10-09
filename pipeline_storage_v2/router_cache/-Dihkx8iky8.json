@@ -1,0 +1,23 @@
+{
+  "description": "This video promotes International Women's Day by encouraging women to explore cryptocurrency. It highlights Binance Academy's courses and a giveaway of $25 to 5,000 women who complete a short course. The discussion emphasizes the cautious approach women may have towards crypto and the importance of education in this new venture.",
+  "topic_summary": "Celebrating International Women's Day, the video encourages women to engage with cryptocurrency and highlights educational resources available through Binance Academy. It features a giveaway to incentivize participation and discusses the unique challenges women face in the crypto space [t=50:46].",
+  "router_tags": [
+    "International Women's Day",
+    "Cryptocurrency",
+    "Binance Academy",
+    "Women in Crypto",
+    "Education"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$25",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

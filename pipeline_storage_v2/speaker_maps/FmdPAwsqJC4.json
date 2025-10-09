@@ -1,0 +1,14 @@
+{
+  "video_id": "FmdPAwsqJC4",
+  "title": "2021-09-09_FmdPAwsqJC4_How to Anchor: An introduction to the Anchor Framework",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

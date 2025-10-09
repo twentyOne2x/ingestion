@@ -1,0 +1,26 @@
+{
+  "video_id": "BcibnstsCIM",
+  "title": "2021-04-13_BcibnstsCIM_NFTs Explained: Everything You Need To Know - Guide to mint NFT",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "King Kong",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Joanne Ashraf",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

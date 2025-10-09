@@ -1,0 +1,34 @@
+{
+  "description": "Miko Honkasalo discusses the challenges of monetizing digital media with Mitchell Moose from Crypto Briefing and Mike McCaffrey from The Block. They explore the impact of Web3 on subscriptions and paywalls, highlighting the bleak state of online media and the need for innovative solutions like Access Protocol.",
+  "topic_summary": "The panel addresses the current state of online media, focusing on the decline in consumer subscriptions and advertising revenue. They discuss the challenges faced by traditional media companies and the potential of Web3 technologies to reshape content monetization and consumer engagement [t=0:24-0:48].",
+  "router_tags": [
+    "Media",
+    "Web3",
+    "Subscriptions",
+    "Paywalls",
+    "Digital Content"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Breakpoint2022",
+    "Breakpoint2022: Tokens Fix This"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MikoHonkasalo",
+    "@MitchellMoose",
+    "@MikeMcCaffrey",
+    "@CryptoBriefing",
+    "@TheBlock",
+    "@BusinessInsider",
+    "@Politico",
+    "@FreightWaves",
+    "@Netflix",
+    "@Bloomberg",
+    "@Atlantic",
+    "@NewYorkTimes"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "VuUG6H-_IJU",
+  "title": "2022-10-20_VuUG6H-_IJU_AMA with Binance Co-Founder and Former CEO, CZ - Binance Blockchain Week - Paris 2022",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Ryder Ollie",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the concept of headquarters at Binance, emphasizing productivity without a physical office, particularly in the context of remote work during Covid.",
+  "topic_summary": "Exploration of Binance's approach to productivity and the non-traditional concept of headquarters, highlighting the effectiveness of remote work [t=0:24 - 9:08].",
+  "router_tags": [
+    "Binance",
+    "remote work",
+    "headquarters",
+    "productivity"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

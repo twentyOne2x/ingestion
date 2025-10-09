@@ -1,0 +1,26 @@
+{
+  "description": "Binance Academy presents a webinar covering the basics of cryptocurrencies, candlestick charts, and hardware wallets, aimed at educating viewers about digital currencies and their functionalities.",
+  "topic_summary": "The webinar introduces cryptocurrency as a digital form of money, explains blockchain technology, and discusses the roles of traders and investors in the cryptocurrency market. It also touches on technical analysis and candlestick charts as tools for market prediction [t=476.94].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Blockchain",
+    "Technical Analysis",
+    "Candlestick Charts",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$XRP",
+    "$USDT",
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

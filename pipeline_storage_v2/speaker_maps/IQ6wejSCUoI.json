@@ -1,0 +1,20 @@
+{
+  "video_id": "IQ6wejSCUoI",
+  "title": "2022-10-05_IQ6wejSCUoI_The Interview Room - Binance Blockchain Week - Paris 2022",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Suzanne Dasva",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

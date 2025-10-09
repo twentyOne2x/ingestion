@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the limitations of smart contracts, highlighting issues such as immutability and the challenges in fixing mistakes. It references the DAO hack of 2016, where flaws in smart contract code led to significant losses in Ether and the subsequent hard fork of Ethereum.",
+  "topic_summary": "The video explores the limitations of smart contracts, particularly focusing on their immutability and the difficulties in correcting errors, illustrated by the DAO hack incident [t=6:16]. It also introduces decentralized applications (dapps) and their functionality [t=37:62].",
+  "router_tags": [
+    "Smart Contracts",
+    "Blockchain",
+    "Ethereum",
+    "Dapps",
+    "DAO"
+  ],
+  "aliases": [
+    "What Are the Limitations of Smart Contracts",
+    "Limitations of Smart Contracts",
+    "Smart Contract Limitations"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

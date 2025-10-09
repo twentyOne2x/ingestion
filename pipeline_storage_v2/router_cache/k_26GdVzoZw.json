@@ -1,0 +1,25 @@
+{
+  "description": "This video provides a concise overview of XRP, a digital asset by Ripple, highlighting its advantages in transaction speed and cost-effectiveness compared to traditional cryptocurrencies like Bitcoin.",
+  "topic_summary": "XRP is presented as a fast and cost-efficient digital currency, with a focus on its unique features and the benefits it offers for transactions in the crypto space [t=0:16]. The video discusses the community around XRP and its potential applications, including a new debit card and sidechain technology [t=194:62].",
+  "router_tags": [
+    "XRP",
+    "Ripple",
+    "Cryptocurrency",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "Xrp",
+    "Ripple",
+    "Binance",
+    "Weninger",
+    "BTC",
+    "Rippler"
+  ],
+  "canonical_entities": [
+    "$XRP",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

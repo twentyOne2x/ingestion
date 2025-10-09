@@ -1,0 +1,22 @@
+{
+  "description": "Join the live stream for the Polkadot Parachain Slot Auction, where nine project representatives will introduce their products. Participate in the auction and share a total bonus prize pool of 30 million USD starting at 1pm UTC. Voting for your favorite projects is easy and requires no wallet setup.",
+  "topic_summary": "The Polkadot Slot Auction live event features project introductions and a chance to vote for favorites, sharing a 30 million USD prize pool starting [t=01:00].",
+  "router_tags": [
+    "Polkadot",
+    "Slot Auction",
+    "Binance",
+    "Parachain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "DOT Slot Auction",
+    "Polkadot Auction",
+    "Binance Live"
+  ],
+  "canonical_entities": [
+    "$DOT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

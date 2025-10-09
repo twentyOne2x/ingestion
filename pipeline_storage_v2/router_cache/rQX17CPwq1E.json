@@ -1,0 +1,24 @@
+{
+  "description": "This video explores and debunks common myths surrounding cryptocurrencies, particularly during the Halloween season. It addresses fears related to volatility, utility, and regulation, emphasizing the importance of understanding blockchain technology.",
+  "topic_summary": "Debunking Halloween-themed crypto myths, including volatility [t=162.1], utility [t=289.99], and regulation [t=352.89].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Myths",
+    "Halloween",
+    "Volatility",
+    "Regulation"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@NYDFS"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

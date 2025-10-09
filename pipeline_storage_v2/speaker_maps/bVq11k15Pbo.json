@@ -1,0 +1,26 @@
+{
+  "video_id": "bVq11k15Pbo",
+  "title": "2025-07-14_bVq11k15Pbo_Celebrating 8 Years of Binance with Yi He - #BinanceTurns8",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Elon Wapuri",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

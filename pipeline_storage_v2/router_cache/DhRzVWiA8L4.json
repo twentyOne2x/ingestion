@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on taxation and cryptocurrencies in Colombia, addressing regulatory frameworks and compliance issues.",
+  "topic_summary": "Exploration of cryptocurrency regulations in Colombia, including compliance challenges and the role of exchanges [t=00:00-00:30]. Mention of Microsoft and its wallet productivity [t=33:32-38:03].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Taxation",
+    "Colombia",
+    "Regulations",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Tributacion y Criptomonedas en Colombia",
+    "tributacion y criptomonedas en colombia",
+    "Tributación y Criptomonedas en Colombia"
+  ],
+  "canonical_entities": [
+    "$COL",
+    "@BinanceYoutube",
+    "@Microsoft"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to create a Binance account quickly and easily in this short tutorial.",
+  "topic_summary": "This video explains the steps to create a Binance account in three simple steps, including downloading the app, registering with an email and password, and activating the account [t=0:24-0:40].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Account Creation",
+    "Tutorial"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BinanceYoutube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

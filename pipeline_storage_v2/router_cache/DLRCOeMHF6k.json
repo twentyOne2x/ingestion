@@ -1,0 +1,30 @@
+{
+  "description": "In this episode of Crypto Week in Review, hosts Jack Hollerin and Bram Cohen discuss recent market volatility triggered by Elon Musk's decision to stop accepting Bitcoin for Tesla purchases due to environmental concerns. They explore the implications of this decision on Bitcoin and Dogecoin, and the broader impact on the cryptocurrency market.",
+  "topic_summary": "The hosts analyze the recent market volatility in cryptocurrency, focusing on Elon Musk's decision to halt Bitcoin transactions for Tesla, citing environmental issues. They discuss the environmental impact of Bitcoin and Dogecoin, with insights from Bram Cohen on the sustainability of cryptocurrencies.",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Dogecoin",
+    "Elon Musk",
+    "Tesla",
+    "Market Volatility",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Crypto Week in Review",
+    "Crypto Weekend Review",
+    "Jack Hollerin",
+    "Bram Cohen",
+    "Skill Labs",
+    "Cheer Network"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$DOGE",
+    "@ElonMusk",
+    "@BramCohen",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

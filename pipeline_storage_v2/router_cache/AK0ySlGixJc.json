@@ -1,0 +1,22 @@
+{
+  "description": "In this episode, Forest interviews Anatoly, co-founder and CEO of Solana, discussing his journey into crypto, the challenges of scaling blockchain technology, and the importance of education in the space. Anatoly shares insights on his early experiences with Bitcoin and Ethereum, and the evolution of his thoughts on social impacts of technology.",
+  "topic_summary": "Anatoly discusses his background in crypto, the inception of Solana, and the ongoing challenges in blockchain development, particularly around scaling and user experience [t=40:01].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Development",
+    "Scaling"
+  ],
+  "aliases": [
+    "Solana Podcast",
+    "The Solana Podcast",
+    "Hashoshi Podcast"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

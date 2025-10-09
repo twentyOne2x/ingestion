@@ -1,0 +1,22 @@
+{
+  "description": "Learn three essential methods to secure your Binance account, including setting up Google Authenticator, whitelisting addresses, and establishing an anti-phishing code. This guide emphasizes the importance of using Google Authenticator over phone verification due to security risks like SIM swaps.",
+  "topic_summary": "This video explains how to enhance the security of your Binance account through Google Authenticator setup and other protective measures [t=0:32].",
+  "router_tags": [
+    "Binance",
+    "Account Security",
+    "Google Authenticator",
+    "2FA",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

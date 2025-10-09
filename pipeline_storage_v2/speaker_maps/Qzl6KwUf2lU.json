@@ -1,0 +1,20 @@
+{
+  "video_id": "Qzl6KwUf2lU",
+  "title": "2021-10-24_Qzl6KwUf2lU_All About Binance and How to make Money Trading",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Changpeng Zhao",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

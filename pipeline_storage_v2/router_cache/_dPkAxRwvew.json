@@ -1,0 +1,23 @@
+{
+  "description": "This video explains dusting attacks in cryptocurrency, detailing how they work and how to protect against them. It covers the concept of dust in Bitcoin transactions and the implications of these attacks on user privacy.",
+  "topic_summary": "Dusting attacks exploit the pseudonymous nature of Bitcoin by sending tiny amounts of cryptocurrency (dust) to wallets, allowing attackers to analyze and potentially de-anonymize users. Effective countermeasures include not moving received dust funds and creating new addresses for transactions [t=117.0].",
+  "router_tags": [
+    "Dusting Attacks",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Privacy",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Dusting Attacks",
+    "dusting attacks",
+    "Dusting",
+    "dusting"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Participants share their excitement about attending Binance Blockchain Week, expressing their eagerness to connect with the community and meet industry figures.",
+  "topic_summary": "Attendees at Binance Blockchain Week introduce themselves and highlight their enthusiasm for networking and engaging with Binance Angels and NFT artists [t=0:24-73:50].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "NFT",
+    "Community",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "binance blockchain week",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

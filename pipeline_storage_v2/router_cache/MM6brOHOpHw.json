@@ -1,0 +1,24 @@
+{
+  "description": "Webinar on selling cryptocurrencies through Binance P2P, focusing on the Latin American market. Discussion includes operational insights and user experiences.",
+  "topic_summary": "Overview of Binance P2P for selling cryptocurrencies in Latin America, featuring operational strategies and user interactions [t=0:00-16:48].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency",
+    "Latin America",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance P2P: Como vender tus criptomonedas"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@ArielFederico",
+    "@Malcolm"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

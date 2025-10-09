@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Binance margin and futures trading, detailing how margin trading allows for borrowing funds to amplify trading results and how futures contracts enable trading based on future price agreements.",
+  "topic_summary": "Margin trading involves borrowing funds to leverage positions, while futures contracts are agreements to buy or sell assets at predetermined prices in the future. Margin trading operates in the spot market, whereas futures trading occurs in the derivatives market. Traders can use varying leverage levels, with futures offering higher leverage options. Both methods incur trading fees, and perpetual futures have specific funding rates.",
+  "router_tags": [
+    "Binance",
+    "Margin Trading",
+    "Futures Contracts",
+    "Crypto Trading",
+    "Leverage"
+  ],
+  "aliases": [
+    "binance margin trading",
+    "Binance Futures",
+    "Margin Trading Binance",
+    "Futures Trading Binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

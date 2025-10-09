@@ -1,0 +1,26 @@
+{
+  "description": "Michael, founder of Marinade Finance, discusses the benefits of liquid staking on the Solana network, emphasizing its role in enhancing user experience and security. He explains how Marinade allows users to stake SOL tokens without traditional lockup periods, enabling immediate rewards and flexibility in unstaking. The presentation also highlights the collaboration with other teams in the liquid staking space and the recent launch of a Devnet version for testing.",
+  "topic_summary": "Michael introduces Marinade Finance, a liquid staking platform on Solana, detailing its advantages such as immediate rewards and ease of use. He discusses the importance of improving user experience in crypto and the collaboration with other teams to enhance the platform's architecture. The demo showcases the staking process and the Devnet launch for testing.",
+  "router_tags": [
+    "Marinade Finance",
+    "Solana",
+    "Liquid Staking",
+    "DeFi",
+    "Crypto",
+    "Staking"
+  ],
+  "aliases": [
+    "Marinade finance",
+    "marinade finance",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Michael",
+    "@Lucio",
+    "@Marco"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

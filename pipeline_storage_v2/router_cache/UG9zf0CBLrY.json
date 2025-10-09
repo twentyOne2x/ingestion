@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on honesty in the crypto space, featuring memes and commentary.",
+  "topic_summary": "Exploration of honesty in cryptocurrency, with a focus on Binance and related memes [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "catmeme",
+    "cat",
+    "crypto",
+    "finance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

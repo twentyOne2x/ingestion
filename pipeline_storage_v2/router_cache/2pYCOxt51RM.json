@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on BNB Greenfield and its integration with Web2 technologies, featuring various speakers and insights on the future of NFTs and crypto.",
+  "topic_summary": "Exploration of BNB Greenfield's capabilities and its role in the crypto ecosystem, including mentions of various personalities and platforms [t=0:16].",
+  "router_tags": [
+    "BNB",
+    "Greenfield",
+    "Web2",
+    "NFT",
+    "crypto"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

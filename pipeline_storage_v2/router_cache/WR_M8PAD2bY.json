@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on various topics including trading strategies and market analysis featuring multiple speakers.",
+  "topic_summary": "Speakers discuss trading strategies and market dynamics, emphasizing patience and analysis [t=01:19]. They mention various entities and concepts related to trading and market behavior [t=48:11].",
+  "router_tags": [
+    "trading",
+    "market analysis",
+    "cryptocurrency",
+    "investment strategies"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

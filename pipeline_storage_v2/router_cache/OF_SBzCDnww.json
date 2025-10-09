@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on P2P cryptocurrency transactions in Paraguay, covering topics like stablecoins and commercial transactions.",
+  "topic_summary": "Overview of P2P crypto transactions in Paraguay, including stablecoins like USDT and economic filters [t=41:42].",
+  "router_tags": [
+    "P2P",
+    "Cryptocurrency",
+    "Paraguay",
+    "Stablecoins",
+    "USDT"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@Susan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

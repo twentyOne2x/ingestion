@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on decentralized exchanges, featuring insights from the founder of Twitter and the launch of a new exchange focused on Bitcoin.",
+  "topic_summary": "Exploration of decentralized exchanges and their significance in the crypto market, including mentions of key figures like Vitalik Buterin [t=0:24] and the Binance Dex [t=89:38].",
+  "router_tags": [
+    "Binance",
+    "Decentralized Exchange",
+    "Crypto",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "BinanceTV",
+    "binancetv",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "@VitalikButerin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

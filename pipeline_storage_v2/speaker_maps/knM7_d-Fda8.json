@@ -1,0 +1,20 @@
+{
+  "video_id": "knM7_d-Fda8",
+  "title": "2022-11-10_knM7_d-Fda8_Join Maria Sharapova and Binance Vice President Helen Hai as They Discuss Female Leadership in Web3",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "M. Gerarde",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

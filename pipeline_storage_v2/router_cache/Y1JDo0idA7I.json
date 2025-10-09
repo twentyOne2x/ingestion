@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the limitations of blockchain technology, including immutability issues, key loss consequences, high energy consumption, and storage challenges.",
+  "topic_summary": "The video outlines key limitations of blockchain technology, such as the challenges of immutability [t=3:44], the risks associated with lost keys [t=18:24], and the implications of increasing blockchain size on network resilience [t=33:59].",
+  "router_tags": [
+    "Blockchain",
+    "Limitations",
+    "Bitcoin",
+    "Cryptography"
+  ],
+  "aliases": [
+    "What Are the Limitations Of Blockchain",
+    "Limitations of Blockchain",
+    "Blockchain Limitations"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

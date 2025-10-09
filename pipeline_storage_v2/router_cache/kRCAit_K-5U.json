@@ -1,0 +1,26 @@
+{
+  "description": "Maddie from Solana Labs introduces a panel discussing degeneracy on Solana, focusing on DeFi, trading, and the growth of the ecosystem. Speakers include Goose Wayne from GooseFX, Henry Elder from Foresight, Joffrey from Exotic, and Yutaro from Orca, who share insights on their projects and the pros and cons of being anonymous in crypto.",
+  "topic_summary": "Panel discussion on DeFi growth on Solana, featuring insights from various projects and a philosophical debate on anonymity in crypto. Highlights include the rapid increase in total value locked (TVL) and trading volumes on protocols.",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Crypto",
+    "Trading",
+    "Anonymity"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Degens on Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GooseWayne",
+    "@HenryElder",
+    "@Joffrey",
+    "@Yutaro"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to trade cryptocurrency on Binance using market and limit orders. This beginner's guide covers the basics of placing trades and understanding order types.",
+  "topic_summary": "This video explains how to execute trades on Binance, focusing on market orders [t=39:59] and limit orders [t=80:65]. It provides insights into trading strategies and order placement.",
+  "router_tags": [
+    "Crypto Trading",
+    "Binance",
+    "Market Order",
+    "Limit Order",
+    "Beginner Guide"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

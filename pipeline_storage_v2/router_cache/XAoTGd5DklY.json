@@ -1,0 +1,26 @@
+{
+  "description": "At Binance Blockchain Week Istanbul, industry leaders discuss the role of local initiatives in the growth of global cryptocurrency markets. Key speakers include Dave Yoranak from Trondao and Tan Sarkaya from Mindstorm Blockchain Lab, who emphasize the importance of engaging local stakeholders and addressing community needs to drive adoption. The conversation highlights strategies for building robust ecosystems starting from local foundations.",
+  "topic_summary": "The panel explores how local initiatives can significantly impact the global cryptocurrency landscape, focusing on stakeholder engagement and the development of solutions tailored to local markets [t=107.01].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Blockchain",
+    "Global Markets",
+    "Local Initiatives",
+    "Binance Blockchain Week"
+  ],
+  "aliases": [
+    "crypto a global crossroads",
+    "Binance Blockchain Week Istanbul",
+    "Binance Academy",
+    "Tron Builder Tour"
+  ],
+  "canonical_entities": [
+    "$TRON",
+    "@BinanceYoutube",
+    "@DaveYoranak",
+    "@TanSarkaya",
+    "@RichardTing"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

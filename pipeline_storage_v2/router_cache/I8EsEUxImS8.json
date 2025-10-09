@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the Solana community validator call covering updates on nonce features, delegation program issues, and hardware survey requests. Dan from Holoplex presents on the Geyser plugin implementation.",
+  "topic_summary": "Validator community updates including nonce feature status [t=39:72], delegation program fixes [t=121:79], and a hardware survey [t=217:01]. Dan from Holoplex discusses the Geyser plugin [t=269:45].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Geyser",
+    "NFT",
+    "Community Call"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BrianLong",
+    "@Dan",
+    "@Holoplex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

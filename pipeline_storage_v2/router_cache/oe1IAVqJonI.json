@@ -1,0 +1,23 @@
+{
+  "description": "This video explains how to use Stop Limit and Stop Loss orders on Binance, focusing on their functions and practical examples for beginners.",
+  "topic_summary": "Learn about Stop Limit Orders and their application in trading on Binance. The video covers the definition of Stop Price and Limit Price, and provides examples of placing orders effectively [t=1:20].",
+  "router_tags": [
+    "Stop Limit",
+    "Stop Loss",
+    "Binance",
+    "Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Stop Limit",
+    "Stop Loss",
+    "binanceacademy",
+    "@BinanceAcademy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

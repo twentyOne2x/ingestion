@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the necessity of proof of work consensus mechanisms in blockchain networks, highlighting the Byzantine General's problem and the importance of nodes validating information to prevent false data propagation.",
+  "topic_summary": "The video discusses how proof of work helps nodes in a blockchain network coordinate and agree on a single truth, ensuring reliability even in the presence of potential malicious actors [t=39:28].",
+  "router_tags": [
+    "Blockchain",
+    "Proof of Work",
+    "Consensus Mechanisms",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Proof Of Work",
+    "Proof of work",
+    "proof of work"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "KXgYB9tu8lw",
+  "title": "2023-11-15_KXgYB9tu8lw_The Web3 Consumer & Brand Revolution: Progress and Challenges",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "D": {
+      "name": "Davy Hoffman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

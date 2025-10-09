@@ -1,0 +1,22 @@
+{
+  "description": "This video explains public-key cryptography, detailing the relationship between private and public keys, their usage in secure transactions, and the impossibility of deriving a private key from a public key.",
+  "topic_summary": "Public-key cryptography involves a pair of keys: a private key kept secret and a public key shared for transactions. The private key can sign messages, while the public key verifies the signature, ensuring security in communications. [t=0:40] to [t=0:42]",
+  "router_tags": [
+    "Cryptography",
+    "Public Key",
+    "Private Key",
+    "Security",
+    "Digital Signature"
+  ],
+  "aliases": [
+    "Public Key Cryptography",
+    "Public & Private Key",
+    "PKC"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on Avalanche and its ecosystem, including mentions of Binance and various individuals.",
+  "topic_summary": "Overview of Avalanche's features and its relevance in the cryptocurrency space, with references to notable figures and platforms [t=3364.18].",
+  "router_tags": [
+    "Avalanche",
+    "AVAX",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Avalanche",
+    "Avax",
+    "Binancezh",
+    "Wilson",
+    "Qingwu",
+    "Ming. Dan"
+  ],
+  "canonical_entities": [
+    "$AVAX",
+    "@binancezh",
+    "@Wilson",
+    "@Qingwu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the future of cryptocurrency, stablecoins, and regulatory perspectives featuring Jonathan Levin, CEO of Chainalysis, at Binance Studios.",
+  "topic_summary": "The conversation covers the evolution of the crypto market, the role of stablecoins in transactions, and insights on regulatory developments from Capitol Hill [t=0:16]. Levin emphasizes the importance of stablecoins as a foundation for future financial systems and their increasing adoption [t=195:22]. The discussion also touches on the White House's recent report on digital assets and the need for regulatory clarity [t=304:59].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Stablecoins",
+    "Regulation",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "Genius Act",
+    "Chainalysis",
+    "Jonathan Levin",
+    "Binance Studios"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Binance",
+    "@Chainalysis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

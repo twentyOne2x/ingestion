@@ -1,0 +1,27 @@
+{
+  "description": "This video covers how to trade and buy cryptocurrency on Binance, detailing methods such as using cash balance, debit/credit cards, and the Spot Exchange. It explains the user journey from account registration to purchasing crypto with GBP.",
+  "topic_summary": "The video outlines three main methods to buy crypto on Binance: using cash balance, debit/credit cards, and the Spot Exchange. It emphasizes beginner-friendly approaches and provides a step-by-step guide for purchasing crypto with GBP [t=0:32-310:54].",
+  "router_tags": [
+    "Crypto Trading",
+    "Binance",
+    "Buying Crypto",
+    "Spot Exchange",
+    "Fiat"
+  ],
+  "aliases": [
+    "How to Trade & Buy Crypto",
+    "Crypto Trading Guide",
+    "Binance Trading Tutorial"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$XRP",
+    "$GBP",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "jaGSR8bCK3I",
+  "title": "2023-12-13_jaGSR8bCK3I_Smart Contracts, Smarter AI, and New Generative Opportunities",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Amir Ben",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Imogen Heap",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

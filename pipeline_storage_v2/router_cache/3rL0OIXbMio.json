@@ -1,0 +1,22 @@
+{
+  "description": "This video explains how blockchain technology works, focusing on the mining algorithm and its application in Bitcoin transactions.",
+  "topic_summary": "The video covers the SHA256 algorithm, transaction broadcasting, mining processes, and the importance of blockchain integrity and trust. It also contrasts Proof of Work with Proof of Stake models [t=234:04].",
+  "router_tags": [
+    "Blockchain",
+    "Bitcoin",
+    "Mining",
+    "Cryptocurrency",
+    "SHA256"
+  ],
+  "aliases": [
+    "Blockchain Explained",
+    "How Blockchain Works",
+    "Blockchain for Beginners"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

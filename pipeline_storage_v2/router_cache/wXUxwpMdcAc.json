@@ -1,0 +1,19 @@
+{
+  "description": "This video emphasizes the importance of keeping your private key secure and accessible, as losing access to your crypto can result in permanent loss.",
+  "topic_summary": "Learn about the critical importance of securing your private key when using crypto wallets. The video also encourages viewers to explore more resources from Binance Academy [t=0:48].",
+  "router_tags": [
+    "Crypto Security",
+    "Crypto Wallets",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

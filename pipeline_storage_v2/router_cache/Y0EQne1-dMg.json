@@ -1,0 +1,21 @@
+{
+  "description": "Masterclass on Binance Futures covering funding rates, market positions, and risk management strategies.",
+  "topic_summary": "Discussion on funding rates [t=6:01], market positions [t=12:01], and stop loss strategies [t=54:12].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Webinar"
+  ],
+  "aliases": [
+    "binanceyoutube",
+    "BinanceYoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,30 @@
+{
+  "description": "This talk discusses the advantages of using the Anchor framework for building DeFi dapps on the Solana blockchain. It highlights how Anchor simplifies the development process by providing tools and APIs that convert complex data into a more manageable format, thereby enhancing developer confidence and code cleanliness.",
+  "topic_summary": "The presentation emphasizes the importance of the Anchor framework for new smart contract developers in the Solana ecosystem, detailing its benefits in serialization, security, and ease of use for common functions in DeFi applications [t=9:12-40:19].",
+  "router_tags": [
+    "DeFi",
+    "Anchor",
+    "Solana",
+    "Smart Contracts",
+    "Blockchain Development"
+  ],
+  "aliases": [
+    "anchor",
+    "Anchor Framework",
+    "Solana Anchor"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$275 Million",
+    "@Daffy",
+    "@Mango",
+    "@Parrot",
+    "@Aurora",
+    "@Solend",
+    "@Serum",
+    "@Vitalik"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "EP1xhP0C2vU",
+  "title": "2021-08-14_EP1xhP0C2vU_Vietnam NFT+GameFi Expo",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nickola Vietnam",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

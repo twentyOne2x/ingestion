@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to use DeFi staking on Binance, a decentralized finance service that simplifies participation in staking projects without the need for complex tasks.",
+  "topic_summary": "This guide explains how to participate in DeFi staking on Binance, covering account setup, staking options, and interest calculations. Key steps include selecting assets, confirming purchases, and understanding flexible vs. locked staking options [t=3:76-260:14].",
+  "router_tags": [
+    "DeFi",
+    "Staking",
+    "Binance",
+    "Finance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "defi staking",
+    "DeFi Staking",
+    "Binance Earn",
+    "binance earn"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

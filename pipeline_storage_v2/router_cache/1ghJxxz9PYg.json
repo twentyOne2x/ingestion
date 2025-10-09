@@ -1,0 +1,26 @@
+{
+  "description": "Kevin Rose discusses modern finance, blockchain, and community engagement in this episode of the Solana podcast. He shares insights on the evolution of technology and its impact on finance, referencing notable figures and events.",
+  "topic_summary": "Kevin Rose explores the intersection of blockchain technology and modern finance, emphasizing community involvement and the transformative potential of cryptocurrencies [t=12:32 - 12:88]. He reflects on the historical context of financial systems and the rise of digital currencies [t=284:30 - 284:30].",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Finance",
+    "Community",
+    "Technology"
+  ],
+  "aliases": [
+    "Kevin Rose",
+    "kevin rose",
+    "Kevin rose"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@SolanaFndn",
+    "@Obama",
+    "@Tesla",
+    "@Amazon"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Juan Carlos Reyes discusses the adoption of Bitcoin in El Salvador, the establishment of the National Commission of Digital Assets, and the educational initiatives aimed at improving financial literacy among Salvadorians. He highlights the challenges and successes of integrating digital assets into the national economy.",
+  "topic_summary": "Reyes explains the lessons learned from Bitcoin adoption in El Salvador, the importance of understanding technology in regulation, and the efforts to democratize access to financial products for all citizens, including taxi drivers. He emphasizes the need for regulatory frameworks to support sustainable growth in the digital asset sector.",
+  "router_tags": [
+    "Bitcoin",
+    "Digital Assets",
+    "El Salvador",
+    "Financial Education",
+    "Regulation",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Juan Carlos Reyes",
+    "juan carlos reyes",
+    "JUAN CARLOS REYES"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@nayibbukele"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

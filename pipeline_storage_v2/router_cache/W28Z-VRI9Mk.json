@@ -1,0 +1,21 @@
+{
+  "description": "This video explores the concept of value in relation to cryptocurrencies, emphasizing that value is a human creation rather than an inherent quality. It discusses how currencies facilitate the transfer of value and the subjective nature of what people desire.",
+  "topic_summary": "The video explains that cryptocurrencies are digital currencies maintained by decentralized blockchains. It delves into the nature of value, asserting that it is a shared belief and a human construct, rather than something inherent to objects or resources. [t=1:92] to [t=46:75]",
+  "router_tags": [
+    "cryptocurrency",
+    "value",
+    "blockchain",
+    "digital currency",
+    "monetary system"
+  ],
+  "aliases": [
+    "The Concept of Value",
+    "Understanding Crypto's Value",
+    "Value in Cryptocurrency"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

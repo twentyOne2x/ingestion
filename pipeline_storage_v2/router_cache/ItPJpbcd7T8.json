@@ -1,0 +1,23 @@
+{
+  "description": "Breakpoint 2021 conference in Lisbon, featuring discussions on the growth and challenges of Solana, including reflections on the past year and the importance of community.",
+  "topic_summary": "The conference highlights the evolution of Solana, emphasizing decentralization, censorship resistance, and community engagement, with insights from key figures like Anatoly and the ops team.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Conference",
+    "Crypto",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Conference"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

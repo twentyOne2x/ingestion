@@ -1,0 +1,22 @@
+{
+  "description": "This video outlines five essential strategies for minimizing risks in crypto trading, including the 1% rule, stop loss and take profit orders, diversification, hedging, and the importance of doing your own research (DYOR). It emphasizes the significance of having an exit strategy and highlights the effectiveness of hodling over the long term.",
+  "topic_summary": "Learn five key strategies to manage risks in crypto trading, including the 1% rule [t=26.62], stop loss and take profit orders [t=52.68], diversification [t=82.66], hedging [t=101.14], and the importance of DYOR [t=148.78]. The video concludes with the benefits of hodling [t=197.78].",
+  "router_tags": [
+    "Crypto Trading",
+    "Risk Management",
+    "Investing Strategies",
+    "Hodl",
+    "Diversification"
+  ],
+  "aliases": [
+    "Crypto Trading Strategies",
+    "Risk Management in Crypto",
+    "Hodling Strategies"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Mark Ziller hosts a panel discussing the intersection of traditional finance and decentralized finance (DeFi), highlighting the importance of custody solutions for institutions entering the crypto space. Panelists include Joshua Lim from Genesis Global Trading, Nathan McCauley from Anchorage Digital, and Matt from Solrise, who share insights on the growth of DeFi and the need for secure infrastructure.",
+  "topic_summary": "The panel explores how traditional finance is integrating with DeFi, emphasizing the rapid growth of the DeFi market from $600 million to over $250 billion. The discussion covers the necessity of custody solutions for institutions and the potential for further growth in DeFi as traditional capital enters the ecosystem [t=220.03].",
+  "router_tags": [
+    "DeFi",
+    "Finance",
+    "Crypto",
+    "Institutional Investment",
+    "Custody Solutions"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: Institutional Memory",
+    "Breakpoint",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "$50 Million",
+    "$250 Billion",
+    "@GenesisGlobalTrading",
+    "@Anchorage",
+    "@Civic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

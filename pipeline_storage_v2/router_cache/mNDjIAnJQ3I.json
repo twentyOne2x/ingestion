@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Bitcoin mining principles, market dynamics, and the role of various entities in the crypto industry.",
+  "topic_summary": "Exploration of Bitcoin mining and market strategies, including insights on liquidity, smart contracts, and the influence of major tech companies [t=03:07].",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto",
+    "Mining",
+    "Finance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Br Capital",
+    "BR Capital",
+    "br capital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "$ETH",
+    "@BillGates"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

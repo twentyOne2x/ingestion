@@ -1,0 +1,21 @@
+{
+  "description": "A fan with a CZ tattoo meets CZ during Binance Blockchain Week.",
+  "topic_summary": "Fan interaction with CZ at Binance Blockchain Week [t=0:02].",
+  "router_tags": [
+    "CZ",
+    "Binance",
+    "Blockchain Week",
+    "Tattoo",
+    "Fan Interaction"
+  ],
+  "aliases": [
+    "CZ Tattoo",
+    "Fan with CZ Tattoo",
+    "Binance Blockchain Week Fan"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

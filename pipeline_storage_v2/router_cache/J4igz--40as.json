@@ -1,0 +1,24 @@
+{
+  "description": "This video explains the Lightning Network, a second layer payment protocol designed to enhance Bitcoin's scalability by enabling faster and cheaper transactions through user-generated payment channels.",
+  "topic_summary": "The Lightning Network addresses Bitcoin's transaction speed limitations [t=36:31] by allowing off-chain transactions through bi-directional payment channels [t=50:63]. It facilitates instant payments even without direct channels between users [t=143:70]. However, it requires on-chain transactions to open and close channels [t=183:16].",
+  "router_tags": [
+    "Lightning Network",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Scalability",
+    "Payment Protocol"
+  ],
+  "aliases": [
+    "Lightning Network",
+    "lightning network",
+    "LightningNetwork"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy",
+    "@josephpoon",
+    "@thaddeusdraya"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

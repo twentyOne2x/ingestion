@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on Binance Smart Chain (BSC) growth, DeFi, and NFT developments. Key points include BSC's EVM compatibility, low transaction fees, and rapid ecosystem expansion with over 400 projects and 7 million BNB staked. The total value locked in BSC is above $30 billion, showcasing significant traction in the DeFi space compared to Ethereum.",
+  "topic_summary": "Exploration of Binance Smart Chain's advancements in DeFi and NFTs, highlighting its rapid growth and competitive advantages over Ethereum, including transaction speed and cost efficiency [t=2:24].",
+  "router_tags": [
+    "Binance",
+    "Smart Chain",
+    "DeFi",
+    "NFT",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Smart Chain",
+    "BSC",
+    "Defi Station",
+    "Helen Gavrila",
+    "Semi"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "FoLZC_V8aA0",
+  "title": "2022-01-28_FoLZC_V8aA0_Pyth Workshop - Day 2 - Walking Through the Pyth Whitepaper",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Wendy Pitt",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Zin Zain Doller",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

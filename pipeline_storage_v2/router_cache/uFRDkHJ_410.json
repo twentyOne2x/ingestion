@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing NFTs, blockchain technology, and Binance's NFT marketplace.",
+  "topic_summary": "Overview of NFT campaigns and marketplaces, including Binance's offerings and blockchain advantages [t=67:31].",
+  "router_tags": [
+    "NFT",
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "Marketplace"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binance youtube",
+    "BINANCE YOUTUBE"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

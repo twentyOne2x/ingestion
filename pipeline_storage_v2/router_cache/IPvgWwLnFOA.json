@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on various topics including social media and cryptocurrency trends.",
+  "topic_summary": "The conversation covers social media dynamics and cryptocurrency insights, mentioning key figures and their contributions [t=00:53].",
+  "router_tags": [
+    "social media",
+    "cryptocurrency",
+    "trends"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

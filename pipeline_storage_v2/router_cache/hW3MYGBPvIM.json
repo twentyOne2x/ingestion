@@ -1,0 +1,21 @@
+{
+  "description": "Build The Block is a reality show set in the metaverse, featuring 12 ambitious entrepreneur startup teams competing to impress prominent voices from the Web3 space. The show highlights high-pressure moments and the excitement of building innovative projects.",
+  "topic_summary": "In this trailer for Build The Block, teams compete in the metaverse to impress judges and become champions. The show promises excitement and innovation as participants strive to realize their dreams [t=0:24-0:57].",
+  "router_tags": [
+    "reality show",
+    "metaverse",
+    "Web3",
+    "entrepreneurship",
+    "competition"
+  ],
+  "aliases": [
+    "Build the Block",
+    "build the block",
+    "BUILD THE BLOCK"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

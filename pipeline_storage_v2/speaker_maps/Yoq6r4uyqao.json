@@ -1,0 +1,20 @@
+{
+  "video_id": "Yoq6r4uyqao",
+  "title": "2021-10-11_Yoq6r4uyqao_#BinanceResponde - Novena edicion",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Fernando Nino",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

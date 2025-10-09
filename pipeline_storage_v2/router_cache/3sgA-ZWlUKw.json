@@ -1,0 +1,24 @@
+{
+  "description": "Introducing the Binance University Outreach Program aimed at educating students about blockchain and cryptocurrency. The program includes workshops, resources, and tailored events to enhance understanding and engagement in the crypto space.",
+  "topic_summary": "The Binance Academy discusses its outreach program targeting university students to foster blockchain education and prepare them for careers in crypto and web3. The initiative focuses on providing resources, workshops, and tailored learning experiences to enhance student knowledge and comfort with the technology [t=0:56-2:08].",
+  "router_tags": [
+    "Binance",
+    "Blockchain Education",
+    "Crypto",
+    "University Outreach",
+    "BNB Chain",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

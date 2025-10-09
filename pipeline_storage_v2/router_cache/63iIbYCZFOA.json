@@ -1,0 +1,23 @@
+{
+  "description": "This video explains how to secure your Binance account using various methods including email verification, Google authentication, SMS authentication, Yubikey, and anti-phishing codes. It emphasizes the importance of security in the cryptocurrency industry and provides step-by-step instructions for each security measure.",
+  "topic_summary": "Learn how to secure your Binance account with email verification [t=36:92], Google authentication [t=80:98], SMS authentication [t=190:66], Yubikey [t=257:17], and anti-phishing codes [t=325:42].",
+  "router_tags": [
+    "account security",
+    "Binance",
+    "cryptocurrency",
+    "authentication",
+    "Yubikey",
+    "anti-phishing"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@Binance",
+    "Live Support"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

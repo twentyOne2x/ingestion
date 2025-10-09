@@ -1,0 +1,56 @@
+{
+  "video_id": "jmz537-TKQY",
+  "title": "2021-04-20_jmz537-TKQY_NFT Innovation: Transforming the Digital Economy",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "C": {
+      "name": "Louis Capelli",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "H": {
+      "name": "Bond Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Bon Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Liz Coyne",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Juggernaut Ulbit",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Logan Paul",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Bear Bar",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

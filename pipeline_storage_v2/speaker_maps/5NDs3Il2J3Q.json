@@ -1,0 +1,20 @@
+{
+  "video_id": "5NDs3Il2J3Q",
+  "title": "2022-11-05_5NDs3Il2J3Q_Breakpoint 2022: Looking Back, Looking Forward",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Austin Federa",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the importance of trust in the cryptocurrency industry and the significance of partnering with Binance.",
+  "topic_summary": "Exploration of trust in the crypto industry and Binance's role as a leading platform [t=0:48].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Trust",
+    "Partnership"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

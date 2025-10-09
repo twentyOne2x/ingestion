@@ -1,0 +1,25 @@
+{
+  "description": "This video explains Ponzi and pyramid schemes, highlighting their characteristics, differences, and how to avoid falling victim to them. It discusses the fraudulent nature of these schemes and offers tips for identifying potential scams.",
+  "topic_summary": "Ponzi and pyramid schemes are financial frauds that promise high returns with little risk. Ponzi schemes pay earlier investors with funds from newer ones, while pyramid schemes rely on recruiting new members for profits. Both lack legitimate products and can lead to significant financial losses for victims. Protect yourself by being skeptical of too-good-to-be-true offers and verifying investment opportunities.",
+  "router_tags": [
+    "Ponzi Schemes",
+    "Pyramid Schemes",
+    "Investment Scams",
+    "Financial Fraud",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Ponzi Schemes",
+    "Pyramid Schemes",
+    "Investment Scams",
+    "Financial Fraud",
+    "Cryptocurrency"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy",
+    "@charlesponzi"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

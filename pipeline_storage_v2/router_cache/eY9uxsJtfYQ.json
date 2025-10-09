@@ -1,0 +1,27 @@
+{
+  "description": "This video showcases demos from the Solana ecosystem during Breakpoint 2021, highlighting various projects and innovations in decentralized finance and blockchain technology.",
+  "topic_summary": "Demos from the Solana ecosystem featuring projects like Jeetcoin, Ferde Depot, and Soulrise Finance, discussing decentralized notifications and trading protocols [t=00:50].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Blockchain",
+    "Demos",
+    "Breakpoint 2021"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Surf's Up",
+    "Solana Ecosystem Demos"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jeetcoin",
+    "@FerdeDepot",
+    "@Soulrise",
+    "@Tiber",
+    "@Petor"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

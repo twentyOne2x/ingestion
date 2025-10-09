@@ -1,0 +1,20 @@
+{
+  "video_id": "_GvCZfazrOA",
+  "title": "2021-04-20__GvCZfazrOA_Binance 60 - Edicao #34 - Q&A",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Prabri Navadaji",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

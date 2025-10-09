@@ -1,0 +1,27 @@
+{
+  "description": "Thomas and Rocco discuss the concept of 'daavers' as a decentralized metaverse infrastructure, focusing on the use of a Goldberg polyhedron for unique landmarks and the creation of a treasury using NFT DAOs. They explore two models: the nonprofit Posiverse and the for-profit Nagiverse, detailing how land ownership translates to membership and customer access within these structures. The presentation emphasizes the potential for continuous funding and community engagement through these innovative frameworks.",
+  "topic_summary": "Exploration of decentralized metaverse infrastructure through 'daavers', utilizing the Goldberg polyhedron for unique landmarks and treasury models. Discussion on nonprofit and for-profit DAOs, membership tiers, and funding mechanisms.",
+  "router_tags": [
+    "DeFi",
+    "DAO",
+    "Metaverse",
+    "NFT",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Daavers",
+    "DAAvers",
+    "Posiverse",
+    "Nagiverse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Thomas",
+    "@Rocco",
+    "@Netflix",
+    "@Tinder"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

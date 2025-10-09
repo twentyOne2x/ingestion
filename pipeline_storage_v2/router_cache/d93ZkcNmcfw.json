@@ -1,0 +1,23 @@
+{
+  "description": "Armani discusses building smart contracts on Solana using the Anchor framework, highlighting its productivity benefits and the success of projects utilizing it. He explains the components of Anchor, including Rust smart contracts and interface definition language, and demonstrates a simple counter program.",
+  "topic_summary": "In this presentation, Armani introduces Anchor, a programming framework for Solana, emphasizing its role in enhancing developer productivity and showcasing its adoption in top protocols. He outlines the toolchain and provides a coding demonstration of a basic smart contract [t=201.95].",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Smart Contracts",
+    "Programming",
+    "Hackathon"
+  ],
+  "aliases": [
+    "anchor",
+    "Anchor",
+    "ANCHOR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Armani"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

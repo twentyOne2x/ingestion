@@ -1,0 +1,37 @@
+{
+  "description": "Discussion on trading strategies and risk management tools in cryptocurrency, featuring insights from various traders and platforms.",
+  "topic_summary": "Exploration of trading algorithms and risk management strategies in cryptocurrency trading, including mentions of USDT and Bitcoin exposure [t=20:06].",
+  "router_tags": [
+    "trading",
+    "cryptocurrency",
+    "risk management",
+    "algorithms"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC",
+    "@AronLammer",
+    "@NashBrokers",
+    "@GlobalAdvisorsJerseyLimited",
+    "@NabotakTomoka",
+    "@Andre",
+    "@CladKikak",
+    "@HoshnardiraMartinGale",
+    "@KakibuMaglid",
+    "@NaniskaKatsiko",
+    "@Nicholas",
+    "@NatamaCounty",
+    "@SalemYabana",
+    "@Targovini",
+    "@ZarisaTavokaRobert",
+    "@PasibaPasibaInformatic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

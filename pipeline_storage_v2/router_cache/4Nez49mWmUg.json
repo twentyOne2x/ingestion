@@ -1,0 +1,21 @@
+{
+  "description": "Highlights from the Binance Campus Asia 2024 event.",
+  "topic_summary": "Overview of key moments and insights from the Binance Campus Asia 2024 event, featuring notable speakers and discussions [t=00:15].",
+  "router_tags": [
+    "Binance",
+    "Campus",
+    "Asia",
+    "2024",
+    "Highlights"
+  ],
+  "aliases": [
+    "Binance Campus Asia 2024",
+    "binance campus asia 2024",
+    "Binance Campus Asia"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

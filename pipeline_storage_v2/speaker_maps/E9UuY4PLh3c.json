@@ -1,0 +1,20 @@
+{
+  "video_id": "E9UuY4PLh3c",
+  "title": "2021-05-17_E9UuY4PLh3c_Audius Overview with Co-founder Roneil Rumburg",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ranil Rumberg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

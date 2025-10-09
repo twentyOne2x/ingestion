@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the fairness of coin listings on Binance, addressing concerns about fake coins and the criteria for selecting projects.",
+  "topic_summary": "The speaker explains that Binance lists only a small fraction of coins, emphasizing their efforts to select solid projects despite user sentiment [t=0:24 - 0:39].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "coin listings",
+    "project selection"
+  ],
+  "aliases": [
+    "@BinanceZH",
+    "@binancezh",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

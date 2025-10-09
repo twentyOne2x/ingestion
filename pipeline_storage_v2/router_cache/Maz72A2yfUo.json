@@ -1,0 +1,26 @@
+{
+  "description": "The video discusses the cyclical nature of cryptocurrency investments, focusing on Bitcoin and Ethereum, and the impact of institutional interest from firms like Blackrock and Fidelity. It highlights the recent trends in the market and the potential for altcoins as Bitcoin dominance fluctuates.",
+  "topic_summary": "Exploration of crypto market cycles, Bitcoin's influence, Ethereum's upgrades, and institutional investments from firms like Blackrock and Fidelity. Discussion on altcoins and market dynamics [t=0:16 - t=3:54].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum",
+    "Altseason",
+    "Investing",
+    "Market Trends"
+  ],
+  "aliases": [
+    "The Path to Altseason",
+    "Crypto Money Flows",
+    "Altseason Insights"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Blackrock",
+    "@Fidelity",
+    "$ADA"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

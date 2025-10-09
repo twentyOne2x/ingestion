@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Binance ETH 2.0 staking, detailing Ethereum 2.0's upgrade phases, staking requirements, and the benefits of using Binance for staking.",
+  "topic_summary": "Overview of Binance ETH 2.0 staking, including Ethereum 2.0 upgrades, staking requirements, risks, and how to participate. Key points include the minimum stake of 32 ETH, the lockup period, and daily rewards distribution [t=52:77].",
+  "router_tags": [
+    "Ethereum",
+    "ETH 2.0",
+    "Binance",
+    "Staking",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance ETH 2.0 Staking",
+    "binance eth 2.0 staking",
+    "Binance ETH staking",
+    "binance eth staking"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

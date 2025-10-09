@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on mobile fantasy and trial fund coupon redemption steps. Includes interactions among participants William, Ashanti, Isaac, and others.",
+  "topic_summary": "Participants discuss mobile fantasy and provide instructions on redeeming a trial fund coupon [t=25:69-1213:95].",
+  "router_tags": [
+    "Binance",
+    "crypto",
+    "funds",
+    "coupon",
+    "mobile fantasy"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "$USDT",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Coverage of Binance Blockchain Week, featuring insights from industry leaders and event logistics. Highlights include ticket sales, sponsorships, and community engagement.",
+  "topic_summary": "At Binance Blockchain Week, leaders and innovators discuss the blockchain industry, with a focus on community and future developments. The event aims to be a significant gathering for the crypto sector, akin to Davos for finance [t=29:52].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Web3",
+    "Crypto",
+    "Event"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Blockchain Week",
+    "Binance Blockchain week",
+    "binance blockchain week"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on NFT solutions, minting processes, and metaverse concepts with various participants including Travis and Nihao.",
+  "topic_summary": "Exploration of NFT technology and its applications in finance and the metaverse, featuring insights from multiple speakers [t=11:45] to [t=15:30].",
+  "router_tags": [
+    "NFT",
+    "Web3",
+    "Metaverse",
+    "Finance"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

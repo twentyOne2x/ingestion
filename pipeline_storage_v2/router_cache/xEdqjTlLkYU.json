@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the differences between coins and tokens in the cryptocurrency space, highlighting their characteristics and uses.",
+  "topic_summary": "Coins are the native assets of blockchains, like Bitcoin and Ether, while tokens are built on existing blockchains and can serve various purposes, such as representing stakes or loyalty points. [t=18:48]",
+  "router_tags": [
+    "cryptocurrency",
+    "blockchain",
+    "tokens",
+    "coins"
+  ],
+  "aliases": [
+    "What Are The Differences Between A Coin and A Token",
+    "Differences Between Coin and Token",
+    "Coin vs Token"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

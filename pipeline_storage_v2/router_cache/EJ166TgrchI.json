@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the key differences between trading and investing, highlighting the timeframes and strategies involved in each approach.",
+  "topic_summary": "Investing aims for long-term returns, often involving assets like businesses or real estate [t=0:64]. Traders seek short-term gains through frequent buying and selling, capitalizing on price fluctuations [t=19:76].",
+  "router_tags": [
+    "trading",
+    "investing",
+    "cryptocurrency",
+    "finance",
+    "education"
+  ],
+  "aliases": [
+    "What is Trading vs Investing",
+    "Trading and Investing Explained",
+    "Difference Between Trading and Investing"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Catherine, head of VIP and institutional business at Binance, discusses the importance of liquidity in the crypto market with panelists Steph, Michael, and Martins. They explore institutional investor confidence, with 64% planning to stay long in crypto despite challenges. The panel emphasizes the need for consistent access and trust in the market for institutional participation.",
+  "topic_summary": "The panel discusses the role of liquidity in the crypto market, focusing on institutional investor confidence and the challenges of maintaining long-term investments. They highlight the importance of market makers in providing consistent access and trust.",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Liquidity",
+    "Institutional Investors",
+    "Market Making"
+  ],
+  "aliases": [
+    "Playing the Crypto Long Game",
+    "Binance VIP",
+    "Binance Blockchain Week"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@Kirok",
+    "@SkynetTrading",
+    "@GravityTeam"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

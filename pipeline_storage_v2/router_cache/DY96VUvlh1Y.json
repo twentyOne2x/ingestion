@@ -1,0 +1,31 @@
+{
+  "description": "In this panel, industry leaders discuss the growth of the Solana community and the importance of non-technical users in blockchain development. Emily Poplaski introduces Metaplex, the NFT protocol for Solana, highlighting its utility and smart contracts. Ben presents Jupyter, Solana's liquidity aggregator, emphasizing its success in daily transactions. Terry shares insights on Selenium Ventures and the collaborative spirit within the Solana ecosystem. Etiya Itaya discusses blockchain marketing and the unique aspects of the Solana community, noting its organic growth and lack of tribalism.",
+  "topic_summary": "The panel focuses on community growth in the Solana ecosystem, the role of non-technical users, and the collaborative nature of projects within Solana. Key insights include the importance of community engagement and the unique characteristics that differentiate Solana from other blockchain communities [t=178.14].",
+  "router_tags": [
+    "Solana",
+    "NFT",
+    "Blockchain",
+    "Community Growth",
+    "Liquidity Aggregator",
+    "Marketing",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "solana",
+    "Solana Foundation",
+    "Metaplex Studios",
+    "Jupyter",
+    "Selenium Ventures",
+    "Market Across"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@EmilyPoplaski",
+    "@Ben",
+    "@Terry",
+    "@EtiyaItaya"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

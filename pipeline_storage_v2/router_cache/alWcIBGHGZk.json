@@ -1,0 +1,26 @@
+{
+  "description": "Webinar discussing Origin Protocol, NFTs, and blockchain technology.",
+  "topic_summary": "Overview of Origin Protocol and its applications in NFTs and digital collectibles [t=57:13]. Discussion on blockchain connections and stable coins like USDT [t=574:82]. Insights on staking and the ecosystem of digital collectibles [t=2355:36].",
+  "router_tags": [
+    "Origin Protocol",
+    "NFT",
+    "Blockchain",
+    "Digital Collectibles",
+    "Stable Coin"
+  ],
+  "aliases": [
+    "Origin Protocol",
+    "origin protocol",
+    "OriginProtocol"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$USDT",
+    "$OGN",
+    "@Victorini",
+    "@SierraKanesha",
+    "@NoelKamuta"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

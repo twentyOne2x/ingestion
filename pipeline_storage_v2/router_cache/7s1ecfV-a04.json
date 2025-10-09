@@ -1,0 +1,26 @@
+{
+  "description": "This video explains the Internet of Things (IoT), covering its definition, history, and functionality. It discusses the convergence of technologies like RFID and the role of sensors in connecting non-computing devices to the Internet for remote monitoring and control.",
+  "topic_summary": "The Internet of Things (IoT) represents a new phase of the web where various devices, including non-computing ones, are connected to the Internet. This enables automation and control on a large scale, with cryptocurrencies playing a role in facilitating microtransactions for these processes. [t=1:12] [t=125:55]",
+  "router_tags": [
+    "Internet of Things",
+    "IoT",
+    "automation",
+    "cryptocurrency",
+    "technology"
+  ],
+  "aliases": [
+    "Internet of Things",
+    "IOT",
+    "iot",
+    "IoT"
+  ],
+  "canonical_entities": [
+    "$IOTA",
+    "@binanceacademy",
+    "@RezaRaji",
+    "@Microsoft",
+    "@Novell"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

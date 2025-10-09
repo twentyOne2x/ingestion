@@ -1,0 +1,28 @@
+{
+  "description": "The Vietnam Super Blockathon Demo Day features presentations on innovative blockchain projects, including a focus on cryptocurrency adaptation and NFT solutions. Key speakers discuss the importance of integrating cryptocurrency into daily transactions and the potential for significant market growth by 2030. The event highlights the role of Bitcoin and its utility token, BEC, in enhancing transaction efficiency and supporting content creators.",
+  "topic_summary": "The event showcases blockchain innovations, emphasizing cryptocurrency integration in daily transactions and the role of NFTs. Presenters discuss market growth projections and the utility of Bitcoin's token, BEC, in enhancing user experience and transaction efficiency [t=0:24].",
+  "router_tags": [
+    "Vietnam Super Blockathon",
+    "Blockchain",
+    "Cryptocurrency",
+    "NFT",
+    "Bitcoin",
+    "BEC",
+    "Token Play",
+    "DeFi"
+  ],
+  "aliases": [
+    "Vietnam Super Blockathon",
+    "Vietnam super blockathon",
+    "vietnam super blockathon",
+    "BINANCE YOUTUBE",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BEC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

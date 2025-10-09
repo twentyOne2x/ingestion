@@ -1,0 +1,33 @@
+{
+  "description": "Explore the decentralized virtual world of Sandbox, where users can create, own, and monetize their 3D content and experiences. This video discusses the evolution of Sandbox, its partnerships with major brands and celebrities, and the future of the Metaverse, emphasizing community engagement and interoperability.",
+  "topic_summary": "Inside Sandbox's virtual world, users can create and own digital assets, engage with brands, and participate in immersive experiences. The platform promotes user-generated content and aims for interoperability across metaverses, showcasing a future where digital identities thrive in a decentralized environment. [t=0:48] [t=285:52]",
+  "router_tags": [
+    "Sandbox",
+    "Metaverse",
+    "Blockchain",
+    "NFTs",
+    "User Generated Content",
+    "Virtual Reality",
+    "Digital Identity"
+  ],
+  "aliases": [
+    "sandbox",
+    "The Sandbox",
+    "SAND",
+    "sandbox game"
+  ],
+  "canonical_entities": [
+    "$SAND",
+    "@BinanceYoutube",
+    "@steveaoki",
+    "@SnoopDogg",
+    "@ParisHilton",
+    "@GordonRamsay",
+    "@Sueco",
+    "@Ubisoft",
+    "@Atari",
+    "@WarnerMusic"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

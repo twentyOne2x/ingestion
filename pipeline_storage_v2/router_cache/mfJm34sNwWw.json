@@ -1,0 +1,21 @@
+{
+  "description": "Binance Super Meetup 2021 in Kyiv, Ukraine, featuring discussions and networking opportunities for crypto enthusiasts.",
+  "topic_summary": "Highlights from the Binance Super Meetup 2021 in Kyiv, showcasing key moments and insights from the event [t=00:24].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Crypto",
+    "Ukraine",
+    "Kyiv"
+  ],
+  "aliases": [
+    "Binance Super Meetup",
+    "binance super meetup",
+    "BINANCE SUPER MEETUP"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

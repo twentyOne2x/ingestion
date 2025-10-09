@@ -1,0 +1,23 @@
+{
+  "description": "Join the AMA with the Binance Fan Token team and Guillaume, Head of Partnerships at Alpine. They discuss the growth of Alpine Fan Tokens, user engagement, and upcoming experiences for fans. Dale shares insights from his recent attendance at the Singapore GP [t=210.48].",
+  "topic_summary": "AMA with Binance Fan Token team and Alpine's Guillaume discussing fan engagement and token growth. Insights from Dale on user experiences and recent events [t=210.48].",
+  "router_tags": [
+    "AMA",
+    "Binance",
+    "Fan Tokens",
+    "Alpine F1",
+    "Partnerships"
+  ],
+  "aliases": [
+    "$Alpine",
+    "$ALPINE",
+    "@BinanceYoutube",
+    "@BinanceFanTokens"
+  ],
+  "canonical_entities": [
+    "$ALPINE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

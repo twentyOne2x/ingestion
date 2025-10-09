@@ -1,0 +1,26 @@
+{
+  "video_id": "krw_pS7fbws",
+  "title": "2020-11-23_krw_pS7fbws_RAC - Grammy Award Winning Recording Artist : Live Recording of The Solana Podcast",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Vitalik Buterin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Joe Lubin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

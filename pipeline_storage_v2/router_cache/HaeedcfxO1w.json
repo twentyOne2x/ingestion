@@ -1,0 +1,30 @@
+{
+  "description": "Diana hosts a Binance International Women's Day live show featuring prominent women in the crypto industry, including Chibi Ripka, Lucy, and Crypto Angel. They share their experiences and journeys in the crypto space, discussing opportunities and challenges faced by women in finance and technology.",
+  "topic_summary": "Celebration of International Women's Day with discussions on women's roles in crypto, personal stories from industry leaders, and insights into the evolving job landscape in Web3 [t=0:16].",
+  "router_tags": [
+    "International Women's Day",
+    "Crypto",
+    "Binance",
+    "Women in Finance",
+    "Web3"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Academy",
+    "Diana",
+    "Chibi Ripka",
+    "Lucy",
+    "Crypto Angel"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$SOL",
+    "@BinanceYoutube",
+    "@lucy",
+    "@chibiripka",
+    "@cryptoangel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

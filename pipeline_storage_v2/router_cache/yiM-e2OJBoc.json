@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the necessity of stablecoins in the cryptocurrency market, highlighting their role in mitigating volatility and facilitating borrowing and lending in the DEFI ecosystem.",
+  "topic_summary": "The discussion covers the importance of stablecoins in crypto transactions, particularly in borrowing and lending scenarios, where price stability is crucial [t=0:00 - t=0:44].",
+  "router_tags": [
+    "Stablecoins",
+    "Crypto",
+    "DEFI",
+    "Borrowing",
+    "Lending"
+  ],
+  "aliases": [
+    "Stablecoins",
+    "stableCoins",
+    "STABLECOINS"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$1,000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

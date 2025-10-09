@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on liquidity and market making in the context of decentralized finance (DeFi) and options trading, featuring insights from industry experts on the evolving landscape and capital efficiency challenges.",
+  "topic_summary": "The panelists discuss the shift towards DeFi, the growth of decentralized options markets, and the capital inefficiencies present in current trading platforms. They highlight the importance of customer experience and the increasing liquidity in decentralized derivatives [t=115.96].",
+  "router_tags": [
+    "DeFi",
+    "Liquidity",
+    "Market Making",
+    "Options Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: Riding the Big Waves"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$250 Million",
+    "$10 Million",
+    "DYDX",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

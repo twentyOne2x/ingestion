@@ -1,0 +1,22 @@
+{
+  "description": "On Bitcoin Pizza Day, Binance Co-Founder and Former CEO CZ serves pizza, celebrating the iconic cryptocurrency event.",
+  "topic_summary": "CZ celebrates Bitcoin Pizza Day by serving pizza, marking a significant event in cryptocurrency history [t=00:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "CZ",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

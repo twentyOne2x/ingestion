@@ -1,0 +1,30 @@
+{
+  "description": "WOO Network AMA hosted by Binance featuring discussions on token utility, liquidity networks, and governance proposals.",
+  "topic_summary": "The AMA covers various topics including token holder incentives [t=35:57], centralized liquidity networks [t=29:03], and the BNB ecosystem [t=1:00:25].",
+  "router_tags": [
+    "WOO Network",
+    "AMA",
+    "Binance",
+    "BNB",
+    "Token Utility"
+  ],
+  "aliases": [
+    "Woo Network",
+    "woo network",
+    "WOO network",
+    "Binance AMA",
+    "binance ama"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binancezh",
+    "@audrey",
+    "@harrygenti",
+    "@chen_shang",
+    "@andrews",
+    "@nikon",
+    "@jesus_jingi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

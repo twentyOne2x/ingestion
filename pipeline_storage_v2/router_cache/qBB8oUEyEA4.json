@@ -1,0 +1,20 @@
+{
+  "description": "In this lighthearted video, the host expresses a playful mood while discussing cryptocurrency topics.",
+  "topic_summary": "The host shares a whimsical perspective on cryptocurrency, mentioning feelings of joy and excitement [t=2:56].",
+  "router_tags": [
+    "#binance",
+    "#cryptomemes",
+    "#bitcointrading"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

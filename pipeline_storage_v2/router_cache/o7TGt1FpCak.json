@@ -1,0 +1,26 @@
+{
+  "description": "The presentation discusses the growth of the tech ecosystem in Portugal, highlighting workspace solutions and the establishment of RocketHub as a co-working space for startups. It emphasizes the importance of international investment and the potential for Lisbon to become a major European hub.",
+  "topic_summary": "Overview of Portugal's tech ecosystem growth and workspace solutions, focusing on RocketHub and the role of international investors [t=0:00-0:00].",
+  "router_tags": [
+    "Portugal",
+    "Tech Ecosystem",
+    "Co-working",
+    "Startup",
+    "Investment"
+  ],
+  "aliases": [
+    "Rocket Hub",
+    "Silverace Ventures",
+    "IdeaHub LXFactory"
+  ],
+  "canonical_entities": [
+    "$FARFETCH",
+    "$TALC",
+    "$FEEDZAI",
+    "@Silverace",
+    "@Glovu",
+    "@Alshaya"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

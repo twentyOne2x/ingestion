@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on safeguarding the crypto and blockchain ecosystem featuring experts from law enforcement and legal backgrounds. Topics include user safety, challenges in investigations, and the evolution of cryptocurrency-related crime [t=11:28].",
+  "topic_summary": "Experts discuss the importance of safety in the crypto industry, sharing insights from their experiences in law enforcement and legal sectors. They address challenges in investigations and the international nature of cybercrime [t=316:36].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "safety",
+    "investigations",
+    "law enforcement",
+    "cybercrime"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "Binance Blockchain week panel",
+    "Binance blockchain week"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$TRM",
+    "$Chainalysis",
+    "$MorrisonAndForrester",
+    "$Europol",
+    "$USDepartmentOfJustice",
+    "$SilkRoad",
+    "$RossUlbricht"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

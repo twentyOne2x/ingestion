@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on NFTs and their significance in the digital space, mentioning Adidas and various platforms like Roblox and Minecraft. The speaker emphasizes the importance of NFTs and their potential impact.",
+  "topic_summary": "Exploration of NFTs and their relevance in the metaverse, including references to Adidas and gaming platforms [t=1031.84].",
+  "router_tags": [
+    "NFT",
+    "Adidas",
+    "Metaverse",
+    "Gaming"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$ADIDAS"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

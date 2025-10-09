@@ -1,0 +1,27 @@
+{
+  "description": "A fireside chat featuring Deng Chao, CEO of Hashgy Capital, and CZ, CEO of Binance, discussing the CEFI ecosystem and asset security in the blockchain space.",
+  "topic_summary": "Deng Chao and CZ explore the differences between CEFI and DEFI, focusing on asset security and transparency in centralized exchanges [t=146.279].",
+  "router_tags": [
+    "CEFI",
+    "DEFI",
+    "Binance",
+    "Blockchain",
+    "Asset Security",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "Cefi From Now On",
+    "Fireside Chat with CZ",
+    "CZ Binance",
+    "Deng Chao Hashgy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@BinanceYoutube",
+    "@cz_binance",
+    "@DengChao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

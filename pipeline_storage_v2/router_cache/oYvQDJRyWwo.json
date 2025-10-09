@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the different types of tokens in the cryptocurrency space, including utility tokens, governance tokens, and non-fungible tokens (NFTs).",
+  "topic_summary": "The video categorizes tokens based on their functions: transactional tokens for exchanges [t=5:52], governance tokens for voting [t=11:84], utility tokens for payments [t=17:12], and NFTs as unique cryptographic assets [t=39:97]. It also mentions the potential for new token types as the industry evolves [t=22:08].",
+  "router_tags": [
+    "tokens",
+    "cryptocurrency",
+    "NFTs",
+    "utility tokens",
+    "governance tokens"
+  ],
+  "aliases": [
+    "Utility Tokens",
+    "Governance Tokens",
+    "Non-Fungible Tokens",
+    "NFTs"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

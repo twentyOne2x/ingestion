@@ -1,0 +1,29 @@
+{
+  "description": "Carmen, CMO of Alchemy Pay, discusses the company's role in driving cryptocurrency adoption and the significance of NFTs in mainstream culture. She highlights partnerships with major brands and the potential for NFTs to bridge the gap between traditional finance and blockchain technology. The conversation also touches on the integration of crypto payments in exhibitions and the use of alternative payment methods in Southeast Asia.",
+  "topic_summary": "Carmen from Alchemy Pay explains the company's efforts in promoting cryptocurrency adoption and the growing interest in NFTs, emphasizing their cultural relevance and potential to attract mainstream users. She outlines partnerships with brands and the implementation of crypto payment solutions in various exhibitions [t=359.36].",
+  "router_tags": [
+    "NFT",
+    "Web3",
+    "Cryptocurrency",
+    "Blockchain",
+    "Alchemy Pay",
+    "Binance",
+    "Crypto Adoption"
+  ],
+  "aliases": [
+    "Carmen",
+    "alchemy pay",
+    "Binance pay",
+    "nft",
+    "web3"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "@binancezh",
+    "@alchemy_pay",
+    "@Carmen"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

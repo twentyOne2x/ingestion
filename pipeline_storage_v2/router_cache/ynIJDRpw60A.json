@@ -1,0 +1,25 @@
+{
+  "description": "Anatoly interviews Balaji Srinivasan, former CTO of Coinbase, discussing his insights on the pandemic and its implications on society and the economy.",
+  "topic_summary": "Balaji shares his early warnings about the pandemic, comparing it to previous health crises and discussing its potential long-term effects on society [t=53:20].",
+  "router_tags": [
+    "Balaji Srinivasan",
+    "COVID-19",
+    "pandemic",
+    "crypto",
+    "Coinbase",
+    "angel investing"
+  ],
+  "aliases": [
+    "Balaji",
+    "Srinivasan",
+    "balaji",
+    "srinivasan"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

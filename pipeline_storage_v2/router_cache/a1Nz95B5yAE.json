@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on the importance of community engagement and giving back in the crypto space, featuring insights from founders of various projects including Dfinity and wumbo.",
+  "topic_summary": "Exploration of community building through incentives like airdrops and support for creators, emphasizing the balance between short-term rewards and long-term engagement [t=176.88].",
+  "router_tags": [
+    "crypto",
+    "community",
+    "blockchain",
+    "NFTs",
+    "social tokens"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: More Free Stuff",
+    "Breakpoint 2021: Why Fast Blockchains Should Keep Giving Things Away"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@NoahPrince",
+    "@Dfinity",
+    "@Metaplex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

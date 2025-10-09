@@ -1,0 +1,19 @@
+{
+  "description": "This video discusses updates and features related to the Binance app.",
+  "topic_summary": "Overview of Binance app features and updates, including insights shared around [t=00:56] and [t=01:53].",
+  "router_tags": [
+    "Binance",
+    "App",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

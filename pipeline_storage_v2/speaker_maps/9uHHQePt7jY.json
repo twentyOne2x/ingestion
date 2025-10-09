@@ -1,0 +1,20 @@
+{
+  "video_id": "9uHHQePt7jY",
+  "title": "2022-04-27_9uHHQePt7jY_Chris Osborn - Founder & CEO, Dialect Ep #64",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Chris Osborne",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

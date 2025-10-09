@@ -1,0 +1,38 @@
+{
+  "video_id": "WVk8bQnD170",
+  "title": "2022-12-24_WVk8bQnD170_Regulation & The Crypto Revolution - Binance Blockchain Week - Paris 2022",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "C": {
+      "name": "Peter Kirstens",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Hugo Kolo",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Armel Caste",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Peter Kirstens",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

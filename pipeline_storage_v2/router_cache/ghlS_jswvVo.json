@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on various topics including finance, portfolios, and personal insights. Mentions of Binance and NFT trends.",
+  "topic_summary": "The conversation covers financial strategies and personal experiences, with references to Binance and NFT markets [t=00:00-01:32].",
+  "router_tags": [
+    "finance",
+    "Binance",
+    "NFT",
+    "portfolio",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Jack",
+    "jack",
+    "JACK"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

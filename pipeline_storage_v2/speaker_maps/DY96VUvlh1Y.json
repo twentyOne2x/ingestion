@@ -1,0 +1,32 @@
+{
+  "video_id": "DY96VUvlh1Y",
+  "title": "2021-11-15_DY96VUvlh1Y_Breakpoint 2021: Community: Code in the Next Chapter of Growth",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Etiya Itaya",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Emily Poplaski",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Chris Price",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

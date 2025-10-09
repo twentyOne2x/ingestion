@@ -1,0 +1,44 @@
+{
+  "video_id": "6w-qGX5jSN8",
+  "title": "2023-03-22_6w-qGX5jSN8_Ramadan Super Meetup featuring CZ, Binance CEO and Co-Founder",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "F": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Mayor Kamat",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Richard Tang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Gleb Kostrev",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Richard Gleb",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Czech Republic",
+      "role": "Guest",
+      "confidence": 0.8500000000000001,
+      "source": "tier1"
+    }
+  }
+}

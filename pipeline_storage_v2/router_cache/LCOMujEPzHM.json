@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the transition from Web 2 to Web 3, featuring insights from industry leaders including Andrew from Republic Crypto, Sumit from Chingari, and Ro Neil from Audius. They explore the impact of social media, social tokens, and DAOs in the evolving digital landscape.",
+  "topic_summary": "Panel discussion on the transition from Web 2 to Web 3, focusing on social media, DAOs, and the role of platforms like Audius and Chingari in this shift. Key points include user experience, decentralization, and community empowerment [t=92:21].",
+  "router_tags": [
+    "Web 3",
+    "Social Media",
+    "DAOs",
+    "Audius",
+    "Chingari",
+    "Solana"
+  ],
+  "aliases": [
+    "Chingari",
+    "Audius",
+    "Republic Crypto",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AudiusProject",
+    "@Chingari"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

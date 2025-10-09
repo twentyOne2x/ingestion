@@ -1,0 +1,24 @@
+{
+  "description": "This video discusses strategies for investing in cryptocurrencies, focusing on Dollar Cost Averaging (DCA) and HODLing. It emphasizes the importance of having a clear investment strategy to navigate market volatility and reduce stress. Tools like Binance's Auto Invest can help automate DCA strategies. The video also covers risk management practices to protect investments.",
+  "topic_summary": "Learn about strategic investing in cryptocurrencies, including DCA and HODLing strategies, and how to manage risks effectively [t=0:16].",
+  "router_tags": [
+    "Crypto Investment",
+    "DCA",
+    "HODL",
+    "Risk Management",
+    "Binance"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$BINANCE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

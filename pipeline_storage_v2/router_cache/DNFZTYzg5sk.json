@@ -1,0 +1,19 @@
+{
+  "description": "Discussion involving various individuals and topics related to trading and finance.",
+  "topic_summary": "The conversation features multiple speakers discussing trading strategies and market insights, with mentions of specific individuals and their roles in the trading community. Key points include trading performance and market trends [t=03:14].",
+  "router_tags": [
+    "trading",
+    "finance",
+    "market insights"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

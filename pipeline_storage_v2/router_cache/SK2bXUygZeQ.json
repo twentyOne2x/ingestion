@@ -1,0 +1,23 @@
+{
+  "description": "Stephen McAllister leads a discussion on the importance of Web3 education, featuring panelists Guljan and Barto Erdemar, who share insights on transitioning from Web2 to Web3 and the role of academia in blockchain adoption.",
+  "topic_summary": "The panel discusses the transition from Web2 to Web3, emphasizing the need for skilled talent and effective educational initiatives to enhance blockchain education globally. They highlight successful programs in Kazakhstan and the importance of integrating blockchain into university curricula.",
+  "router_tags": [
+    "Web3",
+    "Blockchain Education",
+    "Talent Development",
+    "Binance Academy",
+    "Kazakhstan"
+  ],
+  "aliases": [
+    "Coding the Future",
+    "Web3 Education Training",
+    "Web3 Training"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the roadmap and priorities for the team, including funding and member strength.",
+  "topic_summary": "The video covers team priorities for the year and questions about funding and team capabilities [t=06:02].",
+  "router_tags": [
+    "Nikkei",
+    "Moonbeam",
+    "Funding",
+    "Team Priorities"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

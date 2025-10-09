@@ -1,0 +1,29 @@
+{
+  "description": "This video covers a master's class on blockchain careers, focusing on smart contracts and Solidity programming. The instructor discusses the characteristics, capabilities, and practical applications of smart contracts, emphasizing their automation and security features. Viewers are encouraged to ask questions via a Google form.",
+  "topic_summary": "The session delves into smart contracts, their programming, enforcement, and automation, along with an introduction to Solidity. Key points include the historical context of smart contracts, their tamper-proof nature, and the reduction of reliance on intermediaries [t=0:08 - t=464:93].",
+  "router_tags": [
+    "Blockchain",
+    "Smart Contracts",
+    "Solidity",
+    "Programming",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Careers in Blockchain",
+    "Blockchain Careers",
+    "Master's Class on Blockchain"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Google",
+    "@Amazon",
+    "@Facebook",
+    "@Wuxiao",
+    "@Ismail",
+    "@WhiteMetrics",
+    "@Etherden"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the potential for a significant rise in cryptocurrency values in Q4, referencing historical performance of Bitcoin during this period.",
+  "topic_summary": "Explores the historical trends of Bitcoin's performance from October to December, highlighting past gains and the current market sentiment leading into Q4 [t=2:32].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Altseason",
+    "Q4 Predictions"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

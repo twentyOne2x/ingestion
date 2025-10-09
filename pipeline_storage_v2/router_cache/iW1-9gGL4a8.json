@@ -1,0 +1,26 @@
+{
+  "description": "In this AMA, Cristina (Cris Superes) from Atani discusses cryptocurrency taxation, addressing various questions about DeFi, Ethereum, and trading experiences. The session covers topics like staking, lending, and the importance of accurate tax declarations in the crypto space.",
+  "topic_summary": "Cristina from Atani explains cryptocurrency taxation and addresses audience questions about DeFi and Ethereum [t=38:74]. The discussion includes insights on trading experiences and the significance of proper tax reporting [t=4217.1].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxation",
+    "DeFi",
+    "Ethereum",
+    "AMA"
+  ],
+  "aliases": [
+    "Atani",
+    "Cris Superes",
+    "Cristina",
+    "Jonathan",
+    "Malek",
+    "Nola Lopez"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,19 @@
+{
+  "description": "A humorous moment where Kevin's cat unexpectedly generates money, leading to surprise and excitement.",
+  "topic_summary": "Kevin's cat makes money, causing a reaction about rent funds [t=9:16].",
+  "router_tags": [
+    "cat",
+    "money",
+    "humor",
+    "rent"
+  ],
+  "aliases": [
+    "Kevin",
+    "kevin"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

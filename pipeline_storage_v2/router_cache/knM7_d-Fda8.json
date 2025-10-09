@@ -1,0 +1,23 @@
+{
+  "description": "Maria Sharapova and Binance VP Helen Hai discuss female leadership in Web3, sharing insights on creativity, talent, and the evolving role of women in the industry.",
+  "topic_summary": "The conversation highlights the importance of hard work and creativity in achieving success in Web3, emphasizing the need for female representation and leadership in the space. [t=0:00] Maria reflects on her journey in sports and creativity, while Helen discusses the future of women in the industry. [t=107:25]",
+  "router_tags": [
+    "Web3",
+    "Female Leadership",
+    "Maria Sharapova",
+    "Helen Hai",
+    "Binance"
+  ],
+  "aliases": [
+    "maria sharapova",
+    "helen hai",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@MariaSharapova",
+    "@HelenHai"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

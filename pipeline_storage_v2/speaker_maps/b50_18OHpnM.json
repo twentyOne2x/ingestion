@@ -1,0 +1,14 @@
+{
+  "video_id": "b50_18OHpnM",
+  "title": "2021-08-31_b50_18OHpnM_IGNITION",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly interviews Alpha Ray, co-founder of Raydium, discussing his entry into crypto, trading experiences, and the development of Raydium leveraging Serum's order book technology.",
+  "topic_summary": "Alpha Ray shares his journey into crypto trading, the evolution of DeFi, and the innovative approach of Raydium using order books for better trading experiences [t=12:24].",
+  "router_tags": [
+    "Raydium",
+    "DeFi",
+    "Crypto Trading",
+    "Serum",
+    "AMM"
+  ],
+  "aliases": [
+    "alpharay",
+    "Alpha Ray",
+    "raydium",
+    "Raydium"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

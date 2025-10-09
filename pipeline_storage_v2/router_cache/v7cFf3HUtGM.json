@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to use the Binance Futures Calculator to determine initial margin, profit and loss, and target prices for trading on Binance futures.",
+  "topic_summary": "This guide covers the Binance Futures Calculator, including calculating initial margin [t=21:60], profit and loss [t=76:17], and target prices for desired returns [t=88:31].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Calculator",
+    "Crypto"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binance futures calculator"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

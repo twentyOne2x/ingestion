@@ -1,0 +1,32 @@
+{
+  "video_id": "NE4ZHfMUhoU",
+  "title": "2023-12-07_NE4ZHfMUhoU_Market Cycles & Innovation: Preparing For the Next Bull Run",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "D": {
+      "name": "Harshad Mehta",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ketan Parekh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Warren Buffet",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

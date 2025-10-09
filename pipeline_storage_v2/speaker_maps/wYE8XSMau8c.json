@@ -1,0 +1,20 @@
+{
+  "video_id": "wYE8XSMau8c",
+  "title": "2024-10-31_wYE8XSMau8c_The guards in prison asked me what coin to buy - CZ Interview",
+  "channel_name": "Cointelegraph",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "Speaker A",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Michael Santos",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

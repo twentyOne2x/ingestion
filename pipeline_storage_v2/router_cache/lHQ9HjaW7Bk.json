@@ -1,0 +1,21 @@
+{
+  "description": "CZ visits Tbilisi, Georgia to engage with the Binance community and discuss developments.",
+  "topic_summary": "CZ's first visit to Tbilisi, Georgia, focusing on community engagement and Binance's initiatives [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Tbilisi",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "CZ",
+    "Changpeng Zhao"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

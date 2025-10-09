@@ -1,0 +1,32 @@
+{
+  "video_id": "hWzTWT-s6RU",
+  "title": "2022-10-19_hWzTWT-s6RU_CZs fireside chat with the French Minister for Digital Transition, Jean-Noel Barrot",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Jean Noel Barrot",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Kayla Rourke",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Jean Noel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

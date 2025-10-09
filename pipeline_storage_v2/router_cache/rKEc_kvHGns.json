@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on USDT, ETH, and XRP.",
+  "topic_summary": "Overview of USDT, ETH, and XRP in the cryptocurrency market [t=03:01].",
+  "router_tags": [
+    "cryptocurrency",
+    "USDT",
+    "ETH",
+    "XRP"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$ETH",
+    "$XRP"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

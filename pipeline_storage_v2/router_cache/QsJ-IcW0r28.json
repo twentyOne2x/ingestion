@@ -1,0 +1,19 @@
+{
+  "description": "Alice discusses the evolution of Binance over the past eight years, highlighting its growth and user engagement.",
+  "topic_summary": "Alice reflects on Binance's journey, mentioning user growth and the platform's development [t=1:28].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Anniversary"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

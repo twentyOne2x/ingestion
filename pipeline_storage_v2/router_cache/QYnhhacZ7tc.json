@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Solana's growth hotspots globally, featuring insights from industry leaders including Maggie Wu and Lior Masica. Topics include the Latin American market, developer education, and the importance of blockchain technology.",
+  "topic_summary": "Panel discussion on Solana's total addressable market and growth opportunities, with a focus on Latin America and developer engagement [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Blockchain",
+    "Latin America",
+    "Developer Education"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@MaggieWu",
+    "@LiorMasica"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

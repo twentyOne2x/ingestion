@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on whether to choose Cristiano Ronaldo or Binance CEO CZ, including a humorous take on football skills and a challenge for a free kick session.",
+  "topic_summary": "Debate on the football skills of Binance CEO CZ compared to Cristiano Ronaldo, with a proposed challenge for a free kick session [t=48:89].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Binance",
+    "CZ",
+    "football",
+    "challenge"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "Binance Ceo",
+    "CZ",
+    "Ronaldo"
+  ],
+  "canonical_entities": [
+    "@Binance",
+    "$CZ",
+    "$Ronaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video explains how to set an OCO (One Cancels Other) order on Binance, detailing the steps from logging in to confirming orders. It covers setting limit and stop limit prices for BNB to automate trading strategies.",
+  "topic_summary": "Learn to set OCO orders on Binance to manage trades effectively. The video demonstrates entering limit prices and stop prices, ensuring orders are filled while protecting against losses [t=0:16 - t=92:74].",
+  "router_tags": [
+    "Binance",
+    "OCO Order",
+    "Trading",
+    "Cryptocurrency",
+    "BNB"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCEACADEMY"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

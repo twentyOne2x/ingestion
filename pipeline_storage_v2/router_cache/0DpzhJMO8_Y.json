@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on P2P trading on Binance, including account setup and trading strategies.",
+  "topic_summary": "Exploration of P2P trading on Binance, covering account management and trading tips [t=0:24 - t=25:40].",
+  "router_tags": [
+    "P2P",
+    "Binance",
+    "Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance Peer to Peer",
+    "binance peer to peer"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

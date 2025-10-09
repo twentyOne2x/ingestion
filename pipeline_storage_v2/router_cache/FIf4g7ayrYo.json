@@ -1,0 +1,22 @@
+{
+  "description": "This video provides a brief overview of blockchain technology, explaining its fundamental concepts in a concise manner.",
+  "topic_summary": "An introduction to blockchain, describing it as a public ledger where transactions are recorded and cannot be altered, ensuring transparency and security [t=0:00-1:00].",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "Technology",
+    "Explainer"
+  ],
+  "aliases": [
+    "Blockchain Explained",
+    "blockchain explained",
+    "Blockchain in 1 Minute",
+    "blockchain in 1 minute"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

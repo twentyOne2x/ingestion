@@ -1,0 +1,14 @@
+{
+  "video_id": "BNWYwpkLSrM",
+  "title": "2022-05-24_BNWYwpkLSrM_2022",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

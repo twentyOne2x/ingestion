@@ -1,0 +1,21 @@
+{
+  "description": "This video explores the creation of NFTs, highlighting their role in establishing verifiable ownership and scarcity of digital goods through blockchain technology.",
+  "topic_summary": "NFTs were created to address the challenges of digital ownership and scarcity in an increasingly digital world. They provide a solution for representing unique assets, distinguishing them from cryptocurrencies. [t=0:24]",
+  "router_tags": [
+    "NFT",
+    "blockchain",
+    "digital ownership",
+    "crypto collectibles"
+  ],
+  "aliases": [
+    "Nft",
+    "NFT",
+    "nft"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

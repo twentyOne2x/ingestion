@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the evolution of money from the gold standard to the predominance of digital currency in today's economy.",
+  "topic_summary": "The video explains how coins and paper notes were once tied to the gold standard [t=0:16], addressing issues of portability and divisibility [t=8:08]. It highlights that currently, physical currency represents a minor part of the monetary system, with digital money being the majority [t=13:68][t=19:04]. The gold standard is no longer in use, although gold reserves are maintained by countries [t=25:75].",
+  "router_tags": [
+    "money",
+    "digital currency",
+    "gold standard",
+    "fiat money"
+  ],
+  "aliases": [
+    "Coins & Paper Notes",
+    "Coins and Paper Money",
+    "Digital Money"
+  ],
+  "canonical_entities": [
+    "$GOLD",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

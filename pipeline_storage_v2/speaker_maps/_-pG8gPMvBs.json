@@ -1,0 +1,44 @@
+{
+  "video_id": "_-pG8gPMvBs",
+  "title": "2021-10-19__-pG8gPMvBs_Celebrate with Binance P2P! Join in the livestream and win multiple rewards",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "F": {
+      "name": "Mahmood Khalid",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Mahmoud Khalid",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Sneha Katuria",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "George Makisha",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Chitral Patel",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

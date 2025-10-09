@@ -1,0 +1,23 @@
+{
+  "description": "The Riptide workshop discusses Solana Pay, a simple protocol for digital asset transactions between consumers and merchants, emphasizing its low-cost, fast, and scalable nature. Key contributors from Solana Labs, including Shiraz, Ben, and Jordan, explain the architecture and potential of Solana Pay in transforming payment systems by eliminating intermediaries and enhancing direct merchant-consumer interactions.",
+  "topic_summary": "Overview of Solana Pay's protocol and its implications for consumer-to-merchant payments, highlighting its simplicity, speed, and potential to reshape the payment landscape by removing traditional intermediaries [t=90:48].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Payments",
+    "Web3",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Solana Pay",
+    "solanapay",
+    "SOLANA PAY",
+    "SolanaPay"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

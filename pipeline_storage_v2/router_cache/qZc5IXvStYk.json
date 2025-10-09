@@ -1,0 +1,25 @@
+{
+  "description": "Binance Africa hosts a webinar discussing NFTs with African creators, featuring insights from notable figures like Mi, Wian, Osinachi, and Suleiman. The event includes an introduction to NFTs, a panel discussion, and giveaways of NFTs.",
+  "topic_summary": "The webinar covers the launch of the Binance NFT Marketplace and the 100 Creators Campaign, focusing on African NFT creators and their cultural contributions. Key discussions include the basics of NFTs and the stories behind the creators' works [t=41:73].",
+  "router_tags": [
+    "NFTs",
+    "Binance",
+    "Africa",
+    "Creators",
+    "Webinar"
+  ],
+  "aliases": [
+    "binanceafrica",
+    "Binance Africa",
+    "binance nft",
+    "Binance NFT"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

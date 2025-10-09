@@ -1,0 +1,32 @@
+{
+  "video_id": "kstAqoB4r1Y",
+  "title": "2021-11-15_kstAqoB4r1Y_Breakpoint 2021: The Future of Virtual Economies with Star Atlas",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jason Silva",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.9,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "David Chalmers",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Andy Clark",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

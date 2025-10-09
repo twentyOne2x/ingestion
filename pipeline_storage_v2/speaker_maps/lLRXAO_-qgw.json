@@ -1,0 +1,14 @@
+{
+  "video_id": "lLRXAO_-qgw",
+  "title": "2021-05-28_lLRXAO_-qgw_BINANCE : 3",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how blocks are connected in blockchain technology through the process of hashing, which creates a unique identifier for each block based on the previous block's hash.",
+  "topic_summary": "Blocks in a blockchain are interconnected via hashes, which are fixed-size outputs generated from input data using hash functions. Each block's hash is derived from the hash of the preceding block, ensuring a secure and traceable chain [t=52:69].",
+  "router_tags": [
+    "Blockchain",
+    "Hashing",
+    "Cryptocurrency",
+    "Data Security"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "Binance Academy",
+    "binanceacademy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "AMA session with the Binance P2P team discussing trading in Latin America, featuring insights from Martina and Cecita Savero.",
+  "topic_summary": "Discussion on Binance P2P trading in Latin America, including transaction terms and local payment methods [t=0:02 - t=47:57].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Latin America",
+    "Cryptocurrency",
+    "Trading"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance P2P",
+    "binance p2p"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "Interbank"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the concept of a crypto wallet address and private key, emphasizing the importance of keeping the private key secure while allowing sharing of the wallet address for receiving funds.",
+  "topic_summary": "A crypto wallet generates an address for receiving tokens, while the private key provides access to the funds. Users should share their wallet address but keep their private key confidential. Wallets can be categorized as hot or cold based on their mechanisms. [t=0:56] [t=7:68] [t=14:24] [t=22:16] [t=27:18] [t=34:22] [t=36:38]",
+  "router_tags": [
+    "crypto",
+    "wallet",
+    "private key",
+    "blockchain"
+  ],
+  "aliases": [
+    "Crypto Wallet Address",
+    "Crypto Wallet Private Key",
+    "Wallet Address",
+    "Private Key"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

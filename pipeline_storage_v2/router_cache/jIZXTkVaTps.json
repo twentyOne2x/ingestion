@@ -1,0 +1,23 @@
+{
+  "description": "Jacob Creech discusses the latest updates in the Solana ecosystem, including offline signing for Ledger wallets, the upcoming implementation of QUIC, and improvements to the Solana Explorer.",
+  "topic_summary": "The video covers new features such as offline signing for Ledger wallets [t=18:16], updates on QUIC protocol [t=81:91], and enhancements to the Solana Explorer [t=137:80].",
+  "router_tags": [
+    "Solana",
+    "Ledger",
+    "QUIC",
+    "NFT",
+    "DAPP"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

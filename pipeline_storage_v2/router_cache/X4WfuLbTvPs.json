@@ -1,0 +1,30 @@
+{
+  "description": "Daria Krisnova hosts a discussion on the coexistence of CeFi and DeFi with experts Andre, Tomasz Vojevora, Vadim Krikotin, and Laura. They explore the evolving relationship between centralized and decentralized finance, highlighting the challenges and opportunities presented by both systems.",
+  "topic_summary": "The panel discusses the complexities of CeFi and DeFi relationships, emphasizing the potential for coexistence and the shift towards decentralization in finance. They reflect on historical failures of traditional finance and the growing appeal of DeFi solutions [t=240.34].",
+  "router_tags": [
+    "CeFi",
+    "DeFi",
+    "Cryptocurrency",
+    "Finance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Cefi",
+    "Defi",
+    "DeFi",
+    "Cefi"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@DariaKrisnova",
+    "@andre",
+    "@TomaszVojevora",
+    "@VadimKrikotin",
+    "@Laura"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

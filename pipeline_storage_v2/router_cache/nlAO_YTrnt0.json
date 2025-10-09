@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the Binance Card, highlighting its zero fees and up to 8% cashback on eligible purchases. Users can easily top up their card with Bitcoin or BNB and spend at over 60 million merchants worldwide. The card ensures high security for funds and allows for quick application.",
+  "topic_summary": "Overview of Binance Card features, including zero fees, cashback, and security measures [t=81:32].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Payment Card",
+    "Cashback"
+  ],
+  "aliases": [
+    "Binance Card",
+    "binance card",
+    "BINANCE CARD"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

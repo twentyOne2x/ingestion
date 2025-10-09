@@ -1,0 +1,40 @@
+{
+  "description": "Panel discussion on the future of blockchain ecosystems, focusing on the innovations within Solana and beyond, featuring insights from industry leaders on the proliferation of application-specific blockchains and the role of major platforms.",
+  "topic_summary": "Exploration of the evolving landscape of blockchain technology, discussing the potential for hundreds of application-specific blockchains and the impact of major platforms like Solana on future developments [t=24:64].",
+  "router_tags": [
+    "blockchain",
+    "Solana",
+    "Cosmos",
+    "Ethereum",
+    "innovation",
+    "application-specific chains"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Foundation",
+    "Sunny Cosmos",
+    "Ethereal Ventures",
+    "Taurus"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@Sunny",
+    "@Min",
+    "@Facebook",
+    "$BTC",
+    "$USDC",
+    "@Austin",
+    "@Cosmos",
+    "@Meta",
+    "@Taurus",
+    "@LilyLiu",
+    "@Consensys",
+    "$4,500",
+    "$DOT",
+    "@Etherscan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

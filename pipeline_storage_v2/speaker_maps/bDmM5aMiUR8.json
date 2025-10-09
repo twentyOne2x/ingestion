@@ -1,0 +1,38 @@
+{
+  "video_id": "bDmM5aMiUR8",
+  "title": "2022-01-05_bDmM5aMiUR8_AVALANCHE,AVAX!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Fang Shangchu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Nishan Binance",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Avalanche Wilson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Ming. Dan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

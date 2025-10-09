@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to complete KYC and verify your Binance account in this step-by-step guide. Ensure you have your government-issued ID and follow the instructions for a smooth verification process.",
+  "topic_summary": "This video explains how to complete the KYC process for Binance account verification, including document submission and personal details entry [t=0:56 - t=101:76].",
+  "router_tags": [
+    "KYC",
+    "Binance",
+    "account verification",
+    "crypto"
+  ],
+  "aliases": [
+    "Kyc Binance",
+    "Binance KYC",
+    "Verify Binance Account"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

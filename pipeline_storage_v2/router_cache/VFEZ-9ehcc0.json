@@ -1,0 +1,28 @@
+{
+  "description": "This video explains Central Bank Digital Currencies (CBDCs) and their implications for financial inclusion and stability. It contrasts CBDCs with cryptocurrencies and stablecoins, highlighting their centralized nature and potential benefits for the banking system.",
+  "topic_summary": "An overview of Central Bank Digital Currencies (CBDCs) and their role in modern finance, including the differences between CBDCs, cryptocurrencies, and stablecoins. The discussion includes the potential for financial inclusion and the regulatory landscape surrounding these digital currencies [t=0:40 - 5:30].",
+  "router_tags": [
+    "CBDC",
+    "Digital Currency",
+    "Stablecoins",
+    "Financial Inclusion",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Cbdcs",
+    "Central Bank Digital Currencies",
+    "Stable Coins",
+    "Eileen Foreman",
+    "Wendy",
+    "Susha Blipt"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@EileenForeman",
+    "@Wendy",
+    "@SushaBlipt",
+    "@BinanceAcademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Dan Paul000 discusses the Solana network infrastructure, focusing on validators and RPC nodes, their roles, and hardware requirements for running them effectively. He emphasizes the importance of reliable RPC services for DApps to ensure a good user experience.",
+  "topic_summary": "Overview of Solana's network infrastructure, including the roles of validators and RPC nodes, hardware requirements, and the significance of RPC services for DApps, particularly during the Solana hackathon.",
+  "router_tags": [
+    "Solana",
+    "Validators",
+    "RPC Nodes",
+    "DApps",
+    "Network Infrastructure"
+  ],
+  "aliases": [
+    "Dan Paul000",
+    "dan paul000",
+    "DAN PAUL000"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

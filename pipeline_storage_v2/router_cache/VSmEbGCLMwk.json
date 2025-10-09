@@ -1,0 +1,22 @@
+{
+  "description": "Trailer for Binance Blockchain Week, showcasing a premier Web3 industry event hosted by Binance.",
+  "topic_summary": "Binance Blockchain Week brings together global leaders, innovators, and enthusiasts in the blockchain industry, aiming to become the Davos of crypto [t=29:52].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Web3",
+    "Crypto",
+    "Industry Event"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain week",
+    "BINANCE BLOCKCHAIN WEEK"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

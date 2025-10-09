@@ -1,0 +1,23 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency and project management are discussed, including stakeholder conversations and client verification processes. Key participants include Saunders, Douglas Satoki, and Paolo Brito.",
+  "topic_summary": "The discussion covers project management strategies, stakeholder engagement, and client verification in the cryptocurrency space, with insights from industry experts [t=27:02] to [t=240:47].",
+  "router_tags": [
+    "cryptocurrency",
+    "Q&A",
+    "Binance",
+    "project management",
+    "stakeholder engagement"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "Douglas Satoki",
+    "Paolo Brito"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

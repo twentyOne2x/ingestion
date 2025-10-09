@@ -1,0 +1,22 @@
+{
+  "description": "This video explains zk-SNARKs, a cryptographic innovation that enhances privacy and security on the blockchain. It discusses how zk-SNARKs enable verification of user assets without revealing sensitive information, addressing challenges in traditional Merkle tree models used for proof of reserves.",
+  "topic_summary": "The video covers the basics of zk-SNARKs and their application in Binance's proof of reserves system, highlighting their role in ensuring user privacy and security while verifying asset totals [t=196.0].",
+  "router_tags": [
+    "zk-SNARKs",
+    "Binance",
+    "Proof of Reserves",
+    "Blockchain",
+    "Cryptography"
+  ],
+  "aliases": [
+    "Zk-snarks",
+    "ZK-SNARKS",
+    "zkSnarks"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

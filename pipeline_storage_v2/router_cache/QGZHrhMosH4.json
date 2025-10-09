@@ -1,0 +1,24 @@
+{
+  "description": "Recap of Binance Blockchain Week Paris 2022, highlighting discussions on web3 adoption, France's blockchain ecosystem, and talent development.",
+  "topic_summary": "The event covers the strategic importance of France in the blockchain community, the talent pool, regulatory environment, and the future of web3 [t=2:72-283:85].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Web3",
+    "Paris",
+    "Fintech",
+    "Crypto"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "binance paris 2022",
+    "Binance Paris"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

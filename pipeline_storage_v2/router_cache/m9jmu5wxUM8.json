@@ -1,0 +1,23 @@
+{
+  "description": "A discussion about the riskiest things individuals would do for a bitcoin, including swimming in a lake and cliff diving.",
+  "topic_summary": "Exploration of extreme activities people would undertake for bitcoin, featuring personal anecdotes and humorous exchanges [t=0:16 - t=43:64].",
+  "router_tags": [
+    "Bitcoin",
+    "Risk",
+    "Adventure",
+    "Swimming",
+    "Cliff Diving"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This video explains Delegated Proof of Stake (DPoS), a cryptocurrency consensus algorithm developed by Daniel Larimer in 2014. It covers the election process for delegates, transaction validation, and the advantages of DPoS over traditional proof of work systems.",
+  "topic_summary": "Delegated Proof of Stake (DPoS) is a consensus algorithm that enhances efficiency and democratization in blockchain networks. It allows stakeholders to elect delegates who validate transactions and produce blocks, promoting decentralization while maintaining performance. The video discusses its workings, benefits, and potential challenges in achieving sufficient decentralization [t=0:24-1:53].",
+  "router_tags": [
+    "DPoS",
+    "Delegated Proof of Stake",
+    "cryptocurrency",
+    "blockchain",
+    "consensus algorithm"
+  ],
+  "aliases": [
+    "Delegated Proof of Stake",
+    "dpos",
+    "Dpos",
+    "DPOs"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@DanielLarimer",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

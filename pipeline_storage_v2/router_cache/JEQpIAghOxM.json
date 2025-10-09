@@ -1,0 +1,23 @@
+{
+  "description": "A Q&A session discussing various topics related to cryptocurrency and trading innovations.",
+  "topic_summary": "The session covers topics such as crypto projects, stable coins, and trading innovations, with references to specific projects and concepts throughout the discussion [t=00:30].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "Q&A",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$AMZN",
+    "@Tomaso",
+    "$AKITA",
+    "@Jerry"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

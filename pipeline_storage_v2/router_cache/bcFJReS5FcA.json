@@ -1,0 +1,24 @@
+{
+  "description": "This video provides a concise overview of BNB Coin, its development, and its significance in the cryptocurrency world. It discusses the Binance Smart Chain, its features, and the coin burning mechanism that affects its supply and value.",
+  "topic_summary": "An explanation of BNB Coin, its role within the Binance ecosystem, and its advantages over Ethereum, including its scalability and cost-effectiveness. The video also highlights the community-driven aspects of the Binance Smart Chain and its various applications in DeFi and gaming [t=0:16].",
+  "router_tags": [
+    "BNB",
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "DeFi",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Bnb",
+    "bnb",
+    "BNB Coin",
+    "Bnb Coin"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

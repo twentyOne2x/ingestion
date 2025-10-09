@@ -1,0 +1,41 @@
+{
+  "description": "Discussion on finance strategies including staking, savings, and liquid swaps. Mentions Ethereum and various individuals involved in the crypto space. Highlights market cap and price trends.",
+  "topic_summary": "Exploration of staking and savings in cryptocurrency, focusing on Ethereum and market dynamics [t=03:00].",
+  "router_tags": [
+    "finance",
+    "staking",
+    "Ethereum",
+    "crypto",
+    "market cap"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BNB",
+    "@jesusbob",
+    "@sujian",
+    "@nishangjinxi",
+    "@nishaosuhe",
+    "@stephanie",
+    "@yongku",
+    "@darren",
+    "@zhongjian",
+    "@ruben",
+    "@bianbaojquan",
+    "@yongzaid",
+    "@zhaolian",
+    "@dajakana",
+    "@josiah",
+    "@wanchenxishi",
+    "@chantashin",
+    "$FTM",
+    "$SKL",
+    "@na_jinghyn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

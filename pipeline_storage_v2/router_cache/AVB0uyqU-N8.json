@@ -1,0 +1,28 @@
+{
+  "description": "In this webinar, Mark Buckner discusses various financial topics relevant to South Africa, including cryptocurrency and community engagement. The session includes interactive elements with audience participation and giveaways of over 2,000 Rand in crypto. Attendees are encouraged to join the Binance community for updates and to participate in the giveaways.",
+  "topic_summary": "Mark Buckner hosts a webinar focused on financial markets in South Africa, featuring discussions on cryptocurrency and community engagement. The session includes audience interaction and giveaways [t=189.78].",
+  "router_tags": [
+    "Webinar",
+    "Cryptocurrency",
+    "Finance",
+    "South Africa",
+    "Binance"
+  ],
+  "aliases": [
+    "Markets With Marc",
+    "markets with marc",
+    "MARKETS WITH MARC"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$BTC",
+    "$USDT",
+    "$ADA",
+    "$DOGE",
+    "@BinanceYoutube",
+    "@MarkBuckner"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

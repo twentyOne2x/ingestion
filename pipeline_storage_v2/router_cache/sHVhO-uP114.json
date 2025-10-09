@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the implementation plan for Solana's quick protocol and its impact on network traffic and validators.",
+  "topic_summary": "The meeting covers the implementation of a quick protocol to manage network traffic and mitigate denial of service attacks. It discusses validator connections, transaction processing, and the transition to a more efficient system [t=0:16 - t=4:6].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Quick Protocol",
+    "Network Security"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "solana validator meeting",
+    "solana quick protocol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

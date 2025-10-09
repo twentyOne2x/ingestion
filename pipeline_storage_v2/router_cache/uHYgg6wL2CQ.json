@@ -1,0 +1,25 @@
+{
+  "description": "Ben from JUMP Crypto discusses the evolution of the Solana Boot Camp and the integration of quantitative researchers into the crypto space. He highlights the differences between traditional finance and crypto, emphasizing the opportunities for innovation and learning in the latter.",
+  "topic_summary": "Ben shares insights on the transition from traditional finance to crypto, the role of JUMP Crypto in the Solana Boot Camp, and the unique learning experiences available in the crypto ecosystem [t=401:11].",
+  "router_tags": [
+    "Solana",
+    "Crypto",
+    "Finance",
+    "Boot Camp",
+    "NFT",
+    "Quantitative Research"
+  ],
+  "aliases": [
+    "Ben",
+    "Jump Crypto",
+    "JUMP",
+    "Solana Boot Camp"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@kanoff"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

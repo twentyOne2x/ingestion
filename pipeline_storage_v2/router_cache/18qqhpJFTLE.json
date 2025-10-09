@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on building crypto communities in real life, featuring insights from various leaders in the Solana ecosystem. Topics include the importance of physical communities, challenges faced in different regions, and the impact of local initiatives like the Christex foundation in Sierra Leone.",
+  "topic_summary": "Exploration of the significance and challenges of building crypto communities in real life, contrasting with virtual communities. Panelists share their experiences and motivations for fostering local engagement in the crypto space.",
+  "router_tags": [
+    "Crypto Communities",
+    "Solana",
+    "Real Life Engagement",
+    "Panel Discussion",
+    "Community Building"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Building Crypto Communities",
+    "Solana Foundation",
+    "Super Team"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Justin",
+    "@KashDanda",
+    "@Jim"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

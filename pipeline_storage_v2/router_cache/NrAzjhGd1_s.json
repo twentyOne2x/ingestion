@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the role of mining nodes in blockchain technology, detailing how they differ from light and full nodes, and the necessity of specialized hardware for mining operations.",
+  "topic_summary": "Mining nodes are a subset of blockchain nodes that perform proof of work to secure networks like Bitcoin. They require specialized hardware due to high competition in mining. Changes to decentralized networks can be implemented through soft or hard forks [t=45:25].",
+  "router_tags": [
+    "Mining",
+    "Blockchain",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Nodes"
+  ],
+  "aliases": [
+    "Mining Node",
+    "Mining Nodes",
+    "mining node",
+    "mining nodes"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

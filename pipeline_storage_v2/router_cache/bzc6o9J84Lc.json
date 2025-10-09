@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of Chewing Glass, host Jace interviews Matthew Lim, also known as Pencil Flip, a developer in the Solana ecosystem. They discuss Matthew's background in computer science, his experience at Facebook, and his transition to Web3 development. The conversation highlights the importance of communication in the tech industry and Matthew's contributions to the Solana community.",
+  "topic_summary": "Matthew Lim shares insights on his journey from Facebook to the Solana ecosystem, discussing his work in content moderation, AR/VR, and full-stack development. The episode emphasizes the cultural aspects of tech and the rapid changes in the crypto space [t=31:69].",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Development",
+    "Crypto",
+    "Technology"
+  ],
+  "aliases": [
+    "Pencil Flip",
+    "pencilflip",
+    "Matthew Lim",
+    "matthew lim"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MatthewLim"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

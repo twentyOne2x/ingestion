@@ -1,0 +1,22 @@
+{
+  "description": "Sorteio Loteria de Carnaval featuring various participants and discussions about prizes and trading.",
+  "topic_summary": "Discussion about the Carnaval lottery and trading, including mentions of various entities and their roles [t=01:20].",
+  "router_tags": [
+    "Carnaval",
+    "Lottery",
+    "Trading",
+    "Binance"
+  ],
+  "aliases": [
+    "Sorteio Loteria de Carnaval",
+    "Sorteio loteria de carnaval",
+    "carnaval lottery"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$AAPL",
+    "$FB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

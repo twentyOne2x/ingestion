@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the application of technical analysis for short-term trading, emphasizing its effectiveness in predicting price movements based on historical data and indicators.",
+  "topic_summary": "The video explains when to use technical analysis, particularly for short-term trading, and highlights the combination of technical and fundamental analysis in crypto trading. It features an example involving Alice's analysis of Ethereum's future demand [t=41:82].",
+  "router_tags": [
+    "Technical Analysis",
+    "Trading",
+    "Crypto",
+    "Ethereum"
+  ],
+  "aliases": [
+    "When Should You Use Technical Analysis",
+    "Technical Analysis in Trading"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "Alice",
+    "ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

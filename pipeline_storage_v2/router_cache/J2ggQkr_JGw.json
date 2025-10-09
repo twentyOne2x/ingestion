@@ -1,0 +1,21 @@
+{
+  "description": "Technical workshop on Solana covering topics such as metadata headers, account representation, and transaction processing. The session includes practical demonstrations using the terminal and contract interactions.",
+  "topic_summary": "Discussion on Solana's architecture, including metadata management [t=1:22], account structures [t=2:33], and transaction handling [t=13:26].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Technical Workshop",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "All Things Solana",
+    "Technical Workshop",
+    "Jarry Xiao"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

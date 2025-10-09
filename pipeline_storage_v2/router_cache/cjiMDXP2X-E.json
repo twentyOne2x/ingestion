@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses the appeal of GameFi, highlighting how many play-to-earn games are free to play, while some require NFT or crypto asset purchases. It explains the community involvement in decision-making through Governance DAOs and the emergence of blockchain-based metaverse platforms where players can buy and develop digital land for revenue generation. The combination of entertainment and financial incentives is emphasized as a key factor in attracting gamers.",
+  "topic_summary": "GameFi attracts users by offering free-to-play models, community governance, and opportunities for financial gain through digital land ownership and development [t=0:40].",
+  "router_tags": [
+    "GameFi",
+    "Play-to-Earn",
+    "Blockchain Gaming",
+    "Metaverse"
+  ],
+  "aliases": [
+    "Gamefi",
+    "gamefi",
+    "GAMEFI"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "jQTNgfZu90o",
+  "title": "2022-11-17_jQTNgfZu90o_Q&A with CZ at Web Summit",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Bruno Ver Cee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

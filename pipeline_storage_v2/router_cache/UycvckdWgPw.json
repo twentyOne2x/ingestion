@@ -1,0 +1,24 @@
+{
+  "description": "In this interview, participants discuss the hottest commodity of 2024, debating between Bitcoin, gold, silver, and cocoa. The conversation highlights the significance of these assets in the market.",
+  "topic_summary": "Discussion on the best performing commodity of 2024, including Bitcoin, gold, silver, and cocoa. [t=8:68] Participants guess and debate the top asset.",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Commodity",
+    "Gold",
+    "Cocoa"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binanceyoutube",
+    "Coco",
+    "coco"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$GOLD",
+    "$COCO"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

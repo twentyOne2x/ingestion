@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the concept of a block in blockchain technology, detailing how blocks are structured and their role in forming a blockchain.",
+  "topic_summary": "A block is a structured bundle of information that, when added to a blockchain, references the previous block, creating a secure chain of data [t=0:16]. Each block is essential for the blockchain's integrity and functionality [t=3:76].",
+  "router_tags": [
+    "blockchain",
+    "block",
+    "data structure",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "What is a Block",
+    "Understanding Blocks",
+    "Blockchain Basics"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

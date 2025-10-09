@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on institutional interest in cryptocurrencies, focusing on Chainlink's integration with Wall Street and the dynamics of ETH and BTC flows. Analysis of market trends and the impact of traditional finance on crypto investments.",
+  "topic_summary": "Exploration of institutional investments in crypto, particularly Chainlink and its implications for Wall Street, alongside discussions on ETH supply and BTC flows [t=28:48].",
+  "router_tags": [
+    "Crypto News",
+    "Chainlink",
+    "ETH",
+    "BTC",
+    "Wall Street",
+    "Blackrock",
+    "Oracles"
+  ],
+  "aliases": [
+    "Crypto News",
+    "Chainlink Breakout",
+    "ETH Supply",
+    "BTC Flows"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

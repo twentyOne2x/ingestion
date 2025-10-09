@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the differences between Centralized Finance (CeFi) and Decentralized Finance (DeFi), highlighting their respective advantages and limitations.",
+  "topic_summary": "CeFi dominates crypto trading with over 90% volume on centralized exchanges [t=4:40]. DeFi eliminates middlemen, using smart contracts for trades [t=11:76]. CeFi offers convenience and customer support, while DeFi provides user control and privacy [t=33:79].",
+  "router_tags": [
+    "CeFi",
+    "DeFi",
+    "crypto",
+    "finance",
+    "blockchain"
+  ],
+  "aliases": [
+    "Cefi",
+    "Cefi",
+    "DeFi",
+    "DeFi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

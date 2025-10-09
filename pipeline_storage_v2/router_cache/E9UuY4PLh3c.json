@@ -1,0 +1,23 @@
+{
+  "description": "Roneil Rumburg, co-founder and CEO of Audius, discusses the platform's unique features, its decentralized nature, and how it connects fans directly with artists. He emphasizes that users can engage with the service without needing to understand the underlying blockchain technology.",
+  "topic_summary": "Overview of Audius, a decentralized music streaming service that allows direct interaction between fans and artists, highlighting its user-friendly interface and the absence of traditional crypto barriers [t=530.64].",
+  "router_tags": [
+    "Audius",
+    "Music Streaming",
+    "Decentralization",
+    "Web3",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Roneil Rumburg",
+    "Renee",
+    "Ranil Rumberg",
+    "Audius"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

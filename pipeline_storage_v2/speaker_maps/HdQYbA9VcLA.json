@@ -1,0 +1,44 @@
+{
+  "video_id": "HdQYbA9VcLA",
+  "title": "2023-04-21_HdQYbA9VcLA_Binance Talks: Charity & Blockchain for Good",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "F": {
+      "name": "Kenneth Cow",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "G": {
+      "name": "Kenneth Koh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Elizabeth Lee",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Elizabeth Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Logan Ross",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

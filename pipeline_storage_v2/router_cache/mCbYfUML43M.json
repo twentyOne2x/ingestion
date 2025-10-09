@@ -1,0 +1,22 @@
+{
+  "description": "Trailer for Building the Future: Inside Binance Blockchain Week, showcasing the event in Dubai.",
+  "topic_summary": "Introduction to Binance Blockchain Week in Dubai, highlighting key moments and excitement [t=19:76].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Dubai",
+    "Krupto"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

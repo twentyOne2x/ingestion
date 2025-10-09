@@ -1,0 +1,14 @@
+{
+  "video_id": "e8pPCGnOEvs",
+  "title": "2022-07-04_e8pPCGnOEvs_Solana Hacker House Barcelona",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

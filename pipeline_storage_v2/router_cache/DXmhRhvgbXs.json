@@ -1,0 +1,20 @@
+{
+  "description": "A humorous take on cryptocurrency trading, emphasizing the importance of not losing money and the allure of meme coins.",
+  "topic_summary": "The video features a comedic mantra about trading strategies and meme coins, highlighting phrases like 'Stop Loss' and 'Mehr meme coins' [t=1.28][t=16.64].",
+  "router_tags": [
+    "cryptomemes",
+    "binance",
+    "bitcoin"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

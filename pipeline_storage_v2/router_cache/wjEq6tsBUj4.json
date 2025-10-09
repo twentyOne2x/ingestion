@@ -1,0 +1,24 @@
+{
+  "description": "Jayant discusses the PIP Network, an Oracle on the Solana blockchain that provides high frequency price updates sourced from top market makers and exchanges. He explains the importance of accurate, low latency data for DeFi applications and highlights the growth of the network, including partnerships with major data providers like Binance and Jane Street. The talk also covers future directions for the project, including incentive mechanisms for data providers.",
+  "topic_summary": "Overview of PIP Network as a high frequency price Oracle on Solana, its data sourcing, growth, and future developments [t=12:32 - 353:84].",
+  "router_tags": [
+    "PIP Network",
+    "Oracle",
+    "Solana",
+    "DeFi",
+    "Price Feeds"
+  ],
+  "aliases": [
+    "Pip Network",
+    "PIP Network",
+    "pipnetwork"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JaneStreet",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

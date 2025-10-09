@@ -1,0 +1,20 @@
+{
+  "video_id": "LCSFjp0zq6Q",
+  "title": "2025-03-06_LCSFjp0zq6Q_Will Crypto Boom or Crash Binances 21 Licenses, Markets & Crypto Education - Vishal Sacheendran",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Richard Tang",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

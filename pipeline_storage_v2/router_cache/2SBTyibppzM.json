@@ -1,0 +1,26 @@
+{
+  "description": "Bukrivo discusses the Unity Wallet developed at the Solana hackathon, highlighting its open-source nature and NFT support. The wallet allows users to create or restore wallets, send and receive tokens, and integrate NFTs into games. The presentation includes a demo of the wallet's functionalities and addresses internet connectivity issues during the demonstration.",
+  "topic_summary": "Overview of the Unity Wallet integration with NFT support for Solana, including its features and functionalities demonstrated by Bukrivo [t=20:48].",
+  "router_tags": [
+    "Unity",
+    "Solana",
+    "NFT",
+    "Wallet Integration",
+    "Game Development"
+  ],
+  "aliases": [
+    "Unity Wallet",
+    "solana wallet",
+    "NFT support",
+    "Bukrivo",
+    "Ollard"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@bukrivo",
+    "@ollard"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

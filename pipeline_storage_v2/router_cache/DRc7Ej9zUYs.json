@@ -1,0 +1,24 @@
+{
+  "description": "This video provides an introduction to reading candlestick charts, explaining their components and significance in trading.",
+  "topic_summary": "Learn about candlestick charts, including their structure and how to interpret price movements over time. The video covers the real body, upper and lower shadows, and the meaning of green and red candles, with practical examples from the BTC BUSD trading chart [t=114.18].",
+  "router_tags": [
+    "candlestick",
+    "trading",
+    "Binance",
+    "cryptocurrency",
+    "chart analysis"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binance youtube",
+    "BinanceYT",
+    "binanceyt"
+  ],
+  "canonical_entities": [
+    "@Binance",
+    "$BTC",
+    "$BUSD"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

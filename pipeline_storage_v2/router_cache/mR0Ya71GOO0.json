@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on lending cycles and DeFi within the Solana ecosystem, featuring insights from various protocol contributors.",
+  "topic_summary": "The panel discusses the role of lending in DeFi, the importance of utilizing assets like SOL and ETH, and the future of lending protocols in the Solana ecosystem. They explore under-collateralized lending, yield farming, and the integration of lending into AMMs [t=14:08-276:41].",
+  "router_tags": [
+    "DeFi",
+    "Lending",
+    "Solana",
+    "Crypto",
+    "Yield Farming"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "breakpoint 2021"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "@SolanaFndn",
+    "@WillBarnes",
+    "@Tristan",
+    "@Senex",
+    "@Ming"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

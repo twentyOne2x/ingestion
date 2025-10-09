@@ -1,0 +1,25 @@
+{
+  "description": "Join Binance Angels in promoting cryptocurrency adoption globally, featuring contributions from various countries.",
+  "topic_summary": "Advancing crypto adoption with Binance Angels, highlighting global participation from countries like Czech Republic, Nigeria, and Sri Lanka [t=9:68].",
+  "router_tags": [
+    "crypto",
+    "Binance",
+    "adoption",
+    "global",
+    "community"
+  ],
+  "aliases": [
+    "Binance Angels",
+    "binance angels",
+    "BINANCE ANGELS"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "Czech Republic",
+    "Nigeria",
+    "Sri Lanka",
+    "Legosystema"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

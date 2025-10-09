@@ -1,0 +1,26 @@
+{
+  "description": "Binance hosts an AMA with EasyFi Network, discussing giveaways and the project’s journey in DeFi. Participants can win BUSD by engaging in the live chat and answering questions about EasyFi Network.",
+  "topic_summary": "The AMA covers EasyFi Network's inception, its focus on layer 2 solutions to reduce gas fees, and the importance of DeFi in capital deployment. The session includes a giveaway of 5,000 BUSD, with multiple ways for viewers to participate and win [t=16:00].",
+  "router_tags": [
+    "Binance",
+    "EasyFi",
+    "DeFi",
+    "AMA",
+    "Cryptocurrency",
+    "Giveaway"
+  ],
+  "aliases": [
+    "easyfi",
+    "EasyFi",
+    "EZFI",
+    "easy find",
+    "Easy Find"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "@binancezh",
+    "$EZFI"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

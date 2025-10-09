@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly interviews Jason Peetz, CEO and co-founder of OSOM, discussing his unique background in hardware and astrophysics, his journey from Berkeley to building solar panels, and insights from his experiences in Silicon Valley.",
+  "topic_summary": "Jason Peetz shares his transition from astrophysics to hardware development, detailing his experiences with telescopes and solar panels, and the lessons learned from running a motorcycle company and consulting in Silicon Valley [t=9:36-175:01].",
+  "router_tags": [
+    "Solana",
+    "Astrophysics",
+    "Hardware",
+    "Solar Panels",
+    "Entrepreneurship"
+  ],
+  "aliases": [
+    "Jason Peetz",
+    "jason peetz",
+    "JASON PEETZ"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

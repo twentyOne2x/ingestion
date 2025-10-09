@@ -1,0 +1,28 @@
+{
+  "description": "In this workshop, Flora from the Binance X team discusses how to effectively pitch your project. She emphasizes the importance of this skill for product developers and project leaders. The session also covers details about the ongoing Binance Africa Hackathon, including registration information and prize details, such as a $4,500 reward for the open prize category.",
+  "topic_summary": "Flora from Binance X shares insights on pitching projects effectively, along with updates on the Binance Africa Hackathon and associated prizes [t=0:00-2:08].",
+  "router_tags": [
+    "Binance",
+    "Hackathon",
+    "Project Pitching",
+    "Binance X",
+    "Africa"
+  ],
+  "aliases": [
+    "Flora",
+    "flora",
+    "BINANCE",
+    "binance",
+    "Hackathon",
+    "hackathon"
+  ],
+  "canonical_entities": [
+    "$4,500",
+    "$3,000",
+    "$2,000",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

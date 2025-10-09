@@ -1,0 +1,20 @@
+{
+  "video_id": "2gSdJS7ud7Y",
+  "title": "2020-10-27_2gSdJS7ud7Y_DeFi Recap: Analysis of the recent DeFi boom with the founders of Solana, FTX, Aave, Curve, and more",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jeremy Musigi",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

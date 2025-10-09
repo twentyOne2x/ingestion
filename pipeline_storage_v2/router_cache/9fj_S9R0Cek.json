@@ -1,0 +1,22 @@
+{
+  "description": "An AMA session discussing the NEAR Protocol, its blockchain technology, and various related topics including NFTs and smart contracts.",
+  "topic_summary": "Overview of NEAR Protocol and its blockchain capabilities, including discussions on NFTs and smart contracts [t=0:00].",
+  "router_tags": [
+    "NEAR Protocol",
+    "Blockchain",
+    "NFT",
+    "Smart Contracts",
+    "Crypto"
+  ],
+  "aliases": [
+    "Near Protocol",
+    "near protocol",
+    "NEARPROTOCOL"
+  ],
+  "canonical_entities": [
+    "$NEAR",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

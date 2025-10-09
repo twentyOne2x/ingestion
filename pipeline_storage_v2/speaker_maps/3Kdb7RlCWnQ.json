@@ -1,0 +1,14 @@
+{
+  "video_id": "3Kdb7RlCWnQ",
+  "title": "2023-08-18_3Kdb7RlCWnQ_Binance VIP Voices Ep. 1 - Raoul Pal, Real Vision",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

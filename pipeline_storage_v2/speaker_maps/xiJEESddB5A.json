@@ -1,0 +1,14 @@
+{
+  "video_id": "xiJEESddB5A",
+  "title": "2021-05-12_xiJEESddB5A_Say Hello to Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

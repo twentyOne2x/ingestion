@@ -1,0 +1,22 @@
+{
+  "description": "This webinar discusses common mistakes in trading and using Bitcoin privately, emphasizing the importance of cutting losses, avoiding overtrading, and managing emotions in trading decisions.",
+  "topic_summary": "The session covers key trading mistakes to avoid, including not cutting losses [t=167.07], overtrading [t=235.94], and revenge trading [t=312.17]. It highlights the significance of technical analysis and emotional control in trading.",
+  "router_tags": [
+    "Bitcoin",
+    "Trading",
+    "Technical Analysis",
+    "Binance Academy",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

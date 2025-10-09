@@ -1,0 +1,21 @@
+{
+  "description": "A discussion on choosing between free pizza for life or one bitcoin.",
+  "topic_summary": "The video explores the dilemma of selecting between eternal free pizza [t=0:24] or receiving one bitcoin [t=2:32]. Participants express their preferences and opinions on the choices presented.",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza",
+    "Choices",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Asks",
+    "Binance asks",
+    "binance asks"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

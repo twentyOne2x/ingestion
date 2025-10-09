@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses writing smart contracts on Solana using Anchor, covering tools, workflows, and specific coding examples. It highlights the integration of Rust and the Anchor framework for developing decentralized applications.",
+  "topic_summary": "Overview of smart contract development on Solana with Anchor, including tools and coding practices [t=0:12].",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Smart Contracts",
+    "DeFi",
+    "Rust"
+  ],
+  "aliases": [
+    "Anchor",
+    "ankor",
+    "SOL",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,31 @@
+{
+  "description": "A beginner's guide to Binance Sharia Earn, a multi-token crypto staking service that adheres to Islamic finance principles.",
+  "topic_summary": "Introduction to Binance Sharia Earn, a unique crypto staking service that allows users to earn rewards with BNB, ETH, and SOL while following Islamic finance principles. [t=0:16]",
+  "router_tags": [
+    "Binance",
+    "Sharia Earn",
+    "crypto staking",
+    "Islamic finance",
+    "BNB",
+    "ETH",
+    "SOL"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BNB",
+    "bnb",
+    "ETH",
+    "eth",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

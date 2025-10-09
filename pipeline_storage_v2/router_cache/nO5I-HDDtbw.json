@@ -1,0 +1,22 @@
+{
+  "description": "Binance celebrates Bitcoin Pizza Day, marking the anniversary of Laszlo Hanyets' purchase of two pizzas for 10,000 BTC in 2010. The event highlights the growth of cryptocurrency globally, with celebrations from Paris to Dubai and beyond. It emphasizes community connection and the spirit of crypto, alongside the joy of free pizza.",
+  "topic_summary": "Celebration of Bitcoin Pizza Day, commemorating Laszlo Hanyets' historic pizza purchase with BTC in 2010, and promoting community and cryptocurrency awareness [t=0:56].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin Pizza Day",
+    "Laszlo Hanyets",
+    "BTC"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "bitcoin pizza day",
+    "Laszlo Hanyets"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on cryptocurrency mining, including misconceptions and challenges faced by miners. The conversation highlights the complexity of mining and its social implications, such as losing friends due to time and resource commitments.",
+  "topic_summary": "Exploration of cryptocurrency mining, comparing it to traditional mining and discussing its complexities and social costs [t=0:32 - t=39:58].",
+  "router_tags": [
+    "crypto",
+    "mining",
+    "bitcoin",
+    "binance"
+  ],
+  "aliases": [
+    "Crypto",
+    "Mining",
+    "Bitcoin",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

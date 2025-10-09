@@ -1,0 +1,16 @@
+{
+  "description": "Discussion on foreign markets and their implications.",
+  "topic_summary": "Overview of foreign market dynamics and their impact on trading strategies [t=00:00].",
+  "router_tags": [
+    "foreign markets",
+    "trading",
+    "finance"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binancezh"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

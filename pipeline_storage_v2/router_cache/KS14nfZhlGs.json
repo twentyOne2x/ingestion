@@ -1,0 +1,25 @@
+{
+  "description": "The panel discusses the impact of blockchain technology on humanitarian efforts, focusing on its applications in Ukraine and the social sector. Key speakers include Scott Ander from Mercy Corps and Max from the Ukrainian Ministry of Digital Transformation, who highlight the potential of crypto in crisis response and community resilience.",
+  "topic_summary": "Exploration of blockchain's role in humanitarian aid and community upliftment, featuring insights on its use in Ukraine and the social sector [t=0:16-4:88].",
+  "router_tags": [
+    "Blockchain",
+    "Humanitarian Aid",
+    "Web3",
+    "Crypto",
+    "Ukraine",
+    "Community Resilience"
+  ],
+  "aliases": [
+    "The Power of Blockchain",
+    "Binance Blockchain Week",
+    "Binance Charity"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@MercyCorps",
+    "@UkrainianMinistryOfDigitalTransformation"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

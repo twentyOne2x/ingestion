@@ -1,0 +1,28 @@
+{
+  "description": "Fireside chat featuring CZ and Vitalik Buterin discussing Binance, cryptocurrency trends, and the future of the crypto ecosystem.",
+  "topic_summary": "CZ explains Binance's evolution from a cryptocurrency exchange to a broader crypto ecosystem, highlighting user growth from 20 million to 120 million in a year and a half [t=162.19].",
+  "router_tags": [
+    "CZ",
+    "Vitalik Buterin",
+    "Binance",
+    "cryptocurrency",
+    "crypto exchange",
+    "Trust Wallet",
+    "CoinMarketCap"
+  ],
+  "aliases": [
+    "CZ",
+    "Vitalik",
+    "Binance",
+    "Vitaly",
+    "Robson"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

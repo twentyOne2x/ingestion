@@ -1,0 +1,22 @@
+{
+  "description": "This video highlights the impact of the Binance Charity Foundation in 2022, showcasing various initiatives and contributions made throughout the year.",
+  "topic_summary": "Overview of Binance Charity Foundation's achievements in 2022, including key projects and their outcomes [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Charity",
+    "2022",
+    "Impact",
+    "Foundation"
+  ],
+  "aliases": [
+    "Binance Charity",
+    "binance charity",
+    "BinanceFoundation",
+    "binancefoundation"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,16 @@
+{
+  "description": "Discussion on the current situation in the cryptocurrency market.",
+  "topic_summary": "Overview of the cryptocurrency market situation as of [t=01:21].",
+  "router_tags": [
+    "cryptocurrency",
+    "market analysis",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceZH",
+    "@binancezh"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

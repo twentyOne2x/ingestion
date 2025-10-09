@@ -1,0 +1,26 @@
+{
+  "video_id": "kqS-4EFcC2E",
+  "title": "2021-11-15_kqS-4EFcC2E_Breakpoint 2021: Solana NFTs: Art, Gaming, Social Media & More",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Emily Poplowski",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Fair Launch",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

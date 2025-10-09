@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the differences between cryptocurrency and stocks, highlighting trading times, market accessibility, and the impact of broader market movements on both asset classes.",
+  "topic_summary": "The video explores the distinctions between crypto and stocks, emphasizing trading hours and market dynamics. It notes that while stocks trade at specific times, crypto markets operate 24/7. The introduction of Bitcoin and Ethereum ETFs has influenced the crypto landscape, with companies like Tesla and Paypal playing significant roles in crypto adoption. The performance of stocks can also affect crypto portfolios, especially during market downturns [t=02:02].",
+  "router_tags": [
+    "Crypto",
+    "Stocks",
+    "Investing",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Crypto Vs. Stocks",
+    "Crypto vs. Stocks",
+    "crypto vs stocks",
+    "cryptocurrency vs stocks"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$TSLA",
+    "$PYPL",
+    "@Manschmann"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

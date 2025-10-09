@@ -1,0 +1,25 @@
+{
+  "description": "CZ, the CEO of Binance, celebrates the platform's fourth anniversary, highlighting key achievements and community support. He discusses user growth, transaction volumes, and the importance of security and ethics in the crypto industry.",
+  "topic_summary": "Binance's fourth anniversary event features CEO CZ discussing milestones, user engagement, and the company's commitment to security and ethical standards [t=0:24-0:30].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Anniversary",
+    "Crypto",
+    "Blockchain",
+    "DeFi",
+    "NFT"
+  ],
+  "aliases": [
+    "binance",
+    "CZ",
+    "ceo cz",
+    "Binance CEO"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

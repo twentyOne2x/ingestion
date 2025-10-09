@@ -1,0 +1,32 @@
+{
+  "video_id": "gJWxygtiDAE",
+  "title": "2022-10-22_gJWxygtiDAE_$ALPINE AMA with Binance Fan Token Team and Guillaume - Partnerships Manager, BWT Alpine F1",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "D": {
+      "name": "Fernando Alonso",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Esteban Ocon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Angie Angio",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

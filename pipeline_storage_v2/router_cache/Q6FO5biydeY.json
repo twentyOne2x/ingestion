@@ -1,0 +1,25 @@
+{
+  "description": "Anatoly Yakovenko and Josh Williams discuss gaming and crypto during a Twitch stream for the Ignition Hackathon. They share insights on their backgrounds, the intersection of gaming and blockchain, and the evolution of their careers in tech.",
+  "topic_summary": "Anatoly and Josh explore their journeys in gaming and crypto, touching on early programming experiences and the development of Forte. They emphasize the importance of innovation in gaming technology and the role of blockchain in shaping the future of the industry [t=19:76].",
+  "router_tags": [
+    "Gaming",
+    "Crypto",
+    "Blockchain",
+    "Ignition Hackathon",
+    "Forte",
+    "Solana"
+  ],
+  "aliases": [
+    "Anatoly",
+    "Josh Williams",
+    "Forte",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

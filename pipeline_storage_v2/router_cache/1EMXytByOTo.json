@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on cross-chain liquidity and the future of financial computation, highlighting the role of stablecoins and blockchain technology.",
+  "topic_summary": "The video explores the evolution of financial systems through blockchain, focusing on the significance of stablecoins like USDT and USDC in enhancing liquidity and facilitating transactions within the crypto ecosystem. It discusses the challenges and trade-offs in achieving scalability and security in financial computations, referencing the market dynamics of stablecoins and their impact on traditional finance [t=21:06].",
+  "router_tags": [
+    "cross-chain",
+    "liquidity",
+    "stablecoins",
+    "blockchain",
+    "financial computation"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDC",
+    "$ETH",
+    "$TRILLION",
+    "$BILLION",
+    "$100",
+    "$8",
+    "$USDT",
+    "@Ronan"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

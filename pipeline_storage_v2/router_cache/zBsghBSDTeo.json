@@ -1,0 +1,25 @@
+{
+  "description": "A debate on censorship resistance in blockchain technology, featuring insights from Anatoly, Anthony D' Princio, and Larry Cermak. They discuss the importance of decentralization, metrics for measuring censorship resistance, and failures in scaling solutions over time.",
+  "topic_summary": "The panel discusses censorship resistance, its significance in blockchain, and metrics for evaluating it. They highlight challenges in scaling and the historical failures in achieving effective solutions, particularly in Layer 1 protocols [t=238.93].",
+  "router_tags": [
+    "Censorship Resistance",
+    "Blockchain",
+    "Decentralization",
+    "Scaling",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021 Debate",
+    "Breakpoint Debate"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@AnthonyDPrincio",
+    "@LarryCermak"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

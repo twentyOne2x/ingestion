@@ -1,0 +1,27 @@
+{
+  "description": "Join Brad Harrison from Venus Labs as he discusses the Venus Protocol, the leading lending protocol in DeFi, and how it facilitates asset lending and borrowing. The AMA covers various topics including Binance Simple Earn and user engagement through giveaways.",
+  "topic_summary": "Brad Harrison introduces the Venus Protocol and its role in DeFi lending, highlighting its popularity and functionality as a marketplace for asset loans [t=137.6].",
+  "router_tags": [
+    "Binance",
+    "Venus",
+    "DeFi",
+    "Lending Protocol",
+    "AMA"
+  ],
+  "aliases": [
+    "Binance Simple Earn",
+    "Venus AMA",
+    "Brad Harrison",
+    "Venus Protocol"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$XVS",
+    "$BTC",
+    "$ETH",
+    "$DAI"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

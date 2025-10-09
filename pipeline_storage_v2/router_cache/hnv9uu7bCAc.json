@@ -1,0 +1,27 @@
+{
+  "description": "Julian introduces Bogdan, the CTO of Tenderly, who discusses monitoring systems for smart contracts, emphasizing the importance of security in DeFi projects. He highlights the need for real-time monitoring and alerting to prevent malicious activities in smart contracts.",
+  "topic_summary": "Bogdan Bohdan from Tenderly explains how to monitor smart contracts effectively, focusing on security metrics and the importance of proactive monitoring in the DeFi space. He shares insights from his experience in building developer tools and the evolution of monitoring practices in blockchain.",
+  "router_tags": [
+    "DeFi",
+    "Smart Contracts",
+    "Monitoring",
+    "Security",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Julian",
+    "Bokdan",
+    "Bohdan",
+    "Tenderly",
+    "Tavern"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "$ETH",
+    "$BTC",
+    "$10 Billion"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

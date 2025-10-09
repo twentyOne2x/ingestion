@@ -1,0 +1,22 @@
+{
+  "description": "Alexandre Bourget, CTO at Streaming Fast, discusses the firehose technology for indexing blockchain data, specifically for Solana. He explains its efficient data extraction and replication methods, emphasizing its ability to handle high-speed transactions and provide rich data without compromising on accuracy. The firehose is designed to work across multiple blockchains and offers a unique solution for developers.",
+  "topic_summary": "In this presentation, Alexandre Bourget introduces the firehose technology, which facilitates efficient data extraction and indexing for blockchain applications, particularly focusing on its implementation for Solana. He highlights the importance of rich data representation and the system's capability to handle transaction forks gracefully [t=295.89].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Data Indexing",
+    "The Graph",
+    "Firehose"
+  ],
+  "aliases": [
+    "Alexandre Bourget",
+    "alexandre bourget",
+    "ALEXANDRE BOURGET"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

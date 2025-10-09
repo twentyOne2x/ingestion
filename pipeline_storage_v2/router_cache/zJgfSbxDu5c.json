@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on NFTs in Latin America, covering Bitcoin, Ethereum, and their implications in the digital art space.",
+  "topic_summary": "Exploration of NFTs and their impact on finance and art in Latin America, including references to Bitcoin and Ethereum smart contracts [t=0:24] and the role of decentralized exchanges [t=7:34].",
+  "router_tags": [
+    "NFTs",
+    "Bitcoin",
+    "Ethereum",
+    "Latin America",
+    "Digital Art"
+  ],
+  "aliases": [
+    "Nfts En Latinoamerica",
+    "Nfts en Latinoamerica",
+    "NFTs en Latinoamérica",
+    "NFTs en Latinoamérica"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BrianBenson",
+    "Rembrandts"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

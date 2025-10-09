@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on foreign tropical topics.",
+  "topic_summary": "Overview of foreign tropical issues [t=00:32].",
+  "router_tags": [
+    "tropical",
+    "foreign",
+    "discussion"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

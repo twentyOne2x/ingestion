@@ -1,0 +1,19 @@
+{
+  "description": "This video emphasizes the importance of user protection and outlines measures taken by Binance to ensure safety.",
+  "topic_summary": "Discussion on user safety measures at Binance, highlighting commitment to security [t=00:27].",
+  "router_tags": [
+    "user safety",
+    "Binance",
+    "security measures"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

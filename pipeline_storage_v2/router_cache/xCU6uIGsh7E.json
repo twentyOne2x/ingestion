@@ -1,0 +1,22 @@
+{
+  "description": "This beginner tutorial covers the process of getting verified on Binance, including mobile and web verification steps. It emphasizes the importance of identity verification for account security and outlines the necessary documents and procedures for successful verification.",
+  "topic_summary": "Learn how to get verified on Binance, including mobile and web steps, required documents, and verification limits. [t=0:16] [t=288:49]",
+  "router_tags": [
+    "Binance",
+    "verification",
+    "crypto",
+    "tutorial",
+    "security"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

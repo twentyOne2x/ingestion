@@ -1,0 +1,22 @@
+{
+  "description": "Exploration of how blockchain technology integrates with the future of Web3, emphasizing its role in creating a decentralized ecosystem.",
+  "topic_summary": "The video discusses the necessity of blockchain in achieving the goals of Web3, highlighting its potential in areas like digital identity, crypto wallets, DeFi, NFTs, and tokenization [t=18:00].",
+  "router_tags": [
+    "Blockchain",
+    "Web3",
+    "Decentralization",
+    "Crypto",
+    "NFTs"
+  ],
+  "aliases": [
+    "How Does Blockchain Fit Into Web3",
+    "Blockchain and Web3",
+    "Web3 and Blockchain"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

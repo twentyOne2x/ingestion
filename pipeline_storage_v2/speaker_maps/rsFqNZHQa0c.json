@@ -1,0 +1,20 @@
+{
+  "video_id": "rsFqNZHQa0c",
+  "title": "2025-08-08_rsFqNZHQa0c_MMCryptos Strategy REVEALED: $38 MILLION Position, Trading BTC, XRP, ENA, TRX, SOL, Altcoins & More",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

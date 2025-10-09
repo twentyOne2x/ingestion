@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Cross Program Invocation (CPI) in Solana, detailing how one program can invoke another to perform operations it cannot do alone. It covers the process of creating instructions and invoking another program, including examples in code and the use of Anchor for context management.",
+  "topic_summary": "Cross Program Invocation (CPI) allows a Solana program to invoke another program to perform operations. The video demonstrates how to create instructions and use the invoke keyword to facilitate this process, highlighting the differences when using Anchor for context management. Key points include the simplicity of CPI and its power in overcoming program constraints [t=0:32 - t=242:70].",
+  "router_tags": [
+    "Solana",
+    "Cross Program Invocation",
+    "CPI",
+    "Anchor",
+    "Programming"
+  ],
+  "aliases": [
+    "Cross Program Invocation",
+    "CPI",
+    "cpi",
+    "cross program invocation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

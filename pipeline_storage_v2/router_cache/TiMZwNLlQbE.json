@@ -1,0 +1,24 @@
+{
+  "description": "Explore innovative projects in the BNB Chain Web3 space with Gwendolyn Regina, BNB Chain's investment director, and five showcase projects. The session highlights BNB Chain's achievements, including its robust technology supporting 1 million daily active users and over 1400 decentralized apps. Juho Yun, CEO of Link Games, introduces their NFT RPG, Stellar Fantasy, emphasizing its anime-style characters and gameplay mechanics.",
+  "topic_summary": "A presentation on BNB Chain's innovative projects and the introduction of Stellar Fantasy, an NFT RPG, at Binance Blockchain Week Paris.",
+  "router_tags": [
+    "BNB Chain",
+    "Web3",
+    "NFT",
+    "Blockchain",
+    "Gaming"
+  ],
+  "aliases": [
+    "Web3 Tour of BNB Chain",
+    "Binance Blockchain Week Paris",
+    "BNB Chain Showcase"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@GwendolynRegina",
+    "@JuhoYun"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

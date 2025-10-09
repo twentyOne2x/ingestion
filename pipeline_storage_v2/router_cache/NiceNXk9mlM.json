@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the buy-and-hold investment strategy, particularly focusing on Bitcoin. It emphasizes the importance of patience and resilience during market fluctuations.",
+  "topic_summary": "Explore the buy-and-hold strategy for Bitcoin investment, highlighting the need for patience and the ability to withstand market dips [t=0:24]. Learn about essential technical analysis indicators for trading [t=22:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Investing",
+    "Buy and Hold",
+    "Trading Strategies",
+    "Technical Analysis"
+  ],
+  "aliases": [
+    "Buy-and-Hold Strategy",
+    "Investing in Bitcoin",
+    "Bitcoin Investment"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

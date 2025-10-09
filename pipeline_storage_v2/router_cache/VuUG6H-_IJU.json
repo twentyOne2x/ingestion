@@ -1,0 +1,27 @@
+{
+  "description": "CZ discusses the future of cryptocurrency payments in retail banking and addresses community questions regarding insurance in the crypto industry and the Metaverse.",
+  "topic_summary": "CZ addresses questions about cryptocurrency adoption in retail banking [t=94:11], insurance challenges in the crypto space [t=130:36], and the potential of the Metaverse across various industries [t=244:87].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "cryptocurrency",
+    "insurance",
+    "Metaverse",
+    "retail banking"
+  ],
+  "aliases": [
+    "CZ",
+    "cz",
+    "Binance Co-Founder",
+    "Binance CEO"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "@RyderOllie",
+    "@Gomboru",
+    "@Tamaro"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

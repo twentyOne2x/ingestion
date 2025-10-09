@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the differences between technical and fundamental analysis, highlighting when each method is most effective. It emphasizes that fundamental analysis is better for long-term investments, especially in less volatile assets like stocks, using Apple as an example.",
+  "topic_summary": "The video explores the suitability of technical versus fundamental analysis for investing, noting that fundamental analysis is preferable for long-term investments in stable assets like stocks [t=16:32].",
+  "router_tags": [
+    "Technical Analysis",
+    "Fundamental Analysis",
+    "Investing",
+    "Stocks"
+  ],
+  "aliases": [
+    "Technical or Fundamental Analysis",
+    "Technical vs Fundamental Analysis",
+    "Investing Strategies"
+  ],
+  "canonical_entities": [
+    "$AAPL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

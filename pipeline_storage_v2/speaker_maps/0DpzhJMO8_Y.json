@@ -1,0 +1,14 @@
+{
+  "video_id": "0DpzhJMO8_Y",
+  "title": "2021-05-13_0DpzhJMO8_Y_Binance P2P.",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

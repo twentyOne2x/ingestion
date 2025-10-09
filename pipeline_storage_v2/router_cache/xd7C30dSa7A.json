@@ -1,0 +1,30 @@
+{
+  "description": "Panel discussion on investing beyond DeFi, featuring insights from Chris McCann and ATI on the Solana ecosystem and its developments.",
+  "topic_summary": "Discussion on the current state of Solana DeFi, highlighting key projects and investment strategies. Notable mentions include Solen, Serum, Marinade Finance, and Sabre Quarry. The panelists emphasize the importance of foundational DeFi primitives within the Solana ecosystem [t=231.13].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Investing",
+    "Crypto",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "Riptide Workshop",
+    "Riptide",
+    "SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisMccann",
+    "@Rajan",
+    "@Atoli",
+    "@SamBakeman",
+    "@Maddie",
+    "@Ben",
+    "@ATI"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

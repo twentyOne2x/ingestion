@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses how to build a well-balanced crypto portfolio using a portfolio tracker to manage investments and track progress.",
+  "topic_summary": "Learn to balance your crypto portfolio by splitting investments into high, medium, and low risk categories, ensuring a mix that aligns with your risk profile. [t=0:40] [t=29:14]",
+  "router_tags": [
+    "crypto",
+    "portfolio management",
+    "investing",
+    "risk assessment"
+  ],
+  "aliases": [
+    "How to Build a Well-Balanced Portfolio",
+    "Balanced Crypto Portfolio",
+    "Crypto Portfolio Management"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

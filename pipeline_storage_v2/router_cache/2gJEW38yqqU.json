@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the significance and applications of NFTs in the cryptocurrency space, including platforms like Binance Smart Chain and OpenSea.",
+  "topic_summary": "Exploration of NFTs, their marketplace dynamics, and integration with Binance Smart Chain [t=33:44-90:44].",
+  "router_tags": [
+    "NFT",
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Co je NFT",
+    "Co Je Nft",
+    "Co Je nft",
+    "co je nft"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

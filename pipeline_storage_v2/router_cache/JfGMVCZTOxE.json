@@ -1,0 +1,30 @@
+{
+  "description": "Anatoli discusses blockchain technology and its implications, including Bitcoin transactions and modern protocols. He emphasizes the importance of consensus mechanisms and the role of validators in the network. The conversation touches on various topics related to decentralized systems and their functionality.",
+  "topic_summary": "Anatoli introduces blockchain concepts and the significance of consensus in decentralized networks, highlighting the role of validators and transaction verification [t=01:28 - 24:18].",
+  "router_tags": [
+    "Blockchain",
+    "Bitcoin",
+    "Consensus Mechanisms",
+    "Decentralization",
+    "Solana"
+  ],
+  "aliases": [
+    "Anatoli",
+    "anatoli",
+    "ALZO",
+    "alzo",
+    "Alice",
+    "alice",
+    "Bob",
+    "bob"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$BTC",
+    "$BNB",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

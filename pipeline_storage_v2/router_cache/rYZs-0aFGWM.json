@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on the role of centralized organizations in the crypto space and the importance of integrating with traditional financial systems.",
+  "topic_summary": "Exploration of decentralized finance (DeFi) versus centralized systems, emphasizing the need for integration with traditional finance [t=0:16].",
+  "router_tags": [
+    "DeFi",
+    "Centralized Finance",
+    "Crypto Integration"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

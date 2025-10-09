@@ -1,0 +1,29 @@
+{
+  "description": "The Breakpoint 2021 conference discusses the future of blockchain gaming and the shift from Web2 to Web3, emphasizing decentralized profit sharing and the integration of NFTs and tokenized currencies in gaming. Key announcements include a $100 million fund for social projects on Solana and the introduction of gaming technologies that enhance peer-to-peer trading and game economies.",
+  "topic_summary": "Breakpoint 2021 focuses on innovations in blockchain gaming, highlighting investments in social tokens and the transition from centralized to decentralized gaming economies. The discussion includes insights from industry leaders on the implications of Web3 technologies for gaming.",
+  "router_tags": [
+    "Blockchain",
+    "Gaming",
+    "Web3",
+    "Solana",
+    "NFTs",
+    "DeFi"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "breakpoint 2021",
+    "Breakpoint2021",
+    "breakpoint2021"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Alexis",
+    "@AmyWu",
+    "@MichaelLiu",
+    "@ColleenTesting",
+    "@AlexPaley"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

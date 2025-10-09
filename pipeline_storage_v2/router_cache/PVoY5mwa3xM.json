@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on Web3 gaming, NFTs, and future trends in gaming, featuring insights from industry veterans and game builders.",
+  "topic_summary": "Exploration of blockchain's impact on gaming and the future of Web3, with insights from experienced developers and investors in the gaming industry [t=285:12].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "NFTs",
+    "Blockchain",
+    "Hackathon"
+  ],
+  "aliases": [
+    "Riptide Hackathon Workshop",
+    "Web3 Gaming Workshop",
+    "NFT Gaming Future"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@Kenny",
+    "@Rahul",
+    "@Colleen",
+    "@AmyWu",
+    "@David",
+    "@Zed"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This video explains how to use Binance Launchpool and Launchpad for early access to new tokens. It covers staking BNB or BUSD to earn ATA tokens, the flexibility of funds, and the minimum requirements for participation.",
+  "topic_summary": "Learn to utilize Binance Launchpool for staking and earning new tokens like ATA, with insights on fund flexibility and reward distribution [t=0:48].",
+  "router_tags": [
+    "Binance",
+    "Launchpool",
+    "Cryptocurrency",
+    "Staking",
+    "ATA"
+  ],
+  "aliases": [
+    "Binance Launchpool",
+    "Binance Launchpad",
+    "Launch Pool",
+    "Launchpad"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BUSD",
+    "$ATA"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

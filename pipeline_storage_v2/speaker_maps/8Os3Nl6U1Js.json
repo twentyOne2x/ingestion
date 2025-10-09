@@ -1,0 +1,14 @@
+{
+  "video_id": "8Os3Nl6U1Js",
+  "title": "2021-02-25_8Os3Nl6U1Js_Technical Workshop with Tor.us",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

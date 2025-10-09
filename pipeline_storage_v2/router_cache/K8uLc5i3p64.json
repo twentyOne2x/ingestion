@@ -1,0 +1,33 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency, including Bitcoin, stable coins, and trading strategies.",
+  "topic_summary": "The session covers insights on Bitcoin and trading, with mentions of various cryptocurrencies and market dynamics [t=0:24 - t=1:05:55].",
+  "router_tags": [
+    "Q&A",
+    "cryptocurrency",
+    "Bitcoin",
+    "trading",
+    "stable coins"
+  ],
+  "aliases": [
+    "Binance 60",
+    "Binance60",
+    "binance 60",
+    "binance60"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@SamS.A",
+    "@JamesSabiko",
+    "@Kwano",
+    "@Tavis",
+    "@Lisandra",
+    "@Jesak",
+    "@Temina",
+    "@Vistascom",
+    "@SakivoSingh",
+    "@Salah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

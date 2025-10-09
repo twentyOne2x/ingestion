@@ -1,0 +1,18 @@
+{
+  "description": "Discussion on Shunshi and its implications in the market.",
+  "topic_summary": "Overview of Shunshi's market influence and related strategies [t=01:44].",
+  "router_tags": [
+    "Shunshi",
+    "market",
+    "strategy"
+  ],
+  "aliases": [
+    "Shunshi",
+    "shunshi"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Jonathan Shamul, founder of Aleph.im, discusses deploying a Solana indexer on Aleph.im, a decentralized cloud computing platform. He explains the functionality of the platform, including storage and computing resources, and the importance of indexers for DApps to manage data efficiently.",
+  "topic_summary": "In this session, Jonathan Shamul explains how to deploy a Solana indexer on Aleph.im, detailing the platform's decentralized nature and its advantages over traditional cloud services. He covers the role of indexers in managing blockchain data and enhancing DApp performance [t=202.48].",
+  "router_tags": [
+    "Solana",
+    "Aleph.im",
+    "Decentralized Computing",
+    "Indexer",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Jonathan Shamul",
+    "Moshe Malawar",
+    "jonathan shamul",
+    "moshe malawar"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Damilalao Dufua moderates a panel discussing the metaverse with Maye Musk, CZ, and Vitaly Tyan. They explore the concept of the metaverse, its implications, and its relevance in today's digital landscape. The panel also highlights the launch of May Musk's Mystery Box on Binance NFT.",
+  "topic_summary": "The panel delves into the metaverse, discussing its definition, potential, and the excitement surrounding it. May Musk shares her perspective on staying ahead with technology, while Helen Hai and Vitaly Tyan provide insights into the metaverse's unique opportunities for expression and interaction [t=87:36].",
+  "router_tags": [
+    "Metaverse",
+    "Binance",
+    "NFT",
+    "May Musk",
+    "CZ",
+    "Vitaly Tyan",
+    "Digital Innovation"
+  ],
+  "aliases": [
+    "Metaverse Panel",
+    "Metaverse Discussion",
+    "May Musk Panel",
+    "CZ Binance",
+    "Vitaly Tyan Discussion"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@mayemusk",
+    "@cz_binance",
+    "@vitalyt"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

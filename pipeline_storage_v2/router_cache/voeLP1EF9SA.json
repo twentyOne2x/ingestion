@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how mining works in proof of work systems, detailing the process and its implications for blockchain security.",
+  "topic_summary": "Mining in proof of work involves solving blocks to earn rewards, with miners facing costs for invalid blocks [t=7:28]. It is essential for network security but has limitations, including high equipment and energy demands as the network grows [t=36:73].",
+  "router_tags": [
+    "Mining",
+    "Proof of Work",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Mining In Proof Of Work",
+    "How Mining Works",
+    "Proof Of Work Systems"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

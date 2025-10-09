@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Joe McCann interviews Chris Osborne, founder and CEO of Dialect, discussing the innovative smart messaging protocol for DApp notifications and wallet-to-wallet chat. Chris shares his background in physics and technology, his experience at Rigetti Computing, and the evolution of Dialect within the Solana ecosystem. The conversation highlights the need for on-chain notifications in Web3 applications, particularly in DeFi and DAOs, to enhance user engagement and retention.",
+  "topic_summary": "Chris Osborne discusses Dialect's smart messaging protocol for DApp notifications and wallet-to-wallet chat, emphasizing its importance in the Solana ecosystem and the broader Web3 landscape. The episode explores use cases in DeFi, DAOs, and NFTs, addressing the need for effective communication between users and applications [t=0:24-358:29].",
+  "router_tags": [
+    "Solana",
+    "Dialect",
+    "Web3",
+    "DeFi",
+    "Notifications",
+    "Messaging Protocol"
+  ],
+  "aliases": [
+    "Dialect",
+    "dialect",
+    "Chris Osborne",
+    "chris osborne"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@JoeMccann",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

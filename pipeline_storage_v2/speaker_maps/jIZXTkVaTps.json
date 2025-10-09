@@ -1,0 +1,20 @@
+{
+  "video_id": "jIZXTkVaTps",
+  "title": "2022-08-08_jIZXTkVaTps_Solana Changelog - August 8th, 2022 - Offline Signing, QUIC & APR.dev",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Jacob Creech",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

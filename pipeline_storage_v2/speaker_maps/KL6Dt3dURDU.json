@@ -1,0 +1,20 @@
+{
+  "video_id": "KL6Dt3dURDU",
+  "title": "2022-11-27_KL6Dt3dURDU_NBA Star Tony Parker Talks Art and Charity Through Web3",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Julien Durrick",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

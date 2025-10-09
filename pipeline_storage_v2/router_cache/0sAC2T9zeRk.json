@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the origins of Cristiano Ronaldo's iconic 'Siiii' celebration, including personal anecdotes and insights.",
+  "topic_summary": "Exploration of Cristiano Ronaldo's famous celebration, including a reference to a goal against Schalke [t=14:08].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "celebration",
+    "football",
+    "soccer"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristianoronaldo",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,28 @@
+{
+  "description": "The grand finale of the BRC Dorahacks Southeast Asian Hackathon features over 40 projects from various countries, including Singapore, Vietnam, and Indonesia. Co-hosted by Eric and Jeff, the event showcases 27 projects with tight schedules for presentations. The hackathon aims to highlight innovative ideas and encourage developers to utilize Binance Merchant's infrastructure.",
+  "topic_summary": "The final day of the BRC Dorahacks Southeast Asian Hackathon, showcasing 27 projects from multiple countries, co-hosted by Eric and Jeff. The event emphasizes innovation and developer engagement with Binance Merchant.",
+  "router_tags": [
+    "Hackathon",
+    "Binance",
+    "Dorahacks",
+    "Southeast Asia",
+    "Blockchain",
+    "Innovation"
+  ],
+  "aliases": [
+    "Dorahacks",
+    "Dora Hacks",
+    "BRC Dorahacks",
+    "Binance Smart Chain",
+    "Binance Merchant"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$BTC",
+    "@BinanceYoutube",
+    "@Dorahacks"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

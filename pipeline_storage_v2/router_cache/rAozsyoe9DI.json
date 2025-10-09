@@ -1,0 +1,21 @@
+{
+  "description": "Cristiano Ronaldo collaborates with Binance to launch an NFT collection, highlighting the journey from humble beginnings to global recognition.",
+  "topic_summary": "The video discusses the NFT collection by Cristiano Ronaldo and Binance, emphasizing the growth and collaboration in the digital space [t=0:04 - t=0:58].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Binance",
+    "NFT",
+    "collection"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "binance",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

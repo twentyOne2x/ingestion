@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on BNB and its features.",
+  "topic_summary": "Overview of BNB and its functionalities [t=00:03 to t=01:31].",
+  "router_tags": [
+    "BNB",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "aliases": [
+    "Bnb",
+    "bnb",
+    "BNB"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "mKQowLey1x4",
+  "title": "2022-01-13_mKQowLey1x4_NFT --ATTM   GameFi !",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Kung Shi Bi Zhao Yi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

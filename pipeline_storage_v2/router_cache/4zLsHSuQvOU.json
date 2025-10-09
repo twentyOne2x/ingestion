@@ -1,0 +1,26 @@
+{
+  "description": "Changpeng Zhao (CZ) shares his journey from China to Canada, his early career in finance, and the founding of Binance. He discusses his initial exposure to Bitcoin through Bobby Lee and Ron Cao, and his decision to enter the cryptocurrency space after a pivotal conference in 2013.",
+  "topic_summary": "CZ recounts his background, the evolution of his career, and the growth of the cryptocurrency community from a small group to a larger, more complex ecosystem. He reflects on the changes in community dynamics and the presence of both positive and negative influences in the industry.",
+  "router_tags": [
+    "Changpeng Zhao",
+    "Binance",
+    "cryptocurrency",
+    "Bitcoin",
+    "blockchain",
+    "interview"
+  ],
+  "aliases": [
+    "CZ",
+    "Changpeng zhao",
+    "changpeng Zhao"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@cz_binance",
+    "@bobbylee",
+    "@roncao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

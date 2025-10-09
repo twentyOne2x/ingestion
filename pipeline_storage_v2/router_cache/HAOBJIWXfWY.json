@@ -1,0 +1,27 @@
+{
+  "description": "Charles Hoskinson discusses the importance of blockchain technology and its role in fostering trust among individuals who may not inherently trust each other. He emphasizes the need for equality and fairness in the cryptocurrency space, reflecting on the challenges and philosophical questions that arise as the industry evolves.",
+  "topic_summary": "At [t=3:92], Charles Hoskinson opens the Binance Blockchain Week 2022, sharing insights on the value of blockchain technology in promoting trust and equality. He addresses the complexities of decentralization and the need for clear definitions in the cryptocurrency space, highlighting the impact of regulations and the future of digital currencies.",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Decentralization",
+    "Cardano",
+    "Charles Hoskinson",
+    "Binance Blockchain Week"
+  ],
+  "aliases": [
+    "Charles Hoskinson",
+    "charles hoskinson",
+    "CHARLES HOSKINSON"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@Bukele",
+    "@MoxieMarlinspike"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

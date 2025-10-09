@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on cryptocurrency trends, focusing on BTC and USDT, with mentions of various figures and entities in the crypto space.",
+  "topic_summary": "Overview of the current state of BTC and USDT, including insights from various speakers [t=00:00-01:10].",
+  "router_tags": [
+    "cryptocurrency",
+    "BTC",
+    "USDT",
+    "BNB",
+    "crypto trends"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC",
+    "$BNB",
+    "@jesus",
+    "@langley",
+    "@jasperkazukan",
+    "@tajoitushan",
+    "@yampi",
+    "@tujanjagger",
+    "@dorian",
+    "@shanghaizhangzhu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

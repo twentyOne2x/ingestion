@@ -1,0 +1,26 @@
+{
+  "description": "Lily Liu discusses the Solana ecosystem, focusing on its potential as a financial infrastructure and the importance of building an on-chain economy accessible to billions. She shares her journey into crypto, starting from her traditional finance background and her initial skepticism about Bitcoin, leading to her realization of its significance in digital property rights.",
+  "topic_summary": "Lily Liu explores Solana's future, emphasizing open finance and the creation of diverse financial experiences for users. She reflects on her career in crypto, her early doubts about Bitcoin, and the transformative potential of blockchain technology in governance and economy.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Finance",
+    "Stablecoins",
+    "Digital Property Rights"
+  ],
+  "aliases": [
+    "Lily Liu",
+    "Lily Lu",
+    "lilyliu",
+    "lilylu"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly",
+    "@BobbyLee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

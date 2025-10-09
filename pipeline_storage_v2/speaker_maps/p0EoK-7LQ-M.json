@@ -1,0 +1,14 @@
+{
+  "video_id": "p0EoK-7LQ-M",
+  "title": "2021-02-04_p0EoK-7LQ-M_Binance 60:    Binance",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

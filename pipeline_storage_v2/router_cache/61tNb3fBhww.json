@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to use Binance tools effectively for trading and managing cryptocurrencies.",
+  "topic_summary": "The video covers Binance tools for trading, including staking and savings options, as well as trading strategies and risk management [t=00:01:20].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Trading",
+    "Staking",
+    "Savings"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nikki",
+    "@Brett"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

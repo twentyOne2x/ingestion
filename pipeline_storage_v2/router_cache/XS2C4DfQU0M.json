@@ -1,0 +1,28 @@
+{
+  "description": "Ben Sprango introduces leaders from the Solana Web3 ecosystem, including Ronil from Audius, Sumit from Chingari, and Bram from Kin. They discuss their projects, focusing on Audius' decentralized streaming service and Chingari's transition from Web2 to Web3, emphasizing user ownership and community governance.",
+  "topic_summary": "The panel discusses the evolution of Web3 applications, highlighting Audius' decentralized music streaming and Chingari's shift to user-owned content and DAO governance. They explore infrastructure challenges and design decisions in building on Solana.",
+  "router_tags": [
+    "Web3",
+    "Audius",
+    "Chingari",
+    "Solana",
+    "Decentralization",
+    "DAO",
+    "Streaming",
+    "NFT"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: App Layer",
+    "Breakpoint 2021: Web3 Bazaars"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AudiusProject",
+    "@ChingariApp",
+    "@KinFoundation"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Jeremy Allaire discusses the growth of USDC on Solana, highlighting its launch, adoption, and the role of decentralized finance (DeFi) primitives in driving demand.",
+  "topic_summary": "Allaire explains the factors contributing to USDC's growth on Solana, including the decision to integrate with the network, the rise of DeFi projects, and increased adoption on major exchanges. He emphasizes the importance of capital efficiency and the potential of Solana's architecture for future scalability [t=5:04-489:61].",
+  "router_tags": [
+    "USDC",
+    "Solana",
+    "DeFi",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "jeremy allaire",
+    "Jeremy Allaire",
+    "Circle",
+    "circle"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn",
+    "@Circle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

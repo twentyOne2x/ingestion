@@ -1,0 +1,27 @@
+{
+  "description": "Explore Bitcoin dominance, a key metric in the crypto world, reflecting market trends and investor sentiment. Understand its significance as Bitcoin reaches a four-year high dominance of 63%. Learn how to use this metric to gauge market cycles and the implications of institutional interest in Bitcoin.",
+  "topic_summary": "Bitcoin dominance, currently at 63%, indicates investor sentiment and market trends. It reflects a cautious market where capital flows into Bitcoin as a safer asset compared to altcoins. Tracking this metric can help predict market cycles and potential altcoin seasons.",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto Market",
+    "Market Trends",
+    "Investor Sentiment",
+    "Bitcoin Dominance"
+  ],
+  "aliases": [
+    "Bitcoin Dominance",
+    "bitcoin dominance",
+    "BTC Dominance",
+    "btc dominance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "$ETH",
+    "$SOL",
+    "@JoffreyKendrick",
+    "@StandardChartered"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

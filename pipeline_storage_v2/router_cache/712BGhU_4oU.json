@@ -1,0 +1,21 @@
+{
+  "description": "This video explains Trust Wallet, a decentralized mobile application for managing cryptocurrencies and decentralized applications (dapps). It highlights the importance of having constant access to funds in the volatile crypto market and showcases Trust Wallet's features, including a built-in Web3 browser and integration with Binance.",
+  "topic_summary": "Learn about Trust Wallet, its features, and how it simplifies cryptocurrency management for users. Discover its capabilities in accessing dapps and the collaboration with Binance for enhanced functionalities [t=89:74].",
+  "router_tags": [
+    "Trust Wallet",
+    "Cryptocurrency",
+    "Decentralized Applications",
+    "Binance"
+  ],
+  "aliases": [
+    "Trust wallet",
+    "trust Wallet",
+    "TRUST WALLET"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

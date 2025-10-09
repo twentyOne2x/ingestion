@@ -1,0 +1,22 @@
+{
+  "description": "Rachel Conlan, Chief Marketing Officer at Binance, along with other executives, shares New Year greetings and highlights Binance's achievements and future plans for 2025.",
+  "topic_summary": "Binance executives celebrate the Lunar New Year, reflecting on growth in the Year of the Dragon and outlining plans for 2025, including user protection and innovation in crypto technology. [t=48:53] [t=65:66]",
+  "router_tags": [
+    "Binance",
+    "Lunar New Year",
+    "2025",
+    "crypto",
+    "growth"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

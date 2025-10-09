@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to create or mint your own NFTs using various standards like ERC721 and ERC1155 on the Ethereum blockchain. Explore the advantages and challenges of minting NFTs, including transaction fees and alternative blockchain networks.",
+  "topic_summary": "This video explains the process of minting NFTs, focusing on standards such as ERC721 and ERC1155, and discusses the Ethereum blockchain's role in the NFT ecosystem [t=0:64]. It also addresses the issue of high transaction fees and mentions alternative blockchains for minting [t=39:26].",
+  "router_tags": [
+    "NFT",
+    "Ethereum",
+    "ERC721",
+    "ERC1155",
+    "Blockchain"
+  ],
+  "aliases": [
+    "How to Mint Your Own NFTs",
+    "Minting NFTs",
+    "Create NFTs"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

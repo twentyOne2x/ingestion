@@ -1,0 +1,23 @@
+{
+  "description": "This video provides a concise overview of Ethereum, discussing its value proposition, smart contracts, and its role in the cryptocurrency ecosystem.",
+  "topic_summary": "Ethereum is presented as a practical alternative to Bitcoin, focusing on its smart contracts and ecosystem [t=0:16]. Jessica introduces the Ethereum project at the North American Bitcoin Conference [t=23:68]. The video also touches on the optimism surrounding crypto ETFs and market capitalization [t=201:83].",
+  "router_tags": [
+    "Ethereum",
+    "Cryptocurrency",
+    "Smart Contracts",
+    "Bitcoin",
+    "Blockchain"
+  ],
+  "aliases": [
+    "ethereum",
+    "Ethereum",
+    "ETH",
+    "Jessica"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Jessica"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

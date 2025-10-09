@@ -1,0 +1,28 @@
+{
+  "description": "Leon, founder of Only One, discusses the evolution of social media from its early days to the current landscape, highlighting issues such as creator compensation and censorship. He emphasizes the potential of NFTs in creating a decentralized social media ecosystem that empowers users and creators [t=15:60].",
+  "topic_summary": "The talk covers the intersection of NFTs and social media, addressing the challenges of centralized platforms and proposing a decentralized approach to creator economies and community governance [t=320:79].",
+  "router_tags": [
+    "NFT",
+    "Web3",
+    "Social Media",
+    "Decentralization",
+    "Creator Economy"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@JoeBiden",
+    "@BarackObama",
+    "@MarkZuckerberg",
+    "@FreerajRaj",
+    "@Rarible",
+    "@OpenSea"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

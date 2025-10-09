@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on fundamental vs. technical analysis in cryptocurrency trading, featuring insights from various experts.",
+  "topic_summary": "The panel covers key concepts in trading analysis, including price-to-earnings ratios and market indicators, with references to Bitcoin and Ethereum [t=0:00-5:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "technical analysis",
+    "fundamental analysis",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

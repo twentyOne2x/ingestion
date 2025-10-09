@@ -1,0 +1,22 @@
+{
+  "description": "Gwendolin Regina introduces the BSC MVB Program III, discussing its goals and the importance of community involvement. The program aims to support projects and enhance security measures within the ecosystem. Various initiatives, including workshops and mentorship, are planned to foster collaboration and growth among participants. The session emphasizes the need for continuous development and community engagement in the blockchain space.",
+  "topic_summary": "Introduction to BSC MVB Program III and its community-focused initiatives [t=5:52]. Discussion on project support, security investments, and mentorship opportunities [t=196:49]. Emphasis on community engagement and continuous development [t=601:23].",
+  "router_tags": [
+    "BSC MVB Program",
+    "Blockchain",
+    "Community Engagement",
+    "Mentorship",
+    "Security"
+  ],
+  "aliases": [
+    "Bsc Mvb Program",
+    "BSC MVB program",
+    "BSC MVB PROGRAM"
+  ],
+  "canonical_entities": [
+    "$BSC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

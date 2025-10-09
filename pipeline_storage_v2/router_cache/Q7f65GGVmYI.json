@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing security in cryptocurrencies, focusing on exchanges, blockchain technology, and investor strategies.",
+  "topic_summary": "The session covers various aspects of cryptocurrency security, including exchange tokens, blockchain functionality, and investor protection strategies [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "blockchain",
+    "security",
+    "Binance",
+    "webinar"
+  ],
+  "aliases": [
+    "Binance Webinar",
+    "Binance youtube",
+    "binance webinar"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

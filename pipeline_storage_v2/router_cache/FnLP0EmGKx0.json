@@ -1,0 +1,36 @@
+{
+  "description": "This session covers careers in blockchain, focusing on decentralized finance (DeFi) and its applications. Participants are encouraged to complete a Google form for a chance to win crypto prizes. The lecture includes discussions on DeFi innovations, existing products like Uniswap and Maker, and creating cryptocurrencies using ERC20 and BEP20 standards.",
+  "topic_summary": "The lecture introduces decentralized finance (DeFi), its impact on traditional finance, and practical applications including Uniswap and Maker. It also covers how to create cryptocurrencies and build farming applications, emphasizing the importance of completing tasks for certification.",
+  "router_tags": [
+    "Blockchain",
+    "DeFi",
+    "Cryptocurrency",
+    "Uniswap",
+    "Maker",
+    "ERC20",
+    "BEP20",
+    "Education"
+  ],
+  "aliases": [
+    "Careers In Blockchain",
+    "Blockchain Careers",
+    "DeFi Applications",
+    "Decentralized Finance"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "$ETH",
+    "$BTC",
+    "$USDT",
+    "$SOL",
+    "@Binance",
+    "@Coinbase",
+    "@Kraken",
+    "@HaydenAdams",
+    "@Vitalik",
+    "@Brendan",
+    "@YiLei"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

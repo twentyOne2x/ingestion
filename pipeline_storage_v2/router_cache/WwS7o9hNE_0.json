@@ -1,0 +1,20 @@
+{
+  "description": "Robin Valla discusses Web3, focusing on business models and decentralized applications [t=51:90].",
+  "topic_summary": "An overview of Web3, emphasizing blockchain services and decentralized applications [t=51:90].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Dapps",
+    "Entrepreneurship"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

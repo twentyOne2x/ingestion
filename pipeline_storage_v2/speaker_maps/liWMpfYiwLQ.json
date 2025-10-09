@@ -1,0 +1,26 @@
+{
+  "video_id": "liWMpfYiwLQ",
+  "title": "2021-10-05_liWMpfYiwLQ_The Future of Decentralized Exchange",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "B": {
+      "name": "Alpha Ray",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Satoshi Nakamoto",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

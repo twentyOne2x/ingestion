@@ -1,0 +1,24 @@
+{
+  "description": "In this webinar, the hosts discuss finding rare gems in the bear market, covering market cycles, volatility, and opportunities in the crypto space. The session features student ambassadors sharing their experiences.",
+  "topic_summary": "The webinar focuses on understanding market cycles, specifically the bear and bull markets, and practical strategies for identifying valuable opportunities during downturns [t=31:37].",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "Bear Market",
+    "Bull Market",
+    "Webinar"
+  ],
+  "aliases": [
+    "Blockchain Student Corner",
+    "Blockchain student corner",
+    "blockchain student corner"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

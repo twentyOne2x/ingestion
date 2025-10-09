@@ -1,0 +1,22 @@
+{
+  "description": "Martin Bruncko, Executive VP of Binance Europe, emphasizes the company's commitment to user security and customer service. He discusses the importance of protecting user data and assets, and introduces the SAFU fund as an additional layer of insurance for users. Bruncko advises users to practice common sense online, such as not sharing passwords and conducting their own research before investing.",
+  "topic_summary": "Martin Bruncko highlights Binance's dedication to user security and the measures in place to protect clients, including the SAFU fund and best practices for online safety [t=20:88].",
+  "router_tags": [
+    "Binance",
+    "User Security",
+    "Customer Service",
+    "SAFU Fund",
+    "Online Safety"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

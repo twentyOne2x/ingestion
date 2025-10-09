@@ -1,0 +1,21 @@
+{
+  "description": "Discover how to meet Cristiano Ronaldo by purchasing his NFTs. Get a chance to hang out with him and own a piece of history.",
+  "topic_summary": "Learn about Cristiano Ronaldo's iconic goals and the opportunity to win a meet-and-greet by acquiring his NFTs [t=12:80].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "NFT",
+    "meet and greet",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@Cristiano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

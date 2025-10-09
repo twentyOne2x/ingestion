@@ -1,0 +1,21 @@
+{
+  "description": "Webinar discussing essential tips for beginner traders on Binance, covering topics like stop loss strategies and technical analysis.",
+  "topic_summary": "The webinar features insights from various speakers on trading strategies, including the importance of stop loss [t=51:17] and technical indicators like moving averages and the relative strength index [t=50:57].",
+  "router_tags": [
+    "trading",
+    "Binance",
+    "cryptocurrency",
+    "webinar",
+    "beginner tips"
+  ],
+  "aliases": [
+    "Dicas Indispensaveis para Traders Iniciantes",
+    "Binance Webinar",
+    "traders iniciantes"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

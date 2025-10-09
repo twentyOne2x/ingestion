@@ -1,0 +1,27 @@
+{
+  "description": "Join Binance CEO CZ and other leaders for a virtual super meetup celebrating Ramadan. The event highlights Binance's initiatives in the MENA and Asia regions, focusing on community engagement, regulatory partnerships, and talent growth in the crypto ecosystem.",
+  "topic_summary": "The super meetup marks the start of Binance's 14 days of Ramadan campaign, featuring discussions on crypto adoption, regulatory engagement, and community building in the MENA region. Key speakers include CZ, Richard Tang, and Gleb Kostrev, discussing the growth and future of Binance in the crypto space [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Ramadan",
+    "Crypto",
+    "MENA",
+    "Web3",
+    "CZ",
+    "Community"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "CZ",
+    "cz",
+    "Ramadan",
+    "ramadan"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

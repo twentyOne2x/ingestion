@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the evolution of Web3 and its impact on consumer brands, featuring insights from industry leaders.",
+  "topic_summary": "The panel explores the transition from Web2 to Web3, highlighting the challenges and opportunities for brands in engaging consumers through blockchain technology. Key topics include the importance of trust, the role of sports brands, and the necessity for regulatory clarity in the evolving landscape [t=11:68-867:42].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Consumer Brands",
+    "Digital Finance",
+    "Innovation"
+  ],
+  "aliases": [
+    "The Web3 Consumer & Brand Revolution",
+    "Web3 Consumer Revolution",
+    "Web3 Brand Revolution"
+  ],
+  "canonical_entities": [
+    "$AMZN",
+    "@KarpeMGTurkhei",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

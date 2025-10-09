@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on major players in the crypto space, including Tejla Square and Imicrostrategy's impact on Bitcoin.",
+  "topic_summary": "Overview of significant companies like Tejla Square and their influence on Bitcoin, along with insights into smart chains and upcoming cryptocurrencies [t=58:42].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Tejla Square",
+    "Imicrostrategy",
+    "Crypto"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "BinanceTV",
+    "binancetv"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@TejlaSquare",
+    "@Imicrostrategy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

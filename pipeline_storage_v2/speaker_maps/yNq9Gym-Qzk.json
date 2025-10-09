@@ -1,0 +1,38 @@
+{
+  "video_id": "yNq9Gym-Qzk",
+  "title": "2022-01-28_yNq9Gym-Qzk_Pyth Workshop - Day 3 - Project Presentation: The Rise of DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "A": {
+      "name": "Kyle Simone",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "David Mercer",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Dan Gunsberg",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Kyle Somani",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

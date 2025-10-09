@@ -1,0 +1,28 @@
+{
+  "description": "Panel discussion on the future of gaming in a Web3 environment, featuring insights on the shift from centralized to decentralized gaming economies and the implications for player engagement and monetization.",
+  "topic_summary": "The panel discusses the transition from Web2 to Web3 gaming, emphasizing the ideological shift towards decentralized profit sharing and the introduction of blockchain technology in gaming economies. Key points include the use of NFTs for user acquisition, the impact of open economies, and the potential for players to earn and trade in-game assets, fundamentally changing the gaming experience [t=70:14].",
+  "router_tags": [
+    "Web3",
+    "Gaming",
+    "Blockchain",
+    "NFTs",
+    "Decentralization"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@AmyWu",
+    "@AlexPaley",
+    "@MichaelLiu",
+    "$100Million",
+    "$300Million",
+    "@StarAtlas",
+    "@Faraway"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

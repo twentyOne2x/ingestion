@@ -1,0 +1,26 @@
+{
+  "video_id": "PMJJmRtp6KA",
+  "title": "2025-07-01_PMJJmRtp6KA_The King of Crypto: CZs Rapid Rise",
+  "channel_name": "Anthony Pompliano",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Zhou Xiaoquan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Matt Rosak",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Anthony Pompliano",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

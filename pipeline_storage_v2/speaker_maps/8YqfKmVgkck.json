@@ -1,0 +1,20 @@
+{
+  "video_id": "8YqfKmVgkck",
+  "title": "2025-01-28_8YqfKmVgkck_Binance wishes you Happy Lunar New Year this 2025!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Rachel Conlan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Binance Australia hosts the Queensland Roadshow, engaging with local communities and discussing blockchain technology. The event features speakers like Loew Skates and Jason Pazino, highlighting the importance of community interaction and feedback on the Binance platform.",
+  "topic_summary": "The Queensland Roadshow by Binance Australia focuses on community engagement and blockchain discussions, featuring local leaders and insights into the Binance platform. Key locations include Gold Coast and Brisbane [t=0:48].",
+  "router_tags": [
+    "Binance",
+    "Queensland Roadshow",
+    "Blockchain",
+    "Community Engagement",
+    "Australia"
+  ],
+  "aliases": [
+    "Binance Australia",
+    "Binans",
+    "Baynen",
+    "Loew Skates",
+    "Jason Pazino"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

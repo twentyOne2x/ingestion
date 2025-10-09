@@ -1,0 +1,25 @@
+{
+  "description": "Sam Bankman-Fried and Anatoly Yankovanko discuss the Solana Wormhole Hackathon, focusing on the importance of building useful applications and the current state of the DeFi market. They explore the implications of market trends, institutional interest, and the role of blockchain in facilitating exchanges without traditional negotiations.",
+  "topic_summary": "In this fireside chat, Sam Bankman-Fried and Anatoly Yankovanko delve into the Solana Wormhole Hackathon, discussing the future of DeFi, market dynamics, and the significance of bridging blockchain systems for seamless transactions [t=5:52].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Blockchain",
+    "Hackathon",
+    "Sam Bankman-Fried",
+    "Anatoly Yankovanko"
+  ],
+  "aliases": [
+    "Sam Bankman Fried",
+    "Anatoly Yankovanko",
+    "Tolly",
+    "Sam"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

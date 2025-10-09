@@ -1,0 +1,24 @@
+{
+  "description": "Anatoly hosts Jason Choi, General Partner at Spartan Capital, discussing his journey into crypto, the evolution of the industry, and insights on venture capital in the blockchain space. They reflect on the challenges faced during the bear market and the importance of building foundational projects in DeFi.",
+  "topic_summary": "Jason shares his experiences in crypto, from his initial introduction by Bonnie to his role at Spartan Capital. He discusses the bear market's impact on innovation and the significance of fundamentals in evaluating projects. The conversation highlights the transition from ICOs to DeFi and the resilience of founders during downturns [t=181.68].",
+  "router_tags": [
+    "Crypto",
+    "Venture Capital",
+    "DeFi",
+    "Blockchain",
+    "Investing"
+  ],
+  "aliases": [
+    "Jason Choi",
+    "jason choi",
+    "Spartan Capital",
+    "spartan capital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@bonnie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

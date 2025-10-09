@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on cryptocurrency regulation and taxation in Peru, covering various aspects of digital currencies and their legal implications.",
+  "topic_summary": "Exploration of cryptocurrency regulations in Peru, including the status of electronic money and the treatment of Bitcoin and other cryptocurrencies in the financial system. Key points include the lack of existing regulations for commercial parallel crypto and the need for institutional control [t=2:88-3680:40].",
+  "router_tags": [
+    "cryptocurrency",
+    "regulation",
+    "Peru",
+    "taxation",
+    "Bitcoin",
+    "Fintech"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Alfred",
+    "@BarrioBallores",
+    "@SunService",
+    "@Cameron",
+    "@Fintech",
+    "@Alfredo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

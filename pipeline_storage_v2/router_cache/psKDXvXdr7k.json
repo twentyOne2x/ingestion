@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the Proof of Stake (PoS) consensus algorithm, its workings, advantages, and how it differs from Proof of Work (PoW).",
+  "topic_summary": "Proof of Stake is a consensus mechanism introduced to improve blockchain efficiency by selecting validators based on stake size and other factors. It emphasizes energy efficiency, decentralization, and security, while preventing dominance by wealthy nodes. The video discusses the selection methods, rewards, and implications of fraudulent activities in PoS systems [t=0:24-3:59].",
+  "router_tags": [
+    "Proof of Stake",
+    "Blockchain",
+    "Cryptocurrency",
+    "Consensus Algorithm",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Proof of Stake",
+    "Proof Of Stake",
+    "proof of stake"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

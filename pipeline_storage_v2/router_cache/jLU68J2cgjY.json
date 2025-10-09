@@ -1,0 +1,24 @@
+{
+  "description": "This Week In Crypto features discussions on recent developments in the cryptocurrency space, including insights on meme coins and regulatory changes. The hosts engage with various topics related to Bitcoin, Binance, and notable figures in the crypto world.",
+  "topic_summary": "The episode covers the impact of Trump's presidency on cryptocurrency, particularly meme coins, and discusses regulatory developments affecting the crypto landscape [t=176.60].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Meme Coins",
+    "Regulations",
+    "Binance"
+  ],
+  "aliases": [
+    "This Week In Crypto",
+    "Coin Bureau",
+    "Coinmarketcap"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@CoinMarketCap",
+    "@KoinBureau"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

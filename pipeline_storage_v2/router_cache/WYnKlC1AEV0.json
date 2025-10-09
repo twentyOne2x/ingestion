@@ -1,0 +1,22 @@
+{
+  "description": "This video explains moving averages, a key indicator in technical analysis and day trading. It covers simple moving averages (SMA) and exponential moving averages (EMA), detailing their calculations and differences.",
+  "topic_summary": "Learn about moving averages, including their types (SMA and EMA), calculations, and their role in identifying price trends and market analysis [t=5:60].",
+  "router_tags": [
+    "Moving Averages",
+    "Technical Analysis",
+    "Day Trading",
+    "SMA",
+    "EMA"
+  ],
+  "aliases": [
+    "How to Read Moving Averages",
+    "Moving Averages Explained",
+    "Understanding Moving Averages"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

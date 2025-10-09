@@ -1,0 +1,22 @@
+{
+  "description": "Binance celebrates its MVP license in Dubai with a stunning light show on the Burj Khalifa, showcasing the company's achievements and presence in the region.",
+  "topic_summary": "The event features a spectacular light display on the Burj Khalifa to commemorate Binance's MVP license in Dubai, highlighting the company's growth and innovation in the cryptocurrency space. [t=00:00]",
+  "router_tags": [
+    "Binance",
+    "Dubai",
+    "Burj Khalifa",
+    "cryptocurrency",
+    "MVP license"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

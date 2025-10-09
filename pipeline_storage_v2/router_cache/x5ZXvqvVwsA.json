@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Europe's role in Web3, featuring insights from industry leaders about the future of cryptocurrency and technology in Europe.",
+  "topic_summary": "Panel discussion at Binance Blockchain Week focusing on Europe's potential leadership in Web3 and the challenges it faces in the global landscape [t=0:08].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Europe",
+    "Cryptocurrency",
+    "Technology"
+  ],
+  "aliases": [
+    "binanceyoutube",
+    "BinanceYoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

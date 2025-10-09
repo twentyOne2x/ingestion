@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on staking from retail to enterprise, featuring insights from industry experts on the roles of validators and the challenges they face in accommodating blockchain adoption.",
+  "topic_summary": "The panel discusses the multifaceted roles of validators in blockchain networks, addressing the balance between infrastructure management and governance responsibilities, as well as the importance of decentralization and censorship resistance in the ecosystem [t=31:30].",
+  "router_tags": [
+    "staking",
+    "blockchain",
+    "validators",
+    "decentralization",
+    "censorship resistance"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Silicon Skin in the Game",
+    "Staking from Retail to the Enterprise"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@GlebDudka",
+    "@DeutscheTelekom",
+    "@BlockDaemon",
+    "@Stakefish"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

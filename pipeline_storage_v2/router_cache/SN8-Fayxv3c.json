@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how hashing is utilized in proof of work mechanisms, detailing the process nodes undergo to find a valid hash and the computational resources required.",
+  "topic_summary": "In proof of work systems, nodes hash block contents and must find a specific hash that meets blockchain parameters. This process is resource-intensive, but once a valid hash is found, the block can be verified by others in the network [t=0:40].",
+  "router_tags": [
+    "hashing",
+    "proof of work",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Hashing In Proof Of Work",
+    "Proof Of Work Hashing",
+    "Hashing Mechanisms"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

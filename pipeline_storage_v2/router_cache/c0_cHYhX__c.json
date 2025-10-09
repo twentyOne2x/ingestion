@@ -1,0 +1,29 @@
+{
+  "description": "Q&A session discussing various topics related to Binance and cryptocurrency, including blockchain technology and investment strategies.",
+  "topic_summary": "The video covers discussions on blockchain technology, Binance exchange features, and investment insights [t=0:00-40:00].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "blockchain",
+    "Q&A",
+    "investments"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ElPadron",
+    "@DabinEubenus",
+    "@Elmer",
+    "@AlessandroVisualiz",
+    "@Satoshi",
+    "@Yamaha",
+    "@Shabbat",
+    "@Silky"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

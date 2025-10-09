@@ -1,0 +1,23 @@
+{
+  "description": "The Special Investigations Team at Binance has expanded significantly, now comprising 38 members with a strong law enforcement background. They utilize advanced forensic tools and collaborate with TRM labs for investigations. The customer service team, nearly 2000 strong, triages risks effectively. The team has grown from fewer than 10 members to over 20 investigators and team leads globally, covering major regions including APAC, AMERICUS, and EMEA. Training and access to industry-leading tools are emphasized for investigators.",
+  "topic_summary": "Overview of Binance's Special Investigations Team growth and capabilities, highlighting their global presence and advanced investigative tools [t=78:16].",
+  "router_tags": [
+    "Binance",
+    "Special Investigations Team",
+    "Forensic Tools",
+    "Risk Management",
+    "Customer Service"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "Special Investigations Team",
+    "special investigations team"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

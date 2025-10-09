@@ -1,0 +1,20 @@
+{
+  "video_id": "2gJEW38yqqU",
+  "title": "2021-04-08_2gJEW38yqqU_Co je NFT Jeho vyznam a vyuziti v kryptu",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Obrazak Tracy",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

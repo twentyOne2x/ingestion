@@ -1,0 +1,20 @@
+{
+  "video_id": "WX4zetU0E4k",
+  "title": "2021-02-09_WX4zetU0E4k_Binance 60 - Edicao #30 - Q&A",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nahija Masbaraka",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

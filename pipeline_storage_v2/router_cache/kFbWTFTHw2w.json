@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on various topics including employee funding, crypto exchanges, and personal finance strategies.",
+  "topic_summary": "The session covers employee funding fees [t=13:52], crypto vaults [t=16:08], and personal finance management [t=43:25].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Finance",
+    "Funding",
+    "Exchange"
+  ],
+  "aliases": [
+    "binanceresponde",
+    "BinanceResponde",
+    "binance youtube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Join Nina Xiang and Mahmoud as they explore Web3 and the Metaverse in this live webinar from Binance Academy. They discuss the evolution from Web1 to Web3, the characteristics of decentralized web, and the implications for companies in the Metaverse.",
+  "topic_summary": "In this session, Nina and Mahmoud introduce Web3, its benefits, and its connection to the Metaverse. They cover the historical context of Web1 and Web2, and how companies like Nike are leveraging marketing tools in the Metaverse. [t=157.81]",
+  "router_tags": [
+    "Web3",
+    "Metaverse",
+    "Binance Academy",
+    "Nina Xiang",
+    "Mahmoud"
+  ],
+  "aliases": [
+    "web3",
+    "metaverse",
+    "Binance Academy",
+    "Nina Xiang",
+    "Mahmoud"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy",
+    "@NinaXiang"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

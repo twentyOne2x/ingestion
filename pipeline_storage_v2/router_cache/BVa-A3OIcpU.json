@@ -1,0 +1,28 @@
+{
+  "description": "The Binance Africa Hackathon culminates in a judges roundtable, showcasing nine innovative projects from various sectors including finance and DeFi, aimed at solving African challenges. Key insights on successful project development and community engagement are shared by industry experts.",
+  "topic_summary": "Judges roundtable for the Binance Africa Hackathon featuring nine projects focused on finance and DeFi, with insights on project development and community engagement [t=29:40].",
+  "router_tags": [
+    "Binance",
+    "Hackathon",
+    "Africa",
+    "DeFi",
+    "Finance",
+    "NFTs"
+  ],
+  "aliases": [
+    "binanceafricahackathon",
+    "Binance Africa Hackathon",
+    "BSC Hackathon"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$DOGE",
+    "$DAI",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

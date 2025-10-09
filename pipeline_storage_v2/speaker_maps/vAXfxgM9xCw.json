@@ -1,0 +1,20 @@
+{
+  "video_id": "vAXfxgM9xCw",
+  "title": "2021-11-15_vAXfxgM9xCw_Breakpoint 2021: Metaplex and You",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Ste. Bartosh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

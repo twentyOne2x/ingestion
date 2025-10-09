@@ -1,0 +1,20 @@
+{
+  "video_id": "uiGtWGTdU0o",
+  "title": "2018-07-22_uiGtWGTdU0o_Rare Interview: Changpeng Zhao Before Binance Jan 2015",
+  "channel_name": "Sizzling CZ: Changpeng Zhao Videos",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Changpeng Zhao",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Sizzling CZ: Changpeng Zhao Videos",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

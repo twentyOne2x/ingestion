@@ -1,0 +1,34 @@
+{
+  "description": "Discussion on various topics in the crypto market featuring multiple speakers and their insights.",
+  "topic_summary": "Speakers discuss the crypto market dynamics, trading strategies, and personal experiences in the industry [t=02:59].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "market analysis",
+    "blockchain"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@ShangGuan",
+    "@ShadiyaJesus",
+    "@JuanChu",
+    "@Dao",
+    "@Choko",
+    "@JoeBiancho",
+    "@Ranji",
+    "@LisaDong",
+    "@MianFenci",
+    "@Kanhao",
+    "@Jesus",
+    "@JohanIban",
+    "@NijanjiTongchi",
+    "@SinghNasiwan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

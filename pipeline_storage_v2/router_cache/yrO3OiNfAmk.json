@@ -1,0 +1,21 @@
+{
+  "description": "Discussion involving various individuals about USDT and related topics, including mentions of Hong Kong and Binance.",
+  "topic_summary": "Conversation about USDT and market positions, with references to Hong Kong and Binance [t=00:00].",
+  "router_tags": [
+    "USDT",
+    "Binance",
+    "Hong Kong",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Join the Binance Africa P2P team for day two of the DeFi Masterclass, focusing on peer-to-peer trading. Learn about the importance and practicalities of P2P trading, including how to get started and the benefits it offers. Participants can also engage in a $5,000 giveaway by completing specific tasks during the session.",
+  "topic_summary": "This session covers peer-to-peer trading as a fundamental aspect of decentralized finance, discussing its significance and practical applications. The agenda includes an introduction to P2P trading, its history, and how to participate effectively.",
+  "router_tags": [
+    "DeFi",
+    "P2P Trading",
+    "Binance",
+    "Cryptocurrency",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "DeFi Masterclass",
+    "Defi And Binance Smart Chain Masterclass",
+    "P2P Trading"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$5,000",
+    "$5000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

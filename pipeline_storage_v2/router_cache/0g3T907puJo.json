@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on appeal processes related to Binance P2P transactions, including obligations and contact points for issues involving Bitcoin and Ethereum.",
+  "topic_summary": "Overview of appeal procedures for Binance P2P transactions, highlighting obligations and contact methods for resolving issues with BTC and ETH [t=29:99-1611:23].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "BTC",
+    "ETH",
+    "appeals"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

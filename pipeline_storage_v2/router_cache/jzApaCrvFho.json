@@ -1,0 +1,20 @@
+{
+  "description": "This video explains token unlocks in cryptocurrency, detailing their impact on market dynamics, investor behavior, and price fluctuations. It covers the mechanics of unlocking schedules, the significance of gradual token releases, and the importance of staying informed about upcoming unlocks.",
+  "topic_summary": "Token unlocks refer to the release of previously restricted tokens into circulation, which can affect supply, demand, and prices in the crypto market. Understanding these mechanisms is crucial for investors to navigate market conditions effectively [t=0:16].",
+  "router_tags": [
+    "Crypto",
+    "Token Unlocks",
+    "Investing",
+    "Market Dynamics"
+  ],
+  "aliases": [
+    "Token Unlocks",
+    "token unlocks",
+    "Token unlocks"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Tommy and Taylor Johnson, co-founders of PsyOptions, discuss their journey into crypto, the inception of PsyOptions, and the challenges they faced in building a decentralized options trading platform.",
+  "topic_summary": "The episode covers the origins of Tommy and Taylor's interest in crypto, their experiences with Ethereum and Solana, and the development of the PsyOptions Protocol, including insights on data access and the evolution of finance technology [t=0:24-246:06].",
+  "router_tags": [
+    "PsyOptions",
+    "Crypto",
+    "Solana",
+    "Ethereum",
+    "Blockchain",
+    "Options Trading",
+    "DeFi"
+  ],
+  "aliases": [
+    "Tommy Johnson",
+    "Taylor Johnson",
+    "Psyoptions",
+    "SolanaFndn",
+    "Anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

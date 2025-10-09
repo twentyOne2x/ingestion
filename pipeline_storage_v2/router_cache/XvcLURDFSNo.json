@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to access new crypto projects early through Binance's Mega Drop service. This guide covers the steps to participate and maximize your rewards.",
+  "topic_summary": "The Mega Drop service allows users to access new crypto projects before they are listed on Binance. Participants can earn rewards by securing BNB and completing tasks related to the projects. [t=0:24] [t=8:32] [t=119:72]",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Mega Drop",
+    "BNB",
+    "New Projects"
+  ],
+  "aliases": [
+    "Binance Megadrop",
+    "binance megadrop",
+    "Binance Mega Drop",
+    "binance mega drop"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

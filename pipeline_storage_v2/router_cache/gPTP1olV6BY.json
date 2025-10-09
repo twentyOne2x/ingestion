@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Solana Podcast, guest host Austin Federa speaks with Dan, Lily, and Mabel from the Solana Foundation about their roles and the foundation's impact on the Solana ecosystem. They discuss fostering growth, attracting users, and the unique experiences offered by Solana applications. The conversation highlights the foundation's efforts to expand awareness and accessibility in various global markets, particularly in East Asia.",
+  "topic_summary": "Austin Federa hosts a discussion with Solana Foundation members about their roles and the foundation's mission to grow the Solana ecosystem, focusing on user experience and global outreach [t=10:88-392:15].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Crypto",
+    "Web3",
+    "Foundation",
+    "Ecosystem",
+    "Growth",
+    "User Experience"
+  ],
+  "aliases": [
+    "solana foundation",
+    "Solana Foundation",
+    "SOLANA FOUNDATION"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

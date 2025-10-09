@@ -1,0 +1,24 @@
+{
+  "description": "Crypto influencers explain NFTs, comparing them to digital ownership of unique items like toys and art. They discuss the potential of NFTs in gaming and digital property, emphasizing their value and uniqueness backed by blockchain technology.",
+  "topic_summary": "The video covers the fundamentals of NFTs, their application in digital ownership, and their impact on industries like gaming. It highlights how NFTs serve as certificates of ownership for both digital and physical assets, rewarding creators.",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Digital Ownership",
+    "Blockchain",
+    "Gaming"
+  ],
+  "aliases": [
+    "Nft",
+    "NFTs",
+    "Crypto Influencers",
+    "Digital Property"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@BinanceYoutube",
+    "@John"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Ko2-mDka6rs",
+  "title": "2022-08-26_Ko2-mDka6rs_The Most Common Scams And What To Do If You Fall For Them - With Binance's Jarek Jakubcek",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Linus Yang",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Tommy introduces the Psyoptions integration workshop, discussing the decentralized options protocol and its development journey, including winning the Solana Serum Hackathon. He explains the current market structure, liquidity challenges, and the architecture of the PSI Options program, which facilitates options trading on the Solana blockchain. The workshop also covers the Ignition Hackathon and a $30,000 prize for innovative applications built on Psyoptions.",
+  "topic_summary": "Overview of Psyoptions, a decentralized trustless options protocol, its architecture, market challenges, and opportunities for developers in the Solana ecosystem. Discussion includes a live coding example and potential applications for the protocol.",
+  "router_tags": [
+    "Psyoptions",
+    "DeFi",
+    "Options Trading",
+    "Solana",
+    "Hackathon"
+  ],
+  "aliases": [
+    "psyoptions",
+    "Psy Options",
+    "PSI Options"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

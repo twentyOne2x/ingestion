@@ -1,0 +1,13 @@
+{
+  "description": "Discussion on various topics in Chinese.",
+  "topic_summary": "Overview of topics discussed in Chinese language [t=00:03].",
+  "router_tags": [],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

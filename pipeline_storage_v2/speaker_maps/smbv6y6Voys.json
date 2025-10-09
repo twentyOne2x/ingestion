@@ -1,0 +1,44 @@
+{
+  "video_id": "smbv6y6Voys",
+  "title": "2021-05-15_smbv6y6Voys_Vietnam Super Blockathon: Launch Day",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "C": {
+      "name": "Long John",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "I": {
+      "name": "Martin Logan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Pancake Bunny",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "Ben Karl",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Ben K. Bunny",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

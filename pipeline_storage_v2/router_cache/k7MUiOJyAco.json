@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on NFT and DeFi protocols, including insights on Binance Smart Chain and Ethereum. Covers various projects and technologies related to NFTs and blockchain.",
+  "topic_summary": "Exploration of NFT protocols and DeFi innovations, highlighting projects like Binance Smart Chain and Ethereum, with a focus on market predictions and community governance [t=07:48].",
+  "router_tags": [
+    "NFT",
+    "DeFi",
+    "Binance",
+    "Ethereum",
+    "Blockchain"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "hnv9uu7bCAc",
+  "title": "2021-06-10_hnv9uu7bCAc_Security First In DeFi: How to use fantastic metrics to monitor your Web3 project",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Bogdan Bohdan",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

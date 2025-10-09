@@ -1,0 +1,22 @@
+{
+  "description": "CZ discusses the unique aspects of Binance's culture, emphasizing the importance of passion and autonomy in the workplace.",
+  "topic_summary": "Insights into Binance's culture, highlighting the absence of micromanagement and the significance of passion in the work environment [t=2:56 - 3:48].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Company Culture",
+    "Leadership"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "CZ",
+    "Changpeng Zhao"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

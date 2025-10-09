@@ -1,0 +1,23 @@
+{
+  "description": "Webinar discussing risk management in cryptocurrencies, focusing on Binance's offerings and market strategies.",
+  "topic_summary": "The session covers various aspects of cryptocurrency investments, including stable coins, exchange protocols, and risk management strategies [t=0:24 - t=40:07].",
+  "router_tags": [
+    "cryptocurrency",
+    "Binance",
+    "risk management",
+    "webinar"
+  ],
+  "aliases": [
+    "Binance Webinar",
+    "binance webinar",
+    "Binance webinAR"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "@BainDeGaoGroup"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

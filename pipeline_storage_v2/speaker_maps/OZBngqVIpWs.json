@@ -1,0 +1,20 @@
+{
+  "video_id": "OZBngqVIpWs",
+  "title": "2025-07-24_OZBngqVIpWs_Why GENIUS Act Could Spark the Next Crypto Surge: @CryptosRUs on Stablecoins, Crypto Cycles, ETFs",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Scott Benson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

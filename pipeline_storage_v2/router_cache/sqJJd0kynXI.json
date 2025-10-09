@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the launchpad and its implications for BNB and the Japanese market.",
+  "topic_summary": "Overview of the launchpad's impact on BNB and its relevance to the Japanese market [t=26:66].",
+  "router_tags": [
+    "Launchpad",
+    "BNB",
+    "Japan"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

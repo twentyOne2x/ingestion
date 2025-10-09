@@ -1,0 +1,21 @@
+{
+  "description": "Web3 aims to create a more open and equitable digital future, driven by entrepreneurs and users who will shape its evolution. The video discusses the potential opportunities within this new internet paradigm and introduces the concept of the Metaverse as a related topic.",
+  "topic_summary": "Exploration of Web3's potential and its impact on the future of the internet, including opportunities for innovation and the connection to the Metaverse [t=23:12].",
+  "router_tags": [
+    "Web3",
+    "Metaverse",
+    "Digital Future",
+    "Blockchain",
+    "Innovation"
+  ],
+  "aliases": [
+    "Web3 Outlook",
+    "Future of Web3",
+    "Web 3.0"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

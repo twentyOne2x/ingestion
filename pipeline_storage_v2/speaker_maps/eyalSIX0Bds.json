@@ -1,0 +1,14 @@
+{
+  "video_id": "eyalSIX0Bds",
+  "title": "2021-06-09_eyalSIX0Bds_Binance P2P Lite",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

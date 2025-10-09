@@ -1,0 +1,20 @@
+{
+  "description": "Learn how to interpret Bollinger Bands, including concepts of overbought and oversold conditions, market volatility, and the significance of the squeeze.",
+  "topic_summary": "This video explains Bollinger Bands, focusing on price proximity to upper and lower bands indicating market conditions [t=0:40], the concept of squeeze indicating low volatility [t=24:16], and potential future volatility [t=33:26].",
+  "router_tags": [
+    "Bollinger Bands",
+    "Technical Analysis",
+    "Crypto Trading",
+    "Market Volatility"
+  ],
+  "aliases": [
+    "Bollinger bands",
+    "bollinger Bands",
+    "BOLLINGER BANDS"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

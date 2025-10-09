@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on cross-chain identity solutions and decentralized data management featuring Chris Hart from Civic, Gabe Cohen from Three Box Labs, and Simon Harmgart from Parsec and IQ Labs.",
+  "topic_summary": "Panelists discuss the importance of identity in blockchain, the role of decentralized storage, and innovations in real-time data access across multiple chains [t=12:48-20:16]. Chris Hart highlights Civic's identity solutions for various use cases including NFTs and DeFi [t=55:39-81:92]. Gabe Cohen explains the Ceramic Network's approach to mutable data and decentralized identity [t=177:13-206:18]. Simon Harmgart introduces Parsiq's streaming data capabilities and the IQ Protocol for tokenomics [t=225:16-341:64].",
+  "router_tags": [
+    "Cross-Chain",
+    "Decentralized Identity",
+    "Blockchain",
+    "NFTs",
+    "Data Management"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Solana Foundation",
+    "Civic",
+    "Three Box Labs",
+    "Parsec",
+    "IQ Labs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@ChrisHart",
+    "@GabeCohen",
+    "@SimonHarmgart"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

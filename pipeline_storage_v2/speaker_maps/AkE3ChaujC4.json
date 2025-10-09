@@ -1,0 +1,26 @@
+{
+  "video_id": "AkE3ChaujC4",
+  "title": "2021-05-26_AkE3ChaujC4_Security First In DeFi: Incident Response Process(During-After hacks)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Pancake Bunny",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Pancake Bunnies",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

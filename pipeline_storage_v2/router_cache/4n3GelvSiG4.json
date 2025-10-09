@@ -1,0 +1,21 @@
+{
+  "description": "Luis shares his journey in crypto trading, discussing challenges and insights gained along the way.",
+  "topic_summary": "Luis explores the complexities of crypto trading and his experiences with Binance [t=4:56]. He highlights the role of The Baynens Academy in his learning process [t=1:18].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Binance",
+    "Journey",
+    "Education"
+  ],
+  "aliases": [
+    "The Baynens Academy",
+    "the baynens academy"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@TheBaynensAcademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

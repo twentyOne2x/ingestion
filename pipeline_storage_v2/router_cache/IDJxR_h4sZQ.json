@@ -1,0 +1,31 @@
+{
+  "description": "In this episode of NFT Tuesdays, hosts Brenton Naika and Chernevim discuss the current state of NFT investments, featuring guests Tubedo from Metapost and Yatsui from Animoca Brands. They explore the bullish and bearish sentiments surrounding NFTs, share insights on recent headlines, and highlight the importance of storytelling in the NFT space.",
+  "topic_summary": "The episode covers NFT investments, discussing bullish vs bearish perspectives, featuring a fireside chat with Tubedo and a panel with industry experts. The hosts emphasize the significance of storytelling in understanding NFTs and their utility in today's market. [t=12:64] [t=21:36] [t=60:68]",
+  "router_tags": [
+    "NFT",
+    "Investments",
+    "Cryptocurrency",
+    "Blockchain",
+    "Digital Art"
+  ],
+  "aliases": [
+    "Nft Tuesdays",
+    "NFT Tuesdays",
+    "NFTtuesdays",
+    "NFTTuesdays"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@YatSu",
+    "@Nick",
+    "@Gleb",
+    "@Tubedo",
+    "@Yatsui",
+    "@BrentonNaika",
+    "@Chernevim"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

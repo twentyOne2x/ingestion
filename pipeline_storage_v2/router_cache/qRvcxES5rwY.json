@@ -1,0 +1,26 @@
+{
+  "description": "Bailey introduces the Solana Breakpoint conference, highlighting the impressive growth of Solana, which has seen a 17,000% increase in value this year, reaching a market cap of $76 billion. He outlines the event's structure, including developer panels and workshops, and encourages attendees to engage on social media using the hashtag #SolanaBreakpoint.",
+  "topic_summary": "Introduction to Solana Breakpoint 2021, discussing Solana's growth and the conference's agenda, including developer panels and workshops.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Blockchain",
+    "Cryptocurrency",
+    "Developers",
+    "Conference"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Anatoly",
+    "@Raj",
+    "@Chase",
+    "@Bailey"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

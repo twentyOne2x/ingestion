@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of Chewing Glass, hosts Nick and Elias from Kronos discuss their backgrounds and experiences in the Solana ecosystem, including their recent win at the Riptide hackathon. Nick shares his journey from working on Uber's payments team to discovering Solana's potential for disruption in payment systems. Elias talks about his transition from data science to front-end development and how they met in Austin.",
+  "topic_summary": "Nick and Elias from Kronos discuss their experiences in the Solana ecosystem and their recent Riptide hackathon win. They share insights on their backgrounds in payments and development, and how they connected in Austin [t=38:70].",
+  "router_tags": [
+    "Solana",
+    "Kronos",
+    "Riptide Hackathon",
+    "Payments",
+    "Development"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Kronos",
+    "kronos"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Nick",
+    "@Elias"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

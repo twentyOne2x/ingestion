@@ -1,0 +1,38 @@
+{
+  "video_id": "PE9cNyNu08o",
+  "title": "2023-05-30_PE9cNyNu08o_Build The Block: Episode 6",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "C": {
+      "name": "Robi Jang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Justin Breton",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Evo Ling",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Edward Rai Yaran",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

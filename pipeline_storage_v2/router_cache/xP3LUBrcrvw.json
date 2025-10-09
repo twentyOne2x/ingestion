@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on USDT and its implications in the market.",
+  "topic_summary": "Analysis of USDT's market behavior and risks [t=01:18].",
+  "router_tags": [
+    "USDT",
+    "cryptocurrency",
+    "market analysis"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

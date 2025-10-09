@@ -1,0 +1,23 @@
+{
+  "description": "CZ discusses challenges in the crypto market, emphasizing the need for clear regulatory frameworks and improved wallet security. He shares insights on user growth at Binance and the importance of financial literacy and risk management in crypto investments.",
+  "topic_summary": "CZ addresses regulatory challenges and the importance of user-friendly tools for mass adoption of crypto. He reflects on his early experiences with Bitcoin prices and the growth of the crypto industry, highlighting the need for education in risk management [t=89:02].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "crypto",
+    "Bitcoin",
+    "financial literacy",
+    "risk management"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

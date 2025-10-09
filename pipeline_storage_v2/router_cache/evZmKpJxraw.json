@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to stake your coins on Binance, including staking, DeFi staking, and ETH 2.0 staking. This video covers the process of selecting coins, understanding interest rates, and the importance of lockup periods.",
+  "topic_summary": "This video explains the staking process on Binance, detailing how to stake coins, the different staking options available, and the implications of early withdrawal on earned interest. Key points include the need to hold coins in your spot account and the varying interest rates based on staking duration [t=0:16].",
+  "router_tags": [
+    "staking",
+    "Binance",
+    "cryptocurrency",
+    "DeFi",
+    "ETH 2.0"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

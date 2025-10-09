@@ -1,0 +1,31 @@
+{
+  "description": "Join Laia Heilpern as she hosts the Responsible Trading Summer Camp, a three-part webinar series aimed at educating traders on responsible practices in cryptocurrency trading. The session covers essential tips for managing risk and building sustainable profits, with insights from Binance Futures director Justin and other experts. Participants can also engage in workshops and quizzes for a chance to win prizes including BNB tokens and trading vouchers.",
+  "topic_summary": "The webinar introduces responsible trading principles, emphasizing self-discipline, continuous learning, and risk management. It highlights Binance's commitment to user education and protection in the volatile cryptocurrency market, featuring practical strategies for traders.",
+  "router_tags": [
+    "Responsible Trading",
+    "Cryptocurrency",
+    "Binance",
+    "Webinar",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Responsible Trading Summer Camp",
+    "Responsible Trading Camp",
+    "Summer Camp"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "$BTC",
+    "$ETH",
+    "$USDC",
+    "$USDT",
+    "$BNB",
+    "@BinanceYoutube",
+    "@Justin",
+    "@LaiaHeilpern",
+    "@Certik",
+    "@KloverFinance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

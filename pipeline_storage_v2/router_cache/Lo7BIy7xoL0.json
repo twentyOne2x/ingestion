@@ -1,0 +1,20 @@
+{
+  "description": "An overview of Dow Theory and its application in technical analysis.",
+  "topic_summary": "Exploration of Dow Theory principles and their relevance in trading strategies, emphasizing the importance of technical indicators and market trends [t=00:00-14:00].",
+  "router_tags": [
+    "Dow Theory",
+    "Technical Analysis",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Dow teori",
+    "Dow Theory",
+    "dow teori"
+  ],
+  "canonical_entities": [
+    "$CANDY",
+    "@Yanni"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

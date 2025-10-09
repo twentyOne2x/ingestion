@@ -1,0 +1,21 @@
+{
+  "description": "A recap of the Solana Solstice 2021 event featuring various highlights and interactions.",
+  "topic_summary": "Overview of key moments from the Solana Solstice 2021 event, including participant interactions and notable statements [t=16:08 - t=178:54].",
+  "router_tags": [
+    "Solana",
+    "Solstice",
+    "2021",
+    "Event Highlights"
+  ],
+  "aliases": [
+    "Solana Solstice 2021",
+    "solana solstice 2021",
+    "SOLANA SOLSTICE 2021"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

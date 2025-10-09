@@ -1,0 +1,27 @@
+{
+  "description": "Join us as we explore Binance, its trading features, and how to profit from cryptocurrency trading. We'll focus on the P2P platform and provide insights applicable globally, with a special emphasis on Ghana.",
+  "topic_summary": "In this session, we discuss Binance's ecosystem, trading strategies, and the current market trends. Learn how to leverage trading to make money, especially in the context of the ongoing bull market [t=142.56].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Trading",
+    "P2P",
+    "Finance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$USDT",
+    "$SOL",
+    "$ETH",
+    "$DOGE",
+    "@ChangpengZhao"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

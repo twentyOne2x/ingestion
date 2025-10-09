@@ -1,0 +1,23 @@
+{
+  "description": "At Breakpoint 2021, the speaker discusses the evolution of Helium, a decentralized wireless network founded in 2013, highlighting its transition from an IoT hardware company to a blockchain-based network. The talk covers the challenges faced in the IoT space and the need for a robust network for devices like dog collars to transmit data effectively.",
+  "topic_summary": "The presentation explores Helium's journey from its inception in 2013 to becoming the largest decentralized wireless network, addressing the challenges in IoT and the importance of network infrastructure for device connectivity [t=276.96].",
+  "router_tags": [
+    "Helium",
+    "Decentralized Network",
+    "IoT",
+    "Blockchain",
+    "Wireless Technology"
+  ],
+  "aliases": [
+    "helium",
+    "Helium Network",
+    "Helium Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Helium"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

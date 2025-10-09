@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on building Web3 communities featuring Ian Goddard from Alpine F1 Team and Athena Yu from Binance. They explore how Web3 can enhance community engagement and ownership of digital assets, contrasting it with Web2's centralized platforms.",
+  "topic_summary": "The panel addresses the evolution of community building through Web3, emphasizing ownership, privacy, and control. They discuss the implications for sports teams, celebrities, and brands, and how these entities can leverage Web3 technologies to create immersive experiences for fans [t=8:08].",
+  "router_tags": [
+    "Web3",
+    "NFT",
+    "Binance",
+    "Alpine F1 Team",
+    "Community Building",
+    "Digital Ownership"
+  ],
+  "aliases": [
+    "web3",
+    "nft",
+    "binance",
+    "alpine f1 team",
+    "community building"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance",
+    "@AlpineF1"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

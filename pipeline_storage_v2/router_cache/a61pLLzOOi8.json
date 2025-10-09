@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on Web3 concepts and developments.",
+  "topic_summary": "Overview of Web3 and its implications in the digital landscape [t=00:16].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Web3",
+    "web3",
+    "WEB3"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

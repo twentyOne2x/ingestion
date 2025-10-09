@@ -1,0 +1,20 @@
+{
+  "video_id": "n1W5VbLFZtw",
+  "title": "2025-05-05_n1W5VbLFZtw_CZ talks Life inside Prison, Trump Presidency, and state of Crypto!",
+  "channel_name": "FAROKH RADIO",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "Speaker A",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

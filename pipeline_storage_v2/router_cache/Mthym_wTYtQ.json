@@ -1,0 +1,26 @@
+{
+  "description": "The Africa Decentralized Hackathon features discussions on decentralized projects, workshops, and prize opportunities for participants across Africa. Notable topics include digital identity, credit issuance, and blockchain applications. Participants are encouraged to engage in various projects and workshops, with a total prize pool of $2000 for winners across the continent. The event highlights the importance of education in crypto and decentralized finance.",
+  "topic_summary": "The event showcases decentralized projects from Africa, emphasizing education in crypto and the potential of blockchain technology. Participants can win prizes and learn about various projects and workshops available in the decentralized finance space [t=18:48].",
+  "router_tags": [
+    "Africa Decentralized Hackathon",
+    "Binance",
+    "Fortube",
+    "Blockchain",
+    "Crypto Education",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Africa Decentralized Hackathon",
+    "Binance Africa Hackathon",
+    "Fortube",
+    "Fort Tube",
+    "Binance Afrika"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

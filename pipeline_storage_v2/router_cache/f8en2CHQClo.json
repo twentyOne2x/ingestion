@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, the hosts discuss strategies for turning $10,000 into $750,000 through crypto trading. They explore various trading experiences and insights from their guest, who has a background in crypto since 2017, including NFT trading and market predictions.",
+  "topic_summary": "The podcast covers crypto trading strategies, personal experiences in the market, and insights on NFTs and trading dynamics. The guest shares their journey from early crypto involvement to significant trading successes, highlighting the importance of market awareness and participation [t=0:48].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Investing",
+    "NFTs",
+    "Podcast"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy",
+    "Thread Guy",
+    "threadguy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

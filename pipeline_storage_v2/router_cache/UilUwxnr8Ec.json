@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on significant risks taken in the cryptocurrency space, particularly focusing on Bitcoin.",
+  "topic_summary": "Exploration of major risks associated with Bitcoin investments and trading strategies [t=00:26].",
+  "router_tags": [
+    "Bitcoin",
+    "Risk Management",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

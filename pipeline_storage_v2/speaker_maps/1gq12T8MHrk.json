@@ -1,0 +1,26 @@
+{
+  "video_id": "1gq12T8MHrk",
+  "title": "2021-11-17_1gq12T8MHrk_Breakpoint 2021: Institutional Memory: How Finance Fuels DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Mark Ziller",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Joshua Lim",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

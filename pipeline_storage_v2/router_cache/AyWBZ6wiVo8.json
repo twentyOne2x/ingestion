@@ -1,0 +1,21 @@
+{
+  "description": "Join us as we unveil an exciting collaboration with Cristiano Ronaldo.",
+  "topic_summary": "Announcement of a new project involving Cristiano Ronaldo [t=0:00].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Binance",
+    "collaboration"
+  ],
+  "aliases": [
+    "Cristiano ronaldo",
+    "cristiano Ronaldo",
+    "Binance youtube",
+    "binanceYoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@Cristiano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

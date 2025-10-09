@@ -1,0 +1,20 @@
+{
+  "video_id": "bu6NhNINlfQ",
+  "title": "2021-09-04_bu6NhNINlfQ_Ignition Blastoff Stream - Hackathon Project Ideas",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "1BGzH6fKKms",
+  "title": "2024-11-20_1BGzH6fKKms_Abdulla Aldhaheri - CEO, The Blockchain Center in Abu Dhabi - No one stops innovation - BBW 2024",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Abdullah Wahari",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

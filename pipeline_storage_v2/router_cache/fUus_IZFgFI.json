@@ -1,0 +1,24 @@
+{
+  "description": "A demonstration of Solana governance tools, focusing on the Mango DAO. The session covers the basics of setting up a DAO, governance structures, and the Mango V3 program functionalities. It includes discussions on treasury control, governance tokens, and future developments in the DAO space.",
+  "topic_summary": "Introduction to Solana governance tools and Mango DAO functionalities, including DAO setup, governance structures, and treasury management [t=23:36 - 446:86].",
+  "router_tags": [
+    "Solana",
+    "DAO",
+    "Mango",
+    "Governance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "mango dao",
+    "Mango Dao",
+    "Mango DAO",
+    "dao mango",
+    "Dao Mango"
+  ],
+  "canonical_entities": [
+    "$MNGO",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

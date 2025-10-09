@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on common knowledge systems and their evolution, focusing on the role of blockchain in preserving knowledge. The speaker explains the concept of common knowledge, its historical context, and how Nervos aims to create a general-purpose knowledge base using a cell model, contrasting it with Bitcoin's specific purpose.",
+  "topic_summary": "Exploration of common knowledge systems, their historical significance, and the transition to blockchain technology for knowledge preservation. The presentation highlights the differences between specific and general-purpose knowledge bases, with Nervos providing a more flexible model compared to Bitcoin.",
+  "router_tags": [
+    "Common Knowledge",
+    "Blockchain",
+    "Nervos",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Solana's SF Meetup",
+    "SolanaFndn",
+    "Nervos Introduction"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$Nervos",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

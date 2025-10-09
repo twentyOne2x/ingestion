@@ -1,0 +1,24 @@
+{
+  "description": "Brady Dale discusses investing in crypto startups with Ron Khan and Chris McCann, focusing on the Solana blockchain and its recent challenges. They explore the implications of Solana's hiccups and the resilience of its decentralized network.",
+  "topic_summary": "Investing in crypto startups, with a focus on Solana's current market position and challenges, including network hiccups and decentralization issues [t=18:16].",
+  "router_tags": [
+    "Crypto",
+    "Investing",
+    "Solana",
+    "Blockchain",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@brady_dale",
+    "@ron_khan",
+    "@chris_mccann"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video provides an introduction to Binance Alpha, a feature designed to enhance user interaction with crypto projects and facilitate trading. It covers the functionalities of Binance Alpha, including token listings and trading processes, as well as the benefits of using Binance wallets for transactions. Viewers will learn how to navigate the Binance app and utilize various features related to early-stage tokens.",
+  "topic_summary": "An introduction to Binance Alpha, highlighting its features and benefits for trading early-stage tokens. The video explains how to use Binance wallets and navigate the Binance app for optimal trading experiences [t=0:48-3:88].",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "Web3",
+    "Token Listings",
+    "Binance Alpha"
+  ],
+  "aliases": [
+    "Binance Alpha",
+    "binance alpha",
+    "BINANCE ALPHA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

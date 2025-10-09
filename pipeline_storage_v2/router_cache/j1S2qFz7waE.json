@@ -1,0 +1,27 @@
+{
+  "description": "This masterclass covers opportunities in Bitcoin and the Binance Exchange, featuring discussions from various speakers and interactive Q&A sessions.",
+  "topic_summary": "Introduction to Binance and Bitcoin opportunities, speaker interactions, and audience engagement [t=0:16-3:04].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Masterclass",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "Binance Academy",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$USDT",
+    "$DOGE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

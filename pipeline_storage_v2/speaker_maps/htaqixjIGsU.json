@@ -1,0 +1,26 @@
+{
+  "video_id": "htaqixjIGsU",
+  "title": "2021-11-15_htaqixjIGsU_Breakpoint 2021: How P2E Boosts Mainstream Adoption",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Dan Dinh",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Jonathan Choi",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

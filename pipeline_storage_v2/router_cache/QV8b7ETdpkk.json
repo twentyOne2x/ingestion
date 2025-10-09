@@ -1,0 +1,28 @@
+{
+  "description": "Brenton and Lindy host Day 3 of Binance Blockchain Week, discussing the decentralized future and featuring speakers like Juan Bennett and Michael Saylor. They highlight the importance of decentralization and blockchain technology in transforming various sectors.",
+  "topic_summary": "The event focuses on the decentralized future, emphasizing how blockchain technology can enhance transparency, trust, and efficiency in various applications, including governance and financial participation [t=10:00].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Decentralization",
+    "NFTs",
+    "Transparency",
+    "Trust",
+    "Efficiency"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "binance",
+    "Blockchain Week"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

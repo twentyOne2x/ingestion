@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Elon Musk's influence on Bitcoin and Tesla's investment in cryptocurrency.",
+  "topic_summary": "Exploration of Elon Musk's role in Bitcoin adoption and Tesla's cryptocurrency strategies, including insights on trading bots and technology [t=2:16-2:64].",
+  "router_tags": [
+    "Bitcoin",
+    "Elon Musk",
+    "Tesla",
+    "Cryptocurrency",
+    "Trading"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@elonmusk",
+    "@Tesla"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

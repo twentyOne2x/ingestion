@@ -1,0 +1,29 @@
+{
+  "description": "Welcome to the world's first reality show in the metaverse. This episode features pitches from various web3 startups, highlighting their innovations and potential impact in the blockchain space.",
+  "topic_summary": "In this episode, the focus is on web3 startups pitching their ideas to a panel of judges, showcasing the latest trends and technologies in the blockchain industry. Notable participants include Mike Wassel and Jason from Bracket Labs, discussing their projects and experiences in the metaverse [t=4:72-8:56].",
+  "router_tags": [
+    "web3",
+    "blockchain",
+    "startups",
+    "metaverse",
+    "Binance"
+  ],
+  "aliases": [
+    "Build The Block",
+    "build the block",
+    "BUILD THE BLOCK"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL",
+    "@EvoLing",
+    "@AnimocaBrands",
+    "@MikeWassel",
+    "@Jason",
+    "@RobiJang",
+    "@AtsimKahn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

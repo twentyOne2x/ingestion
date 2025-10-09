@@ -1,0 +1,21 @@
+{
+  "description": "This video explores the relationship between Bitcoin and blockchain technology, explaining how blockchain serves as a distributed database and the foundational technology behind Bitcoin.",
+  "topic_summary": "The video discusses the connection between Bitcoin and blockchain, highlighting that blockchain is a distributed database where data is organized into blocks, which are then chained together. It emphasizes that Bitcoin is one application of blockchain technology [t=0:56].",
+  "router_tags": [
+    "Bitcoin",
+    "Blockchain",
+    "Cryptocurrency",
+    "Technology"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "@binanceacademy",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

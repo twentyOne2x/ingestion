@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the potential impact of the GENIUS Act on the cryptocurrency market, focusing on stablecoins and macroeconomic factors.",
+  "topic_summary": "Exploration of the GENIUS Act's significance for cryptocurrency, including its potential to influence Bitcoin and stablecoin adoption, and its implications for the U.S. economy and regulatory landscape [t=17:68-264:66].",
+  "router_tags": [
+    "GENIUS Act",
+    "cryptocurrency",
+    "stablecoins",
+    "Bitcoin",
+    "macro economy",
+    "regulation"
+  ],
+  "aliases": [
+    "Genius Act",
+    "genius act",
+    "GENIUS act"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@CryptosRUs",
+    "@BinanceYoutube",
+    "@Jessica",
+    "@Serra",
+    "@George",
+    "@ScottBenson",
+    "@Trump"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

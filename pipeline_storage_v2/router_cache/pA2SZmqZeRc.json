@@ -1,0 +1,24 @@
+{
+  "description": "This video provides an overview of Binance Smart Chain (BSC), explaining its features, consensus mechanism, and how it enables decentralized applications and token transactions.",
+  "topic_summary": "Binance Smart Chain is a parallel blockchain to Binance Chain, offering programmability and cross-chain communication. It utilizes a unique proof of stake authority consensus mechanism, allowing for high performance and innovative staking options. Users can benefit from various services like liquidity mining and yield farming on the BSC platform [t=83:10].",
+  "router_tags": [
+    "Binance",
+    "Binance Smart Chain",
+    "BSC",
+    "Blockchain",
+    "Staking",
+    "DeFi"
+  ],
+  "aliases": [
+    "Binance Smart Chain",
+    "BSC",
+    "binance smart chain",
+    "bsc"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

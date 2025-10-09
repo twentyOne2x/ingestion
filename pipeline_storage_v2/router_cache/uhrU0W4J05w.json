@@ -1,0 +1,22 @@
+{
+  "description": "Anatoly discusses his background in engineering, particularly at Qualcomm, and the importance of time in blockchain technology. He highlights Solana's capability of processing up to 700,000 transactions per second, significantly faster than Bitcoin, and shares insights on cryptographic hash functions.",
+  "topic_summary": "Anatoly explains the integration of time as a foundational element in blockchain, the scalability of Solana, and the technical aspects of embedded systems and cryptographic functions [t=0:88-263].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Cryptography",
+    "Embedded Systems",
+    "Technology"
+  ],
+  "aliases": [
+    "@Anatoly",
+    "Anatoly",
+    "anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

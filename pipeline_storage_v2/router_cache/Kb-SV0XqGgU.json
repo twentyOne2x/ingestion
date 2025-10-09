@@ -1,0 +1,21 @@
+{
+  "description": "Webinar discussing investment strategies in cryptocurrency, focusing on market analysis and project transparency.",
+  "topic_summary": "In this Binance webinar, community manager Gabrielle discusses key investment strategies in cryptocurrency, emphasizing the importance of research and analysis [t=00:37]. The session covers various projects and their market dynamics, including circulating supply and market capitalization [t=11:30].",
+  "router_tags": [
+    "cryptocurrency",
+    "investment",
+    "Binance",
+    "webinar",
+    "market analysis"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

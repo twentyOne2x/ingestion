@@ -1,0 +1,20 @@
+{
+  "video_id": "GPdTt1B77O8",
+  "title": "2021-08-19_GPdTt1B77O8_Info Session of Launching BSC MVB Program III",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Gwendolin Regina",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the potential of blockchain technology in various sectors, including gaming and voting, emphasizing the need for scalable solutions and the importance of identity management.",
+  "topic_summary": "Exploration of blockchain applications in gaming and voting, highlighting the challenges of scaling democracy and the significance of identity in digital interactions. The conversation touches on the historical context of voting in South Africa and the need for efficient voting systems [t=225.07].",
+  "router_tags": [
+    "Blockchain",
+    "Voting",
+    "Gaming",
+    "Identity",
+    "Democracy"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Civic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

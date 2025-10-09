@@ -1,0 +1,22 @@
+{
+  "description": "CZ discusses the future of cryptocurrency, emphasizing its role as a technology rather than just a currency. He highlights the potential of crypto applications that traditional finance cannot offer, such as NFTs and decentralized finance. He also addresses the slow adoption of crypto in payments and the possibility of crypto replacing traditional finance in the long term.",
+  "topic_summary": "CZ explains the significance of cryptocurrency as a technological innovation, its current applications, and the challenges it faces in replacing traditional finance. He notes the slow adoption of crypto for payments and the unique opportunities it presents for global transactions.",
+  "router_tags": [
+    "Cryptocurrency",
+    "CZ",
+    "Binance",
+    "Finance",
+    "Technology"
+  ],
+  "aliases": [
+    "Cz",
+    "CZ",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binancezh"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

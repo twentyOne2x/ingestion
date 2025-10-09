@@ -1,0 +1,25 @@
+{
+  "description": "Changpeng Zhao, CEO of Binance, discusses the company's growth and vision at the Blockchain Revolution Event 2018. He highlights Binance's rapid rise in the cryptocurrency market, user registration strategies, and the importance of providing a global trading platform [t=4:88-234:78].",
+  "topic_summary": "CZ shares insights on Binance's market position, user growth, and the challenges of cryptocurrency exchanges. He emphasizes the need for innovation in the industry and Binance's commitment to serving a global audience [t=43:32-170:70].",
+  "router_tags": [
+    "Binance",
+    "Changpeng Zhao",
+    "Cryptocurrency",
+    "ICO",
+    "Market Cap",
+    "User Growth"
+  ],
+  "aliases": [
+    "CZ",
+    "Changpeng Zhao",
+    "Champen Zhao",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

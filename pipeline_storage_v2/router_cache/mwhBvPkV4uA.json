@@ -1,0 +1,20 @@
+{
+  "description": "Interviews from Binance Blockchain Week discussing the importance of research and caution in cryptocurrency.",
+  "topic_summary": "Insights on cryptocurrency safety and education, emphasizing the need for thorough research and gradual investment [t=4:00 - t=23:44].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Cryptocurrency",
+    "Interviews"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

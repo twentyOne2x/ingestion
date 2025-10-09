@@ -1,0 +1,29 @@
+{
+  "description": "Discussion about idols and preferences between famous personalities, including Elon Musk and Cristiano Ronaldo, with references to Bitcoin and dinner choices.",
+  "topic_summary": "Exploring the concept of idols and preferences in the context of cryptocurrency and celebrity culture [t=0:16].",
+  "router_tags": [
+    "Crypto",
+    "Elon Musk",
+    "Cristiano Ronaldo",
+    "Tupac",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Crypto Ferrari",
+    "Crypto ferrari",
+    "crypto ferrari"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@elonmusk",
+    "@Cristiano",
+    "@tupac",
+    "@Dimitri",
+    "@Khalif",
+    "@Young",
+    "@Edina",
+    "@Hallelujah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

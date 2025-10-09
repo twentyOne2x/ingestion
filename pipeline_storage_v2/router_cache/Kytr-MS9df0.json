@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on various topics including finance and social media platforms, featuring mentions of notable figures and channels.",
+  "topic_summary": "Overview of financial discussions and social media interactions, including references to Joshang, Jingikohan, and others. Highlights include insights on platforms like Instagram and Discord [t=22:27].",
+  "router_tags": [
+    "finance",
+    "social media",
+    "YouTube",
+    "discussion"
+  ],
+  "aliases": [
+    "Kytr",
+    "Chill",
+    "Youtube"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "@Joshang",
+    "@Jingikohan",
+    "@ShanghaiDaShuhona",
+    "@Judao",
+    "@GuaniRam",
+    "@Shabbat",
+    "@Maojian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

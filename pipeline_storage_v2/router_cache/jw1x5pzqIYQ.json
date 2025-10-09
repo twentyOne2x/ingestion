@@ -1,0 +1,28 @@
+{
+  "description": "This video discusses the resurgence of NFTs, exploring their definition and the current market dynamics. It highlights the initial hype, subsequent decline, and potential for a comeback, with references to major brands like Starbucks and Nike engaging in NFT initiatives. The discussion includes the importance of security and the evolving use cases for NFTs in digital fashion, gaming assets, and concert tickets.",
+  "topic_summary": "NFTs are experiencing a potential comeback after a period of decline. The video covers their definition, market challenges, and new applications in various sectors [t=0:24-0:31]. It emphasizes the need for security and awareness among users [t=373:12-377:48].",
+  "router_tags": [
+    "NFTs",
+    "Cryptocurrency",
+    "Digital Assets",
+    "Blockchain",
+    "Market Trends"
+  ],
+  "aliases": [
+    "Nfts",
+    "NFTs",
+    "nFTs",
+    "nFTs"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@Starbucks",
+    "@Baron",
+    "@Weningegger",
+    "@Letts",
+    "@Zuklos"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

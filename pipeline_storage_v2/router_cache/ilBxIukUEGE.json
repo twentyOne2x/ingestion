@@ -1,0 +1,26 @@
+{
+  "description": "Live AMA session with Varun, co-founder and CEO of Hashflow, discussing the intersection of aerospace engineering and cryptocurrency, along with audience engagement and giveaways.",
+  "topic_summary": "Varun shares his background in aerospace engineering and transition to crypto, engaging with the audience about their locations and questions. The session includes a discussion on Ethereum and the crypto space's ideological aspects [t=227.43].",
+  "router_tags": [
+    "AMA",
+    "Binance",
+    "Hashflow",
+    "Cryptocurrency",
+    "Ethereum",
+    "Aerospace"
+  ],
+  "aliases": [
+    "ama",
+    "simple earn",
+    "hft ama",
+    "hashflow",
+    "varun"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

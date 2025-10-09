@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the evolution of gaming monetization through NFTs, featuring insights from industry experts on community engagement and game development strategies.",
+  "topic_summary": "The panel explores how NFTs are reshaping game monetization, allowing developers to build communities before launching games, and the implications for player engagement and market dynamics [t=14:76].",
+  "router_tags": [
+    "NFTs",
+    "Gaming",
+    "Monetization",
+    "Community",
+    "Solana"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021: NFTs and the Games Within Games"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JoeMccann",
+    "@Shiraf"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

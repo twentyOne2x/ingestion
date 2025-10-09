@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses innovations in blockchain technology beyond Bitcoin and Ethereum, highlighting alternative consensus mechanisms and diverse applications across various industries.",
+  "topic_summary": "Exploration of blockchain innovations beyond Bitcoin and Ethereum, including alternative consensus mechanisms and applications in sectors like healthcare and supply chain [t=0:40].",
+  "router_tags": [
+    "Blockchain",
+    "Innovation",
+    "Cryptocurrency",
+    "Consensus Mechanisms"
+  ],
+  "aliases": [
+    "What Innovations Are There Beyond Bitcoin And Ethereum",
+    "Innovations Beyond BTC and ETH",
+    "Blockchain Innovations"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

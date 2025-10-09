@@ -1,0 +1,50 @@
+{
+  "video_id": "BVa-A3OIcpU",
+  "title": "2021-06-24_BVa-A3OIcpU_Africa Hackathon: JUDGES ROUNDTABLE!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "H",
+  "speaker_map": {
+    "C": {
+      "name": "Marvelous Macaulay",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "H": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "G": {
+      "name": "Oluwa Femi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Sami Carol",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "J": {
+      "name": "Ola Body",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "David Yu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Tamill Ogumwe",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

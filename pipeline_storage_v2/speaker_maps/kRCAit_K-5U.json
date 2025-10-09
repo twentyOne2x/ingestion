@@ -1,0 +1,38 @@
+{
+  "video_id": "kRCAit_K-5U",
+  "title": "2021-11-15_kRCAit_K-5U_Breakpoint 2021: Degens on Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Henry Elder",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "F": {
+      "name": "Goose Wayne",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Henry Elder",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Goose Wayne",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

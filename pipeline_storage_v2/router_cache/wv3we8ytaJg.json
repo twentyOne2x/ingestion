@@ -1,0 +1,24 @@
+{
+  "description": "This webinar features a Q&A session about Trust Wallet, discussing its benefits, security, simplicity, and unique features compared to other wallets. Key points include the importance of controlling private keys and the ability to access DeFi and NFTs through the wallet.",
+  "topic_summary": "The webinar covers Trust Wallet's advantages, including non-custodial control of crypto assets, security education, and user-friendly features for managing various crypto activities [t=0:24-2:96].",
+  "router_tags": [
+    "Trust Wallet",
+    "Binance",
+    "Crypto",
+    "DeFi",
+    "NFTs",
+    "Webinar"
+  ],
+  "aliases": [
+    "Trust wallet",
+    "trust Wallet",
+    "TRUST WALLET"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

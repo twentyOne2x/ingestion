@@ -1,0 +1,24 @@
+{
+  "description": "Jeff Li, VP of Product at Binance, discusses the significance of Bitcoin Pizza Day and its impact on the cryptocurrency community.",
+  "topic_summary": "In this segment, Jeff Li reflects on his experience in the social media and e-commerce sectors, emphasizing the importance of optimization and perfection in product flows [t=1:52].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Jeff Li",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@jeffli"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

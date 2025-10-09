@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Binance services, including NFT platforms and Bitcoin sales, featuring various speakers and insights on market strategies.",
+  "topic_summary": "Overview of Binance's offerings and market strategies, including NFTs and Bitcoin, with mentions of various contributors and their roles [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Market Strategies"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$LUCIA",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

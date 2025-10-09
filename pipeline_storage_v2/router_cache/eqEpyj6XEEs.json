@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on taxes and cryptocurrencies in Mexico, focusing on Binance's role and services available for Mexican users.",
+  "topic_summary": "Overview of cryptocurrency taxation in Mexico, with emphasis on Binance's offerings and regulatory considerations [t=0:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxes",
+    "Mexico",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance Latam",
+    "Binance",
+    "Aroba Binance",
+    "Binance Spanish"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

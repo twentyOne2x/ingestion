@@ -1,0 +1,21 @@
+{
+  "description": "CZ reflects on his journey from leading Binance to being an intern, sharing insights on the evolution of the crypto landscape.",
+  "topic_summary": "Discussion on Bitcoin Pizza Day and CZ's transition from CEO to intern [t=2:56].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "CZ",
+    "Crypto"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "cz"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

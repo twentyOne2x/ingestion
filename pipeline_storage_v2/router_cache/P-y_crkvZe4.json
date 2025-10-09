@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the core features of Ethereum smart contracts, highlighting their ability to automate agreements without the need for intermediaries.",
+  "topic_summary": "Ethereum smart contracts automate agreements by executing predefined conditions without intermediaries. They are distributed across the network, deterministic, and ensure consistent outcomes when requirements are met. [t=0:64] [t=6:16] [t=23:20] [t=32:33]",
+  "router_tags": [
+    "Ethereum",
+    "Smart Contracts",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Ethereum Smart Contracts",
+    "eth smart contracts",
+    "ETH Smart Contracts"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

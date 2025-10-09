@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the evolution of multi-chain technology and interoperability in blockchain, featuring insights from industry leaders on cross-chain solutions and challenges.",
+  "topic_summary": "Panelists discuss the future of multi-chain ecosystems, focusing on Solana's role and interoperability solutions like RENVM and Floating Point Group. Key topics include cross-chain transfers, Ethereum compatibility, and liquidity in the Solana ecosystem [t=23:12-371:02].",
+  "router_tags": [
+    "Solana",
+    "Multi-Chain",
+    "Interoperability",
+    "Blockchain",
+    "Cross-Chain"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Solana in a Multi-Chain World",
+    "solana",
+    "solana foundation",
+    "solana fndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@andreifalev",
+    "@michaelburgos",
+    "@vanfu",
+    "@renproject",
+    "@floatingpointgroup"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

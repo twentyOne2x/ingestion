@@ -1,0 +1,20 @@
+{
+  "video_id": "jLU68J2cgjY",
+  "title": "2025-01-24_jLU68J2cgjY_This Week In Crypto with Coin Bureau & CoinMarketCap",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Ernst Zuminen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

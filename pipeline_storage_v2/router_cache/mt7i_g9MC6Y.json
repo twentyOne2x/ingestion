@@ -1,0 +1,21 @@
+{
+  "description": "This video explains that a blockchain is a specific type of database known as a distributed ledger, highlighting its unique characteristics and rules.",
+  "topic_summary": "A blockchain is a special type of database called a distributed ledger, which stores information under specific rules: data can be added but not removed or modified, and each piece of data must link back to the previous one [t=0:56].",
+  "router_tags": [
+    "blockchain",
+    "distributed ledger",
+    "database",
+    "technology"
+  ],
+  "aliases": [
+    "Blockchain",
+    "Distributed Ledger",
+    "Db"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on various topics including NFTs, social media, and cryptocurrency developments.",
+  "topic_summary": "The episode features insights from Raymond Mai and Gamma Gure on the impact of digitalization in finance and social media, touching on NFTs and community engagement [t=0:00].",
+  "router_tags": [
+    "NFT",
+    "Cryptocurrency",
+    "Social Media",
+    "Digital Finance"
+  ],
+  "aliases": [
+    "CoinEp.3",
+    "Coin Episode 3",
+    "Coin Episode Three"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "@raymondmai",
+    "@gammagure",
+    "@google",
+    "@wangsha",
+    "@keilagung",
+    "@michaelmaxang",
+    "@junghongbon",
+    "@kaimanipur",
+    "@hoyikagadaga",
+    "@yaogaia",
+    "@yatong",
+    "@facebook",
+    "@target"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

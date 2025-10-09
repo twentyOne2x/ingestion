@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing Binance Pool, mining strategies, and financial instruments related to cryptocurrency.",
+  "topic_summary": "Overview of business mining, proof of stake, and algorithmic mining with insights from Taki Solomon and Peter Hashe [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "Mining",
+    "Cryptocurrency",
+    "Webinar"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@TakiSolomon",
+    "@PeterHashe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

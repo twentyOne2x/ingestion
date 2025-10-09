@@ -1,0 +1,25 @@
+{
+  "description": "The founder of Solana discusses the high-performance blockchain, its transaction capabilities, and the introduction of a verifiable delay function for security. He emphasizes the importance of protecting users and applications within the blockchain ecosystem, referencing past security incidents and the need for secure APIs.",
+  "topic_summary": "Overview of Solana's blockchain performance and security innovations, including the verifiable delay function and the challenges of protecting users and applications from vulnerabilities and attacks [t=3:60].",
+  "router_tags": [
+    "Blockchain",
+    "Security",
+    "Solana",
+    "Cryptocurrency",
+    "Performance"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "ETH",
+    "BTC",
+    "Motorola"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "LO7q2t9CfJQ",
+  "title": "2021-11-30_LO7q2t9CfJQ_Brendan Eich - CEO & Co-Founder, Brave Software Ep #54",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Jules Urbach",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

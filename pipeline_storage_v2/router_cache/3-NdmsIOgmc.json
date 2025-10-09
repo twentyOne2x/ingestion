@@ -1,0 +1,18 @@
+{
+  "description": "This video covers the second part of technical analysis training, focusing on trend lines.",
+  "topic_summary": "In this segment, the concept of trend lines is explored, including their significance in identifying market movements and patterns. The discussion includes various aspects of trend analysis and practical applications [t=01:22].",
+  "router_tags": [
+    "Technical Analysis",
+    "Trend Lines",
+    "Trading Education"
+  ],
+  "aliases": [
+    "Teknik Analiz Egitimi",
+    "Trend Cizgisi"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

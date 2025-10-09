@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on the role of oracles and data feeds in blockchain, featuring insights from Mitch, Henrik, Chris, and Kaunav. They explore the evolution of oracles, their applications, and the differences between PIF Network and Switchboard in providing data on-chain. Key topics include the importance of real-time data, price feeds, and the integration of public APIs for data sourcing.",
+  "topic_summary": "The panel discusses the significance of oracles in blockchain, focusing on their historical context, current implementations, and the contrasting methodologies of PIF Network and Switchboard in delivering data feeds to the blockchain. [t=11:12] to [t=286:65]",
+  "router_tags": [
+    "Oracles",
+    "Data Feeds",
+    "Blockchain",
+    "Switchboard",
+    "PIF Network",
+    "Crypto"
+  ],
+  "aliases": [
+    "Oracles",
+    "Data Feeds",
+    "Switchboard",
+    "Pif Network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Mitch",
+    "@Hendrik",
+    "@ChrisErmita",
+    "@Kaunav"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

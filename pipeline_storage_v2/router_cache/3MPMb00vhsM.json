@@ -1,0 +1,28 @@
+{
+  "description": "Webinar discussing basic graphical analysis in cryptocurrencies, focusing on price action and technical analysis.",
+  "topic_summary": "The session covers fundamental analysis, price action, and graphical techniques for trading cryptocurrencies, including discussions on various candle patterns and market trends [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "technical analysis",
+    "webinar",
+    "Binance"
+  ],
+  "aliases": [
+    "Analise Grafica Basica",
+    "Binance Webinar",
+    "Cryptocurrency Analysis"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@AlmaCadakiji",
+    "@Princeton",
+    "@Padronski",
+    "@Oparizio",
+    "@Fastmojo",
+    "@Fazel",
+    "@Derek"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

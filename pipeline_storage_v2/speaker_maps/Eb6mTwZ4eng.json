@@ -1,0 +1,20 @@
+{
+  "video_id": "Eb6mTwZ4eng",
+  "title": "2022-11-06_Eb6mTwZ4eng_Breakpoint 2022: The Strategic Logic of Hacker Houses",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Ryan Shea",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Carlo Lasmarias, COO and co-founder of Hummingbot, discusses the impact of blockchain speed on high-frequency trading. He highlights the advantages of using Solana for decentralized exchanges and the upcoming Liquidity Mining platform that enables community participation in market making.",
+  "topic_summary": "In this video, Carlo Lasmarias explains how blockchain technology can modernize financial processes, emphasizing the importance of speed in high-frequency trading. He discusses the limitations of decentralized exchanges compared to centralized ones and introduces Liquidity Mining as a new opportunity for the Solana community [t=90:26].",
+  "router_tags": [
+    "Blockchain",
+    "High Frequency Trading",
+    "Decentralized Exchanges",
+    "Liquidity Mining",
+    "Solana"
+  ],
+  "aliases": [
+    "Carlo Lasmarias",
+    "carlo lasmarias",
+    "Hummingbot",
+    "hummingbot"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,29 @@
+{
+  "description": "The first workshop of the Decentralized Africa Hackathon features YP from Auto Farm, discussing decentralized finance (DeFi) and its key characteristics, including permissionless access, decentralization, trustlessness, transparency, censorship resistance, and programmability. Participants can also win $500 during the session.",
+  "topic_summary": "Introduction to DeFi and Auto Farm Protocol, covering its significance and features, along with a $500 giveaway opportunity during the workshop [t=149:25].",
+  "router_tags": [
+    "DeFi",
+    "Auto Farm",
+    "Decentralized Finance",
+    "Binance Smart Chain",
+    "Hackathon"
+  ],
+  "aliases": [
+    "Decentralized Africa Hackathon",
+    "Auto Farm Protocol",
+    "Y Privacy Matter",
+    "YP"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "$USDT",
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

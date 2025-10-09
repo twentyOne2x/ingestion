@@ -1,0 +1,19 @@
+{
+  "description": "A brief explanation of bear and bull markets in cryptocurrency, focusing on price movements and patterns.",
+  "topic_summary": "Explains the concepts of bear markets [t=20:24] and bull markets [t=20:24], including the head and shoulders pattern [t=51:17].",
+  "router_tags": [
+    "Crypto",
+    "Bear Market",
+    "Bull Market",
+    "Trading"
+  ],
+  "aliases": [
+    "Wendy",
+    "wendy"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

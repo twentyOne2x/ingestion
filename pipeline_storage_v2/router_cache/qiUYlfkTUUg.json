@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on digital privacy and security in cryptocurrency, covering topics like phishing, two-factor authentication, and the importance of secure practices in trading.",
+  "topic_summary": "The video addresses digital privacy and security challenges in cryptocurrency, emphasizing the need for secure trading practices and tools like Google Authenticator and YubiKey for enhanced protection. It also touches on the complexities of Ethereum and Bitcoin security measures [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "security",
+    "privacy",
+    "trading",
+    "Binance"
+  ],
+  "aliases": [
+    "Digitalni Soukromi a Bezpecnost v Kryptu",
+    "Digital Privacy and Security in Crypto"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Binance",
+    "@LindaGonza",
+    "@Matthias",
+    "@MatishSeifu"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

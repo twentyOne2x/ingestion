@@ -1,0 +1,26 @@
+{
+  "video_id": "QyM43-cISwg",
+  "title": "2021-11-17_QyM43-cISwg_Breakpoint 2021: State Layer: Validators and Infrastructure",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Michael Repettny",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Brian Crane",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

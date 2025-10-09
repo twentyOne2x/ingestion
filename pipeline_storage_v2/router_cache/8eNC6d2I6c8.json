@@ -1,0 +1,22 @@
+{
+  "description": "Join the Binance Affiliate Rewards Bootcamp to learn how to become a successful crypto influencer. This program includes seven classes covering Binance trading products, content creation, and referral strategies, with opportunities for rewards and bonuses.",
+  "topic_summary": "The Binance Affiliate Rewards Bootcamp offers education on becoming a crypto influencer, covering topics such as trading products [t=29:08], content creation [t=40:35], and referral strategies [t=61:70]. Participants can earn rewards based on project completion [t=160:33].",
+  "router_tags": [
+    "Binance",
+    "Crypto Influencer",
+    "Affiliate Marketing",
+    "Trading",
+    "Rewards"
+  ],
+  "aliases": [
+    "Binance Affiliate Rewards Bootcamp",
+    "Binance Influencer Program",
+    "Crypto Influencer Bootcamp"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

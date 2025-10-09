@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing the importance of securing cryptocurrencies and the role of hardware wallets. Key topics include identification factors, transaction security, and the evolution of financial systems towards decentralization.",
+  "topic_summary": "The webinar emphasizes the need for secure cryptocurrency management and the shift towards decentralized financial systems. It highlights the increasing adoption of blockchain technology and the potential of Bitcoin to address global financial challenges [t=00:00-54:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "blockchain",
+    "Bitcoin",
+    "hardware wallets",
+    "decentralization"
+  ],
+  "aliases": [
+    "Webinar Seguridad",
+    "Seguridad Criptomonedas",
+    "Binance Webinar"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

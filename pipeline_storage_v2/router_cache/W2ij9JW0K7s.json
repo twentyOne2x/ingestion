@@ -1,0 +1,31 @@
+{
+  "description": "Aisha Kiani from Ledger Prime discusses the Solana ecosystem, highlighting its advantages over Ethereum in yield farming and trading strategies due to lower transaction costs and faster speeds. She outlines the challenges in DeFi options markets and presents portfolio companies like Drift, Psyoptions, Zeta, and Apricot Finance that are innovating in this space.",
+  "topic_summary": "Aisha Kiani discusses yield strategies and market-making in the Solana ecosystem, comparing it to Ethereum and addressing challenges in DeFi options markets. She highlights innovative projects and their approaches to liquidity and capital efficiency [t=18:48-508:44].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Yield Farming",
+    "Market Making",
+    "Options Trading",
+    "Liquidity"
+  ],
+  "aliases": [
+    "Aisha Kiani",
+    "aisha kiani",
+    "Ledger Prime",
+    "ledger prime"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@AishaKiani",
+    "@LedgerPrime",
+    "@Drift",
+    "@Psyoptions",
+    "@Zeta",
+    "@Apricot",
+    "@KatanaFriction",
+    "@Owan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

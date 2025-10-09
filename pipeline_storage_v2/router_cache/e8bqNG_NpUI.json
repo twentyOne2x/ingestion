@@ -1,0 +1,21 @@
+{
+  "description": "A personal story of how Binance provided financial support during a crisis after a devastating earthquake in Turkey.",
+  "topic_summary": "The speaker shares their experience with Binance, highlighting its role in providing financial aid of $100 to victims and $300 to their family after losing everything in the earthquake [t=32:56]. They emphasize the community aspect of Binance, describing it as more than just an exchange, but as friends and family [t=43.84].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Earthquake Relief",
+    "Financial Aid"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

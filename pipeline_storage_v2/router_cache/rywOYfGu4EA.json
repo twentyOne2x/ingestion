@@ -1,0 +1,23 @@
+{
+  "description": "Proof of History enables fast blockchain operations while ensuring security and decentralization. It utilizes a recursive verifiable delay function to hash events and transactions, creating unique hashes that establish a verifiable order of events over time. Each node has a cryptographic clock to synchronize without waiting for others, allowing Solana to achieve high throughput without compromising network security.",
+  "topic_summary": "This explainer details how Proof of History functions as a cryptographic timestamping mechanism, allowing for efficient event ordering and high throughput in the Solana blockchain, contrasting it with traditional blockchains that rely on slower consensus mechanisms. [t=0:56]",
+  "router_tags": [
+    "Blockchain",
+    "Proof of History",
+    "Solana",
+    "Cryptography",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Proof of History",
+    "proof of history",
+    "Solana",
+    "solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

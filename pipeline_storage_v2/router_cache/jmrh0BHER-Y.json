@@ -1,0 +1,31 @@
+{
+  "description": "Join Binance's webinar to learn how to grow your business using cryptocurrency and the Binance Exchange. The session features discussions on trading, holding coins, and maximizing profits through Binance's platform.",
+  "topic_summary": "Webinar on growing businesses with crypto and Binance Exchange, featuring insights on trading and profit maximization [t=132.85].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Business Growth",
+    "Webinar",
+    "Trading"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "Binance Academy",
+    "binance academy",
+    "Binance Africa",
+    "binance africa"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "$USDT",
+    "$BUSD",
+    "$DAI",
+    "$USDC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

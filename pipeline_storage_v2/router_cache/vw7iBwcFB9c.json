@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the concepts of makers and takers in trading, focusing on the fee structure used by exchanges like Binance. It details how makers provide liquidity by placing orders that are not immediately matched, while takers consume liquidity by matching with existing orders. The video also clarifies the implications of trading fees based on whether one is a maker or a taker.",
+  "topic_summary": "Understanding the maker-taker fee structure in trading, specifically on Binance, including the roles of makers and takers and how trading fees are applied [t=0:24 - t=1:15].",
+  "router_tags": [
+    "trading",
+    "Binance",
+    "makers",
+    "takers",
+    "fee structure"
+  ],
+  "aliases": [
+    "Makers and Takers",
+    "makers and takers",
+    "Maker Taker Fee Structure"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

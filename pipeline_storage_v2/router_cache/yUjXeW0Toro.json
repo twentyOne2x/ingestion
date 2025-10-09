@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on server access for Solana validators, including new providers and updates on the 1.9.9 release.",
+  "topic_summary": "The meeting covers server access through Inflect and Edgevana, updates on the Solana 1.9.9 release, and the need for higher RAM in RPC nodes [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Validators",
+    "Server Access",
+    "1.9.9 Release"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "solana validator roundtable",
+    "validator roundtable"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

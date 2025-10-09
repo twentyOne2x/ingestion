@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to copy trade crypto on Binance, a beginner-friendly guide that explains the process and benefits of copy trading.",
+  "topic_summary": "Copy trading allows users to automatically replicate the trades of experienced traders in real-time, making it easier to invest in crypto without needing to analyze charts or develop strategies. This guide covers the basics of copy trading on Binance, including how to select traders to copy and manage investments effectively. [t=0:24] [t=28:09] [t=291:29]",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Copy Trading",
+    "Beginner Guide"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses the origins of blockchain technology, highlighting the contributions of Stuart Haber and W. Scott Stornetta in 1991. It explains their method for timestamping digital documents to prevent tampering and the subsequent development of Merkle trees in 1992.",
+  "topic_summary": "Exploration of the invention of blockchain technology by Stuart Haber and W. Scott Stornetta, detailing their timestamping solution and the evolution of the concept leading up to Bitcoin's creation [t=0:88-41:02].",
+  "router_tags": [
+    "Blockchain",
+    "Invention",
+    "Stuart Haber",
+    "W. Scott Stornetta",
+    "Timestamping"
+  ],
+  "aliases": [
+    "Who Invented Blockchain",
+    "who invented blockchain",
+    "Blockchain Invention",
+    "blockchain invention"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$BTC",
+    "@StuartHaber",
+    "@WScottStornetta"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

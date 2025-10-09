@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses various crypto scams and provides tips on how to avoid them. It covers fake exchanges, fake giveaways, phishing attempts, and the importance of verifying information before engaging with crypto-related content.",
+  "topic_summary": "Learn about common crypto scams and how to protect yourself from them, including identifying fake exchanges [t=54:54], avoiding fake giveaways [t=116:83], and recognizing phishing attempts [t=178:77].",
+  "router_tags": [
+    "crypto",
+    "scams",
+    "safety",
+    "Binance"
+  ],
+  "aliases": [
+    "Top Crypto Scams",
+    "Crypto Scams Explained",
+    "Avoid Crypto Scams"
+  ],
+  "canonical_entities": [
+    "@Binance",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

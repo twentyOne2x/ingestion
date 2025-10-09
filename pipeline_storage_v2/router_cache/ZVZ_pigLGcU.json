@@ -1,0 +1,24 @@
+{
+  "description": "This mini masterclass covers crypto savings, including stablecoins and staking wallets, presented by Binance Academy and Jimmy Oliver.",
+  "topic_summary": "Discussion on crypto savings, stablecoins, and staking wallets [t=26:06] to [t=59:00].",
+  "router_tags": [
+    "Crypto",
+    "Savings",
+    "Stablecoins",
+    "Staking",
+    "Binance"
+  ],
+  "aliases": [
+    "Mini Masterclass",
+    "Crypto Ahorros",
+    "Binance Academy",
+    "Jimmy Oliver"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@JimmyOliver"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

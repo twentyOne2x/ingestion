@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the rise of DeFi featuring insights from industry experts. Topics include the accessibility of financial services, the evolution of crypto, and personal experiences in the DeFi space.",
+  "topic_summary": "Discussion on DeFi's impact on financial accessibility and personal asset management, highlighting the shift from traditional finance to decentralized finance [t=351.13].",
+  "router_tags": [
+    "DeFi",
+    "Crypto",
+    "Finance",
+    "Solana",
+    "Mango",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Pyth Workshop",
+    "DeFi Panel",
+    "Rise of DeFi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Daffy",
+    "@DanGunsberg",
+    "@BerndFinance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

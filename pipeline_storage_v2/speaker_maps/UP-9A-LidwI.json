@@ -1,0 +1,20 @@
+{
+  "video_id": "UP-9A-LidwI",
+  "title": "2021-11-18_UP-9A-LidwI_Breakpoint 2021: Beyond Spot Markets",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "M. Danhabe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

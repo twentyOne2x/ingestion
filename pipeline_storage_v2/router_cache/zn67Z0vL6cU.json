@@ -1,0 +1,20 @@
+{
+  "description": "Discussion about Binance Pizza and its relevance in the crypto community.",
+  "topic_summary": "Overview of Binance Pizza and its significance in the crypto space [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Pizza",
+    "Crypto"
+  ],
+  "aliases": [
+    "Binancepizza",
+    "binancePizza",
+    "BINANCEPIZZA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

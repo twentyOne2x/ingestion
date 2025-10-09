@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the relationship between Bitcoin and traditional money, exploring concepts of supply and demand.",
+  "topic_summary": "Exploration of Bitcoin's impact on monetary systems and its role in changing financial paradigms [t=0:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Money",
+    "Finance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Bitcoin vs. Money",
+    "bitcoin vs. money",
+    "BITCOIN VS. MONEY"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

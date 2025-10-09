@@ -1,0 +1,14 @@
+{
+  "video_id": "MKkmXnuBjK8",
+  "title": "2021-05-28_MKkmXnuBjK8_Switchboard Workshop",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

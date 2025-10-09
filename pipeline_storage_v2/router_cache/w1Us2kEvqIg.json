@@ -1,0 +1,24 @@
+{
+  "description": "Fireside chat featuring Jeremy Lair, CEO of Circle, and Anatoly Yankovanko, CEO of Solana, discussing the growth of USDC and its applications in digital finance.",
+  "topic_summary": "The conversation covers the explosive growth of USDC, its adoption across various sectors, and the innovative use cases emerging from blockchain technology [t=0:16].",
+  "router_tags": [
+    "USDC",
+    "Circle",
+    "Solana",
+    "Blockchain",
+    "Digital Currency",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "Fireside Chat with Jeremy Allaire",
+    "Jeremy Allaire Fireside Chat",
+    "Circle Fireside Chat"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@jeremylair",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

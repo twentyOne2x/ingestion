@@ -1,0 +1,26 @@
+{
+  "description": "Brent Aleika hosts a workshop for the Binance Africa Hackathon, featuring One Inch Exchange. The session covers the Swap API, allowing users to get quotes and execute swaps efficiently across decentralized exchanges. Kirill from the One Inch team explains the aggregation of liquidity and the benefits of their Pathfinder algorithm for optimal token swaps.",
+  "topic_summary": "Workshop on One Inch Exchange's Swap API during the Binance Africa Hackathon, discussing decentralized exchange aggregation and liquidity optimization [t=6:72-388:66].",
+  "router_tags": [
+    "Binance",
+    "One Inch",
+    "Hackathon",
+    "DeFi",
+    "Decentralized Exchange",
+    "API"
+  ],
+  "aliases": [
+    "One Inch",
+    "one inch",
+    "1 inch",
+    "1Inch"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$30,000",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Binance hosts an AMA to introduce the new Pakistani team and discuss Binance's presence in Pakistan. Team members Tarek Amzel, Hamza, and Rohan Asif share insights about their roles and the importance of crypto adoption in Pakistan [t=46:96]. They address community questions and announce a giveaway for participants [t=250:17].",
+  "topic_summary": "Introduction of Binance's new Pakistani team and discussion on crypto adoption in Pakistan. Community engagement and a giveaway announcement are also featured.",
+  "router_tags": [
+    "Binance",
+    "AMA",
+    "Pakistan",
+    "Crypto Adoption",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Binance Pakistan AMA",
+    "binance pakistan ama",
+    "Binance Pakistan",
+    "binance pakistan"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@RohanAsif",
+    "@Hamza"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

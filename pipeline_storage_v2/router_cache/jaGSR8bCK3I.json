@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the intersection of artificial intelligence (AI) and blockchain technology, exploring AI's potential in enhancing blockchain applications and smart contracts. Key insights include the role of generative AI in creating realistic avatars for the metaverse and the need for decentralized AI infrastructure.",
+  "topic_summary": "The conversation covers AI's impact on blockchain and Web3, including generative AI's capabilities in real-time image and video rendering [t=68.68], the dual benefits of AI and blockchain for each other [t=159.24], and the future of smart contracts powered by AI [t=295.20].",
+  "router_tags": [
+    "AI",
+    "Blockchain",
+    "Smart Contracts",
+    "Web3",
+    "Generative AI"
+  ],
+  "aliases": [
+    "Smart Contracts, Smarter AI",
+    "Generative Opportunities",
+    "AI and Blockchain"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@Zuckerberg",
+    "@OpenAI",
+    "@CohereStability",
+    "@SingularityNet"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

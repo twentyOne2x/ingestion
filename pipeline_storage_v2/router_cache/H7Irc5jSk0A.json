@@ -1,0 +1,22 @@
+{
+  "description": "This video explains Binance perpetual futures contracts, detailing how they work, including concepts like initial and maintenance margin, liquidation, and the insurance fund. It covers the mechanics of trading futures, the implications of leverage, and the role of the insurance fund in protecting traders.",
+  "topic_summary": "Learn about Binance perpetual futures contracts, their mechanics, and key concepts such as margin requirements and liquidation processes. Understand how these contracts differ from traditional futures and the importance of the insurance fund in trading.",
+  "router_tags": [
+    "Binance",
+    "Futures Contracts",
+    "Perpetual Futures",
+    "Cryptocurrency Trading",
+    "Leverage"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "BinanceAcademy"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

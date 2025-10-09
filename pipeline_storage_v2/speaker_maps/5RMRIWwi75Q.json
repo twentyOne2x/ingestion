@@ -1,0 +1,26 @@
+{
+  "video_id": "5RMRIWwi75Q",
+  "title": "2021-05-28_5RMRIWwi75Q_Crypto Week in Review #4. Through the eyes of crypto journalists",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Dan Roberts",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Cathie Wood Ark",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

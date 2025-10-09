@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the significance of using a private key to sign messages, emphasizing its role as a mathematical identity and the importance of keeping it secure.",
+  "topic_summary": "Understanding the function of a private key in message signing and the risks of sharing it. [t=0:08] The private key is likened to a password. [t=6:56] Signing a message with it certifies non-authorization of actions. [t=11:44] Sharing the private key can lead to unauthorized access. [t=13:52]",
+  "router_tags": [
+    "Private Key",
+    "Message Signing",
+    "Cryptography",
+    "Security"
+  ],
+  "aliases": [
+    "Private key",
+    "Message signing",
+    "Cryptographic identity"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

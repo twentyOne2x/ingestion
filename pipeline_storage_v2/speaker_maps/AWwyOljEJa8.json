@@ -1,0 +1,38 @@
+{
+  "video_id": "AWwyOljEJa8",
+  "title": "2022-11-05_AWwyOljEJa8_Breakpoint 2022: What's Next for Crypto Policy",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "A": {
+      "name": "Carol House",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Carol House",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Marina Markozic",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Eric Voorhees",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

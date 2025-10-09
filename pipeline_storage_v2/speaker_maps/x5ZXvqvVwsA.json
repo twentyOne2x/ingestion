@@ -1,0 +1,26 @@
+{
+  "video_id": "x5ZXvqvVwsA",
+  "title": "2022-12-26_x5ZXvqvVwsA_Europe and Web3 - Binance Blockchain Week - Paris 2022",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Martin Bronco",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "El Fau",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

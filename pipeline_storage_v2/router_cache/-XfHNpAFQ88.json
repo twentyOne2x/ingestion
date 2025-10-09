@@ -1,0 +1,30 @@
+{
+  "description": "CZ, Helen Hai, and Martin Bruncko discuss Binance's five-year anniversary, highlighting the company's impact on the economy and technology in various regions including Dubai, Bahrain, and France.",
+  "topic_summary": "The speakers reflect on Binance's growth and innovation over five years, emphasizing collaboration with various countries and the importance of technology in shaping the future of finance [t=5:68].",
+  "router_tags": [
+    "Binance",
+    "Anniversary",
+    "Innovation",
+    "Economy",
+    "Technology"
+  ],
+  "aliases": [
+    "Binens",
+    "Dennis",
+    "Hoyte",
+    "Walter",
+    "Freud",
+    "Aldin",
+    "Abu Dhabi",
+    "Frank Reich",
+    "Ukosinski"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@cz_binance",
+    "@helenhai",
+    "@martinbruncko"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

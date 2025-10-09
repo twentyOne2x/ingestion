@@ -1,0 +1,20 @@
+{
+  "description": "An introduction to Binance P2P Lite, highlighting its features and functionalities.",
+  "topic_summary": "Overview of Binance P2P Lite and its capabilities for peer-to-peer trading [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Lite",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance P2P Lite",
+    "binance p2p lite",
+    "Binance P2P lite"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

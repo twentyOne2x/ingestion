@@ -1,0 +1,21 @@
+{
+  "description": "Recap of Binance Blockchain Week held in Istanbul from November 8th to 9th, featuring 2000 attendees and over 100 speakers discussing Web3 technologies and community importance.",
+  "topic_summary": "Highlights from Binance Blockchain Week in Istanbul, including discussions on Web3 adaptation and community engagement [t=6:72-71:36].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Web3",
+    "Istanbul"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "BINANCE BLOCKCHAIN WEEK"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

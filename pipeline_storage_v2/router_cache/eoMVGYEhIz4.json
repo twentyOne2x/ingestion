@@ -1,0 +1,20 @@
+{
+  "description": "Discussion involving various individuals and topics, including greetings and references to financial advice and social movements.",
+  "topic_summary": "The video features interactions among several individuals, including greetings and mentions of financial advice related to social movements [t=3261.68].",
+  "router_tags": [
+    "greetings",
+    "financial advice",
+    "social movements"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

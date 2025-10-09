@@ -1,0 +1,20 @@
+{
+  "video_id": "DcUHMoB9C-w",
+  "title": "2023-06-07_DcUHMoB9C-w_'Ask Cristiano Ronaldo Anything' with Binance",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Cristiano Ronaldo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

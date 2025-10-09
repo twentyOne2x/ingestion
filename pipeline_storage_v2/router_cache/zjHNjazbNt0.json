@@ -1,0 +1,25 @@
+{
+  "description": "Athena Y discusses her journey in the NFT space and Binance's role in promoting cryptocurrency adoption. She highlights the importance of NFTs in bridging traditional industries like art, sports, and music with the crypto economy, emphasizing their potential for mass adoption and community engagement.",
+  "topic_summary": "Athena Y shares insights on NFTs and their impact on various industries, discussing Binance's strategic movement towards NFT adoption and the future of the creator economy. She reflects on her experiences and the evolution of cryptocurrency awareness since joining Binance in 2018.",
+  "router_tags": [
+    "NFT",
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "Creator Economy"
+  ],
+  "aliases": [
+    "Athena Y",
+    "Athena",
+    "Binance Custody",
+    "Binance NFT"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@Binance",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on mutable content for decentralized applications, focusing on the challenges of data silos and proposing solutions using Ceramic and decentralized identifiers.",
+  "topic_summary": "Exploration of blockchain's promise to eliminate centralized data silos, the current state of data management in applications, and the introduction of Ceramic for mutable data objects [t=301.44].",
+  "router_tags": [
+    "Blockchain",
+    "Decentralization",
+    "Ceramic",
+    "Mutable Content",
+    "Data Management"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: Primitives for Mutable Content"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "$FIL",
+    "$AR",
+    "@ProtocolLabs",
+    "@ThreeBox"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

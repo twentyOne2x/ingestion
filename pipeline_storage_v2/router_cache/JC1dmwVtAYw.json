@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the risks associated with centralized exchanges, including potential hacks and financial difficulties that could jeopardize user funds. It contrasts these with decentralized exchanges, which operate without custodians and facilitate peer-to-peer transactions through smart contracts.",
+  "topic_summary": "Centralized exchanges face risks like hacking and financial instability, putting user funds at risk [t=0:24]. Decentralized exchanges eliminate custodians, allowing direct user transactions via smart contracts [t=10:48].",
+  "router_tags": [
+    "Centralized Exchanges",
+    "Decentralized Exchanges",
+    "Crypto Trading",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Centralized Exchanges Risks",
+    "Decentralized Exchanges Overview",
+    "Crypto Exchange Risks"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

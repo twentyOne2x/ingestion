@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the differences between Web3 and the Metaverse, highlighting their distinct focuses on user information control and user experience.",
+  "topic_summary": "Web3 emphasizes user control over information [t=6:32], while the Metaverse focuses on the presentation and experience of that information [t=17:92]. The evolution from Web 1.0 to Web 3.0 is also explored [t=30:72].",
+  "router_tags": [
+    "Web3",
+    "Metaverse",
+    "Internet Evolution",
+    "User Experience"
+  ],
+  "aliases": [
+    "Web3 vs Metaverse",
+    "web3",
+    "metaverse",
+    "Web 3",
+    "Metaverse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

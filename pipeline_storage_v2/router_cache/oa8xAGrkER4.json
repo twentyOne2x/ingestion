@@ -1,0 +1,26 @@
+{
+  "description": "This workshop is part of the Decentralized Africa Hackathon, featuring Bakery Swap, a decentralized automated market-making protocol on the Binance Smart Chain. The session includes discussions on NFT strategies, the Bakery Gallery, and gamification, with a prize giveaway of $500 for participants.",
+  "topic_summary": "The workshop covers Bakery Swap's role in the NFT marketplace, its unique features compared to Uniswap, and highlights from the Decentralized Africa Hackathon, including prize opportunities and community engagement [t=0:48-3:00].",
+  "router_tags": [
+    "Decentralized Africa Hackathon",
+    "Bakery Swap",
+    "NFT Marketplace",
+    "Binance Smart Chain",
+    "Crypto",
+    "DeFi"
+  ],
+  "aliases": [
+    "Bakery Swap",
+    "Bakery swap",
+    "Bakery Swa",
+    "Bigger Swap",
+    "Bake Token"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@BakerySwap"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

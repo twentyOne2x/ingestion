@@ -1,0 +1,26 @@
+{
+  "description": "Anatoly interviews Dan Gunsberg, co-founder of Hero Network, discussing his journey into crypto, trading experiences, and the development of Hero I.O. The conversation covers the evolution of trading technology and the unique offerings of Hero I.O. in the crypto space.",
+  "topic_summary": "Dan Gunsberg shares his background in derivatives trading and the inception of Hero Network, emphasizing the need for a simplified trading experience and the transition towards decentralization in trading platforms. [t=12:56] to [t=36:66]",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Derivatives",
+    "Blockchain",
+    "Hero Network",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Dan Gunsberg",
+    "Dan gunsberg",
+    "DAN GUNSBERG",
+    "Hero Network",
+    "hero network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

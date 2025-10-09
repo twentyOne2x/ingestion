@@ -1,0 +1,22 @@
+{
+  "description": "The video showcases the first Binance Campus, featuring 75 crypto educators and a community of over 40 million online members.",
+  "topic_summary": "Introduction to the Binance Campus and its significance in the crypto education space. Highlights include the welcome message at the campus [t=29:76] and the after party event [t=59:65].",
+  "router_tags": [
+    "Binance",
+    "crypto education",
+    "community",
+    "Bayern"
+  ],
+  "aliases": [
+    "Binance Campus",
+    "binance campus",
+    "Bayern Campus",
+    "bayern campus"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

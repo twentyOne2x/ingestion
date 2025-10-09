@@ -1,0 +1,31 @@
+{
+  "description": "Panel discussion featuring Edward, Will, and Grace discussing DeFi projects on Solana, including Serum and Orca. They explore liquidity approaches, project successes, and the evolving DeFi landscape.",
+  "topic_summary": "The panelists discuss the unique liquidity models of Serum's on-chain order book and Orca's AMM, highlighting their respective advantages and challenges in the DeFi ecosystem. They emphasize collaboration among projects and the importance of flexibility in development.",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Serum",
+    "Orca",
+    "Liquidity",
+    "AMM",
+    "Order Book"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "solanafndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Edward",
+    "@Will",
+    "@Grace",
+    "@Scuba",
+    "@Meep",
+    "$50"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

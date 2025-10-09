@@ -1,0 +1,24 @@
+{
+  "description": "This online course introduces blockchain fundamentals, covering concepts like the Byzantine General's problem, proof of work, and proof of stake. It emphasizes the importance of nodes in a decentralized network and the mechanics of mining and staking.",
+  "topic_summary": "The course explains blockchain technology, focusing on consensus mechanisms such as proof of work [t=98:20] and proof of stake [t=316:00]. It discusses the roles of nodes, the process of mining, and the implications of energy consumption in blockchain systems.",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Proof of Work",
+    "Proof of Stake",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Online Course For Beginners",
+    "Blockchain Fundamentals",
+    "Binance Academy Course"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@binanceacademy",
+    "@Nina"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Richard Teng, Head of Regional Markets at Binance, introduces the Binance Web3 Wallet during the Binance Blockchain Week in Istanbul. He discusses the growth of digital asset adoption in Turkey and the importance of innovation in the crypto space.",
+  "topic_summary": "At [t=0:16], Richard Teng opens the Binance Blockchain Week in Istanbul, highlighting the event's significance and the rise of digital asset adoption in Turkey. He introduces the Binance Web3 Wallet at [t=262:22], emphasizing its user-friendly features and the future of crypto driven by institutional adoption and regulatory frameworks.",
+  "router_tags": [
+    "Binance",
+    "Web3 Wallet",
+    "Blockchain",
+    "Crypto Adoption",
+    "Istanbul"
+  ],
+  "aliases": [
+    "Richard Teng",
+    "Richard Ting",
+    "Binance Web3 Wallet"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on the topic of Xiang shanjiao.",
+  "topic_summary": "Overview of Xiang shanjiao and its implications [t=00:52].",
+  "router_tags": [
+    "Xiang shanjiao",
+    "App",
+    "Binance"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

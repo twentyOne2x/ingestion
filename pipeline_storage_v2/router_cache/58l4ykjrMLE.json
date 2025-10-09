@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses how to choose the right crypto wallet based on your trading habits and security needs.",
+  "topic_summary": "Explore the types of crypto wallets available and determine which is best for you, whether you are a frequent trader or prefer to hold large amounts of crypto securely. Emphasizes the importance of keeping your private key safe to maintain access to your funds. [t=0:00]",
+  "router_tags": [
+    "crypto",
+    "wallet",
+    "security",
+    "trading"
+  ],
+  "aliases": [
+    "How To Choose The Right Crypto Wallet For You",
+    "Choosing Crypto Wallet",
+    "Crypto Wallet Guide"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

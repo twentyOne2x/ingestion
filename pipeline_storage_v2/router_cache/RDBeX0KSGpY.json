@@ -1,0 +1,31 @@
+{
+  "description": "Eowyn Chen, CEO of Trust Wallet, discusses the role of wallets in Web3 and the importance of user experience in crypto. She emphasizes the need for wallets to empower users and builders, highlighting the transition from traditional banking to non-custodial wallets. Chen addresses common challenges users face, such as managing recovery phrases and wallet addresses, and advocates for better wallet experiences to drive mass adoption of Web3 technologies. [t=0:32] [t=3:76] [t=41:42] [t=149:47]",
+  "topic_summary": "Eowyn Chen's keynote at Binance Blockchain Week focuses on the significance of non-custodial wallets in the Web3 ecosystem, user empowerment, and enhancing user experience to facilitate broader adoption of cryptocurrency.",
+  "router_tags": [
+    "Web3",
+    "Trust Wallet",
+    "Eowyn Chen",
+    "Crypto Wallets",
+    "Non-Custodial Wallets",
+    "Blockchain",
+    "User Experience"
+  ],
+  "aliases": [
+    "Eowyn Chen",
+    "Aon Chen",
+    "Ao N Chen",
+    "Ail Wing Chen"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$SOL",
+    "@cz_binance",
+    "@victor_rechengl",
+    "@chris_dixon"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

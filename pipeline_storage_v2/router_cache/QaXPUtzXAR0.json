@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on finance topics including USDT, DeFi platforms, and digital identity in Cosmos.",
+  "topic_summary": "The conversation covers various finance-related subjects, including USDT, DeFi, and the role of Cosmos in digital identity [t=0:16 - t=75:15].",
+  "router_tags": [
+    "Finance",
+    "DeFi",
+    "Cosmos",
+    "USDT"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "j3PtXa557UY",
+  "title": "2022-11-06_j3PtXa557UY_Breakpoint 2022: Crypto for Wordcels",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Brandon Echter",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Vixit Gaur",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

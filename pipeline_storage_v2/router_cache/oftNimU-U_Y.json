@@ -1,0 +1,25 @@
+{
+  "description": "CZ discusses Binance's recent registration in France, its implications for crypto regulation, and the company's involvement in Elon Musk's Twitter acquisition.",
+  "topic_summary": "In this AMA, CZ explains the significance of Binance's registration in France [t=53.03], the benefits of regulatory clarity for crypto adoption [t=112.43], and the reasons behind Binance's support for Elon Musk's Twitter [t=149.06].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Twitter",
+    "Elon Musk",
+    "crypto regulation",
+    "France"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "CZ",
+    "Elon Musk",
+    "Community AMA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@elonmusk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

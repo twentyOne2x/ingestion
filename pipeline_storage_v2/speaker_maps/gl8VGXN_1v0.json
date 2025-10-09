@@ -1,0 +1,26 @@
+{
+  "video_id": "gl8VGXN_1v0",
+  "title": "2021-11-15_gl8VGXN_1v0_Breakpoint 2021: Seeking Clarity: Crypto, Politics and Policy",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Greg Exitales",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Greg Exitales",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

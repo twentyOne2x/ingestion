@@ -1,0 +1,25 @@
+{
+  "description": "Binance Co-Founder CZ and Head of Product Mayur discuss the 2023 roadmap, addressing community questions and product developments.",
+  "topic_summary": "The discussion covers Binance's product strategy for 2023, community engagement, and upcoming features [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Mayur",
+    "2023 Roadmap",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "CZ",
+    "mayur",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@cz_binance",
+    "@mayur"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

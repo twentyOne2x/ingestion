@@ -1,0 +1,31 @@
+{
+  "description": "The speaker discusses their extensive experience in the internet and gaming industries, transitioning to the crypto space with a focus on sports. They emphasize the importance of utility in fan tokens, aiming to engage fans globally, regardless of their location. The conversation touches on the limitations of traditional sports revenue streams and the need for innovative products to connect with international fans.",
+  "topic_summary": "Exploration of fan tokens and their utility in engaging sports fans worldwide, highlighting the shift from passive to active fandom and the challenges in traditional sports revenue.",
+  "router_tags": [
+    "Fan Tokens",
+    "Utility",
+    "Sports",
+    "Crypto",
+    "Web3",
+    "Engagement"
+  ],
+  "aliases": [
+    "Fan Token",
+    "fan token",
+    "FAN TOKEN"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ParisSaintGermain",
+    "@Socios",
+    "@Galatasaray",
+    "@Trapsonspor",
+    "@Juventus",
+    "@JuventusStadium",
+    "$5",
+    "@Flamengo",
+    "@ClubsBinance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Austin Federa welcomes attendees to the Solana Labs event in New York City, highlighting the excitement around new announcements and the growth of the Solana developer community. Anatoly Yakovenko shares insights on the developer ecosystem, hackathons, and funding trends in the blockchain space.",
+  "topic_summary": "The event discusses Solana's growth, developer engagement, and the impact of hackathons on innovation in the blockchain sector. Key figures like Anatoly Yakovenko emphasize the importance of community and decentralization in driving progress.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Developer Community",
+    "Hackathons",
+    "Decentralization"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@austinfedera"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

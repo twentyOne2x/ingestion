@@ -1,0 +1,22 @@
+{
+  "description": "Warrior Hong and Via Hara discuss the Binance Angels program, emphasizing community support, learning, and personal growth within the crypto space.",
+  "topic_summary": "The Binance Angels program offers opportunities for community engagement and personal development in the dynamic crypto world. Participants are encouraged to be proactive learners and contribute to the community [t=14:56].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Community",
+    "Learning",
+    "Volunteering"
+  ],
+  "aliases": [
+    "Binance Angels",
+    "binance angels",
+    "Binance angels"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

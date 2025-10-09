@@ -1,0 +1,25 @@
+{
+  "description": "A deep dive into interoperability featuring Sam from FTX, Anatoly from Solana, and James, founder of Summa One. The discussion covers the challenges and ambitions in achieving interoperability in blockchain systems.",
+  "topic_summary": "The panel discusses interoperability in blockchain, comparing it to iOS and Android systems, and explores the evolving challenges posed by new consensus mechanisms and cryptographic methods. They emphasize the need for ambitious projects that can achieve true interoperability across chains [t=130.89].",
+  "router_tags": [
+    "Interoperability",
+    "Blockchain",
+    "FTX",
+    "Solana",
+    "Summa One",
+    "Cryptography"
+  ],
+  "aliases": [
+    "Interoperability",
+    "Interoperability Deep Dive",
+    "Blockchain Interoperability"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@sam",
+    "@james"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

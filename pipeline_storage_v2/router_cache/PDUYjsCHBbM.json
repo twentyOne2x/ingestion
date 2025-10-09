@@ -1,0 +1,24 @@
+{
+  "description": "In this episode, Santiago Santos discusses his journey into crypto, starting from his time at JP Morgan in 2012, where he was intrigued by Bitcoin and its implications for finance. He shares insights on the evolution of DeFi and the importance of open source software in the crypto space.",
+  "topic_summary": "Santiago Santos reflects on his transition from traditional finance to crypto, emphasizing the disruptive potential of DeFi and the role of open source software in shaping the future of finance. He highlights his experiences at JP Morgan and Sageview Capital, leading to the founding of Parafi Capital.",
+  "router_tags": [
+    "Crypto",
+    "DeFi",
+    "Finance",
+    "Open Source",
+    "Investment"
+  ],
+  "aliases": [
+    "Santiago Santos",
+    "Santiago",
+    "Tolly",
+    "Anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@SantiagoSantos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

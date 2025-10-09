@@ -1,0 +1,26 @@
+{
+  "video_id": "XGZXt7KtjlI",
+  "title": "2021-03-08_XGZXt7KtjlI_Especial dia de la mujer - 1er panel: Equidad de genero en el ecosistema cripto",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Iris Bonet",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Sinkerer Satosa",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

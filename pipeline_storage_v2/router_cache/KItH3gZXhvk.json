@@ -1,0 +1,27 @@
+{
+  "description": "This video discusses careers in blockchain, focusing on the 8-week program offered by Binance. It covers the inefficiencies of fiat money, the significance of Bitcoin as a decentralized currency, and the differences between Bitcoin and Ethereum. The video also highlights the growth of stablecoins and their various types, including US dollar-backed stablecoins like BUSD and USDC.",
+  "topic_summary": "The video explores blockchain careers, the evolution of cryptocurrencies, and the rise of stablecoins. It emphasizes Bitcoin's role as a store of value and contrasts it with Ethereum's programmability for smart contracts. The discussion includes the importance of stablecoins in the crypto market and their increasing adoption.",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum",
+    "Stablecoins",
+    "Careers in Blockchain"
+  ],
+  "aliases": [
+    "Careers In Blockchain",
+    "Blockchain Careers",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BUSD",
+    "$USDC",
+    "@BinanceYoutube",
+    "@SatoshiNakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

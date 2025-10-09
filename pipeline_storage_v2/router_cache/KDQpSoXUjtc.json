@@ -1,0 +1,24 @@
+{
+  "description": "Discussion at the BNB Chain Revelation Summit featuring insights from various speakers.",
+  "topic_summary": "At the BNB Chain Revelation Summit, speakers including Josh Zhang discuss Web3 developments and initiatives related to BNB Chain [t=00:06-30:02].",
+  "router_tags": [
+    "BNB Chain",
+    "Web3",
+    "Z Institute",
+    "Konai",
+    "Josh Zhang"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "Binance Z"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "Z Institute",
+    "Konai",
+    "Josh Zhang"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

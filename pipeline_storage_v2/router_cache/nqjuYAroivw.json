@@ -1,0 +1,24 @@
+{
+  "description": "Masterclass webinar discussing Binance Futures, covering market making, position management, and stop loss strategies.",
+  "topic_summary": "The session includes insights on market making [t=02:00], position independence [t=10:18], and the importance of stop loss [t=29:00].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Crypto",
+    "Trading",
+    "Webinar"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$LIGHT",
+    "$SOL",
+    "@CryptoResourcesAcademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This presentation discusses the origin and development of Metaplex, an NFT platform on Solana, highlighting key milestones and challenges faced during its creation.",
+  "topic_summary": "The talk covers the journey of Metaplex, including its initial focus on DeFi, the realization of the NFT potential, and the challenges faced during the launch phase, particularly around Bitcoin Miami [t=139.87].",
+  "router_tags": [
+    "Metaplex",
+    "NFT",
+    "Solana",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Metaplex",
+    "metaplex",
+    "METAPLEX"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

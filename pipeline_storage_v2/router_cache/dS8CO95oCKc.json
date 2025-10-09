@@ -1,0 +1,22 @@
+{
+  "description": "A humorous challenge where participants must make the host laugh within 30 seconds to win 20 USDT.",
+  "topic_summary": "Participants are prompted to tell a joke for a chance to win 20 USDT. The conversation touches on cultural identity and humor, with references to USDT and XRP. [t=0:24] [t=3:40] [t=34:13]",
+  "router_tags": [
+    "humor",
+    "crypto",
+    "challenge",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binanceyoutube",
+    "BinanceYouTube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$XRP",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

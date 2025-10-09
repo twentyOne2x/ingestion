@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Binance Dual Investment, a product allowing users to deposit cryptocurrencies like BTC and earn yields based on different asset outcomes. It covers how to subscribe, the types of products available, and examples of potential returns based on market scenarios.",
+  "topic_summary": "Learn about Binance Dual Investment, its subscription process, product types, and how returns are calculated through real-world examples involving BTC and BUSD [t=4:08].",
+  "router_tags": [
+    "Binance",
+    "Dual Investment",
+    "Cryptocurrency",
+    "Yield",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Dual Investment",
+    "binance dual investment",
+    "BINANCE DUAL INVESTMENT"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BUSD",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

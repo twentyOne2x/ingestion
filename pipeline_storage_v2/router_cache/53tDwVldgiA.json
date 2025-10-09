@@ -1,0 +1,19 @@
+{
+  "description": "This video discusses the limitations of DeFi, highlighting the need for user experience and research, as well as risks such as technological failures and security issues. It emphasizes the responsibility shift from intermediaries to users, increasing the potential for user errors and the cluttered nature of the DeFi ecosystem.",
+  "topic_summary": "The video outlines the challenges in DeFi, including user responsibility, risks of user errors [t=9:44], and the complexity of finding suitable applications [t=23:52]. It also addresses various risks like counterparty and regulatory risks [t=29:49].",
+  "router_tags": [
+    "DeFi",
+    "cryptocurrency",
+    "blockchain",
+    "finance",
+    "risks"
+  ],
+  "aliases": [
+    "DeFi Limitations",
+    "defi limitations",
+    "What Are the Limitations of DeFi"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

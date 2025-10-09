@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the importance of teaching crypto in schools, highlighting Bitcoin's impact on money perception.",
+  "topic_summary": "Debate on whether crypto education should be included in school curriculums, emphasizing the necessity of knowledge in the 21st century [t=40:78].",
+  "router_tags": [
+    "crypto",
+    "education",
+    "Bitcoin",
+    "finance"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

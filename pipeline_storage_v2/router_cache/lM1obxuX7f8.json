@@ -1,0 +1,21 @@
+{
+  "description": "Q&A session discussing various topics related to Binance and cryptocurrency.",
+  "topic_summary": "The session covers internal transfer abilities, crypto market dynamics, and user inquiries about Binance features [t=00:54].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "Q&A",
+    "crypto market"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

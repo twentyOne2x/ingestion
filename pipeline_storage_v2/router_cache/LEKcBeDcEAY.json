@@ -1,0 +1,23 @@
+{
+  "description": "Event featuring discussions on Layer 1 blockchain technologies including Harmony, Solana, Nervos, Koda, and Near.",
+  "topic_summary": "Overview of Layer 1 blockchain projects with a focus on Harmony, Solana, and Nervos [t=26:00].",
+  "router_tags": [
+    "Layer 1",
+    "Blockchain",
+    "Harmony",
+    "Solana",
+    "Nervos"
+  ],
+  "aliases": [
+    "layer 1 event",
+    "Layer 1 Event",
+    "Layer1 Event"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Harmony",
+    "@Nervos"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

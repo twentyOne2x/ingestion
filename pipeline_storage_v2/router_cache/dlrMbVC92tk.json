@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to participate in the Futures Battle on Binance, a gamified trading experience where users predict market movements to compete against others.",
+  "topic_summary": "The Futures Battle allows users to predict short or long market directions every five minutes, with automatic matching against opponents. Users must have a futures account and can use BTC as collateral for trading. The battle concludes based on price movements and can be ended manually or automatically after five minutes.",
+  "router_tags": [
+    "Futures",
+    "Trading",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Futures Battle",
+    "futures battle",
+    "Futures battle"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Larry Cermak discusses his journey into the crypto space, starting from his college thesis on Bitcoin in 2016 to becoming VP of Research at The Block. He shares insights on the evolution of his views on cryptocurrencies, the importance of data-driven research, and the role of tokens in decentralized finance [t=0:24-2:31].",
+  "topic_summary": "Larry Cermak's transition from a Bitcoin skeptic to a prominent figure in crypto research, highlighting the challenges and changes in the industry, particularly around DeFi and token utility [t=0:24-2:31].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "DeFi",
+    "Bitcoin",
+    "Ethereum",
+    "Research"
+  ],
+  "aliases": [
+    "Larry Cermak",
+    "larry cermak",
+    "Cermak"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$BTC",
+    "$ETH",
+    "@SolanaFndn",
+    "@Uniswap"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

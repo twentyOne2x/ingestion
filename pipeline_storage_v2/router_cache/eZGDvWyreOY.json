@@ -1,0 +1,23 @@
+{
+  "description": "This video provides an overview of the Binance NFT Marketplace, explaining what NFTs are and how to use the platform for trading digital assets. It covers the steps to get started, including account setup and crypto requirements.",
+  "topic_summary": "The Binance NFT Marketplace is introduced as a platform for trading unique digital assets, including artworks and collectibles. It highlights the importance of NFTs as proof of authenticity and ownership, and outlines the marketplace's features and product lines, including curated NFTs and Mystery Boxes. [t=3:60] [t=25:28]",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Marketplace",
+    "Crypto",
+    "Digital Art"
+  ],
+  "aliases": [
+    "Binance NFT Marketplace",
+    "binance nft marketplace",
+    "Binance NFT",
+    "binance nft"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

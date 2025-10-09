@@ -1,0 +1,26 @@
+{
+  "description": "Recap of Day Two at Binance Blockchain Week Paris 2022, focusing on the intersection of culture and Web3, the impact of blockchain on art markets, and the future of NFTs.",
+  "topic_summary": "Discussion on the relationship between culture and Web3, the evolution of art markets due to blockchain, and the democratization of art through NFTs. Highlights include the shift of power from intermediaries to creators, the role of royalties, and the potential of Web3 in transforming artist-fan relationships [t=2:56-431:86].",
+  "router_tags": [
+    "Web3",
+    "NFTs",
+    "Blockchain",
+    "Art",
+    "Culture",
+    "Democratization"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "Binance Youtube",
+    "Web3 Art"
+  ],
+  "canonical_entities": [
+    "$2 Trillion",
+    "@BinanceYoutube",
+    "$SOL",
+    "@Gucci",
+    "@Tiffany"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

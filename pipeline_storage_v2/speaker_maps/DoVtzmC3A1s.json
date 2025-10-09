@@ -1,0 +1,14 @@
+{
+  "video_id": "DoVtzmC3A1s",
+  "title": "2022-04-14_DoVtzmC3A1s_CZ,1:00,!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

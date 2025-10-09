@@ -1,0 +1,22 @@
+{
+  "description": "The speaker discusses the crypto crowd and introduces Binance as the largest crypto exchange, highlighting its various services including fiat to crypto exchange and futures trading.",
+  "topic_summary": "Introduction to Binance and its services, including its position as the largest crypto exchange and its offerings in fiat to crypto transactions [t=41:85].",
+  "router_tags": [
+    "Binance",
+    "crypto",
+    "exchange",
+    "Bitcoin",
+    "fiat"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

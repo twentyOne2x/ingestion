@@ -1,0 +1,20 @@
+{
+  "video_id": "4zLsHSuQvOU",
+  "title": "2018-10-26_4zLsHSuQvOU_Interview with Binance's Changpeng Zhao (CZ)",
+  "channel_name": "Cointelegraph",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Bobby Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Speaker B",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    }
+  }
+}

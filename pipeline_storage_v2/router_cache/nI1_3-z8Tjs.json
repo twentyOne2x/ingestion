@@ -1,0 +1,28 @@
+{
+  "description": "This video discusses the recent decline in the crypto market, focusing on the $1.4 billion hack of Bybit, the downturn in meme coins, and the performance of Bitcoin and Solana. It highlights the broader market trends and the evolving nature of the crypto industry.",
+  "topic_summary": "The video covers the crypto market's 20% drop in February, the Bybit hack linked to the Lazarus Group [t=42.02], the decline of meme coins following the collapse of Libra [t=123.07], Bitcoin's volatility with $3 billion in liquidations [t=159.82], and Solana's 30% drop in value [t=192.08]. It also touches on the Defi sector's challenges and regulatory developments [t=244.32].",
+  "router_tags": [
+    "Crypto",
+    "Bybit",
+    "Meme Coins",
+    "Bitcoin",
+    "Solana",
+    "Defi",
+    "Market Trends"
+  ],
+  "aliases": [
+    "binanceyoutube",
+    "Binance Youtube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "$1.4B",
+    "$1.5B",
+    "@BinanceYoutube",
+    "@LazarusGroup"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

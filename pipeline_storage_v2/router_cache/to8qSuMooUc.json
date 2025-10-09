@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion featuring founders from Audius, Meme, and Multi Capital, alongside Solana's co-founder Anatoly, focusing on the evolution and future of NFTs.",
+  "topic_summary": "Discussion on NFTs, their past, present, and future, featuring insights from industry leaders including Jordan from Meme and Reneil from Audius, highlighting Audius's integration with Solana [t=103.26].",
+  "router_tags": [
+    "NFTs",
+    "Audius",
+    "Meme",
+    "Solana",
+    "Crypto",
+    "DeFi"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$MEME",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

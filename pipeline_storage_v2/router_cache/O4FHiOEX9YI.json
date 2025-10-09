@@ -1,0 +1,24 @@
+{
+  "description": "Overview of Burnt Finance, a decentralized marketplace launched recently. The presentation discusses its unique features, including no transaction fees, anti-FUD measures, and a decentralized bidding mechanism in collaboration with the Metaplex team. It highlights the challenges in NFT lending and the innovative approach to pricing and liquidity in the marketplace.",
+  "topic_summary": "Burnt Finance is a decentralized marketplace focusing on NFT lending and pricing mechanisms. It aims to eliminate traditional appraisal systems and enhance liquidity through a pool-to-pool lending model, allowing for synthetic spot pricing of NFTs. The presentation emphasizes the importance of community-driven valuation and innovative lending strategies.",
+  "router_tags": [
+    "Burnt Finance",
+    "NFT Lending",
+    "Decentralized Marketplace",
+    "Web3",
+    "Metaplex"
+  ],
+  "aliases": [
+    "Burnt Finance",
+    "burnt finance",
+    "BURNt Finance",
+    "BurntFinance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@burnt"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

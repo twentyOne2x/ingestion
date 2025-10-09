@@ -1,0 +1,20 @@
+{
+  "video_id": "y0Uq_RHExhc",
+  "title": "2021-11-17_y0Uq_RHExhc_Breakpoint 2021: Special Presentation by Alexis Ohanian and Raj Gokal",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Sam Lesson",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

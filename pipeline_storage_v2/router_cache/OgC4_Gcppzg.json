@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to use Binance Pay for instant crypto transactions. This guide covers sending and receiving cryptocurrencies securely and efficiently.",
+  "topic_summary": "Introduction to Binance Pay and its functionalities for sending and receiving cryptocurrencies instantly [t=0:08]. Overview of supported cryptocurrencies including Ethereum and BNB [t=18:88]. Security tips for using Binance Pay [t=66:24].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Binance Pay",
+    "Ethereum",
+    "BNB"
+  ],
+  "aliases": [
+    "Binance Pay",
+    "binance pay",
+    "BINANCE PAY"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BNB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

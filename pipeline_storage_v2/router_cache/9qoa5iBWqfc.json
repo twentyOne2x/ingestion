@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on DeFi concepts, including farming, liquidity, and smart contracts, with mentions of various protocols and technologies.",
+  "topic_summary": "Exploration of DeFi protocols and liquidity farming strategies, highlighting the role of smart contracts and decentralized finance [t=2:32].",
+  "router_tags": [
+    "DeFi",
+    "Liquidity",
+    "Smart Contracts",
+    "Farming",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Defi",
+    "defi",
+    "DeFi"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@NashaDavati",
+    "@Zanyatolka",
+    "@Karanipra",
+    "@Koharoshidla",
+    "@Nasam",
+    "@Bollywood",
+    "@Uniswapa",
+    "@Kryptonia",
+    "@Arginz",
+    "@Daval"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

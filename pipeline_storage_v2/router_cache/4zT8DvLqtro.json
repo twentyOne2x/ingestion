@@ -1,0 +1,24 @@
+{
+  "description": "CZ and Mike Novogratz discuss the current state of the finance industry, emphasizing the need for transparency and regulation in the crypto space. They highlight the importance of audits and the role of traditional finance in shaping the future of crypto markets. The conversation touches on user trust, market dynamics, and the evolution of financial technologies.",
+  "topic_summary": "Fireside chat featuring CZ and Mike Novogratz discussing finance, regulation, and the future of cryptocurrency [t=0:24 - t=11:15].",
+  "router_tags": [
+    "Finance",
+    "Cryptocurrency",
+    "Regulation",
+    "Transparency",
+    "Market Dynamics"
+  ],
+  "aliases": [
+    "CZ",
+    "Mike Novogratz",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@mikenovogratz"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,32 @@
+{
+  "video_id": "_8fDeEgUPsg",
+  "title": "2021-05-17__8fDeEgUPsg_Fireside Chat With Kevin Rose",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "A": {
+      "name": "Evan Rose",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Kevin Rose",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Andy Warhol",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

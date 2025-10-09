@@ -1,0 +1,33 @@
+{
+  "description": "Ashley Spradlin discusses optimistic and zero-knowledge rollups and their role in blockchain scalability. The conversation includes an introduction to scaling solutions, the blockchain trilemma, and the importance of education in the crypto space.",
+  "topic_summary": "The webinar covers the necessity of scaling solutions in blockchain technology, focusing on optimistic and zero-knowledge rollups, their advantages, and challenges. It emphasizes the balance of decentralization, security, and scalability in blockchain systems [t=343.48].",
+  "router_tags": [
+    "Blockchain",
+    "Scalability",
+    "Rollups",
+    "Optimistic Rollups",
+    "Zero-Knowledge Rollups",
+    "Ethereum",
+    "Crypto Education"
+  ],
+  "aliases": [
+    "Ashley Spradlin",
+    "Ashley",
+    "Binance Academy",
+    "Nina Xiang",
+    "Mantis",
+    "Crypto Chicks"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy",
+    "@NinaXiang",
+    "@ElenaSinelnikova",
+    "@NataliaAmelie",
+    "@HowardWu",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

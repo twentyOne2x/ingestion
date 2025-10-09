@@ -1,0 +1,26 @@
+{
+  "video_id": "oa8xAGrkER4",
+  "title": "2021-06-09_oa8xAGrkER4_Decentralized Africa Hackathon: DAY 3 Workshop with Bakery Swap",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Bakery Swap",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Yuan Mikami",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

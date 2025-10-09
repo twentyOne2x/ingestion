@@ -1,0 +1,27 @@
+{
+  "description": "This video provides a beginner's guide to NFTs, explaining their significance, use cases, and the technology behind them. It covers digital art, collectibles, gaming, music, and real-world assets, highlighting how NFTs create proof of ownership and authenticity.",
+  "topic_summary": "An overview of NFTs, their applications in digital art [t=67:04], collectibles [t=127:65], gaming [t=206:86], music [t=255:20], and real-world assets [t=302:63]. The video discusses the benefits of NFTs in proving ownership and authenticity.",
+  "router_tags": [
+    "NFTs",
+    "Non-Fungible Tokens",
+    "Digital Art",
+    "Collectibles",
+    "Gaming",
+    "Music",
+    "Real World Assets"
+  ],
+  "aliases": [
+    "Nft",
+    "NFT",
+    "Non-Fungible Token",
+    "Binance",
+    "Bored Ape Yacht Club"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

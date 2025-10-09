@@ -1,0 +1,25 @@
+{
+  "description": "Anatoly, co-founder of Solana Labs, introduces the Neon AMA, discussing the Neon virtual machine and its integration with Solana. The session features key team members from Neon Labs, including Marina, Vitaly, and James, who engage with the audience and answer questions about the technology and its benefits.",
+  "topic_summary": "Introduction to Neon, a smart contract on Solana that interprets EVM, highlighting its advantages and the team behind its development. The discussion includes the importance of parallel transaction processing and the need for dapps to leverage both Solana and Ethereum capabilities. [t=0:24] [t=292:05]",
+  "router_tags": [
+    "Neon",
+    "Solana",
+    "EVM",
+    "AMA",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Neon",
+    "neon",
+    "SOL",
+    "sol",
+    "Anatoly",
+    "anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

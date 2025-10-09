@@ -1,0 +1,30 @@
+{
+  "description": "Panel discussion on security in DeFi featuring Leo Chang from Cream Finance, Batuan Daskin from Binance, and other experts. They discuss risks associated with smart contracts, economic design, and user protection strategies.",
+  "topic_summary": "The panel covers security in the DeFi space, addressing smart contract risks, economic design risks, and how project teams and users can mitigate these risks. The discussion includes insights from various experts in the field [t=141.92].",
+  "router_tags": [
+    "DeFi",
+    "Security",
+    "Smart Contracts",
+    "Risk Management",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Security First In DeFi",
+    "DeFi Security Panel",
+    "DeFi Risks Discussion"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$BUSD",
+    "$USDC",
+    "$USDT",
+    "@Binance",
+    "@LeoChang",
+    "@BatuanDaskin",
+    "@Giraffe",
+    "@Mindao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Webinar sobre el envío y recepción de criptomonedas gratis, presentado por Ramiro Garcia y Martina. Se discuten las funciones de Binance y se ofrecen detalles sobre el uso de plataformas como WhatsApp y Telegram para la comunicación.",
+  "topic_summary": "Introducción a las funciones de Binance en español, incluyendo el uso de plataformas de mensajería para soporte y la promoción de Binance Superbreak Argentina [t=00:02].",
+  "router_tags": [
+    "Binance",
+    "cripto",
+    "webinar",
+    "AMA",
+    "Latinoamérica"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE",
+    "@RamiroGarcia",
+    "@Martina",
+    "@BinanceSuperbreakArgentina",
+    "@SouthMitra",
+    "@AmishaMechego",
+    "$LATAM",
+    "@BinanceUS",
+    "@BinanceArgentina",
+    "@BinanceSpanish"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

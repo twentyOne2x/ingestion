@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on Binance services including staking and NFT marketplace.",
+  "topic_summary": "Overview of Binance services, including staking and NFT marketplace, with mentions of Bitcoin and fiat options [t=3:56].",
+  "router_tags": [
+    "Binance",
+    "Staking",
+    "NFT",
+    "Bitcoin",
+    "Fiat"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "@binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$A",
+    "@KupitasKashanda",
+    "@Organo",
+    "@Alexandra"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

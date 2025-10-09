@@ -1,0 +1,20 @@
+{
+  "description": "This video emphasizes the importance of conducting personal research when investing in the volatile crypto market. It advises on portfolio management and strategic capital allocation.",
+  "topic_summary": "The video discusses portfolio rebalancing, strategic investment, and the necessity of personal research in crypto investing [t=0:32]. It highlights the risks of greed and the importance of maintaining a balanced portfolio [t=19:20].",
+  "router_tags": [
+    "crypto",
+    "investing",
+    "portfolio management",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

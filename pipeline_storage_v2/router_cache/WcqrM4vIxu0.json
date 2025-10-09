@@ -1,0 +1,25 @@
+{
+  "description": "Video discusses how to evaluate cryptocurrencies using Binance Earn, covering topics like Bitcoin, Ethereum, and various investment strategies.",
+  "topic_summary": "Overview of cryptocurrency evaluation and investment strategies on Binance Earn, including staking and liquidity pools [t=00:19 - t=40:28].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "investment",
+    "staking",
+    "Ethereum",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

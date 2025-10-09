@@ -1,0 +1,23 @@
+{
+  "description": "This video discusses the 1inch Swap API on the Binance Smart Chain, covering parameters such as gas price, slippage, and contract approvals. It also touches on the complexities of transactions and liquidity tokens.",
+  "topic_summary": "Overview of the 1inch Swap API on Binance Smart Chain, including transaction parameters and contract management [t=28:79].",
+  "router_tags": [
+    "1inch",
+    "Binance Smart Chain",
+    "Swap API",
+    "DeFi",
+    "Ethereum"
+  ],
+  "aliases": [
+    "1Inch",
+    "1INCH",
+    "One Inch"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

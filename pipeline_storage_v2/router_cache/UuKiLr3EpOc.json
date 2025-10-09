@@ -1,0 +1,22 @@
+{
+  "description": "Join Binance and Cristiano for a chance to win 50,000 free surprises, including exclusive NFTs.",
+  "topic_summary": "Cristiano discusses his upcoming NFT collection and invites fans to celebrate for a chance to meet him in person [t=13:68].",
+  "router_tags": [
+    "NFT",
+    "giveaway",
+    "Binance",
+    "Cristiano"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance",
+    "Cristiano"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Cristiano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

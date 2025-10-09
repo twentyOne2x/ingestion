@@ -1,0 +1,14 @@
+{
+  "video_id": "BA_ECHRhkLw",
+  "title": "2022-06-19_BA_ECHRhkLw_Binance Team Quickfire Q&A - This or That",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

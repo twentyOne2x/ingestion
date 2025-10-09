@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on gender equity in the crypto ecosystem, featuring insights from various experts on the challenges and opportunities for women in the industry.",
+  "topic_summary": "The panel addresses gender equity in the crypto ecosystem, highlighting the importance of inclusion and the potential for women in Latin America's financial services sector [t=0:00].",
+  "router_tags": [
+    "gender equity",
+    "crypto",
+    "Latin America",
+    "women in tech",
+    "financial services"
+  ],
+  "aliases": [
+    "Especial Dia De La Mujer",
+    "Equidad De Genero",
+    "Panel Dia De La Mujer"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@IrisBonet",
+    "@Harvard",
+    "@LaFlexibilityInternational",
+    "@SinkererSatosa",
+    "@IntegridaMarinaGabrielaGarden"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

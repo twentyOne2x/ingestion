@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on the Metaverse, featuring insights from industry experts on digital ownership, immersive experiences, and the future of virtual and physical interactions.",
+  "topic_summary": "Exploration of the Metaverse concept, its implications for digital ownership, and the integration of virtual and physical realities [t=60:07].",
+  "router_tags": [
+    "Metaverse",
+    "NFT",
+    "Digital Ownership",
+    "Virtual Reality",
+    "Blockchain",
+    "Gaming Protocol"
+  ],
+  "aliases": [
+    "Metaverse Workshop",
+    "Pyth Workshop",
+    "Solana Metaverse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JordanBartosh",
+    "@Ervin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

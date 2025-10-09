@@ -1,0 +1,26 @@
+{
+  "video_id": "-6jIyGJ_HMQ",
+  "title": "2021-11-17_-6jIyGJ_HMQ_Breakpoint 2021: Grand Conductor: How Composability Aligns Developers and Traders",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Alexis Ohanian",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Chris Dixon",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "DLRCOeMHF6k",
+  "title": "2021-05-21_DLRCOeMHF6k_Crypto Week in Review #3: Market crush, NFT updates, DeFi growth and more",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Elon Musk",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Jack o'. Halloran",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on staking and unstaking in the context of proof of stake mechanisms.",
+  "topic_summary": "Overview of staking concepts and processes related to proof of stake [t=00:03 to t=00:53].",
+  "router_tags": [
+    "staking",
+    "proof of stake",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

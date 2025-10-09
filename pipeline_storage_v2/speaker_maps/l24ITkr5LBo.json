@@ -1,0 +1,26 @@
+{
+  "video_id": "l24ITkr5LBo",
+  "title": "2021-03-24_l24ITkr5LBo_Todo sobre Binance - Masterclass en espanol (Marzo 2021)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "D": {
+      "name": "Malek Alexado",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Manita Riva",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of Build The Block, budding founders pitch their Web3 startups to judges and an audience, aiming for investment and guidance. Hosted by Justin Bratton, the show features insights from industry leaders and highlights the importance of accountability in Web3.",
+  "topic_summary": "Build The Block showcases Web3 startups pitching for investment, emphasizing the need for accountability in digital asset trading [t=1:76].",
+  "router_tags": [
+    "Web3",
+    "startups",
+    "Binance",
+    "investment",
+    "blockchain",
+    "metaverse"
+  ],
+  "aliases": [
+    "Build The Block",
+    "Build the Block",
+    "build the block"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@anatoly",
+    "@GuyTurner",
+    "@AzimKhan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

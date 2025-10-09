@@ -1,0 +1,21 @@
+{
+  "description": "This video explains swing trading in the crypto market, focusing on how traders can profit by borrowing and selling assets, then repurchasing them at a lower price.",
+  "topic_summary": "Swing trading involves predicting price movements over a period, using both technical and fundamental analysis to inform trades. An example illustrates how a trader can profit from a price drop in Ether from $2,000 to $1,500, resulting in a $500 profit after repurchasing the asset [t=21:12].",
+  "router_tags": [
+    "swing trading",
+    "crypto trading",
+    "technical analysis",
+    "fundamental analysis"
+  ],
+  "aliases": [
+    "Swing Trading",
+    "Swing trading",
+    "swing Trading"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

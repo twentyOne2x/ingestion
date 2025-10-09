@@ -1,0 +1,18 @@
+{
+  "description": "This video explains fundamental analysis, focusing on how investors assess an asset's intrinsic value through economic and financial factors.",
+  "topic_summary": "Fundamental analysis identifies an asset's intrinsic value by examining economic factors [t=16.64] and financial factors [t=21.04]. It considers macroeconomic [t=24.24] and microeconomic factors [t=32.5] to determine if an investment is undervalued or overvalued [t=39.06].",
+  "router_tags": [
+    "fundamental analysis",
+    "investing",
+    "financial analysis",
+    "economic factors"
+  ],
+  "aliases": [
+    "Fundamental Analysis",
+    "fundamental analysis",
+    "Fundamental analysis"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

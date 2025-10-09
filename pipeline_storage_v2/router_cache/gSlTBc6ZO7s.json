@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on upcoming collaborations in the field of blockchain and education in Australia, highlighting the excitement around cryptocurrency and community engagement.",
+  "topic_summary": "Event focused on blockchain education and community engagement in Australia, featuring discussions with developers and regulatory representatives [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Cryptocurrency",
+    "Education",
+    "Community"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

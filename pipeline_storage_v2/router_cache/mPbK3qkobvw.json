@@ -1,0 +1,23 @@
+{
+  "description": "In this talk, the speaker shares their journey with Rust programming language, highlighting its advantages over C, including type safety and ergonomic package management. They recount their experiences transitioning from C to Rust, emphasizing the relief from runtime errors and the ability to manage the entire software stack in one language. The discussion touches on the evolution of Rust and its impact on the speaker's programming mindset.",
+  "topic_summary": "The speaker discusses their transition from C to Rust, focusing on the benefits of Rust's type safety, performance, and package management. They reflect on their programming experiences and how Rust has revitalized their interest in coding.",
+  "router_tags": [
+    "Rust",
+    "Blockchain Development",
+    "Programming Languages",
+    "Type Safety",
+    "Software Development"
+  ],
+  "aliases": [
+    "solana at portland dev meetup",
+    "Solana at Portland Dev Meetup",
+    "Solana Dev Meetup"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

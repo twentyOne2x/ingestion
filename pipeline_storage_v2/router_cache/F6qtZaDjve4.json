@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on various topics including fees and job roles in the context of cryptocurrency.",
+  "topic_summary": "Overview of fees and job roles related to cryptocurrency, with specific references to various terms and concepts [t=01:45] to [t=04:40].",
+  "router_tags": [
+    "cryptocurrency",
+    "fees",
+    "job roles"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

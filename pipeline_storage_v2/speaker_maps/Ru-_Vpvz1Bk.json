@@ -1,0 +1,32 @@
+{
+  "video_id": "Ru-_Vpvz1Bk",
+  "title": "2018-07-22_Ru-_Vpvz1Bk_Binance CEO CZ at the Africa Blockchain Conference 2018",
+  "channel_name": "Sizzling CZ: Changpeng Zhao Videos",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "D": {
+      "name": "Sinclair Skinner",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Elon Musk",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Helen Hai",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Sizzling CZ: Changpeng Zhao Videos",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

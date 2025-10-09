@@ -1,0 +1,22 @@
+{
+  "description": "Overview of the Solana Hacker House event in Prague, featuring discussions and activities related to Solana development.",
+  "topic_summary": "Introduction to Solana Hacker House in Prague, showcasing community engagement and development opportunities [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Prague",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

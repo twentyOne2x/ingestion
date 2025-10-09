@@ -1,0 +1,31 @@
+{
+  "description": "Maddie from Solana Labs hosts a discussion on decentralized exchanges with Alpha Ray (Radium), Maki (Sushiswap), and Ian (Saber). They explore the unique features of their projects, including Radium's hybrid AMM and NFT drop zone [t=81:63], Sabre's stable swap optimization [t=154:34], and Sushiswap's community-driven approach [t=183:85]. The conversation also touches on the pros and cons of anonymity in the crypto space [t=228:69].",
+  "topic_summary": "The panel discusses the future of decentralized exchanges, focusing on the innovations and challenges faced by their respective projects, including liquidity provision, stable swaps, and community engagement.",
+  "router_tags": [
+    "Decentralized Exchange",
+    "AMM",
+    "DeFi",
+    "Solana",
+    "Radium",
+    "Sushiswap",
+    "Saber",
+    "NFT",
+    "Anonymity"
+  ],
+  "aliases": [
+    "The Future of Decentralized Exchange",
+    "Future of DEX",
+    "Decentralized Exchange Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Maki",
+    "@AlphaRay",
+    "@Ian",
+    "@Sushiswap",
+    "@Saber"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

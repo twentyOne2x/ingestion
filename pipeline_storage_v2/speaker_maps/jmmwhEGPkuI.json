@@ -1,0 +1,20 @@
+{
+  "video_id": "jmmwhEGPkuI",
+  "title": "2025-05-09_jmmwhEGPkuI_CZ: Next Big Project After BINANCE - Binance Founder on BNB Chain, Memecoins with Coin Bureau",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

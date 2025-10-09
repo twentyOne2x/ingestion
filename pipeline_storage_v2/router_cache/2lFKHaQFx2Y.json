@@ -1,0 +1,21 @@
+{
+  "description": "A personal story highlighting how cryptocurrency, specifically Binance, facilitated urgent financial support for a friend in need of surgery.",
+  "topic_summary": "The speaker shares their experience using Binance to quickly send funds for a medical emergency, emphasizing the speed and ease of crypto transactions [t=0:32 - t=55:10].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Financial Support",
+    "Medical Emergency"
+  ],
+  "aliases": [
+    "Crypto Is Better With Binance",
+    "crypto is better with binance",
+    "Crypto empowers me to help others"
+  ],
+  "canonical_entities": [
+    "$1",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly, co-founder of Solana, discusses the Reddit Scaling Bake-Off Challenge, highlighting Solana's high-performance capabilities and innovations like proof of history. He emphasizes the importance of scaling blockchain technology for affordable financial transfers and a better web experience.",
+  "topic_summary": "Anatoly explains how Solana's technology enables efficient transaction processing and the potential for decentralized communities without ad-based revenue, referencing the Reddit Scaling Bake-Off win and future collaboration with Reddit.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Reddit",
+    "Scaling Bake-Off",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "Solana Foundation",
+    "solana",
+    "Anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

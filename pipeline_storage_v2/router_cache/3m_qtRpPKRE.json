@@ -1,0 +1,30 @@
+{
+  "description": "Eduardo Morrison Gomez from Binance leads a panel discussing the emergence of decentralized trading, featuring insights from industry experts on the role of blockchain in connecting traders and the evolution of decentralized finance (DeFi).",
+  "topic_summary": "The panel explores decentralized trading and DeFi, emphasizing the removal of central counterparties and risks associated with traditional trading. They discuss the development of decentralized exchanges and the future of trading in a permissionless environment [t=13:12].",
+  "router_tags": [
+    "Decentralized Trading",
+    "DeFi",
+    "Blockchain",
+    "Binance",
+    "Crypto",
+    "Institutional Investors"
+  ],
+  "aliases": [
+    "Decentralized Trading",
+    "DeFi",
+    "Binance Blockchain Week",
+    "Emergence of Decentralized Trading"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$9 Billion",
+    "$200 Million",
+    "@EduardoMorrison",
+    "@KatyaBanina",
+    "@OliverYates",
+    "@Tobam",
+    "@Wintermute"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

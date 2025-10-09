@@ -1,0 +1,22 @@
+{
+  "description": "Discover Solana, a fast and low-cost blockchain that empowers developers to build scalable crypto applications without the limitations of legacy systems. Say goodbye to high fees and slow transactions.",
+  "topic_summary": "Explore how Solana addresses the challenges of legacy blockchains by offering fast transactions, low fees, and a censorship-resistant environment for developers to innovate and deploy applications [t=0:32 - t=98:26].",
+  "router_tags": [
+    "Solana",
+    "blockchain",
+    "crypto",
+    "decentralization",
+    "scalability"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "SOLANA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

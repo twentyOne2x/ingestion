@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on the qualities needed for success at Binance, emphasizing passion for crypto and self-motivation.",
+  "topic_summary": "Key attributes for Binance employees include user focus, collaboration, humility, and a strong passion for crypto [t=17:20].",
+  "router_tags": [
+    "Binance",
+    "crypto",
+    "work culture",
+    "employee qualities"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

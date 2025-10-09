@@ -1,0 +1,24 @@
+{
+  "description": "In this episode, Anatoly speaks with George Harrap, co-founder of Step Finance, about his journey in the crypto space, starting from early Bitcoin mining to launching a crypto remittance company in Hong Kong. They discuss the evolution of the crypto ecosystem and the challenges faced in building decentralized finance solutions.",
+  "topic_summary": "George Harrap shares his decade-long experience in crypto, detailing his early involvement with Bitcoin mining [t=31:65], founding a remittance company [t=79:39], and the creation of Step Finance to address gaps in the DeFi ecosystem [t=137:49].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "DeFi",
+    "Step Finance",
+    "Bitcoin",
+    "Solana"
+  ],
+  "aliases": [
+    "George Harrap",
+    "george harrap",
+    "Step Finance",
+    "step finance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

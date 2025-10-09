@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on cryptocurrency pioneers in P2P markets in Peru and Panama, focusing on transactions, platforms, and local insights.",
+  "topic_summary": "Exploration of P2P cryptocurrency transactions in Latin America, particularly in Peru and Panama, highlighting key figures and platforms [t=01:16].",
+  "router_tags": [
+    "Cryptocurrency",
+    "P2P",
+    "Latin America",
+    "Bitcoin",
+    "USDT"
+  ],
+  "aliases": [
+    "Pioneros Cripto",
+    "P2P Cripto",
+    "Crypto Pioneers"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@JoseRichard",
+    "@OrlandoS",
+    "@JoseMeorita",
+    "@JoseQuantas",
+    "@ApojaCasino"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

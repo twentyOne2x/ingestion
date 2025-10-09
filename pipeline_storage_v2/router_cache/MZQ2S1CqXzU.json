@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the factors that influence supply and demand in various markets, including financial assets like gold and cryptocurrencies.",
+  "topic_summary": "The video discusses how supply and demand determine market prices, with examples from gold and cryptocurrencies. It highlights factors affecting supply, such as production costs and economic conditions, and how demand can increase during economic downturns [t=34:85].",
+  "router_tags": [
+    "supply",
+    "demand",
+    "markets",
+    "economics",
+    "gold",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "What Affects Supply and Demand",
+    "Supply and Demand in Markets",
+    "Market Supply and Demand"
+  ],
+  "canonical_entities": [
+    "$GOLD",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

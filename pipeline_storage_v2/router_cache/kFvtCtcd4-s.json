@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, Mike Novogratz, CEO of Galaxy Digital, discusses the impact of cryptocurrency and DeFi on the global economy. He emphasizes the transformative potential of crypto and its intersection with traditional finance, highlighting the role of institutional investors and macroeconomic trends. The conversation covers various topics, including Bitcoin's value proposition, the evolution of financial ecosystems, and the importance of innovation in the crypto space.",
+  "topic_summary": "Mike Novogratz discusses how crypto and DeFi are reshaping the financial landscape, touching on institutional adoption and macroeconomic influences [t=0:24-10:96]. He explores the relationship between traditional finance and crypto, emphasizing the need for integration and innovation [t=320:19-448:60]. The episode also addresses the challenges and opportunities within the crypto ecosystem [t=649:17-670:37].",
+  "router_tags": [
+    "Cryptocurrency",
+    "DeFi",
+    "Finance",
+    "Innovation",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@mikenovogratz"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

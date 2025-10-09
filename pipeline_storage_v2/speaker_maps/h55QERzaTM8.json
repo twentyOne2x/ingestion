@@ -1,0 +1,14 @@
+{
+  "video_id": "h55QERzaTM8",
+  "title": "2022-06-23_h55QERzaTM8_CZ-?CZ",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

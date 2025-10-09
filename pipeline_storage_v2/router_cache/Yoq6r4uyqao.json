@@ -1,0 +1,23 @@
+{
+  "description": "Live stream discussing updates from Binance, featuring Nathan, head of customer support, addressing community questions and market trends, particularly Bitcoin's recent price movements.",
+  "topic_summary": "The stream covers Binance updates, community engagement, and Bitcoin's price recovery from $55,000, with insights from customer support head Nathan [t=51:16].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Crypto",
+    "Live Stream",
+    "Customer Support"
+  ],
+  "aliases": [
+    "binanceresponde",
+    "Binance Responde",
+    "BinanceRespond",
+    "binance responde"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

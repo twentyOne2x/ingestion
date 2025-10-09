@@ -1,0 +1,44 @@
+{
+  "video_id": "LHaz2Y7SObU",
+  "title": "2021-03-18_LHaz2Y7SObU_#BSC #DEFI #NFT  5:        #",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "G",
+  "speaker_map": {
+    "C": {
+      "name": "Aslia Wahida Lagayer",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Will Minas",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Sami Moek",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Mashri Alamar Kaziya",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Jamir Mawakana Sabhatna",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

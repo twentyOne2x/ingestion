@@ -1,0 +1,27 @@
+{
+  "description": "In the inaugural episode of Binance VIP Voices, host Michaela introduces Raoul Pal, a seasoned finance expert with over 30 years of experience. The discussion covers his career journey, the founding of Real Vision, and insights into digital assets, including Bitcoin and the evolving financial landscape. Raoul shares his perspective on the democratization of financial intelligence and the importance of educating individuals about digital assets [t=0:16].",
+  "topic_summary": "The episode explores Raoul Pal's extensive background in finance, his transition to digital assets, and the mission of Real Vision to provide accessible financial insights. Key topics include institutional adoption of digital assets, the impact of macroeconomic events, and the future of finance in the context of blockchain technology [t=66:62].",
+  "router_tags": [
+    "Binance",
+    "Digital Assets",
+    "Raoul Pal",
+    "Real Vision",
+    "Finance",
+    "Institutional Adoption",
+    "Bitcoin",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance VIP Voices",
+    "Binance Vip Voices",
+    "Raoul Pal",
+    "Real Vision"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@RaoulPal",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

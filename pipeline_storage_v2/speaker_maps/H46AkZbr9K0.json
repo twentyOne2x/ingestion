@@ -1,0 +1,20 @@
+{
+  "video_id": "H46AkZbr9K0",
+  "title": "2022-11-17_H46AkZbr9K0_Binance CEO Changpeng Zhao: We never viewed FTX as competition",
+  "channel_name": "CNBC Television",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Nouriel Roubini",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Speaker B",
+      "role": "Host",
+      "confidence": 0.55,
+      "source": "tier1"
+    }
+  }
+}

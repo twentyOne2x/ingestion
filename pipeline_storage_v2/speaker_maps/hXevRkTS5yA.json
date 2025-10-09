@@ -1,0 +1,20 @@
+{
+  "video_id": "hXevRkTS5yA",
+  "title": "2023-12-05_hXevRkTS5yA_Web3 Change Makers: How These Projects Built for Success",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "D": {
+      "name": "Alex. And",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

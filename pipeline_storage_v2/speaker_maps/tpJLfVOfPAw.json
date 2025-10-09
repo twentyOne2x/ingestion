@@ -1,0 +1,32 @@
+{
+  "video_id": "tpJLfVOfPAw",
+  "title": "2021-02-15_tpJLfVOfPAw_Fundamentalni vs. Technicka analyza. Binance Panel.",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "D": {
+      "name": "Nikki Malinko",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Michal Stibor Michalia",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Branish Patna",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

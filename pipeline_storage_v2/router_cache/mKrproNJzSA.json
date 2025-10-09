@@ -1,0 +1,28 @@
+{
+  "description": "In this Binance Africa webinar, Emily Young from the Binance Gift Card Team discusses how to use Binance gift cards, including creation and sending to friends and family. The session also emphasizes the importance of KYC (Know Your Customer) for accessing Binance products.",
+  "topic_summary": "Emily Young introduces Binance gift cards and their benefits, while also highlighting the need for KYC compliance among users. The session includes a French translation segment for the Francophone community.",
+  "router_tags": [
+    "Binance",
+    "Gift Card",
+    "KYC",
+    "Crypto Education",
+    "Blockchain Awareness"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceGiftCard",
+    "EmilyYoung",
+    "Karine",
+    "Karin",
+    "Ben"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@EmilyYoung",
+    "@Karine",
+    "$DOGE",
+    "$USDT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Cristiano Ronaldo demonstrates his ability to deceive a lie detector in this engaging video.",
+  "topic_summary": "The video explores Cristiano Ronaldo's skill in fooling a lie detector, showcasing his confidence and charisma [t=0:16].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "lie detector",
+    "deception",
+    "entertainment"
+  ],
+  "aliases": [
+    "CristianoRonaldo",
+    "cristianoronaldo",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

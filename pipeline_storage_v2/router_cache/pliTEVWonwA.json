@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the use cases of NFTs in tokenizing real-world assets, highlighting their potential to enhance liquidity in markets like fine art and real estate.",
+  "topic_summary": "NFTs can represent ownership of real-world assets, allowing for easier transfers and storage solutions, thus reducing friction in global transactions [t=0:32-0:52].",
+  "router_tags": [
+    "NFT",
+    "Tokenization",
+    "Real World Assets",
+    "Liquidity",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Nft",
+    "NFTs",
+    "nFT"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

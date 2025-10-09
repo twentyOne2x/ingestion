@@ -1,0 +1,28 @@
+{
+  "description": "CZ discusses his work with Giggle Academy, focusing on AI integration to enhance educational content delivery. He mentions scaling efforts, including the launch of storybooks in 15 languages and the goal of educating millions of children for free. He also shares insights on blockchain adoption in various countries and the importance of favorable crypto regulations.",
+  "topic_summary": "In this fireside chat, CZ elaborates on his initiatives with Giggle Academy and the broader implications of blockchain technology in government and education, highlighting the intersection of AI and crypto.",
+  "router_tags": [
+    "CZ",
+    "Giggle Academy",
+    "AI",
+    "Blockchain",
+    "Crypto Regulations",
+    "Education",
+    "TOKEN2049"
+  ],
+  "aliases": [
+    "Cz",
+    "cz",
+    "CZ Binance",
+    "cz_binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$DOGE",
+    "@elonmusk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

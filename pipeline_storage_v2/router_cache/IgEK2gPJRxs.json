@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on Crypto Planet and its various NFT and GameFi elements, including mentions of different planets associated with cryptocurrencies like Bitcoin and Ethereum.",
+  "topic_summary": "Overview of Crypto Planet's NFT and GameFi features, including licensing and strategic games [t=0:24 - t=25:93].",
+  "router_tags": [
+    "Crypto Planet",
+    "NFT",
+    "GameFi",
+    "Binance",
+    "Ethereum",
+    "Bitcoin",
+    "Dogecoin"
+  ],
+  "aliases": [
+    "BSCGameFi",
+    "Bscgamefi",
+    "bscgamefi"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$BTC",
+    "$ETH",
+    "$DOGE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

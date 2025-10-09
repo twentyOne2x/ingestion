@@ -1,0 +1,23 @@
+{
+  "description": "This video guides users on how to buy cryptocurrency on Binance P2P, including steps for account verification, selecting payment methods, and completing transactions.",
+  "topic_summary": "Learn to buy USDT using RUB on Binance P2P, including filtering ads, making payments, and confirming transactions [t=4:16 - t=174:26].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency",
+    "USDT",
+    "RUB"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binance p2p",
+    "P2P trading"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

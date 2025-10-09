@@ -1,0 +1,24 @@
+{
+  "description": "Explore the differences between various stablecoins, including USDT and USDC, and their backing mechanisms. Understand the importance of regulation and market capitalization in the stablecoin ecosystem.",
+  "topic_summary": "This video discusses the characteristics of stablecoins, focusing on their fiat backing and regulatory differences. It highlights the dominance of USDT and USDC in the market and the significance of understanding these factors for traders [t=0:08 - t=3:56].",
+  "router_tags": [
+    "Stablecoins",
+    "USDT",
+    "USDC",
+    "Fiat",
+    "Cryptocurrency",
+    "Regulation"
+  ],
+  "aliases": [
+    "Different Stablecoins",
+    "Stablecoins Comparison",
+    "Choosing Stablecoins"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$USDC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

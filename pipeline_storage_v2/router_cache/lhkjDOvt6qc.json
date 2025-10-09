@@ -1,0 +1,23 @@
+{
+  "description": "The first Solana Community Town Hall features co-founder Anatoly discussing the growth of the Solana ecosystem and introducing community updates. The event includes a Q&A session for audience interaction.",
+  "topic_summary": "Anatoly shares insights on Solana's journey, the introduction of Proof of History, and the community's rapid growth since its inception. The session encourages audience participation through questions and comments [t=8:16].",
+  "router_tags": [
+    "Solana",
+    "Community",
+    "Town Hall",
+    "Anatoly",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Solana Community Town Hall",
+    "Solana Town Hall",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video explains grid trading, a strategy that automates buying and selling futures contracts at set intervals around a price range. It is most effective in volatile markets, aiming to profit from small price changes by executing predefined buy and sell limit orders. The video covers how to set up grid trading, including selecting modes, defining price ranges, and managing risk.",
+  "topic_summary": "Grid trading automates trading strategies to profit from market volatility by executing buy and sell orders at predetermined intervals. It is suitable for both ranging and trending markets, emphasizing the importance of risk management and market condition compatibility [t=4:32].",
+  "router_tags": [
+    "Grid Trading",
+    "Futures Trading",
+    "Automated Trading",
+    "Binance",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Grid trading",
+    "grid Trading",
+    "GRID TRADING"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

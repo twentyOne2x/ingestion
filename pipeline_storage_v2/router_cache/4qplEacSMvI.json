@@ -1,0 +1,24 @@
+{
+  "description": "Adi Binari, founder and CEO of Applied Blockchain, discusses NFT mechanics, the importance of blockchain for ownership records, and the evolution of NFT marketplaces. He emphasizes the need for user-friendly experiences while acknowledging the risks associated with custodial marketplaces. He also covers the differences between custodial and non-custodial marketplaces, highlighting platforms like OpenSea and NBA Top Shots, and the significance of NFT metadata standards.",
+  "topic_summary": "Adi Binari explores NFT mechanics, blockchain's role in ownership and liquidity, and the landscape of NFT marketplaces, contrasting custodial and non-custodial models. He discusses the evolution of NFTs and the importance of metadata standards for interoperability across platforms [t=0:00].",
+  "router_tags": [
+    "NFT",
+    "Blockchain",
+    "Marketplace",
+    "Solana",
+    "Ethereum",
+    "Crypto"
+  ],
+  "aliases": [
+    "Adi Binari",
+    "adi binari",
+    "ADi Binari"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

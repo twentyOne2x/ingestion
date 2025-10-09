@@ -1,0 +1,23 @@
+{
+  "description": "Participate in a game where you can either keep your USDC or double it for the next person. The amounts mentioned include 1, 2, 4, 8, 16, and 32 USDC, with instructions to give it to the next participant [t=0:40] to [t=49:34].",
+  "topic_summary": "A game involving USDC where participants can choose to keep or double their amount for the next person, promoting engagement and interaction.",
+  "router_tags": [
+    "USDC",
+    "crypto",
+    "Binance",
+    "wallet",
+    "double or nothing"
+  ],
+  "aliases": [
+    "Double Or Nothing",
+    "double or nothing",
+    "USDC Game",
+    "usdc game"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "This video discusses the Binance P2P platform, explaining how buyers and sellers interact, the escrow service, and the dispute resolution process. It highlights the platform's growth in the Middle East and its support for Arabic users.",
+  "topic_summary": "Overview of Binance P2P platform functionality and growth in the Middle East, including user support and dispute resolution mechanisms. Key features include escrow services and a user-friendly interface for trading various cryptocurrencies [t=0:40].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency",
+    "Middle East",
+    "Escrow",
+    "Dispute Resolution"
+  ],
+  "aliases": [
+    "binance",
+    "Binance P2P",
+    "Binance Peer to Peer",
+    "binance p2p"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "$DAI",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

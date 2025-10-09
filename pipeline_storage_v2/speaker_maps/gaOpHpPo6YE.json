@@ -1,0 +1,20 @@
+{
+  "video_id": "gaOpHpPo6YE",
+  "title": "2025-05-10_gaOpHpPo6YE_Raoul Pal: The FASTEST Wealth Creation Opportunity in History - Real Vision CEO on Crypto, NFTs",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Alan Howard",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

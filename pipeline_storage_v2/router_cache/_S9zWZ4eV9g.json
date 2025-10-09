@@ -1,0 +1,27 @@
+{
+  "description": "Binance Earn hosts an AMA with Sangmin Seo and Jinnie Lee from the Klaytn Foundation, discussing developments in blockchain and the Klaytn ecosystem. The session includes introductions and insights from both speakers, highlighting their participation in the ETH Vietnam conference in Ho Chi Minh City.",
+  "topic_summary": "In this AMA, Sangmin Seo and Jinnie Lee introduce themselves and discuss Klaytn's initiatives and their experiences at the ETH Vietnam conference [t=159.51].",
+  "router_tags": [
+    "Binance",
+    "Klaytn",
+    "AMA",
+    "Blockchain",
+    "ETH Vietnam Conference",
+    "Southeast Asia"
+  ],
+  "aliases": [
+    "Binance Earn",
+    "Klaytn AMA",
+    "Sangmin Seo",
+    "Jinnie Lee",
+    "Ginny Lee"
+  ],
+  "canonical_entities": [
+    "$KLAY",
+    "@BinanceYoutube",
+    "@SangminSeo",
+    "@JinnieLee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

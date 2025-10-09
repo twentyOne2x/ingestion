@@ -1,0 +1,27 @@
+{
+  "description": "Join us for NFT Tuesdays as we explore NFTs from an artist and curator's perspective. This session features a fireside chat with Krista Kim and Elena Zavelev, discussing the intersection of art and technology. Participate in the conversation using #NFTTuesdays and stand a chance to win NFTs in our giveaway.",
+  "topic_summary": "This webinar covers NFTs for artists, featuring discussions on the NFT movement, digital art, and opportunities for artists and collectors. Key speakers include Krista Kim and Elena Zavelev, with insights into the NFT landscape and community engagement [t=61:51].",
+  "router_tags": [
+    "NFT",
+    "Digital Art",
+    "Artists",
+    "Webinar",
+    "Crypto Art",
+    "Community"
+  ],
+  "aliases": [
+    "Nft Tuesdays",
+    "NFT Tuesdays",
+    "NFT tuesdays",
+    "nft tuesdays"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@KristaKim",
+    "@ElenaZavelev"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

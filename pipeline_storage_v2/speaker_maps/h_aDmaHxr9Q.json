@@ -1,0 +1,20 @@
+{
+  "video_id": "h_aDmaHxr9Q",
+  "title": "2022-01-28_h_aDmaHxr9Q_Pyth Workshop - Day 3 - Solana Update with Bartosz Lipinski",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "E": {
+      "name": "Justin Kahn",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

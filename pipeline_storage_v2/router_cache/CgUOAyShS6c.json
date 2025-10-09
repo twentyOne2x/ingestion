@@ -1,0 +1,16 @@
+{
+  "description": "A brief interaction featuring a person named Sam.",
+  "topic_summary": "Introduction to a conversation with Sam [t=00:00]",
+  "router_tags": [
+    "conversation",
+    "introduction",
+    "sam"
+  ],
+  "aliases": [
+    "Sam",
+    "sam"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

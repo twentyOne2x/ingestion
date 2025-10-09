@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on NFTs and related topics, including references to social media and futures trading.",
+  "topic_summary": "Exploration of NFT trends and community engagement, with mentions of social media platforms like Twitter and Discord [t=4012.9].",
+  "router_tags": [
+    "NFT",
+    "crypto",
+    "Binance",
+    "social media",
+    "futures"
+  ],
+  "aliases": [
+    "@BinanceZH",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

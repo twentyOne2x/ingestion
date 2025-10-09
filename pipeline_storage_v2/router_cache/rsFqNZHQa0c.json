@@ -1,0 +1,26 @@
+{
+  "description": "In this video, the host discusses strategies for trading Bitcoin and various altcoins, emphasizing the importance of technical analysis and market timing. The host shares insights on past successful trades and current market conditions, highlighting the potential for significant gains in the upcoming market cycle.",
+  "topic_summary": "The video reveals a trading strategy involving a $38 million position in Bitcoin and altcoins, discussing market trends and technical indicators [t=0:16]. The host emphasizes the importance of long-term investments in Bitcoin and shares insights on trading strategies and market predictions [t=22:92].",
+  "router_tags": [
+    "Bitcoin",
+    "Altcoins",
+    "Trading Strategy",
+    "Market Analysis",
+    "Technical Analysis"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@DonaldTrump",
+    "@Nadia",
+    "@RobNova"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "CG7pMLyQPs0",
+  "title": "2021-06-29_CG7pMLyQPs0_Binance 60 - Edicao #44 - Q&A",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Tasha Pasako",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

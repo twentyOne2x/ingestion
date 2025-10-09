@@ -1,0 +1,30 @@
+{
+  "description": "Vincent Chalk, CEO of First Digital Trust, discusses the role of trust companies in the digital asset space, emphasizing their importance in managing assets and providing custody services. He explains the historical context of trust and how it relates to modern digital assets, particularly in Hong Kong.",
+  "topic_summary": "Vincent Chalk introduces First Digital Trust and explores the necessity of trust companies in the Web 3.0 landscape, detailing their functions in asset management and custody, especially in relation to digital currencies and tokens [t=0:24-436:26].",
+  "router_tags": [
+    "Digital Assets",
+    "Trust Companies",
+    "Web 3.0",
+    "Custody Services",
+    "Hong Kong"
+  ],
+  "aliases": [
+    "Vincent Chalk",
+    "vincent chalk",
+    "First Digital Trust",
+    "first digital trust"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BTC",
+    "$USDC",
+    "$USDT",
+    "$FDUSD",
+    "@HongKongGovernment",
+    "@InteractiveBrokers",
+    "@BrinksMalcolm"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

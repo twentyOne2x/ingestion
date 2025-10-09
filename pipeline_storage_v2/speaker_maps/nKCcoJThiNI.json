@@ -1,0 +1,32 @@
+{
+  "video_id": "nKCcoJThiNI",
+  "title": "2024-03-15_nKCcoJThiNI_Binance VIP Voices Episode 8: Female Leaders Redefining Success in the Digital Assets Space",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "D": {
+      "name": "Katrina Hanous",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Katrina Oya Odalia",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Odelia Trotman",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "HJsfQOOuYT0",
+  "title": "2022-04-27_HJsfQOOuYT0_NFTMelos,500U!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Nano Jigga",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

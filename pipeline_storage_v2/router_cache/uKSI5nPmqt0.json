@@ -1,0 +1,17 @@
+{
+  "description": "This module explores market psychology and its impact on market cycles, emphasizing the emotional influences on financial markets.",
+  "topic_summary": "Market psychology reflects the emotional state of market participants, influencing financial market movements and creating psychological market cycles. It encompasses the collective sentiment of investors and traders regarding asset price actions [t=0:24 - t=55:78].",
+  "router_tags": [
+    "Market Psychology",
+    "Behavioral Economics",
+    "Investor Sentiment"
+  ],
+  "aliases": [
+    "Market psychology",
+    "market Psychology",
+    "MARKET PSYCHOLOGY"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

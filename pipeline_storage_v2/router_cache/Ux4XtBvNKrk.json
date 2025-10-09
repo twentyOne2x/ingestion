@@ -1,0 +1,25 @@
+{
+  "description": "Bitcoin was created on January 3, 2009, when Satoshi Nakamoto mined the first block, earning 50 bitcoins. The first transaction occurred on January 12, 2009, when Hal Finney received 10 bitcoins. In 2013, Vitalik Buterin proposed the need for a scripting language for decentralized applications, leading to the development of Ethereum.",
+  "topic_summary": "This video discusses the inception of Bitcoin, its first transaction, and the subsequent development of Ethereum, highlighting key figures like Satoshi Nakamoto, Hal Finney, and Vitalik Buterin. [t=0:48] [t=10:72] [t=21:76] [t=32:83]",
+  "router_tags": [
+    "Bitcoin",
+    "Ethereum",
+    "Blockchain",
+    "Cryptocurrency",
+    "Satoshi Nakamoto"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "binanceacademy",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@satoshi",
+    "@halfinney",
+    "@VitalikButerin",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

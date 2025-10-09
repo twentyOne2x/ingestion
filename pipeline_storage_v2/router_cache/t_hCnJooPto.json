@@ -1,0 +1,17 @@
+{
+  "description": "A gathering event where attendees are welcomed and thanked for their presence.",
+  "topic_summary": "Event welcome and introduction [t=00:00]",
+  "router_tags": [
+    "event",
+    "welcome",
+    "introduction"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

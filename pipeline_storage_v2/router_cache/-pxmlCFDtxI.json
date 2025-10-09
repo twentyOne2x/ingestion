@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on whether crypto staking can be considered halal, focusing on Sharia compliance and the role of Binance and Amarni Advisors products.",
+  "topic_summary": "Exploration of crypto staking's halal status, emphasizing Sharia-compliant practices in the crypto space [t=123:22].",
+  "router_tags": [
+    "Crypto",
+    "Staking",
+    "Halal",
+    "Binance",
+    "Amarni Advisors"
+  ],
+  "aliases": [
+    "Can Crypto Staking Be Halal",
+    "can crypto staking be halal",
+    "Crypto Staking Halal"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@AmarniAdvisors"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on opportunities in the blockchain industry for students, emphasizing the importance of utilizing free resources like Google and YouTube for skill development. The speaker highlights various paths such as content creation, graphic design, and blockchain development, encouraging students to engage with crypto communities on platforms like Twitter for networking and job opportunities. [t=0:24] [t=1:48] [t=14:24] [t=30:89] [t=131:10]",
+  "topic_summary": "Exploration of blockchain opportunities for students, focusing on skill acquisition through online resources and community engagement.",
+  "router_tags": [
+    "Blockchain",
+    "Education",
+    "Crypto Opportunities",
+    "Skill Development",
+    "Student Resources"
+  ],
+  "aliases": [
+    "Opportunities in Blockchain for Students",
+    "Blockchain Opportunities",
+    "Student Blockchain Education"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@Binance",
+    "@Google",
+    "@Twitter"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

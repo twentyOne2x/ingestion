@@ -1,0 +1,26 @@
+{
+  "description": "In this AMA, host Milan introduces artists Leonardo, Kelvin, and Johnny, who discuss their unique artistic styles and experiences in the NFT marketplace. Leonardo shares his technique of painting on musical instruments, Kelvin talks about his hyperrealistic pencil art, and Johnny discusses his collage art and music production.",
+  "topic_summary": "Artists Leonardo, Kelvin, and Johnny share insights into their art and experiences with NFTs on Binance's marketplace. They discuss their backgrounds, techniques, and the significance of their work in the digital art space.",
+  "router_tags": [
+    "NFT",
+    "Binance",
+    "Art",
+    "AMA",
+    "Artists"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance NFT",
+    "Leonardo Frigo",
+    "Kelvin Okaform",
+    "Johnny Element"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$NFT",
+    "$BINANCE",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

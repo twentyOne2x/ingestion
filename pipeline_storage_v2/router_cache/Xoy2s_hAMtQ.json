@@ -1,0 +1,22 @@
+{
+  "description": "Binance Labs hosts an AMA discussing the Fall Incubation Program aimed at empowering blockchain and crypto entrepreneurs. The session covers program details, application processes, and support offered to projects, including funding and marketing resources.",
+  "topic_summary": "In this AMA, Binance Labs outlines the goals of the incubation program, which include supporting early-stage blockchain projects and fostering industry growth. Key topics include application criteria, team capabilities, and the resources available to participants [t=4:72].",
+  "router_tags": [
+    "Binance",
+    "Incubation Program",
+    "Blockchain",
+    "Crypto",
+    "Entrepreneurship"
+  ],
+  "aliases": [
+    "Binance Labs",
+    "binance labs",
+    "BINANCE LABS"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

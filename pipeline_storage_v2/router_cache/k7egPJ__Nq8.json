@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the cryptocurrency trading model in Latin America, highlighting various aspects of the market and user engagement.",
+  "topic_summary": "Exploration of cryptocurrency trading in Latin America, including market dynamics and user support channels [t=54:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "Latin America",
+    "trading",
+    "KYC",
+    "support"
+  ],
+  "aliases": [
+    "El Modelo De Comerciantes De Criptomonedas En Latam",
+    "El modelo de comerciantes de criptomonedas en latam",
+    "modelo de comerciantes de criptomonedas"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

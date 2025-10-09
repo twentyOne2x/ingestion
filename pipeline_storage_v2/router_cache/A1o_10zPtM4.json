@@ -1,0 +1,17 @@
+{
+  "description": "A brief exploration of celestial themes, including references to the ocean and Venus.",
+  "topic_summary": "Discussion on celestial bodies and their significance, with mentions of the ocean and Venus [t=0:24].",
+  "router_tags": [
+    "celestial",
+    "Venus",
+    "ocean"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

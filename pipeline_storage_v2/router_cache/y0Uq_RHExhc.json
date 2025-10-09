@@ -1,0 +1,24 @@
+{
+  "description": "Alexis Ohanian discusses the evolution of Reddit and the potential of decentralized technology at Breakpoint 2021. He announces a $50 million investment in social projects built on Solana, emphasizing the importance of community and connection in technology.",
+  "topic_summary": "At [t=17:28], Alexis Ohanian shares insights on building a new Internet and the role of community in technology. He reflects on his journey with Reddit and announces a $50 million investment in Solana projects at [t=169:08].",
+  "router_tags": [
+    "Solana",
+    "Reddit",
+    "Decentralization",
+    "Investment",
+    "Technology"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021: Special Presentation",
+    "Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@alexisohanian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "lrBHnffVB4I",
+  "title": "2022-10-26_lrBHnffVB4I_David Princay, Ran Neuner & Rabbin Des Bois on Web3 - Binance Blockchain Week - Paris 2022",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Robin Hood",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Rabin Desbois",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

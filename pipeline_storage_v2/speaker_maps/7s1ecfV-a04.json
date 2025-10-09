@@ -1,0 +1,20 @@
+{
+  "video_id": "7s1ecfV-a04",
+  "title": "2019-04-16_7s1ecfV-a04_What is The Internet of Things (IOT)|Explained For Beginners",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Reza Raji",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

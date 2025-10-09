@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the importance of Web3 and blockchain literacy to engage the next billion users, emphasizing the need for clear communication and understanding of concepts.",
+  "topic_summary": "Exploration of strategies to enhance blockchain literacy and engage everyday users, focusing on simplified communication and social media outreach [t=6:00].",
+  "router_tags": [
+    "Web3",
+    "blockchain",
+    "literacy",
+    "education",
+    "social media"
+  ],
+  "aliases": [
+    "Inclusion of the Next Billion Users",
+    "Next Billion Users",
+    "Next Billion"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

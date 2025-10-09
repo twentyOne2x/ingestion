@@ -1,0 +1,20 @@
+{
+  "description": "Discussion featuring Sam at Binance Blockchain Week in Paris.",
+  "topic_summary": "Overview of Binance Blockchain Week held in Paris from September 14 to 16, 2022. [t=00:00]",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Paris",
+    "Conference"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

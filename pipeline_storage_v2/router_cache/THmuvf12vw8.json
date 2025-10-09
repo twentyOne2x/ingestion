@@ -1,0 +1,22 @@
+{
+  "description": "This video explains how to use a market order on Binance, detailing its mechanics, advantages, and disadvantages.",
+  "topic_summary": "A market order is an order to buy or sell at the best available price. It guarantees filling if there are orders on the book, but can incur slippage and higher fees due to acting as a market taker. Market orders are useful in urgent situations but not recommended for beginners. [t=0:00] [t=4:24] [t=109:75]",
+  "router_tags": [
+    "Binance",
+    "Market Order",
+    "Trading",
+    "Crypto"
+  ],
+  "aliases": [
+    "Market Order",
+    "market order",
+    "MARKET ORDER"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

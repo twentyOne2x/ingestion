@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the differences between Bitcoin and fiat money, highlighting Bitcoin's decentralized nature, limited supply, and censorship resistance compared to the centralized and censorable characteristics of fiat money.",
+  "topic_summary": "Bitcoin vs. Fiat Money: Bitcoin is decentralized and has a limited supply of 21 million coins, while fiat money is centralized, has an unlimited supply, and is subject to government control and censorship [t=0:40].",
+  "router_tags": [
+    "Bitcoin",
+    "Fiat Money",
+    "Cryptocurrency",
+    "Decentralization"
+  ],
+  "aliases": [
+    "bitcoin",
+    "Bitcoin",
+    "BTC",
+    "btc"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

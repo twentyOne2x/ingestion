@@ -1,0 +1,21 @@
+{
+  "description": "Cristiano Ronaldo answers tough questions while undergoing a lie detector test, discussing his Champions League medals and future in football.",
+  "topic_summary": "Cristiano Ronaldo faces a lie detector, addressing questions about his career and records [t=0:32].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "lie detector",
+    "football",
+    "Champions League"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristiano ronaldo",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$CR7"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,30 @@
+{
+  "description": "The Breakpoint 2021 event at Estufa Fria features discussions and demos from various projects within the Solana ecosystem. Key contributors, including Tom Lee and Tristan from Zeta, showcase innovations in DeFi derivatives and trading platforms.",
+  "topic_summary": "Breakpoint 2021 at Estufa Fria highlights the growth of the Solana ecosystem with panels and demos from notable projects, focusing on DeFi and trading innovations [t=69:11].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Breakpoint 2021",
+    "Estufa Fria",
+    "Zeta",
+    "Valhalla",
+    "Slope",
+    "All Art Protocol"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@tristan",
+    "@tomlee",
+    "@matt",
+    "@stella",
+    "@vito"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

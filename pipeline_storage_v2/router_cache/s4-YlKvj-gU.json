@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the origin of Bitcoin Pizza Day, recounting the first real-world transaction using Bitcoin for pizza in 2010.",
+  "topic_summary": "In 2010, a Bitcoin user ordered two pizzas for 10,000 BTC, marking a historic moment in cryptocurrency history. Today, that amount is worth hundreds of millions of dollars [t=27:76].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Cryptocurrency",
+    "History"
+  ],
+  "aliases": [
+    "Bitcoin Pizza Day",
+    "bitcoin pizza day",
+    "BTC Pizza Day",
+    "btc pizza day"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

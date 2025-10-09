@@ -1,0 +1,21 @@
+{
+  "description": "Explore how Binance Angels are promoting cryptocurrency awareness through sign language.",
+  "topic_summary": "Meet the Binance Angel initiative, focusing on growing crypto awareness via sign language [t=01:02].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Sign Language",
+    "Awareness"
+  ],
+  "aliases": [
+    "Binance Angel",
+    "binance angel",
+    "Binance angels",
+    "binance Angels"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

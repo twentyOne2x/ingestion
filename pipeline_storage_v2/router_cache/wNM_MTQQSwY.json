@@ -1,0 +1,26 @@
+{
+  "description": "Presentation by Tommy and Taylor Johnson, founders of Psyoptions, discussing their journey and updates on building options on the Solana blockchain.",
+  "topic_summary": "The founders provide insights into the development of Psyoptions, including challenges faced during the hackathon, architectural changes, and plans for community engagement and product features [t=0:24-2:32].",
+  "router_tags": [
+    "Solana",
+    "Psyoptions",
+    "DeFi",
+    "Hackathon",
+    "Options",
+    "Serum"
+  ],
+  "aliases": [
+    "Psyoptions",
+    "PsyOptions",
+    "psyoptions",
+    "psyOptions"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@TommyJohnson",
+    "@TaylorJohnson"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

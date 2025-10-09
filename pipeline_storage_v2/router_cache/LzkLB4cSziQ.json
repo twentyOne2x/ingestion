@@ -1,0 +1,25 @@
+{
+  "description": "This video discusses how to get started with Binance Futures trading, covering key concepts, potential risks, and promotional offers for new users.",
+  "topic_summary": "Introduction to Binance Futures trading, including educational tips and insights from key opinion leaders in the crypto space [t=132.92].",
+  "router_tags": [
+    "Binance",
+    "Futures Trading",
+    "Crypto",
+    "Education"
+  ],
+  "aliases": [
+    "binance futures",
+    "Binance Futures",
+    "Binance futures trading",
+    "binance futures trading"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$BNB",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

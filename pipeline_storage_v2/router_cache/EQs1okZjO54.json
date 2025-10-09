@@ -1,0 +1,22 @@
+{
+  "description": "Panel discussion on the evolution and impact of DAOs, featuring insights from experts in the Solana ecosystem and beyond. Topics include the nature of DAOs, their role in community collaboration, and the shift from centralized to decentralized governance models.",
+  "topic_summary": "Exploration of DAOs, their significance in modern collaboration, and the transition from centralized teams to decentralized organizations. Discussion includes personal experiences and the future of governance in the crypto space [t=328:66].",
+  "router_tags": [
+    "DAO",
+    "DeFi",
+    "Governance",
+    "Solana",
+    "Community"
+  ],
+  "aliases": [
+    "dao",
+    "Daos",
+    "Dao or Die"
+  ],
+  "canonical_entities": [
+    "$MKR",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

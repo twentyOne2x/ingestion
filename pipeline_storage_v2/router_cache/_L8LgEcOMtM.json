@@ -1,0 +1,23 @@
+{
+  "description": "Yi He discusses her journey from being a TV host to co-founding a major crypto exchange and her current role in Band's Pizza Day.",
+  "topic_summary": "Yi He reflects on her career transition and involvement in Band's Pizza Day, highlighting the growth of the crypto exchange industry [t=2:40].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Crypto",
+    "Yi He"
+  ],
+  "aliases": [
+    "Band's Pizza Day",
+    "Band's pizza day",
+    "band's pizza day"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@YiHe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

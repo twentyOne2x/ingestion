@@ -1,0 +1,32 @@
+{
+  "description": "Rachel Wolfson leads a panel discussion on Web3 at Binance Blockchain Week in Paris, featuring insights from Justin Sun, Eowyn Chen, and Jordan Lambert on the future of digital ownership and the evolution of the internet.",
+  "topic_summary": "The panel explores the concept of Web3, emphasizing its potential to redefine ownership and value transfer in the digital space, contrasting it with previous internet iterations and discussing necessary tools for a seamless Web3 future [t=0:24-0:35].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Digital Ownership",
+    "NFTs",
+    "Binance",
+    "Paris",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "web3",
+    "Web3",
+    "binance",
+    "Binance",
+    "nft",
+    "NFT"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$ETH",
+    "$USDC",
+    "@BinanceYoutube",
+    "@justinsuntron",
+    "@Eowyn",
+    "@JordanLambert"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

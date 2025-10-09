@@ -1,0 +1,21 @@
+{
+  "description": "Experience a lively interaction at the Binance Clubhouse, featuring spontaneous reactions and exchanges.",
+  "topic_summary": "Engage in a dynamic atmosphere at Binance Clubhouse with various spontaneous remarks and interactions [t=16:56].",
+  "router_tags": [
+    "Binance",
+    "Clubhouse",
+    "crypto",
+    "community"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

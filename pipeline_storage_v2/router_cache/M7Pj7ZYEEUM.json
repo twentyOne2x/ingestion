@@ -1,0 +1,28 @@
+{
+  "description": "This video provides an overview of P2P trading on Binance, explaining the process of buying and selling cryptocurrencies directly between individuals using fiat currency. It covers the importance of identity verification (KYC) and the security measures Binance implements to protect users during transactions.",
+  "topic_summary": "Learn about P2P trading on Binance, including how it works, the role of fiat currency, and the necessary steps for secure trading, such as KYC verification. The video also addresses common concerns regarding the safety of P2P transactions and the support available for users.",
+  "router_tags": [
+    "P2P Trading",
+    "Binance",
+    "Cryptocurrency",
+    "Fiat",
+    "KYC",
+    "Security"
+  ],
+  "aliases": [
+    "P2P Trading",
+    "P2P trading",
+    "Binance P2P",
+    "binance p2p"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$ETH",
+    "$BUSD",
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

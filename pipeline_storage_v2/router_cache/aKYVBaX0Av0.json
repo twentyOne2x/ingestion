@@ -1,0 +1,29 @@
+{
+  "description": "Anatoly hosts a discussion on stake pools, decentralization, and censorship resistance with guests Ella, Vasily, and fp. They explore the importance of these concepts in proof of stake networks and the challenges of incentivizing decentralization. The conversation highlights the potential for innovation in stake pools and the evolving landscape of DeFi.",
+  "topic_summary": "The episode focuses on the significance of stake pools and decentralization in blockchain networks, emphasizing the need for censorship resistance and the role of incentives in shaping user behavior. The guests share insights on the current state and future possibilities of staking and DeFi.",
+  "router_tags": [
+    "stake pools",
+    "decentralization",
+    "censorship resistance",
+    "DeFi",
+    "Solana"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Ella",
+    "Vasily",
+    "fp",
+    "Dissocian Stake Pool"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@ella",
+    "@vasily",
+    "@fp"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

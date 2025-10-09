@@ -1,0 +1,20 @@
+{
+  "video_id": "_aWThESHXqA",
+  "title": "2021-07-30__aWThESHXqA_AMA: Prometeus (PROM)  Binance",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Morgan Stern",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

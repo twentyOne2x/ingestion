@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how to short on margin trading using Binance. It covers the process of selling BTC at a high price and buying it back at a lower price to earn a profit. The video details the steps to transfer collateral, place orders, and manage risks using OCO orders.",
+  "topic_summary": "Learn how to short BTC on margin trading with Binance, including collateral transfer, order placement, and risk management strategies [t=0:00-2:10].",
+  "router_tags": [
+    "Margin Trading",
+    "Short Selling",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "How to Short on Margin Trading",
+    "Binance Margin Trading Guide",
+    "Short Selling on Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

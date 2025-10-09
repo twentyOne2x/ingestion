@@ -1,0 +1,22 @@
+{
+  "description": "This week's Changelog discusses recent updates in Solana, including upcoming changes to transaction sizes, the introduction of version transactions, and highlights from the Summer Camp hackathon.",
+  "topic_summary": "Key updates include plans to double transaction sizes from 1232 bytes, the addition of a method to retrieve transaction versions, and the announcement of Summer Camp hackathon winners, notably ironforge as the grand champion [t=191.35].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "transaction size",
+    "Summer Camp",
+    "hackathon"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "solana changelog",
+    "SOLANA CHANGELOG"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

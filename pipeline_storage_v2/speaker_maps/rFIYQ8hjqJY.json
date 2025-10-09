@@ -1,0 +1,20 @@
+{
+  "video_id": "rFIYQ8hjqJY",
+  "title": "2022-01-28_rFIYQ8hjqJY_Pyth Workshop - Day 3 - Project Presentation: The Reality of the Metaverse",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Jordan Bartosh",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

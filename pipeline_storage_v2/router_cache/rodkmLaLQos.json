@@ -1,0 +1,24 @@
+{
+  "description": "Rachel Conlan, CMO of Binance, discusses the significance of Bitcoin Pizza Day and its cultural impact on the cryptocurrency community.",
+  "topic_summary": "Rachel Conlan highlights the importance of Bitcoin Pizza Day, emphasizing how pizza symbolizes the intersection of culture and cryptocurrency [t=00:01].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Cryptocurrency",
+    "Rachel Conlan"
+  ],
+  "aliases": [
+    "Bitcoin Pizza Day",
+    "Binance",
+    "Rachel Conlan",
+    "rachel conlan"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@rachelconlan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

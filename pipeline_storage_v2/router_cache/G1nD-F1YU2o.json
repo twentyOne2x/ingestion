@@ -1,0 +1,22 @@
+{
+  "description": "Learn about Binance Quarterly Futures, including settlement methods, delivery times, and fees. Understand how positions are managed at expiration and the implications of settlement prices.",
+  "topic_summary": "This guide covers five key aspects of Binance Quarterly Futures: the settlement method [t=36:31], delivery timing [t=56:57], settlement price determination [t=81:78], delivery fees [t=112:41], and restrictions on position management before expiration [t=121:85].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Crypto Trading",
+    "Finance"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Academy",
+    "BINANCE",
+    "binanceacademy"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

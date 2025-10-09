@@ -1,0 +1,24 @@
+{
+  "description": "This video features Binance employees discussing their career paths and experiences in the crypto industry, emphasizing the importance of passion, curiosity, and hands-on learning in blockchain technology.",
+  "topic_summary": "Binance employees share insights on working in crypto, the significance of testing and learning, and the value of community engagement in the blockchain space. They highlight personal experiences and tips for navigating the industry, including security practices and the importance of being open-minded about new ideas.",
+  "router_tags": [
+    "Binance",
+    "Crypto Careers",
+    "Blockchain",
+    "Ethereum",
+    "Security",
+    "Learning"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

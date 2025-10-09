@@ -1,0 +1,44 @@
+{
+  "description": "This video outlines the steps for a blockchain project submission, including deadlines and criteria for selection. Participants are required to submit a project description video, a business plan, and GitHub details for review by judges.",
+  "topic_summary": "Overview of project submission process for a blockchain program, including deadlines [t=17:00], judging criteria [t=107:00], and key dates for submissions and live demos [t=215:00].",
+  "router_tags": [
+    "Blockchain",
+    "Project Submission",
+    "Judging Criteria",
+    "Live Demo",
+    "Africa"
+  ],
+  "aliases": [
+    "Careers in Blockchain",
+    "Blockchain Careers",
+    "Blockchain Program"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$USDT",
+    "@BinanceYoutube",
+    "@Ugo",
+    "@Yele",
+    "@Zend",
+    "@Babs",
+    "@Ben",
+    "@Zen",
+    "@Nicholas",
+    "@Emmanuel",
+    "@Chidera",
+    "@Samuel",
+    "@Tidera",
+    "@Chuta",
+    "@Olochi",
+    "@Bondu",
+    "@YiLe",
+    "@UgochukuAroro",
+    "@Z",
+    "@BscAfrica",
+    "@Shola",
+    "@Timmy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

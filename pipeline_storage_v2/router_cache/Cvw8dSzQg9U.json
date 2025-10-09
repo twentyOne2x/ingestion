@@ -1,0 +1,22 @@
+{
+  "description": "An introduction to the Solana Hacker House event in Bengaluru, showcasing the community and development opportunities.",
+  "topic_summary": "Overview of the Solana Hacker House in Bengaluru, highlighting community engagement and development initiatives [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Bengaluru",
+    "Blockchain",
+    "Development"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

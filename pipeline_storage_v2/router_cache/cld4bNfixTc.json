@@ -1,0 +1,20 @@
+{
+  "description": "Learn about P2P trading and how to use Binance P2P to buy cryptocurrency safely and efficiently.",
+  "topic_summary": "This video explains the process of P2P trading on Binance, highlighting its advantages over traditional exchanges and providing tips for secure transactions. It covers the steps to buy cryptocurrencies without needing a Binance account and emphasizes the importance of using secure payment methods [t=31:98].",
+  "router_tags": [
+    "P2P Trading",
+    "Binance",
+    "Cryptocurrency",
+    "Beginner's Guide"
+  ],
+  "aliases": [
+    "Binans",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

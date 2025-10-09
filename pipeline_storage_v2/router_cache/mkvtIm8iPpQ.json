@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on various earning mechanisms in the metaverse, including play-to-earn, learn-to-earn, and staking. The conversation touches on different projects and community engagement strategies.",
+  "topic_summary": "Exploration of earning models in the metaverse, including play-to-earn and learn-to-earn concepts, with references to community involvement and project specifics [t=05:00].",
+  "router_tags": [
+    "metaverse",
+    "play-to-earn",
+    "learn-to-earn",
+    "staking",
+    "community"
+  ],
+  "aliases": [
+    "X To Earn",
+    "x to earn",
+    "X TO EARN"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

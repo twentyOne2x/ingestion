@@ -1,0 +1,24 @@
+{
+  "description": "Learn how to win free items from Binance, including crypto, gift cards, NFTs, and merch. Discover where to find promotions on the Binance app and social media platforms like Twitter and Instagram. Participate in contests to win prizes like $100 and Binance merchandise by following specific rules and deadlines.",
+  "topic_summary": "This video explains how to win free stuff from Binance through various promotions and contests. It covers where to find these promotions and the requirements to participate, including examples of current giveaways and trading competitions [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "giveaway",
+    "crypto",
+    "promotions",
+    "trading competitions"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "$BNB",
+    "$ALICE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how blockchain networks validate transactions using public keys, focusing on the role of signatures and consensus in preventing double spending.",
+  "topic_summary": "The video discusses transaction validation in blockchain, emphasizing the importance of public keys and signatures in ensuring authenticity and preventing double spending [t=0:24]. It raises questions about consensus in distributed systems [t=30:14].",
+  "router_tags": [
+    "Blockchain",
+    "Transactions",
+    "Public Keys",
+    "Consensus"
+  ],
+  "aliases": [
+    "Blockchain Networks",
+    "Transaction Validation",
+    "Public Key Transactions"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "Alice"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

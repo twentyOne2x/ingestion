@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on scalability and cross-chain bridging, addressing technical, operational, and UX challenges. Panelists include Hendrik from Jump Crypto, Brian from LayerZero, and Alex Mirnoff from dbridge, among others. They explore the evolution of bridges, their role in decentralized finance, and the importance of trustless systems in enhancing user experience.",
+  "topic_summary": "Exploration of cross-chain bridges, their significance in decentralized finance, and the balance between decentralization and user experience [t=174.3].",
+  "router_tags": [
+    "Scalability",
+    "Cross-Chain Bridges",
+    "DeFi",
+    "Blockchain",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Scalability and Cross-Chain Bridges",
+    "Cross-Chain Bridges",
+    "DeFi Scalability"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JumpCrypto",
+    "@LayerZero",
+    "@dbridge",
+    "@Allbridge"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

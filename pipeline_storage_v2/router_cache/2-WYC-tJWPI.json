@@ -1,0 +1,25 @@
+{
+  "description": "Learn how to operate easily and securely on Binance P2P in Uruguay. This video covers essential tips and insights for users in Latin America.",
+  "topic_summary": "Overview of Binance P2P operations in Uruguay, focusing on user experiences and local insights. Key figures like Juan Francisco Kotambian and Martinos Laventa share their perspectives on the platform and its benefits [t=6:56].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Uruguay",
+    "Latin America",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@JuanFranciscoKotambian",
+    "@MartinosLaventa",
+    "@GraciaMartino",
+    "@Hector"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

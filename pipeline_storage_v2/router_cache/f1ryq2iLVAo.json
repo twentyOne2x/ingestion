@@ -1,0 +1,19 @@
+{
+  "description": "A live session discussing various topics including Binance and NFTs.",
+  "topic_summary": "Introduction to Binance live channel and discussions on NFTs and finance topics [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Finance"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

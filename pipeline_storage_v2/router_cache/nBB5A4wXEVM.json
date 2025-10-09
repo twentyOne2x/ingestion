@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on F1 and its relevance in the crypto space.",
+  "topic_summary": "Overview of F1's impact on cryptocurrency markets [t=00:24].",
+  "router_tags": [
+    "F1",
+    "cryptocurrency",
+    "Binance"
+  ],
+  "aliases": [
+    "F1",
+    "F1 Racing",
+    "Formula 1"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

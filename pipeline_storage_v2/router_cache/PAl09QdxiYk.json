@@ -1,0 +1,27 @@
+{
+  "description": "Ben Sprango leads a panel discussing regional ecosystem funds and their role in investing in the Solana ecosystem. Panelists include Josh Han from ROK Capital, Bill Churman from Solar Ecofund, John Park from 841 Ventures, and Arthur Kwon from Evernue Capital. They share insights on their investment strategies and the challenges and benefits of operating in their respective regions, including Korea, Brazil, and Taiwan. The discussion highlights the importance of local partnerships and community engagement in fostering growth within the Solana ecosystem.",
+  "topic_summary": "Panel discussion on regional ecosystem funds and investment strategies in the Solana ecosystem, featuring insights from various fund representatives on their local markets and challenges.",
+  "router_tags": [
+    "Solana",
+    "Ecosystem Funds",
+    "Investment",
+    "Blockchain",
+    "DeFi",
+    "NFTs"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "WAGMI",
+    "Ask Regional Ecosystem Funds Anything"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JoshHan",
+    "@BillChurman",
+    "@JohnPark",
+    "@ArthurKwon"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

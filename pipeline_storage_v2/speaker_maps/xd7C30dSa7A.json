@@ -1,0 +1,20 @@
+{
+  "video_id": "xd7C30dSa7A",
+  "title": "2022-03-04_xd7C30dSa7A_Riptide Workshop: Investing beyond DeFi",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Sam Bakeman",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

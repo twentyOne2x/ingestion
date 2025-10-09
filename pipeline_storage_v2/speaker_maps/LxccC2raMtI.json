@@ -1,0 +1,20 @@
+{
+  "video_id": "LxccC2raMtI",
+  "title": "2022-07-04_LxccC2raMtI_Binance Blockchain Week - Elrond Network Co-founder Lucian Todea - Keynote",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Lucien Tudea",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

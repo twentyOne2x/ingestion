@@ -1,0 +1,24 @@
+{
+  "description": "Michael from Marinade.finance discusses liquid staking on Solana, explaining how users can stake their SOL tokens and receive MSOL in return. He highlights the importance of validator selection and the decentralized nature of the platform. The conversation also touches on governance and community involvement in the project.",
+  "topic_summary": "In this video, Michael explains the process of liquid staking with Marinade.finance, emphasizing the benefits of using MSOL tokens and the decentralized governance structure of the platform. He addresses the importance of validator nodes and community participation in decision-making.",
+  "router_tags": [
+    "Marinade",
+    "Liquid Staking",
+    "Solana",
+    "MSOL",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Marinade",
+    "Marinate",
+    "MARINADE",
+    "MARINATE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

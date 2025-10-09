@@ -1,0 +1,30 @@
+{
+  "description": "Q&A session discussing various crypto topics and projects, including Fibonacci analysis and market insights.",
+  "topic_summary": "Discussion on crypto projects and market analysis, including references to Fibonacci and various cryptocurrencies [t=56:39].",
+  "router_tags": [
+    "crypto",
+    "Q&A",
+    "Binance",
+    "Fibonacci",
+    "market analysis"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@PrabriNavadaji",
+    "$Novante",
+    "$Vesaquisto",
+    "$LouisI",
+    "@Ayakita",
+    "@Tadando",
+    "@NasaKonkao",
+    "@Msimodo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

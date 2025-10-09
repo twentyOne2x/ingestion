@@ -1,0 +1,14 @@
+{
+  "video_id": "NCh8NVupFcA",
+  "title": "2021-05-07_NCh8NVupFcA_AMA con el equipo de Binance P2P",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

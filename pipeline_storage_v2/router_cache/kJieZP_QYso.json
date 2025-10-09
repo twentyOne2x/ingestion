@@ -1,0 +1,33 @@
+{
+  "description": "Imran introduces a panel of investors discussing trends in the crypto ecosystem, focusing on gaming and investment opportunities. Amy Wu highlights her VC fund's $12 billion management and investments in crypto, including Solana and Alchemy. Austin Barack shares insights from Coin Fund, emphasizing their early involvement in crypto and recent ventures in NFT studios. Paul Veratta Takit from Pantera Capital discusses their multi-strategy approach and significant investments in cryptocurrencies since 2013. Rodolfo Gonzalez from Foundation Capital reflects on their early investment in Solana and their commitment to supporting new entrepreneurs in the ecosystem. The discussion covers the evolution of gaming, particularly Play to Earn models, and the potential for NFTs in gaming, with a focus on attracting mainstream players and building a sustainable future in Web3.",
+  "topic_summary": "The panel discusses investment trends in the crypto ecosystem, focusing on gaming, Play to Earn models, and the integration of NFTs in gaming. They highlight significant investments in Solana and the potential for mainstream adoption of blockchain gaming.",
+  "router_tags": [
+    "Crypto",
+    "Gaming",
+    "Investment",
+    "NFT",
+    "Blockchain",
+    "DeFi"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021: Next Szn's Trends",
+    "Breakpoint2021: Where the Smart Money is Going"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@AmyWu",
+    "@AustinBarack",
+    "@PaulVerattaTakit",
+    "@RodolfoGonzalez",
+    "@CoinFund",
+    "@PanteraCapital",
+    "@FoundationCapital",
+    "@Licefeed",
+    "@FTX"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

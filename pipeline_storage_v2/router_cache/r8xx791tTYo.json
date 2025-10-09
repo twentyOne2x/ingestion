@@ -1,0 +1,22 @@
+{
+  "description": "Learn about asset allocation and diversification in cryptocurrency investing, focusing on building a balanced portfolio.",
+  "topic_summary": "This video explains asset allocation and diversification in crypto investing, emphasizing the importance of distributing investments across various asset classes like cryptocurrencies, stocks, and bonds. Key concepts are introduced from [t=05:76] to [t=40:10].",
+  "router_tags": [
+    "crypto",
+    "investment",
+    "portfolio",
+    "asset allocation",
+    "diversification"
+  ],
+  "aliases": [
+    "What is Asset Allocation",
+    "Asset Allocation Explained",
+    "Crypto Portfolio Management"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

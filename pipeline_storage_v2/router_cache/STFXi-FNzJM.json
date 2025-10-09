@@ -1,0 +1,22 @@
+{
+  "description": "This video explains BNB Vault, a capital guaranteed investment product by Binance that allows users to maximize their BNB holdings through a simple interface. It covers how to subscribe, stake, and redeem BNB, as well as the benefits of using BNB Vault.",
+  "topic_summary": "Learn about BNB Vault, its features, and how to use it to enhance your BNB earnings with just one click. The video details the subscription process, staking options, and the benefits of participating in BNB Vault, including access to various income opportunities [t=0:00-2:56].",
+  "router_tags": [
+    "BNB",
+    "Binance",
+    "Investment",
+    "DeFi",
+    "Yield Aggregator"
+  ],
+  "aliases": [
+    "Bnb Vault",
+    "BNB Vault",
+    "bnb vault"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

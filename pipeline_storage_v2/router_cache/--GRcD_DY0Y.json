@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to buy and sell cryptocurrencies on Binance, including setting limit orders and understanding market prices.",
+  "topic_summary": "This guide covers the basics of spot trading on Binance, including how to place limit orders and monitor market prices [t=3:92].",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "Spot Trading",
+    "Limit Orders"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binans",
+    "Wiemann",
+    "Melton"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

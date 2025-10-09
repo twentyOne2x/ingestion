@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Bitcoin's role as a safe haven amidst global economic instability and inflation concerns. The video explores Bitcoin's volatility, its comparison to gold, and its potential as a decentralized asset [t=0:40].",
+  "topic_summary": "Analyzes Bitcoin's viability as a safe haven asset compared to gold, addressing its volatility and the impact of global economic factors [t=0:40].",
+  "router_tags": [
+    "Bitcoin",
+    "Gold",
+    "Inflation",
+    "Safe Haven",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "bitcoin",
+    "Bitcoin",
+    "BTC"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

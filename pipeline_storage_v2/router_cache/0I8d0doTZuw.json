@@ -1,0 +1,23 @@
+{
+  "description": "Guillaume and Daniel from Figment Learn discuss Solana tutorials and their educational platform aimed at onboarding Web2 developers to Web3. They introduce the Pathways program, which consists of courses designed to guide users from basic to advanced concepts in Solana development, including connecting to nodes, creating accounts, and deploying smart contracts [t=0:24 - t=3:53].",
+  "topic_summary": "Overview of Figment Learn's educational resources for Solana, including the Pathways program that helps Web2 developers transition to Web3 development.",
+  "router_tags": [
+    "Solana",
+    "Web3",
+    "Figment",
+    "Education",
+    "Development"
+  ],
+  "aliases": [
+    "Figment Learn",
+    "figment learn",
+    "FIGMENT LEARN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@figment"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

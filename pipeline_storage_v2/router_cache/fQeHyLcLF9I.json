@@ -1,0 +1,21 @@
+{
+  "description": "Gavin Wood, co-founder of Ethereum, introduced the term Web3 in 2014 to define a decentralized Internet utilizing blockchain technology. Web3 aims to empower users and counteract the dominance of major tech platforms seen in Web2.",
+  "topic_summary": "Web3 represents the evolution of the Internet from read-only (Web1) and read-write (Web2) to a read-write-own model, focusing on decentralization and user control [t=0:48].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Decentralization",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Web3",
+    "web3",
+    "WEB3"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@gavinwood"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

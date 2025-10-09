@@ -1,0 +1,25 @@
+{
+  "description": "Changpeng Zhao discusses his journey into the blockchain space, the founding of Binance, and the evolution of the crypto exchange market. He reflects on early experiences at blockchain.info and the challenges of decentralized operations [t=15:04-282:90].",
+  "topic_summary": "In this episode, CZ shares insights on Binance's growth, the crypto industry landscape, and the advantages and disadvantages of decentralized teams [t=39:34-269:37].",
+  "router_tags": [
+    "Binance",
+    "Changpeng Zhao",
+    "Crypto Exchange",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "CZ",
+    "Changpeng Sao",
+    "Changpeng Zhao"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "@ChangpengZhao",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

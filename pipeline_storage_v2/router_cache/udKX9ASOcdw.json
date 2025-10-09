@@ -1,0 +1,26 @@
+{
+  "description": "Breakpoint 2021 at LX Factory features discussions on Solana's growth, USDC adoption, and the future of decentralized finance. Key highlights include a $50 million investment announcement and insights into the rapid increase in USDC's circulating supply on Solana, driven by developer activity and market demand.",
+  "topic_summary": "The event covers Solana's ecosystem, USDC's growth, and the impact of decentralized finance on the blockchain landscape. Notable discussions include the strategic decisions behind USDC's launch on Solana and the importance of capital efficiency in crypto exchanges [t=16:32-35:06].",
+  "router_tags": [
+    "Solana",
+    "USDC",
+    "DeFi",
+    "Blockchain",
+    "Cryptocurrency",
+    "Investment"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "lx factory day 3",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@FTX",
+    "@Coinbase",
+    "@Circle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "This panel discusses securing blockchain identities and the challenges of cryptocurrency investigations, featuring experts from law enforcement and blockchain analytics. Key topics include cross-chain crime, ransomware threats, and the need for cooperation between private sector and law enforcement.",
+  "topic_summary": "Experts address the evolving threats in the cryptocurrency landscape, including cross-chain crime and ransomware, emphasizing the importance of education and collaboration in investigations [t=220.51].",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Security",
+    "Investigations",
+    "Law Enforcement"
+  ],
+  "aliases": [
+    "Securing Your Blockchain Identity",
+    "Binance Blockchain Week",
+    "Blockchain Security"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@ArunaCosta",
+    "@PhilippeAman",
+    "@GuyGino",
+    "@YarnAlotikinen",
+    "@Genalysis",
+    "@Elliptic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

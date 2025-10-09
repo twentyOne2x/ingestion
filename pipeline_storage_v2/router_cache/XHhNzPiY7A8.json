@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on recent hires at Solana and their impact on the organization.",
+  "topic_summary": "Exploration of the first hires at Solana and their significance for future growth [t=0:02].",
+  "router_tags": [
+    "Solana",
+    "Hiring",
+    "Organization Growth"
+  ],
+  "aliases": [
+    "Solana Stories",
+    "solana stories",
+    "SOLANA STORIES"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

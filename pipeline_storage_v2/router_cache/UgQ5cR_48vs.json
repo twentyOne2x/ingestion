@@ -1,0 +1,26 @@
+{
+  "description": "The closing ceremony of Breakpoint 2021 features reflections on the event's energy and the inspiring builders in the Solana ecosystem. Highlights include discussions on innovative projects like Jules' photorealistic rendering using Solana and Brendan's commitment to integrating Brave with Solana.",
+  "topic_summary": "The event celebrates the achievements of builders in the Solana ecosystem, emphasizing the transformative potential of projects showcased during Breakpoint 2021. Key speakers include Jules from Render and Brendan from Brave, discussing their groundbreaking work and vision for the future.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2021",
+    "Closing Ceremony",
+    "Jules",
+    "Brendan",
+    "Render",
+    "Brave"
+  ],
+  "aliases": [
+    "Breakpoint 2021 Closing Ceremony",
+    "Breakpoint 2021",
+    "Solana Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@jules",
+    "@brendan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of The Solana Podcast, hosts Austin and Amira discuss the potential of blockchain technology in enhancing carbon markets. They invite experts Matthew Staats and Brendan O'Connell to share insights on the efficiency of carbon markets and the role of Web3 in addressing climate change. The conversation covers the intersection of finance, technology, and sustainability, highlighting the importance of innovative solutions in the climate space.",
+  "topic_summary": "The episode explores how blockchain can improve carbon markets and its implications for climate action. It features discussions on the efficiency of these markets and the experiences of industry experts Matthew Staats and Brendan O'Connell in building sustainable solutions [t=12:32].",
+  "router_tags": [
+    "Blockchain",
+    "Carbon Markets",
+    "Climate Change",
+    "Sustainability",
+    "Web3",
+    "Finance"
+  ],
+  "aliases": [
+    "The Solana Podcast",
+    "solana podcast",
+    "Solana Podcast"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MatthewStaats",
+    "@BrendanOConnell",
+    "@JahedMomond",
+    "@GregoryLandaway"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

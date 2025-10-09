@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion on the role of blockchain education in Web3, moderated by Helen High, featuring insights from Peter, Chris, and Frederic on their experiences and perspectives in the blockchain space.",
+  "topic_summary": "Exploration of blockchain education's significance in developing Web3, with panelists sharing their journeys and insights on use cases, risks, and opportunities in the blockchain industry [t=1:12].",
+  "router_tags": [
+    "Blockchain",
+    "Education",
+    "Web3",
+    "Binance",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "binanceyoutube",
+    "BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$20,000"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

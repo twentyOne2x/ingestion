@@ -1,0 +1,25 @@
+{
+  "description": "The Pyth workshop discusses the importance of real-world data for smart contracts, focusing on Pyth's achievements and future plans. Key topics include the Oracle problem, the need for trustworthy and time-sensitive data, and comparisons of user engagement in DeFi versus traditional platforms.",
+  "topic_summary": "The workshop covers Pyth's past accomplishments, current initiatives, and future goals, emphasizing the critical role of Oracles in providing reliable data for smart contracts [t=8:00].",
+  "router_tags": [
+    "Pyth",
+    "Oracle",
+    "Smart Contracts",
+    "DeFi",
+    "Data"
+  ],
+  "aliases": [
+    "Pyth Workshop",
+    "Pyth",
+    "Pyth Data"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KarenBailey",
+    "@SteveKaminski",
+    "@Saeed"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

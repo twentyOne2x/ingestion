@@ -1,0 +1,23 @@
+{
+  "description": "Jessica from Binance explains the concept of Fully Diluted Valuation (FDV) and its significance in assessing cryptocurrency investments. FDV represents the theoretical value of a crypto project if all tokens were available at the current price. It highlights the difference between market cap and FDV, indicating potential risks and future supply dynamics.",
+  "topic_summary": "Understanding Fully Diluted Valuation (FDV) is crucial for setting crypto price targets. FDV provides insight into the total potential supply of tokens and helps identify risks associated with token unlocks and market dynamics. It is essential to compare FDV with market cap to gauge the supply in circulation and make informed investment decisions.",
+  "router_tags": [
+    "Crypto",
+    "Investment",
+    "Fully Diluted Valuation",
+    "Market Cap",
+    "Tokenomics"
+  ],
+  "aliases": [
+    "ftv",
+    "Fully Diluted Valuation",
+    "FTV"
+  ],
+  "canonical_entities": [
+    "$2",
+    "$2 Billion",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

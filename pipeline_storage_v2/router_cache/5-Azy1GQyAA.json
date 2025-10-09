@@ -1,0 +1,25 @@
+{
+  "description": "Binance celebrates the launch of the ALPINE Fan Token, highlighting its significance in the crypto industry and its partnership with Alpine. The event discusses the innovative aspects of the token and its integration with motorsport, emphasizing the connection between technology and Formula 1 [t=0:40].",
+  "topic_summary": "Binance and Alpine unveil the ALPINE Fan Token, marking its debut in the crypto space and exploring its potential impact on the motorsport industry [t=0:40].",
+  "router_tags": [
+    "Binance",
+    "Alpine",
+    "Fan Token",
+    "Crypto",
+    "NFT",
+    "Motorsport"
+  ],
+  "aliases": [
+    "binance",
+    "alpine",
+    "fan token",
+    "nft",
+    "crypto"
+  ],
+  "canonical_entities": [
+    "$ALPINE",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

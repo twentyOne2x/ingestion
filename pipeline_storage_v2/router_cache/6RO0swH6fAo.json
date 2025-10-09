@@ -1,0 +1,31 @@
+{
+  "description": "This video provides a comprehensive introduction to trading cryptocurrency, covering essential concepts and strategies for beginners.",
+  "topic_summary": "The video discusses the basics of cryptocurrency trading, emphasizing the importance of technical and fundamental analysis. It explains how to interpret market movements and utilize indicators like the Relative Strength Index [t=355.6].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "beginner guide",
+    "technical analysis",
+    "fundamental analysis"
+  ],
+  "aliases": [
+    "Trading Cryptocurrency for Beginners",
+    "Cryptocurrency Trading Guide",
+    "Crypto Trading Basics"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@JohnBallinger",
+    "@BalingerBender",
+    "@Wendy",
+    "@Hendler",
+    "@Kanter",
+    "@GavinaVito",
+    "@Sinan",
+    "@Freyan",
+    "@Schleger"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

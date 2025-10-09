@@ -1,0 +1,25 @@
+{
+  "description": "Changpeng Zhao discusses Okcoin's P2P lending platform, its low default rates, and the trading features available on the exchange. He explains how users can lend bitcoins or cash, and how the platform ensures that assets remain secure while being traded. Zhao also touches on the adoption of P2P lending among users, particularly from China, and the trading volume on Okcoin compared to other exchanges.",
+  "topic_summary": "In this interview, Changpeng Zhao elaborates on Okcoin's trading features, including P2P lending and futures markets, highlighting the platform's security measures and user adoption rates. He explains the mechanics of futures trading and its relevance for merchants and consumers in the cryptocurrency space [t=276.77].",
+  "router_tags": [
+    "Changpeng Zhao",
+    "Okcoin",
+    "P2P Lending",
+    "Futures Trading",
+    "Cryptocurrency",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Changpeng Zhao",
+    "CZ",
+    "Changpeng",
+    "Okcoin"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@cz_binance",
+    "@okcoin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

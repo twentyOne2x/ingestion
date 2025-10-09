@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on equity markets and allocation strategies involving various entities.",
+  "topic_summary": "Exploration of market allocations and ecosystem adoption, featuring insights on Avalanche and Phantom [t=25:91-739:22].",
+  "router_tags": [
+    "equity market",
+    "allocation",
+    "ecosystem",
+    "Avalanche",
+    "Phantom"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "Yo Jigo",
+    "Kono Shi Tong",
+    "Young Shah",
+    "Luna Salana"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$AVAX",
+    "$PHM"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

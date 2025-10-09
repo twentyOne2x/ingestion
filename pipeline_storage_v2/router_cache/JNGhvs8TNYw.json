@@ -1,0 +1,21 @@
+{
+  "description": "A beginner's guide on posting buy-sell crypto ads on Binance P2P, covering step-by-step instructions for creating ads and managing transactions.",
+  "topic_summary": "Learn how to post buy-sell crypto ads on Binance P2P, including setting fixed prices and payment methods [t=3:64]. Understand the importance of trading limits and how to manage your ads effectively [t=31:32].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "P2P Trading",
+    "Buy-Sell Ads"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

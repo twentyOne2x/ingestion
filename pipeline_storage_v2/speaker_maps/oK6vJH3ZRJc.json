@@ -1,0 +1,20 @@
+{
+  "video_id": "oK6vJH3ZRJc",
+  "title": "2022-12-08_oK6vJH3ZRJc_Binance Simple Earn: Venus AMA with Brad Harrison",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Brad Harrison",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

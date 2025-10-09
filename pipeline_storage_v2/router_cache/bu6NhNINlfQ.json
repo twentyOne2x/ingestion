@@ -1,0 +1,24 @@
+{
+  "description": "Kickoff event for the Solana Ignition hackathon featuring discussions on potential project ideas and insights from industry leaders Anatoly and Kyle Samani.",
+  "topic_summary": "Discussion on hackathon project ideas, focusing on DeFi innovations and consumer-oriented applications, with insights into previous hackathons and future possibilities [t=0:24].",
+  "router_tags": [
+    "Solana",
+    "Hackathon",
+    "DeFi",
+    "Innovation",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@KyleSamani",
+    "@Multicoin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

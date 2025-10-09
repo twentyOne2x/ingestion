@@ -1,0 +1,44 @@
+{
+  "video_id": "U3pNiEXi6a4",
+  "title": "2025-03-11_U3pNiEXi6a4_Building the Future: Inside Binance Blockchain Week (Pt. 2)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "H": {
+      "name": "Lily Liu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Tracy Allen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Moon Bix",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Tracy Zhao",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Richard Tang",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

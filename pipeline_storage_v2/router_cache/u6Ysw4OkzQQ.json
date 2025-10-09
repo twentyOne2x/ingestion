@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the role of blockchain in the Metaverse, emphasizing the need for secure ownership and transfer of digital items, as well as the importance of digital currencies for a global metaverse.",
+  "topic_summary": "The Metaverse integrates digital twins and requires blockchain for ownership verification and governance participation. Future blockchain technologies will enhance digital identities and asset ownership [t=0:40].",
+  "router_tags": [
+    "Blockchain",
+    "Metaverse",
+    "Digital Assets",
+    "Cryptocurrency",
+    "Digital Identity"
+  ],
+  "aliases": [
+    "Blockchain in Metaverse",
+    "Metaverse and Blockchain",
+    "Digital Assets in Metaverse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

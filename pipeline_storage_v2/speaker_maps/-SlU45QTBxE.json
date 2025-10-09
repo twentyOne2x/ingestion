@@ -1,0 +1,20 @@
+{
+  "video_id": "-SlU45QTBxE",
+  "title": "2021-11-15_-SlU45QTBxE_Breakpoint 2021: Helping Institutions Use DeFi Safely",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Gary Gensler",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

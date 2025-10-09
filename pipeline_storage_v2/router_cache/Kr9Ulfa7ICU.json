@@ -1,0 +1,22 @@
+{
+  "description": "Workshop on Neon Labs' cross-chain EVM for Solana, discussing integration and functionality.",
+  "topic_summary": "Exploration of Neon Labs' cross-chain EVM capabilities for Solana, including configuration and proxy voting [t=19:55].",
+  "router_tags": [
+    "Solana",
+    "Neon Labs",
+    "EVM",
+    "Cross Chain",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Neon Labs Workshop",
+    "Solana Workshop"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

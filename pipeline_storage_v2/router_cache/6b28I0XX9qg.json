@@ -1,0 +1,26 @@
+{
+  "description": "Day four of Binance Blockchain Week focuses on innovative crypto founders and leaders in the blockchain space. The event includes discussions on the Most Valuable Builder program, aimed at supporting startups on the Binance Smart Chain with funding opportunities and ecosystem development.",
+  "topic_summary": "The session highlights the Most Valuable Builder program for Binance Smart Chain startups, offering $100 million in funding and support for innovative projects. It also discusses the impact of blockchain on emerging markets and features a panel moderated by Christine Lee from CoinDesk.",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "DeFi",
+    "NFTs",
+    "Emerging Markets"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "Binance Week"
+  ],
+  "canonical_entities": [
+    "$100 Million",
+    "@BinanceYoutube",
+    "@ChristineLee",
+    "$SOL",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

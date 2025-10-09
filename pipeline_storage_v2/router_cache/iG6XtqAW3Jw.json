@@ -1,0 +1,29 @@
+{
+  "description": "Webinar discussing investment strategies in DeFi with expert insights.",
+  "topic_summary": "Exploration of DeFi investment opportunities, including savings options and asset management strategies, featuring discussions on Bitcoin, Ethereum, and Binance services [t=00:25].",
+  "router_tags": [
+    "DeFi",
+    "investment",
+    "Binance",
+    "crypto",
+    "savings"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube",
+    "@DexCapitra",
+    "@IsaThomas",
+    "@IloniHernanzia",
+    "@AlphaX",
+    "@Dosanito"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

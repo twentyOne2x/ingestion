@@ -1,0 +1,23 @@
+{
+  "description": "Yutaro Mori and Grace Kwan discuss the development of Orca, a decentralized finance platform, emphasizing user experience and the importance of governance tokens. They explore the challenges faced by traditional financial institutions and the potential of crypto innovations.",
+  "topic_summary": "The conversation covers Orca's approach to decentralized finance, user experience in crypto, and the comparison between traditional finance and emerging technologies [t=12:40 - t=54:73].",
+  "router_tags": [
+    "DeFi",
+    "Orca",
+    "User Experience",
+    "Crypto",
+    "Governance Tokens"
+  ],
+  "aliases": [
+    "Orca",
+    "Orca Finance",
+    "Yutaro Mori",
+    "Grace Kwan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

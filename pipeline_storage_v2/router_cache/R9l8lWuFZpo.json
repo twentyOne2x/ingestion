@@ -1,0 +1,19 @@
+{
+  "description": "The first Binance community meetup in Palestine, featuring discussions and interactions among attendees.",
+  "topic_summary": "Introduction to the Binance community meetup in Palestine [t=0:32]. Highlights include participant interactions and a mention of Tarafna Actor [t=51:88].",
+  "router_tags": [
+    "Binance",
+    "Community Meetup",
+    "Palestine"
+  ],
+  "aliases": [
+    "Binance Community Meetup",
+    "Palestine Binance Meetup"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "Tarafna Actor"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This video features a master class on decentralized applications, presented by Tim from Whitematrix. The session covers the transition from P2P trading to decentralized computation, programmable blockchain networks, and how to write decentralized apps in China.",
+  "topic_summary": "The master class discusses five major chapters: 1) P2P trading to decentralized computation, 2) Introduction to programmable blockchain networks, 3) Decentralized applications, 4) Deep dive on the EVM stack, and 5) Writing decentralized apps in China. Key concepts include the structure of blockchain technology and its applications.",
+  "router_tags": [
+    "Blockchain",
+    "Decentralized Applications",
+    "Cryptocurrency",
+    "Master Class",
+    "Programmable Blockchain"
+  ],
+  "aliases": [
+    "Careers in Blockchain",
+    "Blockchain Careers",
+    "Decentralized Apps Master Class"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$BTC",
+    "@Binance",
+    "@Whitematrix"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

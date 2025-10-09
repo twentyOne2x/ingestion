@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the fundamental differences between cryptocurrencies and fiat money, focusing on decentralization and the role of blockchain technology.",
+  "topic_summary": "Cryptocurrencies differ from fiat money due to their decentralized nature and reliance on blockchain technology for transaction verification and record maintenance [t=0:32]. Unlike digital currencies in centralized systems like PayPal, cryptocurrencies are designed to be owned collectively without a single controlling entity [t=15:68].",
+  "router_tags": [
+    "cryptocurrency",
+    "fiat money",
+    "blockchain",
+    "decentralization"
+  ],
+  "aliases": [
+    "Cryptocurrency vs Fiat",
+    "Crypto vs Fiat",
+    "Cryptocurrency Differences"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

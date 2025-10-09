@@ -1,0 +1,14 @@
+{
+  "video_id": "873lB0KKY8U",
+  "title": "2023-03-29_873lB0KKY8U_Binance Meetup in Tbilisi",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

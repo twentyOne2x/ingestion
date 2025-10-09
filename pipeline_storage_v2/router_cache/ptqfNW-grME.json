@@ -1,0 +1,24 @@
+{
+  "description": "Jonathan Isaac discusses the current state of the crypto industry at Binance Blockchain Week 2024, emphasizing the buzz around the event and the mixed market sentiment in 2024. He highlights CoinMarketCap as the essential starting point for anyone entering the crypto space, focusing on its role as a trusted source of market data and community engagement.",
+  "topic_summary": "At [t=0:32], Jonathan Isaac shares insights on the energy at Binance Blockchain Week 2024. He reflects on the confusing market dynamics of 2024, noting the contrast between institutional advancements and the volatility in the retail sector. He describes CoinMarketCap as the go-to platform for crypto data and community interaction, emphasizing its user-friendly features like portfolio tracking.",
+  "router_tags": [
+    "Crypto",
+    "CoinMarketCap",
+    "Binance",
+    "Blockchain",
+    "Market Data"
+  ],
+  "aliases": [
+    "Jonathan Isaac",
+    "jonathan isaac",
+    "CoinMarketCap",
+    "coinmarketcap"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

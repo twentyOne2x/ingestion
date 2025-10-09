@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on how Web3 technology is transforming the music industry, featuring insights from industry leaders on the future of music and artist-fan interactions.",
+  "topic_summary": "Exploration of Web3's impact on music, including blockchain technology, artist opportunities, and the evolution of music formats from vinyl to digital [t=0:16].",
+  "router_tags": [
+    "Web3",
+    "Music Industry",
+    "Blockchain",
+    "Artist Engagement",
+    "Streaming"
+  ],
+  "aliases": [
+    "web3",
+    "Web 3",
+    "Web Three"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@BinanceYoutube",
+    "@Deezer",
+    "@RecordingAcademy",
+    "@CoWrite"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

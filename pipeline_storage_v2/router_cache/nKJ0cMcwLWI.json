@@ -1,0 +1,20 @@
+{
+  "description": "Discussion featuring various speakers including Dakota Shannon and Jenny, covering topics related to finance and community interactions.",
+  "topic_summary": "Community finance discussions with speakers like Dakota Shannon and Jenny, touching on various financial topics and user experiences [t=12:57].",
+  "router_tags": [
+    "finance",
+    "AMA",
+    "community",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,29 @@
+{
+  "description": "A panel discussion featuring founders from major DeFi projects including Solana, FTX, Aave, and Curve, analyzing the recent DeFi boom and future trends.",
+  "topic_summary": "The panelists discuss the evolution of DeFi, their respective projects, and insights on the future of decentralized finance, highlighting the impact of recent developments in the space [t=14:84].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Aave",
+    "Curve",
+    "FTX",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "defi recap",
+    "DeFi Recap",
+    "defi analysis",
+    "DeFi Analysis"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@sambankmanfried",
+    "@stani",
+    "@jeremymusigi",
+    "@michael"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

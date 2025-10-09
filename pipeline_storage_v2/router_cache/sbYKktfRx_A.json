@@ -1,0 +1,29 @@
+{
+  "description": "A panel discussion at Binance Blockchain Week in Paris, focusing on the intersection of fashion and Web3, featuring insights from industry leaders on how technology is transforming the fashion landscape.",
+  "topic_summary": "The panel explores the integration of fashion and technology, discussing the impact of Web3 on consumer engagement and brand ownership, as well as the potential for increased profit margins through NFTs [t=215.78].",
+  "router_tags": [
+    "Fashion",
+    "Web3",
+    "NFT",
+    "Metaverse",
+    "Binance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Fashion & Web3",
+    "Fashion and Web3",
+    "Fashion and Blockchain",
+    "Web3 and Fashion"
+  ],
+  "canonical_entities": [
+    "$LVMH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@EliseYoshida",
+    "@ChristianLouboutin",
+    "@BenjaminHaymer",
+    "@MariaSharapova"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

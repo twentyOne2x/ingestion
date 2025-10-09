@@ -1,0 +1,21 @@
+{
+  "description": "Thomas discusses his frequent use of Binance and emphasizes the importance of the platform in leading the community and focusing on sustainable projects. He also wishes Binance a happy birthday.",
+  "topic_summary": "Thomas shares his experience with Binance, highlighting its role in the community and the need for sustainable initiatives [t=0:40].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "community",
+    "sustainability"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

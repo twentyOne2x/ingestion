@@ -1,0 +1,28 @@
+{
+  "description": "In this talk, Kyle Samani and Amy discuss the current bear market, the changes in venture capital approaches, and the differences between ecosystems like Ethereum and Solana. They explore due diligence practices and the evolving landscape of crypto investments.",
+  "topic_summary": "Kyle and Amy share insights on navigating a bear market, the impact on deal-making speed, and the importance of due diligence in venture capital. They also compare the Solana and Ethereum ecosystems, highlighting their unique attributes and community dynamics [t=0:16].",
+  "router_tags": [
+    "Venture Capital",
+    "Bear Market",
+    "Crypto Investments",
+    "Due Diligence",
+    "Solana",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Kyle Samani",
+    "Amy",
+    "SolanaFndn",
+    "Kyle",
+    "Amy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@KyleSamani",
+    "@Amy",
+    "@SolanaFndn",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

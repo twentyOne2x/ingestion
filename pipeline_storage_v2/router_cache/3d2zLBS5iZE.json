@@ -1,0 +1,22 @@
+{
+  "description": "The video discusses the evolution of the crypto industry, emphasizing the importance of understanding regulations and compliance. It highlights the challenges and opportunities in crypto compared to traditional finance, and the need for clear guidelines to mitigate risks. The speaker shares insights from their experience at Binance and the proactive measures taken to enhance compliance and investigations.",
+  "topic_summary": "The speaker reflects on their journey in the crypto industry, the regulatory landscape, and the importance of transparency and understanding in fostering a safer financial environment [t=270.43].",
+  "router_tags": [
+    "Crypto",
+    "Regulations",
+    "Compliance",
+    "Binance",
+    "Tradify"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

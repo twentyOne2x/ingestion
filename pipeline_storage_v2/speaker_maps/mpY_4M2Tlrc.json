@@ -1,0 +1,26 @@
+{
+  "video_id": "mpY_4M2Tlrc",
+  "title": "2022-11-05_mpY_4M2Tlrc_Breakpoint 2022: Tokens Fix This- Paywalls, Subscriptions and the Future of Media",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Miko Honkasalo",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Mitchell Moose",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

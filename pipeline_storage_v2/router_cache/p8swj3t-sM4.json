@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the development and features of Solana-based wallets, including insights from key figures in the blockchain space.",
+  "topic_summary": "Philipp von Zuhlfuhr discusses the first Solana wallet and its staking capabilities [t=53.56]. Brendan Millman shares insights on user engagement and wallet functionalities [t=102.16]. Maria Phillips highlights the importance of user interface in blockchain interactions [t=126.13]. The conversation touches on the challenges of user adoption and security in crypto [t=245.13].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Wallets",
+    "Crypto",
+    "DeFi"
+  ],
+  "aliases": [
+    "Gateways to Public Blockchains",
+    "Gateways To Public Blockchains",
+    "gateways to public blockchains"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@philippvonzuhlfuhr",
+    "@brendanmillman",
+    "@mariaphillips",
+    "@SlopeFinance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

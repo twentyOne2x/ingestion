@@ -1,0 +1,26 @@
+{
+  "description": "Anatoly and Jeremy Allaire discuss the rapid growth of USDC and its significance in the crypto ecosystem, highlighting its role in DeFi and as a medium of exchange. They explore the relationship between stablecoins and native tokens, emphasizing the importance of USDC in trading pairs and liquidity provision.",
+  "topic_summary": "In this fireside chat, Anatoly and Jeremy Allaire analyze the factors driving USDC's growth, including its integration with DeFi protocols and its adoption by businesses for payments. They also discuss the interplay between USDC and native tokens like SOL, and the potential for a future with reduced reliance on centralized exchanges [t=19:28-375:57].",
+  "router_tags": [
+    "USDC",
+    "DeFi",
+    "Stablecoins",
+    "Crypto",
+    "Payments",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Jeremy Allaire",
+    "jeremy allaire",
+    "Anatoly",
+    "anatoly"
+  ],
+  "canonical_entities": [
+    "$USDC",
+    "@SolanaFndn",
+    "$SOL",
+    "@Circle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

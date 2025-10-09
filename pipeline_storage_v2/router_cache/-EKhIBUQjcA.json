@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Sybil attacks, a security threat where an individual creates multiple identities to control a network. It discusses the implications of such attacks in cryptocurrency, including the potential for 51% attacks and transaction manipulation.",
+  "topic_summary": "Sybil attacks involve creating multiple identities to disrupt network operations, particularly in blockchain systems. The video covers their impact, detection challenges, and mitigation strategies through consensus algorithms like proof of work and proof of stake. [t=1:28] to [t=149:00]",
+  "router_tags": [
+    "Sybil Attack",
+    "Cryptocurrency",
+    "Blockchain Security",
+    "Network Attacks",
+    "Consensus Algorithms"
+  ],
+  "aliases": [
+    "Sybil Attack",
+    "sybil attack",
+    "SYBIL ATTACK"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

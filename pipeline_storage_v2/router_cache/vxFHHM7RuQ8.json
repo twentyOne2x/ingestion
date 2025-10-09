@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on cryptocurrency, featuring Ivan Ukrania and topics like Bitcoin, Litecoin, and Binance.",
+  "topic_summary": "Ivan Ukrania discusses influential figures in crypto, including Vitalik Buterin and Charlie Lee, and the role of Bitcoin and Litecoin in payments [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Litecoin",
+    "Crypto",
+    "Charlie Lee"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance TV",
+    "ivan ukrania"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$LTC",
+    "@ivanukrania",
+    "@charlielee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

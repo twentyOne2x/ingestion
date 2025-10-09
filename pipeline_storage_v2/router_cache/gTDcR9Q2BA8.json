@@ -1,0 +1,22 @@
+{
+  "description": "This video explains Tulip Mania, the first recorded financial bubble, which occurred in the 17th century during the Dutch golden age. It discusses the economic conditions that led to the bubble, the extreme prices of tulips, and the eventual market crash in February 1637. The video also compares Tulip Mania to Bitcoin, highlighting the differences between the two asset classes.",
+  "topic_summary": "Tulip Mania was a financial bubble in the 17th century characterized by skyrocketing tulip prices and a subsequent market crash. The video explores the historical context, economic factors, and contrasts it with Bitcoin, emphasizing the distinct nature of digital currencies compared to physical assets like tulips [t=150:39].",
+  "router_tags": [
+    "Tulip Mania",
+    "Financial Bubble",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Economics"
+  ],
+  "aliases": [
+    "Tulip Mania Explained",
+    "What is Tulip Mania",
+    "Tulip Mania for Beginners"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

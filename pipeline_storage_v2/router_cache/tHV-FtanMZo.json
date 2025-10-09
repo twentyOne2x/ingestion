@@ -1,0 +1,18 @@
+{
+  "description": "Discussion on cryptocurrency donations and related topics.",
+  "topic_summary": "Exploration of cryptocurrency donations featuring mentions of various individuals [t=01:47].",
+  "router_tags": [
+    "cryptocurrency",
+    "donations",
+    "crypto",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

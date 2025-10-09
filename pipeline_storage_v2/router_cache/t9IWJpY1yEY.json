@@ -1,0 +1,22 @@
+{
+  "description": "GameFi combines gaming and finance, enabling players to earn cryptocurrencies and NFTs through gameplay.",
+  "topic_summary": "GameFi refers to play-to-earn blockchain games that provide economic incentives to players. Players can earn rewards by completing tasks and trading items on NFT marketplaces [t=3:28-49:83].",
+  "router_tags": [
+    "GameFi",
+    "Blockchain",
+    "NFT",
+    "Play to Earn"
+  ],
+  "aliases": [
+    "Gamefi",
+    "gamefi",
+    "Game Fi",
+    "game fi"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

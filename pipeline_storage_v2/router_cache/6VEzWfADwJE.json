@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to use Binance Simple Earn for passive crypto income through staking. This guide covers the features and benefits of the platform.",
+  "topic_summary": "This video explains how to utilize Binance Simple Earn for earning passive income through crypto staking. It highlights the platform's flexibility and the ability to earn rewards on crypto assets [t=3:20].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Staking",
+    "Passive Income",
+    "Simple Earn"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

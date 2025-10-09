@@ -1,0 +1,22 @@
+{
+  "description": "Discover the benefits of joining the Binance Affiliate program, including generous commissions and community support. Learn how to leverage your audience for financial gain and enhance your credibility.",
+  "topic_summary": "The Binance Affiliate program offers a flexible structure with generous commissions for onboarding new users. Participants benefit from community support and resources for promoting Binance effectively. [t=3:20] [t=5:12] [t=30:19]",
+  "router_tags": [
+    "Binance",
+    "Affiliate Program",
+    "Commission",
+    "Community",
+    "Financial Opportunities"
+  ],
+  "aliases": [
+    "Binance Affiliates",
+    "binance affiliates",
+    "BINANCE AFFILIATES"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

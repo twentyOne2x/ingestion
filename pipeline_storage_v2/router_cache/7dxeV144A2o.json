@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the role of stablecoins in reshaping the financial landscape, featuring insights from industry experts on regulatory challenges and future developments.",
+  "topic_summary": "The panel explores the future of stablecoins, their programmable nature, and the impact of regulatory frameworks on adoption in Asia. Key points include the integration of stablecoins with CBDCs and their potential to transform banking and financial services [t=0:24 - t=402:58].",
+  "router_tags": [
+    "Stablecoin",
+    "CBDC",
+    "Regulation",
+    "Financial Technology",
+    "Asia"
+  ],
+  "aliases": [
+    "Unlocking Value and Stablecoin Adoption in Asia",
+    "Unlocking value and stablecoin adoption in asia",
+    "Unlocking value and stablecoin adoption in Asia"
+  ],
+  "canonical_entities": [
+    "$FDUSD",
+    "$BTC",
+    "@BinanceYoutube",
+    "@JPMorgan",
+    "@FirstDigital",
+    "@HongKongMA"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

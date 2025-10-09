@@ -1,0 +1,27 @@
+{
+  "description": "Nina Xiang from Binance Academy hosts Dr. Sriram Vishwanath from the University of Texas to discuss blockchain scaling solutions. The session covers the importance of scalability in blockchain technology, the challenges faced, and the current and future solutions available. Dr. Vishwanath emphasizes the impact of scalability on the blockchain industry and introduces technical concepts related to blockchain structures.",
+  "topic_summary": "The webinar focuses on blockchain scaling solutions, discussing their necessity, existing solutions, and future explorations. Dr. Sriram Vishwanath provides insights into the challenges of scalability in blockchain and compares it to web2.",
+  "router_tags": [
+    "Blockchain",
+    "Scaling Solutions",
+    "Webinar",
+    "Binance Academy",
+    "Sriram Vishwanath"
+  ],
+  "aliases": [
+    "Nina Xiang",
+    "Sriram Vishwanath",
+    "Sriram Sri Suryam Vash Vannes",
+    "Professor Visraness"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$BNB",
+    "@binanceacademy",
+    "@UniversityOfTexas",
+    "@SriramVishwanath"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on cybersecurity and digital forensics, focusing on tools like Google Authenticator, Microsoft Authenticator, and LastPass for multifactor authentication. It covers various platforms including Instagram, WhatsApp, and Facebook, and addresses issues like parental control and firewall protection.",
+  "topic_summary": "Exploration of cybersecurity measures and digital forensics tools, emphasizing the importance of multifactor authentication and online safety practices [t=03:40].",
+  "router_tags": [
+    "cybersecurity",
+    "digital forensics",
+    "multifactor authentication",
+    "online safety"
+  ],
+  "aliases": [
+    "Ciberseguridad",
+    "Ciber Seguridad",
+    "Analisis Forense Digital"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Google",
+    "@Apple",
+    "@Microsoft",
+    "@Miriama"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

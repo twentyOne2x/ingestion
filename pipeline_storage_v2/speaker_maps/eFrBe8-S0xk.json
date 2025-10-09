@@ -1,0 +1,26 @@
+{
+  "video_id": "eFrBe8-S0xk",
+  "title": "2021-06-15_eFrBe8-S0xk_DAY 7: Decentralized Africa Hackathon with 1inch!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Sergey Kunst",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Brent Aleika",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

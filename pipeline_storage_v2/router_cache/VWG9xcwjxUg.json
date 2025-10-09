@@ -1,0 +1,24 @@
+{
+  "description": "This video explains Byzantine Fault Tolerance (BFT) and its significance in decentralized systems, particularly in blockchain technology. It discusses the Byzantine General's Problem and how consensus is achieved among network nodes despite potential failures or dishonest actions.",
+  "topic_summary": "Byzantine Fault Tolerance is crucial for decentralized networks to maintain consensus and functionality even when some nodes fail or act maliciously. The video outlines the challenges of achieving consensus and the role of consensus algorithms like proof of work in ensuring system reliability [t=145.04].",
+  "router_tags": [
+    "Byzantine Fault Tolerance",
+    "Blockchain",
+    "Consensus Algorithms",
+    "Cryptocurrency",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Byzantine Fault Tolerance",
+    "byzantine fault tolerance",
+    "BFT",
+    "bft"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy",
+    "@satoshinakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

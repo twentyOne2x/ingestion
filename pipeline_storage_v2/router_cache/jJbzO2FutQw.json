@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on various topics including USDT and BUSD, with mentions of individuals like Shino, Joyce, and Hugo Shah.",
+  "topic_summary": "The video features a conversation about cryptocurrency, specifically USDT and BUSD, along with personal anecdotes involving Shino, Joyce, and others. Key points include the current market situation and individual experiences [t=0:16 - t=47:36].",
+  "router_tags": [
+    "cryptocurrency",
+    "USDT",
+    "BUSD",
+    "Shino",
+    "Joyce",
+    "Hugo Shah"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BUSD",
+    "@Shino",
+    "@Joyce",
+    "@HugoShah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the culture of crypto, its evolution, and the challenges of maintaining its ethos amidst growing mainstream adoption. The conversation includes anecdotes about community norms and the significance of unique cultural elements within the crypto space.",
+  "topic_summary": "Exploration of crypto culture and community dynamics, referencing the 'eternal September' analogy and the importance of preserving original values as new users join the ecosystem [t=196.87].",
+  "router_tags": [
+    "crypto",
+    "culture",
+    "community",
+    "Solana",
+    "NFTs"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

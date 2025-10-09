@@ -1,0 +1,26 @@
+{
+  "description": "Mango Team presents their demo at the Solana x Serum DeFi Hackathon, showcasing their platform's features and functionalities. The team discusses various aspects of trading, including margin accounts and liquidity options, while engaging with the audience on Twitch.",
+  "topic_summary": "Mango Team's demo highlights their trading platform, focusing on margin accounts and liquidity features [t=0:16]. The presentation includes a live demonstration of trading functionalities and community engagement [t=132:64].",
+  "router_tags": [
+    "Mango",
+    "Solana",
+    "DeFi",
+    "Trading",
+    "Hackathon"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "Solana Foundation",
+    "Mango Team",
+    "Mango"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@MangoTeam"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

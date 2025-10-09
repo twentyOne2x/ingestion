@@ -1,0 +1,23 @@
+{
+  "description": "The speaker shares their transformative journey with cryptocurrency, highlighting how a scholarship from Binance Charity enabled them to change their career and life within nine months.",
+  "topic_summary": "The impact of cryptocurrency on personal and professional life, including a scholarship experience with Binance Charity [t=14.96].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Career Change",
+    "Scholarship",
+    "Life Upgrade"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the history of cryptography from ancient times to modern digital encryption, highlighting key developments and figures such as Thomas Jefferson and the Enigma machine.",
+  "topic_summary": "Explore the evolution of cryptography from ancient symbol replacement [t=23:28] to modern encryption methods used in cryptocurrencies [t=184.7]. Learn about historical figures like Khnumhotep II [t=31.4] and Thomas Jefferson [t=121.72], and the impact of cryptography on military and digital security.",
+  "router_tags": [
+    "Cryptography",
+    "History",
+    "Encryption",
+    "Cryptocurrency",
+    "Digital Security"
+  ],
+  "aliases": [
+    "Cryptography Explained",
+    "History of Cryptography",
+    "Cryptography for Beginners"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy",
+    "@thomasjefferson"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

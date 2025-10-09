@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the DAI cryptocurrency, covering its protocols, benefits, and implementation in various projects.",
+  "topic_summary": "Exploration of DAI's role in blockchain and its impact on decentralized finance, including insights from various speakers [t=04:11] to [t=50:13].",
+  "router_tags": [
+    "DAI",
+    "cryptocurrency",
+    "blockchain",
+    "decentralized finance",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Cristiano Ronaldo engages with fans in a Q&A session, discussing various topics including his career and personal preferences.",
+  "topic_summary": "In this session, Ronaldo answers questions about his career and personal life, including his favorite food [t=5:36] and future plans after football [t=10:64].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Q&A",
+    "Binance",
+    "Football"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristiano ronaldo",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

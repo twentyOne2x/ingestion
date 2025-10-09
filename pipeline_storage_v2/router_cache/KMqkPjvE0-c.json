@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on NFT marketplaces and their impact on the art world, featuring insights from various speakers.",
+  "topic_summary": "Exploration of NFTs in the art sector, including marketplace dynamics and the role of cryptocurrency [t=0:24].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Art",
+    "Marketplace",
+    "Binance"
+  ],
+  "aliases": [
+    "Cesti Tvurci Ve Svete NFT",
+    "Cesti tvurci ve svete nft",
+    "Cesti Tvorci ve Svete NFT"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@MartinStranka"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

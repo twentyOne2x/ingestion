@@ -1,0 +1,21 @@
+{
+  "description": "This video explains stablecoins, their stability compared to cryptocurrencies like Bitcoin, and their importance in regions with unstable local currencies.",
+  "topic_summary": "Stablecoins are designed to maintain a stable value, unlike volatile cryptocurrencies. They are crucial in regions with high inflation and unstable currencies, providing a reliable means of transaction and value storage [t=0:24 - t=2:36].",
+  "router_tags": [
+    "Stablecoins",
+    "Binance",
+    "USDT",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Stablecoins Explained",
+    "Stablecoins Overview",
+    "Understanding Stablecoins"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

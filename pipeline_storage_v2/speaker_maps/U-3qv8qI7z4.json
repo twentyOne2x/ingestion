@@ -1,0 +1,20 @@
+{
+  "video_id": "U-3qv8qI7z4",
+  "title": "2021-09-21_U-3qv8qI7z4_Exploring the Solana Ecosystem with Joe McCann",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Derman Weiss",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

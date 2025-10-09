@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses Binance's Simple Earn feature, explaining how it allows users to earn rewards by depositing cryptocurrencies. It highlights the differences between flexible and locked options for withdrawals.",
+  "topic_summary": "Overview of Binance Simple Earn, its benefits, and how it works [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Simple Earn",
+    "Crypto",
+    "Earnings",
+    "Investing"
+  ],
+  "aliases": [
+    "Binance Simple Earn",
+    "simple earn",
+    "Binance Earn"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

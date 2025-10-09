@@ -1,0 +1,32 @@
+{
+  "video_id": "LCOMujEPzHM",
+  "title": "2021-11-15_LCOMujEPzHM_Breakpoint 2021: The TikTok Effect: A Blueprint for a Billion DAU",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Ro Neil",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Michael Cullen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Anatoly, Sumit",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

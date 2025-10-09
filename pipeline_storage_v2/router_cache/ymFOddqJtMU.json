@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on Binance P2P services in Costa Rica, featuring insights from Clara Gracia and Jonas Catiman. The conversation touches on Bitcoin, local banking, and community management.",
+  "topic_summary": "Exploration of Binance P2P in Costa Rica, including community engagement and the role of Bitcoin in local finance [t=01:03].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Costa Rica",
+    "Bitcoin",
+    "Community Management"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "Binance Costa Rica",
+    "Clara Gracia",
+    "Jonas Catiman"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@ClaraGracia",
+    "@JonasCatiman",
+    "@EmilioEmiliano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

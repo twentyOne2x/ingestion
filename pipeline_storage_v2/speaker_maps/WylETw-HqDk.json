@@ -1,0 +1,20 @@
+{
+  "video_id": "WylETw-HqDk",
+  "title": "2022-07-12_WylETw-HqDk_DIFC's Chief Business Development Officer Salmaan Jaffery Discusses Financial Innovation",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Salman Jeffrey",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

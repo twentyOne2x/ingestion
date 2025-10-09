@@ -1,0 +1,24 @@
+{
+  "description": "Harry Papakruski discusses using Chainlink data feeds for Solana Hackathon submissions, emphasizing the importance of integrating external data through Oracles to enhance smart contract functionality.",
+  "topic_summary": "The workshop covers the role of Oracles in smart contracts, the Oracle problem, and how decentralized Oracle networks improve security and data reliability for blockchain applications. It highlights the integration of Chainlink data feeds in the Solana Riptide Hackathon, including prize incentives for projects utilizing these feeds effectively. [t=10:88] [t=55:03] [t=366:62]",
+  "router_tags": [
+    "Chainlink",
+    "Solana",
+    "Hackathon",
+    "Oracles",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Chain Link",
+    "Chainlink",
+    "Solana Hackathon",
+    "Riptide Hackathon"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "atAYmR32eeE",
+  "title": "2021-11-15_atAYmR32eeE_Breakpoint 2021: Indexing Solana with The Graph's Firehose",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Alexandre Bourget",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

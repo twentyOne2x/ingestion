@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Binance, Ethereum, and crypto trends in Latin America. Covers topics like liquid swap products and trading strategies.",
+  "topic_summary": "Insights on Binance and Ethereum with a focus on Latin America, including trading strategies and product volatility [t=31:98][t=1755:18].",
+  "router_tags": [
+    "Binance",
+    "Ethereum",
+    "Crypto",
+    "Latin America",
+    "Trading"
+  ],
+  "aliases": [
+    "binanceresponde",
+    "BinanceResponde",
+    "binance youtube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

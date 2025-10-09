@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on NFTs and crypto transactions, featuring various personalities and their insights on the NFT market.",
+  "topic_summary": "Exploration of NFT trends and personalities in the crypto space, including insights from Chen Cho, Kamanda, and others [t=04:34].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Blockchain",
+    "Digital Art"
+  ],
+  "aliases": [
+    "Cj",
+    "NFT015",
+    "Nft015"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "@chencho",
+    "@kamanda",
+    "@danjia",
+    "@konan",
+    "@dongbangsuji",
+    "@zhuyao",
+    "@guangfangwei",
+    "@dao",
+    "@james",
+    "@tishuidian",
+    "@ibana",
+    "@mandela",
+    "@chris"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

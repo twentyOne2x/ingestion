@@ -1,0 +1,20 @@
+{
+  "video_id": "7WC047aqiw4",
+  "title": "2022-07-22_7WC047aqiw4_How BNB Plans to Power Web3 and How You Can Be Part of It - With BNB Chain's Samy Karim",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Nina Xiang",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

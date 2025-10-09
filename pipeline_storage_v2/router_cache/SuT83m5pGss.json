@@ -1,0 +1,20 @@
+{
+  "description": "Discussion featuring various participants including Natasha, Rahul, and others, covering topics related to technology and culture.",
+  "topic_summary": "Participants engage in a conversation about technology, culture, and personal experiences, mentioning various names and concepts throughout the discussion [t=01:17 - t=84:06].",
+  "router_tags": [
+    "technology",
+    "culture",
+    "discussion",
+    "community"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

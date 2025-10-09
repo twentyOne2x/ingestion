@@ -1,0 +1,23 @@
+{
+  "description": "Anatoly interviews Michael Wagner, CEO of Star Atlas, discussing the development of a Metaverse game on Solana, its financial incentives, and the broader implications of blockchain technology in gaming. They explore the game's structure, including NFTs, governance tokens, and the potential for a sustainable economy within the Metaverse.",
+  "topic_summary": "Michael Wagner discusses Star Atlas, a space-themed Metaverse game on Solana, highlighting its innovative use of blockchain for NFTs and governance, and the ambition to create a sustainable economy within the game [t=12:40].",
+  "router_tags": [
+    "Star Atlas",
+    "Metaverse",
+    "Blockchain Gaming",
+    "NFTs",
+    "Solana"
+  ],
+  "aliases": [
+    "Michael Wagner",
+    "michael wagner",
+    "Star Atlas",
+    "star atlas"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

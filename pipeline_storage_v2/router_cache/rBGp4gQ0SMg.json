@@ -1,0 +1,21 @@
+{
+  "description": "Mohit's journey in the crypto world highlights the challenges he faced, including a near-scam that threatened his daughter's future. He emphasizes the importance of security in cryptocurrency platforms, particularly Binance.",
+  "topic_summary": "Mohit shares his aspirations and the impact of cryptocurrency on his life, focusing on Binance's security measures and his personal experiences in the crypto space. [t=63:39] to [t=158:57]",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Scams",
+    "Security"
+  ],
+  "aliases": [
+    "Mohit's Crypto Journey",
+    "Mohit",
+    "Humans of Binance"
+  ],
+  "canonical_entities": [
+    "@Binance",
+    "$BIN"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

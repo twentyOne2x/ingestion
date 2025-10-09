@@ -1,0 +1,28 @@
+{
+  "description": "In this AMA, the Binance team discusses P2P trading and earning opportunities available on the Binance platform, specifically for the Pakistani community. They introduce key speakers, including Bilal Shouldari and Reda Azus, and outline the benefits of using Binance for passive income. The session includes a giveaway announcement of $300 for participants who engage on Twitter.",
+  "topic_summary": "Binance's P2P and Earn features for passive income [t=28:24]. Introduction of speakers and community engagement [t=82:41]. Discussion on trading options and giveaway details [t=539:19].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Earn",
+    "Cryptocurrency",
+    "Webinar",
+    "Pakistan"
+  ],
+  "aliases": [
+    "Binance AMA",
+    "binance ama",
+    "Binance P2P",
+    "binance p2p"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$USDT",
+    "$BTC",
+    "$300",
+    "@BinanceYoutube",
+    "@BilalShouldari"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

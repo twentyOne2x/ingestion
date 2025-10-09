@@ -1,0 +1,22 @@
+{
+  "description": "This video explains how Decentralized Autonomous Organizations (DAOs) operate, focusing on the voting process of token holders and the execution of proposals through smart contracts.",
+  "topic_summary": "DAOs allow token holders to vote on proposals regarding project decisions, with voting power based on token ownership. Proposals are executed automatically via smart contracts after voting concludes. Topics include token issuance, transaction fees, and token burns [t=0:40].",
+  "router_tags": [
+    "DAO",
+    "Decentralized Autonomous Organization",
+    "Voting",
+    "Smart Contracts",
+    "Crypto"
+  ],
+  "aliases": [
+    "Dao",
+    "Decentralized Autonomous Organization",
+    "dao"
+  ],
+  "canonical_entities": [
+    "$DAO",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

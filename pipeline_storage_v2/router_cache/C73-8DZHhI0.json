@@ -1,0 +1,26 @@
+{
+  "description": "Wuxiao, CEO of White Matrix, introduces blockchain technology, its innovations, and future implications. He discusses the operating logic behind Bitcoin and blockchain, emphasizing its role in creating trust and its potential to redefine the global financial economy. The session includes a brief overview of blockchain fundamentals and its sociological significance in contemporary society.",
+  "topic_summary": "The session covers Blockchain Technology, Innovation, and Thinking, including a brief introduction to blockchain, innovative projects, and future discussions on its societal impact. Wuxiao shares insights from his experience and research in the blockchain field.",
+  "router_tags": [
+    "Blockchain",
+    "Innovation",
+    "Technology",
+    "Education",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Wuxiao",
+    "Ling",
+    "White Matrix",
+    "Dominique"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube",
+    "@Wuxiao"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

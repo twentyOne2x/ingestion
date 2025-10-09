@@ -1,0 +1,32 @@
+{
+  "video_id": "WDU-osq7_uw",
+  "title": "2021-05-27_WDU-osq7_uw_Security First In DeFi Panel: How projects respond to risks and how users can protect themself",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "D": {
+      "name": "Batuan Daskin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Leo Chang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Batuan Daskin",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on pricing strategies in cryptocurrency, focusing on the importance of average price and market dynamics.",
+  "topic_summary": "Exploration of pricing strategies in crypto, including average price importance and market behavior [t=00:00 - 01:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "pricing strategy",
+    "average price",
+    "market dynamics"
+  ],
+  "aliases": [
+    "Preco Importa",
+    "Preco importa",
+    "Preco Importa Conheca",
+    "Preco importa conheca"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Mustafa",
+    "$USDC",
+    "$AAPL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

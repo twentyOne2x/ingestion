@@ -1,0 +1,25 @@
+{
+  "description": "Jason Silva discusses the intersection of technology and human imagination, focusing on Star Atlas, a space exploration game on the Solana blockchain. He emphasizes the exponential disruption in society driven by blockchain and cryptocurrency, and the cognitive dissonance in understanding these changes. Silva reflects on the historical context of technological innovation and its impact on civilization.",
+  "topic_summary": "Exploration of Star Atlas and its implications for virtual economies, technology's role in human creativity, and the exponential nature of technological progress [t=0:00-3:00].",
+  "router_tags": [
+    "Star Atlas",
+    "Virtual Economies",
+    "Blockchain",
+    "Cryptocurrency",
+    "Technology",
+    "Human Imagination"
+  ],
+  "aliases": [
+    "star atlas",
+    "Star atlas",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JasonSilva"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

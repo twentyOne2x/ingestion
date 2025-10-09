@@ -1,0 +1,22 @@
+{
+  "description": "Hal Finney introduced the Reusable Proof of Work (RPOW) system in 2004 to address the double spending problem in digital cash systems.",
+  "topic_summary": "The double spending problem allows digital assets to be copied and used multiple times, similar to pirated content. Finney's RPOW system mitigates this by registering token ownership on a trusted server for real-time verification [t=0:32].",
+  "router_tags": [
+    "Double Spending",
+    "Cryptocurrency",
+    "Blockchain",
+    "Hal Finney",
+    "RPOW"
+  ],
+  "aliases": [
+    "Hal Finney",
+    "finney",
+    "Hal finney"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$RPOW"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

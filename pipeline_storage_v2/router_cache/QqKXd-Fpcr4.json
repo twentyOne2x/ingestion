@@ -1,0 +1,27 @@
+{
+  "description": "Norbert, founder of Synthetify, discusses the evolution of synthetic assets on Solana, emphasizing the project's advantages over Ethereum-based platforms, including lower fees and faster transaction times. He highlights Synthetify's capabilities in creating synthetic assets from collateral and its potential to compete with platforms like FTX. The presentation also covers the importance of oracles, transaction efficiency, and governance features within the Synthetify ecosystem.",
+  "topic_summary": "Synthetify's presentation on synthetic assets on Solana, focusing on its competitive edge over Ethereum, transaction efficiency, and future developments in DeFi.",
+  "router_tags": [
+    "Synthetify",
+    "Solana",
+    "DeFi",
+    "Synthetic Assets",
+    "Oracles",
+    "FTX",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Synthetify",
+    "synthetify",
+    "Synthetoi",
+    "Synthesify"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Norbert",
+    "@SolanaFndn",
+    "@FTX"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

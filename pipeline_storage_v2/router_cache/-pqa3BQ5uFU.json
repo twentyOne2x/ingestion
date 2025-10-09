@@ -1,0 +1,21 @@
+{
+  "description": "CZ discusses the importance of education in the crypto industry at Binance Blockchain Week in Dubai, highlighting the welcoming environment of Dubai for crypto players and the recent licensing of crypto exchanges.",
+  "topic_summary": "CZ emphasizes the significance of education in crypto investments and trading, the role of Dubai in the blockchain world, and the future of Binance events aimed at enhancing knowledge in the industry. [t=0:24] [t=13:44] [t=80:95]",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto Education",
+    "Dubai"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "cZ"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

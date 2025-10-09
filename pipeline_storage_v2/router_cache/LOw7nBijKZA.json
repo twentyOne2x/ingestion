@@ -1,0 +1,29 @@
+{
+  "description": "Join Binance as we celebrate Bitcoin Pizza Day 2025 with a livestream featuring insights from industry leaders and a community giveaway. Experience the journey of Bitcoin from its first transaction to its current status as a major asset.",
+  "topic_summary": "Celebrating Bitcoin Pizza Day and its significance in crypto history, featuring messages from Binance CEO Richard Tang and Coin Bureau's Guy, along with community engagement and giveaways [t=5:84].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Crypto",
+    "Livestream",
+    "Celebration"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "Binance Youtube",
+    "coin bureau",
+    "Coin Bureau"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@CoinBureau",
+    "@LaszloHanyec"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

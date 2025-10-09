@@ -1,0 +1,21 @@
+{
+  "description": "This course from Binance Academy introduces the concept of decentralization, covering essential topics such as DeFi, DAOs, DApps, and smart contracts.",
+  "topic_summary": "Learn about decentralization and its core principles, including DeFi, which stands for Decentralized Finance, and how decision-making shifts from centralized entities to distributed networks [t=19:36].",
+  "router_tags": [
+    "Decentralization",
+    "DeFi",
+    "Blockchain",
+    "Smart Contracts",
+    "DApps"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

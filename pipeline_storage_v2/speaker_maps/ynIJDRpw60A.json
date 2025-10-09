@@ -1,0 +1,26 @@
+{
+  "video_id": "ynIJDRpw60A",
+  "title": "2020-09-24_ynIJDRpw60A_Balaji Srinivasan - Angel Investor-Entrepreneur, Formerly the CTO of Coinbase and GP at a16z Ep #28",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Balaji Srinivasan",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Matt Blaze",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

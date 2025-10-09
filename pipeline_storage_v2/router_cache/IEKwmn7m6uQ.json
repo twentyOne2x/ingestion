@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the current situation in Ukraine, focusing on military efforts and digital transformation initiatives. The speakers emphasize the importance of cryptocurrency in facilitating transactions amidst the ongoing conflict.",
+  "topic_summary": "The podcast addresses the dire circumstances in Ukraine, highlighting military resistance and the role of digital solutions in crisis management. It discusses the establishment of a cryptocurrency framework to support humanitarian efforts [t=47:39].",
+  "router_tags": [
+    "Ukraine",
+    "Cryptocurrency",
+    "Digital Transformation",
+    "Military",
+    "Humanitarian Aid"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "SolanaFndn",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@austin",
+    "@sergey",
+    "@eva",
+    "@ernatuli"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

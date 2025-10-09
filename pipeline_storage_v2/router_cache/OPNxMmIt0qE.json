@@ -1,0 +1,21 @@
+{
+  "description": "Siddharth Shetty discusses the concept of the Finternet at the Solana Apex Mumbai Summit, highlighting its potential to provide financial access to millions globally.",
+  "topic_summary": "At [t=0:08], Siddharth Shetty introduces the Finternet, emphasizing its role in enabling identity access to bank accounts and digital transactions for hundreds of millions of people. He encourages young founders to join the community at Apex Mumbai to build and innovate in the financial internet space.",
+  "router_tags": [
+    "Finternet",
+    "Apex Mumbai",
+    "Solana",
+    "Digital Economy"
+  ],
+  "aliases": [
+    "solana apex mumbai",
+    "Solana Apex Mumbai Summit",
+    "Siddharth Shetty"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

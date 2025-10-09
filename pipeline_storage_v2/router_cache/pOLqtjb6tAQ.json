@@ -1,0 +1,20 @@
+{
+  "description": "Khaby Lame takes on the role of a goalkeeper while Cristiano Ronaldo provides coaching tips.",
+  "topic_summary": "Khaby Lame in goal with coaching from Cristiano Ronaldo [t=0:32].",
+  "router_tags": [
+    "Khaby Lame",
+    "Cristiano Ronaldo",
+    "goalkeeping",
+    "coaching"
+  ],
+  "aliases": [
+    "khaby lame",
+    "Cristiano ronaldo",
+    "Khabane lame"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "_S9zWZ4eV9g",
+  "title": "2022-11-25__S9zWZ4eV9g_Binance Earn: Klaytn AMA with Sangmin Seo and Jinnie Lee",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Yuan Free",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Ginny Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video explains forward and futures contracts, their functions, and historical context, focusing on their use in trading and risk management.",
+  "topic_summary": "Forward and futures contracts are agreements for future asset prices, with futures being standardized and traded on exchanges. The Dojima Rice Exchange is noted as the first futures exchange. Futures allow risk mitigation for producers and short exposure for investors. Settlement can be physical or cash, and positions can be offset or rolled over before expiration [t=0:16 - t=1:11].",
+  "router_tags": [
+    "Futures Contracts",
+    "Forward Contracts",
+    "Trading",
+    "Risk Management",
+    "Financial Markets"
+  ],
+  "aliases": [
+    "Forward & Futures Contracts",
+    "Futures Explained",
+    "Binance Academy Futures"
+  ],
+  "canonical_entities": [
+    "$DojimaRice",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

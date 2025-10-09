@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on Web 3.0 concepts and developments.",
+  "topic_summary": "Exploration of Web 3.0 technologies and their implications [t=01:03].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Technology"
+  ],
+  "aliases": [
+    "Web3",
+    "web3",
+    "WEB3"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

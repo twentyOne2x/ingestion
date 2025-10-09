@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the dilemma of investing in Bitcoin versus paying rent.",
+  "topic_summary": "Exploration of financial choices between buying Bitcoin and covering living expenses [t=0:56].",
+  "router_tags": [
+    "Bitcoin",
+    "Rent",
+    "Finance",
+    "Investment"
+  ],
+  "aliases": [
+    "Buy Bitcoin or Pay Rent",
+    "buy bitcoin or pay rent",
+    "BUY BITCOIN OR PAY RENT"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

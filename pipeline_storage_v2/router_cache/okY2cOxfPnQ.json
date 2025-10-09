@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on Binance's future contracts, risk management, and trading strategies, including insights on margin trading and liquidation insurance.",
+  "topic_summary": "Exploration of Binance's future trading options and risk control measures [t=01:28].",
+  "router_tags": [
+    "Binance",
+    "futures",
+    "trading",
+    "risk management"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

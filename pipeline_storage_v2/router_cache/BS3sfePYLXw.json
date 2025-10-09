@@ -1,0 +1,22 @@
+{
+  "description": "This video introduces day trading, explaining its basic concept and how it operates within traditional market hours.",
+  "topic_summary": "Day trading involves entering and exiting trades within the same day, starting with no stocks and completing all transactions before the market closes. [t=21:28] The process typically aligns with the trading hours of exchanges like the New York Stock Exchange. [t=40:83]",
+  "router_tags": [
+    "Day Trading",
+    "Trading Strategies",
+    "Investing",
+    "Stock Market"
+  ],
+  "aliases": [
+    "Day trading",
+    "day Trading",
+    "DAY TRADING"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$NY",
+    "$NYSE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

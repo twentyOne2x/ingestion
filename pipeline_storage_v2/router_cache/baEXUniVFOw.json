@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on application sidechains, staking protocols, and token economics within the Binance ecosystem.",
+  "topic_summary": "Exploration of various blockchain applications, including staking models and token distribution strategies, with insights on performance metrics like transaction per second [t=82:14].",
+  "router_tags": [
+    "blockchain",
+    "staking",
+    "tokenomics",
+    "Binance",
+    "sidechain"
+  ],
+  "aliases": [
+    "Ankr",
+    "ANKR",
+    "ankr"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$ANKR"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

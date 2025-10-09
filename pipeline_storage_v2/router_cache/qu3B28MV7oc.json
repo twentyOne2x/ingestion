@@ -1,0 +1,22 @@
+{
+  "description": "This video explores the growth of DeFi from $250 million in early 2019 to $250 billion by the end of 2021, highlighting key applications and the accessibility benefits for users.",
+  "topic_summary": "The total value locked in DeFi increased significantly from [t=00:00] to [t=00:13]. It covers notable applications like stablecoins and decentralized exchanges [t=00:14]. The core benefit of DeFi is its accessibility to financial services for those outside traditional finance [t=00:28].",
+  "router_tags": [
+    "DeFi",
+    "finance",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "DeFi Growth",
+    "defi growth",
+    "DeFi",
+    "defi"
+  ],
+  "canonical_entities": [
+    "$250 Million",
+    "$250 Billion"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

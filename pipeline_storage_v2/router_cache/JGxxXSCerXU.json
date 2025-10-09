@@ -1,0 +1,21 @@
+{
+  "description": "This video explains backtesting, a method for evaluating trading strategies using historical data. It discusses the importance of backtesting in trading, especially for automated strategies, and provides a simple example using Bitcoin trading signals.",
+  "topic_summary": "Backtesting is a crucial process for traders to test strategies against historical data to evaluate potential profitability. The video highlights the significance of backtesting in making informed trading decisions and optimizing strategies with metrics and indicators. [t=0:08] [t=0:39] [t=1:41]",
+  "router_tags": [
+    "backtesting",
+    "trading strategies",
+    "Bitcoin",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Backtesting Explained",
+    "What is Backtesting",
+    "Backtesting for Beginners"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,32 @@
+{
+  "video_id": "etDDGW1-cbs",
+  "title": "2018-07-22_etDDGW1-cbs_CEO Changpeng Zhao on The Meteoric Rise of Crypto Exchange Binance @ EpicCenter May 2018",
+  "channel_name": "Sizzling CZ: Changpeng Zhao Videos",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "Sizzling CZ: Changpeng Zhao Videos",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Meher Roy",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Meher Roy",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Brian Fabian Crane",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

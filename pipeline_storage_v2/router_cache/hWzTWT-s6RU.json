@@ -1,0 +1,27 @@
+{
+  "description": "Fireside chat featuring Jean-Noel Barrot, French Minister for Digital Transition, discussing blockchain's significance in France with Binance CEO CZ and moderator Kayla Rourke.",
+  "topic_summary": "The discussion highlights France's strategic importance for blockchain due to its talent pool, strong engineering culture, and supportive regulatory environment. Challenges include regulatory clarity and the need for education in the crypto space. [t=74:09] [t=128:13] [t=251:36]",
+  "router_tags": [
+    "Blockchain",
+    "Digital Transition",
+    "Cryptocurrency",
+    "France",
+    "Binance",
+    "Education"
+  ],
+  "aliases": [
+    "CZ",
+    "Jean Noel Barrot",
+    "Kayla Rourke",
+    "Binance Youtube",
+    "Minister For Digital Transition"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@JeanNoelBarrot",
+    "@cz_binance",
+    "@KaylaRourke"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

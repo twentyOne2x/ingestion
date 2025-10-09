@@ -1,0 +1,26 @@
+{
+  "description": "Mitch, co-founder of Switchboard, discusses the development of a decentralized Oracle network on Solana, focusing on its architecture and community-driven approach. He shares insights from his background at Google and the need for scalable blockchain solutions. The workshop covers how to create and manage data feeds using Switchboard's API.",
+  "topic_summary": "Mitch introduces Switchboard, a decentralized Oracle network on Solana, explaining its architecture and community involvement. He emphasizes the importance of diverse data sources and the ease of creating data feeds [t=270.31].",
+  "router_tags": [
+    "Switchboard",
+    "Oracle",
+    "Solana",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Switchboard",
+    "switchboard",
+    "SWITCHBOARD"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "$BTC",
+    "@Kraken",
+    "@Binance",
+    "@Bitfinex"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

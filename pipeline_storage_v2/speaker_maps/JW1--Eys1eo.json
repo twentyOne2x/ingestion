@@ -1,0 +1,44 @@
+{
+  "video_id": "JW1--Eys1eo",
+  "title": "2022-07-01_JW1--Eys1eo_Deputy Head of Binance Charity Elizabeth Li Hosts Social Responsibility Panel",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "F": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Julian Assange",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Arnold Ventura",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Elizabeth Lee",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Chimizi Chuta",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Elizabeth Lee",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Binance Labs' role in supporting blockchain projects and investment strategies. Highlights include the importance of collaboration with smart individuals in the blockchain space and the various investment sectors within Binance, including mergers and acquisitions and the BSC Accelerator Fund.",
+  "topic_summary": "Overview of Binance Labs' investment strategies and support for blockchain projects, including the Launchpad and Launch Pool initiatives. Discussion on the significance of engaging with talented developers globally, particularly from the Russian community [t=249.75].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Investment",
+    "Crypto",
+    "Launchpad",
+    "Launch Pool"
+  ],
+  "aliases": [
+    "binance labs",
+    "Binance Labs",
+    "BINANCE LABS"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BUSD",
+    "@BinanceYoutube",
+    "@Harry"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

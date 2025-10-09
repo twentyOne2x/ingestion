@@ -1,0 +1,23 @@
+{
+  "description": "Join Cristiano Ronaldo in a unique training experience where he shares insights on soccer techniques and skills. Witness the excitement as participants engage in drills and learn from one of the greatest players in football history.",
+  "topic_summary": "Cristiano Ronaldo shares soccer training tips and experiences, showcasing drills and personal anecdotes [t=127.65]. Participants express their excitement and disbelief at training with him [t=157.71].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "soccer training",
+    "Binance NFT",
+    "football skills"
+  ],
+  "aliases": [
+    "Cristiano",
+    "Cristiano Ronaldo",
+    "cristiano",
+    "cristiano ronaldo"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

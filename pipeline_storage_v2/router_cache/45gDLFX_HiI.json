@@ -1,0 +1,21 @@
+{
+  "description": "Binance introduces its new NFT marketplace, discussing various aspects of NFTs and their integration into the platform.",
+  "topic_summary": "Overview of Binance's NFT marketplace and its features, including categories like art and mystery boxes [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Marketplace",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance NFT",
+    "binance nft",
+    "BinanceNft"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

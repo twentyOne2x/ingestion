@@ -1,0 +1,23 @@
+{
+  "description": "Darcy Denucci coined the term Web 2.0 in 1999 to describe a more interactive Internet where users actively participate and contribute. This shift from the static Web 1.0 to a dynamic, user-generated content environment is exemplified by social media, blogs, and podcasts. Enhanced interactivity allows for personalized experiences through algorithmic recommendations.",
+  "topic_summary": "Web 2.0 represents the evolution of the Internet from a read-only format to a participatory platform, emphasizing user-generated content and interactivity [t=0:40].",
+  "router_tags": [
+    "Web 2.0",
+    "interactive internet",
+    "user generated content",
+    "social media",
+    "blogs",
+    "podcasts"
+  ],
+  "aliases": [
+    "Web 2.0",
+    "web 2.0",
+    "WEB 2.0"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "Darcy Denucci"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "A Q&A session featuring various speakers discussing topics related to Binance and cryptocurrency.",
+  "topic_summary": "Discussion on cryptocurrency insights and Binance features with speakers including Sam, Levi Kohesan, and Carlos Pierna. Key points include market dynamics and blockchain technology [t=0:16 - t=54:31].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Q&A",
+    "Blockchain",
+    "Market Insights"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

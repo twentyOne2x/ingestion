@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the origins and evolution of Hacker Houses, highlighting the challenges faced and the community's response. The conversation reflects on the growth of interest in Solana and the need for inclusive spaces for developers.",
+  "topic_summary": "Exploration of Hacker Houses' inception and their role in fostering community engagement within the Solana ecosystem, particularly during events like Solana Breakpoint [t=0:00].",
+  "router_tags": [
+    "Hacker Houses",
+    "Solana",
+    "Community",
+    "Breakpoint",
+    "Events"
+  ],
+  "aliases": [
+    "Hacker Houses",
+    "Hacker houses",
+    "solana",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

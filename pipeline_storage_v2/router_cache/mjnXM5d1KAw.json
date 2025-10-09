@@ -1,0 +1,24 @@
+{
+  "description": "Breakpoint 2021 Day 2 features discussions on integrating Solana into various platforms, including BRAVE, and highlights the importance of communication in Web 3.0. The session includes demos and panels on NFTs, crypto politics, and mainstream adoption.",
+  "topic_summary": "The event covers Solana's integration into platforms, the role of communication in Web 3.0, and features demos on Ethereum push notifications and decentralized communication protocols [t=0:24-3:38].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "NFTs",
+    "Web 3.0",
+    "Ethereum",
+    "Demos"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Conference",
+    "Solana Breakpoint"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

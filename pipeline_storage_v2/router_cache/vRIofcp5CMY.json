@@ -1,0 +1,25 @@
+{
+  "description": "In this webinar, participants learn how to secure their Binance accounts and explore the app's features. The discussion includes insights on cryptocurrency trends, particularly Elon Musk's influence on Bitcoin and Tesla transactions. The hosts emphasize the importance of holding crypto and the potential for future purchases using digital currencies.",
+  "topic_summary": "The session covers account security, Binance app functionalities, and the impact of Elon Musk's decisions on cryptocurrency, particularly Bitcoin. It highlights the shift towards using crypto for transactions instead of converting to fiat currency [t=255.96].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Elon Musk",
+    "Webinar",
+    "South Africa"
+  ],
+  "aliases": [
+    "Markets With Marc",
+    "markets with marc",
+    "Binance Webinar",
+    "binance webinar"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@elonmusk"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

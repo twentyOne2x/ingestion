@@ -1,0 +1,25 @@
+{
+  "description": "This video features a discussion led by Binance Angel Ibanda Meohe about Binance Coin (BNB) and its role in the cryptocurrency market, including insights on Ethereum and Bitcoin. The session covers topics such as the Binance Smart Chain, PancakeSwap, and the potential of BNB as a stablecoin. The conversation is primarily in Polish, catering to the Binance community.",
+  "topic_summary": "Overview of Binance Coin (BNB) and its significance in the crypto market, including discussions on Binance Smart Chain and PancakeSwap [t=28:76-3626:76].",
+  "router_tags": [
+    "Binance",
+    "BNB",
+    "Cryptocurrency",
+    "Blockchain",
+    "Ethereum",
+    "Bitcoin",
+    "PancakeSwap"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BNB",
+    "bnb"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

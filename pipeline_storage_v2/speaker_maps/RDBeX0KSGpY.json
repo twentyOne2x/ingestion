@@ -1,0 +1,26 @@
+{
+  "video_id": "RDBeX0KSGpY",
+  "title": "2022-06-07_RDBeX0KSGpY_Binance Blockchain Week - Keynote Speaker - Eowyn Chen - CEO, Trust Wallet",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Ail Wing Chen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Eowyn Chen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

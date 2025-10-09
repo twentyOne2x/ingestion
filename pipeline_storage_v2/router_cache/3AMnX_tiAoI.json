@@ -1,0 +1,18 @@
+{
+  "description": "This video explains how to interpret the RSI (Relative Strength Index) as a momentum indicator, highlighting its significance in identifying market trends and potential reversals.",
+  "topic_summary": "The RSI indicates momentum changes in price. An RSI above 70 suggests overbought conditions, while below 30 indicates oversold conditions. Increasing momentum with rising prices signals a strong uptrend, whereas decreasing momentum may suggest a market shift. [t=0:48] [t=20:40]",
+  "router_tags": [
+    "RSI",
+    "momentum indicator",
+    "technical analysis",
+    "trading strategies"
+  ],
+  "aliases": [
+    "How to Interpret the RSI",
+    "RSI Index Explanation",
+    "Understanding RSI"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the future of DeFi and the Serum ecosystem, including the upcoming listing of the Serum token (SRM) and insights from various industry leaders.",
+  "topic_summary": "The conversation covers the launch of Serum, its impact on DeFi, and the experiences of key figures in the crypto space, highlighting the challenges and opportunities in decentralized finance [t=39:31].",
+  "router_tags": [
+    "DeFi",
+    "Serum",
+    "Crypto",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "$SRM"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

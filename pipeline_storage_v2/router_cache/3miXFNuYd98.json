@@ -1,0 +1,22 @@
+{
+  "description": "This video provides a comprehensive guide on TradingView, detailing its features and how to utilize it for technical analysis on Binance. It covers accessing TradingView, customizing charts, using technical indicators, and drawing tools.",
+  "topic_summary": "Learn about TradingView and its functionalities for technical analysis on Binance, including chart customization and tool usage [t=3:92 - t=177:18].",
+  "router_tags": [
+    "TradingView",
+    "Technical Analysis",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Tradingview",
+    "tradingview",
+    "Binance Academy",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

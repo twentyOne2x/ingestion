@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the pillars of crypto infrastructure, focusing on scalability, security, and decentralization, along with other factors like usability and regulation.",
+  "topic_summary": "Exploration of the blockchain trilemma and its implications for real-world applications, including the importance of user experience and potential trade-offs in achieving scalability, security, and decentralization [t=0:24-3:18].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "infrastructure",
+    "scalability",
+    "security",
+    "decentralization"
+  ],
+  "aliases": [
+    "The Pillars of Crypto Infrastructure",
+    "Crypto Infrastructure Pillars",
+    "Pillars of Crypto"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BNB",
+    "$BTC",
+    "@Vitalik",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

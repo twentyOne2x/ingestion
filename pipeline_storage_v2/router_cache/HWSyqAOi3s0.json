@@ -1,0 +1,24 @@
+{
+  "description": "This video explains how to deposit funds into your account, detailing the process of transferring money from a bank account and the unique address required for cryptocurrency deposits. It emphasizes the importance of verifying your account and provides a step-by-step guide on filling out the necessary forms and using the correct deposit addresses for Bitcoin and other cryptocurrencies.",
+  "topic_summary": "Learn how to deposit funds into your Binance account, including the steps for bank transfers and cryptocurrency deposits. The video covers account verification and the importance of using unique deposit addresses [t=0:16 - t=11:59].",
+  "router_tags": [
+    "deposit",
+    "funds",
+    "Binance",
+    "cryptocurrency",
+    "bank transfer"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@Ellis",
+    "@Sabina"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "CZ Binance discusses various methods to define users, including active addresses, transactions, social media followers, and developer activity.",
+  "topic_summary": "Exploration of metrics for defining users in the blockchain space, including [t=0:16] to [t=32:33].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "User Metrics",
+    "Social Media"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

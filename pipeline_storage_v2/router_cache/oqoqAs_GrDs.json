@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on whether CR7 holds the record for the most goals scored in history.",
+  "topic_summary": "CR7 confirms he has scored 835 goals [t=8:16].",
+  "router_tags": [
+    "CR7",
+    "goals",
+    "record",
+    "football"
+  ],
+  "aliases": [
+    "Cr7",
+    "Cristiano Ronaldo",
+    "Cristiano ronaldo"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

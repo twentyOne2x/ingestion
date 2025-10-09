@@ -1,0 +1,23 @@
+{
+  "description": "Binance collaborates with Pierre Gasly to unveil a unique helmet and mural design, showcasing creativity and innovation in the streets.",
+  "topic_summary": "The event highlights the partnership between Binance and Pierre Gasly, featuring a creative helmet and mural design that symbolizes their collaboration. The presentation includes artistic elements and community engagement [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Pierre Gasly",
+    "Helmet Design",
+    "Mural Design",
+    "Collaboration"
+  ],
+  "aliases": [
+    "binance",
+    "Pierre Gasly",
+    "@BinanceYoutube",
+    "Pierre gasly"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@PierreGasly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

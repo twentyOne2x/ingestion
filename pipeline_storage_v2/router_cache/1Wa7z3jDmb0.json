@@ -1,0 +1,25 @@
+{
+  "description": "Learn 10 ways to earn passive income with cryptocurrencies on Binance, including staking, flexible savings, and using the Binance Smart Chain. Explore options like Launchpool and DeFi staking, while understanding the associated risks and rewards.",
+  "topic_summary": "This video covers various methods to earn passive income through Binance, including staking options and the use of Launchpool for earning rewards. It emphasizes the importance of understanding risks involved in cryptocurrency investments [t=4:40].",
+  "router_tags": [
+    "crypto",
+    "Binance",
+    "passive income",
+    "staking",
+    "Launchpool",
+    "DeFi"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

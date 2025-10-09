@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Chiliz and Socios, focusing on their crypto token platform and engagement strategies in sports.",
+  "topic_summary": "Overview of Chiliz and Socios' role in sports engagement through crypto tokens and marketplace expansion [t=146.04].",
+  "router_tags": [
+    "Chiliz",
+    "Socios",
+    "Crypto",
+    "Sports Engagement",
+    "NFT"
+  ],
+  "aliases": [
+    "Chiliz",
+    "Socios",
+    "chiliz",
+    "socios"
+  ],
+  "canonical_entities": [
+    "$CHZ",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

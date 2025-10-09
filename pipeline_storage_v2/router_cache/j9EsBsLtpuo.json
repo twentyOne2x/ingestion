@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on validator behavior and delegation program issues within the Solana community. The team addresses concerns about fraudulent validator operations on testnet and outlines plans for corrective actions and improved transparency in the onboarding process.",
+  "topic_summary": "Validator behavior concerns and delegation program adjustments discussed [t=0:00-4:16]. Addressing fraudulent activities on testnet and plans for corrective actions [t=26:25-85:25]. Future community-driven delegation strategies proposed [t=396:39-486:34].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Delegation",
+    "Community",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Solana Community Validator Discussion",
+    "Solana Validator Talk",
+    "Validator Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "Ctdq2cH_Lvw",
+  "title": "2024-01-25_Ctdq2cH_Lvw_Train With Cristiano Ronaldo - Binance NFT Utility Experience",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Cristiano Ronaldo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Solana Validator Relations, covering server upgrades, revenue opportunities for validators, and updates on compute unit bugs.",
+  "topic_summary": "The call features updates from Alex on server program enhancements [t=11:76], revenue opportunities for validators [t=73:41], and Anatoly discussing a compute unit bug affecting transaction processing [t=164:03].",
+  "router_tags": [
+    "Solana",
+    "Validators",
+    "Server Program",
+    "Compute Units",
+    "Blockchain"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "solana validator relations",
+    "solana validator updates"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

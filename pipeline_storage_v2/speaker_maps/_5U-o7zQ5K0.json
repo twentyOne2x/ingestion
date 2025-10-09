@@ -1,0 +1,20 @@
+{
+  "video_id": "_5U-o7zQ5K0",
+  "title": "2020-10-29__5U-o7zQ5K0_Fireside Chat: Robert Leshner, Founder of Compound",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Robert Leshner",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

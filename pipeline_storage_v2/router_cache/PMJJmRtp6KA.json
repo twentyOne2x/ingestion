@@ -1,0 +1,25 @@
+{
+  "description": "In this conversation, Anthony Pompliano interviews CZ, the founder of Binance, discussing his journey from humble beginnings in China to becoming a leading figure in the cryptocurrency industry. CZ shares insights on the importance of strong conviction in building successful companies and his views on the future of cryptocurrency and technology.",
+  "topic_summary": "Anthony Pompliano speaks with CZ about his rise in the crypto world, the founding of Binance, and the evolving landscape of cryptocurrency. They explore the significance of Bitcoin and the technological advancements that shape the future of finance [t=0:16].",
+  "router_tags": [
+    "CZ",
+    "Binance",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Entrepreneurship",
+    "Finance",
+    "Technology"
+  ],
+  "aliases": [
+    "Cz",
+    "CZ",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

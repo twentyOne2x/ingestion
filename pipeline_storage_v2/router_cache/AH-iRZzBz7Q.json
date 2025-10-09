@@ -1,0 +1,26 @@
+{
+  "description": "CZ opens the session discussing the upcoming NFT Tuesday webinars focused on GameFi and Play2Earn, highlighting the importance of these trends in Southeast Asia and globally. The session includes a special learn and earn opportunity with $12,500 in tokens to win.",
+  "topic_summary": "The session introduces a series of webinars on NFT Tuesday, covering GameFi, minting value, and NFTs for good, emphasizing the evolution of NFTs and community engagement through a new Binance Discord.",
+  "router_tags": [
+    "GameFi",
+    "Play2Earn",
+    "NFT",
+    "Binance",
+    "Webinars",
+    "Southeast Asia"
+  ],
+  "aliases": [
+    "NFT Tuesday",
+    "Nft Tuesday",
+    "CZ",
+    "Binance Youtube",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "$12,500"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

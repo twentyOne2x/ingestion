@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on Solana NFTs featuring industry leaders discussing the evolution of NFTs, digital identity, and lessons learned from past projects.",
+  "topic_summary": "Exploration of Solana NFT projects, their impact on digital identity, and insights into the NFT ecosystem from various experts in the field [t=111:38].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Metaplex",
+    "Digital Identity",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Solana Nfts",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@emilypoplowski",
+    "@adi",
+    "@whitey",
+    "@vrallartveto"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "The video discusses the importance of community in crypto, highlighting the role of Binance in fostering connections and education through platforms like Binance Academy and Binance Central. It shares personal experiences from events like Binance Blockchain Week and Viva Tech.",
+  "topic_summary": "Exploration of the crypto community and Binance's role in education and networking [t=0:48].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Community",
+    "Education",
+    "Web3"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCE YOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

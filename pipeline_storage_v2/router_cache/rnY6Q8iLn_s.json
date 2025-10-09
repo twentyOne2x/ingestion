@@ -1,0 +1,24 @@
+{
+  "description": "Binance Academy hosts a webinar discussing decentralized finance (DeFi), focusing on Pull Together, yield farming, and tokenizing Bitcoin on Ethereum. The session includes a Q&A segment for audience interaction.",
+  "topic_summary": "The webinar covers three main topics: an introduction to Pull Together, a savings game on Ethereum [t=96.7], yield farming [t=106.8], and tokenizing Bitcoin on Ethereum [t=106.8]. It emphasizes the educational aspect of DeFi and encourages audience participation [t=115.4].",
+  "router_tags": [
+    "DeFi",
+    "Binance Academy",
+    "Pull Together",
+    "Yield Farming",
+    "Tokenized BTC"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$DAI",
+    "$USDC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

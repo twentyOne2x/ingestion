@@ -1,0 +1,30 @@
+{
+  "description": "This webinar from Binance Academy covers decentralized finance (DeFi) topics, focusing on Uniswap, Compound Finance, and SushiSwap. It explains how Uniswap operates as a decentralized exchange, utilizing an automated market maker model for trading without intermediaries. The session includes discussions on liquidity pools, impermanent loss, and the significance of these protocols for traders and investors.",
+  "topic_summary": "The webinar discusses the fundamentals of Uniswap, including its decentralized exchange model, liquidity pools, and the concept of impermanent loss, providing insights into its importance in the DeFi ecosystem. Key examples illustrate trading mechanics and the implications for liquidity providers [t=60:05].",
+  "router_tags": [
+    "DeFi",
+    "Uniswap",
+    "SushiSwap",
+    "Compound Finance",
+    "Decentralized Exchange",
+    "Liquidity Pools",
+    "Automated Market Maker"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Uniswap",
+    "uniswap",
+    "Compound Finance",
+    "compound finance",
+    "SushiSwap",
+    "sushiswap"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$USDT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

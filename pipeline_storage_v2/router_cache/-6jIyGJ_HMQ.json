@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on composability in blockchain, featuring Amul from Quicknode, highlighting its significance in enhancing value and creativity in decentralized finance (DeFi) and NFTs.",
+  "topic_summary": "Exploration of composability across blockchains, its impact on DeFi growth, and the role of Quicknode in supporting Solana's ecosystem, emphasizing the importance of low transaction costs and speed [t=186.8].",
+  "router_tags": [
+    "Composability",
+    "Blockchain",
+    "DeFi",
+    "NFTs",
+    "Quicknode",
+    "Solana"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Grand Conductor",
+    "Composability Aligns Developers and Traders"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Amul",
+    "@TigerGlobal",
+    "@alexisohanian"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

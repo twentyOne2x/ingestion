@@ -1,0 +1,21 @@
+{
+  "description": "This video demonstrates how to use Binance's live chat feature to communicate with a live agent. It covers navigating to the support section, using pre-selected options, and how to escalate issues if the bot's response is unsatisfactory.",
+  "topic_summary": "Learn how to effectively use Binance's live chat for customer support, including navigating the interface and escalating issues to live agents [t=0:32 - t=1:53].",
+  "router_tags": [
+    "Binance",
+    "Live Chat",
+    "Customer Support",
+    "Crypto"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Live Chat",
+    "Binance Support"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

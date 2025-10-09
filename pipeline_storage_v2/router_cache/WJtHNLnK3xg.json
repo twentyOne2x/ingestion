@@ -1,0 +1,22 @@
+{
+  "description": "This webinar provides an overview of Binance Earn, a platform for earning passive income with cryptocurrencies. It covers the history of Binance, the importance of security, and the various products available under Binance Earn, including Savings, Staking, Launch Platform, BNB Vault, and Liquid Swap.",
+  "topic_summary": "The session introduces Binance Earn and its offerings, explaining how users can earn passive income by opting into different products. It emphasizes the importance of security and provides guidance on navigating the Binance platform [t=0:00-1:52].",
+  "router_tags": [
+    "Binance",
+    "Binance Earn",
+    "cryptocurrency",
+    "passive income",
+    "investment"
+  ],
+  "aliases": [
+    "Binance Earn",
+    "binance earn",
+    "BINANCE EARN"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on a new concept in Blockchain and Ethereum promoted by Vitalik.",
+  "topic_summary": "Vitalik promotes a new concept for Blockchain and Ethereum, highlighting its potential impact on the future [t=125:54].",
+  "router_tags": [
+    "Blockchain",
+    "Ethereum",
+    "Vitalik"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@Vitalik"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

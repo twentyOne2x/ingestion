@@ -1,0 +1,25 @@
+{
+  "description": "This episode of the Solana Changelog discusses recent updates in the Solana developer ecosystem, including the election for Stack Exchange moderators, changes to program closure prompts, realloc limits, NFT token standard support, and the introduction of coding tutorials called Solana Bites.",
+  "topic_summary": "Updates on Solana developer ecosystem including moderator elections [t=14:40], program closure changes [t=37:00], realloc limits [t=78:00], NFT token support [t=117:00], and new coding tutorials [t=168:00].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "NFT",
+    "Developer Relations",
+    "Stack Exchange",
+    "Web3"
+  ],
+  "aliases": [
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelog"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Jacob",
+    "@Joe"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

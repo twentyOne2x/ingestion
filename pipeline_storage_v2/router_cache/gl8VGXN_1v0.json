@@ -1,0 +1,27 @@
+{
+  "description": "At Breakpoint 2021, panelists discuss the evolving landscape of crypto regulation and the challenges faced by developers and market participants. Michelle Bond, CEO of the Association for Digital Asset Markets, shares insights on industry standards and her background in policy and law. Greg Exothalis, General Counsel at Multicoin Capital, reflects on his journey in crypto law and the importance of clarity in the sector.",
+  "topic_summary": "The panel addresses the current state of crypto regulation, the roles of advocacy and legal frameworks, and the unique energy within the Solana ecosystem. They emphasize the need for clarity amidst regulatory discussions and the rapid evolution of the crypto space over the past year.",
+  "router_tags": [
+    "Crypto",
+    "Regulation",
+    "Solana",
+    "Web3",
+    "Digital Assets",
+    "Policy"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Foundation",
+    "Michelle Bond",
+    "Greg Exothalis"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MichelleBond",
+    "@GregExothalis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

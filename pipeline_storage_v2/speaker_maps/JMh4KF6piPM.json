@@ -1,0 +1,20 @@
+{
+  "video_id": "JMh4KF6piPM",
+  "title": "2021-06-18_JMh4KF6piPM_How to pitch your project!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Larry Ellison",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

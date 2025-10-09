@@ -1,0 +1,20 @@
+{
+  "description": "In this segment, participants choose between becoming invisible or receiving one Bitcoin. The conversation highlights the allure of invisibility over cryptocurrency.",
+  "topic_summary": "Participants discuss the choice between gaining one Bitcoin or becoming invisible, with a preference for invisibility expressed multiple times [t=0:40].",
+  "router_tags": [
+    "Bitcoin",
+    "Invisibility",
+    "Choices"
+  ],
+  "aliases": [
+    "Binance Asks",
+    "Binance asks",
+    "binance asks"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

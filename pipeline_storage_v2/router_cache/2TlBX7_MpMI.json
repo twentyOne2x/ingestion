@@ -1,0 +1,21 @@
+{
+  "description": "NFTs enable verification of ownership for digital assets, allowing for unique trading in marketplaces. They can also certify ownership of physical items and are seen as vital for the blockchain-based Digital Economy and Web3.",
+  "topic_summary": "NFTs represent ownership of digital and physical items, are traded in unique marketplaces, and are integral to the future of the Digital Economy and Web3. They have applications in various fields including gaming, digital identity, and fine art. [t=0:32] [t=10:16] [t=33:50]",
+  "router_tags": [
+    "NFT",
+    "Digital Assets",
+    "Blockchain",
+    "Web3",
+    "Digital Economy"
+  ],
+  "aliases": [
+    "Nft",
+    "NFTs",
+    "Non-Fungible Tokens"
+  ],
+  "canonical_entities": [
+    "$NFT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

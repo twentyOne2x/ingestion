@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concept of a 51% attack on blockchain networks, detailing how it occurs when a single entity gains control of the majority of hashing power, potentially disrupting the network and allowing for transaction manipulation.",
+  "topic_summary": "A 51% attack is a scenario where an entity controls over 50% of the network's hashing power, enabling them to alter transaction orders and create double spending issues. However, the likelihood of such an attack on Bitcoin is low due to its large network size and security measures. [t=0:24] [t=59:99] [t=212:06]",
+  "router_tags": [
+    "51% Attack",
+    "Blockchain Security",
+    "Bitcoin",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "51% attack",
+    "51 Percent Attack",
+    "Majority Attack"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

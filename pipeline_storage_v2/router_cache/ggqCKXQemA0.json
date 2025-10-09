@@ -1,0 +1,23 @@
+{
+  "description": "Tickets for Binance Blockchain Week Dubai 2025 featuring Cristiano Ronaldo are now available for purchase.",
+  "topic_summary": "Binance Blockchain Week is approaching, with ticket sales currently open [t=12:96].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Dubai",
+    "Cristiano Ronaldo",
+    "Tickets"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "binance blockchain week",
+    "Binance Blockchain week"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

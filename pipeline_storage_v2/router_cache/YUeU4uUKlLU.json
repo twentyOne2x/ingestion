@@ -1,0 +1,25 @@
+{
+  "description": "Live session discussing Binance features, account verification, and cryptocurrency transactions including BTC and USDT. Covers topics like deposit methods, Google authentication, and using BNB for fee payments.",
+  "topic_summary": "Overview of Binance services, account security, and cryptocurrency trading strategies [t=11:12 - t=3732:06].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "BTC",
+    "USDT",
+    "BNB",
+    "Account Verification"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

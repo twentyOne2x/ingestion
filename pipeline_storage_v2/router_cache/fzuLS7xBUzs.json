@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on the power of asset management tools in the DeFi space, featuring insights from industry experts on risk quantification and bridging traditional finance with decentralized finance.",
+  "topic_summary": "Discussion on asset management tools and their impact on DeFi, including risk management strategies and the integration of traditional finance principles into decentralized systems [t=11:36-11:64].",
+  "router_tags": [
+    "DeFi",
+    "Asset Management",
+    "Finance",
+    "Risk Management",
+    "Solana"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021: Your Front Page"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sam",
+    "@Tiago",
+    "@AdamGreenberg",
+    "@NovaFinance",
+    "@Transfero"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

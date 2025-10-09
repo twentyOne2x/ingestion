@@ -1,0 +1,26 @@
+{
+  "video_id": "oRidd-tfUmg",
+  "title": "2021-06-26_oRidd-tfUmg_Yutaro Mori & Grace Kwan - Co-Founders of Orca Ep #46",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Emma Esgans",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Steve Jobs",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

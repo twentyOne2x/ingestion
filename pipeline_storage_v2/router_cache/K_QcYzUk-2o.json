@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses market cycles, emphasizing the importance of understanding both long-term and short-term trends in trading and investing.",
+  "topic_summary": "Market cycles consist of alternating bullish and bearish phases, which can be identified over various time frames. Understanding these cycles and the psychology behind them is essential for successful trading [t=43:42].",
+  "router_tags": [
+    "market cycles",
+    "trading",
+    "investing",
+    "market trends",
+    "market psychology"
+  ],
+  "aliases": [
+    "What Are Market Cycles",
+    "Market Cycles Explained",
+    "Understanding Market Cycles"
+  ],
+  "canonical_entities": [
+    "$SPY",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

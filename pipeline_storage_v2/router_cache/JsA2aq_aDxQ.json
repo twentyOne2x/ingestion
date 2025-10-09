@@ -1,0 +1,25 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency, including project updates and community engagement.",
+  "topic_summary": "Discussion on cryptocurrency projects and community insights, including mentions of key figures and concepts [t=0:00 - t=42:00].",
+  "router_tags": [
+    "Q&A",
+    "Cryptocurrency",
+    "Binance",
+    "Community"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Tanya",
+    "@AkiSilvichQuintana",
+    "@BennyBay",
+    "@Gustavo",
+    "@Angel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

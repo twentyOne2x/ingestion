@@ -1,0 +1,29 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency trading and technology are discussed, including insights from Gene Jordan and Sahara Key Kohil. The conversation covers project processes, token testing, and market analysis.",
+  "topic_summary": "The discussion includes insights on crypto trading technology, project processes, and token testing, featuring contributions from Gene Jordan and Sahara Key Kohil [t=0:55].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "Q&A",
+    "technology"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$Porsche",
+    "$Akita",
+    "$GeneJordan",
+    "$SaharaKeyKohil",
+    "$Tommy",
+    "$Rafael",
+    "$Marcel",
+    "$Carter",
+    "$JamesChaChao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

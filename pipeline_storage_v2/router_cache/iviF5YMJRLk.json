@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the future of decentralization, highlighting the role of blockchain technology and its applications such as DeFi, DApps, and DAOs. It emphasizes that while decentralization can address some limitations of traditional systems, it is not a complete solution.",
+  "topic_summary": "Exploration of decentralization's future and its impact on technology and society. Key points include the importance of blockchain [t=0:32], the role of DeFi and DAOs [t=6:40], and the limitations of decentralization [t=14:24].",
+  "router_tags": [
+    "decentralization",
+    "blockchain",
+    "DeFi",
+    "DApps",
+    "DAOs"
+  ],
+  "aliases": [
+    "Decentralization",
+    "decentralization",
+    "Decentralized Future",
+    "decentralized future"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

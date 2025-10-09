@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on Web3.0 and GameFi, featuring various participants and their insights on NFTs and play-to-earn models.",
+  "topic_summary": "Exploration of Web3.0 concepts and GameFi, including NFT utilities and play-to-earn opportunities [t=01:12 to t=50:58].",
+  "router_tags": [
+    "Web3",
+    "GameFi",
+    "NFT",
+    "PlayToEarn"
+  ],
+  "aliases": [
+    "M Miula",
+    "m miula",
+    "MMIULA"
+  ],
+  "canonical_entities": [
+    "$YOSHI",
+    "$JOSE",
+    "$NFT",
+    "@SHRI_THE_SAD",
+    "$JOE_CHEETAH",
+    "@ZHAO_E",
+    "$SANJI_THE_YOJI",
+    "$MATTHEW",
+    "$JOSE_B",
+    "$YOKONG_ZOE",
+    "$BIANCA"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on luxury brands entering Web3, focusing on the potential of blockchain technology and the importance of education and storytelling in engaging new audiences.",
+  "topic_summary": "Exploration of how luxury brands like Gucci are leveraging Web3 to create innovative experiences and the challenges of achieving mass adoption in the crypto space [t=328.02].",
+  "router_tags": [
+    "Web3",
+    "Luxury Brands",
+    "Blockchain",
+    "Crypto",
+    "Education"
+  ],
+  "aliases": [
+    "luxury brands in web3",
+    "web3 luxury brands",
+    "luxury brands and blockchain"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "$GUCCI",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

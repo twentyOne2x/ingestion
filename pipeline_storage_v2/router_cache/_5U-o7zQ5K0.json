@@ -1,0 +1,26 @@
+{
+  "description": "Robert Leshner discusses his journey into crypto and the founding of Compound, highlighting the evolution of decentralized finance and the creation of interest rate markets for crypto assets.",
+  "topic_summary": "In this fireside chat, Robert Leshner shares insights on the development of Compound, the impact of Ethereum on financial markets, and the vision behind creating a decentralized financial marketplace [t=72:79].",
+  "router_tags": [
+    "Compound",
+    "DeFi",
+    "Crypto",
+    "Finance",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Robert Leshner",
+    "robert leshner",
+    "Compound",
+    "compound"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$3",
+    "$2 Billion",
+    "@Tolly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

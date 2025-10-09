@@ -1,0 +1,26 @@
+{
+  "description": "Join Graham Moore, Head of Tokenization at Polymesh, as he discusses security tokens and the Polymesh blockchain in this Binance Earn AMA. The session includes a $5,000 Polyx giveaway and addresses pre-collected questions from the community. [t=0:24] Technical issues were resolved, and the audience engagement begins with viewers sharing their locations and time zones. [t=16:64] Graham introduces Polymesh, focusing on compliance and the creation of financial securities on the blockchain. [t=83:60] The agenda includes a Q&A session and a quiz at the end. [t=254:14]",
+  "topic_summary": "Graham Moore discusses the role of Polymesh in the security token space, its compliance features, and the importance of creating regulated financial assets on the blockchain. The AMA includes community interaction and a giveaway.",
+  "router_tags": [
+    "Polymesh",
+    "Security Tokens",
+    "Binance",
+    "AMA",
+    "Blockchain",
+    "Tokenization"
+  ],
+  "aliases": [
+    "Polymesh",
+    "Polymesh AMA",
+    "Graham Moore",
+    "Graham",
+    "Binance Earn"
+  ],
+  "canonical_entities": [
+    "$POLYX",
+    "@BinanceYoutube",
+    "@GrahamMoore"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

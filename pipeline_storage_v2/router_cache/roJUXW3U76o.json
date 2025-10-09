@@ -1,0 +1,21 @@
+{
+  "description": "This video explains swing trading, highlighting its similarities to day trading but with a longer time frame. It covers how positions are held from days to months, aiming to profit from larger price swings. The video discusses strategies for identifying undervalued assets and profiting from both upward and downward price movements.",
+  "topic_summary": "Swing trading involves holding positions for days to months to capitalize on price swings. Traders aim to identify undervalued assets for potential profit, whether prices rise or fall. [t=1:20] to [t=2:00]",
+  "router_tags": [
+    "swing trading",
+    "trading strategies",
+    "financial education",
+    "investing"
+  ],
+  "aliases": [
+    "Swing Trading",
+    "swing trading",
+    "SWING TRADING"
+  ],
+  "canonical_entities": [
+    "$GOLD",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

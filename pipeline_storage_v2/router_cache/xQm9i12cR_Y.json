@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on women's leadership in the crypto community, featuring insights from various speakers.",
+  "topic_summary": "Panel on women's roles in the crypto sector, highlighting contributions and experiences in Latin America [t=1:56] and the importance of community engagement [t=38:00].",
+  "router_tags": [
+    "crypto",
+    "women in leadership",
+    "Latin America",
+    "community"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

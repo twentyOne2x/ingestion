@@ -1,0 +1,29 @@
+{
+  "description": "Pierre Gasly discusses his potential TikTok presence, his early encounters with cryptocurrency, and the impact of fan tokens in Formula 1. He shares insights on his transition to Alpine and his current media consumption.",
+  "topic_summary": "In this AMA, Pierre Gasly talks about joining TikTok [t=4:24], his first experiences with crypto [t=46:7], and the significance of fan tokens in enhancing fan engagement [t=149:1]. He reflects on his transition to Alpine [t=235:4] and shares his current favorite shows [t=361:1].",
+  "router_tags": [
+    "Pierre Gasly",
+    "Formula 1",
+    "TikTok",
+    "Cryptocurrency",
+    "Fan Tokens",
+    "Alpine",
+    "Netflix"
+  ],
+  "aliases": [
+    "Pierre Gasly",
+    "pierre gasly",
+    "PIERRE GASLY"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$Fantom",
+    "$SOL",
+    "@MarcMarquez",
+    "@MichaelJordan",
+    "@Netflix"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "a1Nz95B5yAE",
+  "title": "2021-11-15_a1Nz95B5yAE_Breakpoint 2021: More Free Stuff: Why Fast Blockchains Should Keep Giving Things Away",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Noah Prince",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Noah Prince",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

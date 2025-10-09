@@ -1,0 +1,22 @@
+{
+  "description": "Cristiano Ronaldo and Ana Markovic engage in a foosball challenge, discussing preferences in football and personal experiences throughout the game.",
+  "topic_summary": "Cristiano Ronaldo and Ana Markovic compete in a foosball match, sharing insights on their favorite football memories and preferences [t=0:08 - t=131:83].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Ana Markovic",
+    "Foosball",
+    "Football Challenge"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "Cristiano ronaldo",
+    "Ana Markovic",
+    "Ana markovic"
+  ],
+  "canonical_entities": [
+    "$RM",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

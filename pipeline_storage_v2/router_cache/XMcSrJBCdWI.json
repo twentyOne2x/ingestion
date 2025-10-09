@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on NFT projects and their potential, featuring insights from various contributors.",
+  "topic_summary": "Exploration of NFT projects, including mentions of specific creators and platforms, and discussions on community involvement and project potential [t=0:00].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Blockchain",
+    "Binance"
+  ],
+  "aliases": [
+    "Nft021-Hertz City",
+    "Nft021-hertz city",
+    "nft021-hertz city"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

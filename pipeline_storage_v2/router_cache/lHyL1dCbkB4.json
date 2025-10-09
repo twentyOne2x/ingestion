@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on team building plans and future preparations, including a humorous mention of booking spacesuits.",
+  "topic_summary": "Exploration of team building and future steps, with lighthearted remarks about spacesuits [t=0:16-2:55].",
+  "router_tags": [
+    "team building",
+    "future planning",
+    "spacesuits"
+  ],
+  "aliases": [
+    "Binance TVCZ",
+    "binance tvcz",
+    "Binance tvcz"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "@yishangzhou"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

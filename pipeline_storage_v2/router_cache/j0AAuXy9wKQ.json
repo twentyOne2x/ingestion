@@ -1,0 +1,23 @@
+{
+  "description": "Binance Launch Pool allows users to stake BNB, BUSD, and other tokens to farm new assets. Users can earn rewards through yield farming by participating in various projects on the platform.",
+  "topic_summary": "Binance Launch Pool enables users to stake their crypto assets for rewards, introducing a new way to farm tokens like Flamingo FLM [t=50:97]. The process includes staking, claiming rewards, and tracking staked assets [t=73:53].",
+  "router_tags": [
+    "Binance",
+    "Launch Pool",
+    "Yield Farming",
+    "Crypto Staking"
+  ],
+  "aliases": [
+    "Binance Launchpool",
+    "Binance Launch Pool",
+    "Launch Pool"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BUSD",
+    "$FLM",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

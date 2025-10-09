@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses how cryptocurrency has provided hope and opportunities, particularly focusing on the role of Binance in the crypto ecosystem.",
+  "topic_summary": "Exploration of the positive impact of cryptocurrency on individuals' lives, highlighting Binance's contributions [t=01:10].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Hope",
+    "Opportunities"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$CRYPTO",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

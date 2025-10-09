@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on DoubleZero, a new internet initiative aimed at enhancing bandwidth and minimizing latency on the Solana network.",
+  "topic_summary": "Exploration of DoubleZero's potential impact on internet performance, particularly focusing on bandwidth and latency improvements for Solana [t=02:05].",
+  "router_tags": [
+    "Solana",
+    "DoubleZero",
+    "bandwidth",
+    "latency",
+    "internet"
+  ],
+  "aliases": [
+    "Doublezero",
+    "doublezero",
+    "DOUBLEZERO"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

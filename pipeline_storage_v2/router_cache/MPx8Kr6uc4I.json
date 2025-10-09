@@ -1,0 +1,25 @@
+{
+  "description": "Brady Dale discusses the intersection of gaming and cryptocurrency with Amy Wu from Lightspeed Ventures and Jeff Sterling from Sky Mavis, focusing on Axie Infinity and the evolving concept of the metaverse.",
+  "topic_summary": "The conversation explores the dynamics of blockchain gaming, the success of Axie Infinity, and the broader implications of the metaverse in digital economies [t=17:04].",
+  "router_tags": [
+    "Blockchain",
+    "Gaming",
+    "Crypto",
+    "Metaverse",
+    "NFTs"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JeffSterling",
+    "@AmyWu",
+    "@SkyMavis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

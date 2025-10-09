@@ -1,0 +1,24 @@
+{
+  "description": "In this session, the audience engages with key figures in the Solana ecosystem, discussing the importance of community and meetups in the blockchain space. Chris McCann shares his early involvement with Solana and the innovative concept of proof of history introduced by Anatoly.",
+  "topic_summary": "The discussion revolves around the significance of community engagement in blockchain, early investments in Solana, and the introduction of proof of history as a scaling solution for blockchains. Key insights are shared by Chris McCann and others about their experiences and strategies.",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Investing",
+    "Community",
+    "Proof of History"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "SolanaFndn",
+    "WAGMI",
+    "Chris McCann",
+    "Anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the integration of traditional finance with blockchain technology at Binance Blockchain Week in Paris.",
+  "topic_summary": "Exploration of marketing strategies and security challenges in the context of blockchain and traditional finance [t=09:03].",
+  "router_tags": [
+    "Blockchain",
+    "Finance",
+    "Binance",
+    "Paris",
+    "Conference"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

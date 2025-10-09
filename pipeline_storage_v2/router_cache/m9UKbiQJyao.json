@@ -1,0 +1,26 @@
+{
+  "description": "This video explains how Binance protects your cryptocurrency through various security measures including cold storage, real-time monitoring, and an emergency fund known as SAFU. It emphasizes the importance of user responsibility in maintaining account security.",
+  "topic_summary": "Binance employs multi-layered security strategies to safeguard user funds from scams and hacks, including cold storage [t=39:04], real-time monitoring [t=53:12], and an emergency fund with $1 billion in USDC [t=157:28].",
+  "router_tags": [
+    "Binance",
+    "Crypto Security",
+    "SAFU",
+    "Cold Storage",
+    "Fraud Prevention"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Binance",
+    "$4.2 Billion",
+    "$1 Billion",
+    "@USDC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

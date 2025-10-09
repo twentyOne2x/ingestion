@@ -1,0 +1,29 @@
+{
+  "description": "A technical discussion panel featuring Solana, Nervos, and Lightyear, focusing on data availability and the importance of maintaining nodes for network reliability.",
+  "topic_summary": "The panel discusses data availability in blockchain networks, emphasizing the need for reliable node operation and the implications of decentralization on data storage and retrieval. Key points include the incentives for running nodes, the challenges of data availability, and the future potential of blockchain data.",
+  "router_tags": [
+    "Solana",
+    "Nervos",
+    "Lightyear",
+    "Blockchain",
+    "Data Availability",
+    "Technical Discussion"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "Solana Foundation",
+    "Nervos",
+    "nervos",
+    "Lightyear",
+    "lightyear"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@nervos",
+    "@lightyear"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Roger Bayston discusses the integration of traditional finance and cryptocurrency, highlighting Franklin Templeton's strategic partnership with Binance to enhance institutional development in digital assets.",
+  "topic_summary": "The conversation covers the evolution of digital assets, the role of tokenization in finance, and the potential of blockchain technology to transform capital markets [t=1:44 - t=18:56].",
+  "router_tags": [
+    "Digital Assets",
+    "Tokenization",
+    "Blockchain",
+    "Finance",
+    "Investment"
+  ],
+  "aliases": [
+    "Roger Bayston",
+    "roger bayston",
+    "Franklin Templeton",
+    "franklin templeton",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$FT",
+    "@FranklinTempleton",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

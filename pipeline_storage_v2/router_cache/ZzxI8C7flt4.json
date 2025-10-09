@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on whether the Premier League is the hardest league in the world, featuring a brief affirmation from Cristiano Ronaldo.",
+  "topic_summary": "Exploration of the Premier League's competitiveness and difficulty as perceived by Cristiano Ronaldo [t=0:24].",
+  "router_tags": [
+    "Premier League",
+    "Cristiano Ronaldo",
+    "Football"
+  ],
+  "aliases": [
+    "Premier league",
+    "premier League",
+    "Cristiano ronaldo",
+    "cristiano Ronaldo"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$PL",
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

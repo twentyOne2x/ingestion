@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of Binance Talks, Rachel Wolfson moderates a discussion on the evolving landscape of cryptocurrency payments, featuring industry experts who share insights on overcoming challenges and leveraging blockchain advantages. The episode includes giveaways and highlights the growing acceptance of crypto payments among businesses.",
+  "topic_summary": "The episode covers the transformation of crypto payments, the challenges to mainstream adoption, and the future of cryptocurrency in commerce, referencing the historical context of Bitcoin purchases and current trends in consumer behavior [t=217.25].",
+  "router_tags": [
+    "Binance",
+    "Crypto Payments",
+    "Blockchain",
+    "Web3",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Talks",
+    "binance talks",
+    "BINANCE TALKS"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$100",
+    "$4,000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

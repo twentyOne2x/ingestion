@@ -1,0 +1,21 @@
+{
+  "description": "Participants guess which memes are related to cryptocurrency for a chance to win 15 USDT.",
+  "topic_summary": "Crypto meme identification challenge with rewards [t=0:24].",
+  "router_tags": [
+    "crypto",
+    "memes",
+    "USDT",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance Asks The Streets",
+    "Binance asks the streets",
+    "binance asks the streets"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

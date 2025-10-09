@@ -1,0 +1,25 @@
+{
+  "description": "In this workshop, Jeff from the Binance Marchant team introduces Rex from Defi Safety, discussing the importance of security in DeFi and the parallels between aerospace processes and blockchain development. Rex emphasizes the need for transparency and a structured review process to build trust in a non-regulated environment. The session covers Defi Safety's vision, the review process, and the significance of clear, auditable metrics for developers and users alike.",
+  "topic_summary": "The workshop focuses on security in DeFi, highlighting the importance of transparency and structured processes similar to those in aerospace. Rex from Defi Safety explains how these principles can enhance trust and safety in decentralized finance.",
+  "router_tags": [
+    "DeFi",
+    "Security",
+    "Transparency",
+    "Blockchain",
+    "Smart Contracts",
+    "Audit"
+  ],
+  "aliases": [
+    "defi safety",
+    "DeFi Safety",
+    "defi",
+    "Defi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Binance",
+    "@Rex"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Binance Talks AI and Web3 features discussions on the intersection of artificial intelligence and blockchain technology, with insights from industry experts. The session includes a giveaway of $1,000 USD in crypto and a $4,000 USD crypto box, encouraging audience participation through retweets and live engagement.",
+  "topic_summary": "The panel explores how AI is transforming the Web3 landscape, addressing user experience challenges and the potential for mass adoption. Key speakers include Mayur from Binance and Arif Khan from Alethea AI, discussing the convergence of AI and blockchain technologies [t=218.15].",
+  "router_tags": [
+    "AI",
+    "Web3",
+    "Binance",
+    "NFT",
+    "crypto",
+    "blockchain",
+    "technology"
+  ],
+  "aliases": [
+    "Binance Talks AI",
+    "Binance Talks",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$1,000",
+    "$4,000",
+    "@BinanceYoutube",
+    "@arifkhan",
+    "@mayur"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Live AMA discussing Binance Smart Chain and its features, led by Jeff from the Binance Merchant team. The session covers the advantages of Binance Merchant, including its EVM compatibility, consensus mechanism, and transaction efficiency.",
+  "topic_summary": "Overview of Binance Smart Chain and its merchant services, highlighting benefits over Ethereum, including lower fees and faster transaction times [t=336.76].",
+  "router_tags": [
+    "Binance",
+    "Smart Chain",
+    "AMA",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Vietnam",
+    "Binance Smart Chain",
+    "Binance Merchants"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

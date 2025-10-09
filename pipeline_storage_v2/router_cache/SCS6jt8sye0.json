@@ -1,0 +1,22 @@
+{
+  "description": "This video covers the creation of custom account data on Solana, focusing on defining custom data types and fields. It explains the process of serializing Rust structs into bytes for storage on the blockchain and managing rent for account data. Key concepts include using Borsh for serialization and creating a new instruction for account creation.",
+  "topic_summary": "Learn how to create custom account data on Solana, including defining data types, serializing data, and managing rent for accounts [t=0:16 - t=3:01].",
+  "router_tags": [
+    "Solana",
+    "Custom Data",
+    "Blockchain",
+    "Borsh",
+    "Account Management"
+  ],
+  "aliases": [
+    "Solana Bytes",
+    "solana bytes",
+    "Solana bytes"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "L5KZrJh_Gaw",
+  "title": "2024-02-09_L5KZrJh_Gaw_Binance VIP Voices Ep. 6 - Exploring Institutional Adoption of Digital Assets in 2024",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "New Marcus",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Tracy Traxa",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

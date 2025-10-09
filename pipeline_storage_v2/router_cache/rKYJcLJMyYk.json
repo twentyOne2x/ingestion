@@ -1,0 +1,24 @@
+{
+  "description": "Learn how to buy and sell cryptocurrency on Binance Lite, a simplified trading platform. This guide covers identity verification, selecting cryptocurrencies, payment methods, and P2P trading options.",
+  "topic_summary": "This video explains the process of buying and selling crypto on Binance Lite, including identity verification, available fiat channels, and trading options [t=3:76].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Trading",
+    "Fiat"
+  ],
+  "aliases": [
+    "Binance Lite",
+    "binance lite",
+    "BINANCE LITE"
+  ],
+  "canonical_entities": [
+    "$GBP",
+    "$EUR",
+    "$VND",
+    "$COP",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,18 @@
+{
+  "description": "A casual discussion featuring various topics and interactions.",
+  "topic_summary": "The video includes greetings and informal exchanges, with mentions of giveaways and donations [t=456.22-3709.82].",
+  "router_tags": [
+    "casual",
+    "discussion",
+    "giveaway",
+    "donation"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

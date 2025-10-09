@@ -1,0 +1,28 @@
+{
+  "description": "This online course covers trading strategies for beginners, including portfolio risk management, trading types, and investment strategies. It discusses the importance of setting expectations and managing risks associated with various assets, such as market, liquidity, operational, and systematic risks. The course emphasizes the need for diversification and risk assessment in building a balanced portfolio.",
+  "topic_summary": "The course provides an overview of trading strategies, focusing on portfolio risk management, types of trading, and investment strategies. It highlights the significance of understanding risks and implementing effective risk management techniques to create a well-balanced investment portfolio. [t=0:16] - [t=6:96]",
+  "router_tags": [
+    "trading",
+    "investment strategies",
+    "portfolio management",
+    "risk management",
+    "crypto"
+  ],
+  "aliases": [
+    "Online Course For Beginners",
+    "Trading Strategies",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$BTC",
+    "@binanceacademy",
+    "$10",
+    "$2,000",
+    "$500",
+    "$9.95"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

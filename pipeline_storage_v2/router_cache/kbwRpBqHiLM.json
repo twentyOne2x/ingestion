@@ -1,0 +1,21 @@
+{
+  "description": "Exploration of Ethereum's recent performance and its potential for recovery in the current market cycle.",
+  "topic_summary": "Discussion on Ethereum's comeback and factors influencing its current market position [t=0:24].",
+  "router_tags": [
+    "Ethereum",
+    "Cryptocurrency",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "Ethereum",
+    "ethereum",
+    "ETH",
+    "eth"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,29 @@
+{
+  "description": "The talk features developers from Solana discussing their experiences and perspectives on building applications on the Solana blockchain. They share insights on the transition from traditional finance to blockchain development and the advantages of Solana's speed and efficiency for trading systems.",
+  "topic_summary": "Developers from Solana Labs share their insights on the advantages of Solana for building applications, including discussions on transitioning from traditional finance to blockchain and the potential for Solana to support high-frequency trading systems [t=252.98].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "Finance",
+    "Trading Systems",
+    "NFTs",
+    "DeFi"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@solanafndn",
+    "@irvin",
+    "@bartosz",
+    "@dylan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

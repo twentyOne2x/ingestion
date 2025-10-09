@@ -1,0 +1,21 @@
+{
+  "description": "This video introduces Anchor, a framework for building Solana programs, by converting a hello World program from the Solana program Crate to Anchor format. It covers key differences in code structure, including the use of context structs and IDLs for instruction data management.",
+  "topic_summary": "Introduction to Anchor framework for Solana programming, highlighting code conversion from Solana program Crate to Anchor, and explaining key structural differences.",
+  "router_tags": [
+    "Solana",
+    "Anchor",
+    "Programming",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Anchor",
+    "anchor",
+    "ANCHOR"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

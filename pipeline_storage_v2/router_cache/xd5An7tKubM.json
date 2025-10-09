@@ -1,0 +1,27 @@
+{
+  "description": "The Solana Season Opening Ceremony features discussions on the upcoming hackathon, regional tracks, and the innovative projects expected to emerge. Anatoly Onkovanka and Raj Gokul introduce the event, emphasizing the importance of community engagement and the potential for groundbreaking developments in the Solana ecosystem. The hackathon begins on May 15th with a $1 million prize pool, targeting specific regions including Eastern Europe, China, Brazil, and India.",
+  "topic_summary": "Overview of the Solana Season hackathon, its regional tracks, and the innovative projects anticipated in the Solana ecosystem. Key speakers include Anatoly Onkovanka and Raj Gokul, discussing the event's goals and community involvement [t=0:24 - t=15:00].",
+  "router_tags": [
+    "Solana",
+    "Hackathon",
+    "Blockchain",
+    "Crypto",
+    "Innovation",
+    "Community"
+  ],
+  "aliases": [
+    "Solana Season",
+    "Solana season",
+    "solana season",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@rajgokul"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Rohit, a developer at REN, discusses building cross-chain Dapps on Solana using RenVM, highlighting its decentralized nature and the ability to bridge assets like Bitcoin and Zcash to Solana. He explains the process of interacting with RenVM, including obtaining a gateway address, submitting transactions, and minting assets on the target chain. The presentation covers the volume of assets bridged and the functionality for burning tokens back to their original chains.",
+  "topic_summary": "Overview of RenVM's capabilities for bridging assets across chains, focusing on Solana integration and the developer workflow for using RenVM to mint and burn tokens.",
+  "router_tags": [
+    "Solana",
+    "RenVM",
+    "Cross-Chain",
+    "Blockchain",
+    "Dapps"
+  ],
+  "aliases": [
+    "RenVM",
+    "renvm",
+    "Ren Vm",
+    "RENVM"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BTC",
+    "$LUNA",
+    "$250 Million",
+    "$500 Million"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

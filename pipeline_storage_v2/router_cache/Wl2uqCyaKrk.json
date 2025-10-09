@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concept of DeFi, highlighting its role in financial services and its reliance on blockchain technology and smart contracts.",
+  "topic_summary": "DeFi refers to an ecosystem of financial applications built on blockchain networks, aiming for an open source, permissionless, and transparent financial services environment. Users maintain control over their assets and engage through decentralized applications [t=0:24].",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Financial Services",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Defi",
+    "deFi",
+    "DeFi Academy"
+  ],
+  "canonical_entities": [
+    "$DEFI",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

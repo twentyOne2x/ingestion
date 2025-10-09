@@ -1,0 +1,23 @@
+{
+  "description": "Masterclass on digital art and NFTs featuring discussions on electronic art and marketplaces.",
+  "topic_summary": "Exploration of digital photography and electronic art, including references to Crypto Punks and global art contexts [t=0:24 - t=39:33].",
+  "router_tags": [
+    "NFT",
+    "Digital Art",
+    "Crypto Punks",
+    "Art Market"
+  ],
+  "aliases": [
+    "Arte Digital de principio a NFT",
+    "Masterclass Arte Digital",
+    "NFT Masterclass"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@Monica",
+    "@RachelBaker",
+    "@RusakEstudio"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

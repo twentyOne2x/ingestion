@@ -1,0 +1,27 @@
+{
+  "description": "An overview of oracles in the cryptocurrency landscape, featuring discussions on HAPI, a cybersecurity layer aimed at preventing money laundering and alerting exchanges about illicit activities.",
+  "topic_summary": "The workshop covers the role of oracles in cryptocurrency, focusing on HAPI's function in cybersecurity and its integration with data providers like Cipher Trace. The discussion includes the significance of HAPI's upcoming launch and its potential impact on the crypto ecosystem [t=5:60].",
+  "router_tags": [
+    "Oracles",
+    "HAPI",
+    "Cybersecurity",
+    "Cryptocurrency",
+    "Data Providers"
+  ],
+  "aliases": [
+    "Hapi",
+    "HAPI",
+    "happy",
+    "Happy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@Bartos",
+    "@Jumbo",
+    "@CipherTrace"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

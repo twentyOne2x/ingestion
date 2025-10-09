@@ -1,0 +1,22 @@
+{
+  "description": "This session covers Solana validator rewards, key management, and best practices. It aims to be interactive, encouraging questions and feedback from participants.",
+  "topic_summary": "Discussion on validator rewards, key management, and best practices, with an emphasis on collaborative learning and Q&A [t=19:76].",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Education",
+    "Rewards",
+    "Key Management"
+  ],
+  "aliases": [
+    "Solana Validator Education",
+    "Solana Validator Rewards",
+    "Validator Education"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

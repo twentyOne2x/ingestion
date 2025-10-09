@@ -1,0 +1,20 @@
+{
+  "video_id": "fAuh6CbEZ84",
+  "title": "2022-11-21_fAuh6CbEZ84_Binance Earn - POLYX AMA with Head of Tokenization Graeme Moore",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Graham Moore",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

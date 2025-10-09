@@ -1,0 +1,28 @@
+{
+  "description": "Join us for a live discussion on the recent rally in cryptocurrencies, featuring insights from Alice Lu, head of research at CoinMarketCap. We explore the market's performance, including Bitcoin's rise to around $86,000, and the impact of the latest Fed interest rate decisions on market sentiment. Don't miss our giveaway for a chance to win from a 2 BNB prize pool!",
+  "topic_summary": "This livestream covers the recent cryptocurrency market rally, the influence of Fed interest rate decisions, and a giveaway announcement. Key topics include Bitcoin's price movements and the overall market sentiment shift.",
+  "router_tags": [
+    "Cryptocurrency",
+    "Bitcoin",
+    "BNB",
+    "CoinMarketCap",
+    "Market Analysis",
+    "Fed Interest Rates",
+    "Live Stream",
+    "Giveaway"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "CoinMarketCap",
+    "coinmarketcap"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@CoinMarketCap",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

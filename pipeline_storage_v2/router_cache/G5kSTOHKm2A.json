@@ -1,0 +1,28 @@
+{
+  "description": "Panel discussion on user control in blockchain, focusing on UX interfaces, wallets, and private key management. Panelists include Philip from Sulfur, Brandon from Phantom, and Maria from Slope Finance, discussing custodial vs non-custodial models and user empowerment.",
+  "topic_summary": "Exploration of user control layers in blockchain technology, discussing the balance between custodial and non-custodial wallet models, and the implications for user empowerment in Web3 applications. [t=175.64]",
+  "router_tags": [
+    "blockchain",
+    "user experience",
+    "wallets",
+    "custodial",
+    "non-custodial",
+    "Web3"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "User Control Layer",
+    "Gateways to Public Blockchains"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@BrandonMillman",
+    "@MariaPhillips",
+    "@Sulfur",
+    "@Phantom",
+    "@SlopeFinance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on how investors can add value beyond just capital, featuring insights from Shane, Ian, and Jasmine on democratizing investment and the evolving role of investors.",
+  "topic_summary": "The panel explores the transformation in investing, emphasizing the importance of adding value and differentiating oneself in a competitive landscape. Key topics include the democratization of investing, the role of cryptocurrency exchanges, and the focus on finance, metaverse, and DAO infrastructure in investment strategies. [t=17:44] [t=39:31] [t=288:15]",
+  "router_tags": [
+    "Investing",
+    "Cryptocurrency",
+    "Value Addition",
+    "Finance",
+    "Metaverse",
+    "DAO"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Beyond Capital",
+    "Investors Add Value"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Shane",
+    "@Ian",
+    "@Jasmine",
+    "$ETH",
+    "$XINFINITY",
+    "$TERRA",
+    "$BINANCE",
+    "$COINBASE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

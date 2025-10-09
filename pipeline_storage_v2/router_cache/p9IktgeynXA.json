@@ -1,0 +1,21 @@
+{
+  "description": "This video explores how blockchain technology utilizes game theory and cryptography to enable trustless interactions among users without a central authority.",
+  "topic_summary": "The video discusses the mechanisms of blockchain technology, focusing on the roles of game theory and cryptography in facilitating secure transactions among untrusting parties [t=1:28].",
+  "router_tags": [
+    "Blockchain",
+    "Game Theory",
+    "Cryptography",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Blockchain Relies On A Mix Of Game Theory And Cryptography",
+    "Blockchain Game Theory",
+    "Cryptography In Blockchain"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

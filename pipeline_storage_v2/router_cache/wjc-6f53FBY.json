@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on NFTs featuring Rajani Prada, Shamiko, Sonia Normani, Misha, and Zuki Zizniak Zaniyah, exploring the current marketplace and trends in digital art and crypto.",
+  "topic_summary": "Exploration of NFT trends and community dynamics, with insights from various speakers on the evolving landscape of digital art and technology [t=0:24].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Digital Art",
+    "Marketplace",
+    "Community"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@rajani_prada",
+    "@shamiko",
+    "@sonia_normani",
+    "@misha",
+    "@zuki_zizniak_zaniyah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

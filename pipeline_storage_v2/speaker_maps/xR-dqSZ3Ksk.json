@@ -1,0 +1,26 @@
+{
+  "video_id": "xR-dqSZ3Ksk",
+  "title": "2021-11-15_xR-dqSZ3Ksk_Breakpoint 2021: Surf's Up: Demos from the Solana Ecosystem (Day 1)",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "F": {
+      "name": "Mark Zuckerberg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Stella Kwok",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

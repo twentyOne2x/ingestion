@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on user-generated content, blockchain technology, and the metaverse, focusing on play-to-earn ecosystems and NFTs.",
+  "topic_summary": "Exploration of blockchain technology and its applications in gaming and NFTs, including play-to-earn models and community engagement [t=03:41].",
+  "router_tags": [
+    "blockchain",
+    "NFT",
+    "gaming",
+    "metaverse",
+    "play-to-earn"
+  ],
+  "aliases": [
+    "CoinEp.2",
+    "Coin Episode 2",
+    "Coin Ep.2"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

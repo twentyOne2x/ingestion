@@ -1,0 +1,24 @@
+{
+  "description": "Binance addresses common misconceptions about cryptocurrency, emphasizing its legitimate use and value. The video counters myths such as crypto being solely for criminals, lacking real value, and being too expensive. It highlights the significant role of cryptocurrencies in modern finance and their accessibility to all users.",
+  "topic_summary": "This video debunks six major crypto myths, including misconceptions about its use, value, and accessibility. It provides factual insights into the legitimacy and utility of cryptocurrencies, aiming to educate both newcomers and seasoned traders [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "myths",
+    "Binance",
+    "Bitcoin",
+    "Ethereum",
+    "education"
+  ],
+  "aliases": [
+    "Crypto Myths Busted",
+    "Crypto Myths BUSTED",
+    "crypto myths busted"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

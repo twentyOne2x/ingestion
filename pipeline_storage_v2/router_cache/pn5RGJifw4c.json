@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on compliance with anti-money laundering regulations in Latin America, focusing on fintech developments and the impact of local conditions on financial systems.",
+  "topic_summary": "Exploration of compliance challenges in Latin America, particularly in Colombia, regarding fintech and the influence of local crime on financial practices [t=00:03 - t=01:29].",
+  "router_tags": [
+    "Fintech",
+    "Compliance",
+    "Latin America",
+    "Blockchain",
+    "Financial Inclusion"
+  ],
+  "aliases": [
+    "Cumplimiento de LA-FT en Latam",
+    "Compliance in Latam",
+    "LA-FT Compliance Latin America"
+  ],
+  "canonical_entities": [
+    "$COL",
+    "@BinanceYoutube",
+    "$PWC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

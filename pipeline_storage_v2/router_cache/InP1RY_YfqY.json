@@ -1,0 +1,21 @@
+{
+  "description": "CZ discusses the criteria for listing a coin on Binance, emphasizing the importance of user base and liquidity.",
+  "topic_summary": "Key factors for coin listings on Binance include user numbers and utility value, as highlighted by CZ [t=0:16]. A large user base attracts exchanges due to liquidity needs [t=1:48].",
+  "router_tags": [
+    "Binance",
+    "coin listing",
+    "cryptocurrency",
+    "CZ"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

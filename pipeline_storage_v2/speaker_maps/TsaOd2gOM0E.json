@@ -1,0 +1,20 @@
+{
+  "video_id": "TsaOd2gOM0E",
+  "title": "2022-09-23_TsaOd2gOM0E_Optimistic vs. Zero-Knowledge (ZK) Rollups & How They Power Scalability - With Ashley Spradlin",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nina Xiang",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

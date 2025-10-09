@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on various topics including NFTs, trading, and community engagement.",
+  "topic_summary": "The video features a conversation with Dindama and Dinama, touching on NFTs and trading strategies, with mentions of Warren Buffett and community interactions [t=01:18].",
+  "router_tags": [
+    "crypto",
+    "NFT",
+    "trading",
+    "community"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@WarrenBuffett",
+    "@HojinChen",
+    "@DorianBingChan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,33 @@
+{
+  "description": "Darren moderates a discussion on market efficiencies for the masses, featuring insights from industry leaders including Dan Gunsberg of Hero Network and Justin Schmidt of Talos. They explore the differences in building for retail versus institutional users, emphasizing the importance of KYC and the potential of decentralized derivatives, which represent a market opportunity of nearly $200 trillion.",
+  "topic_summary": "The panel discusses the evolution of market efficiencies, focusing on decentralized finance and the role of institutions in the crypto space. They highlight the need for user-friendly interfaces and regulatory considerations to attract institutional investment, while also addressing the current market cap of crypto at just under $3 trillion.",
+  "router_tags": [
+    "Market Efficiency",
+    "Decentralized Finance",
+    "Institutional Investment",
+    "Retail Users",
+    "KYC",
+    "Derivatives"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Market Efficiencies",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Darren",
+    "@DanGunsberg",
+    "@JustinSchmidt",
+    "@Norbert",
+    "@AntonBukov",
+    "$3 Trillion",
+    "$188 Trillion",
+    "Hero Network",
+    "Talos",
+    "Civic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

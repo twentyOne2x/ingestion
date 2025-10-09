@@ -1,0 +1,23 @@
+{
+  "description": "Vinny Lingham, CEO of Civic, discusses his insights on blockchain technology and his partnership with Anatoly, emphasizing the importance of technical expertise in scaling solutions like Solana. He highlights the unique capabilities of Solana in delivering high throughput at low costs, making it suitable for commercial applications.",
+  "topic_summary": "Vinny Lingham shares his perspective on blockchain scaling, the significance of Anatoly's expertise, and the advantages of Solana in the current market [t=87:30].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Civic",
+    "Vinny Lingham",
+    "Anatoly"
+  ],
+  "aliases": [
+    "Vinny Lingham",
+    "Vinny Lingam",
+    "Civic",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "@anatoly",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Workshop covering the Pyth architecture, integration as a publisher on the PIF network, and the workings of the PIF aggregator. Discussion includes the importance of price and confidence intervals, RPC nodes, and the PIF integration process.",
+  "topic_summary": "The workshop introduces Pyth as a price oracle on the Solana blockchain, explaining how it aggregates data from publishers and the significance of confidence intervals in price reporting. It also outlines the PIF integration process and the roles of different environments like DevNet, TestNet, and MainNet [t=101.91].",
+  "router_tags": [
+    "Pyth",
+    "Solana",
+    "Blockchain",
+    "Integration",
+    "Price Oracle"
+  ],
+  "aliases": [
+    "Pyth Workshop",
+    "Pyth Architecture",
+    "Pyth Integration"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BTC",
+    "@Mike",
+    "@Samir",
+    "@Jayant",
+    "@Honick"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

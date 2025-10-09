@@ -1,0 +1,20 @@
+{
+  "description": "Celebrating the sixth anniversary of Binance with the community, highlighting the journey and future aspirations.",
+  "topic_summary": "Binance marks its sixth birthday, expressing gratitude and commitment to growth and collaboration [t=2:64].",
+  "router_tags": [
+    "Binance",
+    "Anniversary",
+    "Community"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Join Binance as they celebrate 8 years of innovation and community building. Hear heartfelt stories from Binance angels and insights from co-founder E on the evolution of crypto and the significance of Bitcoin's recent all-time high.",
+  "topic_summary": "Celebration of Binance's 8th anniversary featuring community stories and insights from co-founder E about the crypto industry's growth and Bitcoin's all-time high [t=199.08].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Bitcoin",
+    "Anniversary",
+    "Community"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

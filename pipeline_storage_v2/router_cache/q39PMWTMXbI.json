@@ -1,0 +1,25 @@
+{
+  "description": "Niraj Agarwal discusses the disconnect between crypto promises and reality, highlighting issues like financial surveillance and the Tornado Cash sanction. He emphasizes the challenges faced by policymakers and the media in understanding the crypto landscape, particularly regarding retail investor risks.",
+  "topic_summary": "The panel addresses the hype in the crypto industry, focusing on the disparity between promises made by entrepreneurs and the actual delivery of products. It critiques marketing tactics that mislead investors and discusses the implications of retail investment in crypto networks.",
+  "router_tags": [
+    "Web3",
+    "Zero-Knowledge",
+    "Bitcoin",
+    "Crypto",
+    "Tornado Cash",
+    "Coincenter",
+    "Financial Surveillance"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@NirajAgarwal",
+    "@Coincenter"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

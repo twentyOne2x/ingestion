@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Solana's network improvements and cost modeling in versions 1.8 and 1.9, featuring insights from Dao Zhu and Tao from Solana Labs. Key topics include block production optimization, compute unit costs, and transaction handling strategies.",
+  "topic_summary": "Overview of Solana's 1.8 and 1.9 updates, focusing on compute unit cost modeling and network optimization strategies [t=39:44].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Cost Modeling",
+    "Network Optimization",
+    "Validators"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Talk",
+    "Solana Validator Meeting"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@DaoZhu",
+    "@Tao"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

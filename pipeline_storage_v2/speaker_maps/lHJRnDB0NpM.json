@@ -1,0 +1,14 @@
+{
+  "video_id": "lHJRnDB0NpM",
+  "title": "2021-08-12_lHJRnDB0NpM_Binance 4th Anniversary CZ AMA",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

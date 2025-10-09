@@ -1,0 +1,19 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency and trading strategies.",
+  "topic_summary": "Discussion on trading strategies, market conditions, and cryptocurrency insights [t=0:16 - t=60:09].",
+  "router_tags": [
+    "Q&A",
+    "Cryptocurrency",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Binance 60",
+    "Binance 60 - Edicao #48",
+    "Binance Q&A"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Binance P2P services in Bolivia and Uruguay, emphasizing the importance of cryptocurrency transactions and the efficiency of Binance's platform.",
+  "topic_summary": "Overview of Binance P2P operations in Bolivia and Uruguay, highlighting transaction methods and user experiences [t=24:64-490:41].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Bolivia",
+    "Uruguay",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance P2p",
+    "BINANCE P2P"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

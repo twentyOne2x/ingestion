@@ -1,0 +1,27 @@
+{
+  "description": "Day three of Breakpoint 2021 features discussions on NFTs, including a panel moderated by Jordan Pretty, focusing on their applications in gaming, art, and social media. Workshops will also cover NFT developments on Solana, including a session by Neon Labs.",
+  "topic_summary": "The session explores the evolution and impact of NFTs on Solana, featuring insights from industry leaders and discussions on past projects that shaped the NFT landscape [t=198.08].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Metaplex",
+    "Breakpoint",
+    "Jordan Pretty",
+    "Neon Labs"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Breakpoint",
+    "SUD Day 3"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JordanPretty",
+    "@NeonLabs",
+    "@Metaplex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

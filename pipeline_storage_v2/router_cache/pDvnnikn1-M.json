@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on recent developments in the cryptocurrency market.",
+  "topic_summary": "Overview of cryptocurrency trends and insights as of [t=01:04].",
+  "router_tags": [
+    "cryptocurrency",
+    "market trends",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceZH",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

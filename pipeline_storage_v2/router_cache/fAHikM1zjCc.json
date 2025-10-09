@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, the Solana Foundation's Dev Relations Team discusses the recent Summer Camp Hackathon, the announcement of the Fire Dancer validator client by Jump Crypto, and new features like address lookup tables and scrambled transactions. They emphasize community contributions to open source educational material and improvements in developer experience.",
+  "topic_summary": "The video covers updates from the Solana ecosystem, including the conclusion of the Summer Camp Hackathon [t=11:76], the introduction of the Fire Dancer validator client [t=30:99], and new features such as scrambled transactions [t=96:40] and address lookup tables [t=144:38].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Development",
+    "Hackathon",
+    "Open Source"
+  ],
+  "aliases": [
+    "solana",
+    "Solana",
+    "Solana Foundation",
+    "solana foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JumpCrypto",
+    "@Coral"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

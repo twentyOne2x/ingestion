@@ -1,0 +1,32 @@
+{
+  "description": "Discussion on various topics including DeFi, Uniswap, and notable figures in the crypto space.",
+  "topic_summary": "The conversation covers DeFi trends, notable personalities like Luna and Hamilton, and various platforms such as Uniswap and Polygon, with references to community engagement and social media [t=26:01].",
+  "router_tags": [
+    "DeFi",
+    "Uniswap",
+    "Crypto",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$LUNA",
+    "@sam",
+    "@hamilton",
+    "@jesus",
+    "@jim",
+    "@stella",
+    "@daisy",
+    "@zhangtao",
+    "@nikono",
+    "@toddjim",
+    "@obizatownhall",
+    "@benshanju"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

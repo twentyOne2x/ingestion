@@ -1,0 +1,22 @@
+{
+  "description": "DApps, or decentralized applications, utilize smart contracts on distributed networks, differing from traditional mobile apps that depend on centralized systems. They are open source, allowing verification and modification of their code. Information is secured and stored on a public blockchain, accessible via cryptographic tokens. DApps encompass all applications with smart contract functionalities on blockchain networks.",
+  "topic_summary": "This video explains what DApps are, highlighting their reliance on smart contracts, open-source nature, cryptographic security, and access through tokens. It emphasizes the distinction between DApps and standard applications, as well as the role of smart contracts in providing a complete application experience [t=0:00 - t=0:44].",
+  "router_tags": [
+    "DApp",
+    "Decentralized Application",
+    "Smart Contracts",
+    "Blockchain"
+  ],
+  "aliases": [
+    "dapp",
+    "Dapp",
+    "Decentralized App",
+    "decentralized application"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

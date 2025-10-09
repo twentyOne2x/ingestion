@@ -1,0 +1,20 @@
+{
+  "video_id": "YWc-g8g0VvA",
+  "title": "2024-07-28_YWc-g8g0VvA_Crypto  Ferrari",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Cristiano Ronaldo",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

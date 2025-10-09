@@ -1,0 +1,24 @@
+{
+  "description": "A review of Binance's significant contributions and initiatives throughout 2022, including support for refugees, industry recovery efforts, and community engagement.",
+  "topic_summary": "Reflecting on Binance's impact in 2022, including the launch of Binance Card Ukraine [t=12:24], the Industry Recovery initiative [t=35:82], and charitable donations exceeding $23 million [t=130:48].",
+  "router_tags": [
+    "Binance",
+    "Web3",
+    "Charity",
+    "Crypto",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "$1 Billion",
+    "$23 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

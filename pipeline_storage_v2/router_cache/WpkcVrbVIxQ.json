@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses major DeFi use cases including lending, borrowing, and the concept of stablecoins. It highlights the early stage of DeFi in areas like mortgages and insurance.",
+  "topic_summary": "Explores DeFi use cases such as lending, borrowing, and stablecoins, emphasizing the current limitations and potential of blockchain-based financial services [t=0:64-41:79].",
+  "router_tags": [
+    "DeFi",
+    "Stablecoins",
+    "Cryptocurrency",
+    "Blockchain",
+    "Financial Services"
+  ],
+  "aliases": [
+    "DeFi Use Cases",
+    "Stablecoin Overview",
+    "What is DeFi"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

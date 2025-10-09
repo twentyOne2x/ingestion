@@ -1,0 +1,26 @@
+{
+  "description": "Sebastien Borget discusses the thriving state of Web3 at Binance Blockchain Week, emphasizing community engagement and the importance of events in driving momentum. He highlights the Sandbox as a decentralized platform enabling users to create and monetize 3D content without coding, showcasing its growth and partnerships with major brands.",
+  "topic_summary": "At [t=0:32], Sebastien Borget expresses excitement about Binance Blockchain Week. He discusses the significance of community events in fostering industry momentum at [t=10:64]. Borget explains the Sandbox's role in Web3, allowing users to create and monetize content easily at [t=172:10]. He notes the platform's growth, user engagement, and partnerships with brands like Snoop Dogg and Ubisoft at [t=203:80].",
+  "router_tags": [
+    "Web3",
+    "Sandbox",
+    "Binance Blockchain Week",
+    "Decentralized Gaming",
+    "NFTs",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Sebastien Borget",
+    "Sebastian Borget",
+    "Sandbox",
+    "The Sandbox"
+  ],
+  "canonical_entities": [
+    "$SAND",
+    "@BinanceYoutube",
+    "@SnoopDogg",
+    "@Ubisoft"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

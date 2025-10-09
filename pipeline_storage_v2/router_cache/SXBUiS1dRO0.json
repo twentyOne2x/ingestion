@@ -1,0 +1,32 @@
+{
+  "description": "Kevin from Jet Protocol discusses his background and the use of Oracles in their borrowing and lending application. He explains Jet's origins from a hackathon, the roles of co-founders James and Will, and the philosophy behind their approach to debt markets. He highlights the importance of liquidity and the model they use, comparing it to established platforms like AAVE and Compound.",
+  "topic_summary": "Kevin shares insights on Jet Protocol's development, its team, and the application of Oracles in their financial services. He emphasizes the significance of debt as a tool and the company's focus on enhancing their lending model.",
+  "router_tags": [
+    "Jet Protocol",
+    "Oracles",
+    "DeFi",
+    "Ethereum",
+    "Solana",
+    "Lending",
+    "Borrowing"
+  ],
+  "aliases": [
+    "Jet Protocol",
+    "jet protocol",
+    "JET PROTOCOL"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@anatoly",
+    "$1",
+    "$9 Billion",
+    "@Makerdao",
+    "@Consensys",
+    "@Infura",
+    "@BlockDaemon",
+    "@Compound"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

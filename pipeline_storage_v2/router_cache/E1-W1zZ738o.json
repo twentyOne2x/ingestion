@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on Neon EVM, a solution for integrating Ethereum Virtual Machine compatibility into Solana, addressing developer challenges and enhancing transaction processing efficiency.",
+  "topic_summary": "Exploration of Neon EVM's development journey, its unique approach to EVM compatibility on Solana, and the benefits for developers in terms of ease of use and performance improvements. Key points include the need for EVM support on Solana, the architecture of Neon EVM, and its parallel execution capabilities [t=13:92-369:82].",
+  "router_tags": [
+    "EVM",
+    "Solana",
+    "Neon",
+    "Ethereum",
+    "Blockchain",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Neon EVM",
+    "neon evm",
+    "Neon",
+    "neon"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ETH",
+    "$SUSHI",
+    "$AAVE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

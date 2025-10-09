@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the importance of blockchain and cryptocurrency expertise at the Binance Blockchain Week in Paris, featuring insights from various speakers.",
+  "topic_summary": "The conversation highlights the significance of understanding blockchain technology and its implications, with references to notable figures like Michael Jordan and the role of Binance in the crypto space [t=17:68].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Cryptocurrency",
+    "Paris",
+    "Michael Jordan"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance",
+    "@michaeljordan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

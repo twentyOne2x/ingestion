@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on various topics including finance, KYC, and liquidity pools. Mentions of individuals like Zhang, Joshua, and Jesus throughout the conversation.",
+  "topic_summary": "The video covers financial discussions, KYC processes, and liquidity pools, with references to various individuals and cultural elements [t=0:16 - t=58:95].",
+  "router_tags": [
+    "finance",
+    "KYC",
+    "liquidity",
+    "pancake swap"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

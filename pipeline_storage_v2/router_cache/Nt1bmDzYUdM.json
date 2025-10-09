@@ -1,0 +1,23 @@
+{
+  "description": "This video explores how players can earn rewards in GameFi, including cryptocurrencies and in-game assets like NFTs. It discusses the different models adopted by GameFi projects and the role of NFTs in trading and gameplay benefits.",
+  "topic_summary": "The video explains the mechanisms of earning rewards in GameFi, highlighting the types of rewards available, the significance of NFTs, and the varying economic models across different games. Key points include the conversion of in-game assets to NFTs and the impact of collectibles on gameplay [t=0:32 - t=53:53].",
+  "router_tags": [
+    "GameFi",
+    "NFT",
+    "Rewards",
+    "Cryptocurrency",
+    "In-Game Assets"
+  ],
+  "aliases": [
+    "Gamefi",
+    "Nft",
+    "Rewards In GameFi",
+    "How Players Earn In GameFi"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

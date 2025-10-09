@@ -1,0 +1,29 @@
+{
+  "description": "This webinar covers NFTs, candlestick patterns, and prediction markets. It introduces NFTs as unique digital assets and discusses their potential in various applications, including gaming and fractional ownership. The session also explores candlestick patterns in technical analysis and blockchain's role in prediction markets.",
+  "topic_summary": "The session begins with an introduction to NFTs [t=104.64], explaining their uniqueness and applications [t=147.01]. It discusses examples like CryptoKitties [t=301.6] and Decentraland [t=354.32], and concludes with a transition to candlestick patterns [t=478.73].",
+  "router_tags": [
+    "NFTs",
+    "Candlestick Patterns",
+    "Prediction Markets",
+    "Blockchain",
+    "Cryptocurrency",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "NFTs",
+    "nfts",
+    "Candlestick Patterns",
+    "candlestick patterns"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video provides a concise guide on how to buy Bitcoin and other cryptocurrencies on Binance, covering essential steps and tips.",
+  "topic_summary": "Learn how to purchase Bitcoin and other cryptocurrencies on Binance in this brief tutorial [t=02:20].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Binance",
+    "Buying Guide"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

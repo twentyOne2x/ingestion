@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concepts of hard forks and soft forks in blockchain technology, detailing how hard forks create two separate networks and how soft forks maintain backward compatibility.",
+  "topic_summary": "Hard forks create incompatible changes leading to two distinct networks [t=0:48]. Soft forks allow upgrades without disrupting the existing network [t=17:52].",
+  "router_tags": [
+    "blockchain",
+    "hard fork",
+    "soft fork",
+    "cryptocurrency",
+    "network upgrade"
+  ],
+  "aliases": [
+    "What Are Hard Forks & Soft Forks",
+    "Hard Forks and Soft Forks Explained",
+    "Understanding Hard Forks and Soft Forks"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

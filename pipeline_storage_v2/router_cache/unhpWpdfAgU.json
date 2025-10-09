@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Ethereum, its origins, and how it functions as a decentralized platform for smart contracts and applications.",
+  "topic_summary": "Ethereum, introduced by Vitalik Buterin in 2013, is a decentralized blockchain platform that enables developers to create and deploy smart contracts without the need for a separate blockchain. It utilizes the Ethereum Virtual Machine (EVM) for executing scripts and requires payment in Ether for operations, measured in gas. Ethereum's decentralized nature ensures reliability and censorship resistance, making it a preferred choice over traditional servers for application deployment. [t=0:16] [t=1:12] [t=145:60]",
+  "router_tags": [
+    "Ethereum",
+    "Blockchain",
+    "Smart Contracts",
+    "Cryptocurrency",
+    "Decentralization"
+  ],
+  "aliases": [
+    "ethereum",
+    "Ethereum",
+    "ETH",
+    "Ether"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@VitalikButerin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

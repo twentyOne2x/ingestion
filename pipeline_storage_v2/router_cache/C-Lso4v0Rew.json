@@ -1,0 +1,25 @@
+{
+  "description": "This video provides a beginner's guide to trading on Binance Spot, covering key concepts such as market and limit orders, and how to buy and sell cryptocurrencies effectively.",
+  "topic_summary": "Learn about Binance Spot trading, including market and limit orders, and strategies for buying and selling cryptocurrencies [t=0:00 - t=3:32].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Trading",
+    "Spot Trading",
+    "Market Orders",
+    "Limit Orders"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "Manuel",
+    "manuel"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

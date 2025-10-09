@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the risks associated with using public WiFi, including man-in-the-middle attacks and cookie theft. It provides tips on how to protect yourself while using public networks.",
+  "topic_summary": "Public WiFi poses significant security risks, including man-in-the-middle attacks [t=16:88] and cookie theft [t=140:47]. Users are advised to verify network authenticity and utilize VPNs for sensitive activities [t=212:5].",
+  "router_tags": [
+    "Public WiFi",
+    "Cybersecurity",
+    "Online Safety",
+    "Man-in-the-Middle Attacks",
+    "VPN"
+  ],
+  "aliases": [
+    "Public Wifi Risks",
+    "WiFi Security",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

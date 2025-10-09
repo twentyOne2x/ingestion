@@ -1,0 +1,26 @@
+{
+  "description": "Discussion featuring various speakers including Rahul, Susan, and Hamish, focusing on topics related to BTC and NFTs.",
+  "topic_summary": "The conversation covers BTC and NFTs, with insights from multiple participants including Rahul and Susan, discussing trends and personal experiences [t=04:88].",
+  "router_tags": [
+    "BTC",
+    "NFT",
+    "cryptocurrency",
+    "discussion"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@rahul",
+    "@susan",
+    "@hamish",
+    "@yeshukan",
+    "@shimon",
+    "@rahuldalyusha"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

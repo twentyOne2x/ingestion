@@ -1,0 +1,22 @@
+{
+  "description": "This video provides a step-by-step guide on how to verify your identity on Binance, including filling out account information, uploading ID documentation, and taking a selfie. It also offers tips for successful verification and explains the benefits of account verification, such as increased deposit and withdrawal limits.",
+  "topic_summary": "Learn how to verify your Binance account in three steps: provide personal information, upload ID documentation, and submit a selfie. Tips for successful verification are also included, along with details on account limits post-verification [t=283.69].",
+  "router_tags": [
+    "Binance",
+    "Account Verification",
+    "Cryptocurrency",
+    "Identity Verification",
+    "KYC"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

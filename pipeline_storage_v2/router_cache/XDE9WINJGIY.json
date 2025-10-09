@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the gender gap in crypto ownership, highlighting that only 37% of crypto owners are women. It emphasizes the opportunity this gap presents for women to take charge of the future of finance and encourages all women to engage with crypto through Binance.",
+  "topic_summary": "The video addresses the significant gender gap in cryptocurrency ownership, noting that only 37% of owners are women. It calls for women to seize the opportunity to shape the future of finance, promoting Binance as a resource for crypto education and engagement [t=0:24-0:40].",
+  "router_tags": [
+    "Crypto",
+    "Gender Gap",
+    "Finance",
+    "Women in Crypto",
+    "Binance"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

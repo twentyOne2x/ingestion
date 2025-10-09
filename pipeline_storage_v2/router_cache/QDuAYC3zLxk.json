@@ -1,0 +1,27 @@
+{
+  "description": "Chris McCann introduces the Alpha League Solana Hackathon series with participants discussing developments in the Solana ecosystem. Matthew Graham shares insights on the growth of the Solana DeFi space, highlighting investments in Orca and the overall excitement about developer talent and NFT activity. Nick Gustafson joins to discuss trading and venture investing focused on Solana, emphasizing the network's speed and cost-effectiveness.",
+  "topic_summary": "Discussion on the Solana ecosystem's growth, focusing on DeFi developments, investments, and the influx of talent in the space. Key participants include Chris McCann, Matthew Graham, and Nick Gustafson, who share their experiences and insights on the current state of Solana and its projects [t=0:24 - t=3:49].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Hackathon",
+    "Investing",
+    "NFTs"
+  ],
+  "aliases": [
+    "solana",
+    "defi",
+    "alpha league",
+    "hackathon",
+    "race capital"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@ChrisMcCann",
+    "@MatthewGraham",
+    "@NickGustafson",
+    "@SinoGlobal"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

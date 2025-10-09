@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on the future of the creator economy powered by Solana, highlighting the challenges creators face in Web2 and the potential of NFTs to enhance the creative process.",
+  "topic_summary": "The talk emphasizes the rapid growth of the creator economy, the struggles of creators in traditional platforms, and how Solana and NFTs can provide better opportunities for creators to thrive [t=10:00].",
+  "router_tags": [
+    "Creator Economy",
+    "Solana",
+    "NFTs",
+    "Web2",
+    "Consumer Adoption"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "SolanaFndn",
+    "solanafndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@MichellePhan",
+    "@SteveAoki",
+    "@Grimes",
+    "@NiftyGateway"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

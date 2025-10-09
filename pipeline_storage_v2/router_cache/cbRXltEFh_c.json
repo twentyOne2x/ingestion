@@ -1,0 +1,30 @@
+{
+  "description": "In this episode of NFT Tuesday, the focus is on the opportunities for developers within the rapidly growing NFT ecosystem. The program features a fireside chat with WeTech Radomski, CTO of Enjin, discussing the evolution of NFTs and their adoption in gaming and digital art. The session includes insights on the ERC 1155 standard and the increasing value of NFTs in virtual worlds and collectibles.",
+  "topic_summary": "The discussion highlights the technological advancements in the NFT space, emphasizing developer opportunities and community engagement. It covers the evolution of NFTs, the importance of standards like ERC 1155, and the growing interest from artists and influencers in leveraging NFTs for brand enhancement and ownership.",
+  "router_tags": [
+    "NFT",
+    "Blockchain",
+    "Developers",
+    "Enjin",
+    "Gaming",
+    "Digital Art",
+    "Community Engagement"
+  ],
+  "aliases": [
+    "Nft Tuesday",
+    "NFT Tuesday",
+    "NFTuesday",
+    "Binance NFT"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "$50 Billion",
+    "@BinanceYoutube",
+    "@Enjin",
+    "@WetechRadomski"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

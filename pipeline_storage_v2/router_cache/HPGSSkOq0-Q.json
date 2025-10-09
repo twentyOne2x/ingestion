@@ -1,0 +1,23 @@
+{
+  "description": "This video explains impermanent loss, a risk faced by liquidity providers in decentralized finance. It covers how impermanent loss occurs when asset prices change after depositing into a liquidity pool, and how it can become permanent if funds are withdrawn before prices revert. An example involving Alice providing DAI and ETH illustrates the concept, showing potential profits and losses compared to simply holding assets. Strategies for managing impermanent loss risk are also discussed.",
+  "topic_summary": "Impermanent loss occurs when the value of deposited assets in a liquidity pool changes. It can be mitigated by investing in stablecoin pairs or using yield aggregators. [t=3:76] [t=188:69]",
+  "router_tags": [
+    "Impermanent Loss",
+    "Liquidity Pools",
+    "DeFi",
+    "Cryptocurrency",
+    "Investing"
+  ],
+  "aliases": [
+    "Impermanent Loss Explained",
+    "Understanding Impermanent Loss",
+    "What is Impermanent Loss"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

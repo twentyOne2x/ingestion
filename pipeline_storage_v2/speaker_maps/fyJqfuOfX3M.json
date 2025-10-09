@@ -1,0 +1,20 @@
+{
+  "video_id": "fyJqfuOfX3M",
+  "title": "2025-09-11_fyJqfuOfX3M_Bridging TradFi & Crypto - Roger Bayston, Head of Digital Assets at Franklin Templeton",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Franklin Templeton",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

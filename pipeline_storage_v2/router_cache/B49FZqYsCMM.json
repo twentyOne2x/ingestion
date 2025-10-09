@@ -1,0 +1,22 @@
+{
+  "description": "Binance hosts a live webinar discussing the current crypto bull market, focusing on Bitcoin's rise past $20,000 and its peak of $58,000 in February 2021. Industry leaders share insights on market drivers, institutional involvement, and on-chain analysis. The session includes a giveaway of £500 in BNB to viewers who submit questions.",
+  "topic_summary": "The webinar covers Bitcoin's recent bull run, key moments leading to its all-time high, and insights from industry experts on market dynamics and institutional participation. [t=10:16] [t=49:78]",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Bull Market",
+    "Webinar",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance Webinar",
+    "Binance Live Show",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

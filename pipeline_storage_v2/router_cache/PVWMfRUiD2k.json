@@ -1,0 +1,26 @@
+{
+  "description": "In this episode, Austin Federa speaks with Kanav Kariya, President of Jump Crypto, about the evolution of Jump from a prop trading firm to a significant player in the crypto space. They discuss the origins of Jump Crypto, its infrastructure projects like Wormhole and Pith, and the firm's approach to venture capital in the blockchain ecosystem. Kariya shares insights on the transition to crypto trading and the challenges and opportunities that have arisen in the rapidly evolving market.",
+  "topic_summary": "Austin Federa interviews Kanav Kariya about Jump Crypto's journey from a traditional trading firm to a key player in the crypto ecosystem, discussing infrastructure projects and venture initiatives [t=0:24 - t=3:52].",
+  "router_tags": [
+    "Jump Crypto",
+    "Solana",
+    "Cryptocurrency",
+    "Blockchain",
+    "Venture Capital",
+    "Trading",
+    "Infrastructure"
+  ],
+  "aliases": [
+    "Jump Crypto",
+    "jump crypto",
+    "JUMP Crypto",
+    "Jump",
+    "jump"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "nKJ0cMcwLWI",
+  "title": "2022-11-17_nKJ0cMcwLWI_, - AMA,2000U!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

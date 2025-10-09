@@ -1,0 +1,20 @@
+{
+  "description": "A discussion on whether to choose 1 Bitcoin or become a pigeon, emphasizing the value of Bitcoin.",
+  "topic_summary": "Explores the choice between acquiring 1 Bitcoin or living as a pigeon, highlighting Bitcoin's significance [t=00:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Asks The Streets",
+    "binance asks the streets",
+    "Binance asks the streets"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

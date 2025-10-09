@@ -1,0 +1,24 @@
+{
+  "description": "Vitor Gensel discusses Solarize Finance, a decentralized asset management platform built on Solana, highlighting their journey and achievements, including winning second place in a hackathon. He emphasizes the platform's aim to democratize investments and reduce transaction fees compared to Ethereum. The demo showcases the Solarized Dawn testnet.",
+  "topic_summary": "Vitor Gensel presents Solarize Finance, detailing its development, achievements in the Solana ecosystem, and the vision for democratizing finance through reduced fees and accessibility [t=0:56].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Finance",
+    "Cryptocurrency",
+    "Blockchain",
+    "Asset Management"
+  ],
+  "aliases": [
+    "Solrise Finance",
+    "Solarize Finance",
+    "Vitor Gensel",
+    "Vidor Gensel"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

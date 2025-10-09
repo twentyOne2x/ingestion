@@ -1,0 +1,20 @@
+{
+  "video_id": "ZjhxAgoGDbk",
+  "title": "2022-10-12_ZjhxAgoGDbk_Solana Validator Education - Validator Rewards and Key Management",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Michael Hubbard",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

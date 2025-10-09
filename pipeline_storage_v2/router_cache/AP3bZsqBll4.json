@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the concept of Decentralized Autonomous Organizations (DAOs), highlighting their structure and governance through smart contracts and blockchain technology.",
+  "topic_summary": "DAOs are organizational structures used in blockchain projects and crypto investments, allowing token holders to vote on management decisions without a central authority. Their transparency and use of smart contracts make them a popular governance method in the crypto space [t=29:31].",
+  "router_tags": [
+    "DAO",
+    "Decentralized Autonomous Organization",
+    "Blockchain",
+    "Crypto",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Dao",
+    "Decentralized Autonomous Organization",
+    "daos"
+  ],
+  "canonical_entities": [
+    "$DAO",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

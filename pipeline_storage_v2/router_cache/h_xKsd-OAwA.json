@@ -1,0 +1,24 @@
+{
+  "description": "The opening ceremony for the Binance Africa Hackathon, themed 'Decentralized Africa', features key speakers discussing the event's goals and opportunities for developers across Africa. The ceremony highlights the importance of decentralized finance (DeFi) and the potential for blockchain technology to empower the African continent.",
+  "topic_summary": "Opening ceremony of the Binance Africa Hackathon, focusing on decentralized finance and developer engagement in Africa [t=14:32].",
+  "router_tags": [
+    "Binance",
+    "Hackathon",
+    "Africa",
+    "DeFi",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance Africa Hackathon",
+    "Decentralized Africa",
+    "Binance Hackathon"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@Bundo",
+    "@Bundle"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the Stochastic RSI indicator, a tool for technical analysis used to identify market trends. It discusses its sensitivity and how it generates values between 0 and 100, indicating overbought and oversold conditions. The video also covers the application of the indicator on different timeframes and the importance of adjusting settings based on individual trading strategies.",
+  "topic_summary": "Learn about the Stochastic RSI indicator and its application in technical analysis for identifying market trends and conditions. The video covers its calculation, interpretation, and how to adjust settings for effective trading strategies [t=0:08].",
+  "router_tags": [
+    "Stochastic RSI",
+    "Technical Analysis",
+    "Trading Indicators",
+    "Market Trends",
+    "Overbought",
+    "Oversold"
+  ],
+  "aliases": [
+    "Stochastic Rsi",
+    "Stochastic RSI Indicator",
+    "Stochastic RSI Explained"
+  ],
+  "canonical_entities": [
+    "$STOCH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

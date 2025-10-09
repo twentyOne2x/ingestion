@@ -1,0 +1,24 @@
+{
+  "description": "This video explains Coin Margin Futures contracts, which derive their value from cryptocurrencies like BTC and ETH. It covers contract codes, how to use these contracts on Binance, and the benefits of Coin Margin contracts, including holding and earning potential, shared margin advantages, and customized margin modes.",
+  "topic_summary": "Learn about Coin Margin Futures, their structure, usage on Binance, and benefits for traders, including leverage options and risk management strategies. Key points include contract definitions and the advantages of using cryptocurrencies for margin.",
+  "router_tags": [
+    "Binance",
+    "Coin Margin Futures",
+    "Cryptocurrency Trading",
+    "Derivatives",
+    "Leverage"
+  ],
+  "aliases": [
+    "coin margin futures",
+    "Coin Margin Futures",
+    "Coinmargined contracts",
+    "Coin-Margined Futures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Bohler from Binance introduces Binance Futures, explaining how to trade crypto derivatives without owning the underlying assets. The video covers types of futures contracts, including USD Stable Coin Margin Futures and Coin Margin Futures, and discusses margin trading, liquidation risks, and the importance of stop-loss orders.",
+  "topic_summary": "Learn to trade on Binance Futures, covering contract types, margin trading, and risk management strategies. [t=0:40] Introduction to Binance Futures. [t=21:16] Explanation of futures contracts. [t=225:07] Overview of different futures contracts. [t=434:11] Details on perpetual contracts. [t=616:82] Liquidation risks and management tips.",
+  "router_tags": [
+    "Binance",
+    "Futures Trading",
+    "Crypto Derivatives",
+    "Margin Trading",
+    "Risk Management"
+  ],
+  "aliases": [
+    "Binance Futures",
+    "binance futures",
+    "BinanceFutures",
+    "binancefutures"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$USDC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

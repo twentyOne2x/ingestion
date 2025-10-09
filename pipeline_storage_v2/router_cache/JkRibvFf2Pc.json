@@ -1,0 +1,25 @@
+{
+  "description": "This video covers how to build an arbitrage bot using Orca's SDK, focusing on the arbitrage strategy and implementation details. It discusses the Solana account model and provides insights into finding arbitrage opportunities between different markets.",
+  "topic_summary": "Learn to build an arbitrage bot on Orca's SDK, exploring arbitrage strategies and implementation on the Solana blockchain. Key concepts include market dislocation and the use of MSOL and SOL for profit generation [t=30:33].",
+  "router_tags": [
+    "arbitrage",
+    "Orca",
+    "Solana",
+    "SDK",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$USDC",
+    "@Scuba",
+    "@Malaima",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

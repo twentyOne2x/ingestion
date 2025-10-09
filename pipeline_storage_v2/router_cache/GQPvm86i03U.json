@@ -1,0 +1,20 @@
+{
+  "description": "Discussion about financing and investment strategies featuring financier Sam.",
+  "topic_summary": "Exploration of financing topics with Sam, including insights on investment strategies [t=1:36].",
+  "router_tags": [
+    "financing",
+    "investment",
+    "Binance",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

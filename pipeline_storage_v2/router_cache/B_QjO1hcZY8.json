@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on whether anyone can surpass Cristiano Ronaldo's goal scoring record.",
+  "topic_summary": "Exploration of the possibility of breaking Cristiano Ronaldo's goal scoring record, with a definitive response from Ronaldo himself [t=0:48].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "goal scoring record",
+    "football"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristiano ronaldo",
+    "CristianoRonaldo"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$CR7"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

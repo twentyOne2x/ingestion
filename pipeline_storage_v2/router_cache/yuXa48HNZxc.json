@@ -1,0 +1,21 @@
+{
+  "description": "This video introduces the trading strategy known as scalping, which involves making quick trades to capitalize on small price fluctuations.",
+  "topic_summary": "Scalping is a trading strategy that focuses on short time frames, allowing traders to exploit minor price changes. It relies heavily on technical analysis and the spread between buying and selling prices for profit opportunities. Scalpers often execute trades within minutes or seconds [t=6:40 - t=39:54].",
+  "router_tags": [
+    "scalping",
+    "trading strategy",
+    "technical analysis",
+    "day trading"
+  ],
+  "aliases": [
+    "Scalping",
+    "scalping",
+    "SCALPING"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

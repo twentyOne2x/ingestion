@@ -1,0 +1,24 @@
+{
+  "description": "Greg Fitzgerald, CTO of Solana, discusses scalability challenges in blockchain and how Solana aims to achieve high transaction throughput. He highlights innovations like proof of history and the transaction processing unit (TPU) that enable over 710,000 transactions per second, surpassing traditional systems like NASDAQ and Google Ad Traffic.",
+  "topic_summary": "The presentation covers Solana's approach to scalability, emphasizing the importance of transaction throughput and innovations such as proof of history and the TPU. It outlines how these technologies allow Solana to handle massive transaction volumes efficiently.",
+  "router_tags": [
+    "Solana",
+    "Scalability",
+    "Blockchain",
+    "Transaction Processing",
+    "Proof of History"
+  ],
+  "aliases": [
+    "Solana",
+    "solana",
+    "SOL",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

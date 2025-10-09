@@ -1,0 +1,23 @@
+{
+  "description": "The Binance Australia Team discusses various topics related to cryptocurrency and engages with the audience on Clubhouse.",
+  "topic_summary": "The session includes troubleshooting audio issues and welcoming participants, with discussions about the cryptocurrency market and Binance's role in Australia. [t=3:84] [t=488:11]",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Clubhouse",
+    "Finance",
+    "Australia"
+  ],
+  "aliases": [
+    "binance australia team",
+    "Binance Australia Team",
+    "binanceaustraliateam"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$DOGE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

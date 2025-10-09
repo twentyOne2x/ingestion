@@ -1,0 +1,35 @@
+{
+  "description": "Webinar discussing women entrepreneurs in the cryptocurrency space, featuring insights from various speakers.",
+  "topic_summary": "The webinar highlights the contributions of women in crypto, including discussions on technology and projects in the industry [t=00:00 to t=01:10].",
+  "router_tags": [
+    "cryptocurrency",
+    "women in crypto",
+    "Binance",
+    "entrepreneurship"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Nakoja",
+    "@Sotaki",
+    "@Prismita",
+    "@Kelly",
+    "@RosellaYefka",
+    "@Caron",
+    "@Starbucks",
+    "@Nayeli",
+    "@Binance",
+    "@Ducado",
+    "@PranumKai",
+    "@Kumakah",
+    "@TroyNayagaro",
+    "@BiancaSilvada",
+    "@BiancaSilver"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

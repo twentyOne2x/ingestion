@@ -1,0 +1,22 @@
+{
+  "description": "This episode of the Solana Changelog discusses recent updates including the public beta launch of Stack Exchange, the release of token 2022, and enhancements to min context slots and address lookup tables. The team also highlights the Seahorse framework for Python developers.",
+  "topic_summary": "Updates on Stack Exchange public beta [t=14:48], token 2022 release [t=56:67], min context slot changes [t=113:57], address lookup table support [t=148:62], and the Seahorse framework [t=176:95].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "Token2022",
+    "Seahorse",
+    "StackExchange"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "solana changelogs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

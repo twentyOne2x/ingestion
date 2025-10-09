@@ -1,0 +1,38 @@
+{
+  "video_id": "kJieZP_QYso",
+  "title": "2021-11-17_kJieZP_QYso_Breakpoint 2021: Next Szn's Trends: Where the Smart Money is Going",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "A": {
+      "name": "Amy Wu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Paul Veratta Takit",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Sam Romnick",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Austin Barack",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Experience a unique training session with Cristiano Ronaldo, where participants share their excitement and insights about the event. Highlights include personal interactions and reflections on Ronaldo's influence in football.",
+  "topic_summary": "Behind-the-scenes look at a training session with Cristiano Ronaldo, featuring participant experiences and Ronaldo's passion for football [t=39:18].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Binance",
+    "NFT",
+    "football",
+    "training"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristiano ronaldo",
+    "CR7",
+    "Cristiano"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube",
+    "$CR7",
+    "@Cristiano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

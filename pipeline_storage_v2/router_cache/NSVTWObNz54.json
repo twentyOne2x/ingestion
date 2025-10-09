@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concept of Central Bank Digital Currencies (CBDCs) and distinguishes them from cryptocurrencies like Bitcoin and Ethereum.",
+  "topic_summary": "The video discusses the nature of digital currencies and clarifies that not all digital currencies are cryptocurrencies. It highlights that CBDCs are digital versions of fiat money issued by central banks, lacking the benefits of cryptocurrencies [t=14:08].",
+  "router_tags": [
+    "CBDC",
+    "Cryptocurrency",
+    "Digital Currency"
+  ],
+  "aliases": [
+    "Cbdc",
+    "Cbdcs",
+    "Central Bank Digital Currency"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$CBDC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

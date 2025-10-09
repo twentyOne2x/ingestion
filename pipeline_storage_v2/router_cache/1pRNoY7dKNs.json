@@ -1,0 +1,28 @@
+{
+  "description": "Join Binance Academy for a two-day masterclass focusing on opportunities in Bitcoin and the Binance Exchange. Learn from experts about cryptocurrency trading and how to leverage Binance for extra income.",
+  "topic_summary": "This session covers cryptocurrency trading, opportunities in Bitcoin, and insights from experienced traders. [t=106:44] Participants will learn how to become proficient in trading and making money through Binance. [t=106:44]",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Trading",
+    "Masterclass"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "Yvonne Kagondu",
+    "yvonne kagondu",
+    "YVONNE KAGONDU"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "$BNB",
+    "$USDT",
+    "$BUSD"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

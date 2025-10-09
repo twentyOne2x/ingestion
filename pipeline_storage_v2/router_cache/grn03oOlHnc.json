@@ -1,0 +1,22 @@
+{
+  "description": "Anatole introduces Solana and discusses its capabilities in handling transactions, comparing it to other blockchain networks like Ethereum and Bitcoin. He highlights the scalability and efficiency of Solana's architecture, aiming for high transaction throughput.",
+  "topic_summary": "Introduction to Solana's blockchain technology and its advantages over traditional systems, including transaction speeds and scalability [t=8:08-311:70].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Cryptocurrency",
+    "Scalability",
+    "Transactions"
+  ],
+  "aliases": [
+    "Anatole",
+    "Zalaner",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@anatoly",
+    "$SOL"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

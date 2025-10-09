@@ -1,0 +1,33 @@
+{
+  "description": "Panel discussion on the future of decentralized finance (DeFi) featuring insights from industry leaders. Topics include governance, scaling solutions, and composability across blockchains. [t=20:00] The panelists introduce themselves and share their backgrounds in finance and blockchain technology. [t=110:00] They discuss the importance of scaling and the implications for DeFi applications.",
+  "topic_summary": "Exploration of the future of DeFi, focusing on governance, scaling challenges, and the role of composability in multi-chain environments. Panelists share their perspectives on the evolution of decentralized finance and the technological advancements needed to support growth.",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Solana",
+    "Aave",
+    "Curve",
+    "FTX",
+    "The Graph",
+    "Scaling",
+    "Governance"
+  ],
+  "aliases": [
+    "defi",
+    "decentralized finance",
+    "Aave",
+    "Curve",
+    "FTX",
+    "Solana",
+    "The Graph"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@stani",
+    "@sam",
+    "@tegan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

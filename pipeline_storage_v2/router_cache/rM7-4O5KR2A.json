@@ -1,0 +1,21 @@
+{
+  "description": "Discussion featuring various individuals including Jamie, Jila Joe Kaiser, and others, covering topics related to finance and cryptocurrency.",
+  "topic_summary": "The conversation involves insights on cryptocurrency trends and market dynamics, with mentions of USDT and BUSD [t=45:27].",
+  "router_tags": [
+    "cryptocurrency",
+    "finance",
+    "market trends"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$USDT",
+    "$BUSD"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

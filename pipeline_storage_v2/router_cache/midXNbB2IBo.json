@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion on the impact of Web3 on the art world, featuring insights from industry leaders on democratization, digitalization, and the future of NFTs.",
+  "topic_summary": "The panel explores how Web3 technologies are transforming the art industry by enabling broader access, allowing artists to upload and sell their work, and discussing the implications for traditional auction houses [t=0:00].",
+  "router_tags": [
+    "Web3",
+    "Art",
+    "NFT",
+    "Democratization",
+    "Digitalization",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "Web3 & Art",
+    "Binance Blockchain Week",
+    "Paris 2022"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

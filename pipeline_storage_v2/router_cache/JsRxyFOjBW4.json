@@ -1,0 +1,22 @@
+{
+  "description": "Explore the diverse use cases of decentralized applications (DApps) including gaming, social media, entertainment, and DeFi. Learn about the current landscape of DApps primarily on the Ethereum network and the challenges they face.",
+  "topic_summary": "DApps are emerging across various sectors such as gaming and DeFi, with most existing on Ethereum as of mid 2022. Despite scalability challenges, the sector is expected to grow as decentralization gains traction [t=0:08 - t=0:43].",
+  "router_tags": [
+    "DApps",
+    "Ethereum",
+    "DeFi",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Dapps",
+    "dApps",
+    "Decentralized Applications"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

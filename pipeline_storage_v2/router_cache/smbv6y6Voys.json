@@ -1,0 +1,27 @@
+{
+  "description": "The Vietnam Super Blockathon launch day introduces a unique opportunity for developers and creators to build projects on the Binance Smart Chain. The event features workshops, mentorship, and a prize pool of at least $20,000, encouraging participation from various skill levels. Key speakers include representatives from Binance and other blockchain projects.",
+  "topic_summary": "Introduction to the Vietnam Super Blockathon, highlighting the event's goals, opportunities for learning and collaboration, and the importance of blockchain technology in today's economy. The launch day emphasizes the need for community engagement and innovation in the blockchain space.",
+  "router_tags": [
+    "Vietnam Super Blockathon",
+    "Binance Smart Chain",
+    "blockchain",
+    "cryptocurrency",
+    "developers",
+    "workshops",
+    "mentorship",
+    "prize money"
+  ],
+  "aliases": [
+    "Vietnam Super Blockathon",
+    "Vietnamese Super Blockathon",
+    "Binance Vietnam Super Blockathon"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

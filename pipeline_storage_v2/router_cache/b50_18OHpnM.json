@@ -1,0 +1,19 @@
+{
+  "description": "This video features a brief introduction and the announcement of ignition.",
+  "topic_summary": "The video discusses the ignition event, highlighting key moments such as the announcement at [t=0:24] and the confirmation of ignition at [t=1:08].",
+  "router_tags": [
+    "ignition",
+    "Solana",
+    "announcement"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

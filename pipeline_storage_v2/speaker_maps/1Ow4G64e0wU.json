@@ -1,0 +1,20 @@
+{
+  "video_id": "1Ow4G64e0wU",
+  "title": "2021-07-24_1Ow4G64e0wU_Blockchain Student Corner - Futures Trading For Beginners",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "Satoshi Nakamoto",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

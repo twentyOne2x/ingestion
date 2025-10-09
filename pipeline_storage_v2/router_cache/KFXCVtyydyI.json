@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on Kwai's recent performance and market trends.",
+  "topic_summary": "Analysis of Kwai's market position and performance metrics [t=01:44].",
+  "router_tags": [
+    "Kwai",
+    "Market Analysis",
+    "Performance"
+  ],
+  "aliases": [
+    "Kwai",
+    "kwai",
+    "KWAi"
+  ],
+  "canonical_entities": [
+    "$KWA",
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

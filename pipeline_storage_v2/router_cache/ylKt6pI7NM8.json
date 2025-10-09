@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concepts of bull and bear markets, highlighting the characteristics of bullish and bearish trends in asset prices.",
+  "topic_summary": "The video discusses the definitions of bull and bear markets, explaining that a bull market is characterized by a series of rising prices [t=29:23], while a bear market features declining prices [t=38:35]. It also notes that both market types can experience temporary reversals [t=47:79].",
+  "router_tags": [
+    "Bull Market",
+    "Bear Market",
+    "Market Trends",
+    "Investing"
+  ],
+  "aliases": [
+    "What Are Bull and Bear Markets",
+    "Bull and Bear Markets Explained",
+    "Bull vs Bear Markets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

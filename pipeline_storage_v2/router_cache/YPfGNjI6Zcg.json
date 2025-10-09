@@ -1,0 +1,20 @@
+{
+  "description": "A non-fungible token (NFT) is a unique cryptographic token representing an asset, functioning as a verifiable proof of authenticity and ownership on a blockchain. NFTs are non-interchangeable, introducing scarcity, unlike fungible assets such as fiat currencies and cryptocurrencies like Bitcoin.",
+  "topic_summary": "This video explains NFTs, highlighting their uniqueness, role as digital certificates, and comparison with fungible assets like Bitcoin [t=3:76].",
+  "router_tags": [
+    "NFT",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Nft",
+    "NFT",
+    "Non-Fungible Token"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

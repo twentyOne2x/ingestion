@@ -1,0 +1,20 @@
+{
+  "video_id": "YH0FvcHdLX8",
+  "title": "2021-11-17_YH0FvcHdLX8_Breakpoint 2021: Transfer Layer: Scalability and Cross Chain Bridges",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "E": {
+      "name": "Alex Mirnov",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of Crypto Week in Review, hosts discuss the week's major events in the crypto space, including market confusion driven by FUD and bullish sentiments from institutions like Goldman Sachs and Ark Invest. They analyze the impact of Elon Musk's tweets and China's regulatory stance on Bitcoin and crypto mining, highlighting the misinterpretation of news and its effects on market prices.",
+  "topic_summary": "The hosts review significant crypto news from the week of May 28, focusing on market reactions to FUD, bullish institutional recognition of Bitcoin, and the influence of regulatory news from China and other regions [t=58:81].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Market Analysis",
+    "Elon Musk",
+    "China Regulation",
+    "Goldman Sachs",
+    "Ark Invest"
+  ],
+  "aliases": [
+    "Crypto Week in Review",
+    "Crypto Week",
+    "Decrypts",
+    "Dan Roberts"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ElonMusk",
+    "$SOL",
+    "@GoldmanSachs",
+    "@ArkInvest"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

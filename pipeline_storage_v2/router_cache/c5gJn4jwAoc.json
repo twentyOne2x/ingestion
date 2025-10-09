@@ -1,0 +1,35 @@
+{
+  "description": "Panel discussion on Frictionless DeFi featuring Klossy from Mango, Soju from Solend, Tom from Nova Finance, and Trevor from Parcel. They discuss their backgrounds, projects, and the importance of liquidity in attracting users to DeFi.",
+  "topic_summary": "The panelists explore the challenges in the DeFi ecosystem and propose solutions to make it more accessible for newcomers. They emphasize the need for clear communication and user-friendly tools to enhance the onboarding experience [t=246.61].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Mango",
+    "Solend",
+    "Nova Finance",
+    "Parcel",
+    "Liquidity",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Frictionless Defi",
+    "Frictionless DeFi",
+    "Solana DeFi",
+    "Mango Markets",
+    "Nova Finance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$30 Billion",
+    "@Klossy",
+    "@Soju",
+    "@Tom",
+    "@Trevor",
+    "@MaximilianSchneider",
+    "@Animoca",
+    "@Alameda"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

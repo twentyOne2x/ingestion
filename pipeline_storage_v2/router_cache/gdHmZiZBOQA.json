@@ -1,0 +1,24 @@
+{
+  "description": "This video explains BUSD, a regulated stablecoin by Binance and Paxos, detailing its creation, benefits, and where to acquire it.",
+  "topic_summary": "BUSD is a stablecoin backed by US dollars, designed for stability and trust in cryptocurrency transactions. It offers zero trading fees on Binance and is accessible for various financial activities [t=10:72-372:16].",
+  "router_tags": [
+    "BUSD",
+    "Stablecoin",
+    "Binance",
+    "Cryptocurrency",
+    "Paxos",
+    "Trading"
+  ],
+  "aliases": [
+    "Busd",
+    "BUSD",
+    "busd"
+  ],
+  "canonical_entities": [
+    "$BUSD",
+    "@Binance",
+    "@Paxos"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

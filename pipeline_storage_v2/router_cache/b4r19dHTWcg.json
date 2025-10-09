@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the infrastructure required to build and access the metaverse, highlighting the need for decentralized systems and the risks of centralization by major corporations like Facebook.",
+  "topic_summary": "The panel explores the definition of the metaverse, its current state, and the essential infrastructure needed for builders and users, emphasizing the importance of decentralization and user sovereignty [t=270.99].",
+  "router_tags": [
+    "metaverse",
+    "infrastructure",
+    "decentralization",
+    "blockchain",
+    "virtual reality"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "World of World Craft",
+    "Metaverse Infrastructure"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@SolanaFndn",
+    "@Facebook",
+    "@Meta",
+    "@Google"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

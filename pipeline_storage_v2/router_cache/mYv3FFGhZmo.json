@@ -1,0 +1,31 @@
+{
+  "description": "In this webinar, Emmanuel Ibaneta from Binance introduces Bashir Aminu, head of P2P in Africa, who discusses safe trading practices on Binance P2P. The session covers basic rules, how to choose the best traders, and includes a Q&A segment with a giveaway of $10 for selected questions. [t=108:34] [t=185:22]",
+  "topic_summary": "Learn how to trade safely on Binance P2P, including essential rules and tips for selecting reliable traders. Engage in a Q&A session with a chance to win prizes. [t=108:34] [t=185:22]",
+  "router_tags": [
+    "Binance",
+    "P2P Trading",
+    "Crypto Safety",
+    "Webinar",
+    "Africa"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance P2P Trading",
+    "binance p2p trading"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$10",
+    "$1,000",
+    "$100",
+    "$1,000,000",
+    "$535",
+    "@BinanceYoutube",
+    "@EmmanuelIbaneta",
+    "@BashirAminu"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

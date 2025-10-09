@@ -1,0 +1,24 @@
+{
+  "description": "A discussion with Sam Bankman-Fried, CEO of FTX, covering topics such as the regulatory landscape in the Bahamas, FTX's sponsorships in sports, and the future of crypto investments.",
+  "topic_summary": "Sam Bankman-Fried discusses FTX's role in the crypto market, its partnerships with sports teams like the Miami Heat, and the potential for NFTs and blockchain gaming [t=28:11].",
+  "router_tags": [
+    "FTX",
+    "Sam Bankman-Fried",
+    "Crypto",
+    "NFTs",
+    "Blockchain",
+    "Sports Sponsorship"
+  ],
+  "aliases": [
+    "Sam Bankman-Fried",
+    "sam bankman-fried",
+    "FTX",
+    "ftx"
+  ],
+  "canonical_entities": [
+    "$FTT",
+    "@SamBankmanFried"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

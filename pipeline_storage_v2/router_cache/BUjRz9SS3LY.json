@@ -1,0 +1,23 @@
+{
+  "description": "This video explains how to withdraw funds from your Binance account, covering both fiat and cryptocurrency withdrawals. It details the steps for withdrawing fiat to a bank account or card, including necessary verifications and limits. It also outlines the process for withdrawing cryptocurrencies, emphasizing the importance of using the correct deposit address and network fees.",
+  "topic_summary": "Learn how to withdraw funds from Binance, including fiat and crypto withdrawal methods, verification processes, and important considerations for successful transactions. [t=0:00] Introduction to fund withdrawal [t=4:16] Methods for withdrawing funds [t=15:28] Fiat vs. cryptocurrency withdrawals [t=48:54] Steps for fiat withdrawal [t=254:05] Steps for crypto withdrawal.",
+  "router_tags": [
+    "Binance",
+    "withdrawal",
+    "fiat",
+    "cryptocurrency",
+    "bank transfer",
+    "security verification"
+  ],
+  "aliases": [
+    "Binance Withdrawal",
+    "Withdraw Funds Binance",
+    "How to Withdraw Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

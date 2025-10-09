@@ -1,0 +1,20 @@
+{
+  "description": "The video features a return of a prominent figure associated with Binance, discussing recent developments in the crypto space.",
+  "topic_summary": "Discussion on Binance and recent crypto developments [t=0:16]",
+  "router_tags": [
+    "Binance",
+    "crypto",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "aliases": [
+    "Binance Man",
+    "Binance man",
+    "BINANCE MAN"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

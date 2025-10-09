@@ -1,0 +1,24 @@
+{
+  "description": "Highlights from Day 1 of Binance Blockchain Week 2022, discussing the growth of the crypto ecosystem, the role of governments in supporting blockchain innovation, and the emergence of new economic models through technology.",
+  "topic_summary": "The event covers insights on crypto ecosystem growth, the importance of collaboration between public and private sectors, and the potential of blockchain and NFTs in creating new economic opportunities [t=0:24-0:48].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "NFT",
+    "Economic Growth",
+    "Innovation"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "binance",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

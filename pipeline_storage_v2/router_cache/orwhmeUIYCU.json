@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on NFTs, giveaways, and blockchain strategies, featuring various speakers and topics related to finance and social investing.",
+  "topic_summary": "Exploration of NFT giveaways and blockchain strategies, including concentrated liquidity provision and social investing platforms. Highlights include discussions on the OpenSea marketplace and community engagement [t=7:30].",
+  "router_tags": [
+    "NFT",
+    "blockchain",
+    "giveaway",
+    "finance",
+    "social investing"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on regenerative finance (Refi) and its potential to address climate change through decentralized finance solutions. Key speakers include Paolo Palermo, David Dao, Gregory, and Robert, who share insights on their projects and the importance of transparency in environmental impact data.",
+  "topic_summary": "The panel explores how Refi can leverage blockchain technology to create transparent markets for carbon credits and ecological assets, emphasizing the need for a shift in how we value nature and fund public goods [t=102:36].",
+  "router_tags": [
+    "Regenerative Finance",
+    "Blockchain",
+    "Climate Change",
+    "Carbon Credits",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "ReFi",
+    "Refi",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@David",
+    "@Greg",
+    "@Rob",
+    "@PaoloPalermo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

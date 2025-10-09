@@ -1,0 +1,23 @@
+{
+  "description": "This workshop introduces the Solana programming model, covering essential concepts and tools for developers. It includes insights from Bartos, a core engineer at Solana, on getting started with the Solana CLI and understanding the structure of accounts and transactions on the blockchain. The session also highlights upcoming open office hours for direct interaction with developers.",
+  "topic_summary": "Introductory workshop on the Solana programming model, focusing on account structures, transaction handling, and development tools like the Solana CLI. Bartos explains how to interact with the blockchain and the significance of accounts in Solana's architecture. [t=36:50]",
+  "router_tags": [
+    "Solana",
+    "Programming Model",
+    "Blockchain Development",
+    "Smart Contracts",
+    "CLI Tools"
+  ],
+  "aliases": [
+    "Intro to Solana Programming Model",
+    "Solana Workshop",
+    "Solana Development Introduction"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@solana"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

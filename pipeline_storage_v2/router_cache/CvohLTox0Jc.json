@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the limitations of using passwords in a digital currency network, emphasizing the need for transaction validation in a decentralized environment.",
+  "topic_summary": "Explores why passwords are ineffective for authorizing transactions in a digital currency network, highlighting issues with centralization and security [t=20:08].",
+  "router_tags": [
+    "passwords",
+    "digital currency",
+    "blockchain",
+    "decentralization"
+  ],
+  "aliases": [
+    "Why Passwords Won't Work For A Digital Currency Network",
+    "why passwords won't work for a digital currency network"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$BNB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

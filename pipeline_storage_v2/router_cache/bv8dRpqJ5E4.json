@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on Web3Friend.Tech and Social.Fi, exploring traditional and modern approaches.",
+  "topic_summary": "Exploration of Web3Friend.Tech and Social.Fi, highlighting traditional versus innovative perspectives [t=00:57].",
+  "router_tags": [
+    "Web3",
+    "SocialFi",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Web3Friend.Tech",
+    "Social.Fi",
+    "web3friend.tech",
+    "social.fi"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

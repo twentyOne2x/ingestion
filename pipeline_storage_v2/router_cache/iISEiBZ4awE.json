@@ -1,0 +1,20 @@
+{
+  "description": "This video explains the concept of altcoins, highlighting their significance in the cryptocurrency market and their distinction from Bitcoin.",
+  "topic_summary": "The video discusses the classification of cryptocurrencies into Bitcoin and altcoins, emphasizing Bitcoin's dominance in market capitalization and the diverse purposes of various altcoins [t=0:08 - t=0:42].",
+  "router_tags": [
+    "cryptocurrency",
+    "altcoins",
+    "Bitcoin",
+    "blockchain"
+  ],
+  "aliases": [
+    "What are Altcoins",
+    "Altcoins Explained",
+    "Understanding Altcoins"
+  ],
+  "canonical_entities": [
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

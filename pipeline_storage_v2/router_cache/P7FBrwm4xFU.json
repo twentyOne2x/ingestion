@@ -1,0 +1,22 @@
+{
+  "description": "This video explains inflation, its causes, and historical examples, including hyperinflation in Hungary after World War II. It discusses how Bitcoin may serve as a hedge against inflation due to its fixed supply.",
+  "topic_summary": "Inflation is the sustained increase in prices of goods and services over time [t=20:08]. The video outlines two main causes: an increase in currency circulation [t=33:19] and supply shortages [t=47:03]. It also highlights the hyperinflation of the Hungarian Penge post-World War II [t=63:47] and discusses Bitcoin as a potential solution to inflation [t=121:45].",
+  "router_tags": [
+    "Inflation",
+    "Economics",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Hyperinflation"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "@binanceacademy",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

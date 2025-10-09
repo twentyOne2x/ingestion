@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the implications of infidelity in a decentralized autonomous organization (DAO) context, with a focus on the NFT community and play-to-earn models in the East. The conversation touches on privacy notions in the metaverse and the role of various crypto projects.",
+  "topic_summary": "Exploration of infidelity themes within a DAO, NFT community dynamics, and privacy issues in the metaverse [t=3:04].",
+  "router_tags": [
+    "NFT",
+    "DAO",
+    "metaverse",
+    "crypto",
+    "play-to-earn"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "Jianzian",
+    "Simon"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

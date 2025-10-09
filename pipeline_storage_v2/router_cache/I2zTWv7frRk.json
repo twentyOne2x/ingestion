@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the potential differences between the upcoming crypto bull market and previous ones, focusing on market dynamics and strategies.",
+  "topic_summary": "Exploration of how the next crypto bull market may differ from past trends, including insights on market behavior and investment strategies [t=00:32].",
+  "router_tags": [
+    "crypto",
+    "bull market",
+    "investment",
+    "market trends"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

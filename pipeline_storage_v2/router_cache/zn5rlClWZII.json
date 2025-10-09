@@ -1,0 +1,24 @@
+{
+  "description": "Learn how to deposit NFTs on Binance NFT Marketplace using the website or app. This guide covers wallet connection, network selection, and contract address verification.",
+  "topic_summary": "This video explains the steps to deposit NFTs on Binance, including wallet connection and contract address submission. Key points include network compatibility and gas fee settings [t=3:92-116:50].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Cryptocurrency",
+    "Ethereum",
+    "Smart Chain"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binance NFT",
+    "binance nft"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

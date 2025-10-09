@@ -1,0 +1,21 @@
+{
+  "description": "This video explains how decentralized exchanges (DEXs) operate, highlighting their ability to facilitate trades directly between user wallets using smart contracts. It discusses automated market makers and liquidity pools, emphasizing the role of users in providing liquidity and earning fees.",
+  "topic_summary": "Overview of decentralized exchanges (DEXs) and their functionality, including the use of smart contracts and liquidity pools to enable trading without intermediaries. [t=0:56] to [t=36:69]",
+  "router_tags": [
+    "DeFi",
+    "Decentralized Exchange",
+    "DEX",
+    "Smart Contracts",
+    "Liquidity Pools"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "Binance Academy",
+    "binanceacademy"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

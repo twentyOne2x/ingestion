@@ -1,0 +1,21 @@
+{
+  "description": "This video introduces portfolio management, explaining how to strategically manage a collection of assets and investments, including cryptocurrencies, stocks, and more.",
+  "topic_summary": "The video covers the basics of portfolio management, emphasizing the importance of managing a portfolio as a whole and how different assets can work together in an investment strategy. Key points include the definition of a portfolio and examples of its components, such as Bitcoin and altcoins [t=0:32-0:47].",
+  "router_tags": [
+    "portfolio management",
+    "investing",
+    "trading",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Portfolio Management",
+    "portfolio management",
+    "Portfolio management"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Tutorial on creating a BEP20 token on the Binance Smart Chain, covering smart contracts, liquidity, and decentralized exchanges like Pancake Swap. Discusses the importance of user-friendly interfaces and the potential of tokens in the Binance ecosystem.",
+  "topic_summary": "Learn how to create a BEP20 token on the Binance Smart Chain, including smart contract setup and liquidity management [t=00:00-54:05].",
+  "router_tags": [
+    "BEP20",
+    "Binance Smart Chain",
+    "Token Creation",
+    "Decentralized Exchange",
+    "Pancake Swap"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "The final workshop of the Binance Africa Hackathon features Wilson from Bundle discussing decentralized finance in Africa and the importance of community engagement. Participants are reminded to vote for their favorite projects before the deadline, with a prize pool of $30,000. The Binance Africa Masterclass homepage is also introduced, offering access to past workshops and educational resources.",
+  "topic_summary": "Final workshop of the Binance Africa Hackathon with Wilson from Bundle discussing decentralized finance and community learning. Voting for projects ends soon.",
+  "router_tags": [
+    "Binance",
+    "Hackathon",
+    "Bundle",
+    "Decentralized Finance",
+    "Africa",
+    "Masterclass"
+  ],
+  "aliases": [
+    "bundle",
+    "Bundle",
+    "BUNDLE"
+  ],
+  "canonical_entities": [
+    "$BXD",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

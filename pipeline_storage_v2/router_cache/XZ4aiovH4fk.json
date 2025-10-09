@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to safely buy crypto on Binance P2P and avoid scams. This video covers the importance of escrow, recognizing red flags, and steps to take if you encounter suspicious behavior.",
+  "topic_summary": "This video explains how to stay safe while buying crypto on Binance P2P, including understanding escrow [t=50:29], recognizing when to cancel a trade [t=124:03], avoiding off-escrow trades [t=178:27], and not paying additional fees [t=236:32].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "P2P Trading",
+    "Scam Prevention"
+  ],
+  "aliases": [
+    "Buying Crypto on Binance P2P",
+    "Binance P2P Safety Tips",
+    "How to Stay Safe on Binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concept of blockchain light nodes, highlighting their lower storage and bandwidth requirements compared to full nodes. It discusses how light nodes operate by downloading only block headers instead of full blocks, making them suitable for devices with limited resources.",
+  "topic_summary": "Learn about blockchain light nodes and their advantages over full nodes, including reduced storage needs and the ability to run on less powerful devices. The video covers the functionality of light nodes and their role in the blockchain ecosystem [t=25.92].",
+  "router_tags": [
+    "Blockchain",
+    "Light Node",
+    "Bitcoin",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Blockchain Light Node",
+    "Light Node",
+    "blockchain light node"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on cryptocurrency taxation in Finland, covering various aspects of crypto assets and their implications.",
+  "topic_summary": "Exploration of cryptocurrency taxation in Finland, including the first-in, first-out method for asset liquidation [t=1251.00], and insights on proof of stake protocols [t=2072.33].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxation",
+    "Finland",
+    "crypto assets",
+    "proof of stake"
+  ],
+  "aliases": [
+    "Kryptovaluuttojen Verotus Suomessa",
+    "Kryptovaluuttojen verotus Suomessa",
+    "Kryptovaluuttojen Verotus"
+  ],
+  "canonical_entities": [
+    "$KID",
+    "$VILLA",
+    "$MITAN",
+    "$ELLIE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

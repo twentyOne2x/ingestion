@@ -1,0 +1,25 @@
+{
+  "description": "Maria Sharapova participates in a quickfire 'This or That' interview, answering questions about her preferences in various categories.",
+  "topic_summary": "Maria Sharapova shares her preferences on topics ranging from food to art, including choices like chocolate over gummies [t=3:52], Audrey Hepburn over Marilyn Monroe [t=24:48], and Bitcoin over Ethereum [t=27:44].",
+  "router_tags": [
+    "Maria Sharapova",
+    "This or That",
+    "Interview",
+    "Preferences"
+  ],
+  "aliases": [
+    "Maria Sharapova",
+    "maria sharapova",
+    "Sharapova"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$NFTs",
+    "$SherlockHolmes",
+    "$Poirot"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

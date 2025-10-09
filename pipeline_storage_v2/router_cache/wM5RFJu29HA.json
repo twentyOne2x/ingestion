@@ -1,0 +1,28 @@
+{
+  "description": "Join Binance and Toko Crypto for a livestream discussing the TKO Launchpad, featuring insights from Colin of Binance and Kai, CEO of Toko Crypto. The event includes a Q&A session with prizes totaling $1,000 in TKO tokens.",
+  "topic_summary": "The livestream covers the TKO Launchpad on Binance, with discussions in both English and Indonesian. A Q&A session will conclude the event, offering participants a chance to win TKO tokens [t=72:39].",
+  "router_tags": [
+    "Binance",
+    "Toko Crypto",
+    "TKO",
+    "Launchpad",
+    "Livestream",
+    "Q&A",
+    "Southeast Asia"
+  ],
+  "aliases": [
+    "binance",
+    "tokocrypto",
+    "tko",
+    "binance livestream",
+    "toko crypto"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$TKO",
+    "@BinanceYoutube",
+    "@TokoCrypto"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

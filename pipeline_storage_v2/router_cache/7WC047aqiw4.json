@@ -1,0 +1,24 @@
+{
+  "description": "In this webinar, Nina Xiang from Binance Academy discusses with Sami Karim from BNB Chain about the future of Web3 and the role of BNB Chain in powering it. They cover the ecosystem's development, the importance of supporting developers, and the transition from Binance Chain to BNB Smart Chain, which aims to provide lower transaction fees and EVM compatibility for developers and users alike.",
+  "topic_summary": "Sami Karim discusses BNB Chain's mission to support Web3 development and the ecosystem's evolution, including the transition from Binance Chain to BNB Smart Chain, emphasizing lower fees and developer support [t=294.94].",
+  "router_tags": [
+    "BNB Chain",
+    "Web3",
+    "Blockchain",
+    "Crypto",
+    "Ecosystem Development"
+  ],
+  "aliases": [
+    "Sami Karim",
+    "Sami",
+    "BNB Chain",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy",
+    "@samikarim"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

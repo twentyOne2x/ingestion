@@ -1,0 +1,19 @@
+{
+  "description": "Introduction to Binance P2P services.",
+  "topic_summary": "Overview of Binance P2P platform and its features [t=00:24].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance P2P #"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

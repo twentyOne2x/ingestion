@@ -1,0 +1,23 @@
+{
+  "description": "Cristiano Ronaldo and Ana Markovic face off in a foosball challenge with a unique twist, testing their skills and decision-making in a fun setting.",
+  "topic_summary": "Cristiano Ronaldo and Ana Markovic participate in a foosball challenge, discussing preferences between scoring goals and missing penalties [t=3:28].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Ana Markovic",
+    "foosball",
+    "challenge",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@CristianoRonaldo",
+    "@AnaMarkovic"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

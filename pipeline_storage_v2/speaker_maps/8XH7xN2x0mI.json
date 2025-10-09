@@ -1,0 +1,20 @@
+{
+  "video_id": "8XH7xN2x0mI",
+  "title": "2022-06-09_8XH7xN2x0mI_Binance Blockchain Week - Keynote Speaker - His Excellency Helal Saeed Al Marri",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "His Excellency Hilal Said",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

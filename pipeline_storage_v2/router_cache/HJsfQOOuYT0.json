@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on NFT staking and gaming, featuring co-founders Yin Transu and Nano Jigga. Highlights include NFT mining and a giveaway event.",
+  "topic_summary": "Overview of NFT staking games and related events, including a giveaway [t=23:00].",
+  "router_tags": [
+    "NFT",
+    "staking",
+    "gaming",
+    "giveaway"
+  ],
+  "aliases": [
+    "Nftmelos",
+    "Nft Melos",
+    "NFTMELos"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "@YinTransu",
+    "@PingTaiMellows",
+    "@NanoJigga",
+    "@Shang",
+    "@Shana"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

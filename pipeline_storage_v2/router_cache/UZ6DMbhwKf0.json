@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on NFTs and their potential, featuring various speakers and topics related to the NFT space.",
+  "topic_summary": "The conversation includes mentions of giveaways [t=2106.64], NFT projects [t=324.49], and notable figures in the NFT community [t=4446.79].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Blockchain",
+    "Giveaway"
+  ],
+  "aliases": [
+    "Nft",
+    "Nftfi",
+    "NFTFi"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

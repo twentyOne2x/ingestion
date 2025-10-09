@@ -1,0 +1,23 @@
+{
+  "description": "This video explains how scalping works in the cryptocurrency market, detailing the process of buying and selling for small profits.",
+  "topic_summary": "Scalping involves buying cryptocurrency at a lower price and selling it at a higher price to make small profits, illustrated through a transaction between Bob, a scalper, and Alice [t=0:16].",
+  "router_tags": [
+    "scalping",
+    "crypto trading",
+    "profit",
+    "liquidity"
+  ],
+  "aliases": [
+    "Scalping in Crypto",
+    "Crypto Scalping",
+    "How Scalping Works"
+  ],
+  "canonical_entities": [
+    "$10",
+    "$9.95",
+    "@binanceacademy",
+    "Alice"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

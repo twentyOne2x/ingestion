@@ -1,0 +1,25 @@
+{
+  "description": "Fireside chat with Kevin Rose discussing the NFT space, traditional art validation, and the Solana Season Hackathon.",
+  "topic_summary": "Kevin Rose shares insights on the NFT market, including the impact of traditional art auctions like Christie's and the launch of new projects such as Me Bits. He emphasizes the importance of bridging the gap between traditional art collectors and the NFT world [t=579.58].",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Kevin Rose",
+    "Hackathon",
+    "CryptoPunks",
+    "Me Bits"
+  ],
+  "aliases": [
+    "Kevin Rose",
+    "kevin rose",
+    "Kevin",
+    "kevin"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$SOL",
+    "@KevinRose"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

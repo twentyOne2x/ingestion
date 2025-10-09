@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion on regulation's impact on crypto adoption featuring experts including Peter Kirstens, Teodoro Garcia, and Armel Caste. They explore the balance between innovation and regulation in Europe, the significance of the MICA regulation, and the relationship between public authorities and the crypto ecosystem.",
+  "topic_summary": "The panel addresses the crucial role of regulation in the crypto industry, emphasizing the need for a balanced approach to foster innovation while ensuring compliance. They discuss Europe's leading position in regulatory frameworks and the implications for the future of crypto.",
+  "router_tags": [
+    "regulation",
+    "crypto",
+    "Binance",
+    "MICA",
+    "Europe",
+    "financial innovation"
+  ],
+  "aliases": [
+    "Regulation & The Crypto Revolution",
+    "Crypto Regulation Panel",
+    "Binance Blockchain Week"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$DAI",
+    "@PeterKirstens",
+    "@TeodoroGarcia",
+    "@ArmelCaste"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on various topics including NFTs, cryptocurrency, and personal empowerment.",
+  "topic_summary": "Exploration of cryptocurrency dynamics and personal empowerment, featuring mentions of various individuals and their contributions [t=0:52].",
+  "router_tags": [
+    "cryptocurrency",
+    "NFT",
+    "empowerment",
+    "Binance"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$BNB",
+    "$SOL",
+    "@VictorSitaJiangji",
+    "@Jiandoshi",
+    "@JinZhangHao",
+    "@ZhangHao",
+    "@YanZhenkor",
+    "@BiancaNasijatan",
+    "@Jamie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

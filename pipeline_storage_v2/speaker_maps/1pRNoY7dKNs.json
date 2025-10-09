@@ -1,0 +1,32 @@
+{
+  "video_id": "1pRNoY7dKNs",
+  "title": "2021-05-09_1pRNoY7dKNs_DAY 2: Binance Kenya- Opportunities in Bitcoin & Binance Exchange (2 Days Masterclass)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "D": {
+      "name": "Kruma Leah",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Sammy Binance",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Ivon Wanjiru Kagondu",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

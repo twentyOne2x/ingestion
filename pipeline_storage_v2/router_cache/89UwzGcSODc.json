@@ -1,0 +1,22 @@
+{
+  "description": "This video introduces Web 1.0, the first version of the web, characterized by static, text-based pages created in the early 1990s. It highlights the limited interactivity available to users, primarily through text-based chat and forums.",
+  "topic_summary": "Web 1.0, known as the Read Only Web, was designed for information consumption with minimal user interaction. It laid the groundwork for understanding the evolution to Web 2.0 and Web3 [t=22:32].",
+  "router_tags": [
+    "Web 1.0",
+    "Web3",
+    "Metaverse",
+    "Blockchain",
+    "NFTs"
+  ],
+  "aliases": [
+    "What is Web 1.0",
+    "Web 1.0 Explained",
+    "Introduction to Web 1.0"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$CENTRIC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

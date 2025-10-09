@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on earning from cryptocurrencies without trading, featuring insights on Binance services and community engagement.",
+  "topic_summary": "Exploration of cryptocurrency earning strategies without trading, featuring Binance services and community insights [t=00:09 - t=43:16].",
+  "router_tags": [
+    "cryptocurrency",
+    "Binance",
+    "finance",
+    "DeFi",
+    "earning strategies"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Amanda",
+    "@Mucharo",
+    "@PabloFormosa",
+    "@BinanceArgentina",
+    "@Gracia"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

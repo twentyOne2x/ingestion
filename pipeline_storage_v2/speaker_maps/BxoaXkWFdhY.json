@@ -1,0 +1,20 @@
+{
+  "video_id": "BxoaXkWFdhY",
+  "title": "2022-08-16_BxoaXkWFdhY_Blockchain Scaling Solutions: Beyond Layer 1 & Layer 2 - With University of Texas' Sriram Vishwanath",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Nina Xiang",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

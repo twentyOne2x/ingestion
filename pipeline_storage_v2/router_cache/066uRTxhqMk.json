@@ -1,0 +1,32 @@
+{
+  "description": "Binance Talks Security features a discussion on cold and hot wallets with industry experts, including Louis Ocegada and Ruben Mehr. The session covers security challenges in blockchain, the importance of user safety, and introduces giveaways for participants.",
+  "topic_summary": "The session begins with an overview of security in blockchain, emphasizing the need for robust security measures to foster user trust and adoption. Discussions include the differences between cold and hot wallets, security reporting, and the significance of seed phrases in crypto security [t=290:88].",
+  "router_tags": [
+    "Binance",
+    "Security",
+    "Blockchain",
+    "Cryptocurrency",
+    "Wallets",
+    "Giveaways"
+  ],
+  "aliases": [
+    "binance talks security",
+    "Binance Talks Security",
+    "BINANCE TALKS SECURITY"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$100",
+    "$4,000",
+    "@LouisOcegada",
+    "@RubenMehr",
+    "@UdiWardheimer",
+    "@OxKwit",
+    "@ZahraJaffar",
+    "@ArunaCosta",
+    "@NilsAnderson"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

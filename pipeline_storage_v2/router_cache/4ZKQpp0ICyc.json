@@ -1,0 +1,28 @@
+{
+  "description": "A panel discussion featuring founders of Balancer, Aave, and Curve, exploring the mechanics of liquidity pools and their protocols.",
+  "topic_summary": "The panel discusses liquidity pools, focusing on Balancer's programmable liquidity, Aave's lending protocols, and Curve's stablecoin market making. Key insights include the integration of AMM and lending protocols, the behavior of interest rates, and the dynamics of liquidity in the market. [t=33:37] [t=252:67]",
+  "router_tags": [
+    "Liquidity Pools",
+    "Balancer",
+    "Aave",
+    "Curve",
+    "DeFi",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "$DAI",
+    "$BTC",
+    "$20",
+    "$100",
+    "$100,000"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

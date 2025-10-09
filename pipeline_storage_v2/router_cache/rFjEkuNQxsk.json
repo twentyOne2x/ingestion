@@ -1,0 +1,21 @@
+{
+  "description": "Welcome to Binance Blockchain Week 2022 in Dubai, featuring over 15 panels, numerous fireside chats, and more than 90 speakers discussing crypto, ecosystem growth, mass adoption, industry building, and user safety.",
+  "topic_summary": "Binance Blockchain Week 2022 kicks off in Dubai, focusing on critical topics in the crypto industry including ecosystem growth and user safety [t=3:92-53:18].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "Dubai",
+    "Event"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "binance blockchain week",
+    "BinanceBlockchainWeek"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "mR0Ya71GOO0",
+  "title": "2021-11-18_mR0Ya71GOO0_Breakpoint 2021: The Barrelling Wave of Collateral: Lending Cycles and the Crypto Revolution",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "E": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Will Barnes",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Join Nina Xiang and Mahumat from Binance Academy for a live educational webinar on crypto fundamentals. Learn about cryptocurrencies, their characteristics, and the differences between various types. Engage with the presenters and ask questions during the session.",
+  "topic_summary": "This webinar covers the basics of cryptocurrencies, including their definition, characteristics, and the distinction between different types. The session is divided into two parts, with the first focusing on an introduction to cryptocurrencies and Bitcoin [t=67:92].",
+  "router_tags": [
+    "Crypto Fundamentals",
+    "Binance Academy",
+    "Cryptocurrency Education",
+    "Bitcoin",
+    "Ethereum",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Nina Xiang",
+    "nina xiang",
+    "Mahumat",
+    "mahumat"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

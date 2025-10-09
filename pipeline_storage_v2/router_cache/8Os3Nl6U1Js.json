@@ -1,0 +1,27 @@
+{
+  "description": "This workshop introduces the Taurus network and its integration with Solana, highlighting the hackathon prizes and user experience benefits of using Taurus for DApps. The session covers the mechanics of Taurus, including distributed key generation and Direct Auth for seamless user login.",
+  "topic_summary": "Overview of Taurus network integration with Solana, hackathon details, and user experience advantages of Taurus for DApps [t=0:00-6:57].",
+  "router_tags": [
+    "Taurus",
+    "Solana",
+    "DApp",
+    "Hackathon",
+    "User Experience"
+  ],
+  "aliases": [
+    "Taurus",
+    "Torus",
+    "torus",
+    "solana",
+    "sol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@TorusLabs",
+    "$USDC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

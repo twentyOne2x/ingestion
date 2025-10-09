@@ -1,0 +1,26 @@
+{
+  "video_id": "vPHCeEtz2Lg",
+  "title": "2021-06-28_vPHCeEtz2Lg_Foresight Presentation - Solana x Serum Defi Hackathon Demo Day",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Harry Potter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Donald Trump",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

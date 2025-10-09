@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on the future of crypto adoption and accessibility for the next billion users, featuring insights from industry leaders.",
+  "topic_summary": "The session explores the demographics and challenges of the next billion crypto users, focusing on accessibility and risk appetite. It highlights the current trends in crypto ownership among different age groups and the need for improved onboarding experiences [t=86:90].",
+  "router_tags": [
+    "crypto",
+    "blockchain",
+    "adoption",
+    "accessibility",
+    "Gen Z",
+    "millennials"
+  ],
+  "aliases": [
+    "Onboarding The Next Billion",
+    "Next Billion Crypto Users",
+    "Crypto Adoption Insights"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL",
+    "@Ewan",
+    "@BorarDamar",
+    "@YulinLee",
+    "@Bonfido"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

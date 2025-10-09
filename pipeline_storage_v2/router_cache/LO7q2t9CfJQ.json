@@ -1,0 +1,25 @@
+{
+  "description": "Brendan Eich discusses the integration of Solana into Brave, emphasizing its potential to enhance user experience in Web3 and DAPP development. He highlights the importance of making crypto accessible and user-friendly, particularly for NFT and DeFi applications.",
+  "topic_summary": "Brendan Eich shares insights on the evolution of the web, the integration of Solana into Brave, and the future of DAPPs and NFTs in the crypto space. He stresses the need for user-friendly solutions in yield earning and wallet functionalities [t=10:72-269:47].",
+  "router_tags": [
+    "Brave",
+    "Solana",
+    "Web3",
+    "DAPP",
+    "NFT",
+    "DeFi"
+  ],
+  "aliases": [
+    "Brendan Eich",
+    "brendan eich",
+    "Brave Software",
+    "brave software"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Brendan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

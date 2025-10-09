@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the benefits of decentralized finance (DeFi) for users, highlighting its accessibility and lack of traditional financial barriers.",
+  "topic_summary": "DeFi allows anyone with internet access to create a crypto wallet and use its services without signups or identity verification, promoting financial inclusion for the unbanked. It contrasts with centralized finance (CeFi), where services are managed by centralized institutions, often requiring custodial wallets and trust in exchanges [t=0:40].",
+  "router_tags": [
+    "DeFi",
+    "financial inclusion",
+    "crypto",
+    "CeFi",
+    "blockchain"
+  ],
+  "aliases": [
+    "DeFi Benefits",
+    "Benefits of DeFi",
+    "Decentralized Finance Benefits"
+  ],
+  "canonical_entities": [
+    "$DEFI",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

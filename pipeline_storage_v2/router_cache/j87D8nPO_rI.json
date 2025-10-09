@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on various topics including music and community tools. Mentions of economic incentives and play-to-earn concepts.",
+  "topic_summary": "Exploration of community engagement and economic incentives in the crypto space, with references to music and social media platforms [t=28:00].",
+  "router_tags": [
+    "Crypto",
+    "Community",
+    "Music",
+    "Economic Incentives"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

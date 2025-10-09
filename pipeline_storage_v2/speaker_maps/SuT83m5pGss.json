@@ -1,0 +1,14 @@
+{
+  "video_id": "SuT83m5pGss",
+  "title": "2022-10-06_SuT83m5pGss_EP.3",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

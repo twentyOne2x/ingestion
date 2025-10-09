@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Solana Changelog, Joe and Jacob discuss recent updates including a new web-based IDE for Solana, proposals for a peer-to-peer network, and changes in transaction sizing. They highlight the benefits of testing in the browser and the potential for improved network efficiency with the new RPC node structure. Additionally, they cover version updates in the cluster releases and the implications for transaction costs.",
+  "topic_summary": "Updates on Solana's development including a new IDE, peer-to-peer network proposals, transaction sizing changes, and version updates in cluster releases [t=0:16].",
+  "router_tags": [
+    "Solana",
+    "Changelog",
+    "P2P Network",
+    "Transaction Guides",
+    "xNFT",
+    "Dev Relations"
+  ],
+  "aliases": [
+    "solana changelog",
+    "Solana Changelog",
+    "Solana changelog",
+    "solana changelogs"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

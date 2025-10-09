@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the differences between fungible and non-fungible tokens, highlighting that fungible tokens like Bitcoin and Ether are identical and can be used for transactions.",
+  "topic_summary": "Fungible tokens are identical and serve as a medium for transactions, while non-fungible tokens are unique. Examples include Bitcoin and Ether as fungible coins [t=13:84].",
+  "router_tags": [
+    "Fungible Tokens",
+    "Non-Fungible Tokens",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ether"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "Binance Academy",
+    "binanceacademy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

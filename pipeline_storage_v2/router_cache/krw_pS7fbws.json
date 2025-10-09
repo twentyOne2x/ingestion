@@ -1,0 +1,22 @@
+{
+  "description": "In this episode of The Solana Podcast, Grammy Award-winning artist RAC discusses his journey into crypto and computer science, sharing insights from his early experiences with computers and music production. He reflects on the evolution of technology and its intersection with creativity, touching on topics like Bitcoin and the Silk Road.",
+  "topic_summary": "RAC shares his background in computers and music, detailing how his early interests led him to explore crypto and technology. He discusses the impact of the Internet on music production and his views on Bitcoin and decentralized platforms [t=250.0].",
+  "router_tags": [
+    "Crypto",
+    "Music Production",
+    "Technology",
+    "RAC",
+    "Solana"
+  ],
+  "aliases": [
+    "Rac",
+    "Andre Kranje",
+    "RAC"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

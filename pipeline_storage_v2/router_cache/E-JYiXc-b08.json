@@ -1,0 +1,27 @@
+{
+  "description": "Rohit Wade, CTO of Binance, discusses the rapid evolution of cryptocurrency technology and Binance's strategies for handling billions of transactions efficiently. He highlights the importance of user experience, fraud detection, and scalability in the face of increasing user demand and market cycles. The conversation also touches on the company's use of AWS for infrastructure and partnerships for smooth onboarding processes.",
+  "topic_summary": "Rohit Wade explains how Binance secures billions of crypto transactions, emphasizing technology, user experience, and scalability. He shares insights on the growth of the platform since 2017 and the measures taken to ensure efficient operations amidst market fluctuations [t=0:32-311:97].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Rohit Wade",
+    "Technology",
+    "Scalability",
+    "User Experience",
+    "Fraud Detection"
+  ],
+  "aliases": [
+    "Rohit Wade",
+    "Rohit Wad",
+    "Binance CTO",
+    "Chief Technology Officer"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@RohitWade"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

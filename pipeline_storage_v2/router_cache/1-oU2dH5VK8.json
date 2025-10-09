@@ -1,0 +1,28 @@
+{
+  "description": "CZ discusses Binance's recent suspension of USCC and USDT deposits on Solana, the impact of FTX's collapse on the crypto industry, and the need for increased transparency and regulatory scrutiny.",
+  "topic_summary": "CZ addresses the suspension of USCC and USDT deposits on Solana [t=29:44], the repercussions of FTX's collapse on consumer trust and business operations [t=78:06], and the importance of transparency in the crypto industry [t=119:96].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "FTX",
+    "Solana",
+    "Regulation"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "cz",
+    "BinanceYoutube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "$BTC",
+    "$40 Million",
+    "$2 Billion",
+    "$10 Billion"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

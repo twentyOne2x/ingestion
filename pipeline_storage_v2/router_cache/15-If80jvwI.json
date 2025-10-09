@@ -1,0 +1,25 @@
+{
+  "description": "In this unfiltered discussion, the Binance co-founder addresses various topics including the misconceptions about Bitcoin's creation, the company's financial stability, and the importance of ethical practices in business. He emphasizes the significance of transparency and user trust, especially in light of industry challenges like the FTX collapse. The conversation also touches on personal habits and team dynamics at Binance.",
+  "topic_summary": "The Binance co-founder discusses his views on Bitcoin, company reserves, user trust, and ethical business practices while reflecting on the challenges faced in the crypto industry [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Crypto",
+    "Trust",
+    "Finance"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "CZ",
+    "TrustWallett",
+    "Renato"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

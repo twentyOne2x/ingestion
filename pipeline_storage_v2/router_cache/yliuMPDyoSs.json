@@ -1,0 +1,22 @@
+{
+  "description": "This episode covers the latest updates in the Solana ecosystem, including the upcoming 2x transaction size, offline transaction signing, and the deprecation of the old BPF loader. The community is also encouraged to contribute to the Seahorse Cookbook.",
+  "topic_summary": "Updates on Solana's transaction size increase [t=12:00], offline signing feature [t=72:65], and the Seahorse Cookbook [t=127:99].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Updates",
+    "Seahorse",
+    "Transaction Size"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

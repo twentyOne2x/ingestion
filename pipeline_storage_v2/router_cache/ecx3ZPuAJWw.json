@@ -1,0 +1,24 @@
+{
+  "description": "Meet the Binance Angels, a community of advocates for Binance and the crypto space. Members share their experiences and insights into the crypto world, emphasizing the importance of community and support in the finance sector.",
+  "topic_summary": "Introduction to Binance Angels and their role in the crypto community. Discussions on personal experiences and the vision for decentralized finance [t=350:13].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Finance",
+    "Community",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "Binance Angels",
+    "binance angels",
+    "Binance angels"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@KenanSulamen",
+    "@MartinLeandowski"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

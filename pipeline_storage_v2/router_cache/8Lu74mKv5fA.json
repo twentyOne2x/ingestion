@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on P2P trading involving BTC, ETH, USDT, and BNB.",
+  "topic_summary": "Overview of P2P trading with Bitcoin, Ethereum, and Tether [t=3:48].",
+  "router_tags": [
+    "P2P",
+    "Bitcoin",
+    "Ethereum",
+    "Tether",
+    "BNB"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$USDT",
+    "$AMRIKI",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

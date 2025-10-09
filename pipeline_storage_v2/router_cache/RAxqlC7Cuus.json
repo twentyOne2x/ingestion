@@ -1,0 +1,23 @@
+{
+  "description": "Alice shares her transformative journey with Binance, highlighting how the platform has automated her investments and helped her earn consistently. She discusses her experiences living in Switzerland and Spain while utilizing Binance's services.",
+  "topic_summary": "Alice's journey with Binance and the impact of crypto on her life [t=0:56]. She explains how Binance's products have simplified her investment process [t=5:20] and her nomadic lifestyle across countries [t=20:36].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Investing",
+    "Finance"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube",
+    "@Alice",
+    "@Newton"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

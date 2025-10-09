@@ -1,0 +1,21 @@
+{
+  "description": "This video discusses how to assess risks in your investment portfolio, highlighting both internal and external factors that can impact asset performance.",
+  "topic_summary": "Learn to evaluate risks associated with investments, including liquidity risk in cryptocurrencies and external influences like economic downturns [t=14:16]. The video suggests ranking investments by risk level and analyzing factors such as price and volatility [t=24:88].",
+  "router_tags": [
+    "investment",
+    "risk assessment",
+    "portfolio management",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "How to Access Risks in Your Investment Portfolio",
+    "Investment Risk Assessment",
+    "Portfolio Risk Management"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "Lehman Brothers"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Dan from Solana discusses the Proof of History algorithm and Tower BFT consensus at a blockchain meetup in Moscow, organized by Everstake. The event attracted community members, developers, and investors, fostering discussions about Solana's potential in the blockchain industry.",
+  "topic_summary": "At a Moscow meetup, Dan from Solana explains Proof of History and Tower BFT, highlighting Solana's speed and performance without sharding. The event, hosted by Everstake, engaged the community with presentations in English and Russian, and discussions about the future of Solana and Forever State.",
+  "router_tags": [
+    "Solana",
+    "Proof of History",
+    "Tower BFT",
+    "blockchain",
+    "Everstake",
+    "Devocracy"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "Solana Foundation",
+    "Solana",
+    "Dan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn",
+    "@everstake",
+    "@devocracy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

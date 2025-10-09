@@ -1,0 +1,26 @@
+{
+  "video_id": "kFvtCtcd4-s",
+  "title": "2021-06-03_kFvtCtcd4-s_Binance Podcast: How crypto & DeFi are shaping the world ft. Mike Novogratz, CEO of Galaxy Digital",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Bryan Kastadion",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Alex Marco",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

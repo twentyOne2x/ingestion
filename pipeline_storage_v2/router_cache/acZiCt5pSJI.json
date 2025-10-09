@@ -1,0 +1,25 @@
+{
+  "description": "In this workshop, Daffy and Max from Mango Markets discuss integration and building stop losses during the Ignition Hackathon live stream. They provide a technical introduction to Mango Markets, focusing on key accounts and their functionalities.",
+  "topic_summary": "Daffy and Max introduce Mango Markets, covering integration, stop loss orders, and key accounts in the Mango ecosystem. They emphasize an intermediate level of understanding and plan to implement stop loss orders live [t=224.01].",
+  "router_tags": [
+    "Mango Markets",
+    "Solana",
+    "Ignition Hackathon",
+    "stop loss",
+    "integration"
+  ],
+  "aliases": [
+    "Mango",
+    "mango",
+    "Mango Markets",
+    "mango markets"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Daffy",
+    "@Max"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

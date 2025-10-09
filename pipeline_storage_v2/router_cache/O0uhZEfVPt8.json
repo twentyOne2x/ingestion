@@ -1,0 +1,22 @@
+{
+  "description": "Introduction to Solana Bootcamp by Jerry from Solana Labs, covering the basic Solana programming model and account structure. The session includes insights on writing decentralized applications and understanding the Solana architecture.",
+  "topic_summary": "Overview of Solana programming, including client-server interactions, JSON RPC, and account state management. Key concepts include transaction handling and API usage for querying blockchain data [t=0:00-5:12].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Decentralized Applications",
+    "Programming",
+    "Webinar"
+  ],
+  "aliases": [
+    "Solana Bootcamp",
+    "solana bootcamp",
+    "Solana bootcamp"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

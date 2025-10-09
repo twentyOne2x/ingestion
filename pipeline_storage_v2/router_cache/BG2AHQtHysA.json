@@ -1,0 +1,22 @@
+{
+  "description": "This video showcases Solana's internal scalability test, demonstrating its capabilities and performance metrics.",
+  "topic_summary": "An overview of Solana's internal scalability test, highlighting key performance indicators and results [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Scalability",
+    "Blockchain",
+    "Performance Test"
+  ],
+  "aliases": [
+    "Solana Foundation",
+    "solana foundation",
+    "@solanafndn",
+    "solanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

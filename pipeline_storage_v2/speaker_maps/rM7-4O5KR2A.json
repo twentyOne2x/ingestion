@@ -1,0 +1,14 @@
+{
+  "video_id": "rM7-4O5KR2A",
+  "title": "2022-07-20_rM7-4O5KR2A_EP.1",
+  "channel_name": "@binancezh",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Fireside chat with Stani Kulechov, founder of Aave, discussing blockchain technology, smart contracts, and the challenges of building decentralized finance solutions. Topics include the importance of anonymity in transactions [t=86:44], the evolution of Ethereum [t=129:78], and the potential for blockchain to transform traditional finance [t=846:70].",
+  "topic_summary": "Stani Kulechov shares insights on the development of Aave, the significance of smart contracts, and the future of decentralized finance. He emphasizes the need for innovation and the challenges faced in scaling blockchain solutions [t=1046:68].",
+  "router_tags": [
+    "Aave",
+    "Blockchain",
+    "DeFi",
+    "Smart Contracts",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Stani Kulechov",
+    "stani kulechov",
+    "Aave",
+    "aave"
+  ],
+  "canonical_entities": [
+    "@SolanaFndn",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on the perception of cryptocurrency as a Ponzi scheme, emphasizing the need for thorough research before investing.",
+  "topic_summary": "Critique of the cryptocurrency industry, highlighting risks and the importance of due diligence [t=0:48-17:52].",
+  "router_tags": [
+    "cryptocurrency",
+    "Ponzi scheme",
+    "Binance",
+    "investing",
+    "research"
+  ],
+  "aliases": [
+    "@BinanceZH",
+    "@binancezh",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

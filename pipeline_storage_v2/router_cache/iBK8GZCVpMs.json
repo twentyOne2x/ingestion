@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Spot Grid Trading on Binance, a strategy that automates buying and selling crypto at preset intervals to profit from price fluctuations. It covers how to set up a trading grid, the importance of market conditions, and tips for effective trading.",
+  "topic_summary": "Spot Grid Trading automates crypto trading by creating grids of buy and sell orders based on price fluctuations. It is most effective in volatile markets, allowing traders to profit from small price changes while managing risks. [t=39:25] Users must understand the feature and set appropriate parameters to maximize profitability. [t=175:06]",
+  "router_tags": [
+    "Spot Grid Trading",
+    "Binance",
+    "Crypto Trading",
+    "Automated Trading",
+    "Investment Strategy"
+  ],
+  "aliases": [
+    "Spot Grid trading",
+    "spot grid Trading",
+    "Spot grid Trading",
+    "SPOT GRID TRADING"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

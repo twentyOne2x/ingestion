@@ -1,0 +1,36 @@
+{
+  "description": "Panel discussion on transfer layer scalability and cross-chain bridging, addressing technical, operational, and UX challenges while exploring opportunities in decentralized finance.",
+  "topic_summary": "The panel discusses the evolution and importance of cross-chain bridges, emphasizing their role in decentralized finance and user experience. Key points include the historical use of Bitcoin as collateral, the need for trustless bridges, and the future of wrapped assets in multi-chain environments. [t=21:92] [t=24:56] [t=191:87]",
+  "router_tags": [
+    "Cross-Chain Bridges",
+    "Scalability",
+    "Decentralized Finance",
+    "User Experience",
+    "Blockchain Interoperability"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Transfer Layer",
+    "Scalability and Cross Chain Bridges"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$69 Million",
+    "@Hendrik",
+    "@JumpCrypto",
+    "@Brian",
+    "@Lido",
+    "@Austin",
+    "@AlexMirnov",
+    "@Andrey",
+    "@Allbridge",
+    "@Andre",
+    "@Binance",
+    "@Mango",
+    "@Saber",
+    "@Terra"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "This video explains cryptocurrency mining, detailing how transactions are verified and added to the blockchain, the role of miners, and the process of creating new coins. It covers the hashing process, the concept of Merkle trees, and the competition between miners to find valid hashes.",
+  "topic_summary": "Cryptocurrency mining is essential for transaction verification and coin creation in decentralized networks. Miners organize transactions, hash them, and compete to add blocks to the blockchain, ensuring network integrity and security. [t=0:16] [t=2:40] [t=130:16]",
+  "router_tags": [
+    "Cryptocurrency",
+    "Mining",
+    "Blockchain",
+    "Decentralization",
+    "Peer-to-Peer"
+  ],
+  "aliases": [
+    "Cryptocurrency Mining",
+    "Crypto Mining",
+    "Mining Cryptocurrency"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

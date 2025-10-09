@@ -1,0 +1,24 @@
+{
+  "description": "This video provides essential tips for newcomers to cryptocurrency, focusing on investment strategies in Bitcoin and Ethereum.",
+  "topic_summary": "Advice for new cryptocurrency investors, emphasizing gradual investment in Bitcoin and Ethereum [t=0:02].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Ethereum",
+    "Investment",
+    "Newcomers"
+  ],
+  "aliases": [
+    "Crypto Tips",
+    "CryptoAdvice",
+    "Cryptocurrency Tips",
+    "CryptoAdviceForNewcomers"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

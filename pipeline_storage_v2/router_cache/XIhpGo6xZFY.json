@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on Web3 concepts, decentralized organizations, and NFT webinars, featuring various speakers and topics.",
+  "topic_summary": "Exploration of Web3, decentralized autonomy, and the creator economy, with mentions of notable figures and platforms [t=03:41].",
+  "router_tags": [
+    "Web3",
+    "NFT",
+    "Decentralization",
+    "Creator Economy"
+  ],
+  "aliases": [
+    "Web3.0",
+    "web3.0",
+    "Web 3.0"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

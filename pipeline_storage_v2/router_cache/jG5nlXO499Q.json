@@ -1,0 +1,22 @@
+{
+  "description": "Anatoly, founder and CEO of Solana, presents the capabilities of Solana as the world's fastest blockchain, emphasizing its ability to handle 700,000 transactions per second and its potential to decentralize various industries including advertising and exchanges.",
+  "topic_summary": "In this pitch, Anatoly discusses Solana's transaction speed [t=29.20], its technical foundation [t=38.21], and the implications for decentralization in industries like advertising and finance [t=82.03].",
+  "router_tags": [
+    "Blockchain",
+    "Solana",
+    "Decentralization",
+    "Ethereum",
+    "Transactions"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

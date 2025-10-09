@@ -1,0 +1,25 @@
+{
+  "description": "This masterclass covers Binance and its role in the cryptocurrency ecosystem, discussing the impact of blockchain technology and the importance of decentralized finance.",
+  "topic_summary": "The session emphasizes the shift towards decentralized finance and the growing adoption of cryptocurrencies like Bitcoin and Ethereum, highlighting Binance's contributions to this movement. Key points include the release of the Binance Smart Chain and the establishment of a $100 million fund for its ecosystem [t=112.28].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "Decentralized Finance",
+    "Bitcoin",
+    "Ethereum",
+    "Latin America"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

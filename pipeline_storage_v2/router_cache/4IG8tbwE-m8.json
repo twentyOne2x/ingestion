@@ -1,0 +1,27 @@
+{
+  "description": "A curated discussion on NFTs within the Solana ecosystem, featuring insights from various creators and projects. Speakers include Sam from Galactic Echo Space Garage and Simon from MixMob, who share their experiences and visions for community engagement and immersive storytelling in NFT collections.",
+  "topic_summary": "Exploration of NFT collections on Solana, focusing on community and culture. Highlights include the introduction of projects like Galactic Echoes and MixMob, discussing their unique approaches to NFTs and gaming [t=8:08-234:10].",
+  "router_tags": [
+    "NFTs",
+    "Solana",
+    "Galactic Echoes",
+    "MixMob",
+    "Community",
+    "Culture",
+    "Gaming"
+  ],
+  "aliases": [
+    "Breakpoint 2021 Nifty Collections",
+    "Breakpoint 2021 Nifty collections",
+    "Breakpoint 2021 nifty collections"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sam",
+    "@Simon",
+    "@Max"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "tcGzFmvrzJs",
+  "title": "2021-11-18_tcGzFmvrzJs_Breakpoint 2021: NFTs and the Games Within Games",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "D": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.8500000000000001,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Morgan Bella",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

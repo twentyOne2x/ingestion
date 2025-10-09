@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses how cryptocurrencies and blockchain technology facilitate the Metaverse by enabling easier auditing, transferability, and uniqueness of digital assets.",
+  "topic_summary": "Exploration of the role of cryptocurrencies and blockchain in the Metaverse, highlighting their advantages over traditional in-game currencies and the importance of governance tokens and DAOs for decentralized decision-making [t=0:40].",
+  "router_tags": [
+    "Crypto",
+    "Blockchain",
+    "Metaverse",
+    "DAOs",
+    "Governance Tokens"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "BinanceAcademy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

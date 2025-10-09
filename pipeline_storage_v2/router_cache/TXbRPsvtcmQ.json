@@ -1,0 +1,23 @@
+{
+  "description": "Highlights from the Solana x Serum DeFi Hackathon Demo Day featuring demos from Party Parrot, Synthetify, and Marinade Finance.",
+  "topic_summary": "The event showcases innovative DeFi projects including options on chain and perpetual futures, emphasizing a blend of traditional finance and decentralized finance [t=31:91].",
+  "router_tags": [
+    "DeFi",
+    "Solana",
+    "Hackathon",
+    "Finance"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "Solana Foundation",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "@solanafndn",
+    "$SYN",
+    "$MAR",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

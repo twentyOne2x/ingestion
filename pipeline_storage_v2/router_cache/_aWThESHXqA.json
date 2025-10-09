@@ -1,0 +1,25 @@
+{
+  "description": "In this AMA, Juan, the Chief Strategy Officer of Prometheus, discusses the new product Promify, aimed at rewarding celebrities and their fans on social media. He provides insights into the platform's features and its vision for private data exchange and freedom of expression.",
+  "topic_summary": "Juan introduces Promify, a platform for fans to invest in celebrities, highlighting its launch and the underlying principles of freedom of expression and private data exchange [t=3350].",
+  "router_tags": [
+    "Prometeus",
+    "Promify",
+    "AMA",
+    "Binance",
+    "cryptocurrency",
+    "social media",
+    "celebrity investment"
+  ],
+  "aliases": [
+    "Prometeus",
+    "Promify",
+    "prometeus",
+    "promify"
+  ],
+  "canonical_entities": [
+    "$PROM",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

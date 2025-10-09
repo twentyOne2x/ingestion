@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on the security of cross-chain bridges and their role in preventing hacks. The speakers explore the importance of decentralized protocols and the future of multi-chain applications, emphasizing the need for secure bridge protocols and real-time monitoring systems.",
+  "topic_summary": "The video covers the significance of trustless bridges in DeFi, addressing security concerns and the potential of multi-chain interactions. It highlights the role of various blockchain technologies and the importance of community involvement in enhancing security measures [t=0:24 - t=36:45].",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Cross-Chain",
+    "Security",
+    "Bridges"
+  ],
+  "aliases": [
+    "Security First In DeFi",
+    "Trustless Bridge",
+    "Cross-Chain Security"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$USDT",
+    "$USDC",
+    "@SunishChitosaki",
+    "@IanHamilton"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

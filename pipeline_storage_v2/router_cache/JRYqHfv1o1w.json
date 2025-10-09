@@ -1,0 +1,25 @@
+{
+  "description": "A fireside chat featuring Kyriacos Koupparis from UN Food Programs and Helen Hai from Binance Charity discussing blockchain applications in food security and humanitarian efforts.",
+  "topic_summary": "Discussion on the role of blockchain in enhancing food programs and charity initiatives, featuring insights from Helen Hai and Kyriacos Koupparis [t=16:40].",
+  "router_tags": [
+    "Blockchain",
+    "Food Security",
+    "Charity",
+    "UN",
+    "Binance"
+  ],
+  "aliases": [
+    "Helen Hai",
+    "Helen",
+    "Binance Charity",
+    "Kyriacos Koupparis"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE",
+    "@HelenHai",
+    "@KyriacosKoupparis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

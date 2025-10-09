@@ -1,0 +1,26 @@
+{
+  "description": "The Solana Summer Demo Day showcases innovative projects from Solana's third hackathon, featuring 13 teams presenting their demos. The event emphasizes community education and highlights Solana's high-performance infrastructure, aiming to connect developers, investors, and communities. A fireside chat with industry experts discusses Solana's potential and innovation in the crypto space.",
+  "topic_summary": "The event features project presentations and discussions on Solana's ecosystem and its advantages in the crypto market, including speed and cost-effectiveness [t=373.13].",
+  "router_tags": [
+    "Solana",
+    "Demo Day",
+    "Hackathon",
+    "Crypto",
+    "DeFi",
+    "NFTs",
+    "Web3"
+  ],
+  "aliases": [
+    "Solana Summer Demo Day",
+    "Solana Demo Day",
+    "Solana Hackathon"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@SinoGlobal",
+    "@Parafi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

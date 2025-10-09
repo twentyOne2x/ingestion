@@ -1,0 +1,20 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency, market analysis, and trading strategies.",
+  "topic_summary": "The session covers market trends, trading patterns, and insights on specific cryptocurrencies, including discussions on support and resistance levels [t=02:24].",
+  "router_tags": [
+    "Q&A",
+    "cryptocurrency",
+    "market analysis",
+    "trading strategies"
+  ],
+  "aliases": [
+    "Binance 60",
+    "Binance60",
+    "binance 60"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "SxPAJkb0pNg",
+  "title": "2021-04-11_SxPAJkb0pNg_Michael Wagner - CEO & Co-Founder of Star Atlas Ep #38",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Michael Wagner",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

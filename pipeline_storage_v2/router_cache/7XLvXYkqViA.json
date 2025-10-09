@@ -1,0 +1,18 @@
+{
+  "description": "Discussion on the impact of Binance listing rumors on project suspensions.",
+  "topic_summary": "The video explores how rumors regarding Binance listings can lead to project suspensions, highlighting the consequences for projects involved [t=00:26].",
+  "router_tags": [
+    "Binance",
+    "listing rumors",
+    "project suspension"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

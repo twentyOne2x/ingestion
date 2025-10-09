@@ -1,0 +1,23 @@
+{
+  "description": "This video explains how hardware wallets work, detailing their function as secure storage devices for cryptocurrency keys.",
+  "topic_summary": "Hardware wallets are physical devices that generate and store public and private keys offline, making them a secure option for long-term crypto storage [t=0:40]. They are classified as cold wallets and are recommended for users holding significant amounts of cryptocurrency [t=12:64].",
+  "router_tags": [
+    "hardware wallets",
+    "crypto security",
+    "cold storage",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Hardware Wallets",
+    "hardware wallets",
+    "Crypto Wallets",
+    "crypto wallets"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

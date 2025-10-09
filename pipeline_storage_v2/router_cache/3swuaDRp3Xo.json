@@ -1,0 +1,25 @@
+{
+  "description": "Changpeng Zhao discusses his journey from China to founding Binance in 2017, highlighting the platform's rapid growth and diverse offerings, including a crypto wallet, information website, and NFT platform. He emphasizes the importance of user trust and making tough decisions to protect users, such as covering $6 million in losses during a regulatory mandate in 2017.",
+  "topic_summary": "Changpeng Zhao shares insights on Binance's evolution, the significance of user trust, and the challenges of operating in the crypto space, including regulatory issues and financial decisions made to protect users [t=13:04-230:33].",
+  "router_tags": [
+    "Binance",
+    "Changpeng Zhao",
+    "cryptocurrency",
+    "user trust",
+    "ICO",
+    "NFT",
+    "regulation"
+  ],
+  "aliases": [
+    "Changpeng Zhao",
+    "CZ",
+    "Binance CEO"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$SOL",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

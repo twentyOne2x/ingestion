@@ -1,0 +1,23 @@
+{
+  "description": "This video explains six key metrics related to Binance Smart Chain (BSC), including yield farming, average gas prices, unique address counts, daily transactions, top BEP20 tokens, and validators. It emphasizes the importance of these metrics for tracking BSC activity and encourages viewers to conduct their own research before participating in DeFi projects.",
+  "topic_summary": "Learn about six essential Binance Smart Chain metrics, including yield farming, gas prices, unique addresses, daily transactions, BEP20 tokens, and validators, to better understand BSC's growth and activity [t=4:24].",
+  "router_tags": [
+    "Binance Smart Chain",
+    "BSC",
+    "DeFi",
+    "Yield Farming",
+    "Blockchain Metrics"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binance",
+    "BSC"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

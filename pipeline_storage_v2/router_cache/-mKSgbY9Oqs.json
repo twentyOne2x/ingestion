@@ -1,0 +1,21 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency, market analysis, and project forecasts are discussed. Key figures such as Sam Saint, Pegaq, and Fazio provide insights on market trends and investment strategies.",
+  "topic_summary": "The discussion covers market cap forecasts, technical and fundamental analysis of projects, and investment strategies in the crypto space. Notable mentions include $NISI and various project insights [t=0:16].",
+  "router_tags": [
+    "cryptocurrency",
+    "market analysis",
+    "investment strategies",
+    "Q&A"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$NISI",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

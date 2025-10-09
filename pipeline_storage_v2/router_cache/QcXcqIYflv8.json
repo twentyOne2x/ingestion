@@ -1,0 +1,24 @@
+{
+  "description": "Brendan Eich discusses the integration of Solana into the Brave browser, emphasizing its potential to serve as a gateway for a billion crypto users. He highlights the importance of making DAPPs Solana-enabled by default and simplifying user experiences in DeFi and NFTs.",
+  "topic_summary": "Eich presents on the evolution of the web and the role of Solana in enhancing user access to decentralized applications and services, aiming to streamline NFT transactions and yield earning.",
+  "router_tags": [
+    "Brave",
+    "Solana",
+    "Web3",
+    "DAPP",
+    "NFT",
+    "DeFi"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Brave's Brendan Eich",
+    "Brendan Eich"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Brendan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

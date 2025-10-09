@@ -1,0 +1,21 @@
+{
+  "description": "A celebration of the diverse stories from over 2,600 crypto enthusiasts across more than 100 countries, highlighting the impact of the Binance community.",
+  "topic_summary": "Exploring the global reach of Binance through personal stories and experiences shared by users [t=0:24].",
+  "router_tags": [
+    "Crypto",
+    "Binance",
+    "Community",
+    "Global Stories"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Breakpoint 2021 discusses the state of the Solana network, reflecting on the year's unexpected developments and the growth of the community. The speaker expresses gratitude for the team's efforts and highlights the importance of decentralization and censorship resistance in Solana's evolution.",
+  "topic_summary": "At [t=00:00], the speaker welcomes attendees to Breakpoint 2021 in Lisbon, emphasizing the significance of the year for Solana. They recount the growth of the team and the challenges faced during the network's launch, while also addressing the cultural aspects of development within the Solana ecosystem.",
+  "router_tags": [
+    "Solana",
+    "Breakpoint",
+    "Decentralization",
+    "Censorship Resistance",
+    "Crypto Conference"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint",
+    "Solana Conference"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@Eric"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

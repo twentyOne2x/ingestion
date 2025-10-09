@@ -1,0 +1,27 @@
+{
+  "description": "Changpeng Zhao, CEO of Binance, discusses the company's stance on competition with FTX and addresses allegations of money laundering related to Binance. He emphasizes that Binance does not view FTX as a competitor and clarifies misconceptions regarding their business practices and the investigation mentioned by Nouriel Roubini.",
+  "topic_summary": "In this interview, Changpeng Zhao refutes claims of Binance's involvement in money laundering and discusses the company's focus on industry growth rather than competition with FTX. He highlights that they have not engaged in a feud with Sam Bankman Fried and explains their strategic decisions regarding FTT tokens and industry collaboration [t=163:16].",
+  "router_tags": [
+    "Binance",
+    "Changpeng Zhao",
+    "FTX",
+    "Sam Bankman Fried",
+    "Nouriel Roubini",
+    "cryptocurrency",
+    "money laundering"
+  ],
+  "aliases": [
+    "Changpeng Zhao",
+    "CZ",
+    "Binance CEO"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@cz_binance",
+    "$FTT",
+    "@SBF_FTX",
+    "@Nouriel"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

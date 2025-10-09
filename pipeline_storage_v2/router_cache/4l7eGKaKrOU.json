@@ -1,0 +1,25 @@
+{
+  "description": "This workshop presentation discusses Mango Markets, a platform for margin trading and lending built on Serum. The speaker outlines the evolution of Mango Markets since its inception in 2020, highlighting its features such as perpetual swaps, DAO governance, and cross-collateralization. Demonstrations include trading on Devnet and the benefits of using Mango Markets over traditional platforms like Ameritrade.",
+  "topic_summary": "Mango Markets Overview and Demonstration [t=00:00-06:00]. Evolution from Serum to margin trading [t=29:51-36:99]. Features of Mango Markets including borrowing, lending, and perpetual swaps [t=140:00-177:88]. Live trading demonstration on Devnet [t=190:37-280:26]. Comparison with traditional trading platforms [t=343:40-366:60].",
+  "router_tags": [
+    "Mango Markets",
+    "DeFi",
+    "Margin Trading",
+    "DAO",
+    "Serum",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Mango markets",
+    "mango Markets",
+    "MANGO MARKETS"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

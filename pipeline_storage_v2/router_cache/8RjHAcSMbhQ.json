@@ -1,0 +1,30 @@
+{
+  "description": "This video explains cryptocurrency in a concise manner, covering its definition, functionality, and the differences from traditional banking systems. It discusses the role of blockchain technology, self-custody, and the importance of stablecoins.",
+  "topic_summary": "Cryptocurrency is digital money that operates without banks, using blockchain technology for secure transactions. It allows users to manage their assets directly and includes various types of cryptocurrencies, including stablecoins pegged to the US dollar. The video emphasizes the evolving financial landscape and the potential for cryptocurrencies to reshape ownership and value across multiple sectors [t=264.06].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Blockchain",
+    "Digital Money",
+    "Stablecoins",
+    "Decentralization",
+    "Investing"
+  ],
+  "aliases": [
+    "Cryptocurrency",
+    "Crypto",
+    "Digital Currency",
+    "Stable Coins",
+    "Blockchain Technology"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$SOL",
+    "$USDC",
+    "$USDT",
+    "@BinanceYoutube",
+    "@Jessica"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

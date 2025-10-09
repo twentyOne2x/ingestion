@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Bitcoin's presence in the stock market and its implications for cryptocurrency acceptance in El Salvador.",
+  "topic_summary": "Exploration of Bitcoin's market entry and its impact on cryptocurrency adoption in El Salvador [t=0:32].",
+  "router_tags": [
+    "Bitcoin",
+    "Binance",
+    "El Salvador",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "aliases": [
+    "BinanceTV",
+    "Binance tv",
+    "binance youtube",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@ElSalvador"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

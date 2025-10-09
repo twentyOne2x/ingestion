@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on market cycles and innovation in the crypto space, featuring insights from investors about the current state and future of the market.",
+  "topic_summary": "Investors analyze the crypto market's performance over the past year, discussing the impact of bear markets and the emergence of strong projects and builders. They emphasize the importance of long-term investment strategies and the role of true believers in the blockchain space [t=215.09].",
+  "router_tags": [
+    "Crypto",
+    "Investing",
+    "Market Cycles",
+    "Innovation",
+    "Bear Market"
+  ],
+  "aliases": [
+    "Market Cycles & Innovation",
+    "Crypto Investing",
+    "Bull Run Preparation"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$2 Million",
+    "$800,000",
+    "$300 Million",
+    "$200 Billion",
+    "$50 Million",
+    "$40 Million",
+    "$18 Billion",
+    "$1.4 Billion",
+    "$10 Million"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

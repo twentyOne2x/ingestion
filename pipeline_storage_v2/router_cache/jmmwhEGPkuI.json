@@ -1,0 +1,27 @@
+{
+  "description": "CZ discusses the evolution of Binance and his current focus on helping builders in the crypto space. He reflects on his busy schedule and the establishment of Giggle Academy, which incorporates blockchain elements.",
+  "topic_summary": "CZ shares insights on Binance's market share, his transition from day-to-day management, and the broader ecosystem beyond centralized exchanges. He emphasizes the importance of supporting new projects and initiatives like Giggle Academy [t=178.99].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Giggle Academy",
+    "Blockchain",
+    "Crypto",
+    "Memecoins"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "Binance Founder",
+    "Binance Clubhouse"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "$SOL",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

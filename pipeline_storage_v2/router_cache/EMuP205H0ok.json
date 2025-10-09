@@ -1,0 +1,31 @@
+{
+  "description": "Fabian, co-founder of KF Network, discusses the KIVE protocol for efficient data storage and validation in the crypto ecosystem. He highlights challenges in accessing data across various blockchains and introduces KIVE as a solution that utilizes a decentralized storage pool with uploader and validator nodes. The protocol integrates with multiple data sources and ensures data integrity through a proof-of-stake system. KIVE aims to bridge DApps with permanent storage solutions like Arweave.",
+  "topic_summary": "Overview of KIVE protocol for data storage and validation in blockchain applications, addressing data accessibility issues and introducing a decentralized solution with uploader and validator nodes [t=49.47].",
+  "router_tags": [
+    "KIVE",
+    "data storage",
+    "blockchain",
+    "decentralized",
+    "crypto",
+    "Arweave",
+    "DApp"
+  ],
+  "aliases": [
+    "Kive",
+    "kive",
+    "KF Network",
+    "kf network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "$AVAX",
+    "$FIL",
+    "$DOT",
+    "@SolanaFndn",
+    "@Kive"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Tristan from Zeta presents insights on maximizing success in hackathons, sharing experiences from their journey in building a DeFi options platform on Solana. The session covers tips on project development, deployment, and presentation strategies to help participants excel in hackathons.",
+  "topic_summary": "Tristan discusses strategies for succeeding in hackathons, including project development, community building, and effective presentations, drawing from Zeta's experience in the previous hackathon [t=66.3].",
+  "router_tags": [
+    "Hackathon",
+    "DeFi",
+    "Solana",
+    "Zeta",
+    "Options Trading",
+    "Development",
+    "Community Building"
+  ],
+  "aliases": [
+    "Zeta",
+    "zeta",
+    "ZETA",
+    "Tristan",
+    "tristan"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

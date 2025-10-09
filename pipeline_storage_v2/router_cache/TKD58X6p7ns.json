@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the differences between hot and cold crypto wallets, detailing their accessibility, security features, and types.",
+  "topic_summary": "Hot wallets are connected to the Internet, making them convenient for transactions [t=0:48]. Cold wallets store keys offline, providing enhanced security [t=24:48]. The video also categorizes wallets into software and hardware types [t=43:83].",
+  "router_tags": [
+    "crypto",
+    "wallets",
+    "hot wallets",
+    "cold wallets",
+    "security"
+  ],
+  "aliases": [
+    "What is Hot and Cold Crypto Wallets",
+    "Hot and Cold Wallets",
+    "Crypto Wallet Types"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

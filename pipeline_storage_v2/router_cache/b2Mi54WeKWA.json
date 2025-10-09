@@ -1,0 +1,25 @@
+{
+  "description": "Live AMA with CZ from Binance discussing market trends, Bitcoin, BNB, and meme coins. CZ emphasizes the importance of risk management in crypto investments.",
+  "topic_summary": "CZ Binance addresses market volatility and corrections, particularly regarding Bitcoin and BNB, while discussing the influence of meme coins and the importance of proper risk management [t=70:61].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "AMA",
+    "Bitcoin",
+    "BNB",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "CZ Binance",
+    "Binance AMA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@elonmusk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

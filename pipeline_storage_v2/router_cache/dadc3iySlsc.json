@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Anatoly interviews Jonathan Shamul, founder of Aleph.im, discussing his journey into crypto, the development of Aleph IM, and the need for decentralized infrastructure in Web3.",
+  "topic_summary": "Jonathan Shamul shares his background in crypto development, the inception of Aleph IM, and the importance of decentralizing the last mile of blockchain applications, particularly in relation to AWS dependencies [t=169.55].",
+  "router_tags": [
+    "Aleph",
+    "Web3",
+    "Decentralization",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Jonathan Schemoul",
+    "Jonathan Shamul",
+    "Aleph IM",
+    "Aleph"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "$ETH",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

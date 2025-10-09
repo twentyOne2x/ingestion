@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses how market sentiment influences asset prices, highlighting the cyclical nature of emotions during market phases. It explains the transition from optimism in bull markets to negativity in bear markets, including the psychological effects on traders.",
+  "topic_summary": "Market sentiment significantly impacts asset prices, with emotions like optimism and greed driving buying activity during expansions [t=16:00]. Conversely, declining prices lead to negative sentiments such as anxiety and panic [t=50:83].",
+  "router_tags": [
+    "Market Sentiment",
+    "Price Impact",
+    "Trading Psychology",
+    "Bull Market",
+    "Bear Market"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "@binanceacademy",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

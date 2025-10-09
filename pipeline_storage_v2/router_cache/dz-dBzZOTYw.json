@@ -1,0 +1,28 @@
+{
+  "description": "Join Jamie Crawley from CoinDesk as he moderates a panel featuring Yatzui and Sebastian Bourget from Animoca Brands and Sandbox. They discuss the evolution of Sandbox as a decentralized virtual world, the impact of NFTs, and the journey of building Web3 unicorns amidst the changing landscape of crypto investment.",
+  "topic_summary": "In this panel, the speakers explore the concept of Web3 unicorns, focusing on the Sandbox platform's development and its role in the metaverse. They reflect on past experiences during the crypto winter and the significance of digital ownership through NFTs, while also discussing funding rounds and partnerships that have shaped their journey. [t=0:72] [t=310:55]",
+  "router_tags": [
+    "Web3",
+    "Sandbox",
+    "Animoca Brands",
+    "NFT",
+    "Metaverse",
+    "Crypto",
+    "Investment"
+  ],
+  "aliases": [
+    "how to build a web3 unicorn",
+    "web3 unicorns",
+    "sandbox",
+    "animoca brands"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube",
+    "@JamieCrawley",
+    "@SebastianBourget",
+    "@Yatzui"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

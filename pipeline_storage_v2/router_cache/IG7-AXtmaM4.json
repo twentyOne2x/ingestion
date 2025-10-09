@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of Chewing Glass, Chase Barker talks with Brian Friel, a significant contributor to the Solana ecosystem. Brian shares insights about his recent hiring at Phantom as their first Developer Relations hire, discussing his contributions to Solana and the importance of community feedback in development [t=44:09].",
+  "topic_summary": "Chase Barker interviews Brian Friel about his contributions to the Solana ecosystem and his new role at Phantom, emphasizing the collaborative nature of development in the blockchain space [t=44:09].",
+  "router_tags": [
+    "Solana",
+    "Phantom",
+    "Developer Relations",
+    "Blockchain",
+    "Crypto"
+  ],
+  "aliases": [
+    "Chewing Glass",
+    "chewing glass",
+    "Chewing glass"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly",
+    "@BrianFriel",
+    "@Phantom"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

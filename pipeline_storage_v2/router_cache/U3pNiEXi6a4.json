@@ -1,0 +1,26 @@
+{
+  "description": "Join us for the second part of Binance Blockchain Week, featuring insights from industry leaders and discussions on the future of blockchain technology. The event highlights include the excitement around ticket sales and the preparations for a large audience in Dubai.",
+  "topic_summary": "During Binance Blockchain Week, key figures discuss the event's scale and significance, including the approval of Bitcoin ETFs and the growing interest from institutions in blockchain technology [t=257.37].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "Dubai",
+    "Finance"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "binance blockchain week",
+    "Binance Blockchain Week"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$SOL",
+    "@CZ",
+    "@RichardTang"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

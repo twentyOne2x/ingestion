@@ -1,0 +1,22 @@
+{
+  "description": "Cristiano Ronaldo answers questions about his favorite food, his views on Binance, and his future plans after football. He emphasizes the importance of trust in the crypto industry and shares insights on dealing with failure and challenges.",
+  "topic_summary": "Cristiano Ronaldo discusses his journey, favorite food, and the significance of trust in Binance [t=51:75]. He reflects on his mindset regarding failure and future aspirations [t=87:138].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Binance",
+    "Crypto",
+    "Football",
+    "Trust"
+  ],
+  "aliases": [
+    "Cristiano ronaldo",
+    "binance",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@CristianoRonaldo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

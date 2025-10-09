@@ -1,0 +1,17 @@
+{
+  "description": "Discussion featuring Sitong Bailey, Wangamido, and Danji.",
+  "topic_summary": "A conversation with Sitong Bailey, Wangamido, and Danji discussing various topics [t=00:52].",
+  "router_tags": [
+    "discussion",
+    "interview",
+    "crypto"
+  ],
+  "aliases": [
+    "@BinanceZh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

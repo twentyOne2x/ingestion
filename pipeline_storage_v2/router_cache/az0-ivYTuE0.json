@@ -1,0 +1,23 @@
+{
+  "description": "Sebastian Bohr leads a discussion on decentralized autonomous organizations (DAOs) with a panel of experts including Karen Schaller, Alex Migutko, and Kael Kado, focusing on the ease of creating DAOs on Solana and the potential for community engagement.",
+  "topic_summary": "The panel explores the creation and governance of DAOs on Solana, discussing tools and frameworks available for building DAOs, the challenges of community engagement, and the future of decentralized governance [t=110.42].",
+  "router_tags": [
+    "DAO",
+    "Solana",
+    "Governance",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Governance Conversation",
+    "Breakpoint 2021",
+    "Solana DAO Discussion"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

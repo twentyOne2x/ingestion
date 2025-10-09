@@ -1,0 +1,22 @@
+{
+  "description": "Cristiano Ronaldo participates in a lie detector test, discussing his priorities between Champions League medals and the World Cup trophy.",
+  "topic_summary": "Cristiano Ronaldo answers questions about his career achievements and aspirations in a lie detector test format [t=0:24].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "lie detector",
+    "Champions League",
+    "World Cup",
+    "Binance"
+  ],
+  "aliases": [
+    "Cristiano Ronaldo",
+    "cristiano ronaldo",
+    "CR7"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$CR7"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

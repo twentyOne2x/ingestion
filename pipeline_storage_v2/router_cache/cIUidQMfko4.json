@@ -1,0 +1,21 @@
+{
+  "description": "This video explores how blockchain technology can enhance the global remittance market by reducing costs and improving transaction speed.",
+  "topic_summary": "The remittance infrastructure is outdated, leading to high fees and slow transactions. Blockchain offers a solution with fast transfers and low costs, potentially revolutionizing the remittance and financial services markets [t=12:08].",
+  "router_tags": [
+    "blockchain",
+    "remittance",
+    "financial services",
+    "cbdc"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "@binanceacademy",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$CBDC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

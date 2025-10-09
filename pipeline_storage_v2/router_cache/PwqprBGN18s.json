@@ -1,0 +1,28 @@
+{
+  "description": "Elliot and Lucas from Bonfida discuss their vision for Serum's future, focusing on the asset agnostic order book concept. They emphasize Serum's role in the Solana ecosystem and the need to expand its usability beyond SPL tokens. The presentation outlines a three-pronged approach to enhance Serum's functionality, including the Serum Core, Serum Dex, and the Serum network, aimed at improving smart contract operations and enabling broader asset trading.",
+  "topic_summary": "The video covers Bonfida's vision for Serum, highlighting the asset agnostic order book and its potential to facilitate diverse asset trading on the Solana blockchain. It discusses the limitations of the current Serum implementation and proposes a new framework to enhance usability and flexibility for developers.",
+  "router_tags": [
+    "Serum",
+    "Bonfida",
+    "DeFi",
+    "Solana",
+    "Order Book"
+  ],
+  "aliases": [
+    "Bonfida",
+    "bonfida",
+    "Serum",
+    "serum",
+    "Elliot",
+    "elliot",
+    "Lucas",
+    "lucas"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

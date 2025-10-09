@@ -1,0 +1,30 @@
+{
+  "description": "This video explains ransomware, a type of malicious software that affects individual systems and networks, including businesses and hospitals. It discusses how ransomware has evolved since its first occurrence in 1989, the methods of encryption used, and the financial motivations behind these attacks. The video also covers distribution methods like phishing and exploit kits, and provides tips on how to protect against ransomware attacks.",
+  "topic_summary": "Ransomware is a sophisticated malware that encrypts files to extort payment, often in cryptocurrencies. It spreads through phishing emails and exploit kits, targeting vulnerable systems. The video outlines protection strategies and highlights notable ransomware cases such as GrandCrab, WannaCry, and Lockheed, emphasizing the importance of cybersecurity.",
+  "router_tags": [
+    "Ransomware",
+    "Malware",
+    "Cybersecurity",
+    "Phishing",
+    "Exploit Kits",
+    "Data Protection"
+  ],
+  "aliases": [
+    "Ransomware Explained",
+    "What is Ransomware",
+    "Ransomware for Beginners",
+    "Ransomware Overview"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$DASH",
+    "@Microsoft",
+    "@Europol",
+    "@Adobe",
+    "@Lockheed",
+    "@HollywoodPresbyterianMedicalCenter",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

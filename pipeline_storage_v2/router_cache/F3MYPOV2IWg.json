@@ -1,0 +1,23 @@
+{
+  "description": "The Binance Angels Program is a volunteer initiative that offers numerous benefits, including networking opportunities, personal growth, and exposure to a multicultural community. Participants can engage with the Binance team and learn about marketing, HR, and Binance products, fostering both personal and professional development in the crypto space.",
+  "topic_summary": "Explore the advantages of the Binance Angels Program, including career growth, networking globally, and becoming part of a supportive community [t=0:04-1:13].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Volunteer Program",
+    "Networking",
+    "Community"
+  ],
+  "aliases": [
+    "Binance Angels",
+    "binance angels",
+    "BinanceAngels",
+    "binanceangels"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceAngels"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Coverage of Day 2 of Binance Blockchain Week in Istanbul featuring guest Suzanne.",
+  "topic_summary": "Discussion on blockchain developments at Binance Blockchain Week Istanbul [t=0:32].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Istanbul",
+    "Conference"
+  ],
+  "aliases": [
+    "suzanne",
+    "Suzanne"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

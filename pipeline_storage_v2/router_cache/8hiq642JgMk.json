@@ -1,0 +1,22 @@
+{
+  "description": "This video explains symmetric encryption, a method of cryptography that uses the same key for both encryption and decryption. It illustrates how messages can remain secure even if intercepted, as the key is required to decipher the message.",
+  "topic_summary": "Symmetric encryption involves using a single key for both encrypting and decrypting messages. For instance, using the key 'HODL' transforms plaintext into ciphertext, making it difficult for adversaries to decipher without the key [t=18:08].",
+  "router_tags": [
+    "cryptography",
+    "symmetric encryption",
+    "data security",
+    "encryption methods"
+  ],
+  "aliases": [
+    "Symmetric Encryption",
+    "symmetric encryption",
+    "Symmetric encryption"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$SOL",
+    "@alice"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

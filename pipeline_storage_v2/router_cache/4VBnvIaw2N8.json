@@ -1,0 +1,34 @@
+{
+  "description": "Discussion on the potential for investing in Bitcoin in 2025, highlighting recent developments in legislation and institutional interest.",
+  "topic_summary": "Explores Bitcoin's mainstream acceptance and legislative changes affecting its investment landscape, including the clarity act and ETF developments [t=24:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Investing",
+    "ETFs",
+    "Legislation",
+    "Stablecoins"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Congress",
+    "$Stablecoins",
+    "$Blackrock",
+    "$JPM",
+    "@NewHampshire",
+    "@ElSalvador",
+    "@ZHalton",
+    "@Vader",
+    "@Betsey",
+    "@Schofen",
+    "@ZOda",
+    "@Vicken",
+    "@Deloitte"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

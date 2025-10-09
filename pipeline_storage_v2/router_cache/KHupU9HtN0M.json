@@ -1,0 +1,38 @@
+{
+  "description": "Panel discussion on the evolution of NFT marketplaces, focusing on Solana's ecosystem and the creator economy. Panelists share insights on building and adapting marketplaces like Solenart and Magic Eden, highlighting the rapid growth and community aspects of NFTs.",
+  "topic_summary": "Exploration of NFT marketplaces on Solana, discussing the transition to a creator economy and the strategies of emerging platforms like Solenart and Magic Eden. The panelists reflect on their experiences and the future of NFT trading.",
+  "router_tags": [
+    "NFT",
+    "Solana",
+    "Marketplace",
+    "Creator Economy",
+    "Solenart",
+    "Magic Eden"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Gig & Pixel Markets",
+    "NFT Marketplaces",
+    "Solana NFT"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sam",
+    "@Bernd",
+    "@Irvin",
+    "@Zed",
+    "@Bartage",
+    "@Burnt",
+    "@Coinbase",
+    "@Facebook",
+    "@BTC",
+    "@Topshop",
+    "@Twitter",
+    "@Soulflare",
+    "@Amazon",
+    "@Aurora"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

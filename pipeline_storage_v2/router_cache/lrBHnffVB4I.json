@@ -1,0 +1,29 @@
+{
+  "description": "David Princay, Ran Neuner, and Rabbin Des Bois discuss the importance of community in Web3 during Binance Blockchain Week in Paris. They emphasize values, safety, authenticity, and transparency as key pillars for building strong communities in the crypto space.",
+  "topic_summary": "The speakers highlight the significance of community in Web3, focusing on shared values and safety. They discuss how authenticity and transparency foster trust and loyalty among community members, making it essential for the success of crypto projects [t=148:15].",
+  "router_tags": [
+    "Web3",
+    "Community",
+    "Blockchain",
+    "Crypto",
+    "Binance",
+    "Transparency",
+    "Authenticity"
+  ],
+  "aliases": [
+    "David Princay",
+    "Ran Neuner",
+    "Rabbin Des Bois",
+    "Crypto Banter",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@cryptomanRan",
+    "@RabinDesBois"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

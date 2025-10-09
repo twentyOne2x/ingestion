@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on Binance and various topics including proof of stake, Bitcoin, and Binance Dex.",
+  "topic_summary": "The session covers questions from Martin Menendez about Binance and its services, including insights from Karen Primaries and discussions on Bitcoin and Binance Dex [t=29:63].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Dex",
+    "Finance"
+  ],
+  "aliases": [
+    "binanceresponde",
+    "BinanceResponde",
+    "binance youtube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL",
+    "@MartinMenendez",
+    "@KarenPrimaries",
+    "@ThomasBuenoJuan",
+    "@PorkistaMiranda",
+    "@CamiloRodriguez"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Q&A session discussing various cryptocurrency projects and staking on Binance.",
+  "topic_summary": "The session covers topics like proof of stake and specific projects, including discussions on token functionality and staking mechanisms [t=0:16].",
+  "router_tags": [
+    "Q&A",
+    "cryptocurrency",
+    "Binance",
+    "staking",
+    "proof of stake"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "Google"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

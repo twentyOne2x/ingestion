@@ -1,0 +1,26 @@
+{
+  "description": "Haseeb Qureshi from Dragonfly Capital discusses the role of cross-chain bridges in blockchain globalization, emphasizing interoperability and investment strategies in the crypto space.",
+  "topic_summary": "In this webinar, Haseeb Qureshi explains blockchain bridges and their significance in enhancing global blockchain connectivity, with insights into various investment opportunities in the crypto ecosystem [t=205:53].",
+  "router_tags": [
+    "Blockchain",
+    "Cross-Chain Bridges",
+    "Globalization",
+    "Crypto Investment",
+    "Interoperability"
+  ],
+  "aliases": [
+    "Haseeb Qureshi",
+    "Haseeb",
+    "Dragonfly Capital"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BNB",
+    "$SOL",
+    "$USDC",
+    "@HaseebQureshi",
+    "@Dragonfly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

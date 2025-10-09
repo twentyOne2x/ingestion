@@ -1,0 +1,23 @@
+{
+  "description": "This video explains the buy-and-hold investment strategy, emphasizing its suitability for those seeking a passive approach to trading.",
+  "topic_summary": "The buy-and-hold strategy involves purchasing an asset and maintaining ownership over a long duration, regardless of market fluctuations. This method, often referred to as 'hodling' in the crypto community, is ideal for investors who prefer a hands-off approach [t=24:88].",
+  "router_tags": [
+    "buy-and-hold",
+    "investing",
+    "crypto",
+    "hodling",
+    "trading strategies"
+  ],
+  "aliases": [
+    "Buy-and-Hold",
+    "buy and hold",
+    "Hodling",
+    "hodl"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

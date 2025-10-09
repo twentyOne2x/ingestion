@@ -1,0 +1,26 @@
+{
+  "description": "Jordan Prince discusses the evolution of derivatives trading, the impact of Solana on decentralized finance, and the mission of HERO Network to provide a professional-grade decentralized derivatives platform. He highlights the importance of transparency and regulatory considerations in building a robust trading infrastructure.",
+  "topic_summary": "The presentation covers the development of HERO Network as a decentralized derivatives liquidity platform, the significance of Solana's technology, and the need for professional trading infrastructure in DeFi. It emphasizes the historical context of market risks and regulatory challenges faced by traditional finance.",
+  "router_tags": [
+    "HERO Network",
+    "DeFi",
+    "Solana",
+    "Derivatives Trading",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "Hero Network",
+    "hero network",
+    "HERO network"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$3 Billion",
+    "$260 Billion",
+    "Dodd Frank"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

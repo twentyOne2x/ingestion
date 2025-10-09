@@ -1,0 +1,21 @@
+{
+  "description": "A light show at the Burj Khalifa celebrating Binance, featuring a gathering of attendees.",
+  "topic_summary": "The event showcases a spectacular light display on the Burj Khalifa, with attendees expressing gratitude and excitement [t=0:24][t=10:64].",
+  "router_tags": [
+    "Binance",
+    "Burj Khalifa",
+    "Light Show",
+    "Event"
+  ],
+  "aliases": [
+    "Binance Burj Khalifa",
+    "binance burj khalifa",
+    "Binance Light Show",
+    "binance light show"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

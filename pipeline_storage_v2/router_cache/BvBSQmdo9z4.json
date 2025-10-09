@@ -1,0 +1,26 @@
+{
+  "description": "This video discusses the integration of blockchain technology in UNICEF's humanitarian efforts, focusing on its potential to enhance financial inclusion and improve the efficiency of cash transfer programs. The speaker shares insights from their experience in mobile financial services and highlights UNICEF's initiatives, including a crypto fund that has invested $3.2 million in blockchain solutions to support various programs globally.",
+  "topic_summary": "Exploration of blockchain's role in humanitarian aid through UNICEF, detailing investments in technology to improve outcomes for children and enhance operational efficiency in cash transfers and supply chain management [t=4:16-517:43].",
+  "router_tags": [
+    "Blockchain",
+    "UNICEF",
+    "Humanitarian Aid",
+    "Crypto Fund",
+    "Financial Inclusion"
+  ],
+  "aliases": [
+    "humanitarian aid through blockchain",
+    "UNICEF blockchain initiatives",
+    "blockchain in humanitarian efforts"
+  ],
+  "canonical_entities": [
+    "$3.2 Million",
+    "$250",
+    "$600 Million",
+    "@BinanceYoutube",
+    "Statwig",
+    "@UNICEF"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

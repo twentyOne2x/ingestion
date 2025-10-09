@@ -1,0 +1,32 @@
+{
+  "video_id": "UnO1NKDPjjY",
+  "title": "2022-03-03_UnO1NKDPjjY_Binance Live--WOO NETWORK AMA,1800WOO!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "E",
+  "speaker_map": {
+    "C": {
+      "name": "Jesus Jingi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Harry Genti",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Chen Shang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

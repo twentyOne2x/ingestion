@@ -1,0 +1,26 @@
+{
+  "description": "Balaji Srinivasan discusses the importance of L0, the ideology layer, in relation to technology and legality. He emphasizes that the focus should shift from L1 and L2 to L0, as it underpins the infrastructure and influences legal frameworks. He argues that understanding the interplay between ideology and technology is crucial for the future of Web3.",
+  "topic_summary": "Srinivasan presents L0 as a critical layer that influences technology and legality, advocating for a shift in focus from L1 and L2 to L0. He highlights the role of ideas and physical presence in shaping the future of decentralized systems and the importance of mobilizing resources towards this ideology layer [t=54:21].",
+  "router_tags": [
+    "L0",
+    "Web3",
+    "Decentralization",
+    "Ideology",
+    "Technology",
+    "Legality"
+  ],
+  "aliases": [
+    "Balaji Srinivasan",
+    "balaji srinivasan",
+    "BALAJI SRINIVASAN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@NewYorkTimes",
+    "@WashingtonPost",
+    "@SecretaryOfTheInterior"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

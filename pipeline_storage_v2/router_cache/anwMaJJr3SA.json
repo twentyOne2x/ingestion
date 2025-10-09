@@ -1,0 +1,19 @@
+{
+  "description": "Discussion about Shirjibao and Kabimian.",
+  "topic_summary": "Overview of Shirjibao and Kabimian [t=01:19].",
+  "router_tags": [
+    "Shirjibao",
+    "Kabimian",
+    "USDT"
+  ],
+  "aliases": [
+    "Shirjibao",
+    "Kabimian",
+    "@binancezh"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

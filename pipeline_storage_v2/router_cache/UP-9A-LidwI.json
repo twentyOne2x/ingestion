@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on decentralized finance, stablecoins, and the complexities of building decentralized exchanges. The panelists share insights on algorithmic stablecoins, margin trading platforms, and the challenges of liquidity and transaction limits in decentralized systems.",
+  "topic_summary": "Exploration of decentralized finance and stablecoins, focusing on algorithmic stablecoins and the challenges of liquidity and transaction limits in decentralized exchanges [t=31:98 - t=599:91].",
+  "router_tags": [
+    "DeFi",
+    "Stablecoins",
+    "Decentralized Exchange",
+    "Liquidity",
+    "Algorithmic Stablecoins"
+  ],
+  "aliases": [
+    "@SolanaFndn",
+    "@solanafndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

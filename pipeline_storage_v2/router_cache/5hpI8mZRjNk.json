@@ -1,0 +1,25 @@
+{
+  "description": "Harry Papakurisiu discusses the significance of Oracles and Chainlink in decentralized finance, emphasizing the transformative potential of smart contracts and blockchain technology. He highlights the importance of building decentralized applications during the Solana Ignition Hackathon and introduces Chainlink's role in providing price feeds for these applications.",
+  "topic_summary": "In this session, Harry explains how Oracles and Chainlink can revolutionize finance through decentralized applications, particularly in the context of the Solana ecosystem. He outlines the agenda for the talk, including discussions on smart contracts, the Oracle problem, and a demo of deploying a smart contract using Chainlink price feeds [t=188.81].",
+  "router_tags": [
+    "Chainlink",
+    "Oracles",
+    "DeFi",
+    "Smart Contracts",
+    "Solana",
+    "Hackathon"
+  ],
+  "aliases": [
+    "chainlink",
+    "ChainLink",
+    "Oracles",
+    "oracles"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

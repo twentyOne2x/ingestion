@@ -1,0 +1,26 @@
+{
+  "description": "Anatoly and Sergey discuss the unique aspects of Solana and Chainlink in the context of DeFi, focusing on scalability, security, and innovative applications in the ecosystem.",
+  "topic_summary": "The conversation covers Solana's unique features for DeFi smart contracts [t=24:00], Chainlink's role in providing reliable data feeds [t=146:00], and the development of novel applications like Star Atlas [t=380:00].",
+  "router_tags": [
+    "Solana",
+    "Chainlink",
+    "DeFi",
+    "Smart Contracts",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "Anatoly",
+    "Sergey Nazarov",
+    "Chainlink",
+    "DeFi"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@sergeynazarov",
+    "$LINK"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "This webinar discusses the impact of cryptocurrency on fiscal policies and the financial landscape, emphasizing the shift towards decentralized systems and the role of Bitcoin in addressing global challenges.",
+  "topic_summary": "The discussion highlights the current financial divide exacerbated by COVID-19, the rise of decentralized platforms, and the increasing engagement of institutional investors in Bitcoin and blockchain technology. It stresses the importance of collaboration to push past the tipping point for a more equitable financial future. [t=0:24] [t=1:34] [t=1:41]",
+  "router_tags": [
+    "cryptocurrency",
+    "Bitcoin",
+    "blockchain",
+    "decentralization",
+    "Binance"
+  ],
+  "aliases": [
+    "Fiscalidad Crypto",
+    "Fiscalidad Crypto - Espanol",
+    "Fiscalidad crypto",
+    "Fiscalidad crypto - Espanol"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Peromucha",
+    "@AndreaMoshe",
+    "@NorthMasupone",
+    "@Miller"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

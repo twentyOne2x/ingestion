@@ -1,0 +1,24 @@
+{
+  "description": "This video explains Auto-deleveraging (ADL) in futures trading, detailing its mechanisms and implications for traders, particularly in volatile markets.",
+  "topic_summary": "Auto-deleveraging (ADL) occurs in futures trading during extreme market volatility, protecting users from margin call losses by liquidating positions based on a priority ranking. It contrasts with traditional futures that rely on a callback mechanism. Users are advised to monitor the ADL indicator to avoid liquidation [t=4:16 - t=197:19].",
+  "router_tags": [
+    "Auto-deleveraging",
+    "Futures Trading",
+    "Binance",
+    "Crypto Trading",
+    "Margin Trading"
+  ],
+  "aliases": [
+    "Auto-Deleveraging",
+    "adl",
+    "ADL"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

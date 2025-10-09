@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the evolving nature of DeFi and its potential to benefit populations excluded from traditional financial systems.",
+  "topic_summary": "Exploration of DeFi's advantages and specific use cases compared to traditional financial services [t=14:32].",
+  "router_tags": [
+    "DeFi",
+    "finance",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "DeFi's Promises",
+    "defi promises",
+    "What Are DeFi's Promises"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

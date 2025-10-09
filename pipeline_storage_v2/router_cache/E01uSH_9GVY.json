@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on proof of stake authority and its implications featuring Trioju, Jiang Xiao, and Shui Jun Lian.",
+  "topic_summary": "Exploration of proof of stake authority and its relevance in the crypto space [t=00:10 to 01:29].",
+  "router_tags": [
+    "Proof of Stake",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "Trioju",
+    "Jiang Xiao",
+    "Shui Jun Lian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Sam discusses the Solana Hacker House event in Barcelona, highlighting key activities and community engagement.",
+  "topic_summary": "Overview of the Solana Hacker House in Barcelona, focusing on community involvement and event highlights [t=00:00].",
+  "router_tags": [
+    "Solana",
+    "Hacker House",
+    "Barcelona",
+    "Blockchain",
+    "Community"
+  ],
+  "aliases": [
+    "SolanaFndn",
+    "solanafndn",
+    "SOLANAFNDN"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

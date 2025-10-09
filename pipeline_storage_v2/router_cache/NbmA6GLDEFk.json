@@ -1,0 +1,22 @@
+{
+  "description": "John introduces the stake pool concept and outlines the process of creating a stake pool, including setting up a test environment and using Solana tools. He emphasizes the importance of documentation and offers assistance for any confusion.",
+  "topic_summary": "In this session, John discusses the creation of stake pools on the Solana network, referencing Anatoly's previous talk on stake distribution. He provides a step-by-step guide to setting up a stake pool, including necessary tools and scripts [t=54:28].",
+  "router_tags": [
+    "Solana",
+    "Stake Pool",
+    "Blockchain",
+    "Cryptocurrency",
+    "DeFi"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "D6cCsLcg9QU",
+  "title": "2021-03-26_D6cCsLcg9QU_Binance Ecosystem Series #10: Binance Vietnam x Binance Smart Chain",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Binance Smart",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

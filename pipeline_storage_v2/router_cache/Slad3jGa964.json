@@ -1,0 +1,18 @@
+{
+  "description": "Technical analysis uses historical price and market data to identify patterns and predict future price movements. It focuses on price changes, trading volume, and chart patterns, disregarding fundamental factors.",
+  "topic_summary": "Technical analysis, which is popular among cryptocurrency traders, analyzes market charts to forecast price movements without considering news or intrinsic value [t=0:32].",
+  "router_tags": [
+    "Technical Analysis",
+    "Cryptocurrency",
+    "Trading",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "Technical analysis",
+    "technical Analysis",
+    "TECHNICAL ANALYSIS"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

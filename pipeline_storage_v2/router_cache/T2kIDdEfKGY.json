@@ -1,0 +1,21 @@
+{
+  "description": "Smart contracts are programs stored and executed on the Ethereum blockchain, enabling transactions based on specific conditions. They support decentralized applications (dapps) and expand Ethereum's functionality beyond Bitcoin's payment capabilities.",
+  "topic_summary": "This video explains smart contracts, their role in enabling decentralized applications on Ethereum, and their contribution to innovations like decentralized finance (DeFi) [t=0:64-45:17].",
+  "router_tags": [
+    "Smart Contracts",
+    "Ethereum",
+    "Dapps",
+    "DeFi"
+  ],
+  "aliases": [
+    "Smart contracts",
+    "Ethereum Smart Contracts",
+    "Dapps"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "Qsu-cU9z7ys",
+  "title": "2022-02-15_Qsu-cU9z7ys_Binance  EasyFi Network AMA,5000BUSD!",
+  "channel_name": "@binancezh",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Yong Da Ling La San Shiga Guadia",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "Anshul Dhir",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@binancezh",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

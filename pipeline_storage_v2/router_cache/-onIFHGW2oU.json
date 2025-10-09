@@ -1,0 +1,24 @@
+{
+  "description": "Brendan Eich discusses Brave's developments over the past year, including wallet integration and NFT support, at Breakpoint 2022.",
+  "topic_summary": "Brendan Eich reflects on Brave's progress since last year, highlighting user growth and new features like wallet support and NFT integration [t=54:54].",
+  "router_tags": [
+    "Brave",
+    "Breakpoint",
+    "Brendan Eich",
+    "NFT",
+    "Web3",
+    "Crypto"
+  ],
+  "aliases": [
+    "Brendan Eich",
+    "Brendan Ike",
+    "Brave"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

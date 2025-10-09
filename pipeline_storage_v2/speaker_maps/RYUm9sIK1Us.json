@@ -1,0 +1,26 @@
+{
+  "video_id": "RYUm9sIK1Us",
+  "title": "2021-11-18_RYUm9sIK1Us_Breakpoint 2021: Riding the Big Waves: The Future of Liquidity and Market Making",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "A": {
+      "name": "David Liu",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Simon Nursey",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Dennis shares his experiences with cryptocurrency and the challenges of exchanging money in Africa.",
+  "topic_summary": "Dennis discusses his professional life in Swansich Merchten, Africa, and the complexities of financial transactions in the region [t=20:40].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Africa",
+    "Finance",
+    "Money Exchange"
+  ],
+  "aliases": [
+    "Dennis",
+    "dennis",
+    "Swansich Merchten",
+    "swansich merchten"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

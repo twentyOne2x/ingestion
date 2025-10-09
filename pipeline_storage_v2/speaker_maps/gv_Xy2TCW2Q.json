@@ -1,0 +1,20 @@
+{
+  "video_id": "gv_Xy2TCW2Q",
+  "title": "2023-02-24_gv_Xy2TCW2Q_Online Course For Beginners: Crypto Fundamentals 1",
+  "channel_name": "@binanceacademy",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@binanceacademy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nina Xiang",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

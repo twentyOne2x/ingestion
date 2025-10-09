@@ -1,0 +1,26 @@
+{
+  "video_id": "uHYgg6wL2CQ",
+  "title": "2022-01-28_uHYgg6wL2CQ_Pyth Workshop - Day 2 - Extend 101",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Matt Levine",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "C": {
+      "name": "Mike Ko",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

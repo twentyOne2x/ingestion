@@ -1,0 +1,20 @@
+{
+  "video_id": "QV-D125khtY",
+  "title": "2022-04-18_QV-D125khtY_Solana Community Validator Discussion - 14 April 2022",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "B": {
+      "name": "Christian Cam",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "C": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

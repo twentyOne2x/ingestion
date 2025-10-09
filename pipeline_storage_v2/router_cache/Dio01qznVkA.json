@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the fundamentals of day trading, including strategies and risks involved. It highlights how traders select stocks based on news and market conditions.",
+  "topic_summary": "Day trading involves buying and selling stocks within a single trading day, often based on news and market analysis. For instance, traders may buy Boeing and Coca Cola stocks due to anticipated news and previous undervaluation, respectively. The strategy requires significant time and carries risks, making it more suitable for experienced traders. [t=0:24] [t=51:09]",
+  "router_tags": [
+    "Day Trading",
+    "Stock Market",
+    "Trading Strategies",
+    "Investing"
+  ],
+  "aliases": [
+    "Day Trading",
+    "day trading",
+    "DAY TRADING"
+  ],
+  "canonical_entities": [
+    "$BA",
+    "$KO",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

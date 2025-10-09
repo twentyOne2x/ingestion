@@ -1,0 +1,25 @@
+{
+  "description": "Join Binance Australia for an online masterclass on staking. Learn about the benefits and processes involved in staking cryptocurrencies.",
+  "topic_summary": "Introduction to staking on Binance, covering key concepts and activities planned for the session. [t=34:10] The session will start shortly, allowing attendees to join. [t=262:00]",
+  "router_tags": [
+    "Staking",
+    "Binance",
+    "Cryptocurrency",
+    "Online Masterclass",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "binance australia",
+    "Binance Australia",
+    "BINANCE AUSTRALIA"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$USDT",
+    "$BTC",
+    "$BNB",
+    "$BUSD"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

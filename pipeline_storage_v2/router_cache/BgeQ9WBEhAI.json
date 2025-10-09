@@ -1,0 +1,23 @@
+{
+  "description": "A beginner's guide on resolving disputes in Binance P2P orders, covering payment issues and support options.",
+  "topic_summary": "This video explains how to handle disputes in Binance P2P transactions, including steps to take when payments do not match or when there are disagreements between traders [t=0:32]. It emphasizes the importance of communication with Binance support and the role of escrow accounts in protecting both parties [t=1:31].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "dispute resolution",
+    "cryptocurrency",
+    "trading"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binens",
+    "binens"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

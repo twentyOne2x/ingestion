@@ -1,0 +1,26 @@
+{
+  "description": "This webinar introduces the fundamentals of Web3, NFTs, and GameFi, featuring insights from Binance Academy. It covers the differences between fungible and non-fungible tokens, NFT use cases, and factors influencing NFT value.",
+  "topic_summary": "The session discusses NFTs as unique digital assets, their role in Web3, and the importance of understanding fungibility. It also highlights the creation and valuation of NFTs, along with interactive elements to engage the audience [t=217:02].",
+  "router_tags": [
+    "Web3",
+    "NFTs",
+    "GameFi",
+    "Binance Academy",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "B Academy",
+    "Binance",
+    "NFT",
+    "GameFi"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

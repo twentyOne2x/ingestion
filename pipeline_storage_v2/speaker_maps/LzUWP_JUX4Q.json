@@ -1,0 +1,20 @@
+{
+  "video_id": "LzUWP_JUX4Q",
+  "title": "2021-11-18_LzUWP_JUX4Q_Breakpoint 2021: From Zero to $2 Billion: How Saber Became the Biggest DeFi App on Solana",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "B": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Didi Loiter",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

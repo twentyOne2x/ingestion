@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Anatoly interviews Daffy Durairaj, co-founder of Mango Markets, discussing his journey into crypto, algorithmic trading, and the development of trading tools on the Serum Dex.",
+  "topic_summary": "Daffy shares his background in algorithmic trading, his initial reluctance to enter crypto, and how he became involved with Mango Markets and Serum Dex [t=0:24-240:15].",
+  "router_tags": [
+    "Crypto",
+    "Trading",
+    "Mango Markets",
+    "Solana",
+    "Algorithmic Trading"
+  ],
+  "aliases": [
+    "Daffy Durairaj",
+    "Daffy Diriraj",
+    "Daffy",
+    "Anatoly"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

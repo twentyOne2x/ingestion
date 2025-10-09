@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on the topic of bee hunger and related concepts.",
+  "topic_summary": "Exploration of bee hunger and its implications [t=00:25]. Mention of Ji wan cheng [t=01:44].",
+  "router_tags": [
+    "bee",
+    "hunger",
+    "Ji wan cheng"
+  ],
+  "aliases": [
+    "Binancezh",
+    "@BinanceZH",
+    "binancezh"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This Binance webinar discusses identifying valuable opportunities in blockchain technology and cryptocurrency investments, highlighting trends and insights from Gartner and other industry experts.",
+  "topic_summary": "The webinar covers technological trends in blockchain, the importance of research, and investment opportunities in projects like Pancake Swap and Kikona. It emphasizes the role of corporate involvement and the potential of DeFi [t=54:28].",
+  "router_tags": [
+    "blockchain",
+    "cryptocurrency",
+    "investment",
+    "DeFi",
+    "webinar"
+  ],
+  "aliases": [
+    "Binance Webinar",
+    "binance webinar",
+    "Binance youtube",
+    "binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ETH",
+    "$KIKONA",
+    "$FB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on NFTs, blockchain technology, and market trends featuring various speakers including Ivan Pavlovsky and Andrei Makarov. The conversation covers the impact of NFTs on the market and the role of platforms like Binance.",
+  "topic_summary": "Exploration of NFTs and their market dynamics, including insights on blockchain applications and the influence of various creators and platforms [t=26:92 - t=4956:66].",
+  "router_tags": [
+    "NFT",
+    "Blockchain",
+    "Cryptocurrency",
+    "Market Trends"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@ivanpavlovsky",
+    "@andrei_makarov",
+    "@takashi",
+    "@joshua_patton"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

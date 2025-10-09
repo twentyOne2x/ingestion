@@ -1,0 +1,25 @@
+{
+  "description": "Elizabeth Lee, Deputy Director of Binance Charity, moderates a panel discussing the blockchain industry's role in social responsibility, highlighting its impact on livelihoods and the importance of philanthropy through cryptocurrency.",
+  "topic_summary": "The panel explores the evolution of social responsibility in the blockchain sector, referencing historical instances like WikiLeaks' use of Bitcoin and discussing the inherent properties of blockchain that support social initiatives [t=277.83].",
+  "router_tags": [
+    "Blockchain",
+    "Social Responsibility",
+    "Cryptocurrency",
+    "Philanthropy",
+    "Binance Charity"
+  ],
+  "aliases": [
+    "Elizabeth Lee",
+    "Liz",
+    "Elizabeth",
+    "Binance Charity"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@JulianAssange",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

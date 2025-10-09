@@ -1,0 +1,20 @@
+{
+  "video_id": "0RN-rXIKSXE",
+  "title": "2024-02-26_0RN-rXIKSXE_Training in person with Cristiano Ronaldo - Behind-the-Scenes",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Cristiano Ronaldo",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

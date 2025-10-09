@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to buy cryptocurrencies on Binance using a credit or debit card. This guide covers selecting the cryptocurrency, entering the purchase amount, choosing the payment method, and completing the transaction.",
+  "topic_summary": "This video explains the process of purchasing cryptocurrencies like BTC, BNB, and ETH on Binance using a card, including identity verification and wallet deposits [t=3:76-111:98].",
+  "router_tags": [
+    "Buy Crypto",
+    "Binance",
+    "Cryptocurrency",
+    "Payment Methods"
+  ],
+  "aliases": [
+    "How to Buy Crypto",
+    "Buy Crypto on Binance",
+    "Binance Card Purchase"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$ETH",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

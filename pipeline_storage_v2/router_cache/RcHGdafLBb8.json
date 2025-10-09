@@ -1,0 +1,24 @@
+{
+  "description": "Introduction to NFTs for beginners, covering various aspects of non-fungible tokens and their applications in the blockchain space.",
+  "topic_summary": "Discussion on NFTs and their significance in the crypto world, including mentions of platforms and tools like Binance and Ethereum [t=0:24].",
+  "router_tags": [
+    "NFT",
+    "Binance",
+    "Ethereum",
+    "Crypto"
+  ],
+  "aliases": [
+    "Nft",
+    "Binance",
+    "Eth",
+    "nft",
+    "binance",
+    "eth"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

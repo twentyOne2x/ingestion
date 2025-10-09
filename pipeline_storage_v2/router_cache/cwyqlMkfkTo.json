@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the limitations of Bitcoin, including transaction delays during high network activity, the need for costly mining equipment, and high energy consumption.",
+  "topic_summary": "Bitcoin's limitations include transaction delays during peak times [t=2:16], expensive mining equipment [t=8:80], and high energy requirements [t=14:64]. Despite these issues, it remains a significant blockchain innovation.",
+  "router_tags": [
+    "Bitcoin",
+    "Blockchain",
+    "Cryptocurrency",
+    "Mining"
+  ],
+  "aliases": [
+    "Bitcoin",
+    "bitcoin",
+    "BTC"
+  ],
+  "canonical_entities": [
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Michael Saylor discusses his $45 billion investment in Bitcoin and the future of MicroStrategy's strategy, emphasizing Bitcoin's potential as a global financial instrument. He outlines the company's plans to continue acquiring Bitcoin over the next three years.",
+  "topic_summary": "Michael Saylor's vision for Bitcoin as a key financial asset and MicroStrategy's strategy to invest heavily in it, highlighting the implications for the global financial landscape [t=177.21].",
+  "router_tags": [
+    "Bitcoin",
+    "MicroStrategy",
+    "Investment",
+    "Finance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Michael Saylors",
+    "Michael Saylor",
+    "Michaelseler",
+    "Microstrategy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@MichaelSaylor"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

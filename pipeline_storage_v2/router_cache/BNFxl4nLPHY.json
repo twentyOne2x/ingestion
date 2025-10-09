@@ -1,0 +1,21 @@
+{
+  "description": "A street interview asking random people if they own cryptocurrency, featuring humorous and unexpected responses.",
+  "topic_summary": "The video explores public opinions on cryptocurrency ownership, with a focus on engaging and lighthearted interactions [t=0:16].",
+  "router_tags": [
+    "crypto",
+    "interview",
+    "public opinion",
+    "Binance"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$MONAD",
+    "@Kardashian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

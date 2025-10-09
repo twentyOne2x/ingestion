@@ -1,0 +1,21 @@
+{
+  "description": "Celebrate 7 years with Binance and its community. Emphasizing values like inspiration, inclusivity, and creativity.",
+  "topic_summary": "A tribute to Binance's community, highlighting core values such as being inspired [t=11:60], inclusive [t=12:64], and responsible [t=30:16].",
+  "router_tags": [
+    "Binance",
+    "Community",
+    "Inspiration",
+    "Inclusivity",
+    "Finance"
+  ],
+  "aliases": [
+    "Be Binance",
+    "be binance",
+    "BE BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

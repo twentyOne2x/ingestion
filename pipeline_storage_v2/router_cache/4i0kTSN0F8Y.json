@@ -1,0 +1,30 @@
+{
+  "description": "Darren moderates a discussion with Santiago, Arthur, and Julian Butolu about the future of crypto after recent all-time highs. They explore the current state of DeFi, the impact of market cycles, and the growth of platforms like Solana and Aaver, emphasizing the importance of infrastructure and user adoption.",
+  "topic_summary": "The panel discusses the evolution of DeFi amidst all-time highs for Bitcoin, Ethereum, and Solana, addressing market predictions, user understanding of crypto, and the growth of alternative chains like Solana and Fantom. They highlight the resilience of the DeFi ecosystem and the narrative shifts towards NFTs and gaming.",
+  "router_tags": [
+    "DeFi",
+    "Crypto",
+    "Solana",
+    "NFT",
+    "Investment",
+    "Market Trends"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint2021: After ATH"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$BTC",
+    "$ETH",
+    "$30 Billion",
+    "$AAVE",
+    "@Santiago",
+    "@Arthur",
+    "@JulianButolu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "In this interview, Binance CEO Joe Changpeng discusses the challenges and regulatory environment facing cryptocurrency exchanges, particularly in light of recent government actions in China and South Korea. He highlights the strong demand for Binance's services, noting significant user growth and the need for improved customer service.",
+  "topic_summary": "Joe Changpeng, CEO of Binance, addresses regulatory challenges and the future of cryptocurrency exchanges, emphasizing user growth and operational adjustments [t=0:24-8:16].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Regulation",
+    "Joe Changpeng",
+    "User Growth"
+  ],
+  "aliases": [
+    "Joe Changpeng",
+    "CZ",
+    "Changpeng Zhao"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binance",
+    "@changpengzhao"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

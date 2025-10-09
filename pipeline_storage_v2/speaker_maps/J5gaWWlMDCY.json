@@ -1,0 +1,14 @@
+{
+  "video_id": "J5gaWWlMDCY",
+  "title": "2022-03-14_J5gaWWlMDCY_Solana Hacker House Prague",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

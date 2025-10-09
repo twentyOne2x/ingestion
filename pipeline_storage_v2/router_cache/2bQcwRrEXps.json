@@ -1,0 +1,24 @@
+{
+  "description": "Cristiano discusses the merits of Sir Alex Ferguson as a manager, emphasizing the difficulty in naming a single 'best' manager due to the success of various coaches he has worked with.",
+  "topic_summary": "Cristiano reflects on the greatness of Sir Alex Ferguson and the complexity of defining the 'best' manager in football history, noting the contributions of multiple coaches [t=0:32].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "Alex Ferguson",
+    "Football",
+    "Management"
+  ],
+  "aliases": [
+    "Cristiano",
+    "Ronaldo",
+    "Sir Alex Ferguson",
+    "Ferguson"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$MANAGER",
+    "@Cristiano",
+    "@AlexFerguson"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

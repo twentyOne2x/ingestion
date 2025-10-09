@@ -1,0 +1,28 @@
+{
+  "description": "Mark Cuban and CZ discuss the evolving landscape of crypto, NFTs, and DeFi, sharing insights on their experiences and the learning process involved in understanding blockchain technology.",
+  "topic_summary": "Fireside chat with Mark Cuban and CZ covering topics like NFTs, DeFi, and the intricacies of blockchain technology [t=0:16].",
+  "router_tags": [
+    "Crypto",
+    "NFTs",
+    "DeFi",
+    "Blockchain",
+    "Mark Cuban",
+    "CZ",
+    "Binance"
+  ],
+  "aliases": [
+    "Mark Cuban",
+    "mark cuban",
+    "CZ",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@markcuban",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

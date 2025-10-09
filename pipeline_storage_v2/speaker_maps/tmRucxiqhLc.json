@@ -1,0 +1,20 @@
+{
+  "video_id": "tmRucxiqhLc",
+  "title": "2021-06-28_tmRucxiqhLc_Mango Presentation - Solana x Serum Defi Hackathon Demo Day",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "B": {
+      "name": "Max Schneider",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

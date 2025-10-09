@@ -1,0 +1,26 @@
+{
+  "description": "Webinar discussing Binance Smart Chain, its features, and functionalities in Spanish. Topics include DeFi, staking, farming, and wallet integration.",
+  "topic_summary": "Overview of Binance Smart Chain and its applications in decentralized finance, including protocols for staking and liquidity provision [t=0:30]. Discussion on various tokens and wallets, including Metamask and Trust Wallet [t=15:00].",
+  "router_tags": [
+    "Binance",
+    "Smart Chain",
+    "DeFi",
+    "Webinar",
+    "Finance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Smart Chain",
+    "binance smart chain",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

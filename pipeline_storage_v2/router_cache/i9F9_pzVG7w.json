@@ -1,0 +1,22 @@
+{
+  "description": "CZ discusses the challenges and perceptions surrounding Binance and the crypto industry, emphasizing the importance of research and the need for centralized systems to integrate with traditional finance.",
+  "topic_summary": "CZ addresses criticisms of Binance, the nature of centralized vs decentralized systems, and the importance of user feedback in a rapidly growing industry. He highlights the need for compliance and the challenges of managing a large user base [t=202.61].",
+  "router_tags": [
+    "Binance",
+    "CZ",
+    "Crypto",
+    "Decentralization",
+    "Regulation"
+  ],
+  "aliases": [
+    "Ed Binance",
+    "CZ Binance",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

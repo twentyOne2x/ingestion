@@ -1,0 +1,22 @@
+{
+  "description": "The workshop discusses the Pyth whitepaper, focusing on the architecture of the Pyth network and its mechanisms for price publication and data staking. Key topics include the challenges of sustaining publishers, the importance of robust algorithms, and the need for diverse data sources to ensure accurate pricing. The session emphasizes the role of confidence intervals in pricing and the potential for future developments in the Pyth ecosystem.",
+  "topic_summary": "Overview of the Pyth whitepaper, including architecture, pricing mechanisms, and publisher sustainability challenges. Discussion on confidence intervals and the importance of diverse data sources for accurate pricing [t=0:00-12:00].",
+  "router_tags": [
+    "Pyth",
+    "Solana",
+    "Blockchain",
+    "Price Mechanisms",
+    "Data Staking"
+  ],
+  "aliases": [
+    "Pyth Workshop",
+    "Pyth Whitepaper",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SolanaFndn"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

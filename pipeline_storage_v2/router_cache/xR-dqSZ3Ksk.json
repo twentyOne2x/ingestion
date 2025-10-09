@@ -1,0 +1,25 @@
+{
+  "description": "Tristan from Zeta presents a demo of the Zeta platform, a DeFi derivatives platform offering futures and options trading. He discusses the integration of wallets, onboarding flow, and the trading interface, highlighting the ability to trade options on Solana with a current price of $244. The demo includes selecting and selling call options, showcasing the platform's under-collateralized model, allowing users to trade with lower initial margins [t=8:72-334:87].",
+  "topic_summary": "Demo of Zeta platform for trading options and futures on Solana, emphasizing user experience and under-collateralized trading.",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Zeta",
+    "Options Trading",
+    "Futures Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Zeta",
+    "zeta",
+    "ZETA"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@Tristan",
+    "@ZetaMarkets"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

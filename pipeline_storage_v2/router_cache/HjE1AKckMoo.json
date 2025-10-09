@@ -1,0 +1,21 @@
+{
+  "description": "In this Q&A session, the hosts discuss various topics related to cryptocurrency, including stablecoins, project significance, and market dynamics.",
+  "topic_summary": "The discussion covers stablecoins like DAI, project demand, and the importance of market strategies in crypto [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "stablecoins",
+    "Q&A",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

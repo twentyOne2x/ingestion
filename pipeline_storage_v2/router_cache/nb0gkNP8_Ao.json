@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Binance market strategies, including launch pools and smart chain opportunities.",
+  "topic_summary": "Q&A session covering Binance market strategies and features, including launch pools and smart chain insights [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Q&A",
+    "Cryptocurrency",
+    "Launch Pools",
+    "Smart Chain"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

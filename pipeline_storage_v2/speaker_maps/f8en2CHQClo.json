@@ -1,0 +1,20 @@
+{
+  "video_id": "f8en2CHQClo",
+  "title": "2025-10-01_f8en2CHQClo_Varrock: Turning $10k into $750k with Crypto, Trading Advice and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Alex Jones",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

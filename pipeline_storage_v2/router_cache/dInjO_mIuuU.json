@@ -1,0 +1,22 @@
+{
+  "description": "This webinar introduces Binance P2P, discussing features such as coin transfers and market inclusivity.",
+  "topic_summary": "Overview of Binance P2P functionalities including coin transfers and market inclusivity [t=0:24 - t=1:06:06].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance Webinar",
+    "binance webinar"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

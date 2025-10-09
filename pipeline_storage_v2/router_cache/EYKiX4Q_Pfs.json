@@ -1,0 +1,20 @@
+{
+  "description": "Alice discusses the growth and development of Binance as it celebrates its 8th anniversary.",
+  "topic_summary": "Celebrating Binance's 8th anniversary and discussing its evolution and user engagement [t=1:28].",
+  "router_tags": [
+    "Binance",
+    "Anniversary",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

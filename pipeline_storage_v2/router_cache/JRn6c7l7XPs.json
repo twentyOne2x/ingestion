@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to secure your Binance account with two-factor authentication (2FA) and whitelisting in this beginner's guide. The video covers essential steps to enhance your account security, including password creation and recognizing phishing attempts.",
+  "topic_summary": "This video provides a step-by-step guide on securing your Binance account, focusing on 2FA setup and whitelisting wallet addresses. Key points include creating strong passwords and avoiding phishing scams [t=0:32-2:10].",
+  "router_tags": [
+    "Binance",
+    "Crypto Security",
+    "2FA",
+    "Whitelisting",
+    "Account Protection"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BAYNANCE",
+    "baynance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

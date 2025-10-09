@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on NFTs and their potential, with mentions of various projects and concepts.",
+  "topic_summary": "Exploration of NFTs and related topics, including references to 'Pixel' and community engagement [t=249.66].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Pixel",
+    "Community"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$PIXEL",
+    "@jesus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

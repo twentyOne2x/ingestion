@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on meritocratic DAOs, governance challenges, and voting inefficiencies in blockchain systems.",
+  "topic_summary": "The talk explores the rise of DAOs, governance issues, and voting inefficiencies, particularly highlighting the tragedy of the commons and the impact of centralized exchanges on decentralized governance [t=114:98].",
+  "router_tags": [
+    "DAO",
+    "Governance",
+    "Blockchain",
+    "Voting",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Meritocratic DAOs",
+    "DAOs",
+    "Decentralized Autonomous Organizations"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@JustinSun",
+    "@Poloniex",
+    "@Huobi",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

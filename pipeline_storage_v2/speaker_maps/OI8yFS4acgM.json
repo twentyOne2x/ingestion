@@ -1,0 +1,20 @@
+{
+  "video_id": "OI8yFS4acgM",
+  "title": "2024-11-07_OI8yFS4acgM_Juan Carlos Reyes - President, National Digital Assets Commission - It just works - BBW 2024",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nayib Bukele",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

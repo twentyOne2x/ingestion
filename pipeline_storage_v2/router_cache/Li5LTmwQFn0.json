@@ -1,0 +1,24 @@
+{
+  "description": "This episode of Binance TV discusses the latest updates in the cryptocurrency world, including Bitcoin's Taproot upgrade, Ukraine's efforts to embrace cryptocurrencies, and the impact of China's mining ban on global mining operations.",
+  "topic_summary": "The episode covers Bitcoin's first upgrade in four years with Taproot [t=57.22], Ukraine's new cryptocurrency laws [t=141.06], and the global shift in mining due to China's restrictions [t=265.18].",
+  "router_tags": [
+    "Bitcoin",
+    "Taproot",
+    "Cryptocurrency",
+    "Ukraine",
+    "Mining",
+    "Binance"
+  ],
+  "aliases": [
+    "binancetv",
+    "BinanceTV",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

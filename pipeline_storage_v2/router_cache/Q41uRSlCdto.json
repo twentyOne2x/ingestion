@@ -1,0 +1,20 @@
+{
+  "description": "This video explains how to use moving averages in trading, including crossovers as buy or sell signals and the use of Bollinger bands to measure market volatility.",
+  "topic_summary": "Learn about moving average crossovers as trading signals [t=0:04], the significance of Bollinger bands in assessing market conditions [t=12:40], and how volatility affects these indicators [t=33:77].",
+  "router_tags": [
+    "trading",
+    "moving averages",
+    "Bollinger bands",
+    "technical analysis"
+  ],
+  "aliases": [
+    "How to Use Moving Averages",
+    "Moving Averages Explained",
+    "Moving Average Trading"
+  ],
+  "canonical_entities": [
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

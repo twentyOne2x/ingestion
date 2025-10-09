@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on the developments in Mumbai related to Solana and its impact on the local economy.",
+  "topic_summary": "Exploration of Mumbai's economic landscape and technological advancements, particularly in relation to Solana, highlighting the city's growth and connectivity [t=6:08].",
+  "router_tags": [
+    "Solana",
+    "Mumbai",
+    "Blockchain",
+    "Technology",
+    "Economy"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@solanafndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

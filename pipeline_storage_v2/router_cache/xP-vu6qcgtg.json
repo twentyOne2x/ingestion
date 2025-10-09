@@ -1,0 +1,27 @@
+{
+  "description": "Build The Block is a reality show in the metaverse where 12 startup founders pitch their Web3 ideas to an audience and judges for investment backing. In this episode, Jose, the founder of Entropy, presents his startup aimed at solving a $2.5 billion problem related to data validation and randomness in blockchain applications.",
+  "topic_summary": "In this episode of Build The Block, Jose pitches his startup Entropy, which addresses issues of data validation and randomness in blockchain, highlighting the potential for significant industry impact [t=288].",
+  "router_tags": [
+    "Web3",
+    "Blockchain",
+    "Startup",
+    "Investment",
+    "Metaverse"
+  ],
+  "aliases": [
+    "Build the Block",
+    "Build The Block",
+    "build the block"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$4",
+    "$2.5 Billion",
+    "$2 Million",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

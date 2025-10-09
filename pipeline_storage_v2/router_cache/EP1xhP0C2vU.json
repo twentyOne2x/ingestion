@@ -1,0 +1,24 @@
+{
+  "description": "Join us for the Vietnam NFT and GameFi Expo 2021, organized by Binance Vietnam. This four-hour online event features discussions with experts on NFTs, blockchain gaming, and investment opportunities in the gaming industry.",
+  "topic_summary": "The event covers the state of the gaming industry in Vietnam, workshops for game designers and developers, the rise of NFT gaming, and investment perspectives on NFTs. A total prize pool of $3,000 is available through airdrops for participants.",
+  "router_tags": [
+    "NFT",
+    "GameFi",
+    "Binance",
+    "Vietnam",
+    "Gaming Industry"
+  ],
+  "aliases": [
+    "Vietnam Nft+GameFi Expo",
+    "Vietnam NFT GameFi Expo",
+    "NFT GameFi Expo Vietnam"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

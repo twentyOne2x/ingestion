@@ -1,0 +1,20 @@
+{
+  "video_id": "vV6kCiQifMg",
+  "title": "2023-02-27_vV6kCiQifMg_Inside The Sandbox: Building a Virtual World",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Steve Aukey",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the use of blockchain technology in healthcare, emphasizing the importance of secure digital health records and exploring its applications in various industries.",
+  "topic_summary": "Blockchain enhances security and privacy in digital health records [t=10:80]. It has diverse applications in gaming, charity, and energy [t=15:60], and offers alternative governance mechanisms [t=21:20]. The ecosystem is evolving, with potential for future transformative applications [t=25:28].",
+  "router_tags": [
+    "Blockchain",
+    "Healthcare",
+    "Governance",
+    "Digital Health Records",
+    "Security"
+  ],
+  "aliases": [
+    "@BinanceAcademy",
+    "@binanceacademy",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$BLOCKCHAIN",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

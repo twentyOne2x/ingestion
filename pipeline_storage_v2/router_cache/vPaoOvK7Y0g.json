@@ -1,0 +1,26 @@
+{
+  "description": "Binance hosts an AMA with Wasim Akram and BitBlaze discussing NFTs and sports endorsements in Pakistan. The session features insights from industry leaders and highlights the growing interest in cryptocurrency among the youth in Pakistan.",
+  "topic_summary": "The webinar covers NFTs and sports endorsements in Pakistan, featuring Wasim Akram and BitBlaze co-founders discussing the potential of cryptocurrency in the region [t=64:34].",
+  "router_tags": [
+    "Binance",
+    "NFT",
+    "Sports",
+    "Pakistan",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance AMA",
+    "Binance Pakistan",
+    "NFTs and Sports",
+    "Wasim Akram AMA"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "@WasimAkram",
+    "@BitBlaze"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

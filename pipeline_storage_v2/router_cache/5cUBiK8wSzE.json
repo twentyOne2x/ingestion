@@ -1,0 +1,26 @@
+{
+  "description": "Binance CEO discusses the evolution of crypto regulation and adoption, emphasizing the need for a regulatory framework to enhance credibility and user trust. He highlights the importance of collaboration with global regulators and the role of major financial institutions in driving crypto adoption.",
+  "topic_summary": "The CEO of Binance shares insights on crypto adoption and regulation, noting that only 5% of the global population is currently engaged with crypto. He expresses optimism about future growth driven by regulatory clarity and institutional involvement [t=144.29].",
+  "router_tags": [
+    "Crypto",
+    "Regulation",
+    "Adoption",
+    "Finance",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance CEO",
+    "binance ceo",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "@BinanceYoutube",
+    "@Fidelity",
+    "@ChowSwap"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the evolution of the crypto ecosystem and the significance of Bitcoin ETFs in bridging the gap between traditional finance and crypto. Highlights the growing interest in crypto, especially among younger generations in Turkey, and the need for education and regulatory support to foster innovation.",
+  "topic_summary": "The video explores the advancements in the crypto ecosystem, focusing on the anticipated approval of Bitcoin spot ETFs as a pivotal moment for trust and investment in cryptocurrencies. It emphasizes the importance of bridging the gap between conventional finance and crypto, the role of education, and the potential for corporate involvement in crypto projects.",
+  "router_tags": [
+    "Bitcoin",
+    "ETF",
+    "Crypto",
+    "Finance",
+    "Investment"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@Vatisha"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

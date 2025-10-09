@@ -1,0 +1,24 @@
+{
+  "description": "Day 2 of Binance Blockchain Week Paris 2022 features discussions on blockchain's potential to uplift communities, with insights from experts in the humanitarian sector and digital transformation.",
+  "topic_summary": "The panel explores blockchain technology's role in enhancing humanitarian aid, economic opportunities for the unbanked, and addressing climate challenges, with a focus on real-world applications in Ukraine and other regions [t=27:00].",
+  "router_tags": [
+    "Blockchain",
+    "Humanitarian Aid",
+    "Web3",
+    "Crypto",
+    "Community Upliftment"
+  ],
+  "aliases": [
+    "Binance Blockchain Week",
+    "Binance Paris 2022",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@MercyCorps",
+    "@UkrainianMinistryOfDigitalTransformation"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

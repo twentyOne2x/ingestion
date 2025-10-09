@@ -1,0 +1,18 @@
+{
+  "description": "This video discusses the application of fundamental analysis in the cryptocurrency market, highlighting its differences from traditional stock markets and the influence of market sentiment.",
+  "topic_summary": "Fundamental analysis in crypto is evolving, lacking a standardized framework. Market sentiment often overshadows fundamental factors, leading to price movements that may not align with analytical conclusions. [t=0:64] [t=20:64]",
+  "router_tags": [
+    "fundamental analysis",
+    "crypto",
+    "market sentiment",
+    "investing"
+  ],
+  "aliases": [
+    "Fundamental Analysis in Crypto",
+    "Crypto Fundamental Analysis",
+    "Crypto Analysis"
+  ],
+  "canonical_entities": [],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

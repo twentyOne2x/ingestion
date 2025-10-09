@@ -1,0 +1,20 @@
+{
+  "video_id": "F35FryZB1Vo",
+  "title": "2023-11-10_F35FryZB1Vo_Richard Teng: Introducing the Binance Web3 Wallet at Binance Blockchain Week Istanbul",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Richard Tang",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

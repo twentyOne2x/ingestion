@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on enhancing blockchain technology and its applications in major companies like Google, Amazon, and Microsoft, alongside insights into the DoubleZero Token and Solana trading.",
+  "topic_summary": "Exploration of blockchain advancements and their impact on major tech firms, with a focus on crypto trading and token innovations [t=04:41].",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "Solana",
+    "DoubleZero Token",
+    "Tech Companies"
+  ],
+  "aliases": [
+    "@NotThreadGuy",
+    "@notthreadguy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Join Richard Teng, CEO of Binance, as he celebrates Bitcoin Pizza Day, reflecting on his 13 years in financial services and the evolution of his career from regulatory frameworks to delivering innovative solutions.",
+  "topic_summary": "Richard Teng discusses his transition from financial services to the crypto industry, highlighting the significance of Bitcoin Pizza Day and the importance of continuous innovation [t=0:48].",
+  "router_tags": [
+    "Bitcoin",
+    "Pizza Day",
+    "Binance",
+    "Richard Teng",
+    "Crypto"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "Richard Teng",
+    "CEO Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@RichardTeng"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

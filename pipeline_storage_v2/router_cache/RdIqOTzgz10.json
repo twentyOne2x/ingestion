@@ -1,0 +1,23 @@
+{
+  "description": "Q&A session discussing various topics related to blockchain technology, cryptocurrency exchanges, and NFTs.",
+  "topic_summary": "The session covers blockchain technology, proof of work vs. proof of stake, and the significance of cryptocurrency exchanges like Binance [t=0:16].",
+  "router_tags": [
+    "Q&A",
+    "Blockchain",
+    "Cryptocurrency",
+    "Binance",
+    "NFT"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$S&P",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Discussion featuring Jiangping, Jaku, Taman, and Joshua, focusing on diabetes.",
+  "topic_summary": "A conversation with Jiangping, Jaku, Taman, and Joshua about diabetes and related topics [t=00:53].",
+  "router_tags": [
+    "diabetes",
+    "health",
+    "discussion"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

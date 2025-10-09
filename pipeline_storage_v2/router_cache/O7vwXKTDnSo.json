@@ -1,0 +1,24 @@
+{
+  "description": "Join us for the DEMO SHOW, AFRICA, featuring exciting projects and discussions from developers and users across the continent. The event highlights the hard work of various teams and encourages participation from viewers worldwide.",
+  "topic_summary": "The event kicks off with introductions and welcomes participants from various countries, emphasizing the collaborative spirit of the African tech community. [t=0:56] The hosts engage with the audience, asking them to share their locations and expressing excitement about the day's program. [t=81:47]",
+  "router_tags": [
+    "Binance",
+    "Africa",
+    "Demo Show",
+    "Crypto",
+    "Blockchain",
+    "Developers",
+    "Community"
+  ],
+  "aliases": [
+    "Demo Show Africa",
+    "demo show africa",
+    "DEMO SHOW AFRICA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

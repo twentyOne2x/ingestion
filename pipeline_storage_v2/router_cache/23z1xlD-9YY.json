@@ -1,0 +1,22 @@
+{
+  "description": "This video provides a comprehensive guide on completing identity verification (KYC) on Binance. It explains the importance of KYC for account security and outlines the steps to verify your identity, including uploading ID documents and completing face verification.",
+  "topic_summary": "Learn how to complete identity verification on Binance to enhance account security and increase transaction limits. The process includes basic, intermediate, and advanced verification levels, requiring personal information and document uploads [t=4:00 - t=156:95].",
+  "router_tags": [
+    "KYC",
+    "Binance",
+    "Identity Verification",
+    "Account Security"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binanceacademy",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

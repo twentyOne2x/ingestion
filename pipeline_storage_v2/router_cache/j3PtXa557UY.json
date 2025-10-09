@@ -1,0 +1,26 @@
+{
+  "description": "Brandon Echter discusses communication in the Web3 space at Breakpoint 2022, introducing Sheikh and Vixit, founders of the WordCell and Dispatch protocols, respectively. They explore the evolution of forums and blogging, emphasizing the importance of decentralized platforms for user expression and community engagement.",
+  "topic_summary": "At Breakpoint 2022, Brandon Echter highlights the need for effective communication tools in the Web3 era, featuring Sheikh and Vixit who present their decentralized social media solutions, addressing challenges faced by traditional platforms and the significance of user ownership and experience.",
+  "router_tags": [
+    "Web3",
+    "Decentralization",
+    "Social Media",
+    "Blockchain",
+    "Communication"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "Crypto for Wordcels",
+    "Solana Foundation",
+    "WordCell",
+    "Dispatch Protocol"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Sheikh",
+    "@VixitGaur"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

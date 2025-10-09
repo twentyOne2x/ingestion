@@ -1,0 +1,21 @@
+{
+  "description": "This video introduces the basics of trading, covering fundamental concepts and differences between trading and investing.",
+  "topic_summary": "The video explains trading as the buying and selling of assets, highlighting its importance in economics and providing examples like groceries and stocks [t=43:56].",
+  "router_tags": [
+    "trading",
+    "investing",
+    "financial markets",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "Trading Basics",
+    "What Is Trading",
+    "Binance Academy Courses"
+  ],
+  "canonical_entities": [
+    "@binanceacademy",
+    "$TSLA"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

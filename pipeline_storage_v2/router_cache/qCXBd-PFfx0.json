@@ -1,0 +1,24 @@
+{
+  "description": "Breakpoint 2021 Day 2 features discussions on Solana's developer adoption, ecosystem updates, and insights from blockchain researchers at Coinbase.",
+  "topic_summary": "The event includes talks on Solana's competitive position against ETH, ecosystem growth, and blockchain analytics insights from Coinbase researchers [t=25:60].",
+  "router_tags": [
+    "Solana",
+    "Blockchain",
+    "Developer",
+    "Conference",
+    "Analytics"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Solana Breakpoint",
+    "Breakpoint",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@coinbase"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

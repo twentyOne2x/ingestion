@@ -1,0 +1,20 @@
+{
+  "video_id": "QMbb0QUJnIg",
+  "title": "2021-11-16_QMbb0QUJnIg_Breakpoint 2021: Multi Chain Futures: What Builders and Investors Are Watching For",
+  "channel_name": "@SolanaFndn",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@SolanaFndn",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "D": {
+      "name": "Lily Liu",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

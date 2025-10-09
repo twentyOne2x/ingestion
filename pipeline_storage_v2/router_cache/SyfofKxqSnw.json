@@ -1,0 +1,17 @@
+{
+  "description": "Discussion about various topics including a reference to 'champita'.",
+  "topic_summary": "Overview of discussions featuring 'nitola' and 'champita' [t=01:04 - 02:02].",
+  "router_tags": [
+    "discussion",
+    "champita",
+    "nitola"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "@BINANCEZH"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

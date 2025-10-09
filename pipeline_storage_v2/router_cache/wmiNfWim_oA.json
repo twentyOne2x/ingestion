@@ -1,0 +1,26 @@
+{
+  "description": "This webinar provides an overview of NFTs, explaining their significance and functionality in the digital space. It covers the basics of NFTs, including their non-fungible nature and examples from various sectors like art, music, and gaming. The session also discusses the Binance NFT Marketplace and its role in the broader NFT ecosystem.",
+  "topic_summary": "The webinar introduces NFTs, detailing their characteristics and market implications. It highlights the Binance NFT Marketplace as a key player in the NFT space, emphasizing its user-friendly features and the potential for creators and collectors alike [t=0:00].",
+  "router_tags": [
+    "NFTs",
+    "Binance",
+    "Webinar",
+    "Digital Assets",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "Binance NFT",
+    "nft",
+    "Nft",
+    "NFT Marketplace"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@BinanceYoutube",
+    "@jack",
+    "@Sofiel"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

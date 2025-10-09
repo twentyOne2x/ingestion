@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the utility of Bitcoin and the significance of Bitcoin Pizza Day, highlighting its features and historical context.",
+  "topic_summary": "Bitcoin is used as an alternative investment and for payments, particularly in international remittance. The first real-world Bitcoin transaction occurred on May 22, 2010, when 10,000 Bitcoin were used to purchase two pizzas, marking Bitcoin Pizza Day. At that time, the Bitcoin spent was valued at around $40, but today it would be worth hundreds of millions of dollars. [t=17:20]",
+  "router_tags": [
+    "Bitcoin",
+    "Bitcoin Pizza Day",
+    "Cryptocurrency",
+    "Digital Gold",
+    "Investing"
+  ],
+  "aliases": [
+    "bitcoin",
+    "Bitcoin",
+    "BTC",
+    "bitcoin pizza day"
+  ],
+  "canonical_entities": [
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

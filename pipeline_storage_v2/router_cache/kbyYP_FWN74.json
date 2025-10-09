@@ -1,0 +1,19 @@
+{
+  "description": "Discussion on market trends and strategies in cryptocurrency trading.",
+  "topic_summary": "Overview of trading strategies and market analysis in the crypto space [t=01:18].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "market analysis"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

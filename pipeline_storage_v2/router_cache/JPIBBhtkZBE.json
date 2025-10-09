@@ -1,0 +1,34 @@
+{
+  "description": "The panel discusses the future of virtual machines, focusing on interoperability versus maximalism. Panelists Kyle Samani and Georgios explore the evolution from an Ethereum-dominated ecosystem to a multi-chain future, emphasizing the importance of bridge protocols and security models [t=21:36].",
+  "topic_summary": "The discussion centers on the contrasting visions of a multi-chain future versus a single dominant chain. Panelists share insights on the current state of blockchain ecosystems and the challenges of interoperability [t=40:38].",
+  "router_tags": [
+    "Virtual Machines",
+    "Interoperability",
+    "Maximalism",
+    "Blockchain",
+    "Solana",
+    "Ethereum",
+    "Multi-chain"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint 2021: Virtual Machines",
+    "Solana Conference",
+    "SolanaFndn"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@KyleSamani",
+    "@Georgios",
+    "@Anatoly",
+    "@Tegan",
+    "@Raj",
+    "@Sunny",
+    "@Alice",
+    "@Saya",
+    "@Giorgio"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

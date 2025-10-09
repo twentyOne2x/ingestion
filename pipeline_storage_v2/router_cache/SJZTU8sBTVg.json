@@ -1,0 +1,29 @@
+{
+  "description": "Maria Phillips introduces the panel discussing the Solana user experience, emphasizing its importance to Slope Finance. Edward shares his background with Project Serum and the need for an on-chain order book. Tom discusses his work on governance and prediction markets. Chris explains the challenges of building derivatives on other platforms and the advantages of Solana's speed and cost.",
+  "topic_summary": "The panel explores the significance of the Solana user experience, the development of decentralized finance (DeFi) on Solana, and the innovative projects being built on the platform, including Project Serum and Drift Labs, highlighting the need for efficient governance and trading solutions [t=23:04].",
+  "router_tags": [
+    "Solana",
+    "DeFi",
+    "Project Serum",
+    "Drift Labs",
+    "Governance",
+    "Prediction Markets"
+  ],
+  "aliases": [
+    "solana",
+    "Slope Finance",
+    "project serum",
+    "drift labs",
+    "foresight"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@MariaPhillips",
+    "@Edward",
+    "@Tom",
+    "@Chris",
+    "@Anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

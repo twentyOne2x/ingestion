@@ -1,0 +1,20 @@
+{
+  "description": "The speaker humorously acknowledges the audience's interest in CZ rather than themselves, suggesting a playful interaction about photoshopping their image.",
+  "topic_summary": "Introduction and light-hearted engagement with the audience, focusing on the desire to meet CZ [t=0:00].",
+  "router_tags": [
+    "CZ",
+    "Binance",
+    "Crypto",
+    "Social Media"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "CZ"
+  ],
+  "canonical_entities": [
+    "@binancezh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

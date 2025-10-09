@@ -1,0 +1,33 @@
+{
+  "description": "Austin Federa discusses the progress and future of the Solana network at Breakpoint 2022, highlighting key presentations, updates on Solana Mobile, and the importance of building during a bear market.",
+  "topic_summary": "Overview of Solana's growth, technical advancements, and community engagement since its launch, emphasizing the transition from Web2 to Web3 and the role of decentralization in the network's success. Key points include the impressive number of participants in Solana hackathons and the significance of validators in maintaining network integrity [t=0:32-4:36].",
+  "router_tags": [
+    "Solana",
+    "Breakpoint 2022",
+    "Web3",
+    "Decentralization",
+    "Hacker Houses",
+    "Validators"
+  ],
+  "aliases": [
+    "Breakpoint 2022",
+    "SolanaFndn",
+    "Austin Federa"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@Google",
+    "@Instagram",
+    "@Facebook",
+    "@Oracle",
+    "@Citadel",
+    "@Robinhood",
+    "@Qualcomm",
+    "@Apple",
+    "@Mango",
+    "@AnatolyYakovenko"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

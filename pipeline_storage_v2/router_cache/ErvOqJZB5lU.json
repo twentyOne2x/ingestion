@@ -1,0 +1,27 @@
+{
+  "description": "In this workshop, Jeff from Binance hosts Pei Yu from Certik to discuss security risks in DeFi, highlighting recent hacks and the importance of security audits. Pei Yu shares insights on building secure projects based on lessons learned from past incidents.",
+  "topic_summary": "The workshop covers the rapid growth of DeFi, the significance of security in smart contracts, and lessons from recent hacks, emphasizing the need for thorough security audits and proactive measures in project development. [t=0:16] [t=8:64] [t=323.02]",
+  "router_tags": [
+    "DeFi",
+    "Blockchain Security",
+    "Smart Contracts",
+    "Security Audits",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "defi",
+    "blockchain security",
+    "smart contracts",
+    "security audits",
+    "cryptocurrency"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$USDT",
+    "@Binance",
+    "@PeiYu",
+    "@Certik"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

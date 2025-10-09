@@ -1,0 +1,27 @@
+{
+  "description": "David from Reciprocal Ventures discusses the impact of Play to Earn (P2E) on mainstream gaming adoption, highlighting its potential to attract millions of users to blockchain technology. Panelists Dan Dinh and Jonathan Choi share insights on the intrinsic motivations behind gaming and the unique advantages of the Solana blockchain for gaming applications.",
+  "topic_summary": "The panel explores the concept of Play to Earn in gaming, emphasizing the importance of enjoyment over profit. They discuss how Solana's speed and cost efficiency make it an ideal blockchain for gaming, facilitating user engagement and transaction efficiency [t=11:12-284:64].",
+  "router_tags": [
+    "Play to Earn",
+    "Gaming",
+    "Blockchain",
+    "Solana",
+    "NFTs"
+  ],
+  "aliases": [
+    "Play To Earn",
+    "P2E",
+    "Gaming Adoption",
+    "Solana Gaming"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "@David",
+    "@DanDinh",
+    "@JonathanChoi",
+    "@Metaplex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

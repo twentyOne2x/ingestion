@@ -1,0 +1,29 @@
+{
+  "description": "In this workshop, Patrick Collins from Chainlink Labs discusses best practices for using data oracles in smart contracts, focusing on security in DeFi. He covers recent exploits, how to work with price data, and coding price functions. Viewers are encouraged to ask questions during the session.",
+  "topic_summary": "Patrick Collins explains the role of oracles in DeFi, addressing security practices and recent exploits. He emphasizes the importance of using reliable data sources and provides insights on coding and securing smart contracts [t=0:24 - t=291:04].",
+  "router_tags": [
+    "DeFi",
+    "Oracles",
+    "Chainlink",
+    "Smart Contracts",
+    "Security",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Chain Link",
+    "Chainlink",
+    "Patrick Collins",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$DAI",
+    "$USDT",
+    "$SOL",
+    "@BinanceYoutube",
+    "@PatrickCollins"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

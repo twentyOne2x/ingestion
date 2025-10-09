@@ -1,0 +1,29 @@
+{
+  "description": "In this episode of Crypto Week in Review, host Jun Ian Wong discusses market sentiment, meme coins, and the impact of Tesla and Bitcoin on the crypto landscape. The panel includes guests from Eforce, Dodo, and Binance, who share insights on market corrections and the growing participation in crypto from diverse audiences.",
+  "topic_summary": "The panel discusses the recent market correction and sentiment in the crypto space, highlighting Ethereum's new high and the resilience of the market. They explore the influx of new participants from various backgrounds, including the Reddit GameStop community and TikTok users, emphasizing the inclusive nature of the evolving crypto ecosystem [t=118.75].",
+  "router_tags": [
+    "Crypto",
+    "Market Sentiment",
+    "Ethereum",
+    "Bitcoin",
+    "Meme Coins",
+    "Binance",
+    "Dodo",
+    "Eforce"
+  ],
+  "aliases": [
+    "Crypto Week In Review",
+    "crypto week in review",
+    "Crypto week in review",
+    "Crypto Week In Review #2",
+    "crypto week in review #2"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@BinanceYoutube",
+    "@acjr"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

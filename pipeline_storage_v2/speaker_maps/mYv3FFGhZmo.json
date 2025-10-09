@@ -1,0 +1,20 @@
+{
+  "video_id": "mYv3FFGhZmo",
+  "title": "2021-03-06_mYv3FFGhZmo_P2P in Africa - Trading safely on Binance P2P",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Emmanuel Ibaneta",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

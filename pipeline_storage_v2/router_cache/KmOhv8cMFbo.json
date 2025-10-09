@@ -1,0 +1,16 @@
+{
+  "description": "Cristiano Ronaldo greets viewers with 'Gmgm' and prompts them to respond.",
+  "topic_summary": "Introduction by Cristiano Ronaldo with a brief greeting [t=00:00].",
+  "router_tags": [
+    "Cristiano Ronaldo",
+    "greeting",
+    "Binance"
+  ],
+  "aliases": [
+    "Cristiano ronaldo",
+    "gm from cristiano ronaldo"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Evan Gray provides an overview of Wormhole, a cross-chain messaging protocol, discussing its features, applications, and future developments. He explains the protocol's evolution from a token bridge to a generic messaging system, highlighting its support for multiple blockchains and various applications like governance votes and cross-chain staking. The presentation includes a demo of the token bridge and insights into the network's metrics and community contributions.",
+  "topic_summary": "Overview of Wormhole, a cross-chain messaging protocol, including its functionalities, applications, and community involvement. [t=10:16] Evan Gray introduces himself and the Wormhole project. [t=36:97] Discussion on the protocol's capabilities and future enhancements. [t=440:28] Explanation of the core layer and message passing mechanics.",
+  "router_tags": [
+    "Wormhole",
+    "Cross-Chain",
+    "Blockchain",
+    "Messaging Protocol",
+    "Token Bridge",
+    "NFT Bridge"
+  ],
+  "aliases": [
+    "wormhole",
+    "Wormhole",
+    "WORMHOLE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn",
+    "$ETH",
+    "$LUNA",
+    "$UST",
+    "$MATIC",
+    "$AVAX",
+    "$OASIS",
+    "@EvanGray",
+    "@Josh"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

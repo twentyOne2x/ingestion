@@ -1,0 +1,22 @@
+{
+  "description": "Explore how blockchain technology underpins the Metaverse, enabling innovative business models and Play to Earn games that allow users to earn income while gaming.",
+  "topic_summary": "The Metaverse represents a new digital frontier powered by blockchain, with a focus on GameFi and NFTs for enhanced user experiences [t=0:48].",
+  "router_tags": [
+    "Blockchain",
+    "Metaverse",
+    "GameFi",
+    "NFTs",
+    "Play to Earn"
+  ],
+  "aliases": [
+    "Blockchain Supports the Metaverse",
+    "How blockchain supports the metaverse",
+    "Blockchain and the Metaverse"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

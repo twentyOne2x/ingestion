@@ -1,0 +1,22 @@
+{
+  "description": "Explore the popular use cases of NFTs, including their role in Dapps for unique digital items and crypto collectibles, their market value, and their impact on online gaming economies.",
+  "topic_summary": "NFTs serve as unique digital items and collectibles in Dapps, with a growing market despite volatility. They address challenges in online gaming by tokenizing assets, enabling ownership proof, and connecting gaming ecosystems [t=0:32-0:46].",
+  "router_tags": [
+    "NFTs",
+    "Crypto Collectibles",
+    "Blockchain Gaming",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "Nfts",
+    "Nft",
+    "NFTs",
+    "NftS"
+  ],
+  "canonical_entities": [
+    "$NFT",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

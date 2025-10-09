@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the immutability and transparency of smart contracts on the Ethereum blockchain. It discusses their automated execution, limitations, and various use cases in decentralized finance (DeFi), voting systems, games, and healthcare.",
+  "topic_summary": "Smart contracts are immutable and transparent, ensuring automated execution without changes post-deployment. They are utilized in DeFi transactions and various sectors, despite being prone to human error [t=1:12].",
+  "router_tags": [
+    "Smart Contracts",
+    "Ethereum",
+    "Blockchain",
+    "DeFi",
+    "Transparency"
+  ],
+  "aliases": [
+    "Smart contracts",
+    "smart Contracts",
+    "SMART CONTRACTS"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Polkadot as a significant project in the cryptocurrency space, covering its ecosystem, smart contracts, and scalability solutions.",
+  "topic_summary": "Overview of Polkadot's ecosystem and its role in the cryptocurrency market, including mentions of smart contracts and scalability solutions [t=0:00-39:00].",
+  "router_tags": [
+    "Polkadot",
+    "Cryptocurrency",
+    "Smart Contracts",
+    "Blockchain",
+    "Web3"
+  ],
+  "aliases": [
+    "Polkadot",
+    "Polkadot Project",
+    "polkadot"
+  ],
+  "canonical_entities": [
+    "$DOT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

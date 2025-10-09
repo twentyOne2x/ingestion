@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on trading strategies and market insights, featuring various traders and their approaches.",
+  "topic_summary": "Exploration of trading techniques and market dynamics, including insights from Kaki Video Trading, Naganya Dalsha, and others. Key points discussed include risk management and profit strategies [t=0:24 - t=52:29].",
+  "router_tags": [
+    "trading",
+    "market analysis",
+    "investment strategies",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Boris Trader",
+    "EnjoyMaloy",
+    "Boris trader"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@KakiVideoTrading",
+    "@NaganyaDalsha",
+    "@NibalShitVijay",
+    "@PrabitDaniel",
+    "@OcharitkaPuchasNationalNamco",
+    "@Eli",
+    "@VinatsRobotics"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "This video discusses how to earn money and generate passive income using Binance Earn, covering various mechanisms like proof of work and proof of stake, as well as Binance's launchpad and launch pool features.",
+  "topic_summary": "Explore Binance Earn for passive income opportunities, including staking and liquidity pools. Learn about mechanisms like proof of work and proof of stake, and how to utilize Binance's launchpad and launch pool for token offerings [t=00:15].",
+  "router_tags": [
+    "Binance",
+    "Passive Income",
+    "Cryptocurrency",
+    "Staking",
+    "Launchpad",
+    "DeFi"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "Binance Earn",
+    "binance earn"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

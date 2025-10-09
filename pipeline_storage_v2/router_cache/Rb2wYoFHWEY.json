@@ -1,0 +1,20 @@
+{
+  "description": "This video provides a step-by-step guide on how to register an account on Binance, including entering your email, receiving a verification code, and troubleshooting email issues.",
+  "topic_summary": "Learn how to register an account on Binance, including email verification and troubleshooting tips [t=0:88-93:55].",
+  "router_tags": [
+    "Binance",
+    "account registration",
+    "crypto exchange"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

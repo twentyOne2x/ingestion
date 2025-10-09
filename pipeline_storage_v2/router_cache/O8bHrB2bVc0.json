@@ -1,0 +1,21 @@
+{
+  "description": "Discussion about food featuring Hanya Devadu and Sushi Rahona Nishana, mentioning BNB.",
+  "topic_summary": "Food discussion with Hanya Devadu and Sushi Rahona Nishana, including BNB references [t=02:02].",
+  "router_tags": [
+    "food",
+    "BNB",
+    "discussion"
+  ],
+  "aliases": [
+    "@Binancezh",
+    "@binanceZH",
+    "BinanceZH"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@HanyaDevadu",
+    "@SushiRahonaNishana"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

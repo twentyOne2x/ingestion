@@ -1,0 +1,23 @@
+{
+  "description": "This video explains Two Factor Authentication (2FA) and how to set it up on Binance for both PC and Mobile. It covers the importance of 2FA for account security, the differences between SMS and Google Authenticator, and step-by-step instructions for enabling these features.",
+  "topic_summary": "Learn about Two Factor Authentication (2FA) and its significance for securing your Binance account. The video details the setup process for SMS and Google Authenticator, highlighting their pros and cons, and provides guidance for both PC and Mobile users. [t=0:56] to [t=302:39]",
+  "router_tags": [
+    "Two Factor Authentication",
+    "Binance",
+    "Account Security",
+    "SMS Authenticator",
+    "Google Authenticator"
+  ],
+  "aliases": [
+    "Two Factor Authentication",
+    "2FA",
+    "Binance Academy",
+    "binanceacademy"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

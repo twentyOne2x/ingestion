@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on NFT and GameFi concepts, featuring various speakers and insights on staking and earning in the gaming space.",
+  "topic_summary": "Exploration of NFT staking and GameFi opportunities, including mentions of key figures and platforms [t=0:00-1:00].",
+  "router_tags": [
+    "NFT",
+    "GameFi",
+    "Staking",
+    "Crypto"
+  ],
+  "aliases": [
+    "Atm",
+    "Attm",
+    "AtTm"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$NFT",
+    "$GameFi",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

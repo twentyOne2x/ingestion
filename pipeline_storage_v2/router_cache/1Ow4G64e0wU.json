@@ -1,0 +1,46 @@
+{
+  "description": "Ben introduces the session on Binance futures trading for beginners, featuring Amek and Marvelous. They discuss technical issues and the importance of futures trading in crypto.",
+  "topic_summary": "Introduction to Binance futures trading for beginners, featuring insights from crypto influencers Amek and Marvelous. The session covers basics and experiences in futures trading [t=43:85].",
+  "router_tags": [
+    "futures trading",
+    "crypto",
+    "Binance",
+    "beginners",
+    "trading education"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binance youtube",
+    "@binanceyoutube",
+    "Binance Academy",
+    "binance academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$BNB",
+    "$100",
+    "$30,000",
+    "$50,000",
+    "$10,000",
+    "$40,000",
+    "$28,000",
+    "$35,000",
+    "$3,000",
+    "$2,000",
+    "$600",
+    "$64,000",
+    "$5",
+    "$1000",
+    "$1,000",
+    "$500",
+    "$60",
+    "$20,000",
+    "$33,500",
+    "$35,175",
+    "$90",
+    "$32"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

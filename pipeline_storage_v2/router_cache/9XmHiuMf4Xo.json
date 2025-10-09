@@ -1,0 +1,23 @@
+{
+  "description": "Webinar discussing Binance Futures, covering strategies for managing money and risk in trading, with insights on market positions and profit management.",
+  "topic_summary": "The session explores Binance Futures trading strategies, focusing on risk management and profit optimization techniques [t=00:23]. It includes discussions on market analysis, stop-loss mechanisms, and trading patterns [t=49:05].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Risk Management",
+    "Profit Optimization"
+  ],
+  "aliases": [
+    "Binance Webinar",
+    "binance webinar",
+    "Binance futures",
+    "binance futures"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "The video discusses Binance's humanitarian efforts in Ukraine, highlighting their response to the war that began in 2022. It covers the challenges faced in providing aid, the innovative use of crypto for donations, and specific projects like the Binance Refugee Card and IT Generation project, which aim to support displaced individuals and provide education.",
+  "topic_summary": "Binance's humanitarian initiatives in Ukraine, including $10 million in donations and support for refugees and displaced individuals through various projects [t=189.12].",
+  "router_tags": [
+    "Binance",
+    "Ukraine",
+    "Humanitarian Aid",
+    "Crypto Donations",
+    "Refugee Support",
+    "IT Education"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Binance",
+    "@RedCross",
+    "@MinistryOfDigitalTransformation"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

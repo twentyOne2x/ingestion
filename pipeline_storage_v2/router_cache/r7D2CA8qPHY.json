@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on rendering the metaverse using Solana technology, focusing on blockchain applications and GPU memory utilization.",
+  "topic_summary": "Exploration of metaverse rendering on Solana, highlighting blockchain streaming and GPU memory usage [t=04:27 - 21:10].",
+  "router_tags": [
+    "Metaverse",
+    "Solana",
+    "Blockchain",
+    "GPU",
+    "Rendering"
+  ],
+  "aliases": [
+    "Breakpoint 2021",
+    "Breakpoint2021",
+    "Breakpoint 2021: Rendering the Metaverse on Solana"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@SolanaFndn"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

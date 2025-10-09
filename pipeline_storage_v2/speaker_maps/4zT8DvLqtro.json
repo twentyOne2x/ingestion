@@ -1,0 +1,20 @@
+{
+  "video_id": "4zT8DvLqtro",
+  "title": "2022-11-24_4zT8DvLqtro_Abu Dhabi Finance Week Fireside Chat: CZ and Mike Novogratz",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "M. Escipt",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

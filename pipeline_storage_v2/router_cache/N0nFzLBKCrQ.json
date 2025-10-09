@@ -1,0 +1,21 @@
+{
+  "description": "Learn how to diversify your cryptocurrency portfolio effectively. This video covers the importance of asset allocation, the benefits of diversification, and the trade-offs involved.",
+  "topic_summary": "This video explains the concept of diversifying a cryptocurrency portfolio, suggesting allocations such as 40% Bitcoin, 30% stablecoins, 15% NFTs, and 15% altcoins. It discusses the pros and cons of diversification, including reduced risk and volatility [t=30:48], and the tendency of diversified portfolios to track the overall market [t=43:50].",
+  "router_tags": [
+    "crypto",
+    "portfolio",
+    "diversification",
+    "investment"
+  ],
+  "aliases": [
+    "How to Diversify Your Crypto Portfolio",
+    "Diversifying Crypto Portfolio",
+    "Crypto Portfolio Diversification"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@binanceacademy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

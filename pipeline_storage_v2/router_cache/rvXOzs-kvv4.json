@@ -1,0 +1,23 @@
+{
+  "description": "Adrian Zdnczyk discusses the role of social media in cryptocurrency and decentralization, highlighting the challenges of distinguishing reliable information from scams. He reflects on the FTX collapse and emphasizes the importance of education in the crypto space.",
+  "topic_summary": "The discussion focuses on decentralized communities and the impact of social media on cryptocurrency education and awareness, particularly in light of past scams and the need for reliable information [t=43:21].",
+  "router_tags": [
+    "Decentralization",
+    "Cryptocurrency",
+    "Social Media",
+    "Education",
+    "Community"
+  ],
+  "aliases": [
+    "Decentralized Communities",
+    "Crypto Education",
+    "Social Media in Crypto"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

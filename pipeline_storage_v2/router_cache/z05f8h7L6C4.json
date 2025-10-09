@@ -1,0 +1,27 @@
+{
+  "description": "Alessandra and Christian from Coinbase discuss blockchain analytics, its benefits for protocol teams, NFT developers, and investors, and the challenges of analyzing Solana's data due to its high transaction volume and unique infrastructure.",
+  "topic_summary": "The presentation covers the importance of blockchain analytics for various stakeholders in the crypto space, detailing how it can provide insights into user behavior and investment strategies. It also highlights the specific challenges faced when analyzing data on the Solana blockchain, including data volume and indexing difficulties.",
+  "router_tags": [
+    "Blockchain",
+    "Analytics",
+    "Solana",
+    "Crypto",
+    "Investing",
+    "NFTs"
+  ],
+  "aliases": [
+    "@solanafndn",
+    "@SolanaFndn",
+    "Solana Foundation"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "$ETH",
+    "$BTC",
+    "@coinbase",
+    "@nansen",
+    "@binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

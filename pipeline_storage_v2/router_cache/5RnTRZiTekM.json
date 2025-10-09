@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on paying crypto taxes, saving money, and related financial topics.",
+  "topic_summary": "Exploration of crypto tax obligations and financial strategies [t=00:00].",
+  "router_tags": [
+    "crypto",
+    "taxes",
+    "finance",
+    "podcast"
+  ],
+  "aliases": [
+    "NotThreadGuy",
+    "notthreadguy"
+  ],
+  "canonical_entities": [
+    "$YAMAYUT",
+    "@notthreadguy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

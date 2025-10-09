@@ -1,0 +1,20 @@
+{
+  "video_id": "SlD8mAHPVZk",
+  "title": "2023-12-17_SlD8mAHPVZk_Traditional Finance and the Intersection of the New Digital Assets Frontier",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Vincent Chalk",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on Solana's validator community call addressing vote lagging proposals and network updates.",
+  "topic_summary": "The call covers updates on Mainnet Beta and Testnet versions, slow block production issues, and a proposal by Sentetsu regarding voting credit adjustments to discourage intentional vote lagging. The discussion emphasizes the importance of timely voting for validators to maximize credits and improve network performance. [t=0:16] [t=125:42]",
+  "router_tags": [
+    "Solana",
+    "Validator",
+    "Voting",
+    "Blockchain",
+    "Network Updates"
+  ],
+  "aliases": [
+    "solana community validator discussion",
+    "Solana Validator Call",
+    "Validator Community Call"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Frank",
+    "@Sentetsu",
+    "@Vindi",
+    "@GenesisGo",
+    "@Zentetsu",
+    "@SolanaLab"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

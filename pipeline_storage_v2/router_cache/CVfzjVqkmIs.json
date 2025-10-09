@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on decentralized autonomous organizations (DAOs) featuring various speakers including Stella, Carolyn, and others. Topics include governance, community engagement, and the role of DAOs in the blockchain ecosystem.",
+  "topic_summary": "Exploration of DAOs and their impact on community and governance [t=00:00-01:00]. Key insights from speakers like Carolyn and Hari Chiang on the future of decentralized organizations [t=12:00-29:00].",
+  "router_tags": [
+    "DAO",
+    "decentralized",
+    "blockchain",
+    "community",
+    "governance"
+  ],
+  "aliases": [
+    "Dao -- People",
+    "Dao -- people",
+    "dao -- people",
+    "dao -- PEOPLE"
+  ],
+  "canonical_entities": [
+    "@binancezh",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}
