@@ -1,0 +1,33 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe discusses the future of cryptocurrency in Indonesia with Toko Crypto co-founders Xue Kai Peng and Sean J. They share insights on the launch of Toko Crypto, its regulatory compliance, and the dynamic cryptocurrency market in Indonesia.",
+  "topic_summary": "Wee Joe welcomes Toko Crypto co-founders Xue Kai Peng and Sean J. to discuss their journey in shaping Indonesia's cryptocurrency landscape, including the launch of their exchange and collaboration with Binance Cloud. They highlight the unique challenges and opportunities in the Indonesian market, emphasizing the importance of regulatory compliance and user accessibility [t=0:00-10:00].",
+  "router_tags": [
+    "Binance",
+    "Toko Crypto",
+    "Cryptocurrency",
+    "Indonesia",
+    "Blockchain",
+    "Investment",
+    "Regulation"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Toko Crypto",
+    "toko crypto",
+    "toko",
+    "Wee Joe",
+    "Xue Kai Peng",
+    "Sean J"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$RUP",
+    "@BinanceYoutube",
+    "@TokoCrypto",
+    "@SeanJ",
+    "@XueKaiPeng"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

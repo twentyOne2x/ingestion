@@ -1,0 +1,26 @@
+{
+  "description": "The Binance Turns 3 Awards ceremony recognizes influencers and wallets in the crypto space. Chris Ani expresses gratitude for his nomination in the Crypto Influencer Awards African category. The event highlights the importance of decentralized finance and the role of wallets in mainstream adoption.",
+  "topic_summary": "Celebration of Binance's third anniversary with awards for influencers and wallet providers, emphasizing community involvement and the significance of decentralized finance [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Crypto Awards",
+    "Decentralized Finance",
+    "Influencers",
+    "Wallets"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Awards",
+    "Crypto Influencer Awards",
+    "Chris Ani",
+    "Digital Abundance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@ChrisAni",
+    "@Coindesk"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

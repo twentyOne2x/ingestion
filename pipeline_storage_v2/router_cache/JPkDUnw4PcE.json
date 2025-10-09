@@ -1,0 +1,31 @@
+{
+  "description": "Kenji and Etienne from Binance Research discuss insights from their second Institutional Insights report, focusing on client typologies, trading strategies, and market trends. They highlight the investment strategies of institutional clients, including high frequency trading and technical analysis, and the growing interest in staking and stablecoins like USDC and BUSD. The conversation also touches on risks and growth drivers in the crypto industry, including regulatory changes and innovations in products.",
+  "topic_summary": "In this episode, Kenji and Etienne review key findings from Binance's Institutional Insights report, discussing client profiles, trading strategies, and market dynamics. They emphasize the importance of research in investment decisions and the evolving landscape of stablecoins and decentralized exchanges.",
+  "router_tags": [
+    "Binance",
+    "Institutional Insights",
+    "Crypto Trading",
+    "Market Trends",
+    "Staking",
+    "Stablecoins"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BinanceYoutube",
+    "Kenji",
+    "Etienne"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly",
+    "$100,000",
+    "$25 Million",
+    "USDC",
+    "BUSD",
+    "USDT",
+    "BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

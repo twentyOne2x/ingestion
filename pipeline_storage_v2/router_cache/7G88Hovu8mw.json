@@ -1,0 +1,28 @@
+{
+  "description": "Binance celebrates its third anniversary with a panel discussing scalability in blockchain development. The event features awards for outstanding community members, including the Binance Angel of the Year, highlighting the contributions of volunteers across various specialties. Winners are recognized for their efforts in community building and content creation, fostering a supportive environment for Binance users.",
+  "topic_summary": "The panel addresses scalability in blockchain and recognizes community contributions through awards, including the Binance Angel of the Year, showcasing the importance of community engagement in the crypto space.",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "Community",
+    "Awards"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Angels",
+    "Binance Community",
+    "Binance Marketing Team"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@WangXingChen",
+    "@TonyGiuffe",
+    "@Jorge"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

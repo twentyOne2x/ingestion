@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on Binance P2P services in Chile and Uruguay, featuring insights on trading and cryptocurrency transactions.",
+  "topic_summary": "Overview of Binance's peer-to-peer services in Latin America, including trading practices and user participation [t=24:88].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Cryptocurrency",
+    "Trading",
+    "Latin America"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance Peer to Peer",
+    "binance peer to peer"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@Sophia",
+    "@PierceIwano"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

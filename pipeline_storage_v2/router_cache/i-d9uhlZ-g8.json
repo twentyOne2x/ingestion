@@ -1,0 +1,20 @@
+{
+  "description": "Binance Global Meetup held in Hue, Vietnam in July 2019 featuring discussions and insights from industry leaders.",
+  "topic_summary": "Highlights from the Binance Global Meetup in Hue, Vietnam, including key discussions and participant interactions [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Vietnam",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

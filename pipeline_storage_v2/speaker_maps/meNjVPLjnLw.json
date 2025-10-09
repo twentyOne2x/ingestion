@@ -1,0 +1,26 @@
+{
+  "video_id": "meNjVPLjnLw",
+  "title": "2020-04-22_meNjVPLjnLw_#Binance PodcastEpisode 38 - The COVID-19 Coronavirus and Role of Media During the Pandemic",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Wee Joe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Bernard Young",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

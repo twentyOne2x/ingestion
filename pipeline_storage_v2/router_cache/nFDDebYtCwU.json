@@ -1,0 +1,21 @@
+{
+  "description": "Introduction and usage guide for Binance Futures presented by Manh from CHATVL NETWORK.",
+  "topic_summary": "Overview of Binance Futures and its functionalities, including trading strategies and market insights [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Binance hosts an online meetup discussing various topics related to cryptocurrency, blockchain technology, and the company's initiatives.",
+  "topic_summary": "The meetup features discussions on the role of Binance in the crypto space, insights from key figures like Ramana Linik and Maxim Petrovsky, and the introduction of innovative protocols and governance models in the blockchain ecosystem. Key points include the importance of community engagement and the future of decentralized finance [t=73:66-80:44][t=107:02-119:42][t=278:74-600:86].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "DeFi",
+    "Meetup"
+  ],
+  "aliases": [
+    "Binance Online Super Meetup",
+    "Binance Meetup",
+    "Binance Super Meetup"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "video_id": "Bmgdj4-RCmU",
+  "title": "2021-01-04_Bmgdj4-RCmU_2020",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This tutorial explains how to trade cryptocurrencies via P2P on Binance, including steps to buy USDT using RUB. It covers account setup, selecting payment methods, and completing transactions.",
+  "topic_summary": "Learn to trade cryptocurrencies P2P on Binance, focusing on buying USDT with RUB. Steps include account verification, selecting ads, and completing payments [t=6:72-142:53].",
+  "router_tags": [
+    "Cryptocurrency",
+    "P2P Trading",
+    "Binance",
+    "USDT",
+    "RUB"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$RUB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

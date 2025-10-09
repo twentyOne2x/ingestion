@@ -1,0 +1,26 @@
+{
+  "description": "In this video, Kung Fu Nerd discusses trading Bitcoin futures on Binance, explaining the process and features available for users. The video covers account setup, trading strategies, and the importance of understanding market prices and order types.",
+  "topic_summary": "Overview of trading Bitcoin futures on Binance, including account setup and trading strategies [t=0:24] to [t=6:84].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin Futures",
+    "Cryptocurrency Trading",
+    "USDT",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "Kung Fu Nerd",
+    "kung fu nerd",
+    "KUNG FU NERD"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

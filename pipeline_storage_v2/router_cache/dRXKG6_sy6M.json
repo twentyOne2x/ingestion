@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on Binance's programs, savings, and cryptocurrency projects.",
+  "topic_summary": "Exploration of Binance's exchange features and savings options, including insights into cryptocurrency projects and market dynamics [t=30:69 - t=3011:21].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "savings",
+    "exchange",
+    "DeFi"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the current tipping point of the planet, emphasizing the shift towards decentralized financial systems and the role of blockchain technology in empowering individuals. It highlights the investment in Bitcoin and the changing landscape of charitable giving and economic exchange.",
+  "topic_summary": "The video explores the global shift towards decentralized finance and blockchain technology, emphasizing the importance of collective action to overcome societal challenges. It discusses the release of a $100 million fund for the Binance Smart Chain ecosystem and presents Bitcoin as a potential solution for global issues [t=91:07].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Blockchain",
+    "Decentralization",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

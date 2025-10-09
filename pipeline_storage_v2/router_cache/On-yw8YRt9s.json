@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Binance podcast, host Wee Joe speaks with Yele Badamasi, the first hire for Binance Labs in Africa. They discuss the potential of blockchain technology in Africa, the startup ecosystem, and Yele's journey from studying medicine to becoming a tech entrepreneur. Yele shares insights on the opportunities in Africa, particularly for the youth, and his experiences in building a community for entrepreneurs.",
+  "topic_summary": "Wee Joe interviews Yele Badamasi about blockchain's impact in Africa, startup opportunities, and Yele's transition from medicine to technology [t=0:00-3:84]. They explore the vibrant entrepreneurial landscape in Africa and the importance of technology in driving economic development [t=90:00-250:37].",
+  "router_tags": [
+    "Blockchain",
+    "Africa",
+    "Entrepreneurship",
+    "Binance",
+    "Technology"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Binance podcast",
+    "binance podcast"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@WeeJoe",
+    "@YeleBadamasi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

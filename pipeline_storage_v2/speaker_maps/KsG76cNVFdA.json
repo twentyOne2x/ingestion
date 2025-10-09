@@ -1,0 +1,26 @@
+{
+  "video_id": "KsG76cNVFdA",
+  "title": "2020-12-04_KsG76cNVFdA_Profit lebih besar melalui Quantitative Strategy!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Sabina Carlo",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Manuel Truce Manushi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wei Joe discusses blockchain's impact on Africa and the 4th industrial revolution with guests from various sectors. The conversation highlights the growing interest in blockchain technology and its potential to transform industries and communities.",
+  "topic_summary": "The podcast explores blockchain's role in Africa's development and its influence on various sectors, featuring insights from industry leaders and specialists [t=10:88].",
+  "router_tags": [
+    "Blockchain",
+    "Africa",
+    "Cryptocurrency",
+    "Binance",
+    "Industrial Revolution"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@HelenHai"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

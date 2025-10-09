@@ -1,0 +1,26 @@
+{
+  "video_id": "BU1FhHyPHrk",
+  "title": "2020-06-23_BU1FhHyPHrk_Binance Podcast Episode 43 - Shaping the Future of Cryptocurrency in Indonesia",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Wee Joe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Xue Kai Peng",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

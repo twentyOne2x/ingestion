@@ -1,0 +1,34 @@
+{
+  "description": "Webinar discussing trading strategies and market analysis in Spanish, focusing on cryptocurrency trends and insights.",
+  "topic_summary": "Exploration of trading strategies and market dynamics in cryptocurrency, including Bitcoin and Ethereum, with emphasis on market cap and trading techniques [t=3:04 - t=5237:97].",
+  "router_tags": [
+    "Webinar",
+    "Trading",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "webinar trading en espanol",
+    "trading en espanol",
+    "trading webinar",
+    "trading en español"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@Isakar",
+    "@Maximiliano",
+    "@Capone",
+    "@Pierre",
+    "@Nancy",
+    "@Franco",
+    "@CristianRomero",
+    "@JoseAntonioMartinezGonzalez",
+    "@LatrisoRachel",
+    "@MikasoMac"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

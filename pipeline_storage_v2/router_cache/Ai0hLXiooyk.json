@@ -1,0 +1,23 @@
+{
+  "description": "Binance announces its expansion into the MENA region, highlighting the importance of local engagement and tailored solutions for the community. The discussion includes insights on regulatory clarity and the growing interest in blockchain technology among governments and users in the region.",
+  "topic_summary": "Binance's strategic initiatives in the MENA region, focusing on community engagement and regulatory collaboration, are discussed. The importance of understanding local needs and fostering innovation is emphasized throughout the conversation.",
+  "router_tags": [
+    "Binance",
+    "MENA",
+    "crypto",
+    "blockchain",
+    "regulation"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BinanceYoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

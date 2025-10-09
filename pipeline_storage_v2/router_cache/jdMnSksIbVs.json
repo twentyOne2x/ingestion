@@ -1,0 +1,26 @@
+{
+  "description": "Anton Mosgovoi leads a panel discussing the future of consensus mechanisms in blockchain, focusing on proof of stake versus proof of work. Speakers include Bobby Yong from CoinGecko, Iger Runitz from BitRiver, and John Devadoz from Neo, who share insights on the evolution and performance of various consensus models.",
+  "topic_summary": "The panel explores the dominance of proof of stake in blockchain consensus, comparing it with proof of work. Key insights include the historical development of consensus models, the environmental considerations of proof of stake, and the challenges faced by different protocols. The discussion highlights the transition towards proof of stake, particularly in relation to Ethereum's ETH 2.0 initiative [t=252.53].",
+  "router_tags": [
+    "Consensus Mechanisms",
+    "Blockchain",
+    "Proof of Stake",
+    "Proof of Work",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Turns 3"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@CoinGecko",
+    "@IgerRunitz",
+    "@JohnDevadoz",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

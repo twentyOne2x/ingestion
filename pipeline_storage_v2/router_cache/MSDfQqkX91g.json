@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the current tipping point in society, emphasizing the shift towards decentralized platforms and the growing investment in Bitcoin and blockchain technology. It highlights the challenges faced due to COVID-19 and the need for collective action to embrace these changes.",
+  "topic_summary": "The video explores the transition to decentralized financial systems and the role of Bitcoin in addressing global challenges, particularly in the wake of the COVID-19 pandemic. It emphasizes the importance of community and collaboration in driving this change [t=81:98].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Blockchain",
+    "Decentralization",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

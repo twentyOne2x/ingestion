@@ -1,0 +1,26 @@
+{
+  "description": "The Binance Summit Blockchain Applied features discussions on blockchain applications, passive income strategies, smart contract security, and the Binance Smart Chain. Hosted by Hazel and Colin, the event includes insights from industry experts and sponsors like Ocean Protocol and UTRUST.",
+  "topic_summary": "The summit covers the latest blockchain use cases, including enterprise solutions, digital art, and gaming, with expert panelists sharing their insights on market changes and emerging applications [t=60:78].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "DeFi",
+    "NFT",
+    "Smart Contracts"
+  ],
+  "aliases": [
+    "Binance Summit",
+    "binance summit",
+    "BINANCE SUMMIT"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@Cointelegraph",
+    "@OceanProtocol",
+    "@UTRUST"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

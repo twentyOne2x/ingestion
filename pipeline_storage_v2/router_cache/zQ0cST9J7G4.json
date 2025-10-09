@@ -1,0 +1,34 @@
+{
+  "description": "Discussion on Binance Options and various cryptocurrency topics including Bitcoin and Ethereum.",
+  "topic_summary": "Overview of Binance Options and related cryptocurrency discussions, including market strategies and financial insights [t=01:12 - 01:53:59].",
+  "router_tags": [
+    "Binance",
+    "Options",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE",
+    "@BinanceYoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$YES",
+    "$KAGDABA",
+    "$STRIKE",
+    "@CmtScience",
+    "@Rafael",
+    "@Caturi",
+    "@Dakanya",
+    "$ETH",
+    "$Aptsonia",
+    "$Pakro",
+    "@Twitter"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

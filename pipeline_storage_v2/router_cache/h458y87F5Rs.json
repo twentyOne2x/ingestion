@@ -1,0 +1,26 @@
+{
+  "description": "Leslie from Binance Trading discusses the Institutional Market Insights report for Q2 2019, highlighting trading behaviors, stablecoin usage, OTC desk preferences, and market risks.",
+  "topic_summary": "The podcast covers insights on average holding times for traders, the dominance of USDT in trading volumes, the use of OTC desks by large funds, and the importance of custodianship in crypto. It also addresses risks in the crypto industry, including technology failures and regulatory challenges, while identifying growth drivers such as improved on-ramps.",
+  "router_tags": [
+    "Binance",
+    "Podcast",
+    "Crypto",
+    "Institutional Insights",
+    "Market Trends"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "BinanceTrading",
+    "binance trading"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$DAI",
+    "@leslie",
+    "@binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "In this fireside chat, CZ and Michael Saylor discuss the current state of Bitcoin and its significance as a store of value amidst economic changes. Saylor shares insights on the expansion of the money supply and its implications for traditional investments, advocating for Bitcoin as a superior alternative [t=76.4].",
+  "topic_summary": "CZ and Michael Saylor explore Bitcoin's role in the financial landscape, addressing the impact of monetary policy on investments and the search for reliable stores of value [t=170.57].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "MicroStrategy",
+    "CZ",
+    "Michael Saylor",
+    "Fireside Chat"
+  ],
+  "aliases": [
+    "CZ",
+    "Michael Saylor",
+    "Microstrategy CEO"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@cz_binance",
+    "@michael_saylor"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

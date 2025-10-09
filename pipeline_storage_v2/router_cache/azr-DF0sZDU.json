@@ -1,0 +1,21 @@
+{
+  "description": "Binance hosts an official meetup in Manila, Philippines, focusing on cryptocurrency education and safety measures.",
+  "topic_summary": "The meetup emphasizes the importance of crypto adoption outside Makati, featuring educational segments on SAFU and the Angel Program 101, ensuring user safety on the Binance platform. [t=24:92] [t=83:50]",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "meetup",
+    "education"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BINANCE"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

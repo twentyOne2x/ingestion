@@ -1,0 +1,25 @@
+{
+  "description": "The Binance Awards celebrate outstanding contributions to the Binance community and blockchain ecosystem. This event includes the announcement of various awards, including the European Region Binancer Influencer Award won by Asher, and the Binance Launchpad Project of the Year.",
+  "topic_summary": "The event highlights key contributions to the Binance community, featuring awards for influencers and projects, including the Binance Launchpad Project of the Year, recognizing exceptional nominees and community engagement throughout the event.",
+  "router_tags": [
+    "Binance",
+    "Awards",
+    "Blockchain",
+    "Influencer",
+    "Launchpad"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "Asher",
+    "asher"
+  ],
+  "canonical_entities": [
+    "$KAVA",
+    "@BinanceYoutube",
+    "@Asher"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

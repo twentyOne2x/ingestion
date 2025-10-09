@@ -1,0 +1,23 @@
+{
+  "description": "Live webinar discussing the creation of a token on Binance Smart Chain and Binance DEX, covering various aspects of decentralized and centralized exchanges.",
+  "topic_summary": "The session explores the differences between centralized and decentralized exchanges, token creation, and project discussions, including insights on Bitcoin and Ethereum [t=28:13].",
+  "router_tags": [
+    "Token Creation",
+    "Binance",
+    "Smart Chain",
+    "DEX",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

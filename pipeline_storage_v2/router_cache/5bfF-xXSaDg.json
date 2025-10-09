@@ -1,0 +1,26 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency are discussed, including algorithmic trading and market analysis.",
+  "topic_summary": "Discussion on cryptocurrency algorithms and market support strategies [t=55.34 - 3730.36].",
+  "router_tags": [
+    "cryptocurrency",
+    "Q&A",
+    "Binance",
+    "market analysis",
+    "algorithmic trading"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BEACH",
+    "@AkioKrispal",
+    "@BarataMercado",
+    "@ViranjaSemanDomingo",
+    "@Nancy"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

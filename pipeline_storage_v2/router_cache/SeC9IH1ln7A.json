@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on Ethereum, ETH 2.0, and its future, including smart contracts and blockchain technology.",
+  "topic_summary": "Exploration of Ethereum's evolution, including proof of work vs. proof of stake, and insights on smart contracts and decentralized finance [t=11:50].",
+  "router_tags": [
+    "Ethereum",
+    "ETH 2.0",
+    "Blockchain",
+    "Smart Contracts",
+    "DeFi"
+  ],
+  "aliases": [
+    "Ethereum",
+    "Eth 2.0",
+    "eth2",
+    "ETH2"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

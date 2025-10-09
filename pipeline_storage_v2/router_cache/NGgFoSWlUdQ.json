@@ -1,0 +1,27 @@
+{
+  "description": "Day 2 of Binance Blockchain Week focuses on the future of finance, discussing blockchain technology, crypto adoption, and featuring an AMA with CZ. Keynote speakers include Anthony Pompliano and various industry experts.",
+  "topic_summary": "The event covers the intersection of blockchain and finance, highlighting crypto adoption trends and featuring discussions with industry leaders on trading and market insights. [t=11:11] [t=12:29]",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Finance",
+    "Crypto",
+    "Trading",
+    "Webinar"
+  ],
+  "aliases": [
+    "binance blockchain week",
+    "Binance Blockchain Week",
+    "binance",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@cz_binance",
+    "@APompliano",
+    "@DoveyWan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

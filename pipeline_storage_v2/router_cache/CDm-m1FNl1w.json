@@ -1,0 +1,26 @@
+{
+  "description": "CZ discusses Binance's recent security incident involving a significant hack that resulted in a loss of approximately $40 million in BTC. He emphasizes the advanced nature of the attack and the ongoing efforts to secure user accounts and data. Recommendations for users include changing API keys and resetting two-factor authentication.",
+  "topic_summary": "Security breach at Binance leading to a loss of $40 million in BTC. CZ outlines recovery efforts and user security measures [t=112:58].",
+  "router_tags": [
+    "Binance",
+    "Security",
+    "Crypto",
+    "Hacking",
+    "BTC",
+    "User Safety"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz Binance",
+    "Binance",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@JustinSun",
+    "@Coinbase"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "video_id": "rPSJiD5jSvk",
+  "title": "2025-10-08_rPSJiD5jSvk_TraderMayne: Bitcoin Price Targets, BEST Trading Advice, Altseason and More - TG Podcast",
+  "channel_name": "@notthreadguy",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Trader Main",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@notthreadguy",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

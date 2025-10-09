@@ -1,0 +1,22 @@
+{
+  "description": "Exploration of the Binance Futures platform, focusing on trading strategies, profit and loss management, and market analysis.",
+  "topic_summary": "Overview of Binance Futures trading, including stop loss and take profit strategies, and the importance of market analysis [t=03:15].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Bitcoin",
+    "Profit and Loss"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ivanopere"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

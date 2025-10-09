@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Jared Winn hosts a discussion on COVID-19 with Iris, who shares her firsthand experience from Wuhan. They explore the initial reactions to the virus, the significance of the Chinese New Year, and the spread of information regarding the pandemic.",
+  "topic_summary": "Jared Winn and Iris discuss the early days of the COVID-19 outbreak in Wuhan, the impact of the Chinese New Year celebrations, and the challenges of obtaining accurate information during a global health crisis [t=0:24 - t=375:28].",
+  "router_tags": [
+    "COVID-19",
+    "Wuhan",
+    "Binance Podcast",
+    "Chinese New Year",
+    "Pandemic"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "askwuhan",
+    "Ask Wuhan"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube",
+    "$COVID19",
+    "$HUBEI"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

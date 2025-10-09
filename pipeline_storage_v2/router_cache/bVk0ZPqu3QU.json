@@ -1,0 +1,31 @@
+{
+  "description": "Panel discussion on intelligent investing in cryptocurrency featuring industry experts. The panelists discuss the evolution of investment strategies in crypto since 2015, including the rise of various investment products and the changing appetite from institutional investors.",
+  "topic_summary": "The panel explores intelligent investing in cryptocurrency, addressing Warren Buffett's views on crypto and the evolution of investment strategies since 2015. Key topics include the growth of investment firms, the introduction of diverse investment products, and the current institutional interest in the crypto space [t=16:72].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Investing",
+    "Panel Discussion",
+    "Binance",
+    "Digital Assets"
+  ],
+  "aliases": [
+    "binanceturns3",
+    "BinanceTurns3",
+    "Binance Turns 3"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Paul",
+    "@Meltem",
+    "@Michael",
+    "@Pantera",
+    "@DanMoorhead",
+    "@Blockfi",
+    "@Celsius",
+    "@Nexus",
+    "@Coinshares"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

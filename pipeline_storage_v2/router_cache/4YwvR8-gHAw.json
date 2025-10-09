@@ -1,0 +1,21 @@
+{
+  "description": "A Q&A session discussing various aspects of cryptocurrency, including blockchain processes and stable coin exchanges.",
+  "topic_summary": "The video covers cryptocurrency topics such as quantization, blockchain transfers, and stable coin exchanges, with a focus on user interactions and processes [t=00:27 - t=62:30].",
+  "router_tags": [
+    "cryptocurrency",
+    "blockchain",
+    "Q&A",
+    "stable coins",
+    "Binance"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

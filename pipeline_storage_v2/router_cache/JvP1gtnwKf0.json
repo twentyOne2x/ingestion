@@ -1,0 +1,25 @@
+{
+  "description": "Binance announces the launch of the Binance card on its third birthday, offering both virtual and physical card options for users to spend crypto easily. Users can expect a smooth experience with transaction logs visible in their Binance accounts, allowing them to stay fully in crypto without converting to fiat. The rollout starts in Europe, specifically in France and Spain, with plans for wider availability.",
+  "topic_summary": "Binance celebrates its third anniversary by launching the Binance card, enabling users to spend cryptocurrencies directly. The card comes in virtual and physical forms, with transactions logged in the Binance account. Initial rollout is in Europe, starting with France and Spain.",
+  "router_tags": [
+    "Binance",
+    "Crypto Card",
+    "BNB",
+    "BUSD",
+    "BTC",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Card",
+    "binance card"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BUSD",
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

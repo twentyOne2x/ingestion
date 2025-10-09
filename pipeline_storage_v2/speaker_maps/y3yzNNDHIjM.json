@@ -1,0 +1,14 @@
+{
+  "video_id": "y3yzNNDHIjM",
+  "title": "2020-06-10_y3yzNNDHIjM_Binance P2P (-)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

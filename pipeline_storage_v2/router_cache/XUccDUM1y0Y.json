@@ -1,0 +1,22 @@
+{
+  "description": "Q&A session discussing various topics related to Binance and cryptocurrency.",
+  "topic_summary": "The session covers audience questions and insights on Binance operations and cryptocurrency trends, including mentions of finances and trading strategies [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Q&A",
+    "Finance",
+    "Trading"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

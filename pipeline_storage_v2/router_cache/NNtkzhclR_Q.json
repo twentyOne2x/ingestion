@@ -1,0 +1,21 @@
+{
+  "description": "Official Binance meetup held in Bogota, Colombia, discussing cryptocurrency and blockchain technology.",
+  "topic_summary": "Overview of Binance's initiatives and community engagement in Colombia [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Colombia",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

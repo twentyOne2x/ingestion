@@ -1,0 +1,24 @@
+{
+  "description": "This video provides an introduction to Binance Futures, covering its features, operation, and how to open accounts and trade. It explains perpetual futures contracts, leverage, funding rates, and the BTC/USDT trading pair. The video also discusses margin concepts and the implications of price changes on trading positions.",
+  "topic_summary": "Overview of Binance Futures, including contract features, leverage, trading pairs, and margin requirements. Key concepts include initial and maintenance margin, liquidation, and the insurance fund. The video also explains the process of opening a Binance Futures account and placing different types of orders [t=0:16 - t=395:11].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Cryptocurrency",
+    "BTC",
+    "USDT"
+  ],
+  "aliases": [
+    "binance futures",
+    "Binance Futures",
+    "BINANCE FUTURES"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

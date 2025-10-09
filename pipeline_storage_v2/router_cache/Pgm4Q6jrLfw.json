@@ -1,0 +1,20 @@
+{
+  "description": "This video discusses the Binance Futures competition, focusing on the third place winner, Beer.",
+  "topic_summary": "Overview of the Binance Futures competition and its third place winner, Beer [t=01:03].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Competition",
+    "Crypto"
+  ],
+  "aliases": [
+    "Binance Community Content",
+    "Binance Futures",
+    "Beer"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

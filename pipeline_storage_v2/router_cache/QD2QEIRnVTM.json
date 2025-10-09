@@ -1,0 +1,24 @@
+{
+  "description": "Join the Binance team for a live AMA discussing Blockstack and its Stacks 2.0 mainnet launch. Learn about the integration of apps and smart contracts with Bitcoin, and participate in giveaways totaling $2,500 in Stacks tokens.",
+  "topic_summary": "The session covers the Stacks 2.0 mainnet launch, its implications for Bitcoin, and features a Q&A segment with audience participation. Participants can win Stacks tokens through various engagement methods, including questions and social media interactions. [t=40:75] [t=53:26] [t=132:66]",
+  "router_tags": [
+    "Blockstack",
+    "Stacks",
+    "Bitcoin",
+    "AMA",
+    "Binance"
+  ],
+  "aliases": [
+    "Blockstack",
+    "Stacks",
+    "Binance",
+    "Binance Angel"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Blockstack"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

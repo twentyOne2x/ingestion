@@ -1,0 +1,21 @@
+{
+  "description": "This video provides guidance on resolving disputes that may arise during peer-to-peer (P2P) trading on Binance.",
+  "topic_summary": "Learn how to effectively handle disputes in P2P trades on Binance, ensuring a smooth trading experience [t=0:24].",
+  "router_tags": [
+    "P2P trading",
+    "Binance",
+    "dispute resolution",
+    "crypto trading"
+  ],
+  "aliases": [
+    "Binance Guides",
+    "binance guides",
+    "Binance youtube",
+    "binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

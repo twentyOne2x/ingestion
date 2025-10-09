@@ -1,0 +1,29 @@
+{
+  "description": "The Binance Turns 3 Awards ceremony recognizes the Philanthropist of the Year and Influencer of the Year for the APAC region. The event highlights contributions to global sustainable development and community engagement through blockchain technology.",
+  "topic_summary": "The event features awards for philanthropy and influence within the Binance community, emphasizing the importance of charity and community involvement in the cryptocurrency space. Nominees include Ripple and Katif Raza, with recognition for their impactful contributions [t=6:88][t=269:98].",
+  "router_tags": [
+    "Binance",
+    "Philanthropy",
+    "Influencer Awards",
+    "Blockchain",
+    "Sustainable Development"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "Binance Charity",
+    "Tron Binance",
+    "Katif Raza",
+    "Aditya"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$XRP",
+    "$TRX",
+    "@KatifRaza",
+    "@Aditya"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Kenji from Binance Research recaps the October global markets overview, discussing Ethereum 2.0 updates, Bitcoin's price volatility, and Binance's market activities.",
+  "topic_summary": "The podcast covers key developments in October 2019, including Ethereum 2.0 updates [t=21:44], Bitcoin's significant price movements [t=105:19], and Binance's trading activities and market dominance [t=154:01].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Ethereum",
+    "Crypto Market",
+    "Devcon",
+    "Trading"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance youtube",
+    "binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$BUSD",
+    "@BinanceYoutube",
+    "@Kenji",
+    "@Brian",
+    "@XiJinping",
+    "@Bytum"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

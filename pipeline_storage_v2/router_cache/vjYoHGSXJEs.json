@@ -1,0 +1,22 @@
+{
+  "description": "Panel discussion on the fintech and DeFi ecosystem in Turkey, featuring insights from various experts in the field.",
+  "topic_summary": "The panel covers the evolution of the finance market, digitalization in fintech, and the impact of the pandemic on crypto and DeFi systems, highlighting key platforms and offerings in the industry [t=01:06].",
+  "router_tags": [
+    "Fintech",
+    "DeFi",
+    "Cryptocurrency",
+    "Panel Discussion",
+    "Turkey"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "#binanceturns3",
+    "@binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

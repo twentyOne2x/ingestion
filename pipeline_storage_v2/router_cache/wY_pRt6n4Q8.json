@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, host WE Joe discusses blockchain and advertising with Fabian Ofrechter from Havas Blockchain. They explore the integration of blockchain technology in various industries and the role of Havas in supporting crypto initiatives. The conversation highlights the evolution of blockchain and its impact on startups and corporations.",
+  "topic_summary": "The podcast covers the intersection of blockchain technology and advertising, featuring insights from industry experts on how blockchain is transforming various sectors. The discussion includes the role of Havas Blockchain in facilitating crypto projects and the growing interest in blockchain among businesses and consumers [t=66:12].",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Advertising",
+    "Havas",
+    "Binance",
+    "Podcast"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Havas Blockchain",
+    "havas blockchain"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@FabianOfrechter",
+    "@Havas"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

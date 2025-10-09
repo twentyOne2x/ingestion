@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe speaks with Ari Ashe, the lead developer of Bitcoin ABC, about the differences between Bitcoin (BTC) and Bitcoin Cash (BCH). They discuss the evolution of blockchain technology, the scaling debate, and the importance of BCH as a currency for online transactions [t=0:88-260:59].",
+  "topic_summary": "Wee Joe interviews Ari Ashe on the development of BCH, its advantages over BTC, and the future of blockchain technology [t=0:88-260:59].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Bitcoin Cash",
+    "BCH",
+    "BTC",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Binance podcast",
+    "binance podcast"
+  ],
+  "canonical_entities": [
+    "$BCH",
+    "$BTC",
+    "@BinanceYoutube",
+    "@AriAshe"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

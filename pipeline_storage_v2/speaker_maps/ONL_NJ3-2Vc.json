@@ -1,0 +1,20 @@
+{
+  "video_id": "ONL_NJ3-2Vc",
+  "title": "2019-11-28_ONL_NJ3-2Vc_#Binance Podcast Episode 27 - Blitzscaling at Binance",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Kyle Samani",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

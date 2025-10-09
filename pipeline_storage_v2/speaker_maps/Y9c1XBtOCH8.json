@@ -1,0 +1,14 @@
+{
+  "video_id": "Y9c1XBtOCH8",
+  "title": "2019-11-26_Y9c1XBtOCH8_Binance AMA with Ontology (Russian)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

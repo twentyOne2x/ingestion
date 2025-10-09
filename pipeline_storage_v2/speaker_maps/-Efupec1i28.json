@@ -1,0 +1,26 @@
+{
+  "video_id": "-Efupec1i28",
+  "title": "2020-07-28_-Efupec1i28_#BinanceTurns3 Fireside Chat ft. Akon - Driving Crypto Adoption and Innovation in Rising Economies",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Ken Rakowski",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "John Karas",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

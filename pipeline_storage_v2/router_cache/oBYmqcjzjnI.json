@@ -1,0 +1,24 @@
+{
+  "description": "Learn how to transfer cryptocurrency between the Binance and WazirX apps. This guide covers account integration, buying cryptocurrency on WazirX, and transferring funds to Binance.",
+  "topic_summary": "This video explains the process of transferring crypto between Binance and WazirX apps, including account setup and fund transfer steps [t=3:84 - t=114:0].",
+  "router_tags": [
+    "Binance",
+    "WazirX",
+    "Crypto Transfer",
+    "Cryptocurrency",
+    "Trading"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "WazirX",
+    "wazirx"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "$WazirX"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

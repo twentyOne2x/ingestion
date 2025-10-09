@@ -1,0 +1,26 @@
+{
+  "video_id": "On-yw8YRt9s",
+  "title": "2019-08-19_On-yw8YRt9s_Binance Podcast Episode 16 - Blockchain Continent is Happening in Africa",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Yele Badamasi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Wee Joe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Don Tapscott discusses the impact of the pandemic on global systems and the potential of blockchain technology to address challenges in public health and supply chains. He emphasizes the importance of data and the shift towards a second era of the Internet driven by blockchain innovations.",
+  "topic_summary": "In this keynote, Don Tapscott explores how blockchain can revolutionize public health and supply chains amid the pandemic, highlighting the failures of current systems and the need for a decentralized approach to managing value and data [t=72:13].",
+  "router_tags": [
+    "Blockchain",
+    "Public Health",
+    "Pandemic",
+    "Supply Chain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "binanceturns3",
+    "Binance Turns 3",
+    "Don Tapscott Keynote"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@DonTapscott",
+    "@HelenHai"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

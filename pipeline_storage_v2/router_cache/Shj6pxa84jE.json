@@ -1,0 +1,27 @@
+{
+  "description": "Webinar discussing Bitcoin savings and investment strategies, featuring insights from Desmo Simantev and others. Topics include market trends and flexible savings options.",
+  "topic_summary": "Exploration of Bitcoin as a savings tool and investment strategy, highlighting market dynamics and user experiences [t=0:24 - t=744:58].",
+  "router_tags": [
+    "Bitcoin",
+    "Savings",
+    "Investment",
+    "Webinar",
+    "Binance"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@DesmoSimantev",
+    "@Elijah",
+    "@Michelle",
+    "@Claro",
+    "@Vinci",
+    "@Navidad"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

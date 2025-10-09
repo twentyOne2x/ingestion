@@ -1,0 +1,29 @@
+{
+  "description": "Webinar discussing fiscal and tax implications of cryptocurrency transactions, focusing on Bitcoin and Binance operations.",
+  "topic_summary": "The session covers various aspects of cryptocurrency taxation, including transaction history, staking, and the implications of trading between cryptocurrencies and fiat [t=0:22]. Key speakers include Alex Duran and Roberto Stevanete, who address important topics such as asset valuation and tax reporting for crypto holdings [t=2:40].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxation",
+    "Binance",
+    "Bitcoin",
+    "webinar"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@AlexDuran",
+    "@RobertoStevanete",
+    "@CarlosMartin",
+    "$ETH",
+    "@Martinez",
+    "@GonzaloSims",
+    "@SantiagoBrito",
+    "@ClaraSkipton"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

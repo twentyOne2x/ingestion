@@ -1,0 +1,30 @@
+{
+  "description": "In this episode, Brian from Binance Trading reviews the September crypto market, highlighting Bitcoin's drop to around $8,000 and the performance of altcoins like Ethereum and Ripple. The podcast discusses new developments including Binance's derivatives platforms and the launch of Bakkt's futures contract.",
+  "topic_summary": "The podcast covers the September crypto market trends, Bitcoin's price drop, altcoin performance, new Binance listings, and insights into trading dynamics, including the impact of Bakkt's launch on market sentiment [t=53:75].",
+  "router_tags": [
+    "Binance",
+    "Crypto Market Review",
+    "Bitcoin",
+    "Ethereum",
+    "Ripple",
+    "Bakkt",
+    "Altcoins"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Podcast",
+    "Binance Minipod"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$XRP",
+    "$10,000",
+    "$8,000",
+    "$2.2 Million",
+    "@BinanceYoutube",
+    "@Brian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

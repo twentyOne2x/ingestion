@@ -1,0 +1,29 @@
+{
+  "description": "Ajit Tripathi hosts a panel discussing the future of blockchain and crypto in India, featuring Naveen Gupta, Sandeep Nailwal, Nishal Shetty, and Naveen Surya. They explore regulatory challenges, the impact of the Supreme Court's verdict on crypto trading, and the slow adoption of crypto in India compared to other Asian countries.",
+  "topic_summary": "Panelists discuss the regulatory landscape and its effect on crypto adoption in India, highlighting the Supreme Court's role in lifting the banking ban and the need for clearer regulations to foster growth in the crypto industry. They also address the challenges faced by Indian developers in the global crypto space.",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "India",
+    "Regulations",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Turns 3"
+  ],
+  "canonical_entities": [
+    "$MATIC",
+    "@AjitTripathi",
+    "@NaveenGupta",
+    "@SandeepNailwal",
+    "@NishalShetty",
+    "@NaveenSurya",
+    "@RippleMena",
+    "$BTC",
+    "$USDT"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

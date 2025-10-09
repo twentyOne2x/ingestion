@@ -1,0 +1,33 @@
+{
+  "description": "In this episode of the Binance Podcast, Hui Jo, the Chief Financial Officer, discusses blockchain's impact on various industries with Joyce Yang, founder of Global Coin Research. They explore insights from the Asia Blockchain Summit, including notable speakers and events, while emphasizing the importance of understanding the Asian cryptocurrency market.",
+  "topic_summary": "Hui Jo introduces the podcast and its focus on blockchain's influence across industries [t=0:02]. He welcomes Joyce Yang to discuss her background and Global Coin Research [t=0:54]. They delve into the Asia Blockchain Summit's highlights, including key figures and debates [t=1:39]. Joyce explains her firm's role in bridging knowledge gaps about the Asian crypto landscape [t=2:41].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Cryptocurrency",
+    "Asia Blockchain Summit",
+    "Global Coin Research",
+    "Podcast"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Binance",
+    "Hui Jo",
+    "Joyce Yang"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube",
+    "@JoyceYang",
+    "@ArthurHayes",
+    "@CharlieLee",
+    "@NourielRoubini",
+    "@NathanielPopper",
+    "@LauraShin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

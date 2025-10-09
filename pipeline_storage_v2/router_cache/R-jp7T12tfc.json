@@ -1,0 +1,24 @@
+{
+  "description": "This video provides a comprehensive guide on trading perpetual futures contracts on the Binance platform, specifically focusing on the BTC/USDT pair. It covers account setup, transferring funds, understanding futures trading, and various order types including limit and stop limit orders.",
+  "topic_summary": "Learn how to trade perpetual futures on Binance with a focus on BTC/USDT, including account setup, fund transfers, risk management, and order types [t=0:00-6:12].",
+  "router_tags": [
+    "Binance",
+    "Futures Trading",
+    "Cryptocurrency",
+    "BTC",
+    "USDT"
+  ],
+  "aliases": [
+    "Binance Community Content",
+    "binance community content",
+    "Binance Futures",
+    "binance futures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

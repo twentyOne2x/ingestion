@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, Wee Joe welcomes Pomp to discuss the evolving landscape of cryptocurrency in the U.S., highlighting recent congressional hearings and the increasing involvement of government officials in the crypto conversation. They explore the implications of Bitcoin's mainstream recognition and its potential future in financial journalism.",
+  "topic_summary": "Wee Joe and Pomp discuss the recent surge in U.S. government interest in cryptocurrency, particularly Bitcoin, following significant congressional hearings. They analyze the contrasting perspectives of regulators and the media's evolving portrayal of Bitcoin, emphasizing its growing acceptance in mainstream finance [t=0:00-3:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Binance",
+    "Pomp",
+    "U.S. Government",
+    "Congress",
+    "Financial Regulation"
+  ],
+  "aliases": [
+    "Pomp",
+    "pomp",
+    "Wee Joe",
+    "wee joe"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Pomp"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

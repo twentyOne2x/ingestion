@@ -1,0 +1,27 @@
+{
+  "description": "This Binance webinar discusses strategies to protect against scams in the cryptocurrency market, including the importance of security measures and awareness of potential threats.",
+  "topic_summary": "The webinar covers how to safeguard investments in cryptocurrency, addressing issues like crypto jacking and the significance of secure communication channels [t=29:35].",
+  "router_tags": [
+    "cryptocurrency",
+    "Binance",
+    "webinar",
+    "security",
+    "scams"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$AMZN",
+    "$VINC",
+    "$CARL",
+    "$VINCE",
+    "$GABI",
+    "$VINT"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

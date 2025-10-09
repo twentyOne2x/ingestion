@@ -1,0 +1,27 @@
+{
+  "description": "Overview of DAI on Binance P2P, discussing its features and usage in various Latin American countries.",
+  "topic_summary": "The video presents information about DAI on Binance P2P, highlighting its automatic amendment features and its relevance in countries like Venezuela, Colombia, and Argentina. It emphasizes the platform's capabilities for instant transactions and the importance of verification processes [t=27:72-2748:97].",
+  "router_tags": [
+    "DAI",
+    "Binance P2P",
+    "Cryptocurrency",
+    "Latin America"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "@JohanSanchez",
+    "@MauricioShatti",
+    "@PantashaMimi",
+    "@JuanEnteco",
+    "@Rahitra",
+    "Facebook",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

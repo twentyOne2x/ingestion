@@ -1,0 +1,21 @@
+{
+  "description": "Binance discusses its approach to competition and innovation in the cryptocurrency space, emphasizing the importance of user options and internal development strategies.",
+  "topic_summary": "At the Binance Meetup in Tel Aviv, the team highlights their commitment to providing users with diverse options in decentralized and centralized exchanges, reflecting on their competitive strategies [t=30:60].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "meetup",
+    "Tel Aviv"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

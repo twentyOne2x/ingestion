@@ -1,0 +1,21 @@
+{
+  "description": "A meetup event hosted by Binance in Seoul, Korea, featuring discussions on cryptocurrency and blockchain technology.",
+  "topic_summary": "Binance hosts a meetup in Seoul, discussing various aspects of cryptocurrency and community engagement. Key moments include participant interactions and insights on staying informed in the crypto space [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Seoul",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

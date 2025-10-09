@@ -1,0 +1,23 @@
+{
+  "description": "Binance CEO CZ discusses updates and new features during the AMA session, including community engagement and product developments.",
+  "topic_summary": "Highlights from the Binance AMA with CZ, covering new initiatives and community interactions [t=0:56].",
+  "router_tags": [
+    "Binance",
+    "AMA",
+    "CZ",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "CZ",
+    "cz"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

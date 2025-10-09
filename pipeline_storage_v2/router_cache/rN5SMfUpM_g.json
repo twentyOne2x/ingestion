@@ -1,0 +1,22 @@
+{
+  "description": "Join the Binance Australia team for a live discussion covering recent events in the crypto market, including the rise of Dogecoin and the impact of Wall Street Bets. The team engages with viewers and addresses questions in real-time.",
+  "topic_summary": "Live discussion on crypto market trends, focusing on Dogecoin and Wall Street Bets [t=186.68].",
+  "router_tags": [
+    "Binance",
+    "crypto",
+    "Dogecoin",
+    "Wall Street Bets",
+    "live stream"
+  ],
+  "aliases": [
+    "binance australia",
+    "Binance Australia",
+    "BINANCE AUSTRALIA"
+  ],
+  "canonical_entities": [
+    "$DOGE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Q&A session discussing various topics including crypto trading, market analysis, and digital cash.",
+  "topic_summary": "The session features insights on crypto trading strategies and market trends, with mentions of notable figures and concepts in the crypto space [t=26:17][t=133:24][t=2515:67].",
+  "router_tags": [
+    "crypto",
+    "trading",
+    "Q&A",
+    "Binance",
+    "digital cash"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@PaulaJatanga",
+    "@Napoleon",
+    "@Eliza",
+    "@Sabindo",
+    "@Jacques",
+    "@Tagaki",
+    "@Jessica",
+    "@Prana",
+    "@Shaganaz"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

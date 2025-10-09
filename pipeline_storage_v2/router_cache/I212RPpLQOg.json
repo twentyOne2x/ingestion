@@ -1,0 +1,22 @@
+{
+  "description": "Official Binance meetup in Bengaluru, India, discussing cryptocurrency and blockchain.",
+  "topic_summary": "Overview of Binance's initiatives and community engagement in India [t=00:32].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Bengaluru",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Binance Futures AMA featuring #MoneyGuru discussing the trading tournament and strategies for success in cryptocurrency trading.",
+  "topic_summary": "The AMA covers insights into Binance Futures, trading strategies, and the experiences of participants in the trading tournament. Key discussions include the importance of teamwork and effective trading signals [t=590:82].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Cryptocurrency",
+    "AMA"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Futures",
+    "MoneyGuru"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@MoneyGuru"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

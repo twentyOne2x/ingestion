@@ -1,0 +1,24 @@
+{
+  "description": "The Binance Influencers award for Latin America recognizes outstanding contributions in the cryptocurrency community. Felipe Scudero, founder of Bicinada Bicynotic Bicycle Conference, won the award for his impactful work in Brazil.",
+  "topic_summary": "Announcement of the Latin America Influencer of the Year award winner for 2020, highlighting nominees and the passionate community involvement in the selection process. [t=6:00] The winner, Felipe Scudero, is acknowledged for his contributions to the cryptocurrency space. [t=159:66]",
+  "router_tags": [
+    "Binance",
+    "Influencer Awards",
+    "Cryptocurrency",
+    "Latin America"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Awards",
+    "binance awards"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube",
+    "$SOL",
+    "@FelipeScudero"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

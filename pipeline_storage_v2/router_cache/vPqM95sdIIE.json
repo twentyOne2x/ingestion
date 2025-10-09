@@ -1,0 +1,22 @@
+{
+  "description": "This video provides a comprehensive guide to Binance Futures, explaining the concept of futures contracts, their advantages, and how to start trading them on the Binance platform. It covers the process of opening a futures account, transferring funds, and placing orders, while also highlighting the risks involved in futures trading.",
+  "topic_summary": "Learn about Binance Futures, including the definition of futures contracts [t=24:56], the benefits of trading without owning assets [t=60:38], and how to manage risks [t=134:42]. The video details the steps to start trading, including account setup and order types [t=91:57].",
+  "router_tags": [
+    "Binance",
+    "Futures Trading",
+    "Cryptocurrency",
+    "Trading Guide",
+    "Leverage"
+  ],
+  "aliases": [
+    "Binance Community Content",
+    "Binance Futures",
+    "Incrypted"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on stablecoins in Latin America, focusing on Binance USD and its implications in countries like Venezuela, Colombia, and Argentina. The video covers the structure of cryptocurrency systems and the role of stablecoins in financial transactions.",
+  "topic_summary": "Exploration of stablecoins in Latin America, particularly Binance USD, and their impact on local economies [t=00:40]. The video addresses the challenges and opportunities presented by cryptocurrencies in the region [t=39:07].",
+  "router_tags": [
+    "stablecoins",
+    "Binance",
+    "cryptocurrency",
+    "Latin America",
+    "Venezuela",
+    "finance"
+  ],
+  "aliases": [
+    "Monedas Estables en Latinoamerica",
+    "Monedas estables en Latinoamérica",
+    "Monedas estables en Latinoamérica"
+  ],
+  "canonical_entities": [
+    "$USDA",
+    "@Binance",
+    "$BTC",
+    "$ETH"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

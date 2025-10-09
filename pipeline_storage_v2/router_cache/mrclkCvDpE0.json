@@ -1,0 +1,26 @@
+{
+  "description": "Tina Baker Taylor hosts a discussion with Perrianne Boring about her journey in founding the Chamber of Digital Commerce, her experiences on Capitol Hill, and the evolution of Bitcoin and cryptocurrencies. They explore the impact of the 2008 financial crisis on Boring's career choices and her advocacy for a transparent financial system. The conversation also touches on the Federal Reserve's initial response to Bitcoin and the ongoing regulatory challenges in the crypto space.",
+  "topic_summary": "In this fireside chat, Perrianne Boring shares her background, the founding of the Chamber of Digital Commerce, and insights into the cryptocurrency landscape, including regulatory responses and the importance of education in the industry. Key moments include her reflections on the 2008 financial crisis and the evolution of Bitcoin from a policy perspective [t=60:53].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Bitcoin",
+    "Digital Currency",
+    "Public Policy",
+    "Blockchain",
+    "Financial Regulation"
+  ],
+  "aliases": [
+    "Perrianne Boring",
+    "Perry Ann",
+    "Perri Ann",
+    "Perriann"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@janetyellen",
+    "@joemanchin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

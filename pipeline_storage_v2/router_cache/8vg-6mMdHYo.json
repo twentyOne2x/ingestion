@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the scalability of blockchain and the future of DeFi, emphasizing the need for improved user access, security, and education. The speakers highlight the current niche usage of DeFi and the potential for exponential growth as innovation accelerates.",
+  "topic_summary": "The panel explores the challenges and opportunities in DeFi, including scalability, user adoption, and the importance of audited projects. They discuss the rapid innovation in decentralized finance compared to traditional financial markets and the need for better access and security measures [t=0:64-0:64].",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Scalability",
+    "User Adoption",
+    "Innovation",
+    "Security"
+  ],
+  "aliases": [
+    "defi",
+    "DeFi",
+    "blockchain",
+    "Blockchain"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@Binance",
+    "@Vitalik",
+    "@Sergey",
+    "@Anton",
+    "@Camilla"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

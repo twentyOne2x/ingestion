@@ -1,0 +1,27 @@
+{
+  "description": "Q&A session discussing various topics related to Binance and cryptocurrency.",
+  "topic_summary": "The discussion includes topics such as stablecoins, Bitcoin patterns, and Binance's trading algorithms [t=2592.3].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "Q&A",
+    "stablecoin",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$1",
+    "@Fazakov",
+    "@Chacha",
+    "@Akasha",
+    "@Judas",
+    "@VinciMorrisDanoichi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Discussion involving Guri Sunjai, Xiao Yu, and Amazon Web Services, with mentions of Liam Baling Sangha.",
+  "topic_summary": "Overview of contributions from Guri Sunjai and Xiao Yu regarding Amazon Web Services and related topics [t=4:38].",
+  "router_tags": [
+    "AWS",
+    "Guri Sunjai",
+    "Xiao Yu",
+    "Liam Baling Sangha"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@GuriSunjai",
+    "@XiaoYu",
+    "$AMZN",
+    "@LiamBalingSangha"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

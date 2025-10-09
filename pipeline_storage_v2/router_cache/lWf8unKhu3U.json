@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on blockchain technology and its implications in the crypto space, featuring insights from various speakers.",
+  "topic_summary": "Exploration of blockchain applications and crypto instruments, including mentions of Bitcoin and Ukrainian finance [t=935.26].",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "Bitcoin",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Off The Chart",
+    "binance off the chart",
+    "Binance off the chart"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@AlexanderBernikov",
+    "@NikkiBasili",
+    "@KashnamKashilcom",
+    "@Technosoline",
+    "@Prince"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

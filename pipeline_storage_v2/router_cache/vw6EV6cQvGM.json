@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion on the future of crypto regulation in Africa, addressing the balance between government regulation and self-regulation in the cryptocurrency space.",
+  "topic_summary": "The panel explores the necessity of understanding crypto markets before implementing regulations, emphasizing the importance of self-regulation in a rapidly evolving industry. Discussions highlight the challenges faced by regulators in Africa and the need for industry players to take a proactive role in establishing regulatory frameworks [t=252.43].",
+  "router_tags": [
+    "Crypto Regulation",
+    "Self Regulation",
+    "Blockchain",
+    "Africa",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binanceturns3",
+    "BinanceTurns3",
+    "binance",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$SEC",
+    "@BinanceYoutube",
+    "$NGA",
+    "$ZAF"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

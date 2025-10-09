@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on cryptocurrency taxation, addressing common myths and facts.",
+  "topic_summary": "Exploration of cryptocurrency as a financial instrument and its implications for investors, including discussions on transaction processes and regulatory considerations [t=50:41 - t=5050:17].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxation",
+    "finance",
+    "investing"
+  ],
+  "aliases": [
+    "Podatki Od Krypto",
+    "Podatki od Krypto 101",
+    "Crypto Tax 101"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

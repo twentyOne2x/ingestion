@@ -1,0 +1,26 @@
+{
+  "description": "Explores a new method for purchasing cryptocurrencies in Argentina, highlighting local financial dynamics and the importance of secure transactions.",
+  "topic_summary": "Discussion on cryptocurrency purchasing methods in Argentina, emphasizing local market conditions and user experiences [t=00:29].",
+  "router_tags": [
+    "cryptocurrency",
+    "Argentina",
+    "Bitcoin",
+    "local finance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Luca",
+    "@Serena",
+    "@Kiran",
+    "@LoganFernandes",
+    "@Caleb",
+    "@Lucas"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

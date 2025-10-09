@@ -1,0 +1,22 @@
+{
+  "description": "Binance Charity is a blockchain-powered nonprofit organization that ensures 100% of donations reach their intended causes. The organization launched the CryptoAgainstCOVID campaign to deliver PPE to over 300 hospitals globally, utilizing blockchain for transparency and accountability throughout the donation process.",
+  "topic_summary": "Binance Charity enhances philanthropy through blockchain, ensuring transparency in donations and delivering PPE to hospitals during the COVID-19 pandemic. Donors can track their contributions from donation to delivery, fostering trust and accountability [t=20:72].",
+  "router_tags": [
+    "Binance Charity",
+    "PPE Token",
+    "Blockchain",
+    "Philanthropy",
+    "CryptoAgainstCOVID"
+  ],
+  "aliases": [
+    "binance charity",
+    "Binance charity",
+    "BINANCE CHARITY"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

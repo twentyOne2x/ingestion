@@ -1,0 +1,20 @@
+{
+  "video_id": "r7gSGel3W7g",
+  "title": "2019-07-08_r7gSGel3W7g_#Binance Podcast Episode 10 - Mainstage from Money 20-20 Europe",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Simon Taylor",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

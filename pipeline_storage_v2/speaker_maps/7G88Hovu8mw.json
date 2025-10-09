@@ -1,0 +1,62 @@
+{
+  "video_id": "7G88Hovu8mw",
+  "title": "2020-07-29_7G88Hovu8mw_Binance Turns 3 Crypto Panel - Race to Success: Scalability in Blockchain Development",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "F",
+  "speaker_map": {
+    "C": {
+      "name": "Wang Xing Chen",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Wang Xing Chen",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "I": {
+      "name": "Mayra Cicada",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "E": {
+      "name": "Tina Baker Taylor",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Leah Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "F": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "H": {
+      "name": "Perry Anne Boring",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Tony Giuffe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "G": {
+      "name": "Perrianne Boring",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

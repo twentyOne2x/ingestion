@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on various topics including DeFi, interoperability, and digital assets. Key figures mentioned include Tian Tang, Hayato, Jin Duan, and others. The conversation touches on USDT and crypto protocols.",
+  "topic_summary": "Exploration of DeFi concepts and digital asset protocols, highlighting interoperability and adaptability in the crypto space [t=00:00 - 40:30].",
+  "router_tags": [
+    "DeFi",
+    "USDT",
+    "digital assets",
+    "interoperability",
+    "crypto protocols"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@TianTang",
+    "@Hayato",
+    "@JinDuan",
+    "@Joshua",
+    "@Shahrinji",
+    "@Patrick",
+    "@Diana"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

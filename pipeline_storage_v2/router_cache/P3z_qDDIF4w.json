@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Leslie discusses portfolio management and the role of Bitcoin as a diversifier in traditional asset classes. The episode highlights Bitcoin's low correlation with equities, bonds, and commodities, emphasizing its potential for portfolio diversification.",
+  "topic_summary": "Leslie introduces the concept of portfolio management, focusing on Bitcoin's unique characteristics such as high volatility and low correlation with traditional asset classes like equities and bonds. The discussion includes simulated portfolios and the importance of liquidity in trading Bitcoin.",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Portfolio Management",
+    "Cryptocurrency",
+    "Investment Strategy"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Podcast",
+    "leslie",
+    "Leslie"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

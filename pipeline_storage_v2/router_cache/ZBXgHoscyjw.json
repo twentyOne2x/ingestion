@@ -1,0 +1,31 @@
+{
+  "description": "Anna Beidakova from Coindesk hosts a discussion on the crypto landscape in the Russian CIS region, featuring insights from industry representatives and highlighting the potential of the market.",
+  "topic_summary": "The session explores the crypto market in Russia and Ukraine, discussing its growth potential and featuring speakers from notable companies like Microsoft and Small Burbank. Awards are presented to Binance Angels for their contributions.",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "CIS",
+    "Blockchain",
+    "DeFi",
+    "Awards"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "anna beidakova",
+    "coindesk",
+    "tony jufi",
+    "jorge",
+    "mirei"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "@AnnaBeidakova",
+    "$BTC",
+    "@TonyJufi",
+    "@Jorge",
+    "@Mirei"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

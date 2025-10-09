@@ -1,0 +1,27 @@
+{
+  "description": "Join Binance and Crypto Collective for an online masterclass focused on crypto trading strategies and insights. Dario Angelo, co-founder of Crypto Collective, shares his journey and expertise in trading, emphasizing the importance of risk management and psychological factors in trading success.",
+  "topic_summary": "In this masterclass, Dario Angelo discusses the psychology of institutional orders and introduces five lesser-known chart patterns for trading. He highlights the significance of risk management and provides educational insights for attendees interested in cryptocurrency trading. [t=482.81]",
+  "router_tags": [
+    "Binance",
+    "Crypto Collective",
+    "Crypto Trading",
+    "Masterclass",
+    "Technical Analysis"
+  ],
+  "aliases": [
+    "Binance Australia",
+    "Crypto Collective",
+    "Dario Angelo",
+    "Dario",
+    "Damian"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@DarioAngelo"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

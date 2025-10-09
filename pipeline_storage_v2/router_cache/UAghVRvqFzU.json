@@ -1,0 +1,27 @@
+{
+  "description": "This webinar discusses the future of finance in Africa, focusing on peer-to-peer (P2P) trading and decentralized finance (DeFi). It covers the origins of P2P trading, the vision of Bitcoin's creator Satoshi Nakamoto, and how Binance facilitates P2P trade in Africa.",
+  "topic_summary": "The session introduces P2P trading and its significance in Africa, referencing Satoshi Nakamoto's vision for Bitcoin trading and the current landscape of DeFi. It emphasizes the importance of joining the future of finance through these innovations. Key points include the role of Binance in promoting P2P trade and the potential impact of DeFi on the African financial ecosystem [t=84:10].",
+  "router_tags": [
+    "Finance",
+    "P2P Trading",
+    "DeFi",
+    "Cryptocurrency",
+    "Africa",
+    "Binance"
+  ],
+  "aliases": [
+    "Future of Finance in Africa",
+    "P2P and DeFi",
+    "Binance Africa",
+    "Decentralized Finance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube",
+    "@SatoshiNakamoto"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

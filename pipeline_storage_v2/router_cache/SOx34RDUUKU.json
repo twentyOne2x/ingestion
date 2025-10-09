@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the impact of crypto on digital payments, featuring insights from industry leaders on the transition to a cashless society.",
+  "topic_summary": "The panelists discuss the effects of the COVID-19 lockdown on digital payments, highlighting increased exposure to digital payment methods as traditional cash usage declines. They explore opportunities and challenges faced by the sector during this period, emphasizing the acceleration of digital payment technology [t=110.86].",
+  "router_tags": [
+    "crypto",
+    "digital payments",
+    "cashless society",
+    "Binance",
+    "Flexa"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "#binanceturns3",
+    "@binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@SeanRoland",
+    "@TylusPaulding",
+    "@JohnKenneth"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

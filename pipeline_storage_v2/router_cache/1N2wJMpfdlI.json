@@ -1,0 +1,21 @@
+{
+  "description": "The Binance Manila Meetup discusses Binance's role in the cryptocurrency ecosystem, highlighting its educational and charitable initiatives, as well as its support for startups.",
+  "topic_summary": "Binance's impact on the cryptocurrency market and its future developments are explored, including predictions for market maturity in 2019 [t=119:88].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "blockchain",
+    "meetup"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "@binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

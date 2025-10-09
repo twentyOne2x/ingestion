@@ -1,0 +1,20 @@
+{
+  "description": "Q&A session featuring various topics related to Binance and cryptocurrency, including digital cash and project updates.",
+  "topic_summary": "Discussion on Binance operations, digital cash, and project developments from [t=01:21] to [t=01:35].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "Q&A",
+    "digital cash"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

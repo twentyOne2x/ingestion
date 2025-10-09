@@ -1,0 +1,25 @@
+{
+  "description": "This webinar features James Dragger from Binance Academy and Lin Huang from Binance Vietnam discussing the role of Binance Academy in educating users about blockchain and cryptocurrency. They cover the types of content offered, including general industry education and guides for using Binance, while also emphasizing the importance of making blockchain concepts accessible to a wider audience.",
+  "topic_summary": "Webinar on Binance Academy's educational initiatives and future plans, featuring bilingual presentations in Vietnamese and English. Discussion includes the importance of blockchain education and user-friendly resources for newcomers [t=149.20].",
+  "router_tags": [
+    "Binance",
+    "Binance Academy",
+    "Blockchain Education",
+    "Cryptocurrency",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance Academy",
+    "binance academy",
+    "BINANCE ACADEMY",
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

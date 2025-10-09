@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on building secure smart contract infrastructure with open protocols in the DeFi space, featuring insights from Sergey of One Inch, Felix from ARPA, and Calvin from Compound.",
+  "topic_summary": "The panel covers the evolution of DeFi, liquidity aggregation, and the importance of composability in decentralized finance. Sergey discusses One Inch's role in solving liquidity issues [t=255.57], Felix explains ARPA's privacy-preserving computation network [t=127.39], and Calvin outlines Compound's transition to a decentralized governance model [t=238.07].",
+  "router_tags": [
+    "DeFi",
+    "Smart Contracts",
+    "Liquidity",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance turns 3",
+    "defi talks",
+    "building secure smart contract infrastructure"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "$USDT",
+    "$USDC",
+    "$COMP",
+    "@BinanceYoutube",
+    "@Sergey",
+    "@Felix",
+    "@Calvin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

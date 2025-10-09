@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on Binance P2P services in Peru, focusing on transactions using USDT and Bitcoin. Covers the platform's features and user experiences.",
+  "topic_summary": "Overview of Binance P2P in Peru, highlighting transaction processes and user interactions with cryptocurrency [t=26:09 - t=74:36].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "USDT",
+    "Bitcoin",
+    "Latin America"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance P2P",
+    "Binance Peru"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "$BTC",
+    "@BinanceYoutube",
+    "@Raphael",
+    "@Alexander"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

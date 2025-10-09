@@ -1,0 +1,26 @@
+{
+  "video_id": "Sts7Bkbjjno",
+  "title": "2020-04-09_Sts7Bkbjjno_#Binance PodcastEpisode 36 - How to Safeguard Decentralized Identity",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Joseph Weinberg",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Wee Joe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "iHs-2XRouWM",
+  "title": "2021-01-20_iHs-2XRouWM_CZ & Anthony Scaramucci (SkyBridge Founder) Fireside Chat - Bitcoin, Crypto, Books & More!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Charlie Lee",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Anthony Scaramucci",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

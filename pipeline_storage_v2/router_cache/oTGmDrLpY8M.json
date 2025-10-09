@@ -1,0 +1,34 @@
+{
+  "description": "Webinar discussing cryptocurrency investments during the pandemic, featuring insights from Binance Indonesia and various crypto experts.",
+  "topic_summary": "The session covers the impact of the pandemic on crypto investments, strategies for trading, and insights from industry leaders [t=0:32 - t=121:43].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Webinar",
+    "Investing",
+    "Pandemic",
+    "Binance"
+  ],
+  "aliases": [
+    "Binance Indonesia",
+    "binance indonesia",
+    "BINANCE INDONESIA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@Renova",
+    "@NofaCapitalIndia",
+    "@BaromiSriDelore",
+    "@Danny",
+    "@KamalaSaisi",
+    "@GarganSato",
+    "@Jerry",
+    "@Masnova",
+    "@Brahmin",
+    "@Samobit",
+    "@Maxonia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

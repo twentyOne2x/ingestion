@@ -1,0 +1,26 @@
+{
+  "description": "In this emergency episode, Hui Jo discusses Facebook's entry into cryptocurrency with the launch of Libra. The podcast covers the white paper's key points, including Libra's backing by a basket of fiat currencies, its proof of stake blockchain, and integration into Facebook's ecosystem, which includes Messenger and WhatsApp. The potential for mass adoption and the implications for the cryptocurrency landscape are also explored.",
+  "topic_summary": "The episode provides insights into Facebook's Libra cryptocurrency, its structure, and its expected impact on the cryptocurrency market and global finance [t=77:22].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Libra",
+    "Facebook",
+    "Blockchain",
+    "Binance",
+    "Finance"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Binance podcast"
+  ],
+  "canonical_entities": [
+    "$FB",
+    "$BTC",
+    "$SOL",
+    "@BinanceYoutube",
+    "@HuiJo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

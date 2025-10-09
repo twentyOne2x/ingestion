@@ -1,0 +1,22 @@
+{
+  "description": "Yang Hong, Principal Developer Advocate for AWS, discusses the AWS Global Infrastructure, emphasizing its security, performance, and scalability. He highlights the importance of cloud infrastructure for organizations and the benefits of AWS's extensive network of data centers and services.",
+  "topic_summary": "The keynote covers AWS's global infrastructure, focusing on its security, performance, and scalability. It explains the concepts of regions and availability zones, the advantages of AWS's cloud services, and the integration of blockchain technology with AWS.",
+  "router_tags": [
+    "AWS",
+    "Cloud Infrastructure",
+    "Global Infrastructure",
+    "Blockchain",
+    "Cloud Computing"
+  ],
+  "aliases": [
+    "aws",
+    "Aws",
+    "A.W.S."
+  ],
+  "canonical_entities": [
+    "$AWS",
+    "@yanghong"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

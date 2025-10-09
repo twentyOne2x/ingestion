@@ -1,0 +1,23 @@
+{
+  "description": "In this live AMA session, the hosts introduce Jordy, a Binance angel from Spain, and discuss various topics including Binance merchandise giveaways and community engagement. They emphasize the importance of sending questions in advance and outline the raffle details for exclusive Binance items.",
+  "topic_summary": "Hosts introduce Jordy, discuss live broadcast dynamics, answer community questions, and announce merchandise giveaways [t=1:20].",
+  "router_tags": [
+    "Binance",
+    "AMA",
+    "live broadcast",
+    "cryptocurrency",
+    "giveaway"
+  ],
+  "aliases": [
+    "ama binance en espanol",
+    "AMA Binance en Español",
+    "Binance AMA",
+    "Binance en Español"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

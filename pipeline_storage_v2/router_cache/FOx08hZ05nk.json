@@ -1,0 +1,21 @@
+{
+  "description": "Discusses the winners of the Christmas Lottery, specifically for Brazilian participants. Mentions various financial topics and entities related to Binance.",
+  "topic_summary": "Overview of Christmas Lottery winners for Brazilians, with references to Binance and financial discussions throughout the video.",
+  "router_tags": [
+    "Lottery",
+    "Christmas",
+    "Brazil",
+    "Binance",
+    "Finance"
+  ],
+  "aliases": [
+    "Ganhadores Loteria de Natal",
+    "Ganhadores loteria de natal",
+    "ganhadores loteria de natal"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

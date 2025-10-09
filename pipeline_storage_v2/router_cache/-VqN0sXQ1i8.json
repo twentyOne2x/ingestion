@@ -1,0 +1,29 @@
+{
+  "description": "Viktor Radchenko discusses his background, the acquisition of Trust Wallet by Binance, and the development focus of Trust Wallet, including features like wallet core library release and community-driven problem solving. He emphasizes the importance of making crypto accessible and the future of digital assets in wallets.",
+  "topic_summary": "In this AMA, Viktor Radchenko shares insights on Trust Wallet's integration with Binance, the evolution of digital asset management, and the team's commitment to addressing community needs in the crypto space. Key topics include wallet features, community engagement, and future asset types in wallets [t=0:16 - t=262:71].",
+  "router_tags": [
+    "Binance",
+    "Trust Wallet",
+    "Crypto",
+    "Digital Assets",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "Viktor Radchenko",
+    "Viktor radchenko",
+    "TRUST WALLET",
+    "Trust wallet",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

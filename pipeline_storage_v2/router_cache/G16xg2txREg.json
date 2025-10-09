@@ -1,0 +1,22 @@
+{
+  "description": "A Q&A session discussing Binance P2P operations and challenges in Latin America, focusing on customer support and transaction verification.",
+  "topic_summary": "The video covers Binance P2P operations in Latin America, highlighting customer support issues and transaction verification processes, particularly in Peru [t=23:36].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Latin America",
+    "Finance",
+    "BTC"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

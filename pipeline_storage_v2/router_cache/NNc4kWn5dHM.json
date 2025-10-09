@@ -1,0 +1,30 @@
+{
+  "description": "Webinar discussing cryptocurrency mining, focusing on proof of work and proof of stake models, profitability, and market dynamics.",
+  "topic_summary": "Exploration of cryptocurrency mining, including proof of work and proof of stake concepts, profitability analysis, and market implications [t=03:43].",
+  "router_tags": [
+    "cryptocurrency",
+    "mining",
+    "blockchain",
+    "Binance",
+    "proof of work",
+    "proof of stake"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Castoni",
+    "@Doris",
+    "@Schneider",
+    "@Ashajis",
+    "@Martin",
+    "@FernandoMandoki",
+    "@Sazoki",
+    "@CarlaPasquale"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

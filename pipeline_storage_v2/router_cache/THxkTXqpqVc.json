@@ -1,0 +1,24 @@
+{
+  "description": "Binance Nigeria hosts the opening ceremony for the Binance Masterclass Developer Edition, aiming to train 1,000 developers in Africa. The event features community engagement and giveaways, including $200 for the first 20 participants who fill out a Google form.",
+  "topic_summary": "Binance's initiative to educate and empower developers in Africa through a masterclass program, promoting blockchain technology and community involvement. Special guests and community members participate in the event [t=15:28].",
+  "router_tags": [
+    "Blockchain",
+    "Binance",
+    "Developer Training",
+    "Africa",
+    "Crypto Education"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Nigeria",
+    "Binance Masterclass",
+    "binance masterclass",
+    "Binance Africa"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

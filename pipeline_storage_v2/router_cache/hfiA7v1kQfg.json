@@ -1,0 +1,29 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency and project support are discussed, including insights on market sentiment and key projects.",
+  "topic_summary": "The discussion covers key projects in the cryptocurrency space, market analysis, and support mechanisms for various tokens [t=58:04 - t=59:27]. Participants include Moshe and Jachin Praka Mercado, addressing project viability and community sentiment [t=36:05 - t=38:30].",
+  "router_tags": [
+    "cryptocurrency",
+    "Q&A",
+    "Binance",
+    "market analysis",
+    "project support"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Moshe",
+    "@JachinPrakaMercado",
+    "@Yesha",
+    "@DominosDay",
+    "@Baisha",
+    "@ChiliSabiki",
+    "@Bravo",
+    "@Barbicoin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

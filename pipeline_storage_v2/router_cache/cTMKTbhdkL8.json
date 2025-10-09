@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on staking and farming strategies in cryptocurrency, featuring insights from various speakers.",
+  "topic_summary": "Exploration of staking concepts and farming techniques in crypto, with mentions of key figures and strategies [t=01:22].",
+  "router_tags": [
+    "staking",
+    "farming",
+    "cryptocurrency",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

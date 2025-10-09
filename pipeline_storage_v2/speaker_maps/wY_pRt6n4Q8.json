@@ -1,0 +1,26 @@
+{
+  "video_id": "wY_pRt6n4Q8",
+  "title": "2019-05-24_wY_pRt6n4Q8_#Binance Podcast Episode 3 - Advertising Integrated with Blockchain",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Fabian Ofrechter",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Helen Hye",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

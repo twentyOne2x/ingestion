@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on the Binance Card and purchasing with fiat currencies, covering various locations and customer support aspects.",
+  "topic_summary": "Overview of the Binance Card features and benefits, including fiat purchases and customer support [t=00:27 - t=01:47].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Fiat",
+    "Card",
+    "Payments"
+  ],
+  "aliases": [
+    "binance card",
+    "Binance Card",
+    "BINANCE CARD"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Simran introduces the Bill for Bharat workshop, highlighting the achievement of the top 100 startups from over 350 applications. Herbert Van Nbery from RK Network discusses blockchain application development and demonstrates integration with Binance Smart Chain and Arcane.",
+  "topic_summary": "The workshop covers blockchain application development, focusing on user onboarding, NFT creation, and the importance of using scalable infrastructure like Binance Smart Chain. Herbert Van Nbery shares insights on successful blockchain applications and offers a demo of Arcane's services [t=0:32 - t=487.74].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Smart Chain",
+    "NFT",
+    "Arcane",
+    "Workshop",
+    "Startup"
+  ],
+  "aliases": [
+    "Bill For Bharat",
+    "Binance Smart Chain",
+    "RK Network",
+    "Herbert Van Nbery"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@HerbertVanNbery"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

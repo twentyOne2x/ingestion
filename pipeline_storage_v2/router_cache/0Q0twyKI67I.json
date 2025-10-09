@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Binance Podcast, Wee Joe interviews Ophelia Snyder, President and Chief Product Officer of Amoon, discussing the future of finance through tokenization and the role of blockchain in transforming traditional financial markets. They explore Amoon's innovative products and the challenges of making crypto accessible to traditional investors.",
+  "topic_summary": "Wee Joe and Ophelia Snyder discuss the evolution of tokenization in finance, Amoon's product offerings, and the impact of blockchain technology on traditional investment structures [t=0:00-3:84].",
+  "router_tags": [
+    "Binance",
+    "Tokenization",
+    "Finance",
+    "Blockchain",
+    "Crypto",
+    "Investment"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Amoon",
+    "amoon"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@OpheliaSnyder"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Binance podcast, Simon Taylor discusses the origins and growth of Binance, the world's largest cryptocurrency exchange, and its role in the evolving token economy. The conversation covers the transition from fiat to crypto, the significance of ICOs, and the impact of blockchain technology on fundraising and trading.",
+  "topic_summary": "Simon Taylor from 11Fs joins the Binance podcast to explore Binance's journey, the future of crypto, and the token economy. The discussion highlights Binance's rapid growth since its ICO in 2017, the advantages of a crypto-only exchange, and the innovative use cases for blockchain technology in fundraising and trading [t=2:16-270:56].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "ICO",
+    "Token Economy",
+    "Digital Currency",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

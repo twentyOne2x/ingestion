@@ -1,0 +1,20 @@
+{
+  "video_id": "ThoH6K50cc8",
+  "title": "2020-12-01_ThoH6K50cc8_Binance 60 - Edicao #23 - Q&A",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Kendo Gibasho",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

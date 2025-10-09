@@ -1,0 +1,24 @@
+{
+  "description": "This video provides a comprehensive guide on Binance P2P trading, covering how to buy and sell cryptocurrencies, post trade ads, and handle disputes. It features insights from the Binance P2P team, including a demonstration of the trading process on the app and web.",
+  "topic_summary": "A 360 introduction to Binance P2P, discussing buying/selling cryptocurrencies, posting ads, and handling disputes. The session includes a demo of the trading process on Binance's platform [t=22:48].",
+  "router_tags": [
+    "Binance",
+    "P2P Trading",
+    "Cryptocurrency",
+    "Finance",
+    "Webinar"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance P2B",
+    "binance p2b"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

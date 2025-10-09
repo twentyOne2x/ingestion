@@ -1,0 +1,22 @@
+{
+  "description": "This tutorial explains how to trade cryptocurrencies via P2P on the Binance app, including steps for buying USDT with Rub.",
+  "topic_summary": "Learn to trade cryptocurrencies using the Binance P2P platform, including setting up your account and placing orders [t=0:06].",
+  "router_tags": [
+    "Cryptocurrency",
+    "P2P Trading",
+    "Binance",
+    "USDT",
+    "Rub"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

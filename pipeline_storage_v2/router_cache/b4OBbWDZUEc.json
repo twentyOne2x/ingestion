@@ -1,0 +1,25 @@
+{
+  "description": "This master class covers Binance margin trading, discussing various aspects of margin operations and strategies.",
+  "topic_summary": "An overview of margin trading on Binance, including operational strategies and participant roles [t=307.31].",
+  "router_tags": [
+    "Binance",
+    "Margin Trading",
+    "Crypto"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@ElikiaC",
+    "@Jordy",
+    "@JoeBoy",
+    "@Sienna",
+    "@Monica",
+    "@Franklin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

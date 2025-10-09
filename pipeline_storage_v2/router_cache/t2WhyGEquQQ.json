@@ -1,0 +1,21 @@
+{
+  "description": "A meetup event hosted by Binance in Pescara, Italy, discussing cryptocurrency and blockchain topics.",
+  "topic_summary": "Overview of the Binance meetup in Pescara, Italy, featuring discussions on cryptocurrency and blockchain [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Cryptocurrency",
+    "Blockchain",
+    "Pescara"
+  ],
+  "aliases": [
+    "Binance Meetup Pescara",
+    "binance meetup pescara",
+    "Binance Pescara"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

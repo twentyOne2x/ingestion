@@ -1,0 +1,23 @@
+{
+  "description": "A motivational piece encouraging bravery, honor, and the fight for freedom in various aspects of life, including innovation and financial choices. Binance hosts the Blockchain League, emphasizing the importance of courage and doing what is right.",
+  "topic_summary": "The video discusses themes of bravery and freedom, highlighting Binance's role in promoting innovation and financial independence. It features a call to action for viewers to choose honor and determination [t=22:96].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Freedom",
+    "Innovation",
+    "Motivation"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

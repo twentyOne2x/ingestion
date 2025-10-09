@@ -1,0 +1,29 @@
+{
+  "description": "CZ discusses Binance's operations in Africa, including Visa Instant Purchase and Binance Uganda management. He addresses questions about cryptocurrency purchases and liquidity issues in the Nigerian market.",
+  "topic_summary": "CZ answers questions regarding Binance's services in Africa, including Visa partnerships and the management structure of Binance Uganda. He also touches on liquidity challenges in the Nigerian market for cryptocurrencies [t=108:00].",
+  "router_tags": [
+    "Binance",
+    "Africa",
+    "Visa",
+    "Cryptocurrency",
+    "UGX",
+    "BTC",
+    "USDT"
+  ],
+  "aliases": [
+    "CZ",
+    "Cz",
+    "Binance",
+    "Binance Uganda",
+    "Binance Africa"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$USDT",
+    "@BinanceYoutube",
+    "@cz_binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

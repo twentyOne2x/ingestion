@@ -1,0 +1,23 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency and trading strategies.",
+  "topic_summary": "Discussion on cryptocurrency strategies and trading insights, including mentions of Satoshi and Instapro [t=87:25].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "Q&A",
+    "Binance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Satoshi",
+    "@Instapro",
+    "@Alizaki"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

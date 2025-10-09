@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on earning up to 10 times more interest compared to traditional banks, focusing on cryptocurrencies like Bitcoin and Ethereum.",
+  "topic_summary": "Exploration of cryptocurrency interest rates and savings strategies, including Bitcoin and Ethereum, with mentions of stablecoins like USDT [t=0:00-0:30].",
+  "router_tags": [
+    "cryptocurrency",
+    "interest rates",
+    "Bitcoin",
+    "Ethereum",
+    "USDT"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$USDT",
+    "@Elorb"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

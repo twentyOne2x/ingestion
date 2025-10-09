@@ -1,0 +1,21 @@
+{
+  "description": "In this Q&A session, Binance discusses various topics related to crypto trading, including margin trading and token definitions. The session features insights from different participants and addresses user inquiries.",
+  "topic_summary": "Binance Q&A covering margin trading and token definitions [t=1238.39]. Discussion includes project updates and user questions about crypto availability [t=2982.24].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Q&A",
+    "Trading",
+    "Tokens"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

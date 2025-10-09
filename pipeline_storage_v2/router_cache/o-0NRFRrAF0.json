@@ -1,0 +1,27 @@
+{
+  "description": "Panel discussion celebrating Binance's third anniversary, featuring insights from industry leaders on trading strategies and the evolution of the crypto market.",
+  "topic_summary": "Panelists discuss the evolution of trading in crypto compared to traditional finance, highlighting changes in OTC trading and the introduction of derivative products [t=140.27].",
+  "router_tags": [
+    "Binance",
+    "Trading Strategies",
+    "Crypto",
+    "Finance",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "Charlie Shrem",
+    "Michael Fang",
+    "Darius Sick"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@charlieshrem",
+    "@michael_fang",
+    "@darius_sick"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

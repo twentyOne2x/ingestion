@@ -1,0 +1,29 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wei Jo discusses stablecoins and their significance with Leslie Tam, head of Binance's OTC Solutions desk. They explore Leslie's background in finance, his experience in investment banking, and the parallels between traditional finance and the cryptocurrency industry. The conversation highlights the growing interest in blockchain technology and its potential to transform various sectors.",
+  "topic_summary": "The episode covers the concept of stablecoins, the involvement of major financial institutions like JP Morgan and Facebook, and the evolving landscape of cryptocurrency and traditional finance. Leslie Tam shares insights from his extensive career in investment banking and discusses the importance of bridging the gap between these two worlds [t=220.95].",
+  "router_tags": [
+    "Stablecoins",
+    "Cryptocurrency",
+    "Finance",
+    "Binance",
+    "Investment Banking"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$USDT",
+    "$USDC",
+    "@BinanceYoutube",
+    "@LeslieTam",
+    "@JP_Morgan",
+    "@Facebook"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

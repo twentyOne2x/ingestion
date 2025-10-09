@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the evolution of Web3 and DeFi solutions featuring Joe Lubin, Rune Christensen, and Jamie Burke. They explore the shift from centralized to decentralized trust systems, the role of digital assets, and the potential for a new data economy.",
+  "topic_summary": "The panel discusses the transformative nature of Web3, emphasizing decentralized trust, user-centric models, and the integration of digital assets into everyday life. They highlight the potential for a more transparent and efficient economic system driven by decentralized protocols [t=8:08-634:60].",
+  "router_tags": [
+    "Web3",
+    "DeFi",
+    "Decentralization",
+    "Digital Assets",
+    "Blockchain",
+    "Trust"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "BinanceTurns3",
+    "binanceturns3"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "$BTC",
+    "@JoeLubin",
+    "@RuneChristensen",
+    "@JamieBurke"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

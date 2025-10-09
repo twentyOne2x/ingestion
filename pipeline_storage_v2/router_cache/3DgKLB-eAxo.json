@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Podcast, hosts Wee Joe, Juan Otero (CEO of Travala), and Caleb Yao (CEO of Travel by Bit) discuss the merger of their companies and the impact on the crypto travel industry. They explore how blockchain technology is transforming travel, the challenges posed by COVID-19, and the future of cryptocurrency in travel bookings.",
+  "topic_summary": "The podcast features a discussion on the merger between Travala and Travel by Bit, highlighting the potential for cryptocurrency adoption in the travel industry, especially during challenging market conditions like COVID-19 [t=141.79].",
+  "router_tags": [
+    "Crypto",
+    "Travel",
+    "Blockchain",
+    "Merger",
+    "Cryptocurrency Adoption"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "$BUSD",
+    "@JuanOtero",
+    "@CalebYao",
+    "@Travala",
+    "@TravelByBit"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

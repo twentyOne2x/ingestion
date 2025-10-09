@@ -1,0 +1,30 @@
+{
+  "description": "In this AMA, Changpeng Zhao (CZ) of Binance and Brendan Eich, co-founder of Brave, discuss the evolution of web browsing, privacy, and the integration of cryptocurrency into user experiences. Eich explains how the Brave browser enhances user privacy and speed while allowing users to support content creators through the Basic Attention Token (BAT) system. The conversation covers the challenges of user adoption in crypto and the innovative approaches Brave is taking to incentivize participation.",
+  "topic_summary": "CZ and Brendan Eich discuss the impact of Brave browser on user privacy and the integration of cryptocurrency through the Basic Attention Token, emphasizing user experience and creator support [t=0:16-303:69].",
+  "router_tags": [
+    "Binance",
+    "Brave",
+    "Cryptocurrency",
+    "Privacy",
+    "Basic Attention Token",
+    "Web Browsing"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "Brave",
+    "brave",
+    "CZ",
+    "cz",
+    "Brendan Eich",
+    "brendan eich"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BAT",
+    "@BinanceYoutube",
+    "@BrendanEich"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

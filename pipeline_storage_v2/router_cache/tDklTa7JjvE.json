@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion on the role of cryptocurrency in promoting financial inclusion in Africa, featuring insights from industry leaders on the challenges and opportunities for the unbanked population.",
+  "topic_summary": "The panel discusses financial inclusion in Africa, focusing on the potential of cryptocurrency to serve the unbanked population and the barriers to mass adoption. Key points include the need to connect cash and crypto economies and the impact of crypto on grassroots banking [t=70:05].",
+  "router_tags": [
+    "Crypto",
+    "Africa",
+    "Financial Inclusion",
+    "Blockchain",
+    "Unbanked"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "#CryptoInAfrica",
+    "#MobilizingTheUnbanked"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$BNB",
+    "$ETH"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

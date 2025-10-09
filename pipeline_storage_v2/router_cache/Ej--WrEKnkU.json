@@ -1,0 +1,22 @@
+{
+  "description": "Discussion on open staking and its integration with blockchain technology, featuring insights from Ramya Buddhim and Nashka.",
+  "topic_summary": "Exploration of open staking and blockchain protocols, including proof of stake and community involvement [t=01:19].",
+  "router_tags": [
+    "staking",
+    "blockchain",
+    "proof of stake",
+    "community"
+  ],
+  "aliases": [
+    "Harmony!",
+    "harmony!",
+    "HARMONY!"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@RamyaBuddhim",
+    "@Nashka"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

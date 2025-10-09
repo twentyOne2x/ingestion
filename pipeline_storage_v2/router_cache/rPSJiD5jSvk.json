@@ -1,0 +1,25 @@
+{
+  "description": "Trader Mayne discusses Bitcoin's recent all-time high and shares insights on trading strategies and the crypto market dynamics.",
+  "topic_summary": "In this episode, Trader Mayne talks about Bitcoin's price targets and trading advice, reflecting on the recent all-time high [t=23:24] and the challenges of trading in the current market [t=141:36].",
+  "router_tags": [
+    "Bitcoin",
+    "Trading",
+    "Crypto",
+    "Altseason",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "Trader Mayne",
+    "Trader Mayn",
+    "Tradermayne"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@notthreadguy",
+    "@TraderMayne",
+    "@Kraken",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

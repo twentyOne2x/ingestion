@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on the impact of blockchain in philanthropy featuring Elizabeth Lee, Alex Wilson, Mai, and Sean. They share their experiences and insights on cryptocurrency donations and the evolving landscape of blockchain charity initiatives.",
+  "topic_summary": "The panelists discuss their backgrounds in blockchain philanthropy, the challenges and opportunities in the sector, and the growing acceptance of cryptocurrency donations in nonprofit organizations. They highlight trends and practical applications of blockchain technology in humanitarian efforts, particularly in regions like Africa and Japan. [t=10:72] [t=248:30]",
+  "router_tags": [
+    "Blockchain",
+    "Philanthropy",
+    "Cryptocurrency",
+    "Nonprofits",
+    "Charity"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Charity",
+    "binance charity"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance",
+    "@MercyCorps",
+    "@GivingBlock",
+    "@BinanceCharity"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

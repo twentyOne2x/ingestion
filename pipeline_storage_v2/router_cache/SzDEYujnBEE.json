@@ -1,0 +1,24 @@
+{
+  "description": "The Binance Influencer Awards 2020 recognizes significant contributors in the blockchain and crypto space, with winners chosen by the Binance community. Scott is awarded the North American Finance Influencer for his impact and contributions to the community.",
+  "topic_summary": "Celebration of the Binance Influencer Awards 2020, highlighting community-driven nominations and the recognition of key influencers in the crypto industry. The event features awards for North America and global influencers.",
+  "router_tags": [
+    "Binance",
+    "Influencer Awards",
+    "Crypto",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceAwards",
+    "Scott",
+    "FinanceInfluencerAwards"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Scott"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

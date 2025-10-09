@@ -1,0 +1,29 @@
+{
+  "description": "The first meetup of Build for Bharat, focusing on decentralized finance (DeFi) solutions. Key sponsors include Binance Smart Chain, Vazirx, Matic, Marlin, Google Band, and Anchor. The event highlights opportunities in DeFi and encourages innovative solutions to real-world problems.",
+  "topic_summary": "Introduction to Build for Bharat and its objectives in the DeFi space, including insights from CZ of Binance on the growth and potential of DeFi applications [t=0:24].",
+  "router_tags": [
+    "DeFi",
+    "Binance",
+    "Vazirx",
+    "Blockchain",
+    "Cryptocurrency",
+    "Innovation"
+  ],
+  "aliases": [
+    "Build For Bharat",
+    "Build for Bharat",
+    "Bharat Meetup",
+    "DeFi Haven"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$MATIC",
+    "$ETH",
+    "$BTC",
+    "@BinanceYoutube",
+    "@cz_binance",
+    "@vazirx"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

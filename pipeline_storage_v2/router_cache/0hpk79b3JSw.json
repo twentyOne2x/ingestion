@@ -1,0 +1,24 @@
+{
+  "description": "In this Q&A session, Binance team members discuss various topics related to blockchain technology, token compatibility, and community engagement.",
+  "topic_summary": "The session covers blockchain transport, token verification, and community support within the Binance ecosystem [t=0:00 - t=36:35].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Crypto",
+    "Q&A",
+    "Community"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "@binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Este video explica cómo crear y listar un token en Binance DEX utilizando Binance Smart Chain. Se abordan aspectos técnicos y prácticos de la creación de tokens y su integración en la plataforma.",
+  "topic_summary": "Creación y listado de tokens en Binance DEX, incluyendo detalles sobre wallets y transacciones en la Binance Smart Chain [t=18:96]. Se discuten diferentes tipos de wallets y la importancia de la seguridad en el proceso [t=1428:09]. También se menciona el token Webbit y su listado en el exchange [t=2335:02].",
+  "router_tags": [
+    "Binance",
+    "DEX",
+    "Smart Chain",
+    "Token Creation",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$1",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

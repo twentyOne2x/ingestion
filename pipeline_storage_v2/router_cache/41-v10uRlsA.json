@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Binance Podcast, Wee Joe, the Chief Financial Officer of Binance, introduces the Binance Academy team and discusses the importance of security in the cryptocurrency industry. The episode emphasizes the need for unbiased education on blockchain and crypto, highlighting the Academy's mission to provide reliable information and resources for users. The discussion covers the Academy's content offerings, including articles on security, available in multiple languages, and the various formats used to enhance learning.",
+  "topic_summary": "Wee Joe discusses the purpose of Binance Academy, focusing on security awareness in the crypto industry. The episode outlines the Academy's commitment to unbiased education and the resources available for users, including articles and interactive content. [t=67:52] The conversation also touches on common scams in the crypto space and the importance of security for users. [t=344:63]",
+  "router_tags": [
+    "Binance",
+    "Crypto Security",
+    "Blockchain Education",
+    "Cryptocurrency",
+    "Binance Academy"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Academy",
+    "binance academy",
+    "Binance",
+    "Wee Joe"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

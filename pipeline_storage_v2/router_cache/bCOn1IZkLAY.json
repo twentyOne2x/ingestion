@@ -1,0 +1,22 @@
+{
+  "description": "Official Binance meetup held in Ankara, Turkey, discussing cryptocurrency and blockchain developments.",
+  "topic_summary": "Binance representatives share insights on the cryptocurrency market and engage with the local community [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Cryptocurrency",
+    "Ankara",
+    "Turkey"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "@binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

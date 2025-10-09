@@ -1,0 +1,22 @@
+{
+  "description": "The Binance Official Meetup in Manila, Philippines, held in May 2019, provided insights into cryptocurrency trading and technical analysis. Attendees shared their experiences and key takeaways from the event, emphasizing the importance of awareness in trading.",
+  "topic_summary": "The meetup focused on educating participants about cryptocurrency trading and technical analysis, highlighting the significance of awareness and integrity in the trading process. Attendees expressed that the event was informative and beneficial for understanding the crypto landscape [t=120:18].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "meetup",
+    "trading",
+    "technical analysis"
+  ],
+  "aliases": [
+    "Binance Meetup",
+    "binance meetup",
+    "Binance Official Meetup",
+    "binance official meetup"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Explore the history of Binance, including its significant milestones and contributions to the cryptocurrency landscape.",
+  "topic_summary": "A look into Binance's journey and its impact on the blockchain industry, featuring insights from key figures like Engela Santros [t=01:01].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "History"
+  ],
+  "aliases": [
+    "binance",
+    "BinanceYoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

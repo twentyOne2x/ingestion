@@ -1,0 +1,24 @@
+{
+  "description": "Guido from Block-Builders introduces the Binance Futures platform, explaining the differences between trading on Binance and Bitmex. He discusses the necessity of having a Binance account and Tether to trade Bitcoin futures, highlighting the trading volume on Bitmex and the advantages of using Binance Futures.",
+  "topic_summary": "Overview of Binance Futures platform and comparison with Bitmex, including trading mechanics and asset requirements [t=0:00 - t=3:30].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Bitcoin",
+    "Bitmex"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "$TETA",
+    "@Guido"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

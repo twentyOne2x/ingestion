@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe discusses the impact of COVID-19 and the role of media during the pandemic with guest Carol Yin. They explore insights on blockchain's influence across various industries and share personal experiences related to the pandemic and media coverage.",
+  "topic_summary": "Wee Joe and Carol Yin discuss the COVID-19 pandemic, media's role, and blockchain's impact on industries. Carol shares her background as a Chinese Canadian and her experiences in media and interpreting, especially during quarantine [t=0:00-3:84].",
+  "router_tags": [
+    "COVID-19",
+    "Blockchain",
+    "Media",
+    "Pandemic",
+    "Binance Podcast"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance podcast"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@WeeJoe",
+    "@CarolYin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

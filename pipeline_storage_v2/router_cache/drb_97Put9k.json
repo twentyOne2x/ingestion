@@ -1,0 +1,28 @@
+{
+  "description": "In this episode, Christy Hyunwon Choi hosts Vincent Neo, founder of DappReview, to discuss the evolving landscape of blockchain gaming. They explore the intersection of traditional gaming and blockchain technology, highlighting the potential benefits such as true ownership of in-game assets and player-owned economies. Vincent shares insights on the current state of blockchain games and their future prospects in the gaming industry.",
+  "topic_summary": "Christy and Vincent discuss blockchain gaming's potential, its current state, and how it differs from traditional gaming. They highlight the importance of true ownership and player economies in enhancing gaming experiences [t=0:40 - t=3:04].",
+  "router_tags": [
+    "Blockchain Gaming",
+    "Crypto",
+    "DappReview",
+    "Game Development",
+    "NFTs",
+    "Player Economy"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Binance Podcast Episode 20",
+    "Blockchain Gaming Podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$EOS",
+    "$SOL",
+    "@BinanceYoutube",
+    "@VincentNeo",
+    "@ChristyHyunwonChoi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

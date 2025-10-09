@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, Wee Joe interviews Samuel Bankman Fried, founder of Alameda Research and FTX. They discuss Sam's journey from being a quantitative trader at Jane Street to launching one of the top cryptocurrency exchanges, FTX. Sam shares insights on the challenges of crypto trading, including arbitrage opportunities and operational hurdles faced in the industry.",
+  "topic_summary": "Wee Joe and Samuel Bankman Fried explore Sam's transition from finance to crypto, his experiences in trading, and the growth of FTX in the competitive exchange landscape. They touch on the evolution of the crypto market and the importance of infrastructure in trading [t=0:96-310:66].",
+  "router_tags": [
+    "Binance",
+    "Crypto Exchange",
+    "FTX",
+    "Alameda Research",
+    "Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@sam_bankman_fried",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

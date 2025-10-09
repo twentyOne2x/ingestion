@@ -1,0 +1,23 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wei Jo discusses the intersection of sports and blockchain with Alex Dreyfus, CEO of Chiliz and Socios Blockchain. They explore how tokenization can enhance fan engagement in sports, sharing insights from their experiences in the industry.",
+  "topic_summary": "Wei Jo introduces the Binance Podcast and its focus on blockchain technology's impact across various industries. He interviews Alex Dreyfus about his journey and the role of tokenization in sports fan engagement [t=3:6].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Tokenization",
+    "Sports",
+    "Fan Engagement"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Binance podcast",
+    "binance podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

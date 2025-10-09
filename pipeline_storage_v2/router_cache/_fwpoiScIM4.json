@@ -1,0 +1,26 @@
+{
+  "description": "In this episode of the Binance Podcast, Viktor Rochenko, founder of Trust Wallet, shares his journey into cryptocurrency, starting from his early exposure to Bitcoin in 2012 to the development of Trust Wallet. He discusses the challenges of building a sustainable product in the crypto space and the integration of Trust Wallet with Binance's decentralized exchange.",
+  "topic_summary": "Viktor Rochenko discusses his background in cryptocurrency, the founding of Trust Wallet, and its acquisition by Binance. He highlights the evolution of Trust Wallet and its features, as well as the challenges faced in the crypto market [t=0:24-0:64].",
+  "router_tags": [
+    "Binance",
+    "Trust Wallet",
+    "Cryptocurrency",
+    "Blockchain",
+    "Decentralized Exchange"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Trust Wallet",
+    "Viktor Rochenko",
+    "Victor Rochenko"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

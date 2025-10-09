@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Jo interviews Far Farbud Anivi, founder and CEO of Coinmine, discussing the evolution of crypto mining and its accessibility. Far shares his journey from building computers as a child to creating user-friendly mining devices, emphasizing the importance of making technology approachable for everyone. The conversation touches on the challenges of traditional mining setups and the vision for simplifying the crypto experience for consumers.",
+  "topic_summary": "Wee Jo talks with Far Farbud Anivi about the future of crypto mining, accessibility of technology, and the evolution of user-friendly mining devices. The discussion highlights the challenges faced by miners and the importance of making technology more approachable for the average user [t=0:54].",
+  "router_tags": [
+    "Crypto Mining",
+    "Blockchain",
+    "User Experience",
+    "Technology",
+    "Entrepreneurship"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@BinanceYoutube",
+    "@FarFarbudAnivi",
+    "@Justin"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

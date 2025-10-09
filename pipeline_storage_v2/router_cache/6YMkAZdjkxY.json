@@ -1,0 +1,23 @@
+{
+  "description": "Bidoo introduces highlights of Binance in 2018, showcasing its user-friendly trading platform, charitable initiatives, and educational programs.",
+  "topic_summary": "Overview of Binance's achievements in 2018, including user experience improvements, charity efforts, and educational resources for blockchain and cryptocurrency [t=1:92-84:24].",
+  "router_tags": [
+    "Binance",
+    "cryptocurrency",
+    "blockchain",
+    "education",
+    "charity"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BNB"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

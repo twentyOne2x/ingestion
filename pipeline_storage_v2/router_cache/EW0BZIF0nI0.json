@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on the DeFi ecosystem featuring insights from Caio Investe, Rafaella, and Guilherme from Pods.",
+  "topic_summary": "The panel explores various DeFi protocols and their impact on blockchain technology, including discussions on Bitcoin and innovative financial instruments [t=0:24 - t=90:04].",
+  "router_tags": [
+    "DeFi",
+    "Blockchain",
+    "Finance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Caio Investe",
+    "Rafaella",
+    "Guilherme",
+    "Pods"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Binance Podcast, host Jared Wynn speaks with Bruce Fenton, CEO of Atlantic Financial, about his journey in the financial sector and the impact of COVID-19 on the economy. Bruce shares insights from his early experiences in trading and his transition into the cryptocurrency space, highlighting the evolution of technology and investment strategies over the years. [t=9:76] [t=19:84] [t=147:86]",
+  "topic_summary": "Jared Wynn interviews Bruce Fenton on his financial career, experiences with cryptocurrency, and the effects of COVID-19 on the economy. The discussion covers Bruce's early trading experiences and his insights into emerging markets and technology. [t=9:76] [t=19:84] [t=147:86]",
+  "router_tags": [
+    "Binance",
+    "COVID-19",
+    "cryptocurrency",
+    "financial markets",
+    "investment strategies"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Ask America",
+    "ask america"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@BruceFenton",
+    "@AtlanticFinancial"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

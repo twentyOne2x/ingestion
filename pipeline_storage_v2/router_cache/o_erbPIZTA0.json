@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Binance Podcast, host Hui Jo discusses digital asset regulation with guests Loretta Joseph and Jason, a prominent crypto congressman from Taiwan. They explore the evolving landscape of blockchain and cryptocurrency regulation globally, sharing insights from their extensive experience in the financial sector and regulatory bodies.",
+  "topic_summary": "The podcast covers the impact of blockchain technology on various industries and the importance of regulatory frameworks for digital assets. It features discussions on the roles of different government entities and the need for a unified definition of digital assets, referencing the Australian government's initiatives [t=282:36].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "Digital Assets",
+    "Regulation"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Podcast",
+    "Hui Jo",
+    "Loretta Joseph",
+    "Jason"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube",
+    "@LorettaJoseph",
+    "@Jason"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

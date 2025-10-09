@@ -1,0 +1,25 @@
+{
+  "description": "Akon discusses his journey into cryptocurrency, the challenges of currency exchange in Africa, and the vision behind Akoin during a fireside chat at Binance's third anniversary event.",
+  "topic_summary": "Akon shares insights on crypto adoption in Africa, his personal experiences with currency exchange [t=137:47], and the motivation behind launching Akoin [t=206:79].",
+  "router_tags": [
+    "Akon",
+    "Crypto Adoption",
+    "Akoin",
+    "Binance",
+    "Blockchain",
+    "Finance"
+  ],
+  "aliases": [
+    "akon",
+    "Akon",
+    "ACORN",
+    "acorn"
+  ],
+  "canonical_entities": [
+    "$AKOIN",
+    "@Akon",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

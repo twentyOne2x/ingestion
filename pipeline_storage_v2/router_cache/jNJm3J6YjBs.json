@@ -1,0 +1,23 @@
+{
+  "description": "Learn how to acquire your first Bitcoin with insights from experts like Ricardo Salinas and Michael Saylor, discussing the importance of Bitcoin and stablecoins in today's economy.",
+  "topic_summary": "The video covers the significance of Bitcoin and stablecoins in international commerce, featuring insights from Ricardo Salinas and Michael Saylor. It discusses the adoption of Bitcoin in various countries and the importance of peer-to-peer platforms for trading [t=01:29].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Stablecoins",
+    "Binance",
+    "Investing"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@RicardoSalinas",
+    "@MichaelSaylor"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

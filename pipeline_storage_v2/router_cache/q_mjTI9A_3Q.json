@@ -1,0 +1,21 @@
+{
+  "description": "Binance Nigeria's end of year dinner for 2020 features discussions on business and finance, networking opportunities, and a celebratory atmosphere.",
+  "topic_summary": "Sam discusses networking and business opportunities at the Binance Nigeria end of year dinner [t=58:62]. Ahmad is mentioned in the context of the celebration [t=88:12].",
+  "router_tags": [
+    "Binance",
+    "Nigeria",
+    "Finance",
+    "Networking",
+    "Celebration"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

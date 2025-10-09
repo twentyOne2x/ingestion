@@ -1,0 +1,21 @@
+{
+  "description": "A child shares their story of overcoming hunger and pursuing education with the help of Binance Charity, which provides food through cryptocurrency donations.",
+  "topic_summary": "The video highlights the impact of Binance Charity in addressing hunger among children, showcasing personal stories of resilience and the importance of support for education [t=102:25].",
+  "router_tags": [
+    "Binance",
+    "Charity",
+    "Hunger",
+    "Education",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance charity",
+    "Binance Charity",
+    "BINANCE CHARITY"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

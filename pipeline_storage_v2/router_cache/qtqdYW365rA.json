@@ -1,0 +1,30 @@
+{
+  "description": "Discussion on Bitcoin futures, market strategies, and risk management in trading.",
+  "topic_summary": "Exploration of Bitcoin futures and trading strategies, including risk management techniques and market insights [t=00:56-01:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Futures",
+    "Trading",
+    "Risk Management"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Piero",
+    "@NietzscheRoss",
+    "@MichaelNabirini",
+    "@Bloomberg",
+    "@ChampasRoshak",
+    "@Dalian",
+    "@Samira",
+    "@NewYork",
+    "@LeechMoshe",
+    "@AlexanderElder"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

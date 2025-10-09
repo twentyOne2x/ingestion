@@ -1,0 +1,41 @@
+{
+  "description": "Discussion on the final international event involving participants from Venezuela, Argentina, Colombia, and more. Highlights include trading strategies and market analysis.",
+  "topic_summary": "Overview of the third week of the futures battle, featuring discussions on Bitcoin and trading strategies among various participants [t=00:00].",
+  "router_tags": [
+    "Futures",
+    "Bitcoin",
+    "Trading",
+    "Latin America",
+    "YouTube"
+  ],
+  "aliases": [
+    "Battle de Futuros",
+    "Futuros",
+    "BATALLA DE FUTUROS"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "@Victoria",
+    "@Leon",
+    "@Jimmy",
+    "@Fabian",
+    "@Racha",
+    "@Castillo",
+    "@Jordi",
+    "@Cassandra",
+    "@Maximus",
+    "@Andre",
+    "@Kevin",
+    "@Pa",
+    "@Cassie",
+    "@DiabloClubArcelona",
+    "@KimVictoria",
+    "@Oscar",
+    "@YaleCastillo",
+    "@Horsta",
+    "@Hamas"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

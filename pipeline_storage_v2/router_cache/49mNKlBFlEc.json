@@ -1,0 +1,17 @@
+{
+  "description": "Discussion on various topics with brief interjections and greetings.",
+  "topic_summary": "The video features a series of casual remarks and greetings, including phrases like 'Here we go' [t=05:05] and 'Hello' [t=06:41].",
+  "router_tags": [
+    "greetings",
+    "casual talk",
+    "interjections"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

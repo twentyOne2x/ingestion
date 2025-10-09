@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing the intersection of gaming and cryptocurrency, focusing on blockchain technology and its implications for the gaming industry.",
+  "topic_summary": "Exploration of blockchain's role in gaming, including mobile games and the integration of cryptocurrencies like Bitcoin. Discussion on various gaming platforms and the future of decentralized gaming [t=0:04].",
+  "router_tags": [
+    "gaming",
+    "cryptocurrency",
+    "blockchain",
+    "Binance",
+    "webinar"
+  ],
+  "aliases": [
+    "Games E Cripto",
+    "Games e Cripto",
+    "GAMES E CRIPTO"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

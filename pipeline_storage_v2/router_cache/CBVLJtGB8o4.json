@@ -1,0 +1,24 @@
+{
+  "description": "Webinar discussing French taxation and fiscal obligations related to cryptocurrency, featuring Guzavonde Mandelia and insights on crypto asset management.",
+  "topic_summary": "The webinar covers the complexities of cryptocurrency taxation in France, including flat tax implications and the use of calculators for declarations [t=00:15]. It also addresses the challenges of fiscal compliance and the role of platforms in managing crypto transactions [t=36:39].",
+  "router_tags": [
+    "cryptocurrency",
+    "taxation",
+    "France",
+    "Binance",
+    "webinar"
+  ],
+  "aliases": [
+    "Binance France Webinar",
+    "Binance France",
+    "BinanceWebinar",
+    "BinanceFiscalite"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@GuzavondeMandelia",
+    "@Lagarde"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Lindy introduces the Binance Angel program and discusses its vision to enhance global financial freedom. The presentation includes both English and Vietnamese segments to cater to the audience [t=125.71].",
+  "topic_summary": "Overview of the Binance Angel program and its mission to improve lives through financial freedom [t=136.19].",
+  "router_tags": [
+    "Binance",
+    "Binance Angels",
+    "Crypto",
+    "Finance",
+    "Vietnam"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Angels",
+    "binance angels",
+    "BinanceVietnam",
+    "binancevietnam"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@Lindy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

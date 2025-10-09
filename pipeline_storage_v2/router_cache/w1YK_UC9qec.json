@@ -1,0 +1,22 @@
+{
+  "description": "A Binance meetup held in Istanbul, featuring discussions on cryptocurrency and blockchain technology.",
+  "topic_summary": "Overview of the Binance meetup in Istanbul, focusing on community engagement and cryptocurrency discussions [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Istanbul",
+    "meetup",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "aliases": [
+    "Binance Meetup Istanbul",
+    "binance meetup istanbul",
+    "Binance Istanbul Meetup"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

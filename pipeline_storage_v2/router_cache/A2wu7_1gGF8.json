@@ -1,0 +1,34 @@
+{
+  "description": "Panel discussion on blockchain education featuring experts from Cambridge and UCL discussing career paths in the blockchain industry.",
+  "topic_summary": "The panelists share their backgrounds and experiences in blockchain, emphasizing the importance of networking and education in establishing a career in the field. They discuss how to strategically position oneself for success in blockchain technology, highlighting the value of conferences and online engagement [t=229.26].",
+  "router_tags": [
+    "Blockchain",
+    "Education",
+    "Career",
+    "Panel Discussion",
+    "MIT",
+    "UCL",
+    "Cambridge"
+  ],
+  "aliases": [
+    "binanceturns3",
+    "BinanceTurns3",
+    "Blockchain Education",
+    "Keys to a New Career"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@EricPinos",
+    "@TamimAhmed",
+    "@Apileen",
+    "@Apollin",
+    "@Apollina",
+    "@CambridgeCenterOfAlternativeFinance",
+    "@UCLCenterForBlockchainTechnologies",
+    "@UniversityOfCambridge",
+    "@UniversityCollegeLondon"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,36 @@
+{
+  "description": "Discussion on Binance P2P services in Colombia, focusing on cryptocurrency transactions and regulatory aspects.",
+  "topic_summary": "Exploration of Binance's P2P platform in Colombia, including user experiences and transaction processes [t=26:20].",
+  "router_tags": [
+    "Binance",
+    "P2P",
+    "Colombia",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@Henry",
+    "@Marian",
+    "@Cector",
+    "@HenryMercian",
+    "@Joannetta",
+    "@Anton",
+    "@Jones",
+    "@Olympia",
+    "@Mokiri",
+    "@NicoleKeroto",
+    "@HenryLatasa",
+    "@CameronCondolaris",
+    "@FelinoJ"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

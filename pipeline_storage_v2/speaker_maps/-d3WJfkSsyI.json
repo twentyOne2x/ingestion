@@ -1,0 +1,20 @@
+{
+  "video_id": "-d3WJfkSsyI",
+  "title": "2020-08-03_-d3WJfkSsyI_#BinanceTurns3 Panel - COVID-19 Effect: Accelerating the Adoption of Crypto",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "D",
+  "speaker_map": {
+    "A": {
+      "name": "Nicholas Can Chanda",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

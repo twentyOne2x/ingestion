@@ -1,0 +1,34 @@
+{
+  "description": "Webinar discussing investment strategies in cryptocurrencies, focusing on platforms like Binance and various projects in the crypto space.",
+  "topic_summary": "Exploration of cryptocurrency investment strategies, including technical trading and decentralized exchanges, with insights from various speakers [t=0:24].",
+  "router_tags": [
+    "cryptocurrency",
+    "investment strategies",
+    "Binance",
+    "decentralized exchange",
+    "technical trading"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Microsoft",
+    "@Jaconte",
+    "@Vincent",
+    "@Latavin",
+    "@Bharat",
+    "@Mazova",
+    "@Kwandu",
+    "@Prahiskuna",
+    "@LouisClaro",
+    "@Ochimo",
+    "@Jacob",
+    "@Benjin",
+    "@Sakis"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

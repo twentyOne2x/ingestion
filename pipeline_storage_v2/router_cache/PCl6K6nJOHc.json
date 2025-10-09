@@ -1,0 +1,22 @@
+{
+  "description": "This video covers the Binance Tradefest meetup held in Vietnam in June 2019, featuring discussions and insights from the event.",
+  "topic_summary": "Highlights from the Binance Tradefest meetup in Vietnam, showcasing community engagement and discussions on cryptocurrency trends [t=01:04].",
+  "router_tags": [
+    "Binance",
+    "Tradefest",
+    "Vietnam",
+    "cryptocurrency",
+    "meetup"
+  ],
+  "aliases": [
+    "Binance Tradefest",
+    "binance tradefest",
+    "Binance Meetup",
+    "binance meetup"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "This episode covers Binance Futures, explaining futures contracts, how to open a futures account, transfer funds, and various order types. It discusses the benefits of futures trading, including leverage and risk management, and provides examples of trading strategies.",
+  "topic_summary": "Introduction to Binance Futures and trading strategies [t=0:56]. Explanation of futures contracts [t=6:24]. How to open a futures account and transfer funds [t=30:56]. Overview of trading benefits and leverage [t=53:90]. Different order types: limit, market, stop limit, and take profit [t=117:54]. Discussion on P&L [t=218:04]. Live trading examples [t=240:10].",
+  "router_tags": [
+    "Binance",
+    "Futures Trading",
+    "Cryptocurrency",
+    "BTC",
+    "USDT"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "Binance Futures",
+    "binance futures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

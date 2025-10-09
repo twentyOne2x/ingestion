@@ -1,0 +1,26 @@
+{
+  "description": "Michael introduces a panel discussing the importance of managing cryptocurrency keys for security. Panelists include Victor from Trust Wallet, Veronica Wong from SafePal, Matt Marks from Fishport, and Constantin from Atomic Wallet, who share insights on making crypto safe and accessible.",
+  "topic_summary": "The panel explores the challenges of managing private keys in cryptocurrency, emphasizing the balance between security and usability. Discussions include the evolution of wallets and the need for user-friendly solutions to enhance crypto accessibility [t=0:16-0:48].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Security",
+    "Wallet Management",
+    "Private Keys",
+    "Crypto Accessibility"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Turns 3",
+    "binance turns 3"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Victor",
+    "@VeronicaWong",
+    "@MattMarks",
+    "@Constantin"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

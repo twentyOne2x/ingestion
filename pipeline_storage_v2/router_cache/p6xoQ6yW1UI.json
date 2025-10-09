@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Binance Podcast, Chief Financial Officer Wee Joe welcomes Aaron Gong, Director of Binance Futures, to discuss the launch of Binance Futures and its impact on the crypto market. They explore Aaron's background in traditional futures markets, his transition to cryptocurrency, and insights on market trends.",
+  "topic_summary": "Wee Joe introduces Aaron Gong, discussing Binance Futures' recent launch and record trading volumes amidst market volatility. Aaron shares his career journey from traditional finance to cryptocurrency, emphasizing the importance of blockchain in various industries [t=0:00-2:00].",
+  "router_tags": [
+    "Binance",
+    "Crypto Futures",
+    "Aaron Gong",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@AaronGong"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

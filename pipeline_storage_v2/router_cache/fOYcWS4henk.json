@@ -1,0 +1,34 @@
+{
+  "description": "Discussion on Bitcoin trading strategies and futures contracts, including concepts like take profit and stop loss. The video features various participants discussing market conditions and trading tactics.",
+  "topic_summary": "Exploration of Bitcoin trading strategies and futures contracts, emphasizing take profit and stop loss techniques. Key participants include Victoria, Jordan, and Jimmy, discussing market dynamics and trading approaches throughout the video [t=00:55].",
+  "router_tags": [
+    "Bitcoin",
+    "Futures Trading",
+    "Binance",
+    "Trading Strategies"
+  ],
+  "aliases": [
+    "Victoria",
+    "victoria",
+    "JIMMY",
+    "jimmy",
+    "Jordan",
+    "jordan",
+    "Rachael",
+    "rachael",
+    "Milo Pierre",
+    "milo pierre",
+    "Stammy",
+    "stammy",
+    "Travis",
+    "travis",
+    "Maxim",
+    "maxim"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

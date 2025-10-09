@@ -1,0 +1,20 @@
+{
+  "video_id": "NTJpeI7CBug",
+  "title": "2020-09-18_NTJpeI7CBug_Binance Futures Trading AMA - #India - #BinanceFutures",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Aaron Gong",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

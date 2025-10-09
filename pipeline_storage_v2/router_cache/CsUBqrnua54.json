@@ -1,0 +1,24 @@
+{
+  "description": "Webinar sobre Binance Savings, cubriendo aspectos de ahorro y trading en criptomonedas. Se discuten los diferentes tipos de ahorros y tasas de interés disponibles en Binance, así como el uso de wallets y trading de margen.",
+  "topic_summary": "El webinar aborda Binance Savings y su funcionamiento, incluyendo ahorros flexibles y bloqueados, tasas de interés, y el uso de diferentes criptomonedas como BTC, ETH y USDT [t=0:08 - t=29:12].",
+  "router_tags": [
+    "Binance",
+    "Savings",
+    "Cryptocurrency",
+    "Webinar",
+    "Finance"
+  ],
+  "aliases": [
+    "binance savings",
+    "Binance Savings",
+    "BINANCE SAVINGS"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$USDT",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

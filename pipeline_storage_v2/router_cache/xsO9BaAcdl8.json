@@ -1,0 +1,21 @@
+{
+  "description": "A Q&A session discussing various aspects of cryptocurrency trading, including margin trading and educational resources.",
+  "topic_summary": "The session covers margin trading on Binance, educational resources from the Academy, and insights into digital movements in cryptocurrency [t=39:43].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Q&A",
+    "Margin Trading",
+    "Education"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,35 @@
+{
+  "description": "In this episode, Brian from Binance Trading discusses the Q3 2019 crypto correlations review, highlighting significant drops in Bitcoin and altcoin prices, increased Bitcoin market cap dominance, and the correlations among various crypto assets.",
+  "topic_summary": "The podcast reviews Q3 2019 crypto correlations, noting Bitcoin's price drop and increased dominance, while exploring correlations among assets like Ethereum, Dash, and Monero. It emphasizes the Binance effect on asset correlations and the potential future role of Ethereum as a benchmark in the crypto industry.",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Ethereum",
+    "Binance",
+    "Market Analysis"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Binance minipod",
+    "Binance Minipod"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$DOGE",
+    "$DASH",
+    "$XMR",
+    "$NEO",
+    "$ATOM",
+    "$LINK",
+    "$EOS",
+    "$CRO",
+    "$XRP",
+    "$XLM",
+    "$DRC"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

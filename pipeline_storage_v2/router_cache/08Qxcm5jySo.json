@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on foreign capital data and blockchain technology featuring Denise Dr. and insights from Takjudini Cfremov, Sergey Shahmiatov, and others.",
+  "topic_summary": "Exploration of blockchain's impact on finance, including security token swaps and the role of various industry leaders [t=0:16].",
+  "router_tags": [
+    "Blockchain",
+    "Cryptocurrency",
+    "Finance",
+    "Investment"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@Denise",
+    "$BTC",
+    "@TakjudiniCfremov",
+    "@DavinciCapitalE",
+    "@SergeyShahmiatov",
+    "@ParazitiusGarbank"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

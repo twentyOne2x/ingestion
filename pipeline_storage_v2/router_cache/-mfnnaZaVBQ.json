@@ -1,0 +1,24 @@
+{
+  "description": "Discussion on Bitcoin, its decentralization, and the implications of technology in society. Covers topics like CBDC, Bitcoin mining, and the role of encryption in crypto.",
+  "topic_summary": "Exploration of Bitcoin's impact on society and technology, including discussions on decentralization, the Lightning Network, and the ethical considerations of crypto technology [t=24:16 - t=70:85].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Decentralization",
+    "Blockchain",
+    "CBDC",
+    "Lightning Network"
+  ],
+  "aliases": [
+    "Nasi Lide Z Krypto",
+    "Dusan Matuska",
+    "Binance Academy"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

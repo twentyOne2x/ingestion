@@ -1,0 +1,22 @@
+{
+  "description": "Learn how to place a trailing stop order on Binance futures using both the web and mobile app.",
+  "topic_summary": "This video guides users on placing a trailing stop order on Binance futures, covering both web and mobile app methods. [t=00:00]",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Stop Order",
+    "Guide"
+  ],
+  "aliases": [
+    "Binance Guides",
+    "binance guides",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Binance Podcast, host Hui Jo speaks with Caleb Yeoh, CEO of Travel by Bitcoin, about the influence of cryptocurrency on the travel industry in Australia. They discuss Caleb's transition from a corporate background in traditional finance to the crypto space, sharing insights on blockchain's potential to transform various sectors. The conversation touches on personal experiences with financial corruption and the opportunities within the crypto ecosystem.",
+  "topic_summary": "Hui Jo interviews Caleb Yeoh about the impact of cryptocurrency on travel and tourism, discussing his background and the evolution of the industry due to blockchain technology. The episode highlights the shift from traditional finance to crypto and the opportunities it presents [t=78:20].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Travel",
+    "Blockchain",
+    "Tourism",
+    "Australia"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@CalebYeoh"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

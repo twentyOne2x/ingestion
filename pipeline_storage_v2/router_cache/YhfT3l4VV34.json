@@ -1,0 +1,28 @@
+{
+  "description": "Discussion on the current state of the cryptocurrency market and future expectations, featuring insights from various panelists.",
+  "topic_summary": "Panelists, including Carlos Martin and Luis Bayo, discuss market trends and Bitcoin's performance from [t=00:30] to [t=01:30]. They also address the role of the Inclusion and Finance Commission in shaping the crypto landscape [t=38:00].",
+  "router_tags": [
+    "cryptocurrency",
+    "Bitcoin",
+    "market analysis",
+    "Binance",
+    "blockchain"
+  ],
+  "aliases": [
+    "Binance Panel",
+    "binance panel",
+    "Binance youtube",
+    "binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@CarlosMartin",
+    "@LuisBayo",
+    "@Miguel",
+    "@Josian",
+    "@Matthew"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Kyle Nguyen introduces Binance Futures and provides usage guidance.",
+  "topic_summary": "Overview of Binance Futures and its functionalities, including stop limit orders and trading strategies [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

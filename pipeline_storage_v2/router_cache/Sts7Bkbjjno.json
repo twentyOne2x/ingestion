@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Podcast, Wee Joe, the Chief Financial Officer of Binance, speaks with Joseph Weinberg, CEO of SHIFT, about decentralized identity and the impact of the FATF Travel Rule on the crypto industry. They discuss the ongoing regulatory responses to the coronavirus situation and the importance of compliance in the blockchain space.",
+  "topic_summary": "Wee Joe interviews Joseph Weinberg about decentralized identity, the FATF Travel Rule, and regulatory challenges in the crypto industry, particularly in light of the coronavirus pandemic [t=0:00-2:30].",
+  "router_tags": [
+    "Binance",
+    "Decentralized Identity",
+    "FATF Travel Rule",
+    "Cryptocurrency",
+    "Regulation"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "BinanceTalk",
+    "Wee Joe",
+    "Joseph Weinberg",
+    "Shift"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@JosephWeinberg",
+    "@Shift"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

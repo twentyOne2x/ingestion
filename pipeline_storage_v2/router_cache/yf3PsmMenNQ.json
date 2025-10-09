@@ -1,0 +1,22 @@
+{
+  "description": "This video explains the OCO (One Cancels Other) order type on Binance, detailing its functionality and how to place such orders effectively.",
+  "topic_summary": "An overview of OCO orders on Binance, including definitions and practical applications [t=0:00 - 1:46].",
+  "router_tags": [
+    "OCO",
+    "Binance",
+    "trading",
+    "crypto"
+  ],
+  "aliases": [
+    "Oco",
+    "Oco Order",
+    "OCO Order"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@kismandar",
+    "@emerson_tetrik_energy"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

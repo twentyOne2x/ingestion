@@ -1,0 +1,25 @@
+{
+  "description": "In this AMA, David Jung from AAVE discusses the DeFi protocol, explaining how it allows depositors to earn interest on assets like Ethereum and USDC, while borrowers can take loans with flexible repayment options. The session includes audience interaction and translations for Vietnamese viewers.",
+  "topic_summary": "David Jung introduces AAVE as a liquidity protocol, detailing the roles of depositors and borrowers in the DeFi ecosystem. He emphasizes the differences between AAVE's lending model and traditional banking [t=245].",
+  "router_tags": [
+    "DeFi",
+    "AAVE",
+    "Binance",
+    "AMA",
+    "Ethereum",
+    "Liquidity Protocol"
+  ],
+  "aliases": [
+    "Aave",
+    "AAVE",
+    "aave",
+    "aavegotchi",
+    "Aavegotchi"
+  ],
+  "canonical_entities": [
+    "$AAVE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

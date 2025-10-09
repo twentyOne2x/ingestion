@@ -1,0 +1,26 @@
+{
+  "description": "Panel discussion on bridging traditional finance and cryptocurrency featuring Ajit Tripathi, Charles Hoskinson, Rich Teo, and Hani Rashwan. They discuss the infrastructure needed for institutional investment in crypto, regulatory standards, and the current state of institutional interest in the market.",
+  "topic_summary": "The panel addresses the challenges and developments in integrating institutional finance with cryptocurrency, highlighting the importance of regulatory frameworks and infrastructure for safe investment. They note ongoing interest from institutional investors and the gradual acceptance of crypto products.",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Finance",
+    "Institutional Investment",
+    "Regulation"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@AjitTripathi",
+    "@CharlesHoskinson",
+    "@RichTeo",
+    "@HaniRashwan"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

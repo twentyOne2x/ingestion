@@ -1,0 +1,32 @@
+{
+  "video_id": "Gjd0HQvMRYY",
+  "title": "2020-07-28_Gjd0HQvMRYY_#BinanceTurns3 Panel - Rise of Decentralization: Todays Web3 and DeFi Solutions",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "C",
+  "speaker_map": {
+    "C": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "A": {
+      "name": "Rune Christensen",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "Joe Lubin",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Jamie Burke",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

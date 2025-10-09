@@ -1,0 +1,22 @@
+{
+  "description": "Recap of the Binance Labs and Trust Wallet meetup in Denver, highlighting key discussions and insights.",
+  "topic_summary": "Overview of the Binance Labs x Trust Wallet meetup in Denver, focusing on community engagement and blockchain innovation [t=01:31].",
+  "router_tags": [
+    "Binance",
+    "Trust Wallet",
+    "Meetup",
+    "Blockchain",
+    "Denver"
+  ],
+  "aliases": [
+    "Binance Labs",
+    "Trust Wallet",
+    "binance labs",
+    "trust wallet"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

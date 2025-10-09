@@ -1,0 +1,22 @@
+{
+  "description": "Changpeng Zhao discusses Binance's delisting criteria and the importance of maintaining communication with project teams. He emphasizes that delisting is necessary when projects fall below certain standards and explains the lack of early warnings to prevent unethical behavior from project teams. The discussion highlights the impact of delisting on coin prices and the responsibility of projects to maintain their value.",
+  "topic_summary": "In this AMA, Changpeng Zhao addresses delisting criteria for Binance, emphasizing the need for projects to maintain user engagement and product development. He clarifies that Binance does not provide advance notice for delisting to prevent market manipulation, which can lead to sharp price drops upon announcement [t=196.90].",
+  "router_tags": [
+    "Binance",
+    "Delisting",
+    "Cryptocurrency",
+    "AMA",
+    "Changpeng Zhao"
+  ],
+  "aliases": [
+    "Changpeng Zhao",
+    "CZ",
+    "Binance CEO"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

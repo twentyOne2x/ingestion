@@ -1,0 +1,23 @@
+{
+  "description": "Panel discussion on the impact of hyperinflation in Venezuela, featuring insights on cryptocurrency adoption and local economic conditions.",
+  "topic_summary": "Discussion on Venezuela's hyperinflation and its effects on cryptocurrency usage, particularly Bitcoin, with contributions from local experts [t=34:11].",
+  "router_tags": [
+    "Venezuela",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Hiperinflacion",
+    "Binance"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "#binanceturns3",
+    "@binanceyoutube",
+    "@BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Binance discusses its identity as an exchange and its role in powering the Binance ecosystem.",
+  "topic_summary": "Overview of Binance's business model and revenue generation [t=20:24].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Exchange",
+    "Ecosystem"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

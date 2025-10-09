@@ -1,0 +1,20 @@
+{
+  "description": "This video explains how to use the Binance Convert and OTC Portal for trading.",
+  "topic_summary": "Learn to navigate the Binance Convert and OTC Portal for efficient trading [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Convert",
+    "OTC",
+    "Trading"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

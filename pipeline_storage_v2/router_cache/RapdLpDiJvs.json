@@ -1,0 +1,22 @@
+{
+  "description": "Discussion about the Cobalt wallet and various topics related to cryptocurrency.",
+  "topic_summary": "Overview of the Cobalt wallet and its features, along with insights from Kwang, Joshua, and Peter [t=00:07 - t=39:36].",
+  "router_tags": [
+    "Cobalt Wallet",
+    "Cryptocurrency",
+    "Kwang",
+    "Joshua",
+    "Peter"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

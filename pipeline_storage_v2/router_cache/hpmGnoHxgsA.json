@@ -1,0 +1,29 @@
+{
+  "description": "Join the Binance 3-Day Online Trading Masterclass for Africa, hosted by Dami Odufo. The event features insights from industry experts, including James Preston from Global Crypto. Attendees can participate in Q&A sessions and a giveaway of $100. The masterclass emphasizes the importance of attending all three days for a certificate of participation.",
+  "topic_summary": "The Binance 3-Day Trading Masterclass covers cryptocurrency trading fundamentals, featuring expert speakers and interactive sessions. Attendees are encouraged to engage through Q&A and can win prizes for participation. The event aims to educate and empower African traders in the crypto space.",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "Masterclass",
+    "Online Event",
+    "Africa",
+    "Bitcoin",
+    "Ethereum",
+    "Global Crypto"
+  ],
+  "aliases": [
+    "Binance Masterclass",
+    "Binance 3-Day Trading",
+    "Crypto Masterclass Africa",
+    "Binance Trading Masterclass"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@JamesPreston",
+    "@GlobalCrypto"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

@@ -1,0 +1,26 @@
+{
+  "video_id": "-mfnnaZaVBQ",
+  "title": "2021-01-22_-mfnnaZaVBQ_Nasi lide z Krypto#2. Dusan Matuska. Myty o Bitcoinu. 22.01.21 19:00 CET",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Zaravan Poko",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Anika Bidlan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

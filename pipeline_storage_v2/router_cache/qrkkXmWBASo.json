@@ -1,0 +1,22 @@
+{
+  "description": "This video celebrates Binance's third anniversary, highlighting its evolution from a cryptocurrency exchange to a comprehensive blockchain ecosystem. It emphasizes the importance of financial freedom and community in reshaping the future of transactions.",
+  "topic_summary": "Binance's journey over three years, focusing on financial freedom and community support in the blockchain space. [t=0:32] to [t=1:15]",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Blockchain",
+    "Financial Freedom",
+    "Community"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

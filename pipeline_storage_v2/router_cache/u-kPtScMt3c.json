@@ -1,0 +1,22 @@
+{
+  "description": "Binance discusses its role as a key liquidity provider and emphasizes the importance of trust between exchanges and projects.",
+  "topic_summary": "The meetup highlights Binance's liquidity provision and the design of Binax Chain for token services [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "liquidity",
+    "trust",
+    "Binax Chain",
+    "token trading"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

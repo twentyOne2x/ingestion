@@ -1,0 +1,22 @@
+{
+  "description": "Discussion featuring various individuals including Maria Perduslavam Galigirada Sivadi and David Tarawa Rasni, touching on topics related to crypto, security, and personal experiences.",
+  "topic_summary": "The video covers insights from multiple speakers on cryptocurrency and personal anecdotes, including mentions of Kakaskas Electronics and Nisi Gatova's situation in the crypto space [t=29:56-3580:55].",
+  "router_tags": [
+    "crypto",
+    "cryptocurrency",
+    "security",
+    "personal stories"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

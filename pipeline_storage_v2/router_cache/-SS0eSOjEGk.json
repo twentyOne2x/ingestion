@@ -1,0 +1,33 @@
+{
+  "description": "Panel discussion featuring industry leaders discussing the growth and evolution of digital assets, including insights on innovative products and partnerships.",
+  "topic_summary": "The panelists, including Justin from Tron, Sam from FTX, and Juan from Travala, explore the expansion of digital assets and their applications in various regions, emphasizing growth strategies and product innovations [t=60:16].",
+  "router_tags": [
+    "Binance",
+    "Digital Assets",
+    "Crypto Panel",
+    "Growth Strategies",
+    "Tron",
+    "FTX",
+    "Travala"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$USDT",
+    "$BKRW",
+    "$BGBP",
+    "@Justin",
+    "@Sam",
+    "@Juan",
+    "@Jiho",
+    "@Kai"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

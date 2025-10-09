@@ -1,0 +1,22 @@
+{
+  "description": "Katherine Coley, CEO of Binance US, discusses the company's initiatives and vision for financial freedom and empowerment through technology.",
+  "topic_summary": "In this AMA, Katherine Coley emphasizes Binance's commitment to financial education and the launch of new initiatives like Venus, aiming to empower individuals and reduce poverty through technology [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Finance",
+    "Cryptocurrency",
+    "Empowerment"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance US",
+    "Katherine Coley"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance",
+    "@KatherineColey"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

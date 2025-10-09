@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on FIO Protocol and its integration with cryptocurrencies, including Bitcoin, and its applications in e-commerce and blockchain technology.",
+  "topic_summary": "Overview of FIO Protocol's functionalities and its role in cryptocurrency payments and blockchain integration [t=00:53].",
+  "router_tags": [
+    "FIO Protocol",
+    "Cryptocurrency",
+    "Blockchain",
+    "E-commerce",
+    "Bitcoin"
+  ],
+  "aliases": [
+    "Fio Protocol",
+    "fio protocol",
+    "FIO protocol"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Lafia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

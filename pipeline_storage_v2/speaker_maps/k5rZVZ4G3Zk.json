@@ -1,0 +1,20 @@
+{
+  "video_id": "k5rZVZ4G3Zk",
+  "title": "2020-07-31_k5rZVZ4G3Zk_Bitcoin Mining: The Past, Present and Future",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Tina Baker Taylor",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

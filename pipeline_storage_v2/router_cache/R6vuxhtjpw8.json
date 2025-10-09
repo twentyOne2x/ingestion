@@ -1,0 +1,19 @@
+{
+  "description": "This video explains how to place market orders on the Binance exchange, focusing on the concept of market orders and their execution.",
+  "topic_summary": "Learn about market orders on Binance and how to effectively use them in trading [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Market Orders",
+    "Trading"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

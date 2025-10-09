@@ -1,0 +1,25 @@
+{
+  "description": "Brendan Eich, CEO of Brave Software, discusses the motivations behind building a privacy-focused browser and the evolution of web standards. He highlights the importance of user privacy and the challenges posed by traditional advertising models. Eich explains how Brave aims to connect users directly with content creators while ensuring a faster browsing experience by blocking unwanted scripts and ads.",
+  "topic_summary": "Brendan Eich on the development of Brave, its privacy features, and the future of web browsing [t=1:12 - t=1372:0].",
+  "router_tags": [
+    "Brave",
+    "Privacy",
+    "Web Browsers",
+    "Cryptocurrency",
+    "Advertising",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Brendan Eich",
+    "Brendan",
+    "Brave Software"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

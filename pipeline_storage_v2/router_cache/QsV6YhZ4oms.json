@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on financial services innovation in Brazil, featuring insights from industry leaders.",
+  "topic_summary": "Panel discussion on blockchain technology and central bank digital currencies, emphasizing inclusivity and innovation in financial services [t=20:26].",
+  "router_tags": [
+    "Blockchain",
+    "Financial Services",
+    "Digital Currency",
+    "Brazil"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$Convex",
+    "@CarlosHisquioto",
+    "@BrunoGenes"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

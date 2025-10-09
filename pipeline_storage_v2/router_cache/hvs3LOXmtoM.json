@@ -1,0 +1,36 @@
+{
+  "description": "Discussion on trading strategies and market conditions, including references to Las Vegas and various participants. Highlights include the importance of leverage and market prices, with mentions of Victoria Mutual and Securities.",
+  "topic_summary": "Exploration of trading dynamics and strategies in the context of Latin America, focusing on leverage and market behavior [t=0:00 - t=42:20].",
+  "router_tags": [
+    "trading",
+    "finance",
+    "Latin America",
+    "leverage",
+    "market analysis"
+  ],
+  "aliases": [
+    "Victoria",
+    "Victorious",
+    "Jimmy",
+    "Las Vegas",
+    "Colombia Chile",
+    "Jocomo",
+    "Winter Church West",
+    "Latin America",
+    "Thanos",
+    "Carlos",
+    "Victoria Mutual And Securities",
+    "Andrew",
+    "Susan",
+    "Patrick Patrinos",
+    "Maribel",
+    "Alejandro",
+    "Mario"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

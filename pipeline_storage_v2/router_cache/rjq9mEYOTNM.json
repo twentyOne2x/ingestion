@@ -1,0 +1,21 @@
+{
+  "description": "This video features the Binance Official Meetup held in Medellin, Colombia, discussing various projects and initiatives by Binance Labs.",
+  "topic_summary": "Overview of Binance Labs and its projects presented at the meetup [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Colombia",
+    "Finance"
+  ],
+  "aliases": [
+    "Binance",
+    "binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

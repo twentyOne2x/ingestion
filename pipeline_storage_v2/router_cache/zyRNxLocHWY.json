@@ -1,0 +1,24 @@
+{
+  "description": "Helen Hai discusses the potential of blockchain technology in advancing UN Sustainable Development Goals, emphasizing its role in humanitarian aid, transparency, and community governance.",
+  "topic_summary": "In this talk, Helen Hai highlights how blockchain can address human rights, climate change, and resource management. She provides examples of its successful application in sustainable development and the role of Binance Charity in supporting these initiatives, particularly during COVID-19.",
+  "router_tags": [
+    "Blockchain",
+    "Sustainable Development",
+    "Binance Charity",
+    "Humanitarian Aid",
+    "Transparency"
+  ],
+  "aliases": [
+    "Helen Hai",
+    "helen hai",
+    "BINANCE CHARITY",
+    "binance charity"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance",
+    "@HelenHai"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

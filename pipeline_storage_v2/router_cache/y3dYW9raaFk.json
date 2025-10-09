@@ -1,0 +1,22 @@
+{
+  "description": "Overview of the Binance trading interface for BTC and USDT, highlighting its features and functionalities.",
+  "topic_summary": "Exploration of Binance's trading interface for BTC and USDT, focusing on its vibrational grid and cross trading capabilities [t=26:16].",
+  "router_tags": [
+    "Binance",
+    "BTC",
+    "USDT",
+    "trading interface"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

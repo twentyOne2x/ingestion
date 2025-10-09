@@ -1,0 +1,20 @@
+{
+  "video_id": "oWu22nxhwa0",
+  "title": "2019-07-01_oWu22nxhwa0_#Binance Podcast Episode #9 - Traveling the world with crypto through Travelbybit",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Paris Hilton",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

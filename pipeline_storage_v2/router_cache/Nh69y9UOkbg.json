@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe speaks with Nishal Shetty, CEO of WazirX, about the future of cryptocurrency in India. They discuss Nishal's journey from software engineer to entrepreneur, the growth of WazirX, and the impact of blockchain technology on various industries. Nishal shares insights on the Indian crypto market and the significance of the WazirX token's performance since its launch.",
+  "topic_summary": "Wee Joe interviews Nishal Shetty, CEO of WazirX, discussing his background, the evolution of WazirX, and the future of cryptocurrency in India. The conversation highlights the changing landscape of blockchain technology and its implications for the market [t=56:02].",
+  "router_tags": [
+    "Binance",
+    "WazirX",
+    "Cryptocurrency",
+    "India",
+    "Blockchain",
+    "P2P Exchange"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "WazirX CEO",
+    "Nishal Shetty",
+    "Wazir X",
+    "Wiserx"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$WAZIRX",
+    "@BinanceYoutube",
+    "@NishalShetty"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

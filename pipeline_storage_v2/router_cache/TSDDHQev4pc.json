@@ -1,0 +1,26 @@
+{
+  "description": "The Binance community celebrates its third anniversary by awarding the 'Angel of the Year' to outstanding volunteers. Winners are recognized for their contributions in various specialties, including Community Guardian, Prnkol Pilot, Content Master, and Event Master.",
+  "topic_summary": "Binance honors its top community volunteers with awards for their exceptional contributions to the Binance ecosystem [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Angel of the Year",
+    "community awards",
+    "volunteers"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Angels",
+    "Binance Community"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@WangXingChen",
+    "@Ripka",
+    "@TonyGiuffe",
+    "@Jorge",
+    "@Mirei"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

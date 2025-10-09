@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on various topics including blockchain technology, stable coins, and market trends.",
+  "topic_summary": "Exploration of blockchain technologies and their applications in various sectors, including autonomous vehicles and stable coins [t=0:53].",
+  "router_tags": [
+    "blockchain",
+    "stable coins",
+    "market analysis",
+    "autonomous vehicles"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$AMZN",
+    "@ron_jatin",
+    "@jerry",
+    "@jacob",
+    "@kisha_foy",
+    "@jerry_sam",
+    "@jesus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

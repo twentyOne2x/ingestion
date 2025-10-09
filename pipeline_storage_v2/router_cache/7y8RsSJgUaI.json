@@ -1,0 +1,26 @@
+{
+  "description": "In this Q&A session, various topics related to cryptocurrency trading are discussed, including Bitcoin, USDT, and trading strategies. The conversation touches on market analysis, technical indicators, and investment strategies.",
+  "topic_summary": "Discussion on cryptocurrency trading strategies, market analysis, and technical indicators, focusing on Bitcoin and USDT [t=02:46].",
+  "router_tags": [
+    "cryptocurrency",
+    "trading",
+    "Bitcoin",
+    "USDT",
+    "Q&A"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$USDT",
+    "@SivaBinusSingh",
+    "@Dasan",
+    "@Richmond",
+    "@Prakash"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

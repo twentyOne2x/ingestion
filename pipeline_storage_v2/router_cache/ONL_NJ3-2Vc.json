@@ -1,0 +1,31 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe speaks with Kyle Samani, co-founder of Multicoin Capital. They discuss the evolution of the crypto landscape, personal experiences in the industry, and insights on blockchain's impact across various sectors. Kyle shares his journey from discovering Bitcoin to launching Multicoin, highlighting the importance of decentralized platforms and smart contracts.",
+  "topic_summary": "Wee Joe interviews Kyle Samani about his journey in crypto, the significance of Ethereum, and the evolution of blockchain technology. They explore investment strategies and the future of the crypto market [t=0:00-0:00].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Blockchain",
+    "Ethereum",
+    "Bitcoin",
+    "Investment",
+    "Finance",
+    "Multicoin"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "binance podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@KyleSamani",
+    "@Tushar"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

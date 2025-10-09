@@ -1,0 +1,24 @@
+{
+  "description": "Zao Changpeng, founder of Binance, visits Uganda to discuss blockchain opportunities with President Yoweri Museveni and plans to establish Africa's largest cryptocurrency exchange in the country.",
+  "topic_summary": "During a meeting with President Museveni [t=5:08], Zao Changpeng expressed intentions to set up a major cryptocurrency exchange in Uganda [t=38:13]. The initiative aims to enhance Uganda's economy and develop a talent pool for blockchain expertise [t=61:28].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Cryptocurrency",
+    "Uganda",
+    "Economic Development"
+  ],
+  "aliases": [
+    "Zao Changpeng",
+    "Zawo Changpeng",
+    "Changpeng"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@YoweriMuseveni",
+    "@RuhakanaRugonda",
+    "@CryptoSavannah"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

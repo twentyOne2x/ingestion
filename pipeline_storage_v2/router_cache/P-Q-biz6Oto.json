@@ -1,0 +1,25 @@
+{
+  "description": "Panel discussion featuring regulatory and advocacy experts discussing the future of policy and regulation in the cryptocurrency industry. Key topics include the code of practice for digital assets in Singapore, the role of the Crypto Valley Association in Switzerland, and the challenges of advocacy in Europe.",
+  "topic_summary": "Experts from various organizations discuss their roles in shaping cryptocurrency regulations and policies, highlighting successes and ongoing initiatives in their respective regions. [t=5:28] Introduction of panelists [t=51:74] Advocacy work and its significance [t=68:29] Anson discusses Access and its influence with MAS [t=180:65] Delphine shares insights on Crypto Valley Association's contributions [t=362:18] Robert addresses Blockchain for Europe's advocacy efforts.",
+  "router_tags": [
+    "Cryptocurrency",
+    "Regulation",
+    "Advocacy",
+    "Blockchain",
+    "Policy Development"
+  ],
+  "aliases": [
+    "BinanceTurns3",
+    "binanceturns3",
+    "Binance Turns 3"
+  ],
+  "canonical_entities": [
+    "$MAS",
+    "@CryptoValley",
+    "$CBA",
+    "$BlockchainForEurope",
+    "$Access"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

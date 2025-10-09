@@ -1,0 +1,22 @@
+{
+  "description": "This video features the Binance official Ramazan meetup held in Istanbul, Turkey, in May 2019. The event discusses various aspects of blockchain technology and its applications.",
+  "topic_summary": "Overview of the Binance Ramazan meetup in Istanbul, focusing on blockchain discussions and community engagement [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "blockchain",
+    "meetup",
+    "Istanbul",
+    "Turkey"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

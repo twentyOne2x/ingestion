@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Ecosystem Series, Emily C. from CoinMarketCap discusses her journey in the blockchain space and the evolution of CoinMarketCap since its inception in 2013. The session includes insights on the platform's growth and current statistics, highlighting its significance in the crypto market.",
+  "topic_summary": "Emily C. shares her background and experiences in the blockchain industry, detailing CoinMarketCap's history and its role in providing crypto market data [t=220.7].",
+  "router_tags": [
+    "Binance",
+    "CoinMarketCap",
+    "Blockchain",
+    "Cryptocurrency",
+    "Crypto Data"
+  ],
+  "aliases": [
+    "Binance Ecosystem Series",
+    "Coinmarketcap",
+    "Molly J. Zuckerman",
+    "Emily C."
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "$SOL",
+    "@BinanceYoutube",
+    "@CoinMarketCap"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

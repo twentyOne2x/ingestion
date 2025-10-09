@@ -1,0 +1,28 @@
+{
+  "description": "A Q&A session discussing various topics related to blockchain, cryptocurrency, and market dynamics.",
+  "topic_summary": "The session covers blockchain tutorials, cryptocurrency verification, and market cap discussions, with references to various cryptocurrencies and their applications [t=27:42].",
+  "router_tags": [
+    "Q&A",
+    "Blockchain",
+    "Cryptocurrency",
+    "Market Cap",
+    "Tutorials"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Natala",
+    "@Moonski",
+    "@Jasiah",
+    "@Google",
+    "@Alicia",
+    "@Dupreus",
+    "@Louis"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "A web seminar featuring Elizabeth Lee from Binance Charity Foundation discussing her background and experiences in impact investment, including her work in Africa and India. The session is bilingual, in English and Vietnamese.",
+  "topic_summary": "Elizabeth Lee shares her journey in impact investment and her role at Binance Charity Foundation, emphasizing the importance of local engagement in economic transformation [t=181.48].",
+  "router_tags": [
+    "Binance",
+    "Charity",
+    "Impact Investment",
+    "Vietnam",
+    "Africa",
+    "India"
+  ],
+  "aliases": [
+    "Elizabeth Lee",
+    "elizabeth lee",
+    "ELIZABETH LEE"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@ElizabethLee"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

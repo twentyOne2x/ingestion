@@ -1,0 +1,27 @@
+{
+  "description": "Binance Africa hosts day three of its three-day crypto trading masterclass, focusing on DeFi. Participants are welcomed and introduced to the team, including special guest Chris Annie, who will cover market psychology and trading tips.",
+  "topic_summary": "Day three of Binance Africa's crypto trading masterclass covers DeFi and includes insights on market psychology and trading strategies from Chris Annie [t=137:56].",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "DeFi",
+    "Masterclass",
+    "Africa"
+  ],
+  "aliases": [
+    "binance africa",
+    "Binance Africa",
+    "BINANCE AFRICA",
+    "binance",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@ChrisAnnie",
+    "@EmmanuelBabalola"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

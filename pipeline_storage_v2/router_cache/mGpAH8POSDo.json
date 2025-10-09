@@ -1,0 +1,38 @@
+{
+  "description": "Final battles for a $220 prize featuring various participants discussing strategies and performances in a competitive format.",
+  "topic_summary": "The event showcases competitive battles with participants like Victoria and Jimmy discussing strategies and results. Key moments include discussions on Bitcoin futures and participant performances [t=0:56] to [t=44:45].",
+  "router_tags": [
+    "competition",
+    "Bitcoin",
+    "futures",
+    "prize",
+    "Binance"
+  ],
+  "aliases": [
+    "Final Batallas De Futuros",
+    "Final Batallas de Futuros",
+    "Premio de 220$",
+    "Premio De 220$"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Victoria",
+    "@Jimmy",
+    "@JeanCarlos",
+    "@LomasGrande",
+    "@HongCarlos",
+    "@Giancarlos",
+    "@VictoriaBallenoro",
+    "@CarolC",
+    "@Aquino",
+    "@CarlosJiminos",
+    "@AlessandraGanon",
+    "@Chopinal",
+    "@CarlosLaCatemo",
+    "@Jacob",
+    "@MegaBallet"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

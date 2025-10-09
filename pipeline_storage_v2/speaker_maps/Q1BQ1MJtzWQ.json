@@ -1,0 +1,20 @@
+{
+  "video_id": "Q1BQ1MJtzWQ",
+  "title": "2019-08-25_Q1BQ1MJtzWQ_#Binance Podcast Episode 17 - A Talk with Ed Tolson on High-Frequency Cryptoasset Trading",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Ed Tolson",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

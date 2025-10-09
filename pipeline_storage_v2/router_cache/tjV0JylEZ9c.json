@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on trading strategies and blockchain industry insights featuring various influencers.",
+  "topic_summary": "Exploration of trading dynamics and influencer perspectives in the blockchain space, including mentions of Los Angeles and Yamama Beach [t=02:47].",
+  "router_tags": [
+    "trading",
+    "blockchain",
+    "influencers",
+    "finance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$SOL",
+    "@David",
+    "@VirginiaGavati",
+    "@Yanai",
+    "@Prasadruzia",
+    "@Abelia",
+    "@BarkiNasrida",
+    "@Pierulina",
+    "@Vodro",
+    "@Quadrusia"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "description": "This video explains the concept of stop-limit orders and how to place them on the Binance exchange.",
+  "topic_summary": "Learn about stop-limit orders and their application on Binance [t=0:40].",
+  "router_tags": [
+    "stop-limit",
+    "Binance",
+    "trading",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Stop-limit Emir",
+    "Stop Limit Order",
+    "Stop Limit"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

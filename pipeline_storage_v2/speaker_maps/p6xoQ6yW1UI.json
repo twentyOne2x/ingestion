@@ -1,0 +1,20 @@
+{
+  "video_id": "p6xoQ6yW1UI",
+  "title": "2019-10-15_p6xoQ6yW1UI_#Binance Podcast Episode 22 - Building Crypto Futures at Binance",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Aaron Gong",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

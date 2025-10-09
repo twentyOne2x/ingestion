@@ -1,0 +1,24 @@
+{
+  "description": "Binance Indonesia hosts a town hall discussing updates and developments from 2020, including the launch of new products and the BNB vault for optimizing returns on investments.",
+  "topic_summary": "The town hall features discussions on Binance's growth in 2020, product launches, and the significance of the BNB vault for users in decentralized finance [t=210.85].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "DeFi",
+    "BNB",
+    "Southeast Asia",
+    "Townhall"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Indonesia",
+    "BinanceYoutube",
+    "BNB Vault"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

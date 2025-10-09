@@ -1,0 +1,24 @@
+{
+  "description": "Join Binance for the Bitcoin Halving Party, featuring discussions on Bitcoin's significance, its halving process, and its impact on the financial ecosystem. The event includes panels with industry experts and an AMA session with Binance CEOs.",
+  "topic_summary": "The Bitcoin Halving Party covers the implications of Bitcoin halving for miners, the ecosystem, and the influence of COVID-19 on Bitcoin. It aims to educate viewers on Bitcoin's role in finance and the revolutionary aspects of cryptocurrency [t=291:73].",
+  "router_tags": [
+    "Bitcoin",
+    "Halving",
+    "Binance",
+    "Cryptocurrency",
+    "Finance",
+    "Mining"
+  ],
+  "aliases": [
+    "Bitcoin Halving Party",
+    "bitcoin halving party",
+    "Binance Halving Party",
+    "binance halving party"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

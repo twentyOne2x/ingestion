@@ -1,0 +1,24 @@
+{
+  "description": "Panel discussion featuring Leonardo Vera Mateo, Felix Fuertes, and Adrian Verde Mateo discussing the crypto market before summer, covering topics like Bitcoin, Ethereum, and blockchain technology.",
+  "topic_summary": "The panelists discuss the current state of the crypto market, emphasizing Bitcoin and Ethereum's roles, the importance of decentralized exchanges, and the future of blockchain technology [t=0:24].",
+  "router_tags": [
+    "Crypto",
+    "Bitcoin",
+    "Ethereum",
+    "Blockchain",
+    "Decentralized Exchange"
+  ],
+  "aliases": [
+    "binance crypto panel",
+    "Binance Crypto Panel",
+    "binance",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

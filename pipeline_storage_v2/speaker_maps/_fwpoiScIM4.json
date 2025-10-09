@@ -1,0 +1,20 @@
+{
+  "video_id": "_fwpoiScIM4",
+  "title": "2019-07-25__fwpoiScIM4_Binance Podcast Episode 13 - The Amazing Story of Trust Wallet",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Viktor Rochenko",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    }
+  }
+}

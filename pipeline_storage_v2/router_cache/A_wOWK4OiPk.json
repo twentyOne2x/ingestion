@@ -1,0 +1,19 @@
+{
+  "description": "Join the Binance community for a lucky draw featuring ecosystem logos.",
+  "topic_summary": "Lucky draw event showcasing Binance ecosystem logos [t=04:15].",
+  "router_tags": [
+    "Binance",
+    "Lucky Draw",
+    "Ecosystem Logos"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Binance Awards 2020 ceremony recognizing outstanding contributions from Binance Angels, including Tony Giuffe as Angel of the Year, Jorge for Content Master, Mire for Event Master, and Richie for Tech Warrior.",
+  "topic_summary": "The event highlights the achievements of Binance Angels, celebrating their hard work and dedication to the Binance community. Key moments include Tony Giuffe's acceptance speech [t=171.00], Jorge's gratitude for the Content Master award [t=242.11], Mire's passion for the Angel program [t=290.52], and Richie's support in the Binance Dex community [t=344.09].",
+  "router_tags": [
+    "Binance",
+    "Awards",
+    "Crypto",
+    "Community",
+    "Angels"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "Binance Angels",
+    "Tony Giuffe",
+    "Jorge",
+    "Mire",
+    "Richie"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@TonyGiuffe",
+    "@Jorge",
+    "@Mirei",
+    "@Richie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

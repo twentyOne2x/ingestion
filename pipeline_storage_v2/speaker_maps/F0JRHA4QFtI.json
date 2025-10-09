@@ -1,0 +1,20 @@
+{
+  "video_id": "F0JRHA4QFtI",
+  "title": "2019-05-31_F0JRHA4QFtI_#Binance Podcase Episode 4 - Enhancing Fan Engagement in Sports Through Tokenization",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Alex Dreyfus",
+      "role": "Guest",
+      "confidence": 0.7000000000000001,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on DeFi platforms including Mooniswap, 1inch, and Uniswap, covering topics like smart contracts, liquidity farming, and automated market makers.",
+  "topic_summary": "Exploration of decentralized finance (DeFi) concepts, smart contracts, and liquidity provision in platforms like Uniswap and 1inch [t=00:00].",
+  "router_tags": [
+    "DeFi",
+    "Mooniswap",
+    "1inch",
+    "Uniswap",
+    "smart contracts",
+    "liquidity farming"
+  ],
+  "aliases": [
+    "defi",
+    "defi platforms",
+    "decentralized finance",
+    "uniswap",
+    "mooniswap",
+    "1inch"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@anton",
+    "@riberta",
+    "@francisco",
+    "@slopica",
+    "@miniet",
+    "@bersha"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

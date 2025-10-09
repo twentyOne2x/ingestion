@@ -1,0 +1,23 @@
+{
+  "description": "Binance hosts an official meetup in Istanbul, Turkey, featuring discussions on cryptocurrency and project evaluations.",
+  "topic_summary": "The meetup includes insights from Sabb Sam, who shares his experiences since joining Binance five months ago [t=01:29].",
+  "router_tags": [
+    "Binance",
+    "Meetup",
+    "Istanbul",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "Sabb Sam",
+    "sabb sam"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@sabb_sam"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

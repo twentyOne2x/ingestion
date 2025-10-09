@@ -1,0 +1,21 @@
+{
+  "description": "Join the live stream for a chance to buy BTC at a 50% discount through a lucky draw.",
+  "topic_summary": "Live stream event featuring a lucky draw for purchasing BTC at a discounted rate [t=00:00].",
+  "router_tags": [
+    "BTC",
+    "Lucky Draw",
+    "Live Stream",
+    "Discount"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

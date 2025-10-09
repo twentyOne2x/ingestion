@@ -1,0 +1,22 @@
+{
+  "description": "Binance hosts an AMA with Ontology, discussing decentralized data exchange, blockchain consensus algorithms, and various educational workshops.",
+  "topic_summary": "The discussion covers decentralized data exchange frameworks, consensus algorithms like VBFT and DLT, and educational initiatives in blockchain technology [t=00:52].",
+  "router_tags": [
+    "Binance",
+    "Ontology",
+    "AMA",
+    "Blockchain",
+    "Decentralization"
+  ],
+  "aliases": [
+    "Binance AMA",
+    "Ontology AMA",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$ONT"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

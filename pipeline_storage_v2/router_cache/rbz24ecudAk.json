@@ -1,0 +1,21 @@
+{
+  "description": "Join the Binance Angel's Program to promote freedom of money and education across various countries.",
+  "topic_summary": "The video discusses the Binance Angel's Program and its mission to support financial freedom and education globally, mentioning countries like Brazil, Argentina, India, and many others [t=0:16].",
+  "router_tags": [
+    "Binance",
+    "Angel Program",
+    "Financial Freedom",
+    "Education"
+  ],
+  "aliases": [
+    "Binance Angels",
+    "binance angels",
+    "Binance angel's program",
+    "binance angel program"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

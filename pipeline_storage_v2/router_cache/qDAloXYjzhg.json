@@ -1,0 +1,20 @@
+{
+  "description": "This video provides a guide on how to enable hedge mode on Binance Futures, allowing users to manage their positions more effectively.",
+  "topic_summary": "Learn to enable hedge mode on Binance Futures for better position management [t=00:00].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Hedge Mode",
+    "Trading"
+  ],
+  "aliases": [
+    "Binance Guides",
+    "binance guides",
+    "BINANCE GUIDES"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

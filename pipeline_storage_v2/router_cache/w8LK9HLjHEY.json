@@ -1,0 +1,25 @@
+{
+  "description": "This masterclass covers trading strategies and technical analysis in cryptocurrency, focusing on platforms like Binance. Key topics include market dynamics, trading volume, and fundamental analysis.",
+  "topic_summary": "The session discusses technical analysis and trading strategies in cryptocurrency, emphasizing market behavior and trading volume [t=00:28]. It also touches on the importance of understanding price movements and market trends [t=18:38].",
+  "router_tags": [
+    "trading",
+    "technical analysis",
+    "cryptocurrency",
+    "Binance",
+    "market dynamics"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "@binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@JaviPerderi",
+    "@Mitchell",
+    "@Lynch",
+    "@DukanawaNushtam"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

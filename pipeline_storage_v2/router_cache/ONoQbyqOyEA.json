@@ -1,0 +1,27 @@
+{
+  "description": "Join Puriya as he discusses DeFi, yield farming, and liquidity pools, sharing insights from his experience in the crypto space and the evolution of decentralized finance.",
+  "topic_summary": "Puriya introduces himself and shares his background in crypto, discussing the rise of DeFi and its significance in solving previous financial issues. He highlights the excitement around DeFi in 2020 and its impact on the financial landscape [t=270:97].",
+  "router_tags": [
+    "DeFi",
+    "Yield Farming",
+    "Liquidity Pool",
+    "Cryptocurrency",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Puriya",
+    "Puriya",
+    "Puriya"
+  ],
+  "canonical_entities": [
+    "$DAI",
+    "$ETH",
+    "$BTC",
+    "$USDC",
+    "$USDT",
+    "@BinanceYoutube",
+    "@Steam"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

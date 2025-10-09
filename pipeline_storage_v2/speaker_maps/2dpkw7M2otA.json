@@ -1,0 +1,26 @@
+{
+  "video_id": "2dpkw7M2otA",
+  "title": "2020-11-06_2dpkw7M2otA_AMA BINANCE EN ESPANOL (OCTUBRE 2020)",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "C": {
+      "name": "Jorge Juan",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Sergio Lucero",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

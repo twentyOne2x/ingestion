@@ -1,0 +1,20 @@
+{
+  "video_id": "wKpvs1N08jU",
+  "title": "2019-07-11_wKpvs1N08jU_#Binance Podcast Episode 11 - Happenings from the Asian Blockchain Summit",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Nathaniel Popper",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

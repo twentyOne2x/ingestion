@@ -1,0 +1,26 @@
+{
+  "description": "Webinar discussing NFTs and cryptocurrency games in Spanish, featuring insights on Bitcoin and blockchain technology.",
+  "topic_summary": "Exploration of NFTs and crypto games, including discussions on Bitcoin and notable figures like William Shatner [t=41:10].",
+  "router_tags": [
+    "NFT",
+    "Crypto",
+    "Bitcoin",
+    "Blockchain",
+    "Webinar"
+  ],
+  "aliases": [
+    "Webinar En Espanol",
+    "NFT & Cripto Juegos",
+    "NFTs y Juegos Cripto"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@WilliamShatner",
+    "@Eos",
+    "@Disney",
+    "@Fiona",
+    "@Carol"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

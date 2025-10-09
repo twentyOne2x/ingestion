@@ -1,0 +1,24 @@
+{
+  "description": "Webinar discussing regulatory asymmetries in cryptoassets and blockchain in Latin America, featuring insights on the impact of regulations on the fintech sector and the evolving landscape of cryptocurrency.",
+  "topic_summary": "The session covers regulatory challenges in Latin America, particularly in Colombia, and the implications for the fintech industry and blockchain technology. Key discussions include the need for regulation, the role of crypto in the economy, and the importance of adapting to international standards [t=0:00 - t=60:00].",
+  "router_tags": [
+    "Binance",
+    "Webinar",
+    "Crypto",
+    "Blockchain",
+    "Regulation",
+    "Fintech",
+    "Latin America"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

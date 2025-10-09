@@ -1,0 +1,21 @@
+{
+  "description": "Discussion on trading strategies and market dynamics, featuring insights on risk management and trader psychology.",
+  "topic_summary": "Exploration of trading strategies, market maker roles, and risk management techniques in cryptocurrency trading [t=00:33]. Insights into trader behaviors and market conditions [t=27:41].",
+  "router_tags": [
+    "trading",
+    "cryptocurrency",
+    "risk management",
+    "market analysis"
+  ],
+  "aliases": [
+    "Binance Youtube",
+    "binance youtube",
+    "BINANCE YOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

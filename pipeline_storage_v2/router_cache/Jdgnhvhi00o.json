@@ -1,0 +1,23 @@
+{
+  "description": "Binance AMA discussing PIVX and its implications in the blockchain space, focusing on proof of stake and community engagement in Latin America.",
+  "topic_summary": "The discussion covers the significance of PIVX in blockchain technology, proof of stake mechanisms, and community involvement in Latin America, with references to various projects and platforms [t=0:00-0:00].",
+  "router_tags": [
+    "PIVX",
+    "Binance",
+    "Blockchain",
+    "Latin America",
+    "Proof of Stake"
+  ],
+  "aliases": [
+    "Binance AMA",
+    "binance ama",
+    "PIVX",
+    "pivx"
+  ],
+  "canonical_entities": [
+    "$PIVX",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Tina Baker Taylor from Binance UK interviews Apollyn Blandon, research manager at the Cambridge Center for Alternative Finance, discussing the evolution of Bitcoin mining and the Cambridge Bitcoin Electricity Consumption Index (CBCI) [t=2:56]. They explore the methodology behind the CBCI, its significance in understanding Bitcoin's electricity consumption, and the nuances of the mining debate [t=136:72].",
+  "topic_summary": "The discussion covers Bitcoin mining's history, the CBCI's methodology, and the contrasting views on Bitcoin's environmental impact [t=136:72].",
+  "router_tags": [
+    "Bitcoin",
+    "Mining",
+    "Electricity Consumption",
+    "Cryptocurrency",
+    "Research"
+  ],
+  "aliases": [
+    "Bitcoin Mining",
+    "btc mining",
+    "Cambridge Center for Alternative Finance",
+    "cbc index"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@ApollynBlandon",
+    "@TinaBakerTaylor"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

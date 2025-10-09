@@ -1,0 +1,23 @@
+{
+  "description": "Binance AMA session featuring community manager Mamatadi Dariusa Yemimo Ina discussing various topics related to Binance and the crypto ecosystem.",
+  "topic_summary": "Discussion on Binance's operations, community engagement, and the role of stablecoins in the crypto market [t=18:72]. Insights into the Binance ecosystem, including Binance Chain and Binance USD [t=1875:89].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "AMA",
+    "Stablecoins",
+    "Blockchain"
+  ],
+  "aliases": [
+    "Binance AMA",
+    "Binance Crypto Australia",
+    "Mamatadi Dariusa Yemimo Ina"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$SOL"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

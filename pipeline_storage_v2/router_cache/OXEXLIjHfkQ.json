@@ -1,0 +1,25 @@
+{
+  "description": "Webinar discussing how to buy cryptocurrencies using EUR and other currencies on Binance. Covers various topics including transfer methods, commission fees, and the Binance Smart Chain.",
+  "topic_summary": "Learn to purchase cryptocurrencies like Bitcoin and Ethereum using EUR and other currencies on Binance. The session includes insights on transfer processes and Binance Smart Chain features [t=00:00-01:00].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Ethereum",
+    "Finance",
+    "Webinar"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

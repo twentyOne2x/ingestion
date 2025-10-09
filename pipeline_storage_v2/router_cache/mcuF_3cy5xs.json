@@ -1,0 +1,29 @@
+{
+  "description": "Panel discussion on emerging applications for blockchain and crypto, featuring insights from industry leaders on digital wallets, stablecoins, and trade finance.",
+  "topic_summary": "The panel discusses the impact of blockchain technology on various sectors, including the introduction of digital wallets like Clip in KakaoTalk [t=177.16], the launch of a JPY backed stablecoin by GMOz.com [t=312.42], and innovative trade finance solutions by Standage [t=350.22].",
+  "router_tags": [
+    "Blockchain",
+    "Crypto",
+    "Stablecoin",
+    "Digital Wallet",
+    "Trade Finance"
+  ],
+  "aliases": [
+    "#BinanceTurns3",
+    "#binanceturns3",
+    "Binance Turns 3"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$JPY",
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@Kakao",
+    "@GMOInternetGroup",
+    "@Standage",
+    "@Vite"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

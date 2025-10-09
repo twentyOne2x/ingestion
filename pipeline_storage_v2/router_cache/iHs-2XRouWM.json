@@ -1,0 +1,32 @@
+{
+  "description": "In this fireside chat, Anthony Scaramucci and CZ discuss Bitcoin's market dynamics, institutional interest, and the psychological aspects of trading. They reflect on the bullish trends of 2020 and the importance of market corrections for establishing support levels.",
+  "topic_summary": "The discussion covers Bitcoin's price movements, market psychology, and the long-term outlook for cryptocurrency, emphasizing the significance of corrections in a healthy trading environment. [t=54:79] [t=239:52]",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto",
+    "Fireside Chat",
+    "Anthony Scaramucci",
+    "CZ",
+    "Binance"
+  ],
+  "aliases": [
+    "Anthony Scaramucci",
+    "CZ",
+    "SkyBridge",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube",
+    "$BTC",
+    "$8 Billion",
+    "$1 Trillion",
+    "$500 Billion",
+    "$100 Billion",
+    "$25 Million",
+    "$100 Million",
+    "$350 Million",
+    "$25,000"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

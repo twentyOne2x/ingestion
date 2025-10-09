@@ -1,0 +1,22 @@
+{
+  "description": "This video discusses the current state of the world, emphasizing the shift towards decentralized platforms and the role of Bitcoin in addressing global challenges. It highlights the importance of collaboration to push past societal tipping points and mentions Binance's investment in its smart chain ecosystem.",
+  "topic_summary": "The future is decentralized, with Bitcoin and blockchain technology reshaping financial systems and empowering individuals. The video calls for collective action to embrace this change and highlights Binance's commitment to fostering innovation in the crypto space [t=91:07].",
+  "router_tags": [
+    "Bitcoin",
+    "Blockchain",
+    "Decentralization",
+    "Binance",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance YouTube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

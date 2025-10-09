@@ -1,0 +1,29 @@
+{
+  "description": "Q&A session discussing Binance savings, crypto projects, and staking options.",
+  "topic_summary": "The session covers various topics including Binance savings products [t=172], Jakada blockchain [t=211], and crypto tokens [t=317]. It also touches on staking processes and user experiences [t=945].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Savings",
+    "Staking",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@AngelElioSilva",
+    "@Jakada",
+    "@JacquesVoltam",
+    "@MarcelinoPhilippe",
+    "@ManjiBankariaInternational",
+    "@SakinaBankaria",
+    "@AgradaCiu"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Live discussion featuring Binance and Toko Crypto, focusing on BIDR and the CUAN Battle 3.0 event.",
+  "topic_summary": "The event covers various topics including crypto trading, Binance services, and the role of local exchanges in Indonesia [t=1719.07].",
+  "router_tags": [
+    "Binance",
+    "Toko Crypto",
+    "Crypto",
+    "BIDR",
+    "CUAN Battle"
+  ],
+  "aliases": [
+    "binance",
+    "tokocrypto",
+    "BinanceYoutube",
+    "Toko Crypto"
+  ],
+  "canonical_entities": [
+    "$BIDR",
+    "@BinanceYoutube",
+    "@TokoCrypto"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

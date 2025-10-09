@@ -1,0 +1,24 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Jo speaks with Rick McDonnell, former Executive Secretary of the FATF and current Executive Director at ACAMS. They discuss the evolution of anti-money laundering efforts, the role of the FATF, and the importance of international cooperation in combating financial crime.",
+  "topic_summary": "Wee Jo interviews Rick McDonnell about his career in anti-money laundering, the establishment of the FATF, and its role in setting international standards for financial crime prevention [t=0:00-3:00]. They explore the organization's history, membership, and its impact on global financial regulations [t=190:00-308:00].",
+  "router_tags": [
+    "Binance",
+    "Financial Crime",
+    "Anti-Money Laundering",
+    "FATF",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@RickMcDonnell",
+    "@ACAMS"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "description": "In this Binance Meetup in Manila, Sam discusses the potential of blockchain technology and its applications. He emphasizes the importance of community engagement to improve the perception of the technology and highlights how individual applications can solve problems for users effectively.",
+  "topic_summary": "Sam shares insights on blockchain technology and its community impact, emphasizing user experience and the importance of addressing stigma around the technology. [t=0:16] [t=59:18] [t=101:77]",
+  "router_tags": [
+    "Blockchain",
+    "Binance",
+    "Technology",
+    "Community",
+    "User Experience"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

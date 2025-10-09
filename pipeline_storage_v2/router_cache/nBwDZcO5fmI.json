@@ -1,0 +1,27 @@
+{
+  "description": "In this episode of the Binance Podcast, Jill Ni from Binance Charity and Dorji Sun, CEO of Perlin, discuss the Global Ledger initiative aimed at enhancing environmental accountability through blockchain technology. They explore Dorji's journey from technology startups to the environmental sector, his experiences with carbon credits, and the evolution of decentralized finance.",
+  "topic_summary": "Jill Ni and Dorji Sun discuss the Global Ledger initiative and its potential to improve environmental accountability using blockchain technology. They reflect on the challenges of traditional carbon credit markets and the shift towards decentralized systems for social impact [t=240.46].",
+  "router_tags": [
+    "Blockchain",
+    "Environmental Accountability",
+    "Binance",
+    "Perlin",
+    "Global Ledger",
+    "Carbon Credits",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "binance charity",
+    "Binance Charity"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "@DorjiSun"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

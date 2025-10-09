@@ -1,0 +1,22 @@
+{
+  "description": "A sneak preview of Binance's centralized exchange, showcasing the creation and listing of a new token.",
+  "topic_summary": "Introduction to Binance's DEX and token creation demonstration [t=3:24]. The team presents a new token and its listing process on the exchange [t=55:63].",
+  "router_tags": [
+    "Binance",
+    "DEX",
+    "Token Creation",
+    "Crypto Exchange"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

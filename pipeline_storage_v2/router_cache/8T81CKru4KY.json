@@ -1,0 +1,33 @@
+{
+  "description": "Etienne from Binance Research discusses the November 2019 global markets overview, highlighting the performance of Monero and Cardano, Bitcoin's price fluctuations, and developments in DeFi and margin trading.",
+  "topic_summary": "In November 2019, Monero and Cardano were top performers despite price drops. Bitcoin fell from $9200 to $7600. DeFi saw new highs in ETH locked, while Maker launched multi-collateral DAI. New assets were listed on Binance, and margin trading expanded with IOTA and Tezos. Staking gained relevance with 12 supported assets.",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Market Review",
+    "DeFi",
+    "Margin Trading",
+    "Staking"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Binance",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$ADA",
+    "$XLM",
+    "$MATIC",
+    "$IOTA",
+    "$XMR",
+    "$SOL",
+    "@BinanceYoutube",
+    "@Etienne",
+    "@Brian"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

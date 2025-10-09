@@ -1,0 +1,24 @@
+{
+  "description": "A Spanish-language panel discussion featuring various crypto experts discussing topics related to Binance, finance, and cryptocurrency projects.",
+  "topic_summary": "Panel discussion on cryptocurrency, Binance, and finance projects featuring experts like Leonardo and Adrian. Key topics include staking, savings, and various crypto projects [t=0:01 - t=46:06].",
+  "router_tags": [
+    "Binance",
+    "Crypto",
+    "Finance",
+    "Panel Discussion",
+    "Spanish"
+  ],
+  "aliases": [
+    "binance & play",
+    "Binance & Play",
+    "binance panel",
+    "Binance Panel"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

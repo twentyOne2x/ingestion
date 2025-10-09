@@ -1,0 +1,26 @@
+{
+  "description": "Q&A session discussing stable coins and various projects, including insights on market trends and operational scenarios.",
+  "topic_summary": "The discussion covers stable coins [t=03:11], project insights [t=04:31], and operational scenarios [t=48:33].",
+  "router_tags": [
+    "Q&A",
+    "stable coins",
+    "Binance",
+    "crypto",
+    "market trends"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Eliza",
+    "@TopaganoNova",
+    "@KendoGibasho",
+    "@Shagoland",
+    "@AliKifoi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "In this Q&A session, the hosts discuss various trading strategies and market analysis techniques, focusing on resistance and support levels.",
+  "topic_summary": "The discussion covers trading strategies, including resistance and support analysis, with insights from hosts Damien, La Billy, and Maguire [t=01:48].",
+  "router_tags": [
+    "trading",
+    "Q&A",
+    "Binance",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@Damien",
+    "@LaBilly",
+    "@Maguire"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

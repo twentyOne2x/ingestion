@@ -1,0 +1,23 @@
+{
+  "description": "Binance Labs hosts an AMA discussing their incubation program and venture initiatives. Key speakers include Christy, Yele, and Tech, who share insights on supporting early-stage projects and the crypto ecosystem.",
+  "topic_summary": "In this AMA, Binance Labs representatives discuss their role in fostering the crypto ecosystem, including direct investments, an incubation program for early-stage projects, and a fellowship program for developers. [t=0:08] [t=22:96] [t=146:68]",
+  "router_tags": [
+    "Binance",
+    "AMA",
+    "Crypto",
+    "Incubation",
+    "Venture Capital"
+  ],
+  "aliases": [
+    "Binance Labs",
+    "binance labs",
+    "BinanceLABS",
+    "BinanceLabs"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

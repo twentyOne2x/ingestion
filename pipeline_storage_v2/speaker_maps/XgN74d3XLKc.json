@@ -1,0 +1,26 @@
+{
+  "video_id": "XgN74d3XLKc",
+  "title": "2020-10-15_XgN74d3XLKc_Binance Smart Chain AMA - $100M Accelerator Fund investments, DeFi, and more!",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "C": {
+      "name": "Wei Zhou",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    },
+    "A": {
+      "name": "Smart Chin",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

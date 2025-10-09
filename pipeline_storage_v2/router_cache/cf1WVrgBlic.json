@@ -1,0 +1,21 @@
+{
+  "description": "Binance has launched its homepage for Nigeria, enabling users to easily buy, sell, and trade Bitcoin and other digital currencies from anywhere.",
+  "topic_summary": "Launch of Binance Nigeria homepage allows users to trade Bitcoin easily [t=4:48]. Sign up and start trading on Binance [t=14:56]. Visit Binance ng for more information [t=17:20].",
+  "router_tags": [
+    "Binance",
+    "Nigeria",
+    "Bitcoin",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Nigeria",
+    "binance nigeria",
+    "BINANCE NIGERIA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

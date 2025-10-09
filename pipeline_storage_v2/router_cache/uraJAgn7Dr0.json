@@ -1,0 +1,22 @@
+{
+  "description": "The Binance Official Meetup in Manila featured discussions on centralized vs decentralized exchanges, with active audience participation and insights on the future of blockchain technology.",
+  "topic_summary": "The event highlighted various styles of decentralization and the balance Binance seeks to achieve in the industry. Attendees expressed enthusiasm for Binance's decentralized exchange (Dex) and showed a strong interest in learning more about blockchain.",
+  "router_tags": [
+    "Binance",
+    "blockchain",
+    "decentralization",
+    "meetup",
+    "Philippines"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

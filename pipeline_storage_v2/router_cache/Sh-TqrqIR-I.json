@@ -1,0 +1,26 @@
+{
+  "description": "Welcome to Day 2 of the Binance Africa 3-Day Crypto Trading Masterclass focused on DeFi. The session includes introductions from Binance team members and housekeeping rules for participants. Attendees are reminded to stay muted unless speaking and to use the Q&A function for questions. Certificates of participation will be awarded to the first 1,000 participants.",
+  "topic_summary": "Day 2 of the Binance Africa Masterclass covers crypto trading and DeFi, featuring introductions and guidelines for participants. [t=20:64] [t=104:02]",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "DeFi",
+    "Masterclass",
+    "Africa"
+  ],
+  "aliases": [
+    "binance",
+    "Binance Africa Masterclass",
+    "Binance Africa Three Day",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$USDT",
+    "$SOL",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

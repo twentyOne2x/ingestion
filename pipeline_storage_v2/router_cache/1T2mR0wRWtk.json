@@ -1,0 +1,24 @@
+{
+  "description": "Learn how to post a trade advertisement on Binance P2P to buy or sell cryptocurrencies at your preferred prices and payment methods. This guide covers the steps to set up your ad, including selecting the type, price, trading amount, payment methods, and remarks. Ensure you complete identity verification and two-factor authentication before posting your ad.",
+  "topic_summary": "This video provides a step-by-step guide on posting a trade advertisement on Binance P2P, covering the necessary preparations and settings for effective trading [t=3:12 - t=142:24].",
+  "router_tags": [
+    "Binance",
+    "P2P Trading",
+    "Cryptocurrency",
+    "Trade Advertisement",
+    "Fiat"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "Binance P2P",
+    "binance p2p"
+  ],
+  "canonical_entities": [
+    "$BINANCE",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

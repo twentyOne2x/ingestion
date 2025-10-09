@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on various crypto projects and market strategies, including insights on AADA token and exchange dynamics.",
+  "topic_summary": "Exploration of crypto project developments and market trends, with mentions of AADA token and exchange strategies [t=0:00-40:00].",
+  "router_tags": [
+    "crypto",
+    "AADA",
+    "Binance",
+    "exchange",
+    "market trends"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$AADA",
+    "@Facebook",
+    "@PinnaJones",
+    "@Banko",
+    "@Toddus"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

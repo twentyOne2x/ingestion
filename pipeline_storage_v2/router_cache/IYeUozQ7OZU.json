@@ -1,0 +1,29 @@
+{
+  "description": "Webinar discussing decentralized finance (DeFi) concepts, platforms, and protocols, featuring insights from various experts.",
+  "topic_summary": "The session covers the fundamentals of DeFi, including platforms like Compound and protocols for crypto token swaps. It highlights safety in DeFi, investment strategies, and the role of blockchain technology in decentralized finance [t=0:16].",
+  "router_tags": [
+    "DeFi",
+    "Decentralized Finance",
+    "Webinar",
+    "Binance",
+    "Crypto"
+  ],
+  "aliases": [
+    "defi",
+    "DeFi",
+    "Decentralized Finance",
+    "binance",
+    "BinanceYoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@Ellie",
+    "@Jacqueline",
+    "@Prabhu",
+    "@ManuelParaDanes",
+    "@ManuelGayador"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Q&A session discussing various topics related to cryptocurrency and trading strategies.",
+  "topic_summary": "Discussion includes insights on Bitcoin and trading strategies, with mentions of Santo Segindo and Vincent throughout the session [t=79.95][t=1811.16].",
+  "router_tags": [
+    "Q&A",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Trading"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@SantoSegindo",
+    "@Vincent",
+    "@Bonfika"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

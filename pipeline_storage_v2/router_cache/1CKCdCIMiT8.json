@@ -1,0 +1,31 @@
+{
+  "description": "Discussion on blockchain technology and smart contracts, featuring insights from various industry figures.",
+  "topic_summary": "Exploration of blockchain technology and smart contracts, including perspectives from Snuff Kratz and others, with mentions of Google and community engagement [t=00:49].",
+  "router_tags": [
+    "blockchain",
+    "smart contracts",
+    "crypto",
+    "technology",
+    "investment"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$SOL",
+    "@snuffkratz",
+    "@lucian",
+    "@nogajnai",
+    "@takotoshibori",
+    "@sakhanyan",
+    "@google",
+    "@kakita",
+    "@tolka",
+    "@pradashisalem",
+    "@nikashakilinachi"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

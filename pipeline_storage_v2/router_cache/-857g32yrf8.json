@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Binance Podcast, Spencer Dinwiddie, an NBA player for the Brooklyn Nets, discusses his journey into cryptocurrency and his innovative approach to tokenizing his salary. He shares insights on blockchain's impact on various industries and his personal experiences with investing in crypto.",
+  "topic_summary": "Spencer Dinwiddie talks about his background, his entry into cryptocurrency, and the significance of tokenization in sports salaries. He reflects on his investment journey and the evolution of his views on blockchain technology [t=0:96-285].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Tokenization",
+    "NBA",
+    "Spencer Dinwiddie",
+    "Blockchain"
+  ],
+  "aliases": [
+    "binance",
+    "spencer dinwiddie",
+    "Spencer Dinwiddie",
+    "Binance Podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BinanceYoutube",
+    "$1,000",
+    "$3 Million",
+    "@Kyrie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

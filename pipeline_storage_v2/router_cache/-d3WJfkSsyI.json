@@ -1,0 +1,35 @@
+{
+  "description": "Panel discussion on the impact of COVID-19 on cryptocurrency adoption, featuring insights on macroeconomics, Bitcoin, and altcoins.",
+  "topic_summary": "The panel discusses the correlation between COVID-19 case growth and cryptocurrency adoption, emphasizing the shift in market dynamics and the rise of altcoins during the pandemic [t=43:03].",
+  "router_tags": [
+    "COVID-19",
+    "Cryptocurrency",
+    "Bitcoin",
+    "Altcoins",
+    "Adoption",
+    "Panel Discussion"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@Binance",
+    "@Catherine",
+    "@Kyle",
+    "@Nicholas",
+    "@Messari",
+    "@Coinbase",
+    "@Huobi",
+    "@Livepeer",
+    "@Arweave",
+    "@Reddit",
+    "@Ledger"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

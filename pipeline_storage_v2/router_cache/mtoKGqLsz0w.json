@@ -1,0 +1,20 @@
+{
+  "description": "Celebrating Binance's third anniversary with a focus on community and collaboration.",
+  "topic_summary": "Binance marks its third anniversary, emphasizing teamwork and shared progress [t=01:15].",
+  "router_tags": [
+    "Binance",
+    "Anniversary",
+    "Community",
+    "Collaboration"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance YouTube"
+  ],
+  "canonical_entities": [
+    "@Binance"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

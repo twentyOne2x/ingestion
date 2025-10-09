@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Helen Hai hosts Alex Dong and Tom Tapscott to discuss how blockchain technology can aid in combating the COVID-19 pandemic. They explore the importance of data management in healthcare, the role of blockchain in supply chains, and the potential for self-sovereign identities to enhance privacy while providing valuable data for public health.",
+  "topic_summary": "The podcast covers the application of blockchain in fighting pandemics, focusing on data management, supply chain improvements, and privacy concerns related to health information. Key insights include the need for a unified data approach and the potential for blockchain to modernize outdated systems [t=60:09].",
+  "router_tags": [
+    "Blockchain",
+    "COVID-19",
+    "Data Management",
+    "Supply Chain",
+    "Healthcare"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "BINANCE PODCAST"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@HelenHai",
+    "@AlexDong",
+    "@TomTapscott"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,27 @@
+{
+  "description": "Discussion on cryptocurrency and stock investment strategies, featuring insights from Mas Duglastan and others. Topics include portfolio management, market trends, and the role of Bitcoin in investment diversification.",
+  "topic_summary": "Exploration of cryptocurrency and stock market dynamics, focusing on Bitcoin's influence and investment strategies [t=0:00 - t=47:00].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Investment",
+    "Bitcoin",
+    "Stocks",
+    "Finance"
+  ],
+  "aliases": [
+    "Crypto-Aset Digital",
+    "Crypto-Aset",
+    "Digital Aset",
+    "Crypto Asset"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Google",
+    "@BinanceYoutube",
+    "$USDT",
+    "$TSLA",
+    "@SwissNationalBank"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

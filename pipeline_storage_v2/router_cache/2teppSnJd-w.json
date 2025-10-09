@@ -1,0 +1,20 @@
+{
+  "description": "Q&A session discussing trading strategies, liquidation prices, and technical analysis on Binance.",
+  "topic_summary": "The session covers various trading concepts including target prices, liquidation prices, and technical analysis with references to specific graphs and trading modes [t=0:24].",
+  "router_tags": [
+    "trading",
+    "Binance",
+    "Q&A",
+    "technical analysis"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "@binanceyoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

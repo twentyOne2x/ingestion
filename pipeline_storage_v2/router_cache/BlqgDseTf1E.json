@@ -1,0 +1,23 @@
+{
+  "description": "In this episode, Bitcoin bull Thomas Lee discusses Wall Street's fear of missing out (FOMO) regarding cryptocurrency investments. He shares insights on market trends and the influence of major financial institutions on Bitcoin's adoption.",
+  "topic_summary": "Thomas Lee explores Wall Street's FOMO towards Bitcoin and its implications for the cryptocurrency market [t=00:28].",
+  "router_tags": [
+    "Bitcoin",
+    "Wall Street",
+    "FOMO",
+    "Cryptocurrency",
+    "Thomas Lee"
+  ],
+  "aliases": [
+    "binance podcast",
+    "Binance Podcast",
+    "Thomas Lee Interview",
+    "thomas lee podcast"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

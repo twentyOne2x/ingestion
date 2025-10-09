@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on trading strategies, risk management, and the role of various traders in the cryptocurrency market.",
+  "topic_summary": "Explores trading principles and risk management in cryptocurrency, referencing notable figures like Peter Lynch and Warren Buffett. Discusses trading techniques and the impact of market manipulation [t=00:00-00:34].",
+  "router_tags": [
+    "trading",
+    "cryptocurrency",
+    "risk management",
+    "Bitcoin",
+    "investing"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@PeterLynch",
+    "@WarrenBuffett"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

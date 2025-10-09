@@ -1,0 +1,20 @@
+{
+  "description": "A comprehensive guide on trading BNB memecoins, including personal strategies and insights.",
+  "topic_summary": "Explores trading strategies for BNB memecoins, discussing various tokens and market dynamics [t=01:51]. Addresses issues related to token security and market behavior [t=11:30].",
+  "router_tags": [
+    "BNB",
+    "memecoins",
+    "trading strategy",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "How to Trade BNB Memecoins",
+    "BNB Memecoins Guide",
+    "BNB Trading Strategy"
+  ],
+  "canonical_entities": [
+    "$BNB"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

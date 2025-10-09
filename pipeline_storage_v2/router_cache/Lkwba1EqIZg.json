@@ -1,0 +1,31 @@
+{
+  "description": "Join Aaron Gong, Vice President of Binance Futures, as he hosts an AMA with Lex, founder of Moonbot, discussing the Binance Futures Trading Tournament and insights into trading strategies.",
+  "topic_summary": "In this AMA, Aaron Gong interviews Lex about his trading journey, the Binance Futures tournament, and the importance of volatility in trading various cryptocurrencies like BTC, ETH, and LINK. Lex shares his experiences and strategies as a full-time trader [t=1:76] to [t=335:90].",
+  "router_tags": [
+    "Binance",
+    "Futures",
+    "Trading",
+    "Cryptocurrency",
+    "AMA",
+    "Moonbot",
+    "Lex"
+  ],
+  "aliases": [
+    "Lex",
+    "moontrader",
+    "Moon Trader",
+    "Aaron Gong",
+    "binance",
+    "Binance Futures"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$LINK",
+    "$BNB",
+    "@BinanceYoutube",
+    "@Lex"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

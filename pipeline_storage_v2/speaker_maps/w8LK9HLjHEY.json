@@ -1,0 +1,20 @@
+{
+  "video_id": "w8LK9HLjHEY",
+  "title": "2021-01-30_w8LK9HLjHEY_Como fazer TRADES E ANALISE TECNICA com Escola Cripto e Caio Investe - Binance Masterclass #04",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Javi Perderi",
+      "role": "Guest",
+      "confidence": 0.62,
+      "source": "tier1|title"
+    }
+  }
+}

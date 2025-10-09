@@ -1,0 +1,29 @@
+{
+  "description": "Discussion on the mining industry, Bitcoin's role, and technological advancements in blockchain and renewable energy.",
+  "topic_summary": "Exploration of Bitcoin mining, industry challenges, and innovations in blockchain technology [t=27:73].",
+  "router_tags": [
+    "Bitcoin",
+    "Mining",
+    "Blockchain",
+    "Renewable Energy",
+    "Crypto Adoption"
+  ],
+  "aliases": [
+    "@binanceyoutube",
+    "@BinanceYoutube",
+    "Binance Youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Kalistra",
+    "@Picaki",
+    "@Katori",
+    "@Katorani",
+    "@BlueRushTech",
+    "@HadimaYahitz",
+    "@PrahashdiniKashda",
+    "@TolkanaSamuraTotamSA"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

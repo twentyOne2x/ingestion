@@ -1,0 +1,23 @@
+{
+  "description": "The Binance DEX development team presents a preview of their decentralized exchange, showcasing a new trading interface, wallet creation, and blockchain explorer functionalities.",
+  "topic_summary": "Overview of Binance DEX features including wallet setup, trading interface, and blockchain explorer [t=0:24].",
+  "router_tags": [
+    "Binance",
+    "DEX",
+    "Decentralized Exchange",
+    "Blockchain",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "binance",
+    "Binance DEX",
+    "Binance Dex",
+    "binance dex"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

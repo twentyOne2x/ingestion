@@ -1,0 +1,25 @@
+{
+  "description": "Webinar featuring Binance Vietnam and Binance OTC, discussing the local cryptocurrency market and services available in Southeast Asia.",
+  "topic_summary": "This session includes insights from Anita Vixia and Nuni Mamiko, focusing on Binance's operations in Vietnam and the broader Southeast Asian market. The discussion is conducted in Vietnamese [t=26:92].",
+  "router_tags": [
+    "Binance",
+    "Vietnam",
+    "OTC",
+    "Southeast Asia",
+    "cryptocurrency"
+  ],
+  "aliases": [
+    "Binance Vietnam",
+    "binance vietnam",
+    "Anita Vixia",
+    "anita vixia",
+    "Nuni Mamiko",
+    "nuni mamiko"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

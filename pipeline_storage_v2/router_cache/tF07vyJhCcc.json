@@ -1,0 +1,33 @@
+{
+  "description": "Join Dami Odufo from Binance as she hosts the first My Crypto Life webinar, featuring everyday crypto users sharing their unique stories and experiences. Learn tips on buying, trading, and saving crypto, and discover how to earn passive income with Binance products.",
+  "topic_summary": "In this webinar, participants share their journeys into cryptocurrency, discussing challenges and successes. Dami Odufo introduces guests who provide insights into trading and earning through crypto, including a workshop on passive income strategies [t=36:31].",
+  "router_tags": [
+    "Binance",
+    "Cryptocurrency",
+    "Webinar",
+    "Trading",
+    "Passive Income"
+  ],
+  "aliases": [
+    "MyCryptoLife",
+    "mycryptolife",
+    "BinanceYoutube",
+    "binanceyoutube"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$USDT",
+    "$BUSD",
+    "$BTC",
+    "$DAI",
+    "$ETH",
+    "$SOL",
+    "@DamiOdufo",
+    "@BinanceYoutube",
+    "@Michael",
+    "@Jason",
+    "@Annie"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

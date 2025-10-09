@@ -1,0 +1,22 @@
+{
+  "description": "Binance Africa reflects on its growth in 2020, highlighting community support and educational initiatives in cryptocurrency.",
+  "topic_summary": "In 2020, Binance Africa experienced significant growth, educating over 50,000 Africans on cryptocurrency basics and trading. The focus is on addressing the unbanked population in Sub Saharan Africa with innovative solutions like Bitcoin. [t=75:88]",
+  "router_tags": [
+    "Binance",
+    "Africa",
+    "Cryptocurrency",
+    "Education",
+    "Unbanked"
+  ],
+  "aliases": [
+    "binance africa",
+    "Binance Africa",
+    "BINANCE AFRICA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Join Trader Cobb and Binance Australia for an online masterclass covering cryptocurrency trading strategies and insights. Engage with industry leaders and ask questions throughout the session.",
+  "topic_summary": "In this masterclass, Trader Cobb introduces himself and discusses the agenda while welcoming participants. The session includes interaction with Binance Australia CEO Jeff and addresses technical issues with the live stream. Participants are encouraged to ask questions and stay for a giveaway announcement [t=158:95].",
+  "router_tags": [
+    "Binance",
+    "Trader Cobb",
+    "Cryptocurrency",
+    "Online Masterclass",
+    "Finance Australia"
+  ],
+  "aliases": [
+    "Trader Cobb",
+    "trader cobb",
+    "TRADER COBB",
+    "Binance Australia",
+    "binance australia",
+    "BINANCE AUSTRALIA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube",
+    "@TraderCobb"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

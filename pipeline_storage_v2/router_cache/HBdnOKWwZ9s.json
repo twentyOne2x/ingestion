@@ -1,0 +1,25 @@
+{
+  "description": "Discussion on cryptocurrency trading in Argentina, Colombia, and Venezuela, focusing on Bitcoin and local trading conditions.",
+  "topic_summary": "Exploration of crypto trading dynamics in Latin America, particularly in Argentina, with mentions of various local conditions and trading entities [t=00:53].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Bitcoin",
+    "Argentina",
+    "P2P Trading",
+    "Latin America"
+  ],
+  "aliases": [
+    "Binance P2P",
+    "binance p2p",
+    "Binance Argentina",
+    "binance argentina"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@SiennaPorto",
+    "@CoraCommission"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

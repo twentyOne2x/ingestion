@@ -1,0 +1,21 @@
+{
+  "description": "Webinar discussing how to declare cryptocurrencies for tax purposes in Brazil, featuring insights from various experts.",
+  "topic_summary": "The webinar covers blockchain technology, trading strategies, and tax implications for cryptocurrency investments, emphasizing the importance of understanding market dynamics and trading tools [t=00:26].",
+  "router_tags": [
+    "cryptocurrency",
+    "tax",
+    "webinar",
+    "Binance",
+    "blockchain"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Binance webinar discussing stablecoins, their mechanisms, and usage in the crypto market.",
+  "topic_summary": "An overview of stablecoins, including their definitions and applications in the cryptocurrency ecosystem. The discussion covers various types of stablecoins and their significance in maintaining value stability [t=10:56].",
+  "router_tags": [
+    "stablecoins",
+    "cryptocurrency",
+    "Binance",
+    "webinar"
+  ],
+  "aliases": [
+    "Stablecoins",
+    "stableCoins",
+    "STABLECOINS"
+  ],
+  "canonical_entities": [
+    "$STABLECO",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.0
+}

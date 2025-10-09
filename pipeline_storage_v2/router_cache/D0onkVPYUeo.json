@@ -1,0 +1,28 @@
+{
+  "description": "Join the Binance masterclass to learn how to become a profitable crypto trader. The session features insights from Binance's PR lead for Africa, Dami, and business development lead for Nigeria, Emmanuel, along with other experts.",
+  "topic_summary": "The Binance masterclass covers strategies for profitable crypto trading, featuring discussions and insights from industry experts. [t=59:64]",
+  "router_tags": [
+    "Crypto Trading",
+    "Binance",
+    "Masterclass",
+    "Africa",
+    "Bitcoin",
+    "BNB"
+  ],
+  "aliases": [
+    "binance",
+    "Binance",
+    "BINANCE",
+    "Dami",
+    "Emmanuel"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@Dami",
+    "@Emmanuel"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

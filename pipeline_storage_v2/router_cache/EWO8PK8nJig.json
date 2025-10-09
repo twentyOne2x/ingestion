@@ -1,0 +1,28 @@
+{
+  "description": "Wei Zhou and Sam Bankman-Fried discuss secondary market issues and solutions at Binance Blockchain Week. They explore the impact of leverage in trading and the resulting liquidations that can lead to market downturns.",
+  "topic_summary": "The conversation covers the challenges of liquidity in cryptocurrency markets, the effects of leveraged trading, and the design flaws in futures contracts that contribute to market volatility. They emphasize the need for better systems to manage these risks and improve market stability. [t=206.35]",
+  "router_tags": [
+    "Binance",
+    "Alameda Research",
+    "cryptocurrency",
+    "liquidity",
+    "trading",
+    "futures contracts",
+    "market volatility"
+  ],
+  "aliases": [
+    "Wei Zhou",
+    "Sam Bankman-Fried",
+    "wei zhao",
+    "sam",
+    "binance"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@sam",
+    "@wei"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

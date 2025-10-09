@@ -1,0 +1,20 @@
+{
+  "description": "Discussion on Binance's role in the future of finance, focusing on developments in Vietnam as of January 2019.",
+  "topic_summary": "Exploration of Binance's impact on the financial landscape in Vietnam, highlighting key trends and innovations [t=01:36].",
+  "router_tags": [
+    "Binance",
+    "Finance",
+    "Vietnam",
+    "Cryptocurrency"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

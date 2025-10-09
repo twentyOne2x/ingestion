@@ -1,0 +1,23 @@
+{
+  "description": "The video features a discussion about Bitcoin mining and the importance of education in cryptocurrency, highlighting Binance Academy as a key resource. Participants share their experiences and opinions on mining and the accessibility of Bitcoin.",
+  "topic_summary": "Discussion on Bitcoin mining experiences and the significance of Binance Academy for cryptocurrency education [t=20:00 - t=320:00].",
+  "router_tags": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "Binance",
+    "Mining",
+    "Education"
+  ],
+  "aliases": [
+    "BinanceYoutube",
+    "binanceyoutube",
+    "Binance YouTube",
+    "BINANCEYOUTUBE"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@Binance"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Joe welcomes Atsu Davo, founder of Bitseeka, discussing the impact of blockchain on various industries and the entrepreneurial landscape in Africa. Atsu shares his background, experiences in Ghana, and insights on building a cash app for Africa, emphasizing the importance of following demand over supply.",
+  "topic_summary": "Wee Joe interviews Atsu Davo about Bitseeka, blockchain's influence on industries, and entrepreneurial opportunities in Africa [t=0:00-3:84]. Atsu discusses his journey from Ghana to the tech space, highlighting his education and experiences [t=62:17-270:17].",
+  "router_tags": [
+    "Binance",
+    "Blockchain",
+    "Entrepreneurship",
+    "Africa",
+    "Bitseeka",
+    "Podcast"
+  ],
+  "aliases": [
+    "Atsu Davo",
+    "Atsu Davoh",
+    "Achu Davo",
+    "Wee Joe",
+    "Jack Dorsey"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$BNB",
+    "@BinanceYoutube",
+    "@JackDorsey",
+    "@AtsuDavo"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

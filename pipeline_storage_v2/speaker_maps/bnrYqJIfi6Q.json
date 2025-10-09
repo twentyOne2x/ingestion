@@ -1,0 +1,20 @@
+{
+  "video_id": "bnrYqJIfi6Q",
+  "title": "2020-08-11_bnrYqJIfi6Q_Binance Awards 2020:  Binance   ()",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "B",
+  "speaker_map": {
+    "A": {
+      "name": "Tony Giuffe",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "B": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    }
+  }
+}

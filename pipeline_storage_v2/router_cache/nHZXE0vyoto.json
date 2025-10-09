@@ -1,0 +1,26 @@
+{
+  "description": "Discussion on the current state of the market, the impact of COVID-19, and the rise of decentralized finance. The panel highlights the importance of blockchain technology and the investment from global institutions in cryptocurrencies.",
+  "topic_summary": "The panel discusses the cyclical nature of the market, the challenges posed by COVID-19, and the shift towards decentralized platforms. They emphasize the potential of Bitcoin and blockchain to solve global issues and the recent $100 million fund for the Binance Smart Chain ecosystem [t=73:65].",
+  "router_tags": [
+    "Binance",
+    "Bitcoin",
+    "Cryptocurrency",
+    "Blockchain",
+    "Decentralized Finance"
+  ],
+  "aliases": [
+    "@BinanceYoutube",
+    "Binance Youtube",
+    "binance youtube"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "$SOL",
+    "@MichaelSaylor",
+    "@AnthonyPompliano",
+    "@MelvinCapital"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

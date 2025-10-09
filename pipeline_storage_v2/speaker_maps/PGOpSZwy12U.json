@@ -1,0 +1,26 @@
+{
+  "video_id": "PGOpSZwy12U",
+  "title": "2020-07-28_PGOpSZwy12U_#BinanceTurns3 Awards - Europe Influencer and Launchpad Project of the Year 2020",
+  "channel_name": "@BinanceYoutube",
+  "speaker_primary": "A",
+  "speaker_map": {
+    "A": {
+      "name": "@BinanceYoutube",
+      "role": "Host",
+      "confidence": 0.7,
+      "source": "tier1"
+    },
+    "B": {
+      "name": "Kava Elrond",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    },
+    "D": {
+      "name": "Brian Kerr",
+      "role": "Guest",
+      "confidence": 0.7,
+      "source": "tier1|title"
+    }
+  }
+}

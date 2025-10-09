@@ -1,0 +1,23 @@
+{
+  "description": "Discussion on decentralized media protocols, blockchain applications, and the Near Protocol's role in the open web ecosystem. Covers topics like NFT marketplaces, governance, and smart contract platforms.",
+  "topic_summary": "Exploration of decentralized protocols and blockchain technology, focusing on Near Protocol and its applications in media and governance [t=00:30].",
+  "router_tags": [
+    "blockchain",
+    "decentralization",
+    "Near Protocol",
+    "NFT",
+    "smart contracts",
+    "open web"
+  ],
+  "aliases": [
+    "Near Protocol",
+    "near protocol",
+    "NEAR PROTOCOL"
+  ],
+  "canonical_entities": [
+    "$ETH",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

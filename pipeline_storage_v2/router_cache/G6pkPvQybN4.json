@@ -1,0 +1,23 @@
+{
+  "description": "Tina Baker Taylor and Josh Goodbuddy discuss Binance's growth strategy in the UK, emphasizing local market engagement and the launch of new products like the Binance card. They express excitement about their plans and the importance of understanding local needs.",
+  "topic_summary": "Binance's UK growth strategy and local market engagement [t=10:48]. Discussion on the Binance card and product development [t=240:44].",
+  "router_tags": [
+    "Binance",
+    "UK",
+    "Growth Strategy",
+    "Cryptocurrency",
+    "Local Market"
+  ],
+  "aliases": [
+    "binance",
+    "Binance UK",
+    "Josh Goodbuddy",
+    "Tina Baker Taylor"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

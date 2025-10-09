@@ -1,0 +1,25 @@
+{
+  "description": "In this episode of the Binance Podcast, host Wee Jo welcomes Sandeep Nailwal, CEO and co-founder of Matic Network. They discuss Matic's journey, its recent mainnet launch, and the impact of blockchain technology in India. Sandeep shares his background in tech and how he transitioned into the blockchain space, emphasizing the scalability of Ethereum transactions and the importance of infrastructure in blockchain development.",
+  "topic_summary": "Wee Jo interviews Sandeep Nailwal about Matic Network's growth, its launch on Binance Launchpad, and the significance of blockchain in transforming industries, particularly in India. The conversation highlights Sandeep's journey into blockchain and the technological advancements Matic aims to achieve [t=55:94].",
+  "router_tags": [
+    "Binance",
+    "Matic Network",
+    "Blockchain",
+    "Ethereum",
+    "Cryptocurrency",
+    "India"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Matic Network",
+    "Sandeep Nailwal",
+    "Wee Jo"
+  ],
+  "canonical_entities": [
+    "$MATIC",
+    "@BinanceYoutube",
+    "@sandeepnailwal"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

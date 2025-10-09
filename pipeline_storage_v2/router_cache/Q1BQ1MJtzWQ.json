@@ -1,0 +1,25 @@
+{
+  "description": "In this episode, Wee Joe, the Chief Financial Officer of Binance, introduces Ed Tolson, founder of KBIT, a high-frequency trading firm focused on crypto and derivatives. Ed discusses his background in computer science from MIT and his 20 years in quantitative trading, emphasizing the evolution of high-frequency trading and its impact on equity markets.",
+  "topic_summary": "Wee Joe interviews Ed Tolson about high-frequency trading in crypto and equity markets, covering Ed's background, the evolution of trading strategies, and the role of technology in modern trading practices [t=0:00].",
+  "router_tags": [
+    "Binance",
+    "Crypto Trading",
+    "High-Frequency Trading",
+    "Ed Tolson",
+    "KBIT",
+    "Finance"
+  ],
+  "aliases": [
+    "binance",
+    "ed tolson",
+    "kbit",
+    "wee joe"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "@BinanceYoutube",
+    "@anatoly"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.5
+}

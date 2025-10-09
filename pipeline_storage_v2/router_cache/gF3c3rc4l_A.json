@@ -1,0 +1,22 @@
+{
+  "description": "Webinar discussing cryptocurrency trading for beginners, hosted by Binance Indonesia. Topics include trading strategies, market analysis, and platform features.",
+  "topic_summary": "Introduction to cryptocurrency trading, including technical and fundamental analysis, trading strategies, and platform usage [t=0:00-39:00]. Discussion on liquidity, market trends, and trading methods [t=7:00-50:00]. Overview of Binance Indonesia's services and community engagement [t=50:00-75:00].",
+  "router_tags": [
+    "Cryptocurrency",
+    "Trading",
+    "Binance",
+    "Webinar",
+    "Education"
+  ],
+  "aliases": [
+    "binance indonesia",
+    "Binance Indonesia",
+    "BINANCE INDONESIA"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "@BinanceYoutube"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Leslie from Binance Trading discusses the Q2 crypto correlations, highlighting a 139% market increase and the 'Binance effect' on asset correlations. Key insights include Bitcoin's reduced correlation with altcoins and the behavior of proof of work versus proof of stake assets. The discussion also touches on the performance of specific coins like Dogecoin and Launchpad coins.",
+  "topic_summary": "Overview of Q2 2019 crypto correlations, market trends, and the impact of Binance listings on asset behavior. Notable trends include Bitcoin's performance compared to altcoins and the correlation dynamics among various cryptocurrencies.",
+  "router_tags": [
+    "Crypto Correlations",
+    "Binance",
+    "Market Analysis",
+    "Q2 2019",
+    "Bitcoin",
+    "Altcoins"
+  ],
+  "aliases": [
+    "Binance Podcast",
+    "Binance Mini Part",
+    "Leslie from Binance"
+  ],
+  "canonical_entities": [
+    "$BNB",
+    "$BTC",
+    "$ETH",
+    "$DOGE",
+    "$BSV",
+    "@BinanceYoutube",
+    "@BinanceResearch"
+  ],
+  "is_explainer": true,
+  "router_boost": 1.5
+}

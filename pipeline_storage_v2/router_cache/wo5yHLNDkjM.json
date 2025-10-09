@@ -1,0 +1,29 @@
+{
+  "description": "Rachel Rosalieri hosts a panel discussing user privacy and data protection in the blockchain industry, featuring insights from Brendan Eich (Brave), Peter DeMeo (IBM), and Harry Halpin (NIM Technologies). The panel addresses the privacy challenges within blockchain and explores innovative solutions from their respective projects.",
+  "topic_summary": "The panel focuses on maintaining user privacy and shielding user data in the blockchain ecosystem, highlighting the privacy issues faced and the approaches taken by different companies to enhance user confidentiality and security [t=62:28].",
+  "router_tags": [
+    "User Privacy",
+    "Blockchain",
+    "Data Protection",
+    "Cryptography",
+    "Privacy Solutions"
+  ],
+  "aliases": [
+    "Binance Turns 3",
+    "Binance Conference",
+    "Binance Off The Chart Conference"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@BrendanEich",
+    "@PeterDeMeo",
+    "@HarryHalpin",
+    "@BinanceYoutube",
+    "$IBM",
+    "$Brave",
+    "$NIM"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

@@ -1,0 +1,33 @@
+{
+  "description": "Discussion on the future of Bitcoin and opportunities in the crypto market with BitNada.",
+  "topic_summary": "Exploration of Bitcoin's potential and market opportunities, featuring insights from various influencers and discussions on Ethereum and other cryptocurrencies [t=0:24].",
+  "router_tags": [
+    "Bitcoin",
+    "Crypto",
+    "Ethereum",
+    "Market Opportunities",
+    "BitNada"
+  ],
+  "aliases": [
+    "Bitnada",
+    "bitnada",
+    "BITNADA"
+  ],
+  "canonical_entities": [
+    "$BTC",
+    "$ETH",
+    "@DanielFraga",
+    "@RafaelWilliam",
+    "@Cheek",
+    "@TrabalaShah",
+    "@Sakura",
+    "@Fascio",
+    "@Martin",
+    "@Fabian",
+    "@Sabiko",
+    "@Oprah",
+    "@Kiston"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}

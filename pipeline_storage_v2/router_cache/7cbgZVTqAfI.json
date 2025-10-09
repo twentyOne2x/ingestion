@@ -1,0 +1,21 @@
+{
+  "description": "AMA session discussing various topics including community engagement and staking.",
+  "topic_summary": "The AMA covers community challenges [t=01:20], staking options [t=10:51], and token swaps [t=13:26].",
+  "router_tags": [
+    "AMA",
+    "Harmony",
+    "Binance",
+    "Community",
+    "Staking"
+  ],
+  "aliases": [
+    "Ama With Harmony",
+    "ama with harmony",
+    "AMA with harmony"
+  ],
+  "canonical_entities": [
+    "@BinanceYoutube"
+  ],
+  "is_explainer": false,
+  "router_boost": 1.0
+}
