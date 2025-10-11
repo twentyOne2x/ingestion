@@ -31,6 +31,7 @@ def _iter_paths(root_dir: Path) -> List[Path]:
 def iter_youtube_assets_from_fs(
     root_dir: Path,
     prune_empty: bool = False,
+    allowed_channels: Optional[Iterable[str]] = None,
 ) -> Iterable[Tuple[Dict[str, Any], Dict[str, Any], Path]]:
     """
     Yield (meta, raw_for_segmenter, json_path) for each AssemblyAI diarized JSON.
@@ -38,6 +39,26 @@ def iter_youtube_assets_from_fs(
     paths = _iter_paths(root_dir)
     if not paths:
         return []
+
+    channel_filter: Optional[set[str]] = None
+    if allowed_channels:
+        channel_filter = {ch.strip() for ch in allowed_channels if ch and ch.strip()}
+        if channel_filter:
+            paths = [
+                path for path in paths
+                if extract_channel_from_path(path) in channel_filter
+            ]
+
+    total = len(paths)
+    if total == 0:
+        logging.info("[v2/entities] no AssemblyAI JSON files matched the requested channels.")
+        return []
+
+    logging.info(
+        "[v2/entities] scanning %d JSON file(s)%s",
+        total,
+        f" across {len(channel_filter)} channel(s)" if channel_filter else "",
+    )
 
     cpu = os.cpu_count() or 4
     workers_env = os.getenv("ENTITIES_WORKERS", "").strip()
@@ -93,7 +114,7 @@ def iter_youtube_assets_from_fs(
 
         cache_key = entities_cache_key(path, obj)
         cleaned_entities = postprocess_entities_with_cache(aai_entities_raw, cache_key)
-        logging.info("[v2/entities] vid=%s cleaned=%d sample=%s", video_id, len(cleaned_entities), cleaned_entities[:8])
+        logging.debug("[v2/entities] vid=%s cleaned=%d sample=%s", video_id, len(cleaned_entities), cleaned_entities[:8])
 
         meta = {
             "video_id": video_id,
@@ -124,8 +145,20 @@ def iter_youtube_assets_from_fs(
     with limiter.claim(workers, label="assets-entities"):
         with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
             futures = [pool.submit(_process_one, path) for path in paths]
+            processed = 0
+            log_every = max(1, total // 20)  # ~5% increments
             for future in concurrent.futures.as_completed(futures):
                 item = future.result()
                 if item is not None:
                     results.append(item)
+                processed += 1
+                if processed % log_every == 0 or processed == total:
+                    remaining = total - processed
+                    logging.info(
+                        "[v2/entities] progress %d/%d (%.1f%%) remaining=%d",
+                        processed,
+                        total,
+                        (processed / total) * 100.0,
+                        remaining,
+                    )
     return results

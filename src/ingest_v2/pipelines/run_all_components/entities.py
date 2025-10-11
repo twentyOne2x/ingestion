@@ -96,7 +96,7 @@ def load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, 
         if sidecar.exists():
             raw = fast_json_load(sidecar)
             entities = _normalize(raw)
-            logging.info("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(entities))
+            logging.debug("[v2/entities] using sidecar for %s (%d items)", content_path.name, len(entities))
             return entities
     except Exception as exc:
         logging.warning("[v2/entities] sidecar read failed %s: %s", sidecar, exc)
@@ -104,7 +104,7 @@ def load_entities_for_json_path(content_path: Path, obj: Any) -> List[Dict[str, 
     top_payload = obj.get("entities") if isinstance(obj, dict) else None
     entities = _normalize(top_payload)
     if entities:
-        logging.info("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(entities))
+        logging.debug("[v2/entities] using top-level 'entities' for %s (%d items)", content_path.name, len(entities))
     else:
-        logging.info("[v2/entities] no entities for %s", content_path.name)
+        logging.debug("[v2/entities] no entities for %s", content_path.name)
     return entities

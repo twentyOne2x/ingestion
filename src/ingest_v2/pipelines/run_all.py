@@ -129,7 +129,13 @@ def main():
     root = Path(args.root).expanduser().resolve()
     logging.info("[v2] scanning for AssemblyAI JSON under: %s (prune_empty=%s)", root, args.prune_empty)
 
-    assets = list(iter_youtube_assets_from_fs(root, prune_empty=args.prune_empty))
+    assets = list(
+        iter_youtube_assets_from_fs(
+            root,
+            prune_empty=args.prune_empty,
+            allowed_channels=args.include_channels,
+        )
+    )
     if not assets:
         logging.info("[v2] no youtube assets found; exiting.")
         return
