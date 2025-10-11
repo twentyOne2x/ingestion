@@ -31,6 +31,13 @@ def namespace_config(monkeypatch):
     return config
 
 
+@pytest.fixture(autouse=True)
+def stub_pubsub_verification(monkeypatch):
+    mock = Mock(return_value={})
+    monkeypatch.setattr("src.ingest_v2.cloud.diarization_indexer.service.verify_pubsub_push", mock)
+    return mock
+
+
 def get_app():
     from src.ingest_v2.cloud.diarization_indexer.service import app
 
