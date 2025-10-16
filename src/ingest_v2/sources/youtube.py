@@ -33,7 +33,7 @@ def build_parent_from_metadata(meta: Dict[str, Any]) -> ParentNode:
         chapters=meta.get("chapters"),
         rights=settings_v2.RIGHTS_DEFAULT,
         ingest_version=2,
-        source="youtube",
+        source=meta.get("source", "youtube"),
         source_hash=source_hash,
         router_tags=meta.get("router_tags"),
         aliases=meta.get("aliases"),

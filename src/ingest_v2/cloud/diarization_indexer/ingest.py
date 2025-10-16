@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Callable, Optional, Sequence, Set, Tuple
 
 from .gcs import read_json_from_gcs
+from .notifications import publish_ingestion_event
 
 LOG = logging.getLogger(__name__)
 
@@ -177,6 +178,7 @@ class DiarizationIngestService:
             for value in [room, coin_payload.get("mint"), coin_payload.get("symbol"), coin_payload.get("name"), context.video_id]:
                 if isinstance(value, str) and value:
                     candidate_names.add(value.casefold())
+            candidate_names.add("pumpfun")
         if allowed and allowed.isdisjoint({name for name in candidate_names if name}):
             LOG.info(
                 "Skipping video %s for namespace=%s channel=%s (not in %s)",
@@ -192,7 +194,40 @@ class DiarizationIngestService:
         meta.setdefault("video_id", context.video_id)
         meta.setdefault("channel_id", video_meta.channel_id)
         meta.setdefault("channel_name", channel_name)
-        self.ingest_pipeline(meta, raw_segments, event)
+        child_count = self.ingest_pipeline(meta, raw_segments, event) or 0
+
+        notification_payload = {
+            "video_id": context.video_id,
+            "channel_name": channel_name,
+            "title": meta.get("title"),
+            "namespace": self.namespace,
+            "source": context.source,
+            "segments_ingested": int(child_count),
+            "mp3_uri": getattr(event, "mp3_uri", None),
+            "diarized_uri": getattr(event, "diarized_uri", None),
+            "metadata_uri": getattr(event, "metadata_uri", None),
+            "router_tags": meta.get("router_tags"),
+        }
+        if context.source == "pumpfun":
+            notification_payload.update(
+                {
+                    "pumpfun_room": meta.get("pumpfun_room") or context.pumpfun_room,
+                    "pumpfun_clip_id": meta.get("pumpfun_clip_id") or context.pumpfun_clip,
+                    "pumpfun_coin_symbol": meta.get("pumpfun_coin_symbol"),
+                    "pumpfun_coin_name": meta.get("pumpfun_coin_name"),
+                }
+            )
+        try:
+            publish_ingestion_event(
+                notification_payload,
+                attributes={
+                    "source": "diarization-indexer",
+                    "namespace": self.namespace,
+                    "asset_source": context.source,
+                },
+            )
+        except Exception as exc:  # pragma: no cover - defensive against missing env locally
+            LOG.warning("Failed to enqueue ingestion notification for %s: %s", context.video_id, exc)
 
 
 def create_ingest_service(namespace: str, allowed_channels: Sequence[str]):
@@ -248,9 +283,17 @@ def create_ingest_service(namespace: str, allowed_channels: Sequence[str]):
                     "pumpfun_start_time": clip_payload.get("startTime"),
                 }
             )
+            router_tags = list(meta.get("router_tags") or [])
+            router_tags.append("pumpfun")
+            if context.pumpfun_room:
+                router_tags.append(f"pumpfun_room:{_slugify(context.pumpfun_room)}")
+            symbol = coin_payload.get("symbol")
+            if isinstance(symbol, str) and symbol:
+                router_tags.append(f"pumpfun_token:{_slugify(symbol)}")
+            meta["router_tags"] = list(dict.fromkeys(tag for tag in router_tags if tag))
         return meta, raw_segments
 
-    def ingest_pipeline(meta: dict, raw_segments: dict, event) -> None:
+    def ingest_pipeline(meta: dict, raw_segments: dict, event) -> int:
         parent = build_parent(meta)
         parent_dict = parent.model_dump(mode="json")
         parent_payload = dict(parent_dict, parent_id=parent.parent_id)
@@ -259,13 +302,14 @@ def create_ingest_service(namespace: str, allowed_channels: Sequence[str]):
         children = build_children_from_raw(parent_dict, raw_segments)
         if not children:
             LOG.info("No children produced for %s", meta["video_id"])
-            return
+            return 0
         upsert_children(children)
         LOG.info(
             "Ingested diarization-ready video=%s children=%d",
             meta["video_id"],
             len(children),
         )
+        return len(children)
 
     return DiarizationIngestService(
         namespace=namespace,

@@ -48,7 +48,7 @@ async def handle_pubsub_push(request: Request) -> Response:
         event = decode_pubsub_message(body, model=DiarizationReadyEvent)
     except ValueError as exc:
         LOG.warning("Invalid Pub/Sub payload: %s", exc)
-        raise HTTPException(status_code=400, detail="Invalid Pub/Sub payload") from exc
+        return Response(status_code=204)
 
     try:
         service = create_ingest_service(namespace, allowed_channels)
