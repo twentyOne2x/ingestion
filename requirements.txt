@@ -154,6 +154,7 @@ wrapt==1.17.3
 yarl==1.20.1
 pytest==8.3.4
 google-api-python-client==2.129.0
+google-cloud-pubsub==2.26.0
 google-cloud-storage==2.18.2
 google-auth==2.35.0
 google-auth-httplib2==0.2.0
