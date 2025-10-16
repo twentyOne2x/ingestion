@@ -34,9 +34,11 @@ class BaseEvent(BaseModel):
 class DiarizationReadyEvent(BaseEvent):
     mp3_uri: str = Field(min_length=1)
     diarized_uri: str = Field(min_length=1)
+    metadata_uri: Optional[str] = None
+    video_id: Optional[str] = None
     entities_uri: Optional[str] = None
 
-    @field_validator("mp3_uri", "diarized_uri", "entities_uri")
+    @field_validator("mp3_uri", "diarized_uri", "metadata_uri", "entities_uri")
     @classmethod
     def _validate_uri(cls, value: Optional[str]) -> Optional[str]:
         if value is None:
@@ -46,7 +48,6 @@ class DiarizationReadyEvent(BaseEvent):
         if value.startswith("file://") or value.startswith("/"):
             return value
         raise ValueError("Unsupported URI scheme")
-        return value
 
 
 def decode_pubsub_message(

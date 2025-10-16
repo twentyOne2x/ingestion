@@ -58,6 +58,8 @@ def test_endpoint_skips_unknown_namespace(monkeypatch):
         body={
             "mp3_uri": "gs://bucket/foo.mp3",
             "diarized_uri": "gs://bucket/bar.json",
+            "metadata_uri": "gs://bucket/meta.json",
+            "video_id": "video123",
             "entities_uri": None,
         },
     )
@@ -81,6 +83,8 @@ def test_endpoint_invokes_ingest_for_configured_namespace(monkeypatch):
         body={
             "mp3_uri": "gs://bucket/youtube_audio/2024-01-01_abc123/title.mp3",
             "diarized_uri": "gs://bucket/youtube_diarized/abc123/abc123_diarized.json",
+            "metadata_uri": "gs://bucket/youtube_diarized/abc123/abc123_metadata.json",
+            "video_id": "abc123",
             "entities_uri": "gs://bucket/youtube_diarized/abc123/abc123_entities.json",
         },
     )
