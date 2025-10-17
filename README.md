@@ -1,87 +1,214 @@
-# LLM Applications
+# Ingestion Platform Overview
 
-A comprehensive guide to building RAG-based LLM applications for production.
+This repository now powers the ingestion stack behind our Pinecone-backed search
+experience. It contains:
 
-- **Blog post**: https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1
-- **GitHub repository**: https://github.com/ray-project/llm-applications
-- **Interactive notebook**: https://github.com/ray-project/llm-applications/blob/main/notebooks/rag.ipynb
-- **Anyscale Endpoints**: https://endpoints.anyscale.com/
-- **Ray documentation**: https://docs.ray.io/
+- Cloud-run ingestion services that respond to diarization events and upsert
+  parent/child vectors into Pinecone.
+- Batch pipelines for backfills, data hygiene, and metadata enrichment.
+- Developer tooling for replaying events, running ingestion locally, and
+  validating Pinecone state.
 
-In this guide, we will learn how to:
+The original project started life as a tutorial for building generic RAG
+applications (see [Appendix A](#appendix-a---original-readme-snapshot)). This
+README captures the current expectations for users and contributors working on
+the ingestion system.
 
-- 💻 Develop a retrieval augmented generation (RAG) based LLM application from scratch.
-- 🚀 Scale the major components (load, chunk, embed, index, serve, etc.) in our application.
-- ✅ Evaluate different configurations of our application to optimize for both per-component (ex. retrieval_score) and overall performance (quality_score).
-- 🔀 Implement LLM hybrid routing approach to bridge the gap b/w OSS and closed LLMs.
-- 📦 Serve the application in a highly scalable and available manner.
-- 💥 Share the 1st order and 2nd order impacts LLM applications have had on our products.
+---
 
-<br>
-<img width="800" src="https://images.ctfassets.net/xjan103pcp94/7FWrvPPlIdz5fs8wQgxLFz/fdae368044275028f0544a3d252fcfe4/image15.png">
+## What You Get Out Of The Box
 
-## Setup
+- **Ingestion pipelines (`src/ingest_v2`)**
+  - `pipelines/run_all.py` – batch ingest AssemblyAI JSONs from disk with
+    dedupe, routing enrichment, and Pinecone upserts.
+  - `scripts/ingest_one.py` – targeted reingest for a single YouTube video.
+  - `cloud/diarization_indexer` – FastAPI service deployed on Cloud Run that
+    consumes Pub/Sub `diarization-ready` events.
+- **Metadata maintenance**
+  - `scripts/backfill_child_channel_metadata.py` extends child vectors with
+    parent channel/title/date metadata.
+  - Additional scripts audit namespace overlap, patch entities, or reconcile
+    routers.
+- **Configs and schema**
+  - Namespace definitions in `src/ingest_v2/configs/namespaces.json`.
+  - Pydantic models for parent/child payloads under `src/ingest_v2/schemas`.
+- **CI-friendly utilities**
+  - `scripts/run_diarization_ingest.py` to replay events from JSON.
+  - Test suite (`tests/`) covering diarization ingestion, segmentation, and
+    validators.
 
-### API keys
-We'll be using [OpenAI](https://platform.openai.com/docs/models/) to access ChatGPT models like `gpt-3.5-turbo`, `gpt-4`, etc. and [Anyscale Endpoints](https://endpoints.anyscale.com/) to access OSS LLMs like `Llama-2-70b`. Be sure to create your accounts for both and have your credentials ready.
+---
 
-### Compute
-<details>
-  <summary>Local</summary>
-  You could run this on your local laptop but a we highly recommend using a setup with access to GPUs. You can set this up on your own or on [Anyscale](http://anyscale.com/).
-</details>
+## Quick Start
 
-<details open>
-  <summary>Anyscale</summary><br>
-<ul>
-<li>Start a new <a href="https://console.anyscale-staging.com/o/anyscale-internal/workspaces">Anyscale workspace on staging</a> using an <a href="https://instances.vantage.sh/aws/ec2/g3.8xlarge"><code>g3.8xlarge</code></a> head node, which has 2 GPUs and 32 CPUs. We can also add GPU worker nodes to run the workloads faster. If you&#39;re not on Anyscale, you can configure a similar instance on your cloud.</li>
-<li>Use the <a href="https://docs.anyscale.com/reference/base-images/ray-262/py39#ray-2-6-2-py39"><code>default_cluster_env_2.6.2_py39</code></a> cluster environment.</li>
-<li>Use the <code>us-west-2</code> if you&#39;d like to use the artifacts in our shared storage (source docs, vector DB dumps, etc.).</li>
-</ul>
-
-</details>
-
-### Repository
-```bash
-git clone https://github.com/ray-project/llm-applications.git .
-git config --global user.name <GITHUB-USERNAME>
-git config --global user.email <EMAIL-ADDRESS>
-```
-
-### Data
-Our data is already ready at `/efs/shared_storage/goku/docs.ray.io/en/master/` (on Staging, `us-east-1`) but if you wanted to load it yourself, run this bash command (change `/desired/output/directory`, but make sure it's on the shared storage,
-so that it's accessible to the workers)
-```bash
-git clone https://github.com/ray-project/llm-applications.git .
-```
-
-### Environment
-
-Then set up the environment correctly by specifying the values in your `.env` file,
-and installing the dependencies:
+> Requires Python 3.10+, `pip`, and access to Pinecone/YouTube/OpenAI secrets.
 
 ```bash
-pip install --user -r requirements.txt
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env  # create if missing and populate secrets
 export PYTHONPATH=$PYTHONPATH:$PWD
-pre-commit install
-pre-commit autoupdate
 ```
 
-### Credentials
+Populate `.env` (or export variables) with at least:
+
 ```bash
-touch .env
-# Add environment variables to .env
-OPENAI_API_BASE="https://api.openai.com/v1"
-OPENAI_API_KEY=""  # https://platform.openai.com/account/api-keys
-ANYSCALE_API_BASE="https://api.endpoints.anyscale.com/v1"
-ANYSCALE_API_KEY=""  # https://app.endpoints.anyscale.com/credentials
-DB_CONNECTION_STRING="dbname=postgres user=postgres host=localhost password=postgres"
-source .env
+PINECONE_API_KEY=...
+PINECONE_INDEX_NAME=icmfyi-v2
+PINECONE_NAMESPACE=videos
+YOUTUBE_API_KEY=...
+OPENAI_API_KEY=...
 ```
 
-Now we're ready to go through the [rag.ipynb](notebooks/rag.ipynb) interactive notebook to develop and serve our LLM application!
+Run a batch ingest against local AssemblyAI JSONs:
 
-### Learn more
-- If your team is investing heavily in developing LLM applications, [reach out](mailto:endpoints-help@anyscale.com) to us to learn more about how [Ray](https://github.com/ray-project/ray) and [Anyscale](http://anyscale.com/) can help you scale and productionize everything.
-- Start serving (+fine-tuning) OSS LLMs with [Anyscale Endpoints](https://endpoints.anyscale.com/) ($1/M tokens for `Llama-2-70b`) and private endpoints available upon request (1M free tokens trial).
-- Learn more about how companies like OpenAI, Netflix, Pinterest, Verizon, Instacart and others leverage Ray and Anyscale for their AI workloads at the [Ray Summit 2023](https://raysummit.anyscale.com/) this Sept 18-20 in San Francisco.
+```bash
+python -m src.ingest_v2.pipelines.run_all \
+  --root /path/to/assemblyai/json \
+  --include-channels @SomeChannel \
+  --namespace videos
+```
+
+Replay a diarization event:
+
+```bash
+python scripts/run_diarization_ingest.py \
+  --namespace videos \
+  --event-file ./sample_events/diarization_ready.json
+```
+
+Backfill metadata for existing child nodes:
+
+```bash
+python -m src.ingest_v2.scripts.backfill_child_channel_metadata \
+  --namespace videos \
+  --index-name icmfyi-v2 \
+  --dry-run
+```
+
+---
+
+## Architecture & Operational Expectations
+
+### Event-driven ingestion (Cloud Run)
+
+- Service: `diarization-indexer` (FastAPI) in `src/ingest_v2/cloud/diarization_indexer`.
+- Trigger: Pub/Sub push on topic `diarization-ready` with payload
+  `DiarizationReadyEvent` (`schemas.py`).
+- Flow:
+  1. Verify bearer token (`pubsub.py`).
+  2. Load channel allow list for namespace (`service.py`).
+  3. Fetch YouTube metadata (`youtube.py`).
+  4. Fetch diarized JSON + optional entities (`gcs.py`).
+  5. Build parent and child payloads (`ingest.py`, `build_parents`, `build_children`).
+  6. Upsert into Pinecone (`upsert_parents`, `upsert_children`).
+- Env vars sourced from GCP secrets (see `gcloud run services describe` output for the latest revision).
+
+### Batch ingestion
+
+- `run_all.py` orchestrates:
+  - Asset discovery (`iter_youtube_assets_from_fs`).
+  - Deduping against Pinecone (`get_ingested_parent_ids`).
+  - Speaker resolution, router enrichment, and progress tracking.
+  - Parent upsert followed by child embedding/upsert.
+- Use `--skip-dedupe` when repairing missing parents with existing children.
+
+### Targeted reingest
+
+- `ingest_one.py` locates diarization artifacts in a local directory, optionally
+  re-runs speaker resolution, enriches router fields, and pushes parent/child
+  vectors.
+- Supports optional purge-before-upsert logic per video.
+
+### Metadata hygiene
+
+- `backfill_child_channel_metadata.py` now adds `channel_name`, `channel_id`,
+  `video_id`, and `published_at` to child vectors.
+- Similar scripts exist for entity canonicalisation and namespace audits.
+
+---
+
+## Configuration Reference
+
+| Setting | Source | Notes |
+| ------- | ------ | ----- |
+| `YT_NAMESPACE_CONFIG` | env / secret | Path or inline JSON describing channel allow lists. |
+| `PINECONE_*` | env / secret | Index name, namespace, API key, environment, etc. |
+| `YOUTUBE_API_KEY` | env / secret | Needed for video metadata lookups. |
+| `OPENAI_API_KEY` | env / secret | Provider for router enrichment embeddings. |
+| `EMBED_MODEL`, `EMBED_PROVIDER`, `EMBED_DIM` | env / secret | Configures embedding backend for child vectors. |
+| `PUBSUB_VERIFY_SIGNATURE` | env | Toggle signature verification in dev/test. |
+| `PIPELINE_STORAGE_ROOT` | env | Scratch space for intermediate files (Cloud Run). |
+
+Namespace-specific settings live in `src/ingest_v2/configs/namespaces.json` and
+can be overridden per environment.
+
+---
+
+## Developer Workflow
+
+1. **Environment** – Use the provided `requirements.txt`; running `pre-commit`
+   is encouraged.
+2. **Tests** – Execute `pytest tests/` (you can focus on
+   `tests/test_diarization_ingest_logic.py` for ingestion regressions).
+3. **Local event replay** – Use `scripts/run_diarization_ingest.py` with file
+   URIs (`file://...`) for `mp3_uri` and `diarized_uri`.
+4. **Backfill/repair** – Run scripts in `src/ingest_v2/scripts`. Many accept
+   `--dry-run` and `--parents` to scope their effect.
+5. **Cloud Run deployment** – Build the container defined in
+   `us-central1-docker.pkg.dev/just-skyline-474622-e1/ingestion/diarization-indexer`.
+   Deployment is currently managed via `gcloud run deploy`.
+
+---
+
+## Troubleshooting & Observability
+
+- **Cloud Run logs** – `gcloud logging read 'resource.type="cloud_run_revision" AND resource.labels.service_name="diarization-indexer"' --limit 50`.
+- **Pub/Sub DLQs** – None configured; failed pushes will retry with exponential
+  backoff. Monitor Cloud Run metrics for `5xx`.
+- **Pinecone verification** – Use `src/ingest_v2/scripts/find_parent_node.py` to
+  confirm parent metadata or `backfill_child_channel_metadata.py --dry-run` to
+  inspect child updates.
+- **Router cache** – Stored under `pipeline_storage_v2/router_cache`. Clearing
+  it forces re-enrichment.
+
+---
+
+## Contributing
+
+1. Create a feature branch.
+2. Run `pytest` and relevant scripts in `--dry-run` mode.
+3. Submit PR with context covering Pinecone impact and backfill needs.
+4. Update this README if the ingestion surface changes (new env vars,
+   services, or workflows).
+
+---
+
+## Appendix A – Original README Snapshot
+
+The first commit contained a tutorial titled **“LLM Applications”** which
+focused on building a generic RAG system with Ray and Anyscale. Core elements:
+
+- Links to Anyscale blog posts, notebooks, and Ray documentation.
+- Instructions for launching GPU-enabled Anyscale workspaces (`g3.8xlarge`,
+  `default_cluster_env_2.6.2_py39`).
+- Steps for downloading sample docs and walking through the `rag.ipynb`
+  notebook.
+- Guidance on configuring OpenAI and Anyscale endpoint credentials, installing
+  requirements, and setting up pre-commit hooks.
+- Marketing-oriented callouts (Ray Summit, Anyscale Endpoints pricing).
+
+The repository has since been repurposed into the ingestion platform described
+above; the notebook-driven tutorial no longer exists here.
+
+---
+
+## Appendix B – Then vs Now
+
+| Area | First Commit | Current State |
+| ---- | ------------ | ------------- |
+| Primary goal | Teach readers how to build RAG apps with Ray/Anyscale. | Operate production ingestion pipelines for YouTube-derived content. |
+| Runtime | Notebooks and tutorials targeting GPU clusters. | Cloud Run services, batch scripts, Pinecone integration. |
+| Data flow | Manual walkthrough of data loading and chunking. | Automated event-driven ingestion plus repair/backfill tooling. |
+| Dependencies | Ray ecosystem, Anyscale endpoints. | Pinecone, YouTube Data API, AssemblyAI JSON, OpenAI embeddings. |
+| Docs | Marketing-style README with links and setup tips. | This operational handbook for users and developers. |
