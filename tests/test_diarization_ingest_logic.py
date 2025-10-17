@@ -137,6 +137,7 @@ def test_service_handles_pumpfun_event(monkeypatch, stub_publish):
     assert captured['meta']['video_id'] == 'pumpfun_RasMrToken_clip123'
     assert captured['meta']['pumpfun_room'] == 'RasMrToken'
     assert captured['meta']['url'] == PumpfunEvent().mp3_uri
+    assert captured['meta']['channel_name'] == 'RasMr (Pumpfun)'
     assert stub_publish
     payload, attributes = stub_publish[0]
     assert payload["source"] == "pumpfun"
@@ -169,7 +170,7 @@ def test_pumpfun_allowed_channels(monkeypatch, stub_publish):
 
     service = DiarizationIngestService(
         namespace='videos',
-        allowed_channels=['pumpfun'],
+        allowed_channels=['other-channel'],
         fetch_video=lambda video_id: video_meta,
         load_artifacts=lambda event, video, ctx: ({'video_id': video.video_id, 'url': ctx.mp3_uri}, {'segments': []}),
         ingest_pipeline=fake_ingest,
@@ -177,16 +178,4 @@ def test_pumpfun_allowed_channels(monkeypatch, stub_publish):
 
     service.handle_event(PumpfunEvent())
     assert captured['video_id'] == 'pumpfun_RasMrToken_clip123'
-    assert len(stub_publish) == 1
-
-    captured.clear()
-    blocked_service = DiarizationIngestService(
-        namespace='videos',
-        allowed_channels=['other-channel'],
-        fetch_video=lambda video_id: video_meta,
-        load_artifacts=lambda event, video, ctx: ({'video_id': video.video_id, 'url': ctx.mp3_uri}, {'segments': []}),
-        ingest_pipeline=fake_ingest,
-    )
-    blocked_service.handle_event(PumpfunEvent())
-    assert captured == {}
     assert len(stub_publish) == 1

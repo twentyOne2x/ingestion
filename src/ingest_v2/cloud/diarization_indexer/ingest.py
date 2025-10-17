@@ -178,8 +178,10 @@ class DiarizationIngestService:
             for value in [room, coin_payload.get("mint"), coin_payload.get("symbol"), coin_payload.get("name"), context.video_id]:
                 if isinstance(value, str) and value:
                     candidate_names.add(value.casefold())
-            candidate_names.add("pumpfun")
-        if allowed and allowed.isdisjoint({name for name in candidate_names if name}):
+        enforce_allowed = bool(allowed)
+        if context.source == "pumpfun":
+            enforce_allowed = False
+        if enforce_allowed and allowed.isdisjoint({name for name in candidate_names if name}):
             LOG.info(
                 "Skipping video %s for namespace=%s channel=%s (not in %s)",
                 context.video_id,
@@ -333,6 +335,9 @@ def build_pumpfun_metadata(event, context: EventContext) -> VideoMetadata:
     duration = clip_payload.get("duration") if isinstance(clip_payload, dict) else 0
     thumbnail = clip_payload.get("thumbnailUrl") if isinstance(clip_payload, dict) else None
 
+    display_name = channel_name or channel_token or room or context.video_id
+    channel_display = f"{display_name} (Pumpfun)"
+
     def _as_float(value) -> float:
         try:
             return float(value)
@@ -342,8 +347,8 @@ def build_pumpfun_metadata(event, context: EventContext) -> VideoMetadata:
     return VideoMetadata(
         video_id=context.video_id,
         channel_id=str(room or context.video_id),
-        channel_title=str(channel_name or channel_token or room or "Pump.fun"),
-        channel_handle=str(channel_token or channel_name or room or "pumpfun"),
+        channel_title=channel_display,
+        channel_handle=None,
         title=title,
         description=description or "",
         published_at=title_timestamp,
