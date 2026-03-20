@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, HttpUrl
-from typing import List, Optional, Literal
+from typing import Any, Dict, List, Optional, Literal
 
-DocType = Literal["youtube_video", "stream"]
+DocType = Literal["youtube_video", "twitch_vod", "pumpfun_clip", "stream", "media"]
 
 class Chapter(BaseModel):
     title: str
@@ -14,7 +14,10 @@ class ParentNode(BaseModel):
     title: str
     description: Optional[str] = None
     channel_name: Optional[str] = None
+    channel_id: Optional[str] = None
     speaker_primary: Optional[str] = None
+    speaker_names: Optional[List[str]] = None
+    speaker_map: Optional[Dict[str, Dict[str, Any]]] = None
     published_at: Optional[str] = Field(default=None, description="YYYY-MM-DD")
     start_ts: Optional[str] = None
     end_ts: Optional[str] = None
@@ -26,7 +29,7 @@ class ParentNode(BaseModel):
     chapters: Optional[List[Chapter]] = None
     rights: str = "public_reference_only"
     ingest_version: int = 2
-    source: Literal["youtube", "pumpfun"] = "youtube"
+    source: Literal["youtube", "pumpfun", "twitch"] = "youtube"
     source_hash: str
     # add under other fields in ParentNode
     router_tags: Optional[List[str]] = None

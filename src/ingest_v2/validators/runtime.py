@@ -50,6 +50,18 @@ def validate_child_runtime(x: dict, duration_s: float) -> Tuple[bool, str]:
     Accepts padding: allowed_max = max_s + 2*pad + tol.
     Optional HEAD check gated by VALIDATE_URLS.
     """
+    # Keep validator thresholds aligned with the segmenter. For local backfills we
+    # often lower MIN_TEXT_CHARS to ingest short/sparse transcripts; the validator
+    # must not keep a higher fixed minimum or it will drop most segments.
+    min_chars = min(int(getattr(settings_v2, "MIN_TEXT_CHARS", 160)), 80)
+    try:
+        override = (os.getenv("VALIDATE_MIN_TEXT_CHARS") or "").strip()
+        if override:
+            min_chars = int(override)
+    except Exception:
+        pass
+    min_chars = max(1, int(min_chars))
+
     EPS = 1e-6
     min_s = getattr(settings_v2, "SEGMENT_MIN_S", 15.0)
     max_s = getattr(settings_v2, "SEGMENT_MAX_S", 60.0)
@@ -57,14 +69,25 @@ def validate_child_runtime(x: dict, duration_s: float) -> Tuple[bool, str]:
     tol_s = getattr(settings_v2, "SEGMENT_TOLERANCE_S", 0.75)
 
     upper_with_pad = max_s + (2.0 * pad_s) + tol_s
-    lower_with_tol = min_s - tol_s
+    # Mirror the segmenter's adaptive minimum window behavior:
+    # when SEGMENT_MIN_S is tuned high (e.g. 300s) for cost reasons, short videos
+    # should still be able to index at least one shorter segment.
+    min_s_eff = float(min_s)
+    try:
+        if isinstance(duration_s, (int, float)) and duration_s > 0 and duration_s < min_s_eff:
+            # Keep this floor tiny: many corpus clips are <10s and should still be indexed.
+            min_s_eff = max(1.0, float(duration_s) * 0.5)
+    except Exception:
+        pass
+
+    lower_with_tol = min_s_eff - tol_s
 
     if (x or {}).get("node_type") == "summary":
         try:
             start = float(x.get("start_s", 0.0)); end = float(x.get("end_s", 0.0))
             if not (0 <= start < end <= duration_s + 1e-6): return False, "timestamp_order_invalid"
             txt = (x.get("text") or "")
-            if not (len(txt) >= 80 or (txt.endswith("?") and len(txt) >= 20)): return False, "text_too_short"
+            if not (len(txt) >= min_chars or (txt.endswith("?") and len(txt) >= 20)): return False, "text_too_short"
             return True, "ok"
         except Exception:
             return False, "schema_error"
@@ -87,7 +110,7 @@ def validate_child_runtime(x: dict, duration_s: float) -> Tuple[bool, str]:
 
     # Text sufficiency (summary has the same minimal guard)
     txt = getattr(c, "text", "") or ""
-    if not (len(txt) >= 80 or (txt.endswith("?") and len(txt) >= 20)):
+    if not (len(txt) >= min_chars or (txt.endswith("?") and len(txt) >= 20)):
         tag = "summary_text_too_short" if is_summary else "text_too_short"
         logging.info(_ctx_str(f"[validate_child] {tag}", c, duration_s))
         return False, "text_too_short"
@@ -97,7 +120,7 @@ def validate_child_runtime(x: dict, duration_s: float) -> Tuple[bool, str]:
         seg_len = c.end_s - c.start_s
         if not (lower_with_tol <= seg_len <= upper_with_pad):
             extra = (f"allowed=[{lower_with_tol:.3f},{upper_with_pad:.3f}] "
-                     f"min={min_s} max={max_s} pad={pad_s} tol={tol_s}")
+                     f"min={min_s} min_eff={min_s_eff:.3f} max={max_s} pad={pad_s} tol={tol_s}")
             logging.info(_ctx_str("[validate_child] window_oob", c, duration_s, extra))
             return False, "window_size_out_of_bounds"
 

@@ -29,6 +29,37 @@ def build_segments(
         settings_v2.SEGMENT_PAD_S,
     )
 
+    # Adaptive minimum window:
+    # When callers tune SEGMENT_MIN_S high (e.g. 300s) for cost reasons, short videos
+    # (or sparse transcripts) would otherwise emit 0 segments. For durations below
+    # min_s, allow a smaller floor so we still index *something*.
+    min_s_eff = float(min_s)
+    try:
+        if isinstance(duration_s, (int, float)) and duration_s > 0 and duration_s < min_s_eff:
+            # Require at least ~half the clip, with a tiny absolute floor.
+            #
+            # NOTE: Many corpus clips are single-digit seconds long. A prior 10s floor
+            # prevented indexing them entirely (no child segments), even when text was
+            # non-trivial and summaries existed.
+            min_s_eff = max(1.0, float(duration_s) * 0.5)
+    except Exception:
+        pass
+
+    # Adaptive minimum text:
+    # Many short-form videos (and some non-English clips) have concise transcripts.
+    # If we require the default MIN_TEXT_CHARS=160, the segmenter can emit 0 segments,
+    # which prevents the parent doc from ever being indexed.
+    #
+    # Keep this aligned with the runtime validator, which caps the effective minimum at 80
+    # and allows operators to tune lower via env.
+    min_chars_eff = min(int(getattr(settings_v2, "MIN_TEXT_CHARS", 160)), 80)
+    try:
+        if isinstance(duration_s, (int, float)) and duration_s > 0 and duration_s < 90:
+            min_chars_eff = min(min_chars_eff, 40)
+    except Exception:
+        pass
+    min_chars_eff = max(1, int(min_chars_eff))
+
     while i < len(sentences):
         win_start = sentences[i]["start_s"]
         j = i
@@ -40,16 +71,17 @@ def build_segments(
             s = sentences[j]
             buf.append(s["text"])
             win_end = s["end_s"]
-            if (win_end - win_start) >= min_s and buf[-1].rstrip().endswith((".", "?", "!")):
+            if (win_end - win_start) >= min_s_eff and buf[-1].rstrip().endswith((".", "?", "!")):
                 break
             j += 1
 
-        if (win_end - win_start) >= min_s:
+        if (win_end - win_start) >= min_s_eff:
             start = max(0.0, win_start - pad)
             end = min(duration_s, win_end + pad)
             text = " ".join(x["text"] for x in sentences[i:j+1]).strip()
 
-            if len(text) >= settings_v2.MIN_TEXT_CHARS or text.endswith("?"):
+            # Match validator semantics: questions must still have a minimal length.
+            if len(text) >= min_chars_eff or (text.endswith("?") and len(text) >= 20):
                 start_hms = s_to_hms_ms(start)
                 end_hms = s_to_hms_ms(end)
                 seg_id = segment_uuid(parent_id, start, end)

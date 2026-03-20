@@ -86,12 +86,17 @@ def iter_youtube_assets_from_fs(
             return None
 
         segments = raw_norm.get("segments", [])
-        if not segments:
+        if segments:
+            ends = [float(segment.get("end")) for segment in segments if isinstance(segment.get("end"), (int, float))]
+            duration_s = max(ends) if ends else 0.0
+        else:
+            # Keep "empty transcript" assets so we can still upsert a parent doc and a
+            # metadata-only summary node (see build_children_from_raw fallback).
+            #
+            # Use a tiny non-zero duration so summary validation can pass even when
+            # the diarized JSON contains no timestamps.
             logging.info("[v2] no non-trivial segments after normalization: %s", path)
-            return None
-
-        ends = [float(segment.get("end")) for segment in segments if isinstance(segment.get("end"), (int, float))]
-        duration_s = max(ends) if ends else 0.0
+            duration_s = 1.0
 
         video_id = extract_video_id_from_path(path)
         if not video_id:

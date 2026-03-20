@@ -88,6 +88,29 @@ def _convert_assemblyai_json_to_raw(obj: Any) -> Dict[str, Any]:
                     "text": utt.get("text"),
                     "words": utt.get("words") or [],
                 })
+        elif "words" in obj or "text" in obj or obj.get("status") == "completed":
+            words = obj.get("words")
+            text = obj.get("text")
+            if isinstance(words, list) and words:
+                first_word = words[0] if isinstance(words[0], dict) else {}
+                last_word = words[-1] if isinstance(words[-1], dict) else {}
+                segs_in = [{
+                    "start": obj.get("audio_start_from", first_word.get("start")),
+                    "end": obj.get("audio_end_at", last_word.get("end")),
+                    "speaker": obj.get("speaker") or obj.get("speaker_label"),
+                    "text": text,
+                    "words": words,
+                }]
+            elif isinstance(text, str) and text.strip():
+                segs_in = [{
+                    "start": obj.get("audio_start_from"),
+                    "end": obj.get("audio_end_at"),
+                    "speaker": obj.get("speaker") or obj.get("speaker_label"),
+                    "text": text,
+                    "words": [],
+                }]
+            else:
+                segs_in = []
     elif isinstance(obj, list):
         segs_in = obj
 

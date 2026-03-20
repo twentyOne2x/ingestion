@@ -61,3 +61,77 @@ def get_ingested_parent_ids(index_name: str, namespace: str) -> Set[str]:
 
     logging.info("[dedupe] found %d unique parent_ids already in Pinecone", len(parent_ids))
     return parent_ids
+
+
+def get_ingested_parent_ids_qdrant(namespace: str) -> Set[str]:
+    """
+    Qdrant equivalent of Pinecone dedupe:
+      - Scroll child nodes
+      - Collect unique parent_id payloads
+
+    This is intentionally child-based (not parent-based) so that a prior run that
+    only wrote parent stubs but crashed before children will still be re-processed.
+    """
+    from qdrant_client.http import models as qm
+
+    from ...utils.vector_store import qdrant_client, qdrant_collection_name
+
+    collection = qdrant_collection_name(namespace)
+    client = qdrant_client()
+
+    # If the collection does not exist yet, nothing is ingested.
+    try:
+        exists = bool(client.collection_exists(collection_name=collection))
+    except Exception:
+        try:
+            names = {item.name for item in client.get_collections().collections}
+            exists = collection in names
+        except Exception:
+            exists = False
+
+    if not exists:
+        logging.info("[dedupe/qdrant] collection does not exist: %s", collection)
+        return set()
+
+    logging.info("[dedupe/qdrant] scrolling existing child nodes for parent_ids (collection=%s)...", collection)
+    parent_ids: Set[str] = set()
+    offset = None
+    scanned = 0
+
+    flt = qm.Filter(
+        must=[
+            qm.FieldCondition(
+                key="node_type",
+                match=qm.MatchValue(value="child"),
+            )
+        ]
+    )
+
+    scroll_limit = int(os.getenv("QDRANT_SCROLL_LIMIT", "256") or 256)
+
+    while True:
+        points, next_offset = client.scroll(
+            collection_name=collection,
+            scroll_filter=flt,
+            limit=scroll_limit,
+            offset=offset,
+            with_payload=True,
+            with_vectors=False,
+        )
+
+        if not points:
+            break
+
+        scanned += len(points)
+        for p in points:
+            payload = dict(getattr(p, "payload", None) or {})
+            pid = payload.get("parent_id")
+            if pid:
+                parent_ids.add(str(pid))
+
+        offset = next_offset
+        if next_offset is None:
+            break
+
+    logging.info("[dedupe/qdrant] scanned=%d child_points, found=%d unique parent_ids", scanned, len(parent_ids))
+    return parent_ids
