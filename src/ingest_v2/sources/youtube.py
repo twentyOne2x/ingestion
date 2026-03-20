@@ -17,11 +17,14 @@ def build_parent_from_metadata(meta: Dict[str, Any]) -> ParentNode:
     source_hash = sha1_hex(raw_bytes)
     parent = ParentNode(
         parent_id=meta["video_id"],
-        document_type="youtube_video",
+        document_type=meta.get("document_type", "youtube_video"),
         title=meta.get("title", ""),
         description=meta.get("description", ""),
         channel_name=meta.get("channel_name"),
+        channel_id=meta.get("channel_id"),
         speaker_primary=_safe_get(meta, "speaker_primary"),
+        speaker_names=_safe_get(meta, "speaker_names"),
+        speaker_map=_safe_get(meta, "speaker_map"),
         published_at=_safe_get(meta, "published_at"),
         start_ts=None,
         end_ts=None,

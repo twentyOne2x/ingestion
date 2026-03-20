@@ -4,6 +4,23 @@ import json, re
 
 from collections import Counter
 
+_JUDO_RE = re.compile(r"\bJudo\b", re.IGNORECASE)
+
+def apply_term_fixes(text: str) -> str:
+    """
+    Deterministic transcript normalization for common ASR confusions.
+
+    Keep this small and explicit; this runs on every ingest and affects:
+    - chunk text embeddings (retrieval)
+    - router enrichment prompts (metadata generation)
+    """
+    s = (text or "").strip()
+    if not s:
+        return ""
+    # Crypto-specific correction: ASR often hears "Jito" as "Judo".
+    s = _JUDO_RE.sub("Jito", s)
+    return s
+
 def normalize_to_sentences(raw: Dict[str, Any], default_speaker: str = "S1") -> List[Dict[str, Any]]:
     segments = raw.get("segments") or raw.get("caption_lines") or []
     sentences: List[Dict[str, Any]] = []
@@ -11,7 +28,7 @@ def normalize_to_sentences(raw: Dict[str, Any], default_speaker: str = "S1") -> 
     for seg in segments:
         start = float(seg.get("start", 0))
         end = float(seg.get("end", 0))
-        text = (seg.get("text") or "").strip()
+        text = apply_term_fixes(seg.get("text") or "")
         base_spk = seg.get("speaker") or seg.get("speaker_label") or default_speaker
         parts = re.split(r"(?<=[\.?!])\s+", text)
         if not parts:

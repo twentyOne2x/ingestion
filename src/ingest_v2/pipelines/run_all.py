@@ -5,12 +5,14 @@ import time
 from pathlib import Path
 from typing import Dict, List, Any
 
-from src.Llama_index_sandbox import YOUTUBE_VIDEO_DIRECTORY
 from src.ingest_v2.configs.settings import settings_v2
 from src.ingest_v2.pipelines.build_children import build_children_from_raw
 from src.ingest_v2.pipelines.build_parents import run_build_parents
 from src.ingest_v2.pipelines.run_all_components.assets import iter_youtube_assets_from_fs
-from src.ingest_v2.pipelines.run_all_components.dedupe import get_ingested_parent_ids
+from src.ingest_v2.pipelines.run_all_components.dedupe import (
+    get_ingested_parent_ids,
+    get_ingested_parent_ids_qdrant,
+)
 from src.ingest_v2.pipelines.run_all_components.enrich import enrich_assets
 from src.ingest_v2.pipelines.run_all_components.namespace import (
     load_namespace_channels,
@@ -21,8 +23,27 @@ from src.ingest_v2.pipelines.run_all_components.speakers_stage import resolve_sp
 from src.ingest_v2.pipelines.run_all_components.text import ascii_safe
 from src.ingest_v2.pipelines.upsert_parents import upsert_parents
 from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
+from src.ingest_v2.utils.vector_store import vector_store_backend
 from src.ingest_v2.utils.logging import setup_logger
 from src.ingest_v2.utils.progress import progress
+
+
+def _default_youtube_root() -> str:
+    """
+    v2 ingestion should not depend on v1 sandbox config (which can require unrelated env vars).
+    Prefer an explicit env override, else fall back to the repo dataset path if present,
+    else use the docker-compose mount path.
+    """
+    env = (os.getenv("YT_DIARIZED_ROOT") or os.getenv("INGEST_YT_ROOT") or "").strip()
+    if env:
+        return env
+
+    repo_root = Path(__file__).resolve().parents[4]
+    candidate = repo_root / "youtube-transcript-pipeline/datasets/evaluation_data/diarized_youtube_content_2023-10-06"
+    if candidate.exists():
+        return str(candidate)
+
+    return "/datasets/diarized_youtube"
 
 
 def _ingest_assets(enriched_metas: List[Dict[str, Any]]) -> Dict[str, Dict[str, object]]:
@@ -69,7 +90,7 @@ def main():
     parser.add_argument(
         "--namespace",
         default=os.getenv("PINECONE_NAMESPACE", "videos"),
-        help="Pinecone namespace to write to (defaults to env or 'videos').",
+        help="Namespace to write to (defaults to env or 'videos').",
     )
     parser.add_argument(
         "--include-channels",
@@ -77,8 +98,13 @@ def main():
         default=None,
         help="Only ingest these channel folders (e.g. @BinanceYoutube @notthreadguy).",
     )
+    parser.add_argument(
+        "--all-channels",
+        action="store_true",
+        help="Ingest ALL channel folders found under --root (ignores YT_NAMESPACE_CONFIG).",
+    )
     parser.add_argument("--backfill-days", type=int, default=settings_v2.BACKFILL_DAYS)
-    parser.add_argument("--root", default=YOUTUBE_VIDEO_DIRECTORY, help="Root dir with diarized JSONs")
+    parser.add_argument("--root", default=_default_youtube_root(), help="Root dir with diarized JSONs")
     parser.add_argument("--prune-empty", action="store_true", help="Delete obviously empty AssemblyAI files")
     parser.add_argument("--concurrency", type=int, default=int(os.getenv("ROUTER_GEN_CONCURRENCY", "6")))
     parser.add_argument(
@@ -93,14 +119,26 @@ def main():
 
     index_name = os.getenv("PINECONE_INDEX_NAME", "icmfyi-v2")
     namespace = args.namespace
-    logging.info("[cfg] pinecone index=%s  namespace=%s", index_name, namespace)
+    backend = vector_store_backend()
+    logging.info("[cfg] vector_store=%s index=%s namespace=%s", backend, index_name, namespace)
+
+    root = Path(args.root).expanduser().resolve()
 
     channels = [channel for channel in (args.include_channels or []) if channel and channel.strip()]
-    if not channels:
+    if not channels and args.all_channels:
+        channels = sorted(
+            [
+                p.name
+                for p in root.iterdir()
+                if p.is_dir() and p.name and not p.name.startswith(".")
+            ]
+        )
+        logging.info("[cfg] discovered %d channel folder(s) under %s", len(channels), root)
+    if not channels and not args.all_channels:
         channels = load_namespace_channels(namespace)
         if channels:
             logging.info("[cfg] loaded %d channel(s) from namespace '%s'", len(channels), namespace)
-    if not channels:
+    if not channels and not args.all_channels:
         legacy = parse_list_env("INGEST_INCLUDE_CHANNELS")
         if legacy:
             logging.warning(
@@ -112,7 +150,7 @@ def main():
     if not channels:
         parser.error(
             "No channels resolved. Provide --include-channels, or configure YT_NAMESPACE_CONFIG "
-            "(JSON/YAML) or YT_NAMESPACE_CONFIG_JSON for namespace='%s'." % namespace
+            "(JSON/YAML) or YT_NAMESPACE_CONFIG_JSON for namespace='%s', or pass --all-channels." % namespace
         )
 
     logging.info("[cfg] namespace=%s channels=%s", namespace, channels)
@@ -126,7 +164,6 @@ def main():
         logging.info("[v2] 'stream' not wired yet in run_all; nothing to do.")
         return
 
-    root = Path(args.root).expanduser().resolve()
     logging.info("[v2] scanning for AssemblyAI JSON under: %s (prune_empty=%s)", root, args.prune_empty)
 
     assets = list(
@@ -149,23 +186,39 @@ def main():
             logging.info("[v2] no assets match include filter; exiting.")
             return
 
-    if not args.skip_dedupe:
-        logging.info("[v2/dedupe] checking which parents are already in Pinecone...")
-        ingested = get_ingested_parent_ids(index_name=index_name, namespace=namespace)
-        before = len(assets)
-        assets = [item for item in assets if item[0]["video_id"] not in ingested]
-        after = len(assets)
-        logging.info(
-            "[v2/dedupe] parent filter: %d discovered, %d already ingested, %d remaining to process",
-            before,
-            len(ingested),
-            after,
-        )
-        if not assets:
-            logging.info("[v2] all parents already in Pinecone. Nothing to do.")
-            return
-    else:
+    if args.skip_dedupe:
         logging.info("[v2/dedupe] skipping deduplication check (--skip-dedupe)")
+    else:
+        if vector_store_backend() == "qdrant":
+            logging.info("[v2/dedupe] checking which parents already have children in Qdrant...")
+            ingested = get_ingested_parent_ids_qdrant(namespace=namespace)
+            before = len(assets)
+            assets = [item for item in assets if item[0]["video_id"] not in ingested]
+            after = len(assets)
+            logging.info(
+                "[v2/dedupe] parent filter: %d discovered, %d already ingested, %d remaining to process",
+                before,
+                len(ingested),
+                after,
+            )
+            if not assets:
+                logging.info("[v2] all parents already ingested in Qdrant. Nothing to do.")
+                return
+        else:
+            logging.info("[v2/dedupe] checking which parents are already in Pinecone...")
+            ingested = get_ingested_parent_ids(index_name=index_name, namespace=namespace)
+            before = len(assets)
+            assets = [item for item in assets if item[0]["video_id"] not in ingested]
+            after = len(assets)
+            logging.info(
+                "[v2/dedupe] parent filter: %d discovered, %d already ingested, %d remaining to process",
+                before,
+                len(ingested),
+                after,
+            )
+            if not assets:
+                logging.info("[v2] all parents already in Pinecone. Nothing to do.")
+                return
 
     assets = prioritize_assets(
         assets,

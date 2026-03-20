@@ -78,6 +78,17 @@ def enrich_assets(
     assets: Iterable[Asset],
     concurrency: int,
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+    if os.getenv("ROUTER_ENRICH", "1").strip().lower() in ("0", "false", "no", "off"):
+        # Bulk local ingest should not require (or pay for) router enrichment.
+        metas = [meta for (meta, _raw, _path) in assets]
+        return metas, {
+            "cached_hits": 0,
+            "fresh": 0,
+            "failed": 0,
+            "total_time": 0.0,
+            "skipped": len(metas),
+        }
+
     enriched_metas: List[Dict[str, Any]] = []
     cached_hits = 0
     fresh = 0

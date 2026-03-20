@@ -10,7 +10,7 @@ from ..configs.settings import settings_v2
 from ..entities.extract import extract_entities
 from ..segmenter.segmenter import build_segments
 from ..transcripts.normalize import normalize_to_sentences
-from ..utils.ids import segment_uuid, sha1_hex
+from ..utils.ids import segment_uuid, summary_segment_uuid, sha1_hex
 from ..utils.timefmt import floor_s, s_to_hms_ms
 from ..validators.runtime import validate_child_runtime
 import re
@@ -233,11 +233,11 @@ def _make_parent_summary_child(
         float(sentences[-1].get("end_s", end_s_limit)),
     )
 
-    # Deterministic-ish ID is not required here (not used for dedupe),
-    # but leaving uuid4 keeps it distinct from child windows.
+    # Summary nodes share the same Qdrant collection as child chunks.
+    # Use a distinct deterministic UUID so we never collide with child segment IDs.
     node = {
         "node_type": "summary",
-        "segment_id": segment_uuid(parent["parent_id"], start_s, end_s),
+        "segment_id": summary_segment_uuid(parent["parent_id"], start_s, end_s),
         "parent_id": parent["parent_id"],
         "document_type": parent["document_type"],
         "text": text,
@@ -324,58 +324,106 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
 
     t0 = time.perf_counter()
 
+    parent_id = parent["parent_id"]
+    document_type = parent["document_type"]
+
     # Normalize to sentence list (used by segmenter fixes + summary)
     sentences = normalize_to_sentences(raw)
     if not sentences:
-        logging.info(f"[children] parent_id={parent.get('parent_id')} no sentences after normalization")
-        return []
+        # Metadata-only fallback: when the diarized JSON is empty/placeholder (or has
+        # no usable timestamps), still index *something* so the video exists in the
+        # vector DB. We embed a short summary node based on title/description.
+        #
+        # This keeps GCS mirrors "fully indexed" even when the upstream pipeline
+        # failed to produce transcript segments, and avoids coverage gaps where the
+        # asset is present on disk but produces 0 vectors.
+        text = (parent.get("topic_summary") or parent.get("title") or parent.get("description") or "").strip()
+        if not text:
+            logging.info(f"[children] parent_id={parent_id} no sentences after normalization")
+            return []
 
-    parent_id = parent["parent_id"]
-    document_type = parent["document_type"]
-    clip_base = f"https://www.youtube.com/watch?v={parent_id}" if document_type == "youtube_video" else None
-    chapter_lookup = _chapters_lookup(parent.get("chapters"))
+        # Ensure duration is non-zero so summary timestamp validation can pass.
+        dur = parent.get("duration_s")
+        try:
+            dur_s = float(dur) if dur is not None else 0.0
+        except Exception:
+            dur_s = 0.0
+        if dur_s <= 0.0:
+            dur_s = 1.0
+            parent["duration_s"] = dur_s
 
-    # 1) Base segments
-    children = build_segments(
-        sentences=sentences,
-        duration_s=parent["duration_s"],
-        parent_id=parent_id,
-        document_type=document_type,
-        clip_base_url=clip_base,
-        chapter_lookup=chapter_lookup,
-        language=parent.get("language", "en"),
-    )
-    t1 = time.perf_counter()
+        end_s = min(60.0, dur_s) if dur_s > 0.0 else 1.0
+        if end_s <= 0.0:
+            end_s = 1.0
+            dur_s = max(dur_s, end_s)
+            parent["duration_s"] = dur_s
 
-    # 2) Split any over-long windows
-    max_s = float(settings_v2.SEGMENT_MAX_S)
-    pad_s = float(settings_v2.SEGMENT_PAD_S)
-    tol_s = float(settings_v2.SEGMENT_TOLERANCE_S)
-    overlap_s = float(settings_v2.SEGMENT_OVERLAP_S)
-    upper_with_pad = max_s + (2.0 * pad_s) + tol_s
+        fixed_children: List[Dict[str, Any]] = [
+            {
+                "node_type": "summary",
+                "segment_id": summary_segment_uuid(parent_id, 0.0, end_s),
+                "parent_id": parent_id,
+                "document_type": document_type,
+                "text": text,
+                "start_s": 0.0,
+                "end_s": end_s,
+                "speaker": None,
+                "chapter": None,
+                "entities": [],
+                "clip_url": None,
+                "language": parent.get("language", "en"),
+                "ingest_version": 2,
+                "rights": parent.get("rights", "public_reference_only"),
+            }
+        ]
+        # Skip segmenter/splitting; continue through entity extraction + validation.
+        t1 = time.perf_counter()
+        t2 = t1
+    else:
+        clip_base = f"https://www.youtube.com/watch?v={parent_id}" if document_type == "youtube_video" else None
+        chapter_lookup = _chapters_lookup(parent.get("chapters"))
 
-    fixed_children: List[Dict[str, Any]] = []
-    for ch in children:
-        seg_len = float(ch["end_s"]) - float(ch["start_s"])
-        if seg_len <= upper_with_pad:
-            fixed_children.append(ch)
-            continue
-
-        # Split this child into smaller children using sentence boundaries inside its window
-        slice_sents = _sentences_in_range(sentences, ch["start_s"], ch["end_s"])
-        subchildren = _split_by_sentences_with_overlap(
-            sentences=slice_sents,
-            max_window_s=max_s,
-            overlap_s=overlap_s,
-            parent=parent,
+        # 1) Base segments
+        children = build_segments(
+            sentences=sentences,
+            duration_s=parent["duration_s"],
+            parent_id=parent_id,
+            document_type=document_type,
             clip_base_url=clip_base,
+            chapter_lookup=chapter_lookup,
+            language=parent.get("language", "en"),
         )
-        logging.info(
-            f"[children] parent_id={parent_id} split_long segment_id={ch.get('segment_id')} "
-            f"orig_len={seg_len:.3f}s -> {len(subchildren)} subchunks"
-        )
-        fixed_children.extend(subchildren)
-    t2 = time.perf_counter()
+        t1 = time.perf_counter()
+
+        # 2) Split any over-long windows
+        max_s = float(settings_v2.SEGMENT_MAX_S)
+        pad_s = float(settings_v2.SEGMENT_PAD_S)
+        tol_s = float(settings_v2.SEGMENT_TOLERANCE_S)
+        overlap_s = float(settings_v2.SEGMENT_OVERLAP_S)
+        upper_with_pad = max_s + (2.0 * pad_s) + tol_s
+
+        fixed_children = []
+        for ch in children:
+            seg_len = float(ch["end_s"]) - float(ch["start_s"])
+            if seg_len <= upper_with_pad:
+                fixed_children.append(ch)
+                continue
+
+            # Split this child into smaller children using sentence boundaries inside its window
+            slice_sents = _sentences_in_range(sentences, ch["start_s"], ch["end_s"])
+            subchildren = _split_by_sentences_with_overlap(
+                sentences=slice_sents,
+                max_window_s=max_s,
+                overlap_s=overlap_s,
+                parent=parent,
+                clip_base_url=clip_base,
+            )
+            logging.info(
+                f"[children] parent_id={parent_id} split_long segment_id={ch.get('segment_id')} "
+                f"orig_len={seg_len:.3f}s -> {len(subchildren)} subchunks"
+            )
+            fixed_children.extend(subchildren)
+        t2 = time.perf_counter()
 
     # 2.5) Optional relabel: map 'S1' -> resolved speaker name, keep original in 'speaker_label'
     speaker_map = (parent.get("speaker_map") or {}) if isinstance(parent.get("speaker_map"), dict) else {}
@@ -468,6 +516,76 @@ def build_children_from_raw(parent: Dict[str, Any], raw: Dict[str, Any]) -> List
             dropped_counts[reason] = dropped_counts.get(reason, 0) + 1
     t4 = time.perf_counter()
 
+    # 5) Last-resort: if transcript is empty (no children + no summary), emit a small
+    # metadata-only summary so the parent is still "searchable" in vector retrieval.
+    #
+    # This is especially common for very short clips or "no speech detected" diarization
+    # outputs (`utterances=[]`).
+    if not kept:
+        try:
+            dur_s = float(parent.get("duration_s", 0.0) or 0.0)
+        except Exception:
+            dur_s = 0.0
+
+        if dur_s > 0:
+            title = (parent.get("title") or "").strip()
+            desc = (parent.get("description") or "").strip()
+            channel = (parent.get("channel_name") or "").strip()
+            published = (parent.get("published_at") or "").strip()
+            url = (parent.get("url") or "").strip()
+
+            parts: List[str] = []
+            if title:
+                parts.append(f"Title: {title}.")
+            if channel:
+                parts.append(f"Channel: {channel}.")
+            if published:
+                parts.append(f"Published: {published}.")
+            if url:
+                parts.append(f"URL: {url}.")
+            if desc:
+                # Keep this modest; we only want a metadata-based searchable stub.
+                parts.append(f"Description: {desc[:600]}.")
+            parts.append("Note: No transcript available (no speech detected or empty captions).")
+
+            text = " ".join(p for p in parts if p).strip()
+            start_s = 0.0
+            end_s = min(60.0, dur_s)
+            if text and end_s > start_s:
+                meta_summary = {
+                    "node_type": "summary",
+                    "segment_id": summary_segment_uuid(parent["parent_id"], start_s, end_s),
+                    "parent_id": parent["parent_id"],
+                    "document_type": parent["document_type"],
+                    "text": text,
+                    "start_s": start_s,
+                    "end_s": end_s,
+                    "speaker": None,
+                    "chapter": None,
+                    "entities": [],
+                    "clip_url": None,
+                    "language": parent.get("language", "en"),
+                    "ingest_version": 2,
+                    "rights": parent.get("rights", "public_reference_only"),
+                }
+
+                base = set(extract_entities(meta_summary["text"]))
+                all_ents = {_canon_entity(x) for x in (base | context_entities)}
+                all_ents = {x for x in all_ents if x}
+                ranked = _rank_entities_for_text(
+                    text=meta_summary.get("text", ""),
+                    entities=all_ents,
+                    context_entities=context_entities,
+                    speaker=None,
+                )
+                meta_summary["entities"] = ranked[:64]
+
+                ok, reason = validate_child_runtime(meta_summary, duration_s=dur_s)
+                if ok:
+                    kept.append(meta_summary)
+                else:
+                    dropped_counts[reason] = dropped_counts.get(reason, 0) + 1
+
     # Logging
     if any(dropped_counts.values()):
         logging.info(
@@ -542,4 +660,3 @@ def _preview_text(sentences: List[Dict[str, Any]], cap_s: float = 5 * 60.0, char
         acc.append(t)
         total += len(t)
     return " ".join(acc)
-

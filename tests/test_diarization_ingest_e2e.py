@@ -23,11 +23,24 @@ def namespace_config(monkeypatch, tmp_path):
 
 
 def test_diarization_ingest_e2e(monkeypatch, namespace_config, tmp_path):
-    sample = Path("tests/data/diarization/sample_diarized.json").resolve()
     local_dir = tmp_path / "youtube_diarized" / "VIDEOABC1234"
     local_dir.mkdir(parents=True, exist_ok=True)
     diarized_path = local_dir / "VIDEOABC1234_diarized.json"
-    diarized_path.write_text(sample.read_text(encoding="utf-8"), encoding="utf-8")
+    # Keep this test self-contained: write a minimal AssemblyAI-like diarization payload.
+    diarized_path.write_text(
+        json.dumps(
+            [
+                {
+                    "text": "Hello world from a diarized transcript.",
+                    "start": 0,
+                    "end": 1000,
+                    "speaker": "S1",
+                    "words": [],
+                }
+            ]
+        ),
+        encoding="utf-8",
+    )
     event = DiarizationReadyEvent(
         mp3_uri="gs://bucket/youtube_audio/sample.mp3",
         diarized_uri=f"file://{diarized_path}",
