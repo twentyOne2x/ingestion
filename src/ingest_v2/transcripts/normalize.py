@@ -6,6 +6,15 @@ from collections import Counter
 
 _JUDO_RE = re.compile(r"\bJudo\b", re.IGNORECASE)
 
+
+def _safe_float(value: Any, default: float = 0.0) -> float:
+    try:
+        if value is None:
+            return float(default)
+        return float(value)
+    except Exception:
+        return float(default)
+
 def apply_term_fixes(text: str) -> str:
     """
     Deterministic transcript normalization for common ASR confusions.
@@ -26,8 +35,8 @@ def normalize_to_sentences(raw: Dict[str, Any], default_speaker: str = "S1") -> 
     sentences: List[Dict[str, Any]] = []
 
     for seg in segments:
-        start = float(seg.get("start", 0))
-        end = float(seg.get("end", 0))
+        start = _safe_float(seg.get("start"), 0.0)
+        end = _safe_float(seg.get("end"), start)
         text = apply_term_fixes(seg.get("text") or "")
         base_spk = seg.get("speaker") or seg.get("speaker_label") or default_speaker
         parts = re.split(r"(?<=[\.?!])\s+", text)
@@ -40,8 +49,8 @@ def normalize_to_sentences(raw: Dict[str, Any], default_speaker: str = "S1") -> 
             for sent in parts:
                 n = max(1, len(sent.split()))
                 w_slice = words[idx: idx + n]
-                s_start = float(w_slice[0]["start"]) if w_slice else start
-                s_end = float(w_slice[-1]["end"]) if w_slice else min(end, s_start + 4.0)
+                s_start = _safe_float(w_slice[0].get("start"), start) if w_slice else start
+                s_end = _safe_float(w_slice[-1].get("end"), min(end, s_start + 4.0)) if w_slice else min(end, s_start + 4.0)
 
                 # majority speaker over the slice; fallback to seg speaker
                 spks = [w.get("speaker") for w in w_slice if w.get("speaker")]

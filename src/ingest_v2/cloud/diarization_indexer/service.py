@@ -284,6 +284,9 @@ class IndexDiarizedReq(BaseModel):
     language: str = Field(default="en", min_length=1)
     source: str = Field(default="youtube", min_length=1)
     document_type: Optional[str] = None
+    ingest_lane: Optional[str] = None
+    transcript_provider: Optional[str] = None
+    transcript_state: Optional[str] = None
 
     # Optional metadata overrides (avoid consuming YouTube Data API quota).
     title: Optional[str] = None
@@ -313,6 +316,31 @@ def _extract_entities(payload) -> list[str]:
                 if text:
                     texts.add(text.strip())
     return sorted(t for t in texts if t)
+
+
+def _youtube_indexed_channel_key(channel_name: str) -> str:
+    return f"icmfyi:ops:youtube:indexed:channel:{str(channel_name or '').strip().casefold()}"
+
+
+def _record_youtube_operator_truth(*, video_id: str, channel_name: str, transcript_provider: str, transcript_state: str, ingest_lane: str) -> None:
+    redis_url = (os.getenv("REDIS_URL") or "").strip()
+    if not redis_url or not video_id or not channel_name:
+        return
+    try:
+        import redis
+
+        r = redis.Redis.from_url(redis_url, decode_responses=True)
+        pipe = r.pipeline()
+        pipe.sadd(_youtube_indexed_channel_key(channel_name), video_id)
+        if transcript_provider:
+            pipe.sadd(f"icmfyi:ops:youtube:provider:{transcript_provider.strip().casefold()}", video_id)
+        if transcript_state:
+            pipe.sadd(f"icmfyi:ops:youtube:state:{transcript_state.strip().casefold()}", video_id)
+        if ingest_lane:
+            pipe.sadd(f"icmfyi:ops:youtube:lane:{ingest_lane.strip().casefold()}", video_id)
+        pipe.execute()
+    except Exception as exc:
+        LOG.info("[index/diarized] redis operator truth write failed video=%s err=%s", video_id, exc)
 
 
 @app.post("/index/diarized")
@@ -420,6 +448,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
         "language": req.language,
         "document_type": document_type,
         "source": req.source,
+        "ingest_lane": (req.ingest_lane or "").strip() or None,
+        "transcript_provider": (req.transcript_provider or "").strip() or None,
+        "transcript_state": (req.transcript_state or "").strip() or None,
         "entities": entities_clean,
     }
 
@@ -500,6 +531,14 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
         }
 
     stats = upsert_children(children)
+    if document_type == "youtube_video":
+        _record_youtube_operator_truth(
+            video_id=req.video_id,
+            channel_name=channel_name,
+            transcript_provider=str(meta.get("transcript_provider") or ""),
+            transcript_state=str(meta.get("transcript_state") or ""),
+            ingest_lane=str(meta.get("ingest_lane") or ""),
+        )
     return {
         "ok": True,
         "video_id": req.video_id,

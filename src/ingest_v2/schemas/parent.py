@@ -30,6 +30,9 @@ class ParentNode(BaseModel):
     rights: str = "public_reference_only"
     ingest_version: int = 2
     source: Literal["youtube", "pumpfun", "twitch"] = "youtube"
+    ingest_lane: Optional[str] = None
+    transcript_provider: Optional[str] = None
+    transcript_state: Optional[str] = None
     source_hash: str
     # add under other fields in ParentNode
     router_tags: Optional[List[str]] = None
