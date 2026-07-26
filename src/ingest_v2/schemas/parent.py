@@ -1,7 +1,14 @@
 from pydantic import BaseModel, Field, HttpUrl
 from typing import Any, Dict, List, Optional, Literal
 
-DocType = Literal["youtube_video", "twitch_vod", "pumpfun_clip", "stream", "media"]
+DocType = Literal[
+    "youtube_video",
+    "twitch_vod",
+    "pumpfun_clip",
+    "podcast_episode",
+    "stream",
+    "media",
+]
 
 class Chapter(BaseModel):
     title: str
@@ -29,7 +36,7 @@ class ParentNode(BaseModel):
     chapters: Optional[List[Chapter]] = None
     rights: str = "public_reference_only"
     ingest_version: int = 2
-    source: Literal["youtube", "pumpfun", "twitch"] = "youtube"
+    source: Literal["youtube", "pumpfun", "twitch", "podcast"] = "youtube"
     ingest_lane: Optional[str] = None
     transcript_provider: Optional[str] = None
     transcript_state: Optional[str] = None
