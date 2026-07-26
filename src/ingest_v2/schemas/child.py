@@ -1,7 +1,14 @@
 from pydantic import BaseModel, Field, HttpUrl
 from typing import List, Optional, Literal
 
-DocType = Literal["youtube_video", "twitch_vod", "pumpfun_clip", "stream", "media"]
+DocType = Literal[
+    "youtube_video",
+    "twitch_vod",
+    "pumpfun_clip",
+    "podcast_episode",
+    "stream",
+    "media",
+]
 
 class ChildNode(BaseModel):
     node_type: Literal["child"] = "child"

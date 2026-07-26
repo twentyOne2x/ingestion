@@ -280,7 +280,7 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
 # ────────────────────────────────────────────────────────────────────────────────
 
 def choose_namespace(document_type: str) -> str:
-    if document_type == "youtube_video":
+    if document_type in {"youtube_video", "podcast_episode"}:
         return settings_v2.NAMESPACE_VIDEOS
     return settings_v2.NAMESPACE_STREAMS
 
