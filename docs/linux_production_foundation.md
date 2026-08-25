@@ -93,10 +93,17 @@ The local loader accepts the exact heterogeneous
 `<sha256>  <filename>` sidecar:
 
 ```bash
-python scripts/load_archive_catalog.py catalog.jsonl catalog.jsonl.sha256 \
+python scripts/load_archive_catalog.py apply catalog.jsonl catalog.jsonl.sha256 \
   --expect-jsonl-sha256 <64-lowercase-hex> \
   --receipt-dir /data/exports/archive-import-receipts
 ```
+
+It opens both inputs without following symlinks, validates their exact bytes before
+the first database read, serializes by catalog digest, and publishes the immutable
+receipt before committing the matching `archive_catalog_imports` ledger row. A
+receipt failure therefore rolls back all database effects; a crash after receipt
+publication but before commit is reconciled by an exact replay. Concurrent exact
+replays converge on the same ledger and receipt.
 
 It validates contract, source, item, media-variant, and aggregate-only inventory
 records before idempotently upserting canonical source/video/media evidence.
@@ -105,3 +112,40 @@ Acquisition states remain `pending_discovery`, `partial_only`, or
 asserts `clip_ready=true` is rejected. Aggregate Twitch inventory never creates
 fabricated item IDs. The immutable receipt reports exact input hashes, effect
 counts, and content-addressed readback digests.
+
+An active tenant owner/admin can claim an exact subset of imported source keys
+through the internal CLI. The tenant is never accepted by a public service route:
+
+```bash
+python scripts/load_archive_catalog.py claim \
+  --catalog-jsonl-sha256 <catalog-sha256> \
+  --tenant-id <ten_64-lowercase-hex> \
+  --admin-user-id <usr_64-lowercase-hex> \
+  --idempotency-key <stable-operator-key> \
+  --source-key twitch:236171146 \
+  --receipt-dir /data/exports/archive-claim-receipts
+```
+
+The command verifies the user, tenant, and active `owner`/`admin` membership,
+creates only tenant-scoped query entitlements, and uses the same
+receipt-before-commit protocol.
+
+The sole-writer hydrator registers a downloaded archive video only after producing
+a caller-pinned `icmfyi.hot-media-hydration-source.v1` JSON receipt. Its exact
+fields are `schema`, `media_sha256`, `size_bytes`, `mime_type`, `cas_path`, and
+`ffprobe`; `ffprobe` must equal the independently repeated
+`icmfyi.ffprobe-video-proof.v1` readback (`codec_names`, `duration_ms`,
+`format_names`, `max_height`, `max_width`, and `video_stream_count`):
+
+```bash
+python scripts/load_archive_catalog.py register-hydration hydration-source.json \
+  --expect-source-receipt-sha256 <receipt-sha256> \
+  --hot-media-root /data/hot-media \
+  --ffprobe-bin /usr/local/bin/ffprobe \
+  --receipt-dir /data/exports/archive-hydration-receipts
+```
+
+Registration re-hashes the immutable regular CAS file, enforces the canonical
+`sha256/<first-two>/<digest>.<mp4|mkv|webm>` path, independently probes video,
+then transactionally upserts `hot_local` and marks only matching complete
+`source_video` references clip-ready. It performs no Storage Box or provider I/O.

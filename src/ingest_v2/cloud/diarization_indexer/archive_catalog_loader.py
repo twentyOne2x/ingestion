@@ -2,17 +2,26 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
 import re
-import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
+from .archive_receipts import (
+    ArchiveProtocolError,
+    acquire_transaction_lock,
+    canonical_json_bytes,
+    prepare_immutable_receipt_dir,
+    read_pinned_regular_file,
+    sha256_json,
+    write_immutable_json_receipt,
+)
 from .canonical_media import canonical_source_channel_id, canonical_source_video_id
 from .channel_service_store import (
+    ArchiveCatalogImport,
     MediaLocation,
     MediaObject,
     SourceChannel,
@@ -20,7 +29,6 @@ from .channel_service_store import (
     VideoMediaRef,
     utcnow,
 )
-
 
 ARCHIVE_CATALOG_SCHEMA = "icmfyi.archive-catalog-import.v1"
 ARCHIVE_RECEIPT_SCHEMA = "icmfyi.archive-catalog-import-receipt.v1"
@@ -33,7 +41,7 @@ _ACQUISITION_STATES = {
 }
 
 
-class ArchiveCatalogError(RuntimeError):
+class ArchiveCatalogError(ArchiveProtocolError):
     """The immutable archive import packet failed validation or reconciliation."""
 
 
@@ -69,6 +77,23 @@ class _ImportState:
     )
 
 
+@dataclass(frozen=True)
+class PreparedArchiveCatalog:
+    jsonl_path: Path
+    sidecar_path: Path
+    jsonl_sha256: str
+    sidecar_sha256: str
+    records: tuple[dict[str, Any], ...]
+
+
+@dataclass(frozen=True)
+class ArchiveCatalogApplyResult:
+    receipt: dict[str, Any]
+    receipt_path: Path
+    receipt_sha256: str
+    reconciled: bool
+
+
 def load_archive_catalog(
     session: Session,
     *,
@@ -78,28 +103,144 @@ def load_archive_catalog(
     max_records: int = 1_000_000,
     max_line_bytes: int = 4 * 1024 * 1024,
 ) -> dict[str, Any]:
-    """Validate and idempotently load one exact heterogeneous archive catalog."""
-    jsonl_path = jsonl_path.resolve()
-    sidecar_path = sidecar_path.resolve()
-    if not jsonl_path.is_file() or not sidecar_path.is_file():
-        raise ArchiveCatalogError(
-            "JSONL and SHA-256 sidecar must both be regular files"
-        )
+    """Validate and stage one catalog in the caller's transaction.
 
-    expected_jsonl_sha256 = _validated_sha256(
-        expected_jsonl_sha256, "expected_jsonl_sha256"
-    )
-    jsonl_sha256 = _sha256_file(jsonl_path)
-    if jsonl_sha256 != expected_jsonl_sha256:
-        raise ArchiveCatalogError(
-            "JSONL SHA-256 does not match the caller-pinned digest"
-        )
-    _validate_sidecar(sidecar_path, jsonl_path.name, jsonl_sha256)
-    records = _read_records(
-        jsonl_path,
+    Admin callers must use :func:`apply_archive_catalog` so the immutable receipt
+    is durable before their transaction can commit. This lower-level function is
+    retained for tests and composition inside an already-managed transaction.
+    """
+    prepared = prepare_archive_catalog(
+        jsonl_path=jsonl_path,
+        sidecar_path=sidecar_path,
+        expected_jsonl_sha256=expected_jsonl_sha256,
         max_records=max_records,
         max_line_bytes=max_line_bytes,
     )
+    return _load_prepared_archive_catalog(session, prepared)
+
+
+def prepare_archive_catalog(
+    *,
+    jsonl_path: Path,
+    sidecar_path: Path,
+    expected_jsonl_sha256: str,
+    max_records: int = 1_000_000,
+    max_line_bytes: int = 4 * 1024 * 1024,
+) -> PreparedArchiveCatalog:
+    """Read, hash, and parse all input bytes without touching the database."""
+    expected = _validated_sha256(expected_jsonl_sha256, "expected_jsonl_sha256")
+    try:
+        jsonl_file = read_pinned_regular_file(
+            jsonl_path,
+            expected_sha256=expected,
+            max_bytes=max_records * min(max_line_bytes, 64 * 1024),
+        )
+        sidecar_file = read_pinned_regular_file(sidecar_path, max_bytes=4096)
+    except ArchiveProtocolError as exc:
+        raise ArchiveCatalogError(str(exc)) from exc
+    _validate_sidecar_bytes(
+        sidecar_file.payload, jsonl_file.path.name, jsonl_file.sha256
+    )
+    records = _read_records_bytes(
+        jsonl_file.payload,
+        max_records=max_records,
+        max_line_bytes=max_line_bytes,
+    )
+    return PreparedArchiveCatalog(
+        jsonl_path=jsonl_file.path,
+        sidecar_path=sidecar_file.path,
+        jsonl_sha256=jsonl_file.sha256,
+        sidecar_sha256=sidecar_file.sha256,
+        records=tuple(records),
+    )
+
+
+def apply_archive_catalog(
+    session: Session,
+    *,
+    jsonl_path: Path,
+    sidecar_path: Path,
+    expected_jsonl_sha256: str,
+    receipt_dir: Path,
+    max_records: int = 1_000_000,
+    max_line_bytes: int = 4 * 1024 * 1024,
+) -> ArchiveCatalogApplyResult:
+    """Apply one packet with a receipt-before-commit, replay-safe protocol."""
+    prepared = prepare_archive_catalog(
+        jsonl_path=jsonl_path,
+        sidecar_path=sidecar_path,
+        expected_jsonl_sha256=expected_jsonl_sha256,
+        max_records=max_records,
+        max_line_bytes=max_line_bytes,
+    )
+    try:
+        receipt_dir = prepare_immutable_receipt_dir(receipt_dir)
+        acquire_transaction_lock(session, f"archive-catalog:{prepared.jsonl_sha256}")
+    except ArchiveProtocolError as exc:
+        raise ArchiveCatalogError(str(exc)) from exc
+
+    existing = session.execute(
+        select(ArchiveCatalogImport).where(
+            ArchiveCatalogImport.jsonl_sha256 == prepared.jsonl_sha256
+        )
+    ).scalar_one_or_none()
+    if existing is not None:
+        _validate_existing_import(session, existing, prepared)
+        receipt_path, receipt_sha256 = write_archive_catalog_receipt(
+            existing.receipt_json,
+            receipt_dir=receipt_dir,
+        )
+        if receipt_sha256 != existing.receipt_sha256:
+            raise ArchiveCatalogError("catalog ledger receipt digest is inconsistent")
+        return ArchiveCatalogApplyResult(
+            receipt=existing.receipt_json,
+            receipt_path=receipt_path,
+            receipt_sha256=receipt_sha256,
+            reconciled=True,
+        )
+
+    try:
+        receipt, state = _load_prepared_archive_catalog(
+            session, prepared, return_state=True
+        )
+        receipt_path, receipt_sha256 = write_archive_catalog_receipt(
+            receipt,
+            receipt_dir=receipt_dir,
+        )
+        session.add(
+            ArchiveCatalogImport(
+                id=_stable_id("aci", prepared.jsonl_sha256),
+                jsonl_sha256=prepared.jsonl_sha256,
+                sidecar_sha256=prepared.sidecar_sha256,
+                input_filename=prepared.jsonl_path.name,
+                receipt_sha256=receipt_sha256,
+                receipt_json=receipt,
+                source_keys_json=dict(sorted(state.source_ids_by_key.items())),
+                source_ids_json=sorted(state.source_ids),
+                video_ids_json=sorted(state.video_ids),
+                media_sha256s_json=sorted(state.media_sha256s),
+                status="applied",
+            )
+        )
+        session.flush()
+        return ArchiveCatalogApplyResult(
+            receipt=receipt,
+            receipt_path=receipt_path,
+            receipt_sha256=receipt_sha256,
+            reconciled=False,
+        )
+    except Exception:
+        session.rollback()
+        raise
+
+
+def _load_prepared_archive_catalog(
+    session: Session,
+    prepared: PreparedArchiveCatalog,
+    *,
+    return_state: bool = False,
+) -> dict[str, Any] | tuple[dict[str, Any], _ImportState]:
+    records = prepared.records
     state = _ImportState()
     for record in records:
         state.counts["records"] += 1
@@ -133,9 +274,9 @@ def load_archive_catalog(
     receipt = {
         "schema": ARCHIVE_RECEIPT_SCHEMA,
         "input": {
-            "filename": jsonl_path.name,
-            "jsonl_sha256": jsonl_sha256,
-            "sidecar_sha256": _sha256_file(sidecar_path),
+            "filename": prepared.jsonl_path.name,
+            "jsonl_sha256": prepared.jsonl_sha256,
+            "sidecar_sha256": prepared.sidecar_sha256,
         },
         "counts": dict(sorted(state.counts.items())),
         "readback": {
@@ -146,70 +287,141 @@ def load_archive_catalog(
             "video_identities_sha256": _sha256_json(sorted(state.video_ids)),
         },
     }
+    if return_state:
+        return receipt, state
     return receipt
+
+
+def _validate_existing_import(
+    session: Session,
+    existing: ArchiveCatalogImport,
+    prepared: PreparedArchiveCatalog,
+) -> None:
+    expected_id = _stable_id("aci", prepared.jsonl_sha256)
+    if (
+        existing.id != expected_id
+        or existing.status != "applied"
+        or existing.jsonl_sha256 != prepared.jsonl_sha256
+        or existing.sidecar_sha256 != prepared.sidecar_sha256
+        or existing.input_filename != prepared.jsonl_path.name
+        or not isinstance(existing.receipt_json, dict)
+        or _sha256_json(existing.receipt_json) != existing.receipt_sha256
+    ):
+        raise ArchiveCatalogError("existing archive import ledger is inconsistent")
+    receipt_input = existing.receipt_json.get("input")
+    if receipt_input != {
+        "filename": prepared.jsonl_path.name,
+        "jsonl_sha256": prepared.jsonl_sha256,
+        "sidecar_sha256": prepared.sidecar_sha256,
+    }:
+        raise ArchiveCatalogError("existing archive import input identity collision")
+    source_ids = _validated_identity_list(existing.source_ids_json, "source_ids_json")
+    video_ids = _validated_identity_list(existing.video_ids_json, "video_ids_json")
+    media_sha256s = _validated_identity_list(
+        existing.media_sha256s_json, "media_sha256s_json", sha256=True
+    )
+    source_keys = existing.source_keys_json
+    if (
+        not isinstance(source_keys, dict)
+        or any(
+            not isinstance(key, str) or not isinstance(value, str)
+            for key, value in source_keys.items()
+        )
+        or set(source_keys.values()) != set(source_ids)
+    ):
+        raise ArchiveCatalogError("existing archive import source map is inconsistent")
+    readback = existing.receipt_json.get("readback")
+    expected_readback = {
+        "media_identities_sha256": _sha256_json(media_sha256s),
+        "source_identities_sha256": _sha256_json(source_ids),
+        "video_identities_sha256": _sha256_json(video_ids),
+    }
+    if not isinstance(readback, dict) or any(
+        readback.get(key) != value for key, value in expected_readback.items()
+    ):
+        raise ArchiveCatalogError(
+            "existing archive import identity digest is inconsistent"
+        )
+    for model, identities, identity_column in (
+        (SourceChannel, source_ids, SourceChannel.id),
+        (SourceVideo, video_ids, SourceVideo.id),
+        (MediaObject, media_sha256s, MediaObject.sha256),
+    ):
+        if not identities:
+            continue
+        found = session.scalar(
+            select(func.count())
+            .select_from(model)
+            .where(identity_column.in_(identities))
+        )
+        if found != len(identities):
+            raise ArchiveCatalogError(
+                "existing archive import database readback is incomplete"
+            )
+
+
+def _validated_identity_list(
+    value: Any, field_name: str, *, sha256: bool = False
+) -> list[str]:
+    if (
+        not isinstance(value, list)
+        or value != sorted(set(value))
+        or any(not isinstance(item, str) or not item for item in value)
+    ):
+        raise ArchiveCatalogError(f"{field_name} is not a canonical identity list")
+    if sha256 and any(not _SHA256_PATTERN.fullmatch(item) for item in value):
+        raise ArchiveCatalogError(f"{field_name} contains a non-SHA-256 identity")
+    return value
 
 
 def write_archive_catalog_receipt(
     receipt: dict[str, Any], *, receipt_dir: Path
 ) -> tuple[Path, str]:
-    receipt_dir = receipt_dir.resolve()
-    receipt_dir.mkdir(parents=True, exist_ok=True, mode=0o750)
-    payload = _canonical_json_bytes(receipt)
-    payload_sha256 = hashlib.sha256(payload).hexdigest()
-    destination = receipt_dir / f"{ARCHIVE_RECEIPT_SCHEMA}-{payload_sha256}.json"
-    descriptor, temporary_name = tempfile.mkstemp(
-        prefix=".archive-receipt-", dir=receipt_dir
-    )
-    temporary_path = Path(temporary_name)
     try:
-        with os.fdopen(descriptor, "wb") as handle:
-            handle.write(payload)
-            handle.flush()
-            os.fsync(handle.fileno())
-        os.chmod(temporary_path, 0o444)
-        try:
-            os.link(temporary_path, destination)
-        except FileExistsError:
-            if _sha256_file(destination) != payload_sha256:
-                raise ArchiveCatalogError("immutable receipt collision")
-        os.chmod(destination, 0o444)
-    finally:
-        temporary_path.unlink(missing_ok=True)
-    return destination, payload_sha256
+        return write_immutable_json_receipt(
+            receipt,
+            receipt_dir=receipt_dir,
+            schema=ARCHIVE_RECEIPT_SCHEMA,
+        )
+    except ArchiveProtocolError as exc:
+        raise ArchiveCatalogError(str(exc)) from exc
 
 
-def _read_records(
-    path: Path,
+def _read_records_bytes(
+    payload: bytes,
     *,
     max_records: int,
     max_line_bytes: int,
 ) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
-    with path.open("rb") as handle:
-        for line_number, raw_line in enumerate(handle, start=1):
-            if len(raw_line) > max_line_bytes:
-                raise ArchiveCatalogError(f"line {line_number} exceeds max_line_bytes")
-            if not raw_line.strip():
-                raise ArchiveCatalogError(f"line {line_number} is blank")
-            if len(records) >= max_records:
-                raise ArchiveCatalogError("catalog exceeds max_records")
-            try:
-                record = json.loads(raw_line.decode("utf-8"))
-            except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-                raise ArchiveCatalogError(
-                    f"line {line_number} is not valid UTF-8 JSON"
-                ) from exc
-            if not isinstance(record, dict):
-                raise ArchiveCatalogError(f"line {line_number} must be a JSON object")
-            if record.get("schema") != ARCHIVE_CATALOG_SCHEMA:
-                raise ArchiveCatalogError(f"line {line_number} has the wrong schema")
-            records.append(record)
+    for line_number, raw_line in enumerate(payload.splitlines(keepends=True), start=1):
+        if len(raw_line) > max_line_bytes:
+            raise ArchiveCatalogError(f"line {line_number} exceeds max_line_bytes")
+        if not raw_line.strip():
+            raise ArchiveCatalogError(f"line {line_number} is blank")
+        if len(records) >= max_records:
+            raise ArchiveCatalogError("catalog exceeds max_records")
+        try:
+            record = json.loads(raw_line.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise ArchiveCatalogError(
+                f"line {line_number} is not valid UTF-8 JSON"
+            ) from exc
+        if not isinstance(record, dict):
+            raise ArchiveCatalogError(f"line {line_number} must be a JSON object")
+        if record.get("schema") != ARCHIVE_CATALOG_SCHEMA:
+            raise ArchiveCatalogError(f"line {line_number} has the wrong schema")
+        records.append(record)
+    if payload and not payload.endswith(b"\n"):
+        raise ArchiveCatalogError("catalog must end with a newline")
     return records
 
 
-def _validate_sidecar(path: Path, filename: str, expected_sha256: str) -> None:
+def _validate_sidecar_bytes(
+    payload: bytes, filename: str, expected_sha256: str
+) -> None:
     try:
-        sidecar = path.read_text(encoding="ascii")
+        sidecar = payload.decode("ascii")
     except UnicodeDecodeError as exc:
         raise ArchiveCatalogError("sidecar must be ASCII") from exc
     match = _SIDECAR_PATTERN.fullmatch(sidecar)
@@ -246,14 +458,22 @@ def _validate_contract(record: dict[str, Any]) -> None:
 
 def _load_source(session: Session, record: dict[str, Any], state: _ImportState) -> None:
     source_key = _required_text(record.get("source_key"), "source.source_key", 255)
+    if source_key in state.source_ids_by_key:
+        raise ArchiveCatalogError(f"duplicate source_key: {source_key}")
     platform = _required_text(record.get("platform"), "source.platform", 32).lower()
-    external_id = _required_text(
-        record.get("platform_entity_id"), "source.platform_entity_id", 255
-    )
     handle = _optional_text(record.get("handle"), "source.handle", 255)
     identity_state = _required_text(
         record.get("identity_state"), "source.identity_state", 255
     )
+    raw_external_id = record.get("platform_entity_id")
+    if raw_external_id is None:
+        if identity_state != "verified_handle_only" or handle is None:
+            raise ArchiveCatalogError(
+                "source without platform_entity_id must be verified_handle_only"
+            )
+        external_id = f"handle:{handle.casefold()}"
+    else:
+        external_id = _required_text(raw_external_id, "source.platform_entity_id", 255)
     evidence_ceilings = record.get("evidence_ceilings")
     if not isinstance(evidence_ceilings, list) or not all(
         isinstance(value, str) and value for value in evidence_ceilings
@@ -443,10 +663,10 @@ def _load_media_variant(
             variant.get("source_receipt_sha256"), "media_variant.source_receipt_sha256"
         ),
         "row_id": _required_text(variant.get("row_id"), "media_variant.row_id", 255),
-        "relative_path": _required_text(
+        "relative_path": _relative_posix_path(
             variant.get("relative_path"), "media_variant.relative_path", 4000
         ),
-        "remote_path": _required_text(
+        "remote_path": _relative_posix_path(
             variant.get("remote_path"), "media_variant.remote_path", 8000
         ),
         "media_kind": media_kind,
@@ -556,9 +776,9 @@ def _validate_inventory_summary(record: dict[str, Any], state: _ImportState) -> 
     )
     if state != "pending_discovery":
         raise ArchiveCatalogError("inventory_summary must remain pending_discovery")
-    if record.get("auto_download_requested") is not True:
+    if not isinstance(record.get("auto_download_requested"), bool):
         raise ArchiveCatalogError(
-            "inventory_summary.auto_download_requested must be true"
+            "inventory_summary.auto_download_requested must be boolean"
         )
     counts = _required_dict(
         record.get("observed_feed_counts"), "inventory_summary.observed_feed_counts"
@@ -628,6 +848,20 @@ def _optional_text(value: Any, field_name: str, max_length: int) -> str | None:
     return _required_text(value, field_name, max_length)
 
 
+def _relative_posix_path(value: Any, field_name: str, max_length: int) -> str:
+    path = _required_text(value, field_name, max_length)
+    parts = path.split("/")
+    if (
+        path.startswith("/")
+        or "\\" in path
+        or any(part in {"", ".", ".."} for part in parts)
+    ):
+        raise ArchiveCatalogError(
+            f"{field_name} must be a traversal-free relative path"
+        )
+    return path
+
+
 def _required_nonnegative_int(value: Any, field_name: str) -> int:
     if isinstance(value, bool) or not isinstance(value, int) or value < 0:
         raise ArchiveCatalogError(f"{field_name} must be a non-negative integer")
@@ -649,16 +883,8 @@ def _canonical_sort_key(payload: dict[str, Any]) -> str:
 
 
 def _canonical_json_bytes(payload: Any) -> bytes:
-    return (_canonical_sort_key(payload) + "\n").encode("utf-8")
+    return canonical_json_bytes(payload)
 
 
 def _sha256_json(payload: Any) -> str:
-    return hashlib.sha256(_canonical_json_bytes(payload)).hexdigest()
-
-
-def _sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+    return sha256_json(payload)

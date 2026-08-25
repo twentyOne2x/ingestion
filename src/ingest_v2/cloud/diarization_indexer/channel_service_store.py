@@ -38,7 +38,7 @@ from .channel_service_config import (
 )
 
 
-ALEMBIC_HEAD_REVISION = "20260825_0002"
+ALEMBIC_HEAD_REVISION = "20260825_0003"
 
 
 def utcnow() -> datetime:
@@ -382,6 +382,95 @@ class TenantChannelEntitlement(Base):
     )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class ArchiveCatalogImport(Base):
+    """Authoritative apply ledger for one immutable archive catalog packet."""
+
+    __tablename__ = "archive_catalog_imports"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    jsonl_sha256: Mapped[str] = mapped_column(
+        String(64), nullable=False, unique=True, index=True
+    )
+    sidecar_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    input_filename: Mapped[str] = mapped_column(String(255), nullable=False)
+    receipt_sha256: Mapped[str] = mapped_column(
+        String(64), nullable=False, unique=True, index=True
+    )
+    receipt_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    source_keys_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    source_ids_json: Mapped[list[str]] = mapped_column(JSON, nullable=False)
+    video_ids_json: Mapped[list[str]] = mapped_column(JSON, nullable=False)
+    media_sha256s_json: Mapped[list[str]] = mapped_column(JSON, nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="applied", index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class ArchiveTenantClaim(Base):
+    """Admin-only immutable receipt for granting imported channels to a tenant."""
+
+    __tablename__ = "archive_tenant_claims"
+    __table_args__ = (
+        UniqueConstraint(
+            "tenant_id", "idempotency_key", name="uq_archive_tenant_claims_key"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tenant_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("tenants.id"), nullable=False, index=True
+    )
+    admin_user_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("user_accounts.id"), nullable=False, index=True
+    )
+    catalog_import_id: Mapped[str] = mapped_column(
+        ForeignKey("archive_catalog_imports.id"), nullable=False, index=True
+    )
+    idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    source_ids_json: Mapped[list[str]] = mapped_column(JSON, nullable=False)
+    receipt_sha256: Mapped[str] = mapped_column(
+        String(64), nullable=False, unique=True, index=True
+    )
+    receipt_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="applied", index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class ArchiveHydrationRegistration(Base):
+    """Authoritative registration of a verified archive object in the hot-media CAS."""
+
+    __tablename__ = "archive_hydration_registrations"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    input_receipt_sha256: Mapped[str] = mapped_column(
+        String(64), nullable=False, unique=True, index=True
+    )
+    media_sha256: Mapped[str] = mapped_column(
+        String(64), ForeignKey("media_objects.sha256"), nullable=False, index=True
+    )
+    location_id: Mapped[str] = mapped_column(
+        String(64), ForeignKey("media_locations.id"), nullable=False, index=True
+    )
+    receipt_sha256: Mapped[str] = mapped_column(
+        String(64), nullable=False, unique=True, index=True
+    )
+    receipt_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="applied", index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
     )
 
 
