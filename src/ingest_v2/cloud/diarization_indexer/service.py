@@ -16,7 +16,17 @@ from sqlalchemy import select
 
 from src.ingest_v2.pipelines.run_all_components.namespace import load_namespace_channels
 
-from .channel_service_acp import create_or_sync_acp_job, list_acp_offerings, refresh_acp_job, serialize_acp_job
+from .channel_service_acp import (
+    create_or_sync_acp_job,
+    list_acp_offerings,
+    refresh_acp_job,
+    serialize_acp_job,
+)
+from .channel_service_config import (
+    internal_request_is_authorized,
+    is_production_environment,
+    validate_production_runtime,
+)
 from .channel_service_logic import (
     create_checkout_session,
     create_order_from_quote,
@@ -38,7 +48,11 @@ from .channel_service_readiness import (
     get_existing_checkout_by_idempotency_key,
     serialize_readiness_history,
 )
-from .channel_service_scheduler import ensure_egress_pools, serialize_egress_pools, serialize_scheduler_summary
+from .channel_service_scheduler import (
+    ensure_egress_pools,
+    serialize_egress_pools,
+    serialize_scheduler_summary,
+)
 from .channel_service_store import (
     AcpJobBridge,
     ChannelOrder,
@@ -67,8 +81,21 @@ LOG = logging.getLogger(__name__)
 app = FastAPI(title="Diarization Indexer")
 
 
+@app.middleware("http")
+async def require_production_internal_identity(request: Request, call_next):
+    """Keep the ingestion/control API private even if a port is exposed by mistake."""
+    if not internal_request_is_authorized(request.url.path, request.headers):
+        return Response(
+            content='{"detail":"invalid internal service identity"}',
+            status_code=401,
+            media_type="application/json",
+        )
+    return await call_next(request)
+
+
 @app.on_event("startup")
 def _startup_channel_service() -> None:
+    validate_production_runtime()
     init_db()
     with session_scope() as session:
         ensure_egress_pools(session)
@@ -88,7 +115,9 @@ def youtube_cookie_health(test_url: str = "https://www.youtube.com/watch?v=jNQXA
     cannot talk to the Docker daemon directly (so they can't `docker exec`).
     """
     # Determine cookie file path using the same envs as the ingestion pipelines.
-    cookiefile = (os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get("YTDLP_COOKIES_PATH") or "").strip()
+    cookiefile = (
+        os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get("YTDLP_COOKIES_PATH") or ""
+    ).strip()
     if not cookiefile:
         cookiefile = "/cookies/youtube.txt"
     cookie_path = Path(cookiefile)
@@ -194,7 +223,9 @@ def index_youtube(req: IndexYoutubeReq) -> dict:
     Requires `OPENAI_API_KEY` for embeddings.
     """
     if not (req.video_urls or req.channel or req.query):
-        raise HTTPException(status_code=400, detail="provide video_urls and/or channel and/or query")
+        raise HTTPException(
+            status_code=400, detail="provide video_urls and/or channel and/or query"
+        )
 
     out: dict = {"ok": True, "indexed": [], "failed": []}
     if req.video_urls:
@@ -304,7 +335,7 @@ def _extract_entities(payload) -> list[str]:
     if isinstance(payload, list):
         for item in payload:
             if isinstance(item, dict):
-                text = (item.get("text") or item.get("entity"))
+                text = item.get("text") or item.get("entity")
             else:
                 text = item
             if text and isinstance(text, str):
@@ -322,7 +353,14 @@ def _youtube_indexed_channel_key(channel_name: str) -> str:
     return f"icmfyi:ops:youtube:indexed:channel:{str(channel_name or '').strip().casefold()}"
 
 
-def _record_youtube_operator_truth(*, video_id: str, channel_name: str, transcript_provider: str, transcript_state: str, ingest_lane: str) -> None:
+def _record_youtube_operator_truth(
+    *,
+    video_id: str,
+    channel_name: str,
+    transcript_provider: str,
+    transcript_state: str,
+    ingest_lane: str,
+) -> None:
     redis_url = (os.getenv("REDIS_URL") or "").strip()
     if not redis_url or not video_id or not channel_name:
         return
@@ -333,14 +371,18 @@ def _record_youtube_operator_truth(*, video_id: str, channel_name: str, transcri
         pipe = r.pipeline()
         pipe.sadd(_youtube_indexed_channel_key(channel_name), video_id)
         if transcript_provider:
-            pipe.sadd(f"icmfyi:ops:youtube:provider:{transcript_provider.strip().casefold()}", video_id)
+            pipe.sadd(
+                f"icmfyi:ops:youtube:provider:{transcript_provider.strip().casefold()}", video_id
+            )
         if transcript_state:
             pipe.sadd(f"icmfyi:ops:youtube:state:{transcript_state.strip().casefold()}", video_id)
         if ingest_lane:
             pipe.sadd(f"icmfyi:ops:youtube:lane:{ingest_lane.strip().casefold()}", video_id)
         pipe.execute()
     except Exception as exc:
-        LOG.info("[index/diarized] redis operator truth write failed video=%s err=%s", video_id, exc)
+        LOG.info(
+            "[index/diarized] redis operator truth write failed video=%s err=%s", video_id, exc
+        )
 
 
 @app.post("/index/diarized")
@@ -355,7 +397,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     from src.ingest_v2.pipelines.build_parents import build_parent
     from src.ingest_v2.pipelines.upsert_parents import upsert_parents
     from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
-    from src.ingest_v2.pipelines.run_all_components.assemblyai import convert_assemblyai_json_to_raw
+    from src.ingest_v2.pipelines.run_all_components.assemblyai import (
+        convert_assemblyai_json_to_raw,
+    )
 
     diarized_payload = read_json_from_gcs(req.diarized_uri)
     raw_norm = convert_assemblyai_json_to_raw(diarized_payload)
@@ -393,10 +437,16 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
         try:
             video_meta = YouTubeClient(api_key=yt_key).fetch_video_metadata(req.video_id)
         except Exception as exc:
-            LOG.info("[index/diarized] youtube metadata fetch failed video=%s err=%s", req.video_id, exc)
+            LOG.info(
+                "[index/diarized] youtube metadata fetch failed video=%s err=%s", req.video_id, exc
+            )
 
     title = req.title or (video_meta.title if video_meta else None) or req.video_id
-    description = req.description if req.description is not None else (video_meta.description if video_meta else "")
+    description = (
+        req.description
+        if req.description is not None
+        else (video_meta.description if video_meta else "")
+    )
     channel_name = (
         req.channel_name
         or (video_meta.preferred_channel_name() if video_meta else None)
@@ -458,8 +508,18 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     #
     # This is intentionally best-effort. Indexing should still succeed even if
     # enrichment fails or API keys are missing.
-    router_enabled = (os.getenv("ROUTER_ENRICH", "1") or "1").strip().lower() not in ("0", "false", "no", "off")
-    speakers_enabled = (os.getenv("SPEAKER_RESOLVE", "1") or "1").strip().lower() not in ("0", "false", "no", "off")
+    router_enabled = (os.getenv("ROUTER_ENRICH", "1") or "1").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+        "off",
+    )
+    speakers_enabled = (os.getenv("SPEAKER_RESOLVE", "1") or "1").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+        "off",
+    )
 
     raw_for_children = dict(raw_norm)
     raw_for_children.setdefault("caption_lines", [])
@@ -504,7 +564,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
                     pass
             # Merge enriched fields into metadata for parent upsert.
             if isinstance(enrich, dict):
-                meta["description"] = enrich.get("description", meta.get("description", "")) or (meta.get("description") or "")
+                meta["description"] = enrich.get("description", meta.get("description", "")) or (
+                    meta.get("description") or ""
+                )
                 meta["topic_summary"] = enrich.get("topic_summary") or ""
                 meta["router_tags"] = enrich.get("router_tags") or []
                 meta["aliases"] = enrich.get("aliases") or []
@@ -587,13 +649,17 @@ async def handle_pubsub_push(request: Request) -> Response:
         service = create_ingest_service(namespace, allowed_channels)
     except Exception as exc:
         LOG.exception("Failed to initialise diarization ingest service")
-        raise HTTPException(status_code=500, detail="Failed to initialise diarization ingest service") from exc
+        raise HTTPException(
+            status_code=500, detail="Failed to initialise diarization ingest service"
+        ) from exc
 
     try:
         service.handle_event(event)
     except Exception as exc:
         LOG.exception("Failed to ingest diarization-ready event")
-        raise HTTPException(status_code=500, detail="Failed to ingest diarization-ready event") from exc
+        raise HTTPException(
+            status_code=500, detail="Failed to ingest diarization-ready event"
+        ) from exc
     return Response(status_code=204)
 
 
@@ -703,10 +769,16 @@ def get_channel_pack_quote(quote_id: str) -> dict:
 @app.post("/v1/checkout-sessions")
 def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
     with session_scope() as session:
-        existing = get_existing_checkout_by_idempotency_key(session, idempotency_key=req.idempotency_key)
+        existing = get_existing_checkout_by_idempotency_key(
+            session, idempotency_key=req.idempotency_key
+        )
         if existing is not None:
             return serialize_checkout_session(existing)
-        quotes = session.execute(select(ChannelQuote).where(ChannelQuote.id.in_(req.quote_ids))).scalars().all()
+        quotes = (
+            session.execute(select(ChannelQuote).where(ChannelQuote.id.in_(req.quote_ids)))
+            .scalars()
+            .all()
+        )
         found = {quote.id for quote in quotes}
         missing = [quote_id for quote_id in req.quote_ids if quote_id not in found]
         if missing:
@@ -731,9 +803,13 @@ def create_channel_pack_order(req: ChannelPackOrderReq) -> dict:
             raise HTTPException(status_code=404, detail=f"quote {req.quote_id} not found")
         checkout = session.get(CheckoutSessionRecord, req.checkout_session_id)
         if checkout is None:
-            raise HTTPException(status_code=404, detail=f"checkout session {req.checkout_session_id} not found")
+            raise HTTPException(
+                status_code=404, detail=f"checkout session {req.checkout_session_id} not found"
+            )
         if req.quote_id not in set(checkout.quote_ids_json or []):
-            raise HTTPException(status_code=400, detail="quote is not part of the checkout session")
+            raise HTTPException(
+                status_code=400, detail="quote is not part of the checkout session"
+            )
         if quote.status != "open":
             raise HTTPException(status_code=400, detail=f"quote {quote.id} is not open")
         if normalize_utc(quote.expires_at) < time_now_utc():
@@ -796,7 +872,9 @@ def get_channel_pack_manifest(pack_id: str) -> dict:
         if pack is None:
             raise HTTPException(status_code=404, detail=f"pack {pack_id} not found")
         if not pack.manifest_json:
-            raise HTTPException(status_code=404, detail=f"pack {pack_id} does not have a manifest yet")
+            raise HTTPException(
+                status_code=404, detail=f"pack {pack_id} does not have a manifest yet"
+            )
         return pack.manifest_json
 
 
@@ -818,7 +896,9 @@ def get_channel_pack_export(pack_id: str, name: str) -> FileResponse:
             raise HTTPException(status_code=404, detail=f"pack {pack_id} not found")
         path_value = (pack.export_paths_json or {}).get(key)
         if not path_value:
-            raise HTTPException(status_code=404, detail=f"export {name} is not ready for pack {pack_id}")
+            raise HTTPException(
+                status_code=404, detail=f"export {name} is not ready for pack {pack_id}"
+            )
         export_path = Path(path_value)
         if not export_path.exists():
             raise HTTPException(status_code=404, detail=f"export file for {name} was not found")
@@ -836,7 +916,9 @@ def get_channel_pack_export(pack_id: str, name: str) -> FileResponse:
 def get_channel_pack_acp_offerings(request: Request) -> dict:
     with session_scope() as session:
         readiness = compute_readiness(session, persist=True)
-        visible_offering_ids = [item["offering_id"] for item in readiness["offerings"] if item["published"]]
+        visible_offering_ids = [
+            item["offering_id"] for item in readiness["offerings"] if item["published"]
+        ]
         acp_identity_ready = bool(
             (os.getenv("SELLER_ENTITY_ID") or "").strip()
             and (os.getenv("SELLER_AGENT_WALLET_ADDRESS") or "").strip()
@@ -978,7 +1060,9 @@ def channel_service_public_base_url(request: Request) -> str:
 def require_acp_shared_secret(request: Request) -> None:
     expected = (os.getenv("ACP_SHARED_SECRET") or "").strip()
     if not expected:
-        raise HTTPException(status_code=503, detail="ACP bridge is disabled: ACP_SHARED_SECRET is not configured")
+        raise HTTPException(
+            status_code=503, detail="ACP bridge is disabled: ACP_SHARED_SECRET is not configured"
+        )
 
     presented = (request.headers.get("x-acp-shared-secret") or "").strip()
     if not presented:
@@ -990,13 +1074,19 @@ def require_acp_shared_secret(request: Request) -> None:
 
 
 def require_ops_shared_secret(request: Request) -> None:
-    expected = (os.getenv("CHANNEL_SERVICE_OPS_SHARED_SECRET") or os.getenv("ACP_SHARED_SECRET") or "").strip()
+    expected = (
+        os.getenv("CHANNEL_SERVICE_OPS_SHARED_SECRET") or os.getenv("ACP_SHARED_SECRET") or ""
+    ).strip()
     if not expected:
+        if is_production_environment():
+            raise HTTPException(
+                status_code=503,
+                detail="operations API is disabled: no production operations secret is configured",
+            )
         return
-    presented = (
-        (request.headers.get("x-ops-shared-secret") or "").strip()
-        or (request.headers.get("x-acp-shared-secret") or "").strip()
-    )
+    presented = (request.headers.get("x-ops-shared-secret") or "").strip() or (
+        request.headers.get("x-acp-shared-secret") or ""
+    ).strip()
     if not presented:
         auth = (request.headers.get("authorization") or "").strip()
         if auth.lower().startswith("bearer "):

@@ -6,9 +6,30 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterator
 
-from sqlalchemy import JSON, Boolean, DateTime, Float, ForeignKey, Integer, String, Text, create_engine, inspect, text
+from sqlalchemy import (
+    JSON,
+    Boolean,
+    DateTime,
+    Float,
+    ForeignKey,
+    Integer,
+    String,
+    Text,
+    UniqueConstraint,
+    create_engine,
+    inspect,
+    text,
+)
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship, sessionmaker
+
+from .channel_service_config import (
+    channel_service_database_url,
+    validate_production_runtime,
+)
+
+
+ALEMBIC_HEAD_REVISION = "20260825_0001"
 
 
 def utcnow() -> datetime:
@@ -17,6 +38,201 @@ def utcnow() -> datetime:
 
 class Base(DeclarativeBase):
     pass
+
+
+class UserAccount(Base):
+    __tablename__ = "user_accounts"
+    __table_args__ = (
+        UniqueConstraint(
+            "auth_provider", "auth_subject", name="uq_user_accounts_provider_subject"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    auth_provider: Mapped[str] = mapped_column(String(64), nullable=False)
+    auth_subject: Mapped[str] = mapped_column(String(255), nullable=False)
+    display_name: Mapped[str | None] = mapped_column(String(255))
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class Tenant(Base):
+    __tablename__ = "tenants"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    slug: Mapped[str] = mapped_column(String(128), nullable=False, unique=True, index=True)
+    display_name: Mapped[str] = mapped_column(String(255), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class TenantMembership(Base):
+    __tablename__ = "tenant_memberships"
+    __table_args__ = (
+        UniqueConstraint("tenant_id", "user_id", name="uq_tenant_memberships_tenant_user"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    user_id: Mapped[str] = mapped_column(
+        ForeignKey("user_accounts.id"), nullable=False, index=True
+    )
+    role: Mapped[str] = mapped_column(String(32), nullable=False, default="member")
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class SourceChannel(Base):
+    __tablename__ = "source_channels"
+    __table_args__ = (
+        UniqueConstraint("platform", "external_id", name="uq_source_channels_platform_external"),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    platform: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    external_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    handle: Mapped[str | None] = mapped_column(String(255), index=True)
+    display_name: Mapped[str | None] = mapped_column(String(255))
+    canonical_url: Mapped[str | None] = mapped_column(Text)
+    metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class TenantChannelEntitlement(Base):
+    __tablename__ = "tenant_channel_entitlements"
+    __table_args__ = (
+        UniqueConstraint("tenant_id", "channel_id", name="uq_tenant_channel_entitlements_scope"),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    channel_id: Mapped[str] = mapped_column(
+        ForeignKey("source_channels.id"), nullable=False, index=True
+    )
+    granted_by_user_id: Mapped[str | None] = mapped_column(
+        ForeignKey("user_accounts.id"), index=True
+    )
+    access_level: Mapped[str] = mapped_column(String(32), nullable=False, default="query")
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class IngestionJob(Base):
+    """Globally deduplicated work; tenant ownership lives in IngestionRequest."""
+
+    __tablename__ = "ingestion_jobs"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    dedupe_key: Mapped[str] = mapped_column(String(255), nullable=False, unique=True, index=True)
+    channel_id: Mapped[str | None] = mapped_column(ForeignKey("source_channels.id"), index=True)
+    job_kind: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
+    source_kind: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    source_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    pipeline_version: Mapped[str] = mapped_column(String(128), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="queued", index=True)
+    priority: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    max_attempts: Mapped[int] = mapped_column(Integer, nullable=False, default=5)
+    next_run_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    lease_owner: Mapped[str | None] = mapped_column(String(128), index=True)
+    lease_expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    payload_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    result_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    last_error_code: Mapped[str | None] = mapped_column(String(64))
+    last_error_detail: Mapped[str | None] = mapped_column(Text)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class IngestionRequest(Base):
+    __tablename__ = "ingestion_requests"
+    __table_args__ = (
+        UniqueConstraint(
+            "tenant_id", "idempotency_key", name="uq_ingestion_requests_tenant_idempotency"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    requested_by_user_id: Mapped[str | None] = mapped_column(
+        ForeignKey("user_accounts.id"), index=True
+    )
+    job_id: Mapped[str] = mapped_column(
+        ForeignKey("ingestion_jobs.id"), nullable=False, index=True
+    )
+    idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="accepted", index=True)
+    request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class IngestionEffect(Base):
+    """Durable reservation for an external provider effect such as transcription submission."""
+
+    __tablename__ = "ingestion_effects"
+    __table_args__ = (
+        UniqueConstraint(
+            "provider", "idempotency_key", name="uq_ingestion_effects_provider_idempotency"
+        ),
+        UniqueConstraint(
+            "provider", "provider_effect_id", name="uq_ingestion_effects_provider_effect"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    job_id: Mapped[str] = mapped_column(
+        ForeignKey("ingestion_jobs.id"), nullable=False, index=True
+    )
+    provider: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
+    effect_kind: Mapped[str] = mapped_column(String(64), nullable=False)
+    idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="reserved", index=True)
+    provider_effect_id: Mapped[str | None] = mapped_column(String(255))
+    request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    response_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
 
 
 class ChannelQuote(Base):
@@ -45,7 +261,9 @@ class ChannelQuote(Base):
     batch_plan_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
     price_breakdown_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -59,7 +277,9 @@ class QuoteVideo(Base):
     __tablename__ = "quote_videos"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    quote_id: Mapped[str] = mapped_column(ForeignKey("channel_quotes.id"), nullable=False, index=True)
+    quote_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_quotes.id"), nullable=False, index=True
+    )
     position: Mapped[int] = mapped_column(Integer, nullable=False)
     batch_index: Mapped[int] = mapped_column(Integer, nullable=False)
     included: Mapped[bool] = mapped_column(Boolean, nullable=False)
@@ -86,14 +306,20 @@ class CheckoutSessionRecord(Base):
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
     status: Mapped[str] = mapped_column(String(32), default="open", nullable=False)
-    idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False, unique=True, index=True)
+    idempotency_key: Mapped[str] = mapped_column(
+        String(255), nullable=False, unique=True, index=True
+    )
     currency: Mapped[str] = mapped_column(String(16), default="USD", nullable=False)
     total_amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     quote_ids_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
     line_items_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
     payment_provider: Mapped[str] = mapped_column(String(64), default="x402", nullable=False)
-    payment_status: Mapped[str] = mapped_column(String(64), default="not_implemented", nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    payment_status: Mapped[str] = mapped_column(
+        String(64), default="not_implemented", nullable=False
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -114,7 +340,9 @@ class ChannelPack(Base):
     batch_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     manifest_json: Mapped[dict | None] = mapped_column(JSON)
     export_paths_json: Mapped[dict | None] = mapped_column(JSON)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -124,8 +352,12 @@ class PackBatch(Base):
     __tablename__ = "pack_batches"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    pack_id: Mapped[str] = mapped_column(ForeignKey("channel_packs.id"), nullable=False, index=True)
-    quote_id: Mapped[str] = mapped_column(ForeignKey("channel_quotes.id"), nullable=False, index=True)
+    pack_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_packs.id"), nullable=False, index=True
+    )
+    quote_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_quotes.id"), nullable=False, index=True
+    )
     checkout_session_id: Mapped[str] = mapped_column(
         ForeignKey("checkout_sessions.id"), nullable=False, index=True
     )
@@ -137,7 +369,9 @@ class PackBatch(Base):
     estimated_ready_minutes: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     build_notes_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     manifest_json: Mapped[dict | None] = mapped_column(JSON)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -147,9 +381,15 @@ class PackVideo(Base):
     __tablename__ = "pack_videos"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    pack_id: Mapped[str] = mapped_column(ForeignKey("channel_packs.id"), nullable=False, index=True)
-    batch_id: Mapped[str] = mapped_column(ForeignKey("pack_batches.id"), nullable=False, index=True)
-    quote_id: Mapped[str] = mapped_column(ForeignKey("channel_quotes.id"), nullable=False, index=True)
+    pack_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_packs.id"), nullable=False, index=True
+    )
+    batch_id: Mapped[str] = mapped_column(
+        ForeignKey("pack_batches.id"), nullable=False, index=True
+    )
+    quote_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_quotes.id"), nullable=False, index=True
+    )
     position: Mapped[int] = mapped_column(Integer, nullable=False)
     video_id: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
     title: Mapped[str | None] = mapped_column(Text)
@@ -163,26 +403,36 @@ class PackVideo(Base):
     transcript_source: Mapped[str | None] = mapped_column(String(64))
     indexed_parent_id: Mapped[str | None] = mapped_column(String(128))
     status: Mapped[str] = mapped_column(String(32), default="queued", nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class ChannelOrder(Base):
     __tablename__ = "channel_orders"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    quote_id: Mapped[str] = mapped_column(ForeignKey("channel_quotes.id"), nullable=False, index=True)
+    quote_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_quotes.id"), nullable=False, index=True
+    )
     checkout_session_id: Mapped[str] = mapped_column(
         ForeignKey("checkout_sessions.id"), nullable=False, index=True
     )
-    pack_id: Mapped[str] = mapped_column(ForeignKey("channel_packs.id"), nullable=False, index=True)
-    batch_id: Mapped[str] = mapped_column(ForeignKey("pack_batches.id"), nullable=False, index=True)
+    pack_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_packs.id"), nullable=False, index=True
+    )
+    batch_id: Mapped[str] = mapped_column(
+        ForeignKey("pack_batches.id"), nullable=False, index=True
+    )
     status: Mapped[str] = mapped_column(String(32), default="queued", nullable=False)
     payment_status: Mapped[str] = mapped_column(String(64), default="pending", nullable=False)
     payment_provider: Mapped[str] = mapped_column(String(64), default="x402", nullable=False)
     amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     currency: Mapped[str] = mapped_column(String(16), default="USD", nullable=False)
     notes_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -201,7 +451,9 @@ class PaymentReceipt(Base):
     amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     currency: Mapped[str] = mapped_column(String(16), default="USD", nullable=False)
     receipt_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class AcpJobBridge(Base):
@@ -211,7 +463,9 @@ class AcpJobBridge(Base):
     offering_id: Mapped[str] = mapped_column(String(128), nullable=False, index=True)
     status: Mapped[str] = mapped_column(String(64), default="received", nullable=False)
     quote_id: Mapped[str | None] = mapped_column(ForeignKey("channel_quotes.id"), index=True)
-    checkout_session_id: Mapped[str | None] = mapped_column(ForeignKey("checkout_sessions.id"), index=True)
+    checkout_session_id: Mapped[str | None] = mapped_column(
+        ForeignKey("checkout_sessions.id"), index=True
+    )
     order_id: Mapped[str | None] = mapped_column(ForeignKey("channel_orders.id"), index=True)
     pack_id: Mapped[str | None] = mapped_column(ForeignKey("channel_packs.id"), index=True)
     fixed_price_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
@@ -223,7 +477,9 @@ class AcpJobBridge(Base):
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     delivery_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     error_detail: Mapped[str | None] = mapped_column(Text)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -233,8 +489,12 @@ class OfferingReadinessSnapshot(Base):
     __tablename__ = "offering_readiness_snapshots"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    publication_state: Mapped[str] = mapped_column(String(32), nullable=False, default="internal_only")
-    acceptance_scope: Mapped[str] = mapped_column(String(32), nullable=False, default="catalog_only")
+    publication_state: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="internal_only"
+    )
+    acceptance_scope: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="catalog_only"
+    )
     capacity_score: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     purchasable: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     hard_stop_reasons_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
@@ -246,7 +506,9 @@ class OfferingReadinessSnapshot(Base):
     latest_soak_status: Mapped[str | None] = mapped_column(String(32))
     metrics_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     source_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class OfferingReadinessOverride(Base):
@@ -258,9 +520,13 @@ class OfferingReadinessOverride(Base):
     reason: Mapped[str] = mapped_column(Text, nullable=False)
     created_by: Mapped[str | None] = mapped_column(String(255))
     active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
-    starts_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    starts_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class SyntheticRun(Base):
@@ -276,7 +542,9 @@ class SyntheticRun(Base):
     published_after: Mapped[str | None] = mapped_column(String(32))
     published_before: Mapped[str | None] = mapped_column(String(32))
     result_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    started_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
@@ -284,12 +552,16 @@ class SyntheticStep(Base):
     __tablename__ = "synthetic_steps"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    synthetic_run_id: Mapped[str] = mapped_column(ForeignKey("synthetic_runs.id"), nullable=False, index=True)
+    synthetic_run_id: Mapped[str] = mapped_column(
+        ForeignKey("synthetic_runs.id"), nullable=False, index=True
+    )
     step_name: Mapped[str] = mapped_column(String(64), nullable=False)
     status: Mapped[str] = mapped_column(String(32), nullable=False, default="running")
     payload_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     detail: Mapped[str | None] = mapped_column(Text)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class SoakRun(Base):
@@ -301,7 +573,9 @@ class SoakRun(Base):
     success_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     failure_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     result_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    started_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
@@ -309,22 +583,30 @@ class SoakSample(Base):
     __tablename__ = "soak_samples"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    soak_run_id: Mapped[str] = mapped_column(ForeignKey("soak_runs.id"), nullable=False, index=True)
+    soak_run_id: Mapped[str] = mapped_column(
+        ForeignKey("soak_runs.id"), nullable=False, index=True
+    )
     sample_index: Mapped[int] = mapped_column(Integer, nullable=False)
     status: Mapped[str] = mapped_column(String(32), nullable=False, default="running")
     result_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class Entitlement(Base):
     __tablename__ = "entitlements"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    pack_id: Mapped[str] = mapped_column(ForeignKey("channel_packs.id"), nullable=False, index=True)
+    pack_id: Mapped[str] = mapped_column(
+        ForeignKey("channel_packs.id"), nullable=False, index=True
+    )
     subject_type: Mapped[str] = mapped_column(String(64), nullable=False)
     subject_id: Mapped[str] = mapped_column(String(255), nullable=False)
     status: Mapped[str] = mapped_column(String(32), default="active", nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
 
 
 class TranscriptProbe(Base):
@@ -345,7 +627,9 @@ class TranscriptProbe(Base):
     next_attempt_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     lease_owner: Mapped[str | None] = mapped_column(String(128))
     lease_expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -373,7 +657,9 @@ class EgressPool(Base):
     last_canary_error_kind: Mapped[str | None] = mapped_column(String(64))
     last_canary_error_detail: Mapped[str | None] = mapped_column(Text)
     last_canary_video_id: Mapped[str | None] = mapped_column(String(64))
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -398,7 +684,9 @@ class SchedulerJob(Base):
     attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     last_error_kind: Mapped[str | None] = mapped_column(String(64))
     last_error_detail: Mapped[str | None] = mapped_column(Text)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
     )
@@ -415,7 +703,9 @@ class SchedulerAttempt(Base):
     status: Mapped[str] = mapped_column(String(32), nullable=False)
     error_kind: Mapped[str | None] = mapped_column(String(64))
     error_detail: Mapped[str | None] = mapped_column(Text)
-    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, nullable=False)
+    started_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
@@ -424,11 +714,7 @@ _SESSION_FACTORY = None
 
 
 def _database_url() -> str:
-    return (
-        os.getenv("CHANNEL_SERVICE_DATABASE_URL")
-        or os.getenv("DATABASE_URL")
-        or "sqlite:///./.local-data/channel-service.db"
-    )
+    return channel_service_database_url()
 
 
 def _ensure_sqlite_parent(url: str) -> dict:
@@ -445,8 +731,21 @@ def get_engine():
     if _ENGINE is None:
         url = _database_url()
         connect_args = _ensure_sqlite_parent(url)
-        _ENGINE = create_engine(url, future=True, connect_args=connect_args)
-        _SESSION_FACTORY = sessionmaker(bind=_ENGINE, autoflush=False, autocommit=False, future=True)
+        engine_kwargs = {
+            "future": True,
+            "connect_args": connect_args,
+            "pool_pre_ping": True,
+        }
+        if url.startswith("postgresql"):
+            engine_kwargs.update(
+                pool_size=int(os.getenv("CHANNEL_SERVICE_DB_POOL_SIZE", "10")),
+                max_overflow=int(os.getenv("CHANNEL_SERVICE_DB_MAX_OVERFLOW", "10")),
+                pool_recycle=int(os.getenv("CHANNEL_SERVICE_DB_POOL_RECYCLE_SECONDS", "1800")),
+            )
+        _ENGINE = create_engine(url, **engine_kwargs)
+        _SESSION_FACTORY = sessionmaker(
+            bind=_ENGINE, autoflush=False, autocommit=False, future=True
+        )
     return _ENGINE
 
 
@@ -481,8 +780,12 @@ def _sqlite_schema_lock(url: str) -> Iterator[None]:
 
 
 def init_db() -> None:
+    validate_production_runtime()
     engine = get_engine()
     url = str(engine.url)
+    if engine.url.get_backend_name() == "postgresql":
+        _assert_alembic_head(engine)
+        return
     try:
         with _sqlite_schema_lock(url):
             Base.metadata.create_all(bind=engine)
@@ -492,6 +795,33 @@ def init_db() -> None:
         # If another worker created the table first, the schema is already usable.
         if "already exists" not in str(exc).lower():
             raise
+
+
+def _assert_alembic_head(engine) -> None:
+    """Production PostgreSQL is migration-managed; application startup never mutates it."""
+    inspector = inspect(engine)
+    if "alembic_version" not in set(inspector.get_table_names()):
+        raise RuntimeError(
+            "PostgreSQL schema is unversioned; run `alembic upgrade head` before starting the service"
+        )
+    with engine.connect() as conn:
+        revisions = {
+            str(row[0]) for row in conn.execute(text("SELECT version_num FROM alembic_version"))
+        }
+    if revisions != {ALEMBIC_HEAD_REVISION}:
+        current = ",".join(sorted(revisions)) or "none"
+        raise RuntimeError(
+            f"PostgreSQL schema is at {current}; expected Alembic head {ALEMBIC_HEAD_REVISION}"
+        )
+
+
+def dispose_engine() -> None:
+    """Dispose cached connections, primarily for tests and controlled process shutdown."""
+    global _ENGINE, _SESSION_FACTORY
+    if _ENGINE is not None:
+        _ENGINE.dispose()
+    _ENGINE = None
+    _SESSION_FACTORY = None
 
 
 @contextmanager
