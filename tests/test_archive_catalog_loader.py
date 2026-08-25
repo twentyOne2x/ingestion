@@ -621,6 +621,7 @@ def test_hydration_registration_revalidates_cas_and_marks_video_ready(
         assert video.clip_ready is True
         assert video.archive_state == "retained_hot_verified"
         assert location.location_key == str(cas_path)
+        assert replay.receipt["readback"]["video_ids"] == [video.id]
         assert (
             session.scalar(
                 select(func.count()).select_from(ArchiveHydrationRegistration)
@@ -630,6 +631,24 @@ def test_hydration_registration_revalidates_cas_and_marks_video_ready(
     assert first.reconciled is False
     assert replay.reconciled is True
     assert first.receipt_sha256 == replay.receipt_sha256
+
+    with Session(engine) as session:
+        video = session.execute(select(SourceVideo)).scalar_one()
+        video.clip_ready = False
+        video.archive_state = "retained_remote_verified"
+        session.commit()
+    with (
+        Session(engine) as session,
+        pytest.raises(ArchiveAdminError, match="video readback is incomplete"),
+    ):
+        register_hot_media_hydration(
+            session,
+            source_receipt_path=source_receipt,
+            expected_source_receipt_sha256=source_digest,
+            hot_media_root=hot_root,
+            receipt_dir=tmp_path / "hydration-receipts",
+            ffprobe_bin=Path("/usr/bin/ffprobe"),
+        )
 
 
 def test_immutable_receipt_detects_exact_destination_collision(tmp_path: Path) -> None:

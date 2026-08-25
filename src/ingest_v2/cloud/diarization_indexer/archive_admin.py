@@ -345,6 +345,7 @@ def register_hot_media_hydration(
             },
             "readback": {
                 "location_id": location_id,
+                "video_ids": video_ids,
                 "video_ids_sha256": sha256_json(video_ids),
             },
             "protocol": {"database_commit_required": True},
@@ -429,34 +430,129 @@ def _reconcile_hydration(
     prepared: dict[str, Any],
     receipt_dir: Path,
 ) -> ArchiveAdminApplyResult:
+    receipt = existing.receipt_json
     if (
         existing.status != "applied"
         or existing.media_sha256 != prepared["media_sha256"]
-        or not isinstance(existing.receipt_json, dict)
-        or sha256_json(existing.receipt_json) != existing.receipt_sha256
+        or not isinstance(receipt, dict)
+        or sha256_json(receipt) != existing.receipt_sha256
     ):
         raise ArchiveAdminError("hydration registration identity collision")
-    location = session.get(MediaLocation, existing.location_id)
+
+    expected_location_id = _stable_id("loc", f"hot_local:{prepared['cas_path']}")
+    media = session.execute(
+        select(MediaObject)
+        .where(MediaObject.sha256 == prepared["media_sha256"])
+        .with_for_update()
+    ).scalar_one_or_none()
+    if (
+        media is None
+        or media.size_bytes != prepared["size_bytes"]
+        or media.mime_type != prepared["mime_type"]
+        or media.status != "active"
+    ):
+        raise ArchiveAdminError("hydration registration media readback is incomplete")
+
+    location = session.execute(
+        select(MediaLocation)
+        .where(MediaLocation.id == existing.location_id)
+        .with_for_update()
+    ).scalar_one_or_none()
     if (
         location is None
+        or existing.location_id != expected_location_id
         or location.media_sha256 != prepared["media_sha256"]
         or location.backend != "hot_local"
         or location.location_key != prepared["cas_path"]
         or location.status != "active"
         or location.bytes != prepared["size_bytes"]
+        or location.verified_at is None
     ):
         raise ArchiveAdminError(
             "hydration registration database readback is incomplete"
         )
+
+    references = list(
+        session.execute(
+            select(VideoMediaRef)
+            .where(
+                VideoMediaRef.media_sha256 == prepared["media_sha256"],
+                VideoMediaRef.role == "source_video",
+                VideoMediaRef.status == "active",
+            )
+            .with_for_update()
+        ).scalars()
+    )
+    video_ids = sorted({reference.video_id for reference in references})
+    if not video_ids or len(video_ids) != len(references):
+        raise ArchiveAdminError(
+            "hydration registration video references are incomplete"
+        )
+    videos = list(
+        session.execute(
+            select(SourceVideo).where(SourceVideo.id.in_(video_ids)).with_for_update()
+        ).scalars()
+    )
+    if len(videos) != len(video_ids) or any(
+        video.id not in video_ids
+        or video.clip_candidate is not True
+        or video.clip_ready is not True
+        or video.archive_state != "retained_hot_verified"
+        or video.status != "active"
+        for video in videos
+    ):
+        raise ArchiveAdminError("hydration registration video readback is incomplete")
+
+    counts = receipt.get("counts")
+    expected_readback = {
+        "location_id": expected_location_id,
+        "video_ids": video_ids,
+        "video_ids_sha256": sha256_json(video_ids),
+    }
+    if (
+        set(receipt) != {"schema", "input", "media", "counts", "readback", "protocol"}
+        or receipt.get("schema") != HOT_MEDIA_HYDRATION_RECEIPT_SCHEMA
+        or receipt.get("input")
+        != {
+            "filename": prepared["input_filename"],
+            "source_receipt_sha256": existing.input_receipt_sha256,
+        }
+        or receipt.get("media")
+        != {
+            "cas_path": prepared["cas_path"],
+            "ffprobe": prepared["ffprobe"],
+            "media_sha256": prepared["media_sha256"],
+            "mime_type": prepared["mime_type"],
+            "size_bytes": prepared["size_bytes"],
+        }
+        or not isinstance(counts, dict)
+        or set(counts)
+        != {
+            "locations_created",
+            "locations_unchanged",
+            "videos_marked_clip_ready",
+        }
+        or type(counts.get("locations_created")) is not int
+        or type(counts.get("locations_unchanged")) is not int
+        or type(counts.get("videos_marked_clip_ready")) is not int
+        or (counts["locations_created"], counts["locations_unchanged"])
+        not in {(1, 0), (0, 1)}
+        or counts.get("videos_marked_clip_ready") != len(video_ids)
+        or receipt.get("readback") != expected_readback
+        or receipt.get("protocol") != {"database_commit_required": True}
+    ):
+        raise ArchiveAdminError(
+            "hydration registration receipt readback is inconsistent"
+        )
     receipt_path, receipt_sha256 = write_immutable_json_receipt(
-        existing.receipt_json,
+        receipt,
         receipt_dir=receipt_dir,
         schema=HOT_MEDIA_HYDRATION_RECEIPT_SCHEMA,
     )
     if receipt_sha256 != existing.receipt_sha256:
         raise ArchiveAdminError("hydration receipt digest is inconsistent")
     return ArchiveAdminApplyResult(
-        receipt=existing.receipt_json,
+        receipt=receipt,
         receipt_path=receipt_path,
         receipt_sha256=receipt_sha256,
         reconciled=True,
