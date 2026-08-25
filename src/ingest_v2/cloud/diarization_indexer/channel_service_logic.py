@@ -3,11 +3,11 @@ from __future__ import annotations
 import json
 import math
 import os
+import re
 import uuid
 import zipfile
 from dataclasses import dataclass
-from datetime import date
-from datetime import timedelta
+from datetime import date, timedelta
 from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
@@ -17,11 +17,11 @@ from qdrant_client.http import models as qm
 from sqlalchemy import select
 
 from src.ingest_v2.pipelines.index_youtube_captions import (
-    _fetch_transcript_api_cues,
     _coerce_watch_url,
+    _fetch_transcript_api_cues,
     _normalize_channel_url,
-    _resolve_channel_id_via_api,
     _require_ytdlp,
+    _resolve_channel_id_via_api,
     _uploads_playlist_id,
     _yt_watch_url,
     _ytapi_get,
@@ -35,10 +35,14 @@ from .channel_service_store import (
     ChannelPack,
     ChannelQuote,
     CheckoutSessionRecord,
+    CommerceScope,
     PackBatch,
     PackVideo,
     QuoteVideo,
     TranscriptProbe,
+    commerce_ownership_values,
+    commerce_scope_predicates,
+    require_commerce_record_scope,
     utcnow,
 )
 from .youtube import _parse_duration_seconds
@@ -54,6 +58,14 @@ def new_id(prefix: str) -> str:
 def payment_required() -> bool:
     raw = (os.getenv("CHANNEL_SERVICE_REQUIRE_PAYMENT") or "").strip().lower()
     return raw in {"1", "true", "yes", "on"}
+
+
+def enforce_direct_order_allowed() -> None:
+    """Keep the public order route from racing the settled-payment worker."""
+    if payment_required():
+        raise ValueError(
+            "live payment orders must be created from the settled x402 work outbox"
+        )
 
 
 def inline_index_enabled() -> bool:
@@ -1004,6 +1016,7 @@ class QuotePlan:
 def plan_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     channel_handle: str,
     namespace: str,
     mode: str,
@@ -1020,14 +1033,22 @@ def plan_quote(
     existing_video_ids: set[str] = set()
     existing_batch_count = 0
     if pack_id:
-        existing_pack = session.get(ChannelPack, pack_id)
+        existing_pack = session.execute(
+            select(ChannelPack).where(
+                ChannelPack.id == pack_id,
+                *commerce_scope_predicates(ChannelPack, commerce_scope),
+            )
+        ).scalar_one_or_none()
         if existing_pack is None:
             raise ValueError(f"Pack {pack_id} was not found")
         if existing_pack.status not in {"draft", "queued", "partial", "ready"}:
             raise ValueError(f"Pack {pack_id} is not available for expansion")
         existing_batch_count = int(existing_pack.batch_count or 0)
         rows = session.execute(
-            select(PackVideo.video_id).where(PackVideo.pack_id == pack_id)
+            select(PackVideo.video_id).where(
+                PackVideo.pack_id == pack_id,
+                *commerce_scope_predicates(PackVideo, commerce_scope),
+            )
         ).all()
         existing_video_ids = {str(video_id) for (video_id,) in rows if video_id}
 
@@ -1162,7 +1183,6 @@ def plan_quote(
         existing_batch_count=existing_batch_count,
         per_video=per_video,
     )
-    batch_by_position: Dict[int, int] = {}
     offset = 0
     for batch in batch_plan:
         batch_index = int(batch["batch_index"])
@@ -1212,11 +1232,14 @@ def plan_quote(
 def persist_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     request_payload: dict,
     plan: QuotePlan,
     planning_latency_ms: int = 0,
 ) -> ChannelQuote:
+    ownership = commerce_ownership_values(commerce_scope)
     quote = ChannelQuote(
+        **ownership,
         id=new_id("quote"),
         status=quote_status_for_rows(
             included_rows=plan.included_rows, pending_rows=plan.pending_rows
@@ -1246,6 +1269,7 @@ def persist_quote(
             "current_batch_amount_cents": plan.current_batch_amount_cents,
             "total_included_amount_cents": plan.total_included_amount_cents,
         },
+        commerce_json={},
         expires_at=utcnow() + timedelta(minutes=30),
     )
     session.add(quote)
@@ -1258,6 +1282,7 @@ def persist_quote(
     for row in all_rows:
         session.add(
             QuoteVideo(
+                **ownership,
                 quote_id=quote.id,
                 position=int(row["position"]),
                 batch_index=int(row.get("batch_index") or 0),
@@ -1283,6 +1308,8 @@ def persist_quote(
 
 
 def serialize_quote(quote: ChannelQuote) -> dict:
+    from .channel_service_commerce import public_commerce_projection
+
     included_rows = []
     pending_rows = []
     excluded_rows = []
@@ -1321,6 +1348,7 @@ def serialize_quote(quote: ChannelQuote) -> dict:
         "ok": True,
         "quote_id": quote.id,
         "status": quote.status,
+        "commerce": public_commerce_projection(quote),
         "channel": {
             "handle": quote.channel_handle,
             "channel_id": quote.resolved_channel_id,
@@ -1511,10 +1539,15 @@ def refresh_quote_state(
 
 
 def create_checkout_session(
-    *, session, quote_ids: List[str], idempotency_key: str
+    *,
+    session,
+    commerce_scope: CommerceScope,
+    quote_ids: List[str],
+    idempotency_key: str,
 ) -> CheckoutSessionRecord:
     return create_checkout_session_with_payment(
         session=session,
+        commerce_scope=commerce_scope,
         quote_ids=quote_ids,
         idempotency_key=idempotency_key,
     )
@@ -1523,27 +1556,41 @@ def create_checkout_session(
 def create_checkout_session_with_payment(
     *,
     session,
+    commerce_scope: CommerceScope,
     quote_ids: List[str],
     idempotency_key: str,
     payment_provider: str = "x402",
     payment_status: Optional[str] = None,
     line_item_amount_overrides: Optional[Dict[str, int]] = None,
+    refresh_quotes: bool = True,
 ) -> CheckoutSessionRecord:
+    normalized_quote_ids = list(dict.fromkeys(str(item) for item in quote_ids))
+    if normalized_quote_ids != list(quote_ids):
+        raise ValueError("quote_ids must be unique and preserve their exact order")
+    ownership = commerce_ownership_values(commerce_scope)
     existing = session.execute(
         select(CheckoutSessionRecord).where(
-            CheckoutSessionRecord.idempotency_key == idempotency_key
+            CheckoutSessionRecord.idempotency_key == idempotency_key,
+            *commerce_scope_predicates(CheckoutSessionRecord, commerce_scope),
         )
     ).scalar_one_or_none()
     if existing is not None:
+        if list(existing.quote_ids_json or []) != normalized_quote_ids:
+            raise ValueError("idempotency key already exists with different quote ids")
         return existing
 
     quotes = (
-        session.execute(select(ChannelQuote).where(ChannelQuote.id.in_(quote_ids)))
+        session.execute(
+            select(ChannelQuote).where(
+                ChannelQuote.id.in_(normalized_quote_ids),
+                *commerce_scope_predicates(ChannelQuote, commerce_scope),
+            )
+        )
         .scalars()
         .all()
     )
     found_ids = {quote.id for quote in quotes}
-    missing = [quote_id for quote_id in quote_ids if quote_id not in found_ids]
+    missing = [quote_id for quote_id in normalized_quote_ids if quote_id not in found_ids]
     if missing:
         raise ValueError(f"Unknown quote ids: {', '.join(missing)}")
 
@@ -1551,7 +1598,8 @@ def create_checkout_session_with_payment(
     line_items = []
     line_item_amount_overrides = dict(line_item_amount_overrides or {})
     for quote in quotes:
-        refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
+        if refresh_quotes:
+            refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
         if quote.status != "open" or int(quote.current_batch_video_count or 0) <= 0:
             raise ValueError(
                 f"Quote {quote.id} does not have a billable starter batch yet"
@@ -1574,12 +1622,13 @@ def create_checkout_session_with_payment(
         total += charged_amount_cents
 
     record = CheckoutSessionRecord(
+        **ownership,
         id=new_id("checkout"),
         status="open",
         idempotency_key=idempotency_key,
         currency="USD",
         total_amount_cents=total,
-        quote_ids_json=list(quote_ids),
+        quote_ids_json=normalized_quote_ids,
         line_items_json=line_items,
         payment_provider=payment_provider,
         payment_status=payment_status
@@ -1671,18 +1720,42 @@ def _build_pack_artifacts(
     language: str,
     prefer_auto: bool,
     transcript_rows_by_video: Optional[Dict[str, List[dict]]] = None,
+    artifact_generation: Optional[str] = None,
+    manifest_status: Optional[str] = None,
+    batch_status: Optional[str] = None,
+    authoritative_pack_rows: Optional[Iterable[PackVideo]] = None,
 ) -> dict:
-    pack_rows = (
-        session.execute(
-            select(PackVideo)
-            .where(PackVideo.pack_id == pack.id)
-            .order_by(PackVideo.position)
+    if authoritative_pack_rows is None:
+        pack_rows = (
+            session.execute(
+                select(PackVideo)
+                .join(PackBatch, PackBatch.id == PackVideo.batch_id)
+                .where(PackVideo.pack_id == pack.id)
+                .order_by(
+                    PackBatch.batch_index.asc(),
+                    PackVideo.position.asc(),
+                    PackVideo.id.asc(),
+                )
+            )
+            .scalars()
+            .all()
         )
-        .scalars()
-        .all()
-    )
+    else:
+        # Paid publication supplies the exact ordered ORM snapshot that was
+        # hashed with its authoritative PostgreSQL transcript rows. Re-querying
+        # here would admit a concurrent S -> S' -> S ABA and could fall back to
+        # Qdrant for a row outside the frozen generation.
+        pack_rows = list(authoritative_pack_rows)
     ready_rows = [row for row in pack_rows if row.status == "ready"]
-    indexed_rows = [row for row in ready_rows if row.indexed_parent_id]
+    transcript_rows_by_video = dict(transcript_rows_by_video or {})
+    # A caller with authoritative PostgreSQL transcript rows must never be
+    # forced through a secondary Qdrant read merely because the canonical row
+    # also carries an indexed parent id.
+    indexed_rows = [
+        row
+        for row in ready_rows
+        if row.indexed_parent_id and row.video_id not in transcript_rows_by_video
+    ]
     parent_ids = [
         str(row.indexed_parent_id) for row in indexed_rows if row.indexed_parent_id
     ]
@@ -1691,8 +1764,6 @@ def _build_pack_artifacts(
         if indexed_rows
         else {}
     )
-    transcript_rows_by_video = dict(transcript_rows_by_video or {})
-
     videos_payload = [
         {
             "video_id": row.video_id,
@@ -1735,9 +1806,12 @@ def _build_pack_artifacts(
                 }
             )
     for row in ready_rows:
+        rows = transcript_rows_by_video.get(row.video_id)
+        if rows:
+            transcripts_payload.extend(rows)
+            continue
         if row.indexed_parent_id:
             continue
-        rows = transcript_rows_by_video.get(row.video_id)
         if rows is None and row.transcript_source in {
             "youtube_transcript_api",
             "yt_captions",
@@ -1751,9 +1825,13 @@ def _build_pack_artifacts(
             transcripts_payload.extend(rows)
 
     root = _export_root() / pack.id
+    if artifact_generation:
+        if not re.fullmatch(r"[a-z0-9][a-z0-9._-]{0,127}", artifact_generation):
+            raise ValueError("artifact generation is invalid")
+        root = root / artifact_generation
     manifest = {
         "pack_id": pack.id,
-        "status": pack.status,
+        "status": manifest_status or pack.status,
         "channel_handle": pack.channel_handle,
         "channel_name": pack.resolved_channel_name,
         "channel_id": pack.resolved_channel_id,
@@ -1775,7 +1853,7 @@ def _build_pack_artifacts(
         "pack_id": pack.id,
         "batch_id": batch.id,
         "batch_index": batch.batch_index,
-        "status": batch.status,
+        "status": batch_status or batch.status,
         "billable_video_count": batch.billable_video_count,
         "ready_video_count": batch.ready_video_count,
     }
@@ -1795,15 +1873,41 @@ def _build_pack_artifacts(
 
 
 def create_or_attach_pack(
-    *, session, quote: ChannelQuote, pack_id: Optional[str]
+    *,
+    session,
+    commerce_scope: CommerceScope,
+    quote: ChannelQuote,
+    pack_id: Optional[str],
 ) -> ChannelPack:
+    require_commerce_record_scope(quote, commerce_scope, label="quote")
+    ownership = commerce_ownership_values(commerce_scope)
+    expected_pack_id = str((quote.request_json or {}).get("pack_id") or "") or None
+    if (str(pack_id or "") or None) != expected_pack_id:
+        raise ValueError("order pack_id must match the immutable quote request")
     if pack_id:
-        pack = session.get(ChannelPack, pack_id)
+        pack = session.execute(
+            select(ChannelPack).where(
+                ChannelPack.id == pack_id,
+                *commerce_scope_predicates(ChannelPack, commerce_scope),
+            )
+        ).scalar_one_or_none()
         if pack is None:
             raise ValueError(f"Pack {pack_id} was not found")
+        if (
+            pack.namespace != quote.namespace
+            or pack.mode != quote.mode
+            or pack.channel_handle.lower() != quote.channel_handle.lower()
+            or (
+                pack.resolved_channel_id
+                and quote.resolved_channel_id
+                and pack.resolved_channel_id != quote.resolved_channel_id
+            )
+        ):
+            raise ValueError("quote does not match the requested expansion pack")
         return pack
 
     pack = ChannelPack(
+        **ownership,
         id=new_id("pack"),
         status="draft",
         mode=quote.mode,
@@ -1820,6 +1924,7 @@ def create_or_attach_pack(
 def create_order_from_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     quote: ChannelQuote,
     checkout: CheckoutSessionRecord,
     pack_id: Optional[str],
@@ -1829,12 +1934,29 @@ def create_order_from_quote(
     canonical_publish=None,
     acquire_hot_media: bool = False,
     media_acquire=None,
+    refresh_quote: bool = True,
+    defer_fulfillment: bool = False,
 ) -> tuple:
-    refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
-    pack = create_or_attach_pack(session=session, quote=quote, pack_id=pack_id)
+    require_commerce_record_scope(quote, commerce_scope, label="quote")
+    require_commerce_record_scope(checkout, commerce_scope, label="checkout session")
+    if quote.id not in set(checkout.quote_ids_json or []):
+        raise ValueError("quote is not part of the checkout session")
+    ownership = commerce_ownership_values(commerce_scope)
+    if refresh_quote:
+        refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
+    elif quote.status != "open" or int(quote.current_batch_video_count or 0) <= 0:
+        raise ValueError("settled quote no longer contains its payable batch")
+    pack = create_or_attach_pack(
+        session=session,
+        commerce_scope=commerce_scope,
+        quote=quote,
+        pack_id=pack_id,
+    )
     existing_batch = session.execute(
         select(PackBatch).where(
-            PackBatch.pack_id == pack.id, PackBatch.quote_id == quote.id
+            PackBatch.pack_id == pack.id,
+            PackBatch.quote_id == quote.id,
+            *commerce_scope_predicates(PackBatch, commerce_scope),
         )
     ).scalar_one_or_none()
     if existing_batch is not None:
@@ -1857,6 +1979,7 @@ def create_order_from_quote(
     )
     externally_settled = external_payment is not None
     batch = PackBatch(
+        **ownership,
         id=new_id("batch"),
         pack_id=pack.id,
         quote_id=quote.id,
@@ -1875,6 +1998,7 @@ def create_order_from_quote(
     session.flush()
 
     order = ChannelOrder(
+        **ownership,
         id=new_id("order"),
         quote_id=quote.id,
         checkout_session_id=checkout.id,
@@ -1917,6 +2041,7 @@ def create_order_from_quote(
 
     session.add(
         PaymentReceipt(
+            **ownership,
             id=new_id("receipt"),
             checkout_session_id=checkout.id,
             order_id=order.id,
@@ -1935,9 +2060,9 @@ def create_order_from_quote(
     transcript_rows_by_video: Dict[str, List[dict]] = {}
     for row in current_batch_rows:
         indexed_parent_id = row.indexed_parent_id
-        status = "ready" if indexed_parent_id else "queued"
+        status = "queued" if defer_fulfillment else ("ready" if indexed_parent_id else "queued")
 
-        if not indexed_parent_id:
+        if not defer_fulfillment and not indexed_parent_id:
             probe = session.get(
                 TranscriptProbe,
                 transcript_probe_key(row.video_id, language, prefer_auto),
@@ -2010,7 +2135,8 @@ def create_order_from_quote(
                 }
 
         if (
-            status != "ready"
+            not defer_fulfillment
+            and status != "ready"
             and not indexed_parent_id
             and inline_index_enabled()
             and row.video_url
@@ -2041,6 +2167,7 @@ def create_order_from_quote(
 
         session.add(
             PackVideo(
+                **ownership,
                 pack_id=pack.id,
                 batch_id=batch.id,
                 quote_id=quote.id,
@@ -2074,6 +2201,7 @@ def create_order_from_quote(
     if buyer_subject_type and buyer_subject_id:
         session.add(
             Entitlement(
+                **ownership,
                 id=new_id("entitlement"),
                 pack_id=pack.id,
                 subject_type=buyer_subject_type,
@@ -2093,7 +2221,7 @@ def create_order_from_quote(
             prefer_auto=prefer_auto,
             transcript_rows_by_video=transcript_rows_by_video,
         )
-        if ready_count
+        if ready_count and not defer_fulfillment
         else {}
     )
     if export_paths:

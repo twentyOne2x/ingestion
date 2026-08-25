@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import subprocess
 import sys
@@ -46,6 +47,14 @@ from src.ingest_v2.cloud.diarization_indexer.channel_service_store import (
     UserAccount,
     VideoMediaRef,
 )
+
+CLI_SPEC = importlib.util.spec_from_file_location(
+    "load_archive_catalog_cli",
+    Path(__file__).resolve().parents[1] / "scripts" / "load_archive_catalog.py",
+)
+assert CLI_SPEC and CLI_SPEC.loader
+ARCHIVE_CLI = importlib.util.module_from_spec(CLI_SPEC)
+CLI_SPEC.loader.exec_module(ARCHIVE_CLI)
 
 TENANT_A = f"ten_{'1' * 64}"
 TENANT_B = f"ten_{'2' * 64}"
@@ -158,6 +167,47 @@ def _packet(tmp_path: Path, records: list[dict]) -> tuple[Path, Path]:
         encoding="ascii",
     )
     return jsonl_path, sidecar_path
+
+
+def _records_with_blocked_mcg() -> list[dict]:
+    records = _records()
+    records.extend(
+        [
+            {
+                "schema": ARCHIVE_CATALOG_SCHEMA,
+                "record_type": "source",
+                "source_key": "youtube:UCeVUY-_w7cId3I76-e-amAw",
+                "platform": "youtube",
+                "platform_entity_id": "UCeVUY-_w7cId3I76-e-amAw",
+                "handle": "mcg_live",
+                "identity_state": "verified_platform_entity_id",
+                "evidence_ceilings": ["exact_MCG_public_catalog"],
+            },
+            {
+                "schema": ARCHIVE_CATALOG_SCHEMA,
+                "record_type": "item",
+                "catalog_key": "youtube:iKa8RCERlNo",
+                "platform": "youtube",
+                "provider_item_id": "iKa8RCERlNo",
+                "provider_media_id": None,
+                "source_key": "youtube:UCeVUY-_w7cId3I76-e-amAw",
+                "acquisition_state": "blocked_public_age_gate",
+                "retained": False,
+                "media_variants": [],
+                "clip_candidate": False,
+                "clip_ready": False,
+                "clip_state": "not_acquired_age_confirmation_required",
+                "topic_assertions": [],
+                "evidence_ceiling": "public_catalog_item_age_gated_no_retained_media",
+                "canonical_url": "https://www.youtube.com/shorts/iKa8RCERlNo",
+                "title": "MCG age-gated public catalog item",
+                "source_tab": "shorts",
+                "view_count_at_catalog_time": 407,
+                "blocked_reason": "youtube_age_confirmation_required",
+            },
+        ]
+    )
+    return records
 
 
 def _digest(path: Path) -> str:
@@ -276,6 +326,67 @@ def test_exact_archive_packet_is_idempotent_and_preserves_evidence(
         )
         assert hashlib.sha256(receipt_path.read_bytes()).hexdigest() == receipt_sha256
         assert receipt_path.stat().st_mode & 0o222 == 0
+
+
+def test_mcg_age_gate_is_durable_without_fabricating_media(tmp_path: Path) -> None:
+    engine = _engine()
+    jsonl_path, sidecar_path = _packet(tmp_path, _records_with_blocked_mcg())
+    with Session(engine) as session:
+        load_archive_catalog(
+            session,
+            jsonl_path=jsonl_path,
+            sidecar_path=sidecar_path,
+            expected_jsonl_sha256=_digest(jsonl_path),
+        )
+        session.commit()
+    with Session(engine) as session:
+        video = session.scalar(
+            select(SourceVideo).where(SourceVideo.external_id == "iKa8RCERlNo")
+        )
+        assert video is not None
+        assert video.archive_state == "blocked_public_age_gate"
+        assert video.canonical_url == "https://www.youtube.com/shorts/iKa8RCERlNo"
+        assert video.title == "MCG age-gated public catalog item"
+        assert video.clip_candidate is False
+        assert video.clip_ready is False
+        assert video.metadata_json["archive_import"]["blocked_reason"] == (
+            "youtube_age_confirmation_required"
+        )
+        assert not session.scalars(
+            select(VideoMediaRef).where(VideoMediaRef.video_id == video.id)
+        ).all()
+
+
+def test_catalog_reapply_never_downgrades_verified_hot_media(tmp_path: Path) -> None:
+    engine = _engine()
+    jsonl_path, sidecar_path = _packet(tmp_path, _records())
+    with Session(engine) as session:
+        load_archive_catalog(
+            session,
+            jsonl_path=jsonl_path,
+            sidecar_path=sidecar_path,
+            expected_jsonl_sha256=_digest(jsonl_path),
+        )
+        video = session.scalar(
+            select(SourceVideo).where(SourceVideo.external_id == "456")
+        )
+        assert video is not None
+        video.archive_state = "retained_hot_verified"
+        session.commit()
+    with Session(engine) as session:
+        load_archive_catalog(
+            session,
+            jsonl_path=jsonl_path,
+            sidecar_path=sidecar_path,
+            expected_jsonl_sha256=_digest(jsonl_path),
+        )
+        session.commit()
+    with Session(engine) as session:
+        video = session.scalar(
+            select(SourceVideo).where(SourceVideo.external_id == "456")
+        )
+        assert video is not None
+        assert video.archive_state == "retained_hot_verified"
 
 
 def test_archive_packet_rejects_bad_sidecar_and_clip_ready(tmp_path: Path) -> None:
@@ -678,3 +789,67 @@ def test_archive_admin_cli_exposes_internal_subcommands() -> None:
     assert "apply" in completed.stdout
     assert "claim" in completed.stdout
     assert "register-hydration" in completed.stdout
+    assert "register-hydration-batch" in completed.stdout
+
+
+def test_hydration_batch_requires_exact_per_media_receipts(tmp_path: Path) -> None:
+    hot_root = tmp_path / "hot-media"
+    receipts = hot_root / "receipts"
+    receipts.mkdir(parents=True)
+    first = "a" * 64
+    second = "b" * 64
+    payload = {
+        "schema": "icmfyi.archive-hot-hydration.v1",
+        "catalog_sha256": "c" * 64,
+        "hot_media_root": "/data/hot-media",
+        "items": [
+            {
+                "media_sha256": first,
+                "size_bytes": 10,
+                "source_receipt_path": str(
+                    receipts / f"hydration-source-{first}.json"
+                ),
+                "source_receipt_sha256": "d" * 64,
+                "local_sha256_verified": True,
+                "local_size_verified": True,
+                "remote_delete_used": False,
+            },
+            {
+                "media_sha256": second,
+                "size_bytes": 20,
+                "source_receipt_path": str(
+                    receipts / f"hydration-source-{second}.json"
+                ),
+                "source_receipt_sha256": "e" * 64,
+                "local_sha256_verified": True,
+                "local_size_verified": True,
+                "remote_delete_used": False,
+            },
+        ],
+        "items_count": 2,
+        "bytes_total": 30,
+        "complete": True,
+        "storagebox_read_only": True,
+        "remote_delete_used": False,
+    }
+    body = (json.dumps(payload, ensure_ascii=True, separators=(",", ":"), sort_keys=True) + "\n").encode("ascii")
+    aggregate = receipts / "archive-hydration.json"
+    aggregate.write_bytes(body)
+    digest = hashlib.sha256(body).hexdigest()
+    assert ARCHIVE_CLI._hydration_batch(
+        aggregate, expected_sha256=digest, hot_media_root=hot_root
+    ) == [
+        (receipts / f"hydration-source-{first}.json", "d" * 64),
+        (receipts / f"hydration-source-{second}.json", "e" * 64),
+    ]
+
+    payload["items"][0]["source_receipt_path"] = str(tmp_path / "escape.json")
+    bad_body = (json.dumps(payload, ensure_ascii=True, separators=(",", ":"), sort_keys=True) + "\n").encode("ascii")
+    bad = receipts / "bad-hydration.json"
+    bad.write_bytes(bad_body)
+    with pytest.raises(ArchiveProtocolError, match="escapes"):
+        ARCHIVE_CLI._hydration_batch(
+            bad,
+            expected_sha256=hashlib.sha256(bad_body).hexdigest(),
+            hot_media_root=hot_root,
+        )

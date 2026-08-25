@@ -7,7 +7,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, Optional
+from typing import Iterable, Optional
 
 from sqlalchemy import desc, func, or_, select
 
@@ -23,10 +23,13 @@ from .channel_service_logic import (
 )
 from .channel_service_runtime import global_dispatch_limit
 from .channel_service_store import (
+    ACP_COMMERCE_SCOPE,
+    SYSTEM_COMMERCE_SCOPE,
     AcpJobBridge,
     ChannelOrder,
     ChannelQuote,
     CheckoutSessionRecord,
+    CommerceScope,
     EgressPool,
     OfferingReadinessOverride,
     OfferingReadinessSnapshot,
@@ -35,7 +38,9 @@ from .channel_service_store import (
     SoakSample,
     SyntheticRun,
     SyntheticStep,
+    commerce_scope_predicates,
     session_scope,
+    set_commerce_scope,
     utcnow,
 )
 
@@ -229,6 +234,7 @@ def _discover_catalog_canary_request(
     default_prefer_auto: bool,
 ) -> Optional[dict]:
     with session_scope() as session:
+        set_commerce_scope(session, SYSTEM_COMMERCE_SCOPE)
         rows = session.execute(
             select(SyntheticRun)
             .where(
@@ -622,7 +628,29 @@ def _direct_sales_allowed(publication_state: str) -> bool:
     return publication_state in {"supported", "degraded"}
 
 
-def compute_readiness(session, *, persist: bool = True) -> dict:
+def compute_readiness(
+    session,
+    *,
+    persist: bool = True,
+    restore_commerce_scope=None,
+) -> dict:
+    """Compute one system readiness snapshot without stealing a caller's realm.
+
+    Readiness intentionally evaluates the system-owned operational view.  A
+    gateway checkout, however, continues in the same PostgreSQL transaction
+    after this helper returns.  When that caller supplies its exact scope, the
+    mutually exclusive transaction-local RLS settings are restored even if the
+    readiness calculation raises.
+    """
+    set_commerce_scope(session, SYSTEM_COMMERCE_SCOPE)
+    try:
+        return _compute_readiness(session, persist=persist)
+    finally:
+        if restore_commerce_scope is not None:
+            set_commerce_scope(session, restore_commerce_scope)
+
+
+def _compute_readiness(session, *, persist: bool) -> dict:
     healthy_pool_group_count = _healthy_pool_group_count(session)
     dispatch_usage = _dispatch_usage(session)
     quote_stats = _recent_quote_stats(session)
@@ -937,8 +965,14 @@ def serialize_readiness_override(override: Optional[OfferingReadinessOverride]) 
     }
 
 
-def enforce_checkout_allowed(*, session, quotes: list[ChannelQuote]) -> dict:
-    readiness = compute_readiness(session, persist=True)
+def enforce_checkout_allowed(
+    *, session, quotes: list[ChannelQuote], commerce_scope
+) -> dict:
+    readiness = compute_readiness(
+        session,
+        persist=True,
+        restore_commerce_scope=commerce_scope,
+    )
     if not bool(readiness.get("direct_sales_allowed")):
         raise ValueError(
             f"Transcript Pack sales are currently {readiness['publication_state']}: "
@@ -963,7 +997,11 @@ def enforce_checkout_allowed(*, session, quotes: list[ChannelQuote]) -> dict:
 
 
 def enforce_acp_job_allowed(*, session, offering_id: str, channel_handle: Optional[str], namespace: str) -> dict:
-    readiness = compute_readiness(session, persist=True)
+    readiness = compute_readiness(
+        session,
+        persist=True,
+        restore_commerce_scope=ACP_COMMERCE_SCOPE,
+    )
     public_ids = {item["offering_id"] for item in readiness["offerings"] if item["published"]}
     if offering_id not in public_ids:
         raise ValueError(
@@ -997,9 +1035,11 @@ def run_catalog_starter_canary(*, request_overrides: Optional[dict] = None) -> d
     start = time.perf_counter()
     try:
         with session_scope() as session:
+            set_commerce_scope(session, SYSTEM_COMMERCE_SCOPE)
             plan_started = time.perf_counter()
             plan = plan_quote(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 channel_handle=str(request_json["channel_handle"]),
                 namespace=str(request_json["namespace"]),
                 mode=str(request_json["mode"]),
@@ -1026,6 +1066,7 @@ def run_catalog_starter_canary(*, request_overrides: Optional[dict] = None) -> d
             )
             quote = persist_quote(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 request_payload={**request_json, "source": "synthetic", "run_id": run_id},
                 plan=plan,
                 planning_latency_ms=planning_latency_ms,
@@ -1045,6 +1086,7 @@ def run_catalog_starter_canary(*, request_overrides: Optional[dict] = None) -> d
                 )
             checkout = create_checkout_session_with_payment(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 quote_ids=[quote.id],
                 idempotency_key=f"synthetic:{run_id}",
                 payment_provider="synthetic",
@@ -1060,6 +1102,7 @@ def run_catalog_starter_canary(*, request_overrides: Optional[dict] = None) -> d
             )
             pack, batch, order = create_order_from_quote(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 quote=quote,
                 checkout=checkout,
                 pack_id=None,
@@ -1170,9 +1213,11 @@ def run_arbitrary_probe_canary(*, request_overrides: Optional[dict] = None) -> d
     start = time.perf_counter()
     try:
         with session_scope() as session:
+            set_commerce_scope(session, SYSTEM_COMMERCE_SCOPE)
             plan_started = time.perf_counter()
             plan = plan_quote(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 channel_handle=str(request_json["channel_handle"]),
                 namespace=str(request_json["namespace"]),
                 mode=str(request_json["mode"]),
@@ -1186,6 +1231,7 @@ def run_arbitrary_probe_canary(*, request_overrides: Optional[dict] = None) -> d
             planning_latency_ms = int((time.perf_counter() - plan_started) * 1000)
             quote = persist_quote(
                 session=session,
+                commerce_scope=SYSTEM_COMMERCE_SCOPE,
                 request_payload={**request_json, "source": "synthetic", "run_id": run_id},
                 plan=plan,
                 planning_latency_ms=planning_latency_ms,
@@ -1364,13 +1410,24 @@ def latest_readiness_snapshot(session) -> Optional[OfferingReadinessSnapshot]:
     ).scalars().first()
 
 
-def get_existing_checkout_by_idempotency_key(session, *, idempotency_key: str) -> Optional[CheckoutSessionRecord]:
+def get_existing_checkout_by_idempotency_key(
+    session, *, commerce_scope: CommerceScope, idempotency_key: str
+) -> Optional[CheckoutSessionRecord]:
     return session.execute(
         select(CheckoutSessionRecord)
-        .where(CheckoutSessionRecord.idempotency_key == idempotency_key)
+        .where(
+            CheckoutSessionRecord.idempotency_key == idempotency_key,
+            *commerce_scope_predicates(CheckoutSessionRecord, commerce_scope),
+        )
         .limit(1)
     ).scalars().first()
 
 
 def get_existing_acp_bridge(session, *, acp_job_id: str) -> Optional[AcpJobBridge]:
-    return session.get(AcpJobBridge, acp_job_id)
+    set_commerce_scope(session, ACP_COMMERCE_SCOPE)
+    return session.execute(
+        select(AcpJobBridge).where(
+            AcpJobBridge.acp_job_id == acp_job_id,
+            *commerce_scope_predicates(AcpJobBridge, ACP_COMMERCE_SCOPE),
+        )
+    ).scalar_one_or_none()

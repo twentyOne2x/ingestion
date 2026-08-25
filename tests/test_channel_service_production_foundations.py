@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+import sys
 from datetime import timedelta
 from pathlib import Path
 from types import SimpleNamespace
-import sys
 
 import pytest
 from sqlalchemy import create_engine
@@ -33,7 +33,6 @@ from src.ingest_v2.cloud.diarization_indexer.channel_service_store import (
     UserAccount,
     utcnow,
 )
-
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 TENANT_A = f"ten_{'a' * 64}"
@@ -508,22 +507,32 @@ def test_production_image_is_immutable_and_non_root() -> None:
 
 def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     revisions = sorted((REPOSITORY_ROOT / "alembic" / "versions").glob("*.py"))
-    assert len(revisions) == 4
+    assert len(revisions) == 5
     initial_migration = revisions[0].read_text(encoding="utf-8")
     export_migration = revisions[1].read_text(encoding="utf-8")
     archive_migration = revisions[2].read_text(encoding="utf-8")
     public_ingestion_migration = revisions[3].read_text(encoding="utf-8")
+    commerce_migration = revisions[4].read_text(encoding="utf-8")
 
     assert 'revision: str = "20260825_0001"' in initial_migration
     assert 'revision: str = "20260825_0002"' in export_migration
     assert 'revision: str = "20260825_0003"' in archive_migration
     assert 'revision: str = "20260825_0004"' in public_ingestion_migration
+    assert 'revision: str = "20260825_0005"' in commerce_migration
     assert "op.create_table(" in initial_migration
     assert "op.create_table(" in export_migration
     assert "archive_catalog_imports" in archive_migration
     assert "archive_tenant_claims" in archive_migration
     assert "archive_hydration_registrations" in archive_migration
     assert "transcription_runs" in public_ingestion_migration
+    assert "principal_user_id" in commerce_migration
+    assert "legacy_internal" in commerce_migration
+    assert "current_setting('app.principal_user_id', true)" in commerce_migration
+    assert "FORCE ROW LEVEL SECURITY" in commerce_migration
+    assert "icmfyi_enforce_commerce_lineage" in commerce_migration
+    assert "SECURITY INVOKER" in commerce_migration
+    assert "checkout session crosses commerce ownership" in commerce_migration
+    assert "payment receipt crosses order ownership" in commerce_migration
     assert "ENABLE ROW LEVEL SECURITY" in export_migration
     assert "FORCE ROW LEVEL SECURITY" in export_migration
     assert "current_setting('app.tenant_id', true)" in export_migration
@@ -532,6 +541,7 @@ def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
         + export_migration
         + archive_migration
         + public_ingestion_migration
+        + commerce_migration
     )
     assert "Base.metadata" not in migrations
     assert "create_all(" not in migrations

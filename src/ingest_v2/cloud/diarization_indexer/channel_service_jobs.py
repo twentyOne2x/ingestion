@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections.abc import Iterable
 from datetime import datetime, timedelta
-from typing import Any, Iterable
+from typing import Any
 
 from sqlalchemy import and_, or_, select, update
 from sqlalchemy.exc import IntegrityError
@@ -254,6 +255,26 @@ def get_or_create_ingestion_request(
         status="ready" if job.status == "succeeded" else "accepted",
     )
     if _insert_with_savepoint(session, request):
+        if job.status == "succeeded":
+            # A new tenant/principal request still needs canonical entitlement
+            # fanout and any paid-pack reconciliation. Requeue the same globally
+            # deduplicated job; the public worker's canonical-ready path performs
+            # DB/filesystem replay without another provider effect.
+            job.status = "queued"
+            # A completed canonical job is being replayed only to fan out the
+            # already-published item to a newly accepted tenant request. Give
+            # that delivery cycle its own retry budget; otherwise a canonical
+            # job whose original acquisition consumed max_attempts could never
+            # service the new request even though no provider effect is needed.
+            job.attempt_count = 0
+            job.next_run_at = None
+            job.lease_owner = None
+            job.lease_expires_at = None
+            job.completed_at = None
+            job.last_error_code = None
+            job.last_error_detail = None
+            job.updated_at = utcnow()
+            request.status = "accepted"
         _record_request_tenant(session, job=job, tenant_id=tenant_id)
         return request, job, True
 
@@ -564,6 +585,22 @@ def _fail_exhausted_expired_jobs(
         job.completed_at = now
         job.updated_at = now
         _update_request_statuses(session, job=job, status="failed", now=now)
+        # Import lazily to avoid coupling the generic queue to provider workers at
+        # module import time. A paid request must not remain commerce-queued when
+        # its final public-ingestion lease expires after a process crash.
+        if job.job_kind == "public_item_ingestion":
+            from .public_ingestion_worker import (
+                _all_tenant_requests,
+                _reconcile_paid_public_ingestion_failure,
+            )
+
+            for request in _all_tenant_requests(session, job):
+                _reconcile_paid_public_ingestion_failure(
+                    session,
+                    request=request,
+                    error_code=job.last_error_code,
+                    error_detail=job.last_error_detail,
+                )
     session.flush()
 
 

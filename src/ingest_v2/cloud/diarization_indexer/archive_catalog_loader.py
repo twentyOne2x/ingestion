@@ -34,11 +34,13 @@ ARCHIVE_CATALOG_SCHEMA = "icmfyi.archive-catalog-import.v1"
 ARCHIVE_RECEIPT_SCHEMA = "icmfyi.archive-catalog-import-receipt.v1"
 _SHA256_PATTERN = re.compile(r"[0-9a-f]{64}\Z")
 _SIDECAR_PATTERN = re.compile(r"([0-9a-f]{64})  ([^/\n]+)\n\Z")
-_ACQUISITION_STATES = {
+_CATALOG_ACQUISITION_STATES = {
     "pending_discovery": 0,
-    "partial_only": 1,
-    "retained_remote_verified": 2,
+    "blocked_public_age_gate": 1,
+    "partial_only": 2,
+    "retained_remote_verified": 3,
 }
+_ARCHIVE_STATE_RANK = {**_CATALOG_ACQUISITION_STATES, "retained_hot_verified": 4}
 
 
 class ArchiveCatalogError(ArchiveProtocolError):
@@ -543,7 +545,7 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
     acquisition_state = _required_text(
         record.get("acquisition_state"), "item.acquisition_state", 64
     )
-    if acquisition_state not in _ACQUISITION_STATES:
+    if acquisition_state not in _CATALOG_ACQUISITION_STATES:
         raise ArchiveCatalogError(f"unsupported acquisition_state: {acquisition_state}")
     if not isinstance(record.get("retained"), bool):
         raise ArchiveCatalogError("item.retained must be boolean")
@@ -560,6 +562,15 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
 
     video_id = canonical_source_video_id(platform, provider_external_id)
     state.video_ids.add(video_id)
+    view_count = record.get("view_count_at_catalog_time")
+    if view_count is not None:
+        view_count = _required_nonnegative_int(
+            view_count, "item.view_count_at_catalog_time"
+        )
+    canonical_url = _optional_text(
+        record.get("canonical_url"), "item.canonical_url", 4000
+    )
+    title = _optional_text(record.get("title"), "item.title", 4000)
     archive_metadata = {
         "archive_import": {
             "catalog_key": catalog_key,
@@ -580,6 +591,15 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
             "media_kind": _optional_text(
                 record.get("media_kind"), "item.media_kind", 64
             ),
+            "canonical_url": canonical_url,
+            "title": title,
+            "source_tab": _optional_text(
+                record.get("source_tab"), "item.source_tab", 64
+            ),
+            "view_count_at_catalog_time": view_count,
+            "blocked_reason": _optional_text(
+                record.get("blocked_reason"), "item.blocked_reason", 255
+            ),
         }
     }
     video = session.get(SourceVideo, video_id)
@@ -589,7 +609,9 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
             channel_id=channel_id,
             platform=platform,
             external_id=provider_external_id,
-            canonical_url=archive_metadata["archive_import"]["status_url"],
+            canonical_url=canonical_url
+            or archive_metadata["archive_import"]["status_url"],
+            title=title,
             archive_state=acquisition_state,
             clip_candidate=record["clip_candidate"],
             clip_ready=False,
@@ -606,7 +628,7 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
             raise ArchiveCatalogError(f"item identity collision: {catalog_key}")
         next_state = max(
             (video.archive_state, acquisition_state),
-            key=lambda value: _ACQUISITION_STATES[value],
+            key=lambda value: _ARCHIVE_STATE_RANK[value],
         )
         changed = (
             video.archive_state != next_state
@@ -614,11 +636,17 @@ def _load_item(session: Session, record: dict[str, Any], state: _ImportState) ->
             != (video.clip_candidate or record["clip_candidate"])
             or video.metadata_json
             != {**(video.metadata_json or {}), **archive_metadata}
+            or (title is not None and video.title != title)
+            or (canonical_url is not None and video.canonical_url != canonical_url)
             or video.status != "active"
         )
         if changed:
             video.archive_state = next_state
             video.clip_candidate = video.clip_candidate or record["clip_candidate"]
+            if title is not None:
+                video.title = title
+            if canonical_url is not None:
+                video.canonical_url = canonical_url
             video.metadata_json = {**(video.metadata_json or {}), **archive_metadata}
             video.status = "active"
             video.updated_at = utcnow()

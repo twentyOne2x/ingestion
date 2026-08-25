@@ -11,21 +11,21 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from src.ingest_v2.cloud.diarization_indexer.canonical_media import HotMediaSpec
+from src.ingest_v2.cloud.diarization_indexer.channel_service_jobs import (
+    reserve_ingestion_effect,
+)
 from src.ingest_v2.cloud.diarization_indexer.channel_service_store import (
     IngestionEffect,
     IngestionJob,
     IngestionRequest,
     SourceVideo,
     TenantChannelEntitlement,
-    TranscriptRevision,
     TranscriptionRun,
+    TranscriptRevision,
     dispose_engine,
     get_engine,
     init_db,
     utcnow,
-)
-from src.ingest_v2.cloud.diarization_indexer.channel_service_jobs import (
-    reserve_ingestion_effect,
 )
 from src.ingest_v2.cloud.diarization_indexer.public_acquisition import (
     AcquiredPublicItem,
@@ -46,7 +46,6 @@ from src.ingest_v2.cloud.diarization_indexer.transcription_runtime import (
     AmbiguousTranscriptionError,
     TranscriptResult,
 )
-
 
 USER_A = f"usr_{'a' * 64}"
 TENANT_A = f"ten_{'1' * 64}"
@@ -293,7 +292,9 @@ def test_channel_discovery_creates_deduplicated_child_jobs_for_each_tenant(
             )
             == 4
         )
-        assert session.scalar(select(func.count()).select_from(IngestionRequest)) == 7
+        # Every accepted request receives child lineage, including a second
+        # idempotent request by the same principal in the same tenant.
+        assert session.scalar(select(func.count()).select_from(IngestionRequest)) == 9
         assert (
             session.scalar(select(func.count()).select_from(TenantChannelEntitlement))
             == 2

@@ -149,6 +149,77 @@ python -m src.ingest_v2.scripts.backfill_child_channel_metadata \
 Namespace-specific settings live in `src/ingest_v2/configs/namespaces.json` and
 can be overridden per environment.
 
+### Settled x402 work consumer
+
+The paid-work consumer is a separate process and PostgreSQL login. Apply the
+Alembic migrations and the payment service schema first, then apply
+`sql/001_payment_worker_security_definer.sql` as the database owner. Create the
+fixed security principal `icmfyi_payment_worker` as
+`NOSUPERUSER NOBYPASSRLS NOINHERIT`, revoke its
+schema/table defaults, and grant only:
+
+- `CONNECT` on the application database and `USAGE` on schema `public`;
+- `EXECUTE` on `icmfyi_claim_settled_paid_work()`,
+  `icmfyi_ack_settled_paid_work(uuid,uuid,text)`, and the bounded
+  `icmfyi_fail_settled_paid_work(...)` retry/dead-letter recorder;
+- `SELECT` on `channel_quotes`, `quote_videos`, `checkout_sessions`,
+  `channel_packs`, `pack_batches`, `channel_orders`, `payment_receipts`,
+  `tenants`, `user_accounts`, `source_channels`,
+  `tenant_channel_entitlements`, `ingestion_jobs`, and
+  `ingestion_requests`;
+- `INSERT` on `checkout_sessions`, `channel_packs`, `pack_batches`,
+  `pack_videos`, `channel_orders`, `payment_receipts`, `entitlements`,
+  `source_channels`, `tenant_channel_entitlements`, `ingestion_jobs`, and
+  `ingestion_requests`;
+- `UPDATE` on `checkout_sessions`, `channel_packs`, `pack_batches`,
+  `channel_orders`, and `ingestion_jobs`; and
+- `USAGE` only on `pack_videos_id_seq`.
+
+Do not rename or alias this login: its exact name is bound into the commerce
+RLS policy, and `CHANNEL_SERVICE_PAYMENT_WORKER_DATABASE_ROLE` must remain
+`icmfyi_payment_worker`. Do not grant direct access to `payment_work_intents`,
+`payment_settlements`, or `payment_work_outbox`, role membership, or
+`BYPASSRLS`. Configure the worker with its own
+`CHANNEL_SERVICE_PAYMENT_WORKER_DATABASE_URL`, then run:
+
+```bash
+python -m src.ingest_v2.cloud.diarization_indexer.paid_work_worker
+```
+
+One short database transaction claims a settled row, derives and validates the
+work from authoritative facts, creates or reconciles exactly one order and
+receipt, durably queues one canonical `public_item_ingestion` request per billed
+video, and only then acknowledges the outbox row. It performs no provider, HTTP,
+or filesystem work. Invalid rows commit bounded backoff or dead-letter state, so
+one tenant cannot head-of-line block later settlements.
+
+The ordinary public-ingestion worker owns acquisition, transcription, canonical
+publication, pack reconciliation, and hash-verified exports after ACK. A new
+purchase for already retained clip-ready canonical media requeues the same
+globally deduplicated ingestion job and takes the canonical-ready DB/filesystem
+path; it does not repeat download or transcription provider effects. Terminal
+job failure (including an expired final lease) advances the exact paid pack and
+order to `failed` rather than leaving user-visible work queued forever.
+
+The commerce-principal migration reconciles pre-existing commerce rows as whole
+undirected lineage components before enabling RLS. A component containing an
+ACP job bridge becomes `acp_internal`; every other pre-migration component is
+retained in `system_internal` quarantine with null gateway principals. System
+quarantine is operator/readiness-owned history: it is not gateway-visible,
+tenant-payable, or eligible for x402 projection. Missing parents, malformed JSON
+edges, checkout line-item/quote disagreement, detached ACP bridges, or mixed
+explicit ownership abort migration/startup instead of splitting a lifecycle
+across authorization realms. Reconciliation includes quote expansion pack IDs,
+both checkout JSON projections, and ACP request/delivery commerce IDs in addition
+to relational quote/checkout/pack/batch/video/order/receipt/entitlement edges.
+SQLite validates the whole legacy graph before its first non-transactional DDL
+change so an invalid database can be repaired and the migration retried. A
+downgrade refuses to discard gateway or otherwise non-reconstructible ownership,
+and refuses to invalidate retained `blocked_public_age_gate` source-video rows.
+Because the one-time reconciliation holds the complete graph in memory and
+updates legacy rows individually, operators must run it in a bounded maintenance
+window with commerce writers stopped.
+
 ---
 
 ## Developer Workflow

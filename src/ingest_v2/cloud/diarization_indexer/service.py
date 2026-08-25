@@ -9,21 +9,24 @@ import shutil
 import tempfile
 import time
 from pathlib import Path
-from typing import Dict, Optional, Literal
+from typing import Dict, Literal, Optional
 
 from fastapi import FastAPI, Header, HTTPException, Request, Response
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 
+from src.ingest_v2.pipelines.index_youtube_captions import (
+    HotMediaPendingError,
+    _is_youtube_bot_check,
+    _require_ytdlp,
+    _ytdlp_extra_opts,
+    index_youtube_channel_captions,
+    index_youtube_query_captions,
+    index_youtube_video_captions,
+)
 from src.ingest_v2.pipelines.run_all_components.namespace import load_namespace_channels
 
-from .channel_service_acp import (
-    create_or_sync_acp_job,
-    list_acp_offerings,
-    refresh_acp_job,
-    serialize_acp_job,
-)
 from .canonical_media import (
     CanonicalPublishError,
     HotMediaSpec,
@@ -31,11 +34,18 @@ from .canonical_media import (
     publish_canonical_ingestion,
     verify_hot_media,
 )
-from .channel_service_jobs import (
-    IdempotencyConflict,
-    ensure_channel_entitlement,
-    ensure_source_channel,
-    get_or_create_ingestion_request,
+from .channel_service_acp import (
+    create_or_sync_acp_job,
+    list_acp_offerings,
+    refresh_acp_job,
+    serialize_acp_job,
+)
+from .channel_service_commerce import (
+    CommerceConfigurationError,
+    CommerceResolutionError,
+    bind_gateway_commerce_quote,
+    resolve_authoritative_commerce_quote,
+    validate_x402_commerce_runtime,
 )
 from .channel_service_config import (
     ChannelServiceConfigurationError,
@@ -46,9 +56,16 @@ from .channel_service_config import (
     is_production_environment,
     validate_production_runtime,
 )
+from .channel_service_jobs import (
+    IdempotencyConflict,
+    ensure_channel_entitlement,
+    ensure_source_channel,
+    get_or_create_ingestion_request,
+)
 from .channel_service_logic import (
     create_checkout_session,
     create_order_from_quote,
+    enforce_direct_order_allowed,
     persist_quote,
     plan_quote,
     refresh_quote_state,
@@ -73,23 +90,26 @@ from .channel_service_scheduler import (
     serialize_scheduler_summary,
 )
 from .channel_service_store import (
-    AcpJobBridge,
     ChannelOrder,
     ChannelPack,
     ChannelQuote,
     CheckoutSessionRecord,
+    CommerceScope,
     IngestionJob,
     IngestionRequest,
     PackBatch,
     TenantExport,
+    commerce_scope_predicates,
+    gateway_commerce_scope,
     init_db,
-    set_tenant_scope,
     session_scope,
+    set_commerce_scope,
+    set_tenant_scope,
 )
-from .ingest import create_ingest_service
 from .gcs import read_json_from_gcs
-from .pubsub import verify_pubsub_push
+from .ingest import create_ingest_service
 from .public_platforms import PublicTargetError, normalize_public_target
+from .pubsub import verify_pubsub_push
 from .schemas import DiarizationReadyEvent, decode_pubsub_message
 from .tenant_export import (
     TenantExportError,
@@ -103,15 +123,6 @@ from .transcription_runtime import (
     resolve_transcription_contract,
 )
 from .youtube import YouTubeClient
-from src.ingest_v2.pipelines.index_youtube_captions import (
-    _is_youtube_bot_check,
-    _require_ytdlp,
-    _ytdlp_extra_opts,
-    HotMediaPendingError,
-    index_youtube_channel_captions,
-    index_youtube_query_captions,
-    index_youtube_video_captions,
-)
 
 LOG = logging.getLogger(__name__)
 app = FastAPI(title="Diarization Indexer")
@@ -132,6 +143,7 @@ async def require_production_internal_identity(request: Request, call_next):
 @app.on_event("startup")
 def _startup_channel_service() -> None:
     validate_production_runtime()
+    validate_x402_commerce_runtime()
     init_db()
     with session_scope() as session:
         ensure_egress_pools(session)
@@ -170,6 +182,33 @@ def _trusted_request_identity(request: Request):
         return forwarded_internal_identity(request.headers)
     except ChannelServiceConfigurationError as exc:
         raise HTTPException(status_code=401, detail=str(exc)) from exc
+
+
+def _gateway_commerce_context(
+    *, session, request: Request, ensure_principals: bool
+) -> tuple:
+    identity = _trusted_request_identity(request)
+    try:
+        if ensure_principals:
+            ensure_gateway_principals(session, identity)
+        scope = gateway_commerce_scope(
+            tenant_id=identity.tenant_id,
+            principal_user_id=identity.user_id,
+        )
+        set_commerce_scope(session, scope)
+    except (TenantExportError, ValueError) as exc:
+        raise HTTPException(status_code=403, detail=str(exc)) from exc
+    return identity, scope
+
+
+def _gateway_commerce_row(session, model, row_id: str, scope: CommerceScope):
+    primary_key = next(iter(model.__table__.primary_key.columns))
+    return session.execute(
+        select(model).where(
+            primary_key == row_id,
+            *commerce_scope_predicates(model, scope),
+        )
+    ).scalar_one_or_none()
 
 
 def _validated_namespace_or_http(namespace: str) -> str:
@@ -845,11 +884,11 @@ def index_diarized(req: IndexDiarizedReq, request: Request) -> dict:
     identity = _indexing_identity(request)
     from src.ingest_v2.pipelines.build_children import build_children_from_raw
     from src.ingest_v2.pipelines.build_parents import build_parent
-    from src.ingest_v2.pipelines.upsert_parents import upsert_parents
-    from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
     from src.ingest_v2.pipelines.run_all_components.assemblyai import (
         convert_assemblyai_json_to_raw,
     )
+    from src.ingest_v2.pipelines.upsert_parents import upsert_parents
+    from src.ingest_v2.pipelines.upsert_pinecone import upsert_children
 
     diarized_payload = read_json_from_gcs(req.diarized_uri)
     raw_norm = convert_assemblyai_json_to_raw(diarized_payload)
@@ -1222,7 +1261,7 @@ class ChannelPackQuoteReq(BaseModel):
 
 class CheckoutSessionReq(BaseModel):
     quote_ids: list[str] = Field(min_length=1)
-    idempotency_key: str = Field(min_length=1)
+    idempotency_key: str = Field(min_length=1, max_length=255)
 
 
 class ChannelPackOrderReq(BaseModel):
@@ -1231,6 +1270,14 @@ class ChannelPackOrderReq(BaseModel):
     pack_id: Optional[str] = None
     buyer_subject_type: Optional[str] = None
     buyer_subject_id: Optional[str] = None
+
+
+class CommerceQuoteResolutionReq(BaseModel):
+    model_config = {"extra": "forbid"}
+
+    tool_name: str = Field(min_length=1, max_length=128)
+    request_hash: str = Field(pattern=r"^[0-9a-f]{64}$")
+    idempotency_key: str = Field(min_length=1, max_length=255)
 
 
 class AcpBuyerReq(BaseModel):
@@ -1271,13 +1318,17 @@ def channel_pack_catalog(namespace: str = "videos") -> dict:
 
 
 @app.post("/v1/channel-packs/quotes")
-def create_channel_pack_quote(req: ChannelPackQuoteReq) -> dict:
+def create_channel_pack_quote(req: ChannelPackQuoteReq, request: Request) -> dict:
     req.namespace = _validated_namespace_or_http(req.namespace)
     with session_scope() as session:
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=True
+        )
         try:
             planning_started = time.perf_counter()
             plan = plan_quote(
                 session=session,
+                commerce_scope=commerce_scope,
                 channel_handle=req.channel_handle,
                 namespace=req.namespace,
                 mode=req.mode,
@@ -1298,36 +1349,84 @@ def create_channel_pack_quote(req: ChannelPackQuoteReq) -> dict:
 
         quote = persist_quote(
             session=session,
+            commerce_scope=commerce_scope,
             request_payload=req.model_dump(mode="json"),
             plan=plan,
             planning_latency_ms=planning_latency_ms,
         )
+        try:
+            bind_gateway_commerce_quote(quote, commerce_scope)
+        except CommerceConfigurationError as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
         session.flush()
         session.refresh(quote)
         return serialize_quote(quote)
 
 
 @app.get("/v1/channel-packs/quotes/{quote_id}")
-def get_channel_pack_quote(quote_id: str) -> dict:
+def get_channel_pack_quote(quote_id: str, request: Request) -> dict:
     with session_scope() as session:
-        quote = session.get(ChannelQuote, quote_id)
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        quote = _gateway_commerce_row(
+            session, ChannelQuote, quote_id, commerce_scope
+        )
         if quote is None:
             raise HTTPException(status_code=404, detail=f"quote {quote_id} not found")
         refresh_quote_state(session=session, quote=quote, enqueue_missing=True)
         return serialize_quote(quote)
 
 
-@app.post("/v1/checkout-sessions")
-def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
+@app.post("/v1/commerce/quotes/{quote_id}/resolve-payment")
+def resolve_channel_pack_payment_quote(
+    quote_id: str, req: CommerceQuoteResolutionReq, request: Request
+) -> dict:
+    """Resolve one exact x402 projection and bind its first idempotency key."""
+    _exact_idempotency_key(req.idempotency_key)
     with session_scope() as session:
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        try:
+            return resolve_authoritative_commerce_quote(
+                session=session,
+                scope=commerce_scope,
+                quote_id=quote_id,
+                tool_name=req.tool_name,
+                request_hash=req.request_hash,
+                idempotency_key=req.idempotency_key,
+            )
+        except CommerceResolutionError as exc:
+            status_code = 404 if "not found" in str(exc) else 409
+            raise HTTPException(status_code=status_code, detail=str(exc)) from exc
+
+
+@app.post("/v1/checkout-sessions")
+def create_channel_pack_checkout(req: CheckoutSessionReq, request: Request) -> dict:
+    with session_scope() as session:
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=True
+        )
+        exact_key = _exact_idempotency_key(req.idempotency_key)
         existing = get_existing_checkout_by_idempotency_key(
-            session, idempotency_key=req.idempotency_key
+            session,
+            commerce_scope=commerce_scope,
+            idempotency_key=exact_key,
         )
         if existing is not None:
+            if list(existing.quote_ids_json or []) != list(req.quote_ids):
+                raise HTTPException(
+                    status_code=409,
+                    detail="idempotency key already exists with different quote ids",
+                )
             return serialize_checkout_session(existing)
         quotes = (
             session.execute(
-                select(ChannelQuote).where(ChannelQuote.id.in_(req.quote_ids))
+                select(ChannelQuote).where(
+                    ChannelQuote.id.in_(req.quote_ids),
+                    *commerce_scope_predicates(ChannelQuote, commerce_scope),
+                )
             )
             .scalars()
             .all()
@@ -1339,11 +1438,16 @@ def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
                 status_code=400, detail=f"Unknown quote ids: {', '.join(missing)}"
             )
         try:
-            enforce_checkout_allowed(session=session, quotes=quotes)
+            enforce_checkout_allowed(
+                session=session,
+                quotes=quotes,
+                commerce_scope=commerce_scope,
+            )
             record = create_checkout_session(
                 session=session,
+                commerce_scope=commerce_scope,
                 quote_ids=req.quote_ids,
-                idempotency_key=req.idempotency_key,
+                idempotency_key=exact_key,
             )
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
@@ -1352,18 +1456,29 @@ def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
 
 @app.post("/v1/channel-packs/orders")
 def create_channel_pack_order(req: ChannelPackOrderReq, request: Request) -> dict:
-    identity = _indexing_identity(request)
-    canonical_publish = _canonical_publish_callback(identity)
-    media_coordinator = (
-        _QueuedYouTubeMediaCoordinator(identity) if identity is not None else None
-    )
+    try:
+        enforce_direct_order_allowed()
+    except ValueError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     with session_scope() as session:
-        quote = session.get(ChannelQuote, req.quote_id)
+        identity, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=True
+        )
+        canonical_publish = _canonical_publish_callback(identity)
+        media_coordinator = _QueuedYouTubeMediaCoordinator(identity)
+        quote = _gateway_commerce_row(
+            session, ChannelQuote, req.quote_id, commerce_scope
+        )
         if quote is None:
             raise HTTPException(
                 status_code=404, detail=f"quote {req.quote_id} not found"
             )
-        checkout = session.get(CheckoutSessionRecord, req.checkout_session_id)
+        checkout = _gateway_commerce_row(
+            session,
+            CheckoutSessionRecord,
+            req.checkout_session_id,
+            commerce_scope,
+        )
         if checkout is None:
             raise HTTPException(
                 status_code=404,
@@ -1381,20 +1496,15 @@ def create_channel_pack_order(req: ChannelPackOrderReq, request: Request) -> dic
         try:
             pack, batch, order = create_order_from_quote(
                 session=session,
+                commerce_scope=commerce_scope,
                 quote=quote,
                 checkout=checkout,
                 pack_id=req.pack_id,
-                buyer_subject_type=(
-                    "tenant" if identity is not None else req.buyer_subject_type
-                ),
-                buyer_subject_id=(
-                    identity.tenant_id if identity is not None else req.buyer_subject_id
-                ),
+                buyer_subject_type="tenant",
+                buyer_subject_id=identity.tenant_id,
                 canonical_publish=canonical_publish,
-                acquire_hot_media=media_coordinator is not None,
-                media_acquire=(
-                    media_coordinator.acquire if media_coordinator else None
-                ),
+                acquire_hot_media=True,
+                media_acquire=media_coordinator.acquire,
             )
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
@@ -1407,13 +1517,22 @@ def create_channel_pack_order(req: ChannelPackOrderReq, request: Request) -> dic
 
 
 @app.get("/v1/channel-packs/orders/{order_id}")
-def get_channel_pack_order(order_id: str) -> dict:
+def get_channel_pack_order(order_id: str, request: Request) -> dict:
     with session_scope() as session:
-        order = session.get(ChannelOrder, order_id)
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        order = _gateway_commerce_row(
+            session, ChannelOrder, order_id, commerce_scope
+        )
         if order is None:
             raise HTTPException(status_code=404, detail=f"order {order_id} not found")
-        batch = session.get(PackBatch, order.batch_id)
-        pack = session.get(ChannelPack, order.pack_id)
+        batch = _gateway_commerce_row(
+            session, PackBatch, order.batch_id, commerce_scope
+        )
+        pack = _gateway_commerce_row(
+            session, ChannelPack, order.pack_id, commerce_scope
+        )
         if batch is None or pack is None:
             raise HTTPException(
                 status_code=500, detail="order references missing pack or batch"
@@ -1422,14 +1541,22 @@ def get_channel_pack_order(order_id: str) -> dict:
 
 
 @app.get("/v1/channel-packs/orders/{order_id}/batches")
-def get_channel_pack_order_batches(order_id: str) -> dict:
+def get_channel_pack_order_batches(order_id: str, request: Request) -> dict:
     with session_scope() as session:
-        order = session.get(ChannelOrder, order_id)
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        order = _gateway_commerce_row(
+            session, ChannelOrder, order_id, commerce_scope
+        )
         if order is None:
             raise HTTPException(status_code=404, detail=f"order {order_id} not found")
         batches = (
             session.query(PackBatch)
-            .filter(PackBatch.pack_id == order.pack_id)
+            .filter(
+                PackBatch.pack_id == order.pack_id,
+                *commerce_scope_predicates(PackBatch, commerce_scope),
+            )
             .order_by(PackBatch.batch_index.asc())
             .all()
         )
@@ -1442,9 +1569,14 @@ def get_channel_pack_order_batches(order_id: str) -> dict:
 
 
 @app.get("/v1/channel-packs/{pack_id}/manifest")
-def get_channel_pack_manifest(pack_id: str) -> dict:
+def get_channel_pack_manifest(pack_id: str, request: Request) -> dict:
     with session_scope() as session:
-        pack = session.get(ChannelPack, pack_id)
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        pack = _gateway_commerce_row(
+            session, ChannelPack, pack_id, commerce_scope
+        )
         if pack is None:
             raise HTTPException(status_code=404, detail=f"pack {pack_id} not found")
         if not pack.manifest_json:
@@ -1455,7 +1587,7 @@ def get_channel_pack_manifest(pack_id: str) -> dict:
 
 
 @app.get("/v1/channel-packs/{pack_id}/exports/{name}")
-def get_channel_pack_export(pack_id: str, name: str) -> FileResponse:
+def get_channel_pack_export(pack_id: str, name: str, request: Request) -> FileResponse:
     allowed = {
         "manifest": "manifest_path",
         "videos": "videos_path",
@@ -1467,7 +1599,12 @@ def get_channel_pack_export(pack_id: str, name: str) -> FileResponse:
     if key is None:
         raise HTTPException(status_code=404, detail=f"unsupported export {name}")
     with session_scope() as session:
-        pack = session.get(ChannelPack, pack_id)
+        _, commerce_scope = _gateway_commerce_context(
+            session=session, request=request, ensure_principals=False
+        )
+        pack = _gateway_commerce_row(
+            session, ChannelPack, pack_id, commerce_scope
+        )
         if pack is None:
             raise HTTPException(status_code=404, detail=f"pack {pack_id} not found")
         path_value = (pack.export_paths_json or {}).get(key)
@@ -1546,7 +1683,7 @@ def create_channel_pack_acp_job(req: AcpJobReq, request: Request) -> dict:
 def get_channel_pack_acp_job(acp_job_id: str, request: Request) -> dict:
     require_acp_shared_secret(request)
     with session_scope() as session:
-        bridge = session.get(AcpJobBridge, acp_job_id)
+        bridge = get_existing_acp_bridge(session, acp_job_id=acp_job_id)
         if bridge is None:
             raise HTTPException(
                 status_code=404, detail=f"ACP job {acp_job_id} not found"
