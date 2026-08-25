@@ -8,11 +8,14 @@ from typing import Iterator
 
 from sqlalchemy import (
     JSON,
+    BigInteger,
     Boolean,
+    CheckConstraint,
     DateTime,
     Float,
     ForeignKey,
     Integer,
+    Index,
     String,
     Text,
     UniqueConstraint,
@@ -21,7 +24,13 @@ from sqlalchemy import (
     text,
 )
 from sqlalchemy.exc import OperationalError
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship, sessionmaker
+from sqlalchemy.orm import (
+    DeclarativeBase,
+    Mapped,
+    mapped_column,
+    relationship,
+    sessionmaker,
+)
 
 from .channel_service_config import (
     channel_service_database_url,
@@ -29,7 +38,7 @@ from .channel_service_config import (
 )
 
 
-ALEMBIC_HEAD_REVISION = "20260825_0001"
+ALEMBIC_HEAD_REVISION = "20260825_0002"
 
 
 def utcnow() -> datetime:
@@ -48,11 +57,13 @@ class UserAccount(Base):
         ),
     )
 
-    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    id: Mapped[str] = mapped_column(String(68), primary_key=True)
     auth_provider: Mapped[str] = mapped_column(String(64), nullable=False)
     auth_subject: Mapped[str] = mapped_column(String(255), nullable=False)
     display_name: Mapped[str | None] = mapped_column(String(255))
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -64,10 +75,14 @@ class UserAccount(Base):
 class Tenant(Base):
     __tablename__ = "tenants"
 
-    id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    slug: Mapped[str] = mapped_column(String(128), nullable=False, unique=True, index=True)
+    id: Mapped[str] = mapped_column(String(68), primary_key=True)
+    slug: Mapped[str] = mapped_column(
+        String(128), nullable=False, unique=True, index=True
+    )
     display_name: Mapped[str] = mapped_column(String(255), nullable=False)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -79,16 +94,22 @@ class Tenant(Base):
 class TenantMembership(Base):
     __tablename__ = "tenant_memberships"
     __table_args__ = (
-        UniqueConstraint("tenant_id", "user_id", name="uq_tenant_memberships_tenant_user"),
+        UniqueConstraint(
+            "tenant_id", "user_id", name="uq_tenant_memberships_tenant_user"
+        ),
     )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    tenant_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("tenants.id"), nullable=False, index=True
+    )
     user_id: Mapped[str] = mapped_column(
-        ForeignKey("user_accounts.id"), nullable=False, index=True
+        String(68), ForeignKey("user_accounts.id"), nullable=False, index=True
     )
     role: Mapped[str] = mapped_column(String(32), nullable=False, default="member")
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -100,7 +121,9 @@ class TenantMembership(Base):
 class SourceChannel(Base):
     __tablename__ = "source_channels"
     __table_args__ = (
-        UniqueConstraint("platform", "external_id", name="uq_source_channels_platform_external"),
+        UniqueConstraint(
+            "platform", "external_id", name="uq_source_channels_platform_external"
+        ),
     )
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
@@ -109,6 +132,9 @@ class SourceChannel(Base):
     handle: Mapped[str | None] = mapped_column(String(255), index=True)
     display_name: Mapped[str | None] = mapped_column(String(255))
     canonical_url: Mapped[str | None] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
     metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
@@ -118,22 +144,239 @@ class SourceChannel(Base):
     )
 
 
-class TenantChannelEntitlement(Base):
-    __tablename__ = "tenant_channel_entitlements"
+class SourceVideo(Base):
+    """Canonical provider video identity shared by every entitled tenant."""
+
+    __tablename__ = "source_videos"
     __table_args__ = (
-        UniqueConstraint("tenant_id", "channel_id", name="uq_tenant_channel_entitlements_scope"),
+        UniqueConstraint(
+            "platform", "external_id", name="uq_source_videos_provider_item"
+        ),
+        CheckConstraint(
+            "archive_state IN ('pending_discovery', 'retained_remote_verified', "
+            "'retained_hot_verified', 'partial_only')",
+            name="ck_source_videos_archive_state",
+        ),
     )
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    channel_id: Mapped[str] = mapped_column(
+        ForeignKey("source_channels.id"), nullable=False, index=True
+    )
+    platform: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    external_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    canonical_url: Mapped[str | None] = mapped_column(Text)
+    title: Mapped[str | None] = mapped_column(Text)
+    description: Mapped[str | None] = mapped_column(Text)
+    published_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), index=True
+    )
+    duration_ms: Mapped[int | None] = mapped_column(BigInteger)
+    archive_state: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="pending_discovery", index=True
+    )
+    clip_candidate: Mapped[bool] = mapped_column(
+        Boolean, nullable=False, default=False, index=True
+    )
+    clip_ready: Mapped[bool] = mapped_column(
+        Boolean, nullable=False, default=False, index=True
+    )
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class TranscriptRevision(Base):
+    """Immutable transcript revision with one explicitly current revision per video."""
+
+    __tablename__ = "transcript_revisions"
+    __table_args__ = (
+        UniqueConstraint(
+            "provider",
+            "provider_revision_id",
+            name="uq_transcript_revisions_provider_item",
+        ),
+        Index(
+            "uq_transcript_revisions_current_video",
+            "video_id",
+            unique=True,
+            postgresql_where=text("is_current"),
+            sqlite_where=text("is_current = 1"),
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    video_id: Mapped[str] = mapped_column(
+        ForeignKey("source_videos.id"), nullable=False, index=True
+    )
+    provider: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
+    provider_revision_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    language: Mapped[str] = mapped_column(String(32), nullable=False)
+    content_sha256: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
+    is_current: Mapped[bool] = mapped_column(
+        Boolean, nullable=False, default=True, index=True
+    )
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    captured_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class TranscriptSegment(Base):
+    __tablename__ = "transcript_segments"
+    __table_args__ = (
+        UniqueConstraint(
+            "revision_id", "ordinal", name="uq_transcript_segments_ordinal"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    revision_id: Mapped[str] = mapped_column(
+        ForeignKey("transcript_revisions.id"), nullable=False, index=True
+    )
+    ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
+    start_ms: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    end_ms: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    speaker_label: Mapped[str | None] = mapped_column(String(255))
+    text: Mapped[str] = mapped_column(Text, nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class MediaObject(Base):
+    """Content-addressed media fact; the digest is the canonical object identity."""
+
+    __tablename__ = "media_objects"
+
+    sha256: Mapped[str] = mapped_column(String(64), primary_key=True)
+    size_bytes: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    mime_type: Mapped[str] = mapped_column(String(255), nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class MediaLocation(Base):
+    """Verified location of a content-addressed object on hot or archive storage."""
+
+    __tablename__ = "media_locations"
+    __table_args__ = (
+        UniqueConstraint(
+            "backend", "location_key", name="uq_media_locations_backend_key"
+        ),
+        CheckConstraint(
+            "backend IN ('hot_local', 'storagebox')",
+            name="ck_media_locations_backend",
+        ),
+        CheckConstraint(
+            "status IN ('active', 'pending', 'missing', 'corrupt')",
+            name="ck_media_locations_status",
+        ),
+        Index(
+            "uq_media_locations_active_hot_local",
+            "media_sha256",
+            unique=True,
+            postgresql_where=text("status = 'active' AND backend = 'hot_local'"),
+            sqlite_where=text("status = 'active' AND backend = 'hot_local'"),
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    media_sha256: Mapped[str] = mapped_column(
+        ForeignKey("media_objects.sha256"), nullable=False, index=True
+    )
+    backend: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    location_key: Mapped[str] = mapped_column(Text, nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    bytes: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    verified_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class VideoMediaRef(Base):
+    __tablename__ = "video_media_refs"
+    __table_args__ = (
+        UniqueConstraint(
+            "video_id", "media_sha256", "role", name="uq_video_media_refs_identity"
+        ),
+        CheckConstraint(
+            "role IN ('source_video', 'proxy', 'audio', 'thumbnail')",
+            name="ck_video_media_refs_role",
+        ),
+        CheckConstraint(
+            "status IN ('active', 'inactive')",
+            name="ck_video_media_refs_status",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    video_id: Mapped[str] = mapped_column(
+        ForeignKey("source_videos.id"), nullable=False, index=True
+    )
+    media_sha256: Mapped[str] = mapped_column(
+        ForeignKey("media_objects.sha256"), nullable=False, index=True
+    )
+    role: Mapped[str] = mapped_column(String(64), nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+
+
+class TenantChannelEntitlement(Base):
+    __tablename__ = "tenant_channel_entitlements"
+    __table_args__ = (
+        UniqueConstraint(
+            "tenant_id", "channel_id", name="uq_tenant_channel_entitlements_scope"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tenant_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("tenants.id"), nullable=False, index=True
+    )
     channel_id: Mapped[str] = mapped_column(
         ForeignKey("source_channels.id"), nullable=False, index=True
     )
     granted_by_user_id: Mapped[str | None] = mapped_column(
-        ForeignKey("user_accounts.id"), index=True
+        String(68), ForeignKey("user_accounts.id"), index=True
     )
-    access_level: Mapped[str] = mapped_column(String(32), nullable=False, default="query")
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="active", index=True)
+    access_level: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="query"
+    )
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="active", index=True
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -148,21 +391,34 @@ class IngestionJob(Base):
     __tablename__ = "ingestion_jobs"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    dedupe_key: Mapped[str] = mapped_column(String(255), nullable=False, unique=True, index=True)
-    channel_id: Mapped[str | None] = mapped_column(ForeignKey("source_channels.id"), index=True)
+    dedupe_key: Mapped[str] = mapped_column(
+        String(255), nullable=False, unique=True, index=True
+    )
+    channel_id: Mapped[str | None] = mapped_column(
+        ForeignKey("source_channels.id"), index=True
+    )
     job_kind: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
     source_kind: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
     source_key: Mapped[str] = mapped_column(String(255), nullable=False)
     pipeline_version: Mapped[str] = mapped_column(String(128), nullable=False)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="queued", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="queued", index=True
+    )
     priority: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     max_attempts: Mapped[int] = mapped_column(Integer, nullable=False, default=5)
-    next_run_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    next_run_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), index=True
+    )
     lease_owner: Mapped[str | None] = mapped_column(String(128), index=True)
-    lease_expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    lease_expires_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), index=True
+    )
     payload_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     result_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    request_tenant_ids_json: Mapped[list[str]] = mapped_column(
+        JSON, default=list, nullable=False
+    )
     last_error_code: Mapped[str | None] = mapped_column(String(64))
     last_error_detail: Mapped[str | None] = mapped_column(Text)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
@@ -178,22 +434,68 @@ class IngestionRequest(Base):
     __tablename__ = "ingestion_requests"
     __table_args__ = (
         UniqueConstraint(
-            "tenant_id", "idempotency_key", name="uq_ingestion_requests_tenant_idempotency"
+            "tenant_id",
+            "idempotency_key",
+            name="uq_ingestion_requests_tenant_idempotency",
         ),
     )
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    tenant_id: Mapped[str] = mapped_column(ForeignKey("tenants.id"), nullable=False, index=True)
+    tenant_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("tenants.id"), nullable=False, index=True
+    )
     requested_by_user_id: Mapped[str | None] = mapped_column(
-        ForeignKey("user_accounts.id"), index=True
+        String(68), ForeignKey("user_accounts.id"), index=True
     )
     job_id: Mapped[str] = mapped_column(
         ForeignKey("ingestion_jobs.id"), nullable=False, index=True
     )
     idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
     request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="accepted", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="accepted", index=True
+    )
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class TenantExport(Base):
+    """Durable, idempotent metadata for one immutable tenant export artifact."""
+
+    __tablename__ = "tenant_exports"
+    __table_args__ = (
+        UniqueConstraint(
+            "tenant_id", "idempotency_key", name="uq_tenant_exports_tenant_idempotency"
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tenant_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("tenants.id"), nullable=False, index=True
+    )
+    requested_by_user_id: Mapped[str] = mapped_column(
+        String(68), ForeignKey("user_accounts.id"), nullable=False, index=True
+    )
+    idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    schema_version: Mapped[str] = mapped_column(String(32), nullable=False)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="running", index=True
+    )
+    snapshot_sha256: Mapped[str | None] = mapped_column(String(64))
+    database_sha256: Mapped[str | None] = mapped_column(String(64), index=True)
+    manifest_sha256: Mapped[str | None] = mapped_column(String(64))
+    database_path: Mapped[str | None] = mapped_column(Text)
+    manifest_path: Mapped[str | None] = mapped_column(Text)
+    counts_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    manifest_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    error_detail: Mapped[str | None] = mapped_column(Text)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -208,10 +510,14 @@ class IngestionEffect(Base):
     __tablename__ = "ingestion_effects"
     __table_args__ = (
         UniqueConstraint(
-            "provider", "idempotency_key", name="uq_ingestion_effects_provider_idempotency"
+            "provider",
+            "idempotency_key",
+            name="uq_ingestion_effects_provider_idempotency",
         ),
         UniqueConstraint(
-            "provider", "provider_effect_id", name="uq_ingestion_effects_provider_effect"
+            "provider",
+            "provider_effect_id",
+            name="uq_ingestion_effects_provider_effect",
         ),
     )
 
@@ -223,7 +529,9 @@ class IngestionEffect(Base):
     effect_kind: Mapped[str] = mapped_column(String(64), nullable=False)
     idempotency_key: Mapped[str] = mapped_column(String(255), nullable=False)
     request_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="reserved", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="reserved", index=True
+    )
     provider_effect_id: Mapped[str | None] = mapped_column(String(255))
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     response_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
@@ -246,21 +554,41 @@ class ChannelQuote(Base):
     resolved_channel_id: Mapped[str | None] = mapped_column(String(255))
     resolved_channel_name: Mapped[str | None] = mapped_column(String(255))
     requested_max_videos: Mapped[int] = mapped_column(Integer, nullable=False)
-    included_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    excluded_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    included_video_count: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
+    excluded_video_count: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     current_batch_index: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
-    current_batch_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    current_batch_amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    total_included_amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    current_batch_video_count: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
+    current_batch_amount_cents: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
+    total_included_amount_cents: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     per_video_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    estimated_ready_minutes: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    eta_confidence: Mapped[str] = mapped_column(String(32), default="low", nullable=False)
-    recommended_starter_batch_size: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    estimated_ready_minutes: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
+    eta_confidence: Mapped[str] = mapped_column(
+        String(32), default="low", nullable=False
+    )
+    recommended_starter_batch_size: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     planning_latency_ms: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     batch_plan_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
-    price_breakdown_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
-    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    price_breakdown_json: Mapped[dict] = mapped_column(
+        JSON, default=dict, nullable=False
+    )
+    expires_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
@@ -269,7 +597,9 @@ class ChannelQuote(Base):
     )
 
     videos: Mapped[list["QuoteVideo"]] = relationship(
-        back_populates="quote", cascade="all, delete-orphan", order_by="QuoteVideo.position"
+        back_populates="quote",
+        cascade="all, delete-orphan",
+        order_by="QuoteVideo.position",
     )
 
 
@@ -313,7 +643,9 @@ class CheckoutSessionRecord(Base):
     total_amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     quote_ids_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
     line_items_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
-    payment_provider: Mapped[str] = mapped_column(String(64), default="x402", nullable=False)
+    payment_provider: Mapped[str] = mapped_column(
+        String(64), default="x402", nullable=False
+    )
     payment_status: Mapped[str] = mapped_column(
         String(64), default="not_implemented", nullable=False
     )
@@ -335,7 +667,9 @@ class ChannelPack(Base):
     channel_handle: Mapped[str] = mapped_column(String(255), nullable=False)
     resolved_channel_id: Mapped[str | None] = mapped_column(String(255))
     resolved_channel_name: Mapped[str | None] = mapped_column(String(255))
-    total_purchased_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    total_purchased_video_count: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     ready_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     batch_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     manifest_json: Mapped[dict | None] = mapped_column(JSON)
@@ -363,10 +697,14 @@ class PackBatch(Base):
     )
     batch_index: Mapped[int] = mapped_column(Integer, nullable=False)
     status: Mapped[str] = mapped_column(String(32), default="queued", nullable=False)
-    billable_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    billable_video_count: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     ready_video_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    estimated_ready_minutes: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    estimated_ready_minutes: Mapped[int] = mapped_column(
+        Integer, default=0, nullable=False
+    )
     build_notes_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     manifest_json: Mapped[dict | None] = mapped_column(JSON)
     created_at: Mapped[datetime] = mapped_column(
@@ -425,8 +763,12 @@ class ChannelOrder(Base):
         ForeignKey("pack_batches.id"), nullable=False, index=True
     )
     status: Mapped[str] = mapped_column(String(32), default="queued", nullable=False)
-    payment_status: Mapped[str] = mapped_column(String(64), default="pending", nullable=False)
-    payment_provider: Mapped[str] = mapped_column(String(64), default="x402", nullable=False)
+    payment_status: Mapped[str] = mapped_column(
+        String(64), default="pending", nullable=False
+    )
+    payment_provider: Mapped[str] = mapped_column(
+        String(64), default="x402", nullable=False
+    )
     amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     currency: Mapped[str] = mapped_column(String(16), default="USD", nullable=False)
     notes_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
@@ -445,7 +787,9 @@ class PaymentReceipt(Base):
     checkout_session_id: Mapped[str] = mapped_column(
         ForeignKey("checkout_sessions.id"), nullable=False, index=True
     )
-    order_id: Mapped[str | None] = mapped_column(ForeignKey("channel_orders.id"), index=True)
+    order_id: Mapped[str | None] = mapped_column(
+        ForeignKey("channel_orders.id"), index=True
+    )
     status: Mapped[str] = mapped_column(String(64), nullable=False)
     provider: Mapped[str] = mapped_column(String(64), nullable=False)
     amount_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
@@ -462,16 +806,26 @@ class AcpJobBridge(Base):
     acp_job_id: Mapped[str] = mapped_column(String(128), primary_key=True)
     offering_id: Mapped[str] = mapped_column(String(128), nullable=False, index=True)
     status: Mapped[str] = mapped_column(String(64), default="received", nullable=False)
-    quote_id: Mapped[str | None] = mapped_column(ForeignKey("channel_quotes.id"), index=True)
+    quote_id: Mapped[str | None] = mapped_column(
+        ForeignKey("channel_quotes.id"), index=True
+    )
     checkout_session_id: Mapped[str | None] = mapped_column(
         ForeignKey("checkout_sessions.id"), index=True
     )
-    order_id: Mapped[str | None] = mapped_column(ForeignKey("channel_orders.id"), index=True)
-    pack_id: Mapped[str | None] = mapped_column(ForeignKey("channel_packs.id"), index=True)
+    order_id: Mapped[str | None] = mapped_column(
+        ForeignKey("channel_orders.id"), index=True
+    )
+    pack_id: Mapped[str | None] = mapped_column(
+        ForeignKey("channel_packs.id"), index=True
+    )
     fixed_price_cents: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     currency: Mapped[str] = mapped_column(String(16), default="USD", nullable=False)
-    payment_provider: Mapped[str] = mapped_column(String(64), default="acp", nullable=False)
-    payment_status: Mapped[str] = mapped_column(String(64), default="settled_acp", nullable=False)
+    payment_provider: Mapped[str] = mapped_column(
+        String(64), default="acp", nullable=False
+    )
+    payment_status: Mapped[str] = mapped_column(
+        String(64), default="settled_acp", nullable=False
+    )
     buyer_subject_type: Mapped[str | None] = mapped_column(String(64))
     buyer_subject_id: Mapped[str | None] = mapped_column(String(255))
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
@@ -497,10 +851,18 @@ class OfferingReadinessSnapshot(Base):
     )
     capacity_score: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     purchasable: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
-    hard_stop_reasons_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
-    soft_warning_reasons_json: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
-    healthy_pool_group_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
-    queue_headroom_percent: Mapped[float] = mapped_column(Float, nullable=False, default=0.0)
+    hard_stop_reasons_json: Mapped[list] = mapped_column(
+        JSON, default=list, nullable=False
+    )
+    soft_warning_reasons_json: Mapped[list] = mapped_column(
+        JSON, default=list, nullable=False
+    )
+    healthy_pool_group_count: Mapped[int] = mapped_column(
+        Integer, nullable=False, default=0
+    )
+    queue_headroom_percent: Mapped[float] = mapped_column(
+        Float, nullable=False, default=0.0
+    )
     latest_catalog_canary_status: Mapped[str | None] = mapped_column(String(32))
     latest_arbitrary_canary_status: Mapped[str | None] = mapped_column(String(32))
     latest_soak_status: Mapped[str | None] = mapped_column(String(32))
@@ -534,7 +896,9 @@ class SyntheticRun(Base):
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
     run_kind: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="running", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="running", index=True
+    )
     channel_handle: Mapped[str | None] = mapped_column(String(255), index=True)
     namespace: Mapped[str | None] = mapped_column(String(128))
     mode: Mapped[str | None] = mapped_column(String(64))
@@ -568,7 +932,9 @@ class SoakRun(Base):
     __tablename__ = "soak_runs"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    status: Mapped[str] = mapped_column(String(32), nullable=False, default="running", index=True)
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="running", index=True
+    )
     requested_jobs: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     success_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     failure_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
@@ -648,11 +1014,19 @@ class EgressPool(Base):
     last_error_detail: Mapped[str | None] = mapped_column(Text)
     last_success_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     last_failure_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    last_rate_limited_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    consecutive_rate_limit_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    last_rate_limited_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True)
+    )
+    consecutive_rate_limit_count: Mapped[int] = mapped_column(
+        Integer, nullable=False, default=0
+    )
     quarantine_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    last_canary_started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    last_canary_finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_canary_started_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True)
+    )
+    last_canary_finished_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True)
+    )
     last_canary_status: Mapped[str | None] = mapped_column(String(32))
     last_canary_error_kind: Mapped[str | None] = mapped_column(String(64))
     last_canary_error_detail: Mapped[str | None] = mapped_column(Text)
@@ -669,10 +1043,14 @@ class SchedulerJob(Base):
     __tablename__ = "scheduler_jobs"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    probe_key: Mapped[str] = mapped_column(String(255), nullable=False, unique=True, index=True)
+    probe_key: Mapped[str] = mapped_column(
+        String(255), nullable=False, unique=True, index=True
+    )
     video_id: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
     channel_handle: Mapped[str | None] = mapped_column(String(255), index=True)
-    lane: Mapped[str] = mapped_column(String(64), nullable=False, default="quote_starter_probe")
+    lane: Mapped[str] = mapped_column(
+        String(64), nullable=False, default="quote_starter_probe"
+    )
     priority: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     status: Mapped[str] = mapped_column(String(32), nullable=False, default="queued")
     subscriber_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
@@ -740,7 +1118,9 @@ def get_engine():
             engine_kwargs.update(
                 pool_size=int(os.getenv("CHANNEL_SERVICE_DB_POOL_SIZE", "10")),
                 max_overflow=int(os.getenv("CHANNEL_SERVICE_DB_MAX_OVERFLOW", "10")),
-                pool_recycle=int(os.getenv("CHANNEL_SERVICE_DB_POOL_RECYCLE_SECONDS", "1800")),
+                pool_recycle=int(
+                    os.getenv("CHANNEL_SERVICE_DB_POOL_RECYCLE_SECONDS", "1800")
+                ),
             )
         _ENGINE = create_engine(url, **engine_kwargs)
         _SESSION_FACTORY = sessionmaker(
@@ -806,7 +1186,8 @@ def _assert_alembic_head(engine) -> None:
         )
     with engine.connect() as conn:
         revisions = {
-            str(row[0]) for row in conn.execute(text("SELECT version_num FROM alembic_version"))
+            str(row[0])
+            for row in conn.execute(text("SELECT version_num FROM alembic_version"))
         }
     if revisions != {ALEMBIC_HEAD_REVISION}:
         current = ",".join(sorted(revisions)) or "none"
@@ -822,6 +1203,24 @@ def dispose_engine() -> None:
         _ENGINE.dispose()
     _ENGINE = None
     _SESSION_FACTORY = None
+
+
+def set_tenant_scope(session, tenant_id: str) -> None:
+    """Set the transaction-local PostgreSQL RLS scope for tenant-owned rows."""
+    from .channel_service_config import validate_tenant_id
+
+    tenant_id = validate_tenant_id(tenant_id)
+    if session.get_bind().dialect.name == "postgresql":
+        session.execute(
+            text("SELECT set_config('app.tenant_id', :tenant_id, true)"),
+            {"tenant_id": tenant_id},
+        )
+
+
+def clear_tenant_scope(session) -> None:
+    """Return a PostgreSQL transaction to its fail-closed tenant state."""
+    if session.get_bind().dialect.name == "postgresql":
+        session.execute(text("SELECT set_config('app.tenant_id', '', true)"))
 
 
 @contextmanager
@@ -868,7 +1267,9 @@ def _apply_lightweight_migrations(engine) -> None:
 
 
 def _ensure_columns(engine, *, table_name: str, wanted: dict[str, str]) -> None:
-    existing = {str(column["name"]) for column in inspect(engine).get_columns(table_name)}
+    existing = {
+        str(column["name"]) for column in inspect(engine).get_columns(table_name)
+    }
     statements = []
     for column_name, ddl in wanted.items():
         if column_name in existing:

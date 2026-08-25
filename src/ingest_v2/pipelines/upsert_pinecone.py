@@ -3,7 +3,12 @@ from typing import List, Dict, Any, Callable, Optional
 import os, json, statistics, re
 
 from ..configs.settings import settings_v2
-from ..utils.pinecone_client import get_index, upsert_vectors, sanitize_metadata, trim_metadata_utf8
+from ..utils.pinecone_client import (
+    get_index,
+    upsert_vectors,
+    sanitize_metadata,
+    trim_metadata_utf8,
+)
 from ..utils.vector_store import (
     qdrant_collection_name,
     upsert_qdrant_vectors,
@@ -14,7 +19,6 @@ from time import perf_counter
 from math import ceil
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from ..utils.batching import chunked
 from ..utils.progress import progress
 from src.utils.global_thread_guard import get_global_thread_limiter
 
@@ -28,6 +32,7 @@ try:
     def _dumps_bytes(x) -> bytes:
         return _fj.dumps(x)
 except Exception:
+
     def _dumps_bytes(x) -> bytes:
         # compact separators to better approximate wire size
         return json.dumps(x, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
@@ -44,7 +49,9 @@ def _estimate_vector_bytes(v: Dict[str, Any]) -> int:
         return 0
 
 
-def _chunk_vectors_by_bytes(vectors: List[Dict[str, Any]], max_bytes: int, safety_overhead: int = 2048):
+def _chunk_vectors_by_bytes(
+    vectors: List[Dict[str, Any]], max_bytes: int, safety_overhead: int = 2048
+):
     """
     Yield batches (list, est_size_bytes) whose serialized JSON size is <= max_bytes.
     We keep a small safety overhead for HTTP/JSON framing.
@@ -67,6 +74,7 @@ def _chunk_vectors_by_bytes(vectors: List[Dict[str, Any]], max_bytes: int, safet
 # Fetch existing vectors' metadata (supports Pinecone v2/v3 SDK shapes)
 # ────────────────────────────────────────────────────────────────────────────────
 
+
 def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dict]:
     """
     Safely fetch existing vectors' metadata without tripping 414 (Request-URI Too Large).
@@ -84,7 +92,7 @@ def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dic
     logging.info("[fetch/meta] ids=%d start_batch=%d", len(ids), max_per)
 
     while i < len(ids):
-        chunk = ids[i:i + max_per]
+        chunk = ids[i : i + max_per]
 
         attempt = 0
         while True:
@@ -100,10 +108,10 @@ def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dic
                     sample = next(iter(vectors.values()))
                     if isinstance(sample, dict):
                         for vid, v in vectors.items():
-                            out[vid] = (v.get("metadata") or {})
+                            out[vid] = v.get("metadata") or {}
                     else:
                         for vid, v in vectors.items():
-                            out[vid] = (getattr(v, "metadata", {}) or {})
+                            out[vid] = getattr(v, "metadata", {}) or {}
 
                 # success → advance window
                 i += len(chunk)
@@ -113,21 +121,38 @@ def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dic
                 status = getattr(e, "status", None)
                 msg = str(e)
                 # Too-large query (GET) or payload (if SDK switches to POST): shrink
-                if status in (413, 414) or "414" in msg or "Request-URI Too Large" in msg or "Payload Too Large" in msg:
+                if (
+                    status in (413, 414)
+                    or "414" in msg
+                    or "Request-URI Too Large" in msg
+                    or "Payload Too Large" in msg
+                ):
                     if max_per == 1 and len(chunk) == 1:
-                        logging.error("[fetch/meta] cannot shrink further; re-raising (id=%s)", chunk[0])
+                        logging.error(
+                            "[fetch/meta] cannot shrink further; re-raising (id=%s)",
+                            chunk[0],
+                        )
                         raise
                     old = max_per
                     max_per = max(1, max_per // 2)
-                    logging.warning("[fetch/meta] %s; reducing ids per request %d → %d and retrying",
-                                    f"{status or ''}".strip(), old, max_per)
+                    logging.warning(
+                        "[fetch/meta] %s; reducing ids per request %d → %d and retrying",
+                        f"{status or ''}".strip(),
+                        old,
+                        max_per,
+                    )
                     # retry same window with smaller chunk
-                    chunk = ids[i:i + max_per]
+                    chunk = ids[i : i + max_per]
                     continue
 
                 # transient → backoff & retry
                 attempt += 1
-                logging.warning("[fetch/meta] fetch failed size=%d attempt=%d err=%s", len(chunk), attempt, e)
+                logging.warning(
+                    "[fetch/meta] fetch failed size=%d attempt=%d err=%s",
+                    len(chunk),
+                    attempt,
+                    e,
+                )
                 expo_backoff(attempt)
 
     return out
@@ -137,9 +162,11 @@ def _fetch_existing_meta(index, namespace: str, ids: List[str]) -> Dict[str, Dic
 # Embedding provider wrapper with logging
 # ────────────────────────────────────────────────────────────────────────────────
 
+
 def _embedder() -> Callable[[List[str]], List[List[float]]]:
     if settings_v2.EMBED_PROVIDER == "openai":
         from openai import OpenAI
+
         try:
             import tiktoken  # type: ignore
         except Exception:  # pragma: no cover
@@ -225,15 +252,37 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
                     last_exc = e
                     status = _status_code(e)
                     lowered = (str(e) or "").lower()
-                    non_retriable_4xx = status is not None and 400 <= status < 500 and status != 429
-                    if non_retriable_4xx or _is_context_length_error(e) or _is_insufficient_quota(e):
+                    non_retriable_4xx = (
+                        status is not None and 400 <= status < 500 and status != 429
+                    )
+                    if (
+                        non_retriable_4xx
+                        or _is_context_length_error(e)
+                        or _is_insufficient_quota(e)
+                    ):
                         # These won't succeed with retries; surface quickly.
-                        logging.warning("[embed/openai] non-retriable status=%s size=%d err=%s", status, len(chunk), e)
+                        logging.warning(
+                            "[embed/openai] non-retriable status=%s size=%d err=%s",
+                            status,
+                            len(chunk),
+                            e,
+                        )
                         raise
                     if attempt >= max(1, max_attempts):
-                        logging.warning("[embed/openai] giving up attempts=%d size=%d err=%s", attempt, len(chunk), e)
+                        logging.warning(
+                            "[embed/openai] giving up attempts=%d size=%d err=%s",
+                            attempt,
+                            len(chunk),
+                            e,
+                        )
                         raise
-                    logging.warning("[embed/openai] retry %d/%d size=%d err=%s", attempt, max_attempts, len(chunk), e)
+                    logging.warning(
+                        "[embed/openai] retry %d/%d size=%d err=%s",
+                        attempt,
+                        max_attempts,
+                        len(chunk),
+                        e,
+                    )
                     expo_backoff(attempt)
 
             # Should be unreachable, but keep mypy happy.
@@ -244,13 +293,19 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
         def embed_texts(texts: List[str]) -> List[List[float]]:
             # Normalize and token-trim before batching so a single oversized input doesn't
             # fail the whole request with a 400 context-length error.
-            normed = [_trim_to_max_tokens(t if isinstance(t, str) else str(t or "")) for t in (texts or [])]
-            chunks = [normed[i:i + bs] for i in range(0, len(normed), bs)]
+            normed = [
+                _trim_to_max_tokens(t if isinstance(t, str) else str(t or ""))
+                for t in (texts or [])
+            ]
+            chunks = [normed[i : i + bs] for i in range(0, len(normed), bs)]
             out_slots: List[Optional[List[List[float]]]] = [None] * len(chunks)
             worker_count = max(1, conc)
             with limiter.claim(worker_count, label="embed-openai"):
                 with ThreadPoolExecutor(max_workers=worker_count) as ex:
-                    futs = {ex.submit(_embed_chunk, ch): idx for idx, ch in enumerate(chunks)}
+                    futs = {
+                        ex.submit(_embed_chunk, ch): idx
+                        for idx, ch in enumerate(chunks)
+                    }
                     for fut in as_completed(futs):
                         idx = futs[fut]
                         out_slots[idx] = fut.result()
@@ -260,13 +315,17 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
             return vecs
 
         # attach helpers for stats
-        embed_texts._batch_size = bs            # type: ignore[attr-defined]
-        embed_texts._concurrency = conc         # type: ignore[attr-defined]
+        embed_texts._batch_size = bs  # type: ignore[attr-defined]
+        embed_texts._concurrency = conc  # type: ignore[attr-defined]
         return embed_texts
 
     # sentence-transformers path
     from sentence_transformers import SentenceTransformer
-    model = SentenceTransformer(settings_v2.EMBED_MODEL)
+
+    model = SentenceTransformer(
+        settings_v2.EMBED_MODEL,
+        revision=settings_v2.EMBED_MODEL_REVISION or None,
+    )
 
     def embed_texts(texts: List[str]) -> List[List[float]]:
         # normalize to unit vectors for cosine (optional but consistent)
@@ -278,6 +337,7 @@ def _embedder() -> Callable[[List[str]], List[List[float]]]:
 # ────────────────────────────────────────────────────────────────────────────────
 # Namespace + metadata prep
 # ────────────────────────────────────────────────────────────────────────────────
+
 
 def choose_namespace(document_type: str) -> str:
     if document_type == "youtube_video":
@@ -301,11 +361,17 @@ def _prep_metadata_for_upsert(c: Dict[str, Any]) -> Dict[str, Any]:
 #   PINECONE_UPSERT_RETRIES:     default 5
 # ────────────────────────────────────────────────────────────────────────────────
 
+
 def _retry_upsert_once(index, namespace: str, vectors: List[Dict[str, Any]]):
     # Force single HTTP call inside upsert_vectors by setting batch_size=len(vectors)
-    upsert_vectors(index=index, namespace=namespace, vectors=vectors, batch_size=len(vectors))
+    upsert_vectors(
+        index=index, namespace=namespace, vectors=vectors, batch_size=len(vectors)
+    )
 
-def _retry_upsert(index, namespace: str, vectors: List[Dict[str, Any]], max_retries: int):
+
+def _retry_upsert(
+    index, namespace: str, vectors: List[Dict[str, Any]], max_retries: int
+):
     attempt = 0
     while True:
         try:
@@ -314,10 +380,15 @@ def _retry_upsert(index, namespace: str, vectors: List[Dict[str, Any]], max_retr
         except Exception as e:
             attempt += 1
             if attempt > max_retries:
-                logging.exception("[upsert/send] giving up size=%d err=%s", len(vectors), e)
+                logging.exception(
+                    "[upsert/send] giving up size=%d err=%s", len(vectors), e
+                )
                 raise
-            logging.warning("[upsert/send] retry=%d size=%d err=%s", attempt, len(vectors), e)
+            logging.warning(
+                "[upsert/send] retry=%d size=%d err=%s", attempt, len(vectors), e
+            )
             expo_backoff(attempt)
+
 
 def _send_upserts_parallel(
     index,
@@ -337,10 +408,16 @@ def _send_upserts_parallel(
             for i, (vec_batch, _est_bytes) in enumerate(batches, 1):
                 # Respect count-based batch size within each bytes-batch
                 for j, k in enumerate(range(0, len(vec_batch), pc_bs), 1):
-                    sub = vec_batch[k:k + pc_bs]
+                    sub = vec_batch[k : k + pc_bs]
                     est_sub = sum(_estimate_vector_bytes(v) for v in sub) + 2 + 1024
-                    logging.info("[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
-                                 parent_id, i, j, len(sub), est_sub)
+                    logging.info(
+                        "[upsert/send] parent=%s batch=%d.%d size=%d est_bytes=%d",
+                        parent_id,
+                        i,
+                        j,
+                        len(sub),
+                        est_sub,
+                    )
                     fut = ex.submit(_retry_upsert, index, namespace, sub, max_retries)
                     futs[fut] = len(sub)
 
@@ -354,9 +431,11 @@ def _send_upserts_parallel(
 
     return sent
 
+
 # ────────────────────────────────────────────────────────────────────────────────
 # Main upsert
 # ────────────────────────────────────────────────────────────────────────────────
+
 
 def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
     if not children:
@@ -375,17 +454,33 @@ def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
     t1 = perf_counter()
 
     if len(embs) != len(children):
-        logging.error("[upsert/qdrant] embedding/count mismatch: %d != %d; dropping batch", len(embs), len(children))
-        return {"t_embed": t1 - t0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
+        logging.error(
+            "[upsert/qdrant] embedding/count mismatch: %d != %d; dropping batch",
+            len(embs),
+            len(children),
+        )
+        return {
+            "t_embed": t1 - t0,
+            "t_upsert": 0.0,
+            "embed_reqs": 0,
+            "pinecone_batches": 0,
+        }
 
     vectors: List[Dict[str, Any]] = []
     for c, vec, md in zip(children, embs, metas):
         vectors.append({"id": c["segment_id"], "values": vec, "metadata": md})
 
     if not vectors:
-        return {"t_embed": t1 - t0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
+        return {
+            "t_embed": t1 - t0,
+            "t_upsert": 0.0,
+            "embed_reqs": 0,
+            "pinecone_batches": 0,
+        }
 
-    batch_size = int(os.getenv("QDRANT_UPSERT_BATCH", str(settings_v2.PINECONE_UPSERT_BATCH)))
+    batch_size = int(
+        os.getenv("QDRANT_UPSERT_BATCH", str(settings_v2.PINECONE_UPSERT_BATCH))
+    )
     t2 = perf_counter()
     sent_batches = upsert_qdrant_vectors(
         collection_name=collection,
@@ -397,7 +492,13 @@ def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
     embed_bs = getattr(embed, "_batch_size", len(texts) or 1)
     embed_reqs = ceil(len(texts) / max(1, int(embed_bs)))
-    logging.info("[upsert/qdrant] namespace=%s collection=%s vectors=%d batches=%d", ns, collection, len(vectors), sent_batches)
+    logging.info(
+        "[upsert/qdrant] namespace=%s collection=%s vectors=%d batches=%d",
+        ns,
+        collection,
+        len(vectors),
+        sent_batches,
+    )
     return {
         "t_embed": (t1 - t0),
         "t_upsert": (t3 - t2),
@@ -439,7 +540,9 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
         # text same; maybe metadata changed — update without embedding
         md_new = _prep_metadata_for_upsert(c)
-        if {k: v for k, v in md_new.items() if k != "text"} != {k: v for k, v in prev.items() if k != "text"}:
+        if {k: v for k, v in md_new.items() if k != "text"} != {
+            k: v for k, v in prev.items() if k != "text"
+        }:
             to_update_meta.append({"id": seg_id, "metadata": md_new})
 
     # plan the work for this parent
@@ -455,8 +558,11 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
     # --- embed + upsert only diffs
     if not to_embed:
-        logging.info("[upsert/diff] new_or_changed=0 meta_only=%d skipped=%d",
-                     len(to_update_meta), len(children) - len(to_update_meta))
+        logging.info(
+            "[upsert/diff] new_or_changed=0 meta_only=%d skipped=%d",
+            len(to_update_meta),
+            len(children) - len(to_update_meta),
+        )
         # parent finished (nothing to embed)
         progress.parent_done()
         logging.info("[progress] %s", progress.fmt())
@@ -471,11 +577,20 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
     t1 = perf_counter()
 
     if len(embs) != len(to_embed):
-        logging.error("[upsert] embedding/count mismatch: %d != %d; dropping batch", len(embs), len(to_embed))
+        logging.error(
+            "[upsert] embedding/count mismatch: %d != %d; dropping batch",
+            len(embs),
+            len(to_embed),
+        )
         # parent finished (failed to proceed)
         progress.parent_done()
         logging.info("[progress] %s", progress.fmt())
-        return {"t_embed": t1 - t0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
+        return {
+            "t_embed": t1 - t0,
+            "t_upsert": 0.0,
+            "embed_reqs": 0,
+            "pinecone_batches": 0,
+        }
 
     # Build Pinecone vectors
     vectors: List[Dict[str, Any]] = []
@@ -486,7 +601,12 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
         # parent finished (nothing to send)
         progress.parent_done()
         logging.info("[progress] %s", progress.fmt())
-        return {"t_embed": (t1 - t0), "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
+        return {
+            "t_embed": (t1 - t0),
+            "t_upsert": 0.0,
+            "embed_reqs": 0,
+            "pinecone_batches": 0,
+        }
 
     # ---- Debug stats before upsert
     dims = len(embs[0]) if embs else 0
@@ -504,7 +624,10 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
             p95_md = max(md_bytes)
     logging.info(
         "[upsert/debug] vectors=%d dims=%d avg_text=%d max_text=%d avg_md_bytes=%d p95_md_bytes=%d max_md_bytes=%d",
-        len(vectors), dims, avg_text, (max(text_lens) if text_lens else 0),
+        len(vectors),
+        dims,
+        avg_text,
+        (max(text_lens) if text_lens else 0),
         int(statistics.mean(md_bytes)) if md_bytes else 0,
         p95_md,
         (max(md_bytes) if md_bytes else 0),
@@ -513,12 +636,18 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
     # ---- Bytes-aware batching to avoid Pinecone 2MB cap (leave headroom)
     pc_bs = settings_v2.PINECONE_UPSERT_BATCH
     max_req = int(os.getenv("PINECONE_MAX_REQ_BYTES", "1800000"))  # under 2MB
-    parent_id = (to_embed[0].get("parent_id") if to_embed else children[0].get("parent_id")) or "unknown"
+    parent_id = (
+        to_embed[0].get("parent_id") if to_embed else children[0].get("parent_id")
+    ) or "unknown"
 
     batches = list(_chunk_vectors_by_bytes(vectors, max_req))
     logging.info(
         "[upsert/batching] parent=%s total_vectors=%d bytes_batches=%d (pc_bs=%d max_req=%d)",
-        parent_id, len(vectors), len(batches), pc_bs, max_req
+        parent_id,
+        len(vectors),
+        len(batches),
+        pc_bs,
+        max_req,
     )
 
     # ---- Parallel, retried upserts (this should call progress.add_done per sub-batch)
@@ -542,7 +671,9 @@ def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
 
     logging.info(
         "[upsert/diff] new_or_changed=%d meta_only=%d skipped=%d",
-        len(to_embed), len(to_update_meta), len(children) - len(to_embed) - len(to_update_meta)
+        len(to_embed),
+        len(to_update_meta),
+        len(children) - len(to_embed) - len(to_update_meta),
     )
 
     return {

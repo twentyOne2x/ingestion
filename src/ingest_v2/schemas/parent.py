@@ -3,13 +3,16 @@ from typing import Any, Dict, List, Optional, Literal
 
 DocType = Literal["youtube_video", "twitch_vod", "pumpfun_clip", "stream", "media"]
 
+
 class Chapter(BaseModel):
     title: str
     start_s: float = Field(ge=0)
 
+
 class ParentNode(BaseModel):
     node_type: Literal["parent"] = "parent"
     parent_id: str
+    media_id: Optional[str] = None
     document_type: DocType
     title: str
     description: Optional[str] = None

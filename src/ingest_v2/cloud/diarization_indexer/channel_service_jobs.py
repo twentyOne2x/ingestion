@@ -17,6 +17,8 @@ from .channel_service_store import (
     Tenant,
     TenantChannelEntitlement,
     UserAccount,
+    clear_tenant_scope,
+    set_tenant_scope,
     utcnow,
 )
 
@@ -88,8 +90,12 @@ def ensure_source_channel(
         platform=platform_normalized,
         external_id=external_id_normalized,
         handle=(str(handle).strip() or None) if handle is not None else None,
-        display_name=(str(display_name).strip() or None) if display_name is not None else None,
-        canonical_url=(str(canonical_url).strip() or None) if canonical_url is not None else None,
+        display_name=(str(display_name).strip() or None)
+        if display_name is not None
+        else None,
+        canonical_url=(str(canonical_url).strip() or None)
+        if canonical_url is not None
+        else None,
         metadata_json=dict(metadata or {}),
     )
     if _insert_with_savepoint(session, row):
@@ -113,6 +119,7 @@ def ensure_channel_entitlement(
     tenant_id = _required(tenant_id, "tenant_id")
     channel_id = _required(channel_id, "channel_id")
     access_level = _required(access_level, "access_level")
+    set_tenant_scope(session, tenant_id)
     if session.get(Tenant, tenant_id) is None:
         raise ValueError(f"tenant {tenant_id} does not exist")
     if session.get(SourceChannel, channel_id) is None:
@@ -179,6 +186,7 @@ def get_or_create_ingestion_request(
     pipeline_version = _required(pipeline_version, "pipeline_version")
     if max_attempts < 1:
         raise ValueError("max_attempts must be at least 1")
+    set_tenant_scope(session, tenant_id)
     if session.get(Tenant, tenant_id) is None:
         raise ValueError(f"tenant {tenant_id} does not exist")
     if requested_by_user_id and session.get(UserAccount, requested_by_user_id) is None:
@@ -193,7 +201,9 @@ def get_or_create_ingestion_request(
         "pipeline_version": pipeline_version,
     }
     canonical_key = _json_fingerprint(canonical)
-    fingerprint = _json_fingerprint({"canonical": canonical, "request": request_payload})
+    fingerprint = _json_fingerprint(
+        {"canonical": canonical, "request": request_payload}
+    )
 
     existing_request = session.execute(
         select(IngestionRequest).where(
@@ -206,7 +216,9 @@ def get_or_create_ingestion_request(
             raise IdempotencyConflict(
                 "idempotency key already exists with different source or request payload"
             )
-        return existing_request, session.get(IngestionJob, existing_request.job_id), False
+        job = session.get(IngestionJob, existing_request.job_id)
+        _record_request_tenant(session, job=job, tenant_id=tenant_id)
+        return existing_request, job, False
 
     job = session.execute(
         select(IngestionJob).where(IngestionJob.dedupe_key == canonical_key)
@@ -242,6 +254,7 @@ def get_or_create_ingestion_request(
         status="ready" if job.status == "succeeded" else "accepted",
     )
     if _insert_with_savepoint(session, request):
+        _record_request_tenant(session, job=job, tenant_id=tenant_id)
         return request, job, True
 
     concurrent = session.execute(
@@ -251,8 +264,12 @@ def get_or_create_ingestion_request(
         )
     ).scalar_one()
     if concurrent.request_fingerprint != fingerprint:
-        raise IdempotencyConflict("idempotency key was concurrently created with different inputs")
-    return concurrent, session.get(IngestionJob, concurrent.job_id), False
+        raise IdempotencyConflict(
+            "idempotency key was concurrently created with different inputs"
+        )
+    job = session.get(IngestionJob, concurrent.job_id)
+    _record_request_tenant(session, job=job, tenant_id=tenant_id)
+    return concurrent, job, False
 
 
 def claim_ingestion_jobs(
@@ -283,7 +300,10 @@ def claim_ingestion_jobs(
             or_(
                 and_(
                     IngestionJob.status.in_(("queued", "retry")),
-                    or_(IngestionJob.next_run_at.is_(None), IngestionJob.next_run_at <= now),
+                    or_(
+                        IngestionJob.next_run_at.is_(None),
+                        IngestionJob.next_run_at <= now,
+                    ),
                     or_(
                         IngestionJob.lease_expires_at.is_(None),
                         IngestionJob.lease_expires_at <= now,
@@ -297,7 +317,9 @@ def claim_ingestion_jobs(
             ),
         )
         .order_by(
-            IngestionJob.priority.desc(), IngestionJob.created_at.asc(), IngestionJob.id.asc()
+            IngestionJob.priority.desc(),
+            IngestionJob.created_at.asc(),
+            IngestionJob.id.asc(),
         )
         .limit(limit)
     )
@@ -318,6 +340,56 @@ def claim_ingestion_jobs(
     return jobs
 
 
+def claim_ingestion_job(
+    session: Session,
+    *,
+    job_id: str,
+    worker_id: str,
+    lease_seconds: int = 1800,
+    now: datetime | None = None,
+) -> IngestionJob | None:
+    """Claim one exact canonical job without accidentally consuming unrelated work."""
+    job_id = _required(job_id, "job_id")
+    worker_id = _required(worker_id, "worker_id")
+    if lease_seconds < 10 or lease_seconds > 3600:
+        raise ValueError("lease_seconds must be between 10 and 3600")
+    now = now or utcnow()
+    _fail_exhausted_expired_jobs(session, now=now, job_kinds=[])
+    statement = select(IngestionJob).where(
+        IngestionJob.id == job_id,
+        IngestionJob.attempt_count < IngestionJob.max_attempts,
+        or_(
+            and_(
+                IngestionJob.status.in_(("queued", "retry")),
+                or_(
+                    IngestionJob.next_run_at.is_(None), IngestionJob.next_run_at <= now
+                ),
+                or_(
+                    IngestionJob.lease_expires_at.is_(None),
+                    IngestionJob.lease_expires_at <= now,
+                ),
+            ),
+            and_(
+                IngestionJob.status == "running",
+                IngestionJob.lease_expires_at.is_not(None),
+                IngestionJob.lease_expires_at <= now,
+            ),
+        ),
+    )
+    if session.get_bind().dialect.name == "postgresql":
+        statement = statement.with_for_update(skip_locked=True)
+    job = session.execute(statement).scalar_one_or_none()
+    if job is None:
+        return None
+    job.status = "running"
+    job.attempt_count += 1
+    job.lease_owner = worker_id
+    job.lease_expires_at = now + timedelta(seconds=lease_seconds)
+    job.updated_at = now
+    session.flush()
+    return job
+
+
 def complete_ingestion_job(
     session: Session,
     *,
@@ -336,11 +408,7 @@ def complete_ingestion_job(
     job.last_error_code = None
     job.last_error_detail = None
     job.updated_at = now
-    session.execute(
-        update(IngestionRequest)
-        .where(IngestionRequest.job_id == job.id)
-        .values(status="ready", updated_at=now)
-    )
+    _update_request_statuses(session, job=job, status="ready", now=now)
     session.flush()
     return job
 
@@ -360,17 +428,20 @@ def fail_ingestion_job(
     job = _owned_running_job(session, job_id=job_id, worker_id=worker_id, now=now)
     can_retry = bool(retryable and job.attempt_count < job.max_attempts)
     job.status = "retry" if can_retry else "failed"
-    job.next_run_at = now + timedelta(seconds=max(0, retry_after_seconds)) if can_retry else None
+    job.next_run_at = (
+        now + timedelta(seconds=max(0, retry_after_seconds)) if can_retry else None
+    )
     job.lease_owner = None
     job.lease_expires_at = None
     job.last_error_code = _required(error_code, "error_code")[:64]
     job.last_error_detail = str(error_detail or "")[:8000]
     job.completed_at = None if can_retry else now
     job.updated_at = now
-    session.execute(
-        update(IngestionRequest)
-        .where(IngestionRequest.job_id == job.id)
-        .values(status="accepted" if can_retry else "failed", updated_at=now)
+    _update_request_statuses(
+        session,
+        job=job,
+        status="accepted" if can_retry else "failed",
+        now=now,
     )
     session.flush()
     return job
@@ -464,9 +535,7 @@ def _fail_exhausted_expired_jobs(
     if not exhausted:
         return
 
-    exhausted_ids: list[str] = []
     for job in exhausted:
-        exhausted_ids.append(job.id)
         job.status = "failed"
         job.next_run_at = None
         job.lease_owner = None
@@ -475,12 +544,48 @@ def _fail_exhausted_expired_jobs(
         job.last_error_detail = "worker lease expired on the final allowed attempt"
         job.completed_at = now
         job.updated_at = now
-    session.execute(
-        update(IngestionRequest)
-        .where(IngestionRequest.job_id.in_(exhausted_ids))
-        .values(status="failed", updated_at=now)
-    )
+        _update_request_statuses(session, job=job, status="failed", now=now)
     session.flush()
+
+
+def _record_request_tenant(
+    session: Session,
+    *,
+    job: IngestionJob | None,
+    tenant_id: str,
+) -> None:
+    """Carry exact tenant fanout on the global job without granting cross-tenant reads."""
+    if job is None:
+        raise RuntimeError("ingestion request references a missing global job")
+    if session.get_bind().dialect.name == "postgresql":
+        job = session.execute(
+            select(IngestionJob).where(IngestionJob.id == job.id).with_for_update()
+        ).scalar_one()
+    tenant_ids = sorted({*(job.request_tenant_ids_json or []), tenant_id})
+    if tenant_ids != list(job.request_tenant_ids_json or []):
+        job.request_tenant_ids_json = tenant_ids
+        session.flush()
+
+
+def _update_request_statuses(
+    session: Session,
+    *,
+    job: IngestionJob,
+    status: str,
+    now: datetime,
+) -> None:
+    """Fan out a global job result using one explicit RLS scope at a time."""
+    for tenant_id in sorted(set(job.request_tenant_ids_json or [])):
+        set_tenant_scope(session, tenant_id)
+        session.execute(
+            update(IngestionRequest)
+            .where(
+                IngestionRequest.job_id == job.id,
+                IngestionRequest.tenant_id == tenant_id,
+            )
+            .values(status=status, updated_at=now)
+        )
+    clear_tenant_scope(session)
 
 
 def _owned_running_job(

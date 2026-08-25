@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, Optional, Literal
 
 from fastapi import FastAPI, HTTPException, Request, Response
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 
@@ -22,7 +22,21 @@ from .channel_service_acp import (
     refresh_acp_job,
     serialize_acp_job,
 )
+from .canonical_media import (
+    CanonicalPublishError,
+    HotMediaSpec,
+    canonical_source_video_id,
+    publish_canonical_ingestion,
+    verify_hot_media,
+)
+from .channel_service_jobs import (
+    get_or_create_ingestion_request,
+)
 from .channel_service_config import (
+    ChannelServiceConfigurationError,
+    embedding_contract,
+    enforce_canonical_namespace,
+    forwarded_internal_identity,
     internal_request_is_authorized,
     is_production_environment,
     validate_production_runtime,
@@ -59,19 +73,31 @@ from .channel_service_store import (
     ChannelPack,
     ChannelQuote,
     CheckoutSessionRecord,
+    IngestionJob,
+    IngestionRequest,
     PackBatch,
+    TenantExport,
     init_db,
+    set_tenant_scope,
     session_scope,
 )
 from .ingest import create_ingest_service
 from .gcs import read_json_from_gcs
 from .pubsub import verify_pubsub_push
 from .schemas import DiarizationReadyEvent, decode_pubsub_message
+from .tenant_export import (
+    TenantExportError,
+    build_tenant_export,
+    ensure_gateway_principals,
+    serialize_tenant_export,
+    tenant_export_artifact_path,
+)
 from .youtube import YouTubeClient
 from src.ingest_v2.pipelines.index_youtube_captions import (
     _is_youtube_bot_check,
     _require_ytdlp,
     _ytdlp_extra_opts,
+    HotMediaPendingError,
     index_youtube_channel_captions,
     index_youtube_query_captions,
     index_youtube_video_captions,
@@ -103,11 +129,223 @@ def _startup_channel_service() -> None:
 
 @app.get("/healthz")
 def healthz() -> dict:
-    return {"ok": True, "service": "diarization-indexer"}
+    return {
+        "ok": True,
+        "service": "diarization-indexer",
+        "embedding": embedding_contract(),
+    }
+
+
+class TenantExportReq(BaseModel):
+    idempotency_key: str = Field(min_length=1, max_length=255)
+
+
+def _trusted_request_identity(request: Request):
+    try:
+        return forwarded_internal_identity(request.headers)
+    except ChannelServiceConfigurationError as exc:
+        raise HTTPException(status_code=401, detail=str(exc)) from exc
+
+
+def _validated_namespace_or_http(namespace: str) -> str:
+    try:
+        return enforce_canonical_namespace(namespace)
+    except ChannelServiceConfigurationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+def _indexing_identity(request: Request):
+    has_forwarded_scope = bool(
+        request.headers.get("x-icmfyi-user-id")
+        or request.headers.get("x-icmfyi-tenant-id")
+    )
+    if is_production_environment() or has_forwarded_scope:
+        return _trusted_request_identity(request)
+    return None
+
+
+def _canonical_publish_callback(identity):
+    if identity is None:
+        return None
+
+    def publish(payload: dict) -> None:
+        try:
+            with session_scope() as session:
+                result = publish_canonical_ingestion(
+                    session,
+                    identity=identity,
+                    **payload,
+                )
+                expected_media_id = canonical_source_video_id(
+                    payload["platform"], payload["provider_video_id"]
+                )
+                if result.media_id != expected_media_id:
+                    raise CanonicalPublishError(
+                        "canonical publisher returned an inconsistent media identity"
+                    )
+        except CanonicalPublishError as exc:
+            raise RuntimeError(f"canonical publication failed: {exc}") from exc
+
+    return publish
+
+
+def _verified_hot_media_result(payload: dict) -> HotMediaSpec:
+    try:
+        spec = HotMediaSpec(
+            path=Path(str(payload["path"])),
+            sha256=str(payload["sha256"]),
+            size_bytes=int(payload["size_bytes"]),
+            mime_type=str(payload["mime_type"]),
+        )
+    except (KeyError, TypeError, ValueError) as exc:
+        raise RuntimeError("durable hot-media result is invalid") from exc
+    return verify_hot_media(spec)
+
+
+class _QueuedYouTubeMediaCoordinator:
+    """Queue or read a durable download; the API never writes hot-media bytes."""
+
+    def __init__(self, identity) -> None:
+        self.identity = identity
+
+    def acquire(self, video_url: str, video_id: str) -> HotMediaSpec:
+        canonical_url = f"https://www.youtube.com/watch?v={video_id}"
+        pending: dict | None = None
+        with session_scope() as session:
+            ensure_gateway_principals(session, self.identity)
+            request_row, job, _ = get_or_create_ingestion_request(
+                session,
+                tenant_id=self.identity.tenant_id,
+                requested_by_user_id=self.identity.user_id,
+                idempotency_key=f"youtube-hot-media-v1:{video_id}",
+                job_kind="youtube_hot_media",
+                source_kind="youtube",
+                source_key=video_id,
+                pipeline_version="youtube-hot-media-v1",
+                request_payload={
+                    "video_id": video_id,
+                    "canonical_url": canonical_url,
+                    "retention": "clip_ready",
+                },
+                max_attempts=5,
+            )
+            if job.status == "succeeded":
+                return _verified_hot_media_result(dict(job.result_json or {}))
+            if job.status == "failed":
+                raise RuntimeError(
+                    job.last_error_detail or "clip-ready acquisition failed"
+                )
+            pending = {
+                "job_id": job.id,
+                "request_id": request_row.id,
+                "video_id": video_id,
+                "status": job.status,
+                "status_url": f"/v1/ingestion-jobs/{job.id}",
+            }
+        if pending is None:  # pragma: no cover - every durable state returns or sets it
+            raise RuntimeError("hot-media queue did not produce a durable state")
+        raise HotMediaPendingError(pending)
+
+
+@app.get("/v1/ingestion-jobs/{job_id}")
+def get_ingestion_job(job_id: str, request: Request) -> dict:
+    """Return only a caller-entitled request's safe durable job state."""
+    identity = _trusted_request_identity(request)
+    with session_scope() as session:
+        ensure_gateway_principals(session, identity)
+        set_tenant_scope(session, identity.tenant_id)
+        request_row = session.execute(
+            select(IngestionRequest).where(
+                IngestionRequest.tenant_id == identity.tenant_id,
+                IngestionRequest.job_id == job_id,
+            )
+        ).scalar_one_or_none()
+        if request_row is None:
+            raise HTTPException(status_code=404, detail="ingestion job not found")
+        job = session.get(IngestionJob, job_id)
+        if job is None:
+            raise HTTPException(status_code=404, detail="ingestion job not found")
+        result = dict(job.result_json or {}) if job.status == "succeeded" else {}
+        return {
+            "job_id": job.id,
+            "request_id": request_row.id,
+            "status": job.status,
+            "ready": job.status == "succeeded",
+            "media": (
+                {
+                    "sha256": result.get("sha256"),
+                    "size_bytes": result.get("size_bytes"),
+                    "mime_type": result.get("mime_type"),
+                }
+                if result
+                else None
+            ),
+            "error_code": job.last_error_code if job.status == "failed" else None,
+        }
+
+
+@app.post("/v1/tenant-exports")
+def create_tenant_export(req: TenantExportReq, request: Request) -> dict:
+    identity = _trusted_request_identity(request)
+    failure: str | None = None
+    with session_scope() as session:
+        try:
+            export = build_tenant_export(
+                session,
+                identity=identity,
+                idempotency_key=req.idempotency_key,
+            )
+        except TenantExportError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+        payload = serialize_tenant_export(export)
+        if export.status != "completed":
+            failure = export.error_detail or "tenant export failed"
+    if failure is not None:
+        raise HTTPException(status_code=500, detail=failure)
+    return payload
+
+
+@app.get("/v1/tenant-exports/{export_id}")
+def get_tenant_export(export_id: str, request: Request) -> dict:
+    identity = _trusted_request_identity(request)
+    with session_scope() as session:
+        ensure_gateway_principals(session, identity)
+        set_tenant_scope(session, identity.tenant_id)
+        export = session.get(TenantExport, export_id)
+        if export is None:
+            raise HTTPException(status_code=404, detail="tenant export not found")
+        return serialize_tenant_export(export)
+
+
+@app.get("/v1/tenant-exports/{export_id}/artifacts/{name}")
+def get_tenant_export_artifact(
+    export_id: str, name: str, request: Request
+) -> FileResponse:
+    identity = _trusted_request_identity(request)
+    with session_scope() as session:
+        ensure_gateway_principals(session, identity)
+        set_tenant_scope(session, identity.tenant_id)
+        export = session.get(TenantExport, export_id)
+        if export is None:
+            raise HTTPException(status_code=404, detail="tenant export not found")
+        if export.status != "completed":
+            raise HTTPException(
+                status_code=409, detail="tenant export is not completed"
+            )
+        try:
+            path = tenant_export_artifact_path(export, name)
+        except TenantExportError as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from exc
+        media_type = (
+            "application/vnd.sqlite3" if name == "database" else "application/json"
+        )
+        return FileResponse(path, media_type=media_type, filename=path.name)
 
 
 @app.get("/diag/youtube_cookie_health")
-def youtube_cookie_health(test_url: str = "https://www.youtube.com/watch?v=jNQXAC9IVRw") -> dict:
+def youtube_cookie_health(
+    test_url: str = "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+) -> dict:
     """
     Probe yt-dlp access using the mounted cookie jar inside this container.
 
@@ -116,7 +354,9 @@ def youtube_cookie_health(test_url: str = "https://www.youtube.com/watch?v=jNQXA
     """
     # Determine cookie file path using the same envs as the ingestion pipelines.
     cookiefile = (
-        os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get("YTDLP_COOKIES_PATH") or ""
+        os.environ.get("YTDLP_COOKIES_FILE")
+        or os.environ.get("YTDLP_COOKIES_PATH")
+        or ""
     ).strip()
     if not cookiefile:
         cookiefile = "/cookies/youtube.txt"
@@ -197,6 +437,7 @@ class IndexYoutubeReq(BaseModel):
     namespace: str = Field(default="videos", min_length=1)
     language: str = Field(default="en", min_length=1)
     prefer_auto: bool = True
+    clip_ready: bool = True
 
     # Optional metadata overrides for single-video indexing. These are especially useful
     # in the local "pubsub" pipeline where the watcher already fetched title/channel/date/duration.
@@ -216,18 +457,26 @@ class IndexYoutubeReq(BaseModel):
     min_text_chars: Optional[int] = Field(default=None, ge=40)
 
 
-@app.post("/index/youtube")
-def index_youtube(req: IndexYoutubeReq) -> dict:
+@app.post("/index/youtube", response_model=None)
+def index_youtube(req: IndexYoutubeReq, request: Request):
     """
     Local-first indexing endpoint: fetch YouTube subtitles via yt-dlp and upsert into the vector store.
     Requires `OPENAI_API_KEY` for embeddings.
     """
+    req.namespace = _validated_namespace_or_http(req.namespace)
+    identity = _indexing_identity(request)
+    canonical_publish = _canonical_publish_callback(identity)
+    media_coordinator = (
+        _QueuedYouTubeMediaCoordinator(identity)
+        if identity is not None and req.clip_ready
+        else None
+    )
     if not (req.video_urls or req.channel or req.query):
         raise HTTPException(
             status_code=400, detail="provide video_urls and/or channel and/or query"
         )
 
-    out: dict = {"ok": True, "indexed": [], "failed": []}
+    out: dict = {"ok": True, "indexed": [], "pending": [], "failed": []}
     if req.video_urls:
         for url in req.video_urls:
             try:
@@ -250,8 +499,15 @@ def index_youtube(req: IndexYoutubeReq) -> dict:
                     segment_stride_s=req.segment_stride_s,
                     min_text_chars=req.min_text_chars,
                     metadata_override=metadata_override,
+                    canonical_publish=canonical_publish,
+                    acquire_hot_media=media_coordinator is not None,
+                    media_acquire=(
+                        media_coordinator.acquire if media_coordinator else None
+                    ),
                 )
                 out["indexed"].append(res)
+            except HotMediaPendingError as exc:
+                out["pending"].append(exc.job)
             except Exception as exc:
                 out["failed"].append({"url": url, "error": str(exc)})
 
@@ -267,8 +523,14 @@ def index_youtube(req: IndexYoutubeReq) -> dict:
                 segment_max_s=req.segment_max_s,
                 segment_stride_s=req.segment_stride_s,
                 min_text_chars=req.min_text_chars,
+                canonical_publish=canonical_publish,
+                acquire_hot_media=media_coordinator is not None,
+                media_acquire=(
+                    media_coordinator.acquire if media_coordinator else None
+                ),
             )
             out["indexed"].append(res)
+            out["pending"].extend(res.get("pending") or [])
         except Exception as exc:
             out["failed"].append({"channel": req.channel, "error": str(exc)})
 
@@ -284,11 +546,29 @@ def index_youtube(req: IndexYoutubeReq) -> dict:
                 segment_max_s=req.segment_max_s,
                 segment_stride_s=req.segment_stride_s,
                 min_text_chars=req.min_text_chars,
+                canonical_publish=canonical_publish,
+                acquire_hot_media=media_coordinator is not None,
+                media_acquire=(
+                    media_coordinator.acquire if media_coordinator else None
+                ),
             )
             out["indexed"].append(res)
+            out["pending"].extend(res.get("pending") or [])
         except Exception as exc:
             out["failed"].append({"query": req.query, "error": str(exc)})
 
+    success_count = 0
+    for result in out["indexed"]:
+        if isinstance(result, dict) and isinstance(result.get("indexed"), list):
+            success_count += len(result["indexed"])
+        else:
+            success_count += 1
+    if out["pending"]:
+        out["status"] = "accepted"
+        return JSONResponse(status_code=202, content=out)
+    if success_count == 0:
+        out["ok"] = False
+        return JSONResponse(status_code=502, content=out)
     return out
 
 
@@ -328,6 +608,10 @@ class IndexDiarizedReq(BaseModel):
     duration_s: Optional[float] = Field(default=None, ge=0)
     url: Optional[str] = None
     thumbnail_url: Optional[str] = None
+    hot_media_path: Optional[str] = None
+    hot_media_sha256: Optional[str] = Field(default=None, pattern=r"^[0-9a-f]{64}$")
+    hot_media_size_bytes: Optional[int] = Field(default=None, ge=1)
+    hot_media_mime_type: Optional[str] = None
 
 
 def _extract_entities(payload) -> list[str]:
@@ -372,27 +656,37 @@ def _record_youtube_operator_truth(
         pipe.sadd(_youtube_indexed_channel_key(channel_name), video_id)
         if transcript_provider:
             pipe.sadd(
-                f"icmfyi:ops:youtube:provider:{transcript_provider.strip().casefold()}", video_id
+                f"icmfyi:ops:youtube:provider:{transcript_provider.strip().casefold()}",
+                video_id,
             )
         if transcript_state:
-            pipe.sadd(f"icmfyi:ops:youtube:state:{transcript_state.strip().casefold()}", video_id)
+            pipe.sadd(
+                f"icmfyi:ops:youtube:state:{transcript_state.strip().casefold()}",
+                video_id,
+            )
         if ingest_lane:
-            pipe.sadd(f"icmfyi:ops:youtube:lane:{ingest_lane.strip().casefold()}", video_id)
+            pipe.sadd(
+                f"icmfyi:ops:youtube:lane:{ingest_lane.strip().casefold()}", video_id
+            )
         pipe.execute()
     except Exception as exc:
         LOG.info(
-            "[index/diarized] redis operator truth write failed video=%s err=%s", video_id, exc
+            "[index/diarized] redis operator truth write failed video=%s err=%s",
+            video_id,
+            exc,
         )
 
 
 @app.post("/index/diarized")
-def index_diarized(req: IndexDiarizedReq) -> dict:
+def index_diarized(req: IndexDiarizedReq, request: Request) -> dict:
     """
     Index a diarized transcript (AssemblyAI JSON) into the vector store.
 
     Requires `OPENAI_API_KEY` for embeddings. If YouTube metadata fields aren't provided,
     `YOUTUBE_API_KEY` is used (best-effort) to enrich title/channel/publish date.
     """
+    req.namespace = _validated_namespace_or_http(req.namespace)
+    identity = _indexing_identity(request)
     from src.ingest_v2.pipelines.build_children import build_children_from_raw
     from src.ingest_v2.pipelines.build_parents import build_parent
     from src.ingest_v2.pipelines.upsert_parents import upsert_parents
@@ -416,7 +710,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     raw_entities = None
     if isinstance(entities_payload, list):
         raw_entities = entities_payload
-    elif isinstance(entities_payload, dict) and isinstance(entities_payload.get("entities"), list):
+    elif isinstance(entities_payload, dict) and isinstance(
+        entities_payload.get("entities"), list
+    ):
         raw_entities = entities_payload.get("entities")
 
     source_norm = (req.source or "").strip().lower()
@@ -435,10 +731,14 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     )
     if yt_key and is_youtube and need_meta:
         try:
-            video_meta = YouTubeClient(api_key=yt_key).fetch_video_metadata(req.video_id)
+            video_meta = YouTubeClient(api_key=yt_key).fetch_video_metadata(
+                req.video_id
+            )
         except Exception as exc:
             LOG.info(
-                "[index/diarized] youtube metadata fetch failed video=%s err=%s", req.video_id, exc
+                "[index/diarized] youtube metadata fetch failed video=%s err=%s",
+                req.video_id,
+                exc,
             )
 
     title = req.title or (video_meta.title if video_meta else None) or req.video_id
@@ -454,7 +754,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     )
     channel_id = req.channel_id or (video_meta.channel_id if video_meta else None) or ""
     published_at = req.published_at or (video_meta.published_at if video_meta else None)
-    thumbnail_url = req.thumbnail_url or (video_meta.thumbnail_url if video_meta else None)
+    thumbnail_url = req.thumbnail_url or (
+        video_meta.thumbnail_url if video_meta else None
+    )
 
     duration_s = req.duration_s
     if duration_s is None:
@@ -472,7 +774,11 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     url = req.url
     if not url:
         # Avoid generating incorrect YouTube URLs for non-YouTube sources.
-        url = f"https://www.youtube.com/watch?v={req.video_id}" if is_youtube else req.video_id
+        url = (
+            f"https://www.youtube.com/watch?v={req.video_id}"
+            if is_youtube
+            else req.video_id
+        )
 
     document_type = (req.document_type or "").strip() or None
     if not document_type:
@@ -485,8 +791,11 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
         else:
             document_type = "media"
 
+    media_id = canonical_source_video_id(source_norm or "media", req.video_id)
+
     meta = {
         "video_id": req.video_id,
+        "media_id": media_id,
         "title": title,
         "description": description or "",
         "channel_name": channel_name,
@@ -514,7 +823,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
         "no",
         "off",
     )
-    speakers_enabled = (os.getenv("SPEAKER_RESOLVE", "1") or "1").strip().lower() not in (
+    speakers_enabled = (
+        os.getenv("SPEAKER_RESOLVE", "1") or "1"
+    ).strip().lower() not in (
         "0",
         "false",
         "no",
@@ -540,12 +851,17 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
                     meta["speaker_names"] = [
                         str(info.get("name")).strip()
                         for info in (spk.get("speaker_map") or {}).values()
-                        if isinstance(info, dict) and str(info.get("name") or "").strip()
+                        if isinstance(info, dict)
+                        and str(info.get("name") or "").strip()
                     ]
                 except Exception:
                     pass
         except Exception as exc:
-            LOG.info("[index/diarized] speaker resolve failed video=%s err=%s", req.video_id, exc)
+            LOG.info(
+                "[index/diarized] speaker resolve failed video=%s err=%s",
+                req.video_id,
+                exc,
+            )
 
     if router_enabled:
         try:
@@ -564,9 +880,9 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
                     pass
             # Merge enriched fields into metadata for parent upsert.
             if isinstance(enrich, dict):
-                meta["description"] = enrich.get("description", meta.get("description", "")) or (
-                    meta.get("description") or ""
-                )
+                meta["description"] = enrich.get(
+                    "description", meta.get("description", "")
+                ) or (meta.get("description") or "")
                 meta["topic_summary"] = enrich.get("topic_summary") or ""
                 meta["router_tags"] = enrich.get("router_tags") or []
                 meta["aliases"] = enrich.get("aliases") or []
@@ -574,19 +890,86 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
                 meta["is_explainer"] = bool(enrich.get("is_explainer"))
                 meta["router_boost"] = float(enrich.get("router_boost") or 1.0)
         except Exception as exc:
-            LOG.info("[index/diarized] router enrich failed video=%s err=%s", req.video_id, exc)
+            LOG.info(
+                "[index/diarized] router enrich failed video=%s err=%s",
+                req.video_id,
+                exc,
+            )
+
+    hot_fields = (
+        req.hot_media_path,
+        req.hot_media_sha256,
+        req.hot_media_size_bytes,
+        req.hot_media_mime_type,
+    )
+    if any(value is not None for value in hot_fields) and not all(
+        value is not None for value in hot_fields
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail="hot media registration requires path, SHA-256, size, and MIME type",
+        )
+    hot_media = (
+        HotMediaSpec(
+            path=Path(str(req.hot_media_path)),
+            sha256=str(req.hot_media_sha256),
+            size_bytes=int(req.hot_media_size_bytes),
+            mime_type=str(req.hot_media_mime_type),
+        )
+        if all(value is not None for value in hot_fields)
+        else None
+    )
+    canonical_publish = _canonical_publish_callback(identity)
+    if canonical_publish is not None:
+        try:
+            canonical_publish(
+                {
+                    "platform": source_norm or "media",
+                    "provider_video_id": req.video_id,
+                    "channel_external_id": channel_id or channel_name,
+                    "channel_handle": (
+                        channel_name
+                        if isinstance(channel_name, str)
+                        and channel_name.startswith("@")
+                        else None
+                    ),
+                    "channel_name": channel_name,
+                    "canonical_url": url,
+                    "title": title,
+                    "description": description,
+                    "published_at": published_at,
+                    "duration_ms": int(round(float(duration_s or 0.0) * 1000)),
+                    "language": req.language,
+                    "transcript_provider": (
+                        (req.transcript_provider or "").strip() or "diarized"
+                    ),
+                    "transcript_segments": raw_norm.get("segments") or [],
+                    "hot_media": hot_media,
+                    "metadata": {
+                        "document_type": document_type,
+                        "ingest_lane": (req.ingest_lane or "").strip() or None,
+                        "thumbnail_url": thumbnail_url,
+                    },
+                }
+            )
+        except RuntimeError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
 
     parent = build_parent(meta)
     parent_dict = parent.model_dump(mode="json")
     parent_payload = dict(parent_dict, parent_id=parent.parent_id)
+    parent_payload["media_id"] = media_id
     parent_payload.setdefault("video_id", parent.parent_id)
     upsert_parents([parent_payload])
 
     children = build_children_from_raw(parent_dict, raw_for_children)
+    for child in children:
+        child["media_id"] = media_id
     if not children:
         return {
             "ok": True,
             "video_id": req.video_id,
+            "media_id": media_id,
             "parent_id": parent.parent_id,
             "segments_ingested": 0,
             "details": "No children emitted (transcript empty/too short).",
@@ -604,6 +987,7 @@ def index_diarized(req: IndexDiarizedReq) -> dict:
     return {
         "ok": True,
         "video_id": req.video_id,
+        "media_id": media_id,
         "parent_id": parent.parent_id,
         "segments_ingested": len(children),
         "upsert": stats,
@@ -625,14 +1009,19 @@ async def handle_pubsub_push(request: Request) -> Response:
         raise
     except RuntimeError as exc:
         LOG.error("Pub/Sub verification misconfigured: %s", exc)
-        raise HTTPException(status_code=500, detail="Pub/Sub verification misconfigured") from exc
+        raise HTTPException(
+            status_code=500, detail="Pub/Sub verification misconfigured"
+        ) from exc
     except Exception as exc:  # pragma: no cover - defensive (should not happen)
         LOG.exception("Unexpected Pub/Sub verification error")
-        raise HTTPException(status_code=500, detail="Pub/Sub verification failed") from exc
+        raise HTTPException(
+            status_code=500, detail="Pub/Sub verification failed"
+        ) from exc
 
     body = await request.json()
     attributes = body.get("message", {}).get("attributes", {}) or {}
     namespace = _namespace_from_attributes(attributes)
+    namespace = _validated_namespace_or_http(namespace)
 
     allowed_channels = load_namespace_channels(namespace)
     if not allowed_channels:
@@ -708,7 +1097,9 @@ class AcpJobReq(BaseModel):
 
 
 class ReadinessOverrideReq(BaseModel):
-    publication_state: Optional[Literal["supported", "degraded", "paused", "internal_only"]] = None
+    publication_state: Optional[
+        Literal["supported", "degraded", "paused", "internal_only"]
+    ] = None
     acceptance_scope: Optional[Literal["catalog_only", "catalog_and_arbitrary"]] = None
     reason: str = Field(min_length=1)
     created_by: Optional[str] = None
@@ -718,12 +1109,14 @@ class ReadinessOverrideReq(BaseModel):
 
 @app.get("/v1/channel-packs/catalog/channels")
 def channel_pack_catalog(namespace: str = "videos") -> dict:
+    namespace = _validated_namespace_or_http(namespace)
     payload = supported_channels(namespace)
     return {"ok": True, **payload}
 
 
 @app.post("/v1/channel-packs/quotes")
 def create_channel_pack_quote(req: ChannelPackQuoteReq) -> dict:
+    req.namespace = _validated_namespace_or_http(req.namespace)
     with session_scope() as session:
         try:
             planning_started = time.perf_counter()
@@ -743,7 +1136,9 @@ def create_channel_pack_quote(req: ChannelPackQuoteReq) -> dict:
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"quote planning failed: {exc}") from exc
+            raise HTTPException(
+                status_code=502, detail=f"quote planning failed: {exc}"
+            ) from exc
 
         quote = persist_quote(
             session=session,
@@ -775,14 +1170,18 @@ def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
         if existing is not None:
             return serialize_checkout_session(existing)
         quotes = (
-            session.execute(select(ChannelQuote).where(ChannelQuote.id.in_(req.quote_ids)))
+            session.execute(
+                select(ChannelQuote).where(ChannelQuote.id.in_(req.quote_ids))
+            )
             .scalars()
             .all()
         )
         found = {quote.id for quote in quotes}
         missing = [quote_id for quote_id in req.quote_ids if quote_id not in found]
         if missing:
-            raise HTTPException(status_code=400, detail=f"Unknown quote ids: {', '.join(missing)}")
+            raise HTTPException(
+                status_code=400, detail=f"Unknown quote ids: {', '.join(missing)}"
+            )
         try:
             enforce_checkout_allowed(session=session, quotes=quotes)
             record = create_checkout_session(
@@ -796,15 +1195,23 @@ def create_channel_pack_checkout(req: CheckoutSessionReq) -> dict:
 
 
 @app.post("/v1/channel-packs/orders")
-def create_channel_pack_order(req: ChannelPackOrderReq) -> dict:
+def create_channel_pack_order(req: ChannelPackOrderReq, request: Request) -> dict:
+    identity = _indexing_identity(request)
+    canonical_publish = _canonical_publish_callback(identity)
+    media_coordinator = (
+        _QueuedYouTubeMediaCoordinator(identity) if identity is not None else None
+    )
     with session_scope() as session:
         quote = session.get(ChannelQuote, req.quote_id)
         if quote is None:
-            raise HTTPException(status_code=404, detail=f"quote {req.quote_id} not found")
+            raise HTTPException(
+                status_code=404, detail=f"quote {req.quote_id} not found"
+            )
         checkout = session.get(CheckoutSessionRecord, req.checkout_session_id)
         if checkout is None:
             raise HTTPException(
-                status_code=404, detail=f"checkout session {req.checkout_session_id} not found"
+                status_code=404,
+                detail=f"checkout session {req.checkout_session_id} not found",
             )
         if req.quote_id not in set(checkout.quote_ids_json or []):
             raise HTTPException(
@@ -821,13 +1228,24 @@ def create_channel_pack_order(req: ChannelPackOrderReq) -> dict:
                 quote=quote,
                 checkout=checkout,
                 pack_id=req.pack_id,
-                buyer_subject_type=req.buyer_subject_type,
-                buyer_subject_id=req.buyer_subject_id,
+                buyer_subject_type=(
+                    "tenant" if identity is not None else req.buyer_subject_type
+                ),
+                buyer_subject_id=(
+                    identity.tenant_id if identity is not None else req.buyer_subject_id
+                ),
+                canonical_publish=canonical_publish,
+                acquire_hot_media=media_coordinator is not None,
+                media_acquire=(
+                    media_coordinator.acquire if media_coordinator else None
+                ),
             )
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"order creation failed: {exc}") from exc
+            raise HTTPException(
+                status_code=502, detail=f"order creation failed: {exc}"
+            ) from exc
 
         return serialize_order(order, batch, pack)
 
@@ -841,7 +1259,9 @@ def get_channel_pack_order(order_id: str) -> dict:
         batch = session.get(PackBatch, order.batch_id)
         pack = session.get(ChannelPack, order.pack_id)
         if batch is None or pack is None:
-            raise HTTPException(status_code=500, detail="order references missing pack or batch")
+            raise HTTPException(
+                status_code=500, detail="order references missing pack or batch"
+            )
         return serialize_order(order, batch, pack)
 
 
@@ -901,7 +1321,9 @@ def get_channel_pack_export(pack_id: str, name: str) -> FileResponse:
             )
         export_path = Path(path_value)
         if not export_path.exists():
-            raise HTTPException(status_code=404, detail=f"export file for {name} was not found")
+            raise HTTPException(
+                status_code=404, detail=f"export file for {name} was not found"
+            )
         if name == "manifest":
             media_type = "application/json"
         elif name == "archive":
@@ -954,7 +1376,9 @@ def create_channel_pack_acp_job(req: AcpJobReq, request: Request) -> dict:
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"ACP job sync failed: {exc}") from exc
+            raise HTTPException(
+                status_code=502, detail=f"ACP job sync failed: {exc}"
+            ) from exc
         return serialize_acp_job(
             session=session,
             bridge=bridge,
@@ -968,7 +1392,9 @@ def get_channel_pack_acp_job(acp_job_id: str, request: Request) -> dict:
     with session_scope() as session:
         bridge = session.get(AcpJobBridge, acp_job_id)
         if bridge is None:
-            raise HTTPException(status_code=404, detail=f"ACP job {acp_job_id} not found")
+            raise HTTPException(
+                status_code=404, detail=f"ACP job {acp_job_id} not found"
+            )
         try:
             refresh_acp_job(
                 session=session,
@@ -978,7 +1404,9 @@ def get_channel_pack_acp_job(acp_job_id: str, request: Request) -> dict:
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except Exception as exc:
-            raise HTTPException(status_code=502, detail=f"ACP job refresh failed: {exc}") from exc
+            raise HTTPException(
+                status_code=502, detail=f"ACP job refresh failed: {exc}"
+            ) from exc
         session.refresh(bridge)
         return serialize_acp_job(
             session=session,
@@ -1012,7 +1440,9 @@ def get_channel_service_readiness_history(limit: int = 20) -> dict:
 
 
 @app.post("/v1/channel-packs/ops/readiness/overrides")
-def post_channel_service_readiness_override(req: ReadinessOverrideReq, request: Request) -> dict:
+def post_channel_service_readiness_override(
+    req: ReadinessOverrideReq, request: Request
+) -> dict:
     require_ops_shared_secret(request)
     with session_scope() as session:
         try:
@@ -1061,7 +1491,8 @@ def require_acp_shared_secret(request: Request) -> None:
     expected = (os.getenv("ACP_SHARED_SECRET") or "").strip()
     if not expected:
         raise HTTPException(
-            status_code=503, detail="ACP bridge is disabled: ACP_SHARED_SECRET is not configured"
+            status_code=503,
+            detail="ACP bridge is disabled: ACP_SHARED_SECRET is not configured",
         )
 
     presented = (request.headers.get("x-acp-shared-secret") or "").strip()
@@ -1075,7 +1506,9 @@ def require_acp_shared_secret(request: Request) -> None:
 
 def require_ops_shared_secret(request: Request) -> None:
     expected = (
-        os.getenv("CHANNEL_SERVICE_OPS_SHARED_SECRET") or os.getenv("ACP_SHARED_SECRET") or ""
+        os.getenv("CHANNEL_SERVICE_OPS_SHARED_SECRET")
+        or os.getenv("ACP_SHARED_SECRET")
+        or ""
     ).strip()
     if not expected:
         if is_production_environment():

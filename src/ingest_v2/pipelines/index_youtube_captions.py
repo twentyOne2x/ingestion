@@ -1,13 +1,16 @@
 from __future__ import annotations
 
 import logging
+import hashlib
+import json
 import os
 import random
 import re
 import tempfile
+import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 from urllib.parse import parse_qs, urlparse
 
 import glob
@@ -17,6 +20,11 @@ from ..configs.settings import settings_v2
 from ..utils.ids import segment_uuid, sha1_hex
 from .upsert_parents import upsert_parents
 from .upsert_pinecone import upsert_children
+from ..cloud.diarization_indexer.canonical_media import (
+    HotMediaSpec,
+    canonical_source_video_id,
+    verify_hot_media,
+)
 
 try:
     from yt_dlp import YoutubeDL  # type: ignore
@@ -31,11 +39,31 @@ except Exception:  # pragma: no cover
 LOG = logging.getLogger(__name__)
 
 
+_VIDEO_SUFFIX_MIME = {
+    ".m4v": "video/mp4",
+    ".mkv": "video/x-matroska",
+    ".mov": "video/quicktime",
+    ".mp4": "video/mp4",
+    ".webm": "video/webm",
+}
+
+
 @dataclass(frozen=True)
 class CaptionCue:
     start_s: float
     end_s: float
     text: str
+
+
+class HotMediaPendingError(RuntimeError):
+    """The sole-writer acquirer has not completed the durable media job yet."""
+
+    def __init__(self, job: Dict[str, Any]) -> None:
+        self.job = dict(job)
+        super().__init__(
+            f"clip-ready acquisition is {self.job.get('status', 'pending')} "
+            f"for job {self.job.get('job_id', 'unknown')}"
+        )
 
 
 _TIME_RE = re.compile(
@@ -103,7 +131,9 @@ def _parse_youtube_video_id(video_url: str) -> Optional[str]:
     return None
 
 
-def _fetch_transcript_api_cues(*, video_id: str, language: str, prefer_auto: bool) -> Optional[List[CaptionCue]]:
+def _fetch_transcript_api_cues(
+    *, video_id: str, language: str, prefer_auto: bool
+) -> Optional[List[CaptionCue]]:
     """
     Best-effort transcript fetch using `youtube-transcript-api`.
 
@@ -161,7 +191,9 @@ def _fetch_transcript_api_cues(*, video_id: str, language: str, prefer_auto: boo
         if selected is None:
             return None
         fetched = selected.fetch()
-        rows = fetched.to_raw_data() if hasattr(fetched, "to_raw_data") else list(fetched)
+        rows = (
+            fetched.to_raw_data() if hasattr(fetched, "to_raw_data") else list(fetched)
+        )
     except Exception as exc:
         LOG.debug("[yt-transcript-api] fetch failed video_id=%s err=%s", vid, exc)
         return None
@@ -191,7 +223,9 @@ def parse_vtt(path: str) -> List[CaptionCue]:
 
     i = 0
     # Skip header
-    while i < len(lines) and (not lines[i].strip() or lines[i].strip().startswith("WEBVTT")):
+    while i < len(lines) and (
+        not lines[i].strip() or lines[i].strip().startswith("WEBVTT")
+    ):
         i += 1
 
     while i < len(lines):
@@ -345,7 +379,9 @@ def _normalize_channel_url(ch: str) -> str:
 
 def _require_ytdlp() -> Any:
     if YoutubeDL is None:
-        raise RuntimeError("yt-dlp is required for caption indexing (missing dependency)")
+        raise RuntimeError(
+            "yt-dlp is required for caption indexing (missing dependency)"
+        )
     return YoutubeDL
 
 
@@ -367,7 +403,10 @@ def _ytdlp_extra_opts() -> Dict[str, Any]:
             except ValueError:
                 continue
         return None
-    cookiefile = os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get("YTDLP_COOKIES_PATH")
+
+    cookiefile = os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get(
+        "YTDLP_COOKIES_PATH"
+    )
     # Local-friendly default: if the compose-mounted cookie jar exists, use it automatically.
     if not cookiefile:
         try:
@@ -405,7 +444,9 @@ def _ytdlp_extra_opts() -> Dict[str, Any]:
     if sleep_interval is not None:
         opts["sleep_interval"] = sleep_interval
 
-    max_sleep_interval = _env_float("YTDLP_MAX_SLEEP_INTERVAL", "YTDLP_MAX_SLEEP_INTERVAL_S")
+    max_sleep_interval = _env_float(
+        "YTDLP_MAX_SLEEP_INTERVAL", "YTDLP_MAX_SLEEP_INTERVAL_S"
+    )
     if max_sleep_interval is not None:
         opts["max_sleep_interval"] = max_sleep_interval
 
@@ -432,7 +473,11 @@ def _maybe_wrap_ytdlp_error(exc: Exception) -> RuntimeError:
             "  YTDLP_SLEEP_INTERVAL=10\n"
             "  YTDLP_MAX_SLEEP_INTERVAL=20\n"
         )
-    if ("not a bot" in lowered or "sign in to confirm" in lowered or "confirm you’re not a bot" in lowered) and not (
+    if (
+        "not a bot" in lowered
+        or "sign in to confirm" in lowered
+        or "confirm you’re not a bot" in lowered
+    ) and not (
         os.environ.get("YTDLP_COOKIES_FILE")
         or os.environ.get("YTDLP_COOKIES_PATH")
         or Path("/cookies/youtube.txt").exists()
@@ -488,7 +533,9 @@ def _proxy_pool() -> List[Optional[str]]:
     - Supports a single proxy via `YTDLP_PROXY`.
     - By default includes `None` first (no proxy), unless `YTDLP_PROXY_FORCE=1`.
     """
-    raw_pool = (os.environ.get("YTDLP_PROXIES") or os.environ.get("YTDLP_PROXY_POOL") or "").strip()
+    raw_pool = (
+        os.environ.get("YTDLP_PROXIES") or os.environ.get("YTDLP_PROXY_POOL") or ""
+    ).strip()
     items: List[str] = []
     if raw_pool:
         items.extend([p.strip() for p in raw_pool.split(",") if p.strip()])
@@ -513,7 +560,13 @@ def _proxy_pool() -> List[Optional[str]]:
     if strategy == "random":
         random.shuffle(uniq)
 
-    force = (os.environ.get("YTDLP_PROXY_FORCE") or "").strip().lower() in ("1", "true", "yes", "y", "on")
+    force = (os.environ.get("YTDLP_PROXY_FORCE") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "y",
+        "on",
+    )
     if force:
         return list(uniq)
     return [None] + list(uniq)
@@ -563,10 +616,274 @@ def _apply_player_client(ydl_opts: Dict[str, Any], client: str) -> None:
     # solved by switching clients, and dropping cookies can reduce success rates for
     # login-gated videos. If you want the old behavior, set:
     #   YTDLP_DROP_COOKIES_FOR_NON_WEB=1
-    drop = (os.environ.get("YTDLP_DROP_COOKIES_FOR_NON_WEB") or "").strip().lower() in ("1", "true", "yes", "y", "on")
+    drop = (os.environ.get("YTDLP_DROP_COOKIES_FOR_NON_WEB") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "y",
+        "on",
+    )
     if drop and not client.startswith("web"):
         ydl_opts.pop("cookiefile", None)
         ydl_opts.pop("cookiesfrombrowser", None)
+
+
+def _bounded_positive_int_env(name: str, default: int, *, maximum: int) -> int:
+    raw = (os.environ.get(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        value = int(raw)
+    except ValueError as exc:
+        raise RuntimeError(f"{name} must be a positive integer") from exc
+    if value < 1 or value > maximum:
+        raise RuntimeError(f"{name} must be between 1 and {maximum}")
+    return value
+
+
+def _sha256_path(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _fsync_directory(path: Path) -> None:
+    directory_fd = os.open(path, os.O_RDONLY)
+    try:
+        os.fsync(directory_fd)
+    finally:
+        os.close(directory_fd)
+
+
+def _read_hot_media_receipt(path: Path, *, video_id: str) -> HotMediaSpec | None:
+    if not path.is_file():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="ascii"))
+        if (
+            not isinstance(payload, dict)
+            or payload.get("schema") != "icmfyi.youtube-hot-media-receipt.v1"
+            or payload.get("video_id") != video_id
+        ):
+            raise ValueError("unexpected receipt identity")
+        return verify_hot_media(
+            HotMediaSpec(
+                path=Path(str(payload["path"])),
+                sha256=str(payload["sha256"]),
+                size_bytes=int(payload["size_bytes"]),
+                mime_type=str(payload["mime_type"]),
+            )
+        )
+    except Exception as exc:
+        raise RuntimeError("retained YouTube acquisition receipt is invalid") from exc
+
+
+def _publish_staged_hot_media(
+    *,
+    root: Path,
+    staging_dir: Path,
+    source: Path,
+    video_id: str,
+    max_bytes: int,
+) -> HotMediaSpec:
+    size_bytes = source.stat().st_size
+    if size_bytes < 1 or size_bytes > max_bytes:
+        raise RuntimeError("downloaded video is outside the configured size bound")
+    sha256 = _sha256_path(source)
+    suffix = source.suffix.lower()
+    destination_dir = root / "sha256" / sha256[:2]
+    destination_dir.mkdir(mode=0o750, parents=True, exist_ok=True)
+    destination = destination_dir / f"{sha256}{suffix}"
+    created_destination = False
+
+    with source.open("rb") as handle:
+        os.fsync(handle.fileno())
+    source.chmod(0o440)
+    try:
+        os.link(source, destination)
+        created_destination = True
+        _fsync_directory(destination_dir)
+    except FileExistsError:
+        pass
+
+    spec = HotMediaSpec(
+        path=destination,
+        sha256=sha256,
+        size_bytes=size_bytes,
+        mime_type=_VIDEO_SUFFIX_MIME[suffix],
+    )
+    try:
+        verified = verify_hot_media(spec)
+    except Exception:
+        if created_destination:
+            destination.unlink(missing_ok=True)
+        raise
+
+    receipt = {
+        "schema": "icmfyi.youtube-hot-media-receipt.v1",
+        "video_id": video_id,
+        "path": str(verified.path),
+        "sha256": verified.sha256,
+        "size_bytes": verified.size_bytes,
+        "mime_type": verified.mime_type,
+    }
+    receipt_bytes = (
+        json.dumps(receipt, ensure_ascii=True, separators=(",", ":"), sort_keys=True)
+        + "\n"
+    ).encode("ascii")
+    receipt_path = staging_dir / "receipt.json"
+    receipt_tmp = staging_dir / f".receipt.{os.getpid()}.{time.time_ns()}.tmp"
+    with receipt_tmp.open("xb") as handle:
+        handle.write(receipt_bytes)
+        handle.flush()
+        os.fsync(handle.fileno())
+    receipt_tmp.chmod(0o440)
+    os.replace(receipt_tmp, receipt_path)
+    _fsync_directory(staging_dir)
+    source.unlink(missing_ok=True)
+    return verified
+
+
+def acquire_youtube_hot_media(
+    video_url: str,
+    video_id: str,
+) -> HotMediaSpec:
+    """Download one bounded public video into the immutable hot-media CAS.
+
+    The staging directory lives on the same filesystem as the final object. A hard
+    link is used as the no-overwrite atomic publication primitive, so two workers
+    that obtain identical bytes converge on one immutable object.
+    """
+    expected_id = str(video_id or "").strip()
+    if not _YT_VIDEO_ID_RE.fullmatch(expected_id):
+        raise RuntimeError(
+            "a valid YouTube video id is required for hot-media acquisition"
+        )
+
+    root_value = (
+        os.environ.get("CHANNEL_SERVICE_HOT_MEDIA_ROOT") or "/data/hot-media"
+    ).strip()
+    root = Path(root_value).expanduser()
+    if not root.is_absolute():
+        raise RuntimeError("CHANNEL_SERVICE_HOT_MEDIA_ROOT must be absolute")
+    root.mkdir(mode=0o750, parents=True, exist_ok=True)
+    root = root.resolve()
+    staging_root = root / ".staging" / "youtube"
+    staging_root.mkdir(mode=0o750, parents=True, exist_ok=True)
+    staging_dir = staging_root / expected_id
+    staging_dir.mkdir(mode=0o750, exist_ok=True)
+    receipt_path = staging_dir / "receipt.json"
+    retained = _read_hot_media_receipt(receipt_path, video_id=expected_id)
+    if retained is not None:
+        return retained
+
+    max_bytes = _bounded_positive_int_env(
+        "CHANNEL_SERVICE_MAX_HOT_MEDIA_BYTES",
+        8 * 1024 * 1024 * 1024,
+        maximum=64 * 1024 * 1024 * 1024,
+    )
+    socket_timeout = _bounded_positive_int_env(
+        "CHANNEL_SERVICE_YTDLP_SOCKET_TIMEOUT_SECONDS", 30, maximum=300
+    )
+    retries = _bounded_positive_int_env("CHANNEL_SERVICE_YTDLP_RETRIES", 3, maximum=20)
+    max_seconds = _bounded_positive_int_env(
+        "CHANNEL_SERVICE_YTDLP_MAX_SECONDS", 2700, maximum=3300
+    )
+    ffmpeg_bin = Path(
+        os.environ.get("CHANNEL_SERVICE_FFMPEG_BIN") or "/usr/local/bin/ffmpeg"
+    )
+    if not ffmpeg_bin.is_absolute():
+        raise RuntimeError("CHANNEL_SERVICE_FFMPEG_BIN must be absolute")
+    YDL = _require_ytdlp()
+    existing_candidates = sorted(
+        (
+            path
+            for path in staging_dir.iterdir()
+            if path.is_file() and path.suffix.lower() in _VIDEO_SUFFIX_MIME
+        ),
+        key=lambda path: (-path.stat().st_size, path.name),
+    )
+    for candidate in existing_candidates:
+        try:
+            return _publish_staged_hot_media(
+                root=root,
+                staging_dir=staging_dir,
+                source=candidate,
+                video_id=expected_id,
+                max_bytes=max_bytes,
+            )
+        except Exception:
+            candidate.unlink(missing_ok=True)
+
+    started = time.monotonic()
+
+    def enforce_deadline(_: dict) -> None:
+        if time.monotonic() - started > max_seconds:
+            raise RuntimeError("yt-dlp exceeded the bounded acquisition deadline")
+
+    base_opts: Dict[str, Any] = {
+        "quiet": True,
+        "no_warnings": True,
+        "noplaylist": True,
+        "format": (
+            os.environ.get("CHANNEL_SERVICE_YTDLP_VIDEO_FORMAT")
+            or "bestvideo*+bestaudio/best"
+        ),
+        "merge_output_format": "mp4",
+        "outtmpl": str(staging_dir / "%(id)s.%(ext)s"),
+        "max_filesize": max_bytes,
+        "socket_timeout": socket_timeout,
+        "retries": retries,
+        "fragment_retries": retries,
+        "progress_hooks": [enforce_deadline],
+        "postprocessor_hooks": [enforce_deadline],
+        "ffmpeg_location": str(ffmpeg_bin),
+    }
+    base_opts.update(_ytdlp_extra_opts())
+
+    info: Dict[str, Any] | None = None
+    last_exc: Exception | None = None
+    for proxy in _proxy_pool():
+        for client in _parse_player_clients():
+            opts = dict(base_opts)
+            _apply_proxy(opts, proxy)
+            _apply_player_client(opts, client)
+            try:
+                with YDL(opts) as ydl:
+                    candidate_info = ydl.extract_info(video_url, download=True)
+                if not isinstance(candidate_info, dict):
+                    raise RuntimeError("yt-dlp returned invalid download metadata")
+                info = candidate_info
+                break
+            except Exception as exc:
+                last_exc = exc
+        if info is not None:
+            break
+    if info is None:
+        wrapped = _maybe_wrap_ytdlp_error(last_exc or RuntimeError("yt-dlp failed"))
+        raise wrapped from last_exc
+    if str(info.get("id") or "").strip() != expected_id:
+        raise RuntimeError("yt-dlp resolved a different video identity")
+
+    candidates = sorted(
+        (
+            path
+            for path in staging_dir.iterdir()
+            if path.is_file() and path.suffix.lower() in _VIDEO_SUFFIX_MIME
+        ),
+        key=lambda path: (-path.stat().st_size, path.name),
+    )
+    if not candidates:
+        raise RuntimeError("yt-dlp did not produce a supported retained video file")
+    return _publish_staged_hot_media(
+        root=root,
+        staging_dir=staging_dir,
+        source=candidates[0],
+        video_id=expected_id,
+        max_bytes=max_bytes,
+    )
 
 
 def _fetch_ytdlp_cues(
@@ -628,7 +945,9 @@ def _fetch_ytdlp_cues(
 
         candidates = glob.glob(os.path.join(tmp, f"{vid}*.vtt"))
         if not candidates:
-            raise FileNotFoundError(f"no .vtt subtitles downloaded for video_id={vid} lang={language}")
+            raise FileNotFoundError(
+                f"no .vtt subtitles downloaded for video_id={vid} lang={language}"
+            )
         candidates.sort(key=lambda p: os.path.getsize(p), reverse=True)
         vtt_path = candidates[0]
         return vid, parse_vtt(vtt_path), info
@@ -643,10 +962,18 @@ def fetch_transcript_cues(
     allow_transcript_api: bool = True,
     use_proxy_pool: bool = True,
     player_clients: Optional[List[str]] = None,
-) -> Tuple[Optional[List[CaptionCue]], Optional[str], Optional[Dict[str, Any]], Optional[str], Optional[str]]:
+) -> Tuple[
+    Optional[List[CaptionCue]],
+    Optional[str],
+    Optional[Dict[str, Any]],
+    Optional[str],
+    Optional[str],
+]:
     vid = (video_id or "").strip() or _parse_youtube_video_id(video_url)
     if vid and allow_transcript_api:
-        maybe = _fetch_transcript_api_cues(video_id=vid, language=language, prefer_auto=prefer_auto)
+        maybe = _fetch_transcript_api_cues(
+            video_id=vid, language=language, prefer_auto=prefer_auto
+        )
         if maybe:
             return maybe, "yt_transcript_api", None, vid, None
 
@@ -659,7 +986,12 @@ def fetch_transcript_cues(
             player_clients=player_clients,
         )
     except Exception as exc:
-        LOG.debug("[yt-cues] fetch failed video_url=%s video_id=%s err=%s", video_url, vid, exc)
+        LOG.debug(
+            "[yt-cues] fetch failed video_url=%s video_id=%s err=%s",
+            video_url,
+            vid,
+            exc,
+        )
         return None, None, None, vid, str(exc)
 
     if not cues:
@@ -678,6 +1010,9 @@ def index_youtube_video_captions(
     segment_stride_s: Optional[float] = None,
     min_text_chars: Optional[int] = None,
     metadata_override: Optional[Dict[str, Any]] = None,
+    canonical_publish: Optional[Callable[[Dict[str, Any]], None]] = None,
+    acquire_hot_media: bool = False,
+    media_acquire: Optional[Callable[[str, str], HotMediaSpec]] = None,
 ) -> Dict[str, Any]:
     """
     Index a single YouTube video's captions into the existing v2 vector store schema.
@@ -687,12 +1022,24 @@ def index_youtube_video_captions(
     """
     # Namespace support is currently "videos"/"streams" via env; keep this explicit for now.
     if namespace != "videos":
-        raise ValueError("only namespace=videos is supported for caption indexing right now")
+        raise ValueError(
+            "only namespace=videos is supported for caption indexing right now"
+        )
 
-    seg_min = float(segment_min_s if segment_min_s is not None else settings_v2.SEGMENT_MIN_S)
-    seg_max = float(segment_max_s if segment_max_s is not None else settings_v2.SEGMENT_MAX_S)
-    seg_stride = float(segment_stride_s if segment_stride_s is not None else settings_v2.SEGMENT_STRIDE_S)
-    min_chars = int(min_text_chars if min_text_chars is not None else settings_v2.MIN_TEXT_CHARS)
+    seg_min = float(
+        segment_min_s if segment_min_s is not None else settings_v2.SEGMENT_MIN_S
+    )
+    seg_max = float(
+        segment_max_s if segment_max_s is not None else settings_v2.SEGMENT_MAX_S
+    )
+    seg_stride = float(
+        segment_stride_s
+        if segment_stride_s is not None
+        else settings_v2.SEGMENT_STRIDE_S
+    )
+    min_chars = int(
+        min_text_chars if min_text_chars is not None else settings_v2.MIN_TEXT_CHARS
+    )
 
     meta = metadata_override or {}
 
@@ -714,6 +1061,20 @@ def index_youtube_video_captions(
         return f if f >= 0 else None
 
     vid = _meta_str("video_id") or _parse_youtube_video_id(video_url)
+    hot_media: HotMediaSpec | None = None
+    if acquire_hot_media:
+        if not vid:
+            raise RuntimeError(
+                "clip-ready acquisition requires a URL containing an exact YouTube video id"
+            )
+        if media_acquire is None:
+            raise RuntimeError(
+                "clip-ready acquisition requires the durable media acquirer"
+            )
+        # Resolve or enqueue retained media before any caption/provider work. In
+        # production the API callback is queue-only and raises HotMediaPendingError
+        # until the sole-writer acquirer has published the verified CAS object.
+        hot_media = media_acquire(video_url, vid)
     cues, source_label, info, resolved_vid, error_detail = fetch_transcript_cues(
         video_url=video_url,
         video_id=vid,
@@ -732,7 +1093,10 @@ def index_youtube_video_captions(
     try:
         from src.ingest_v2.transcripts.normalize import apply_term_fixes
 
-        cues = [CaptionCue(start_s=c.start_s, end_s=c.end_s, text=apply_term_fixes(c.text)) for c in cues]
+        cues = [
+            CaptionCue(start_s=c.start_s, end_s=c.end_s, text=apply_term_fixes(c.text))
+            for c in cues
+        ]
     except Exception:
         pass
 
@@ -744,46 +1108,88 @@ def index_youtube_video_captions(
         min_text_chars=min_chars,
     )
     if not segments:
-        raise RuntimeError(f"no caption segments produced for video_id={vid} (min_chars={min_chars})")
+        raise RuntimeError(
+            f"no caption segments produced for video_id={vid} (min_chars={min_chars})"
+        )
 
     # Metadata (prefer caller-provided overrides, then yt-dlp, then YouTube Data API).
     title = _meta_str("title") or (info.get("title") if info else None)
-    channel_name = _meta_str("channel_name") or (info.get("channel") if info else None) or (info.get("uploader") if info else None) or (info.get("uploader_id") if info else None)
-    channel_id = _meta_str("channel_id") or (str(info.get("channel_id")).strip() if info and info.get("channel_id") else None)
-    published_at = _meta_str("published_at") or (str(info.get("upload_date")).strip() if info and info.get("upload_date") else None)  # yt-dlp: YYYYMMDD
+    channel_name = (
+        _meta_str("channel_name")
+        or (info.get("channel") if info else None)
+        or (info.get("uploader") if info else None)
+        or (info.get("uploader_id") if info else None)
+    )
+    channel_id = _meta_str("channel_id") or (
+        str(info.get("channel_id")).strip() if info and info.get("channel_id") else None
+    )
+    published_at = _meta_str("published_at") or (
+        str(info.get("upload_date")).strip()
+        if info and info.get("upload_date")
+        else None
+    )  # yt-dlp: YYYYMMDD
     duration_s = _meta_float("duration_s")
     if duration_s is None and info and info.get("duration") is not None:
         try:
             duration_s = float(info.get("duration"))
         except Exception:
             duration_s = None
-    thumbnail_url = _meta_str("thumbnail_url") or (str(info.get("thumbnail")).strip() if info and info.get("thumbnail") else None)
+    thumbnail_url = _meta_str("thumbnail_url") or (
+        str(info.get("thumbnail")).strip() if info and info.get("thumbnail") else None
+    )
     if not thumbnail_url and vid:
         thumbnail_url = f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
 
-    if vid and (not title or not channel_name or not published_at or duration_s is None or not thumbnail_url):
+    if vid and (
+        not title
+        or not channel_name
+        or not published_at
+        or duration_s is None
+        or not thumbnail_url
+    ):
         yt_key = (os.getenv("YOUTUBE_API_KEY") or "").strip()
         if yt_key:
             try:
-                from src.ingest_v2.cloud.diarization_indexer.youtube import YouTubeClient
+                from src.ingest_v2.cloud.diarization_indexer.youtube import (
+                    YouTubeClient,
+                )
 
                 vm = YouTubeClient(api_key=yt_key).fetch_video_metadata(vid)
                 title = title or vm.title or vid
-                channel_name = channel_name or (vm.channel_title or vm.channel_handle) or channel_name
+                channel_name = (
+                    channel_name
+                    or (vm.channel_title or vm.channel_handle)
+                    or channel_name
+                )
                 channel_id = channel_id or (vm.channel_id or "")
                 published_at = published_at or (vm.published_at or None)
                 if duration_s is None and vm.duration_seconds:
                     duration_s = float(vm.duration_seconds)
                 thumbnail_url = thumbnail_url or vm.thumbnail_url
             except Exception as exc:
-                LOG.debug("[yt-meta] youtube api enrich failed video_id=%s err=%s", vid, exc)
+                LOG.debug(
+                    "[yt-meta] youtube api enrich failed video_id=%s err=%s", vid, exc
+                )
 
     # Prefer raw YouTube description, but allow caller override. Router enrichment may
     # replace this with a short, topic-focused summary for better catalog search.
-    description = _meta_str("description") or (str(info.get("description")).strip() if info and info.get("description") else None) or ""
+    description = (
+        _meta_str("description")
+        or (
+            str(info.get("description")).strip()
+            if info and info.get("description")
+            else None
+        )
+        or ""
+    )
 
     # Optional: enrich parent metadata (GPT router fields) for fast metadata-based search.
-    router_enabled = (os.getenv("ROUTER_ENRICH", "1") or "1").strip().lower() not in ("0", "false", "no", "off")
+    router_enabled = (os.getenv("ROUTER_ENRICH", "1") or "1").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+        "off",
+    )
     topic_summary = None
     router_tags = None
     aliases = None
@@ -835,10 +1241,11 @@ def index_youtube_video_captions(
             LOG.debug("[yt-index] router enrich failed video_id=%s err=%s", vid, exc)
 
     watch_url = _yt_watch_url(vid)
-
+    media_id = canonical_source_video_id("youtube", vid)
     parent = {
         "parent_id": vid,
         "video_id": vid,
+        "media_id": media_id,
         "title": title,
         "description": description,
         "channel_name": channel_name,
@@ -861,12 +1268,15 @@ def index_youtube_video_captions(
     children: List[Dict[str, Any]] = []
     for start_s, end_s, text in segments:
         sid = segment_uuid(vid, start_s, end_s)
-        source_hash = sha1_hex(f"{vid}:{start_s:.3f}:{end_s:.3f}:{text}".encode("utf-8"))
+        source_hash = sha1_hex(
+            f"{vid}:{start_s:.3f}:{end_s:.3f}:{text}".encode("utf-8")
+        )
         children.append(
             {
                 "segment_id": sid,
                 "parent_id": vid,
                 "video_id": vid,
+                "media_id": media_id,
                 "document_type": "youtube_video",
                 "node_type": "child",
                 "title": title,
@@ -886,13 +1296,53 @@ def index_youtube_video_captions(
             }
         )
 
+    if canonical_publish is not None:
+        canonical_publish(
+            {
+                "platform": "youtube",
+                "provider_video_id": vid,
+                "channel_external_id": channel_id or channel_name or f"unknown:{vid}",
+                "channel_handle": (
+                    channel_name
+                    if isinstance(channel_name, str) and channel_name.startswith("@")
+                    else None
+                ),
+                "channel_name": channel_name,
+                "canonical_url": watch_url,
+                "title": title,
+                "description": description,
+                "published_at": published_at,
+                "duration_ms": (
+                    int(round(float(duration_s) * 1000))
+                    if duration_s is not None
+                    else None
+                ),
+                "language": language,
+                "transcript_provider": source_label or "youtube_captions",
+                "transcript_segments": [
+                    {
+                        "start": cue.start_s,
+                        "end": cue.end_s,
+                        "speaker": None,
+                        "text": cue.text,
+                    }
+                    for cue in cues
+                ],
+                "hot_media": hot_media,
+                "metadata": {"thumbnail_url": thumbnail_url},
+            }
+        )
+
     upsert_parents([parent])
     stats = upsert_children(children)
     return {
         "video_id": vid,
+        "media_id": media_id,
         "title": title,
         "channel_name": channel_name,
         "segments": len(children),
+        "clip_ready": hot_media is not None,
+        "hot_media_sha256": hot_media.sha256 if hot_media is not None else None,
         "upsert_stats": stats,
     }
 
@@ -948,7 +1398,9 @@ def discover_channel_video_urls(*, channel: str, max_videos: int = 10) -> List[s
     api_key = (os.environ.get("YOUTUBE_API_KEY") or "").strip()
     if api_key:
         try:
-            urls = _discover_channel_video_urls_via_api(channel=raw, max_videos=max_videos, api_key=api_key)
+            urls = _discover_channel_video_urls_via_api(
+                channel=raw, max_videos=max_videos, api_key=api_key
+            )
             if urls:
                 return urls
         except Exception:
@@ -967,11 +1419,20 @@ def index_youtube_channel_captions(
     segment_max_s: Optional[float] = None,
     segment_stride_s: Optional[float] = None,
     min_text_chars: Optional[int] = None,
+    canonical_publish: Optional[Callable[[Dict[str, Any]], None]] = None,
+    acquire_hot_media: bool = False,
+    media_acquire: Optional[Callable[[str, str], HotMediaSpec]] = None,
 ) -> Dict[str, Any]:
     urls = discover_channel_video_urls(channel=channel, max_videos=max_videos)
     if not urls:
         raise RuntimeError(f"no videos discovered for channel={channel!r}")
-    out: Dict[str, Any] = {"channel": channel, "max_videos": max_videos, "indexed": [], "failed": []}
+    out: Dict[str, Any] = {
+        "channel": channel,
+        "max_videos": max_videos,
+        "indexed": [],
+        "pending": [],
+        "failed": [],
+    }
     for url in urls:
         try:
             res = index_youtube_video_captions(
@@ -983,8 +1444,13 @@ def index_youtube_channel_captions(
                 segment_max_s=segment_max_s,
                 segment_stride_s=segment_stride_s,
                 min_text_chars=min_text_chars,
+                canonical_publish=canonical_publish,
+                acquire_hot_media=acquire_hot_media,
+                media_acquire=media_acquire,
             )
             out["indexed"].append(res)
+        except HotMediaPendingError as exc:
+            out["pending"].append(exc.job)
         except Exception as exc:
             LOG.warning("[yt-index] failed url=%s err=%s", url, exc)
             out["failed"].append({"url": url, "error": str(exc)})
@@ -1012,7 +1478,9 @@ def discover_query_video_urls(*, query: str, max_videos: int = 10) -> List[str]:
     ydl_opts.update(_ytdlp_extra_opts())
     with YDL(ydl_opts) as ydl:
         try:
-            info = ydl.extract_info(f"ytsearch{int(max(1, max_videos))}:{q}", download=False)
+            info = ydl.extract_info(
+                f"ytsearch{int(max(1, max_videos))}:{q}", download=False
+            )
         except Exception as exc:
             raise _maybe_wrap_ytdlp_error(exc) from exc
 
@@ -1036,7 +1504,9 @@ def discover_query_video_urls(*, query: str, max_videos: int = 10) -> List[str]:
     api_key = (os.environ.get("YOUTUBE_API_KEY") or "").strip()
     if api_key:
         try:
-            urls = _discover_query_video_urls_via_api(query=q, max_videos=max_videos, api_key=api_key)
+            urls = _discover_query_video_urls_via_api(
+                query=q, max_videos=max_videos, api_key=api_key
+            )
             if urls:
                 return urls
         except Exception:
@@ -1055,11 +1525,20 @@ def index_youtube_query_captions(
     segment_max_s: Optional[float] = None,
     segment_stride_s: Optional[float] = None,
     min_text_chars: Optional[int] = None,
+    canonical_publish: Optional[Callable[[Dict[str, Any]], None]] = None,
+    acquire_hot_media: bool = False,
+    media_acquire: Optional[Callable[[str, str], HotMediaSpec]] = None,
 ) -> Dict[str, Any]:
     urls = discover_query_video_urls(query=query, max_videos=max_videos)
     if not urls:
         raise RuntimeError(f"no videos discovered for query={query!r}")
-    out: Dict[str, Any] = {"query": query, "max_videos": max_videos, "indexed": [], "failed": []}
+    out: Dict[str, Any] = {
+        "query": query,
+        "max_videos": max_videos,
+        "indexed": [],
+        "pending": [],
+        "failed": [],
+    }
     for url in urls:
         try:
             res = index_youtube_video_captions(
@@ -1071,8 +1550,13 @@ def index_youtube_query_captions(
                 segment_max_s=segment_max_s,
                 segment_stride_s=segment_stride_s,
                 min_text_chars=min_text_chars,
+                canonical_publish=canonical_publish,
+                acquire_hot_media=acquire_hot_media,
+                media_acquire=media_acquire,
             )
             out["indexed"].append(res)
+        except HotMediaPendingError as exc:
+            out["pending"].append(exc.job)
         except Exception as exc:
             LOG.warning("[yt-index] failed url=%s err=%s", url, exc)
             out["failed"].append({"url": url, "error": str(exc)})
@@ -1113,7 +1597,11 @@ def _resolve_channel_id_via_api(identifier: str, *, api_key: str) -> Optional[st
         if mh:
             handle = mh.group("h")
     if handle:
-        resp = _ytapi_get("channels", api_key=api_key, params={"part": "id", "forHandle": handle, "maxResults": 1})
+        resp = _ytapi_get(
+            "channels",
+            api_key=api_key,
+            params={"part": "id", "forHandle": handle, "maxResults": 1},
+        )
         items = resp.get("items") or []
         if items:
             cid = items[0].get("id")
@@ -1147,7 +1635,9 @@ def _uploads_playlist_id(channel_id: str, *, api_key: str) -> Optional[str]:
     return rel.get("uploads")
 
 
-def _discover_channel_video_urls_via_api(*, channel: str, max_videos: int, api_key: str) -> List[str]:
+def _discover_channel_video_urls_via_api(
+    *, channel: str, max_videos: int, api_key: str
+) -> List[str]:
     cid = _resolve_channel_id_via_api(channel, api_key=api_key)
     if not cid:
         return []
@@ -1157,7 +1647,11 @@ def _discover_channel_video_urls_via_api(*, channel: str, max_videos: int, api_k
     resp = _ytapi_get(
         "playlistItems",
         api_key=api_key,
-        params={"part": "snippet", "playlistId": uploads, "maxResults": max(1, min(int(max_videos), 50))},
+        params={
+            "part": "snippet",
+            "playlistId": uploads,
+            "maxResults": max(1, min(int(max_videos), 50)),
+        },
     )
     urls: List[str] = []
     for item in resp.get("items") or []:
@@ -1171,7 +1665,9 @@ def _discover_channel_video_urls_via_api(*, channel: str, max_videos: int, api_k
     return urls
 
 
-def _discover_query_video_urls_via_api(*, query: str, max_videos: int, api_key: str) -> List[str]:
+def _discover_query_video_urls_via_api(
+    *, query: str, max_videos: int, api_key: str
+) -> List[str]:
     q = (query or "").strip()
     if not q:
         return []

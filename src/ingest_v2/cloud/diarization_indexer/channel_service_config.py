@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 import secrets
 from dataclasses import dataclass
 from typing import Mapping
@@ -13,6 +14,11 @@ INTERNAL_SECRET_ENV = "CHANNEL_SERVICE_INTERNAL_SHARED_SECRET"
 INTERNAL_SECRET_HEADER = "x-icmfyi-internal-secret"
 INTERNAL_USER_HEADER = "x-icmfyi-user-id"
 INTERNAL_TENANT_HEADER = "x-icmfyi-tenant-id"
+CANONICAL_NAMESPACE_ENV = "CHANNEL_SERVICE_CANONICAL_NAMESPACE"
+_USER_ID_PATTERN = re.compile(r"usr_[0-9a-f]{64}\Z")
+_TENANT_ID_PATTERN = re.compile(r"ten_[0-9a-f]{64}\Z")
+_NAMESPACE_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}\Z")
+_MODEL_REVISION_PATTERN = re.compile(r"[0-9a-f]{40}\Z")
 
 
 class ChannelServiceConfigurationError(RuntimeError):
@@ -56,7 +62,9 @@ def channel_service_database_url() -> str:
             "production requires CHANNEL_SERVICE_DATABASE_URL; DATABASE_URL and SQLite fallbacks are disabled"
         )
     return normalize_database_url(
-        explicit or os.getenv("DATABASE_URL") or "sqlite:///./.local-data/channel-service.db"
+        explicit
+        or os.getenv("DATABASE_URL")
+        or "sqlite:///./.local-data/channel-service.db"
     )
 
 
@@ -80,6 +88,58 @@ def validate_production_runtime() -> None:
         raise ChannelServiceConfigurationError(
             f"production requires {INTERNAL_SECRET_ENV} with at least 32 characters"
         )
+    canonical_namespace()
+    embedding_contract()
+
+
+def canonical_namespace() -> str:
+    value = (os.getenv(CANONICAL_NAMESPACE_ENV) or "").strip()
+    if is_production_environment() and not value:
+        raise ChannelServiceConfigurationError(
+            f"production requires {CANONICAL_NAMESPACE_ENV}"
+        )
+    value = value or "videos"
+    if not _NAMESPACE_PATTERN.fullmatch(value):
+        raise ChannelServiceConfigurationError(f"invalid {CANONICAL_NAMESPACE_ENV}")
+    return value
+
+
+def embedding_contract() -> dict[str, str | int]:
+    """Return the immutable embedding identity used by vector writers."""
+    provider = (os.getenv("EMBED_PROVIDER") or "openai").strip().lower()
+    model = (os.getenv("EMBED_MODEL") or "text-embedding-3-large").strip()
+    revision = (os.getenv("EMBED_MODEL_REVISION") or "").strip()
+    try:
+        dimension = int(os.getenv("EMBED_DIM") or "3072")
+    except ValueError as exc:
+        raise ChannelServiceConfigurationError(
+            "EMBED_DIM must be a positive integer"
+        ) from exc
+    if not provider or not model or dimension < 1:
+        raise ChannelServiceConfigurationError(
+            "embedding provider, model, and dimension are required"
+        )
+    if is_production_environment() and not _MODEL_REVISION_PATTERN.fullmatch(revision):
+        raise ChannelServiceConfigurationError(
+            "production requires EMBED_MODEL_REVISION as an exact 40-character lowercase commit"
+        )
+    return {
+        "provider": provider,
+        "model": model,
+        "revision": revision,
+        "dimension": dimension,
+    }
+
+
+def enforce_canonical_namespace(namespace: str) -> str:
+    normalized = str(namespace or "").strip()
+    if not normalized:
+        raise ChannelServiceConfigurationError("namespace is required")
+    if is_production_environment() and normalized != canonical_namespace():
+        raise ChannelServiceConfigurationError(
+            f"production namespace must equal {CANONICAL_NAMESPACE_ENV}"
+        )
+    return normalized
 
 
 def is_internal_auth_exempt_path(path: str) -> bool:
@@ -113,15 +173,26 @@ def forwarded_internal_identity(headers: Mapping[str, str]) -> InternalRequestId
     Tenant-scoped handlers must call this after the internal-secret middleware and
     must not accept a tenant or user identity from request bodies or query strings.
     """
-    user_id = _bounded_identity_header(headers, INTERNAL_USER_HEADER)
-    tenant_id = _bounded_identity_header(headers, INTERNAL_TENANT_HEADER)
+    user_id = validate_user_id(_header_value(headers, INTERNAL_USER_HEADER))
+    tenant_id = validate_tenant_id(_header_value(headers, INTERNAL_TENANT_HEADER))
     return InternalRequestIdentity(user_id=user_id, tenant_id=tenant_id)
 
 
-def _bounded_identity_header(headers: Mapping[str, str], name: str) -> str:
-    value = _header_value(headers, name)
-    if not value or len(value) > 255 or any(ord(character) < 32 for character in value):
-        raise ChannelServiceConfigurationError(f"missing or invalid {name}")
+def validate_user_id(value: str) -> str:
+    value = str(value or "").strip()
+    if not _USER_ID_PATTERN.fullmatch(value):
+        raise ChannelServiceConfigurationError(
+            f"missing or invalid {INTERNAL_USER_HEADER}"
+        )
+    return value
+
+
+def validate_tenant_id(value: str) -> str:
+    value = str(value or "").strip()
+    if not _TENANT_ID_PATTERN.fullmatch(value):
+        raise ChannelServiceConfigurationError(
+            f"missing or invalid {INTERNAL_TENANT_HEADER}"
+        )
     return value
 
 
