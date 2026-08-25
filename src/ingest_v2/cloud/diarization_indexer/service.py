@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 import os
 import secrets
@@ -9,7 +11,7 @@ import time
 from pathlib import Path
 from typing import Dict, Optional, Literal
 
-from fastapi import FastAPI, HTTPException, Request, Response
+from fastapi import FastAPI, Header, HTTPException, Request, Response
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 from sqlalchemy import select
@@ -30,6 +32,9 @@ from .canonical_media import (
     verify_hot_media,
 )
 from .channel_service_jobs import (
+    IdempotencyConflict,
+    ensure_channel_entitlement,
+    ensure_source_channel,
     get_or_create_ingestion_request,
 )
 from .channel_service_config import (
@@ -84,6 +89,7 @@ from .channel_service_store import (
 from .ingest import create_ingest_service
 from .gcs import read_json_from_gcs
 from .pubsub import verify_pubsub_push
+from .public_platforms import PublicTargetError, normalize_public_target
 from .schemas import DiarizationReadyEvent, decode_pubsub_message
 from .tenant_export import (
     TenantExportError,
@@ -91,6 +97,10 @@ from .tenant_export import (
     ensure_gateway_principals,
     serialize_tenant_export,
     tenant_export_artifact_path,
+)
+from .transcription_runtime import (
+    TranscriptionConfigurationError,
+    resolve_transcription_contract,
 )
 from .youtube import YouTubeClient
 from src.ingest_v2.pipelines.index_youtube_captions import (
@@ -140,6 +150,21 @@ class TenantExportReq(BaseModel):
     idempotency_key: str = Field(min_length=1, max_length=255)
 
 
+class PublicIngestReq(BaseModel):
+    model_config = {"extra": "forbid"}
+
+    platform: Literal["youtube", "twitch", "pumpfun", "x", "twitter"]
+    target_kind: Literal["channel", "item"]
+    target: str = Field(min_length=1, max_length=8000)
+    platform_entity_id: str | None = Field(default=None, max_length=255)
+    max_items: int = Field(default=25, ge=1, le=200)
+    clip_ready: bool = True
+    transcription_mode: Literal["auto", "openai", "local_cpu"] = "auto"
+    language: str = Field(
+        default="en", pattern=r"^[a-z]{2,3}(?:-[a-z0-9]{2,8})?$"
+    )
+
+
 def _trusted_request_identity(request: Request):
     try:
         return forwarded_internal_identity(request.headers)
@@ -162,6 +187,118 @@ def _indexing_identity(request: Request):
     if is_production_environment() or has_forwarded_scope:
         return _trusted_request_identity(request)
     return None
+
+
+def _exact_idempotency_key(value: str) -> str:
+    if (
+        not value
+        or len(value) > 255
+        or any(ord(char) < 0x21 or ord(char) > 0x7E for char in value)
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Idempotency-Key must be 1-255 printable ASCII characters "
+                "without spaces"
+            ),
+        )
+    return value
+
+
+@app.post("/v1/ingest", status_code=202)
+def create_public_ingestion(
+    req: PublicIngestReq,
+    request: Request,
+    idempotency_key: str = Header(alias="Idempotency-Key"),
+) -> dict:
+    """Queue one tenant-scoped canonical public channel or item ingestion."""
+    identity = _trusted_request_identity(request)
+    exact_key = _exact_idempotency_key(idempotency_key)
+    try:
+        target = normalize_public_target(
+            platform=req.platform,
+            target_kind=req.target_kind,
+            target=req.target,
+            platform_entity_id=req.platform_entity_id,
+        )
+        transcript = resolve_transcription_contract(req.transcription_mode)
+    except (PublicTargetError, TranscriptionConfigurationError) as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    policy_fingerprint = hashlib.sha256(
+        json.dumps(
+            {
+                "clip_ready": req.clip_ready,
+                "language": req.language,
+                # A channel discovery limited to 10 items is not equivalent to one
+                # limited to 200.  Bind the global job identity to the exact bound;
+                # item requests ignore this discovery-only input.
+                "max_items": req.max_items if target.target_kind == "channel" else None,
+                "transcription": transcript.as_payload(),
+            },
+            ensure_ascii=True,
+            separators=(",", ":"),
+            sort_keys=True,
+        ).encode("ascii")
+    ).hexdigest()
+    pipeline_version = f"public-ingest-v1:{policy_fingerprint}"
+    payload = {
+        "schema": "icmfyi.public-ingestion-request.v1",
+        "target": target.as_payload(),
+        "max_items": req.max_items,
+        "clip_ready": req.clip_ready,
+        "language": req.language,
+        "transcription": transcript.as_payload(),
+    }
+    with session_scope() as session:
+        ensure_gateway_principals(session, identity)
+        channel = None
+        if target.target_kind == "channel":
+            channel = ensure_source_channel(
+                session,
+                platform=target.platform,
+                external_id=target.external_id,
+                handle=target.handle,
+                canonical_url=target.canonical_url,
+                metadata={"public_ingestion": {"identity_bound": True}},
+            )
+            ensure_channel_entitlement(
+                session,
+                tenant_id=identity.tenant_id,
+                channel_id=channel.id,
+                granted_by_user_id=identity.user_id,
+                access_level="query",
+            )
+        try:
+            request_row, job, created = get_or_create_ingestion_request(
+                session,
+                tenant_id=identity.tenant_id,
+                requested_by_user_id=identity.user_id,
+                idempotency_key=exact_key,
+                job_kind=(
+                    "public_source_discovery"
+                    if target.target_kind == "channel"
+                    else "public_item_ingestion"
+                ),
+                source_kind=target.platform,
+                source_key=target.source_key,
+                pipeline_version=pipeline_version,
+                request_payload=payload,
+                channel_id=channel.id if channel is not None else None,
+                max_attempts=5,
+            )
+        except IdempotencyConflict as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from exc
+        return {
+            "request_id": request_row.id,
+            "job_id": job.id,
+            "status": job.status,
+            "created": created,
+            "platform": target.platform,
+            "target_kind": target.target_kind,
+            "canonical_target": target.canonical_url,
+            "status_url": f"/v1/ingestion-jobs/{job.id}",
+        }
 
 
 def _canonical_publish_callback(identity):
@@ -258,14 +395,28 @@ def get_ingestion_job(job_id: str, request: Request) -> dict:
             select(IngestionRequest).where(
                 IngestionRequest.tenant_id == identity.tenant_id,
                 IngestionRequest.job_id == job_id,
-            )
-        ).scalar_one_or_none()
+            ).order_by(IngestionRequest.created_at.asc(), IngestionRequest.id.asc())
+        ).scalars().first()
         if request_row is None:
             raise HTTPException(status_code=404, detail="ingestion job not found")
         job = session.get(IngestionJob, job_id)
         if job is None:
             raise HTTPException(status_code=404, detail="ingestion job not found")
         result = dict(job.result_json or {}) if job.status == "succeeded" else {}
+        safe_result_keys = {
+            "platform",
+            "target_kind",
+            "external_id",
+            "clip_ready",
+            "clip_ready_requested",
+            "transcript_sha256",
+            "transcript_provider",
+            "transcript_segments",
+            "tenant_publications",
+            "discovered_items",
+            "child_jobs",
+            "lifetime_complete",
+        }
         return {
             "job_id": job.id,
             "request_id": request_row.id,
@@ -280,6 +431,11 @@ def get_ingestion_job(job_id: str, request: Request) -> dict:
                 if result
                 else None
             ),
+            "result": {
+                key: result[key]
+                for key in sorted(safe_result_keys)
+                if key in result
+            },
             "error_code": job.last_error_code if job.status == "failed" else None,
         }
 

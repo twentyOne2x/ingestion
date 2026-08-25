@@ -1,7 +1,13 @@
 # Ingestion Platform Overview
 
 This repository now powers the ingestion stack behind our Pinecone-backed search
-experience. It contains:
+experience.
+
+The durable authenticated Linux request/worker contract for public Twitch,
+Pump.fun, X, and YouTube ingestion is documented in
+[`docs/public_platform_ingestion.md`](docs/public_platform_ingestion.md).
+
+It contains:
 
 - Cloud-run ingestion services that respond to diarization events and upsert
   parent/child vectors into Pinecone.

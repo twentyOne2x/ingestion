@@ -390,6 +390,25 @@ def claim_ingestion_job(
     return job
 
 
+def renew_ingestion_job_lease(
+    session: Session,
+    *,
+    job_id: str,
+    worker_id: str,
+    lease_seconds: int = 600,
+    now: datetime | None = None,
+) -> IngestionJob:
+    """Extend only the caller's still-live lease; never resurrect expired work."""
+    if lease_seconds < 10 or lease_seconds > 3600:
+        raise ValueError("lease_seconds must be between 10 and 3600")
+    now = now or utcnow()
+    job = _owned_running_job(session, job_id=job_id, worker_id=worker_id, now=now)
+    job.lease_expires_at = now + timedelta(seconds=lease_seconds)
+    job.updated_at = now
+    session.flush()
+    return job
+
+
 def complete_ingestion_job(
     session: Session,
     *,

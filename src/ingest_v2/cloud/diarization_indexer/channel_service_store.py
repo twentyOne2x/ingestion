@@ -38,7 +38,7 @@ from .channel_service_config import (
 )
 
 
-ALEMBIC_HEAD_REVISION = "20260825_0003"
+ALEMBIC_HEAD_REVISION = "20260825_0004"
 
 
 def utcnow() -> datetime:
@@ -624,6 +624,58 @@ class IngestionEffect(Base):
     provider_effect_id: Mapped[str | None] = mapped_column(String(255))
     request_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
     response_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class TranscriptionRun(Base):
+    """Crash-reconcilable transcript attempt and temporary-audio deletion ledger."""
+
+    __tablename__ = "transcription_runs"
+    __table_args__ = (
+        UniqueConstraint(
+            "job_id", "attempt_number", name="uq_transcription_runs_attempt"
+        ),
+        CheckConstraint(
+            "mode IN ('openai', 'local_cpu')", name="ck_transcription_runs_mode"
+        ),
+        CheckConstraint(
+            "status IN ('prepared', 'running', 'succeeded', 'failed', 'unknown')",
+            name="ck_transcription_runs_status",
+        ),
+        CheckConstraint(
+            "cleanup_status IN ('pending', 'deleted', 'not_created', 'cleanup_failed')",
+            name="ck_transcription_runs_cleanup_status",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    job_id: Mapped[str] = mapped_column(
+        ForeignKey("ingestion_jobs.id"), nullable=False, index=True
+    )
+    attempt_number: Mapped[int] = mapped_column(Integer, nullable=False)
+    mode: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    model_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    model_revision: Mapped[str | None] = mapped_column(String(255))
+    status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="prepared", index=True
+    )
+    temp_audio_path: Mapped[str] = mapped_column(Text, nullable=False)
+    cleanup_status: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="not_created", index=True
+    )
+    audio_sha256: Mapped[str | None] = mapped_column(String(64), index=True)
+    transcript_sha256: Mapped[str | None] = mapped_column(String(64), index=True)
+    provider_request_id: Mapped[str | None] = mapped_column(String(255), index=True)
+    error_code: Mapped[str | None] = mapped_column(String(64))
+    error_detail: Mapped[str | None] = mapped_column(Text)
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    cleaned_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )

@@ -44,6 +44,7 @@ from .channel_service_store import (
     session_scope,
     utcnow,
 )
+from .public_ingestion_worker import process_next_public_ingestion_job
 
 
 LOG = logging.getLogger(__name__)
@@ -565,6 +566,11 @@ def run_forever() -> None:
     cooldown_until = 0.0
 
     while True:
+        processed_public_ingestion = False
+        if _env_bool("CHANNEL_SERVICE_PUBLIC_INGESTION_ENABLED", True):
+            processed_public_ingestion = process_next_public_ingestion_job(
+                worker_id=worker_id
+            )
         processed_hot_media = False
         if _env_bool("CHANNEL_SERVICE_HOT_MEDIA_ACQUIRER_ENABLED", True):
             processed_hot_media = process_next_hot_media_job(worker_id=worker_id)
@@ -583,7 +589,7 @@ def run_forever() -> None:
                 _sleep_until(cooldown_until, poll_s=poll_s)
             job = claim_next_probe(worker_id=worker_id)
             if job is None:
-                if processed_hot_media:
+                if processed_hot_media or processed_public_ingestion:
                     continue
                 time.sleep(poll_s)
                 continue
