@@ -1,12 +1,25 @@
 from __future__ import annotations
 
+import os
+import re
+import time
 from dataclasses import dataclass
 from datetime import timedelta
-import time
-import os
-from typing import Any, Dict, Optional
+from typing import TYPE_CHECKING, Optional
+
+from sqlalchemy import select
+
+if TYPE_CHECKING:
+    from .channel_service_store import (
+        AcpJobBridge,
+        ChannelOrder,
+        ChannelPack,
+        ChannelQuote,
+        PackBatch,
+    )
 
 _ACP_QUOTE_TTL_HOURS = 6
+_ACP_EXPANSION_UNAVAILABLE = "Expansion pack is not available"
 
 
 @dataclass(frozen=True)
@@ -170,19 +183,44 @@ def serialize_acp_offering(*, offering: AcpOffering, base_url: str) -> dict:
 
 def create_or_sync_acp_job(*, session, payload: dict, base_url: str) -> AcpJobBridge:
     from .channel_service_logic import persist_quote, plan_quote
-    from .channel_service_store import AcpJobBridge, utcnow
+    from .channel_service_store import (
+        ACP_COMMERCE_SCOPE,
+        AcpJobBridge,
+        commerce_ownership_values,
+        commerce_scope_predicates,
+        set_commerce_scope,
+        utcnow,
+    )
 
     acp_job_id = str(payload.get("acp_job_id") or "").strip()
     if not acp_job_id:
         raise ValueError("acp_job_id is required")
     offering = get_acp_offering(str(payload.get("offering_id") or "").strip())
     normalized = normalize_acp_job_payload(payload=payload, offering=offering)
+    set_commerce_scope(session, ACP_COMMERCE_SCOPE)
 
-    bridge = session.get(AcpJobBridge, acp_job_id)
+    if offering.requires_pack_id:
+        _require_authorized_expansion_pack(
+            session=session,
+            pack_id=normalized.get("pack_id"),
+            buyer_subject_type=normalized.get("buyer_subject_type"),
+            buyer_subject_id=normalized.get("buyer_subject_id"),
+            channel_handle=normalized.get("channel_handle"),
+            namespace=normalized.get("namespace"),
+            mode=offering.mode,
+        )
+
+    bridge = session.execute(
+        select(AcpJobBridge).where(
+            AcpJobBridge.acp_job_id == acp_job_id,
+            *commerce_scope_predicates(AcpJobBridge, ACP_COMMERCE_SCOPE),
+        )
+    ).scalar_one_or_none()
     if bridge is None:
         plan_started = time.perf_counter()
         plan = plan_quote(
             session=session,
+            commerce_scope=ACP_COMMERCE_SCOPE,
             channel_handle=normalized["channel_handle"],
             namespace=normalized["namespace"],
             mode=offering.mode,
@@ -196,6 +234,7 @@ def create_or_sync_acp_job(*, session, payload: dict, base_url: str) -> AcpJobBr
         planning_latency_ms = int((time.perf_counter() - plan_started) * 1000)
         quote = persist_quote(
             session=session,
+            commerce_scope=ACP_COMMERCE_SCOPE,
             request_payload={
                 "channel_handle": normalized["channel_handle"],
                 "max_videos": normalized["max_videos"],
@@ -209,12 +248,15 @@ def create_or_sync_acp_job(*, session, payload: dict, base_url: str) -> AcpJobBr
                 "source": "acp",
                 "acp_job_id": acp_job_id,
                 "offering_id": offering.offering_id,
+                "buyer_subject_type": normalized.get("buyer_subject_type"),
+                "buyer_subject_id": normalized.get("buyer_subject_id"),
             },
             plan=plan,
             planning_latency_ms=planning_latency_ms,
         )
         quote.expires_at = utcnow() + timedelta(hours=_ACP_QUOTE_TTL_HOURS)
         bridge = AcpJobBridge(
+            **commerce_ownership_values(ACP_COMMERCE_SCOPE),
             acp_job_id=acp_job_id,
             offering_id=offering.offering_id,
             status="received",
@@ -249,16 +291,51 @@ def create_or_sync_acp_job(*, session, payload: dict, base_url: str) -> AcpJobBr
 def refresh_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> AcpJobBridge:
     from sqlalchemy import select
 
-    from .channel_service_logic import create_checkout_session_with_payment, create_order_from_quote, refresh_quote_state
-    from .channel_service_store import ChannelOrder, ChannelPack, ChannelQuote, CheckoutSessionRecord, PackBatch, utcnow
+    from .channel_service_logic import (
+        create_checkout_session_with_payment,
+        create_order_from_quote,
+        refresh_quote_state,
+    )
+    from .channel_service_store import (
+        ACP_COMMERCE_SCOPE,
+        ChannelOrder,
+        ChannelPack,
+        ChannelQuote,
+        CheckoutSessionRecord,
+        PackBatch,
+        commerce_scope_predicates,
+        require_commerce_record_scope,
+        set_commerce_scope,
+        utcnow,
+    )
 
-    quote = session.get(ChannelQuote, bridge.quote_id) if bridge.quote_id else None
+    set_commerce_scope(session, ACP_COMMERCE_SCOPE)
+    require_commerce_record_scope(
+        bridge, ACP_COMMERCE_SCOPE, label="ACP job bridge"
+    )
+
+    quote = (
+        session.execute(
+            select(ChannelQuote).where(
+                ChannelQuote.id == bridge.quote_id,
+                *commerce_scope_predicates(ChannelQuote, ACP_COMMERCE_SCOPE),
+            )
+        ).scalar_one_or_none()
+        if bridge.quote_id
+        else None
+    )
     if quote is None:
         bridge.status = "failed"
         bridge.error_detail = f"quote {bridge.quote_id} was not found"
         bridge.delivery_json = {}
         session.flush()
         return bridge
+
+    expansion_pack = _authorized_expansion_pack_for_bridge(
+        session=session,
+        bridge=bridge,
+        quote=quote,
+    )
 
     refresh_quote_state(session=session, quote=quote, enqueue_missing=True)
     quote.expires_at = utcnow() + timedelta(hours=_ACP_QUOTE_TTL_HOURS)
@@ -267,15 +344,31 @@ def refresh_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> AcpJobBr
     pending_count = _quote_pending_video_count(quote)
     payment_is_settled = _payment_status_is_settled(bridge.payment_status)
 
-    checkout = session.get(CheckoutSessionRecord, bridge.checkout_session_id) if bridge.checkout_session_id else None
-    order = session.get(ChannelOrder, bridge.order_id) if bridge.order_id else None
-    batch = session.get(PackBatch, order.batch_id) if order is not None else None
-    pack = session.get(ChannelPack, order.pack_id) if order is not None else None
+    checkout = _get_scoped_row(
+        session, CheckoutSessionRecord, "id", bridge.checkout_session_id
+    )
+    order = _get_scoped_row(session, ChannelOrder, "id", bridge.order_id)
+    batch = _get_scoped_row(
+        session, PackBatch, "id", order.batch_id if order is not None else None
+    )
+    pack = _get_scoped_row(
+        session, ChannelPack, "id", order.pack_id if order is not None else None
+    )
 
     if order is None and payment_is_settled and _quote_ready_for_checkout(quote=quote, target_video_count=target_video_count):
+        if expansion_pack is not None:
+            # Re-check immediately before creating payable lineage so a revoked
+            # entitlement cannot be raced between planning and ordering.
+            expansion_pack = _authorized_expansion_pack_for_bridge(
+                session=session,
+                bridge=bridge,
+                quote=quote,
+                lock_entitlement=True,
+            )
         if checkout is None:
             checkout = create_checkout_session_with_payment(
                 session=session,
+                commerce_scope=ACP_COMMERCE_SCOPE,
                 quote_ids=[quote.id],
                 idempotency_key=f"acp:{bridge.acp_job_id}",
                 payment_provider=bridge.payment_provider,
@@ -288,15 +381,17 @@ def refresh_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> AcpJobBr
             select(ChannelOrder).where(
                 ChannelOrder.checkout_session_id == checkout.id,
                 ChannelOrder.quote_id == quote.id,
+                *commerce_scope_predicates(ChannelOrder, ACP_COMMERCE_SCOPE),
             )
         ).scalar_one_or_none()
         if existing_order is not None:
             order = existing_order
-            batch = session.get(PackBatch, order.batch_id)
-            pack = session.get(ChannelPack, order.pack_id)
+            batch = _get_scoped_row(session, PackBatch, "id", order.batch_id)
+            pack = _get_scoped_row(session, ChannelPack, "id", order.pack_id)
         else:
             pack, batch, order = create_order_from_quote(
                 session=session,
+                commerce_scope=ACP_COMMERCE_SCOPE,
                 quote=quote,
                 checkout=checkout,
                 pack_id=request_json.get("pack_id"),
@@ -317,6 +412,17 @@ def refresh_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> AcpJobBr
             )
         bridge.order_id = order.id if order is not None else bridge.order_id
         bridge.pack_id = pack.id if pack is not None else bridge.pack_id
+
+    if expansion_pack is not None and order is not None:
+        _require_expansion_order_lineage(
+            bridge=bridge,
+            quote=quote,
+            checkout=checkout,
+            order=order,
+            batch=batch,
+            pack=pack,
+            authorized_pack=expansion_pack,
+        )
 
     if order is not None and batch is not None and pack is not None:
         bridge.status = _bridge_status_from_order(order=order, batch=batch, pack=pack)
@@ -363,13 +469,33 @@ def refresh_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> AcpJobBr
 
 def serialize_acp_job(*, session, bridge: AcpJobBridge, base_url: str) -> dict:
     from .channel_service_logic import serialize_order
-    from .channel_service_store import ChannelOrder, ChannelPack, ChannelQuote, CheckoutSessionRecord, PackBatch
+    from .channel_service_store import (
+        ACP_COMMERCE_SCOPE,
+        ChannelOrder,
+        ChannelPack,
+        ChannelQuote,
+        CheckoutSessionRecord,
+        PackBatch,
+        require_commerce_record_scope,
+        set_commerce_scope,
+    )
 
-    quote = session.get(ChannelQuote, bridge.quote_id) if bridge.quote_id else None
-    checkout = session.get(CheckoutSessionRecord, bridge.checkout_session_id) if bridge.checkout_session_id else None
-    order = session.get(ChannelOrder, bridge.order_id) if bridge.order_id else None
-    batch = session.get(PackBatch, order.batch_id) if order is not None else None
-    pack = session.get(ChannelPack, order.pack_id) if order is not None else None
+    set_commerce_scope(session, ACP_COMMERCE_SCOPE)
+    require_commerce_record_scope(
+        bridge, ACP_COMMERCE_SCOPE, label="ACP job bridge"
+    )
+
+    quote = _get_scoped_row(session, ChannelQuote, "id", bridge.quote_id)
+    checkout = _get_scoped_row(
+        session, CheckoutSessionRecord, "id", bridge.checkout_session_id
+    )
+    order = _get_scoped_row(session, ChannelOrder, "id", bridge.order_id)
+    batch = _get_scoped_row(
+        session, PackBatch, "id", order.batch_id if order is not None else None
+    )
+    pack = _get_scoped_row(
+        session, ChannelPack, "id", order.pack_id if order is not None else None
+    )
 
     quote_summary = None
     if quote is not None:
@@ -453,7 +579,11 @@ def normalize_acp_job_payload(*, payload: dict, offering: AcpOffering) -> dict:
         "published_after": str(request_input.get("published_after") or "").strip() or None,
         "published_before": str(request_input.get("published_before") or "").strip() or None,
         "buyer_subject_type": str(buyer.get("subject_type") or "acp_buyer").strip() or "acp_buyer",
-        "buyer_subject_id": str(buyer.get("subject_id") or "").strip() or None,
+        "buyer_subject_id": _normalize_buyer_subject_id(
+            subject_type=str(buyer.get("subject_type") or "acp_buyer").strip()
+            or "acp_buyer",
+            subject_id=buyer.get("subject_id"),
+        ),
         "payment_provider": str(payment.get("provider") or "acp").strip() or "acp",
         "payment_status": str(payment.get("status") or "settled_acp").strip() or "settled_acp",
         "meta": dict(payload.get("meta") or {}),
@@ -518,12 +648,265 @@ def _ensure_matching_acp_request(*, bridge: AcpJobBridge, normalized: dict, offe
         "prefer_auto",
         "published_after",
         "published_before",
+        "buyer_subject_type",
+        "buyer_subject_id",
+        "payment_provider",
     )
     for key in comparable_keys:
-        if stored.get(key) != normalized.get(key):
+        stored_value = stored.get(key)
+        normalized_value = normalized.get(key)
+        if key == "buyer_subject_id":
+            stored_value = _normalize_buyer_subject_id(
+                subject_type=stored.get("buyer_subject_type"),
+                subject_id=stored_value,
+            )
+        if stored_value != normalized_value:
             raise ValueError(f"acp job {bridge.acp_job_id} was already created with different {key}")
     if bridge.offering_id != offering.offering_id:
         raise ValueError(f"acp job {bridge.acp_job_id} was already created for a different offering")
+
+
+def _get_scoped_row(session, model, key_name: str, value):
+    if value is None:
+        return None
+    from .channel_service_store import ACP_COMMERCE_SCOPE, commerce_scope_predicates
+
+    return session.execute(
+        select(model).where(
+            getattr(model, key_name) == value,
+            *commerce_scope_predicates(model, ACP_COMMERCE_SCOPE),
+        )
+    ).scalar_one_or_none()
+
+
+def _require_authorized_expansion_pack(
+    *,
+    session,
+    pack_id: Optional[str],
+    buyer_subject_type: Optional[str],
+    buyer_subject_id: Optional[str],
+    channel_handle: Optional[str],
+    namespace: Optional[str],
+    mode: Optional[str],
+    lock_entitlement: bool = False,
+    entitlement_not_after=None,
+):
+    from sqlalchemy import func
+
+    from .channel_service_store import (
+        ACP_COMMERCE_SCOPE,
+        AcpJobBridge,
+        ChannelPack,
+        Entitlement,
+        commerce_scope_predicates,
+    )
+
+    expected_pack_id = str(pack_id or "").strip()
+    expected_subject_type = str(buyer_subject_type or "").strip()
+    expected_subject_id = _normalize_buyer_subject_id(
+        subject_type=expected_subject_type,
+        subject_id=buyer_subject_id,
+    )
+    expected_channel_handle = str(channel_handle or "").strip()
+    expected_namespace = str(namespace or "").strip()
+    expected_mode = str(mode or "").strip()
+    if not all(
+        (
+            expected_pack_id,
+            expected_subject_type,
+            expected_subject_id,
+            expected_channel_handle,
+            expected_namespace,
+            expected_mode,
+        )
+    ):
+        raise ValueError(_ACP_EXPANSION_UNAVAILABLE)
+
+    pack_statement = select(ChannelPack).where(
+        ChannelPack.id == expected_pack_id,
+        *commerce_scope_predicates(ChannelPack, ACP_COMMERCE_SCOPE),
+    )
+    if lock_entitlement:
+        pack_statement = pack_statement.with_for_update()
+    pack = session.execute(pack_statement).scalar_one_or_none()
+
+    entitlement_subject_predicate = Entitlement.subject_id == expected_subject_id
+    origin_subject_predicate = AcpJobBridge.buyer_subject_id == expected_subject_id
+    if _is_evm_acp_client_identity(
+        subject_type=expected_subject_type, subject_id=expected_subject_id
+    ):
+        entitlement_subject_predicate = (
+            func.lower(Entitlement.subject_id) == expected_subject_id
+        )
+        origin_subject_predicate = (
+            func.lower(AcpJobBridge.buyer_subject_id) == expected_subject_id
+        )
+
+    matching_entitlement = select(Entitlement.id).where(
+        Entitlement.pack_id == expected_pack_id,
+        Entitlement.subject_type == expected_subject_type,
+        entitlement_subject_predicate,
+        Entitlement.status == "active",
+        *commerce_scope_predicates(Entitlement, ACP_COMMERCE_SCOPE),
+    )
+    if entitlement_not_after is not None:
+        matching_entitlement = matching_entitlement.where(
+            Entitlement.created_at <= entitlement_not_after
+        )
+    if lock_entitlement:
+        matching_entitlement = matching_entitlement.with_for_update()
+    entitlement_id = session.scalar(matching_entitlement.limit(1))
+
+    starter_origin = select(AcpJobBridge.acp_job_id).where(
+        AcpJobBridge.offering_id == "transcript_pack_starter_10",
+        AcpJobBridge.pack_id == expected_pack_id,
+        AcpJobBridge.order_id.is_not(None),
+        AcpJobBridge.buyer_subject_type == expected_subject_type,
+        origin_subject_predicate,
+        *commerce_scope_predicates(AcpJobBridge, ACP_COMMERCE_SCOPE),
+    )
+    if lock_entitlement:
+        starter_origin = starter_origin.with_for_update()
+    if (
+        entitlement_not_after is not None
+    ):
+        starter_origin = starter_origin.where(
+            AcpJobBridge.created_at <= entitlement_not_after
+        )
+    starter_origin_id = session.scalar(starter_origin.limit(1))
+    if (
+        entitlement_id is None
+        or starter_origin_id is None
+        or pack is None
+        or pack.status not in {"draft", "queued", "partial", "ready"}
+        or str(pack.namespace or "") != expected_namespace
+        or str(pack.mode or "") != expected_mode
+        or str(pack.channel_handle or "").casefold()
+        != expected_channel_handle.casefold()
+    ):
+        raise ValueError(_ACP_EXPANSION_UNAVAILABLE)
+    return pack
+
+
+def _authorized_expansion_pack_for_bridge(
+    *, session, bridge, quote, lock_entitlement: bool = False
+):
+    offering = get_acp_offering(str(bridge.offering_id or "").strip())
+    if not offering.requires_pack_id:
+        return None
+
+    bridge_request = dict(bridge.request_json or {})
+    quote_request = dict(quote.request_json or {})
+    immutable_keys = (
+        "acp_job_id",
+        "offering_id",
+        "pack_id",
+        "channel_handle",
+        "namespace",
+        "mode",
+    )
+    buyer_keys = ("buyer_subject_type", "buyer_subject_id")
+    legacy_quote_without_buyer = all(
+        quote_request.get(key) is None for key in buyer_keys
+    ) and all(bridge_request.get(key) for key in buyer_keys)
+    bridge_buyer_id = _normalize_buyer_subject_id(
+        subject_type=bridge_request.get("buyer_subject_type"),
+        subject_id=bridge_request.get("buyer_subject_id"),
+    )
+    quote_buyer_id = _normalize_buyer_subject_id(
+        subject_type=quote_request.get("buyer_subject_type"),
+        subject_id=quote_request.get("buyer_subject_id"),
+    )
+    if (
+        any(bridge_request.get(key) != quote_request.get(key) for key in immutable_keys)
+        or (
+            not legacy_quote_without_buyer
+            and (
+                bridge_request.get("buyer_subject_type")
+                != quote_request.get("buyer_subject_type")
+                or bridge_buyer_id != quote_buyer_id
+            )
+        )
+        or bridge.acp_job_id != bridge_request.get("acp_job_id")
+        or bridge.offering_id != bridge_request.get("offering_id")
+        or bridge.quote_id != quote.id
+        or bridge.buyer_subject_type != bridge_request.get("buyer_subject_type")
+        or _normalize_buyer_subject_id(
+            subject_type=bridge.buyer_subject_type,
+            subject_id=bridge.buyer_subject_id,
+        )
+        != bridge_buyer_id
+        or quote.created_at is None
+        or (bridge.pack_id is not None and bridge.pack_id != bridge_request.get("pack_id"))
+        or quote.channel_handle != quote_request.get("channel_handle")
+        or quote.namespace != quote_request.get("namespace")
+        or quote.mode != quote_request.get("mode")
+    ):
+        raise ValueError(_ACP_EXPANSION_UNAVAILABLE)
+
+    pack = _require_authorized_expansion_pack(
+        session=session,
+        pack_id=bridge_request.get("pack_id"),
+        buyer_subject_type=bridge_request.get("buyer_subject_type"),
+        buyer_subject_id=bridge_request.get("buyer_subject_id"),
+        channel_handle=bridge_request.get("channel_handle"),
+        namespace=bridge_request.get("namespace"),
+        mode=bridge_request.get("mode"),
+        lock_entitlement=lock_entitlement,
+        entitlement_not_after=quote.created_at,
+    )
+    if legacy_quote_without_buyer:
+        # Older in-flight ACP quotes did not copy the bridge buyer into their
+        # request JSON. Backfill only after the bridge buyer has independently
+        # proven an active entitlement to this exact pack.
+        quote.request_json = {
+            **quote_request,
+            "buyer_subject_type": bridge_request["buyer_subject_type"],
+            "buyer_subject_id": bridge_request["buyer_subject_id"],
+        }
+        session.flush()
+    return pack
+
+
+def _is_evm_acp_client_identity(*, subject_type, subject_id) -> bool:
+    return str(subject_type or "").strip() == "acp_client" and bool(
+        re.fullmatch(r"0[xX][0-9a-fA-F]{40}", str(subject_id or "").strip())
+    )
+
+
+def _normalize_buyer_subject_id(*, subject_type, subject_id):
+    normalized = str(subject_id or "").strip()
+    if _is_evm_acp_client_identity(
+        subject_type=subject_type, subject_id=normalized
+    ):
+        return normalized.lower()
+    return normalized or None
+
+
+def _require_expansion_order_lineage(
+    *, bridge, quote, checkout, order, batch, pack, authorized_pack
+) -> None:
+    expected_pack_id = str((bridge.request_json or {}).get("pack_id") or "")
+    if (
+        not expected_pack_id
+        or checkout is None
+        or batch is None
+        or pack is None
+        or pack.id != expected_pack_id
+        or authorized_pack.id != expected_pack_id
+        or bridge.pack_id != expected_pack_id
+        or bridge.order_id != order.id
+        or bridge.checkout_session_id != checkout.id
+        or order.quote_id != quote.id
+        or order.checkout_session_id != checkout.id
+        or order.pack_id != expected_pack_id
+        or order.batch_id != batch.id
+        or batch.quote_id != quote.id
+        or batch.checkout_session_id != checkout.id
+        or batch.pack_id != expected_pack_id
+        or quote.id not in set(checkout.quote_ids_json or [])
+    ):
+        raise ValueError(_ACP_EXPANSION_UNAVAILABLE)
 
 
 def _bridge_status_from_order(*, order: ChannelOrder, batch: PackBatch, pack: ChannelPack) -> str:

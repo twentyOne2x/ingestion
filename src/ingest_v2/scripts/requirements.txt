@@ -95,7 +95,6 @@ pandas==2.3.2
 pathlib==1.0.1
 pillow==11.3.0
 pinecone==7.3.0
-pinecone-client==6.0.0
 pinecone-plugin-assistant==1.8.0
 pinecone-plugin-interface==0.0.7
 platformdirs==4.4.0

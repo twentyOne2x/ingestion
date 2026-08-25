@@ -9,15 +9,18 @@ from collections import Counter
 from datetime import timedelta, timezone
 from typing import Dict, Optional
 
-from sqlalchemy import func, or_, select
+from sqlalchemy import func, or_, select, text
 
-from src.ingest_v2.pipelines.index_youtube_captions import _classify_transcript_fetch_error, fetch_transcript_cues
+from src.ingest_v2.pipelines.index_youtube_captions import (
+    _classify_transcript_fetch_error,
+    fetch_transcript_cues,
+)
 
 from .channel_service_runtime import (
     all_pool_profiles,
     dispatch_payload,
-    dispatch_ttl_s,
     dispatch_token,
+    dispatch_ttl_s,
     distinct_health_group_count,
     enqueue_dispatch,
     global_dispatch_limit,
@@ -37,7 +40,7 @@ from .channel_service_store import (
     session_scope,
     utcnow,
 )
-
+from .public_platforms import PublicTargetError, normalize_public_target
 
 LOG = logging.getLogger(__name__)
 logging.basicConfig(
@@ -83,14 +86,23 @@ def _pool_group_key(pool: EgressPool) -> str:
 
 
 def _pending_quote_summary(session) -> Dict[str, dict]:
-    rows = session.execute(
-        select(
-            QuoteVideo.video_id,
-            func.count(QuoteVideo.id),
-            func.min(QuoteVideo.position),
-        ).where(QuoteVideo.status == "pending_acquisition")
-        .group_by(QuoteVideo.video_id)
-    ).all()
+    if session.get_bind().dialect.name == "postgresql":
+        rows = session.execute(
+            text(
+                "SELECT video_id, count(quote_video_id), min(position) "
+                "FROM scheduler_quote_video_projection "
+                "WHERE status = 'pending_acquisition' GROUP BY video_id"
+            )
+        ).all()
+    else:
+        rows = session.execute(
+            select(
+                QuoteVideo.video_id,
+                func.count(QuoteVideo.id),
+                func.min(QuoteVideo.position),
+            ).where(QuoteVideo.status == "pending_acquisition")
+            .group_by(QuoteVideo.video_id)
+        ).all()
     out: Dict[str, dict] = {}
     for video_id, count, min_position in rows:
         if not video_id:
@@ -365,6 +377,30 @@ def _resolve_canary_target(*, session, pool: EgressPool, profile: dict) -> Optio
         .limit(1)
     ).scalars().first()
     if probe is None:
+        if session.get_bind().dialect.name == "postgresql":
+            quote_videos = session.execute(
+                text(
+                    "SELECT video_id "
+                    "FROM scheduler_quote_video_projection "
+                    "WHERE included IS TRUE "
+                    "ORDER BY quote_video_id DESC LIMIT 100"
+                )
+            ).mappings()
+            for quote_video in quote_videos:
+                try:
+                    canonical = normalize_public_target(
+                        platform="youtube",
+                        target_kind="item",
+                        target=str(quote_video["video_id"]),
+                    )
+                except PublicTargetError:
+                    continue
+                return {
+                    "video_url": canonical.canonical_url,
+                    "video_id": canonical.external_id,
+                    "language": explicit_language,
+                }
+            return None
         quote_video = session.execute(
             select(QuoteVideo)
             .where(

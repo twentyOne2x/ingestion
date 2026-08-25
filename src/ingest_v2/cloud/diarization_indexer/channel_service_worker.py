@@ -6,12 +6,24 @@ import os
 import socket
 import time
 from datetime import timedelta, timezone
+from pathlib import Path
 from typing import Optional
 
 from sqlalchemy import and_, or_, select
 
-from src.ingest_v2.pipelines.index_youtube_captions import _classify_transcript_fetch_error, fetch_transcript_cues
+from src.ingest_v2.pipelines.index_youtube_captions import (
+    _classify_transcript_fetch_error,
+    acquire_youtube_hot_media,
+    fetch_transcript_cues,
+)
 
+from .canonical_media import HotMediaSpec, verify_hot_media
+from .channel_service_jobs import (
+    claim_ingestion_jobs,
+    complete_ingestion_job,
+    fail_ingestion_job,
+    reserve_ingestion_effect,
+)
 from .channel_service_logic import _transcript_rows_from_cues, _write_probe_artifact
 from .channel_service_runtime import (
     distinct_health_group_count,
@@ -23,6 +35,8 @@ from .channel_service_runtime import (
 )
 from .channel_service_store import (
     EgressPool,
+    IngestionEffect,
+    IngestionJob,
     SchedulerAttempt,
     SchedulerJob,
     TranscriptProbe,
@@ -30,6 +44,7 @@ from .channel_service_store import (
     session_scope,
     utcnow,
 )
+from .public_ingestion_worker import process_next_public_ingestion_job
 
 
 LOG = logging.getLogger(__name__)
@@ -84,14 +99,18 @@ def _normalize_utc(value):
 
 def _pool_group_rows(session, *, pool: EgressPool) -> list[EgressPool]:
     group = str(pool.health_group or pool.id)
-    return session.execute(
-        select(EgressPool).where(
-            or_(
-                EgressPool.id == pool.id,
-                EgressPool.health_group == group,
+    return (
+        session.execute(
+            select(EgressPool).where(
+                or_(
+                    EgressPool.id == pool.id,
+                    EgressPool.health_group == group,
+                )
             )
         )
-    ).scalars().all()
+        .scalars()
+        .all()
+    )
 
 
 def _retry_after_s(
@@ -105,7 +124,9 @@ def _retry_after_s(
 ) -> int:
     if error_kind == "rate_limited":
         exponent = max(0, attempt_count - 1)
-        return min(rate_limit_max_retry_s, max(retry_s, rate_limit_cooldown_s * (2**exponent)))
+        return min(
+            rate_limit_max_retry_s, max(retry_s, rate_limit_cooldown_s * (2**exponent))
+        )
     return min(error_max_retry_s, max(retry_s, retry_s * max(1, attempt_count)))
 
 
@@ -115,6 +136,158 @@ def _sleep_until(target_monotonic: float, *, poll_s: int) -> None:
         if remaining <= 0:
             return
         time.sleep(min(max(1.0, float(poll_s)), remaining, 30.0))
+
+
+def _hot_media_result(spec: HotMediaSpec) -> dict:
+    return {
+        "path": str(spec.path),
+        "sha256": spec.sha256,
+        "size_bytes": spec.size_bytes,
+        "mime_type": spec.mime_type,
+    }
+
+
+def _hot_media_from_result(payload: dict) -> HotMediaSpec:
+    try:
+        spec = HotMediaSpec(
+            path=Path(str(payload["path"])),
+            sha256=str(payload["sha256"]),
+            size_bytes=int(payload["size_bytes"]),
+            mime_type=str(payload["mime_type"]),
+        )
+    except (KeyError, TypeError, ValueError) as exc:
+        raise RuntimeError("durable hot-media result is invalid") from exc
+    return verify_hot_media(spec)
+
+
+def claim_next_hot_media_job(*, worker_id: str) -> Optional[dict]:
+    """Claim exactly one sole-writer YouTube media job and reserve its provider effect."""
+    with session_scope() as session:
+        jobs = claim_ingestion_jobs(
+            session,
+            worker_id=worker_id,
+            limit=1,
+            lease_seconds=3600,
+            job_kinds=["youtube_hot_media"],
+        )
+        if not jobs:
+            return None
+        job = jobs[0]
+        payload = dict(job.payload_json or {})
+        video_id = str(payload.get("video_id") or "").strip()
+        canonical_url = str(payload.get("canonical_url") or "").strip()
+        if not video_id or not canonical_url:
+            fail_ingestion_job(
+                session,
+                job_id=job.id,
+                worker_id=worker_id,
+                error_code="invalid_youtube_hot_media_job",
+                error_detail="durable job is missing video_id or canonical_url",
+                retryable=False,
+            )
+            return {"completed": True, "job_id": job.id}
+
+        effect, _ = reserve_ingestion_effect(
+            session,
+            job_id=job.id,
+            provider="youtube_ytdlp",
+            effect_kind="public_video_download",
+            idempotency_key=f"youtube-hot-media-v1:{video_id}",
+            request_payload={"video_id": video_id, "canonical_url": canonical_url},
+        )
+        if effect.status == "succeeded":
+            spec = _hot_media_from_result(dict(effect.response_json or {}))
+            complete_ingestion_job(
+                session,
+                job_id=job.id,
+                worker_id=worker_id,
+                result=_hot_media_result(spec),
+            )
+            return {"completed": True, "job_id": job.id}
+        if effect.status not in {"reserved", "retry", "running"}:
+            fail_ingestion_job(
+                session,
+                job_id=job.id,
+                worker_id=worker_id,
+                error_code="youtube_hot_media_effect_terminal",
+                error_detail="provider effect is in a non-retryable terminal state",
+                retryable=False,
+            )
+            return {"completed": True, "job_id": job.id}
+        effect.status = "running"
+        session.flush()
+        return {
+            "completed": False,
+            "job_id": job.id,
+            "effect_id": effect.id,
+            "video_id": video_id,
+            "canonical_url": canonical_url,
+        }
+
+
+def process_next_hot_media_job(*, worker_id: str) -> bool:
+    """Run at most one durable hot-media job; only this worker writes the CAS."""
+    claimed = claim_next_hot_media_job(worker_id=worker_id)
+    if claimed is None:
+        return False
+    if claimed["completed"]:
+        return True
+
+    try:
+        spec = acquire_youtube_hot_media(
+            claimed["canonical_url"],
+            claimed["video_id"],
+        )
+    except Exception as exc:
+        with session_scope() as session:
+            effect = session.get(IngestionEffect, claimed["effect_id"])
+            job = session.get(IngestionJob, claimed["job_id"])
+            if effect is None or job is None:
+                raise RuntimeError(
+                    "durable hot-media state disappeared after failure"
+                ) from exc
+            retryable = int(job.attempt_count or 0) < int(job.max_attempts or 0)
+            effect.status = "retry" if retryable else "failed"
+            effect.response_json = {"error": str(exc)[:2000]}
+            fail_ingestion_job(
+                session,
+                job_id=job.id,
+                worker_id=worker_id,
+                error_code="youtube_hot_media_acquisition_failed",
+                error_detail=str(exc),
+                retryable=retryable,
+                retry_after_seconds=60,
+            )
+        LOG.warning(
+            "[channel-service-acquirer] hot-media failed job=%s video=%s err=%s",
+            claimed["job_id"],
+            claimed["video_id"],
+            str(exc)[:500],
+        )
+        return True
+
+    result = _hot_media_result(spec)
+    with session_scope() as session:
+        effect = session.get(IngestionEffect, claimed["effect_id"])
+        job = session.get(IngestionJob, claimed["job_id"])
+        if effect is None or job is None:
+            raise RuntimeError("durable hot-media state disappeared before completion")
+        effect.status = "succeeded"
+        effect.provider_effect_id = claimed["video_id"]
+        effect.response_json = result
+        complete_ingestion_job(
+            session,
+            job_id=job.id,
+            worker_id=worker_id,
+            result=result,
+        )
+    LOG.info(
+        "[channel-service-acquirer] hot-media ready job=%s video=%s sha256=%s",
+        claimed["job_id"],
+        claimed["video_id"],
+        spec.sha256,
+    )
+    return True
 
 
 def claim_next_probe(*, worker_id: str) -> Optional[dict]:
@@ -196,8 +369,14 @@ def claim_scheduled_job(*, worker_id: str, timeout_s: int) -> Optional[dict]:
             return None
         if job.status not in {"dispatched", "queued"}:
             return None
-        quarantine_until = _normalize_utc(pool.quarantine_until) if pool is not None else None
-        if pool is None or pool.status == "disabled" or (quarantine_until and quarantine_until > now):
+        quarantine_until = (
+            _normalize_utc(pool.quarantine_until) if pool is not None else None
+        )
+        if (
+            pool is None
+            or pool.status == "disabled"
+            or (quarantine_until and quarantine_until > now)
+        ):
             job.status = "delayed"
             job.next_run_at = now + timedelta(seconds=max(30, timeout_s))
             job.last_error_kind = "blocked_by_egress"
@@ -255,7 +434,9 @@ def finalize_probe(
             probe.error_detail = error_detail
             probe.lease_owner = None
             probe.lease_expires_at = None
-            probe.next_attempt_at = now + timedelta(seconds=retry_after_s) if retry_after_s else None
+            probe.next_attempt_at = (
+                now + timedelta(seconds=retry_after_s) if retry_after_s else None
+            )
 
         if scheduler_job_id:
             job = session.get(SchedulerJob, scheduler_job_id)
@@ -268,7 +449,9 @@ def finalize_probe(
                     job.next_run_at = None
                 else:
                     job.status = "delayed"
-                    job.next_run_at = now + timedelta(seconds=retry_after_s) if retry_after_s else now
+                    job.next_run_at = (
+                        now + timedelta(seconds=retry_after_s) if retry_after_s else now
+                    )
                 job.last_error_kind = error_kind
                 job.last_error_detail = error_detail
                 job.lease_owner = None
@@ -291,9 +474,18 @@ def finalize_probe(
         if pool_id:
             pool = session.get(EgressPool, pool_id)
             if pool is not None:
-                quarantine_threshold = max(1, _env_int("CHANNEL_SERVICE_POOL_RATE_LIMIT_QUARANTINE_THRESHOLD", 3))
-                quarantine_s = max(60, _env_int("CHANNEL_SERVICE_POOL_RATE_LIMIT_QUARANTINE_S", 1800))
-                rate_limit_rows = _pool_group_rows(session, pool=pool) if error_kind == "rate_limited" else [pool]
+                quarantine_threshold = max(
+                    1,
+                    _env_int("CHANNEL_SERVICE_POOL_RATE_LIMIT_QUARANTINE_THRESHOLD", 3),
+                )
+                quarantine_s = max(
+                    60, _env_int("CHANNEL_SERVICE_POOL_RATE_LIMIT_QUARANTINE_S", 1800)
+                )
+                rate_limit_rows = (
+                    _pool_group_rows(session, pool=pool)
+                    if error_kind == "rate_limited"
+                    else [pool]
+                )
                 if status == "ready":
                     for row in _pool_group_rows(session, pool=pool):
                         if row.status == "disabled":
@@ -307,7 +499,11 @@ def finalize_probe(
                 else:
                     if error_kind == "rate_limited":
                         next_count = int(pool.consecutive_rate_limit_count or 0) + 1
-                        next_status = "quarantined" if next_count >= quarantine_threshold else "degraded"
+                        next_status = (
+                            "quarantined"
+                            if next_count >= quarantine_threshold
+                            else "degraded"
+                        )
                         next_quarantine_until = now + timedelta(seconds=quarantine_s)
                         for row in rate_limit_rows:
                             if row.status == "disabled":
@@ -316,9 +512,15 @@ def finalize_probe(
                             row.last_error_detail = error_detail
                             row.last_failure_at = now
                             row.last_rate_limited_at = now
-                            row.consecutive_rate_limit_count = max(int(row.consecutive_rate_limit_count or 0), next_count)
+                            row.consecutive_rate_limit_count = max(
+                                int(row.consecutive_rate_limit_count or 0), next_count
+                            )
                             row.status = next_status
-                            row.quarantine_until = next_quarantine_until if next_status == "quarantined" else row.quarantine_until
+                            row.quarantine_until = (
+                                next_quarantine_until
+                                if next_status == "quarantined"
+                                else row.quarantine_until
+                            )
                     else:
                         pool.last_error_kind = error_kind
                         pool.last_error_detail = error_detail
@@ -335,12 +537,21 @@ def run_forever() -> None:
     poll_s = max(1, _env_int("CHANNEL_SERVICE_ACQUIRE_POLL_S", 3))
     retry_s = max(30, _env_int("CHANNEL_SERVICE_ACQUIRE_RETRY_S", 300))
     max_attempts = max(1, _env_int("CHANNEL_SERVICE_ACQUIRE_MAX_ATTEMPTS", 3))
-    rate_limit_cooldown_s = max(retry_s, _env_int("CHANNEL_SERVICE_ACQUIRE_RATE_LIMIT_COOLDOWN_S", 900))
-    rate_limit_max_retry_s = max(rate_limit_cooldown_s, _env_int("CHANNEL_SERVICE_ACQUIRE_RATE_LIMIT_MAX_RETRY_S", 14400))
-    error_max_retry_s = max(retry_s, _env_int("CHANNEL_SERVICE_ACQUIRE_MAX_RETRY_S", 1800))
+    rate_limit_cooldown_s = max(
+        retry_s, _env_int("CHANNEL_SERVICE_ACQUIRE_RATE_LIMIT_COOLDOWN_S", 900)
+    )
+    rate_limit_max_retry_s = max(
+        rate_limit_cooldown_s,
+        _env_int("CHANNEL_SERVICE_ACQUIRE_RATE_LIMIT_MAX_RETRY_S", 14400),
+    )
+    error_max_retry_s = max(
+        retry_s, _env_int("CHANNEL_SERVICE_ACQUIRE_MAX_RETRY_S", 1800)
+    )
     reroute_retry_s = max(15, _env_int("CHANNEL_SERVICE_POOL_REROUTE_RETRY_S", 45))
     default_use_proxy_pool = _env_bool("CHANNEL_SERVICE_ACQUIRE_USE_PROXY_POOL", False)
-    default_allow_transcript_api = _env_bool("CHANNEL_SERVICE_ACQUIRE_ALLOW_TRANSCRIPT_API", False)
+    default_allow_transcript_api = _env_bool(
+        "CHANNEL_SERVICE_ACQUIRE_ALLOW_TRANSCRIPT_API", False
+    )
     default_player_clients = _player_clients()
     use_scheduler = scheduler_enabled()
     multi_health_group_reroute = distinct_health_group_count() > 1
@@ -355,6 +566,15 @@ def run_forever() -> None:
     cooldown_until = 0.0
 
     while True:
+        processed_public_ingestion = False
+        if _env_bool("CHANNEL_SERVICE_PUBLIC_INGESTION_ENABLED", True):
+            processed_public_ingestion = process_next_public_ingestion_job(
+                worker_id=worker_id
+            )
+        processed_hot_media = False
+        if _env_bool("CHANNEL_SERVICE_HOT_MEDIA_ACQUIRER_ENABLED", True):
+            processed_hot_media = process_next_hot_media_job(worker_id=worker_id)
+
         job = None
         fallback_mode = False
         if use_scheduler:
@@ -369,6 +589,8 @@ def run_forever() -> None:
                 _sleep_until(cooldown_until, poll_s=poll_s)
             job = claim_next_probe(worker_id=worker_id)
             if job is None:
+                if processed_hot_media or processed_public_ingestion:
+                    continue
                 time.sleep(poll_s)
                 continue
         elif job is None:
@@ -377,8 +599,15 @@ def run_forever() -> None:
         pool = job.get("pool_id")
         pool_cfg = job.get("pool_profile") or {}
         scheduled_job = bool(job.get("scheduler_job_id"))
-        can_fast_reroute = use_scheduler and scheduled_job and not fallback_mode and multi_health_group_reroute
-        allow_transcript_api = bool(pool_cfg.get("allow_transcript_api", default_allow_transcript_api))
+        can_fast_reroute = (
+            use_scheduler
+            and scheduled_job
+            and not fallback_mode
+            and multi_health_group_reroute
+        )
+        allow_transcript_api = bool(
+            pool_cfg.get("allow_transcript_api", default_allow_transcript_api)
+        )
         use_proxy_pool = bool(pool_cfg.get("use_proxy_pool", default_use_proxy_pool))
         player_clients = list(pool_cfg.get("player_clients") or default_player_clients)
 
@@ -391,14 +620,16 @@ def run_forever() -> None:
         )
         try:
             with pool_execution_env(pool_cfg):
-                cues, transcript_source, _, resolved_vid, error_detail = fetch_transcript_cues(
-                    video_url=job["video_url"],
-                    video_id=job["video_id"],
-                    language=job["language"],
-                    prefer_auto=job["prefer_auto"],
-                    allow_transcript_api=allow_transcript_api,
-                    use_proxy_pool=use_proxy_pool,
-                    player_clients=player_clients,
+                cues, transcript_source, _, resolved_vid, error_detail = (
+                    fetch_transcript_cues(
+                        video_url=job["video_url"],
+                        video_id=job["video_id"],
+                        language=job["language"],
+                        prefer_auto=job["prefer_auto"],
+                        allow_transcript_api=allow_transcript_api,
+                        use_proxy_pool=use_proxy_pool,
+                        player_clients=player_clients,
+                    )
                 )
             if cues:
                 transcript_rows = _transcript_rows_from_cues(
@@ -475,7 +706,10 @@ def run_forever() -> None:
                     error_kind,
                     int(math.ceil(retry_after)),
                 )
-            if error_kind != "rate_limited" and int(job["attempt_count"]) >= max_attempts:
+            if (
+                error_kind != "rate_limited"
+                and int(job["attempt_count"]) >= max_attempts
+            ):
                 finalize_probe(
                     key=job["key"],
                     status="unavailable",
@@ -545,7 +779,11 @@ def run_forever() -> None:
                         )
                     status = "retry"
                 else:
-                    status = "unavailable" if int(job["attempt_count"]) >= max_attempts else "retry"
+                    status = (
+                        "unavailable"
+                        if int(job["attempt_count"]) >= max_attempts
+                        else "retry"
+                    )
                     if status == "retry":
                         retry_after = _retry_after_s(
                             attempt_count=int(job["attempt_count"]),

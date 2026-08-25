@@ -4,7 +4,7 @@ import os
 import json
 from functools import lru_cache
 from pathlib import Path
-from typing import Iterable, Dict, Any, List
+from typing import Iterable, Dict, Any
 from pinecone import Pinecone
 
 from ..configs.settings import settings_v2
@@ -14,6 +14,7 @@ from ..utils.vector_store import (
     upsert_qdrant_vectors,
     vector_store_backend,
 )
+
 
 def _detect_dim(idx) -> int:
     stats = idx.describe_index_stats() or {}
@@ -26,6 +27,7 @@ def _detect_dim(idx) -> int:
             return int(d)
     return int(os.getenv("EMBED_DIM", "3072"))
 
+
 def _json_safe(v: Any) -> Any:
     if v is None or isinstance(v, (str, int, float, bool)):
         return v
@@ -34,6 +36,7 @@ def _json_safe(v: Any) -> Any:
     if isinstance(v, dict):
         return {str(k): _json_safe(x) for k, x in v.items() if x is not None}
     return str(v)  # fallback (e.g., HttpUrl, datetime, Enum, pydantic types)
+
 
 @lru_cache(maxsize=1)
 def _channel_handle_to_id() -> Dict[str, str]:
@@ -47,7 +50,11 @@ def _channel_handle_to_id() -> Dict[str, str]:
     Configure by mounting the mapping JSON and setting:
       YT_CHANNEL_MAPPING=/path/to/channel_handle_to_id_mapping.json
     """
-    path = (os.getenv("YT_CHANNEL_MAPPING") or os.getenv("CHANNEL_HANDLE_TO_ID_MAPPING") or "").strip()
+    path = (
+        os.getenv("YT_CHANNEL_MAPPING")
+        or os.getenv("CHANNEL_HANDLE_TO_ID_MAPPING")
+        or ""
+    ).strip()
     if not path:
         return {}
     p = Path(path)
@@ -68,6 +75,7 @@ def _channel_handle_to_id() -> Dict[str, str]:
         out[hk] = cid
     return out
 
+
 # src/ingest_v2/pipelines/upsert_parents.py
 def upsert_parents(parents: Iterable[Dict[str, Any]]):
     ns = os.getenv("PINECONE_NAMESPACE", "videos")
@@ -81,10 +89,18 @@ def upsert_parents(parents: Iterable[Dict[str, Any]]):
 
         channel_name = p.get("channel_name")
         channel_handle = p.get("channel_handle")
-        if not channel_handle and isinstance(channel_name, str) and channel_name.strip().startswith("@"):
+        if (
+            not channel_handle
+            and isinstance(channel_name, str)
+            and channel_name.strip().startswith("@")
+        ):
             channel_handle = channel_name.strip()
         channel_id = p.get("channel_id")
-        if not channel_id and isinstance(channel_handle, str) and channel_handle.strip():
+        if (
+            not channel_id
+            and isinstance(channel_handle, str)
+            and channel_handle.strip()
+        ):
             channel_id = _channel_handle_to_id().get(channel_handle.strip())
 
         speaker_map = p.get("speaker_map")
@@ -101,6 +117,7 @@ def upsert_parents(parents: Iterable[Dict[str, Any]]):
 
         md = {
             "parent_id": pid,
+            "media_id": p.get("media_id"),
             "title": p.get("title"),
             "description": p.get("description"),
             "channel_name": channel_name,
@@ -132,11 +149,13 @@ def upsert_parents(parents: Iterable[Dict[str, Any]]):
         vals = [0.0] * dim
         vals[0] = 1e-6
 
-        vecs.append({
-            "id": point_id,
-            "values": vals,
-            "metadata": _json_safe(md),
-        })
+        vecs.append(
+            {
+                "id": point_id,
+                "values": vals,
+                "metadata": _json_safe(md),
+            }
+        )
 
     if not vecs:
         return

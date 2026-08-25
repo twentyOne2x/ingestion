@@ -3,11 +3,11 @@ from __future__ import annotations
 import json
 import math
 import os
+import re
 import uuid
 import zipfile
 from dataclasses import dataclass
-from datetime import date
-from datetime import timedelta
+from datetime import date, timedelta
 from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
@@ -17,16 +17,15 @@ from qdrant_client.http import models as qm
 from sqlalchemy import select
 
 from src.ingest_v2.pipelines.index_youtube_captions import (
-    _fetch_transcript_api_cues,
     _coerce_watch_url,
+    _fetch_transcript_api_cues,
     _normalize_channel_url,
-    _resolve_channel_id_via_api,
     _require_ytdlp,
+    _resolve_channel_id_via_api,
     _uploads_playlist_id,
     _yt_watch_url,
     _ytapi_get,
     _ytdlp_extra_opts,
-    fetch_transcript_cues,
     index_youtube_video_captions,
 )
 from src.ingest_v2.pipelines.run_all_components.namespace import load_namespace_channels
@@ -36,10 +35,14 @@ from .channel_service_store import (
     ChannelPack,
     ChannelQuote,
     CheckoutSessionRecord,
+    CommerceScope,
     PackBatch,
     PackVideo,
     QuoteVideo,
     TranscriptProbe,
+    commerce_ownership_values,
+    commerce_scope_predicates,
+    require_commerce_record_scope,
     utcnow,
 )
 from .youtube import _parse_duration_seconds
@@ -55,6 +58,14 @@ def new_id(prefix: str) -> str:
 def payment_required() -> bool:
     raw = (os.getenv("CHANNEL_SERVICE_REQUIRE_PAYMENT") or "").strip().lower()
     return raw in {"1", "true", "yes", "on"}
+
+
+def enforce_direct_order_allowed() -> None:
+    """Keep the public order route from racing the settled-payment worker."""
+    if payment_required():
+        raise ValueError(
+            "live payment orders must be created from the settled x402 work outbox"
+        )
 
 
 def inline_index_enabled() -> bool:
@@ -102,7 +113,9 @@ def _write_probe_artifact(
     transcript_source: str,
     transcript_rows: List[dict],
 ) -> str:
-    path = _probe_artifact_path(video_id=video_id, language=language, prefer_auto=prefer_auto)
+    path = _probe_artifact_path(
+        video_id=video_id, language=language, prefer_auto=prefer_auto
+    )
     payload = {
         "video_id": video_id,
         "language": language,
@@ -145,10 +158,18 @@ def load_transcript_probes(
     language: str,
     prefer_auto: bool,
 ) -> Dict[str, TranscriptProbe]:
-    keys = [transcript_probe_key(video_id, language, prefer_auto) for video_id in video_ids if video_id]
+    keys = [
+        transcript_probe_key(video_id, language, prefer_auto)
+        for video_id in video_ids
+        if video_id
+    ]
     if not keys:
         return {}
-    rows = session.execute(select(TranscriptProbe).where(TranscriptProbe.key.in_(keys))).scalars().all()
+    rows = (
+        session.execute(select(TranscriptProbe).where(TranscriptProbe.key.in_(keys)))
+        .scalars()
+        .all()
+    )
     return {row.key: row for row in rows}
 
 
@@ -159,7 +180,11 @@ def ensure_transcript_probe(
     language: str,
     prefer_auto: bool,
 ) -> TranscriptProbe:
-    video_id = row.video_id if hasattr(row, "video_id") else str(row.get("video_id") or "").strip()
+    video_id = (
+        row.video_id
+        if hasattr(row, "video_id")
+        else str(row.get("video_id") or "").strip()
+    )
     if not video_id:
         raise ValueError("video_id is required for transcript acquisition")
     key = transcript_probe_key(video_id, language, prefer_auto)
@@ -170,7 +195,11 @@ def ensure_transcript_probe(
             probe.next_attempt_at = utcnow()
         return probe
     video_url = row.video_url if hasattr(row, "video_url") else row.get("video_url")
-    channel_handle = row.channel_handle if hasattr(row, "channel_handle") else row.get("channel_handle")
+    channel_handle = (
+        row.channel_handle
+        if hasattr(row, "channel_handle")
+        else row.get("channel_handle")
+    )
     probe = TranscriptProbe(
         key=key,
         video_id=video_id,
@@ -241,7 +270,9 @@ def _catalog_supports_handle(*, namespace: str, channel_handle: Optional[str]) -
     normalized = _normalize_channel_handle(channel_handle)
     if not normalized:
         return False
-    supported = {_normalize_channel_handle(item) for item in load_namespace_channels(namespace)}
+    supported = {
+        _normalize_channel_handle(item) for item in load_namespace_channels(namespace)
+    }
     return normalized in supported
 
 
@@ -252,7 +283,9 @@ def _channel_handle_is_restricted(channel_handle: Optional[str]) -> bool:
     return any(term in normalized for term in _RESTRICTED_HANDLE_TERMS)
 
 
-def _normalize_published_bound(value: Optional[str], *, field_name: str) -> Optional[str]:
+def _normalize_published_bound(
+    value: Optional[str], *, field_name: str
+) -> Optional[str]:
     raw = str(value or "").strip()
     if not raw:
         return None
@@ -315,17 +348,26 @@ def _indexed_channel_candidates(
             "videos": [],
         }
 
-    must_conditions = [qm.FieldCondition(key="node_type", match=qm.MatchValue(value="parent"))]
+    must_conditions = [
+        qm.FieldCondition(key="node_type", match=qm.MatchValue(value="parent"))
+    ]
     channel_id = _channel_handle_to_id_map().get(normalized_handle.lower())
     if channel_id:
-        must_conditions.append(qm.FieldCondition(key="channel_id", match=qm.MatchValue(value=channel_id)))
+        must_conditions.append(
+            qm.FieldCondition(key="channel_id", match=qm.MatchValue(value=channel_id))
+        )
     else:
         channel_name = normalized_handle.lstrip("@")
         must_conditions.append(
             qm.Filter(
                 should=[
-                    qm.FieldCondition(key="channel_handle", match=qm.MatchValue(value=normalized_handle)),
-                    qm.FieldCondition(key="channel_name", match=qm.MatchValue(value=channel_name)),
+                    qm.FieldCondition(
+                        key="channel_handle",
+                        match=qm.MatchValue(value=normalized_handle),
+                    ),
+                    qm.FieldCondition(
+                        key="channel_name", match=qm.MatchValue(value=channel_name)
+                    ),
                 ]
             )
         )
@@ -361,8 +403,10 @@ def _indexed_channel_candidates(
                     "video_id": video_id,
                     "title": payload.get("title") or video_id,
                     "description": payload.get("description") or "",
-                    "channel_name": payload.get("channel_name") or normalized_handle.lstrip("@"),
-                    "channel_handle": payload.get("channel_handle") or normalized_handle,
+                    "channel_name": payload.get("channel_name")
+                    or normalized_handle.lstrip("@"),
+                    "channel_handle": payload.get("channel_handle")
+                    or normalized_handle,
                     "published_at": published_day,
                     "thumbnail_url": payload.get("thumbnail_url"),
                     "video_url": payload.get("url") or _yt_watch_url(video_id),
@@ -402,7 +446,11 @@ def resolve_channel_summary(channel_handle: str, api_key: str) -> dict:
     channel_id = _resolve_channel_id_via_api(channel_handle, api_key=api_key)
     if not channel_id:
         raise ValueError(f"Could not resolve channel {channel_handle}")
-    resp = _ytapi_get("channels", api_key=api_key, params={"part": "snippet", "id": channel_id, "maxResults": 1})
+    resp = _ytapi_get(
+        "channels",
+        api_key=api_key,
+        params={"part": "snippet", "id": channel_id, "maxResults": 1},
+    )
     items = resp.get("items") or []
     if not items:
         raise ValueError(f"Could not load channel metadata for {channel_handle}")
@@ -440,19 +488,22 @@ def list_channel_candidates_via_ytdlp(
 
     with YDL(ydl_opts) as ydl:
         try:
-            info = ydl.extract_info(_normalize_channel_url(normalized_handle), download=False)
+            info = ydl.extract_info(
+                _normalize_channel_url(normalized_handle), download=False
+            )
         except Exception as exc:
             raise ValueError(f"Could not resolve channel {normalized_handle}") from exc
 
     entries = info.get("entries") or []
     channel_id = str(info.get("channel_id") or info.get("id") or "").strip() or None
-    channel_name = (
-        str(info.get("channel") or info.get("uploader") or info.get("title") or "").strip()
-        or normalized_handle.lstrip("@")
-    )
+    channel_name = str(
+        info.get("channel") or info.get("uploader") or info.get("title") or ""
+    ).strip() or normalized_handle.lstrip("@")
     resolved_handle = normalized_handle
     channel_url = str(info.get("channel_url") or info.get("webpage_url") or "").strip()
-    extracted_handle = _normalize_channel_handle(info.get("uploader_id")) or _extract_handle_from_channel_url(channel_url)
+    extracted_handle = _normalize_channel_handle(
+        info.get("uploader_id")
+    ) or _extract_handle_from_channel_url(channel_url)
     if normalized_handle.startswith("@"):
         if not extracted_handle:
             raise ValueError(f"Could not resolve channel {normalized_handle}")
@@ -486,13 +537,16 @@ def list_channel_candidates_via_ytdlp(
                 "video_id": video_id,
                 "title": entry.get("title") or video_id,
                 "description": entry.get("description") or "",
-                "channel_name": entry.get("channel") or entry.get("uploader") or channel_name,
+                "channel_name": entry.get("channel")
+                or entry.get("uploader")
+                or channel_name,
                 "channel_handle": resolved_handle,
                 "published_at": published_at,
                 "thumbnail_url": thumbnail,
                 "video_url": watch_url,
                 "duration_s": float(entry.get("duration") or 0.0),
-                "channel_id": str(entry.get("channel_id") or channel_id or "").strip() or None,
+                "channel_id": str(entry.get("channel_id") or channel_id or "").strip()
+                or None,
             }
         )
         if len(videos) >= int(target_count):
@@ -528,7 +582,9 @@ def list_channel_candidates(
         published_before=published_before,
     )
     if _channel_handle_is_restricted(channel_handle):
-        raise ValueError(f"Channel handle {channel_handle} is not allowed for this transcript-pack offer")
+        raise ValueError(
+            f"Channel handle {channel_handle} is not allowed for this transcript-pack offer"
+        )
     indexed_fallback = _indexed_channel_candidates(
         namespace=namespace,
         channel_handle=channel_handle,
@@ -536,7 +592,9 @@ def list_channel_candidates(
         published_after=published_after,
         published_before=published_before,
     )
-    if indexed_fallback["videos"] and _catalog_supports_handle(namespace=namespace, channel_handle=channel_handle):
+    if indexed_fallback["videos"] and _catalog_supports_handle(
+        namespace=namespace, channel_handle=channel_handle
+    ):
         return indexed_fallback
 
     ytdlp_candidates: Optional[dict] = None
@@ -562,7 +620,9 @@ def list_channel_candidates(
             summary = resolve_channel_summary(channel_handle, api_key)
             uploads = _uploads_playlist_id(summary["channel_id"], api_key=api_key)
             if not uploads:
-                raise ValueError(f"Could not resolve uploads playlist for {channel_handle}")
+                raise ValueError(
+                    f"Could not resolve uploads playlist for {channel_handle}"
+                )
         except Exception:
             if indexed_fallback["videos"]:
                 return indexed_fallback
@@ -587,14 +647,28 @@ def list_channel_candidates(
                     snippet = item.get("snippet") or {}
                     resource = snippet.get("resourceId") or {}
                     video_id = str(resource.get("videoId") or "").strip()
-                    published_at = str(snippet.get("publishedAt") or "").strip()[:10] or None
-                    if published_after and published_at and published_at < published_after:
+                    published_at = (
+                        str(snippet.get("publishedAt") or "").strip()[:10] or None
+                    )
+                    if (
+                        published_after
+                        and published_at
+                        and published_at < published_after
+                    ):
                         continue
-                    if published_before and published_at and published_at > published_before:
+                    if (
+                        published_before
+                        and published_at
+                        and published_at > published_before
+                    ):
                         continue
                     if not video_id:
                         continue
-                    thumb = (snippet.get("thumbnails") or {}).get("high") or (snippet.get("thumbnails") or {}).get("default") or {}
+                    thumb = (
+                        (snippet.get("thumbnails") or {}).get("high")
+                        or (snippet.get("thumbnails") or {}).get("default")
+                        or {}
+                    )
                     items.append(
                         {
                             "video_id": video_id,
@@ -620,7 +694,10 @@ def list_channel_candidates(
                     resp = _ytapi_get(
                         "videos",
                         api_key=api_key,
-                        params={"part": "contentDetails,snippet", "id": ",".join(chunk)},
+                        params={
+                            "part": "contentDetails,snippet",
+                            "id": ",".join(chunk),
+                        },
                     )
                     by_id = {}
                     for item in resp.get("items") or []:
@@ -630,10 +707,17 @@ def list_channel_candidates(
                         if not item:
                             continue
                         snippet = item.get("snippet") or {}
-                        row["published_at"] = (str(snippet.get("publishedAt") or "").strip()[:10] or row["published_at"])
-                        row["channel_name"] = snippet.get("channelTitle") or row["channel_name"]
+                        row["published_at"] = (
+                            str(snippet.get("publishedAt") or "").strip()[:10]
+                            or row["published_at"]
+                        )
+                        row["channel_name"] = (
+                            snippet.get("channelTitle") or row["channel_name"]
+                        )
                         row["duration_s"] = float(
-                            _parse_duration_seconds((item.get("contentDetails") or {}).get("duration"))
+                            _parse_duration_seconds(
+                                (item.get("contentDetails") or {}).get("duration")
+                            )
                         )
                         thumbs = snippet.get("thumbnails") or {}
                         row["thumbnail_url"] = (
@@ -682,7 +766,9 @@ def indexed_parent_rows(video_ids: List[str], namespace: str) -> Dict[str, dict]
                 break
             for point in batch:
                 payload = dict(getattr(point, "payload", None) or {})
-                parent_id = str(payload.get("parent_id") or payload.get("video_id") or "").strip()
+                parent_id = str(
+                    payload.get("parent_id") or payload.get("video_id") or ""
+                ).strip()
                 if not parent_id:
                     continue
                 rows[parent_id] = payload
@@ -693,7 +779,9 @@ def indexed_parent_rows(video_ids: List[str], namespace: str) -> Dict[str, dict]
     return rows
 
 
-def child_segments_by_parent(parent_ids: List[str], namespace: str) -> Dict[str, List[dict]]:
+def child_segments_by_parent(
+    parent_ids: List[str], namespace: str
+) -> Dict[str, List[dict]]:
     backend = (os.getenv("VECTOR_STORE", "pinecone") or "pinecone").strip().lower()
     if backend != "qdrant":
         return {}
@@ -732,7 +820,12 @@ def child_segments_by_parent(parent_ids: List[str], namespace: str) -> Dict[str,
     except Exception:
         return {}
     for values in out.values():
-        values.sort(key=lambda row: (float(row.get("start_s") or 0.0), str(row.get("segment_id") or "")))
+        values.sort(
+            key=lambda row: (
+                float(row.get("start_s") or 0.0),
+                str(row.get("segment_id") or ""),
+            )
+        )
     return out
 
 
@@ -763,7 +856,9 @@ def inline_probe_cap() -> int:
     return max(0, _env_int("CHANNEL_SERVICE_INLINE_PROBE_CAP", 12))
 
 
-def candidate_discovery_target(*, max_videos: int, existing_video_count: int, catalog_supported: bool) -> int:
+def candidate_discovery_target(
+    *, max_videos: int, existing_video_count: int, catalog_supported: bool
+) -> int:
     baseline = max_videos + existing_video_count
     if catalog_supported:
         return min(200, max(1, baseline))
@@ -784,7 +879,9 @@ def maybe_inline_transcript_api_probe(
     video_id = str(row.get("video_id") or "").strip()
     if not video_id:
         return None
-    cues = _fetch_transcript_api_cues(video_id=video_id, language=language, prefer_auto=prefer_auto)
+    cues = _fetch_transcript_api_cues(
+        video_id=video_id, language=language, prefer_auto=prefer_auto
+    )
     if not cues:
         return None
 
@@ -824,7 +921,11 @@ def maybe_inline_transcript_api_probe(
 
 
 def pending_reason_for_probe(probe: Optional[TranscriptProbe]) -> str:
-    detail = (probe.error_detail or "").lower() if probe is not None and probe.error_detail else ""
+    detail = (
+        (probe.error_detail or "").lower()
+        if probe is not None and probe.error_detail
+        else ""
+    )
     if "rate_limited" in detail:
         return "rate_limited_retry_scheduled"
     if probe is not None and probe.status == "retry":
@@ -852,7 +953,9 @@ def _batch_sizes(existing_batch_count: int) -> tuple[int, int]:
     return (10, 25) if existing_batch_count <= 0 else (25, 25)
 
 
-def build_batch_plan(*, included_rows: List[dict], existing_batch_count: int, per_video: int) -> list:
+def build_batch_plan(
+    *, included_rows: List[dict], existing_batch_count: int, per_video: int
+) -> list:
     first_cap, later_cap = _batch_sizes(existing_batch_count)
     plan = []
     offset = 0
@@ -877,7 +980,9 @@ def build_batch_plan(*, included_rows: List[dict], existing_batch_count: int, pe
     return plan
 
 
-def quote_status_for_rows(*, included_rows: List[dict], pending_rows: List[dict]) -> str:
+def quote_status_for_rows(
+    *, included_rows: List[dict], pending_rows: List[dict]
+) -> str:
     if included_rows:
         return "open"
     if pending_rows:
@@ -911,6 +1016,7 @@ class QuotePlan:
 def plan_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     channel_handle: str,
     namespace: str,
     mode: str,
@@ -927,16 +1033,28 @@ def plan_quote(
     existing_video_ids: set[str] = set()
     existing_batch_count = 0
     if pack_id:
-        existing_pack = session.get(ChannelPack, pack_id)
+        existing_pack = session.execute(
+            select(ChannelPack).where(
+                ChannelPack.id == pack_id,
+                *commerce_scope_predicates(ChannelPack, commerce_scope),
+            )
+        ).scalar_one_or_none()
         if existing_pack is None:
             raise ValueError(f"Pack {pack_id} was not found")
         if existing_pack.status not in {"draft", "queued", "partial", "ready"}:
             raise ValueError(f"Pack {pack_id} is not available for expansion")
         existing_batch_count = int(existing_pack.batch_count or 0)
-        rows = session.execute(select(PackVideo.video_id).where(PackVideo.pack_id == pack_id)).all()
+        rows = session.execute(
+            select(PackVideo.video_id).where(
+                PackVideo.pack_id == pack_id,
+                *commerce_scope_predicates(PackVideo, commerce_scope),
+            )
+        ).all()
         existing_video_ids = {str(video_id) for (video_id,) in rows if video_id}
 
-    catalog_supported = _catalog_supports_handle(namespace=namespace, channel_handle=channel_handle)
+    catalog_supported = _catalog_supports_handle(
+        namespace=namespace, channel_handle=channel_handle
+    )
     discovery_target = candidate_discovery_target(
         max_videos=max_videos,
         existing_video_count=len(existing_video_ids),
@@ -950,8 +1068,12 @@ def plan_quote(
         published_after=published_after,
         published_before=published_before,
     )
-    discovery_rows = [row for row in channel["videos"] if row["video_id"] not in existing_video_ids]
-    indexed_rows = indexed_parent_rows([row["video_id"] for row in discovery_rows], namespace=namespace)
+    discovery_rows = [
+        row for row in channel["videos"] if row["video_id"] not in existing_video_ids
+    ]
+    indexed_rows = indexed_parent_rows(
+        [row["video_id"] for row in discovery_rows], namespace=namespace
+    )
     probes = load_transcript_probes(
         session=session,
         video_ids=[row["video_id"] for row in discovery_rows],
@@ -1008,8 +1130,12 @@ def plan_quote(
             )
             inline_probe_budget -= 1
             if probe_is_ready(inline_probe):
-                probes[transcript_probe_key(row["video_id"], language, prefer_auto)] = inline_probe
-                payload["transcript_source"] = inline_probe.transcript_source or "probe_cache"
+                probes[transcript_probe_key(row["video_id"], language, prefer_auto)] = (
+                    inline_probe
+                )
+                payload["transcript_source"] = (
+                    inline_probe.transcript_source or "probe_cache"
+                )
                 payload["indexed_parent_id"] = None
                 payload["status"] = "included"
                 payload["batch_index"] = 0
@@ -1032,8 +1158,12 @@ def plan_quote(
             continue
 
         if active_probe_count < queue_cap:
-            probe = ensure_transcript_probe(session=session, row=payload, language=language, prefer_auto=prefer_auto)
-            probes[transcript_probe_key(payload["video_id"], language, prefer_auto)] = probe
+            probe = ensure_transcript_probe(
+                session=session, row=payload, language=language, prefer_auto=prefer_auto
+            )
+            probes[transcript_probe_key(payload["video_id"], language, prefer_auto)] = (
+                probe
+            )
             active_probe_count += 1
             reason = pending_reason_for_probe(probe)
             detail = probe.error_detail
@@ -1053,7 +1183,6 @@ def plan_quote(
         existing_batch_count=existing_batch_count,
         per_video=per_video,
     )
-    batch_by_position: Dict[int, int] = {}
     offset = 0
     for batch in batch_plan:
         batch_index = int(batch["batch_index"])
@@ -1062,12 +1191,20 @@ def plan_quote(
             row["batch_index"] = batch_index
         offset += count
 
-    current_batch_index = batch_plan[0]["batch_index"] if batch_plan else (existing_batch_count + 1)
+    current_batch_index = (
+        batch_plan[0]["batch_index"] if batch_plan else (existing_batch_count + 1)
+    )
     current_batch_amount_cents = batch_plan[0]["amount_cents"] if batch_plan else 0
-    current_batch_video_count = batch_plan[0]["billable_video_count"] if batch_plan else 0
-    estimated_ready_minutes = batch_plan[0]["estimated_ready_minutes"] if batch_plan else 0
+    current_batch_video_count = (
+        batch_plan[0]["billable_video_count"] if batch_plan else 0
+    )
+    estimated_ready_minutes = (
+        batch_plan[0]["estimated_ready_minutes"] if batch_plan else 0
+    )
     eta_confidence = batch_plan[0]["eta_confidence"] if batch_plan else "low"
-    recommended_size = min(current_batch_video_count, 10 if existing_batch_count == 0 else 25)
+    recommended_size = min(
+        current_batch_video_count, 10 if existing_batch_count == 0 else 25
+    )
 
     return QuotePlan(
         channel_handle=channel["channel_handle"],
@@ -1095,13 +1232,18 @@ def plan_quote(
 def persist_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     request_payload: dict,
     plan: QuotePlan,
     planning_latency_ms: int = 0,
 ) -> ChannelQuote:
+    ownership = commerce_ownership_values(commerce_scope)
     quote = ChannelQuote(
+        **ownership,
         id=new_id("quote"),
-        status=quote_status_for_rows(included_rows=plan.included_rows, pending_rows=plan.pending_rows),
+        status=quote_status_for_rows(
+            included_rows=plan.included_rows, pending_rows=plan.pending_rows
+        ),
         mode=plan.mode,
         namespace=plan.namespace,
         channel_handle=plan.channel_handle,
@@ -1127,15 +1269,20 @@ def persist_quote(
             "current_batch_amount_cents": plan.current_batch_amount_cents,
             "total_included_amount_cents": plan.total_included_amount_cents,
         },
+        commerce_json={},
         expires_at=utcnow() + timedelta(minutes=30),
     )
     session.add(quote)
     session.flush()
 
-    all_rows = sorted(plan.included_rows + plan.pending_rows + plan.excluded_rows, key=lambda row: row["position"])
+    all_rows = sorted(
+        plan.included_rows + plan.pending_rows + plan.excluded_rows,
+        key=lambda row: row["position"],
+    )
     for row in all_rows:
         session.add(
             QuoteVideo(
+                **ownership,
                 quote_id=quote.id,
                 position=int(row["position"]),
                 batch_index=int(row.get("batch_index") or 0),
@@ -1161,6 +1308,8 @@ def persist_quote(
 
 
 def serialize_quote(quote: ChannelQuote) -> dict:
+    from .channel_service_commerce import public_commerce_projection
+
     included_rows = []
     pending_rows = []
     excluded_rows = []
@@ -1199,6 +1348,7 @@ def serialize_quote(quote: ChannelQuote) -> dict:
         "ok": True,
         "quote_id": quote.id,
         "status": quote.status,
+        "commerce": public_commerce_projection(quote),
         "channel": {
             "handle": quote.channel_handle,
             "channel_id": quote.resolved_channel_id,
@@ -1239,7 +1389,9 @@ def serialize_quote(quote: ChannelQuote) -> dict:
     }
 
 
-def refresh_quote_state(*, session, quote: ChannelQuote, enqueue_missing: bool) -> ChannelQuote:
+def refresh_quote_state(
+    *, session, quote: ChannelQuote, enqueue_missing: bool
+) -> ChannelQuote:
     language = str((quote.request_json or {}).get("language") or "en")
     prefer_auto = bool((quote.request_json or {}).get("prefer_auto", True))
     existing_batch_count = max(0, int(quote.current_batch_index or 1) - 1)
@@ -1284,7 +1436,9 @@ def refresh_quote_state(*, session, quote: ChannelQuote, enqueue_missing: bool) 
             row.included = True
             row.status = "included"
             row.reason = None
-            row.transcript_source = probe.transcript_source or row.transcript_source or "probe_cache"
+            row.transcript_source = (
+                probe.transcript_source or row.transcript_source or "probe_cache"
+            )
             payload["transcript_source"] = row.transcript_source
             included_rows.append(payload)
             continue
@@ -1307,14 +1461,18 @@ def refresh_quote_state(*, session, quote: ChannelQuote, enqueue_missing: bool) 
             continue
 
         if enqueue_missing and active_probe_count < queue_cap:
-            probe = ensure_transcript_probe(session=session, row=row, language=language, prefer_auto=prefer_auto)
+            probe = ensure_transcript_probe(
+                session=session, row=row, language=language, prefer_auto=prefer_auto
+            )
             probes[transcript_probe_key(row.video_id, language, prefer_auto)] = probe
             active_probe_count += 1
             row.reason = pending_reason_for_probe(probe)
             row.detail = probe.error_detail
         else:
             row.reason = "awaiting_queue_slot"
-            row.detail = f"acquisition queue capped at {queue_cap} videos for this quote"
+            row.detail = (
+                f"acquisition queue capped at {queue_cap} videos for this quote"
+            )
         row.included = False
         row.status = "pending_acquisition"
         payload["detail"] = row.detail
@@ -1334,20 +1492,34 @@ def refresh_quote_state(*, session, quote: ChannelQuote, enqueue_missing: bool) 
         for payload in included_rows[offset : offset + count]:
             payload["batch_index"] = int(batch["batch_index"])
         offset += count
-    included_by_position = {int(payload["position"]): payload for payload in included_rows}
+    included_by_position = {
+        int(payload["position"]): payload for payload in included_rows
+    }
     for row in quote.videos:
-        row.batch_index = int(included_by_position.get(int(row.position), {}).get("batch_index") or 0)
+        row.batch_index = int(
+            included_by_position.get(int(row.position), {}).get("batch_index") or 0
+        )
 
-    quote.status = quote_status_for_rows(included_rows=included_rows, pending_rows=pending_rows)
+    quote.status = quote_status_for_rows(
+        included_rows=included_rows, pending_rows=pending_rows
+    )
     quote.included_video_count = len(included_rows)
     quote.excluded_video_count = len(excluded_rows)
     quote.per_video_cents = per_video
     quote.batch_plan_json = batch_plan
     quote.total_included_amount_cents = len(included_rows) * per_video
-    quote.current_batch_index = batch_plan[0]["batch_index"] if batch_plan else (existing_batch_count + 1)
-    quote.current_batch_amount_cents = batch_plan[0]["amount_cents"] if batch_plan else 0
-    quote.current_batch_video_count = batch_plan[0]["billable_video_count"] if batch_plan else 0
-    quote.estimated_ready_minutes = batch_plan[0]["estimated_ready_minutes"] if batch_plan else 0
+    quote.current_batch_index = (
+        batch_plan[0]["batch_index"] if batch_plan else (existing_batch_count + 1)
+    )
+    quote.current_batch_amount_cents = (
+        batch_plan[0]["amount_cents"] if batch_plan else 0
+    )
+    quote.current_batch_video_count = (
+        batch_plan[0]["billable_video_count"] if batch_plan else 0
+    )
+    quote.estimated_ready_minutes = (
+        batch_plan[0]["estimated_ready_minutes"] if batch_plan else 0
+    )
     quote.eta_confidence = batch_plan[0]["eta_confidence"] if batch_plan else "low"
     quote.recommended_starter_batch_size = (
         min(quote.current_batch_video_count, 10 if existing_batch_count == 0 else 25)
@@ -1366,9 +1538,16 @@ def refresh_quote_state(*, session, quote: ChannelQuote, enqueue_missing: bool) 
     return quote
 
 
-def create_checkout_session(*, session, quote_ids: List[str], idempotency_key: str) -> CheckoutSessionRecord:
+def create_checkout_session(
+    *,
+    session,
+    commerce_scope: CommerceScope,
+    quote_ids: List[str],
+    idempotency_key: str,
+) -> CheckoutSessionRecord:
     return create_checkout_session_with_payment(
         session=session,
+        commerce_scope=commerce_scope,
         quote_ids=quote_ids,
         idempotency_key=idempotency_key,
     )
@@ -1377,23 +1556,41 @@ def create_checkout_session(*, session, quote_ids: List[str], idempotency_key: s
 def create_checkout_session_with_payment(
     *,
     session,
+    commerce_scope: CommerceScope,
     quote_ids: List[str],
     idempotency_key: str,
     payment_provider: str = "x402",
     payment_status: Optional[str] = None,
     line_item_amount_overrides: Optional[Dict[str, int]] = None,
+    refresh_quotes: bool = True,
 ) -> CheckoutSessionRecord:
+    normalized_quote_ids = list(dict.fromkeys(str(item) for item in quote_ids))
+    if normalized_quote_ids != list(quote_ids):
+        raise ValueError("quote_ids must be unique and preserve their exact order")
+    ownership = commerce_ownership_values(commerce_scope)
     existing = session.execute(
-        select(CheckoutSessionRecord).where(CheckoutSessionRecord.idempotency_key == idempotency_key)
+        select(CheckoutSessionRecord).where(
+            CheckoutSessionRecord.idempotency_key == idempotency_key,
+            *commerce_scope_predicates(CheckoutSessionRecord, commerce_scope),
+        )
     ).scalar_one_or_none()
     if existing is not None:
+        if list(existing.quote_ids_json or []) != normalized_quote_ids:
+            raise ValueError("idempotency key already exists with different quote ids")
         return existing
 
-    quotes = session.execute(
-        select(ChannelQuote).where(ChannelQuote.id.in_(quote_ids))
-    ).scalars().all()
+    quotes = (
+        session.execute(
+            select(ChannelQuote).where(
+                ChannelQuote.id.in_(normalized_quote_ids),
+                *commerce_scope_predicates(ChannelQuote, commerce_scope),
+            )
+        )
+        .scalars()
+        .all()
+    )
     found_ids = {quote.id for quote in quotes}
-    missing = [quote_id for quote_id in quote_ids if quote_id not in found_ids]
+    missing = [quote_id for quote_id in normalized_quote_ids if quote_id not in found_ids]
     if missing:
         raise ValueError(f"Unknown quote ids: {', '.join(missing)}")
 
@@ -1401,11 +1598,16 @@ def create_checkout_session_with_payment(
     line_items = []
     line_item_amount_overrides = dict(line_item_amount_overrides or {})
     for quote in quotes:
-        refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
+        if refresh_quotes:
+            refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
         if quote.status != "open" or int(quote.current_batch_video_count or 0) <= 0:
-            raise ValueError(f"Quote {quote.id} does not have a billable starter batch yet")
+            raise ValueError(
+                f"Quote {quote.id} does not have a billable starter batch yet"
+            )
         quoted_amount_cents = int(quote.current_batch_amount_cents or 0)
-        charged_amount_cents = int(line_item_amount_overrides.get(quote.id, quoted_amount_cents))
+        charged_amount_cents = int(
+            line_item_amount_overrides.get(quote.id, quoted_amount_cents)
+        )
         line_items.append(
             {
                 "quote_id": quote.id,
@@ -1420,15 +1622,17 @@ def create_checkout_session_with_payment(
         total += charged_amount_cents
 
     record = CheckoutSessionRecord(
+        **ownership,
         id=new_id("checkout"),
         status="open",
         idempotency_key=idempotency_key,
         currency="USD",
         total_amount_cents=total,
-        quote_ids_json=list(quote_ids),
+        quote_ids_json=normalized_quote_ids,
         line_items_json=line_items,
         payment_provider=payment_provider,
-        payment_status=payment_status or ("requires_payment" if payment_required() else "development_bypass"),
+        payment_status=payment_status
+        or ("requires_payment" if payment_required() else "development_bypass"),
     )
     session.add(record)
     session.flush()
@@ -1473,15 +1677,24 @@ def _write_ndjson(path: Path, rows: List[dict]) -> None:
 
 def _write_bundle_archive(*, root: Path, pack_id: str) -> Path:
     archive_path = root / f"{pack_id}.bundle.zip"
-    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-        for name in ("manifest.json", "videos.ndjson", "links.ndjson", "transcripts.ndjson"):
+    with zipfile.ZipFile(
+        archive_path, "w", compression=zipfile.ZIP_DEFLATED
+    ) as archive:
+        for name in (
+            "manifest.json",
+            "videos.ndjson",
+            "links.ndjson",
+            "transcripts.ndjson",
+        ):
             file_path = root / name
             if file_path.exists():
                 archive.write(file_path, arcname=name)
     return archive_path
 
 
-def _transcript_rows_from_cues(*, row: PackVideo | QuoteVideo | dict, cues: List[Any], source: str) -> List[dict]:
+def _transcript_rows_from_cues(
+    *, row: PackVideo | QuoteVideo | dict, cues: List[Any], source: str
+) -> List[dict]:
     video_id = row.video_id if hasattr(row, "video_id") else row.get("video_id")
     transcripts = []
     for idx, cue in enumerate(cues, start=1):
@@ -1507,16 +1720,50 @@ def _build_pack_artifacts(
     language: str,
     prefer_auto: bool,
     transcript_rows_by_video: Optional[Dict[str, List[dict]]] = None,
+    artifact_generation: Optional[str] = None,
+    manifest_status: Optional[str] = None,
+    batch_status: Optional[str] = None,
+    authoritative_pack_rows: Optional[Iterable[PackVideo]] = None,
 ) -> dict:
-    pack_rows = session.execute(
-        select(PackVideo).where(PackVideo.pack_id == pack.id).order_by(PackVideo.position)
-    ).scalars().all()
+    if authoritative_pack_rows is None:
+        pack_rows = (
+            session.execute(
+                select(PackVideo)
+                .join(PackBatch, PackBatch.id == PackVideo.batch_id)
+                .where(PackVideo.pack_id == pack.id)
+                .order_by(
+                    PackBatch.batch_index.asc(),
+                    PackVideo.position.asc(),
+                    PackVideo.id.asc(),
+                )
+            )
+            .scalars()
+            .all()
+        )
+    else:
+        # Paid publication supplies the exact ordered ORM snapshot that was
+        # hashed with its authoritative PostgreSQL transcript rows. Re-querying
+        # here would admit a concurrent S -> S' -> S ABA and could fall back to
+        # Qdrant for a row outside the frozen generation.
+        pack_rows = list(authoritative_pack_rows)
     ready_rows = [row for row in pack_rows if row.status == "ready"]
-    indexed_rows = [row for row in ready_rows if row.indexed_parent_id]
-    parent_ids = [str(row.indexed_parent_id) for row in indexed_rows if row.indexed_parent_id]
-    segments = child_segments_by_parent(parent_ids, namespace=pack.namespace) if indexed_rows else {}
     transcript_rows_by_video = dict(transcript_rows_by_video or {})
-
+    # A caller with authoritative PostgreSQL transcript rows must never be
+    # forced through a secondary Qdrant read merely because the canonical row
+    # also carries an indexed parent id.
+    indexed_rows = [
+        row
+        for row in ready_rows
+        if row.indexed_parent_id and row.video_id not in transcript_rows_by_video
+    ]
+    parent_ids = [
+        str(row.indexed_parent_id) for row in indexed_rows if row.indexed_parent_id
+    ]
+    segments = (
+        child_segments_by_parent(parent_ids, namespace=pack.namespace)
+        if indexed_rows
+        else {}
+    )
     videos_payload = [
         {
             "video_id": row.video_id,
@@ -1538,7 +1785,9 @@ def _build_pack_artifacts(
             "video_id": row.video_id,
             "video_url": row.video_url,
             "thumbnail_url": row.thumbnail_url,
-            "channel_url": f"https://www.youtube.com/{(row.channel_handle or '').lstrip('@')}" if row.channel_handle else None,
+            "channel_url": f"https://www.youtube.com/{(row.channel_handle or '').lstrip('@')}"
+            if row.channel_handle
+            else None,
         }
         for row in ready_rows
     ]
@@ -1557,19 +1806,32 @@ def _build_pack_artifacts(
                 }
             )
     for row in ready_rows:
+        rows = transcript_rows_by_video.get(row.video_id)
+        if rows:
+            transcripts_payload.extend(rows)
+            continue
         if row.indexed_parent_id:
             continue
-        rows = transcript_rows_by_video.get(row.video_id)
-        if rows is None and row.transcript_source in {"youtube_transcript_api", "yt_captions"}:
-            probe = session.get(TranscriptProbe, transcript_probe_key(row.video_id, language, prefer_auto))
+        if rows is None and row.transcript_source in {
+            "youtube_transcript_api",
+            "yt_captions",
+        }:
+            probe = session.get(
+                TranscriptProbe,
+                transcript_probe_key(row.video_id, language, prefer_auto),
+            )
             rows = load_probe_artifact_rows(probe) if probe is not None else []
         if rows:
             transcripts_payload.extend(rows)
 
     root = _export_root() / pack.id
+    if artifact_generation:
+        if not re.fullmatch(r"[a-z0-9][a-z0-9._-]{0,127}", artifact_generation):
+            raise ValueError("artifact generation is invalid")
+        root = root / artifact_generation
     manifest = {
         "pack_id": pack.id,
-        "status": pack.status,
+        "status": manifest_status or pack.status,
         "channel_handle": pack.channel_handle,
         "channel_name": pack.resolved_channel_name,
         "channel_id": pack.resolved_channel_id,
@@ -1579,13 +1841,19 @@ def _build_pack_artifacts(
         "ready_video_count": len(ready_rows),
         "total_purchased_video_count": pack.total_purchased_video_count,
         "latest_batch_index": batch.batch_index,
-        "export_names": ["manifest.json", "videos.ndjson", "links.ndjson", "transcripts.ndjson", f"{pack.id}.bundle.zip"],
+        "export_names": [
+            "manifest.json",
+            "videos.ndjson",
+            "links.ndjson",
+            "transcripts.ndjson",
+            f"{pack.id}.bundle.zip",
+        ],
     }
     batch_manifest = {
         "pack_id": pack.id,
         "batch_id": batch.id,
         "batch_index": batch.batch_index,
-        "status": batch.status,
+        "status": batch_status or batch.status,
         "billable_video_count": batch.billable_video_count,
         "ready_video_count": batch.ready_video_count,
     }
@@ -1604,14 +1872,42 @@ def _build_pack_artifacts(
     }
 
 
-def create_or_attach_pack(*, session, quote: ChannelQuote, pack_id: Optional[str]) -> ChannelPack:
+def create_or_attach_pack(
+    *,
+    session,
+    commerce_scope: CommerceScope,
+    quote: ChannelQuote,
+    pack_id: Optional[str],
+) -> ChannelPack:
+    require_commerce_record_scope(quote, commerce_scope, label="quote")
+    ownership = commerce_ownership_values(commerce_scope)
+    expected_pack_id = str((quote.request_json or {}).get("pack_id") or "") or None
+    if (str(pack_id or "") or None) != expected_pack_id:
+        raise ValueError("order pack_id must match the immutable quote request")
     if pack_id:
-        pack = session.get(ChannelPack, pack_id)
+        pack = session.execute(
+            select(ChannelPack).where(
+                ChannelPack.id == pack_id,
+                *commerce_scope_predicates(ChannelPack, commerce_scope),
+            )
+        ).scalar_one_or_none()
         if pack is None:
             raise ValueError(f"Pack {pack_id} was not found")
+        if (
+            pack.namespace != quote.namespace
+            or pack.mode != quote.mode
+            or pack.channel_handle.lower() != quote.channel_handle.lower()
+            or (
+                pack.resolved_channel_id
+                and quote.resolved_channel_id
+                and pack.resolved_channel_id != quote.resolved_channel_id
+            )
+        ):
+            raise ValueError("quote does not match the requested expansion pack")
         return pack
 
     pack = ChannelPack(
+        **ownership,
         id=new_id("pack"),
         status="draft",
         mode=quote.mode,
@@ -1628,37 +1924,70 @@ def create_or_attach_pack(*, session, quote: ChannelQuote, pack_id: Optional[str
 def create_order_from_quote(
     *,
     session,
+    commerce_scope: CommerceScope,
     quote: ChannelQuote,
     checkout: CheckoutSessionRecord,
     pack_id: Optional[str],
     buyer_subject_type: Optional[str],
     buyer_subject_id: Optional[str],
     external_payment: Optional[dict] = None,
+    canonical_publish=None,
+    acquire_hot_media: bool = False,
+    media_acquire=None,
+    refresh_quote: bool = True,
+    defer_fulfillment: bool = False,
 ) -> tuple:
-    refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
-    pack = create_or_attach_pack(session=session, quote=quote, pack_id=pack_id)
+    require_commerce_record_scope(quote, commerce_scope, label="quote")
+    require_commerce_record_scope(checkout, commerce_scope, label="checkout session")
+    if quote.id not in set(checkout.quote_ids_json or []):
+        raise ValueError("quote is not part of the checkout session")
+    ownership = commerce_ownership_values(commerce_scope)
+    if refresh_quote:
+        refresh_quote_state(session=session, quote=quote, enqueue_missing=False)
+    elif quote.status != "open" or int(quote.current_batch_video_count or 0) <= 0:
+        raise ValueError("settled quote no longer contains its payable batch")
+    pack = create_or_attach_pack(
+        session=session,
+        commerce_scope=commerce_scope,
+        quote=quote,
+        pack_id=pack_id,
+    )
     existing_batch = session.execute(
-        select(PackBatch).where(PackBatch.pack_id == pack.id, PackBatch.quote_id == quote.id)
+        select(PackBatch).where(
+            PackBatch.pack_id == pack.id,
+            PackBatch.quote_id == quote.id,
+            *commerce_scope_predicates(PackBatch, commerce_scope),
+        )
     ).scalar_one_or_none()
     if existing_batch is not None:
-        raise ValueError(f"Quote {quote.id} has already been ordered for pack {pack.id}")
+        raise ValueError(
+            f"Quote {quote.id} has already been ordered for pack {pack.id}"
+        )
     current_batch_rows = [
         row
         for row in quote.videos
-        if row.status == "included" and int(row.batch_index or 0) == int(quote.current_batch_index)
+        if row.status == "included"
+        and int(row.batch_index or 0) == int(quote.current_batch_index)
     ]
     if not current_batch_rows:
         raise ValueError("Quote does not contain a payable batch")
 
-    charge_amount_cents = int((external_payment or {}).get("amount_cents") or quote.current_batch_amount_cents or 0)
+    charge_amount_cents = int(
+        (external_payment or {}).get("amount_cents")
+        or quote.current_batch_amount_cents
+        or 0
+    )
     externally_settled = external_payment is not None
     batch = PackBatch(
+        **ownership,
         id=new_id("batch"),
         pack_id=pack.id,
         quote_id=quote.id,
         checkout_session_id=checkout.id,
         batch_index=int(quote.current_batch_index),
-        status="awaiting_payment" if payment_required() and not externally_settled else "queued",
+        status="awaiting_payment"
+        if payment_required() and not externally_settled
+        else "queued",
         billable_video_count=len(current_batch_rows),
         ready_video_count=0,
         amount_cents=charge_amount_cents,
@@ -1669,12 +1998,15 @@ def create_order_from_quote(
     session.flush()
 
     order = ChannelOrder(
+        **ownership,
         id=new_id("order"),
         quote_id=quote.id,
         checkout_session_id=checkout.id,
         pack_id=pack.id,
         batch_id=batch.id,
-        status="awaiting_payment" if payment_required() and not externally_settled else "queued",
+        status="awaiting_payment"
+        if payment_required() and not externally_settled
+        else "queued",
         payment_status=(
             str((external_payment or {}).get("payment_status") or "settled_external")
             if externally_settled
@@ -1709,6 +2041,7 @@ def create_order_from_quote(
 
     session.add(
         PaymentReceipt(
+            **ownership,
             id=new_id("receipt"),
             checkout_session_id=checkout.id,
             order_id=order.id,
@@ -1727,28 +2060,96 @@ def create_order_from_quote(
     transcript_rows_by_video: Dict[str, List[dict]] = {}
     for row in current_batch_rows:
         indexed_parent_id = row.indexed_parent_id
-        status = "ready" if indexed_parent_id else "queued"
+        status = "queued" if defer_fulfillment else ("ready" if indexed_parent_id else "queued")
 
-        if not indexed_parent_id:
-            probe = session.get(TranscriptProbe, transcript_probe_key(row.video_id, language, prefer_auto))
+        if not defer_fulfillment and not indexed_parent_id:
+            probe = session.get(
+                TranscriptProbe,
+                transcript_probe_key(row.video_id, language, prefer_auto),
+            )
             rows = load_probe_artifact_rows(probe) if probe is not None else []
             if rows:
-                row.transcript_source = (probe.transcript_source if probe is not None else None) or row.transcript_source
-                transcript_rows_by_video[row.video_id] = rows
-                status = "ready"
+                row.transcript_source = (
+                    probe.transcript_source if probe is not None else None
+                ) or row.transcript_source
+                if canonical_publish is not None:
+                    try:
+                        hot_media = None
+                        if acquire_hot_media:
+                            if media_acquire is None or not row.video_url:
+                                raise RuntimeError(
+                                    "clip-ready acquisition requires a retained media acquirer"
+                                )
+                            hot_media = media_acquire(row.video_url, row.video_id)
+                        canonical_publish(
+                            {
+                                "platform": "youtube",
+                                "provider_video_id": row.video_id,
+                                "channel_external_id": (
+                                    quote.resolved_channel_id
+                                    or row.channel_handle
+                                    or row.channel_name
+                                    or f"unknown:{row.video_id}"
+                                ),
+                                "channel_handle": row.channel_handle,
+                                "channel_name": row.channel_name,
+                                "canonical_url": row.video_url,
+                                "title": row.title,
+                                "description": row.description,
+                                "published_at": row.published_at,
+                                "duration_ms": (
+                                    int(round(float(row.duration_s) * 1000))
+                                    if row.duration_s is not None
+                                    else None
+                                ),
+                                "language": language,
+                                "transcript_provider": (
+                                    row.transcript_source or "youtube_captions"
+                                ),
+                                "transcript_segments": [
+                                    {
+                                        "start": item.get("start_s"),
+                                        "end": item.get("end_s"),
+                                        "speaker": item.get("speaker"),
+                                        "text": item.get("text"),
+                                    }
+                                    for item in rows
+                                ],
+                                "hot_media": hot_media,
+                                "metadata": {"channel_pack_id": pack.id},
+                            }
+                        )
+                    except Exception as exc:
+                        rows = []
+                        batch.build_notes_json = {
+                            **(batch.build_notes_json or {}),
+                            row.video_id: f"canonical_publish_failed: {exc}",
+                        }
+                if rows:
+                    transcript_rows_by_video[row.video_id] = rows
+                    status = "ready"
             else:
                 batch.build_notes_json = {
                     **(batch.build_notes_json or {}),
                     row.video_id: "transcript_acquisition_not_ready",
                 }
 
-        if status != "ready" and not indexed_parent_id and inline_index_enabled() and row.video_url:
+        if (
+            not defer_fulfillment
+            and status != "ready"
+            and not indexed_parent_id
+            and inline_index_enabled()
+            and row.video_url
+        ):
             try:
                 index_youtube_video_captions(
                     video_url=row.video_url,
                     namespace=quote.namespace,
                     language=language,
                     prefer_auto=prefer_auto,
+                    canonical_publish=canonical_publish,
+                    acquire_hot_media=acquire_hot_media,
+                    media_acquire=media_acquire,
                 )
                 indexed_parent_id = row.video_id
                 status = "ready"
@@ -1766,6 +2167,7 @@ def create_order_from_quote(
 
         session.add(
             PackVideo(
+                **ownership,
                 pack_id=pack.id,
                 batch_id=batch.id,
                 quote_id=quote.id,
@@ -1786,15 +2188,20 @@ def create_order_from_quote(
         )
 
     batch.ready_video_count = ready_count
-    batch.status = "ready" if pending_count == 0 else ("partial" if ready_count else "queued")
+    batch.status = (
+        "ready" if pending_count == 0 else ("partial" if ready_count else "queued")
+    )
     order.status = batch.status
     pack.batch_count = max(int(pack.batch_count or 0), int(batch.batch_index))
-    pack.total_purchased_video_count = int(pack.total_purchased_video_count or 0) + len(current_batch_rows)
+    pack.total_purchased_video_count = int(pack.total_purchased_video_count or 0) + len(
+        current_batch_rows
+    )
     pack.ready_video_count = int(pack.ready_video_count or 0) + ready_count
     pack.status = batch.status
     if buyer_subject_type and buyer_subject_id:
         session.add(
             Entitlement(
+                **ownership,
                 id=new_id("entitlement"),
                 pack_id=pack.id,
                 subject_type=buyer_subject_type,
@@ -1814,12 +2221,14 @@ def create_order_from_quote(
             prefer_auto=prefer_auto,
             transcript_rows_by_video=transcript_rows_by_video,
         )
-        if ready_count
+        if ready_count and not defer_fulfillment
         else {}
     )
     if export_paths:
         pack.export_paths_json = export_paths
-        pack.manifest_json = json.loads(Path(export_paths["manifest_path"]).read_text(encoding="utf-8"))
+        pack.manifest_json = json.loads(
+            Path(export_paths["manifest_path"]).read_text(encoding="utf-8")
+        )
         batch.manifest_json = {
             "pack_id": pack.id,
             "batch_index": batch.batch_index,

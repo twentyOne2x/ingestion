@@ -18,6 +18,7 @@ build/
 dist/
 *.egg-info/
 node_modules/
+src/local_chromium/
 tmp/
 *.log
 src/local_chromium/

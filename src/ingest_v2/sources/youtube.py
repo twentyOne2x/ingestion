@@ -5,6 +5,7 @@ from ..utils.ids import sha1_hex
 from ..schemas.parent import ParentNode
 from ..configs.settings import settings_v2
 
+
 def _safe_get(d: Dict, *keys, default=None):
     for k in keys:
         if d is None:
@@ -12,11 +13,13 @@ def _safe_get(d: Dict, *keys, default=None):
         d = d.get(k)
     return d if d is not None else default
 
+
 def build_parent_from_metadata(meta: Dict[str, Any]) -> ParentNode:
     raw_bytes = json.dumps(meta, sort_keys=True).encode("utf-8")
     source_hash = sha1_hex(raw_bytes)
     parent = ParentNode(
         parent_id=meta["video_id"],
+        media_id=meta.get("media_id"),
         document_type=meta.get("document_type", "youtube_video"),
         title=meta.get("title", ""),
         description=meta.get("description", ""),
@@ -49,6 +52,7 @@ def build_parent_from_metadata(meta: Dict[str, Any]) -> ParentNode:
         topic_summary=meta.get("topic_summary"),
     )
     return parent
+
 
 def load_existing_youtube_raw(parent_id: str) -> Optional[Path]:
     p = Path("transcripts/raw") / f"{parent_id}_raw.json"
