@@ -40,4 +40,4 @@ cookie, pacing, and extractor settings.
 - [x] All YouTube yt-dlp call sites use the shared builder.
 - [x] Provider enablement fails closed without logging secret bytes.
 - [x] Focused and repository knowledge gates pass.
-- [ ] Exact commits, trees, pushes, and draft PRs are read back.
+- [x] Exact commits, trees, pushes, and draft PRs are read back.
