@@ -81,6 +81,16 @@ SAME_TENANT_PRINCIPAL_ID = f"usr_{'c' * 64}"
 ASSET = "eip155:8453/erc20:0x0000000000000000000000000000000000000001"
 
 
+def _successful_qdrant_publication(**kwargs) -> dict:
+    return {
+        "collection": "icmfyi-v2__canonical",
+        "media_id": kwargs["media_id"],
+        "transcript_revision_id": kwargs["transcript_revision_id"],
+        "point_count": 1,
+        "readback_sha256": "f" * 64,
+    }
+
+
 def _engine(tmp_path: Path):
     engine = create_engine(f"sqlite+pysqlite:///{tmp_path / 'paid-work.sqlite3'}")
     Base.metadata.create_all(engine)
@@ -619,6 +629,7 @@ def test_settled_work_reaches_canonical_corpus_and_verified_pack_export(
                 ),
             ),
             delete_audio=lambda path: path.unlink(missing_ok=True),
+            publish_vectors=_successful_qdrant_publication,
         )
         assert process_next_public_ingestion_job(
             worker_id="paid-e2e-worker", dependencies=dependencies
@@ -677,6 +688,7 @@ def test_settled_work_reaches_canonical_corpus_and_verified_pack_export(
             extract_audio=lambda **_kwargs: provider_calls.append("extract"),
             transcribe=lambda **_kwargs: provider_calls.append("transcribe"),
             delete_audio=lambda _path: provider_calls.append("delete"),
+            publish_vectors=_successful_qdrant_publication,
         )
         assert process_next_public_ingestion_job(
             worker_id="paid-canonical-reuse", dependencies=reuse_dependencies
@@ -855,6 +867,7 @@ def test_same_tenant_paid_principals_both_receive_the_deduped_canonical_item(
                 )
             ),
             delete_audio=lambda path: path.unlink(missing_ok=True),
+            publish_vectors=_successful_qdrant_publication,
         )
         assert process_next_public_ingestion_job(
             worker_id="same-tenant-paid-worker", dependencies=dependencies

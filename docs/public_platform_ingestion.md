@@ -54,6 +54,23 @@ content-addressed store and publishes a canonical media reference. This remains 
 when `clip_ready=false`: the flag means the caller did not require immediate clip use,
 not that provenance media may become an untracked CAS orphan.
 
+Terminal item success also requires canonical transcript vectors in Qdrant. After the
+canonical PostgreSQL media and transcript revision commit, the worker builds
+deterministic child points linked to that media and revision, publishes them to the
+configured canonical namespace with a completed-write acknowledgement, and retrieves
+the exact points with their payloads and vectors. The readback must match canonical
+identity, transcript source hashes, stored text, embedding provider/model/revision,
+and the configured vector dimension. Its digest and point counts are retained in the
+job's `qdrant_publication` result.
+
+A missing or mismatched point keeps the job retryable. Replay first reads Qdrant and
+upserts only absent or mismatched deterministic points. It reuses the already-succeeded
+public acquisition and transcription effect rows plus the retained canonical media and
+transcript, so a Qdrant repair does not repeat a provider download or paid
+transcription submission. Twitch uses `twitch_vod`, Pump.fun uses `pumpfun_clip`, X
+uses `media`, and generic YouTube uses `youtube_video` payload identity within the same
+canonical namespace.
+
 ## CPU transcription contract
 
 `transcription_mode=local_cpu` runs Hugging Face Transformers on CPU only. The default

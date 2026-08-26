@@ -57,6 +57,16 @@ def _headers(user: str = USER_A, tenant: str = TENANT_A) -> dict[str, str]:
     return {"x-icmfyi-user-id": user, "x-icmfyi-tenant-id": tenant}
 
 
+def _successful_qdrant_publication(**kwargs) -> dict:
+    return {
+        "collection": "icmfyi-v2__canonical",
+        "media_id": kwargs["media_id"],
+        "transcript_revision_id": kwargs["transcript_revision_id"],
+        "point_count": 1,
+        "readback_sha256": "f" * 64,
+    }
+
+
 @pytest.fixture()
 def database(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     path = tmp_path / "public-ingestion.sqlite3"
@@ -385,6 +395,7 @@ def test_item_worker_publishes_once_per_tenant_and_deletes_temporary_audio(
         extract_audio=extract_audio,
         transcribe=transcribe,
         delete_audio=lambda path: path.unlink(missing_ok=True),
+        publish_vectors=_successful_qdrant_publication,
     )
     assert process_next_public_ingestion_job(
         worker_id="public-item-test", dependencies=dependencies
@@ -404,6 +415,142 @@ def test_item_worker_publishes_once_per_tenant_and_deletes_temporary_audio(
         assert job.status == "succeeded"
         assert job.result_json["tenant_publications"] == 2
         assert job.result_json["transcript_segments"] == 1
+
+
+def test_item_worker_requires_qdrant_readback_without_repeating_paid_effects(
+    database: Path,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    import src.ingest_v2.cloud.diarization_indexer.canonical_media as canonical
+    from src.ingest_v2.cloud.diarization_indexer.service import app
+
+    media_path = tmp_path / "hot" / "sha256" / "bb" / f"{'b' * 64}.mp4"
+    media_path.parent.mkdir(parents=True)
+    media_path.write_bytes(b"qdrant-publication-retry-video")
+    media = HotMediaSpec(
+        path=media_path,
+        sha256=hashlib.sha256(media_path.read_bytes()).hexdigest(),
+        size_bytes=media_path.stat().st_size,
+        mime_type="video/mp4",
+    )
+    monkeypatch.setattr(canonical, "_verify_hot_media", lambda value: value)
+
+    response = TestClient(app).post(
+        "/v1/ingest",
+        headers={**_headers(), "Idempotency-Key": "qdrant-readback-retry"},
+        json={
+            "platform": "twitch",
+            "target_kind": "item",
+            "target": "https://www.twitch.tv/videos/2845546003",
+            "clip_ready": True,
+            "transcription_mode": "openai",
+        },
+    )
+    assert response.status_code == 202
+
+    item = PublicItemDescriptor(
+        platform="twitch",
+        external_id="2845546003",
+        channel_external_id="236171146",
+        channel_handle="cented",
+        canonical_url="https://www.twitch.tv/videos/2845546003",
+        title="Qdrant publication retry fixture",
+        duration_ms=2_000,
+    )
+    provider_calls: list[str] = []
+    vector_attempts: list[dict] = []
+
+    def acquire(_):
+        provider_calls.append("acquire")
+        return AcquiredPublicItem(item=item, media=media)
+
+    def extract_audio(*, video_path: Path, audio_path: Path):
+        provider_calls.append("extract")
+        assert video_path == media_path
+        audio_path.parent.mkdir(parents=True, exist_ok=True)
+        audio_path.write_bytes(b"paid-temporary-audio")
+        return hashlib.sha256(b"paid-temporary-audio").hexdigest(), 20
+
+    def transcribe(*, audio_path: Path, contract, language: str):
+        provider_calls.append("transcribe")
+        assert audio_path.exists()
+        assert contract.mode == "openai"
+        assert language == "en"
+        return TranscriptResult(
+            provider="openai:gpt-4o-mini-transcribe",
+            provider_request_id="provider-request-once",
+            segments=(
+                {
+                    "ordinal": 0,
+                    "start_ms": 0,
+                    "end_ms": 2_000,
+                    "speaker_label": None,
+                    "text": "The canonical transcript must be readable from Qdrant.",
+                },
+            ),
+        )
+
+    def publish_vectors(**kwargs):
+        vector_attempts.append(kwargs)
+        if len(vector_attempts) == 1:
+            raise RuntimeError("canonical Qdrant readback is incomplete")
+        return {
+            "collection": "icmfyi-v2__streams",
+            "media_id": kwargs["media_id"],
+            "transcript_revision_id": kwargs["transcript_revision_id"],
+            "point_count": 1,
+            "readback_sha256": "c" * 64,
+        }
+
+    dependencies = PublicWorkerDependencies(
+        acquire=acquire,
+        extract_audio=extract_audio,
+        transcribe=transcribe,
+        delete_audio=lambda path: path.unlink(missing_ok=True),
+        publish_vectors=publish_vectors,
+    )
+
+    assert process_next_public_ingestion_job(
+        worker_id="qdrant-readback-first", dependencies=dependencies
+    )
+    assert provider_calls == ["acquire", "extract", "transcribe"]
+    assert len(vector_attempts) == 1
+    with Session(get_engine()) as session:
+        job = session.get(IngestionJob, response.json()["job_id"])
+        assert job is not None and job.status == "retry"
+        assert job.last_error_detail == "canonical Qdrant readback is incomplete"
+        assert session.scalar(select(func.count()).select_from(SourceVideo)) == 1
+        assert session.scalar(select(func.count()).select_from(TranscriptRevision)) == 1
+        effects = list(session.scalars(select(IngestionEffect)))
+        assert len(effects) == 2
+        assert {effect.status for effect in effects} == {"succeeded"}
+        assert {
+            effect.provider_effect_id
+            for effect in effects
+            if effect.provider == "transcription_openai"
+        } == {"provider-request-once"}
+        job.next_run_at = utcnow()
+        session.commit()
+
+    assert process_next_public_ingestion_job(
+        worker_id="qdrant-readback-retry", dependencies=dependencies
+    )
+    assert provider_calls == ["acquire", "extract", "transcribe"]
+    assert len(vector_attempts) == 2
+    with Session(get_engine()) as session:
+        job = session.get(IngestionJob, response.json()["job_id"])
+        assert job is not None and job.status == "succeeded"
+        assert job.attempt_count == 2
+        assert job.result_json["canonical_ready_reuse"] is True
+        assert job.result_json["qdrant_publication"] == {
+            "collection": "icmfyi-v2__streams",
+            "media_id": vector_attempts[-1]["media_id"],
+            "transcript_revision_id": vector_attempts[-1]["transcript_revision_id"],
+            "point_count": 1,
+            "readback_sha256": "c" * 64,
+        }
+        assert session.scalar(select(func.count()).select_from(IngestionEffect)) == 2
 
 
 def test_paid_transcription_ambiguity_is_terminal_and_audio_is_deleted(
