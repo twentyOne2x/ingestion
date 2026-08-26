@@ -71,7 +71,7 @@ generic public item ingestion.
 - [x] Canonical Qdrant publication and authoritative readback gate terminal success.
 - [x] Restart/retry does not duplicate provider or paid effects.
 - [x] Affected tests and the knowledge check pass.
-- [ ] Task-owned commit is pushed and a draft PR is open.
+- [x] Task-owned commit is pushed and a draft PR is open.
 
 ## Rollback
 
