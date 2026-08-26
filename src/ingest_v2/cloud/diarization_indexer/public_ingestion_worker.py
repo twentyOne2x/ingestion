@@ -17,6 +17,7 @@ from typing import Any, Self
 from sqlalchemy import select, text
 
 from .canonical_media import HotMediaSpec, publish_canonical_ingestion
+from .canonical_vector_publication import publish_canonical_transcript_vectors
 from .channel_service_config import InternalRequestIdentity
 from .channel_service_jobs import (
     IdempotencyConflict,
@@ -43,6 +44,7 @@ from .channel_service_store import (
     MediaObject,
     PackBatch,
     PackVideo,
+    SourceChannel,
     SourceVideo,
     TranscriptionRun,
     TranscriptRevision,
@@ -120,6 +122,9 @@ class PublicWorkerDependencies:
     extract_audio: Callable[..., tuple[str, int]] = extract_temporary_audio
     transcribe: Callable[..., TranscriptResult] = transcribe_audio
     delete_audio: Callable[[Path], None] = delete_temporary_audio
+    publish_vectors: Callable[..., dict[str, Any]] = (
+        publish_canonical_transcript_vectors
+    )
 
 
 @dataclass(frozen=True)
@@ -570,6 +575,24 @@ def _process_item(
                 paid_export_targets[key] = export_target
         clear_tenant_scope(session)
 
+    canonical_publications = {
+        (row["media_id"], row["transcript_revision_id"])
+        for row in published
+    }
+    if len(canonical_publications) != 1:
+        raise RuntimeError(
+            "public ingestion did not resolve one canonical transcript publication"
+        )
+    media_id, transcript_revision_id = next(iter(canonical_publications))
+    qdrant_publication = dependencies.publish_vectors(
+        item=acquired.item,
+        transcript=transcript,
+        media_id=media_id,
+        transcript_revision_id=transcript_revision_id,
+        language=language,
+    )
+    heartbeat.assert_live()
+
     # Publication is durable before any potentially slow filesystem hashing or
     # ZIP work.  The per-pack finalizer serializes builders without holding
     # order, pack, batch, or video row locks across filesystem I/O.
@@ -607,6 +630,7 @@ def _process_item(
                     {row["tenant_id"] for row in published}
                 ),
                 "canonical_ready_reuse": canonical_ready is not None,
+                "qdrant_publication": qdrant_publication,
             },
         )
 
@@ -872,6 +896,9 @@ def _canonical_ready_item(
     ).scalar_one_or_none()
     if source is None:
         return None
+    channel = session.get(SourceChannel, source.channel_id)
+    if channel is None or channel.status != "active":
+        return None
     revision = session.execute(
         select(TranscriptRevision).where(
             TranscriptRevision.video_id == source.id,
@@ -918,8 +945,8 @@ def _canonical_ready_item(
     retained_item = PublicItemDescriptor(
         platform=source.platform,
         external_id=source.external_id,
-        channel_external_id=item.channel_external_id,
-        channel_handle=item.channel_handle,
+        channel_external_id=channel.external_id,
+        channel_handle=channel.handle or item.channel_handle,
         canonical_url=source.canonical_url or item.canonical_url,
         title=source.title or item.title,
         description=source.description or item.description,
