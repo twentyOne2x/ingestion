@@ -16,6 +16,10 @@ from urllib.parse import urlparse
 import requests
 
 from src.ingest_v2.pipelines.index_youtube_captions import _require_ytdlp
+from src.ingest_v2.pipelines.youtube_ytdlp_options import (
+    build_youtube_ytdlp_options,
+    safe_ytdlp_error_message,
+)
 
 from .canonical_media import HotMediaSpec, verify_hot_media
 from .public_platforms import CanonicalPublicTarget, normalize_public_target
@@ -131,14 +135,20 @@ def _discover_ytdlp(
         ),
         "retries": _bounded_int("CHANNEL_SERVICE_PUBLIC_RETRIES", 3, 0, 20),
     }
+    if target.platform == "youtube":
+        opts = build_youtube_ytdlp_options(opts)
     factory = ydl_factory or _require_ytdlp()
     try:
         with factory(opts) as ydl:
             info = ydl.extract_info(url, download=False)
     except Exception as exc:
+        if target.platform != "youtube":
+            raise PublicAcquisitionError(
+                f"{target.platform} public discovery failed: {exc}"
+            ) from exc
         raise PublicAcquisitionError(
-            f"{target.platform} public discovery failed: {exc}"
-        ) from exc
+            f"youtube public discovery failed: {safe_ytdlp_error_message(exc)}"
+        ) from None
     if not isinstance(info, dict) or not isinstance(info.get("entries"), (list, tuple)):
         raise PublicAcquisitionError("provider returned no bounded channel item list")
     rows: list[PublicItemDescriptor] = []
@@ -389,11 +399,7 @@ def _acquire_ytdlp(
         64 * 1024 * 1024 * 1024,
     )
     opts: dict[str, Any] = {
-        "quiet": True,
-        "no_warnings": True,
         "noplaylist": True,
-        "format": "bestvideo*+bestaudio/best",
-        "merge_output_format": "mp4",
         "outtmpl": str(staging / "download.%(ext)s"),
         "max_filesize": max_bytes,
         "socket_timeout": _bounded_int(
@@ -405,14 +411,29 @@ def _acquire_ytdlp(
             os.getenv("CHANNEL_SERVICE_FFMPEG_BIN") or "/usr/local/bin/ffmpeg"
         ).strip(),
     }
+    if item.platform == "youtube":
+        opts = build_youtube_ytdlp_options(opts, media=True)
+    else:
+        opts.update(
+            {
+                "quiet": True,
+                "no_warnings": True,
+                "format": "bestvideo*+bestaudio/best",
+                "merge_output_format": "mp4",
+            }
+        )
     factory = ydl_factory or _require_ytdlp()
     try:
         with factory(opts) as ydl:
             info = ydl.extract_info(item.canonical_url, download=True)
     except Exception as exc:
+        if item.platform != "youtube":
+            raise PublicAcquisitionError(
+                f"{item.platform} public media download failed: {exc}"
+            ) from exc
         raise PublicAcquisitionError(
-            f"{item.platform} public media download failed: {exc}"
-        ) from exc
+            f"youtube public media download failed: {safe_ytdlp_error_message(exc)}"
+        ) from None
     if not isinstance(info, dict) or info.get("entries"):
         raise PublicAcquisitionError(
             "provider returned an ambiguous multi-item download"

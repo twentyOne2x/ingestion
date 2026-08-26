@@ -437,11 +437,16 @@ def _send_upserts_parallel(
 # ────────────────────────────────────────────────────────────────────────────────
 
 
-def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
+def _upsert_children_qdrant(
+    children: List[Dict[str, Any]],
+    *,
+    namespace: str | None = None,
+    wait: bool = False,
+) -> Dict[str, float]:
     if not children:
         return {"t_embed": 0.0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
-    ns = choose_namespace(children[0]["document_type"])
+    ns = namespace or choose_namespace(children[0]["document_type"])
     collection = qdrant_collection_name(ns)
 
     embed = _embedder()
@@ -487,6 +492,7 @@ def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
         vectors=vectors,
         dimension=settings_v2.EMBED_DIM,
         batch_size=batch_size,
+        wait=wait,
     )
     t3 = perf_counter()
 
@@ -507,12 +513,21 @@ def _upsert_children_qdrant(children: List[Dict[str, Any]]) -> Dict[str, float]:
     }
 
 
-def upsert_children(children: List[Dict[str, Any]]) -> Dict[str, float]:
+def upsert_children(
+    children: List[Dict[str, Any]],
+    *,
+    qdrant_namespace: str | None = None,
+    qdrant_wait: bool = False,
+) -> Dict[str, float]:
     if not children:
         return {"t_embed": 0.0, "t_upsert": 0.0, "embed_reqs": 0, "pinecone_batches": 0}
 
     if vector_store_backend() == "qdrant":
-        return _upsert_children_qdrant(children)
+        return _upsert_children_qdrant(
+            children,
+            namespace=qdrant_namespace,
+            wait=qdrant_wait,
+        )
 
     # local import so this is truly drop-in
     from ..utils.progress import progress

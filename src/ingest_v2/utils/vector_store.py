@@ -31,17 +31,18 @@ def qdrant_client() -> QdrantClient:
     return QdrantClient(url=url, api_key=api_key, timeout=timeout_s)
 
 
+def qdrant_collection_exists(collection_name: str) -> bool:
+    client = qdrant_client()
+    try:
+        return bool(client.collection_exists(collection_name=collection_name))
+    except AttributeError:
+        names = {item.name for item in client.get_collections().collections}
+        return collection_name in names
+
+
 def ensure_qdrant_collection(collection_name: str, dimension: int) -> None:
     client = qdrant_client()
-    exists = False
-    try:
-        exists = bool(client.collection_exists(collection_name=collection_name))
-    except Exception:
-        # Older client fallback
-        names = {item.name for item in client.get_collections().collections}
-        exists = collection_name in names
-
-    if exists:
+    if qdrant_collection_exists(collection_name):
         return
 
     LOG.info("[qdrant] creating collection=%s dim=%d", collection_name, dimension)
@@ -76,6 +77,7 @@ def upsert_qdrant_vectors(
     vectors: List[Dict[str, Any]],
     dimension: int,
     batch_size: int = 100,
+    wait: bool = False,
 ) -> int:
     if not vectors:
         return 0
@@ -114,7 +116,11 @@ def upsert_qdrant_vectors(
         while stack:
             sub = stack.pop()
             try:
-                client.upsert(collection_name=collection_name, points=_points_from(sub), wait=False)
+                client.upsert(
+                    collection_name=collection_name,
+                    points=_points_from(sub),
+                    wait=wait,
+                )
                 sent += 1
             except Exception as exc:
                 if len(sub) <= 1 or not _is_payload_too_large(exc):
@@ -154,3 +160,28 @@ def fetch_qdrant_payloads(
         with_vectors=False,
     )
     return {str(row.id): dict(row.payload or {}) for row in rows}
+
+
+def fetch_qdrant_points(
+    *,
+    collection_name: str,
+    ids: Iterable[str],
+) -> Dict[str, Dict[str, Any]]:
+    """Read exact Qdrant points with both payloads and vector values."""
+    wanted = [str(i) for i in ids if i]
+    if not wanted:
+        return {}
+    client = qdrant_client()
+    rows = client.retrieve(
+        collection_name=collection_name,
+        ids=wanted,
+        with_payload=True,
+        with_vectors=True,
+    )
+    return {
+        str(row.id): {
+            "payload": dict(row.payload or {}),
+            "vector": row.vector,
+        }
+        for row in rows
+    }
