@@ -49,7 +49,7 @@ and does not repeat acquisition or transcription effects.
 - [x] Both exact source heads are integrated without textual conflict.
 - [x] Combined focused and practical repository suites pass.
 - [x] Knowledge, static, and final-diff scope checks pass.
-- [ ] Integration branch is pushed and a draft PR is open against
+- [x] Integration branch is pushed and a draft PR is open against
   `codex/linux-appliance-20260825`.
 
 ## Rollback
