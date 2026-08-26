@@ -32,6 +32,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_ROOT_USER_ACTION=ignore \
     DENO_DIR=/data/deno-cache \
+    YTDLP_DENO_BIN=/usr/local/bin/deno \
     HOME=/home/icmfyi
 
 WORKDIR /app
@@ -45,6 +46,7 @@ COPY --from=wheels /wheels /wheels
 COPY requirements.txt ./requirements-base.txt
 COPY services/diarization_indexer/requirements.txt ./requirements.txt
 RUN python -m pip install --no-cache-dir --no-index --find-links=/wheels -r requirements.txt && \
+    python -c "from importlib.metadata import version; assert version('yt-dlp') == '2026.8.19'; assert version('yt-dlp-ejs') == '0.8.0'; assert version('bgutil-ytdlp-pot-provider') == '1.3.2'" && \
     rm -rf /wheels && \
     groupadd --gid 10001 icmfyi && \
     useradd --uid 10001 --gid 10001 --create-home --home-dir /home/icmfyi \

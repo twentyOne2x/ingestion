@@ -4,7 +4,6 @@ import logging
 import hashlib
 import json
 import os
-import random
 import re
 import tempfile
 import time
@@ -20,6 +19,12 @@ from ..configs.settings import settings_v2
 from ..utils.ids import segment_uuid, sha1_hex
 from .upsert_parents import upsert_parents
 from .upsert_pinecone import upsert_children
+from .youtube_ytdlp_options import (
+    build_youtube_ytdlp_options,
+    configured_youtube_player_clients as _parse_player_clients,
+    configured_youtube_proxies as _proxy_pool,
+    safe_ytdlp_error_message,
+)
 from ..cloud.diarization_indexer.canonical_media import (
     HotMediaSpec,
     canonical_source_video_id,
@@ -385,87 +390,17 @@ def _require_ytdlp() -> Any:
     return YoutubeDL
 
 
-def _ytdlp_extra_opts() -> Dict[str, Any]:
-    """
-    Optional yt-dlp runtime knobs (primarily for YouTube anti-bot challenges).
-
-    These are passed via env so we don't accept secrets (cookies/proxies) in API request bodies.
-    """
-    opts: Dict[str, Any] = {}
-
-    def _env_float(*names: str) -> Optional[float]:
-        for name in names:
-            raw = (os.environ.get(name) or "").strip()
-            if not raw:
-                continue
-            try:
-                return float(raw)
-            except ValueError:
-                continue
-        return None
-
-    cookiefile = os.environ.get("YTDLP_COOKIES_FILE") or os.environ.get(
-        "YTDLP_COOKIES_PATH"
-    )
-    # Local-friendly default: if the compose-mounted cookie jar exists, use it automatically.
-    if not cookiefile:
-        try:
-            default_cookie = Path("/cookies/youtube.txt")
-            if default_cookie.exists():
-                cookiefile = str(default_cookie)
-        except Exception:
-            pass
-    if cookiefile:
-        opts["cookiefile"] = cookiefile
-    # Proxy is applied per-attempt (supports proxy pools). Keep base opts proxy-free.
-    user_agent = os.environ.get("YTDLP_USER_AGENT")
-    if user_agent:
-        opts["user_agent"] = user_agent
-    remote_components = (os.environ.get("YTDLP_REMOTE_COMPONENTS") or "").strip()
-    if remote_components:
-        parts = [p.strip() for p in remote_components.split(",") if p.strip()]
-        if parts:
-            # Enables yt-dlp's EJS/JS challenge solver distribution downloads.
-            # Common value: "ejs:github" (recommended by yt-dlp).
-            opts["remote_components"] = parts
-
-    # Throttling can reduce the likelihood of anti-bot triggers / rate limits.
-    # yt-dlp supports: sleep_requests, sleep_interval(+max_sleep_interval), sleep_subtitles.
-    sleep_requests = _env_float("YTDLP_SLEEP_REQUESTS", "YTDLP_SLEEP_REQUESTS_S")
-    if sleep_requests is not None:
-        opts["sleep_requests"] = sleep_requests
-
-    sleep_interval = _env_float(
-        "YTDLP_SLEEP_INTERVAL",
-        "YTDLP_SLEEP_INTERVAL_S",
-        "YTDLP_MIN_SLEEP_INTERVAL",
-        "YTDLP_MIN_SLEEP_INTERVAL_S",
-    )
-    if sleep_interval is not None:
-        opts["sleep_interval"] = sleep_interval
-
-    max_sleep_interval = _env_float(
-        "YTDLP_MAX_SLEEP_INTERVAL", "YTDLP_MAX_SLEEP_INTERVAL_S"
-    )
-    if max_sleep_interval is not None:
-        opts["max_sleep_interval"] = max_sleep_interval
-
-    sleep_subtitles = _env_float("YTDLP_SLEEP_SUBTITLES", "YTDLP_SLEEP_SUBTITLES_S")
-    if sleep_subtitles is not None:
-        opts["sleep_subtitles"] = sleep_subtitles
-    return opts
-
-
 def _maybe_wrap_ytdlp_error(exc: Exception) -> RuntimeError:
-    msg = str(exc) or exc.__class__.__name__
-    lowered = msg.lower()
+    raw_message = str(exc) or exc.__class__.__name__
+    lowered = raw_message.lower()
+    msg = safe_ytdlp_error_message(exc)
     if (
         "rate-limited by youtube" in lowered
         or "current session has been rate-limited" in lowered
         or "this content isn't available, try again later" in lowered
     ):
         msg = (
-            f"{msg}\n\n"
+            f"{msg}. "
             "Tip: YouTube rate-limited this session. Add throttling to reduce request volume.\n"
             "Recommended local defaults (yt-dlp alias `-t sleep`):\n"
             "  YTDLP_SLEEP_SUBTITLES=5\n"
@@ -483,11 +418,9 @@ def _maybe_wrap_ytdlp_error(exc: Exception) -> RuntimeError:
         or Path("/cookies/youtube.txt").exists()
     ):
         msg = (
-            f"{msg}\n\n"
-            "Tip: YouTube sometimes blocks anonymous scraping. Export browser cookies to a Netscape cookies.txt file,\n"
-            "put it at /Users/user/PycharmProjects/icmfyi/.local-data/cookies/youtube.txt (mounted as /cookies/youtube.txt).\n"
-            "Ingestion will auto-use it; you can also set YTDLP_COOKIES_FILE=/cookies/youtube.txt to override.\n"
-            "Local helper: run ./scripts/seed_youtube_cookies.sh (supports COOKIE_HEADER=... for non-interactive runs)."
+            f"{msg}. "
+            "If this authorized item requires a cookie lane, configure only the "
+            "read-only YTDLP_COOKIES_FILE reference."
         )
     return RuntimeError(msg)
 
@@ -523,109 +456,6 @@ def _classify_transcript_fetch_error(msg: Optional[str]) -> str:
     if "private video" in s or "members-only" in s or "login required" in s:
         return "video_unavailable"
     return "fetch_failed"
-
-
-def _proxy_pool() -> List[Optional[str]]:
-    """
-    Return a list of proxies to try in order.
-
-    - Supports a pool via `YTDLP_PROXIES` (comma-separated).
-    - Supports a single proxy via `YTDLP_PROXY`.
-    - By default includes `None` first (no proxy), unless `YTDLP_PROXY_FORCE=1`.
-    """
-    raw_pool = (
-        os.environ.get("YTDLP_PROXIES") or os.environ.get("YTDLP_PROXY_POOL") or ""
-    ).strip()
-    items: List[str] = []
-    if raw_pool:
-        items.extend([p.strip() for p in raw_pool.split(",") if p.strip()])
-
-    single = (os.environ.get("YTDLP_PROXY") or "").strip()
-    if single:
-        items.insert(0, single)
-
-    # de-dupe while preserving order
-    seen = set()
-    uniq: List[str] = []
-    for p in items:
-        if p in seen:
-            continue
-        seen.add(p)
-        uniq.append(p)
-
-    if not uniq:
-        return [None]
-
-    strategy = (os.environ.get("YTDLP_PROXY_STRATEGY") or "round_robin").strip().lower()
-    if strategy == "random":
-        random.shuffle(uniq)
-
-    force = (os.environ.get("YTDLP_PROXY_FORCE") or "").strip().lower() in (
-        "1",
-        "true",
-        "yes",
-        "y",
-        "on",
-    )
-    if force:
-        return list(uniq)
-    return [None] + list(uniq)
-
-
-def _apply_proxy(ydl_opts: Dict[str, Any], proxy: Optional[str]) -> None:
-    if proxy:
-        ydl_opts["proxy"] = proxy
-    else:
-        ydl_opts.pop("proxy", None)
-
-
-def _parse_player_clients() -> List[str]:
-    """
-    Return a list of yt-dlp YouTube player clients to try in order.
-
-    This can help bypass some YouTube anti-bot challenges.
-    """
-    raw = (os.environ.get("YTDLP_PLAYER_CLIENTS") or "").strip()
-    if raw:
-        out: List[str] = []
-        for part in raw.split(","):
-            p = part.strip()
-            if p:
-                out.append(p)
-        if out:
-            return out
-
-    # Default: try non-web clients first even when cookies are available.
-    #
-    # Rationale: web clients increasingly require PO tokens for subtitles; android/ios/tv
-    # are often less restrictive for subtitle downloads.
-    return ["android", "ios", "tv", "web_embedded"]
-
-
-def _apply_player_client(ydl_opts: Dict[str, Any], client: str) -> None:
-    y = ydl_opts.setdefault("extractor_args", {}).setdefault("youtube", {})
-    y["player_client"] = [client]
-
-    # Optional PO token (YouTube sometimes requires this for subtitles in experiments).
-    # Expected format matches yt-dlp docs, e.g. "web.subs+<TOKEN>".
-    po_token = (os.environ.get("YTDLP_PO_TOKEN") or "").strip()
-    if po_token:
-        y["po_token"] = [po_token]
-
-    # By default, keep cookies enabled for all clients. Some YouTube challenges can be
-    # solved by switching clients, and dropping cookies can reduce success rates for
-    # login-gated videos. If you want the old behavior, set:
-    #   YTDLP_DROP_COOKIES_FOR_NON_WEB=1
-    drop = (os.environ.get("YTDLP_DROP_COOKIES_FOR_NON_WEB") or "").strip().lower() in (
-        "1",
-        "true",
-        "yes",
-        "y",
-        "on",
-    )
-    if drop and not client.startswith("web"):
-        ydl_opts.pop("cookiefile", None)
-        ydl_opts.pop("cookiesfrombrowser", None)
 
 
 def _bounded_positive_int_env(name: str, default: int, *, maximum: int) -> int:
@@ -824,14 +654,7 @@ def acquire_youtube_hot_media(
             raise RuntimeError("yt-dlp exceeded the bounded acquisition deadline")
 
     base_opts: Dict[str, Any] = {
-        "quiet": True,
-        "no_warnings": True,
         "noplaylist": True,
-        "format": (
-            os.environ.get("CHANNEL_SERVICE_YTDLP_VIDEO_FORMAT")
-            or "bestvideo*+bestaudio/best"
-        ),
-        "merge_output_format": "mp4",
         "outtmpl": str(staging_dir / "%(id)s.%(ext)s"),
         "max_filesize": max_bytes,
         "socket_timeout": socket_timeout,
@@ -841,15 +664,17 @@ def acquire_youtube_hot_media(
         "postprocessor_hooks": [enforce_deadline],
         "ffmpeg_location": str(ffmpeg_bin),
     }
-    base_opts.update(_ytdlp_extra_opts())
 
     info: Dict[str, Any] | None = None
     last_exc: Exception | None = None
     for proxy in _proxy_pool():
         for client in _parse_player_clients():
-            opts = dict(base_opts)
-            _apply_proxy(opts, proxy)
-            _apply_player_client(opts, client)
+            opts = build_youtube_ytdlp_options(
+                base_opts,
+                media=True,
+                player_clients=[client],
+                proxy=proxy,
+            )
             try:
                 with YDL(opts) as ydl:
                     candidate_info = ydl.extract_info(video_url, download=True)
@@ -863,7 +688,7 @@ def acquire_youtube_hot_media(
             break
     if info is None:
         wrapped = _maybe_wrap_ytdlp_error(last_exc or RuntimeError("yt-dlp failed"))
-        raise wrapped from last_exc
+        raise wrapped from None
     if str(info.get("id") or "").strip() != expected_id:
         raise RuntimeError("yt-dlp resolved a different video identity")
 
@@ -908,8 +733,6 @@ def _fetch_ytdlp_cues(
             "outtmpl": outtmpl,
             "noplaylist": True,
         }
-        extra_opts = _ytdlp_extra_opts()
-
         info: Optional[Dict[str, Any]] = None
         last_exc: Optional[Exception] = None
         preferred_exc: Optional[Exception] = None
@@ -917,10 +740,11 @@ def _fetch_ytdlp_cues(
         clients = player_clients or _parse_player_clients()
         for proxy in proxies:
             for client in clients:
-                ydl_opts = dict(base_opts)
-                ydl_opts.update(extra_opts)
-                _apply_proxy(ydl_opts, proxy)
-                _apply_player_client(ydl_opts, client)
+                ydl_opts = build_youtube_ytdlp_options(
+                    base_opts,
+                    player_clients=[client],
+                    proxy=proxy,
+                )
                 with YDL(ydl_opts) as ydl:
                     try:
                         info = ydl.extract_info(video_url, download=True)
@@ -937,7 +761,7 @@ def _fetch_ytdlp_cues(
 
         if info is None:
             chosen_exc = preferred_exc or last_exc or RuntimeError("yt-dlp failed")
-            raise _maybe_wrap_ytdlp_error(chosen_exc) from chosen_exc
+            raise _maybe_wrap_ytdlp_error(chosen_exc) from None
 
         vid = str(info.get("id") or "").strip()
         if not vid:
@@ -986,13 +810,14 @@ def fetch_transcript_cues(
             player_clients=player_clients,
         )
     except Exception as exc:
+        safe_error = safe_ytdlp_error_message(exc)
         LOG.debug(
-            "[yt-cues] fetch failed video_url=%s video_id=%s err=%s",
+            "[yt-cues] fetch failed video_url=%s video_id=%s error_code=%s",
             video_url,
             vid,
-            exc,
+            safe_error,
         )
-        return None, None, None, vid, str(exc)
+        return None, None, None, vid, safe_error
 
     if not cues:
         return None, None, info, resolved_vid or vid, "transcript_unavailable"
@@ -1365,19 +1190,18 @@ def discover_channel_video_urls(*, channel: str, max_videos: int = 10) -> List[s
         coerced = _coerce_watch_url(channel_url)
         return [coerced] if coerced else []
 
-    ydl_opts: Dict[str, Any] = {
-        "quiet": True,
-        "no_warnings": True,
-        "extract_flat": True,
-        "skip_download": True,
-        "playlistend": int(max(1, max_videos)),
-    }
-    ydl_opts.update(_ytdlp_extra_opts())
+    ydl_opts = build_youtube_ytdlp_options(
+        {
+            "extract_flat": True,
+            "skip_download": True,
+            "playlistend": int(max(1, max_videos)),
+        }
+    )
     with YDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(channel_url, download=False)
         except Exception as exc:
-            raise _maybe_wrap_ytdlp_error(exc) from exc
+            raise _maybe_wrap_ytdlp_error(exc) from None
     entries = info.get("entries") or []
     urls: List[str] = []
     for e in entries:
@@ -1452,8 +1276,9 @@ def index_youtube_channel_captions(
         except HotMediaPendingError as exc:
             out["pending"].append(exc.job)
         except Exception as exc:
-            LOG.warning("[yt-index] failed url=%s err=%s", url, exc)
-            out["failed"].append({"url": url, "error": str(exc)})
+            safe_error = safe_ytdlp_error_message(exc)
+            LOG.warning("[yt-index] failed url=%s error_code=%s", url, safe_error)
+            out["failed"].append({"url": url, "error": safe_error})
     return out
 
 
@@ -1469,20 +1294,19 @@ def discover_query_video_urls(*, query: str, max_videos: int = 10) -> List[str]:
         return []
 
     YDL = _require_ytdlp()
-    ydl_opts: Dict[str, Any] = {
-        "quiet": True,
-        "no_warnings": True,
-        "extract_flat": True,
-        "skip_download": True,
-    }
-    ydl_opts.update(_ytdlp_extra_opts())
+    ydl_opts = build_youtube_ytdlp_options(
+        {
+            "extract_flat": True,
+            "skip_download": True,
+        }
+    )
     with YDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(
                 f"ytsearch{int(max(1, max_videos))}:{q}", download=False
             )
         except Exception as exc:
-            raise _maybe_wrap_ytdlp_error(exc) from exc
+            raise _maybe_wrap_ytdlp_error(exc) from None
 
     entries = info.get("entries") or []
     urls: List[str] = []
@@ -1558,8 +1382,9 @@ def index_youtube_query_captions(
         except HotMediaPendingError as exc:
             out["pending"].append(exc.job)
         except Exception as exc:
-            LOG.warning("[yt-index] failed url=%s err=%s", url, exc)
-            out["failed"].append({"url": url, "error": str(exc)})
+            safe_error = safe_ytdlp_error_message(exc)
+            LOG.warning("[yt-index] failed url=%s error_code=%s", url, safe_error)
+            out["failed"].append({"url": url, "error": safe_error})
     return out
 
 

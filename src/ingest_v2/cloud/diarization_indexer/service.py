@@ -20,12 +20,15 @@ from src.ingest_v2.pipelines.index_youtube_captions import (
     HotMediaPendingError,
     _is_youtube_bot_check,
     _require_ytdlp,
-    _ytdlp_extra_opts,
     index_youtube_channel_captions,
     index_youtube_query_captions,
     index_youtube_video_captions,
 )
 from src.ingest_v2.pipelines.run_all_components.namespace import load_namespace_channels
+from src.ingest_v2.pipelines.youtube_ytdlp_options import (
+    build_youtube_ytdlp_options,
+    safe_ytdlp_error_message,
+)
 
 from .canonical_media import (
     CanonicalPublishError,
@@ -578,19 +581,17 @@ def youtube_cookie_health(
         shutil.copyfile(cookie_path, tmp_path)
 
         YDL = _require_ytdlp()
-        ydl_opts: Dict[str, object] = {
-            "quiet": True,
-            "no_warnings": True,
-            "skip_download": True,
-            "noplaylist": True,
-            # Keep the probe bounded.
-            "socket_timeout": 30,
-            "retries": 1,
-            "fragment_retries": 0,
-        }
-        ydl_opts.update(_ytdlp_extra_opts())
-        # Ensure we never mutate the canonical cookie jar.
-        ydl_opts["cookiefile"] = str(tmp_path)
+        ydl_opts = build_youtube_ytdlp_options(
+            {
+                "skip_download": True,
+                "noplaylist": True,
+                # Keep the probe bounded.
+                "socket_timeout": 30,
+                "retries": 1,
+                "fragment_retries": 0,
+            },
+            cookie_reference=tmp_path,
+        )
 
         with YDL(ydl_opts) as ydl:
             info = ydl.extract_info(test_url, download=False)
@@ -605,15 +606,15 @@ def youtube_cookie_health(
             "video_id": video_id,
         }
     except Exception as exc:
-        msg = str(exc) or exc.__class__.__name__
+        raw_message = str(exc) or exc.__class__.__name__
         return {
             "ok": False,
             "cookie_path": str(cookie_path),
             "cookie_bytes": cookie_bytes,
             "cookie_mtime": cookie_mtime,
             "test_url": test_url,
-            "bot_check": bool(_is_youtube_bot_check(msg)),
-            "error": msg[:800],
+            "bot_check": bool(_is_youtube_bot_check(raw_message)),
+            "error": safe_ytdlp_error_message(exc),
         }
     finally:
         if tmp_path is not None:
