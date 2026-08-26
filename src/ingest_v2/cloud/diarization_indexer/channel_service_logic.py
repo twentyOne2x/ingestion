@@ -25,10 +25,12 @@ from src.ingest_v2.pipelines.index_youtube_captions import (
     _uploads_playlist_id,
     _yt_watch_url,
     _ytapi_get,
-    _ytdlp_extra_opts,
     index_youtube_video_captions,
 )
 from src.ingest_v2.pipelines.run_all_components.namespace import load_namespace_channels
+from src.ingest_v2.pipelines.youtube_ytdlp_options import (
+    build_youtube_ytdlp_options,
+)
 
 from .channel_service_store import (
     ChannelOrder,
@@ -477,22 +479,21 @@ def list_channel_candidates_via_ytdlp(
 
     YDL = _require_ytdlp()
     fetch_limit = max(25, min(200, max(1, int(target_count)) * 25))
-    ydl_opts: Dict[str, Any] = {
-        "quiet": True,
-        "no_warnings": True,
-        "extract_flat": True,
-        "skip_download": True,
-        "playlistend": fetch_limit,
-    }
-    ydl_opts.update(_ytdlp_extra_opts())
+    ydl_opts = build_youtube_ytdlp_options(
+        {
+            "extract_flat": True,
+            "skip_download": True,
+            "playlistend": fetch_limit,
+        }
+    )
 
     with YDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(
                 _normalize_channel_url(normalized_handle), download=False
             )
-        except Exception as exc:
-            raise ValueError(f"Could not resolve channel {normalized_handle}") from exc
+        except Exception:
+            raise ValueError(f"Could not resolve channel {normalized_handle}") from None
 
     entries = info.get("entries") or []
     channel_id = str(info.get("channel_id") or info.get("id") or "").strip() or None
