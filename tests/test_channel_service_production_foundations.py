@@ -507,18 +507,21 @@ def test_production_image_is_immutable_and_non_root() -> None:
 
 def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     revisions = sorted((REPOSITORY_ROOT / "alembic" / "versions").glob("*.py"))
-    assert len(revisions) == 5
+    assert len(revisions) == 6
     initial_migration = revisions[0].read_text(encoding="utf-8")
     export_migration = revisions[1].read_text(encoding="utf-8")
     archive_migration = revisions[2].read_text(encoding="utf-8")
     public_ingestion_migration = revisions[3].read_text(encoding="utf-8")
     commerce_migration = revisions[4].read_text(encoding="utf-8")
+    hot_media_migration = revisions[5].read_text(encoding="utf-8")
 
     assert 'revision: str = "20260825_0001"' in initial_migration
     assert 'revision: str = "20260825_0002"' in export_migration
     assert 'revision: str = "20260825_0003"' in archive_migration
     assert 'revision: str = "20260825_0004"' in public_ingestion_migration
     assert 'revision: str = "20260825_0005"' in commerce_migration
+    assert 'revision: str = "20260826_0006"' in hot_media_migration
+    assert 'down_revision: str | None = "20260825_0005"' in hot_media_migration
     assert "op.create_table(" in initial_migration
     assert "op.create_table(" in export_migration
     assert "archive_catalog_imports" in archive_migration
@@ -533,6 +536,13 @@ def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     assert "SECURITY INVOKER" in commerce_migration
     assert "checkout session crosses commerce ownership" in commerce_migration
     assert "payment receipt crosses order ownership" in commerce_migration
+    assert "hot_media_custody_manifests" in hot_media_migration
+    assert "hot_media_rehydration_attempts" in hot_media_migration
+    assert "REVOKE ALL PRIVILEGES ON TABLE" in hot_media_migration
+    assert (
+        "downgrade would destroy durable hot-media lifecycle state"
+        in hot_media_migration
+    )
     assert "ENABLE ROW LEVEL SECURITY" in export_migration
     assert "FORCE ROW LEVEL SECURITY" in export_migration
     assert "current_setting('app.tenant_id', true)" in export_migration
@@ -542,6 +552,7 @@ def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
         + archive_migration
         + public_ingestion_migration
         + commerce_migration
+        + hot_media_migration
     )
     assert "Base.metadata" not in migrations
     assert "create_all(" not in migrations
