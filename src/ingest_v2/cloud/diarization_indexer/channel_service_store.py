@@ -41,7 +41,7 @@ from .channel_service_config import (
     validate_production_runtime,
 )
 
-ALEMBIC_HEAD_REVISION = "20260825_0005"
+ALEMBIC_HEAD_REVISION = "20260826_0006"
 
 COMMERCE_AUTHORITY_GATEWAY = "gateway"
 COMMERCE_AUTHORITY_ACP = "acp_internal"
@@ -417,6 +417,250 @@ class VideoMediaRef(Base):
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, nullable=False
     )
+
+
+class HotMediaCustodyManifest(Base):
+    """Owner-only custody receipt for global content-addressed media."""
+
+    __tablename__ = "hot_media_custody_manifests"
+    __table_args__ = (
+        CheckConstraint(
+            "length(manifest_sha256) = 64",
+            name="ck_hot_media_custody_manifests_manifest_sha256_length",
+        ),
+        CheckConstraint(
+            "manifest_bytes > 0",
+            name="ck_hot_media_custody_manifests_manifest_bytes",
+        ),
+        CheckConstraint(
+            "items_count > 0",
+            name="ck_hot_media_custody_manifests_items_count",
+        ),
+        CheckConstraint(
+            "media_bytes > 0",
+            name="ck_hot_media_custody_manifests_media_bytes",
+        ),
+        CheckConstraint(
+            "status IN ('custodied', 'eviction_prepared', 'evicted')",
+            name="ck_hot_media_custody_manifests_status",
+        ),
+        CheckConstraint(
+            "length(custody_receipt_sha256) = 64",
+            name="ck_hot_media_custody_manifests_custody_receipt_sha256_length",
+        ),
+        CheckConstraint(
+            "(eviction_receipt_sha256 IS NULL AND eviction_receipt_json IS NULL) "
+            "OR (length(eviction_receipt_sha256) = 64 "
+            "AND eviction_receipt_json IS NOT NULL)",
+            name="ck_hot_media_custody_manifests_eviction_receipt_pair",
+        ),
+        UniqueConstraint(
+            "custody_receipt_sha256",
+            name="uq_hot_media_custody_manifests_custody_receipt",
+        ),
+        UniqueConstraint(
+            "eviction_receipt_sha256",
+            name="uq_hot_media_custody_manifests_eviction_receipt",
+        ),
+    )
+
+    manifest_sha256: Mapped[str] = mapped_column(String(64), primary_key=True)
+    manifest_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    manifest_bytes: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    items_count: Mapped[int] = mapped_column(Integer, nullable=False)
+    media_bytes: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    remote_root: Mapped[str] = mapped_column(Text, nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False)
+    custody_receipt_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    custody_receipt_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    eviction_receipt_sha256: Mapped[str | None] = mapped_column(String(64))
+    eviction_receipt_json: Mapped[dict | None] = mapped_column(JSON)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+    custodied_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    eviction_prepared_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True)
+    )
+    evicted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
+class HotMediaCustodyItem(Base):
+    """Exact hot and Storage Box location pair bound to one custody manifest."""
+
+    __tablename__ = "hot_media_custody_items"
+    __table_args__ = (
+        CheckConstraint("ordinal >= 0", name="ck_hot_media_custody_items_ordinal"),
+        CheckConstraint(
+            "length(media_sha256) = 64",
+            name="ck_hot_media_custody_items_media_sha256_length",
+        ),
+        CheckConstraint("size_bytes > 0", name="ck_hot_media_custody_items_size_bytes"),
+        CheckConstraint(
+            "mime_type LIKE 'video/%'",
+            name="ck_hot_media_custody_items_video_mime",
+        ),
+        CheckConstraint(
+            "state IN ('custodied', 'eviction_prepared', 'evicted')",
+            name="ck_hot_media_custody_items_state",
+        ),
+        UniqueConstraint(
+            "manifest_sha256",
+            "ordinal",
+            name="uq_hot_media_custody_items_manifest_ordinal",
+        ),
+        UniqueConstraint(
+            "manifest_sha256",
+            "hot_path",
+            name="uq_hot_media_custody_items_manifest_hot_path",
+        ),
+        UniqueConstraint(
+            "manifest_sha256",
+            "appliance_hot_path",
+            name="uq_hot_media_custody_items_manifest_appliance_hot_path",
+        ),
+        UniqueConstraint(
+            "manifest_sha256",
+            "remote_path",
+            name="uq_hot_media_custody_items_manifest_remote_path",
+        ),
+    )
+
+    manifest_sha256: Mapped[str] = mapped_column(
+        ForeignKey(
+            "hot_media_custody_manifests.manifest_sha256",
+            name="fk_hot_media_custody_items_manifest",
+        ),
+        primary_key=True,
+    )
+    ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
+    media_sha256: Mapped[str] = mapped_column(
+        ForeignKey("media_objects.sha256", name="fk_hot_media_custody_items_media"),
+        primary_key=True,
+        index=True,
+    )
+    hot_location_id: Mapped[str] = mapped_column(
+        ForeignKey(
+            "media_locations.id", name="fk_hot_media_custody_items_hot_location"
+        ),
+        nullable=False,
+    )
+    hot_path: Mapped[str] = mapped_column(Text, nullable=False)
+    appliance_hot_path: Mapped[str] = mapped_column(Text, nullable=False)
+    remote_location_id: Mapped[str] = mapped_column(
+        ForeignKey(
+            "media_locations.id",
+            name="fk_hot_media_custody_items_remote_location",
+        ),
+        nullable=False,
+    )
+    remote_path: Mapped[str] = mapped_column(Text, nullable=False)
+    size_bytes: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    mime_type: Mapped[str] = mapped_column(String(255), nullable=False)
+    state: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+
+
+class HotMediaRehydrationAttempt(Base):
+    """Durable idempotency and verification receipt for one hot restoration."""
+
+    __tablename__ = "hot_media_rehydration_attempts"
+    __table_args__ = (
+        CheckConstraint(
+            "length(request_key_sha256) = 64",
+            name="ck_hot_media_rehydration_attempts_request_key_sha256_length",
+        ),
+        CheckConstraint(
+            "length(custody_manifest_sha256) = 64",
+            name="ck_hot_media_rehydrate_custody_manifest_sha_length",
+        ),
+        CheckConstraint(
+            "length(media_sha256) = 64",
+            name="ck_hot_media_rehydration_attempts_media_sha256_length",
+        ),
+        CheckConstraint(
+            "state IN ('downloading', 'failed', 'ready')",
+            name="ck_hot_media_rehydration_attempts_state",
+        ),
+        CheckConstraint(
+            "attempt_count > 0",
+            name="ck_hot_media_rehydration_attempts_attempt_count",
+        ),
+        CheckConstraint(
+            "(state = 'ready' AND length(receipt_sha256) = 64 "
+            "AND receipt_json IS NOT NULL) OR "
+            "(state <> 'ready' AND receipt_sha256 IS NULL "
+            "AND receipt_json IS NULL)",
+            name="ck_hot_media_rehydration_attempts_receipt_state",
+        ),
+        UniqueConstraint(
+            "request_key_sha256",
+            "media_sha256",
+            "custody_manifest_sha256",
+            name="uq_hot_media_rehydration_attempts_request_media_manifest",
+        ),
+        UniqueConstraint(
+            "receipt_sha256",
+            name="uq_hot_media_rehydration_attempts_receipt",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    request_key_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    custody_manifest_sha256: Mapped[str] = mapped_column(
+        ForeignKey(
+            "hot_media_custody_manifests.manifest_sha256",
+            name="fk_hot_media_rehydration_attempts_custody_manifest",
+        ),
+        nullable=False,
+        index=True,
+    )
+    media_sha256: Mapped[str] = mapped_column(
+        ForeignKey(
+            "media_objects.sha256", name="fk_hot_media_rehydration_attempts_media"
+        ),
+        nullable=False,
+        index=True,
+    )
+    storagebox_location_id: Mapped[str] = mapped_column(
+        ForeignKey(
+            "media_locations.id",
+            name="fk_hot_media_rehydration_attempts_storagebox_location",
+        ),
+        nullable=False,
+    )
+    hot_location_id: Mapped[str] = mapped_column(
+        ForeignKey(
+            "media_locations.id",
+            name="fk_hot_media_rehydration_attempts_hot_location",
+        ),
+        nullable=False,
+    )
+    attempt_path: Mapped[str] = mapped_column(Text, nullable=False)
+    final_hot_path: Mapped[str] = mapped_column(Text, nullable=False)
+    final_appliance_path: Mapped[str] = mapped_column(Text, nullable=False)
+    state: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
+    attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
+    receipt_sha256: Mapped[str | None] = mapped_column(String(64))
+    receipt_json: Mapped[dict | None] = mapped_column(JSON)
+    last_error_code: Mapped[str | None] = mapped_column(String(128))
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, nullable=False
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False
+    )
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
 class TenantChannelEntitlement(Base):
