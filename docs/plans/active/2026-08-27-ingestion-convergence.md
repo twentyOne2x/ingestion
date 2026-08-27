@@ -108,7 +108,8 @@ overlay was used.
 - [x] Disposable PostgreSQL ACL and upgrade/downgrade suite passes under the
   bounded-container capacity contract.
 - [x] Full practical suite and knowledge/static/scope gates pass.
-- [ ] Branch is pushed and a draft convergence PR is open.
+- [x] Branch `codex/ingestion-convergence-20260827` is pushed and draft PR #7
+  targets `codex/linux-appliance-20260825`.
 
 ## Rollback
 
