@@ -68,23 +68,45 @@ Resolved source bindings before the task receipt commit:
 - diarization-indexer Dockerfile SHA-256:
   `f30911090f331634d95161e93f3ff9138755018ffd2c1f4dccef8e158849922d`.
 
-## Capacity-fenced gate
+## Test receipts
 
-The supervisor prohibited Docker/PostgreSQL containers and large dependency or
-build artifacts while local capacity was constrained. The existing interpreter
-therefore ran all non-container tests with provider/database credentials removed,
-bytecode disabled, and pytest cache disabled. The real PostgreSQL ACL and
-upgrade/downgrade test remains skipped until that fence is explicitly lifted.
-No task-owned container, image, PostgreSQL service, or dependency overlay was
-created.
+- Focused public-platform, canonical Qdrant, canonical-media, paid-effect replay,
+  YouTube-hardening, channel-service, diarization, and lifecycle suite:
+  `119 passed, 10 skipped` in 71.95 seconds.
+- Full practical repository suite across `tests/` and `src/ingest_v2/tests/`:
+  `158 passed, 17 skipped` in 167.70 seconds.
+- Disposable PostgreSQL lifecycle, migration/RLS, and paid-work integration
+  files: `11 passed, 7 skipped` in 24.79 seconds. Every lifecycle and
+  migration/RLS case ran; the seven skips are the paid-work cases that require
+  the separately provisioned payment-service schema and dedicated worker URL.
+  Their non-provider retry/idempotency behavior remains covered by the focused
+  and full in-repository suites.
+- `python3 scripts/knowledge_check.py`, in-memory syntax compilation and Ruff
+  error-level checks over every changed Python file, `git diff --check`, and
+  source-head blob comparison pass.
+
+## Bounded PostgreSQL gate
+
+After the capacity fence was explicitly lifted, the real PostgreSQL gate ran in
+task-owned container `icmfyi-convergence-postgres-20260827` from
+`postgres:17-alpine` at digest
+`sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73`
+(115,030,665 bytes). It bound only a random loopback port and used a 1 GiB-capped
+tmpfs for `/var/lib/postgresql/data`; Docker reported no mounts or volumes.
+
+`/System/Volumes/Data` stayed above the 31,457,280 KiB floor before and after
+pull, start, test, stop, and image removal. The lowest recorded post-step value
+was 46,042,768 KiB. The terminal readback is zero task containers, zero task
+volumes, and no remaining task-pulled image. No volume prune or dependency
+overlay was used.
 
 ## Exit criteria
 
 - [x] Exact ancestry, diff coverage, and semantic seam are proven.
 - [x] Both exact source heads are integrated with no textual conflict.
 - [x] Focused SQLite migration and behavioral suites pass.
-- [ ] Disposable PostgreSQL ACL and upgrade/downgrade suite passes after the
-  capacity fence is lifted.
+- [x] Disposable PostgreSQL ACL and upgrade/downgrade suite passes under the
+  bounded-container capacity contract.
 - [x] Full practical suite and knowledge/static/scope gates pass.
 - [ ] Branch is pushed and a draft convergence PR is open.
 
