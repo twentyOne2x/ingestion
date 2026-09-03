@@ -507,13 +507,14 @@ def test_production_image_is_immutable_and_non_root() -> None:
 
 def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     revisions = sorted((REPOSITORY_ROOT / "alembic" / "versions").glob("*.py"))
-    assert len(revisions) == 6
+    assert len(revisions) == 7
     initial_migration = revisions[0].read_text(encoding="utf-8")
     export_migration = revisions[1].read_text(encoding="utf-8")
     archive_migration = revisions[2].read_text(encoding="utf-8")
     public_ingestion_migration = revisions[3].read_text(encoding="utf-8")
     commerce_migration = revisions[4].read_text(encoding="utf-8")
     hot_media_migration = revisions[5].read_text(encoding="utf-8")
+    app_chat_migration = revisions[6].read_text(encoding="utf-8")
 
     assert 'revision: str = "20260825_0001"' in initial_migration
     assert 'revision: str = "20260825_0002"' in export_migration
@@ -522,6 +523,8 @@ def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     assert 'revision: str = "20260825_0005"' in commerce_migration
     assert 'revision: str = "20260826_0006"' in hot_media_migration
     assert 'down_revision: str | None = "20260825_0005"' in hot_media_migration
+    assert 'revision: str = "20260903_0007"' in app_chat_migration
+    assert 'down_revision: str | None = "20260826_0006"' in app_chat_migration
     assert "op.create_table(" in initial_migration
     assert "op.create_table(" in export_migration
     assert "archive_catalog_imports" in archive_migration
@@ -533,6 +536,8 @@ def test_initial_alembic_revision_is_a_static_schema_snapshot() -> None:
     assert "current_setting('app.principal_user_id', true)" in commerce_migration
     assert "FORCE ROW LEVEL SECURITY" in commerce_migration
     assert "icmfyi_enforce_commerce_lineage" in commerce_migration
+    assert "app_chats" in app_chat_migration
+    assert "FORCE ROW LEVEL SECURITY" in app_chat_migration
     assert "SECURITY INVOKER" in commerce_migration
     assert "checkout session crosses commerce ownership" in commerce_migration
     assert "payment receipt crosses order ownership" in commerce_migration

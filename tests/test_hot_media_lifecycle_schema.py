@@ -143,7 +143,7 @@ def test_sqlite_empty_and_retained_upgrade_is_idempotent_and_reversible(
             connection.execute(
                 text("SELECT version_num FROM alembic_version")
             ).scalar_one()
-            == "20260826_0006"
+            == "20260903_0007"
         )
         assert all(
             connection.execute(text(f"SELECT count(*) FROM {table_name}")).scalar_one()

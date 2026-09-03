@@ -483,7 +483,7 @@ def test_real_sqlite_alembic_upgrade_rejects_json_orphan(
             connection.execute(
                 text("SELECT version_num FROM alembic_version")
             ).scalar_one()
-            == "20260826_0006"
+            == "20260903_0007"
         )
         assert "authority_kind" in {
             row[1]
