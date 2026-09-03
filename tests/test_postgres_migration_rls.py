@@ -664,7 +664,7 @@ def test_commerce_downgrade_refuses_to_erase_gateway_ownership(
                 connection.execute(
                     text("SELECT version_num FROM alembic_version")
                 ).scalar_one()
-                == "20260826_0006"
+                == "20260903_0007"
             )
             policy_state = connection.execute(
                 text(

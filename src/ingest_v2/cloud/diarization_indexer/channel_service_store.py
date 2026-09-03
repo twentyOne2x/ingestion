@@ -41,7 +41,7 @@ from .channel_service_config import (
     validate_production_runtime,
 )
 
-ALEMBIC_HEAD_REVISION = "20260826_0006"
+ALEMBIC_HEAD_REVISION = "20260903_0007"
 
 COMMERCE_AUTHORITY_GATEWAY = "gateway"
 COMMERCE_AUTHORITY_ACP = "acp_internal"
